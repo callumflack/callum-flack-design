@@ -1,0 +1,285 @@
+/* Set border-box box sizing so borders and padding don't affect set dimensions */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*::before {
+  box-sizing: inherit;
+}
+
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset block margins so spacing is only applied when needed */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Set html font size to match browser size
+Prevent adjustments of font size after orientation changes on some mobile devices
+Reset line height
+*/
+html {
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Correct display of main in IE */
+main {
+  display: block;
+}
+
+/* Correct display of details and menu in Edge, IE and Firefox */
+details,
+menu {
+  display: block;
+}
+
+/* Correct display of summary in all browsers */
+summary {
+  display: list-item;
+}
+
+/* Reset font sizes so semantic markup doesn't affect styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Remove gaps in links underline in iOS and Safari */
+a {
+  -webkit-text-decoration-skip: objects;
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  line-height: 0;
+}
+
+/*
+Remove bottom border in abbreviations in Chrome and Firefox
+Add correct text deocration in Chrome, Edge, IE, Opera and Safari
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/* Correct `em` font sizing in all browsers */
+code,
+kbd,
+samp {
+  font-size: 1em;
+}
+
+/* Remove bullets from unordered lists */
+ul {
+  list-style: none;
+}
+
+/* Remove border from iframes */
+iframe {
+  border: 0;
+}
+
+/* Set responsive media elements so images and embeds scale with browser width */
+img,
+embed,
+object,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add correct display for audio controls in iOS 4-7 */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Hide svg overflow in IE */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Reset tables so tabular data only takes the space it needs */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+Correct text wrapping in Edge and IE
+Correct color inheritance from `fieldset` element
+*/
+legend {
+  white-space: normal;
+  color: inherit;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+th {
+  font-weight: normal;
+}
+
+/* Remove default styling of buttons and inputs */
+button,
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  resize: none;
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Remove clear and reveal buttons from inputs in IE */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Remove scrollbars from textarea in IE to match other browsers */
+textarea {
+  overflow: auto;
+}
+
+/* Remove dropdown arrow from selects in IE */
+select::-ms-expand {
+  display: none;
+}
+
+/* Remove default styling for spinners in various inputs */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-clear-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=month]::-webkit-outer-spin-button,
+input[type=month]::-webkit-clear-button,
+input[type=week]::-webkit-inner-spin-button,
+input[type=week]::-webkit-outer-spin-button,
+input[type=week]::-webkit-clear-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button,
+input[type=datetime-local]::-webkit-clear-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=month]::-webkit-calendar-picker-indicator,
+input[type=week]::-webkit-calendar-picker-indicator,
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Remove default styling for meter elements */
+meter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/*
+Remove default styling for progress elements
+Correct vertical alignment in Chrome, Firefox, and Opera
+*/
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  vertical-align: baseline;
+  border: none;
+}
+
+/* Remove default styling for range inputs */
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-ms-track {
+  border-color: transparent;
+  color: transparent;
+  background: transparent;
+}
+
+::-moz-progress-bar {
+  -moz-appearance: none;
+}

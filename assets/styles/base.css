@@ -1,0 +1,27 @@
+
+/*
+ * Base HTML elements
+ */
+
+html,
+body {
+}
+
+html {
+}
+
+body {
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-bottom: 3px solid var(--color-text);
+  margin: 0;
+  margin-bottom: var(--s2);
+  margin-bottom: 5rem;
+}

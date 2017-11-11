@@ -1,0 +1,56 @@
+/*
+ * Markdown scope
+ */
+
+
+.Markdown p a:not(.Button) {
+  background-image: 
+    linear-gradient(#fffff8, #fffff8), 
+    linear-gradient(#fffff8, #fffff8), 
+    linear-gradient(#333, #333);
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-shadow: 
+    0.03em 0 #fffff8, 
+    -0.03em 0 #fffff8, 
+    0 0.03em #fffff8, 
+    0 -0.03em #fffff8, 
+    0.06em 0 #fffff8, 
+    -0.06em 0 #fffff8, 
+    0.09em 0 #fffff8, 
+    -0.09em 0 #fffff8, 
+    0.12em 0 #fffff8, 
+    -0.12em 0 #fffff8, 
+    0.15em 0 #fffff8, 
+    -0.15em 0 #fffff8;
+  background-position: 0% 93%, 100% 93%, 0% 93%;
+  text-decoration: none;
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      background-position-y: 87%, 87%, 87%;
+  }
+}
+
+.Markdown {
+  & blockquote {
+    margin: var(--s4) 0;
+  }
+
+  & blockquote p {
+    border-left: 1px solid var(--color-text-light);
+    color: var(--color-text-light);
+    padding-left: var(--s3);
+  }
+}
+
+.Markdown h2 {
+  margin-top: calc(64 / 740 * 100%);
+  margin-bottom: calc(32 / 740 * 100%);
+}
+
+/* .Markdown {
+  & .FlexEmbed,
+  & img {
+    margin: var(--s2) 0;
+  }
+} */

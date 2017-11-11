@@ -1,0 +1,158 @@
+/*
+ * Using SuitCSS's .Grid component
+ * TODO: build Suit again w/ correct vars.
+ */
+
+.Grid--withGutter {
+  margin: 0 calc(-1 * var(--grid-gutter));
+}
+
+.Grid--withGutter > .Grid-cell {
+  padding: 0 var(--grid-gutter);
+}
+
+.Grid--withSmallGutter {
+  margin: 0 calc(-1 * 12px);
+}
+
+.Grid--withSmallGutter > .Grid-cell {
+  padding: 0 12px;
+}
+
+.Grid--withProjectsGutter {
+  margin: calc(-1 * 2px);
+}
+
+.Grid--withProjectsGutter > .Grid-cell {
+  padding: 2px;
+}
+
+/* 
+ * Container 
+ */
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container-rg);
+  padding-left: var(--grid-gutter);
+  padding-right: var(--grid-gutter);
+  width: 100%;
+}
+
+.Container--medium {
+  max-width: var(--container-md);
+}
+
+.Container--large {
+  max-width: var(--container-lg);
+}
+
+.Container--hero {
+  background-color: white;
+  max-width: var(--container-xl);
+  padding: var(--s4);
+
+  @media (--medium-viewport) {
+    padding: var(--s5);
+  }
+
+  @media (--large-viewport) {
+    padding: var(--s6);
+  }
+}
+
+/* 
+ * Block
+ */
+
+.Block {
+  margin-top: var(--s5);
+  position: relative;
+
+  @media (--medium-viewport) {
+    margin-top: var(--s6);
+  }
+
+  @media (--large-viewport) {
+    margin-top: var(--s7);
+  }
+}
+
+.Block--bottom {
+  margin-bottom: var(--s5);
+  position: relative;
+
+  @media (--medium-viewport) {
+    margin-bottom: var(--s6);
+  }
+
+  @media (--large-viewport) {
+    margin-bottom: var(--s7);
+  }
+}
+
+.Block--half {
+  margin-top: var(--s4);
+
+  @media (--medium-viewport) {
+    margin-top: var(--s5);
+  }
+
+  @media (--large-viewport) {
+    margin-top: var(--s6);
+  }
+}
+
+.Block--halfBottom {
+  margin-bottom: var(--s4);
+
+  @media (--medium-viewport) {
+    margin-bottom: var(--s5);
+  }
+
+  @media (--large-viewport) {
+    margin-bottom: var(--s6);
+  }
+}
+
+.Block--quarter {
+  margin-top: var(--s3);
+
+  @media (--medium-viewport) {
+    margin-top: var(--s4);
+  }
+
+  @media (--large-viewport) {
+    margin-top: var(--s5);
+  }
+}
+
+
+
+
+
+
+
+
+/* 
+ * Box
+ */
+
+.Box {
+  border: 1px solid var(--color-text);
+  padding: 32px 24px;
+  padding: 1.75rem 2rem;
+}
+
+.Box--activeTab {
+  border-top-width: 4px;
+}
+
+/* 
+ * Project cells
+ */
+
+.Project + .Project {
+  margin-top: 8rem;
+}

@@ -1,0 +1,47 @@
+/* 
+ * Sticking images to ratio
+ */
+
+
+
+/* ALT
+
+.Project-image {
+  @apply --stick;
+  background-color: var(--color-hilight);
+  height: 100%;
+  left: 50%;
+  max-width: initial;
+  transform: translateX(-50%);
+} 
+
+*/
+
+.CoverImage {
+  @apply --stick;
+  background-color: var(--color-hilight);
+  max-width: initial;
+}
+
+.CoverImage--byWidth {
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.CoverImage--byHeight {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+/* use in conjunction with var(--sticky) */
+.CoverImage--bg {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}

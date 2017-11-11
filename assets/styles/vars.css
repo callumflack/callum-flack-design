@@ -1,0 +1,114 @@
+/*
+ * Variables
+ * --------------------
+ */
+
+/* eslint-disable */
+/* prettier-ignore */
+:root {
+  @custom-media --small-viewport (min-width: 32em);
+  @custom-media --medium-viewport (min-width: 48em);
+  @custom-media --large-viewport (min-width: 80em);
+
+  --grid-gutter: 24px;
+  --spacer: 24px;
+
+  --container-sm: 400px;
+  --container-rg: 48em;
+  --container-md: 808px;
+  --container-lg: 1120px;
+  --container-xl: 1600px;
+
+  // --s1: 4px;
+  // --s2: 8px;
+  // --s3: 16px;
+  // --s4: 32px;
+  // --s5: 64px;
+  // --s6: 128px;
+  // --s7: 256px;
+
+  // OR?
+  // 6, 12, 24, 48, 96…
+
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 2rem;
+  --s5: 4rem;
+  --s6: 8rem;
+  --s7: 16rem;
+
+  --border-radius: 4px;
+
+  /* 
+   * Colors
+   */
+   
+  --color-brand: #00ffff;
+  --color-highlight: #0070c9;
+  --color-text: #1f1f1f;
+  --color-text-medium: #757575;
+  --color-text-light: #959595;
+  --color-border: #d9d9d9;
+  --color-neutral: #f8f8f8; /*#f2f3f4 */
+  --color-bg: #f7f6f5;
+
+  /* 
+   * Typefaces
+   */
+
+  --font-serif-regular: "PortraitText-Regular";
+  --font-serif-italic: "PortraitText-RegularItalic";
+  --font-serif-heading-medium: "Portrait-Medium";
+  --font-serif-heading-bold: "Portrait-Bold";
+
+  --font-button: var(--font-serif-regular);
+
+  /* 
+   * Sizes
+   */
+
+  /* headings */
+  --s-title-1: 27px;
+  --s-title-2: 34px;
+  --s-title-3: 40px;
+
+  --s-heading-1: 28px;
+  --s-heading-2: 32px;
+  /* --s-heading-3: 36px; */
+  --s-heading-3: 30px;
+
+  --s-heading-sm-1: 12px;
+  --s-heading-sm-2: 14px;
+  --s-heading-sm-3: 16px;
+
+  /* text serif */
+  --s-lede-1: 21px;
+  --s-lede-2: 25px;
+  --s-lede-3: 29px;
+
+  --s-text-1: 18px;
+  --s-text-2: 20px;
+  --s-text-3: 23px;
+
+  --s-text-sm-1: 11px;
+  --s-text-sm-2: 12px;
+  --s-text-sm-3: 14px;
+
+  /* ls & lh */
+  --ls-heading: -0.0225em;
+  --ls-heading-sm: -0.005em;
+  --ls-text: -0.01em;
+
+  --lh-heading: 1.2;
+  --lh-text: 1.304347826;
+  --lh-meta: 1.3;
+
+  /* 
+   * Transitions 
+   */
+
+  --transition-duration: 0.2s;
+  --transition-delayed: 0.4s;
+  --transition-debounce: 2.5s;
+}
