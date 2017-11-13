@@ -2,14 +2,15 @@
   div
     .Container
       .Block--half
-        h1 What’s the point getting up in the morning if you’re not making an impact on our world?
+        h1 How do you build the future? By design.
       .Block--half
         p Do you want more control/fingerspritzenfughl with your digital service and marketing to reach more valuable customer markets without spending enormous amounts on agencies that may or may not deliver anyway? increasing your costs and or outsourcing to cheap? Want to increase conversion rate, AOV, and reorder rate? 
         p Callum Flack is a solo design + development specialist who draws upon 16 years of uses research-driven A/B tests to capture lost revenue for online stores. Unlike other optimization-focused agencies, Draft uses design research to quadruple our clients’ overall success rate over the industry average.
-        blockquote This is a quoted testimonial from someone good.
+        blockquote 
+          p This is a quoted testimonial from someone good.
         p Join thousands of awesome designers &amp; smart business owners in receiving our weekly letter. Every Monday since 2012, we’ve written about research-driven A/B testing, value-based design, the world’s only sandwich, and how to make a significant economic impact in your business:
         .Grid-cell--center.u-size5of6.u-marginT5
-          form-newsletter
+          c-formnewsletter
     
     .Block
       .Container.Container--hero
@@ -30,13 +31,11 @@
 </template>
 
 <script>
-import Banner from "~/components/Banner.vue";
 import FormNewsletter from "~/components/form-newsletter.vue";
 
 export default {
   components: {
-    Banner,
-    FormNewsletter
+    "c-formnewsletter": FormNewsletter
   },
   data() {
     return {
@@ -46,6 +45,7 @@ export default {
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
 
+    // get featured projects
     const featuredProjects = projects.filter(project => project.featured);
     // console.log(featuredProjects);
 

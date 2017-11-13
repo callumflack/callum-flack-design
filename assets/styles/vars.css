@@ -19,16 +19,15 @@
   --container-lg: 1120px;
   --container-xl: 1600px;
 
-  // --s1: 4px;
-  // --s2: 8px;
-  // --s3: 16px;
-  // --s4: 32px;
-  // --s5: 64px;
-  // --s6: 128px;
-  // --s7: 256px;
+  /* --s1: 4px;
+  --s2: 8px;
+  --s3: 16px;
+  --s4: 32px;
+  --s5: 64px;
+  --s6: 128px;
+  --s7: 256px; */
 
-  // OR?
-  // 6, 12, 24, 48, 96…
+  /* or 6, 12, 24, 48, 96… */
 
   --s1: 0.25rem;
   --s2: 0.5rem;
@@ -36,6 +35,7 @@
   --s4: 2rem;
   --s5: 4rem;
   --s6: 8rem;
+  --s6a: 12rem;
   --s7: 16rem;
 
   --border-radius: 4px;
@@ -45,13 +45,15 @@
    */
    
   --color-brand: #00ffff;
-  --color-highlight: #0070c9;
+  /*--color-highlight: #0070c9;*/
+  --color-highlight: #FF6F00;
   --color-text: #1f1f1f;
   --color-text-medium: #757575;
   --color-text-light: #959595;
   --color-border: #d9d9d9;
   --color-neutral: #f8f8f8; /*#f2f3f4 */
-  --color-bg: #f7f6f5;
+  /*--color-bg: #f5f5ef;*/
+  --color-bg: #f2f2f0;
 
   /* 
    * Typefaces
@@ -70,17 +72,17 @@
 
   /* headings */
   --s-title-1: 27px;
-  --s-title-2: 34px;
+  --s-title-2: 33px;
   --s-title-3: 40px;
 
-  --s-heading-1: 28px;
-  --s-heading-2: 32px;
+  --s-heading-1: 24px;
+  --s-heading-2: 30px;
   /* --s-heading-3: 36px; */
-  --s-heading-3: 30px;
+  --s-heading-3: 35px;
 
-  --s-heading-sm-1: 12px;
-  --s-heading-sm-2: 14px;
-  --s-heading-sm-3: 16px;
+  --s-heading-sm-1: 11px;
+  --s-heading-sm-2: 13px;
+  --s-heading-sm-3: 15px;
 
   /* text serif */
   --s-lede-1: 21px;
@@ -89,7 +91,7 @@
 
   --s-text-1: 18px;
   --s-text-2: 20px;
-  --s-text-3: 23px;
+  --s-text-3: 22px;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;

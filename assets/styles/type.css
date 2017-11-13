@@ -18,6 +18,13 @@
 }
 
 @font-face {
+  font-family: Portrait-Regular;
+  src: url("~static/fonts/Portrait-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: var(--font-serif-heading-medium);
   src: url("~static/fonts/Portrait-Medium.woff") format("woff");
   font-weight: 500;
@@ -48,7 +55,7 @@ h3 {
 .Meta {
   font-family: var(--font-serif-heading-bold);
   font-size: var(--s-heading-sm-3);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
   line-height: 1;
   text-transform: uppercase;
 
@@ -62,7 +69,7 @@ h1,
   font-family: var(--font-serif-heading-medium);
   font-size: var(--s-title-1);
   letter-spacing: 0.01em;
-  line-height: var(--lh-heading);
+  line-height: 0.9;
   text-align: center;
   text-transform: uppercase;
 
@@ -72,6 +79,22 @@ h1,
 
   @media (--large-viewport) {
     font-size: var(--s-title-3);
+  }
+}
+
+.Heading {
+  font-family: var(--font-serif-heading-medium);
+  font-size: var(--s-lede-1);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  @media (--medium-viewport) {
+    font-size: var(--s-lede-2);
+  }
+
+  @media (--large-viewport) {
+    font-size: var(--s-lede-3);
   }
 }
 
@@ -118,6 +141,7 @@ body {
 p,
 ol,
 ul,
+blockquote,
 .Text {
   font-family: var(--font-serif-regular);
   font-size: var(--s-text-1);
@@ -125,7 +149,7 @@ ul,
   margin: 0;
   text-transform: initial;
 
-  & .--italic {
+  &.--italic {
     font-family: var(--font-serif-italic);
   }
 
@@ -137,12 +161,23 @@ ul,
   }
 }
 
-blockquote, 
+blockquote p, 
 .Markdown blockquote p {
   border-left: 1px solid var(--color-text-light);
   color: var(--color-text-light);
   font-family: var(--font-serif-italic);
   padding-left: var(--s3);
+}
+
+.Drop p:first-of-type:first-letter {
+  font-size: 5.5em;
+  font-family: Portrait-Regular;
+  font-weight: 700;
+  line-height: 0.82;
+  margin-left: 0;
+  padding-right: 0.333333em;
+  padding-bottom: 1.666667rem;
+  float: left;
 }
 
 /* 

@@ -1,21 +1,16 @@
 <template lang="pug">
   div
     .Container
-      .Block--quarter
-        figure.Figure.Figure--medium
-          img(src="images/callum-flack-02.jpg", alt="")
-        h1.Block--quarter
+      .Block--hero
+        .u-sm-size2of3.Grid-cell--center(v-if="page.heroImageFirst")
+          figure
+            img(:src="page.heroImage", alt="", style="opacity:0.88")
+        .Block--quarter.u-lg-size2of3.Grid-cell--center
+          h1 {{ page.title }}
+          p.Subheading.u-textCenter.u-marginT3 {{ page.headline }}
           //- span {{ page.title }}.&nbsp;
-          | {{ page.headline }}
-    //- .Container.Container--hero(v-if="!page.noHeroImageOnProjectPage")
-      .FlexEmbed
-        .FlexEmbed-ratio.FlexEmbed-ratio--16by9
-        .FlexEmbed-content
-          CoverImage(
-            byHeight, 
-            :src="page.heroImage"
-          )
-    .Container
+      .Figure.Figure--large(v-if="!page.heroImageFirst")
+        img(:src="page.heroImage", alt="")
       .Block--half
         nuxtent-body.Markdown(:body="page.body")
 </template>

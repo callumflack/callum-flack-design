@@ -4,6 +4,7 @@ title: Ward 6
 headline: Building an online reputation for a renowned healthcare branding agency.
 lede: With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. We helped transfer this reputation online with a mobile-first website that was clear, legible and easy to peruse.
 heroImage: /images/hero.jpg
+featured: true
 tags: website, branding
 projectColor: rgb(191, 166, 87)
 ---

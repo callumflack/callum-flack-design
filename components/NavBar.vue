@@ -2,14 +2,18 @@
   .Container
     nav.Nav.Meta.u-flexJustifyBetween
       div
-        nuxt-link(to='/') C.F.
+        nuxt-link(to='/') Page title
       div
-        button.icon-wrap.-btn
+        a(href="#") Menu
+        //- button.icon-wrap.-btn
           span.icon
-            svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="24", height="18", viewbox="0 0 24 18", xml:space="preserve")
-              rect(width="24", height="2")
-              rect(y="8", width="24", height="2")
-              rect(y="16", width="24", height="2")
+            //- svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="16", viewbox="0 0 30 16", xml:space="preserve")
+            //-   rect(width="30", height="1.5")
+            //-   rect(y="7", width="30", height="1.5")
+            //-   rect(y="14", width="30", height="1.5")
+            svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="10", viewbox="0 0 30 10", xml:space="preserve")
+              rect(width="30", height="1.5")
+              rect(y="8", width="30", height="1.5")
 
 </template>
   
@@ -32,9 +36,11 @@ export default {
 
 .Nav {
   background-color: transparent;
+  border-bottom: 1px solid var(--color-text);
   display: flex;
   opacity: 1;
   padding-top: 3rem;
+  padding-bottom: 6px;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
     transform 250ms var(--transition-duration);
@@ -55,6 +61,10 @@ export default {
   -webkit-appearance: none;
   transition: color 400ms ease, background-color 400ms ease,
     border-color 400ms ease;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .icon-wrap {
@@ -67,11 +77,12 @@ export default {
 .icon {
   cursor: pointer;
   display: inline-block;
-  height: 18px;
+  height: 10px;
   line-height: 1;
   position: relative;
   text-align: center;
-  width: 24px;
+  transform: translateY(2px);
+  width: 30px;
 }
 
 .icon svg {

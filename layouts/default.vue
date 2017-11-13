@@ -1,22 +1,22 @@
 <template>
   <div>
-    <NavTop />
-    <!-- <NavTopFixed /> -->
+    <c-navbar />
+    <!-- <c-navbarfixed /> -->
     <nuxt/>
-    <NavBottom />
+    <c-nav />
   </div>
 </template>
 
 <script>
-import NavTop from "~/components/NavTopAlt.vue";
-import NavTopFixed from "~/components/NavTopFixed.vue";
-import NavBottom from "~/components/NavBottom.vue";
+import NavBar from "~/components/NavBar.vue";
+import NavBarFixed from "~/components/NavBarFixed.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
-    NavTop,
-    NavTopFixed,
-    NavBottom
+    "c-navbar": NavBar,
+    "c-navbarfixed": NavBarFixed,
+    "c-nav": Nav
   }
 };
 </script>

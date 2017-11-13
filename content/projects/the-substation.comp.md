@@ -3,8 +3,9 @@ section: Projects
 title: The Substation
 headline: Regained branding and website control for a large-scale arts venue in Melbourne, Australia.
 lede: With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. We helped transfer this reputation online with a mobile-first website that was clear, legible and easy to peruse.
-heroImage: /images/thesubstation-hero.jpg
-tags: example 2
+heroImage: /images/thesubstation-hero-2.png
+featured: true
+tags: website
 projectColor: rgb(191, 166, 87)
 ---
 
@@ -13,7 +14,7 @@ We began working with The Substation by rebuilding their website platform for ef
 As we progressed, were able to understand their vision and evolve their digital branding to match, so that their current audience and new audiences can engage intimately with new Australian art.
 
 <figure class="Figure Figure--large">
-  <img src="/images/thesubstation-artists.jpg" alt="">
+  <img src="/images/thesubstation-artists.png" alt="">
 </figure>
 
 We targeted mobile performance in the upgrade because we wanted to fulfil the needs of real customers. For example, a person travelling home from work by tram should, upon receiving a friend's show invite, be able to buy a ticket right away, on 2 bars of 3G in the suburbs. To do this, the website performance was audited and a checklist of improvements made.
@@ -37,7 +38,7 @@ Our visual design rework focussed on giving The Substation's brilliant, eclectic
 
 Our initial remit was bug fixes yet after understanding their issues, we proposed a change of website platform to stem the constant maintenance costs draining their digital marketing effectiveness. In the process, it became easy to improve the site's content structure, usability and performance without a big time spend. With a performant codebase, we were also able to polish their visual brand.
 
-<figure class="Figure Figure--large">
+<figure class="Figure Figure--large Block--hero">
   <img src="/images/thesubstation-event.jpg" alt="">
 </figure>
 

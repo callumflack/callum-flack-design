@@ -1,20 +1,22 @@
 <template lang="pug">
   footer.Block.Block--bottom
     .Container
-      h1 Where next?
+      .Title * * *
       .Block--half
         ul.Nav-menu
+          li
+            a(href="/") #[span.Title Index] #[span.Text.--italic Start again from Home]
           li
             a(href="/work") #[span.Title Work] #[span.Text.--italic VJ Ray Website]
           //- li
             a(href="") #[span.Title Method] #[span.Text.--italic How to create value]
           li
-            a(href="") #[span.Title Journal] #[span.Text.--italic On completing Tiago Forte’s BASB]
+            a(href="") #[span.Title Journal] #[span.Text.--italic Should designers code?]
           li
             a(href="/about") #[span.Title About] #[span.Text.--italic Since 1998 and counting]
           li
             a(href="") #[span.Title Contact] #[span.Text.--italic Working from Cairns, Australia]
-        .Nav-buttons.Text.--italic.u-textCenter.u-marginT6
+        .Block--half.Nav-buttons.Text.--italic.u-textCenter
           a.Button.Button--transparent(href="#") Email
           a.Button.Button--transparent(href="#") Twitter
           a.Button.Button--transparent(href="#") Github

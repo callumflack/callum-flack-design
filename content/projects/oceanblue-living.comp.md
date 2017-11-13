@@ -7,7 +7,7 @@ projectColor: rgb(17, 89, 192)
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
 coverImageByHeight: true
 featured: true
-tags: example, example 2
+tags: website, branding
 ---
 
 OceanBlue Living were stuck with a website they couldn't update themselves, and they badly needed to talk to their audience. After workshopping their needs and their audience requirements, we repositioned their branding and redesigned the site to build / better inform users.

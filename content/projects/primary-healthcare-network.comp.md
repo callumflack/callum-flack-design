@@ -1,12 +1,12 @@
 ---
 section: Projects
-title: NQ Primary Healthcare Network
+title: Primary Healthcare Network
 headline: Collected data to understand patient well-being in North Queensland.
 lede: With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. We helped transfer this reputation online with a mobile-first website that was clear, legible and easy to peruse.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
 projectColor: rgb(110, 190, 68)
 noHeroImageOnProjectPage: true
-featured: true
+tags: web app
 ---
 
 Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a cut-through responsive web app that worked on any device.

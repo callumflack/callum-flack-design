@@ -2,8 +2,9 @@
 section: About
 title: About Callum
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/portrait-wide.jpg
+heroImage: images/callum-flack.jpg
 coverImageByHeight: true
+heroImageFirst: true
 ---
 
 I make seamless, actionable interfaces that help people increase productivity, make better choices and build communities. I do this via systems thinking, interaction design, graphic design, copywriting, coding and grit. Everything I do revolves around listening and understanding people—clients, collaborators and the audiences I'm building for.

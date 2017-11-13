@@ -1,95 +1,107 @@
 <template lang="pug">
   div
-    .Block.Block--tags
+    .Block.Block--bottom
       .Container.u-textCenter
-        a(
-          v-for="tag in tags"
-          @click.prevent="filterProjectsByTag(tag)"
-          href="#"
-        ) #[span.Button.Button--transparent.Button--small {{tag}}]     
+        .Meta
+          | Filter by:&nbsp;
+          a(
+            v-for="tag in tags"
+            @click.prevent="filterProjectsByTag(tag)"
+            href="#"
+          ) #[span.Button.Button--transparent.Button--small {{tag}}]     
 
-    Cell(
-      v-for="project in visibleProjects"
-      :key="project.title"
-      feature,
-      :link="project.permalink",
-      :tags="project.tags",
-      :title="project.title",
-      :headline="project.headline",
-      :lede="project.lede",
-      :image="project.heroImage",
-    )
+    .GridWrapper
+      .Grid.Grid--withProjectsGutter.Grid--alignCenter
+        Cell(
+          v-if="project.featured"
+          v-for="project in visibleProjects"
+          :key="project.title"
+          feature,
+          :link="project.permalink",
+          :tags="project.tags",
+          :title="project.title",
+          :headline="project.headline",
+          :lede="project.lede",
+          :image="project.heroImage",
+        )
 
-    .Block
-      .Container.Container--large
-        .Grid.Grid--withGutter
-          Cell(
-            v-for="project in visibleProjects"
-            :key="project.title"
-            :link="project.permalink",
-            :tags="project.tags",
-            :title="project.title",
-            :headline="project.headline",
-            :lede="project.lede",
-            :image="project.heroImage",
-          )
+        Cell(
+          v-for="project in visibleProjects"
+          :key="project.title"
+          :link="project.permalink",
+          :tags="project.tags",
+          :title="project.title",
+          :headline="project.headline",
+          :lede="project.lede",
+          :image="project.heroImage",
+        )
 </template>
 
 <script>
-import Cell from '~/components/Cell.vue'
+import Cell from "~/components/Cell.vue";
 
 export default {
-  name: 'projects',
+  name: "projects",
   components: {
     Cell
   },
-  data () {
+  data() {
     return {
       projects: [],
       visibleProjects: [],
       tags: []
-    }
+    };
   },
   methods: {
-    filterProjectsByTag (tag) {
+    filterProjectsByTag(tag) {
       this.visibleProjects = this.projects
         .filter(project => project.tags)
         .filter(project => {
-          const projectTags = project.tags.split(',')
+          const projectTags = project.tags.split(",");
 
-          return projectTags.includes(tag)
-        })
+          return projectTags.includes(tag);
+        });
     }
   },
-  async asyncData ({ app, route, payload }) {
-    const projects = await app.$content('/projects').getAll()
-    const tags = []
+  async asyncData({ app, route, payload }) {
+    const projects = await app.$content("/projects").getAll();
+    const tags = [];
 
-    projects
-      .filter(project => project.tags)
-      .map(project => {
-        const projectTags = project.tags.split(',')
+    projects.filter(project => project.tags).map(project => {
+      const projectTags = project.tags.split(",");
 
-        projectTags.map(tag => {
-          tag = tag.trim()
+      projectTags.map(tag => {
+        tag = tag.trim();
 
-          if (!tags.includes(tag)) {
-            tags.push(tag)
-          }
-        })
-      })
+        if (!tags.includes(tag)) {
+          tags.push(tag);
+        }
+      });
+    });
 
-    tags.sort()
+    tags.sort();
 
     return {
       projects,
       visibleProjects: projects,
       tags
-    }
+    };
   }
-}
+};
 </script>
 
-<style>
+<style scopde lang="css">
+@import "../assets/styles/vars.css";
 
+.GridWrapper {
+  margin: var(--s4);
+
+  @media (--medium-viewport) {
+    margin: var(--s5);
+  }
+
+  @media (--large-viewport) {
+    margin: var(--s6);
+  }
+}
 </style>
