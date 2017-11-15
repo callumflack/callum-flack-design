@@ -5,6 +5,7 @@ headline: Created a digital community of fans for an architectural metalworks.
 lede: With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. We helped transfer this reputation online with a mobile-first website that was clear, legible and easy to peruse.
 projectColor: rgb(17, 89, 192)
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-long-204281_nbrsdv.jpg
+thumbImage: /images/thumb-oceanblueliving.jpg
 coverImageByHeight: true
 featured: true
 tags: website, branding

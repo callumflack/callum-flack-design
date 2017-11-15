@@ -1,7 +1,7 @@
 <template>
   <div>
     <c-navbar />
-    <!-- <c-navbarfixed /> -->
+    <c-navbarfixed />
     <nuxt/>
     <c-nav />
   </div>

@@ -20,8 +20,6 @@ img {
 
 hr {
   border: 0;
-  border-bottom: 3px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
   margin: 0;
-  margin-bottom: var(--s2);
-  margin-bottom: 5rem;
 }

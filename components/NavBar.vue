@@ -1,32 +1,41 @@
 <template lang="pug">
-  .Container
-    nav.Nav.Meta.u-flexJustifyBetween
-      div
-        nuxt-link(to='/') Page title
-      div
-        a(href="#") Menu
-        //- button.icon-wrap.-btn
-          span.icon
-            //- svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="16", viewbox="0 0 30 16", xml:space="preserve")
-            //-   rect(width="30", height="1.5")
-            //-   rect(y="7", width="30", height="1.5")
-            //-   rect(y="14", width="30", height="1.5")
-            svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="10", viewbox="0 0 30 10", xml:space="preserve")
-              rect(width="30", height="1.5")
-              rect(y="8", width="30", height="1.5")
+  
+  nav.Nav
+    .Container
+      .Nav-inner.Meta.u-flexJustifyBetween
+        div
+          nuxt-link(to='/') Page title
+        div
+          a(href="#", @click.prevent="handleNavToggle") Menu
+          //- button.icon-wrap.-btn
+            span.icon
+              //- svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="16", viewbox="0 0 30 16", xml:space="preserve")
+              //-   rect(width="30", height="1.5")
+              //-   rect(y="7", width="30", height="1.5")
+              //-   rect(y="14", width="30", height="1.5")
+              svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="10", viewbox="0 0 30 10", xml:space="preserve")
+                rect(width="30", height="1.5")
+                rect(y="8", width="30", height="1.5")
 
 </template>
   
 
 <script scoped>
-import Container from "~/components/Container.vue";
-import NavLink from "~/components/NavLink.vue";
-
 export default {
   name: "nav-top-alt",
-  components: {
-    Container,
-    NavLink
+  computed: {
+    isVisible: function() {
+      return this.$store.state.isMobileNavVisible;
+    }
+  },
+
+  methods: {
+    handleNavToggle() {
+      this.$store.commit(
+        "SET_MODAL_VISIBILITY",
+        !this.$store.state.isMobileNavVisible
+      );
+    }
   }
 };
 </script>
@@ -35,12 +44,9 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Nav {
-  background-color: transparent;
-  border-bottom: 1px solid var(--color-text);
-  display: flex;
+  background-color: rgba(253, 253, 253, 0.96);
   opacity: 1;
   padding-top: 3rem;
-  padding-bottom: 6px;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
     transform 250ms var(--transition-duration);
@@ -52,6 +58,12 @@ export default {
     transition: opacity var(--transition-duration),
       transform 250ms var(--transition-duration);
   }
+}
+
+.Nav-inner {
+  border-bottom: 1px solid var(--color-text);
+  display: flex;
+  padding-bottom: var(--s3);
 }
 
 .-btn {

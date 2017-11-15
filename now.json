@@ -1,8 +1,6 @@
 {
-  "name": "patternworks2017",
-  "alias": [
-    "patternworks2017.now.sh"
-  ],
+  "name": "patternworks-2018",
+  "alias": ["patternworks-2018.now.sh"],
   "env": {
     "NODE_ENV": "production"
   }

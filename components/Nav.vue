@@ -1,10 +1,10 @@
 <template lang="pug">
-  footer.Block.Block--bottom
+  footer.Block--hero
     .Container
-      .Title * * *
-      .Block--half
+      hr.Block--quarter
+      .Block--quarter
         ul.Nav-menu
-          li
+          //- li
             a(href="/") #[span.Title Index] #[span.Text.--italic Start again from Home]
           li
             a(href="/work") #[span.Title Work] #[span.Text.--italic VJ Ray Website]
@@ -16,15 +16,15 @@
             a(href="/about") #[span.Title About] #[span.Text.--italic Since 1998 and counting]
           li
             a(href="") #[span.Title Contact] #[span.Text.--italic Working from Cairns, Australia]
-        .Block--half.Nav-buttons.Text.--italic.u-textCenter
-          a.Button.Button--transparent(href="#") Email
-          a.Button.Button--transparent(href="#") Twitter
-          a.Button.Button--transparent(href="#") Github
-          a.Button.Button--transparent(href="#") Instagram
-          a.Button.Button--transparent(href="#") AngelList
-          a.Button.Button--transparent(href="#") LinkedIn
-        .Meta.--medium.u-textCenter.u-marginT4
-          | © MMXVIII Callum Flack
+      .u-marginB4.Nav-buttons.Text.--italic.u-textCenter
+        a.Button.Button--transparent(href="#") Email
+        a.Button.Button--transparent(href="#") Twitter
+        a.Button.Button--transparent(href="#") Github
+        a.Button.Button--transparent(href="#") Instagram
+        a.Button.Button--transparent(href="#") AngelList
+        a.Button.Button--transparent(href="#") LinkedIn
+      .Meta.--medium.u-textCenter.u-marginT3
+        | © MMXVIII Callum Flack
 
           
 </template>

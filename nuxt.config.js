@@ -49,6 +49,7 @@ module.exports = {
     routes: [
       "/",
       "/about",
+      "/work",
       "/oceanblue-living",
       "/primary-healthcare-network",
       "/the-substation",

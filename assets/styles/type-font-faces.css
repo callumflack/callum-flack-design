@@ -1,0 +1,67 @@
+/*
+ * Font-faces
+ * ----------
+ */
+
+@font-face {
+  font-family: var(--font-serif-regular);
+  src: url("~static/fonts/PortraitText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-italic);
+  src: url("~static/fonts/PortraitText-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-light);
+  src: url("~static/fonts/Portrait-Light.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-regular);
+  src: url("~static/fonts/Portrait-Regular2.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-regular-italic);
+  src: url("~static/fonts/Portrait-Regular2Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-medium);
+  src: url("~static/fonts/Portrait-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-medium-italic);
+  src: url("~static/fonts/Portrait-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-bold);
+  src: url("~static/fonts/Portrait-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-serif-heading-bold-italic);
+  src: url("~static/fonts/Portrait-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

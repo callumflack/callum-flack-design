@@ -14,17 +14,7 @@
 
   /* theme */
   box-shadow: inset 0 0 0 1px var(--color-text);
-  /*font-family: var(--font-button);
-  font-size: var(--s-text-3);
-  letter-spacing: var(--ls-text);*/
-  padding: 1rem 2rem;
-
-  /*@media (--medium-viewport) {
-    font-size: var(--s-text-2);
-  }
-  @media (--large-viewport) {
-    font-size: var(--s-text-3);
-  }*/
+  padding: 1rem 2rem 0.9rem;
 
   /* pseudos */
   &:hover {

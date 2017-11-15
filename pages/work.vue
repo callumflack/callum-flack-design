@@ -1,9 +1,9 @@
 <template lang="pug">
   div
-    .Block.Block--bottom
+    .Block--hero
       .Container.u-textCenter
         .Meta
-          | Filter by:&nbsp;
+          //- | Filter by:&nbsp;
           a(
             v-for="tag in tags"
             @click.prevent="filterProjectsByTag(tag)"
@@ -11,7 +11,7 @@
           ) #[span.Button.Button--transparent.Button--small {{tag}}]     
 
     .GridWrapper
-      .Grid.Grid--withProjectsGutter.Grid--alignCenter
+      .Grid.Grid--alignCenter.Grid--withProjects
         Cell(
           v-if="project.featured"
           v-for="project in visibleProjects"
@@ -19,10 +19,11 @@
           feature,
           :link="project.permalink",
           :tags="project.tags",
+          :year="project.year",
           :title="project.title",
           :headline="project.headline",
           :lede="project.lede",
-          :image="project.heroImage",
+          :image="project.thumbImage",
         )
 
         Cell(
@@ -30,10 +31,11 @@
           :key="project.title"
           :link="project.permalink",
           :tags="project.tags",
+          :year="project.year",
           :title="project.title",
           :headline="project.headline",
           :lede="project.lede",
-          :image="project.heroImage",
+          :image="project.thumbImage",
         )
 </template>
 
@@ -94,14 +96,13 @@ export default {
 @import "../assets/styles/vars.css";
 
 .GridWrapper {
-  margin: var(--s4);
+  margin: 0 var(--tuck);
 
   @media (--medium-viewport) {
-    margin: var(--s5);
   }
 
   @media (--large-viewport) {
-    margin: var(--s6);
+    margin: 0 var(--tuck-lg);
   }
 }
 </style>

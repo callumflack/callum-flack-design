@@ -3,34 +3,39 @@
     .Container
       .Block--hero
         .u-sm-size2of3.Grid-cell--center(v-if="page.heroImageFirst")
-          figure
-            img(:src="page.heroImage", alt="", style="opacity:0.88")
-        .Block--quarter.u-lg-size2of3.Grid-cell--center
-          h1 {{ page.title }}
-          p.Subheading.u-textCenter.u-marginT3 {{ page.headline }}
-          //- span {{ page.title }}.&nbsp;
-      .Figure.Figure--large(v-if="!page.heroImageFirst")
-        img(:src="page.heroImage", alt="")
-      .Block--half
-        nuxtent-body.Markdown(:body="page.body")
+          figure.Figure
+            img(:src="page.heroImage", alt="", style="opacity:0.9")
+        .u-sm-size(v-if="!page.heroImageFirst")
+          h1.Title
+            span.Title.--italic(style="color:rgba(171,140,64,0.7)") {{ page.title }}.&nbsp;
+            | {{ page.headline }}
+      
+      nuxtent-body(:class="markdownClass", :body="page.body")
+
 </template>
 
 <script>
-import CoverImage from "~/components/CoverImage.vue";
-// import Hero from '~/components/hero.vue'
-
 export default {
-  components: {
-    CoverImage
-  },
+  components: {},
   computed: {
     titleColor() {
       // (v-if="page.projectColor", :style = 'titleColor')
       return this.page.projectColor ? `color: ${this.page.projectColor}` : "";
+    },
+    markdownClass() {
+      return [
+        "Markdown",
+        {
+          Drop: this.page.dropCap
+        }
+      ];
     }
   },
   props: {
-    projectColor: String
+    projectColor: String,
+    dropCap: Boolean,
+    title: String,
+    headline: String
   },
   async asyncData({ app, route, payload }) {
     // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.

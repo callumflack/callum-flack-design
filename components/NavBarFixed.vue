@@ -1,5 +1,5 @@
 <template lang="pug">
-  c-navbar(:class="{hidden: isNavHidden}")
+  c-navbar(:class="navbarClass")
 </template>
 
 <script>
@@ -12,6 +12,16 @@ export default {
 
   components: {
     "c-navbar": NavBar
+  },
+
+  computed: {
+    navbarClass() {
+      return [
+        {
+          hidden: this.isNavHidden
+        }
+      ];
+    }
   },
 
   data() {
@@ -40,6 +50,13 @@ export default {
       this.isNavHidden = scrolledDown || scrollPos < 200;
 
       this.windowIsScrolled = scrollPos > transitionScrollPos;
+    },
+
+    handleNavToggle() {
+      this.$store.commit(
+        "SET_MODAL_VISIBILITY",
+        !this.$store.state.isMobileNavVisible
+      );
     }
   }
 };
@@ -49,5 +66,6 @@ export default {
 .Nav {
   position: fixed;
   top: 0;
+  width: 100%;
 }
 </style>

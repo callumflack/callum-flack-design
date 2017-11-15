@@ -10,11 +10,15 @@
   @custom-media --medium-viewport (min-width: 48em);
   @custom-media --large-viewport (min-width: 80em);
 
+  /*
+   * sizes
+   */ 
+
   --grid-gutter: 24px;
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: 48em;
+  --container-rg: 45em;
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
@@ -35,8 +39,11 @@
   --s4: 2rem;
   --s5: 4rem;
   --s6: 8rem;
-  --s6a: 12rem;
-  --s7: 16rem;
+  --s7: 12rem;
+  
+  /* instrument's tuck inset */
+  --tuck: 6vw;
+  --tuck-lg: 11vw;
 
   --border-radius: 4px;
 
@@ -52,8 +59,9 @@
   --color-text-light: #959595;
   --color-border: #d9d9d9;
   --color-neutral: #f8f8f8; /*#f2f3f4 */
-  /*--color-bg: #f5f5ef;*/
-  --color-bg: #f2f2f0;
+  /*--color-bg: #f5f5ef;
+  --color-bg: #f2f2f0;*/
+  --color-bg: #fdfdfd;
 
   /* 
    * Typefaces
@@ -61,19 +69,28 @@
 
   --font-serif-regular: "PortraitText-Regular";
   --font-serif-italic: "PortraitText-RegularItalic";
+  --font-serif-heading-light: "Portrait-Light";
+  --font-serif-heading-regular: "Portrait-Regular";
+  --font-serif-heading-regular: "Portrait-Regular";
+  --font-serif-heading-regular-italic: "Portrait-RegularItalic";
   --font-serif-heading-medium: "Portrait-Medium";
+  --font-serif-heading-medium-italic: "Portrait-MediumItalic";
   --font-serif-heading-bold: "Portrait-Bold";
+  --font-serif-heading-bold-italic: "Portrait-BoldItalic";
 
   --font-button: var(--font-serif-regular);
 
   /* 
-   * Sizes
+   * Font sizes
+   * Using the augmented fourth: http://type-scale.com/
    */
 
   /* headings */
-  --s-title-1: 27px;
-  --s-title-2: 33px;
+  --s-title-1: 32px;
+  --s-title-2: 38px;
   --s-title-3: 40px;
+  --s-title-3: 45px;
+  --s-title-3: 2.827rem;
 
   --s-heading-1: 24px;
   --s-heading-2: 30px;
@@ -87,11 +104,13 @@
   /* text serif */
   --s-lede-1: 21px;
   --s-lede-2: 25px;
-  --s-lede-3: 29px;
+  --s-lede-3: 32px;
+  --s-lede-3: 1.999rem;
 
   --s-text-1: 18px;
   --s-text-2: 20px;
-  --s-text-3: 22px;
+  --s-text-3: 23px;
+  --s-text-3: 1.414rem;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;
@@ -102,8 +121,9 @@
   --ls-heading-sm: -0.005em;
   --ls-text: -0.01em;
 
-  --lh-heading: 1.2;
-  --lh-text: 1.304347826;
+  --lh-heading: 1.125;
+  --lh-subheading: 1.21875;
+  --lh-text: 1.347826087;
   --lh-meta: 1.3;
 
   /* 
