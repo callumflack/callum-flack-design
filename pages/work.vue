@@ -8,7 +8,7 @@
             v-for="tag in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
-          ) #[span.Button.Button--transparent.Button--small {{tag}}]     
+          ) #[span.Button.Button--transparent.Button--small {{tag}}]
 
     .GridWrapper
       .Grid.Grid--alignCenter.Grid--withProjects
@@ -63,30 +63,33 @@ export default {
 
           return projectTags.includes(tag);
         });
-    }
+    },
   },
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
-    const tags = [];
 
-    projects.filter(project => project.tags).map(project => {
-      const projectTags = project.tags.split(",");
+    const uniqueTags = projects
+      .filter(project => project.tags)
+      .reduce((tags, project) => {
+        const projectTags = project.tags.split(",");
 
-      projectTags.map(tag => {
-        tag = tag.trim();
+        projectTags.map(tag => {
+          const trimmedTag = tag.trim();
 
-        if (!tags.includes(tag)) {
-          tags.push(tag);
-        }
-      });
-    });
+          if (!tags.includes(trimmedTag)) {
+            tags.push(trimmedTag);
+          }
+        });
 
-    tags.sort();
+        return tags;
+      }, []);
+
+    uniqueTags.sort();
 
     return {
       projects,
       visibleProjects: projects,
-      tags
+      tags: uniqueTags,
     };
   }
 };
