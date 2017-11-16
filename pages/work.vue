@@ -8,7 +8,7 @@
             v-for="tag in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
-          ) #[span.Button.Button--transparent.Button--small {{tag}}]
+          ) #[span(:class="['Button Button--transparent Button--small', { active: tag === activeTag }]") {{tag}}]
 
     .GridWrapper
       .Grid.Grid--alignCenter.Grid--withProjects
@@ -42,6 +42,9 @@
 <script>
 import Cell from "~/components/Cell.vue";
 
+const allTagName = 'all';
+const trimTags = tags => tags.map(tag => tag.trim());
+
 export default {
   name: "projects",
   components: {
@@ -51,16 +54,23 @@ export default {
     return {
       projects: [],
       visibleProjects: [],
-      tags: []
+      tags: [],
+      activeTag: allTagName,
     };
   },
   methods: {
     filterProjectsByTag(tag) {
-      this.visibleProjects = this.projects
-        .filter(project => project.tags)
-        .filter(project => {
-          const projectTags = project.tags.split(",");
+      this.activeTag = tag;
 
+      if (tag === allTagName) {
+        this.visibleProjects = this.projects;
+        return;
+      }
+
+      this.visibleProjects = this.projects
+        .filter(project => {
+          if (!project.tags) return false;
+          const projectTags = trimTags(project.tags.split(","));
           return projectTags.includes(tag);
         });
     },
@@ -71,18 +81,12 @@ export default {
     const uniqueTags = projects
       .filter(project => project.tags)
       .reduce((tags, project) => {
-        const projectTags = project.tags.split(",");
+        const projectTags = trimTags(project.tags.split(","));
+        const uniqueProjectTags = projectTags
+          .filter(tag => !tags.includes(tag));
 
-        projectTags.map(tag => {
-          const trimmedTag = tag.trim();
-
-          if (!tags.includes(trimmedTag)) {
-            tags.push(trimmedTag);
-          }
-        });
-
-        return tags;
-      }, []);
+        return [...tags, ...uniqueProjectTags];
+      }, [allTagName]);
 
     uniqueTags.sort();
 
