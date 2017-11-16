@@ -54,7 +54,7 @@ export default {
           alignRight: true
         },
         {
-          text: "I also write about what I learn in the process.",
+          text: "And I write about what I learn in the process.",
           imageUrl: "home-story-1.jpg"
         },
         {
