@@ -1,14 +1,13 @@
 <template lang="pug">
   div
     .Container
-      .Block--hero
+      .Block--sandwich
         .u-sm-size2of3.Grid-cell--center(v-if="page.heroImageFirst")
           figure.Figure
             img(:src="page.heroImage", alt="", style="opacity:0.9")
-        .u-sm-size(v-if="!page.heroImageFirst")
-          h1.Title
-            span.Title.--italic(style="color:rgba(171,140,64,0.7)") {{ page.title }}.&nbsp;
-            | {{ page.headline }}
+        h1.Title(v-if="!page.heroImageFirst")
+          span(:style="titleColor") {{ page.title }}.&nbsp;
+          span.Title--sub {{ page.headline }}
       
       nuxtent-body(:class="markdownClass", :body="page.body")
 

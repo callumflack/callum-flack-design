@@ -50,67 +50,9 @@
 
 
 
-/* 
- * videos 
- */
-
-.Frame {
-    border: 1px solid #d5d5d5;
-}
-
-.FlexEmbed-ratio {
-  /*&.iphone6 { padding-bottom: 205.81395%; }*/
-  &.ipad    { padding-bottom: 126.953125%; }
-  &.ipadL   { padding-bottom: 74.75%; }
-  &.laptop  { padding-bottom: 69.25%; }
-}
 
 
 
-.Screen {
-  width: 100%;
-}
-
-/*
- * Devices
- */ 
-
-.Device {}
-
-.Device-style {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.Device--iphone6 {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 358px;
-  text-align: center;
-
-  & .Device-ratio {
-    padding-bottom: 205.81395%;
-  }
-
-  & .Device-position {
-    margin-top: 25.25%;
-    width: 87.2093%;
-  }
-
-  & .Device-style {
-    background-image: url('/images/device-iphone6-outline.svg');
-    // fill: none;
-    // stroke: var(--color-text);
-    // stroke-width: 1;
-  }
-}
 
 
 

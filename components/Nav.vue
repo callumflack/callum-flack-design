@@ -1,8 +1,8 @@
 <template lang="pug">
-  footer.Block--hero
+  .Block--sandwich
     .Container
-      hr.Block--quarter
-      .Block--quarter
+      //- hr.Block--quarter
+      .Block--half
         ul.Nav-menu
           //- li
             a(href="/") #[span.Title Index] #[span.Text.--italic Start again from Home]
@@ -16,15 +16,16 @@
             a(href="/about") #[span.Title About] #[span.Text.--italic Since 1998 and counting]
           li
             a(href="") #[span.Title Contact] #[span.Text.--italic Working from Cairns, Australia]
-      .u-marginB4.Nav-buttons.Text.--italic.u-textCenter
-        a.Button.Button--transparent(href="#") Email
-        a.Button.Button--transparent(href="#") Twitter
-        a.Button.Button--transparent(href="#") Github
-        a.Button.Button--transparent(href="#") Instagram
-        a.Button.Button--transparent(href="#") AngelList
-        a.Button.Button--transparent(href="#") LinkedIn
-      .Meta.--medium.u-textCenter.u-marginT3
-        | © MMXVIII Callum Flack
+      .Block--quarter
+        .Nav-buttons.Meta.--medium.u-textCenter
+          a.Button.Button--transparent(href="#") Email
+          a.Button.Button--transparent(href="#") Twitter
+          a.Button.Button--transparent(href="#") Github
+          a.Button.Button--transparent(href="#") Instagram
+          a.Button.Button--transparent(href="#") AngelList
+          a.Button.Button--transparent(href="#") LinkedIn
+      .Meta.--medium.u-textCenter
+        | © 2018 Callum Flack
 
           
 </template>
@@ -113,40 +114,8 @@ export default {
   }
 }
 
-/* https://codepen.io/caseymhunt/pen/xEhcp */
-.Nav-menu-alt {
-  list-style: none;
-  overflow: hidden;
-
-  & a:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    color: $dark;
-    content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
-  }
-
-  & span {
-    background-color: var(--color-bg);
-  }
-
-  & span:first-child {
-    padding-right: 0.33em;
-  }
-
-  & span + span {
-    float: right;
-    padding-left: 0.33em;
-  }
-
-  & span + span:before {
-    padding-right: 0.15em;
-  }
-}
-
 .Nav-buttons {
   & a {
-    font-family: var(--font-serif-italic);
     margin-left: 0;
   }
 }

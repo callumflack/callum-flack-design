@@ -16,7 +16,7 @@ With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's lead
 
 We moved the website from Wordpress to a static site environment to increase security and performance, and enhance developer productivity. We chose Siteleaf as a CMS to sync with. This workflow greatly improves iteration and deployment speed.
 
-<figure class="Figure Figure--large Block--figure">
+<figure class="Figure Figure--large Block--halfSandwich">
   <img src="/images/ward6-mobile.jpg" alt="">
 </figure>
 

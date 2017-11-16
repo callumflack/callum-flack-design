@@ -39,10 +39,18 @@
 .u-colorNeutral {
   color: var(--color-neutral) !important;
 }
+.u-colorWhite {
+  color: white !important;
+}
 
 .u-colorTextLightBlock * {
   color: var(--color-text-light) !important;
 }
+
+
+/*
+ * bg colors
+ */ 
 
 .u-bgColorBrand {
   background-color: var(--color-brand) !important;
@@ -119,6 +127,14 @@
 
 .u-height100 {
   height: 100%;
+}
+
+.u-width100 {
+  width: 100%;
+}
+
+.u-width50 {
+  width: 50%;
 }
 
 /*

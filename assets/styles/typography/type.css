@@ -13,7 +13,7 @@ h3 {
 }
 
 .Meta {
-  font-family: var(--font-serif-heading-bold);
+  font-family: var(--font-serif-heading-medium);
   font-size: var(--s-heading-sm-1);
   letter-spacing: 0.075em;
   line-height: 1;
@@ -37,10 +37,12 @@ h1,
   font-family: var(--font-serif-heading-regular);
   font-size: var(--s-title-1);
   letter-spacing: 0.01em;
-  line-height: 1.125;
+  line-height: var(--lh-heading);
+  text-transform: uppercase;
 
-  &.--italic {
-    font-family: var(--font-serif-heading-regular-italic);
+  & .Title--sub {
+    font-family: var(--font-serif-heading-regular);
+    text-transform: initial;
   }
 
   @media (--medium-viewport) {
@@ -71,7 +73,7 @@ h1,
 .Subheading,
 .Markdown h2, 
 .Markdown blockquote p {
-  font-family: var(--font-serif-heading-medium-italic);
+  font-family: var(--font-serif-heading-regular-italic);
   font-size: var(--s-lede-1);
   letter-spacing: 0.01em;
   line-height: var(--lh-subheading);
@@ -180,11 +182,12 @@ blockquote p {
 }
 
 .Newthought {
+  font-family: var(--font-serif-heading-medium);
   font-variant: small-caps;
   font-size: 1.2em;
-  font-size: 0.9em;
+  // font-size: 0.9em;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 /* 

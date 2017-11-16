@@ -1,16 +1,17 @@
 <template lang="pug">
   div
-    .Block--hero
-      .Container.u-textCenter
-        .Meta
-          //- | Filter by:&nbsp;
-          a(
+    .Block--sandwich
+      .Container
+        .Title
+          | Filter by:&nbsp;
+          br
+          a.Title--sub(
             v-for="tag in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
-          ) #[span.Button.Button--transparent.Button--small {{tag}}]     
+          ) {{tag}},&nbsp;
 
-    .GridWrapper
+    .Container--tuck
       .Grid.Grid--alignCenter.Grid--withProjects
         Cell(
           v-if="project.featured"

@@ -1,22 +1,20 @@
 <template lang="pug">
-  
-  nav.Nav
+  .Navbar
     .Container
-      .Nav-inner.Meta.u-flexJustifyBetween
+      .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
         div
           nuxt-link(to='/') Page title
         div
-          a(href="#", @click.prevent="handleNavToggle") Menu
-          //- button.icon-wrap.-btn
-            span.icon
-              //- svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="16", viewbox="0 0 30 16", xml:space="preserve")
-              //-   rect(width="30", height="1.5")
-              //-   rect(y="7", width="30", height="1.5")
-              //-   rect(y="14", width="30", height="1.5")
-              svg(xmlns="http://www.w3.org/2000/svg", version="1.1", x="0", y="0", width="30", height="10", viewbox="0 0 30 10", xml:space="preserve")
-                rect(width="30", height="1.5")
-                rect(y="8", width="30", height="1.5")
-
+          a(href="#", @click.prevent="handleNavToggle") 
+            span.icon.u-marginR2
+              svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-if="isVisible")
+                rect(y="7.5", width="16", height="1", transform="translate(-3.31 8) rotate(-45)")
+                rect(y="7.5", width="16", height="1", transform="translate(8 -3.31) rotate(45)")
+              svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-else)
+                rect(y="4.5", width="16", height="1")
+                rect(y="10.5", width="16", height="1")
+            | Menu
+      hr
 </template>
   
 
@@ -43,10 +41,11 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Nav {
+.Navbar {
   background-color: rgba(253, 253, 253, 0.96);
   opacity: 1;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
+  position: relative;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
     transform 250ms var(--transition-duration);
@@ -60,10 +59,13 @@ export default {
   }
 }
 
-.Nav-inner {
-  border-bottom: 1px solid var(--color-text);
+.Navbar-inner {
   display: flex;
-  padding-bottom: var(--s3);
+  padding-bottom: 12px;
+}
+
+.Navbar-inner ~ hr {
+  transform: translateY(1px);
 }
 
 .-btn {
@@ -89,16 +91,17 @@ export default {
 .icon {
   cursor: pointer;
   display: inline-block;
-  height: 10px;
   line-height: 1;
   position: relative;
   text-align: center;
-  transform: translateY(2px);
-  width: 30px;
+  /* theme */
+  /* height: 9.5px;
+  width: 16px; */
+  transform: translateY(3px);
 }
 
 .icon svg {
-  fill: #121212;
+  fill: currentColor;
   transition: fill 400ms ease;
 }
 

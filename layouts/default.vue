@@ -1,21 +1,24 @@
-<template>
-  <div>
-    <c-navbar />
-    <c-navbarfixed />
-    <nuxt/>
-    <c-nav />
-  </div>
+<template lang="pug">
+  div
+    c-navbar
+    c-navbar-fixed
+    c-nav-toggled
+    nuxt
+    footer
+      c-nav
 </template>
 
 <script>
 import NavBar from "~/components/NavBar.vue";
 import NavBarFixed from "~/components/NavBarFixed.vue";
+import NavToggled from "~/components/NavToggled.vue";
 import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
     "c-navbar": NavBar,
-    "c-navbarfixed": NavBarFixed,
+    "c-navbar-fixed": NavBarFixed,
+    "c-nav-toggled": NavToggled,
     "c-nav": Nav
   }
 };

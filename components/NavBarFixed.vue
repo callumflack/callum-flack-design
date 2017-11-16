@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped>
-.Nav {
+.Navbar {
   position: fixed;
   top: 0;
   width: 100%;

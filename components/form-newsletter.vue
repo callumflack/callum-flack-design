@@ -1,6 +1,6 @@
 <template lang="pug">
   form(action='https://formspree.io/vince@oceanblueboats.com.au', method='post', @submit.prevent='handleSubmit') 
-    .Form-group.Text
+    .Form-group.Meta
       input(placeholder='Your email address', type='email', name='email', v-model='email', required)
       button(:class='buttonClass', type='submit', :disabled='loading || formSent') {{buttonText}}
 </template>

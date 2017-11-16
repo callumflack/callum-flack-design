@@ -9,6 +9,7 @@
   @custom-media --small-viewport (min-width: 32em);
   @custom-media --medium-viewport (min-width: 48em);
   @custom-media --large-viewport (min-width: 80em);
+  @custom-media --xlarge-viewport (min-width: 100em);
 
   /*
    * sizes
@@ -57,7 +58,7 @@
   --color-text: #1f1f1f;
   --color-text-medium: #757575;
   --color-text-light: #959595;
-  --color-border: #d9d9d9;
+  --color-border: #e5e5e5;
   --color-neutral: #f8f8f8; /*#f2f3f4 */
   /*--color-bg: #f5f5ef;
   --color-bg: #f2f2f0;*/
@@ -73,9 +74,9 @@
   --font-serif-heading-regular: "Portrait-Regular";
   --font-serif-heading-regular: "Portrait-Regular";
   --font-serif-heading-regular-italic: "Portrait-RegularItalic";
-  --font-serif-heading-medium: "Portrait-Medium";
+  --font-serif-heading-medium: "Atten-Bold";
   --font-serif-heading-medium-italic: "Portrait-MediumItalic";
-  --font-serif-heading-bold: "Portrait-Bold";
+  --font-serif-heading-bold: "Atten-ExtraBold";
   --font-serif-heading-bold-italic: "Portrait-BoldItalic";
 
   --font-button: var(--font-serif-regular);
@@ -89,8 +90,7 @@
   --s-title-1: 32px;
   --s-title-2: 38px;
   --s-title-3: 40px;
-  --s-title-3: 45px;
-  --s-title-3: 2.827rem;
+  --s-title-3: 2.369rem;
 
   --s-heading-1: 24px;
   --s-heading-2: 30px;
@@ -121,7 +121,7 @@
   --ls-heading-sm: -0.005em;
   --ls-text: -0.01em;
 
-  --lh-heading: 1.125;
+  --lh-heading: 1.25;
   --lh-subheading: 1.21875;
   --lh-text: 1.347826087;
   --lh-meta: 1.3;

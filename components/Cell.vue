@@ -5,7 +5,7 @@
         img(:src="image")
       .Project-text
         .Project-text-inner
-          h2.Text.--title.u-marginB1 
+          h2.Subheading.u-marginB1 
             span.Project-visualLink {{ title }}
           p.u-colorTextLight 
             span.Meta.--medium.u-marginR2(v-if="year") {{ year }} 

@@ -1,4 +1,4 @@
 module.exports = {
-  productionUrl: 'https://patternworks2017.now.sh',
-  developmentUrl: 'http://localhost:3000'
-}
+  productionUrl: "https://patternworks-2018.now.sh",
+  developmentUrl: "http://localhost:3000"
+};
