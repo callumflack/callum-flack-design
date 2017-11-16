@@ -9,6 +9,7 @@
             v-for="tag in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
+            :class="[{ active: tag === activeTag }]"
           ) {{tag}},&nbsp;
 
     .Container--tuck
@@ -43,6 +44,9 @@
 <script>
 import Cell from "~/components/Cell.vue";
 
+const allTagName = "all";
+const trimTags = tags => tags.map(tag => tag.trim());
+
 export default {
   name: "projects",
   components: {
@@ -52,42 +56,46 @@ export default {
     return {
       projects: [],
       visibleProjects: [],
-      tags: []
+      tags: [],
+      activeTag: allTagName
     };
   },
   methods: {
     filterProjectsByTag(tag) {
-      this.visibleProjects = this.projects
-        .filter(project => project.tags)
-        .filter(project => {
-          const projectTags = project.tags.split(",");
+      this.activeTag = tag;
 
-          return projectTags.includes(tag);
-        });
+      if (tag === allTagName) {
+        this.visibleProjects = this.projects;
+        return;
+      }
+
+      this.visibleProjects = this.projects.filter(project => {
+        if (!project.tags) return false;
+        const projectTags = trimTags(project.tags.split(","));
+        return projectTags.includes(tag);
+      });
     }
   },
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
-    const tags = [];
 
-    projects.filter(project => project.tags).map(project => {
-      const projectTags = project.tags.split(",");
+    const uniqueTags = projects.filter(project => project.tags).reduce((
+      tags,
+      project
+    ) => {
+      const projectTags = trimTags(project.tags.split(","));
+      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
 
-      projectTags.map(tag => {
-        tag = tag.trim();
+      return [...tags, ...uniqueProjectTags];
+    },
+    [allTagName]);
 
-        if (!tags.includes(tag)) {
-          tags.push(tag);
-        }
-      });
-    });
-
-    tags.sort();
+    uniqueTags.sort();
 
     return {
       projects,
       visibleProjects: projects,
-      tags
+      tags: uniqueTags
     };
   }
 };
