@@ -15,7 +15,7 @@ h3 {
 .Meta {
   font-family: var(--font-heading-bold);
   font-size: var(--s-heading-meta-1);
-  letter-spacing: 0.075em;
+  letter-spacing: var(--ls-meta);
   line-height: 1;
   text-transform: uppercase;
 
@@ -36,7 +36,7 @@ h1,
 .Title {
   font-family: var(--font-heading-medium);
   font-size: var(--s-title-1);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.025em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 

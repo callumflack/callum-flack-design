@@ -28,29 +28,23 @@ export default {
       slides: [
         {
           heading: "Hi, I'm Callum.",
-          text: "I build futures by design.",
+          text: "I build bold, beautiful & simple digital products by design.",
           imageUrl: "hi.svg",
           hi: true
         },
         {
-          heading: "Bold, beautiful & simple.",
+          heading: "Plan, Design & build.",
           text:
             "I can help you brand, design &amp; build your next digital product.<span>Or revitalise your current one.</span>"
         },
         {
-          heading: "Curious to understand.",
+          heading: "From Curiousity to understanding.",
           text:
             "I listen to find your real challenge. Then I work with you to change it.",
           imageUrl: "home-story-1.jpg"
         },
         {
-          heading: "Like you, I take the long view.",
-          text:
-            "From the top of the mountain, we can see more of where ideas can lead.",
-          alignRight: true
-        },
-        {
-          heading: "Beauty makes emotion.",
+          heading: "Speak to the heart.",
           text:
             "People respond when it feels right. That's the sum of designed details working for you.",
           imageUrl: "home-story-2.jpg",
@@ -66,9 +60,9 @@ export default {
           linkLabel: "Follow me on Github"
         },
         {
-          heading: "I write about it.",
+          heading: "Translated into simple terms.",
           text:
-            "About design, technology, business, communicating. Learn with me?",
+            "I write about design, technology, business & communicating. Let me give you perspective:",
           imageUrl: "home-story-1.jpg",
           newsletter: true
         },
@@ -77,7 +71,7 @@ export default {
           text:
             "Ask yourself, have you spent a fortune on an app that your customers don’t love?",
           link: "/contact",
-          linkLabel: "find a better way"
+          linkLabel: "Let me help"
         }
       ]
     };

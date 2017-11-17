@@ -76,9 +76,12 @@ export default {
 
 .hi {
   background-color: rgba(110, 0, 255, 0.7);
+  background-color: rgba(31, 31, 31, 1);
+  background-color: #151515;
 
   & img {
     opacity: 0.15;
+    opacity: 1;
   }
 }
 
