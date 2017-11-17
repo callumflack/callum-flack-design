@@ -15,17 +15,16 @@
           li
             a(href="/about") #[span.Title About] #[span.Text.--italic Since 1998 and counting]
           li
-            a(href="") #[span.Title Contact] #[span.Text.--italic Working from Cairns, Australia]
-      .Block--quarter
-        .Nav-buttons.Meta.--medium.u-textCenter
-          a.Button.Button--transparent(href="#") Email
-          a.Button.Button--transparent(href="#") Twitter
-          a.Button.Button--transparent(href="#") Github
-          a.Button.Button--transparent(href="#") Instagram
-          a.Button.Button--transparent(href="#") AngelList
-          a.Button.Button--transparent(href="#") LinkedIn
-      .Meta.--medium.u-textCenter
-        | © 2018 Callum Flack
+            a(href="") #[span.Title Contact] #[span.Text.--italic Located in Cairns, Australia]
+      .Nav-buttons.Meta.--medium.u-textCenter
+        a.Button.Button--transparent(href="#") Email
+        a.Button.Button--transparent(href="#") Twitter
+        a.Button.Button--transparent(href="#") Github
+        a.Button.Button--transparent(href="#") LinkedIn
+        //- a.Button.Button--transparent(href="#") Instagram
+        //- a.Button.Button--transparent(href="#") AngelList
+        br
+        .Button.Button--transparent © 2018 Callum Flack
 
           
 </template>

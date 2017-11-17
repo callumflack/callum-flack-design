@@ -13,7 +13,7 @@
           ) {{tag}},&nbsp;
 
     .Container--tuck
-      .Grid.Grid--alignCenter.Grid--withProjects
+      .Grid.Grid--alignCenter.Grid--withTinyGutter
         Cell(
           v-if="project.featured"
           v-for="project in visibleProjects"
@@ -28,6 +28,7 @@
           :image="project.thumbImage",
         )
 
+      .Grid.Grid--alignCenter.Grid--withTinyGutter
         Cell(
           v-for="project in visibleProjects"
           :key="project.title"
@@ -105,13 +106,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .GridWrapper {
-  margin: 0 var(--tuck);
-
-  @media (--medium-viewport) {
-  }
-
-  @media (--large-viewport) {
-    margin: 0 var(--tuck-lg);
-  }
+  margin-left: var(--grid-gutter);
+  margin-right: var(--grid-gutter);
 }
 </style>

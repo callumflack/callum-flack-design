@@ -13,35 +13,35 @@ h3 {
 }
 
 .Meta {
-  font-family: var(--font-serif-heading-medium);
-  font-size: var(--s-heading-sm-1);
+  font-family: var(--font-heading-bold);
+  font-size: var(--s-heading-meta-1);
   letter-spacing: 0.075em;
   line-height: 1;
   text-transform: uppercase;
 
   &.--medium {
-    font-family: var(--font-serif-heading-medium);
+    font-family: var(--font-heading-bold);
   }
 
   @media (--medium-viewport) {
-    font-size: var(--s-heading-sm-2);
+    font-size: var(--s-heading-meta-2);
   }
 
   @media (--large-viewport) {
-    font-size: var(--s-heading-sm-3);
+    font-size: var(--s-heading-meta-3);
   }
 }
 
 h1,
 .Title {
-  font-family: var(--font-serif-heading-regular);
+  font-family: var(--font-heading-medium);
   font-size: var(--s-title-1);
   letter-spacing: 0.01em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 
   & .Title--sub {
-    font-family: var(--font-serif-heading-regular);
+    font-family: var(--font-heading-medium);
     text-transform: initial;
   }
 
@@ -55,7 +55,7 @@ h1,
 }
 
 .Heading {
-  font-family: var(--font-serif-heading-medium);
+  font-family: var(--font-heading-bold);
   font-size: var(--s-lede-1);
   letter-spacing: 0.02em;
   line-height: 1.1;
@@ -73,7 +73,7 @@ h1,
 .Subheading,
 .Markdown h2, 
 .Markdown blockquote p {
-  font-family: var(--font-serif-heading-regular-italic);
+  font-family: var(--font-heading-medium);
   font-size: var(--s-lede-1);
   letter-spacing: 0.01em;
   line-height: var(--lh-subheading);
@@ -88,7 +88,7 @@ h1,
 }
 
 .Markdown h2 {
-  font-family: var(--font-serif-heading-regular-italic);
+  font-family: var(--font-heading-medium);
 }
 
 /* 
@@ -131,7 +131,7 @@ blockquote,
   }
 
   &.--title {
-    font-family: var(--font-serif-heading-medium-italic);
+    font-family: var(--font-heading-bold);
   }
 
   @media (--medium-viewport) {
@@ -172,7 +172,7 @@ blockquote p {
 
 .Drop > p:first-of-type:first-letter {
   font-size: 3.5em;
-  font-family: var(--font-serif-heading-regular);
+  font-family: var(--font-heading-medium);
   // font-weight: 700;
   line-height: 1;
   margin-left: 0;
@@ -182,7 +182,7 @@ blockquote p {
 }
 
 .Newthought {
-  font-family: var(--font-serif-heading-medium);
+  font-family: var(--font-heading-bold);
   font-variant: small-caps;
   font-size: 1.2em;
   // font-size: 0.9em;

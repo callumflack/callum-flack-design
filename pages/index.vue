@@ -1,17 +1,16 @@
 <template lang="pug">
-  div
-    .Block--quarterSandwich
-      .Hi.u-flex.u-flexAlignCenter
-        figure.Hi-image.u-coverImage.Figure--tuck
-
-        //- h1.Title How do you build the future? By design.
-    
+  .Block--quarterTop
     c-slide(
       class="",
       v-for="slide in slides",
       :key="slide.label",
       :imageUrl="slide.imageUrl",
+      :figureUrl="slide.figureUrl",
+      :hi="slide.hi",
+      :heading="slide.heading",
       :text="slide.text",
+      :link="slide.link",
+      :linkLabel="slide.linkLabel",
       :alignRight="slide.alignRight",
     )
 
@@ -30,36 +29,57 @@ export default {
     return {
       slides: [
         {
-          text:
-            "I can help you brand, design &amp; build your next digital product.<span>Or revitalise your current one.</span>",
-          alignRight: true
+          heading: "Hi, I'm Callum.",
+          text: "I build futures by design.",
+          imageUrl: "hi.svg",
+          hi: true
         },
         {
+          heading: "Bold, beautiful & simple.",
           text:
-            "I listen to find out what your real challenge is.<span>Then I work with you to change it.</span>",
+            "I can help you brand, design &amp; build your next digital product.<span>Or revitalise your current one.</span>"
+        },
+        {
+          heading: "Curious to understand.",
+          text:
+            "I listen to find your real challenge. Then I work with you to change it.",
           imageUrl: "home-story-1.jpg"
         },
         {
+          heading: "Like you, I take the long view.",
           text:
-            "Like you, I take the long view.<span>(So we can see more of where our ideas lead us.)</span>"
-        },
-        {
-          text:
-            "And then I stack up the details that greatness always requires.",
-          imageUrl: "home-story-2.jpg"
-        },
-        {
-          text:
-            "I also code.<span>It's the closest I can get to seeing how it works.</span>",
+            "From the top of the mountain, we can see more of where ideas can lead.",
           alignRight: true
         },
         {
-          text: "And I write about what I learn in the process.",
-          imageUrl: "home-story-1.jpg"
+          heading: "Beauty makes emotion.",
+          text:
+            "People respond when it feels right. That's the sum of designed details working for you.",
+          imageUrl: "home-story-2.jpg",
+          alignRight: true,
+          link: "/work",
+          linkLabel: "See work examples"
         },
         {
+          heading: "design with code.",
           text:
-            "If we choose to work together, I’ll start with no preconceptions."
+            "It's the closest I can get to knowing how it works.<br>Nothing beats the craft of doing.",
+          link: "#",
+          linkLabel: "Follow me on Github"
+        },
+        {
+          heading: "I write about it.",
+          text:
+            "About design, technology, business, communicating. Learn with me?",
+          imageUrl: "home-story-1.jpg",
+          signup: true
+        },
+        {
+          heading: "Good design is good business.",
+          text:
+            "Ask yourself, have you spent a fortune on an app that your customers don’t love?",
+          link: "/contact",
+          linkLabel: "find a better way"
         }
       ]
     };

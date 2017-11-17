@@ -3,7 +3,7 @@
     .Container
       .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
         div
-          nuxt-link(to='/') Page title
+          nuxt-link(to='/') Patternworks
         div
           a(href="#", @click.prevent="handleNavToggle") 
             span.icon.u-marginR2

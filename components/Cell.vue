@@ -4,13 +4,13 @@
       figure.Project-image
         img(:src="image")
       .Project-text
-        .Project-text-inner
-          h2.Subheading.u-marginB1 
-            span.Project-visualLink {{ title }}
-          p.u-colorTextLight 
-            span.Meta.--medium.u-marginR2(v-if="year") {{ year }} 
-            span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }} 
-            span {{ headline }}
+        h2.Subheading
+          span.Project-visualLink {{ title }}
+        p.u-colorTextLight 
+          span.Meta.--medium.u-marginR2(v-if="year") {{ year }} 
+          span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }}
+          span.Meta.--medium.u-marginR2.u-inlineBlock(style="transform: translateY(-2px)") |
+          span {{ headline }}
 </template>
 
 
@@ -54,26 +54,27 @@ a:hover h2 span {
 
 .Project {
   display: block;
+  margin-bottom: var(--s5);
 }
 
 .Project-text {
-  margin-top: var(--s3);
+  @media (--small-viewport) {
+    max-width: 80%;
+  }
+  @media (--large-viewport) {
+    max-width: 60%;
+  }
+}
 
-  @media (--medium-viewport) {
+.Project-text .Subheading {
+  margin: calc(1.5 * var(--s3)) 0 var(--s3);
+
+  /* @media (--medium-viewport) {
     margin-top: var(--s3);
   }
 
   @media (--large-viewport) {
-    margin-top: var(--s3);
-  }
-}
-
-.Project-text-inner {
-  max-width: 540px;
-
-  & h2,
-  & p {
-    /* display: inline; */
-  }
+    margin-top: var(--s4);
+  } */
 }
 </style>

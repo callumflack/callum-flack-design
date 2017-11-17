@@ -36,11 +36,11 @@
 }
 
 .Grid--withTinyGutter {
-  margin: calc(-1 * 2px);
+  margin: calc(-1 * 1px);
 }
 
 .Grid--withTinyGutter > .Grid-cell {
-  padding: 2px;
+  padding: 1px;
 }
 
 .Grid--withProjects {

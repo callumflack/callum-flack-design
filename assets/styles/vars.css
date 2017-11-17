@@ -44,7 +44,7 @@
   
   /* instrument's tuck inset */
   --tuck: 6vw;
-  --tuck-lg: 11vw;
+  --tuck-lg: 9vw;
 
   --border-radius: 4px;
 
@@ -59,9 +59,7 @@
   --color-text-medium: #757575;
   --color-text-light: #959595;
   --color-border: #e5e5e5;
-  --color-neutral: #f8f8f8; /*#f2f3f4 */
-  /*--color-bg: #f5f5ef;
-  --color-bg: #f2f2f0;*/
+  --color-neutral: #f2f2f2;
   --color-bg: #fdfdfd;
 
   /* 
@@ -70,43 +68,35 @@
 
   --font-serif-regular: "PortraitText-Regular";
   --font-serif-italic: "PortraitText-RegularItalic";
-  --font-serif-heading-light: "Portrait-Light";
-  --font-serif-heading-regular: "Portrait-Regular";
-  --font-serif-heading-regular: "Portrait-Regular";
-  --font-serif-heading-regular-italic: "Portrait-RegularItalic";
-  --font-serif-heading-medium: "Atten-Bold";
-  --font-serif-heading-medium-italic: "Portrait-MediumItalic";
-  --font-serif-heading-bold: "Atten-ExtraBold";
-  --font-serif-heading-bold-italic: "Portrait-BoldItalic";
-
-  --font-button: var(--font-serif-regular);
+  --font-heading-medium: "Atten-Medium";
+  --font-heading-bold: "Atten-Bold";
+  --font-button: var(--font-heading-bold);
 
   /* 
    * Font sizes
-   * Using the augmented fourth: http://type-scale.com/
+   * Using the perfect fourth: http://type-scale.com/
    */
 
   /* headings */
   --s-title-1: 32px;
   --s-title-2: 38px;
-  --s-title-3: 40px;
-  --s-title-3: 2.369rem;
+  --s-title-3: 39px;
+  // --s-title-3: 2.369rem;
 
-  --s-heading-1: 24px;
-  --s-heading-2: 30px;
-  /* --s-heading-3: 36px; */
-  --s-heading-3: 35px;
+  // --s-heading-1: 24px;
+  // --s-heading-2: 30px;
+  // --s-heading-3: 35px;
 
-  --s-heading-sm-1: 11px;
-  --s-heading-sm-2: 13px;
-  --s-heading-sm-3: 15px;
+  --s-heading-meta-1: 11px;
+  --s-heading-meta-2: 13px;
+  --s-heading-meta-3: 15px;
+
+  --s-lede-1: 21px;
+  --s-lede-2: 24px;
+  --s-lede-3: 27px;
+  // --s-lede-3: 1.999rem;
 
   /* text serif */
-  --s-lede-1: 21px;
-  --s-lede-2: 25px;
-  --s-lede-3: 32px;
-  --s-lede-3: 1.999rem;
-
   --s-text-1: 18px;
   --s-text-2: 20px;
   --s-text-3: 23px;
@@ -116,7 +106,10 @@
   --s-text-sm-2: 12px;
   --s-text-sm-3: 14px;
 
-  /* ls & lh */
+  /* 
+   * ls & lh 
+   */
+  
   --ls-heading: -0.0225em;
   --ls-heading-sm: -0.005em;
   --ls-text: -0.01em;
