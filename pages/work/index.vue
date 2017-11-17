@@ -118,7 +118,7 @@ export default {
 </script>
 
 <style scopde lang="css">
-@import "../assets/styles/vars.css";
+@import "../../assets/styles/vars.css";
 
 .GridWrapper {
   margin: 0 var(--tuck);
