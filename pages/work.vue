@@ -90,21 +90,15 @@ export default {
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
 
-<<<<<<< HEAD
-    const uniqueTags = projects.filter(project => project.tags).reduce((
-      tags,
-      project
-    ) => {
-      const projectTags = trimTags(project.tags.split(","));
-      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
-=======
     const uniqueTags = projects
       .filter(project => project.tags)
-      .reduce((tags, project) => {
+      .reduce((
+        tags,
+        project
+      ) => {
         const projectTags = projectTagStringToList(project.tags);
         const uniqueProjectTags = projectTags
           .filter(tag => !tags.includes(tag));
->>>>>>> Ignore tailing comma on string of project tags
 
       return [...tags, ...uniqueProjectTags];
     },
