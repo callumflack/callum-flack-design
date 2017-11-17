@@ -7,13 +7,17 @@
     
     nuxtent-body.Markdown(:body="page.body")
 
-    hr.RuleOff.Subheading.Block--top
+    c-endrule
 
 </template>
 
 <script>
+import EndRule from "~/components/EndRule.vue";
+
 export default {
-  components: {},
+  components: {
+    "c-endrule": EndRule
+  },
   computed: {
     titleColor() {
       // (v-if="page.projectColor", :style = 'titleColor')

@@ -36,7 +36,7 @@ h1,
 .Title {
   font-family: var(--font-heading-medium);
   font-size: var(--s-title-1);
-  letter-spacing: 0.025em;
+  letter-spacing: 0.015em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 

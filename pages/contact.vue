@@ -27,8 +27,8 @@
           p Want to keep in touch with give a great reason to signup:
           c-formnews.u-pSpace
           
-          p Find me elsewhere on the internet:
-          ul
+          //- p Find me elsewhere on the internet:
+          //- ul
             c-contactlink(
               v-for="item in socialLinks",
               :key="item.label",
