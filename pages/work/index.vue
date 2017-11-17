@@ -6,11 +6,13 @@
           | Filter by:&nbsp;
           br
           a.Title--sub(
-            v-for="tag in tags"
+            v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
             :class="[{ active: tag === activeTag }]"
-          ) {{tag}},&nbsp;
+          )
+            | {{tag}}
+            span(v-if='index !== tags.length - 1') ,&nbsp;
 
     .Container--tuck
       .Grid.Grid--alignCenter.Grid--withTinyGutter
@@ -46,7 +48,18 @@
 import Cell from "~/components/Cell.vue";
 
 const allTagName = "all";
+
+// Functions are defined outside component since asyncData does not have access
+// to the component as it's called before initializing the component
+
 const trimTags = tags => tags.map(tag => tag.trim());
+
+function projectTagStringToList(projectTags) {
+  const trimmedProjectTags = projectTags.endsWith(",")
+    ? projectTags.substring(0, projectTags.length - 1)
+    : projectTags;
+  return trimTags(trimmedProjectTags.split(","));
+}
 
 export default {
   name: "projects",
@@ -80,12 +93,15 @@ export default {
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
 
-    const uniqueTags = projects.filter(project => project.tags).reduce((
-      tags,
-      project
-    ) => {
-      const projectTags = trimTags(project.tags.split(","));
-      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
+    const uniqueTags = projects
+      .filter(project => project.tags)
+      .reduce((
+        tags,
+        project
+      ) => {
+        const projectTags = projectTagStringToList(project.tags);
+        const uniqueProjectTags = projectTags
+          .filter(tag => !tags.includes(tag));
 
       return [...tags, ...uniqueProjectTags];
     },
@@ -103,7 +119,7 @@ export default {
 </script>
 
 <style scopde lang="css">
-@import "../assets/styles/vars.css";
+@import "../../assets/styles/vars.css";
 
 .GridWrapper {
   margin-left: var(--grid-gutter);

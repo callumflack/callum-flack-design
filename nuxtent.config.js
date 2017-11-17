@@ -4,12 +4,12 @@ module.exports = {
   content: [
     ["pages", {
       page: '/_slug',
-      permalink: '/:slug',
+      permalink: '/work/:slug',
       isPost: false
     }],
     ["projects", {
       page: '/_slug',
-      permalink: "/:slug",
+      permalink: "/work/:slug",
       isPost: false
     }]
   ],
