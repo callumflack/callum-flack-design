@@ -15,6 +15,19 @@
   }
 }
 
+.Block--top {
+  margin-top: var(--s5);
+  position: relative;
+
+  @media (--medium-viewport) {
+    margin-top: var(--s6);
+  }
+
+  @media (--large-viewport) {
+    margin-top: var(--s7);
+  }
+}
+
 .Block--sandwich {
   margin: var(--s5) 0;
 
@@ -24,6 +37,21 @@
 
   @media (--large-viewport) {
     margin: var(--s7) 0;
+  }
+}
+
+.Block--hero {
+  margin: var(--s3) 0;
+  padding: var(--s5) 0;
+
+  @media (--medium-viewport) {
+    margin: var(--s4) 0;
+    padding: var(--s6) 0;
+  }
+
+  @media (--large-viewport) {
+    margin: var(--s5) 0;
+    padding: var(--s7) 0;
   }
 }
 

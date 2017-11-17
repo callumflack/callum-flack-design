@@ -64,6 +64,7 @@ export default {
 
 <style scoped>
 .Navbar {
+  background-color: rgba(253, 253, 253, 0.96);
   position: fixed;
   top: 0;
   width: 100%;

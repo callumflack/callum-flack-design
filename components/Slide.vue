@@ -1,20 +1,4 @@
 <template lang="pug">
-  //- section(:class="['hero', { 'text-white': backgroundImage }]")
-  //- lazy-image(
-  //-   v-if="backgroundImage",
-  //-   class="hero-background-image",
-  //-   :src="backgroundImage")
-  //- div(
-  //-   class='filter',
-  //-   :style='filterStyle')
-  //- hero-link(:link="link")
-  //-   .Container
-  //-     div(:class="['hero-body', { 'hero-body--half': half }]")
-  //-       div(:class="['columns u-size11of12 u-sm-size7of12', { reverse }]")
-  //-         h1.header {{headline}}
-  //-         h4.lede(v-html="subtext")
-
-
   section(:class="['Banner', { '--withImage': imageUrl, '--withFigure': figureUrl }]")
     .Banner-image.u-posFit(:class="[{ hi }]", v-if="imageUrl")
       img(:src="`/images/${imageUrl}`", alt="")
@@ -36,17 +20,22 @@
             span(v-html="text")
           div(v-if="link")
             a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
+          .u-marginT4(v-if="newsletter")
+            c-formnews
       .Container(v-else)
         h1.Title {{ heading }}
           span(v-html="text")
         div(v-if="link")
           a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
-
 </template>
 
 <script>
+import FormNews from "~/components/FormNews.vue";
+
 export default {
-  components: {},
+  components: {
+    "c-formnews": FormNews
+  },
   computed: {},
   props: {
     imageUrl: String,
@@ -56,6 +45,7 @@ export default {
     text: String,
     link: String,
     linkLabel: String,
+    newsletter: Boolean,
     alignRight: Boolean
   }
 };
@@ -111,7 +101,6 @@ export default {
   text-transform: initial;
 }
 
-/* .Banner-text span, */
 .Banner-text .Button {
   margin-top: var(--s4);
 }

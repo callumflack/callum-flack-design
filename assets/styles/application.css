@@ -3,10 +3,12 @@
 @import "base.css";
 @import "typography/type-font-faces.css";
 @import "typography/type.css";
+@import "typography/link.css";
 @import "layout/grid.css";
 @import "layout/container.css";
 @import "layout/block.pcss";
 @import "layout/figure.css";
+@import "layout/hr.pcss";
 @import "elements/button.css";
 @import "elements/icon.css";
 @import "elements/form.css";

@@ -34,12 +34,9 @@ module.exports = {
     }
   },
   // https://nuxtjs.org/api/configuration-build#postcss
-  // nb: cssnext already available by default.
+  // cssnext is available by default in Nuxt.
   postcss: [],
-  css: [
-    "~/assets/styles/application.css"
-    // '~assets/styles2/hiq.css'
-  ],
+  css: ["~/assets/styles/application.css"],
   plugins: [],
   modules: ["nuxtent"],
   axios: {
@@ -49,6 +46,7 @@ module.exports = {
     routes: [
       "/",
       "/about",
+      "/contact",
       "/work",
       "/oceanblue-living",
       "/primary-healthcare-network",

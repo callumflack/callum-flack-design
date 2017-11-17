@@ -7,11 +7,10 @@
 
 <script>
 export default {
-  name: "form-contact",
+  name: "FormNews",
 
   data() {
     return {
-      plainNewsletterButton: false,
       name: "",
       email: "",
       message: "",

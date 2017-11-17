@@ -1,29 +1,27 @@
 <template lang="pug">
-  .Block--quarterTop
-    c-slide(
-      class="",
-      v-for="slide in slides",
-      :key="slide.label",
-      :imageUrl="slide.imageUrl",
-      :figureUrl="slide.figureUrl",
-      :hi="slide.hi",
-      :heading="slide.heading",
-      :text="slide.text",
-      :link="slide.link",
-      :linkLabel="slide.linkLabel",
-      :alignRight="slide.alignRight",
-    )
-
+  main(role="main")
+    .Block--quarterTop
+      c-slide(
+        v-for="slide in slides",
+        :key="slide.label",
+        :imageUrl="slide.imageUrl",
+        :figureUrl="slide.figureUrl",
+        :hi="slide.hi",
+        :heading="slide.heading",
+        :text="slide.text",
+        :link="slide.link",
+        :linkLabel="slide.linkLabel",
+        :newsletter="slide.newsletter",
+        :alignRight="slide.alignRight",
+      )
 </template>
 
 <script>
 import Slide from "~/components/Slide.vue";
-import FormNewsletter from "~/components/form-newsletter.vue";
 
 export default {
   components: {
-    "c-slide": Slide,
-    "c-formnewsletter": FormNewsletter
+    "c-slide": Slide
   },
   data() {
     return {
@@ -58,7 +56,7 @@ export default {
           imageUrl: "home-story-2.jpg",
           alignRight: true,
           link: "/work",
-          linkLabel: "See work examples"
+          linkLabel: "See work examples →"
         },
         {
           heading: "design with code.",
@@ -72,7 +70,7 @@ export default {
           text:
             "About design, technology, business, communicating. Learn with me?",
           imageUrl: "home-story-1.jpg",
-          signup: true
+          newsletter: true
         },
         {
           heading: "Good design is good business.",
@@ -89,15 +87,4 @@ export default {
 
 <style>
 @import "../assets/styles/vars.css";
-
-.Hi {
-  background-color: yellow;
-}
-
-.Hi-image {
-  background-image: url("/images/hi.svg");
-  background-size: contain;
-  height: 90vh;
-  width: 70vw;
-}
 </style>

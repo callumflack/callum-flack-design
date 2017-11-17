@@ -1,10 +1,10 @@
 <template lang="pug">
-  div
+  div(:class="currentPage.substring(currentPage.lastIndexOf('/') + 1)")
     c-navbar
     c-navbar-fixed
-    c-nav-toggled
+    c-nav-toggled(role="navigation")
     nuxt
-    footer
+    footer(role="contentinfo")
       c-nav
 </template>
 
@@ -20,6 +20,11 @@ export default {
     "c-navbar-fixed": NavBarFixed,
     "c-nav-toggled": NavToggled,
     "c-nav": Nav
+  },
+  computed: {
+    currentPage: function() {
+      return this.$store.state.currentPage;
+    }
   }
 };
 </script>

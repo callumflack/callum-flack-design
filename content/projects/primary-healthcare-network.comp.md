@@ -7,6 +7,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1503353159/rod-lo
 thumbImage: /images/thumb-oceanblueboats.jpg
 projectColor: rgb(110, 190, 68)
 noHeroImageOnProjectPage: true
+featured: true
 tags: web app
 ---
 

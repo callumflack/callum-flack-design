@@ -1,62 +1,86 @@
 <template lang="pug">
   .Block--sandwich
     .Container
-      //- hr.Block--quarter
       .Block--half
         ul.Nav-menu
-          //- li
-            a(href="/") #[span.Title Index] #[span.Text.--italic Start again from Home]
-          li
-            a(href="/work") #[span.Title Work] #[span.Text.--italic VJ Ray Website]
-          //- li
-            a(href="") #[span.Title Method] #[span.Text.--italic How to create value]
-          li
-            a(href="") #[span.Title Journal] #[span.Text.--italic Should designers code?]
-          li
-            a(href="/about") #[span.Title About] #[span.Text.--italic Since 1998 and counting]
-          li
-            a(href="") #[span.Title Contact] #[span.Text.--italic Located in Cairns, Australia]
+          c-navlink(
+            v-for="item in navLinks",
+            :key="item.label",
+            :label="item.label",
+            :link="item.link",
+            :lede="item.lede",
+            :currentPage="currentPage"
+          )
       .Nav-buttons.Meta.--medium.u-textCenter
-        a.Button.Button--transparent(href="#") Email
-        a.Button.Button--transparent(href="#") Twitter
-        a.Button.Button--transparent(href="#") Github
-        a.Button.Button--transparent(href="#") LinkedIn
-        //- a.Button.Button--transparent(href="#") Instagram
-        //- a.Button.Button--transparent(href="#") AngelList
-        br
-        .Button.Button--transparent © 2018 Callum Flack
-
-          
+        c-navbutton(
+          v-for="item in navButtons",
+          :key="item.label",
+          :label="item.label",
+          :link="item.link",
+        )
 </template>
 
 
 <script scoped>
 import NavLink from "~/components/NavLink.vue";
+import NavButton from "~/components/NavButton.vue";
 
 export default {
   name: "nav-bottom",
   components: {
-    NavLink
+    "c-navlink": NavLink,
+    "c-navbutton": NavButton
   },
   props: {
     currentPage: String
   },
+  computed: {
+    // plainNewsletterButton: true,
+  },
   data() {
     return {
-      plainNewsletterButton: true,
-
       navLinks: [
         {
           label: "Work",
-          link: "/work"
+          link: "/work",
+          lede: "VJ Ray Website"
         },
         {
           label: "Journal",
-          link: "/journal"
+          link: "/journal",
+          lede: "Should designers code?"
         },
         {
           label: "About",
-          link: "/about"
+          link: "/about",
+          lede: "A designer who codes"
+        },
+        {
+          label: "Contact",
+          link: "/contact",
+          lede: "Located in Cairns, Australia"
+        }
+      ],
+
+      navButtons: [
+        {
+          label: "Email",
+          link: "mailto:hi@patternworks.com.au"
+        },
+        {
+          label: "Twitter",
+          link: "https://twitter.com/callumflack"
+        },
+        {
+          label: "Github",
+          link: "https://github.com/callumflack"
+        },
+        {
+          label: "LinkedIn",
+          link: "https://www.linkedin.com/in/callumflack"
+        },
+        {
+          label: "© 2018 Callum Flack"
         }
       ]
     };
@@ -79,38 +103,6 @@ export default {
 
 .Nav-menu li + li {
   margin-top: var(--s4);
-}
-
-.Nav-menu a {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  position: relative;
-
-  &:before {
-    background-image: url("/static/images/dot.svg");
-    background-repeat: repeat-x;
-    background-size: auto 3px;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    top: 63%;
-    width: 100%;
-    z-index: -1;
-  }
-
-  & span {
-    background-color: var(--color-bg);
-  }
-
-  & span:first-child {
-    padding-right: 0.33em;
-  }
-
-  & span:last-child {
-    padding-left: 0.33em;
-    transform: translateY(0.575em);
-  }
 }
 
 .Nav-buttons {

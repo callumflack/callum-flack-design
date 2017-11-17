@@ -22,14 +22,14 @@ export default {
     cellClass() {
       return [
         {
-          "Grid-cell u-sm-size1of2 u-lg-size1of3": this.feature,
-          "Grid-cell u-size1of2 u-md-size1of3 u-lg-size1of4": !this.feature
+          "Grid-cell u-sm-size1of2 u-lg-size1of3": this.featured,
+          "Grid-cell u-size1of2 u-md-size1of3 u-lg-size1of4": !this.featured
         }
       ];
     }
   },
   props: {
-    feature: Boolean,
+    featured: Boolean,
     casestudy: Boolean,
     archive: Boolean,
     center: Boolean,
@@ -49,7 +49,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 a:hover h2 span {
-  box-shadow: inset 0 -1px 0 0 #fff, inset 0 -3px 0 0 var(--color-text);
+  /* box-shadow: inset 0 -1px 0 0 #fff, inset 0 -3px 0 0 var(--color-text); */
 }
 
 .Project {
@@ -61,20 +61,13 @@ a:hover h2 span {
   @media (--small-viewport) {
     max-width: 80%;
   }
+
   @media (--large-viewport) {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
 
 .Project-text .Subheading {
   margin: calc(1.5 * var(--s3)) 0 var(--s3);
-
-  /* @media (--medium-viewport) {
-    margin-top: var(--s3);
-  }
-
-  @media (--large-viewport) {
-    margin-top: var(--s4);
-  } */
 }
 </style>

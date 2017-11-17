@@ -7,7 +7,7 @@ heroImageFirst: true
 dropCap: false
 ---
 
-<span class="Newthought">I make seamless, actionable interfaces</span> that help people increase productivity, make better choices and build communities. I do this via systems thinking, interaction design, graphic design, copywriting, coding and grit. Everything I do revolves around listening and understanding people—clients, collaborators and the audiences I'm building for.
+Making seamless, actionable interfaces that help people increase productivity, make better choices and build communities. I do this via systems thinking, interaction design, graphic design, copywriting, coding and grit. Everything I do revolves around listening and understanding people—clients, collaborators and the audiences I'm building for.
 
 I have 16 years experience working in London, Melbourne, Sydney and Brisbane. I've lived in Cairns with my wife and young family since 2015. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. [Read further on LinkedIn.](#)
 

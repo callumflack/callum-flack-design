@@ -40,11 +40,6 @@ h1,
   line-height: var(--lh-heading);
   text-transform: uppercase;
 
-  & .Title--sub {
-    font-family: var(--font-heading-medium);
-    text-transform: initial;
-  }
-
   @media (--medium-viewport) {
     font-size: var(--s-title-2);
   }
@@ -52,6 +47,11 @@ h1,
   @media (--large-viewport) {
     font-size: var(--s-title-3);
   }
+}
+
+.Title--sub {
+  font-family: var(--font-heading-medium);
+  text-transform: initial;
 }
 
 .Heading {
@@ -170,15 +170,24 @@ blockquote p {
   }
 }
 
+.Markdown ul {
+  list-style-type: disc;
+  padding-left: var(--s4);
+}
+
 .Drop > p:first-of-type:first-letter {
-  font-size: 3.5em;
+  float: left;
+  font-size: 2.5em;
   font-family: var(--font-heading-medium);
-  // font-weight: 700;
   line-height: 1;
   margin-left: 0;
   padding-right: 0.666667em;
-  padding-bottom: 0.333333em;
-  float: left;
+  padding-bottom: 0.25em;
+  transform: translateY(-0.1em);
+  
+  font-size: 2em;
+  padding-right: 0.8em;
+  padding-bottom: 0.5em;
 }
 
 .Newthought {
@@ -231,59 +240,18 @@ ul {
 ul,
 ol {
   font-family: inherit;
-  margin: 0 0 var(--s4);
+  list-style-type: none;
+  margin: var(--s4) 0;
   padding-left: 0;
 }
 
-ol {
-  /* list-style-type: upper-roman;
-  list-style-type: decimal; */
+.u-noVisualList {
+  list-style-type: none !important;
+  padding-left: 0 !important;
 }
 
 li {
   margin-bottom: 0;
 }
 
-/*
- * Link
- */
 
-a,
-button {
-  color: inherit;
-  cursor: pointer;
-  font-family: inherit;
-  text-decoration: none;
-}
-
-p a:not(.Button),
-.Project:hover .Project-visualLink {
-  background-image: 
-    linear-gradient(#fffff8, #fffff8), 
-    linear-gradient(#fffff8, #fffff8), 
-    linear-gradient(#333, #333);
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 
-    0.03em 0 #fffff8, 
-    -0.03em 0 #fffff8, 
-    0 0.03em #fffff8, 
-    0 -0.03em #fffff8, 
-    0.06em 0 #fffff8, 
-    -0.06em 0 #fffff8, 
-    0.09em 0 #fffff8, 
-    -0.09em 0 #fffff8, 
-    0.12em 0 #fffff8, 
-    -0.12em 0 #fffff8, 
-    0.15em 0 #fffff8, 
-    -0.15em 0 #fffff8;
-  background-position: 0% 93%, 100% 93%, 0% 93%;
-
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-      background-position-y: 87%, 87%, 87%;
-  }
-}
-
-.Project:hover .Project-visualLink {
-  background-size: 0;
-}

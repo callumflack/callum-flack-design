@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  main(role="main")
     .Block--sandwich
       .Container
         .Title
@@ -9,10 +9,11 @@
             v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
-            :class="[{ active: tag === activeTag }]"
+            :class="[{ 'is-active': tag === activeTag }]"
           )
-            | {{tag}}
-            span(v-if='index !== tags.length - 1') ,&nbsp;
+            span.Title-visualLink {{tag}}
+            span(v-if="index !== tags.length - 1") ,&nbsp;
+            span(v-else) .
 
     .Container--tuck
       .Grid.Grid--alignCenter.Grid--withTinyGutter
@@ -20,20 +21,7 @@
           v-if="project.featured"
           v-for="project in visibleProjects"
           :key="project.title"
-          feature,
-          :link="project.permalink",
-          :tags="project.tags",
-          :year="project.year",
-          :title="project.title",
-          :headline="project.headline",
-          :lede="project.lede",
-          :image="project.thumbImage",
-        )
-
-      .Grid.Grid--alignCenter.Grid--withTinyGutter
-        Cell(
-          v-for="project in visibleProjects"
-          :key="project.title"
+          featured,
           :link="project.permalink",
           :tags="project.tags",
           :year="project.year",
@@ -93,15 +81,12 @@ export default {
   async asyncData({ app, route, payload }) {
     const projects = await app.$content("/projects").getAll();
 
-    const uniqueTags = projects
-      .filter(project => project.tags)
-      .reduce((
-        tags,
-        project
-      ) => {
-        const projectTags = projectTagStringToList(project.tags);
-        const uniqueProjectTags = projectTags
-          .filter(tag => !tags.includes(tag));
+    const uniqueTags = projects.filter(project => project.tags).reduce((
+      tags,
+      project
+    ) => {
+      const projectTags = projectTagStringToList(project.tags);
+      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
 
       return [...tags, ...uniqueProjectTags];
     },

@@ -42,7 +42,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Navbar {
-  background-color: rgba(253, 253, 253, 0.96);
+  background-color: transparent;
   opacity: 1;
   padding-top: 2.5rem;
   position: relative;
