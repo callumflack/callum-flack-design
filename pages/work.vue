@@ -6,11 +6,13 @@
           | Filter by:&nbsp;
           br
           a.Title--sub(
-            v-for="tag in tags"
+            v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
             :class="[{ active: tag === activeTag }]"
-          ) {{tag}},&nbsp;
+          )
+            | {{tag}}
+            span(v-if='index !== tags.length - 1') ,&nbsp;
 
     .Container--tuck
       .Grid.Grid--alignCenter.Grid--withProjects
