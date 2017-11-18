@@ -4,24 +4,31 @@ title: About Callum
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
 heroImage: images/callum-flack-04.jpg
 heroImageFirst: true
-dropCap: false
 ---
 
-Making seamless, actionable interfaces that help people increase productivity, make better choices and build communities. I do this via systems thinking, interaction design, graphic design, copywriting, coding and grit. Everything I do revolves around listening and understanding people—clients, collaborators and the audiences I'm building for.
+> Hi, I’m Callum. I'm a design-obsessed, code-based, digital craftsman. I’ve been designing and building brands and experiences since 2000.”
 
-I have 16 years experience working in London, Melbourne, Sydney and Brisbane. I've lived in Cairns with my wife and young family since 2015. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. [Read further on LinkedIn.](#)
+My work revolves around listening and understanding people and their challenges—clients, collaborators and the audiences I'm building for. We all think with our gut and act with our heart. I'll help you build brands and services that emotionally connect with people. 
 
-Add some stuff here about a worldview.
+## Experienced
 
-## Teams
+I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios and advertising agencies. Since 2015, my wife, our young family and I have lived in Cairns. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. [Read further on LinkedIn.](https://www.linkedin.com/in/callumflack)
 
-I usually work solo, calling on my small team of remote and local collaborators as required—web engineers, search engine marketers, a copywriter and photographers. With a small team and one-to-one client relations, I've found the agility and speed of decision-making creates higher quality results, faster.
 
-I've also worked remotely with a few excellent product teams, and I enjoy travelling to meet in person. I know after recent experiences with great web engineers that specialist teams make  has taught So I'm looking to meet product teams. If that's you, let's talk!
+## How we can work together
 
-> blockquote quote here
+Based in Cairns, I currently work with local, interstate and international clients. I can plug into a product team as a freelance designer, or work one-to-one with owners, organisations and creators to implement their digital business vision. I also enjoy travelling to meet in person.
 
-## Co-op
+Here’s how you can engage me:
 
-This is where the co-op schpiel goes. And then there's a grid of people in the co-op.
+* Improve or redesign your existing website or web application.
+* Create a new website or web application from scratch.
+* Work as a specialist digital partner on an ongoing basis.
 
+Start a conversation by emailing [callum@patternworks.com.au](mailto:callum@patternworks.com.au) or by calling [+617(0) 408 767 540](tel:+6170-408-767-540).
+
+## Specialist collaborators
+
+I've collected a small co-op of remote and local specialists whom I work with regularly: web engineers, search engine marketers, copywriters and photographers. Each of them I respect and recommend.
+
+Grid of co-ops.

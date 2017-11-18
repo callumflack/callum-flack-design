@@ -1,33 +1,39 @@
 <template lang="pug">
-  .Container
-    .Block--sandwich
-      h1.Title
-        span(:style="titleColor") {{ page.title }}.&nbsp;
-        span.Title--sub {{ page.headline }}
-    
-    nuxtent-body.Markdown(:body="page.body")
+  div
+    .Block--half(role="banner")
+      .Container
+        .Block--sandwich
+          h1.Title.u-sm-size11of12
+            span(:style="projectColor") {{ page.title }}.&nbsp;
+            span.Title--sub {{ page.headline }}
+        figure.Figure.Figure--large
+          img(:src="page.heroImage", alt="")
 
-    c-endrule
+    main.Block(role="main")
+      .Container
+        nuxtent-body.Markdown(:body="page.body")
+      
+    c-nextproject(next="oceanblue-living")
 
 </template>
 
 <script>
-import EndRule from "~/components/EndRule.vue";
+import NextProject from "~/components/NextProject.vue";
 
 export default {
   components: {
-    "c-endrule": EndRule
+    "c-nextproject": NextProject
   },
   computed: {
-    titleColor() {
-      // (v-if="page.projectColor", :style = 'titleColor')
+    projectColor() {
+      // (v-if="page.projectColor", :style = 'projectColor')
       return this.page.projectColor ? `color: ${this.page.projectColor}` : "";
     }
   },
   props: {
-    projectColor: String,
     title: String,
-    headline: String
+    headline: String,
+    next: String
   },
   async asyncData({ app, route, payload }) {
     // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.

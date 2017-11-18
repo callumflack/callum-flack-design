@@ -1,5 +1,5 @@
 <template lang="pug">
-  hr.Rule.Subheading.--italic.Block--top
+  hr.Rule.Block--top
 </template>
 
 <script>
@@ -14,12 +14,22 @@ export default {
 .Rule {
   background-color: var(--color-border);
   background-color: transparent;
+  font-family: var(--font-serif-italic);
+  font-size: var(--s-title-1);
+
+  @media (--medium-viewport) {
+    font-size: var(--s-title-2);
+  }
+  @media (--large-viewport) {
+    font-size: var(--s-title-3);
+  }
 }
 
 .Rule:after {
   background-color: var(--color-bg);
-  content: "—";
+  content: "* * *";
   left: 50%;
+  letter-spacing: 0.1em;
   padding: var(--s3);
   position: absolute;
   top: 50%;

@@ -2,7 +2,7 @@
   li
     nuxt-link(:class="currentPage", :to='link')
       span.Title {{ label }}
-      span.Text.--italic {{ lede }}
+      span.Text.Text--italic {{ lede }}
 </template>
 
 <script>
@@ -37,6 +37,7 @@ export default {
   justify-content: space-between;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 
   &:before {
     background-image: url("/static/images/dot.svg");
@@ -60,7 +61,7 @@ export default {
 
   & span:last-child {
     padding-left: 0.33em;
-    transform: translateY(0.7em);
+    transform: translateY(0.75em);
   }
 }
 

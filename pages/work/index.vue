@@ -1,4 +1,5 @@
 <template lang="pug">
+div
   main(role="main")
     .Block--sandwich
       .Container
@@ -16,8 +17,8 @@
             span(v-else) .
 
     .Container--tuck
-      .Grid.Grid--alignCenter.Grid--withTinyGutter
-        Cell(
+      .Grid.Grid--alignCenter.Grid--withLargeGutter
+        c-cell(
           v-if="project.featured"
           v-for="project in visibleProjects"
           :key="project.title"
@@ -30,10 +31,13 @@
           :lede="project.lede",
           :image="project.thumbImage",
         )
+  footer.u-bgColorWhite(role="contentinfo")
+    c-nav
 </template>
 
 <script>
 import Cell from "~/components/Cell.vue";
+import Nav from "~/components/Nav.vue";
 
 const allTagName = "all";
 
@@ -52,7 +56,8 @@ function projectTagStringToList(projectTags) {
 export default {
   name: "projects",
   components: {
-    Cell
+    "c-cell": Cell,
+    "c-nav": Nav
   },
   data() {
     return {

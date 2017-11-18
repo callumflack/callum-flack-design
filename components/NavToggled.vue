@@ -105,6 +105,9 @@ export default {
   transform: translateY(0);
   transition: opacity var(--transition-duration), transform 0s 0s;
   z-index: 15;
+
+  /* account for the navbar */
+  padding-top: 72px;
 }
 
 .Modal.hidden {

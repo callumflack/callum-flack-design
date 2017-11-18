@@ -3,19 +3,19 @@
     div(role="banner")
       .u-bgColorNeutral
         .Container
-          .Block--hero
+          .Block--sandwich
             .u-sm-size2of3.Grid-cell--center
               figure.Figure.u-textCenter.u-pSpace
                 | clock here…
-              .Title.u-textCenter The time in Cairns.
+              .Title.u-textCenter Cairns Time.
     main(role="main")
-      .Container
+      .Container.Block
         .Markdown
-          p 
+          p
             a.u-noVisualLink(href="https://goo.gl/maps/y4EFgqzmxbL2") 
               | 16 Ponticello Street, Whitfield #[br]
               | Cairns 4870, Australia
-          ul.u-noVisualList
+          ul.u-noVisualList.u-noNegativeTopAlign
             c-contactlink(
               v-for="item in contactLinks",
               :key="item.label",
@@ -24,7 +24,7 @@
               :linkLabel="item.linkLabel",
             )
           
-          p Want to keep in touch with give a great reason to signup:
+          p.u-pSpace Want to keep in touch with give a great reason to signup:
           c-formnews.u-pSpace
           
           //- p Find me elsewhere on the internet:
@@ -36,18 +36,20 @@
               :link="item.link",
               :linkLabel="item.linkLabel",
             )
-        c-endrule
+    footer.u-bgColorWhite(role="contentinfo")
+      c-nav
 </template>
+
 
 
 <script scoped>
 import ContactLink from "~/components/ContactLink.vue";
 import FormNews from "~/components/FormNews.vue";
-import EndRule from "~/components/EndRule.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
-    "c-endrule": EndRule,
+    "c-nav": Nav,
     "c-contactlink": ContactLink,
     "c-formnews": FormNews
   },
@@ -56,12 +58,12 @@ export default {
       contactLinks: [
         {
           label: "Email",
-          link: "mailto:hi@patternworks.com.au",
-          linkLabel: "hi@patternworks.com.au"
+          link: "mailto:callum@patternworks.com.au",
+          linkLabel: "callum@patternworks.com.au"
         },
         {
           label: "Phone",
-          link: "617-0408-767-540",
+          link: "tel:617-0408-767-540",
           linkLabel: "+617(0) 408 767 540"
         },
         {

@@ -2,6 +2,22 @@
  * Block
  */
 
+.Banner {
+  padding-bottom: var(--s4);
+
+  @media (--medium-viewport) {
+    padding-bottom: var(--s5);
+  }
+
+  @media (--large-viewport) {
+    padding-bottom: var(--s6);
+  }
+}
+
+
+
+/* full */ 
+
 .Block {
   margin-bottom: var(--s5);
   position: relative;
@@ -29,14 +45,26 @@
 }
 
 .Block--sandwich {
-  margin: var(--s5) 0;
+  padding: var(--s5) 0;
 
   @media (--medium-viewport) {
-    margin: var(--s6) 0;
+    padding: var(--s6) 0;
   }
 
   @media (--large-viewport) {
-    margin: var(--s7) 0;
+    padding: var(--s7) 0;
+  }
+}
+
+.Block--sandwichPadding {
+  padding: var(--s5) 0;
+
+  @media (--medium-viewport) {
+    padding: var(--s6) 0;
+  }
+
+  @media (--large-viewport) {
+    padding: var(--s7) 0;
   }
 }
 

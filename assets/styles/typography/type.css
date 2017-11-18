@@ -75,7 +75,7 @@ h1,
 .Markdown blockquote p {
   font-family: var(--font-heading-medium);
   font-size: var(--s-lede-1);
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   line-height: var(--lh-subheading);
 
   @media (--medium-viewport) {
@@ -87,8 +87,9 @@ h1,
   }
 }
 
-.Markdown h2 {
-  font-family: var(--font-heading-medium);
+.Markdown h2,
+.Markdown blockquote p {
+  font-family: var(--font-heading-bold);
 }
 
 /* 
@@ -126,14 +127,6 @@ blockquote,
   margin: 0;
   text-transform: initial;
 
-  &.--italic {
-    font-family: var(--font-serif-italic);
-  }
-
-  &.--title {
-    font-family: var(--font-heading-bold);
-  }
-
   @media (--medium-viewport) {
     font-size: var(--s-text-2);
   }
@@ -153,16 +146,25 @@ blockquote p {
  * Markdown scope
  */ 
 
+.Markdown p em,
+.Text--italic {
+  font-family: var(--font-serif-italic);
+}
+
 .Markdown blockquote p {
   border: 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
   color: var(--color-text);
-  padding: var(--s5) 0;
+  padding: var(--s4) 0;
   position: relative;
 
+  /*&::first-line {
+    transform: translateX(-1em);
+  }*/
+
   &:before {
-    content: "\"";
+    content: "“";
     left: 0;
     display: block;
     position: absolute;
@@ -172,6 +174,7 @@ blockquote p {
 
 .Markdown ul {
   list-style-type: disc;
+  /*margin-top: calc(-1 * var(--s4));*/
   padding-left: var(--s4);
 }
 
@@ -195,7 +198,7 @@ blockquote p {
   font-variant: small-caps;
   font-size: 1.2em;
   // font-size: 0.9em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   text-transform: lowercase;
 }
 
@@ -203,26 +206,41 @@ blockquote p {
  * spaces 
  */
 
-p,
-ol,
-ul,
 .u-pSpace {
   // margin-bottom: 2rem;
   margin-bottom: var(--s4);
+}
+
+p + p,
+ul + p, 
+p + .Button {
+  margin-top: var(--s4);
 }
 
 blockquote {
   margin: var(--s4) 0;
 }
 
+.Markdown > blockquote:first-child {
+  margin-top: 0;
+}
+
+ul + h2,
 blockquote + h2,
 p + h2 {
   margin-top: var(--s5);
-  margin-bottom: var(--s4);
+}
+
+h2 {
+  margin-bottom: var(--s3);
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+ol,
+ul {
 }
 
 ol,
@@ -243,6 +261,10 @@ ol {
   list-style-type: none;
   margin: var(--s4) 0;
   padding-left: 0;
+}
+
+.u-noNegativeTopAlign {
+  margin-top: 0 !important;
 }
 
 .u-noVisualList {

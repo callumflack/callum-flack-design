@@ -1,16 +1,17 @@
 <template lang="pug">
   div(:class="cellClass")
-    router-link.Project(:to="link")
+    router-link.Project.Block(:to="link")
       figure.Project-image
         img(:src="image")
       .Project-text
-        h2.Subheading
-          span.Project-visualLink {{ title }}
-        p.u-colorTextLight 
-          span.Meta.--medium.u-marginR2(v-if="year") {{ year }} 
-          span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }}
-          span.Meta.--medium.u-marginR2.u-inlineBlock(style="transform: translateY(-2px)") |
-          span {{ headline }}
+        .Project-text-inner
+          h2.Subheading
+            span.Project-visualLink {{ title }}
+          p.u-colorTextLight 
+            span.Meta.--medium.u-marginR1(v-if="year") {{ year }} 
+            span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }}
+            span.Meta.--medium.u-marginR2.u-inlineBlock(style="transform: translateY(-2px)") |
+            span {{ headline }}
 </template>
 
 
@@ -48,26 +49,38 @@ export default {
 <style scoped lang="css">
 @import "../assets/styles/vars.css";
 
-a:hover h2 span {
-  /* box-shadow: inset 0 -1px 0 0 #fff, inset 0 -3px 0 0 var(--color-text); */
-}
-
 .Project {
+  background-color: white;
   display: block;
-  margin-bottom: var(--s5);
+  /* margin-bottom: var(--s5); */
+
+  @media (--xlarge-viewport) {
+    min-height: 597px;
+  }
 }
 
 .Project-text {
+  /* border: 1px solid var(--color-border); */
+  border-top: 0;
+  padding: 0 24px 21px;
+}
+
+.Project-text-inner {
   @media (--small-viewport) {
-    max-width: 80%;
+    max-width: 95%;
   }
 
   @media (--large-viewport) {
+    max-width: 90%;
+  }
+
+  @media (--xlarge-viewport) {
     max-width: 70%;
   }
 }
 
 .Project-text .Subheading {
-  margin: calc(1.5 * var(--s3)) 0 var(--s3);
+  padding-top: 30px;
+  margin-bottom: 24px;
 }
 </style>

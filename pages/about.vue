@@ -1,26 +1,23 @@
 <template lang="pug">
   div
-    div(role="banner")
-      //- .u-bgColorNeutral
+    .Block--sandwich(role="banner")
       .Container
-        .Block--hero
-          .u-sm-size2of3.Grid-cell--center
-            figure.Figure
-              img(:src="page.heroImage", alt="", style="opacity:0.9")
-    main(role="main")
+        .u-sm-size2of3.Grid-cell--center
+          figure.Figure
+            img(:src="page.heroImage", alt="", style="opacity:0.9")
+    main.Block(role="main")
       .Container
-        nuxtent-body.Markdown.Drop(:body="page.body")
-        c-endrule
-        
-
+        nuxtent-body.Markdown(:body="page.body")
+    footer.u-bgColorWhite(role="contentinfo")
+      c-nav
 </template>
 
 <script>
-import EndRule from "~/components/EndRule.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
-    "c-endrule": EndRule
+    "c-nav": Nav
   },
   computed: {
     titleColor() {
@@ -47,6 +44,6 @@ export default {
 
 <style scoped>
 body {
-  background-color: rgba(250, 235, 215, 0.4);
+  background-color: salmon !important;
 }
 </style>

@@ -11,6 +11,8 @@ html {
 }
 
 body {
+  background-color: #f9f4dd !important; /* about */
+  background-color: var(--color-neutral) !important;
 }
 
 img {

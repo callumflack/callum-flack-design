@@ -4,8 +4,7 @@
     c-navbar-fixed
     c-nav-toggled(role="navigation")
     nuxt
-    footer(role="contentinfo")
-      c-nav
+    
 </template>
 
 <script>

@@ -20,11 +20,27 @@
 }
 
 .Grid--withLargeGutter {
-  margin: 0 calc(-1 * 7%);
+  margin: 0 calc(-0.5 * var(--s5));
+
+  @media (--medium-viewport) {
+    margin: 0 calc(-0.5 * var(--s6));
+  }
+
+  @media (--large-viewport) {
+    margin: 0 calc(-0.5 * var(--s7));
+  }
 }
 
 .Grid--withLargeGutter > .Grid-cell {
-  padding: 0 7%;
+  padding: 0 calc(0.5 * var(--s5));
+
+  @media (--medium-viewport) {
+    padding: 0 calc(0.5 * var(--s6));
+  }
+
+  @media (--xlarge-viewport) {
+    padding: 0 calc(0.5 * var(--s7));
+  }
 }
 
 .Grid--withSmallGutter {

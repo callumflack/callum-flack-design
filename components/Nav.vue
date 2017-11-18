@@ -1,8 +1,8 @@
 <template lang="pug">
-  .Block--sandwich
+  .Block--sandwichPadding
     .Container
-      .Block--half
-        ul.Nav-menu
+      .Block--quarter
+        ul.Nav-menu.u-marginT0
           c-navlink(
             v-for="item in navLinks",
             :key="item.label",

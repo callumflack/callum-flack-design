@@ -1,4 +1,5 @@
 <template lang="pug">
+div
   main(role="main")
     .Block--quarterTop
       c-slide(
@@ -14,14 +15,19 @@
         :newsletter="slide.newsletter",
         :alignRight="slide.alignRight",
       )
+  footer.u-bgColorWhite(role="contentinfo")
+    c-nav
+
 </template>
 
 <script>
 import Slide from "~/components/Slide.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
-    "c-slide": Slide
+    "c-slide": Slide,
+    "c-nav": Nav
   },
   data() {
     return {
