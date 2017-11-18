@@ -94,6 +94,7 @@ export default {
   }
 
   & .Device-position {
+    border: 1px solid var(--color-border);
     margin-top: 25.25%;
     width: 87.2093%;
   }
