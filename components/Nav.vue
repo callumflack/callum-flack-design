@@ -41,6 +41,11 @@ export default {
     return {
       navLinks: [
         {
+          label: "Overview",
+          link: "/",
+          lede: "bold, beautiful & simple"
+        },
+        {
           label: "Work",
           link: "/work",
           lede: "VJ Ray Website"

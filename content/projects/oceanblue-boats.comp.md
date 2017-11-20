@@ -12,14 +12,13 @@ projectColor: rgb(41, 170, 150)
 
 OceanBlue Living were stuck with a website they couldn't update themselves, and they badly needed to talk to their audience. After workshopping their needs and their audience requirements, we repositioned their branding and redesigned the site to build / better inform users.
 
-@[MarkdownMovie](medium laptop frame src="/images/oceanblue-living-video.mp4")
+@[MarkdownMovie](medium laptop src="/images/oceanblueboats-desktop-video.mp4")
 
-
-> Patternworks showed us a vision of our business that surpassed ours. More than that, they've made it a reality—the project execution has been just plain fun to be part of. We're very happy with the results, and it's very quickly raised our awareness two-fold.” — LeaAnne Cassaniti, Oceanblue Living
+> We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it.” — Vince Cassaniti, owner of OceanBlue Boats
 
 @[MarkdownImage](medium src="/images/oceanblueboats-layout.jpg")
 
-Their metalworks are rugged and beautiful. We hired [J-Create Photography](http://j-create.com.au/) to ensure this beauty was showcased, and designed the website experience around immersive photography: full width images and sliders are used to show the variety of works.
+As with the brand work for their sister company, Oceanblue Boats, I hired [J-Create Photography](http://j-create.com.au/) to capture the team's love of boat building. as the key point of difference in their brand story. Immersive photography was is used to tell that story on the website and in their marketing materials.
 
 @[MarkdownImage](medium src="/images/oceanblueboats-photography.jpg")
 

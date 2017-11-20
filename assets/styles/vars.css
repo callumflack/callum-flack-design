@@ -128,3 +128,18 @@
   --transition-delayed: 0.4s;
   --transition-debounce: 2.5s;
 }
+
+
+
+/*
+Testing single variables within media queries.
+https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
+
+Doesn't work, cause I think nuxt requires all vars in the :root?
+ 
+:root { --s-title: 20px; }
+
+@media (--xlarge-viewport) {
+  :root { --s-title: 40px; }
+}
+*/

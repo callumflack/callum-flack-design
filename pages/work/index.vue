@@ -4,7 +4,7 @@ div
     .Block--sandwich
       .Container
         .Title
-          | Filter by:&nbsp;
+          | Filter projects by:&nbsp;
           br
           a.Title--sub(
             v-for="(tag, index) in tags"

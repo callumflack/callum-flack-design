@@ -4,8 +4,10 @@
       .Container
         .Block--sandwich
           h1.Title.u-sm-size11of12
-            span(:style="projectColor") {{ page.title }}.&nbsp;
-            span.Title--sub {{ page.headline }}
+            //- span(:style="projectColo") {{ page.title }}.&nbsp;
+            //- br
+            //- span.Title--sub {{ page.headline }}
+            span.Title--sub(v-html="page.lede")
         figure.Figure.Figure--large
           img(:src="page.heroImage", alt="")
 
@@ -13,7 +15,7 @@
       .Container
         nuxtent-body.Markdown(:body="page.body")
       
-    c-nextproject(next="oceanblue-living")
+    c-nextproject(next="/work")
 
 </template>
 

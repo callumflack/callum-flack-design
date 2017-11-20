@@ -2,7 +2,7 @@
 section: Projects
 title: The Substation
 headline: A website and branding revision for a large-scale Melbourne arts venue.
-lede: With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. We helped transfer this reputation online with a mobile-first website that was clear, legible and easy to peruse.
+lede: A website and branding revision for <span style="color:rgb(191, 166, 87)">THE SUBSTATION</span>, a large-scale Melbourne arts venue.
 heroImage: /images/thesubstation-hero.jpg
 thumbImage: /images/thumb-thesubstation.jpg
 featured: true
@@ -29,7 +29,7 @@ Redesigning the user experience, we prioritised events—The Substation's reason
 
 Our visual design rework focussed on giving The Substation's brilliant, eclectic photography centre stage, framed by whitespace and clean typography. In the original website design, the photography was placed within the bounds of the text column. We exploded this grid system, so that images, gifs and video would immerse people in the electric world of The Substation.
 
-> The wordmark has been extended with a distinctive line that can be customized for a series of transformations that reflect the dynamic nature of the organization and its initiatives.” — Brad Spalding, Managing Director of The Substation
+> The wordmark has been extended with a distinctive line that can be customized for a series of transformations that reflect the dynamic nature of the organization and its initiatives.” _— Brad Spalding, Managing Director_
 
 Our initial remit was bug fixes yet after understanding their issues, we proposed a change of website platform to stem the constant maintenance costs draining their digital marketing effectiveness. In the process, it became easy to improve the site's content structure, usability and performance without a big time spend. With a performant codebase, we were also able to polish their visual brand.
 

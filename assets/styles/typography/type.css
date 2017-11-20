@@ -12,9 +12,11 @@ h3 {
   font-weight: normal;
 }
 
-.Meta {
+.Meta,
+.Markdown blockquote p em {
   font-family: var(--font-heading-bold);
   font-size: var(--s-heading-meta-1);
+  font-style: normal;
   letter-spacing: var(--ls-meta);
   line-height: 1;
   text-transform: uppercase;
@@ -87,8 +89,8 @@ h1,
   }
 }
 
-.Markdown h2,
-.Markdown blockquote p {
+.Markdown h2, 
+.Markdown--BlockquoteBold blockquote p {
   font-family: var(--font-heading-bold);
 }
 
@@ -149,6 +151,14 @@ blockquote p {
 .Markdown p em,
 .Text--italic {
   font-family: var(--font-serif-italic);
+}
+
+.Markdown p em {
+  color: var(--color-text-light);
+}
+
+.Markdown blockquote p em {
+  color: var(--color-text);
 }
 
 .Markdown blockquote p {

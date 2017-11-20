@@ -1,6 +1,6 @@
 <template lang="pug">
   div(:class="cellClass")
-    router-link.Project.Block(:to="link")
+    nuxt-link.Project.Block(:to="link")
       figure.Project-image
         img(:src="image")
       .Project-text
