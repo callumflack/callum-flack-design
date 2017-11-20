@@ -6,13 +6,13 @@
           .Block--sandwich
             .u-sm-size2of3.Grid-cell--center
               figure.Figure.u-textCenter.u-pSpace
-                | clock here…
+                c-clock
               .Title.u-textCenter Cairns Time.
     main(role="main")
       .Container.Block
         .Markdown
           p
-            a.u-noVisualLink(href="https://goo.gl/maps/y4EFgqzmxbL2") 
+            a.u-noVisualLink(href="https://goo.gl/maps/y4EFgqzmxbL2")
               | 16 Ponticello Street, Whitfield #[br]
               | Cairns 4870, Australia
           ul.u-noVisualList.u-noNegativeTopAlign
@@ -23,10 +23,10 @@
               :link="item.link",
               :linkLabel="item.linkLabel",
             )
-          
+
           p.u-pSpace Want to keep in touch with give a great reason to signup:
           c-formnews.u-pSpace
-          
+
           //- p Find me elsewhere on the internet:
           //- ul
             c-contactlink(
@@ -46,12 +46,14 @@
 import ContactLink from "~/components/ContactLink.vue";
 import FormNews from "~/components/FormNews.vue";
 import Nav from "~/components/Nav.vue";
+import Clock from "~/components/Clock.vue";
 
 export default {
   components: {
     "c-nav": Nav,
     "c-contactlink": ContactLink,
-    "c-formnews": FormNews
+    "c-formnews": FormNews,
+    "c-clock": Clock
   },
   data() {
     return {
