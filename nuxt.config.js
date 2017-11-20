@@ -55,6 +55,7 @@ module.exports = {
     ]
   },
   router: {
+    middleware: 'currentPage',
     // this errors, WTF.
     // async scrolling docs look diff now:
     // https://router.vuejs.org/en/advanced/scroll-behavior.html
