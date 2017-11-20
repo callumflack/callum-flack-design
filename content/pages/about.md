@@ -8,7 +8,7 @@ heroImageFirst: true
 
 > Hi, I’m Callum. I'm a design-obsessed, code-based, digital craftsman. I’ve been designing and building brands and experiences since 2000.”
 
-My work revolves around listening and understanding people and their challenges—clients, collaborators and the audiences I'm building for. We all think with our gut and act with our heart. I'll help you build brands and services that emotionally connect with people. 
+My work revolves around listening and understanding people and their challenges—clients, collaborators and the audiences I'm building for. We all think with our gut and act with our heart. I'll help you build brands and services that emotionally connect with people, and perform logically.
 
 ## Experienced
 
