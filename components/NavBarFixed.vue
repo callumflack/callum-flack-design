@@ -18,7 +18,8 @@ export default {
     navbarClass() {
       return [
         {
-          hidden: this.isNavHidden
+          hidden: this.isNavHidden,
+          white: this.isVisible
         }
       ];
     }
@@ -66,11 +67,14 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Navbar {
-  background-color: rgba(253, 253, 253, 0.96);
   background-color: rgba(242, 242, 242, 0.96);
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.Navbar.white {
+  background-color: rgba(253, 253, 253, 0.96);
 }
 
 .Navbar.hidden {
