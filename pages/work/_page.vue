@@ -14,8 +14,8 @@
     main.Block(role="main")
       .Container
         nuxtent-body.Markdown(:body="page.body")
-      
-    c-nextproject(next="/work")
+
+    c-nextproject(v-if="nextPage" :project="nextPage")
 
 </template>
 
@@ -42,8 +42,25 @@ export default {
     // If there ends up being many pages then create another solution.
     const contentType = route.path === "/about" ? "/pages" : "/projects";
 
+    const page = await app.$content(contentType).get(route.path);
+    let nextPage = null;
+
+    if (contentType === "/projects") {
+      try {
+        nextPage = await app.$content(contentType).getOnly(page.meta.index + 1);
+      } catch (err) {
+        // 500 error will be thrown if a page with the passed index does not exist
+        if (err.statusCode !== 500) {
+          throw err;
+        }
+
+        nextPage = null;
+      }
+    }
+
     return {
-      page: await app.$content(contentType).get(route.path)
+      page,
+      nextPage,
     };
   }
 };

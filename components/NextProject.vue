@@ -1,23 +1,25 @@
 <template lang="pug">
   footer.u-bgColorWhite(role="contentinfo")
-    nuxt-link(:to="next")
+    router-link(:to="project.permalink")
       .Block--sandwichPadding
         .Container
           h1.Title.u-sm-size11of12
             span.Title--sub Next →
             br
-            //- span(:style="projectColor") {{ page.title }}.&nbsp;
-            span Oceanblue Living
+            span(:style="projectColor") {{ project.title }}.&nbsp;
 </template>
 
 <script>
 export default {
   name: "NextProject",
   props: {
-    next: String
-    // projectColor: String,
-    // title: String
-  }
+    project: Object,
+  },
+  computed: {
+    projectColor() {
+      return this.project.projectColor ? `color: ${this.project.projectColor}` : "";
+    }
+  },
 };
 </script>
 
