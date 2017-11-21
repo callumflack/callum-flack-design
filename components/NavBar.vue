@@ -3,9 +3,9 @@
     .Container
       .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
         div
-          nuxt-link(to='/') Patternworks
+          nuxt-link(to='/' @click.native="hideNav") Patternworks
         div
-          a(href="#", @click.prevent="handleNavToggle") 
+          a(href="#", @click.prevent="handleNavToggle")
             span.icon.u-marginR2
               svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-if="isVisible")
                 rect(y="7.5", width="16", height="1", transform="translate(-3.31 8) rotate(-45)")
@@ -16,7 +16,7 @@
             | Menu
       hr
 </template>
-  
+
 
 <script scoped>
 export default {
@@ -32,6 +32,13 @@ export default {
       this.$store.commit(
         "SET_MODAL_VISIBILITY",
         !this.$store.state.isMobileNavVisible
+      );
+    },
+
+    hideNav() {
+      this.$store.commit(
+        "SET_MODAL_VISIBILITY",
+        false
       );
     }
   }
