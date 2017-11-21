@@ -19,7 +19,7 @@ Close collaboration was essential: we had to understand the use cases for the su
 
 @[MarkdownMovie](medium frame ipadLandscape src="/images/primary-healthcare-network-video.mp4")
 
-We built the web app using a progressive, modular Javascript-based technology stack to allow continued iteration as customer feedback enabled it. For example, we can now implement offline capability so that an internet connection is not required to do surveys. This is useful in remote part of Queensland with little or no 3G internet coverage.
+We built the web app using a progressive, modular Javascript-based technology stack to allow continued iteration as feedback required it. For example, we can now implement offline capability so that an internet connection is not required to do surveys. This is useful in remote part of Queensland with little or no 3G internet coverage.
 
 @[MarkdownImage](medium src="/images/primary-healthcare-network-score.png")
 
