@@ -37,7 +37,9 @@ module.exports = {
   // cssnext is available by default in Nuxt.
   postcss: [],
   css: ["~/assets/styles/application.css"],
-  plugins: [],
+  plugins: [
+    { src: "~/plugins/vue-slick", ssr: false }
+  ],
   modules: ["nuxtent"],
   axios: {
     credentials: false
@@ -55,7 +57,7 @@ module.exports = {
     ]
   },
   router: {
-    middleware: 'currentPage',
+    middleware: "currentPage",
     // this errors, WTF.
     // async scrolling docs look diff now:
     // https://router.vuejs.org/en/advanced/scroll-behavior.html

@@ -1,6 +1,8 @@
 <template lang="pug">
 div
   main(role="main")
+    MarkdownSlick(images="/images/oceanblueliving-photography.jpg,/images/oceanblueliving-visual-system.png")
+
     .Block--sandwich
       .Container
         .Title
@@ -38,6 +40,7 @@ div
 <script>
 import Cell from "~/components/Cell.vue";
 import Nav from "~/components/Nav.vue";
+import MarkdownSlick from "~/components/MarkdownSlick.vue";
 
 const allTagName = "all";
 
@@ -57,7 +60,8 @@ export default {
   name: "projects",
   components: {
     "c-cell": Cell,
-    "c-nav": Nav
+    "c-nav": Nav,
+    MarkdownSlick
   },
   data() {
     return {
