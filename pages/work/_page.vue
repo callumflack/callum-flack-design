@@ -10,12 +10,13 @@
     main.Block(role="main")
       .Container
         nuxtent-body.Markdown(:body="page.body")
-
-    //- nuxt-link(to="/work")
-      .Block--sandwichPadding
-        .Container
-          h1.Title.u-sm-size11of12
-            span View all work  →
+  
+    footer.u-bgColorWhite(role="contentinfo")
+      nuxt-link(to="/work")
+        .Block--sandwichPadding
+          .Container
+            h1.Title.u-sm-size11of12
+              span View all work  →
 
 </template>
 
