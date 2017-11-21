@@ -19,7 +19,8 @@ export default {
       return [
         {
           hidden: this.isNavHidden,
-          white: this.isVisible
+          grey: this.isVisible,
+          white: this.$store.state.isMobileNavVisible,
         }
       ];
     }
@@ -73,8 +74,12 @@ export default {
   width: 100%;
 }
 
-.Navbar.white {
+.Navbar.grey {
   background-color: rgba(253, 253, 253, 0.96);
+}
+
+.Navbar.white {
+  background-color: #fff;
 }
 
 .Navbar.hidden {
