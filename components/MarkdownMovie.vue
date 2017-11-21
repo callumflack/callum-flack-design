@@ -95,8 +95,8 @@ export default {
 
   & .Device-position {
     border: 1px solid var(--color-border);
-    margin-top: 25.25%;
-    width: 87.2093%;
+    margin-top: 25.2%;
+    width: 87.45%;
   }
 
   /* https://codepen.io/jonitrythall/post/using-svg-stroke-attributes */

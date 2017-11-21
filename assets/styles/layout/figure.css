@@ -34,14 +34,14 @@
   }
 }
 
-.Figure--large {
+.Figure--medium {
   @media (min-width: 1440px) {
     left: calc(-720px + 50%);
     width: 1440px;
   }
 }
 
-.Figure--medium {
+.Figure--large {
   @media (min-width: 1024px) {
     left: calc(-512px + 50%);
     width: 1024px;

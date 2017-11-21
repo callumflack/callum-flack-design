@@ -19,7 +19,7 @@ div
             span(v-else) .
 
     .Container--tuck
-      .Grid.Grid--alignCenter.Grid--withLargeGutter
+      .Grid.Grid--alignCenter.Grid--withProjects
         c-cell(
           v-if="project.featured"
           v-for="project in visibleProjects"

@@ -44,7 +44,7 @@ export default {
         {
           label: "Overview",
           link: "/",
-          lede: "bold, beautiful & simple",
+          lede: "Digital craftsmanship",
           exact: true
         },
         {

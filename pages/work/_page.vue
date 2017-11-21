@@ -4,9 +4,6 @@
       .Container
         .Block--sandwich
           h1.Title.Title--sub.u-sm-size11of12.u-pSpace(v-html="page.lede")
-            //- span(:style="projectColo") {{ page.title }}.&nbsp;
-            //- br
-            //- span.Title--sub {{ page.headline }}
         figure.Figure.Figure--large
           img(:src="page.heroImage", alt="")
 
@@ -14,7 +11,7 @@
       .Container
         nuxtent-body.Markdown(:body="page.body")
 
-    c-nextproject(v-if="nextPage" :project="nextPage")
+    c-nextproject(:project="nextPage")
 
 </template>
 

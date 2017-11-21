@@ -79,7 +79,7 @@
    */
 
   /* headings */
-  --s-title-1: 27px;
+  --s-title-1: 25px;
   --s-title-2: 32px;
   --s-title-3: 39px;
   // --s-title-3: 2.369rem;
@@ -117,7 +117,7 @@
   --ls-meta: 0.075em;
 
   --lh-heading: 1.25;
-  --lh-subheading: 1.5;
+  --lh-subheading: 1.4;
   --lh-text: 1.4; /*1.347826087*/
   --lh-meta: 1.3;
 

@@ -12,8 +12,8 @@ h3 {
   font-weight: normal;
 }
 
-.Meta,
-.Markdown blockquote p em {
+/* .Markdown blockquote p em {*/
+.Meta {
   font-family: var(--font-heading-bold);
   font-size: var(--s-heading-meta-1);
   font-style: normal;
@@ -74,9 +74,11 @@ h1,
 
 .Subheading,
 .Markdown h2, 
-.Markdown blockquote p {
+.Markdown blockquote p,
+.Markdown blockquote p em {
   font-family: var(--font-heading-medium);
   font-size: var(--s-lede-1);
+  font-style: normal;
   letter-spacing: 0;
   line-height: var(--lh-subheading);
 
@@ -90,6 +92,8 @@ h1,
 }
 
 .Markdown h2, 
+/*.Markdown blockquote p,
+.Markdown blockquote p em,*/
 .Markdown--BlockquoteBold blockquote p {
   font-family: var(--font-heading-bold);
 }
@@ -125,6 +129,7 @@ blockquote,
 .Text {
   font-family: var(--font-serif-regular);
   font-size: var(--s-text-1);
+  font-style: normal;
   line-height: var(--lh-text);
   margin: 0;
   text-transform: initial;
@@ -159,6 +164,13 @@ blockquote p {
 
 .Markdown blockquote p em {
   color: var(--color-text);
+  display: table;
+  font-family: var(--font-heading-bold);
+  font-size: 0.96em;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-top: var(--s2);
+  text-transform: lowercase;
 }
 
 .Markdown blockquote p {
@@ -166,20 +178,24 @@ blockquote p {
   border-top: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
   color: var(--color-text);
-  padding: var(--s4) 0;
+  padding: var(--s2) 0;
   position: relative;
+
+  @media (--large-viewport) {
+    padding: var(--s4) 0;
+  }
 
   /*&::first-line {
     transform: translateX(-1em);
   }*/
 
-  &:before {
+  /*&:before {
     content: "“";
     left: -2px;
     display: block;
     position: absolute;
     transform: translate3d(-100%,0,0);
-  }
+  }*/
 }
 
 .Markdown ul {
@@ -209,6 +225,7 @@ blockquote p {
   font-variant: small-caps;
   font-size: 1.2em;
   // font-size: 0.9em;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: lowercase;
 }

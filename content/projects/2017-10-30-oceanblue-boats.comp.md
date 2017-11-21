@@ -17,7 +17,7 @@ projectColor: rgb(41, 170, 150)
 
 Vince, the owner, knows fishing boats. The website acts as a storybook, each page is a chapter that talks about Vince's love for boats, how he grew up with them and how he loves making them for fishermen who know the difference between a reel positioned off port versus off starboard.
 
-> We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it.” — Vince Cassaniti, owner of OceanBlue Boats
+> We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it. _Vince Cassaniti, owner_
 
 @[MarkdownImage](medium src="/images/oceanblueboats-layout.jpg")
 

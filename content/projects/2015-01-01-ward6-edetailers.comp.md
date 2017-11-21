@@ -11,13 +11,13 @@ tags: website, branding
 projectColor: rgb(210, 18, 77)
 ---
 
-Ward 6 Digital specialised in creating sophisticated, interactive iPad-based sales tools for Pharma and Health clients. I worked with the team to modernise development processes for efficiency and control, to help build apps faster and manage iterations better, and to bring design sensibility to data-based showcases.
+**Ward six Digital specialised in** creating sophisticated, interactive iPad-based sales tools for Pharma and Health clients. I worked with the team to modernise development processes for efficiency and control, to help build apps faster and manage iterations better, and to bring design sensibility to data-based showcases.
 
 @[MarkdownMovie](medium ipadLandscape src="/images/ward6-baxter.mp4")
 
 The Baxter Peritoneal Dialysis app was a simple value proposition project, relative to the level of interaction we had produced in other projects. We used a clean typographic-driven approach paired with illustration, emulating editorial graphic design. The app is brought to life by the calm, measured transitions for interaction and page loads.
 
-> A quote from Jason here” <br>_— Jason Armstrong, former Director of Digital at Ward 6_
+> A quote from Jason here _Jason Armstrong, former Director of Digital_
 
 @[MarkdownMovie](medium ipadLandscape src="/images/ward6-actifuse.mp4")
 

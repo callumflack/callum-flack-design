@@ -36,10 +36,7 @@ export default {
     },
 
     hideNav() {
-      this.$store.commit(
-        "SET_MODAL_VISIBILITY",
-        false
-      );
+      this.$store.commit("SET_MODAL_VISIBILITY", false);
     }
   }
 };
@@ -51,12 +48,16 @@ export default {
 .Navbar {
   background-color: transparent;
   opacity: 1;
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   position: relative;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
     transform 250ms var(--transition-duration);
   z-index: 99;
+
+  @media (--small-viewport) {
+    padding-top: 2.5rem;
+  }
 
   &.hidden {
     opacity: 0;

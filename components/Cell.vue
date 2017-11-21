@@ -62,7 +62,11 @@ export default {
 .Project-text {
   /* border: 1px solid var(--color-border); */
   border-top: 0;
-  padding: 0 24px 21px;
+  padding: 0 18px 15px;
+
+  @media (--medium-viewport) {
+    padding: 0 24px 21px;
+  }
 }
 
 .Project-text-inner {

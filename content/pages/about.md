@@ -6,9 +6,9 @@ heroImage: images/callum-flack-04.jpg
 heroImageFirst: true
 ---
 
-> Hi, I’m Callum. I'm a design-obsessed, code-based, digital craftsman. I’ve been designing and building brands and experiences since 2000.”
+> Hi, I’m Callum. I'm a design-obsessed, code-based, digital craftsman. I’ve been designing and building brands and experiences since 2000.
 
-My work revolves around listening and understanding people and their challenges—clients, collaborators and the audiences I'm building for—and providing digital solutions. We all think with our gut and act with our heart. I'll help you build brands and services that emotionally connect with people, and do the job customers want.
+My work revolves around listening and understanding people and their challenges—clients, collaborators and their audiences—to provide elegant, satisfying digital solutions. I'll help you build brands and services that emotionally connect with people, and do the job customers need you for.
 
 ## Experienced
 
@@ -23,12 +23,7 @@ Here’s how you can engage me:
 
 * Improve or redesign your existing website or web application.
 * Create a new website or web application from scratch.
-* Work as a specialist digital partner on an ongoing basis.
+* Collaborate as a specialist digital partner to enhance customer communities over time.
 
 Start a conversation by emailing [callum@patternworks.com.au](mailto:callum@patternworks.com.au) or by calling [+617(0) 408 767 540](tel:+6170-408-767-540).
 
-## Specialist collaborators
-
-I've collected a small co-op of remote and local specialists whom I work with regularly: web engineers, search engine marketers, copywriters and photographers. Each of them I respect and recommend.
-
-Grid of co-ops.

@@ -24,7 +24,7 @@
               :linkLabel="item.linkLabel",
             )
 
-          p.u-pSpace Want to keep in touch with give a great reason to signup:
+          p.u-pSpace I write a letter to my internet friends every week. It's mostly about things I've read or seen that have direct application in my work. It's also a good way to keep in touch. You should sign up:
           c-formnews.u-pSpace
 
           //- p Find me elsewhere on the internet:
