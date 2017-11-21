@@ -15,7 +15,7 @@ module.exports = {
       {
         page: "/_slug",
         permalink: "/work/:slug",
-        isPost: false
+        isPost: true
       }
     ]
   ],
