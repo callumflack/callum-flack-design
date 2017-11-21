@@ -68,6 +68,7 @@
 
   --font-serif-regular: "PortraitText-Regular";
   --font-serif-italic: "PortraitText-RegularItalic";
+  --font-regular: "Atten-Book";
   --font-heading-medium: "Atten-Medium";
   --font-heading-bold: "Atten-Bold";
   --font-button: var(--font-heading-bold);
@@ -100,7 +101,7 @@
   --s-text-1: 18px;
   --s-text-2: 20px;
   --s-text-3: 1.414rem;
-  --s-text-3: 22px;
+  --s-text-3: 23px;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;

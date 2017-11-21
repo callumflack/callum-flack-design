@@ -19,7 +19,6 @@ projectColor: rgb(17, 89, 192)
 
 Their metalworks are rugged and beautiful. To capture this, we hired [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, with images and sliders immersing the viewer in the variety of works.
 
-
 @[MarkdownImage](medium src="/images/oceanblueliving-photography.jpg")
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match the 'craftsmanship' archetype central to their brand repositioning.

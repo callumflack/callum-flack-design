@@ -1,7 +1,7 @@
 ---
 section: Projects
 title: Pharmaceutical apps
-headline: A series of iPad apps explaining complex pharma products with simple and engaging digital stories.
+headline: Explaining complex pharma products with simple and engaging digital stories.
 lede: A series of <span style="color:rgb(210, 18, 77)">PHARMACEUTICAL IPAD APPS</span> explaining complex products with simple and engaging digital stories.
 heroImage: /images/pharmaceutical-edetailers-hero.jpg
 thumbImage: /images/thumb-actifuse.jpg
