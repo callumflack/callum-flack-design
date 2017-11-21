@@ -7,7 +7,10 @@ module.exports = {
       {
         page: "/_slug",
         permalink: "/:slug",
-        isPost: false
+        isPost: false,
+        generate: [
+          'get',
+        ]
       }
     ],
     [
@@ -15,7 +18,11 @@ module.exports = {
       {
         page: "/_slug",
         permalink: "/work/:slug",
-        isPost: true
+        isPost: true,
+        generate: [
+          'get',
+          'getAll',
+        ]
       }
     ]
   ],

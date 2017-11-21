@@ -11,7 +11,7 @@
       .Container
         nuxtent-body.Markdown(:body="page.body")
 
-    nuxt-link(to="/work")
+    //- nuxt-link(to="/work")
       .Block--sandwichPadding
         .Container
           h1.Title.u-sm-size11of12
