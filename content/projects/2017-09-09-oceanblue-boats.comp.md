@@ -1,7 +1,8 @@
 ---
 section: Projects
 title: Oceanblue Boats
-headline: A website to help create a community around guys who like boats.
+headline: A website to tell a story of fishing boats and far-away places.
+lede: A website for <span style="color:rgb(41,170,150)">OCEANBLUE BOATS</span> tell a story about fishing boats and far-away places.
 heroImage: /images/oceanblueboats-hero.jpg
 thumbImage: /images/thumb-oceanblueboats.jpg
 year: 2017
@@ -10,18 +11,20 @@ tags: website, branding
 projectColor: rgb(41, 170, 150)
 ---
 
-OceanBlue Living were stuck with a website they couldn't update themselves, and they badly needed to talk to their audience. After workshopping their needs and their audience requirements, we repositioned their branding and redesigned the site to build / better inform users.
+**OceanBlue Boats had just moved** into a new warehouse space that was four times larger. I was brought in to redesign their brand and build a website that told their love for all things boating, fishing and fabrication. 
 
 @[MarkdownMovie](medium laptop src="/images/oceanblueboats-desktop-video.mp4")
+
+Vince, the owner, knows fishing boats. The website acts as a storybook, each page is a chapter that talks about Vince's love for boats, how he grew up with them and how he loves making them for fishermen who know the difference between a reel positioned off port versus off starboard.
 
 > We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it.” — Vince Cassaniti, owner of OceanBlue Boats
 
 @[MarkdownImage](medium src="/images/oceanblueboats-layout.jpg")
 
-As with the brand work for their sister company, Oceanblue Boats, I hired [J-Create Photography](http://j-create.com.au/) to capture the team's love of boat building. as the key point of difference in their brand story. Immersive photography was is used to tell that story on the website and in their marketing materials.
+I worked with [J-Create Photography](http://j-create.com.au/) to capture the team's love of boat building. We portrayed a tight-knit crew dedicated to their craft. We showcased their factory-sized workspace and their fabrication technology capability as uncommon local drawcards. 
 
 @[MarkdownImage](medium src="/images/oceanblueboats-photography.jpg")
 
-The heart of the website will be the blog, a place we hope people will dream up their perfect home and office space, and create a community around OceanBlue's works.
+As our relationship continues, we'll document their work and build a library of images for ongoing brand marketing. This will position OceanBlue Boats as the premium craftspeople they are.
 
 @[MarkdownButton](link="https://oceanblueboats.com.au" label="Visit the site")

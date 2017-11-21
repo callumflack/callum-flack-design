@@ -1,0 +1,22 @@
+---
+section: Projects
+title: VJ Ray
+headline: Putting Real Estate Management customers first.
+lede: Repositioning <span style="color:rgb(201, 11, 80)">VJ RAY</span> as people-first Real Estate Managers.
+heroImage: /images/vjray-strata-hero.jpg
+thumbImage: /images/thumb-vjray.jpg
+year: 2017
+featured: true
+tags: website, branding
+projectColor: rgb(201, 11, 80)
+---
+
+OceanBlue Living were stuck with a website they couldn't update themselves, and they badly needed to talk to their audience. After workshopping their needs and their audience requirements, we repositioned their branding and redesigned the site to build / better inform users.
+
+@[MarkdownMovie](medium laptop src="/images/oceanblueboats-desktop-video.mp4")
+
+> We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it.” — Vince Cassaniti, owner of OceanBlue Boats
+
+@[MarkdownImage](medium src="/images/oceanblueboats-layout.jpg")
+
+@[MarkdownButton](link="https://oceanblueboats.com.au" label="Visit the site")

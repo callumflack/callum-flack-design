@@ -203,6 +203,7 @@ blockquote p {
   padding-bottom: 0.5em;
 }
 
+.Markdown p strong,
 .Newthought {
   font-family: var(--font-heading-bold);
   font-variant: small-caps;

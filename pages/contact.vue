@@ -7,7 +7,7 @@
             .u-sm-size2of3.Grid-cell--center
               figure.Figure.u-textCenter.u-pSpace
                 c-clock
-              .Title.u-textCenter Cairns Time.
+              .Title.u-textCenter Cairns Time
     main(role="main")
       .Container.Block
         .Markdown

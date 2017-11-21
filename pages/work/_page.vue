@@ -3,11 +3,10 @@
     .Block--half(role="banner")
       .Container
         .Block--sandwich
-          h1.Title.u-sm-size11of12
+          h1.Title.Title--sub.u-sm-size11of12.u-pSpace(v-html="page.lede")
             //- span(:style="projectColo") {{ page.title }}.&nbsp;
             //- br
             //- span.Title--sub {{ page.headline }}
-            span.Title--sub(v-html="page.lede")
         figure.Figure.Figure--large
           img(:src="page.heroImage", alt="")
 
@@ -60,12 +59,14 @@ export default {
 
     return {
       page,
-      nextPage,
+      nextPage
     };
   }
 };
 </script>
 
 <style scoped>
-
+.Title--sub span {
+  text-transform: uppercase !important;
+}
 </style>

@@ -11,7 +11,7 @@ tags: website, branding
 projectColor: rgb(17, 89, 192)
 ---
 
-OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks transform living spaces. 
+**OceanBlue Living were stuck** with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks transform living spaces. 
 
 > Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site gets commented on all the time.” <br>— LeaAnne Cassaniti, owner of Oceanblue Living
 
