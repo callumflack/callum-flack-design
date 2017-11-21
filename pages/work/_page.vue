@@ -11,17 +11,17 @@
       .Container
         nuxtent-body.Markdown(:body="page.body")
 
-    c-nextproject(:project="nextPage")
+    nuxt-link(to="/work")
+      .Block--sandwichPadding
+        .Container
+          h1.Title.u-sm-size11of12
+            span View all work  →
 
 </template>
 
 <script>
-import NextProject from "~/components/NextProject.vue";
-
 export default {
-  components: {
-    "c-nextproject": NextProject
-  },
+  components: {},
   computed: {
     projectColor() {
       // (v-if="page.projectColor", :style = 'projectColor')
@@ -29,9 +29,8 @@ export default {
     }
   },
   props: {
-    title: String,
-    headline: String,
-    next: String
+    lede: String,
+    heroImage: String
   },
   async asyncData({ app, route, payload }) {
     // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.
@@ -39,24 +38,9 @@ export default {
     const contentType = route.path === "/about" ? "/pages" : "/projects";
 
     const page = await app.$content(contentType).get(route.path);
-    let nextPage = null;
-
-    if (contentType === "/projects") {
-      try {
-        nextPage = await app.$content(contentType).getOnly(page.meta.index + 1);
-      } catch (err) {
-        // 500 error will be thrown if a page with the passed index does not exist
-        if (err.statusCode !== 500) {
-          throw err;
-        }
-
-        nextPage = null;
-      }
-    }
 
     return {
-      page,
-      nextPage
+      page
     };
   }
 };
