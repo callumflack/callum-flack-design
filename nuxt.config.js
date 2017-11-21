@@ -51,10 +51,15 @@ module.exports = {
       "/about",
       "/contact",
       "/work",
-      "/oceanblue-living",
-      "/primary-healthcare-network",
-      "/the-substation",
-      "/ward6"
+      "/work/oceanblue-living",
+      "/work/oceanblue-boats",
+      "/work/primary-healthcare-network",
+      "/work/the-substation",
+      "/work/raatsicc",
+      "/work/album-registry",
+      "/work/vj-ray",
+      "/work/ward6",
+      "/work/ward6-edetailers"
     ]
   },
   router: {
