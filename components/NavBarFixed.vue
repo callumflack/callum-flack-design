@@ -49,7 +49,8 @@ export default {
       this.previousScrollPos = scrollPos;
       const scrolledDown = scrollPos > previousScrollPos;
 
-      this.isNavHidden = scrolledDown || scrollPos < 200;
+      const { isMobileNavVisible } = this.$store.state;
+      this.isNavHidden = !isMobileNavVisible && (scrolledDown || scrollPos < 200)
 
       this.windowIsScrolled = scrollPos > transitionScrollPos;
     },
