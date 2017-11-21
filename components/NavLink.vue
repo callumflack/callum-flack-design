@@ -74,10 +74,15 @@ export default {
 
 .nuxt-link-active .Title:before,
 .link.is-active .Title:before {
-  content: "›";
+  /* content: "›"; */
+  background-color: var(--color-text);
+  content: " ";
   display: block;
+  height: 0.275em;
+  padding-right: 0.25em;
   position: absolute;
   left: 0;
-  top: -0.125em;
+  top: 0.45em;
+  width: 0.275em;
 }
 </style>
