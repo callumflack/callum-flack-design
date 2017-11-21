@@ -1,6 +1,6 @@
 <template lang="pug">
   li
-    nuxt-link(:class="currentPage", :to='link')
+    nuxt-link(:class="currentPage", :to='link' :exact="exact")
       span.Title {{ label }}
       span.Text.Text--italic {{ lede }}
 </template>
@@ -12,7 +12,8 @@ export default {
   props: {
     label: String,
     link: String,
-    lede: String
+    lede: String,
+    exact: Boolean
   },
 
   computed: {

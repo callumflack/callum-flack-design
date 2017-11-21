@@ -10,6 +10,7 @@
             :link="item.link",
             :lede="item.lede",
             :currentPage="currentPage"
+            :exact="item.exact"
           )
       .Nav-buttons.Meta.--medium.u-textCenter
         c-navbutton(
@@ -43,7 +44,8 @@ export default {
         {
           label: "Overview",
           link: "/",
-          lede: "bold, beautiful & simple"
+          lede: "bold, beautiful & simple",
+          exact: true
         },
         {
           label: "Work",
