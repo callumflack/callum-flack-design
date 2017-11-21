@@ -7,10 +7,15 @@
 
 .Form-group {
   display: flex;
+  flex-direction: column;
 
   & * + * {
     margin: 0 !important;
     margin-left: -1px;
+  }
+
+  @media (--small-viewport) {
+    flex-direction: row;
   }
 }
 
