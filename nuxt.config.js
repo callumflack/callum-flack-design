@@ -38,7 +38,8 @@ module.exports = {
   postcss: [],
   css: ["~/assets/styles/application.css"],
   plugins: [
-    { src: "~/plugins/vue-slick", ssr: false }
+    { src: "~/plugins/vue-slick", ssr: false },
+    { src: "~plugins/ga.js", ssr: false }
   ],
   modules: ["nuxtent"],
   axios: {
@@ -57,7 +58,7 @@ module.exports = {
     ]
   },
   router: {
-    middleware: "currentPage",
+    middleware: "currentPage"
     // this errors, WTF.
     // async scrolling docs look diff now:
     // https://router.vuejs.org/en/advanced/scroll-behavior.html
