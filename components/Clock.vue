@@ -14,7 +14,7 @@ export default {
   mounted() {
     const rootElement = this.$el;
     var radians = 0.0174532925,
-      clockRadius = 200,
+      clockRadius = 150,
       margin = 0,
       width = (clockRadius + margin) * 2,
       height = (clockRadius + margin) * 2,
@@ -230,15 +230,16 @@ export default {
 @import "../assets/styles/vars.css";
 
 .svg-clock {
-  stroke: #000;
+  stroke: var(--color-text);
   font-family: var(--font-heading-medium);
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
+  letter-spacing: 0.075em;
 }
 
 #rim {
   fill: none;
-  stroke: #999;
+  stroke: var(--color-border);
   stroke-width: 3px;
 }
 
@@ -270,13 +271,17 @@ export default {
   stroke-width: 8;
 }
 
+.second-label,
+.hour-label {
+  stroke-width: 0;
+}
+
 .second-label {
   font-size: 12px;
-  font-weight: 500;
+  display: none;
 }
 
 .hour-label {
   font-size: 24px;
-  font-weight: 500;
 }
 </style>

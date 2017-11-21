@@ -3,7 +3,7 @@
     div(role="banner")
       .u-bgColorNeutral
         .Container
-          .Block--sandwich
+          .Block--halfSandwich
             .u-sm-size2of3.Grid-cell--center
               figure.Figure.u-textCenter.u-pSpace
                 c-clock
