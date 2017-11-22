@@ -12,10 +12,9 @@ h3 {
   font-weight: normal;
 }
 
-/* .Markdown blockquote p em {*/
 .Meta {
   font-family: var(--font-heading-bold);
-  font-size: var(--s-heading-meta-1);
+  font-size: var(--s-heading-meta);
   font-style: normal;
   letter-spacing: var(--ls-meta);
   line-height: 1;
@@ -24,31 +23,15 @@ h3 {
   &.--medium {
     font-family: var(--font-heading-bold);
   }
-
-  @media (--medium-viewport) {
-    font-size: var(--s-heading-meta-2);
-  }
-
-  @media (--large-viewport) {
-    font-size: var(--s-heading-meta-3);
-  }
 }
 
 h1,
 .Title {
   font-family: var(--font-heading-medium);
-  font-size: var(--s-title-1);
+  font-size: var(--s-title);
   letter-spacing: 0.015em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
-
-  @media (--medium-viewport) {
-    font-size: var(--s-title-2);
-  }
-
-  @media (--large-viewport) {
-    font-size: var(--s-title-3);
-  }
 }
 
 .Title--sub {
@@ -58,18 +41,10 @@ h1,
 
 .Heading {
   font-family: var(--font-heading-bold);
-  font-size: var(--s-lede-1);
+  font-size: var(--s-lede);
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-transform: uppercase;
-
-  @media (--medium-viewport) {
-    font-size: var(--s-lede-2);
-  }
-
-  @media (--large-viewport) {
-    font-size: var(--s-lede-3);
-  }
 }
 
 .Subheading,
@@ -77,18 +52,10 @@ h1,
 .Markdown blockquote p,
 .Markdown blockquote p em {
   font-family: var(--font-heading-medium);
-  font-size: var(--s-lede-1);
+  font-size: var(--s-lede);
   font-style: normal;
   letter-spacing: 0;
   line-height: var(--lh-subheading);
-
-  @media (--medium-viewport) {
-    font-size: var(--s-lede-2);
-  }
-
-  @media (--large-viewport) {
-    font-size: var(--s-lede-3);
-  }
 }
 
 .Markdown h2, 
@@ -102,15 +69,11 @@ h1,
  * Texts
  */
 
-html {
-  font-size: 16px;
-}
-
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-serif-regular);
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: var(--ls-text);
   line-height: var(--lh-text);
@@ -120,38 +83,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-}
 
-p,
-ol,
-ul,
-blockquote,
-.Text {
-  font-family: var(--font-serif-regular);
-  font-size: var(--s-text-1);
-  font-style: normal;
-  line-height: var(--lh-text);
-  margin: 0;
-  text-transform: initial;
-
-  @media (--medium-viewport) {
-    font-size: var(--s-text-2);
+  /* responsive sizing */ 
+  @media (--small-viewport) {
+    font-size: 0.8125rem;
   }
   @media (--large-viewport) {
-    font-size: var(--s-text-3);
+    font-size: 1rem;
   }
 }
 
-blockquote p {
-  border-left: 1px solid var(--color-text-light);
-  color: var(--color-text-light);
-  font-family: var(--font-serif-italic);
-  padding-left: var(--s3);
-}
 
 /*
  * Markdown scope
  */ 
+
+.Markdown p,
+.Markdown ol,
+.Markdown ul,
+.Text {
+  font-family: var(--font-serif-regular);
+  font-size: var(--s-text);
+  font-style: normal;
+  line-height: var(--lh-text);
+  text-transform: initial;
+}
 
 .Markdown p em,
 .Text--italic {
@@ -162,15 +118,20 @@ blockquote p {
   color: var(--color-text-light);
 }
 
-.Markdown blockquote p em {
-  color: var(--color-text);
-  display: table;
+.Markdown p strong,
+.Newthought {
   font-family: var(--font-heading-bold);
-  font-size: 0.96em;
   font-variant: small-caps;
+  font-size: 1;
+  font-weight: 700;
   letter-spacing: 0.05em;
-  margin-top: var(--s2);
   text-transform: lowercase;
+}
+
+.Markdown ul {
+  list-style-type: disc;
+  /*margin-top: calc(-1 * var(--s4));*/
+  padding-left: var(--s4);
 }
 
 .Markdown blockquote p {
@@ -198,11 +159,17 @@ blockquote p {
   }*/
 }
 
-.Markdown ul {
-  list-style-type: disc;
-  /*margin-top: calc(-1 * var(--s4));*/
-  padding-left: var(--s4);
+.Markdown blockquote p em {
+  color: var(--color-text);
+  display: table;
+  font-family: var(--font-heading-bold);
+  font-size: 0.9em;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-top: var(--s2);
+  text-transform: lowercase;
 }
+
 
 .Drop > p:first-of-type:first-letter {
   float: left;
@@ -219,34 +186,64 @@ blockquote p {
   padding-bottom: 0.5em;
 }
 
-.Markdown p strong,
-.Newthought {
-  font-family: var(--font-heading-bold);
-  font-variant: small-caps;
-  font-size: 1.2em;
-  // font-size: 0.9em;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: lowercase;
+/* 
+ * lists 
+ */
+
+ul,
+ol {
+  font-family: inherit;
+  list-style-type: none;
+  margin: var(--s3) 0;
+  padding-left: 0;
+
+  @media (--large--viewport) {
+    margin: var(--s4) 0;
+  }
 }
+
+li {
+  margin-bottom: 0;
+}
+
+.u-noNegativeTopAlign {
+  /*margin-top: 0 !important;*/
+}
+
+.u-noVisualList {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
 
 /* 
  * spaces 
  */
 
 .u-pSpace {
-  // margin-bottom: 2rem;
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s3);
+
+  @media (--large-viewport) {
+    margin-bottom: var(--s4);
+  }
 }
 
 p + p,
 ul + p, 
 p + .Button {
-  margin-top: var(--s4);
+  margin-top: var(--s3);
+
+  @media (--large-viewport) {
+    margin-top: var(--s4);
+  }
 }
 
 blockquote {
-  margin: var(--s4) 0;
+  margin: var(--s3) 0;
+
+  @media (--large-viewport) {
+    margin-: var(--s4) 0;
+  }
 }
 
 .Markdown > blockquote:first-child {
@@ -256,11 +253,19 @@ blockquote {
 ul + h2,
 blockquote + h2,
 p + h2 {
-  margin-top: var(--s5);
+  margin-top: var(--s4);
+
+  @media (--large-viewport) {
+    margin-top: var(--s5);
+  }
 }
 
 h2 {
-  margin-bottom: var(--s3);
+  margin-bottom: var(--s2);
+
+  @media (--large-viewport) {
+    margin-bottom: var(--s3);
+  }
 }
 
 p:last-child {
@@ -278,30 +283,3 @@ ul {
     margin-bottom: 0;
   }
 }
-
-/* 
- * lists 
- */
-
-ul,
-ol {
-  font-family: inherit;
-  list-style-type: none;
-  margin: var(--s4) 0;
-  padding-left: 0;
-}
-
-.u-noNegativeTopAlign {
-  /*margin-top: 0 !important;*/
-}
-
-.u-noVisualList {
-  list-style-type: none !important;
-  padding-left: 0 !important;
-}
-
-li {
-  margin-bottom: 0;
-}
-
-

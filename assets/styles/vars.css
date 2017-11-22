@@ -82,7 +82,7 @@
   --s-title-1: 25px;
   --s-title-2: 32px;
   --s-title-3: 39px;
-  // --s-title-3: 2.369rem;
+  --s-title: 2.369em;
 
   // --s-heading-1: 24px;
   // --s-heading-2: 30px;
@@ -91,21 +91,23 @@
   --s-heading-meta-1: 11px;
   --s-heading-meta-2: 13px;
   --s-heading-meta-3: 15px;
+  --s-heading-meta: 0.9375em;
 
   --s-lede-1: 21px;
   --s-lede-2: 25px;
   --s-lede-3: 28px;
-  // --s-lede-3: 1.999rem;
+  --s-lede: 1.999em;
 
   /* text serif */
   --s-text-1: 18px;
   --s-text-2: 20px;
-  --s-text-3: 1.414rem;
   --s-text-3: 23px;
+  --s-text: 1.414em;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;
   --s-text-sm-3: 14px;
+  --s-text-sm: 0.875em;
 
   /* 
    * ls & lh 
@@ -133,14 +135,14 @@
 
 
 /*
-Testing single variables within media queries.
+Single variables within media queries are a great idea:
 https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
 
-Doesn't work, cause I think nuxt requires all vars in the :root?
+But postcss-custom-properties limits vars to the :root
  
 :root { --s-title: 20px; }
 
-@media (--xlarge-viewport) {
+@media (min-width: 80em) {
   :root { --s-title: 40px; }
 }
 */
