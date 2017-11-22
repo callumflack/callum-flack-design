@@ -39,18 +39,22 @@ h1,
   text-transform: initial;
 }
 
-.Heading {
+/*.Heading {
   font-family: var(--font-heading-bold);
   font-size: var(--s-lede);
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-transform: uppercase;
+}*/
+
+.TypeScope h2 {
+  font-family: var(--font-heading-bold);
 }
 
 .Subheading,
-.Markdown h2, 
-.Markdown blockquote p,
-.Markdown blockquote p em {
+.TypeScope h2, 
+.TypeScope blockquote p,
+.TypeScope blockquote p em {
   font-family: var(--font-heading-medium);
   font-size: var(--s-lede);
   font-style: normal;
@@ -58,12 +62,6 @@ h1,
   line-height: var(--lh-subheading);
 }
 
-.Markdown h2, 
-/*.Markdown blockquote p,
-.Markdown blockquote p em,*/
-.Markdown--BlockquoteBold blockquote p {
-  font-family: var(--font-heading-bold);
-}
 
 /* 
  * Texts
@@ -73,7 +71,6 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-serif-regular);
-  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: var(--ls-text);
   line-height: var(--lh-text);
@@ -83,8 +80,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+}
 
-  /* responsive sizing */ 
+/* 
+ * Responsive sizing 
+ */ 
+body,
+.TypeScope-reset {
+  font-size: 0.75rem;
+  
   @media (--small-viewport) {
     font-size: 0.8125rem;
   }
@@ -93,14 +97,13 @@ body {
   }
 }
 
-
 /*
  * Markdown scope
  */ 
 
-.Markdown p,
-.Markdown ol,
-.Markdown ul,
+.TypeScope p,
+.TypeScope ol,
+.TypeScope ul,
 .Text {
   font-family: var(--font-serif-regular);
   font-size: var(--s-text);
@@ -109,16 +112,16 @@ body {
   text-transform: initial;
 }
 
-.Markdown p em,
+.TypeScope p em,
 .Text--italic {
   font-family: var(--font-serif-italic);
 }
 
-.Markdown p em {
+.TypeScope p em {
   color: var(--color-text-light);
 }
 
-.Markdown p strong,
+.TypeScope p strong,
 .Newthought {
   font-family: var(--font-heading-bold);
   font-variant: small-caps;
@@ -128,13 +131,13 @@ body {
   text-transform: lowercase;
 }
 
-.Markdown ul {
+.TypeScope ul {
   list-style-type: disc;
   /*margin-top: calc(-1 * var(--s4));*/
   padding-left: var(--s4);
 }
 
-.Markdown blockquote p {
+.TypeScope blockquote p {
   border: 0;
   border-top: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
@@ -159,7 +162,7 @@ body {
   }*/
 }
 
-.Markdown blockquote p em {
+.TypeScope blockquote p em {
   color: var(--color-text);
   display: table;
   font-family: var(--font-heading-bold);
@@ -246,7 +249,7 @@ blockquote {
   }
 }
 
-.Markdown > blockquote:first-child {
+.TypeScope > blockquote:first-child {
   margin-top: 0;
 }
 

@@ -3,7 +3,7 @@
  */
 
 
-.Markdown p a:not(.Button) {
+.TypeScope p a:not(.Button) {
   background-image: 
     linear-gradient(#fffff8, #fffff8), 
     linear-gradient(#fffff8, #fffff8), 
@@ -31,7 +31,7 @@
   }
 }
 
-.Markdown {
+.TypeScope {
   & blockquote {
     margin: var(--s4) 0;
   }
@@ -43,12 +43,12 @@
   }
 }
 
-.Markdown h2 {
+.TypeScope h2 {
   margin-top: calc(64 / 740 * 100%);
   margin-bottom: calc(32 / 740 * 100%);
 }
 
-/* .Markdown {
+/* .TypeScope {
   & .FlexEmbed,
   & img {
     margin: var(--s2) 0;

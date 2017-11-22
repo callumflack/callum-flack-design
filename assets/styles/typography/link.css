@@ -11,7 +11,7 @@ button {
 }
 
 p a:not(.Button),
-.Markdown a:not(.Button),
+.TypeScope a:not(.Button),
 .Title--sub.is-active .Title-visualLink,
 .Title--sub:hover .Title-visualLink,
 .Project:hover .Project-visualLink {

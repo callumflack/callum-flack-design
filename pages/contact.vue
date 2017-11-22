@@ -10,7 +10,7 @@
               .Title.u-textCenter Cairns Time
     main(role="main")
       .Container.Block
-        .Markdown
+        .TypeScope
           p
             a.u-noVisualLink(href="https://goo.gl/maps/y4EFgqzmxbL2")
               | 16 Ponticello Street, Whitfield #[br]

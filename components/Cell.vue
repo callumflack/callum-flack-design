@@ -3,15 +3,16 @@
     nuxt-link.Project.Block(:to="link")
       figure.Project-image
         img(:src="image")
-      .Project-text
+      .Project-text.TypeScope
         .Project-text-inner
           h2.Subheading
             span.Project-visualLink {{ title }}
-          p.u-colorTextLight 
-            span.Meta.--medium.u-marginR1(v-if="year") {{ year }} 
-            span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }}
-            span.Meta.--medium.u-marginR2.u-inlineBlock(style="transform: translateY(-2px)") |
-            span {{ headline }}
+          p.u-colorTextLight
+            span.TypeScope-reset
+              span.Meta.--medium.u-marginR1(v-if="year") {{ year }} 
+              span.Meta.--medium.u-marginR2(v-if="tags") {{ tags }}
+              span.Meta.--medium.u-marginR2.u-inlineBlock(style="transform: translateY(-2px)") |
+            | {{ headline }}
 </template>
 
 

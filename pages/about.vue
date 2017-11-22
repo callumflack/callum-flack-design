@@ -7,7 +7,7 @@
             img(:src="page.heroImage", alt="", style="opacity:0.9")
     main.Block(role="main")
       .Container
-        nuxtent-body.Markdown(:body="page.body")
+        nuxtent-body.TypeScope(:body="page.body")
     footer.u-bgColorWhite(role="contentinfo")
       c-nav
 </template>

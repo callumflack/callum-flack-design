@@ -9,7 +9,7 @@
 
     main.Block(role="main")
       .Container
-        nuxtent-body.Markdown(:body="page.body")
+        nuxtent-body.TypeScope(:body="page.body")
   
     footer.u-bgColorWhite(role="contentinfo")
       nuxt-link(to="/work")
