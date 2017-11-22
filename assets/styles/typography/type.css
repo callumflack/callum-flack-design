@@ -13,9 +13,10 @@ h3 {
 }
 
 .Meta {
-  font-family: var(--font-heading-bold);
+  font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-size: var(--s-heading-meta);
   font-style: normal;
+  font-weight: 700;
   letter-spacing: var(--ls-meta);
   line-height: 1;
   text-transform: uppercase;
@@ -27,15 +28,16 @@ h3 {
 
 h1,
 .Title {
-  font-family: var(--font-heading-medium);
+  font-family: var(--font-heading-medium), var(--font-stack-sans);
   font-size: var(--s-title);
+  font-weight: 500;
   letter-spacing: 0.015em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 }
 
 .Title--sub {
-  font-family: var(--font-heading-medium);
+  font-family: var(--font-heading-medium), var(--font-stack-sans);
   text-transform: initial;
 }
 
@@ -48,14 +50,14 @@ h1,
 }*/
 
 .TypeScope h2 {
-  font-family: var(--font-heading-bold);
+  font-family: var(--font-heading-bold), var(--font-stack-sans);
 }
 
 .Subheading,
 .TypeScope h2, 
 .TypeScope blockquote p,
 .TypeScope blockquote p em {
-  font-family: var(--font-heading-medium);
+  font-family: var(--font-heading-medium), var(--font-stack-sans);
   font-size: var(--s-lede);
   font-style: normal;
   letter-spacing: 0;
@@ -70,7 +72,7 @@ h1,
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-serif-regular);
+  font-family: var(--font-serif-regular), var(--font-stack-serif);
   font-weight: 400;
   letter-spacing: var(--ls-text);
   line-height: var(--lh-text);
@@ -105,16 +107,18 @@ body,
 .TypeScope ol,
 .TypeScope ul,
 .Text {
-  font-family: var(--font-serif-regular);
+  font-family: var(--font-serif-regular), var(--font-stack-serif);
   font-size: var(--s-text);
   font-style: normal;
+  font-weight: 400;
   line-height: var(--lh-text);
   text-transform: initial;
 }
 
 .TypeScope p em,
 .Text--italic {
-  font-family: var(--font-serif-italic);
+  font-family: var(--font-serif-italic), var(--font-stack-serif);
+  font-style: normal;
 }
 
 .TypeScope p em {
@@ -123,7 +127,7 @@ body,
 
 .TypeScope p strong,
 .Newthought {
-  font-family: var(--font-heading-bold);
+  font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-variant: small-caps;
   font-size: 1;
   font-weight: 700;
@@ -165,7 +169,7 @@ body,
 .TypeScope blockquote p em {
   color: var(--color-text);
   display: table;
-  font-family: var(--font-heading-bold);
+  font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-size: 0.9em;
   font-variant: small-caps;
   letter-spacing: 0.05em;
@@ -177,7 +181,7 @@ body,
 .Drop > p:first-of-type:first-letter {
   float: left;
   font-size: 2.5em;
-  font-family: var(--font-heading-medium);
+  font-family: var(--font-heading-medium), var(--font-stack-sans);
   line-height: 1;
   margin-left: 0;
   padding-right: 0.666667em;

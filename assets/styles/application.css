@@ -1,7 +1,7 @@
 @import "suit.css";
 @import "vars.css";
 @import "base.css";
-@import "typography/type-font-faces.css";
+@import "typography/font-faces.css";
 @import "typography/type.css";
 @import "typography/link.css";
 @import "layout/grid.css";

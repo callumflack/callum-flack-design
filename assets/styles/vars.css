@@ -73,6 +73,9 @@
   --font-heading-bold: "Atten-Bold";
   --font-button: var(--font-heading-bold);
 
+  --font-stack-serif: Georgia, "Times New Roman", Times, serif;
+  --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
   /* 
    * Font sizes
    * Using the perfect fourth: http://type-scale.com/
