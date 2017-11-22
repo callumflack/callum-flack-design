@@ -62,7 +62,7 @@ export default {
 
   & span:last-child {
     padding-left: 0.33em;
-    transform: translateY(0.75em);
+    transform: translateY(0.65em);
   }
 }
 

@@ -13,7 +13,8 @@ export default {
         "Block--halfSandwich",
         {
           "Figure--medium": this.medium,
-          "Figure--large": this.large
+          "Figure--large": this.large,
+          "Figure--frame": this.frame
         }
       ];
     }
