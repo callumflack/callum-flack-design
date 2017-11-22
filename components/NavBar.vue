@@ -48,7 +48,7 @@ export default {
 .Navbar {
   background-color: transparent;
   opacity: 1;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   position: relative;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
@@ -56,7 +56,7 @@ export default {
   z-index: 99;
 
   @media (--small-viewport) {
-    padding-top: 2.5rem;
+    padding-top: 2.25rem;
   }
 
   &.hidden {
@@ -105,7 +105,11 @@ export default {
   /* theme */
   /* height: 9.5px;
   width: 16px; */
-  transform: translateY(3px);
+  transform: translateY(4px);
+
+  @media (--viewport-small) {
+    transform: translateY(3px);
+  }
 }
 
 .icon svg {
