@@ -3,7 +3,7 @@
     .Block--half(role="banner")
       .Container
         .Block--sandwich
-          h1.Title.Title--sub.u-sm-size11of12.u-pSpace(v-html="page.lede")
+          h1.Title.Title--sub.u-textCenter.u-sm-size11of12.u-pSpace(v-html="page.lede")
         figure.Figure.Figure--large
           img(:src="page.heroImage", alt="")
 

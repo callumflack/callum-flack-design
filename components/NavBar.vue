@@ -73,6 +73,7 @@ export default {
 }
 
 .Navbar-inner ~ hr {
+  /* height: 2px; */
   transform: translateY(1px);
 }
 
@@ -105,7 +106,7 @@ export default {
   /* theme */
   /* height: 9.5px;
   width: 16px; */
-  transform: translateY(4px);
+  transform: translateY(3px);
 
   @media (--viewport-small) {
     transform: translateY(3px);

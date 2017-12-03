@@ -141,6 +141,14 @@ body,
   padding-left: var(--s4);
 }
 
+.TypeScope blockquote {
+  padding: var(--s2) 0;
+
+  @media (--large-viewport) {
+    padding: var(--s4) 0;
+  }
+}
+
 .TypeScope blockquote p {
   border: 0;
   border-top: 1px solid var(--color-text);
@@ -204,7 +212,7 @@ ol {
   margin: var(--s3) 0;
   padding-left: 0;
 
-  @media (--large--viewport) {
+  @media (--large-viewport) {
     margin: var(--s4) 0;
   }
 }

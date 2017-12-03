@@ -59,9 +59,9 @@ export default {
           linkLabel: "See work examples →"
         },
         {
-          heading: "design with code.",
+          heading: "From idea to the customer.",
           text:
-            "It's the closest I can get to knowing how it works.<br>Nothing beats the craft of doing.",
+            "I design with code so that your idea becomes a product in customer hands without… ",
           link: "#",
           linkLabel: "Follow me on Github"
         },
