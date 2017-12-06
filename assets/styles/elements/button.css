@@ -15,8 +15,8 @@
   font-weight: inherit;
   letter-spacing: var(--ls-meta);
   line-height: inherit;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
+  padding: 0.9rem 2rem 1rem;
+  /*text-transform: uppercase;*/
 
   /* pseudos */
   &:hover {
@@ -27,7 +27,7 @@
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 4px var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-bg);
   }
 
   &:active {
@@ -46,7 +46,7 @@
 
 .Button--outline {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px;
+  box-shadow: inset 0 0 0 1px;
   color: var(--color-text);
 
   &:hover {
@@ -55,7 +55,7 @@
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 4px, 0 0 0 2px;
+    box-shadow: inset 0 0 0 2px, 0 0 0 2px;
   }
 
   &:active {
@@ -63,6 +63,10 @@
     box-shadow: inset 0 0 0 1px var(--color-text),
       inset 0 0 16px var(--color-text);
     color: var(--color-bg);
+  }
+
+  @media (--small-viewport) {
+    box-shadow: inset 0 0 0 2px;
   }
 }
 

@@ -107,14 +107,13 @@ export default {
   z-index: 15;
 
   /* account for the navbar */
-  padding-top: 72px;
+  padding-top: 98px;
 }
 
 .Modal.hidden {
   opacity: 0;
   transform: translateY(100vh);
-  transition: opacity var(--transition-duration),
-    transform 0s var(--transition-duration);
+  transition: opacity var(--transition-duration), transform 0s var(--transition-duration);
 }
 
 .Modal.delay-transition {

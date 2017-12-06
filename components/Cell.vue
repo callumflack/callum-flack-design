@@ -88,4 +88,12 @@ export default {
   padding-top: 30px;
   margin-bottom: 24px;
 }
+
+.Project-image img {
+  filter: grayscale(100);
+}
+
+.Project:hover img {
+  filter: grayscale(0);
+}
 </style>

@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #f9f4dd !important; /* about */
+  background-color: #fdfdfd !important;
   background-color: var(--color-neutral) !important;
 }
 

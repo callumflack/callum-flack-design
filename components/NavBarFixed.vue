@@ -20,7 +20,7 @@ export default {
         {
           hidden: this.isNavHidden,
           grey: this.isVisible,
-          white: this.$store.state.isMobileNavVisible,
+          white: this.$store.state.isMobileNavVisible
         }
       ];
     }
@@ -50,16 +50,13 @@ export default {
       const scrolledDown = scrollPos > previousScrollPos;
 
       const { isMobileNavVisible } = this.$store.state;
-      this.isNavHidden = !isMobileNavVisible && (scrolledDown || scrollPos < 200)
+      this.isNavHidden = !isMobileNavVisible && (scrolledDown || scrollPos < 200);
 
       this.windowIsScrolled = scrollPos > transitionScrollPos;
     },
 
     handleNavToggle() {
-      this.$store.commit(
-        "SET_MODAL_VISIBILITY",
-        !this.$store.state.isMobileNavVisible
-      );
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
     }
   }
 };
@@ -69,7 +66,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Navbar {
-  background-color: rgba(242, 242, 242, 0.96);
+  background-color: rgba(255, 255, 255, 0.96);
   position: fixed;
   top: 0;
   width: 100%;

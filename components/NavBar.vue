@@ -1,20 +1,18 @@
 <template lang="pug">
   .Navbar
-    .Container
-      .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
-        div
-          nuxt-link(to='/' @click.native="hideNav") Patternworks
-        div
-          a(href="#", @click.prevent="handleNavToggle")
-            span.icon.u-marginR2
-              svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-if="isVisible")
-                rect(y="7.5", width="16", height="1", transform="translate(-3.31 8) rotate(-45)")
-                rect(y="7.5", width="16", height="1", transform="translate(8 -3.31) rotate(45)")
-              svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-else)
-                rect(y="4.5", width="16", height="1")
-                rect(y="10.5", width="16", height="1")
-            | Menu
-      hr
+    .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
+      div
+        nuxt-link(to='/' @click.native="hideNav") 
+      div
+        a(href="#", @click.prevent="handleNavToggle")
+          span.icon.u-marginR2
+            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-if="isVisible")
+              rect(y="7.5", width="16", height="2", transform="translate(-3.31 8) rotate(-45)")
+              rect(y="7.5", width="16", height="2", transform="translate(8 -3.31) rotate(45)")
+            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-else)
+              rect(y="4.5", width="16", height="2")
+              rect(y="10.5", width="16", height="2")
+          | Menu
 </template>
 
 
@@ -29,10 +27,7 @@ export default {
 
   methods: {
     handleNavToggle() {
-      this.$store.commit(
-        "SET_MODAL_VISIBILITY",
-        !this.$store.state.isMobileNavVisible
-      );
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
     },
 
     hideNav() {
@@ -48,7 +43,6 @@ export default {
 .Navbar {
   background-color: transparent;
   opacity: 1;
-  padding-top: 1rem;
   position: relative;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
@@ -56,7 +50,7 @@ export default {
   z-index: 99;
 
   @media (--small-viewport) {
-    padding-top: 2.25rem;
+    /*padding-top: 2.25rem;*/
   }
 
   &.hidden {
@@ -70,11 +64,14 @@ export default {
 .Navbar-inner {
   display: flex;
   padding-bottom: 12px;
+  padding: 1.2rem 1.5rem 1.25rem;
+  padding: 2rem 2.5rem 2.1rem;
 }
 
 .Navbar-inner ~ hr {
   /* height: 2px; */
   transform: translateY(1px);
+  transform: initial;
 }
 
 .-btn {
@@ -82,8 +79,7 @@ export default {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
-  transition: color 400ms ease, background-color 400ms ease,
-    border-color 400ms ease;
+  transition: color 400ms ease, background-color 400ms ease, border-color 400ms ease;
 
   &:focus {
     outline: none;
@@ -109,7 +105,7 @@ export default {
   transform: translateY(3px);
 
   @media (--viewport-small) {
-    transform: translateY(3px);
+    transform: translateY(1px);
   }
 }
 

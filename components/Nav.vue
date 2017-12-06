@@ -1,29 +1,27 @@
 <template lang="pug">
-  .Block--sandwichPadding
-    .Container
-      .Block--quarter
-        ul.Nav-menu.u-marginT0
-          c-navlink(
-            v-for="item in navLinks",
-            :key="item.label",
-            :label="item.label",
-            :link="item.link",
-            :lede="item.lede",
-            :currentPage="currentPage"
-            :exact="item.exact"
-          )
-      .Nav-buttons.Meta.--medium.u-textCenter
-        c-navbutton(
-          v-for="item in navButtons",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
-        )
+  nav
+    ul.Nav-menu
+      c-navlink(
+        v-for="item in navLinks",
+        :key="item.label",
+        :label="item.label",
+        :link="item.link",
+        :lede="item.lede",
+        :currentPage="currentPage"
+        :exact="item.exact"
+      )
+    .Nav-buttons.Meta.--medium.u-textCenter
+      c-navbutton(
+        v-for="item in navButtons",
+        :key="item.label",
+        :label="item.label",
+        :link="item.link",
+      )
 </template>
 
 
 <script scoped>
-import NavLink from "~/components/NavLink.vue";
+import NavLink from "~/components/NavLinkAlt.vue";
 import NavButton from "~/components/NavButton.vue";
 
 export default {
@@ -104,12 +102,17 @@ export default {
   top: 0;
 }
 
+.Nav-menu {
+  margin: var(--s4) 0;
+  padding: 0 2.5rem;
+}
+
 .Nav-menu ul {
   margin-bottom: 0;
 }
 
 .Nav-menu li + li {
-  margin-top: var(--s4);
+  margin-top: var(--s3);
 }
 
 .Nav-buttons {

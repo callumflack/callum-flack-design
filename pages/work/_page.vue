@@ -3,7 +3,7 @@
     .Block--half(role="banner")
       .Container
         .Block--sandwich
-          h1.Title.Title--sub.u-textCenter.u-sm-size11of12.u-pSpace(v-html="page.lede")
+          h1.Meta.Red.u-sm-size11of12.u-pSpace(v-html="page.lede")
         figure.Figure.Figure--large
           img(:src="page.heroImage", alt="")
 
@@ -15,7 +15,7 @@
       nuxt-link(to="/work")
         .Block--sandwichPadding
           .Container
-            h1.Title.u-sm-size11of12
+            h1.Meta.u-sm-size11of12
               span View all work  →
 
 </template>

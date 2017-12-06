@@ -1,8 +1,6 @@
 <template lang="pug">
-  li
-    nuxt-link(:class="currentPage", :to='link' :exact="exact")
-      span.Meta {{ label }}
-      span.Text.Text--italic {{ lede }}
+  li.u-textRight
+    nuxt-link(:class="currentPage", :to='link' :exact="exact") {{ label }}
 </template>
 
 <script>
@@ -18,7 +16,7 @@ export default {
 
   computed: {
     currentPage() {
-      let classes = ["link"];
+      let classes = ["link", "Meta"];
       if (this.link === this.$store.state.currentPage) {
         classes.push("is-active");
       } else {
@@ -34,35 +32,9 @@ export default {
 @import "../assets/styles/vars.css";
 
 .link {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+  text-align: right;
+  display: block;
   position: relative;
-  z-index: 1;
-
-  &:before {
-    background-image: url("/static/images/dot.svg");
-    background-repeat: repeat-x;
-    background-size: auto 2px;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    top: 70.5%;
-    width: 100%;
-    z-index: -1;
-  }
-
-  & span {
-    background-color: var(--color-bg);
-  }
-
-  & span:first-child {
-    padding-right: 0.33em;
-  }
-
-  & span:last-child {
-    padding-left: 0.33em;
-  }
 }
 
 .nuxt-link-active .Meta,

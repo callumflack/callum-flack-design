@@ -12,7 +12,7 @@ h3 {
   font-weight: normal;
 }
 
-.Meta {
+/*.Meta {
   font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-size: var(--s-heading-meta);
   font-style: normal;
@@ -24,7 +24,7 @@ h3 {
   &.--medium {
     font-family: var(--font-heading-bold);
   }
-}
+}*/
 
 h1,
 .Title {
@@ -41,6 +41,13 @@ h1,
   text-transform: initial;
 }
 
+.Red span {
+  color: #ed4d21 !important;
+  color: #ff3700 !important;
+  color: #0085ff !important;
+  color: #0070c9 !important;
+}
+
 /*.Heading {
   font-family: var(--font-heading-bold);
   font-size: var(--s-lede);
@@ -53,10 +60,10 @@ h1,
   font-family: var(--font-heading-bold), var(--font-stack-sans);
 }
 
+/*.TypeScope blockquote p,
+.TypeScope blockquote p em */
 .Subheading,
-.TypeScope h2, 
-.TypeScope blockquote p,
-.TypeScope blockquote p em {
+.TypeScope h2 {
   font-family: var(--font-heading-medium), var(--font-stack-sans);
   font-size: var(--s-lede);
   font-style: normal;
@@ -74,7 +81,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-serif-regular), var(--font-stack-serif);
   font-weight: 400;
-  letter-spacing: var(--ls-text);
+  /*letter-spacing: var(--ls-text);*/
   line-height: var(--lh-text);
 
   /* reset things */
@@ -95,6 +102,7 @@ body,
     font-size: 0.8125rem;
   }
   @media (--large-viewport) {
+    font-size: 0.9375rem;
     font-size: 1rem;
   }
 }
@@ -103,6 +111,7 @@ body,
  * Markdown scope
  */ 
 
+.Meta,
 .TypeScope p,
 .TypeScope ol,
 .TypeScope ul,
@@ -123,6 +132,7 @@ body,
 
 .TypeScope p em {
   color: var(--color-text-light);
+  color: inherit;
 }
 
 .TypeScope p strong,
@@ -165,16 +175,16 @@ body,
     transform: translateX(-1em);
   }*/
 
-  /*&:before {
+  &:before {
     content: "“";
     left: -2px;
     display: block;
     position: absolute;
     transform: translate3d(-100%,0,0);
-  }*/
+  }
 }
 
-.TypeScope blockquote p em {
+/*.TypeScope blockquote p em {
   color: var(--color-text);
   display: table;
   font-family: var(--font-heading-bold), var(--font-stack-sans);
@@ -183,7 +193,7 @@ body,
   letter-spacing: 0.05em;
   margin-top: var(--s2);
   text-transform: lowercase;
-}
+}*/
 
 
 .Drop > p:first-of-type:first-letter {

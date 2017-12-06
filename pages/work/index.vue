@@ -3,10 +3,10 @@ div
   main(role="main")
     .Block--sandwich
       .Container
-        .Title
+        .Meta
           | Filter projects by:&nbsp;
           br
-          a.Title--sub(
+          a.Meta(
             v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
