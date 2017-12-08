@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import FormNews from "~/components/FormNews.vue";
+import FormNews from "~/components/FormNewsletter.vue";
 
 export default {
   components: {
@@ -55,29 +55,27 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Banner {
-  background-color: var(--color-neutral);
+  background-color: var(--color-bg);
   position: relative;
   /* min-height: calc(100vh - 60px);
   max-height: calc((100vh - 370px)/1.5); */
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 90vh;
+  max-height: 90vh;
 
   display: flex;
   align-items: center;
 }
 
-.Banner-image {
-  & img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+.Banner-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .hi {
   background-color: rgba(110, 0, 255, 0.7);
   background-color: rgba(31, 31, 31, 1);
-  background-color: rgba(21, 21, 21, 0.96);
+  background-color: rgba(10, 10, 10, 0.96);
 
   & img {
     opacity: 0.15;

@@ -1,28 +1,29 @@
 <template lang="pug">
   div
-    .Block--half(role="banner")
+    article.Block--half(role="banner")
+      c-pagenavbar(:title="page.title")
+      c-pagenavbarfixed(:title="page.title")
       .Container
-        .Block--sandwich
-          h1.Meta.Red.u-sm-size11of12.u-pSpace(v-html="page.lede")
-        figure.Figure.Figure--large
+        c-movie(frame, large, laptop, :src="page.heroVideo", v-if="page.heroVideo")
+        figure.Figure.Figure--large(v-else)
           img(:src="page.heroImage", alt="")
 
-    main.Block(role="main")
+    main(role="main")
       .Container
         nuxtent-body.TypeScope(:body="page.body")
-  
-    footer.u-bgColorWhite(role="contentinfo")
-      nuxt-link(to="/work")
-        .Block--sandwichPadding
-          .Container
-            h1.Meta.u-sm-size11of12
-              span View all work  →
-
 </template>
 
 <script>
+import PageNavbar from "~/components/PageNavbar.vue";
+import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
+import MarkdownMovieAlt from "~/components/MarkdownMovieAlt.vue";
+
 export default {
-  components: {},
+  components: {
+    "c-pagenavbar": PageNavbar,
+    "c-pagenavbarfixed": PageNavbarFixed,
+    "c-movie": MarkdownMovieAlt
+  },
   computed: {
     projectColor() {
       // (v-if="page.projectColor", :style = 'projectColor')
@@ -30,8 +31,9 @@ export default {
     }
   },
   props: {
-    lede: String,
-    heroImage: String
+    title: String,
+    heroImage: String,
+    heroVideo: String
   },
   async asyncData({ app, route, payload }) {
     // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.
@@ -48,7 +50,5 @@ export default {
 </script>
 
 <style scoped>
-.Title--sub span {
-  text-transform: uppercase !important;
-}
+
 </style>

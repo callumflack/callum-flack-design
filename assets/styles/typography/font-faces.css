@@ -5,35 +5,35 @@
 
 @font-face {
   font-family: var(--font-serif-regular);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/newrailalphabet-light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-serif-italic);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/newrailalphabet-light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-regular);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/newrailalphabet-light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-heading-medium);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-heading-bold);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

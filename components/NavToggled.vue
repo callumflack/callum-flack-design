@@ -1,11 +1,11 @@
 <template lang="pug">
   div(@click="close", :class="navClass")
-    c-nav
+    c-nav(starred)
 </template>
 
 <script>
 import Navbar from "~/components/NavBar.vue";
-import Nav from "~/components/Nav.vue";
+import Nav from "~/components/NavAlt.vue";
 
 export default {
   name: "NavToggled",
@@ -35,42 +35,6 @@ export default {
     }
   },
 
-  data() {
-    return {
-      navLinks: [
-        {
-          label: "The home page",
-          link: "/"
-        },
-        {
-          label: "The history",
-          link: "/the-history"
-        },
-        {
-          label: "The factory",
-          link: "/the-factory"
-        },
-        {
-          label: "The process",
-          link: "/the-process"
-        },
-        {
-          label: "The boat builders",
-          link: "/the-boat-builders"
-        },
-        {
-          label: "The designs",
-          link: "/the-designs"
-        },
-        {
-          label: "The location",
-          link: "/contact-us"
-        }
-      ],
-      delayTransition: false
-    };
-  },
-
   methods: {
     applyDelayTransition(event) {
       if (event.target.getAttribute("href") === this.$route.path) {
@@ -95,8 +59,10 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Modal {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 1);
   bottom: 0;
+  cursor: url("../static/images/icon-close.svg"), auto;
+  cursor: url("../static/images/thumb-ward6.jpg"), auto;
   left: 0;
   opacity: 1;
   position: fixed;
@@ -104,10 +70,11 @@ export default {
   top: 0;
   transform: translateY(0);
   transition: opacity var(--transition-duration), transform 0s 0s;
-  z-index: 15;
+  z-index: 99;
 
-  /* account for the navbar */
-  padding-top: 98px;
+  &:hover {
+    cursor: url("../static/images/thumb-ward6.jpg"), auto;
+  }
 }
 
 .Modal.hidden {

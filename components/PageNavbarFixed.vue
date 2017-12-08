@@ -1,0 +1,93 @@
+<template lang="pug">
+  c-pagenavbar(:class="navbarClass", :title="title")
+</template>
+
+<script>
+import PageNavbar from "~/components/PageNavbar.vue";
+
+const transitionScrollPos = 360;
+
+export default {
+  name: "NavBarFixed",
+
+  components: {
+    "c-pagenavbar": PageNavbar
+  },
+
+  props: {
+    title: String
+  },
+
+  computed: {
+    navbarClass() {
+      return [
+        {
+          hidden: this.isNavHidden,
+          grey: this.isVisible,
+          white: this.$store.state.isMobileNavVisible
+        }
+      ];
+    }
+  },
+
+  data() {
+    return {
+      previousScrollPos: 0,
+      windowIsScrolled: false,
+      isNavHidden: true
+    };
+  },
+
+  mounted() {
+    if (window.scrollY > transitionScrollPos) {
+      this.windowIsScrolled = true;
+    }
+
+    window.addEventListener("scroll", this.handleScroll);
+  },
+
+  methods: {
+    handleScroll(event) {
+      const scrollPos = window.scrollY;
+      const previousScrollPos = this.previousScrollPos;
+      this.previousScrollPos = scrollPos;
+      const scrolledDown = scrollPos > previousScrollPos;
+
+      const { isMobileNavVisible } = this.$store.state;
+      this.isNavHidden = !isMobileNavVisible && (scrolledDown || scrollPos < 360);
+
+      this.windowIsScrolled = scrollPos > transitionScrollPos;
+    },
+
+    handleNavToggle() {
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
+    }
+  }
+};
+</script>
+
+<style scoped>
+@import "../assets/styles/vars.css";
+
+.Navbar {
+  /*background-color: rgba(255, 255, 255, 0.96);*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.Navbar.grey {
+  background-color: rgba(253, 253, 253, 0.96);
+}
+
+.Navbar.white {
+  background-color: #fff;
+}
+
+.Navbar.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: background-color var(--transition-duration),
+    opacity var(--transition-duration), transform 0s var(--transition-duration);
+}
+</style>

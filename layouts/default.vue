@@ -1,9 +1,11 @@
 <template lang="pug">
   div(:class="currentPageClass")
-    c-navbar
-    c-navbar-fixed
+    //- c-navbar
+    //- c-navbar-fixed
     c-nav-toggled(role="navigation")
     nuxt
+    footer(role="contentinfo")
+      c-nav(newsletter)
 
 </template>
 
@@ -11,7 +13,7 @@
 import NavBar from "~/components/NavBar.vue";
 import NavBarFixed from "~/components/NavBarFixed.vue";
 import NavToggled from "~/components/NavToggled.vue";
-import Nav from "~/components/Nav.vue";
+import Nav from "~/components/NavAlt.vue";
 
 export default {
   components: {

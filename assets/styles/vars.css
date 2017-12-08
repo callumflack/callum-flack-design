@@ -19,7 +19,7 @@
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: 720px; /*45em*/
+  --container-rg: 1168px; /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
@@ -40,7 +40,7 @@
   --s4: 2.5rem;
   --s5: 5rem;
   --s6: 10rem;
-  --s7: 15rem;
+  --s7: 10rem;
   
   /* instrument's tuck inset */
   --tuck: 6vw;
@@ -55,11 +55,12 @@
   --color-brand: #00ffff;
   /*--color-highlight: #0070c9;*/
   --color-highlight: #FF6F00;
+  --color-red: #ff3700;
   --color-text: #0a0a0a;
   --color-text-medium: #757575;
   --color-text-light: #959595;
   --color-border: #e5e5e5;
-  --color-neutral: #f2f2f2;
+  --color-neutral: #dedede;
   --color-bg: #fdfdfd;
 
   /* 
@@ -85,7 +86,9 @@
   --s-title-1: 25px;
   --s-title-2: 32px;
   --s-title-3: 39px;
+  --s-title: 3.157em;
   --s-title: 2.369em;
+  --s-title: 2.5em;
 
   // --s-heading-1: 24px;
   // --s-heading-2: 30px;
@@ -99,14 +102,15 @@
   --s-lede-1: 21px;
   --s-lede-2: 25px;
   --s-lede-3: 28px;
-  --s-lede: 1.999em;
   --s-lede: 1.75em;
+  --s-lede: 1.999em;
 
   /* text serif */
   --s-text-1: 18px;
   --s-text-2: 20px;
   --s-text-3: 23px;
   --s-text: 1.414em;
+  --s-text: 1.5625em;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;
@@ -119,8 +123,9 @@
   
   --ls-heading: -0.0225em;
   --ls-heading-sm: -0.005em;
-  --ls-text: -0.01em;
-  --ls-meta: 0; /*0.075em*/
+  --ls-body: -0.005em;
+  --ls-text: -0.0125em;
+  --ls-meta: -0.0125em; /*0.075em*/
 
   --lh-heading: 1.25;
   --lh-subheading: 1.4;

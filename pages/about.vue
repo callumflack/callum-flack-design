@@ -1,23 +1,25 @@
 <template lang="pug">
   div
-    .Block--sandwich(role="banner")
+    c-pagenavbar(title="About Callum")
+    c-pagenavbarfixed(title="About Callum")
+    section.Space(role="banner")
       .Container
         .u-sm-size2of3.Grid-cell--center
-          figure.Figure
-            img(:src="page.heroImage", alt="", style="opacity:0.9")
-    main.Block(role="main")
+        figure.Figure
+          img(:src="page.heroImage", alt="", style="opacity:0.9")
+    main(role="main")
       .Container
-        nuxtent-body.TypeScope(:body="page.body")
-    footer.u-bgColorWhite(role="contentinfo")
-      c-nav
+        nuxtent-body.TypeScope.TypeScope-about(:body="page.body")
 </template>
 
 <script>
-import Nav from "~/components/Nav.vue";
+import PageNavbar from "~/components/PageNavbar.vue";
+import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
 
 export default {
   components: {
-    "c-nav": Nav
+    "c-pagenavbar": PageNavbar,
+    "c-pagenavbarfixed": PageNavbarFixed
   },
   computed: {
     titleColor() {
@@ -43,7 +45,9 @@ export default {
 </script>
 
 <style scoped>
-body {
-  background-color: salmon !important;
+@import "../assets/styles/vars.css";
+
+.Space {
+  margin-bottom: calc(var(--s4) + 0.75rem);
 }
 </style>

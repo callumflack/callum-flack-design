@@ -15,17 +15,17 @@ After setbacks and investor problems, I was asked to help rethink what Album Reg
 be, and rebuild the platform for a community of photographers around the world.
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and
-> remembering, by sharing the cost that great photography deserves. _Jannah Dryden,
+> remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden,
 > founder_
 
-@[MarkdownImage](large frame src="/images/albumregistry-new-registry-detail.jpg")
+@[MarkdownMovie](src="/images/albumregistry-block-registries.mp4")
 
 Album Registry bridges the gap between people celebrating the big moments of their lives,
 and artisinal photographers who do justice to those moments. We needed a way to showcase
 what great photographers do while giving gifters a first-class, secure e-commerce
 experience.
 
-@[MarkdownMovie](medium frame src="/images/albumregistry-block-registries.mp4")
+@[MarkdownImage](large src="/images/albumregistry-new-registry-detail.jpg")
 
 ## Built for future iteration
 
@@ -40,20 +40,20 @@ Node.js ecosystem.
 We're able to design and adjust new features in the browser using the brand design system
 we designed and built.
 
-@[MarkdownImage](large frame src="/images/albumregistry-responsive-alt1@2x.jpg")
+@[MarkdownImage](large src="/images/albumregistry-responsive-alt1@2x.jpg")
 
 We aim to offer the Album Registry photographers an ecommerce platform, a marketing
 toolkit, and a community to share with.
 
 > Every wedding I do starts with an event page, which I can setup in a minute. My clients
 > are impressed when they get such a great web page done so fast, not to mention the huge
-> burden the gift-giving model lifts from their shoulders! _Vince Cassaniti, J-Create
+> burden the gift-giving model lifts from their shoulders!” _— Vince Cassaniti, J-Create
 > Photography_
 
-@[MarkdownImage](medium frame src="/images/albumregistry-moment.jpg")
+@[MarkdownImage](src="/images/albumregistry-moment.jpg")
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and
-> remembering by sharing the cost that great photography deserves. _Jannah Dryden,
+> remembering by sharing the cost that great photography deserves.” _— Jannah Dryden,
 > founder_
 
 Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to

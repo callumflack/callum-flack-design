@@ -3,16 +3,21 @@
     .Navbar-inner.Meta.u-flexJustifyBetween.u-flexAlignItemsBaseline
       div
         nuxt-link(to='/' @click.native="hideNav") 
+          span.icon.u-marginR2
+            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 32 32", height="32", width="32")
+              <rect y="15" width="32" height="2"/>
+              <rect y="15" width="32" height="2" transform="translate(32 0) rotate(90)"/>
+              <rect x="-1" y="15" width="34" height="2" transform="translate(16 -6.63) rotate(45)"/>
+              <rect x="-1" y="15" width="34" height="2" transform="translate(38.63 16) rotate(135)"/>
       div
         a(href="#", @click.prevent="handleNavToggle")
           span.icon.u-marginR2
-            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-if="isVisible")
-              rect(y="7.5", width="16", height="2", transform="translate(-3.31 8) rotate(-45)")
-              rect(y="7.5", width="16", height="2", transform="translate(8 -3.31) rotate(45)")
-            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 16 16", height="16", width="16", v-else)
-              rect(y="4.5", width="16", height="2")
-              rect(y="10.5", width="16", height="2")
-          | Menu
+            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 32 32", height="32", width="32", v-if="isVisible")
+              <rect x="-1" y="15" width="34" height="2" transform="translate(16 -6.63) rotate(45)"/>
+              <rect x="-1" y="15" width="34" height="2" transform="translate(38.63 16) rotate(135)"/>
+            svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 32 32", height="32", width="32", v-else)
+              <rect y="10" width="32" height="2"/>
+              <rect y="20" width="32" height="2"/>
 </template>
 
 
@@ -43,10 +48,11 @@ export default {
 .Navbar {
   background-color: transparent;
   opacity: 1;
-  position: relative;
+  position: fixed;
   transform: translateY(0);
   transition: opacity var(--transition-duration),
     transform 250ms var(--transition-duration);
+  width: 100%;
   z-index: 99;
 
   @media (--small-viewport) {
@@ -64,8 +70,10 @@ export default {
 .Navbar-inner {
   display: flex;
   padding-bottom: 12px;
-  padding: 1.2rem 1.5rem 1.25rem;
   padding: 2rem 2.5rem 2.1rem;
+  padding: 1.4rem 2rem 1.5rem;
+  padding: 5rem;
+  padding-bottom: 0;
 }
 
 .Navbar-inner ~ hr {
@@ -97,16 +105,25 @@ export default {
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  padding: 6px;
   position: relative;
   text-align: center;
   /* theme */
   /* height: 9.5px;
   width: 16px; */
-  transform: translateY(3px);
+  transform: translateY(0);
+
+  /*background-color: var(--color-bg);
+  height: 44px;
+  width: 44px;*/
 
   @media (--viewport-small) {
-    transform: translateY(1px);
+    transform: translateY(0);
   }
+}
+
+.circle {
+  border-radius: 999px;
 }
 
 .icon svg {

@@ -1,33 +1,45 @@
 <template lang="pug">
 div
+  c-pagenavbar(title="from idea to your people. By design.")
+  
   main(role="main")
-    .Block--quarterTop
-      c-slide(
-        v-for="slide in slides",
-        :key="slide.label",
-        :imageUrl="slide.imageUrl",
-        :figureUrl="slide.figureUrl",
-        :hi="slide.hi",
-        :heading="slide.heading",
-        :text="slide.text",
-        :link="slide.link",
-        :linkLabel="slide.linkLabel",
-        :newsletter="slide.newsletter",
-        :alignRight="slide.alignRight",
-      )
-  footer.u-bgColorWhite(role="contentinfo")
-    c-nav
+    //- c-slide(
+      v-for="slide in slides",
+      :key="slide.label",
+      :imageUrl="slide.imageUrl",
+      :figureUrl="slide.figureUrl",
+      :hi="slide.hi",
+      :heading="slide.heading",
+      :text="slide.text",
+      :link="slide.link",
+      :linkLabel="slide.linkLabel",
+      :newsletter="slide.newsletter",
+      :alignRight="slide.alignRight",
+    //- )
+    .Container.Block
+      .TypeScope
+        p Pause for a moment, and answer this for yourself: “Why perfectly phrased question that gets to the root of design choice immeidately?”
+
+        p Hi, I’m Callum. I build bold, beautiful &amp; simple digital products by design. And I can help you answer this question.
+
+        blockquote 
+          p “Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah blah over three lines.” _—&nbsp;Wyatt Arent, AUM founder_
+
+        p Here’s some examples of how I’ve helped wilful businesses, organisations and individuals create their digital shopfronts…
 
 </template>
 
 <script>
 import Slide from "~/components/Slide.vue";
-import Nav from "~/components/Nav.vue";
+import PageNavbar from "~/components/PageNavbar.vue";
 
 export default {
   components: {
-    "c-slide": Slide,
-    "c-nav": Nav
+    "c-pagenavbar": PageNavbar,
+    "c-slide": Slide
+  },
+  props: {
+    title: String
   },
   data() {
     return {

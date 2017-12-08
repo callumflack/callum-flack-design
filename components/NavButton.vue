@@ -1,8 +1,6 @@
 <template lang="pug">
   span
-    a.Button.Button--transparent(:href="link", target="_blank", v-if="link") {{ label }}
-    div(v-if="!link")
-      .Button.Button--transparent(style="cursor: default") {{ label }}
+    a.Button.Button--transparent(:href="link", target="_blank", v-if="link", v-html="label")
 </template>
 
 <script>

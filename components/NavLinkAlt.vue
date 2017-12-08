@@ -1,6 +1,6 @@
 <template lang="pug">
-  li.u-textRight
-    nuxt-link(:class="currentPage", :to='link' :exact="exact") {{ label }}
+  nuxt-link.Button.Button--transparent(:class="currentPage", :to='link', :exact="exact") 
+    span {{ label }}
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 
   computed: {
     currentPage() {
-      let classes = ["link", "Meta"];
+      let classes = ["link"];
       if (this.link === this.$store.state.currentPage) {
         classes.push("is-active");
       } else {
@@ -31,29 +31,28 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
+li {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+li + li {
+  margin-left: var(--s3);
+}
+
 .link {
-  text-align: right;
-  display: block;
-  position: relative;
 }
 
-.nuxt-link-active .Meta,
-.link.is-active .Meta {
-  position: relative;
-  padding-left: calc(1.5 * var(--s3));
-}
+/*.link.is-active*/
+.nuxt-link-active span {
+  background-image: linear-gradient(var(--color-text), var(--color-text));
+  background-size: 3px 3px;
+  background-repeat: repeat-x;
+  background-position: 0% 100%;
+  padding-bottom: 6px;
 
-.nuxt-link-active .Meta:before,
-.link.is-active .Meta:before {
-  /* content: "›"; */
-  background-color: var(--color-text);
-  content: " ";
-  display: block;
-  height: 0.275em;
-  padding-right: 0.25em;
-  position: absolute;
-  left: 0;
-  top: 0.45em;
-  width: 0.275em;
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background-position-y: 96%;
+  }
 }
 </style>

@@ -1,0 +1,72 @@
+<template lang="pug">
+.Navbar
+  .Container
+    .Block--sandwich
+      h1.Title.u-textCenter
+        a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle")
+          span.icon.icon-logo.u-marginR3
+            c-logo
+          span {{ title }}
+</template>
+
+
+<script scoped>
+import Logo from "~/components/Logo.vue";
+
+export default {
+  name: "page-navbar",
+  components: {
+    "c-logo": Logo
+  },
+  props: {
+    title: String
+  },
+  computed: {
+    isVisible: function() {
+      return this.$store.state.isMobileNavVisible;
+    }
+  },
+
+  methods: {
+    handleNavToggle() {
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
+    },
+
+    hideNav() {
+      this.$store.commit("SET_MODAL_VISIBILITY", false);
+    }
+  }
+};
+</script>
+
+<style scoped>
+@import "../assets/styles/vars.css";
+
+.Navbar {
+  background-color: transparent;
+  opacity: 1;
+  position: relative;
+  transform: translateY(0);
+  transition: opacity var(--transition-duration),
+    transform 250ms var(--transition-duration);
+  width: 100%;
+  z-index: 1;
+
+  @media (--small-viewport) {
+    /*padding-top: 2.25rem;*/
+  }
+
+  &.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity var(--transition-duration),
+      transform 250ms var(--transition-duration);
+  }
+}
+
+.nuxt-link-active {
+}
+
+.nuxt-link-exact-active {
+}
+</style>

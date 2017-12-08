@@ -1,12 +1,14 @@
 <template lang="pug">
 div
+  c-pagenavbar(title="Selected projects")
+  c-pagenavbarfixed(title="Selected projects")
   main(role="main")
-    .Block--sandwich
+    //- .Block--sandwich
       .Container
         .Meta
           | Filter projects by:&nbsp;
           br
-          a.Meta(
+          a(
             v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"
@@ -16,9 +18,9 @@ div
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
-    .Container--tuck
-      .Grid.Grid--alignCenter.Grid--withProjects
-        c-cell(
+    .GridWrapper
+      .Grid.Grid--alignCenter.Grid--withTinyGutter
+        c-project(
           v-if="project.featured"
           v-for="project in visibleProjects"
           :key="project.title"
@@ -31,13 +33,23 @@ div
           :lede="project.lede",
           :image="project.thumbImage",
         )
-  footer.u-bgColorWhite(role="contentinfo")
-    c-nav
+
+    <svg class='u-hiddenVisually'>
+      <filter id='gray' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
+        <feGaussianBlur stdDeviation="33" />
+        //- Clip edge artifacts:
+        //- https://stackoverflow.com/questions/24416564/svg-blur-filter-edge-artifacts
+        <feComponentTransfer>
+          <feFuncA type="discrete" tableValues="1 1"/>
+        </feComponentTransfer>
+      </filter>
+    </svg>
 </template>
 
 <script>
-import Cell from "~/components/Cell.vue";
-import Nav from "~/components/Nav.vue";
+import PageNavbar from "~/components/PageNavbar.vue";
+import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
+import Project from "~/components/Project.vue";
 
 const allTagName = "all";
 
@@ -56,8 +68,9 @@ function projectTagStringToList(projectTags) {
 export default {
   name: "projects",
   components: {
-    "c-cell": Cell,
-    "c-nav": Nav
+    "c-project": Project,
+    "c-pagenavbar": PageNavbar,
+    "c-pagenavbarfixed": PageNavbarFixed
   },
   data() {
     return {
@@ -112,7 +125,7 @@ export default {
 @import "../../assets/styles/vars.css";
 
 .GridWrapper {
-  margin-left: var(--grid-gutter);
-  margin-right: var(--grid-gutter);
+  margin-left: calc(2 * var(--grid-gutter));
+  margin-right: calc(2 * var(--grid-gutter));
 }
 </style>

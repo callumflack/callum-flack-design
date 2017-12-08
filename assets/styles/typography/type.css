@@ -31,9 +31,12 @@ h1,
   font-family: var(--font-heading-medium), var(--font-stack-sans);
   font-size: var(--s-title);
   font-weight: 500;
-  letter-spacing: 0.015em;
+  letter-spacing: -0.01em;
   line-height: var(--lh-heading);
   text-transform: uppercase;
+
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .Title--sub {
@@ -43,9 +46,9 @@ h1,
 
 .Red span {
   color: #ed4d21 !important;
-  color: #ff3700 !important;
   color: #0085ff !important;
   color: #0070c9 !important;
+  color: #ff3700 !important;
 }
 
 /*.Heading {
@@ -64,24 +67,25 @@ h1,
 .TypeScope blockquote p em */
 .Subheading,
 .TypeScope h2 {
-  font-family: var(--font-heading-medium), var(--font-stack-sans);
-  font-size: var(--s-lede);
+  font-family: var(--font-heading-bold), var(--font-stack-sans);
+  font-size: 1.1875em;
   font-style: normal;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
   line-height: var(--lh-subheading);
+  text-transform: uppercase;
 }
-
 
 /* 
  * Texts
  */
 
 body {
+  background-color: var(--color-neutral);
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-serif-regular), var(--font-stack-serif);
   font-weight: 400;
-  /*letter-spacing: var(--ls-text);*/
+  letter-spacing: var(--ls-body);
   line-height: var(--lh-text);
 
   /* reset things */
@@ -93,23 +97,35 @@ body {
 
 /* 
  * Responsive sizing 
- */ 
+ */
+
 body,
 .TypeScope-reset {
   font-size: 0.75rem;
-  
+
   @media (--small-viewport) {
     font-size: 0.8125rem;
   }
   @media (--large-viewport) {
+    font-size: 0.875rem;
     font-size: 0.9375rem;
     font-size: 1rem;
   }
 }
 
 /*
+ * Resets
+ */
+
+em,
+strong {
+  font-style: normal;
+  font-weight: inherit;
+}
+
+/*
  * Markdown scope
- */ 
+ */
 
 .Meta,
 .TypeScope p,
@@ -120,22 +136,36 @@ body,
   font-size: var(--s-text);
   font-style: normal;
   font-weight: 400;
+  letter-spacing: var(--ls-text);
   line-height: var(--lh-text);
   text-transform: initial;
 }
 
-.TypeScope p em,
+.Text--large {
+  font-size: 2em;
+}
+
+.TypeScope p,
+.TypeScope ol,
+.TypeScope ul {
+  @media (--large-viewport) {
+    width: 50%;
+  }
+}
+
+/*.TypeScope p em,
 .Text--italic {
   font-family: var(--font-serif-italic), var(--font-stack-serif);
   font-style: normal;
-}
+}*/
 
 .TypeScope p em {
   color: var(--color-text-light);
   color: inherit;
+  font-style: normal;
 }
 
-.TypeScope p strong,
+/*.TypeScope p strong,*/
 .Newthought {
   font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-variant: small-caps;
@@ -146,29 +176,45 @@ body,
 }
 
 .TypeScope ul {
-  list-style-type: disc;
+  list-style-type: none;
   /*margin-top: calc(-1 * var(--s4));*/
-  padding-left: var(--s4);
+  padding-left: 2rem;
 }
 
-.TypeScope blockquote {
-  padding: var(--s2) 0;
+.TypeScope li {
+  position: relative;
 
-  @media (--large-viewport) {
-    padding: var(--s4) 0;
+  &:before {
+    background-color: var(--color-text);
+    content: "";
+    height: 2px;
+    left: -2rem;
+    position: absolute;
+    top: 15px;
+    width: 1.5rem;
   }
 }
 
+/*.TypeScope blockquote {
+  padding: var(--s2) 0;
+
+  @media (--large-viewport) {
+    padding: var(--s2) 0;
+  }
+}*/
+
 .TypeScope blockquote p {
   border: 0;
-  border-top: 1px solid var(--color-text);
-  border-bottom: 1px solid var(--color-text);
+  border-top: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
   color: var(--color-text);
+  font-size: 2em;
+  margin-left: 50%;
   padding: var(--s2) 0;
   position: relative;
 
   @media (--large-viewport) {
-    padding: var(--s4) 0;
+    padding: var(--s3) 0;
   }
 
   /*&::first-line {
@@ -177,24 +223,18 @@ body,
 
   &:before {
     content: "“";
-    left: -2px;
+    left: -1px;
     display: block;
     position: absolute;
-    transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
-/*.TypeScope blockquote p em {
-  color: var(--color-text);
-  display: table;
-  font-family: var(--font-heading-bold), var(--font-stack-sans);
-  font-size: 0.9em;
-  font-variant: small-caps;
-  letter-spacing: 0.05em;
+.TypeScope blockquote p em {
+  /*display: table;*/
+  font-size: 1em;
   margin-top: var(--s2);
-  text-transform: lowercase;
-}*/
-
+}
 
 .Drop > p:first-of-type:first-letter {
   float: left;
@@ -205,10 +245,23 @@ body,
   padding-right: 0.666667em;
   padding-bottom: 0.25em;
   transform: translateY(-0.1em);
-  
+
   font-size: 2em;
   padding-right: 0.8em;
   padding-bottom: 0.5em;
+}
+
+/* 
+ * Page column variants 
+ */
+
+.TypeScope-about {
+  & p:nth-child(2) {
+    margin-left: 50%;
+  }
+
+  & *:nth-child(4) {
+  }
 }
 
 /* 
@@ -240,7 +293,6 @@ li {
   padding-left: 0 !important;
 }
 
-
 /* 
  * spaces 
  */
@@ -254,7 +306,7 @@ li {
 }
 
 p + p,
-ul + p, 
+ul + p,
 p + .Button {
   margin-top: var(--s3);
 
@@ -267,7 +319,7 @@ blockquote {
   margin: var(--s3) 0;
 
   @media (--large-viewport) {
-    margin-: var(--s4) 0;
+    margin: var(--s4) 0;
   }
 }
 
@@ -295,6 +347,10 @@ h2 {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+p + ul {
+  margin-top: 0;
 }
 
 ol,

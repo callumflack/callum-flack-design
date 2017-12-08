@@ -44,7 +44,7 @@
 
 <script scoped>
 import ContactLink from "~/components/ContactLink.vue";
-import FormNews from "~/components/FormNews.vue";
+import FormNews from "~/components/FormNewsletter.vue";
 import Nav from "~/components/Nav.vue";
 import Clock from "~/components/Clock.vue";
 

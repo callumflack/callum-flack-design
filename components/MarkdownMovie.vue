@@ -15,8 +15,6 @@
           </svg>
 </template>
 
-
-
 <script scoped>
 export default {
   name: "markdown-movie",

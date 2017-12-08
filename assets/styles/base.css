@@ -11,9 +11,15 @@ html {
 }
 
 body {
-  background-color: #f9f4dd !important; /* about */
-  background-color: #fdfdfd !important;
-  background-color: var(--color-neutral) !important;
+  background-color: #f9f4dd; /* about */
+  background-color: #fdfdfd;
+  background-color: var(--color-neutral);
+  background-color: var(--color-bg);
+}
+
+.page-work-page {
+  background-color: var(--color-bg);
+  background-color: var(--color-neutral);
 }
 
 img {
