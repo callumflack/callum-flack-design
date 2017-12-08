@@ -1,7 +1,7 @@
 <template lang="pug">
 div
-  c-pagenavbar(title="from idea to your people. By design.")
-  
+  c-pagetitle(title="from idea to your people. By design.")
+
   main(role="main")
     //- c-slide(
       v-for="slide in slides",
@@ -22,7 +22,7 @@ div
 
         p Hi, I’m Callum. I build bold, beautiful &amp; simple digital products by design. And I can help you answer this question.
 
-        blockquote 
+        blockquote
           p “Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah blah over three lines.” _—&nbsp;Wyatt Arent, AUM founder_
 
         p Here’s some examples of how I’ve helped wilful businesses, organisations and individuals create their digital shopfronts…
@@ -31,11 +31,11 @@ div
 
 <script>
 import Slide from "~/components/Slide.vue";
-import PageNavbar from "~/components/PageNavbar.vue";
+import PageTitle from "~/components/PageTitle.vue";
 
 export default {
   components: {
-    "c-pagenavbar": PageNavbar,
+    "c-pagetitle": PageTitle,
     "c-slide": Slide
   },
   props: {
