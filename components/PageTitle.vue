@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     c-pagenavbar(:title="title")
-    c-pagenavbarfixed(:title="title")
+    //- c-pagenavbarfixed(:title="title")
 </template>
 
 <script>

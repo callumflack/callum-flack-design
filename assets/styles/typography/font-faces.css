@@ -26,14 +26,14 @@
 
 @font-face {
   font-family: var(--font-heading-medium);
-  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
+  src: url("~static/fonts/Bureau-Grotesk-FB-One-Five.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: var(--font-heading-bold);
-  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
+  src: url("~static/fonts/Bureau-Grotesk-FB-One-Five.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

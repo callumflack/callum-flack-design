@@ -1,10 +1,9 @@
 <template lang="pug">
   div
-    c-pagenavbar(title="About Callum")
+    c-pagetitle(title="About Callum")
     c-pagenavbarfixed(title="About Callum")
     section.Space(role="banner")
       .Container
-        .u-sm-size2of3.Grid-cell--center
         figure.Figure
           img(:src="page.heroImage", alt="", style="opacity:0.9")
     main(role="main")
@@ -13,13 +12,11 @@
 </template>
 
 <script>
-import PageNavbar from "~/components/PageNavbar.vue";
-import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
+import PageTitle from "~/components/PageTitle.vue";
 
 export default {
   components: {
-    "c-pagenavbar": PageNavbar,
-    "c-pagenavbarfixed": PageNavbarFixed
+    "c-pagetitle": PageTitle
   },
   computed: {
     titleColor() {

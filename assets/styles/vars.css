@@ -39,7 +39,7 @@
   --s3: 1rem;
   --s4: 2.5rem;
   --s5: 5rem;
-  --s6: 10rem;
+  --s6: 7.5rem;
   --s7: 10rem;
   
   /* instrument's tuck inset */
@@ -62,6 +62,7 @@
   --color-border: #e5e5e5;
   --color-neutral: #dedede;
   --color-bg: #fdfdfd;
+  --color-bg-blue: #cdd8e2;
 
   /* 
    * Typefaces

@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    article.Block--half(role="banner")
+    article(role="banner")
       c-pagenavbar(:title="page.title")
       c-pagenavbarfixed(:title="page.title")
       .Container

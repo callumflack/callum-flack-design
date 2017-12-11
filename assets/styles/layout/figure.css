@@ -3,7 +3,16 @@
  */
 
 .Figure {
+  margin: calc(1.333 * var(--s3)) 0 calc(1.5 * var(--s3));
   position: relative;
+
+  @media (--large-viewport) {
+    margin: calc(1.333 * var(--s4)) 0 calc(1.5 * var(--s4));
+  }
+}
+
+.Figure:first-child {
+  margin-top: 0 !important;
 }
 
 .Figure--frame {

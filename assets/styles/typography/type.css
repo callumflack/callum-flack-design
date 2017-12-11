@@ -31,7 +31,7 @@ h1,
   font-family: var(--font-heading-medium), var(--font-stack-sans);
   font-size: var(--s-title);
   font-weight: 500;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 
@@ -101,15 +101,15 @@ body {
 
 body,
 .TypeScope-reset {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 
   @media (--small-viewport) {
-    font-size: 0.8125rem;
+    font-size: 0.8125rem !important;
   }
   @media (--large-viewport) {
     font-size: 0.875rem;
     font-size: 0.9375rem;
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 
@@ -209,7 +209,6 @@ strong {
   border-bottom: 2px solid var(--color-text);
   color: var(--color-text);
   font-size: 2em;
-  margin-left: 50%;
   padding: var(--s2) 0;
   position: relative;
 
@@ -227,6 +226,21 @@ strong {
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.TypeScope blockquote p,
+.u-leftColumn {
+  margin-left: 50%;
+}
+
+.TypeScope blockquote.left p {
+  border: initial;
+  margin-left: initial;
+  padding: initial;
+  
+  &:before {
+    content: initial;
   }
 }
 
@@ -297,6 +311,8 @@ li {
  * spaces 
  */
 
+p,
+ul,
 .u-pSpace {
   margin-bottom: var(--s3);
 
@@ -305,7 +321,7 @@ li {
   }
 }
 
-p + p,
+/*p + p,
 ul + p,
 p + .Button {
   margin-top: var(--s3);
@@ -313,7 +329,7 @@ p + .Button {
   @media (--large-viewport) {
     margin-top: var(--s4);
   }
-}
+}*/
 
 blockquote {
   margin: var(--s3) 0;
@@ -349,6 +365,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+h2 + ul,
 p + ul {
   margin-top: 0;
 }

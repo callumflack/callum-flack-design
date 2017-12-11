@@ -13,7 +13,7 @@
   /* theme */
   box-shadow: inset 0 0 0 1px var(--color-text);
   font-weight: inherit;
-  letter-spacing: var(--ls-meta);
+  letter-spacing: 0;
   line-height: inherit;
   padding: 1rem 2rem 0.9rem;
   text-transform: inherit;

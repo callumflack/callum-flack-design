@@ -11,8 +11,9 @@
 @import "layout/hr.pcss";
 @import "elements/button.css";
 @import "elements/icon.css";
+@import "elements/img.css";
 @import "elements/form.css";
 /* @import "components/device.pcss"; */
 @import "utils.css";
 @import "utils-spacers.css";
-/* @import "theme.css"; */
+@import "theme.pcss";

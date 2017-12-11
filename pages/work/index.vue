@@ -1,7 +1,6 @@
 <template lang="pug">
 div
-  c-pagenavbar(title="Selected projects")
-  c-pagenavbarfixed(title="Selected projects")
+  c-pagetitle(title="Selected projects")
   main(role="main")
     //- .Block--sandwich
       .Container
@@ -47,14 +46,13 @@ div
 </template>
 
 <script>
-import PageNavbar from "~/components/PageNavbar.vue";
-import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
+import PageTitle from "~/components/PageTitle.vue";
 import Project from "~/components/Project.vue";
 
 const allTagName = "all";
 
 // Functions are defined outside component since asyncData does not have access
-// to the component as it's called before initializing the component
+// to the component because it's called before initializing the component
 
 const trimTags = tags => tags.map(tag => tag.trim());
 
@@ -69,8 +67,7 @@ export default {
   name: "projects",
   components: {
     "c-project": Project,
-    "c-pagenavbar": PageNavbar,
-    "c-pagenavbarfixed": PageNavbarFixed
+    "c-pagetitle": PageTitle
   },
   data() {
     return {
@@ -121,7 +118,7 @@ export default {
 };
 </script>
 
-<style scopde lang="css">
+<style scope>
 @import "../../assets/styles/vars.css";
 
 .GridWrapper {

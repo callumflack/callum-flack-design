@@ -11,20 +11,5 @@ html {
 }
 
 body {
-  background-color: #f9f4dd; /* about */
-  background-color: #fdfdfd;
-  background-color: var(--color-neutral);
   background-color: var(--color-bg);
 }
-
-.page-work-page {
-  background-color: var(--color-bg);
-  background-color: var(--color-neutral);
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-

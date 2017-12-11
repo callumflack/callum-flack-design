@@ -93,14 +93,14 @@
 } */
 
 /*
- * Helpers
+ * Text helpers
  */
 
 .u-textLowercase {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 .u-textCapitalise {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 /* .u-border {
@@ -129,15 +129,15 @@
 }
 
 .u-height100 {
-  height: 100%;
+  height: 100% !important;
 }
 
 .u-width100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .u-width50 {
-  width: 50%;
+  width: 50% !important;
 }
 
 /*

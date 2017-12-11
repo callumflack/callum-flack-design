@@ -1,6 +1,8 @@
 <template lang="pug">
   .Container
     .Block--sandwich
+      .Block--halfSandwich.u-textCenter(v-if="divider")
+        c-logo
       nav.Title.u-textCenter
         a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle", v-if="starred")
           span.icon.icon-logo
@@ -52,6 +54,7 @@ export default {
   props: {
     currentPage: String,
     starred: Boolean,
+    divider: Boolean,
     newsletter: Boolean
   },
   computed: {

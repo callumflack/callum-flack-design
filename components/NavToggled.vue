@@ -1,6 +1,6 @@
 <template lang="pug">
   div(@click="close", :class="navClass")
-    c-nav(starred)
+    c-nav
 </template>
 
 <script>
@@ -63,6 +63,7 @@ export default {
   bottom: 0;
   cursor: url("../static/images/icon-close.svg"), auto;
   cursor: url("../static/images/thumb-ward6.jpg"), auto;
+  cursor: url("../static/images/icon-close.png"), auto;
   left: 0;
   opacity: 1;
   position: fixed;
@@ -74,6 +75,7 @@ export default {
 
   &:hover {
     cursor: url("../static/images/thumb-ward6.jpg"), auto;
+    cursor: url("../static/images/icon-close.png"), auto;
   }
 }
 

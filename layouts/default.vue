@@ -5,7 +5,7 @@
     c-nav-toggled(role="navigation")
     nuxt
     footer(role="contentinfo")
-      c-nav(newsletter)
+      c-nav
 
 </template>
 

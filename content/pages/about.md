@@ -33,12 +33,12 @@ travelling to meet in person.
 > series of transformations that reflect the dynamic nature of the organization and its
 > initiatives.” _Brad Spalding, Managing Director of The Substation_
 
-Here’s how you can engage me:
+## ways to engage my services
 
 * Improve or redesign your existing digital branding and/or website.
 * Create a new digital brand and/or website from scratch.
-* Collaborate as a specialist digital design partner to enhance customer communities over
-  time.
+* Collaborate as a specialist digital design partner to build and enhance customer
+  communities over time.
 
 ## Get in touch
 
