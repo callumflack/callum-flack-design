@@ -30,6 +30,9 @@
 .u-colorBrand {
   color: var(--color-brand) !important;
 }
+.u-colorText {
+  color: var(--color-text) !important;
+}
 .u-colorTextLight {
   color: var(--color-text-light) !important;
 }
@@ -52,6 +55,9 @@
  * bg colors
  */ 
 
+.u-bgColorText {
+  background-color: var(--color-text) !important;
+}
 .u-bgColorBrand {
   background-color: var(--color-brand) !important;
 }

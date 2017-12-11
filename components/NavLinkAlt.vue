@@ -43,16 +43,6 @@ li + li {
 .link {
 }
 
-/*.link.is-active*/
-.nuxt-link-active span {
-  background-image: linear-gradient(var(--color-text), var(--color-text));
-  background-size: 3px 3px;
-  background-repeat: repeat-x;
-  background-position: 0% 100%;
-  padding-bottom: 6px;
-
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    background-position-y: 96%;
-  }
-}
+/*.link.is-active
+.nuxt-link-active*/
 </style>

@@ -1,7 +1,6 @@
 <template lang="pug">
   div
-    c-pagetitle(title="About Callum")
-    c-pagenavbarfixed(title="About Callum")
+    c-pagetitle(title="A design-obsessed, code-based craftsman")
     section.Space(role="banner")
       .Container
         figure.Figure

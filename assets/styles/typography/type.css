@@ -69,6 +69,7 @@ h1,
 .TypeScope h2 {
   font-family: var(--font-heading-bold), var(--font-stack-sans);
   font-size: 1.1875em;
+  font-size: 1.25em;
   font-style: normal;
   letter-spacing: 0.04em;
   line-height: var(--lh-subheading);
@@ -83,7 +84,7 @@ body {
   background-color: var(--color-neutral);
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-serif-regular), var(--font-stack-serif);
+  font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
   letter-spacing: var(--ls-body);
   line-height: var(--lh-text);
@@ -132,7 +133,7 @@ strong {
 .TypeScope ol,
 .TypeScope ul,
 .Text {
-  font-family: var(--font-serif-regular), var(--font-stack-serif);
+  font-family: var(--font-regular), var(--font-stack-sans);
   font-size: var(--s-text);
   font-style: normal;
   font-weight: 400;
@@ -155,7 +156,7 @@ strong {
 
 /*.TypeScope p em,
 .Text--italic {
-  font-family: var(--font-serif-italic), var(--font-stack-serif);
+  font-family: var(--font-serif-italic), var(--font-stack-sans);
   font-style: normal;
 }*/
 
@@ -250,19 +251,19 @@ strong {
   margin-top: var(--s2);
 }
 
-.Drop > p:first-of-type:first-letter {
+.Drop > p:first-of-type:first-letter,
+.DropCap:first-letter {
+  border-top: 2px solid black;
+  border: 2px solid black;
   float: left;
   font-size: 2.5em;
-  font-family: var(--font-heading-medium), var(--font-stack-sans);
   line-height: 1;
   margin-left: 0;
   padding-right: 0.666667em;
-  padding-bottom: 0.25em;
-  transform: translateY(-0.1em);
-
-  font-size: 2em;
   padding-right: 0.8em;
+  padding-bottom: 0.25em;
   padding-bottom: 0.5em;
+  transform: translateY(-0.1em);
 }
 
 /* 
@@ -343,7 +344,7 @@ blockquote {
   margin-top: 0;
 }
 
-ul + h2,
+/*ul + h2,
 blockquote + h2,
 p + h2 {
   margin-top: var(--s4);
@@ -351,13 +352,14 @@ p + h2 {
   @media (--large-viewport) {
     margin-top: var(--s5);
   }
-}
+}*/
 
+h1,
 h2 {
-  margin-bottom: var(--s2);
+  margin-bottom: var(--s1);
 
   @media (--large-viewport) {
-    margin-bottom: var(--s3);
+    margin-bottom: var(--s2);
   }
 }
 
@@ -365,6 +367,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
+h1 + ul,
 h2 + ul,
 p + ul {
   margin-top: 0;

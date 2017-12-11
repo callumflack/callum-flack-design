@@ -49,14 +49,16 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Project {
-  display: block;
-
-  &:nth-child(7),
-  &:nth-child(8),
-  &:nth-child(9) {
+.Grid-cell:nth-child(7),
+.Grid-cell:nth-child(8),
+.Grid-cell:nth-child(9) {
+  & .Project {
     margin-bottom: 0 !important;
   }
+}
+
+.Project {
+  display: block;
 }
 
 /* use the SVG filter that's secreted on work/index */
