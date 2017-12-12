@@ -4,9 +4,9 @@
     .Block--sandwich
       h1.Title.u-textCenter
         a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle")
-          span.icon.icon-logo.u-marginR3
+          span.icon.icon-logo.u-marginR2
             c-logo
-          span {{ title }}
+          span(v-html="title")
 </template>
 
 
@@ -52,16 +52,17 @@ export default {
   width: 100%;
   z-index: 1;
 
-  @media (--small-viewport) {
-    /*padding-top: 2.25rem;*/
-  }
-
   &.hidden {
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity var(--transition-duration),
       transform 250ms var(--transition-duration);
   }
+}
+
+.Navbar a {
+  white-space: initial !important;
+  z-index: 99;
 }
 
 .nuxt-link-active {

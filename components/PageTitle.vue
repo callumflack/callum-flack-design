@@ -1,7 +1,7 @@
 <template lang="pug">
-  div
+  div.u-marginB2
     c-pagenavbar(:title="title")
-    c-pagenavbarfixed(:title="title")
+    //- c-pagenavbarfixed(:title="title")
 </template>
 
 <script>
@@ -19,3 +19,8 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+
+</style>
+

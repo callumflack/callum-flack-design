@@ -80,11 +80,7 @@ export default {
         .attr("id", "clock-face")
         .attr(
           "transform",
-          "translate(" +
-            (clockRadius + margin) +
-            "," +
-            (clockRadius + margin) +
-            ")"
+          "translate(" + (clockRadius + margin) + "," + (clockRadius + margin) + ")"
         );
 
       //add marks for seconds
@@ -115,8 +111,7 @@ export default {
         })
         .attr("y", function(d) {
           return (
-            -secondLabelRadius * Math.cos(secondScale(d) * radians) +
-            secondLabelYOffset
+            -secondLabelRadius * Math.cos(secondScale(d) * radians) + secondLabelYOffset
           );
         })
         .text(function(d) {
@@ -149,10 +144,7 @@ export default {
           return hourLabelRadius * Math.sin(hourScale(d) * radians);
         })
         .attr("y", function(d) {
-          return (
-            -hourLabelRadius * Math.cos(hourScale(d) * radians) +
-            hourLabelYOffset
-          );
+          return -hourLabelRadius * Math.cos(hourScale(d) * radians) + hourLabelYOffset;
         })
         .text(function(d) {
           return d;
@@ -231,7 +223,7 @@ export default {
 
 .svg-clock {
   stroke: var(--color-text);
-  font-family: var(--font-heading-medium);
+  font-family: var(--font-heading);
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.075em;

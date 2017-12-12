@@ -1,14 +1,12 @@
 <template lang="pug">
 div
-  c-pagetitle(title="Cut-through websites for makers & shakers")
+  c-pagetitle(title="Cut-through websites<br>for makers & shakers")
 
   main(role="main")
     .Container
       .TypeScope
-        blockquote.left
-          p You know what you do inside out, but you can't connect with your online audience the way you'd hoped.
-
-        p Hi, I’m Callum. I build bold, beautiful &amp; simple digital experiences by design. I'll help you bridge the gap by understanding your unique situation, designing for emotional connection with your audience, and building a web-based system that still satisifies you and your toughest customers years from now.
+        p.Text--large You know what you do inside out, but you can't connect with your online audience the way you'd hoped.
+        p.u-noTextIndent Hi, I’m Callum. I build bold, beautiful &amp; simple digital experiences by design. I'll help you bridge the gap by understanding your unique situation, designing for emotional connection with your audience, and building a web-based system that still satisifies you and your toughest customers years from now.
 
         figure.Figure
           nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
@@ -40,12 +38,12 @@ div
         .Figure
           .PostWrapper
             nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal")
-              .Title.u-pSpace Designers should code #[span.LinkSignal-target →]
+              h1.Title.u-marginT0 Designers should code #[span.LinkSignal-target →]
               p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
 
-        p The work is fed by a constant curiosity. I write a newsletter every week about what I've found: it's a heads-up in designing for online connections. And it's also great way to keep in touch, so you should sign-up:
+        p The work is fed by constant curiosity. I write a newsletter every week about what I've found: it's a heads-up for designing online connections. It's also great way to keep in touch. You should sign-up:
 
-        c-newsletter.Text.u-width50
+        c-newsletter.Text.u-width50.u-pSpace
 
 </template>
 

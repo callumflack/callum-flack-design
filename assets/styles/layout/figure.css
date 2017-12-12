@@ -3,11 +3,15 @@
  */
 
 .Figure {
-  margin: calc(1.333 * var(--s3)) 0 calc(1.5 * var(--s3));
+  margin: var(--s4) 0;
   position: relative;
 
+  & img {
+    width: 100%;
+  }
+
   @media (--large-viewport) {
-    margin: calc(1.333 * var(--s4)) 0 calc(1.5 * var(--s4));
+    margin: var(--s5) 0;
   }
 }
 

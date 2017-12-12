@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.Meta.Button.Button--outline(:href="link") {{ label }} →
+  a.Text.Button.Button--outline(:href="link") {{ label }} →
 </template>
 
 <script scoped>

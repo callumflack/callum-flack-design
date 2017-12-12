@@ -60,7 +60,7 @@
   --color-text-medium: #757575;
   --color-text-light: #959595;
   --color-border: #e5e5e5;
-  --color-neutral: #dedede;
+  --color-neutral: #eee;
   --color-bg: #fdfdfd;
   --color-bg-blue: #cdd8e2;
 
@@ -68,12 +68,11 @@
    * Typefaces
    */
 
-  --font-serif-regular: "PortraitText-Regular";
-  --font-serif-italic: "PortraitText-RegularItalic";
-  --font-regular: "Atten-Book";
-  --font-heading-medium: "Atten-Medium";
-  --font-heading-bold: "Atten-Bold";
-  --font-button: var(--font-heading-bold);
+  --font-regular: "Unica-Regular";
+  --font-italic: var(--font-regular);
+  --font-medium: "Unica-Medium";
+  --font-heading: "BureauGrotesque-OneFive";
+  --font-button: var(--font-heading);
 
   --font-stack-serif: Georgia, "Times New Roman", Times, serif;
   --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -112,6 +111,7 @@
   --s-text-3: 23px;
   --s-text: 1.414em;
   --s-text: 1.5625em;
+  --s-text: 1.5em;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;
@@ -148,7 +148,9 @@
 Single variables within media queries are a great idea:
 https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
 
-But postcss-custom-properties limits vars to the :root
+But postcss-custom-properties limits vars to the :root:
+"Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
+https://github.com/postcss/postcss-custom-properties
  
 :root { --s-title: 20px; }
 

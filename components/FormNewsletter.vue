@@ -22,7 +22,7 @@ div
           tabindex="-1", 
           value=""
         )
-      button.Button.Button--outline.u-marginL2(
+      button.Button.Button--outline.u-marginL3(
         type="submit", 
         name="subscribe", 
       ) {{buttonText}}

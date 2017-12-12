@@ -70,6 +70,11 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: -1;
+}
+
+.Navbar a {
+  z-index: 99;
 }
 
 .Navbar.grey {

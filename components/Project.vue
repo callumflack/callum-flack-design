@@ -23,7 +23,7 @@ export default {
     cellClass() {
       return [
         {
-          "Grid-cell u-sm-size1of2 u-lg-size1of4": this.featured,
+          "Grid-cell u-sm-size1of2 u-lg-size1of2": this.featured,
           "Grid-cell u-size1of2 u-md-size1of3 u-lg-size1of4": !this.featured
         }
       ];
@@ -49,8 +49,8 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Grid-cell:nth-child(7),
-.Grid-cell:nth-child(8),
+/* .Grid-cell:nth-child(7), */
+/* .Grid-cell:nth-child(8), */
 .Grid-cell:nth-child(9) {
   & .Project {
     margin-bottom: 0 !important;

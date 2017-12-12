@@ -17,7 +17,7 @@ div
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
-    .GridWrapper
+    .Container
       .Grid.Grid--alignCenter.Grid--withTinyGutter
         c-project(
           v-if="project.featured"
@@ -124,5 +124,9 @@ export default {
 .GridWrapper {
   margin-left: calc(2 * var(--grid-gutter));
   margin-right: calc(2 * var(--grid-gutter));
+}
+
+.Grid-cell:nth-child(even) {
+  margin-top: var(--s4);
 }
 </style>
