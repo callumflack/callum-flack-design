@@ -26,16 +26,23 @@
   text-align: center;
 }
 
-.icon-logo {
-  height: 34px;
-  width: 34px;
+/* https://css-tricks.com/scale-svg/ */ 
+.icon-logo svg {
+  height: 24px;
+  width: 24px;
+
+  @media (--small-viewport) {
+    height: 34px;
+    width: 34px;
+  }
 }
 
 .icon-logo {
-  margin-right: 0.666rem;
+  margin-right: 0.5rem;
   transform: translateY(0);
 
   @media (--small-viewport) {
+    margin-right: 0.666rem;
     transform: translateY(1px);
   }
 }
@@ -51,5 +58,5 @@
 }
 
 .icon-logo svg {
-  transform: rotate(36deg);
+  transform: rotate(6deg);
 }

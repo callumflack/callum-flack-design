@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.u-marginB2
+  div.Space
     c-pagenavbar(:title="title")
     //- c-pagenavbarfixed(:title="title")
 </template>
@@ -21,6 +21,14 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/styles/vars.css";
 
+.Space {
+  margin-bottom: 0;
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s2);
+  }
+}
 </style>
 

@@ -19,7 +19,7 @@ div
                 img.u-width100.u-posRelative(src="/images/loop.gif", alt="")
 
         blockquote
-          p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah blah over three lines.” — Wyatt Arent, AUM founder 
+          p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah blah over three lines.” #[em — Wyatt Arent, AUM founder]
         //- p.TypeScope-reset.u-leftColumn
           nuxt-link.Title.u-noVisualLink.LinkSignal(to="/work") View work #[span.LinkSignal-target →]
         
@@ -43,7 +43,7 @@ div
 
         p The work is fed by constant curiosity. I write a newsletter every week about what I've found: it's a heads-up for designing online connections. It's also great way to keep in touch. You should sign-up:
 
-        c-newsletter.Text.u-width50.u-pSpace
+        c-newsletter.Text.u-sm-width50.u-pSpace
 
 </template>
 
@@ -98,18 +98,22 @@ export default {
 
 .Post {
   background-color: var(--color-bg);
-  box-shadow: inset 0 0 0 2px var(--color-text), 0.75rem 0.75rem 0 0 var(--color-text);
+  box-shadow: inset 0 0 0 2px var(--color-text), 0.75em 0.75em 0 0 var(--color-text);
   display: block;
   margin: auto;
-  padding: var(--s4);
+  padding: calc(1.5 * var(--s3));
 
   &:hover,
   &:focus {
-    box-shadow: inset 0 0 0 4px var(--color-text), 0.5rem 0.5rem 0 0 var(--color-text);
+    box-shadow: inset 0 0 0 4px var(--color-text), 0.375em 0.375em 0 0 var(--color-text);
   }
 
   &:active {
-    box-shadow: inset 0 0 8px var(--color-text), 0.5rem 0.5rem 0 0 var(--color-text);
+    box-shadow: inset 0 0 8px var(--color-text), 0.375em 0.375em 0 0 var(--color-text);
+  }
+
+  @media (--small-viewport) {
+    padding: var(--s4);
   }
 }
 </style>

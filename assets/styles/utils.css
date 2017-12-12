@@ -146,6 +146,12 @@
   width: 50% !important;
 }
 
+.u-sm-width50 {
+  @media (--small-viewport) {
+    width: 50% !important;
+  }
+}
+
 /*
  * container & block utils
  */

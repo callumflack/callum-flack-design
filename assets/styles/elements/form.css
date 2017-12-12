@@ -11,8 +11,7 @@
 
   & * + * {
     margin: 0;
-    margin-left: var(--s1);
-    margin-top: var(--s2);
+    margin-top: var(--s3);
   }
 
   @media (--small-viewport) {

@@ -198,9 +198,9 @@ strong {
 .TypeScope blockquote p {
   font-size: 2em;
   line-height: 1.34375;
-  margin: var(--s3) 0;
-
-  @media (--large-viewport) {
+  margin: calc(0.75 * var(--s4)) 0;
+  
+  @media (--small-viewport) {
     margin: var(--s4) 0;
   }
 }
@@ -220,7 +220,10 @@ strong {
 
 .TypeScope blockquote p,
 .u-leftColumn {
-  margin-left: 50%;
+  
+  @media (--small-viewport) {
+    margin-left: 50%;
+  }
 }
 
 .TypeScope blockquote.left p {
@@ -321,8 +324,10 @@ p:last-child {
 
 p + .Button,
 ul + .Button,
-.u-pSpace {
-  margin-top: var(--s3);
+.u-pSpace,
+.TypeScope h1,
+.TypeScope h2  {
+  margin-top: calc(0.75 * var(--s4));
 
   @media (--large-viewport) {
     margin-top: var(--s4);
@@ -336,15 +341,6 @@ ul + .Button,
 
 .Figure + blockquote p {
   padding-top: 0;
-}
-
-.TypeScope h1,
-.TypeScope h2 {
-  margin-top: var(--s3);
-
-  @media (--large-viewport) {
-    margin-top: var(--s4);
-  }
 }
 
 h1 + ul,

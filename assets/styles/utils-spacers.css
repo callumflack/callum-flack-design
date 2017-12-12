@@ -240,3 +240,25 @@
 .u-paddingL6 {
   padding-left: var(--s6) !important;
 }
+
+
+
+
+
+
+
+/*
+ * Responsive
+ */ 
+
+.u-msm-marginB0 {
+  @media (max-width: 32em) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.u-sm-marginL3 {
+  @media (--small-viewport) {
+    margin-left: var(--s3) !important;
+  }
+}
