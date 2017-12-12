@@ -32,10 +32,11 @@
 }
 
 .icon-logo {
-  transform: translateY(1px);
+  margin-right: 0.666rem;
+  transform: translateY(0);
 
   @media (--small-viewport) {
-    transform: translateY(2px);
+    transform: translateY(1px);
   }
 }
 

@@ -203,10 +203,6 @@ strong {
   @media (--large-viewport) {
     margin: var(--s4) 0;
   }
-
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 .TypeScope blockquote p {
@@ -247,21 +243,6 @@ strong {
   }
 }
 
-/*.Drop > p:first-of-type:first-letter,
-.DropCap:first-letter {
-  border-top: 2px solid black;
-  border: 2px solid black;
-  float: left;
-  font-size: 2.5em;
-  line-height: 1;
-  margin-left: 0;
-  padding-right: 0.666667em;
-  padding-right: 0.8em;
-  padding-bottom: 0.25em;
-  padding-bottom: 0.5em;
-  transform: translateY(-0.1em);
-}*/
-
 /* 
  * Project details addendum 
  */
@@ -287,19 +268,6 @@ strong {
 }
 
 /* 
- * Page column variants 
- */
-
-.TypeScope-about {
-  & p:nth-child(2) {
-    margin-left: 50%;
-  }
-
-  & *:nth-child(4) {
-  }
-}
-
-/* 
  * lists 
  */
 
@@ -318,6 +286,21 @@ li {
   list-style-type: none !important;
   padding-left: 0 !important;
 }
+
+/*.Drop > p:first-of-type:first-letter,
+.DropCap:first-letter {
+  border-top: 2px solid black;
+  border: 2px solid black;
+  float: left;
+  font-size: 2.5em;
+  line-height: 1;
+  margin-left: 0;
+  padding-right: 0.666667em;
+  padding-right: 0.8em;
+  padding-bottom: 0.25em;
+  padding-bottom: 0.5em;
+  transform: translateY(-0.1em);
+}*/
 
 /* 
  * spaces 
@@ -346,7 +329,8 @@ ul + .Button,
   }
 }
 
-.TypeScope > blockquote:first-child {
+.TypeScope .Text--large:first-child,
+.TypeScope blockquote:first-child p {
   margin-top: 0;
 }
 

@@ -61,9 +61,6 @@ export default {
 .Modal {
   background-color: rgba(255, 255, 255, 1);
   bottom: 0;
-  cursor: url("../static/images/icon-close.svg"), auto;
-  cursor: url("../static/images/thumb-ward6.jpg"), auto;
-  cursor: url("../static/images/icon-close.png"), auto;
   left: 0;
   opacity: 1;
   position: fixed;
@@ -73,8 +70,8 @@ export default {
   transition: opacity var(--transition-duration), transform 0s 0s;
   z-index: 99;
 
-  &:hover {
-    cursor: url("../static/images/thumb-ward6.jpg"), auto;
+  &:hover,
+  &:focus {
     cursor: url("../static/images/icon-close.png"), auto;
   }
 }
@@ -82,7 +79,8 @@ export default {
 .Modal.hidden {
   opacity: 0;
   transform: translateY(100vh);
-  transition: opacity var(--transition-duration), transform 0s var(--transition-duration);
+  transition: opacity var(--transition-duration),
+    transform 0s var(--transition-duration);
 }
 
 .Modal.delay-transition {

@@ -1,10 +1,10 @@
 <template lang="pug">
 .Navbar
   .Container
-    .Block--sandwich
+    .Block--halfSandwich
       h1.Title.u-textCenter
         a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle")
-          span.icon.icon-logo.u-marginR2
+          span.icon.icon-logo
             c-logo
           span(v-html="title")
 </template>

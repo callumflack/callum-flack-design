@@ -36,10 +36,10 @@ div
         p I also write about designing communications and services on the web through the lens of the human moments connecting them. It helps me become better at what I do, and I think it can help you too. Here's the latest:
 
         .Figure
-          .PostWrapper
-            nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal")
-              h1.Title.u-marginT0 Designers should code #[span.LinkSignal-target →]
-              p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
+          //- .PostWrapper
+          nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal")
+            h1.Title.u-marginT0 Designers should code #[span.LinkSignal-target →]
+            p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
 
         p The work is fed by constant curiosity. I write a newsletter every week about what I've found: it's a heads-up for designing online connections. It's also great way to keep in touch. You should sign-up:
 

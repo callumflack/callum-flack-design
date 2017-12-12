@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     c-pagetitle(title="A design-obsessed,<br>code-based craftsman")
-    section.Space(role="banner")
+    section(role="banner")
       .Container
         figure.Figure
           img(:src="page.heroImage", alt="", style="opacity:0.9")
@@ -42,8 +42,4 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
-
-.Space {
-  margin-bottom: calc(var(--s4) + 0.75rem);
-}
 </style>
