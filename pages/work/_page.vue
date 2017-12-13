@@ -6,7 +6,7 @@
       .Container
         c-movie(frame, large, laptop, :src="page.heroVideo", v-if="page.heroVideo")
         figure.Figure.Figure--large(v-else)
-          img(:src="page.heroImage", alt="")
+          img(:src="page.heroImage")
 
     main(role="main")
       .Container

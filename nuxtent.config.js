@@ -19,13 +19,22 @@ module.exports = {
         isPost: true,
         generate: ["get", "getAll"]
       }
+    ],
+    [
+      "posts",
+      {
+        page: "/_slug",
+        permalink: "/journal/:slug",
+        isPost: true,
+        generate: ["get", "getAll"]
+      }
     ]
   ],
 
-  loading: "~/components/PageLoading.vue",
-
   api: {
     baseURL:
-      process.env.NODE_ENV === "production" ? config.productionUrl : config.developmentUrl
+      process.env.NODE_ENV === "production"
+        ? config.productionUrl
+        : config.developmentUrl
   }
 };

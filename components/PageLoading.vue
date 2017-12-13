@@ -1,12 +1,12 @@
 
-<template>
-  <div class="loading-page" v-if="loading">
-    <p>Loading...</p>
-  </div>
+<template lang="pug">
+  .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
+    .Title Loading...
 </template>
 
 <script>
 export default {
+  name: "page-loading",
   data: () => ({
     loading: false
   }),
@@ -22,16 +22,16 @@ export default {
 </script>
 
 <style scoped>
+@import "../assets/styles/vars.css";
+
 .loading-page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background: var(--color-bg);
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  left: 0;
+  position: fixed;
   text-align: center;
-  padding-top: 200px;
-  font-size: 30px;
-  font-family: sans-serif;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 </style>

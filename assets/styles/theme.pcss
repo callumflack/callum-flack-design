@@ -2,7 +2,20 @@
  * Page themes
  */ 
 
+/*.page-index {
+  background-color: #0085ff !important;
+  background-color: #0070c9 !important;
+  background-color: #ff3700 !important;
+  background-color: #ed4d21 !important;
+  background-color: #dac2bc !important;
+  background-color: rgba(218, 194, 188, 0.4);
+  background-color: #dddfee;
+  background-color: #eee;
+}*/
+
+.page-index,
 .page-work-page {
+  background-color: #dde6ee;
   background-color: var(--color-neutral);
 
   & .Button--outline:hover {
@@ -11,8 +24,6 @@
 
   & p a:not(.Button),
   & .TypeScope a:not(.Button),
-  & .Title--sub.is-active .Title-visualLink,
-  & .Title--sub:hover .Title-visualLink,
   & .Project:hover .Project-visualLink {
     background-image: 
       linear-gradient(var(--color-neutral), var(--color-neutral)), 
@@ -40,8 +51,6 @@
     }
   }
 
-  & .Title--sub.is-active .Title-visualLink,
-  & .Title--sub:hover .Title-visualLink,
   & .Project:hover .Project-visualLink {
     background-size: 0;
     box-shadow: inset 0 -1px 0 0 var(--color-neutral), inset 0 -3px 0 0 var(--color-text);

@@ -1,6 +1,6 @@
 <template lang="pug">
   .Container
-    .Block--sandwich
+    .Block--halfSandwich
       .Block--halfSandwich.u-textCenter(v-if="divider")
         c-logo
       nav.Title.u-textCenter
@@ -29,11 +29,6 @@
           :label="item.label",
           :link="item.link",
         )
-      .u-sm-size5of12.Grid-cell--center.u-marginT4(v-if="newsletter")
-        p.TypeScope-reset.u-textCenter
-          | Ps. I write a letter to my internet friends every week about design and technology. You should sign up:
-        c-newsletter.u-marginT3
-    
 </template>
 
 
@@ -41,24 +36,18 @@
 import Logo from "~/components/Logo.vue";
 import NavLink from "~/components/NavLinkAlt.vue";
 import NavButton from "~/components/NavButton.vue";
-import Newsletter from "~/components/FormNewsletter.vue";
 
 export default {
   name: "nav-bottom",
   components: {
     "c-logo": Logo,
     "c-navlink": NavLink,
-    "c-navbutton": NavButton,
-    "c-newsletter": Newsletter
+    "c-navbutton": NavButton
   },
   props: {
     currentPage: String,
     starred: Boolean,
-    divider: Boolean,
-    newsletter: Boolean
-  },
-  computed: {
-    // plainNewsletterButton: true,
+    divider: Boolean
   },
   data() {
     return {
@@ -93,7 +82,7 @@ export default {
           link: "mailto:hi@patternworks.com.au"
         },
         {
-          label: "+610 408 767 540",
+          label: "+61 408 767 540",
           link: "tel:610-408-767-540"
         }
       ],

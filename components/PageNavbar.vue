@@ -3,7 +3,7 @@
   .Container
     .Block--halfSandwich
       h1.Title.u-textCenter
-        a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle")
+        a.Button.Button--transparent.LineHeight(href="#", @click.prevent="handleNavToggle")
           span.icon.icon-logo
             c-logo
           span(v-html="title")
@@ -63,6 +63,10 @@ export default {
 .Navbar a {
   white-space: initial !important;
   z-index: 99;
+}
+
+.LineHeight {
+  line-height: 1;
 }
 
 .nuxt-link-active {

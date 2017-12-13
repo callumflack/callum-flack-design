@@ -31,7 +31,12 @@
   height: 24px;
   width: 24px;
 
-  @media (--small-viewport) {
+  @media (--medium-viewport) {
+    height: 29px;
+    width: 29px;
+  }
+
+  @media (--large-viewport) {
     height: 34px;
     width: 34px;
   }
@@ -39,11 +44,11 @@
 
 .icon-logo {
   margin-right: 0.5rem;
-  transform: translateY(0);
+  transform: translateY(1px);
 
-  @media (--small-viewport) {
+  @media (--large-viewport) {
     margin-right: 0.666rem;
-    transform: translateY(1px);
+    transform: translateY(2px);
   }
 }
 
@@ -58,5 +63,5 @@
 }
 
 .icon-logo svg {
-  transform: rotate(6deg);
+  // transform: rotate(6deg);
 }

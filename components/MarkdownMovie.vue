@@ -23,7 +23,6 @@ export default {
     figureClasses() {
       return [
         "Figure",
-        "Block--halfSandwich",
         "Device",
         {
           "Figure--medium": this.medium,

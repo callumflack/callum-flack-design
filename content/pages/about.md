@@ -6,13 +6,10 @@ heroImage: images/EDITED 1-21_.jpg
 heroImageFirst: true
 ---
 
-> Hi, I’m Callum. I'm a design-obsessed, code-based, digital craftsman. I’ve been
-> designing and building brands and experiences since 2000.”
+> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, digital-thinking craftsman. I’ve been
+> designing and building brands and experiences since 2000.
 
-My work revolves around listening and understanding people and their challenges—clients,
-collaborators and their audiences—to provide elegant, satisfying digital solutions. I'll
-help you build brands and services that emotionally connect with people, and do the job
-customers need you for.
+My job is to help you bridge the gap to your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
 ## Experienced
 
@@ -24,14 +21,14 @@ was a stint as a brand designer at Saatchi & Saatchi, London.
 
 ## How we can work together
 
-Based in Cairns, I currently work with local, interstate and international clients. I can
+[Based in Cairns](https://www.instagram.com/p/BXbsNdrAt-v), I currently work with local, Australian and international clients. I can
 plug into a product team as a freelance designer, or work one-to-one with owners,
 organisations and creators to implement their digital business vision. I also enjoy
 travelling to meet in person.
 
 > The wordmark has been extended with a distinctive line that can be customized for a
 > series of transformations that reflect the dynamic nature of the organization and its
-> initiatives.” _Brad Spalding, Managing Director of The Substation_
+> initiatives. _Brad Spalding, Managing Director of The Substation_
 
 ## ways to engage my services
 

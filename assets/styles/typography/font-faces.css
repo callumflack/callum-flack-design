@@ -5,6 +5,7 @@
 
 @font-face {
   font-family: var(--font-regular);
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
   src: url("~static/fonts/Unica-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -20,6 +21,11 @@
 @font-face {
   font-family: var(--font-heading);
   src: url("~static/fonts/Bureau-Grotesk-FB-One-Five.woff") format("woff");
+  src: url("~static/fonts/Graphik-Semibold.woff") format("woff");
+  src: url("~static/fonts/Unica-Medium.woff") format("woff");
+  src: url("~static/fonts/Portrait-Bold.woff") format("woff");
+  src: url("~static/fonts/Plantin-BoldCondensed.woff") format("woff");
+  src: url("~static/fonts/Druk-Medium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

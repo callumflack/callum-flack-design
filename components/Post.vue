@@ -2,22 +2,21 @@
   div(:class="cellClass")
     nuxt-link.Project.Block--half(:to="link")
       figure.Project-image
-        img(:src="image")
+        img(v-if="image", :src="image")
       .Project-text
         h2.Title
           span.Project-visualLink {{ title }}
         p.Project-subtext.TypeScope-reset
           span.u-marginR1(v-if="year") {{ year }}
-          span(v-if="tags") {{ tags }}
+          span(v-if="date") {{ date }}
           span.Project-divider ——
           | {{ headline }}
-    
 </template>
 
 
 <script>
 export default {
-  name: "project",
+  name: "post",
   components: {},
   computed: {
     cellClass() {
@@ -30,17 +29,11 @@ export default {
     }
   },
   props: {
-    featured: Boolean,
-    casestudy: Boolean,
-    archive: Boolean,
-    center: Boolean,
     link: String,
     image: String,
     title: String,
     headline: String,
-    lede: String,
-    tags: String,
-    year: Number
+    date: String
   }
 };
 </script>

@@ -19,7 +19,7 @@
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: 1168px; /*45em*/
+  --container-rg: calc(1200px + 48px); /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
@@ -39,7 +39,7 @@
   --s3: 1rem;
   --s4: 2.5rem;
   --s5: 5rem;
-  --s6: 7.5rem;
+  --s6: 10rem;
   --s7: 12rem;
   
   /* instrument's tuck inset */
@@ -86,13 +86,17 @@
   --s-title-1: 25px;
   --s-title-2: 32px;
   --s-title-3: 39px;
-  --s-title: 3.157em;
   --s-title: 2.369em;
+  --s-title: 4em;
+  --s-title: 3.157em;
   --s-title: 2.5em;
 
-  // --s-heading-1: 24px;
-  // --s-heading-2: 30px;
-  // --s-heading-3: 35px;
+  --s-heading-1: 24px;
+  --s-heading-2: 30px;
+  --s-heading-3: 35px;
+  --s-heading: 1.875em;
+  --s-heading: 2.25em;
+  --s-heading: 2em;
 
   --s-heading-meta-1: 11px;
   --s-heading-meta-2: 13px;
@@ -128,7 +132,7 @@
   --ls-text: -0.0125em;
   --ls-meta: -0.0125em; /*0.075em*/
 
-  --lh-heading: 1.25;
+  --lh-heading: 1;
   --lh-subheading: 1.4;
   --lh-text: 1.4; /*1.347826087*/
   --lh-meta: 1.3;

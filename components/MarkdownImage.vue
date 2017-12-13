@@ -10,7 +10,6 @@ export default {
     figureClasses() {
       return [
         "Figure",
-        "Block--halfSandwich",
         {
           "Figure--medium": this.medium,
           "Figure--large": this.large,

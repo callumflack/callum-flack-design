@@ -12,36 +12,13 @@ h3 {
   font-weight: normal;
 }
 
-/*.Meta {
-  font-family: var(--font-heading), var(--font-stack-sans);
-  font-size: var(--s-heading-meta);
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: var(--ls-meta);
-  line-height: 1;
-  text-transform: uppercase;
-
-  &.--medium {
-    font-family: var(--font-heading);
-  }
-}*/
-
-h1,
 .Title {
   font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-title);
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0.025em !important;
   line-height: var(--lh-heading);
   text-transform: uppercase;
-
-  letter-spacing: 0;
-  line-height: 1.2;
-}
-
-.Title--sub {
-  font-family: var(--font-heading), var(--font-stack-sans);
-  text-transform: initial;
 }
 
 .Red span {
@@ -68,10 +45,11 @@ h1,
 .Subheading,
 .TypeScope h2 {
   font-family: var(--font-heading), var(--font-stack-sans);
-  font-size: 1.3125em;
+  font-size: 1.38888em;
   font-style: normal;
   letter-spacing: 0.04em;
   line-height: var(--lh-subheading);
+  margin-bottom: var(--s1);
   text-transform: uppercase;
 }
 
@@ -101,6 +79,7 @@ body {
 
 body,
 .TypeScope-reset,
+.TypeScope blockquote p em,
 .Project-details > em,
 .Project-details > li {
   font-size: 0.75rem !important;
@@ -111,7 +90,7 @@ body,
   @media (--large-viewport) {
     font-size: 0.875rem;
     font-size: 0.9375rem;
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
 }
 
@@ -196,8 +175,10 @@ strong {
 
 .TypeScope .Text--large,
 .TypeScope blockquote p {
-  font-size: 2em;
+  /*font-family: var(--font-medium), var(--font-stack-sans);*/
+  font-size: var(--s-heading);
   line-height: 1.34375;
+  line-height: 1.27777;
   margin: calc(0.75 * var(--s4)) 0;
   
   @media (--small-viewport) {
@@ -210,11 +191,19 @@ strong {
   position: relative;
 
   &:before {
-    content: "“";
+    // content: "“";
     left: -1px;
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.TypeScope .Text--large {
+  @media (--small-viewport) {
+    display: flex;
+    // margin-left: auto;
+    width: 50%;
   }
 }
 
@@ -238,7 +227,8 @@ strong {
 
 .TypeScope blockquote p em {
   display: table;
-  font-size: 0.75em;
+  // font-size: 0.75em;
+  line-height: var(--lh-text);
   margin-top: var(--s2);
 
   @media (--large-viewport) {

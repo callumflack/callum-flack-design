@@ -1,47 +1,39 @@
 <template lang="pug">
 div
-  c-pagetitle(title="Cut-through websites<br>for makers & shakers")
+  c-pagetitle(title="digital brands and experiences<br>for makers & shakers")
 
   main(role="main")
     .Container
       .TypeScope
-        p.Text--large You know what you do inside out, but you can't connect with your online audience the way you'd hoped.
-        p.u-noTextIndent Hi, I’m Callum. I build bold, beautiful &amp; simple digital experiences by design. I'll help you bridge the gap by understanding your unique situation, designing for emotional connection with your audience, and building a web-based system that still satisifies you and your toughest customers years from now.
+        p.Text--large You know what you do inside out. I'll help you become a signal in the stream and speak to the hearts of your audience.
 
         figure.Figure
           nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
             .FlexEmbed
-              .FlexEmbed-ratio.FlexEmbed-ratio--15by10
+              .FlexEmbed-ratio.FlexEmbed-ratio--16by9
               .FlexEmbed-content
-                .u-posPin.u-flex.u-flexAlignItemsCenter.u-bgColorText
-                  .u-flexExpand
-                    .Title.u-colorWhite View the work #[span.LinkSignal-target →]
-                img.u-width100.u-posRelative(src="/images/loop.gif", alt="")
+                .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorText
+                  .Title.u-colorWhite View the work #[span.LinkSignal-target →]
+                img.u-width100.u-posRelative(src="/images/loop-03.gif")
+
+        p
+          | Hi, I’m Callum. 
+          nuxt-link(to="/about") I'm interested and curious
+          |  to know about you, your valuable service and who your market is. Create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
 
         blockquote
-          p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah blah over three lines.” #[em — Wyatt Arent, AUM founder]
-        //- p.TypeScope-reset.u-leftColumn
-          nuxt-link.Title.u-noVisualLink.LinkSignal(to="/work") View work #[span.LinkSignal-target →]
+          p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah over three lines. #[em Wyatt Arent, AUM founder]
         
-        //- .Block--halfTop
-        h1 The difference: focus & knowhow
-        p 
-          | Get direct access to a multi-skilled, self-sufficient digital strategist, designer and programmer. The difference is I'm interested and curious to know about you, your valuable service and how it resonates with your market. My job is to translate your vision into digital, then design it in code. 
-        p
-          | It's just you and 
-          nuxt-link(to="/about") me.
-          |  Because there's no middlemen and no outsourcing, nothing is lost in translation. So we'll spend more time stacking the details that make authentic audience interactions happen (the ones that build your business so you can keep doing what you do best).
-          
-
-        p I also write about designing communications and services on the web through the lens of the human moments connecting them. It helps me become better at what I do, and I think it can help you too. Here's the latest:
+        h2 The difference is focus & knowhow
+        p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no preconceptions. 
+        p Want to know more? I write about design process and web systems through the lens of the human moments connecting them. It helps me become better at what I do, and I think it can help you too:
 
         .Figure
-          //- .PostWrapper
-          nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal")
+          nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal/designers-should-code")
             h1.Title.u-marginT0 Designers should code #[span.LinkSignal-target →]
             p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
 
-        p The work is fed by constant curiosity. I write a newsletter every week about what I've found: it's a heads-up for designing online connections. It's also great way to keep in touch. You should sign-up:
+        p Follow curiosity, find delight. I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
 
         c-newsletter.Text.u-sm-width50.u-pSpace
 
@@ -71,6 +63,15 @@ export default {
 
 <style>
 @import "../assets/styles/vars.css";
+
+.Center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.Intro {
+  font-family: var(--font-medium) !important;
+}
 
 .FlexEmbed-ratio--15by10 {
   padding-bottom: 66.666667%;
