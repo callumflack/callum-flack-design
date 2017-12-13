@@ -1,8 +1,7 @@
 <template lang="pug">
   div
     article(role="banner")
-      c-pagenavbar(:title="page.title")
-      c-pagenavbarfixed(:title="page.title")
+      c-pagetitle(:title="page.title")
       .Container
         c-movie(frame, large, laptop, :src="page.heroVideo", v-if="page.heroVideo")
         figure.Figure.Figure--large(v-else)
@@ -14,14 +13,12 @@
 </template>
 
 <script>
-import PageNavbar from "~/components/PageNavbar.vue";
-import PageNavbarFixed from "~/components/PageNavbarFixed.vue";
+import PageTitle from "~/components/PageTitle.vue";
 import MarkdownMovieAlt from "~/components/MarkdownMovieAlt.vue";
 
 export default {
   components: {
-    "c-pagenavbar": PageNavbar,
-    "c-pagenavbarfixed": PageNavbarFixed,
+    "c-pagetitle": PageTitle,
     "c-movie": MarkdownMovieAlt
   },
   computed: {
