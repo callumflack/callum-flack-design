@@ -1,11 +1,11 @@
 <template lang="pug">
 div
-  c-pagetitle(title="digital brands and experiences<br>for makers & shakers")
+  c-pagetitle(title="okok! web stories + tools<br>for makers + shakers")
 
   main(role="main")
     .Container
       .TypeScope
-        p.Text--large You know what you do inside out. I'll help you become a signal in the stream and speak to the hearts of your audience.
+        p.Text--large You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience.
 
         figure.Figure
           nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
@@ -26,7 +26,7 @@ div
         
         h2 The difference is focus & knowhow
         p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no preconceptions. 
-        p Want to know more? I write about design process and web systems through the lens of the human moments connecting them. It helps me become better at what I do, and I think it can help you too:
+        p Want to know more? I write about design process and web systems through the lens of the human moments connecting them:
 
         .Figure
           nuxt-link.Post.u-noVisualLink.LinkSignal.u-sm-size3of4.u-lg-size1of2(to="/journal/designers-should-code")

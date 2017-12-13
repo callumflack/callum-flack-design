@@ -51,7 +51,7 @@ marketing effectiveness. In the process, it became easy to improve the site's co
 structure, usability and performance without a big time spend. With a performant codebase,
 we were also able to polish their visual brand.
 
-@[MarkdownImage](src="/images/thesubstation-event.png")
+@[MarkdownImage](src="/images/thesubstation-bunker.png")
 
 The new website platform and branding is allowing The Substation to revitalise their
 digital marketing. By improving CMS access and efficiency, using a flexible development

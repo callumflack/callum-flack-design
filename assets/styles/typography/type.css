@@ -325,7 +325,8 @@ ul + .Button,
 }
 
 .TypeScope .Text--large:first-child,
-.TypeScope blockquote:first-child p {
+.TypeScope blockquote:first-child p,
+.TypeScope h2 + blockquote {
   margin-top: 0;
 }
 
