@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  c-pagetitle(title="okok! web stories + tools<br>for makers + shakers")
+  c-pagetitle(title="okok! web stories & services<br>for makers & shakers")
 
   main(role="main")
     .Container
@@ -50,13 +50,6 @@ export default {
   },
   props: {
     title: String
-  },
-  asyncData() {
-    return new Promise(resolve => {
-      setTimeout(function() {
-        resolve({});
-      }, 1000);
-    });
   }
 };
 </script>
