@@ -1,6 +1,6 @@
 <template lang="pug">
-  div.Space
-    c-pagenavbar(:title="title")
+  div
+    c-pagenavbar(:title="title", :lede="lede")
     //- c-pagenavbarfixed(:title="title")
 </template>
 
@@ -15,7 +15,8 @@ export default {
     "c-pagenavbarfixed": PageNavbarFixed
   },
   props: {
-    title: String
+    title: String,
+    lede: String
   }
 };
 </script>

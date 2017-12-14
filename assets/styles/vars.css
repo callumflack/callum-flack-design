@@ -19,18 +19,10 @@
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: calc(1200px + 48px); /*45em*/
+  --container-rg: calc(1120px + 48px); /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
-
-  /* --s1: 4px;
-  --s2: 8px;
-  --s3: 16px;
-  --s4: 32px;
-  --s5: 64px;
-  --s6: 128px;
-  --s7: 256px; */
 
   /* or 6, 12, 24, 48, 96… */
 
@@ -40,7 +32,7 @@
   --s4: 2.5rem;
   --s5: 5rem;
   --s6: 10rem;
-  --s7: 12rem;
+  --s7: 20rem;
   
   /* instrument's tuck inset */
   --tuck: 6vw;
@@ -89,12 +81,13 @@
   --s-title: 2.369em;
   --s-title: 4em;
   --s-title: 3.157em;
-  --s-title: 2.75em;
+  --s-title: 2.5em;
 
   --s-heading-1: 24px;
   --s-heading-2: 30px;
   --s-heading-3: 35px;
   --s-heading: 2.25em;
+  --s-heading: 1.8125em;
   --s-heading: 2em;
   --s-heading: 1.875em;
 

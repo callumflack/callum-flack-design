@@ -1,13 +1,21 @@
 <template lang="pug">
 div
-  c-pagetitle(title="okok! creates digital brands & products for makers & shakers")
+  c-pagetitle(
+    title="okok! creates digital brands & products for makers & shakers"
+    lede="You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience."
+  )
 
   main(role="main")
     .Container
       .TypeScope
-        p.Text--large You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience.
+        //- p.Text--large You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience.
 
-        figure.Figure
+        p
+          | Hi, I’m Callum. 
+          nuxt-link(to="/about") I'm interested and curious
+          |  to know about you, your valuable service and who your market is. Create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+
+        figure.Figure.Figure--large
           nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
             .FlexEmbed
               .FlexEmbed-ratio.FlexEmbed-ratio--16by9
@@ -15,11 +23,6 @@ div
                 .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorText
                   .Title.u-colorWhite View the work #[span.LinkSignal-target →]
                 img.u-width100.u-posRelative(src="/images/loop-03.gif")
-
-        p
-          | Hi, I’m Callum. 
-          nuxt-link(to="/about") I'm interested and curious
-          |  to know about you, your valuable service and who your market is. Create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
 
         blockquote
           p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah over three lines. #[em Wyatt Arent, AUM founder]

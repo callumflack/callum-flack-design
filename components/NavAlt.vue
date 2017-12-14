@@ -1,9 +1,7 @@
 <template lang="pug">
   .Container
-    .Block--halfSandwich
-      .Block--halfSandwich.u-textCenter(v-if="divider")
-        c-logo
-      nav.Title.u-textCenter
+    .Space
+      nav.Title
         a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle", v-if="starred")
           span.icon.icon-logo
             c-logo
@@ -15,14 +13,14 @@
           :currentPage="currentPage"
           :exact="item.exact"
         )
-      .Title.u-textCenter
+      //- .Title.u-textCenter
         c-navbutton(
           v-for="item in navContacts",
           :key="item.label",
           :label="item.label",
           :link="item.link",
         )
-      .Title.u-textCenter
+      //- .Title.u-textCenter
         c-navbutton(
           v-for="item in navButtons",
           :key="item.label",
@@ -112,6 +110,16 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.Pin {
+  align-items: center;
+  background-color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
 
 .Nav {
   position: relative;

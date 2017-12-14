@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     article(role="banner")
-      c-pagetitle(:title="page.title")
+      c-pagetitle(:title="page.title", :lede="page.lede")
       .Container
         c-movie(
           frame, 
@@ -35,6 +35,7 @@ export default {
   },
   props: {
     title: String,
+    lede: String,
     heroImage: String,
     heroVideo: String,
     heroInCloudinary: Boolean,

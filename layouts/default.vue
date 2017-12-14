@@ -1,7 +1,6 @@
 <template lang="pug">
-  div(:class="currentPageClass")
-    //- c-navbar
-    //- c-navbar-fixed
+  div.u-posRelative(:class="currentPageClass")
+    c-toggle
     c-nav-toggled(role="navigation")
     nuxt
     footer(role="contentinfo")
@@ -10,6 +9,7 @@
 </template>
 
 <script>
+import NavToggle from "~/components/NavToggle.vue";
 import NavBar from "~/components/NavBar.vue";
 import NavBarFixed from "~/components/NavBarFixed.vue";
 import NavToggled from "~/components/NavToggled.vue";
@@ -17,6 +17,7 @@ import Nav from "~/components/NavAlt.vue";
 
 export default {
   components: {
+    "c-toggle": NavToggle,
     "c-navbar": NavBar,
     "c-navbar-fixed": NavBarFixed,
     "c-nav-toggled": NavToggled,
@@ -31,6 +32,10 @@ export default {
 </script>
 
 <style>
+.Footer {
+  /* margin-top: var(--s7); */
+}
+
 /*.page-enter-active,
 .page-leave-active {
   background-color: black;

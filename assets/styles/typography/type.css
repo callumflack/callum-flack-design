@@ -12,18 +12,34 @@ h3 {
   font-weight: normal;
 }
 
-.Title {
+/*.Title {
   font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-title);
   font-weight: 500;
   letter-spacing: 0 !important;
-  letter-spacing: 0.025em !important;
+  letter-spacing: -0.025em !important;
   line-height: var(--lh-heading);
   text-transform: uppercase;
 
   @media (--large-viewport) {
-    // width: 50%;
+    width: 50%;
   }
+}*/
+
+.Title {
+  font-family: var(--font-heading), var(--font-stack-sans);
+  font-size: 2.4em;
+  letter-spacing: -0.01em !important;
+  line-height: var(--lh-heading);
+  text-transform: uppercase;
+
+  @media (--large-viewport) {
+    width: 50%;
+  }
+}
+
+.Title--sub {
+  // font-family: var(--font-regular), var(--font-stack-sans);
 }
 
 .Red span {
@@ -33,27 +49,13 @@ h3 {
   color: #ff3700 !important;
 }
 
-/*.Heading {
-  font-family: var(--font-heading);
-  font-size: var(--s-lede);
-  letter-spacing: 0.02em;
-  line-height: 1.1;
-  text-transform: uppercase;
-}*/
-
-.TypeScope h2 {
-  font-family: var(--font-heading), var(--font-stack-sans);
-}
-
 /*.TypeScope blockquote p,
 .TypeScope blockquote p em */
 .Subheading,
 .TypeScope h2 {
-  font-family: var(--font-heading), var(--font-stack-sans);
-  font-size: 1.38888em;
-  font-style: normal;
-  letter-spacing: 0.04em;
-  line-height: var(--lh-subheading);
+  font-family: var(--font-medium), var(--font-stack-sans);
+  letter-spacing: 0.075em;
+  line-height: var(--lh-text);
   margin-bottom: var(--s1);
   text-transform: uppercase;
 }
@@ -68,7 +70,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
-  letter-spacing: var(--ls-body);
+  letter-spacing: 0;
   line-height: var(--lh-text);
 
   /* reset things */
@@ -84,6 +86,7 @@ body {
 
 body,
 .TypeScope-reset,
+.TypeScope h2,
 .TypeScope blockquote p em,
 .Project-details > em,
 .Project-details > li {
@@ -111,6 +114,11 @@ strong {
 
 .u-noTextIndent {
   text-indent: 0 !important;
+}
+
+.Text--medium {
+  font-family: var(--font-medium), var(--font-stack-sans) !important;
+  font-weight: 500;
 }
 
 /*
@@ -180,13 +188,17 @@ strong {
 
 .TypeScope .Text--large,
 .TypeScope blockquote p {
-  /*font-family: var(--font-medium), var(--font-stack-sans);*/
+  // font-family: var(--font-medium), var(--font-stack-sans);
   font-size: var(--s-heading);
-  line-height: 1.34375;
   line-height: 1.27777;
+  line-height: 1.34375;
 }
 
 .TypeScope blockquote p {
+  // border-top: 1px solid black;
+  // border-bottom: 1px solid black;
+  padding: var(--s4) 0;
+
   color: var(--color-text);
   position: relative;
 
@@ -326,12 +338,12 @@ ul + .Button,
 
 .TypeScope .Text--large,
 .TypeScope blockquote p {
-  margin-top: calc(0.85 * var(--s4));
-  margin-bottom: calc(0.85 * var(--s4));
+  // margin-top: calc(0.85 * var(--s4));
+  // margin-bottom: calc(0.85 * var(--s4));
   
   @media (--large-viewport) {
-    margin-top: var(--s4);
-    margin-bottom: var(--s4);
+    // margin-top: var(--s4);
+    // margin-bottom: var(--s4);
   }
 }
 
@@ -342,7 +354,7 @@ ul + .Button,
 }
 
 .Figure + blockquote p {
-  padding-top: 0;
+  // padding-top: 0;
 }
 
 h1 + ul,

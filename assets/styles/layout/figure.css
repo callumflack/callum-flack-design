@@ -72,8 +72,14 @@
   @media (min-width: 1648px) {
     padding-left: var(--grid-gutter);
     padding-right: var(--grid-gutter);
-    left: calc(-35vw + 50%);
-    width: 70vw;
+    left: calc(-45vw + 50%);
+    width: 90vw;
+  }
+  @media (min-width: 1840px) {
+    padding-left: var(--grid-gutter);
+    padding-right: var(--grid-gutter);
+    left: calc(-30vw + 50%);
+    width: 60vw;
   }
 }
 

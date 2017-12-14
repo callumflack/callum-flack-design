@@ -3,7 +3,7 @@ section: Projects
 year: 2017
 title: Album Registry
 headline: Helping photographers grow their business with gift-funding.
-lede: <span style="color:rgb(151, 62, 167)">Album Registry</span> is a gift-giving platform for anyone to gift beautiful pro photography.
+lede: A crowd-funding platform for anyone to gift beautiful pro photography.
 heroImage: /images/albumregistry-new-profile@2x.jpg
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513210344/thumb-albumregistry_vojzwp.jpg
 cloudinary: true

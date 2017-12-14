@@ -2,7 +2,7 @@
 section: Projects
 title: Oceanblue Living
 headline: A website to help create a community around architectural metalworks.
-lede: <span style="color:rgb(17,89,192)">Oceanblue Living.</span><br>A website to help create a community around transformative architectural metalworks.
+lede: A website to help create a community around transformative architectural metalworks.
 heroImage: /images/oceanblueliving-hero.jpg
 heroVideo: /images/oceanblueliving-video.mp4
 thumbImage: /images/thumb-oceanblueliving.jpg

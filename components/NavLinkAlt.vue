@@ -1,5 +1,9 @@
 <template lang="pug">
-  nuxt-link.Button.Button--transparent(:class="currentPage", :to='link', :exact="exact") 
+  nuxt-link.Button.Button--transparent.u-block(
+    :class="currentPage", 
+    :to='link', 
+    :exact="exact"
+  )
     span {{ label }}
 </template>
 

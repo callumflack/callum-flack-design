@@ -1,8 +1,8 @@
 ---
 section: Projects
-title: The Substation
+title: The Substation.
 headline: A website and branding revision for a large-scale Melbourne arts venue.
-lede: <span style="color:rgb(191, 166, 87)">The Substation.</span><br>A website and branding revision for the large-scale Melbourne arts venue.
+lede: A website and branding revision for the large-scale Melbourne arts venue.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 thumbImage: /images/thumb-thesubstation.jpg
 heroInCloudinary: true

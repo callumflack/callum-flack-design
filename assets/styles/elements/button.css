@@ -80,8 +80,10 @@
 .Button--transparent {
   background-color: transparent;
   box-shadow: initial;
-  color: var(--color-text);
+  color: inherit;
   letter-spacing: inherit !important;
+  text-align: left;
+  width: initial;
 
   &:hover {
     box-shadow: inset 0 0 0 2px var(--color-text);

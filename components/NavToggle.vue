@@ -1,10 +1,10 @@
 <template lang="pug">
-.Navbar
-  .Container
-    .Space
-      h1.Title(v-html="title")
-      .TypeScope.TypeScope-reset.u-marginT3(v-if="lede")
-        p.Text--large {{ lede }}
+  .Toggle
+    .Block--quarterTop
+      h1.Title
+        a.Button.Button--transparent.LineHeight(href="#", @click.prevent="handleNavToggle")
+          span.icon.icon-logo
+            c-logo
 </template>
 
 
@@ -12,13 +12,9 @@
 import Logo from "~/components/Logo.vue";
 
 export default {
-  name: "page-navbar",
+  name: "toggle",
   components: {
     "c-logo": Logo
-  },
-  props: {
-    title: String,
-    lede: String
   },
   computed: {
     isVisible: function() {
@@ -40,6 +36,24 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.Toggle {
+  position: fixed;
+  right: var(--s4);
+  z-index: 999;
+
+  @media (--medium-viewport) {
+    right: var(--s4);
+  }
+
+  @media (--large-viewport) {
+    right: var(--s5);
+  }
+}
+
+.Toggle .Title {
+  width: auto;
+}
 
 .Navbar {
   background-color: transparent;
