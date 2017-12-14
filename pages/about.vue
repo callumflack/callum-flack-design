@@ -29,12 +29,8 @@ export default {
     headline: String
   },
   async asyncData({ app, route, payload }) {
-    // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.
-    // If there ends up being many pages then create another solution.
-    const contentType = "/pages";
-
     return {
-      page: await app.$content(contentType).get(route.path)
+      page: await app.$content("/pages").get(route.path)
     };
   }
 };

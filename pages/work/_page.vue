@@ -33,11 +33,7 @@ export default {
     heroVideo: String
   },
   async asyncData({ app, route, payload }) {
-    // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.
-    // If there ends up being many pages then create another solution.
-    const contentType = route.path === "/about" ? "/pages" : "/projects";
-
-    const page = await app.$content(contentType).get(route.path);
+    const page = await app.$content("/projects").get(route.path);
 
     return {
       page
