@@ -3,7 +3,7 @@
  */
 
 .Figure {
-  margin: var(--s4) 0;
+  margin: calc(0.85 * var(--s4)) 0;
   position: relative;
 
   & img {
