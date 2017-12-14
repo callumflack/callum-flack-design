@@ -92,10 +92,11 @@ export default {
 @import "../assets/styles/vars.css";
 
 .placeholder {
-  background-color: var(--color-brand);
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  min-height: 200px;
 }
 
 .placeholder img {

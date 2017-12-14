@@ -31,6 +31,7 @@ div
           :headline="project.headline",
           :lede="project.lede",
           :image="project.thumbImage",
+          :cloudinary="project.cloudinary",
         )
 
     <svg class='u-hiddenVisually'>

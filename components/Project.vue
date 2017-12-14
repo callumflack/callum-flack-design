@@ -12,7 +12,7 @@
           span(v-if="tags") {{ tags }}
           span.Project-divider ——
           | {{ headline }}
-    
+
 </template>
 
 
