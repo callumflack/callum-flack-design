@@ -7,7 +7,6 @@
         h2.Title
           span.Project-visualLink {{ title }}
         p.Project-subtext.TypeScope-reset
-          span.u-marginR1(v-if="year") {{ year }}
           span(v-if="date") {{ date }}
           span.Project-divider ——
           | {{ headline }}
@@ -52,11 +51,6 @@ export default {
 
 .Project {
   display: block;
-}
-
-/* use the SVG filter that's secreted on work/index */
-.Project:hover img {
-  filter: url("#gray");
 }
 
 .Project-text h2 {
