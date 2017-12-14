@@ -7,7 +7,7 @@ heroImageFirst: true
 ---
 
 > Hi, I’m Callum Flack. I'm a design-obsessed, code-based, digital-thinking craftsman. I’ve been
-> designing and building brands and experiences since 2000.
+> designing and developing brands, products and experiences since 2000.
 
 My job is to help you bridge the gap to your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
@@ -32,10 +32,10 @@ travelling to meet in person.
 
 ## ways to engage my services
 
-* Improve or redesign your existing digital branding and/or website.
-* Create a new digital brand and/or website from scratch.
-* Collaborate as a specialist digital design partner to build and enhance customer
-  communities over time.
+* Improve or redesign your existing digital branding and/or website systems.
+* Create a new digital brand and/or website systems from scratch.
+* Collaborate as a specialist digital design partner to build and enhance your brand,
+  customer workflows or customer community over time.
 
 ## Get in touch
 

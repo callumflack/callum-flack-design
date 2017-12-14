@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  c-pagetitle(title="okok! web stories & services<br>for makers & shakers")
+  c-pagetitle(title="okok! creates digital brands & products for makers & shakers")
 
   main(role="main")
     .Container

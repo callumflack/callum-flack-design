@@ -3,10 +3,20 @@
     article(role="banner")
       c-pagetitle(:title="page.title")
       .Container
-        c-movie(frame, large, laptop, :src="page.heroVideo", v-if="page.heroVideo")
+        c-movie(
+          frame, 
+          large, 
+          laptop, 
+          :src="page.heroVideo", 
+          v-if="page.heroVideo"
+        )
         figure.Figure.Figure--large(v-else)
-          img(:src="page.heroImage")
-
+          c-lazyimage(
+            :src="page.heroImage", 
+            :ratio="page.heroRatio",
+            v-if="page.heroInCloudinary"
+          )
+          img(:src="page.heroImage", v-else)
     main(role="main")
       .Container
         nuxtent-body.TypeScope(:body="page.body")
@@ -14,23 +24,21 @@
 
 <script>
 import PageTitle from "~/components/PageTitle.vue";
-import MarkdownMovieAlt from "~/components/MarkdownMovieAlt.vue";
+import MarkdownMovie from "~/components/MarkdownMovie.vue";
+import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   components: {
     "c-pagetitle": PageTitle,
-    "c-movie": MarkdownMovieAlt
-  },
-  computed: {
-    projectColor() {
-      // (v-if="page.projectColor", :style = 'projectColor')
-      return this.page.projectColor ? `color: ${this.page.projectColor}` : "";
-    }
+    "c-movie": MarkdownMovie,
+    "c-lazyimage": LazyImage
   },
   props: {
     title: String,
     heroImage: String,
-    heroVideo: String
+    heroVideo: String,
+    heroInCloudinary: Boolean,
+    heroRatio: String
   },
   async asyncData({ app, route, payload }) {
     const page = await app.$content("/projects").get(route.path);

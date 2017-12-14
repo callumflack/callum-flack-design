@@ -19,7 +19,7 @@
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: calc(1200px + 48px); /*45em*/
+  --container-rg: calc(1440px + 48px); /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
@@ -94,9 +94,9 @@
   --s-heading-1: 24px;
   --s-heading-2: 30px;
   --s-heading-3: 35px;
-  --s-heading: 1.875em;
   --s-heading: 2.25em;
   --s-heading: 2em;
+  --s-heading: 1.875em;
 
   --s-heading-meta-1: 11px;
   --s-heading-meta-2: 13px;

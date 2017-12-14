@@ -16,9 +16,14 @@ h3 {
   font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-title);
   font-weight: 500;
+  letter-spacing: 0 !important;
   letter-spacing: 0.025em !important;
   line-height: var(--lh-heading);
   text-transform: uppercase;
+
+  @media (--large-viewport) {
+    // width: 50%;
+  }
 }
 
 .Red span {

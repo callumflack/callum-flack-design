@@ -52,7 +52,7 @@ toolkit, and a community to share with.
 @[MarkdownImage](src="/images/albumregistry-moment2.jpg")
 
 Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
-focus on building tools that help our photographer community grow their business, and to help people give the
+focus on building tools that help photographers grow their business, and help people give the
 gift of memories.
 
 @[MarkdownButton](link="https://albumregistry.com" label="Visit the site")

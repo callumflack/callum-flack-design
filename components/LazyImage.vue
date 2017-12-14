@@ -1,5 +1,6 @@
 <template>
-  <div class="placeholder" ref="placeholder">
+  <div class="Image">
+    <div :class="ratioClasses" :style="ratioStyle" ref="placeholder">
     <img
       :class="[
         'low-rez',
@@ -19,6 +20,8 @@
       :src="largeUrl"
     />
   </div>
+  </div>
+  
 </template>
 
 <script>
@@ -38,7 +41,24 @@ export default {
       required: true
     },
     square: Boolean,
-    face: Boolean
+    face: Boolean,
+    project: Boolean,
+    ratio: String
+  },
+
+  computed: {
+    ratioClasses() {
+      return [
+        "Image-aspectRatio",
+        {
+          "Image-aspectRatio--4by3": this.project
+        }
+      ];
+    },
+    ratioStyle() {
+      // (v-if="page.projectColor", :style = 'projectColor')
+      return this.ratio ? `padding-bottom: ${this.ratio}` : "";
+    }
   },
 
   data() {
@@ -91,26 +111,34 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.placeholder {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  min-height: 200px;
+.Image {
+  background-color: var(--color-neutral);
 }
 
-.placeholder img {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
+.Image-aspectRatio {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
   width: 100%;
+}
+
+.Image-aspectRatio--4by3 {
+  padding-bottom: 75%;
+}
+
+.Image img {
+  opacity: 0;
   min-height: 100%;
   min-width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   transition: opacity 1s linear;
+  width: 100%;
 }
 
-.placeholder img.loaded {
+.Image img.loaded {
   opacity: 1;
 }
 
@@ -118,5 +146,10 @@ export default {
   filter: blur(50px);
   /* this is needed so Safari keeps sharp edges */
   transform: scale(1);
+}
+
+/* use the SVG filter that's secreted on work/index */
+.Project:hover img {
+  filter: url("#gray");
 }
 </style>

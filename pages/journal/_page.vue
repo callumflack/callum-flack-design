@@ -12,12 +12,12 @@
 
 <script>
 import PageTitle from "~/components/PageTitle.vue";
-import MarkdownMovieAlt from "~/components/MarkdownMovieAlt.vue";
+import MarkdownMovie from "~/components/MarkdownMovie.vue";
 
 export default {
   components: {
     "c-pagetitle": PageTitle,
-    "c-movie": MarkdownMovieAlt
+    "c-movie": MarkdownMovie
   },
   props: {
     title: String,

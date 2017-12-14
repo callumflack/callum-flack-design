@@ -2,7 +2,7 @@
 div
   c-pagetitle(title="Selected projects")
   main(role="main")
-    //- .Block--sandwich
+    //- .Block--halfSandwich
       .Container
         .Meta
           | Filter projects by:&nbsp;
@@ -119,7 +119,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scope lang="css">
 @import "../../assets/styles/vars.css";
 
 .GridWrapper {

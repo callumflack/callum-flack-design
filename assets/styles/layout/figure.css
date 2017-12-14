@@ -44,9 +44,9 @@
   width: 100vw;
 
   @media (--small-viewport) {
-    padding: 0;
-    left: calc(-40vw + 50%);
-    width: 80vw;
+    // padding: 0;
+    // left: calc(-40vw + 50%);
+    // width: 80vw;
   }
 }
 

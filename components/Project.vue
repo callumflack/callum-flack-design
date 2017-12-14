@@ -2,7 +2,7 @@
   div(:class="cellClass")
     nuxt-link.Project.Block--half(:to="link")
       figure.Project-image
-        c-lazyimage(:src="image", v-if="cloudinary")
+        c-lazyimage(project, :src="image", v-if="cloudinary")
         img(:src="image", v-else)
       .Project-text
         h2.Title
@@ -68,6 +68,7 @@ export default {
 }
 
 /* use the SVG filter that's secreted on work/index */
+/* reused & scoped in LazyImage */
 .Project:hover img {
   filter: url("#gray");
 }
@@ -76,7 +77,7 @@ export default {
   margin: var(--s2) 0;
 
   @media (--small-viewport) {
-    margin: calc(1.5 * var(--s3)) 0 calc(0.8 * var(--s3));
+    margin: calc(1.6 * var(--s3)) 0 calc(0.8 * var(--s3));
   }
 }
 
