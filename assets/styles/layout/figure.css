@@ -58,9 +58,22 @@
 }
 
 .Figure--large {
-  @media (min-width: 1440px) {
+  padding: 0;
+  /*@media (min-width: 1440px) {
     left: calc(-720px + 50%);
     width: 1440px;
+  }*/
+  @media (min-width: 1488px) {
+    padding-left: var(--grid-gutter);
+    padding-right: var(--grid-gutter);
+    left: calc(-50vw + 50%);
+    width: 100vw;
+  }
+  @media (min-width: 1648px) {
+    padding-left: var(--grid-gutter);
+    padding-right: var(--grid-gutter);
+    left: calc(-35vw + 50%);
+    width: 70vw;
   }
 }
 

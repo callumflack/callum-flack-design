@@ -19,7 +19,7 @@
   --spacer: 24px;
 
   --container-sm: 400px;
-  --container-rg: calc(1440px + 48px); /*45em*/
+  --container-rg: calc(1200px + 48px); /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;

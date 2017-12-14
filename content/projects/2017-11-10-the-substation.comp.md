@@ -39,14 +39,10 @@ We targeted mobile performance in the upgrade because we wanted to fulfil the ne
 > After working with him over 12 months, we're confidently growing our brand and our digital marketing
 > is in good shape for the future. _Brad Spalding, Managing Director_
 
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg")
+
 Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital
 marketing effectiveness. In the process, we'e improved the site's content structure, usability and performance.
 And with a performant codebase, we're able to continue improving their digital brand.
-
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg")
-
-The new website platform and digital branding gives The Substation a foundation from which to revitalise their
-marketing. By improving content access and flexibility and reducing website maintenance costs,
-they have control over their website so they can spend more time implementing their vision.
 
 @[MarkdownButton](link="http://www.thesubstation.org.au/" label="Visit The Substation")

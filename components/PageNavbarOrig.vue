@@ -2,7 +2,11 @@
 .Navbar
   .Container
     .Block--halfSandwich
-      h1.Title(v-html="title")
+      h1.Title.u-textCenter
+        a.Button.Button--transparent.LineHeight(href="#", @click.prevent="handleNavToggle")
+          span.icon.icon-logo
+            //- c-logo
+          span(v-html="title")
 </template>
 
 
