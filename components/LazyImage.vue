@@ -89,7 +89,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/vars.css";
+@import "../assets/styles/vars.css";
 
 .placeholder {
   background-color: var(--color-brand);

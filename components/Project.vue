@@ -2,7 +2,8 @@
   div(:class="cellClass")
     nuxt-link.Project.Block--half(:to="link")
       figure.Project-image
-        img(:src="image")
+        c-lazyimage(:src="image", v-if="cloudinary")
+        img(:src="image", v-else)
       .Project-text
         h2.Title
           span.Project-visualLink {{ title }}
@@ -16,9 +17,13 @@
 
 
 <script>
+import LazyImage from "~/components/LazyImage.vue";
+
 export default {
   name: "project",
-  components: {},
+  components: {
+    "c-lazyimage": LazyImage
+  },
   computed: {
     cellClass() {
       return [
@@ -34,6 +39,7 @@ export default {
     casestudy: Boolean,
     archive: Boolean,
     center: Boolean,
+    cloudinary: Boolean,
     link: String,
     image: String,
     title: String,
