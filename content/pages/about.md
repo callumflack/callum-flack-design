@@ -2,12 +2,12 @@
 section: About
 title: About Callum
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/EDITED 1-21_.jpg
+heroImage: images/callum.jpg
 heroImageFirst: true
 ---
 
-> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, digital-thinking craftsman. I’ve been
-> designing and developing brands, products and experiences since 2000.
+> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been
+> designing and developing brands and products since 2000.
 
 My job is to help you bridge the gap to your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
@@ -41,3 +41,7 @@ travelling to meet in person.
 
 Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
 [+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
+
+## Stay in touch
+
+@[FormNewsletter]()

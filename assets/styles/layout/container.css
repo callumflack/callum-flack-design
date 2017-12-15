@@ -2,13 +2,41 @@
  * Container 
  */
 
+.Column {
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  @media (--small-viewport) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (--large-viewport) {
+    padding-left: calc( ( ( ( (100vw - 15rem ) / 12) * 2 ) + (1rem * 1) ) + 1.5rem );
+    padding-right: calc(((((100vw - (15rem))/ 12) * 2) + (1rem * 1)) + 1.5rem);
+  }
+}
+
 .Container {
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-rg);
-  padding-left: var(--grid-gutter);
-  padding-right: var(--grid-gutter);
+  // max-width: var(--container-rg);
+  padding-left: calc(0.5 * var(--grid-gutter));
+  padding-right: calc(0.5 * var(--grid-gutter));
   width: 100%;
+
+  @media (--small-viewport) {
+    padding-left: var(--grid-gutter);
+    padding-right: var(--grid-gutter);
+  }
+}
+
+.Inner {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1120px * 1);
 }
 
 .InnerTextColumn > h1,

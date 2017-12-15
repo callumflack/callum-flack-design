@@ -52,18 +52,21 @@ p a:not(.LinkSignal),
 /* Title links */ 
 
 /*.link.is-active*/
-.nuxt-link-active span,
+/*.nuxt-link-active span,*/
 .Project:hover .Project-visualLink {
   background-image: linear-gradient(var(--color-text), var(--color-text));
   background-size: 3px 3px;
   background-repeat: repeat-x;
   background-position: 0% 100%;
-  padding-bottom: 6px;
+  padding-bottom: 1px;
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position-y: 96%;
   }
+}
 
+.Modal .nuxt-link-active span {
+  // background-image: linear-gradient(var(--color-bg), var(--color-bg));
 }
 
 /* no visual link */ 

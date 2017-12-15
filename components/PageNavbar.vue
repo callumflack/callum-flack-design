@@ -1,10 +1,12 @@
 <template lang="pug">
 .Navbar
-  .Container
-    .Space
-      h1.Title(v-html="title")
-      .TypeScope.TypeScope-reset.u-marginT3(v-if="lede")
-        p.Text--large {{ lede }}
+  .Column
+    .Container
+      .Inner
+        .Space
+          h1.Title.u-marginT0(v-html="title")
+          p.Massive(v-if="massive", v-html="massive")
+          p.Subtitle.u-marginT3(v-if="lede") {{ lede }}
 </template>
 
 
@@ -17,6 +19,7 @@ export default {
     "c-logo": Logo
   },
   props: {
+    massive: String,
     title: String,
     lede: String
   },

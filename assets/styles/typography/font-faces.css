@@ -31,3 +31,17 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: var(--font-heading-sub);
+  src: url("~static/fonts/Portrait-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: var(--font-heading-dark);
+  src: url("~static/fonts/Portrait-Heavy-Reduced.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}

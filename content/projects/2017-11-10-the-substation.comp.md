@@ -1,6 +1,6 @@
 ---
 section: Projects
-title: The Substation.
+title: The Substation
 headline: A website and branding revision for a large-scale Melbourne arts venue.
 lede: A website and branding revision for the large-scale Melbourne arts venue.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
@@ -31,18 +31,17 @@ event grids allow easy persual without compromising the immersive experience.
 
 @[MarkdownMovie](laptop src="/images/thesubstation-desktop-events.mp4")
 
-We targeted mobile performance in the upgrade because we wanted to fulfil the needs of real customers. For example, a person travelling home from work should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a checklist of improvements made.
-
-@[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
+We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
 > Callum has helped us understand and fix many, many issues that we had with our site.
 > After working with him over 12 months, we're confidently growing our brand and our digital marketing
 > is in good shape for the future. _Brad Spalding, Managing Director_
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg")
+@[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
+
+<!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
 Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital
-marketing effectiveness. In the process, we'e improved the site's content structure, usability and performance.
-And with a performant codebase, we're able to continue improving their digital brand.
+marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 
 @[MarkdownButton](link="http://www.thesubstation.org.au/" label="Visit The Substation")

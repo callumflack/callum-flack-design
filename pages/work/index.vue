@@ -1,6 +1,8 @@
 <template lang="pug">
 div
-  c-pagetitle(title="Selected projects")
+  c-pagetitle(
+    title="Selected projects"
+  )
   main(role="main")
     //- .Block--halfSandwich
       .Container
@@ -17,22 +19,23 @@ div
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
-    .Container
-      .Grid.Grid--alignCenter.Grid--withTinyGutter
-        c-project(
-          v-if="project.featured"
-          v-for="project in visibleProjects"
-          :key="project.title"
-          featured,
-          :link="project.permalink",
-          :tags="project.tags",
-          :year="project.year",
-          :title="project.title",
-          :headline="project.headline",
-          :lede="project.lede",
-          :image="project.thumbImage",
-          :cloudinary="project.cloudinary",
-        )
+    .Column
+      .Container
+        .Grid.Grid--alignCenter.Grid--withTinyGutter
+          c-project(
+            v-if="project.featured"
+            v-for="project in visibleProjects"
+            :key="project.title"
+            featured,
+            :link="project.permalink",
+            :tags="project.tags",
+            :year="project.year",
+            :title="project.title",
+            :headline="project.headline",
+            :lede="project.lede",
+            :image="project.thumbImage",
+            :cloudinary="project.cloudinary",
+          )
 
     <svg class='u-hiddenVisually'>
       <filter id='gray' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>

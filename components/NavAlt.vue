@@ -1,32 +1,31 @@
 <template lang="pug">
-  .Container
-    .Space
-      nav.Title
-        a.Button.Button--transparent(href="#", @click.prevent="handleNavToggle", v-if="starred")
-          span.icon.icon-logo
-            c-logo
-        c-navlink(
-          v-for="item in navLinks",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
-          :currentPage="currentPage"
-          :exact="item.exact"
-        )
-      //- .Title.u-textCenter
-        c-navbutton(
-          v-for="item in navContacts",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
-        )
-      //- .Title.u-textCenter
-        c-navbutton(
-          v-for="item in navButtons",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
-        )
+  .Column
+    .Container
+      .Inner
+        .Space
+          nav.Title
+            c-navlink(
+              v-for="item in navLinks",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+              :currentPage="currentPage"
+              :exact="item.exact"
+            )
+          .Text--small.u-marginT4
+            c-navlink(
+              v-for="item in navContacts",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+            )
+          .Text--small.u-marginT4
+            c-navlink(
+              v-for="item in navButtons",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+            )
 </template>
 
 
@@ -121,19 +120,12 @@ export default {
   width: 100vw;
 }
 
-.Nav {
-  position: relative;
-  top: 0;
+.Title a + a {
+  padding-top: var(--s3);
 }
 
-.Nav-menu {
-  margin: 0;
-}
-
-.Nav-buttons {
-  & a {
-    margin-left: 0;
-  }
+.Text a + a {
+  padding-top: var(--s1);
 }
 
 .NewsletterWrapper {

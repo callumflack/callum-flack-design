@@ -12,56 +12,74 @@ h3 {
   font-weight: normal;
 }
 
-/*.Title {
-  font-family: var(--font-heading), var(--font-stack-sans);
-  font-size: var(--s-title);
-  font-weight: 500;
-  letter-spacing: 0 !important;
-  letter-spacing: -0.025em !important;
-  line-height: var(--lh-heading);
-  text-transform: uppercase;
+.Massive {
+  font-family: var(--font-heading-sub), var(--font-stack-sans);
+  font-size: 3em;
+  letter-spacing: -0.001em !important;
+  line-height: 1.15;
+  margin-top: var(--s4);
+  width: 90%;
 
-  @media (--large-viewport) {
-    width: 50%;
+  @media (--small-viewport) {
+    font-size: 3.75em;
+    margin-top: var(--s5);
+    width: 75%;
   }
-}*/
+  @media (--large-viewport) {
+    width: 100%;
+  }
+}
 
 .Title {
   font-family: var(--font-heading), var(--font-stack-sans);
-  font-size: 2.4em;
-  letter-spacing: -0.01em !important;
+  font-feature-settings: "tnum";
+  font-size: 2.15em;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0em !important;
   line-height: var(--lh-heading);
+  line-height: 1.15;
   text-transform: uppercase;
 
   @media (--large-viewport) {
+    width: 66%;
+  }
+  @media (--xlarge-viewport) {
     width: 50%;
   }
 }
 
-.Title--sub {
-  // font-family: var(--font-regular), var(--font-stack-sans);
+.Subtitle {
+  font-family: var(--font-heading-sub), var(--font-stack-sans);
+  font-size: 3em;
+  letter-spacing: 0.002em !important;
+  line-height: var(--lh-subheading);
+
+
+  @media (--small-viewport) {
+    width: 75%;
+  }
+  @media (--large-viewport) {
+    width: 66%;
+  }
 }
 
-.Red span {
-  color: #ed4d21 !important;
-  color: #0085ff !important;
-  color: #0070c9 !important;
-  color: #ff3700 !important;
-}
-
-/*.TypeScope blockquote p,
-.TypeScope blockquote p em */
 .Subheading,
 .TypeScope h2 {
-  font-family: var(--font-medium), var(--font-stack-sans);
-  letter-spacing: 0.075em;
+  font-family: var(--font-heading-dark), var(--font-stack-sans);
+  font-size: var(--s-text);
+  font-size: 1.15em;
+  letter-spacing: 0.025em;
   line-height: var(--lh-text);
-  margin-bottom: var(--s1);
+  margin-bottom: var(--s2);
   text-transform: uppercase;
 }
 
 /* 
- * Texts
+  -------------------------------------------------
+
+  Body
+
+  -------------------------------------------------
  */
 
 body {
@@ -81,35 +99,52 @@ body {
 }
 
 /* 
- * Responsive sizing 
+  -------------------------------------------------
+
+  Responsive sizing 
+
+  -------------------------------------------------
  */
 
 body,
 .TypeScope-reset,
-.TypeScope h2,
+.Text--small,
 .TypeScope blockquote p em,
 .Project-details > em,
 .Project-details > li {
   font-size: 0.75rem !important;
 
   @media (--small-viewport) {
-    font-size: 0.8125rem !important;
+    font-size: 0.875rem !important;
+  }
+  @media (--medium-viewport) {
+    font-size: 0.9375rem !important;
   }
   @media (--large-viewport) {
-    font-size: 0.875rem;
-    font-size: 0.9375rem;
     font-size: 1.0625rem !important;
+    font-size: 1rem !important;
   }
 }
 
 /*
- * Resets & helpers
+  -------------------------------------------------
+
+  Resets & helpers
+
+  -------------------------------------------------
  */
 
 em,
 strong {
   font-style: normal;
   font-weight: inherit;
+}
+
+.Red {
+  color: #ed4d21 !important;
+  color: #0085ff !important;
+  color: #0070c9 !important;
+  color: #ff3700 !important;
 }
 
 .u-noTextIndent {
@@ -122,10 +157,13 @@ strong {
 }
 
 /*
- * Markdown scope
+  -------------------------------------------------
+
+  Markdown scope
+
+  -------------------------------------------------
  */
 
-.Meta,
 .TypeScope p,
 .TypeScope ol,
 .TypeScope ul,
@@ -142,11 +180,16 @@ strong {
 .TypeScope p,
 .TypeScope ol,
 .TypeScope ul {
-  // padding-right: 1rem;
+  padding-right: calc(0.25 * var(--grid-gutter));
 
-  @media (--large-viewport) {
-    // padding-right: 2rem;
+  @media (--small-viewport) {
+    padding-right: calc(0.5 * var(--grid-gutter));
+  }
+  @media (--medium-viewport) {
     width: 50%;
+  }
+  @media (--xlarge-viewport) {
+    // width: 33.333333%;
   }
 }
 
@@ -156,74 +199,47 @@ strong {
   font-style: normal;
 }
 
-/*.TypeScope p strong,*/
-.Newthought {
-  font-family: var(--font-heading), var(--font-stack-sans);
-  font-variant: small-caps;
-  font-size: 1;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: lowercase;
-}
+/*
+  -------------------------------------------------
 
-.TypeScope ul {
-  list-style-type: none;
-  /*margin-top: calc(-1 * var(--s4));*/
-  padding-left: 2rem;
-}
+  blockquote
 
-.TypeScope li {
-  position: relative;
+  -------------------------------------------------
+ */
 
-  &:before {
-    content: "—";
-    left: -2rem;
-    position: absolute;
+.u-leftColumn,
+.TypeScope blockquote {
+  @media (--small-viewport) {
+    margin-left: 50%;
+    padding-left: calc(0.25 * var(--grid-gutter));
+    padding-right: 0;
+    width: 50%;
+
+    @media (--small-viewport) {
+      padding-left: calc(0.5 * var(--grid-gutter));
+    }
   }
 }
 
-/*
- * blockquote
- */
-
-.TypeScope .Text--large,
+.Text--large,
 .TypeScope blockquote p {
-  // font-family: var(--font-medium), var(--font-stack-sans);
   font-size: var(--s-heading);
   line-height: 1.27777;
   line-height: 1.34375;
 }
 
 .TypeScope blockquote p {
-  // border-top: 1px solid black;
-  // border-bottom: 1px solid black;
-  padding: var(--s4) 0;
-
-  color: var(--color-text);
-  position: relative;
-
-  &:before {
-    // content: "“";
-    left: -1px;
-    display: block;
-    position: absolute;
-    transform: translate3d(-100%, 0, 0);
-  }
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  padding: var(--s3) 0 calc(1.333 * var(--s3));
+  width: auto;
 }
 
-.TypeScope .Text--large {
+.Text--large {
   @media (--small-viewport) {
-    display: flex;
+    // display: flex;
     // margin-left: auto;
     width: 50%;
-  }
-}
-
-.TypeScope blockquote p,
-.u-leftColumn {
-  
-  @media (--small-viewport) {
-    margin-left: 50%;
   }
 }
 
@@ -249,37 +265,18 @@ strong {
 }
 
 /* 
- * Project details addendum 
- */
+  -------------------------------------------------
 
-.Project-details p,
-.Project-details ul {
-  font-size: 0.75rem !important;
-  text-indent: 0;
+  Lists 
 
-  @media (--small-viewport) {
-    font-size: 0.8125rem !important;
-  }
-  @media (--large-viewport) {
-    font-size: 0.875rem;
-    font-size: 0.9375rem;
-    font-size: 1rem !important;
-  }
-}
-
-.Project-details p,
-.Project-details ul {
-  margin: 13px 0;
-}
-
-/* 
- * lists 
+  -------------------------------------------------
  */
 
 ul,
 ol {
   font-family: inherit;
   list-style-type: none;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -292,23 +289,27 @@ li {
   padding-left: 0 !important;
 }
 
-/*.Drop > p:first-of-type:first-letter,
-.DropCap:first-letter {
-  border-top: 2px solid black;
-  border: 2px solid black;
-  float: left;
-  font-size: 2.5em;
-  line-height: 1;
-  margin-left: 0;
-  padding-right: 0.666667em;
-  padding-right: 0.8em;
-  padding-bottom: 0.25em;
-  padding-bottom: 0.5em;
-  transform: translateY(-0.1em);
-}*/
+.TypeScope ul {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.TypeScope li {
+  position: relative;
+
+  &:before {
+    content: "—";
+    left: -2rem;
+    position: absolute;
+  }
+}
 
 /* 
- * spaces 
+  -------------------------------------------------
+
+  Spaces
+
+  -------------------------------------------------
  */
 
 p + p,
@@ -324,11 +325,13 @@ p:last-child {
   margin-bottom: 0;
 }
 
-p + .Button,
-ul + .Button,
 .u-pSpace,
 .TypeScope h1,
-.TypeScope h2  {
+.TypeScope h2,
+.TypeScope p + .Button,
+.TypeScope ul + .Button,
+.TypeScope p + blockquote,
+.TypeScope ul + blockquote {
   margin-top: calc(0.85 * var(--s4));
 
   @media (--large-viewport) {
@@ -336,33 +339,38 @@ ul + .Button,
   }
 }
 
-.TypeScope .Text--large,
-.TypeScope blockquote p {
-  // margin-top: calc(0.85 * var(--s4));
-  // margin-bottom: calc(0.85 * var(--s4));
-  
-  @media (--large-viewport) {
-    // margin-top: var(--s4);
-    // margin-bottom: var(--s4);
-  }
-}
-
-.TypeScope .Text--large:first-child,
-.TypeScope blockquote:first-child p,
-.TypeScope h2 + blockquote {
-  margin-top: 0;
-}
-
-.Figure + blockquote p {
-  // padding-top: 0;
-}
-
+/*.TypeScope blockquote:first-child p,*/
 h1 + ul,
 h2 + ul,
 p + ul,
 .TypeScope blockquote + h1,
-.TypeScope blockquote + h2 {
-  margin-top: 0;
+.TypeScope blockquote + h2,
+.TypeScope h1 + blockquote,
+.TypeScope h2 + blockquote,
+.TypeScope figure + blockquote,
+.Text--large:first-child {
+  @media (--small-viewport) {
+    margin-top: 0 !important;
+  }
+}
+
+.Text--large:first-child {
+  margin-top: 0 !important;
+}
+
+.TypeScope figure + blockquote {
+  margin-bottom: 0 !important;
+}
+
+.Text--large,
+.TypeScope blockquote {
+  // margin-top: calc(0.85 * var(--s4));
+  // margin-bottom: calc(0.85 * var(--s4));
+  
+  @media (--small-viewport) {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 ol,

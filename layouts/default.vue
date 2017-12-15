@@ -1,9 +1,9 @@
 <template lang="pug">
-  div.u-posRelative(:class="currentPageClass")
+  div(:class="currentPageClass")
     c-toggle
     c-nav-toggled(role="navigation")
     nuxt
-    footer(role="contentinfo")
+    footer.Footer(role="contentinfo")
       c-nav
 
 </template>
@@ -32,8 +32,12 @@ export default {
 </script>
 
 <style>
+@import "../assets/styles/vars.css";
+
 .Footer {
-  /* margin-top: var(--s7); */
+  background-color: var(--color-bg);
+  /* border-top: 1px solid #e5e5e5; */
+  margin-top: var(--s7);
 }
 
 /*.page-enter-active,

@@ -2,24 +2,27 @@
   div
     article(role="banner")
       c-pagetitle(:title="page.title", :lede="page.lede")
-      .Container
-        c-movie(
-          frame, 
-          large, 
-          laptop, 
-          :src="page.heroVideo", 
-          v-if="page.heroVideo"
-        )
-        figure.Figure.Figure--large(v-else)
-          c-lazyimage(
-            :src="page.heroImage", 
-            :ratio="page.heroRatio",
-            v-if="page.heroInCloudinary"
+      .Column
+        .Container
+          c-movie(
+            frame, 
+            large, 
+            laptop, 
+            :src="page.heroVideo", 
+            v-if="page.heroVideo"
           )
-          img(:src="page.heroImage", v-else)
+          figure.Figure(v-else)
+            c-lazyimage(
+              :src="page.heroImage", 
+              :ratio="page.heroRatio",
+              v-if="page.heroInCloudinary"
+            )
+            img(:src="page.heroImage", v-else)
     main(role="main")
-      .Container
-        nuxtent-body.TypeScope(:body="page.body")
+      .Column
+        .Container
+          .Inner
+            nuxtent-body.TypeScope(:body="page.body")
 </template>
 
 <script>
@@ -52,5 +55,29 @@ export default {
 </script>
 
 <style>
+@import "../../assets/styles/vars.css";
 
+/* 
+ * Project details addendum 
+ */
+
+.Project-details p,
+.Project-details ul {
+  font-size: 0.75rem !important;
+  text-indent: 0;
+
+  @media (--small-viewport) {
+    font-size: 0.8125rem !important;
+  }
+  @media (--large-viewport) {
+    font-size: 0.875rem;
+    font-size: 0.9375rem;
+    font-size: 1rem !important;
+  }
+}
+
+.Project-details p,
+.Project-details ul {
+  margin: 13px 0;
+}
 </style>

@@ -6,17 +6,22 @@
 /* eslint-disable */
 /* prettier-ignore */
 :root {
-  @custom-media --small-viewport (min-width: 32em);
+  /*@custom-media --small-viewport (min-width: 32em);
   @custom-media --medium-viewport (min-width: 48em);
   @custom-media --large-viewport (min-width: 80em);
-  @custom-media --xlarge-viewport (min-width: 100em);
+  @custom-media --xlarge-viewport (min-width: 100em);*/
+  @custom-media --small-viewport (min-width: 512px);
+  @custom-media --medium-viewport (min-width: 768px);
+  @custom-media --large-viewport (min-width: 1280px);
+  @custom-media --xlarge-viewport (min-width: 1600px);
 
   /*
    * sizes
    */ 
 
-  --grid-gutter: 24px;
+  --grid-gutter: 3rem;
   --spacer: 24px;
+  --spacer-large: 0.75rem;
 
   --container-sm: 400px;
   --container-rg: calc(1120px + 48px); /*45em*/
@@ -32,7 +37,7 @@
   --s4: 2.5rem;
   --s5: 5rem;
   --s6: 10rem;
-  --s7: 20rem;
+  --s7: 17.5rem;
   
   /* instrument's tuck inset */
   --tuck: 6vw;
@@ -64,6 +69,8 @@
   --font-italic: var(--font-regular);
   --font-medium: "Unica-Medium";
   --font-heading: "BureauGrotesque-OneFive";
+  --font-heading-sub: "Portrait-Regular";
+  --font-heading-dark: "Portrait-Heavy";
   --font-button: var(--font-heading);
 
   --font-stack-serif: Georgia, "Times New Roman", Times, serif;
@@ -86,10 +93,10 @@
   --s-heading-1: 24px;
   --s-heading-2: 30px;
   --s-heading-3: 35px;
-  --s-heading: 2.25em;
   --s-heading: 1.8125em;
-  --s-heading: 2em;
   --s-heading: 1.875em;
+  --s-heading: 2.25em;
+  --s-heading: 2em;
 
   --s-heading-meta-1: 11px;
   --s-heading-meta-2: 13px;
@@ -106,9 +113,10 @@
   --s-text-1: 18px;
   --s-text-2: 20px;
   --s-text-3: 23px;
+  --s-text: 1.5625em;
+  --s-text: 1.25em;
   --s-text: 1.414em;
   --s-text: 1.5625em;
-  --s-text: 1.5em;
 
   --s-text-sm-1: 11px;
   --s-text-sm-2: 12px;
@@ -126,7 +134,7 @@
   --ls-meta: -0.0125em; /*0.075em*/
 
   --lh-heading: 1;
-  --lh-subheading: 1.4;
+  --lh-subheading: 1.2;
   --lh-text: 1.4; /*1.347826087*/
   --lh-meta: 1.3;
 

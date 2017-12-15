@@ -43,7 +43,7 @@
   color: var(--color-neutral) !important;
 }
 .u-colorWhite {
-  color: white !important;
+  color: var(--color-bg) !important;
 }
 
 .u-colorTextLightBlock * {
@@ -73,6 +73,11 @@
 .u-bgColorTransparent {
   background-color: transparent !important;
 }
+
+/*
+ * hr rules
+ */
+
 
 /*
  * font sizes

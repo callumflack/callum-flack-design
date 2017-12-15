@@ -72,7 +72,7 @@ export default {
 
   &:hover,
   &:focus {
-    cursor: url("../static/images/icon-close.png"), auto;
+    /* cursor: url("../static/images/icon-close.png"), auto; */
   }
 }
 
@@ -86,5 +86,15 @@ export default {
 .Modal.delay-transition {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
+}
+
+/* THEME */
+
+.Modal {
+  background-color: #ff8900;
+  background-color: var(--color-text);
+}
+.Modal .Column {
+  height: 100vh;
 }
 </style>

@@ -11,7 +11,7 @@
 .svg-fill {
 }
 
-.icon-wrap {
+.icon-wrapper {
   cursor: pointer;
   display: inline-block;
   margin: -20px;
@@ -24,6 +24,23 @@
   line-height: 1;
   position: relative;
   text-align: center;
+}
+
+.icon svg {
+  fill: currentColor;
+  transition: fill 400ms ease;
+}
+
+/* THEME */ 
+
+.icon-logo {
+  margin-right: 0.5rem;
+  transform: translateY(1px);
+
+  @media (--large-viewport) {
+    margin-right: 0.666rem;
+    transform: translateY(2px);
+  }
 }
 
 /* https://css-tricks.com/scale-svg/ */ 
@@ -42,26 +59,17 @@
   }
 }
 
-.icon-logo {
-  margin-right: 0.5rem;
-  transform: translateY(1px);
+.icon-toggle svg {
+  height: 2em;
+  width: 2em;
+
+  @media (--medium-viewport) {
+    // height: 29px;
+    // width: 29px;
+  }
 
   @media (--large-viewport) {
-    margin-right: 0.666rem;
-    transform: translateY(2px);
+    height: 2.5rem;
+    width: 2.5rem;
   }
-}
-
-.icon-at {
-  height: calc(0.85 * 34px);
-  width: calc(0.85 * 28px);
-}
-
-.icon svg {
-  fill: currentColor;
-  transition: fill 400ms ease;
-}
-
-.icon-logo svg {
-  // transform: rotate(6deg);
 }

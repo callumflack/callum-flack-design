@@ -1,13 +1,18 @@
 <template lang="pug">
   div
-    c-pagetitle(title="A design-obsessed,<br>code-based craftsman")
+    c-pagetitle(
+      title="About Callum"
+      massive="Design-obsessed, code-based,<br>systems-thinking craftsman."
+    )
     section(role="banner")
-      .Container
-        figure.Figure
-          img(:src="page.heroImage", alt="", style="opacity:0.9")
+      .Column
+        .Container
+          figure.Figure
+            img(:src="page.heroImage", alt="", style="opacity:0.9")
     main(role="main")
-      .Container
-        nuxtent-body.TypeScope.TypeScope-about(:body="page.body")
+      .Column
+        .Container
+          nuxtent-body.Inner.TypeScope.TypeScope-about(:body="page.body")
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 ---
 section: Projects
-title: Ward 6 eDetailers
+title: Pharma eDetailers
 headline: Explaining complex pharma products with simple and engaging digital stories.
 lede: A series of iPad apps explaining complex Pharmaceutical products with simple and engaging digital stories.
 heroImage: /images/pharmaceutical-edetailers-hero.png

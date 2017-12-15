@@ -1,5 +1,5 @@
 <template lang="pug">
-  nuxt-link.Button.Button--transparent.u-block(
+  nuxt-link.u-block(
     :class="currentPage", 
     :to='link', 
     :exact="exact"
@@ -23,6 +23,8 @@ export default {
       let classes = ["link"];
       if (this.link === this.$store.state.currentPage) {
         classes.push("is-active");
+      } else if (this.$store.state.isMobileNavVisible) {
+        classes.push("");
       } else {
         classes.push("");
       }
