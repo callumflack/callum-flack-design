@@ -67,10 +67,10 @@ h3 {
 .TypeScope h2 {
   font-family: var(--font-heading-dark), var(--font-stack-sans);
   font-size: var(--s-text);
-  font-size: 1.15em;
+  font-size: 1.25em;
   letter-spacing: 0.025em;
   line-height: var(--lh-text);
-  margin-bottom: var(--s2);
+  margin-bottom: var(--s3);
   text-transform: uppercase;
 }
 
@@ -213,11 +213,14 @@ strong {
     margin-left: 50%;
     padding-left: calc(0.25 * var(--grid-gutter));
     padding-right: 0;
-    width: 50%;
+  }
 
-    @media (--small-viewport) {
-      padding-left: calc(0.5 * var(--grid-gutter));
-    }
+  @media (--medium-viewport) {
+    width: 50%;
+  }
+
+  @media (--large-viewport) {
+    padding-left: calc(0.5 * var(--grid-gutter));
   }
 }
 
@@ -332,10 +335,10 @@ p:last-child {
 .TypeScope ul + .Button,
 .TypeScope p + blockquote,
 .TypeScope ul + blockquote {
-  margin-top: calc(0.85 * var(--s4));
+  margin-top: calc(var(--s4));
 
-  @media (--large-viewport) {
-    margin-top: var(--s4);
+  @media (--small-viewport) {
+    margin-top: var(--s5);
   }
 }
 
@@ -382,5 +385,65 @@ ul {
   & ol,
   & ul {
     margin-bottom: 0;
+  }
+}
+
+/* 
+  -------------------------------------------------
+
+  Post variation 
+
+  -------------------------------------------------
+ */
+
+.TypeScope-post p {
+  margin-bottom: calc(var(--s3));
+  text-indent: initial;
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s3);
+  }
+}
+
+.TypeScope-post p,
+.TypeScope-post ol,
+.TypeScope-post ul {
+  @media (--medium-viewport) {
+    width: 75%;
+  }
+}
+
+.TypeScope-post p + p {
+  
+}
+
+.TypeScope-post p em {
+  border-left: 1px solid currentColor;
+  color: var(--color-text-light);
+  display: table;
+  padding-left: var(--s3);
+  margin-bottom: var(--s1) !important;
+  
+  @media (--small-viewport) {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+.TypeScope-post blockquote {
+  margin: calc(var(--s4)) 0 !important;
+  padding-left: 0;
+  padding-right: calc(0.25 * var(--grid-gutter));
+
+  @media (--small-viewport) {
+    margin: var(--s5) 0 !important;
+  }
+
+  @media (--medium-viewport) {
+    width: 75%;
+  }
+
+  @media (--large-viewport) {
+    padding-right: calc(0.5 * var(--grid-gutter));
   }
 }

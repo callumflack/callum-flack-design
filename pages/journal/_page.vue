@@ -1,13 +1,15 @@
 <template lang="pug">
   article(role="banner")
     c-pagetitle(:title="page.title")
-    .Container
-      c-movie(frame, large, laptop, :src="page.heroVideo", v-if="page.heroVideo")
-      figure.Figure.Figure--large(v-else)
-        img(:src="page.heroImage", alt="")
-    main(role="main")
+    .Column(v-if="page.heroImage")
       .Container
-        nuxtent-body.TypeScope(:body="page.body")
+        figure.Figure.Figure--large
+          img(:src="page.heroImage", alt="")
+    main(role="main")
+      .Column
+        .Container
+          .Inner
+            nuxtent-body.TypeScope.TypeScope-post(:body="page.body")
 </template>
 
 <script>
