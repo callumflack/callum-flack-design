@@ -19,7 +19,7 @@
               :label="item.label",
               :link="item.link",
             )
-          .Text--small.u-marginT4
+          .Text--small.u-marginT2
             c-navlink(
               v-for="item in navButtons",
               :key="item.label",
