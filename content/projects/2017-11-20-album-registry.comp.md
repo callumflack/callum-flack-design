@@ -4,7 +4,7 @@ year: 2017
 title: Album Registry
 headline: Helping photographers grow their business with gift-funding.
 lede: A crowd-funding platform for anyone to gift beautiful pro photography.
-heroImage: /images/albumregistry-new-profile@2x.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513210344/thumb-albumregistry_vojzwp.jpg
 cloudinary: true
 featured: true
@@ -19,14 +19,14 @@ be, and rebuild the platform for a community of photographers around the world.
 > remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden,
 > founder_
 
-@[MarkdownImage](large src="/images/albumregistry-new-registry-detail.jpg")
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 
 Album Registry bridges the gap between people celebrating the big moments of their lives,
 and artisanal photographers who do justice to those moments. We needed a way to showcase
 what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownMovie](src="/images/albumregistry-block-registriesX.mp4")
+@[MarkdownMovie](src="/images/albumregistry-block-registries.mp4")
 
 ## Built for future iteration
 
@@ -39,7 +39,7 @@ The codebase uses the Node.js ecosystem, allowing us to take advantage of the ra
 We're able to design and adjust new features in the browser using the brand design system
 we designed and built.
 
-@[MarkdownImage](large src="/images/albumregistry-mobile.png")
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png")
 
 We aim to offer the Album Registry photographers an ecommerce platform, a marketing
 toolkit, and a community to share with.
@@ -49,7 +49,7 @@ toolkit, and a community to share with.
 > burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky
 > Photography_
 
-@[MarkdownImage](src="/images/albumregistry-moment2.jpg")
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
 
 Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
 focus on building tools that help photographers grow their business, and help people give the

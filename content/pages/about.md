@@ -2,7 +2,7 @@
 section: About
 title: About Callum
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/callum.jpg
+heroImage: images/callum-flack.jpg
 heroImageFirst: true
 ---
 
