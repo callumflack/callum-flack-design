@@ -4,20 +4,22 @@
       c-pagetitle(:title="page.title", :lede="page.lede")
       .Column
         .Container
-          c-movie(
-            frame, 
-            large, 
-            laptop, 
-            :src="page.heroVideo", 
-            v-if="page.heroVideo"
-          )
-          figure.Figure(v-else)
-            c-lazyimage(
-              :src="page.heroImage", 
-              :ratio="page.heroRatio",
-              v-if="page.heroInCloudinary"
+          .Inner
+            c-movie(
+              frame, 
+              large, 
+              laptop, 
+              :poster="page.heroVideoPoster",
+              :src="page.heroVideo",
+              v-if="page.heroVideo"
             )
-            img(:src="page.heroImage", v-else)
+            figure.Figure.Figure--large(v-else)
+              c-lazyimage(
+                :src="page.heroImage", 
+                :ratio="page.heroRatio",
+                v-if="page.heroInCloudinary"
+              )
+              img(:src="page.heroImage", v-else)
     main(role="main")
       .Column
         .Container
@@ -41,6 +43,7 @@ export default {
     lede: String,
     heroImage: String,
     heroVideo: String,
+    heroVideoPoster: String,
     heroInCloudinary: Boolean,
     heroRatio: String
   },
