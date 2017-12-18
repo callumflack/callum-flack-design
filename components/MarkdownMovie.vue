@@ -3,7 +3,7 @@
     .FlexEmbed(:class="[{ 'Figure--frame': frame }]")
       .FlexEmbed-ratio.Device-ratio
       .FlexEmbed-content
-        video.Device-position(autoplay="", loop="")
+        video.Device-position(autoplay="", loop="", :poster="poster")
           source(
             :src="src",
             type="video/mp4"
@@ -43,6 +43,7 @@ export default {
     ipadLandscape: Boolean,
     ipad: Boolean,
     laptop: Boolean,
+    poster: String,
     src: String
   }
 };
