@@ -3,6 +3,7 @@
     .Container
       .Inner
         .Space
+          hr
           nav.Title
             c-navlink(
               v-for="item in navLinks",
@@ -12,14 +13,15 @@
               :currentPage="currentPage"
               :exact="item.exact"
             )
-          .Text--small.u-marginT4
+          //- .Subheading.u-marginT4
+          .Text.u-colorTextLight.u-marginT4
             c-navlink(
               v-for="item in navContacts",
               :key="item.label",
               :label="item.label",
               :link="item.link",
             )
-          .Text--small.u-marginT2
+          //- .Text--small.u-marginT2
             c-navlink(
               v-for="item in navButtons",
               :key="item.label",
@@ -80,6 +82,10 @@ export default {
         {
           label: "+61 408 767 540",
           link: "tel:610-408-767-540"
+        },
+        {
+          label: "@callumflack",
+          link: "https://twitter.com/callumflack"
         }
       ],
 
@@ -110,6 +116,18 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
+hr {
+  height: var(--s2);
+  margin-bottom: calc(1.333 * var(--s4));
+
+  @media (--small-viewport) {
+    height: var(--s2);
+    height: 5px;
+    /* margin-bottom: calc(1.333 * var(--s4)); */
+    width: 50%;
+  }
+}
+
 .Pin {
   align-items: center;
   background-color: var(--color-text);
@@ -120,12 +138,18 @@ export default {
   width: 100vw;
 }
 
+.Massive a + a,
+.Subtitle a + a,
 .Title a + a {
   padding-top: var(--s3);
 }
 
 .Text a + a {
   padding-top: var(--s1);
+
+  @media (--small-viewport) {
+    padding-top: 0;
+  }
 }
 
 .NewsletterWrapper {

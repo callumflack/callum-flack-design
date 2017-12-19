@@ -7,12 +7,14 @@
     section(role="banner")
       .Column
         .Container
-          figure.Figure
-            img(:src="page.heroImage", alt="", style="opacity:0.9")
+          .Inner
+            figure.Figure.Figure--large
+              img(:src="page.heroImage", alt="", style="opacity:0.9")
     main(role="main")
       .Column
         .Container
-          nuxtent-body.Inner.TypeScope.TypeScope-about(:body="page.body")
+          .Inner
+            nuxtent-body.TypeScope.TypeScope-about(:body="page.body")
 </template>
 
 <script>

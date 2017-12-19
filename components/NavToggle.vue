@@ -51,7 +51,7 @@ export default {
 
 .Toggle {
   position: fixed;
-  right: var(--s4);
+  right: 2rem;
   z-index: 999;
 
   @media (--medium-viewport) {

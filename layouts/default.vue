@@ -35,9 +35,9 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Footer {
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
   /* border-top: 1px solid #e5e5e5; */
-  margin-top: var(--s7);
+  /* margin-top: var(--s7); */
 }
 
 /*.page-enter-active,

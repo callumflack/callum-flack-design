@@ -12,8 +12,15 @@
   }
 
   @media (--large-viewport) {
-    padding-left: calc( ( ( ( (100vw - 15rem ) / 12) * 2 ) + (1rem * 1) ) + 1.5rem );
-    padding-right: calc(((((100vw - (15rem))/ 12) * 2) + (1rem * 1)) + 1.5rem);
+    // padding-left: calc( ( ( ( (100vw - 15rem ) / 12) * 2 ) + (1rem * 1) ) + 1.5rem );
+    // padding-right: calc(((((100vw - (15rem))/ 12) * 2) + (1rem * 1)) + 1.5rem);
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media (--xlarge-viewport) {
+    padding-left: 16.666667vw;
+    padding-right: 16.666667vw;
   }
 }
 

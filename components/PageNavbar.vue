@@ -1,5 +1,5 @@
 <template lang="pug">
-.Navbar
+header.Navbar
   .Column
     .Container
       .Inner

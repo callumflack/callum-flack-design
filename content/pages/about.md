@@ -9,7 +9,7 @@ heroImageFirst: true
 > Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been
 > designing and developing brands and products since 2000.
 
-My job is to help you bridge the gap to your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
+My job is to help you bridge the gap between you and your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
 ## Experienced
 
@@ -42,6 +42,8 @@ travelling to meet in person.
 Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
 [+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
 
-## Stay in touch
+<p class="u-pSpace--half">You can also find me online at:<br></p>
 
-@[FormNewsletter]()
+[Github](https://github.com/callumflack)<br>
+[LinkedIn](https://www.linkedin.com/in/callumflack)<br>
+[Instagram](https://www.linkedin.com/in/callumflack)

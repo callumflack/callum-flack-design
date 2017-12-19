@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     article(role="banner")
-      c-pagetitle(:title="page.title", :lede="page.lede")
+      c-pagetitle(:title="page.title", :massive="page.lede")
       .Column
         .Container
           .Inner
@@ -40,6 +40,7 @@ export default {
   },
   props: {
     title: String,
+    massive: String,
     lede: String,
     heroImage: String,
     heroVideo: String,

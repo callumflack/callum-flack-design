@@ -1,7 +1,7 @@
 
 <template lang="pug">
   .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
-    .Title Loading...
+    .Title Patternworks
 </template>
 
 <script>

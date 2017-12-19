@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div.u-bgColorNeutral.u-padding3
   form(
     action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
     method="post", 
