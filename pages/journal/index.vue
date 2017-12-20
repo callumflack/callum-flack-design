@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  c-pagetitle(title="Selected articles")
+  c-pagetitle(title="Journal")
   main(role="main")
     .Container
       .Grid.Grid--alignCenter.Grid--withTinyGutter

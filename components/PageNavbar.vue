@@ -6,7 +6,7 @@ header.Navbar
         .Space
           h1.Title.u-marginT0(v-html="title")
           p.Massive(v-if="massive", v-html="massive")
-          p.Subtitle.u-marginT3(v-if="lede") {{ lede }}
+          p.Subtitle.u-marginT3(v-if="lede", v-html="lede")
 </template>
 
 

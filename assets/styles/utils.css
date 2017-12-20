@@ -30,6 +30,9 @@
 .u-colorBrand {
   color: var(--color-brand) !important;
 }
+.u-colorHighlight {
+  color: var(--color-highlight) !important;
+}
 .u-colorText {
   color: var(--color-text) !important;
 }

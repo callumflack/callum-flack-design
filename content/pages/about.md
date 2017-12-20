@@ -42,8 +42,7 @@ travelling to meet in person.
 Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
 [+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
 
-<p class="u-pSpace--half">You can also find me online at:<br></p>
-
+You can also find me online at:<br>
 [Github](https://github.com/callumflack)<br>
 [LinkedIn](https://www.linkedin.com/in/callumflack)<br>
 [Instagram](https://www.linkedin.com/in/callumflack)

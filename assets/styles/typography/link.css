@@ -18,7 +18,7 @@ p a:not(.LinkSignal),
   background-image: 
     linear-gradient(var(--color-bg), var(--color-bg)), 
     linear-gradient(var(--color-bg), var(--color-bg)), 
-    linear-gradient(var(--color-text), var(--color-text));
+    linear-gradient(currentColor, currentColor);
   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   text-shadow: 
@@ -54,7 +54,7 @@ p a:not(.LinkSignal),
 /*.link.is-active*/
 /*.nuxt-link-active span,*/
 .Project:hover .Project-visualLink {
-  background-image: linear-gradient(var(--color-text), var(--color-text));
+  background-image: linear-gradient(currentColor, currentColor);
   background-size: 3px 3px;
   background-repeat: repeat-x;
   background-position: 0% 100%;

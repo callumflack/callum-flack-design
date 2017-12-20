@@ -1,6 +1,6 @@
 <template lang="pug">
   article(role="banner")
-    c-pagetitle(:title="page.title")
+    c-pagetitle(title="Journal", :massive="page.title")
     .Column(v-if="page.heroImage")
       .Container
         figure.Figure.Figure--large
@@ -9,17 +9,24 @@
       .Column
         .Container
           .Inner
-            nuxtent-body.TypeScope.TypeScope-post(:body="page.body")
+            .TypeScope.TypeScope-post
+              nuxtent-body(:body="page.body")
+              
+              hr
+              .Highlight
+                p Thanks for reading! Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] any comments, I thrive on conversations and feedback. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
+                p
+                  c-newsletter
 </template>
 
 <script>
 import PageTitle from "~/components/PageTitle.vue";
-import MarkdownMovie from "~/components/MarkdownMovie.vue";
+import FormNewsletter from "~/components/FormNewsletter.vue";
 
 export default {
   components: {
     "c-pagetitle": PageTitle,
-    "c-movie": MarkdownMovie
+    "c-newsletter": FormNewsletter
   },
   props: {
     title: String,
@@ -37,5 +44,16 @@ export default {
 </script>
 
 <style>
+@import "../../assets/styles/vars.css";
 
+.Highlight {
+  background-color: var(--color-bg-blue);
+  background-color: color(var(--color-bg-blue) tint(20%));
+  background-color: #c6e4ff;
+  padding: var(--s3);
+
+  & p {
+    padding: initial;
+  }
+}
 </style>

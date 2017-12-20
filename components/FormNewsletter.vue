@@ -1,6 +1,6 @@
 <template lang="pug">
-div.u-bgColorNeutral.u-padding3
-  form(
+.FormWrapper
+  form.FormStroke(
     action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
     method="post", 
     name="mc-embedded-subscribe-form", 
@@ -22,7 +22,7 @@ div.u-bgColorNeutral.u-padding3
           tabindex="-1", 
           value=""
         )
-      button.Button.Button--outline.u-sm-marginL3(
+      button.Button.Button--outline(
         type="submit", 
         name="subscribe", 
       ) {{buttonText}}
@@ -48,4 +48,23 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.FormWrapper {
+  background-color: var(--color-highlight);
+  background-color: var(--color-text);
+  padding: 4px;
+
+  @media (--small-viewport) {
+    padding: 5px;
+  }
+}
+
+.FormStroke {
+  background-color: var(--color-bg);
+  padding: 2px;
+
+  @media (--small-viewport) {
+    padding: 3px;
+  }
+}
 </style>

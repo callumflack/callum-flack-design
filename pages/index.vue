@@ -8,9 +8,7 @@ div
   main(role="main")
     .Column
       .Container
-        .Inner.TypeScope
-          //- p.Text--large You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience.
-
+        .Inner
           figure.Figure.Figure--large
             nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
               .FlexEmbed
@@ -21,34 +19,35 @@ div
                       | View the work #[span.LinkSignal-target →]
                   img.u-width100.u-posRelative(src="/images/loop-04.gif")
 
-          p
-            | Hi, I’m Callum. 
-            nuxt-link(to="/about") I'm interested and curious
-            |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+          .TypeScope
+            p
+              | Hi, I’m Callum. 
+              nuxt-link(to="/about") I'm interested and curious
+              |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+              
+            blockquote
+              p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah over three lines. #[em Wyatt Arent, AUM founder]
             
-          blockquote
-            p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah over three lines. #[em Wyatt Arent, AUM founder]
-          
-          h2 The difference is focus & knowhow
-          p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
-          p Want to know more? Read the #[a(href="/journal") Journal], where I write about design process and web systems through the lens of the human moments connecting them:
+            h2 The difference is focus & knowhow
+            p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
+            p Want to know more? Read the #[a(href="/journal") Journal], where I write about design process and web systems through the lens of the human moments connecting them:
 
-          .Figure
-            .Grid-cell--center.u-lg-size3of4.u-posRelative
-              .Post-title.Title Journal
-              nuxt-link.Post.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-                .Post-image.u-posRelative.u-sm-size1of4.u-lg-size1of2(style="background-image: url(/images/post-image.png)")
-                  //- img.u-posPin(src="/images/post-image.png")
-                .Post-summary.u-sm-size1of4.u-lg-size1of2.u-flex.u-flexAlignItemsCenter
-                  div
-                    h1.Massive.u-marginT2.u-marginB2 Designers should code
-                    p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
-                      span.LinkSignal-target.Text--medium Read →
+            .Figure
+              .Grid-cell--center.u-lg-size3of4.u-posRelative
+                //- .Post-title.Title Journal
+                nuxt-link.Post.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
+                  .Post-image.u-posRelative.u-sm-size1of4.u-lg-size1of2(style="background-image: url(/images/post-image.png)")
+                    //- img.u-posPin(src="/images/post-image.png")
+                  .Post-summary.u-sm-size1of4.u-lg-size1of2.u-flex.u-flexAlignItemsCenter
+                    div
+                      h1.Massive.u-marginT2.u-marginB2 Designers should code
+                      p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
+                        span.LinkSignal-target.Text--medium Read →
 
-          h2 Start building your understanding of what it takes
-          p Follow curiosity, find delight. I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
-
-          c-newsletter.Text.u-sm-width50.u-pSpace
+            h2 Start building your understanding of what it takes
+            p Follow curiosity, find delight. I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
+            p
+              c-newsletter
 
 </template>
 

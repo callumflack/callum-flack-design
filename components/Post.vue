@@ -5,7 +5,7 @@
         img(v-if="image", :src="image")
       .Project-text
         h2.Title
-          span.Project-visualLink {{ title }}
+          span.Project-visualLink(v-html="title")
         p.Project-subtext.TypeScope-reset
           span(v-if="date") {{ date }}
           span.Project-divider ——

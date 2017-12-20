@@ -1,0 +1,47 @@
+/* 
+  -------------------------------------------------
+
+  Lists 
+
+  -------------------------------------------------
+ */
+
+ul,
+ol {
+  font-family: inherit;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+ol,
+ul {
+  & ol,
+  & ul {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  margin-bottom: 0;
+}
+
+.u-noVisualList {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+.TypeScope ul {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.TypeScope li {
+  position: relative;
+
+  &:before {
+    content: "—";
+    left: -2rem;
+    position: absolute;
+  }
+}

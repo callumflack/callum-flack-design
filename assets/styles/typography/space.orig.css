@@ -1,0 +1,87 @@
+/* 
+  -------------------------------------------------
+
+  Spaces
+
+  -------------------------------------------------
+ */
+
+p + p,
+ul + p {
+  // text-indent: 3rem;
+
+  @media (--large-viewport) {
+    // text-indent: 4rem;
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.u-pSpace,
+.TypeScope h1,
+.TypeScope h2,
+.TypeScope p + .Button,
+.TypeScope ul + .Button,
+.TypeScope p + blockquote,
+.TypeScope ul + blockquote {
+  // margin-top: calc(var(--s4));
+
+  @media (--small-viewport) {
+    // margin-top: var(--s5);
+  }
+}
+
+.u-pSpace--half {
+  margin-top: var(--s3);
+
+  @media (--small-viewport) {
+    margin-top: var(--s4);
+  }
+}
+
+/*.TypeScope blockquote:first-child p,*/
+h1 + ul,
+h2 + ul,
+p + ul,
+.TypeScope blockquote + h1,
+.TypeScope blockquote + h2,
+.TypeScope h1 + blockquote,
+.TypeScope h2 + blockquote,
+.TypeScope figure + blockquote,
+.Text--large:first-child {
+  @media (--small-viewport) {
+    margin-top: 0 !important;
+  }
+}
+
+.TypeScope figure + blockquote {
+  margin-bottom: 0 !important;
+}
+
+.Text--large,
+.TypeScope blockquote {
+  margin-top: var(--s4);
+  margin-bottom: var(--s4);
+  
+  @media (--small-viewport) {
+    margin-top: var(--s3) !important;
+    margin-bottom: var(--s3) !important;
+  }
+}
+
+.TypeScope blockquote:first-child,
+.Text--large:first-child {
+  margin-top: 0 !important;
+}
+
+.TypeScope p,
+.TypeScope ul, 
+.TypeScope blockquote {
+  margin-bottom: calc(var(--s3));
+
+  @media (--small-viewport) {
+    margin-bottom: calc(1.5 * var(--s3));
+  }
+}

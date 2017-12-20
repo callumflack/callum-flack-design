@@ -50,13 +50,13 @@
    */
    
   --color-brand: #00ffff;
-  /*--color-highlight: #0070c9;*/
-  --color-highlight: #FF6F00;
+  --color-highlight: #bee8fb;
+  --color-highlight: #00b4ff;
   --color-red: #ff3700;
   --color-text: #0a0a0a;
   --color-text-medium: #757575;
   --color-text-light: #959595;
-  --color-border: #e5e5e5;
+  --color-border: #ccc;
   --color-neutral: #eee;
   --color-bg: #fdfdfd;
   --color-bg-blue: #cdd8e2;
@@ -81,20 +81,16 @@
    * Using the perfect fourth: http://type-scale.com/
    */
 
-  --s-title: 2.369em;
-  --s-title: 4em;
-  --s-title: 3.157em;
-  --s-title: 2.5em;
-
-  --s-heading: 1.8125em;
-  --s-heading: 1.875em;
+  --s-massive: 4em;
+  --s-title: 2em;
+  --s-subtitle: 3em;
   --s-heading: 2em;
-
-  --s-text: 1.5625em;
-  --s-text: 1.414em;
-  --s-text: 1.4375em;
-
+  --s-subheading: 1.375em;
+  --s-text: 1.5em;
+  --s-text-meta: 1.1875em;
   --s-text-sm: 0.875em;
+  
+  --s-text-unit: 1.5;
 
   /* 
    * ls & lh 

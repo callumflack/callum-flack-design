@@ -14,7 +14,8 @@
               :exact="item.exact"
             )
           //- .Subheading.u-marginT4
-          .Text.u-colorTextLight.u-marginT4
+          //- .u-colorTextLight
+          .Text.u-marginT4
             c-navlink(
               v-for="item in navContacts",
               :key="item.label",

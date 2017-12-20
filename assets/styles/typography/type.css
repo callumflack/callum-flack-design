@@ -14,17 +14,14 @@ h3 {
 
 .Massive {
   font-family: var(--font-heading-sub), var(--font-stack-sans);
-  font-size: 3em;
+  font-size: var(--s-massive);
   letter-spacing: -0.0025em !important;
   line-height: 1.15;
-  margin-top: var(--s4);
+  margin-top: var(--s3);
   width: 90%;
 
   @media (--small-viewport) {
-    font-size: 3.75em;
-    font-size: 4.3em;
-    font-size: 4em;
-    margin-top: var(--s5);
+    margin-top: var(--s4);
     width: 75%;
   }
   @media (--large-viewport) {
@@ -35,8 +32,7 @@ h3 {
 .Title {
   font-family: var(--font-heading), var(--font-stack-sans);
   font-feature-settings: "tnum";
-  font-size: 2.15em;
-  font-size: 2em;
+  font-size: var(--s-title);
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.025em !important;
   line-height: var(--lh-heading);
@@ -53,10 +49,9 @@ h3 {
 
 .Subtitle {
   font-family: var(--font-heading-sub), var(--font-stack-sans);
-  font-size: 3em;
+  font-size: var(--s-subtitle);
   letter-spacing: 0.002em !important;
   line-height: var(--lh-subheading);
-
 
   @media (--small-viewport) {
     width: 75%;
@@ -69,8 +64,7 @@ h3 {
 .Subheading,
 .TypeScope h2 {
   font-family: var(--font-heading-dark), var(--font-stack-sans);
-  font-size: var(--s-text);
-  font-size: 1.25em;
+  font-size: var(--s-subheading);
   letter-spacing: 0.025em;
   line-height: var(--lh-text);
   margin-bottom: var(--s3);
@@ -137,17 +131,27 @@ body,
   -------------------------------------------------
  */
 
+p,
+ul,
+ol,
+li,
 em,
 strong {
   font-style: normal;
+}
+
+em,
+strong {
   font-weight: inherit;
 }
 
 .Red {
+  color: #0070c9 !important;
   color: #ed4d21 !important;
   color: #0085ff !important;
   color: #0070c9 !important;
   color: #ff3700 !important;
+  color: #FF6F00 !important;
 }
 
 .u-noTextIndent {
@@ -159,6 +163,33 @@ strong {
   font-weight: 500;
 }
 
+
+
+/*
+  -------------------------------------------------
+
+  Regular Text
+
+  -------------------------------------------------
+ */
+
+.Text,
+.Text--meta,
+.TypeScope p,
+.TypeScope ol,
+.TypeScope ul {
+  font-family: var(--font-regular), var(--font-stack-sans);
+  font-size: var(--s-text);
+  font-weight: 400;
+  letter-spacing: var(--ls-text);
+  line-height: var(--lh-text);
+  text-transform: initial;
+}
+
+.Text--meta {
+  font-size: var(--s-text-meta) !important;
+}
+
 /*
   -------------------------------------------------
 
@@ -167,100 +198,63 @@ strong {
   -------------------------------------------------
  */
 
+.Text,
 .TypeScope p,
 .TypeScope ol,
-.TypeScope ul,
-.Text {
-  font-family: var(--font-regular), var(--font-stack-sans);
+.TypeScope ul {
   font-size: var(--s-text);
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: var(--ls-text);
-  line-height: var(--lh-text);
-  text-transform: initial;
+}
+
+.TypeScope {
+  @media (--medium-viewport) {
+    width: 50%;
+  }
 }
 
 .TypeScope p,
 .TypeScope ol,
 .TypeScope ul,
 .TypeScope h2 {
-  padding-right: calc(0.25 * var(--grid-gutter));
-
-  @media (--small-viewport) {
-    padding-right: calc(0.5 * var(--grid-gutter));
-  }
   @media (--medium-viewport) {
-    width: 50%;
-  }
-  @media (--xlarge-viewport) {
-    // width: 33.333333%;
+    padding-right: calc(0.5 * var(--grid-gutter));
   }
 }
 
-.TypeScope p em {
-  color: var(--color-text-light);
-  color: inherit;
-  font-style: normal;
+.TypeScope .Figure {
+  @media (--medium-viewport) {
+    width: 1120px;
+  }
 }
 
 /*
   -------------------------------------------------
 
-  blockquote
+  blockquotes
 
   -------------------------------------------------
  */
 
-.u-leftColumn,
-.Text--large,
+.Intro,
 .TypeScope blockquote {
   @media (--medium-viewport) {
-    width: 50%;
-  }
-}
-
-.u-leftColumn,
-.TypeScope blockquote {
-  @media (--small-viewport) {
-    margin-left: 50%;
     padding-left: calc(0.5 * var(--grid-gutter));
-    padding-right: 0;
-  }
-
-  @media (--large-viewport) {
-    // padding-left: calc(0.5 * var(--grid-gutter));
+    position: relative;
+    left: 100%;
   }
 }
 
-.Text--large,
+.Intro,
 .TypeScope blockquote p {
-  font-size: var(--s-heading);
-  // font-family: var(--font-medium), var(--font-stack-sans);
-  line-height: 1.34375;
-}
-
-.TypeScope blockquote p {
-  // border-top: 2px solid var(--color-border);
-  // border-bottom: 2px solid var(--color-border);
-  // padding: var(--s3) 0 calc(1.333 * var(--s3));
+  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  padding: var(--s3) 0 calc(1.333 * var(--s3));
   width: auto;
 }
 
-.TypeScope blockquote.left p {
-  border: initial;
-  margin-left: initial;
-  padding: initial;
-}
-
-.TypeScope blockquote p,
-.TypeScope blockquote p em {
-  color: purple;
-  color: var(--color-text-light);
-}
-
+.Intro em,
 .TypeScope blockquote p em {
   display: table;
-  font-size: calc(23 / 30 * 1em);
+  font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);
   font-family: var(--font-regular), var(--font-stack-sans);
   line-height: var(--lh-text);
   margin-top: var(--s1);
@@ -273,132 +267,50 @@ strong {
 /* 
   -------------------------------------------------
 
-  Lists 
-
-  -------------------------------------------------
- */
-
-ul,
-ol {
-  font-family: inherit;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-li {
-  margin-bottom: 0;
-}
-
-.u-noVisualList {
-  list-style-type: none !important;
-  padding-left: 0 !important;
-}
-
-.TypeScope ul {
-  list-style-type: none;
-  padding-left: 2rem;
-}
-
-.TypeScope li {
-  position: relative;
-
-  &:before {
-    content: "—";
-    left: -2rem;
-    position: absolute;
-  }
-}
-
-/* 
-  -------------------------------------------------
-
   Spaces
 
   -------------------------------------------------
  */
 
-p + p,
-ul + p {
-  text-indent: 3rem;
+.TypeScope p,
+.TypeScope ul, 
+.TypeScope blockquote {
+  margin-bottom: var(--s3);
 
-  @media (--large-viewport) {
-    text-indent: 4rem;
+  @media (--small-viewport) {
+    margin-bottom: calc(2 * var(--s3));
   }
 }
 
-p:last-child {
+.TypeScope blockquote {
+  margin-top: var(--s3);
+  
+  @media (--small-viewport) {
+    margin-top: calc(2 * var(--s3));
+  }
+}
+
+.TypeScope p:last-child,
+.TypeScope ul:last-child,
+.TypeScope blockquote:last-child {
   margin-bottom: 0;
 }
 
-.u-pSpace,
-.TypeScope h1,
-.TypeScope h2,
-.TypeScope p + .Button,
-.TypeScope ul + .Button,
-.TypeScope p + blockquote,
-.TypeScope ul + blockquote {
-  margin-top: calc(var(--s4));
+.TypeScope h2:not(:first-child) {
+  margin-top: calc(3 * var(--s3));
 
   @media (--small-viewport) {
-    margin-top: var(--s5);
-  }
-}
-
-.u-pSpace--half {
-  margin-top: var(--s3);
-
-  @media (--small-viewport) {
-    margin-top: var(--s4);
-  }
-}
-
-/*.TypeScope blockquote:first-child p,*/
-h1 + ul,
-h2 + ul,
-p + ul,
-.TypeScope blockquote + h1,
-.TypeScope blockquote + h2,
-.TypeScope h1 + blockquote,
-.TypeScope h2 + blockquote,
-.TypeScope figure + blockquote,
-.Text--large:first-child {
-  @media (--small-viewport) {
-    margin-top: 0 !important;
-  }
-}
-
-.TypeScope figure + blockquote {
-  margin-bottom: 0 !important;
-}
-
-.Text--large,
-.TypeScope blockquote {
-  margin-top: var(--s4);
-  margin-bottom: var(--s4);
-  
-  @media (--small-viewport) {
-    margin-top: var(--s3) !important;
-    margin-bottom: var(--s3) !important;
+    margin-top: calc(6 * var(--s3));
   }
 }
 
 .TypeScope blockquote:first-child,
+.TypeScope blockquote + h2,
 .Text--large:first-child {
   margin-top: 0 !important;
 }
 
-ol,
-ul {
-}
 
-ol,
-ul {
-  & ol,
-  & ul {
-    margin-bottom: 0;
-  }
-}
 
 /* 
   -------------------------------------------------
@@ -408,58 +320,73 @@ ul {
   -------------------------------------------------
  */
 
-.TypeScope-about p + p {
-  text-indent: 0 !important;
-}
-
-.TypeScope-post p {
-  margin-bottom: calc(var(--s3));
-  text-indent: initial;
-
-  @media (--small-viewport) {
-    margin-bottom: var(--s3);
-  }
-}
-
-.TypeScope-post p,
-.TypeScope-post ol,
-.TypeScope-post ul {
+.TypeScope-post {
   @media (--medium-viewport) {
-    width: 75%;
+    width: calc(100% * 2/3);
   }
 }
 
-.TypeScope-post p + p {
-  
-}
-
-.TypeScope-post p em {
-  border-left: 1px solid currentColor;
-  color: var(--color-text-light);
-  display: table;
-  padding-left: var(--s3);
-  margin-bottom: var(--s1) !important;
-  
-  @media (--small-viewport) {
-    margin-bottom: 0 !important;
-  }
-}
-
-
+.TypeScope-post p strong,
+.TypeScope-post p em,
 .TypeScope-post blockquote {
-  margin: calc(var(--s4)) 0 !important;
-  padding-left: 0;
-  padding-right: calc(0.25 * var(--grid-gutter));
+  font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
+}
+
+.TypeScope-post p strong {
+  color: var(--color-text-light);
+}
+
+.TypeScope-post blockquote p {
+  border: initial;
+  border-left: 2px solid currentColor;
+  margin-right: 7.5%;
+  padding: initial;
+  padding-left: calc(1.5 * var(--s3));
+}
+
+.TypeScope-post blockquote p em {
+  display: table;
+  font-size: 1em;
+  margin-top: var(--s1);
+}
+
+.TypeScope-post .Intro,
+.TypeScope-post blockquote {
+  @media (--medium-viewport) {
+    padding-left: 0;
+    padding-right: 0;
+    left: 0;
+  }
+}
+
+.TypeScope-post .Intro {
+  margin-bottom: var(--s4));
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s5);
+  }
+}
+
+.TypeScope-post hr {
+  margin: var(--s4)) 0 !important;
 
   @media (--small-viewport) {
     margin: var(--s5) 0 !important;
   }
+}
 
-  @media (--medium-viewport) {
-    width: 75%;
-  }
+.TypeScope-post hr {
+  background-color: transparent;
 
-  @media (--large-viewport) {
-    padding-right: calc(0.5 * var(--grid-gutter));
+  &:after {
+    content: "* * *";
+    display: block;
+    font-family: var(--font-heading-sub), var(--font-stack-serif);
+    font-size: var(--s-subtitle);
+    letter-spacing: 0.025em;
+    line-height: 1;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-0.175em);
   }
 }

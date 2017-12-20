@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     article(role="banner")
-      c-pagetitle(:title="page.title", :massive="page.lede")
+      c-pagetitle(:title="page.title", :lede="page.lede")
       .Column
         .Container
           .Inner

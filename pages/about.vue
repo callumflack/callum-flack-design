@@ -14,7 +14,8 @@
       .Column
         .Container
           .Inner
-            nuxtent-body.TypeScope.TypeScope-about(:body="page.body")
+            .TypeScope
+              nuxtent-body(:body="page.body")
 </template>
 
 <script>

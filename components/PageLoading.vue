@@ -1,7 +1,12 @@
 
 <template lang="pug">
-  .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
-    .Title Patternworks
+  //- .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
+  .loading-page(v-if="loading")
+    .Column
+      .Container
+        .Inner
+          .Space
+            .Title Patternworks
 </template>
 
 <script>
