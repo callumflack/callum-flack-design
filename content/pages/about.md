@@ -30,7 +30,7 @@ travelling to meet in person.
 > series of transformations that reflect the dynamic nature of the organization and its
 > initiatives. _Brad Spalding, Managing Director of The Substation_
 
-## ways to engage my services
+## Ways to engage my services
 
 * Improve or redesign your existing digital branding and/or website systems.
 * Create a new digital brand and/or website systems from scratch.
@@ -41,8 +41,3 @@ travelling to meet in person.
 
 Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
 [+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
-
-You can also find me online at:<br>
-[Github](https://github.com/callumflack)<br>
-[LinkedIn](https://www.linkedin.com/in/callumflack)<br>
-[Instagram](https://www.linkedin.com/in/callumflack)

@@ -15,60 +15,77 @@ h3 {
 .Massive {
   font-family: var(--font-heading-sub), var(--font-stack-sans);
   font-size: var(--s-massive);
-  letter-spacing: -0.0025em !important;
+  letter-spacing: -0.0025em;
   line-height: 1.15;
   margin-top: var(--s3);
-  width: 90%;
+  // width: 90%;
+  text-transform: uppercase;
 
   @media (--small-viewport) {
     margin-top: var(--s4);
+    // width: 75%;
+  }
+  @media (--medium-viewport) {
     width: 75%;
   }
   @media (--large-viewport) {
-    width: 100%;
+    // width: 100%;
   }
 }
 
 .Title {
-  font-family: var(--font-heading), var(--font-stack-sans);
+  font-family: var(--font-heading-dark), var(--font-stack-sans);
   font-feature-settings: "tnum";
   font-size: var(--s-title);
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.025em !important;
+  letter-spacing: 0.025em;
+  letter-spacing: var(--ls-body);
   line-height: var(--lh-heading);
   line-height: 1.15;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   @media (--large-viewport) {
-    width: 66%;
+    // width: 66%;
   }
   @media (--xlarge-viewport) {
-    width: 50%;
+    // width: 50%;
   }
 }
 
 .Subtitle {
   font-family: var(--font-heading-sub), var(--font-stack-sans);
   font-size: var(--s-subtitle);
-  letter-spacing: 0.002em !important;
+  letter-spacing: 0.002em;
   line-height: var(--lh-subheading);
 
+  @media (--medium-viewport) {
+    width: 50%;
+  }
   @media (--small-viewport) {
-    width: 75%;
+    // width: 75%;
   }
   @media (--large-viewport) {
-    width: 66%;
+    // width: 66%;
   }
 }
 
 .Subheading,
 .TypeScope h2 {
-  font-family: var(--font-heading-dark), var(--font-stack-sans);
-  font-size: var(--s-subheading);
-  letter-spacing: 0.025em;
-  line-height: var(--lh-text);
+  font-family: var(--font-heading-dark), var(--font-stack-sans) !important;
+  // font-size: var(--s-subheading);
+  // letter-spacing: -0.02em;
+  // line-height: var(--lh-text);
   margin-bottom: var(--s3);
-  text-transform: uppercase;
+  // text-transform: uppercase;
+}
+
+// .Massive,
+.Title,
+.Subtitle,
+.Subheading {
+  @media (--medium-viewport) {
+    width: 50%;
+  }
 }
 
 /* 
@@ -158,13 +175,6 @@ strong {
   text-indent: 0 !important;
 }
 
-.Text--medium {
-  font-family: var(--font-medium), var(--font-stack-sans) !important;
-  font-weight: 500;
-}
-
-
-
 /*
   -------------------------------------------------
 
@@ -173,6 +183,11 @@ strong {
   -------------------------------------------------
  */
 
+.Massive,
+.Title,
+.Subtitle,
+.Subheading,
+.TypeScope h2,
 .Text,
 .Text--meta,
 .TypeScope p,
@@ -186,8 +201,30 @@ strong {
   text-transform: initial;
 }
 
+.Subtitle {
+  // font-size: calc(1.5 * var(--s-text));
+  // text-align: center;
+  // padding-left: 5rem;
+}
+
+.Title {
+  font-family: var(--font-heading-dark);
+}
+
+.Massive {
+  font-family: var(--font-heading-sub);
+  font-size: 4em;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
 .Text--meta {
   font-size: var(--s-text-meta) !important;
+}
+
+.Text--medium {
+  font-family: var(--font-medium), var(--font-stack-sans) !important;
+  font-weight: 500;
 }
 
 /*
@@ -220,12 +257,6 @@ strong {
   }
 }
 
-.TypeScope .Figure {
-  @media (--medium-viewport) {
-    width: 1120px;
-  }
-}
-
 /*
   -------------------------------------------------
 
@@ -247,8 +278,13 @@ strong {
 .TypeScope blockquote p {
   border-top: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
-  padding: var(--s3) 0 calc(1.333 * var(--s3));
+  padding: calc(2 * var(--s3)) 0 calc(2.166 * var(--s3));
   width: auto;
+
+  & p {
+    border: initial;
+    padding: initial;
+  }
 }
 
 .Intro em,
@@ -273,8 +309,7 @@ strong {
  */
 
 .TypeScope p,
-.TypeScope ul, 
-.TypeScope blockquote {
+.TypeScope ul {
   margin-bottom: var(--s3);
 
   @media (--small-viewport) {
@@ -282,11 +317,19 @@ strong {
   }
 }
 
+.TypeScope p + blockquote {
+  @media (--small-viewport) {
+    margin-top: calc(-2 * var(--s3));
+  }
+}
+
 .TypeScope blockquote {
   margin-top: var(--s3);
+  margin-bottom: var(--s3);
   
   @media (--small-viewport) {
-    margin-top: calc(2 * var(--s3));
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -298,9 +341,11 @@ strong {
 
 .TypeScope h2:not(:first-child) {
   margin-top: calc(3 * var(--s3));
+  margin-top: var(--s4);
 
   @media (--small-viewport) {
     margin-top: calc(6 * var(--s3));
+    margin-top: var(--s5);
   }
 }
 
@@ -310,7 +355,13 @@ strong {
   margin-top: 0 !important;
 }
 
+.Massive {
+  // margin-bottom: var(--s5);
 
+  @media (--small-viewport) {
+    margin-bottom: var(--s4);
+  }
+}
 
 /* 
   -------------------------------------------------
@@ -360,7 +411,8 @@ strong {
 }
 
 .TypeScope-post .Intro {
-  margin-bottom: var(--s4));
+  // font-family: var(--font-heading-dark);
+  margin-bottom: var(--s4);
 
   @media (--small-viewport) {
     margin-bottom: var(--s5);

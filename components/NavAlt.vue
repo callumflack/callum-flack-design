@@ -3,7 +3,6 @@
     .Container
       .Inner
         .Space
-          hr
           nav.Title
             c-navlink(
               v-for="item in navLinks",
@@ -14,8 +13,7 @@
               :exact="item.exact"
             )
           //- .Subheading.u-marginT4
-          //- .u-colorTextLight
-          .Text.u-marginT4
+          .Title.u-marginT4
             c-navlink(
               v-for="item in navContacts",
               :key="item.label",
@@ -55,30 +53,26 @@ export default {
         {
           label: "Index",
           link: "/",
-          lede: "Digital craftsmanship",
           exact: true
         },
         {
           label: "Work",
-          link: "/work",
-          lede: "VJ Ray Website"
+          link: "/work"
         },
         {
           label: "Journal",
-          link: "/journal",
-          lede: "Should designers code?"
+          link: "/journal/designers-should-code"
         },
         {
           label: "About",
-          link: "/about",
-          lede: "A designer who codes"
+          link: "/about"
         }
       ],
 
       navContacts: [
         {
-          label: "callum@okok.design",
-          link: "mailto:hi@patternworks.com.au"
+          label: "callum@patternworks.com.au",
+          link: "mailto:callum@patternworks.com.au"
         },
         {
           label: "+61 408 767 540",
@@ -118,14 +112,19 @@ export default {
 @import "../assets/styles/vars.css";
 
 hr {
-  height: var(--s2);
-  margin-bottom: calc(1.333 * var(--s4));
+  background-color: var(--color-text);
+  height: 1px;
+  /* margin-bottom: calc(1.333 * var(--s4)); */
+  margin-bottom: calc(0.85 * var(--s5));
 
   @media (--small-viewport) {
-    height: var(--s2);
-    height: 5px;
-    /* margin-bottom: calc(1.333 * var(--s4)); */
     width: 50%;
+  }
+  @media (--medium-viewport) {
+    margin-bottom: var(--s6);
+  }
+  @media (--large-viewport) {
+    margin-bottom: var(--s7);
   }
 }
 
@@ -142,7 +141,7 @@ hr {
 .Massive a + a,
 .Subtitle a + a,
 .Title a + a {
-  padding-top: var(--s3);
+  /* padding-top: var(--s3); */
 }
 
 .Text a + a {

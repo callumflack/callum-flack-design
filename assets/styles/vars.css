@@ -84,10 +84,10 @@
   --s-massive: 4em;
   --s-title: 2em;
   --s-subtitle: 3em;
-  --s-heading: 2em;
-  --s-subheading: 1.375em;
+  --s-heading: var(--s-title);
+  --s-subheading: 1.5em;
   --s-text: 1.5em;
-  --s-text-meta: 1.1875em;
+  --s-text-meta: 1.125em;
   --s-text-sm: 0.875em;
   
   --s-text-unit: 1.5;
@@ -99,7 +99,7 @@
   --ls-heading: -0.0225em;
   --ls-heading-sm: -0.005em;
   --ls-body: -0.005em;
-  --ls-text: -0.0125em;
+  --ls-text: -0.02em;
   --ls-meta: -0.0125em; /*0.075em*/
 
   --lh-heading: 1;

@@ -61,6 +61,7 @@ module.exports = {
       "/work/vj-ray",
       "/work/ward6",
       "/work/ward6-edetailers",
+      "/journal",
       "/journal/designers-should-code"
     ]
   },

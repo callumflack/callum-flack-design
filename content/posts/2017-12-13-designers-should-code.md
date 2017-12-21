@@ -1,11 +1,11 @@
 ---
 section: Journal
 title: Designers should code&#58;<br>thoughts from an ex-graphic designer
-headline: Explaining complex pharma products with simple and engaging digital stories.
-date: December 13, 2017
+headline: 
+date: December 21, 2017
 ---
 
-<p class="Intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply design sensibility in code without understanding how to code.</p>
+<p class="Intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in product design process, the better and more valuable you'll become. That's reason enough to learn to code.</p>
 
 Good visual designers notice the look, feel and flow of a digital product in emotional and actionable terms. Good developers simulate programs in their minds and notice the programming patterns and systems used to make a product. There's not much left over to think about design sensibility when you're simulating a computer in your head. And vice versa, a designer will scream if they find themselves in Vim mode.
 

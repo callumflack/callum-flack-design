@@ -61,6 +61,9 @@
 .u-bgColorText {
   background-color: var(--color-text) !important;
 }
+.u-bgColorTextLight {
+  background-color: var(--color-text-light) !important;
+}
 .u-bgColorBrand {
   background-color: var(--color-brand) !important;
 }

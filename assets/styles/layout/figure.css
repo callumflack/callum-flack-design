@@ -1,5 +1,9 @@
-/* 
- * figures 
+/*
+  -------------------------------------------------
+
+  Figures
+
+  -------------------------------------------------
  */
 
 .Figure {
@@ -15,49 +19,25 @@
   }
 }
 
+.Figure:first-child {
+  margin-top: 0 !important;
+}
+
 .Figure--post {
   border-top: 3px solid var(--color-text);
   border-bottom: 3px solid var(--color-text);
-  // margin: calc(0.85 * var(--s4)) 0;
-
-  @media (--large-viewport) {
-    // margin: var(--s5) 0;
-  }
-}
-
-.Figure:first-child {
-  margin-top: 0 !important;
 }
 
 .Figure--frame {
   border: 1px solid var(--color-border);
 }
 
-/* .Figure--large {
-  position: relative;
-  left: calc(-40vw + 50%);
-  width: 80vw;
-
-  @media (--small-viewport) {
-    left: calc(-640px + 50%);
-    width: 1280px;
-  }
-} */
-
 .Figure--medium,
 .Figure--large {
-  padding-left: var(--grid-gutter);
-  padding-right: var(--grid-gutter);
-  position: relative;
+  // padding-left: var(--grid-gutter);
+  // padding-right: var(--grid-gutter);
   left: calc(-50vw + 50%);
-  /* max-width: var(--container-xl); */
   width: 100vw;
-
-  @media (--small-viewport) {
-    // padding: 0;
-    // left: calc(-40vw + 50%);
-    // width: 80vw;
-  }
 }
 
 .Figure--medium {
@@ -91,4 +71,32 @@
     left: calc(-30vw + 50%);
     width: 60vw;
   }
+}
+
+/*
+  -------------------------------------------------
+
+  Figure wrapper (for use within ".TypeScope")
+
+  -------------------------------------------------
+ */
+
+.FigureWrapper {
+  margin: calc(0.85 * var(--s4)) 0;
+
+  @media (--medium-viewport) {
+    width: 1120px;
+  }
+  @media (--large-viewport) {
+    margin: var(--s5) 0;
+  }
+
+  & .Figure {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.FigureWrapper:first-child {
+  margin-top: 0 !important;
 }

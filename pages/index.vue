@@ -1,8 +1,8 @@
 <template lang="pug">
 div
   c-pagetitle(
-    massive="You know what you do inside out. I'll help you translate it into a resounding story that speaks to the hearts of your audience."
-    title="digital brands & products<br>for makers & shakers"
+    title="Callum Flack, design + development"
+    massive="Digital brands & products<br>for makers & shakers"
   )
 
   main(role="main")
@@ -10,12 +10,12 @@ div
       .Container
         .Inner
           figure.Figure.Figure--large
-            nuxt-link.WorkLink.LinkSignal.u-noVisualLink(to="/work")
+            nuxt-link.Work.LinkSignal.u-noVisualLink(to="/work")
               .FlexEmbed
                 .FlexEmbed-ratio.FlexEmbed-ratio--16by9
                 .FlexEmbed-content
                   .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorText
-                    .Title.u-colorWhite.u-textCenter 
+                    .Massive.u-colorWhite.u-textCenter 
                       | View the work #[span.LinkSignal-target →]
                   img.u-width100.u-posRelative(src="/images/loop-04.gif")
 
@@ -25,27 +25,20 @@ div
               nuxt-link(to="/about") I'm interested and curious
               |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
               
-            blockquote
-              p Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms. Blah over three lines. #[em Wyatt Arent, AUM founder]
-            
             h2 The difference is focus & knowhow
             p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
             p Want to know more? Read the #[a(href="/journal") Journal], where I write about design process and web systems through the lens of the human moments connecting them:
 
-            .Figure
-              .Grid-cell--center.u-lg-size3of4.u-posRelative
-                //- .Post-title.Title Journal
-                nuxt-link.Post.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-                  .Post-image.u-posRelative.u-sm-size1of4.u-lg-size1of2(style="background-image: url(/images/post-image.png)")
-                    //- img.u-posPin(src="/images/post-image.png")
-                  .Post-summary.u-sm-size1of4.u-lg-size1of2.u-flex.u-flexAlignItemsCenter
-                    div
-                      h1.Massive.u-marginT2.u-marginB2 Designers should code
-                      p.u-width100 The design of the screens is an arms race in the battle for your attention. How do you make better screens faster? Maybe designers should code? The answer is yes, at least to some degree. The explanation for which reveals deeper issues. 
-                        span.LinkSignal-target.Text--medium Read →
+            blockquote.Figure.Post
+              p
+                nuxt-link.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
+                  h1.Massive.u-marginT0.u-marginB3 Designers should code
+                  p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
+                    em
+                      span.LinkSignal-target Read the article →
 
-            h2 Start building your understanding of what it takes
-            p Follow curiosity, find delight. I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
+            h2 Follow curiosity, find delight
+            p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
             p
               c-newsletter
 
@@ -70,27 +63,33 @@ export default {
 <style>
 @import "../assets/styles/vars.css";
 
-.WorkLink img {
+.Work img {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
-.WorkLink:hover img,
-.WorkLink:focus img {
+.Work:hover img,
+.Work:focus img {
   opacity: 0;
   transition: opacity 0.15s ease;
 }
 
 .Post {
-  /* border: 2px solid var(--color-text); */
-  display: flex;
-  margin: auto;
-  position: relative;
-  /* padding: var(--s3) 0 calc(1.333 * var(--s3)); */
-  /* padding: calc(1.5 * var(--s3)); */
+  /* margin: calc(0.85 * var(--s5)) 0 !important; */
+  /* left: 50% !important; */
 
-  @media (--small-viewport) {
-    /* padding: 0 var(--s4); */
+  @media (--large-viewport) {
+    /* margin: var(--s6) 0 !important; */
+  }
+
+  & p {
+    padding: 0 !important;
+  }
+
+  & a {
+    background-color: var(--color-neutral);
+    display: block;
+    padding: 2rem;
   }
 }
 
@@ -99,7 +98,14 @@ export default {
 }
 
 .Post-image {
+  background-color: var(--color-text);
+  background-image: url("/images/post-bubble.jpg");
   background-size: cover;
+  display: none !important;
+
+  @media (--small-viewport) {
+    display: flex !important;
+  }
 }
 
 .Post-summary {
@@ -109,12 +115,15 @@ export default {
 }
 
 .Post-title {
+  transform: translateY(-1.75em);
+}
+
+.Post-titleX {
   display: inline;
   margin: 0 !important;
   position: absolute;
   transform: rotate(-90deg);
   width: auto;
-
   left: -8rem;
   top: 4rem;
 }

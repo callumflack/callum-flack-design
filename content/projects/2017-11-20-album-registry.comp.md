@@ -3,7 +3,7 @@ section: Projects
 year: 2017
 title: Album Registry
 headline: Helping photographers grow their business with gift-funding.
-lede: A crowd-funding platform for anyone to gift beautiful pro photography.
+lede: A crowd-funding platform for beautiful pro photography.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513210344/thumb-albumregistry_vojzwp.jpg
 cloudinary: true

@@ -2,7 +2,7 @@
   div
     c-pagetitle(
       title="About Callum"
-      massive="Design-obsessed, code-based,<br>systems-thinking craftsman."
+      massive="A design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
       .Column

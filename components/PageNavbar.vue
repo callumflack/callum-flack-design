@@ -3,9 +3,13 @@ header.Navbar
   .Column
     .Container
       .Inner
+        //- .InnerSpace
+          h3.Title(v-html="section")
         .Space
-          h1.Title.u-marginT0(v-html="title")
-          p.Massive(v-if="massive", v-html="massive")
+          //- h3.Text--meta.Text--medium.SubSpace(v-if="title", v-html="title")
+          h3.Title.SubSpace(v-if="title", v-html="title")
+          //- p.Massive(v-if="massive", v-html="massive")
+          h1.Massive.u-marginT3(v-if="massive", v-html="massive")
           p.Subtitle.u-marginT3(v-if="lede", v-html="lede")
 </template>
 
@@ -19,6 +23,7 @@ export default {
     "c-logo": Logo
   },
   props: {
+    section: String,
     massive: String,
     title: String,
     lede: String
@@ -65,6 +70,14 @@ export default {
 .Navbar a {
   white-space: initial !important;
   z-index: 99;
+}
+
+.SubSpace {
+  margin-bottom: var(--s3);
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s4);
+  }
 }
 
 .nuxt-link-active {

@@ -46,13 +46,6 @@
   max-width: calc(1120px * 1);
 }
 
-.InnerTextColumn > h1,
-.InnerTextColumn > h2,
-.InnerTextColumn > p,
-.InnerTextColumn > blockquote {
-  // margin-right: 3vw;
-}
-
 .Container--left {
   padding-left: 0;
 }

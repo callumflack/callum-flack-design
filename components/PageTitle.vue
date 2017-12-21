@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    c-pagenavbar(:title="title", :lede="lede", :massive="massive")
+    c-pagenavbar(:section="section", :title="title", :lede="lede", :massive="massive")
     //- c-pagenavbarfixed(:title="title")
 </template>
 
@@ -15,6 +15,7 @@ export default {
     "c-pagenavbarfixed": PageNavbarFixed
   },
   props: {
+    section: String,
     massive: String,
     title: String,
     lede: String
