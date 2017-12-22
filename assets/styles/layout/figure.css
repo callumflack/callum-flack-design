@@ -82,13 +82,13 @@
  */
 
 .FigureWrapper {
-  margin: calc(0.85 * var(--s4)) 0;
+  margin: calc(0.85 * var(--s5)) 0;
 
   @media (--medium-viewport) {
     width: 1120px;
   }
   @media (--large-viewport) {
-    margin: var(--s5) 0;
+    margin: var(--s6) 0;
   }
 
   & .Figure {

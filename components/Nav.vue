@@ -1,77 +1,90 @@
 <template lang="pug">
-  nav
-    ul.Nav-menu
-      c-navlink(
-        v-for="item in navLinks",
-        :key="item.label",
-        :label="item.label",
-        :link="item.link",
-        :lede="item.lede",
-        :currentPage="currentPage"
-        :exact="item.exact"
-      )
-    .Nav-buttons.Meta.--medium.u-textCenter
-      c-navbutton(
-        v-for="item in navButtons",
-        :key="item.label",
-        :label="item.label",
-        :link="item.link",
-      )
+  .Column
+    .Container
+      .Inner
+        .Space
+          nav.Text
+            c-navlink(
+              v-for="item in navLinks",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+              :currentPage="currentPage"
+              :exact="item.exact"
+            )
+          .Text.u-marginT4
+            c-navlink(
+              v-for="item in navContacts",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+              exact
+            )
+          //- .Text--small.u-marginT2
+            c-navlink(
+              v-for="item in navButtons",
+              :key="item.label",
+              :label="item.label",
+              :link="item.link",
+            )
 </template>
 
 
 <script scoped>
-import NavLink from "~/components/NavLinkAlt.vue";
+import Logo from "~/components/Logo.vue";
+import NavLink from "~/components/NavLink.vue";
 import NavButton from "~/components/NavButton.vue";
 
 export default {
   name: "nav-bottom",
   components: {
+    "c-logo": Logo,
     "c-navlink": NavLink,
     "c-navbutton": NavButton
   },
   props: {
-    currentPage: String
-  },
-  computed: {
-    // plainNewsletterButton: true,
+    currentPage: String,
+    starred: Boolean,
+    divider: Boolean
   },
   data() {
     return {
       navLinks: [
         {
-          label: "Overview",
+          label: "Index",
           link: "/",
-          lede: "Digital craftsmanship",
           exact: true
         },
         {
           label: "Work",
-          link: "/work",
-          lede: "VJ Ray Website"
+          link: "/work"
         },
         {
           label: "Journal",
-          link: "/journal",
-          lede: "Should designers code?"
+          link: "/journal/designers-should-code"
         },
         {
           label: "About",
-          link: "/about",
-          lede: "A designer who codes"
+          link: "/about"
+        }
+      ],
+
+      navContacts: [
+        {
+          label: "callum@patternworks.com.au",
+          link: "mailto:callum@patternworks.com.au"
         },
         {
-          label: "Contact",
-          link: "/contact",
-          lede: "Located in Cairns, Australia"
+          label: "+61 408 767 540",
+          link: "tel:610-408-767-540"
+        },
+        {
+          label: "@callumflack",
+          link: "https://twitter.com/callumflack"
         }
       ],
 
       navButtons: [
-        {
-          label: "Email",
-          link: "mailto:hi@patternworks.com.au"
-        },
         {
           label: "Twitter",
           link: "https://twitter.com/callumflack"
@@ -85,7 +98,8 @@ export default {
           link: "https://www.linkedin.com/in/callumflack"
         },
         {
-          label: "© 2018 Callum Flack"
+          label: "Instagram",
+          link: "https://www.linkedin.com/in/callumflack"
         }
       ]
     };
@@ -97,27 +111,44 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Nav {
+hr {
+  background-color: var(--color-text);
+  height: 1px;
+  /* margin-bottom: calc(1.333 * var(--s4)); */
+  margin-bottom: calc(0.85 * var(--s5));
+
+  @media (--small-viewport) {
+    width: 50%;
+  }
+  @media (--medium-viewport) {
+    margin-bottom: var(--s6);
+  }
+  @media (--large-viewport) {
+    margin-bottom: var(--s7);
+  }
+}
+
+.Pin {
+  align-items: center;
+  background-color: var(--color-text);
+  display: flex;
+  justify-content: center;
   position: relative;
-  top: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
-.Nav-menu {
-  margin: var(--s4) 0;
-  padding: 0 2.5rem;
+.Massive a + a,
+.Subtitle a + a,
+.Title a + a {
+  /* padding-top: var(--s3); */
 }
 
-.Nav-menu ul {
-  margin-bottom: 0;
-}
+.Text a + a {
+  padding-top: var(--s1);
 
-.Nav-menu li + li {
-  margin-top: var(--s3);
-}
-
-.Nav-buttons {
-  & a {
-    margin-left: 0;
+  @media (--small-viewport) {
+    padding-top: 0;
   }
 }
 

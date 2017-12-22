@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   c-pagetitle(
-    title="Callum Flack, design + development"
+    title="Callum Flack Design + Development"
     massive="Digital brands & products<br>for makers & shakers"
   )
 

@@ -53,6 +53,15 @@
   color: var(--color-text-light) !important;
 }
 
+.Red {
+  color: #0070c9 !important;
+  color: #ed4d21 !important;
+  color: #0085ff !important;
+  color: #0070c9 !important;
+  color: #ff3700 !important;
+  color: #FF6F00 !important;
+}
+
 
 /*
  * bg colors
@@ -79,6 +88,7 @@
 .u-bgColorTransparent {
   background-color: transparent !important;
 }
+
 
 /*
  * hr rules
@@ -118,6 +128,9 @@
 }
 .u-textCapitalise {
   text-transform: capitalize !important;
+}
+.u-noTextIndent {
+  text-indent: 0 !important;
 }
 
 /* .u-border {

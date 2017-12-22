@@ -1,8 +1,8 @@
 ---
 section: Projects
-title: Pharma eDetailers
-headline: Explaining complex pharma products with simple and engaging digital stories.
-lede: A series of iPad apps explaining complex Pharmaceutical products with simple and engaging digital stories.
+title: Pharma eDetailer apps
+headline: A series of iPad apps explaining complex Pharmaceutical products with simple and engaging digital stories.
+lede: Explaining complex pharma products with simple and engaging digital stories.
 heroImage: /images/pharmaceutical-edetailers-hero.png
 thumbImage: /images/thumb-actifuse.jpg
 year: 2014
@@ -25,11 +25,11 @@ The app for Actifuse Bone Graft Substitute (below) held a large information set,
 
 <div class="Project-details">
   <p>Completed while working at Ward6.<br>These projects are not publicly available.</p>
-  <p>What I did:</p>
+  <!-- <p>What I did:</p>
   <ul>
     <li>Information architecture design</li>
     <li>Interaction design</li>
     <li>Visual design</li>
     <li>Frontend development</li>
-  </ul>
+  </ul> -->
 </div>

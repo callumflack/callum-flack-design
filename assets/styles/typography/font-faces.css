@@ -27,7 +27,7 @@
 @font-face {
   font-family: var(--font-heading-sub);
   src: url("~static/fonts/LarishNeue.woff") format("woff");
-  src: url("~static/fonts/Portrait-Bold.woff") format("woff");
+  src: url("~static/fonts/Portrait-Medium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

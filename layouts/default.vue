@@ -2,7 +2,8 @@
   div(:class="currentPageClass")
     c-toggle
     c-nav-toggled(role="navigation")
-    nuxt.Page.SpaceBottom
+    nuxt.Page
+    .PageSpacer
     .FooterSpacer
     footer.Footer(role="contentinfo")
       c-nav
@@ -11,16 +12,12 @@
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
-import NavBar from "~/components/NavBar.vue";
-import NavBarFixed from "~/components/NavBarFixed.vue";
 import NavToggled from "~/components/NavToggled.vue";
-import Nav from "~/components/NavAlt.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
     "c-toggle": NavToggle,
-    "c-navbar": NavBar,
-    "c-navbar-fixed": NavBarFixed,
     "c-nav-toggled": NavToggled,
     "c-nav": Nav
   },
@@ -41,11 +38,15 @@ export default {
   z-index: 3;
 }
 
-.FooterSpacer {
-  background: linear-gradient(to bottom, #fdfdfd 0%, transparent 50%);
-  height: 100vh;
+.PageSpacer {
+  background: linear-gradient(to bottom, #fdfdfd 0%, transparent 100%);
+  height: 25vh;
   position: relative;
-  z-index: 2;
+  z-index: 3;
+}
+
+.FooterSpacer {
+  height: 75vh;
 }
 
 .Footer {

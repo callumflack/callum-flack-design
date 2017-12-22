@@ -26,12 +26,7 @@ export default {
   },
   computed: {
     cellClass() {
-      return [
-        {
-          "Grid-cell u-sm-size1of2 u-lg-size1of2": this.featured,
-          "Grid-cell u-size1of2 u-md-size1of3 u-lg-size1of4": !this.featured
-        }
-      ];
+      return ["Grid-cell u-sm-size1of2 u-lg-size1of2"];
     }
   },
   props: {

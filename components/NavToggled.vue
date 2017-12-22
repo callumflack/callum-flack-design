@@ -4,14 +4,12 @@
 </template>
 
 <script>
-import Navbar from "~/components/NavBar.vue";
-import Nav from "~/components/NavAlt.vue";
+import Nav from "~/components/Nav.vue";
 
 export default {
   name: "NavToggled",
 
   components: {
-    "c-navbar": Navbar,
     "c-nav": Nav
   },
 

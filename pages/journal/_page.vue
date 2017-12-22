@@ -33,7 +33,7 @@ export default {
     heroImage: String,
     heroVideo: String
   },
-  async asyncData({ app, route, payload }) {
+  async asyncData({ app, route }) {
     const page = await app.$content("/posts").get(route.path);
 
     return {
