@@ -27,20 +27,22 @@ div
               
             h2 The difference is focus & knowhow
             p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
-            p Want to know more? Read the #[a(href="/journal") Journal], where I write about design process and web systems through the lens of the human moments connecting them:
+            p 
+              | Want to know more? Read the 
+              nuxt-link(to="/journal") Journal
+              | , where I write about design process and web systems through the lens of the human moments connecting them:
 
             blockquote.Figure.Post
-              p
-                nuxt-link.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-                  h1.Massive.u-marginT0.u-marginB3 Designers should code
-                  p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
-                    em
-                      span.LinkSignal-target Read the article →
+              nuxt-link.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
+                h1.Massive.u-marginT0.u-marginB3 Designers should code
+                p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
+                  em
+                    span.LinkSignal-target Read the article →
 
             h2 Follow curiosity, find delight
             p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
-            p
-              c-newsletter
+            
+            c-newsletter.Text
 
 </template>
 

@@ -2,7 +2,8 @@
   div(:class="currentPageClass")
     c-toggle
     c-nav-toggled(role="navigation")
-    nuxt.Page
+    .Page
+      nuxt
     .PageSpacer
     .FooterSpacer
     footer.Footer(role="contentinfo")
