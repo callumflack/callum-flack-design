@@ -10,13 +10,12 @@
         .Container
           .Inner
             .TypeScope.TypeScope-post
-              nuxtent-body(:body="page.body")
+              no-ssr
+                nuxtent-body(:body="page.body")
               
               hr
-              .Highlight
-                p Thanks for reading! Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] any comments, I thrive on conversations and feedback. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
-                p
-                  c-newsletter
+              p Thanks for reading! Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] any comments, I thrive on conversations and feedback. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
+              c-newsletter.Text
 </template>
 
 <script>
