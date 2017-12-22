@@ -3,7 +3,7 @@
     .Container
       .Inner
         .Space
-          nav.Text
+          nav.Title
             c-navlink(
               v-for="item in navLinks",
               :key="item.label",

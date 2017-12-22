@@ -7,7 +7,7 @@ date: December 21, 2017
 
 <p class="Intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in the product design process, the better the product (and more valuable you'll become). That's reason enough to learn to code.</p>
 
-Good visual designers notice the look, feel and flow of a digital product in emotional and actionable terms. Good frontend developers simulate programs in their minds and notice the programming patterns and systems used to make a product. There's not much left over to think about design sensibility when you're simulating a computer in your head. And vice versa, a designer will scream if they find themselves in Vim mode. Digital designers and frontend developers are fundamentally divergent!
+Good visual designers notice the look, feel and flow of a digital product in emotional and actionable terms. Good frontend developers simulate programs in their minds and notice the programming patterns and systems used to make a product. There's not much left over to think about design sensibility when you're simulating a computer in your head. And vice versa, a designer will scream if they find themselves in Vim mode. Digital designers and frontend developers are fundamentally divergent.
 
 However, as a designer who's spent the last eight years programming, I think that if you accept that divergence you lose agency and you won't become a great digital designer. So here's four good reasons for digital designers to code, and one giant lesson in product design:
 
