@@ -30,7 +30,7 @@ export default {
       posts: []
     };
   },
-  async asyncData({ app, route, payload }) {
+  async asyncData({ app }) {
     const posts = await app.$content("/posts").getAll();
 
     return {

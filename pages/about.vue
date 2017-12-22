@@ -36,7 +36,7 @@ export default {
     title: String,
     headline: String
   },
-  async asyncData({ app, route, payload }) {
+  async asyncData({ app, route }) {
     return {
       page: await app.$content("/pages").get(route.path)
     };

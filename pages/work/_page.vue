@@ -48,7 +48,7 @@ export default {
     heroInCloudinary: Boolean,
     heroRatio: String
   },
-  async asyncData({ app, route, payload }) {
+  async asyncData({ app, route }) {
     const page = await app.$content("/projects").get(route.path);
 
     return {

@@ -97,7 +97,7 @@ export default {
       });
     }
   },
-  async asyncData({ app, route, payload }) {
+  async asyncData({ app }) {
     const projects = await app.$content("/projects").getAll();
 
     const uniqueTags = projects.filter(project => project.tags).reduce((
