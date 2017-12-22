@@ -34,7 +34,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Page {
-  background-color: #fdfdfd;
+  background-color: var(--color-bg);
   position: relative;
   z-index: 3;
 }
@@ -53,46 +53,42 @@ export default {
 .Footer {
   /* background: linear-gradient(180deg, #fdfdfd 0%, #f3f3f3 100%); */
   /* background: linear-gradient(180deg, #fdfdfd 0%, #eee 100%); */
-  background-color: #00b4ff;
-  background-color: #47bbff;
+  /* background-color: #00b4ff;
+  background-color: #47bbff;*/
+  /* background: linear-gradient(180deg, #fdfdfd 0%, rgba(71, 187, 255, 0.25) 100%); */
+  /* background: linear-gradient(180deg, #fdfdfd 0%, #d5d5d5 90%); */
   background-color: var(--color-bg);
-  /* border-top: 1px solid #e5e5e5; */
-  /* margin-top: var(--s7); */
 
-  display: flex;
   align-items: flex-end;
-
-  /* background-image: url(/img/home/over-square.jpg); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  display: flex;
   height: 100vh;
-  /* color: #fff; */
   opacity: 1;
-  -webkit-backface-visibility: hidden;
+  left: 0;
+  position: fixed;
+  top: 0;
   transition: opacity 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  width: 100vw;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
 }
 
 .Footer > * {
   width: 100%;
 }
 
-/*.page-enter-active,
+.page-enter-active {
+  /* background-color: var(--color-bg); */
+  /* height: 100vh; */
+  /* opacity: 1; */
+  transition: opacity 0.15s;
+  /* width: 100vw; */
+  /* z-index: 999; */
+}
 .page-leave-active {
-  background-color: black;
-  height: 100vh;
-  transition: opacity 4s;
-  width: 100vw;
-  z-index: 999;
+  transition: opacity 0.15s;
 }
 .page-enter,
 .page-leave-to {
   opacity: 0;
-}*/
+}
 </style>

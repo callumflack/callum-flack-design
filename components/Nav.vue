@@ -1,51 +1,46 @@
 <template lang="pug">
   .Column
-    .Container
-      .Inner
-        .Space
-          nav.Title
-            c-navlink(
-              v-for="item in navLinks",
-              :key="item.label",
-              :label="item.label",
-              :link="item.link",
-              :currentPage="currentPage"
-              :exact="item.exact"
-            )
-          .Text.u-marginT4
-            c-navlink(
-              v-for="item in navContacts",
-              :key="item.label",
-              :label="item.label",
-              :link="item.link",
-              exact
-            )
-          //- .Text--small.u-marginT2
-            c-navlink(
-              v-for="item in navButtons",
-              :key="item.label",
-              :label="item.label",
-              :link="item.link",
-            )
+    .Inner
+      .Space
+        nav.Title
+          c-navlink(
+            v-for="item in navLinks"
+            :key="item.label"
+            :label="item.label"
+            :link="item.link"
+            :currentPage="currentPage"
+            :exact="item.exact"
+          )
+        .Text.u-marginT4
+          c-navlink(
+            v-for="item in navContacts"
+            :key="item.label"
+            :label="item.label"
+            :link="item.link"
+            external
+          )
+        //- .Text--small.u-marginT2
+          c-navlink(
+            v-for="item in navButtons",
+            :key="item.label",
+            :label="item.label",
+            :link="item.link",
+          )
 </template>
 
 
 <script scoped>
-import Logo from "~/components/Logo.vue";
 import NavLink from "~/components/NavLink.vue";
 import NavButton from "~/components/NavButton.vue";
 
 export default {
   name: "nav-bottom",
   components: {
-    "c-logo": Logo,
     "c-navlink": NavLink,
     "c-navbutton": NavButton
   },
   props: {
-    currentPage: String,
-    starred: Boolean,
-    divider: Boolean
+    currentPage: String
   },
   data() {
     return {
@@ -114,7 +109,6 @@ export default {
 hr {
   background-color: var(--color-text);
   height: 1px;
-  /* margin-bottom: calc(1.333 * var(--s4)); */
   margin-bottom: calc(0.85 * var(--s5));
 
   @media (--small-viewport) {
@@ -150,10 +144,5 @@ hr {
   @media (--small-viewport) {
     padding-top: 0;
   }
-}
-
-.NewsletterWrapper {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
 }
 </style>

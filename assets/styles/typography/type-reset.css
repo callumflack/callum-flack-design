@@ -1,0 +1,28 @@
+/*
+  -------------------------------------------------
+
+  Resets & helpers
+
+  -------------------------------------------------
+ */
+
+p,
+ul,
+ol,
+li,
+em,
+strong {
+  font-style: normal;
+}
+
+em,
+strong {
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-style: normal;
+  font-weight: normal;
+}

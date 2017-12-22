@@ -6,7 +6,7 @@
       .Project-text
         h2.Title
           span.Project-visualLink(v-html="title")
-        p.Project-subtext.TypeScope-reset
+        p.Project-subtext.TextScope-reset
           span(v-if="date") {{ date }}
           span.Project-divider ——
           | {{ headline }}

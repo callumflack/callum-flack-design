@@ -86,7 +86,11 @@ export default {
 }
 
 .Device--iphone6 {
-  max-width: 358px;
+  max-width: 70%;
+
+  @media (--small-viewport) {
+    max-width: 358px;
+  }
 
   & .Device-ratio {
     padding-bottom: 205.81395%;

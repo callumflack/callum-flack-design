@@ -57,7 +57,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Modal {
-  background-color: rgba(255, 255, 255, 1);
+  /* background-color: rgba(255, 255, 255, 1); */
   bottom: 0;
   left: 0;
   opacity: 1;
@@ -84,15 +84,5 @@ export default {
 .Modal.delay-transition {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
-}
-
-/* THEME */
-
-.Modal {
-  background-color: #ff8900;
-  background-color: var(--color-text);
-}
-.Modal .Column {
-  height: 100vh;
 }
 </style>

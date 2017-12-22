@@ -1,6 +1,9 @@
 <template lang="pug">
 div
-  c-pagetitle(title="Journal")
+  c-pagetitle(
+    title="Journal"
+    link="/journal"
+  )
   main(role="main")
     .Container
       .Grid.Grid--alignCenter.Grid--withTinyGutter

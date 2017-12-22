@@ -3,7 +3,8 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "Patternworks",
+    title:
+      "Patternworks • Callum Flack • Digital design & development • Cairns, Australia",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -14,8 +15,9 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   ** loading: { color: "#1f1f1f" },
+  ** loading: "~/components/PageLoading.vue",
   */
-  loading: "~/components/PageLoading.vue",
+  loading: { color: "#0a0a0a" },
   /*
   ** Build configuration
   */
@@ -33,10 +35,19 @@ module.exports = {
         });
       }
     }
+    /* 
+      cssnext is available by default in Nuxt:
+      https://nuxtjs.org/api/configuration-build#postcss
+      https://nuxtjs.org/faq/postcss-plugins
+      but both methods FAIL to load postcss-mixins:
+      
+    postcss: {
+      plugins: {
+        "postcss-mixins": {}
+      }
+    }
+    */
   },
-  // cssnext is available by default in Nuxt:
-  // https://nuxtjs.org/api/configuration-build#postcss
-  postcss: [],
   css: ["~/assets/styles/application.css"],
   plugins: [
     { src: "~/plugins/vue-slick", ssr: false },

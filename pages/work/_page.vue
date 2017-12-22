@@ -1,30 +1,32 @@
 <template lang="pug">
   div
     article(role="banner")
-      c-pagetitle(:title="page.title", :massive="page.lede")
+      c-pagetitle(
+        :title="page.title"
+        link="/work"
+        :massive="page.lede"
+      )
       .Column
-        .Container
-          .Inner
-            c-movie(
-              frame, 
-              large, 
-              laptop, 
-              :poster="page.heroVideoPoster",
-              :src="page.heroVideo",
-              v-if="page.heroVideo"
+        .Inner
+          c-movie(
+            frame, 
+            large, 
+            laptop, 
+            :poster="page.heroVideoPoster",
+            :src="page.heroVideo",
+            v-if="page.heroVideo"
+          )
+          figure.Figure.Figure--large(v-else)
+            c-lazyimage(
+              :src="page.heroImage", 
+              :ratio="page.heroRatio",
+              v-if="page.heroInCloudinary"
             )
-            figure.Figure.Figure--large(v-else)
-              c-lazyimage(
-                :src="page.heroImage", 
-                :ratio="page.heroRatio",
-                v-if="page.heroInCloudinary"
-              )
-              img(:src="page.heroImage", v-else)
+            img(:src="page.heroImage", v-else)
     main(role="main")
       .Column
-        .Container
-          .Inner
-            nuxtent-body.TypeScope(:body="page.body")
+        .Inner
+          nuxtent-body.TextScope(:body="page.body")
 </template>
 
 <script>

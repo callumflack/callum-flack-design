@@ -2,12 +2,11 @@
 section: About
 title: About Callum
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/callum-flack.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513918788/okok/callum-flack.jpg
 heroImageFirst: true
 ---
 
-> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been
-> designing and developing brands and products since 2000.
+> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.
 
 My job is to help you bridge the gap between you and your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
@@ -28,7 +27,7 @@ travelling to meet in person.
 
 > The wordmark has been extended with a distinctive line that can be customized for a
 > series of transformations that reflect the dynamic nature of the organization and its
-> initiatives. _Brad Spalding, Managing Director of The Substation_
+> initiatives.” _Brad Spalding, Managing Director of The Substation_
 
 ## Ways to engage my services
 

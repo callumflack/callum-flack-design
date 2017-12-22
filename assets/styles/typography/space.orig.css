@@ -20,12 +20,12 @@ p:last-child {
 }
 
 .u-pSpace,
-.TypeScope h1,
-.TypeScope h2,
-.TypeScope p + .Button,
-.TypeScope ul + .Button,
-.TypeScope p + blockquote,
-.TypeScope ul + blockquote {
+.TextScope h1,
+.TextScope h2,
+.TextScope p + .Button,
+.TextScope ul + .Button,
+.TextScope p + blockquote,
+.TextScope ul + blockquote {
   // margin-top: calc(var(--s4));
 
   @media (--small-viewport) {
@@ -41,27 +41,27 @@ p:last-child {
   }
 }
 
-/*.TypeScope blockquote:first-child p,*/
+/*.TextScope blockquote:first-child p,*/
 h1 + ul,
 h2 + ul,
 p + ul,
-.TypeScope blockquote + h1,
-.TypeScope blockquote + h2,
-.TypeScope h1 + blockquote,
-.TypeScope h2 + blockquote,
-.TypeScope figure + blockquote,
+.TextScope blockquote + h1,
+.TextScope blockquote + h2,
+.TextScope h1 + blockquote,
+.TextScope h2 + blockquote,
+.TextScope figure + blockquote,
 .Text--large:first-child {
   @media (--small-viewport) {
     margin-top: 0 !important;
   }
 }
 
-.TypeScope figure + blockquote {
+.TextScope figure + blockquote {
   margin-bottom: 0 !important;
 }
 
 .Text--large,
-.TypeScope blockquote {
+.TextScope blockquote {
   margin-top: var(--s4);
   margin-bottom: var(--s4);
   
@@ -71,14 +71,14 @@ p + ul,
   }
 }
 
-.TypeScope blockquote:first-child,
+.TextScope blockquote:first-child,
 .Text--large:first-child {
   margin-top: 0 !important;
 }
 
-.TypeScope p,
-.TypeScope ul, 
-.TypeScope blockquote {
+.TextScope p,
+.TextScope ul, 
+.TextScope blockquote {
   margin-bottom: calc(var(--s3));
 
   @media (--small-viewport) {

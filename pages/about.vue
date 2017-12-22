@@ -2,40 +2,30 @@
   div
     c-pagetitle(
       title="About Callum"
+      link="/about"
       massive="A design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
       .Column
-        .Container
-          .Inner
-            figure.Figure.Figure--large
-              img(:src="page.heroImage", alt="", style="opacity:0.9")
+        .Inner
+          c-image(large, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
       .Column
-        .Container
-          .Inner
-            .TypeScope
-              nuxtent-body(:body="page.body")
+        .Inner
+          .TextScope
+            nuxtent-body(:body="page.body")
 </template>
 
 <script>
 import PageTitle from "~/components/PageTitle.vue";
+import MarkdownImage from "~/components/MarkdownImage.vue";
 
 export default {
   components: {
-    "c-pagetitle": PageTitle
+    "c-pagetitle": PageTitle,
+    "c-image": MarkdownImage
   },
-  computed: {
-    titleColor() {
-      // (v-if="page.projectColor", :style = 'titleColor')
-      return this.page.projectColor ? `color: ${this.page.projectColor}` : "";
-    }
-  },
-  props: {
-    dropCap: Boolean,
-    title: String,
-    headline: String
-  },
+  props: {},
   async asyncData({ app, route }) {
     return {
       page: await app.$content("/pages").get(route.path)

@@ -2,6 +2,7 @@
 @import "vars.css";
 @import "base.css";
 @import "typography/font-faces.css";
+@import "typography/type-reset.css";
 @import "typography/type.css";
 @import "typography/list.css";
 @import "typography/link.css";

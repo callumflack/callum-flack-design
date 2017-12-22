@@ -2,6 +2,7 @@
 div
   c-pagetitle(
     title="Selected projects"
+    link="/work"
   )
   main(role="main")
     //- .Block--halfSandwich

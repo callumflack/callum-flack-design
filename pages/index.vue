@@ -2,6 +2,7 @@
 div
   c-pagetitle(
     title="Callum Flack Design + Development"
+    link="/about"
     massive="Digital brands & products<br>for makers & shakers"
   )
 
@@ -19,7 +20,7 @@ div
                       | View the work #[span.LinkSignal-target →]
                   img.u-width100.u-posRelative(src="/images/loop-04.gif")
 
-          .TypeScope
+          .TextScope
             p
               | Hi, I’m Callum. 
               nuxt-link(to="/about") I'm interested and curious
@@ -32,8 +33,8 @@ div
               nuxt-link(to="/journal") Journal
               | , where I write about design process and web systems through the lens of the human moments connecting them:
 
-            blockquote.Figure.Post
-              nuxt-link.TypeScope-reset.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
+            blockquote.Figure.Post.u-noQuote
+              nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
                 h1.Massive.u-marginT0.u-marginB3 Designers should code
                 p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
                   em
@@ -77,26 +78,14 @@ export default {
 }
 
 .Post {
-  /* margin: calc(0.85 * var(--s5)) 0 !important; */
-  /* left: 50% !important; */
-
-  @media (--large-viewport) {
-    /* margin: var(--s6) 0 !important; */
-  }
-
-  & p {
-    padding: 0 !important;
-  }
+  left: 50% !important;
+  padding-left: 0 !important;
 
   & a {
     background-color: var(--color-neutral);
     display: block;
     padding: 2rem;
   }
-}
-
-.Post-image,
-.Post-summary {
 }
 
 .Post-image {

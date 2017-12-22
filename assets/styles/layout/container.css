@@ -3,12 +3,17 @@
  */
 
 .Column {
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 
   @media (--small-viewport) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  @media (--medium-viewport) {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   @media (--large-viewport) {
@@ -45,6 +50,12 @@
   margin-right: auto;
   max-width: calc(1120px * 1);
 }
+
+/*
+  
+  Container variations
+ 
+ */ 
 
 .Container--left {
   padding-left: 0;

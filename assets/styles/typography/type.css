@@ -1,132 +1,19 @@
-/*
-  -------------------------------------------------
-
-  Resets & helpers
-
-  -------------------------------------------------
- */
-
-p,
-ul,
-ol,
-li,
-em,
-strong {
-  font-style: normal;
-}
-
-em,
-strong {
-  font-weight: inherit;
-}
-
-h1,
-h2,
-h3 {
-  font-style: normal;
-  font-weight: normal;
-}
-
-/* 
-  -------------------------------------------------
-  
-  Headings
-  --------
-  Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document.
-
-  -------------------------------------------------
- */
-
-.Massive {
-  font-family: var(--font-heading-sub), var(--font-stack-sans);
-  font-size: var(--s-massive);
-  letter-spacing: -0.0025em;
-  line-height: 1.15;
-  margin-top: var(--s3);
-  text-transform: uppercase;
-
-  @media (--small-viewport) {
-    margin-top: var(--s4);
-  }
-  @media (--medium-viewport) {
-    width: 70%;
-  }
-  @media (--large-viewport) {
-  }
-}
-
-.Title {
-  font-family: var(--font-heading-dark), var(--font-stack-sans);
-  font-feature-settings: "tnum";
-  font-size: var(--s-text);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: var(--ls-body);
-  line-height: var(--lh-heading);
-  line-height: 1.15;
-  // text-transform: uppercase;
-
-  @media (--large-viewport) {
-    // width: 66%;
-  }
-  @media (--xlarge-viewport) {
-    // width: 50%;
-  }
-}
-
-.Subtitle {
-  font-family: var(--font-heading-sub), var(--font-stack-sans);
-  font-size: var(--s-subtitle);
-  letter-spacing: 0.002em;
-  line-height: var(--lh-subheading);
-
-  @media (--medium-viewport) {
-    width: 50%;
-  }
-  @media (--small-viewport) {
-    // width: 75%;
-  }
-  @media (--large-viewport) {
-    // width: 66%;
-  }
-}
-
-.Subheading,
-.TypeScope h2 {
-  font-family: var(--font-heading-dark), var(--font-stack-sans) !important;
-  // font-size: var(--s-subheading);
-  // letter-spacing: -0.02em;
-  // line-height: var(--lh-text);
-  margin-bottom: var(--s3);
-  // text-transform: uppercase;
-}
-
-// .Massive,
-.Title,
-.Subtitle,
-.Subheading {
-  @media (--medium-viewport) {
-    width: 50%;
-  }
-}
-
 /* 
   -------------------------------------------------
 
   Body
+  …which is all the typography this site uses.
 
   -------------------------------------------------
  */
 
 body {
-  background-color: var(--color-neutral);
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: var(--ls-text);
   line-height: var(--lh-text);
-
-  /* reset things */
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -141,12 +28,12 @@ body {
   -------------------------------------------------
  */
 
+/*.Project-details > em,
+.Project-details > li*/
 body,
-.TypeScope-reset,
-.Text--small,
-/*.TypeScope blockquote p em,*/
-.Project-details > em,
-.Project-details > li {
+blockquote p em,
+.TextScope-reset,
+.Text--small {
   font-size: 0.75rem !important;
 
   @media (--small-viewport) {
@@ -156,7 +43,6 @@ body,
     font-size: 0.9375rem !important;
   }
   @media (--large-viewport) {
-    font-size: 1.0625rem !important;
     font-size: 1rem !important;
   }
 }
@@ -164,81 +50,80 @@ body,
 /*
   -------------------------------------------------
 
-  Regular Text
+  Text variations
 
   -------------------------------------------------
  */
 
-.Massive,
-.Title,
-.Subtitle,
-.Subheading,
-.TypeScope h2,
-.Text,
-.Text--meta,
-.TypeScope p,
-.TypeScope ol,
-.TypeScope ul {
-  font-family: var(--font-regular), var(--font-stack-sans);
+p,
+ul,
+.Text {
   font-size: var(--s-text);
-  font-weight: 400;
-  letter-spacing: var(--ls-text);
-  line-height: var(--lh-text);
-  text-transform: initial;
-}
-
-.Subtitle {
-  // font-size: calc(1.5 * var(--s-text));
-  // text-align: center;
-  // padding-left: 5rem;
-}
-
-.Title {
-  font-family: var(--font-heading-dark);
-  // font-size: var(--s-title);
-}
-
-.Massive {
-  font-family: var(--font-heading-sub);
-  font-size: 4em;
-  letter-spacing: 0;
-  line-height: 1.1;
 }
 
 .Text--meta {
-  font-size: var(--s-text-meta) !important;
+  font-size: var(--s-text-meta);
 }
 
 .Text--medium {
-  font-family: var(--font-medium), var(--font-stack-sans) !important;
+  font-family: var(--font-medium), var(--font-stack-sans);
   font-weight: 500;
+}
+
+/* 
+  -------------------------------------------------
+  
+  Headings
+  --------
+  Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document.
+
+  -------------------------------------------------
+ */
+
+.Massive {
+  font-family: var(--font-massive), var(--font-stack-sans);
+  font-size: var(--s-massive);
+  letter-spacing: -0.0025em;
+  line-height: 1.05;
+  margin-top: var(--s3);
+  text-transform: initial;
+
+  @media (--small-viewport) {
+    margin-top: var(--s4);
+  }
+  @media (--medium-viewport) {
+    width: 70%;
+  }
+  @media (--xlarge-viewport) {
+    font-size: calc(1.25 * var(--s-massive));
+  }
+}
+
+.Title,
+.Subheading,
+.TextScope h2 {
+  font-family: var(--font-medium), var(--font-stack-sans);
+  font-size: var(--s-text);
 }
 
 /*
   -------------------------------------------------
 
-  Markdown scope
+  Text scope
 
   -------------------------------------------------
  */
 
-.Text,
-.TypeScope p,
-.TypeScope ol,
-.TypeScope ul {
-  font-size: var(--s-text);
-}
-
-.TypeScope {
+.TextScope {
   @media (--medium-viewport) {
     width: 50%;
   }
 }
 
-.TypeScope p,
-.TypeScope ol,
-.TypeScope ul,
-.TypeScope h2 {
+.TextScope p,
+.TextScope ol,
+.TextScope ul,
+.TextScope h2 {
   @media (--medium-viewport) {
     padding-right: calc(0.5 * var(--grid-gutter));
   }
@@ -247,13 +132,13 @@ body,
 /*
   -------------------------------------------------
 
-  blockquotes
+  blockquote
 
   -------------------------------------------------
  */
 
 .Intro,
-.TypeScope blockquote {
+blockquote {
   @media (--medium-viewport) {
     padding-left: calc(0.5 * var(--grid-gutter));
     position: relative;
@@ -262,7 +147,8 @@ body,
 }
 
 .Intro,
-.TypeScope blockquote p {
+.Post p,
+blockquote p {
   border-top: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
   padding: calc(2 * var(--s3)) 0 calc(2.166 * var(--s3));
@@ -274,10 +160,25 @@ body,
   }
 }
 
+blockquote p {
+  &:before {
+    content: "“";
+    left: 1.4375rem;
+    display: block;
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.u-noQuote p:before {
+  content: none !important;
+}
+
 .Intro em,
-.TypeScope blockquote p em {
+blockquote p em {
   display: table;
-  font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);
+  // font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);
+  font-size: var(--s-text-meta);
   font-family: var(--font-regular), var(--font-stack-sans);
   line-height: var(--lh-text);
   margin-top: var(--s1);
@@ -295,8 +196,8 @@ body,
   -------------------------------------------------
  */
 
-.TypeScope p,
-.TypeScope ul {
+p,
+ul {
   margin-bottom: var(--s3);
 
   @media (--small-viewport) {
@@ -304,13 +205,21 @@ body,
   }
 }
 
-.TypeScope p + blockquote {
+h2 {
+  margin-bottom: var(--s2);
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s3);
+  }
+}
+
+p + blockquote {
   @media (--small-viewport) {
     margin-top: calc(-2 * var(--s3));
   }
 }
 
-.TypeScope blockquote {
+blockquote {
   margin-top: var(--s3);
   margin-bottom: var(--s3);
   
@@ -320,13 +229,13 @@ body,
   }
 }
 
-.TypeScope p:last-child,
-.TypeScope ul:last-child,
-.TypeScope blockquote:last-child {
+p:last-child,
+ul:last-child,
+blockquote:last-child {
   margin-bottom: 0;
 }
 
-.TypeScope h2:not(:first-child) {
+h2:not(:first-child) {
   margin-top: calc(3 * var(--s3));
   margin-top: var(--s4);
 
@@ -336,19 +245,28 @@ body,
   }
 }
 
-.TypeScope blockquote:first-child,
-.TypeScope blockquote + h2,
+blockquote:first-child,
+blockquote + h2,
 .Text--large:first-child {
   margin-top: 0 !important;
 }
 
-.Massive {
-  // margin-bottom: var(--s5);
 
-  @media (--small-viewport) {
-    // margin-bottom: var(--s4);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
   -------------------------------------------------
@@ -358,24 +276,24 @@ body,
   -------------------------------------------------
  */
 
-.TypeScope-post {
+.TextScope-post {
   @media (--medium-viewport) {
     width: calc(100% * 2/3);
   }
 }
 
-.TypeScope-post p strong,
-.TypeScope-post p em,
-.TypeScope-post blockquote {
+.TextScope-post p strong,
+.TextScope-post p em,
+.TextScope-post blockquote {
   font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
 }
 
-.TypeScope-post p strong {
+.TextScope-post p strong {
   color: var(--color-text-light);
 }
 
-.TypeScope-post .Intro,
-.TypeScope-post blockquote {
+.TextScope-post .Intro,
+.TextScope-post blockquote {
   @media (--medium-viewport) {
     padding-left: 0;
     padding-right: 0;
@@ -383,20 +301,20 @@ body,
   }
 }
 
-.TypeScope-post blockquote {
+.TextScope-post blockquote {
   @media (--small-viewport) {
     margin-top: calc(2 * var(--s3));
     margin-bottom: calc(2 * var(--s3));
   }
 }
 
-.TypeScope-post p + blockquote {
+.TextScope-post p + blockquote {
   @media (--small-viewport) {
     margin-top: calc(2 * var(--s3));
   }
 }
 
-.TypeScope-post blockquote p {
+.TextScope-post blockquote p {
   border: initial;
   border-left: 2px solid currentColor;
   margin-right: 7.5%;
@@ -404,14 +322,14 @@ body,
   padding-left: calc(1.5 * var(--s3));
 }
 
-.TypeScope-post blockquote p em {
+.TextScope-post blockquote p em {
   display: table;
   font-size: 1em;
   margin-top: var(--s1);
 }
 
-.TypeScope-post .Intro {
-  // font-family: var(--font-heading-dark);
+.TextScope-post .Intro {
+  // font-family: var(--font-medium);
   margin-bottom: var(--s4);
 
   @media (--small-viewport) {
@@ -419,21 +337,21 @@ body,
   }
 }
 
-.TypeScope-post hr {
-  margin: var(--s4)) 0 !important;
+.TextScope-post hr {
+  margin: var(--s5)) 0 !important;
 
   @media (--small-viewport) {
-    margin: var(--s5) 0 !important;
+    margin: var(--s6) 0 !important;
   }
 }
 
-.TypeScope-post hr {
+.TextScope-post hr {
   background-color: transparent;
 
   &:after {
     content: "* * *";
     display: block;
-    font-family: var(--font-heading-sub), var(--font-stack-serif);
+    font-family: var(--font-massive), var(--font-stack-serif);
     font-size: var(--s-subtitle);
     letter-spacing: 0.025em;
     line-height: 1;

@@ -1,8 +1,16 @@
 <template lang="pug">
+  a.u-block(
+    :class="currentPage"
+    :href='link'
+    target="_blank"
+    v-if="external"
+  )
+    span {{ label }}
   nuxt-link.u-block(
-    :class="currentPage", 
-    :to='link', 
+    :class="currentPage"
+    :to='link'
     :exact="exact"
+    v-else
   )
     span {{ label }}
 </template>
@@ -14,7 +22,7 @@ export default {
   props: {
     label: String,
     link: String,
-    lede: String,
+    external: Boolean,
     exact: Boolean
   },
 

@@ -1,23 +1,23 @@
 <template lang="pug">
-header.Navbar
-  .Column
-    .Container
+  header.Navbar
+    .Column
       .Inner
         .Space
-          h3.Title(v-if="title", v-html="title")
+          h3.Title(v-if="title")
+            nuxt-link(:to="link", v-html="title")
           h1.Massive.SubSpace(v-if="massive", v-html="massive")
-          p.Subtitle.SubSpace(v-if="lede", v-html="lede")
+          p.Text.SubSpace(v-if="lede", v-html="lede")
 </template>
 
 <script>
 export default {
   name: "page-title",
-  components: {},
   props: {
     section: String,
     massive: String,
     title: String,
-    lede: String
+    lede: String,
+    link: String
   }
 };
 </script>
@@ -41,7 +41,7 @@ export default {
   }
 }
 
-.Navbar {
+/*.Navbar {
   background-color: transparent;
   opacity: 1;
   position: relative;
@@ -62,7 +62,7 @@ export default {
 .Navbar a {
   white-space: initial !important;
   z-index: 99;
-}
+}*/
 
 .nuxt-link-active {
 }

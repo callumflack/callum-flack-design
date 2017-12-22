@@ -1,15 +1,30 @@
 /*
- * Variables
- * --------------------
- */
+  -------------------------------------------------
+  
+  Variables
+
+  Notes on css custom properties & postcss-custom-properties:
+
+  Single variables within media queries are a great idea:
+  https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
+
+  But postcss-custom-properties limits vars to the :root:
+  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
+  https://github.com/postcss/postcss-custom-properties
+  
+  :root { --s-title: 20px; }
+
+  @media (min-width: 80em) {
+    :root { --s-title: 40px; }
+  }
+
+  -------------------------------------------------
+*/
 
 /* eslint-disable */
 /* prettier-ignore */
+
 :root {
-  /*@custom-media --small-viewport (min-width: 32em);
-  @custom-media --medium-viewport (min-width: 48em);
-  @custom-media --large-viewport (min-width: 80em);
-  @custom-media --xlarge-viewport (min-width: 100em);*/
   @custom-media --small-viewport (min-width: 512px);
   @custom-media --medium-viewport (min-width: 768px);
   @custom-media --large-viewport (min-width: 1280px);
@@ -29,8 +44,6 @@
   --container-lg: 1120px;
   --container-xl: 1600px;
 
-  /* or 6, 12, 24, 48, 96… */
-
   --s1: 0.25rem;
   --s2: 0.5rem;
   --s3: 1rem;
@@ -39,7 +52,6 @@
   --s6: 10rem;
   --s7: 15rem;
   
-  /* instrument's tuck inset */
   --tuck: 6vw;
   --tuck-lg: 9vw;
 
@@ -51,7 +63,7 @@
    
   --color-brand: #00ffff;
   --color-highlight: #bee8fb;
-  --color-highlight: #00b4ff;
+  --color-highlight: #47bbff;
   --color-red: #ff3700;
   --color-text: #0a0a0a;
   --color-text-medium: #757575;
@@ -65,23 +77,21 @@
    * Typefaces
    */
 
-  --font-regular: "Unica-Regular";
+  --font-regular: "Regular";
   --font-italic: var(--font-regular);
-  --font-medium: "Unica-Medium";
-  --font-heading: "BureauGrotesque-OneFive";
-  --font-heading-sub: "Portrait-Regular";
-  --font-heading-dark: "Portrait-Heavy";
-  --font-button: var(--font-heading);
+  --font-medium: "Medium";
+  --font-massive: "Massive";
+  --font-button: var(--font-medium);
 
   --font-stack-serif: Georgia, "Times New Roman", Times, serif;
   --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* 
    * Font sizes
-   * Using the perfect fourth: http://type-scale.com/
+   * For your thoughts: http://type-scale.com/
    */
 
-  --s-massive: 4em;
+  --s-massive: 3em;
   --s-title: 1.125em;
   --s-subtitle: 3em;
   --s-heading: var(--s-title);
@@ -99,7 +109,7 @@
   --ls-heading: -0.0225em;
   --ls-heading-sm: -0.005em;
   --ls-body: -0.005em;
-  --ls-text: -0.02em;
+  --ls-text: -0.03em;
   --ls-meta: -0.0125em; /*0.075em*/
 
   --lh-heading: 1;
@@ -115,20 +125,3 @@
   --transition-delayed: 0.4s;
   --transition-debounce: 2.5s;
 }
-
-
-
-/*
-Single variables within media queries are a great idea:
-https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
-
-But postcss-custom-properties limits vars to the :root:
-"Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
-https://github.com/postcss/postcss-custom-properties
- 
-:root { --s-title: 20px; }
-
-@media (min-width: 80em) {
-  :root { --s-title: 40px; }
-}
-*/

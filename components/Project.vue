@@ -7,7 +7,7 @@
       .Project-text
         h2.Title
           span.Project-visualLink {{ title }}
-        p.Project-subtext.TypeScope-reset
+        p.Project-subtext.TextScope-reset
           span.u-marginR1(v-if="year") {{ year }}
           span(v-if="tags") {{ tags }}
           span.Project-divider ——
