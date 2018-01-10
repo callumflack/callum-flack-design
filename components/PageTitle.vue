@@ -3,6 +3,8 @@
     .Column
       .Inner
         .Space
+          .u-posRelative
+            //- c-toggle
           h3.Title(v-if="title")
             nuxt-link(:to="link", v-html="title")
           h1.Massive.SubSpace(v-if="massive", v-html="massive")
@@ -10,8 +12,13 @@
 </template>
 
 <script>
+import NavToggle from "~/components/NavToggle.vue";
+
 export default {
   name: "page-title",
+  components: {
+    "c-toggle": NavToggle
+  },
   props: {
     section: String,
     massive: String,
@@ -37,7 +44,7 @@ export default {
   margin-top: var(--s3);
 
   @media (--small-viewport) {
-    margin-top: var(--s4);
+    margin-top: calc(0.75 * var(--s4));
   }
 }
 

@@ -35,7 +35,7 @@ div
 
             blockquote.Figure.Post.u-noQuote
               nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-                h1.Massive.u-marginT0.u-marginB3 Designers should code
+                h1.Massive.u-width100.u-marginT0.u-marginB3 Designers should code
                 p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
                   em
                     span.LinkSignal-target Read the article →

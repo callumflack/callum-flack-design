@@ -1,8 +1,9 @@
 <template lang="pug">
 div
   c-pagetitle(
-    title="Selected projects"
+    title="Work"
     link="/work"
+    massive="Selected projects"
   )
   main(role="main")
     //- .Block--halfSandwich
@@ -21,7 +22,7 @@ div
             span(v-else) .
 
     .Column
-      .Container
+      .Inner
         .Grid.Grid--alignCenter.Grid--withTinyGutter
           c-project(
             v-if="project.featured"

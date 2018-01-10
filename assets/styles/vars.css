@@ -80,6 +80,8 @@
   --font-regular: "Regular";
   --font-italic: var(--font-regular);
   --font-medium: "Medium";
+  --font-bold: "Bold";
+  --font-title: "Title";
   --font-massive: "Massive";
   --font-button: var(--font-medium);
 

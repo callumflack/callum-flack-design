@@ -1,5 +1,6 @@
 <template lang="pug">
   div(:class="currentPageClass")
+    //- c-nav-fixed
     c-toggle
     c-nav-toggled(role="navigation")
     .Page
@@ -14,12 +15,14 @@
 <script>
 import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
+import NavFixed from "~/components/NavFixed.vue";
 import Nav from "~/components/Nav.vue";
 
 export default {
   components: {
     "c-toggle": NavToggle,
     "c-nav-toggled": NavToggled,
+    "c-nav-fixed": NavFixed,
     "c-nav": Nav
   },
   computed: {
@@ -48,6 +51,7 @@ export default {
 
 .FooterSpacer {
   height: 75vh;
+  height: 100vh;
 }
 
 .Footer {

@@ -43,6 +43,7 @@ blockquote p em,
     font-size: 0.9375rem !important;
   }
   @media (--large-viewport) {
+    font-size: 1.0625rem !important;
     font-size: 1rem !important;
   }
 }
@@ -62,7 +63,7 @@ ul,
 }
 
 .Text--meta {
-  font-size: var(--s-text-meta);
+  font-size: var(--s-text-meta) !important;
 }
 
 .Text--medium {
@@ -83,7 +84,7 @@ ul,
 .Massive {
   font-family: var(--font-massive), var(--font-stack-sans);
   font-size: var(--s-massive);
-  letter-spacing: -0.0025em;
+  letter-spacing: -0.0333em;
   line-height: 1.05;
   margin-top: var(--s3);
   text-transform: initial;
@@ -95,7 +96,15 @@ ul,
     width: 70%;
   }
   @media (--xlarge-viewport) {
+    font-size: 3em;
     font-size: calc(1.25 * var(--s-massive));
+
+    font-size: 6em;
+    font-size: 4.875em;
+    letter-spacing: 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    width: 66%;
   }
 }
 
@@ -104,6 +113,17 @@ ul,
 .TextScope h2 {
   font-family: var(--font-medium), var(--font-stack-sans);
   font-size: var(--s-text);
+  font-weight: 500;
+}
+
+.Title {
+  font-family: var(--font-title), var(--font-stack-sans);
+  font-family: var(--font-bold), var(--font-stack-sans);
+  font-weight: 700;
+  // font-size: 1.25em;
+  // letter-spacing: 0.02em;
+  line-height: 0.9;
+  text-transform: uppercase;
 }
 
 /*
@@ -316,7 +336,7 @@ blockquote + h2,
 
 .TextScope-post blockquote p {
   border: initial;
-  border-left: 2px solid currentColor;
+  border-left: 1px solid currentColor;
   margin-right: 7.5%;
   padding: initial;
   padding-left: calc(1.5 * var(--s3));

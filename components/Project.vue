@@ -91,7 +91,7 @@ export default {
 
 .Project-divider {
   letter-spacing: -0.2em;
-  margin-left: 0.1em;
-  margin-right: 0.2em;
+  margin-left: -0.1em;
+  /* margin-right: 0.2em; */
 }
 </style>

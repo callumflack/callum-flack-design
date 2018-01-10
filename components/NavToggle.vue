@@ -1,22 +1,22 @@
 <template lang="pug">
-  .Toggle
-    .Block--quarterTop
-      a.icon-wrapper(href="#", @click.prevent="handleNavToggle")
-        span.icon.icon-toggle
-          svg.u-colorWhite(
-            xmlns="http://www.w3.org/2000/svg", 
-            viewbox="0 0 32 32", 
-            v-if="isVisible"
-          )
-            <rect x="-1" y="15" width="34" height="2" transform="translate(16 -6.63) rotate(45)"/>
-            <rect x="-1" y="15" width="34" height="2" transform="translate(38.63 16) rotate(135)"/>
-          svg(
-            xmlns="http://www.w3.org/2000/svg", 
-            viewbox="0 0 32 32", 
-            v-if="!isVisible"
-          )
-            <rect y="10" width="32" height="2"/>
-            <rect y="20" width="32" height="2"/>
+.Toggle
+  .Block--quarterTop
+    a.icon-wrapper(href="#", @click.prevent="handleNavToggle")
+      span.icon.icon-toggle
+        svg.u-colorWhite(
+          xmlns="http://www.w3.org/2000/svg", 
+          viewbox="0 0 32 32", 
+          v-if="isVisible"
+        )
+          <rect x="-1" y="15" width="34" height="2" transform="translate(16 -6.63) rotate(45)"/>
+          <rect x="-1" y="15" width="34" height="2" transform="translate(38.63 16) rotate(135)"/>
+        svg(
+          xmlns="http://www.w3.org/2000/svg", 
+          viewbox="0 0 32 32", 
+          v-if="!isVisible"
+        )
+          <rect y="10" width="32" height="2"/>
+          <rect y="20" width="32" height="2"/>
 </template>
 
 
@@ -48,6 +48,13 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.ToggleDeux {
+  position: absolute;
+  left: -3rem;
+  top: 1px;
+  z-index: 999;
+}
 
 .Toggle {
   position: fixed;

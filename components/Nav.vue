@@ -2,7 +2,7 @@
   .Column
     .Inner
       .Space
-        nav.Title
+        nav.Massive
           c-navlink(
             v-for="item in navLinks"
             :key="item.label"
@@ -11,7 +11,7 @@
             :currentPage="currentPage"
             :exact="item.exact"
           )
-        .Text.u-marginT4
+        .Text.Text--meta.u-marginT4
           c-navlink(
             v-for="item in navContacts"
             :key="item.label"
