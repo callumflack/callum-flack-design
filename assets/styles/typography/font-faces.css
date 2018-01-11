@@ -6,7 +6,7 @@
 @font-face {
   font-family: var(--font-regular);
   src: url("~static/fonts/UntitledSansWeb-Regular.woff") format("woff");
-  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/Unica-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @font-face {
   font-family: var(--font-medium);
   src: url("~static/fonts/UntitledSansWeb-Medium.woff") format("woff");
-  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  src: url("~static/fonts/Unica-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 @font-face {
   font-family: var(--font-bold);
   src: url("~static/fonts/UntitledSansWeb-Bold.woff") format("woff");
-  src: url("~static/fonts/Graphik-Bold.woff") format("woff");
+  src: url("~static/fonts/Unica-Bold.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -42,7 +42,7 @@
   src: url("~static/fonts/DrukWide-Medium.woff2") format("woff");
   src: url("~static/fonts/Druk-Bold.woff") format("woff");
   src: url("~static/fonts/d-cond.ttf") format("woff");
-  src: url("~static/fonts/Graphik-Light.woff") format("woff");
+  src: url("~static/fonts/Unica-Light.woff") format("woff");
   // font-weight: 700;
   font-style: normal;
 }
