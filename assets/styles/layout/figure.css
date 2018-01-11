@@ -24,13 +24,15 @@
   margin-top: 0 !important;
 }
 
-.Figure--post {
-  border-top: 3px solid var(--color-text);
-  border-bottom: 3px solid var(--color-text);
-}
-
 .Figure--frame {
   border: 1px solid var(--color-border);
+}
+
+.Figure--portrait {
+  @media (--small-viewport) {
+    width: 50%;
+    margin-left: 0;
+  }
 }
 
 .Figure--large {

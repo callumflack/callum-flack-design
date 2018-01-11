@@ -2,7 +2,6 @@
   header.Navbar
     .Container
       .Space
-        .u-posRelative
         h3.Title(v-if="title")
           nuxt-link(:to="link", v-html="title")
         h1.Text(v-if="massive", v-html="massive")
@@ -24,6 +23,12 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.Navbar .Space {
+  @media (--small-viewport) {
+    width: 50%;
+  }
+}
 
 .nuxt-link-active {
 }

@@ -1,22 +1,18 @@
 ---
 section: About
-title: About Callum
+title: About
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513918788/okok/callum-flack.jpg
+heroImage: images/me2.jpg
 heroImageFirst: true
 ---
 
-> Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.
+<!-- <p class="Intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->
 
 My job is to help you bridge the gap between you and your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
 
 ## Experienced
 
-I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios and
-advertising agencies. Since 2015, my wife, our young family and I have lived in Cairns,
-Australia. Before teaching myself web programming languages in 2010, my career highlight
-was a stint as a brand designer at Saatchi & Saatchi, London.
-[Read further on LinkedIn.](https://www.linkedin.com/in/callumflack)
+I've been in the game since 2000. I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios and advertising agencies. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. [Read further on LinkedIn.](https://www.linkedin.com/in/callumflack)
 
 ## How we can work together
 
@@ -36,12 +32,12 @@ travelling to meet in person.
 * Collaborate as a specialist digital design partner to build and enhance your brand,
   customer workflows or customer community over time.
 
-## Get in touch
+## Contact
 
 Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
 [+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
 
-## Follow
+## Connect
 
 Arena: [callum](mailto:callum@patternworks.com.au)<br> Instagram:
 [callumflack](tel:610-408-767-540)<br> Linkedin: Callum Flack

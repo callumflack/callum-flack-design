@@ -1,9 +1,8 @@
 <template lang="pug">
   article(role="banner")
     c-pagetitle(
-      title="Journal", 
+      :title="page.title", 
       link="/journal"
-      :massive="page.title"
     )
     .Container(v-if="page.heroImage")
       figure.Figure.Figure--large

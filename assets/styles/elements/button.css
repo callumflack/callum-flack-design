@@ -47,29 +47,29 @@
 
 .Button--outline {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px;
+  box-shadow: inset 0 0 0 1px;
   color: var(--color-text);
   letter-spacing: inherit !important;
   padding: 0.9rem 1.25rem 1rem;
 
   &:hover {
-    background-color: var(--color-text);
+    background-color: var(--color-title);
     color: var(--color-bg);
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 2px, 0 0 0 2px;
+    box-shadow: inset 0 0 0 1px, 0 0 0 1px;
   }
 
   &:active {
-    background-color: var(--color-text);
-    box-shadow: inset 0 0 0 1px var(--color-text),
-      inset 0 0 16px var(--color-text);
+    background-color: var(--color-title);
+    box-shadow: inset 0 0 0 2px var(--color-title),
+      inset 0 0 16px var(--color-title);
     color: var(--color-bg);
   }
 
   @media (--small-viewport) {
-    box-shadow: inset 0 0 0 2px;
+    // box-shadow: inset 0 0 0 1px;
   }
 }
 

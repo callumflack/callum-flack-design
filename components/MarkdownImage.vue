@@ -12,7 +12,7 @@ export default {
       return [
         "Figure",
         {
-          "Figure--medium": this.medium,
+          "Figure--portrait": this.portrait,
           "Figure--large": this.large,
           "Figure--frame": this.frame
         }
@@ -20,7 +20,7 @@ export default {
     }
   },
   props: {
-    medium: Boolean,
+    portrait: Boolean,
     large: Boolean,
     frame: Boolean,
     src: String

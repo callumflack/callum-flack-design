@@ -1,13 +1,12 @@
 <template lang="pug">
   div
     c-pagetitle(
-      title="About Callum"
       link="/about"
-      massive="A design-obsessed, code-based, systems-thinking craftsman."
+      title="Callum Flack is a design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
       .Container
-        c-image(large, :src="page.heroImage", style="opacity:0.9")
+        c-image(portrait, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
       .Container
         .TextScope

@@ -21,19 +21,17 @@ div
       .TextScope
         p
           | Hi, I’m Callum. 
-          nuxt-link(to="/about") I'm interested and curious
-          |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+          nuxt-link(to="/about") I'm interested to know about you,
+          |  your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
           
         h2 The difference is focus & knowhow
         p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. Want to know more? Read the 
           nuxt-link(to="/journal") Journal:
 
-        //- blockquote.Figure.Post.u-noQuote
+        blockquote.Figure.Post.u-noQuote
           nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-            h1.Title.u-width100.u-marginT0.u-marginB3 Designers should code
+            h1.Title.u-width100.u-marginT0.u-marginB3 Designers should code #[span.LinkSignal-target →]
             p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
-              em
-                span.LinkSignal-target Read the article →
 
         //- h2 Follow curiosity, find delight
         //- p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
@@ -81,9 +79,9 @@ export default {
   padding-left: 0 !important;
 
   & a {
-    background-color: var(--color-neutral);
+    /* background-color: var(--color-neutral); */
     display: block;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 }
 

@@ -79,7 +79,6 @@ ul,
 .Subheading,
 .TextScope h2 {
   color: var(--color-title);
-  font-family: var(--font-regular), var(--font-stack-sans);
   font-size: var(--s-text);
   font-weight: 400;
 }
@@ -167,7 +166,6 @@ blockquote p em {
   display: table;
   // font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);
   font-size: var(--s-text-meta);
-  font-family: var(--font-regular), var(--font-stack-sans);
   line-height: var(--lh-text);
   margin-top: var(--s1);
 
@@ -198,6 +196,14 @@ h2 {
 
   @media (--small-viewport) {
     margin-bottom: var(--s3);
+  }
+}
+
+.TextScope * + .Button {
+  margin-top: var(--s3);
+
+  @media (--small-viewport) {
+    margin-top: calc(2 * var(--s3));
   }
 }
 
@@ -317,7 +323,6 @@ blockquote + h2,
 }
 
 .TextScope-post .Intro {
-  // font-family: var(--font-medium);
   margin-bottom: var(--s4);
 
   @media (--small-viewport) {
@@ -339,8 +344,7 @@ blockquote + h2,
   &:after {
     content: "* * *";
     display: block;
-    font-family: var(--font-massive), var(--font-stack-serif);
-    font-size: var(--s-subtitle);
+    font-size: var(--s-text);
     letter-spacing: 0.025em;
     line-height: 1;
     margin: auto;

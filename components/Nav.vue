@@ -55,7 +55,7 @@ export default {
         },
         {
           label: "Journal",
-          link: "/journal/designers-should-code"
+          link: "/journal"
         },
         {
           label: "About",

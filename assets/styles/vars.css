@@ -74,7 +74,7 @@
   --color-border: #ccc;
   --color-neutral: #eee;
   --color-bg: #fdfdfd;
-  --color-bg: #f8f8f8;
+  --color-bg: #f9f9f9;
   --color-bg-blue: #cdd8e2;
   --color-metal: #cdd8e2;
 
@@ -84,11 +84,7 @@
 
   --font-regular: "Regular";
   --font-italic: var(--font-regular);
-  --font-medium: "Medium";
-  --font-bold: "Bold";
-  --font-title: "Title";
-  --font-massive: "Massive";
-  --font-button: var(--font-medium);
+  --font-button: var(--font-regular);
 
   --font-stack-serif: Georgia, "Times New Roman", Times, serif;
   --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

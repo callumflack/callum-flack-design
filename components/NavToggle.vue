@@ -4,7 +4,7 @@
     .toggle-logo
       .Title
         a(href="#", @click.prevent="handleNavToggle")
-          span.pb patter-
+          span.pb patter–
           span.pb.align nworks
         
 </template>
@@ -52,16 +52,26 @@ export default {
   padding-left: 1.75em;
   padding-left: 1.2em;
   padding-left: 1.175em;
+  padding-left: 0.8em;
   /* transform: translateY(-0.333em); */
   /* transform: translateY(-11px); */
   /* transform: translateY(-24px); */
+
+  @media (max-width: 512px) {
+    padding-left: 0.66em;
+    transform: translateY(-7px);
+  }
 }
 
 .toggle {
-  left: var(--grid-gutter);
+  left: calc(0.5 * var(--grid-gutter));
   position: fixed;
   top: calc(0.9 * var(--grid-gutter));
   z-index: 100;
+
+  @media (--small-viewport) {
+    left: calc(1 * var(--grid-gutter));
+  }
 
   @media (--large-viewport) {
     top: calc(1.8 * var(--grid-gutter));
@@ -83,6 +93,11 @@ export default {
 .toggle-logo {
   position: relative;
   display: inline-block;
+
+  & .Title {
+    /* font-family: var(--font-medium), var(--font-stack-sans); */
+    /* font-weight: 500; */
+  }
 }
 
 /*.Navbar {
