@@ -33,11 +33,11 @@
 .u-colorHighlight {
   color: var(--color-highlight) !important;
 }
+.u-colorTitle {
+  color: var(--color-title) !important;
+}
 .u-colorText {
   color: var(--color-text) !important;
-}
-.u-colorTextLight {
-  color: var(--color-text-light) !important;
 }
 .u-colorBorder {
   color: var(--color-border) !important;
@@ -67,11 +67,11 @@
  * bg colors
  */ 
 
+.u-bgColorTitle {
+  background-color: var(--color-title) !important;
+}
 .u-bgColorText {
   background-color: var(--color-text) !important;
-}
-.u-bgColorTextLight {
-  background-color: var(--color-text-light) !important;
 }
 .u-bgColorBrand {
   background-color: var(--color-brand) !important;
@@ -181,7 +181,7 @@
  */
 
 .u-containerWidth {
-  max-width: var(--container-rg);
+  max-width: var(--container);
 }
 
 .u-containerWidthLarge {

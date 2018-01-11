@@ -3,7 +3,7 @@ div
   c-pagetitle(
     title="Work"
     link="/work"
-    massive="Selected projects"
+    massive="Selected projects since 2014"
   )
   main(role="main")
     //- .Block--halfSandwich
@@ -21,23 +21,22 @@ div
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
-    .Column
-      .Inner
-        .Grid.Grid--alignCenter.Grid--withTinyGutter
-          c-project(
-            v-if="project.featured"
-            v-for="project in visibleProjects"
-            :key="project.title"
-            featured,
-            :link="project.permalink",
-            :tags="project.tags",
-            :year="project.year",
-            :title="project.title",
-            :headline="project.headline",
-            :lede="project.lede",
-            :image="project.thumbImage",
-            :cloudinary="project.cloudinary",
-          )
+    .Container
+      .Grid.Grid--withTinyGutter
+        c-project(
+          v-if="project.featured"
+          v-for="project in visibleProjects"
+          :key="project.title"
+          featured,
+          :link="project.permalink",
+          :tags="project.tags",
+          :year="project.year",
+          :title="project.title",
+          :headline="project.headline",
+          :lede="project.lede",
+          :image="project.thumbImage",
+          :cloudinary="project.cloudinary",
+        )
 
     <svg class='u-hiddenVisually'>
       <filter id='gray' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>

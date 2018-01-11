@@ -8,7 +8,7 @@
  */
 
 body {
-  background-color: var(--color-text);
+  background-color: var(--color-metal);
   color: var(--color-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
@@ -43,7 +43,6 @@ blockquote p em,
     font-size: 0.9375rem !important;
   }
   @media (--large-viewport) {
-    font-size: 1.0625rem !important;
     font-size: 1rem !important;
   }
 }
@@ -66,11 +65,6 @@ ul,
   font-size: var(--s-text-meta) !important;
 }
 
-.Text--medium {
-  font-family: var(--font-medium), var(--font-stack-sans);
-  font-weight: 500;
-}
-
 /* 
   -------------------------------------------------
   
@@ -81,59 +75,15 @@ ul,
   -------------------------------------------------
  */
 
-.Massive {
-  font-family: var(--font-massive), var(--font-stack-sans);
-  font-size: var(--s-massive);
-  letter-spacing: -0.0333em;
-  line-height: 1.05;
-  margin-top: var(--s3);
-  text-transform: initial;
-
-  @media (--small-viewport) {
-    margin-top: var(--s4);
-  }
-  @media (--medium-viewport) {
-    width: 70%;
-  }
-  @media (--xlarge-viewport) {
-    font-size: 3em;
-    font-size: calc(1.25 * var(--s-massive));
-
-    /*DRUK*/ 
-    font-size: 6em;
-    font-size: 4.875em;
-    letter-spacing: 0;
-    line-height: 0.9;
-    text-transform: uppercase;
-    width: 66%;
-
-    /*GRAPHIK*/ 
-    font-size: 4.5em;
-    line-height: 1;
-    letter-spacing: -0.0333em;
-    text-transform: initial;
-    width: 75%;
-  }
-}
-
 .Title,
 .Subheading,
 .TextScope h2 {
-  font-family: var(--font-medium), var(--font-stack-sans);
+  color: var(--color-title);
+  font-family: var(--font-regular), var(--font-stack-sans);
   font-size: var(--s-text);
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.Title {
-  font-family: var(--font-title), var(--font-stack-sans);
-  font-family: var(--font-bold), var(--font-stack-sans);
-  font-family: var(--font-medium), var(--font-stack-sans);
-  // font-weight: 700;
-  // font-size: 1.25em;
-  // letter-spacing: 0.02em;
-  // line-height: 0.9;
-  // text-transform: uppercase;
-}
 
 /*
   -------------------------------------------------
@@ -158,6 +108,14 @@ ul,
   }
 }
 
+.TextScope p + p {
+  text-indent: 4rem;
+}
+
+.TextScope .Intro + p {
+  text-indent: 0;
+}
+
 /*
   -------------------------------------------------
 
@@ -178,8 +136,9 @@ blockquote {
 .Intro,
 .Post p,
 blockquote p {
-  border-top: 1px solid var(--color-text);
-  border-bottom: 1px solid var(--color-text);
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: rgba(138, 138, 138, 0.5);
   padding: calc(2 * var(--s3)) 0 calc(2.166 * var(--s3));
   width: auto;
 
@@ -227,10 +186,10 @@ blockquote p em {
 
 p,
 ul {
-  margin-bottom: var(--s3);
+  // margin-bottom: var(--s3);
 
   @media (--small-viewport) {
-    margin-bottom: calc(2 * var(--s3));
+    // margin-bottom: calc(2 * var(--s3));
   }
 }
 
@@ -244,7 +203,7 @@ h2 {
 
 p + blockquote {
   @media (--small-viewport) {
-    margin-top: calc(-2 * var(--s3));
+    // margin-top: calc(-2 * var(--s3));
   }
 }
 

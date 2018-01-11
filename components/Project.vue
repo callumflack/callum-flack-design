@@ -7,10 +7,10 @@
       .Project-text
         h2.Title
           span.Project-visualLink {{ title }}
-        p.Project-subtext.TextScope-reset
+        p.Project-subtext.Text.Text--meta
           span.u-marginR1(v-if="year") {{ year }}
           span(v-if="tags") {{ tags }}
-          span.Project-divider ——
+          span.Project-divider &nbsp;——&nbsp;
           | {{ headline }}
 
 </template>
@@ -81,17 +81,17 @@ export default {
   width: 80%;
 
   @media (--small-viewport) {
-    width: 66%;
+    width: 75%;
   }
 
   @media (--large-viewport) {
-    width: 50%;
+    /* width: 50%; */
   }
 }
 
 .Project-divider {
   letter-spacing: -0.2em;
-  margin-left: -0.1em;
-  /* margin-right: 0.2em; */
+  /* margin-left: -0.1em; */
+  margin-right: 0.2em;
 }
 </style>

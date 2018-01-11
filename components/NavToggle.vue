@@ -1,22 +1,12 @@
 <template lang="pug">
-.Toggle
-  .Block--quarterTop
-    a.icon-wrapper(href="#", @click.prevent="handleNavToggle")
-      span.icon.icon-toggle
-        svg.u-colorWhite(
-          xmlns="http://www.w3.org/2000/svg", 
-          viewbox="0 0 32 32", 
-          v-if="isVisible"
-        )
-          <rect x="-1" y="15" width="34" height="2" transform="translate(16 -6.63) rotate(45)"/>
-          <rect x="-1" y="15" width="34" height="2" transform="translate(38.63 16) rotate(135)"/>
-        svg(
-          xmlns="http://www.w3.org/2000/svg", 
-          viewbox="0 0 32 32", 
-          v-if="!isVisible"
-        )
-          <rect y="10" width="32" height="2"/>
-          <rect y="20" width="32" height="2"/>
+.toggle
+  .u-posRelative
+    .toggle-logo
+      .Title
+        a(href="#", @click.prevent="handleNavToggle")
+          span.pb patter-
+          span.pb.align nworks
+        
 </template>
 
 
@@ -49,32 +39,53 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.ToggleDeux {
-  position: absolute;
-  left: -3rem;
-  top: 1px;
-  z-index: 999;
+.pb {
+  display: block;
+  font-size: 1.05em;
+  line-height: 1.3;
+  /* transform: translateX(500px); */
 }
 
-.Toggle {
-  position: fixed;
-  right: 2rem;
-  z-index: 999;
+.align {
+  padding-left: 0.95em;
+  padding-left: 1.333em;
+  padding-left: 1.75em;
+  padding-left: 1.2em;
+  padding-left: 1.175em;
+  /* transform: translateY(-0.333em); */
+  /* transform: translateY(-11px); */
+  /* transform: translateY(-24px); */
+}
 
-  @media (--medium-viewport) {
-    right: var(--s4);
-  }
+.toggle {
+  left: var(--grid-gutter);
+  position: fixed;
+  top: calc(0.9 * var(--grid-gutter));
+  z-index: 100;
 
   @media (--large-viewport) {
-    right: var(--s5);
+    top: calc(1.8 * var(--grid-gutter));
+  }
+
+  @media (min-width: 1488px) {
+    left: 5vw;
+  }
+
+  @media (min-width: 1648px) {
+    top: var(--s7);
+  }
+
+  @media (min-width: 1840px) {
+    left: 12.5vw;
   }
 }
 
-.Toggle .Title {
-  width: auto;
+.toggle-logo {
+  position: relative;
+  display: inline-block;
 }
 
-.Navbar {
+/*.Navbar {
   background-color: transparent;
   opacity: 1;
   position: relative;
@@ -95,7 +106,7 @@ export default {
 .Navbar a {
   white-space: initial !important;
   z-index: 99;
-}
+}*/
 
 .nuxt-link-active {
 }

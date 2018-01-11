@@ -6,14 +6,12 @@
       massive="A design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
-      .Column
-        .Inner
-          c-image(large, :src="page.heroImage", style="opacity:0.9")
+      .Container
+        c-image(large, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
-      .Column
-        .Inner
-          .TextScope
-            nuxtent-body(:body="page.body")
+      .Container
+        .TextScope
+          nuxtent-body(:body="page.body")
 </template>
 
 <script>

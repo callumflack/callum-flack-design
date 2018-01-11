@@ -1,24 +1,17 @@
 <template lang="pug">
   header.Navbar
-    .Column
-      .Inner
-        .Space
-          .u-posRelative
-            //- c-toggle
-          h3.Title(v-if="title")
-            nuxt-link(:to="link", v-html="title")
-          h1.Massive.SubSpace(v-if="massive", v-html="massive")
-          p.Text.SubSpace(v-if="lede", v-html="lede")
+    .Container
+      .Space
+        .u-posRelative
+        h3.Title(v-if="title")
+          nuxt-link(:to="link", v-html="title")
+        h1.Text(v-if="massive", v-html="massive")
+        //- p.Text(v-if="lede", v-html="lede")
 </template>
 
 <script>
-import NavToggle from "~/components/NavToggle.vue";
-
 export default {
   name: "page-title",
-  components: {
-    "c-toggle": NavToggle
-  },
   props: {
     section: String,
     massive: String,
@@ -31,45 +24,6 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
-
-.Space {
-  margin-bottom: 0;
-
-  @media (--small-viewport) {
-    margin-bottom: var(--s2);
-  }
-}
-
-.SubSpace {
-  margin-top: var(--s3);
-
-  @media (--small-viewport) {
-    margin-top: calc(0.75 * var(--s4));
-  }
-}
-
-/*.Navbar {
-  background-color: transparent;
-  opacity: 1;
-  position: relative;
-  transform: translateY(0);
-  transition: opacity var(--transition-duration),
-    transform 250ms var(--transition-duration);
-  width: 100%;
-  z-index: 1;
-
-  &.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity var(--transition-duration),
-      transform 250ms var(--transition-duration);
-  }
-}
-
-.Navbar a {
-  white-space: initial !important;
-  z-index: 99;
-}*/
 
 .nuxt-link-active {
 }

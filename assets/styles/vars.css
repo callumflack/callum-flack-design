@@ -38,8 +38,10 @@
   --spacer: 24px;
   --spacer-large: 0.75rem;
 
+  --container: calc(72.5em + 6rem);
+  --container-rg: 72.5em;
+  
   --container-sm: 400px;
-  --container-rg: calc(1120px + 48px); /*45em*/
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
@@ -64,14 +66,17 @@
   --color-brand: #00ffff;
   --color-highlight: #bee8fb;
   --color-highlight: #47bbff;
+  --color-highlight: #b32273;
+  --color-highlight: #44729c;
   --color-red: #ff3700;
-  --color-text: #0a0a0a;
-  --color-text-medium: #757575;
-  --color-text-light: #959595;
+  --color-title: #0a0a0a;
+  --color-text: #8a8a8a;
   --color-border: #ccc;
   --color-neutral: #eee;
   --color-bg: #fdfdfd;
+  --color-bg: #f8f8f8;
   --color-bg-blue: #cdd8e2;
+  --color-metal: #cdd8e2;
 
   /* 
    * Typefaces
@@ -98,7 +103,7 @@
   --s-subtitle: 3em;
   --s-heading: var(--s-title);
   --s-subheading: 1.5em;
-  --s-text: 1.5em;
+  --s-text: 1.5625em;
   --s-text-meta: 1.125em;
   --s-text-sm: 0.875em;
   
@@ -111,7 +116,7 @@
   --ls-heading: -0.0225em;
   --ls-heading-sm: -0.005em;
   --ls-body: -0.005em;
-  --ls-text: -0.02em;
+  --ls-text: -0.025em;
   --ls-meta: -0.0125em; /*0.075em*/
 
   --lh-heading: 1;

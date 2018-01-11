@@ -5,19 +5,18 @@
       link="/journal"
       :massive="page.title"
     )
-    .Column(v-if="page.heroImage")
+    .Container(v-if="page.heroImage")
       figure.Figure.Figure--large
         img(:src="page.heroImage", alt="")
     main(role="main")
-      .Column
-        .Inner
-          .TextScope.TextScope-post
-            no-ssr
-              nuxtent-body(:body="page.body")
-            
-            hr
-            p Thanks for reading! I like dialogue. Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] comments. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
-            c-newsletter.Text
+      .Container
+        .TextScope.TextScope-post
+          no-ssr
+            nuxtent-body(:body="page.body")
+          
+          hr
+          p Thanks for reading! I like dialogue. Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] comments. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
+          c-newsletter.Text
 </template>
 
 <script>

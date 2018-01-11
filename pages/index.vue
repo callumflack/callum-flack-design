@@ -3,47 +3,42 @@ div
   c-pagetitle(
     title="Callum Flack Design + Development"
     link="/about"
-    massive="Digital brands & products<br>for makers & shakers"
+    massive="Digital brands & products for makers & shakers"
   )
 
   main(role="main")
-    .Column
-      .Container
-        .Inner
-          figure.Figure.Figure--large
-            nuxt-link.Work.LinkSignal.u-noVisualLink(to="/work")
-              .FlexEmbed
-                .FlexEmbed-ratio.FlexEmbed-ratio--16by9
-                .FlexEmbed-content
-                  .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorText
-                    .Massive.u-colorWhite.u-textCenter 
-                      | View the work #[span.LinkSignal-target →]
-                  img.u-width100.u-posRelative(src="/images/loop-04.gif")
+    .Container
+      figure.Figure.Figure--large
+        nuxt-link.Work.LinkSignal.u-noVisualLink(to="/work")
+          .FlexEmbed
+            .FlexEmbed-ratio.FlexEmbed-ratio--16by9
+            .FlexEmbed-content
+              .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorWhite
+                .Title.u-textCenter
+                  | View the work #[span.LinkSignal-target →]
+              img.u-width100.u-posRelative(src="/images/loop-04.gif")
 
-          .TextScope
-            p
-              | Hi, I’m Callum. 
-              nuxt-link(to="/about") I'm interested and curious
-              |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
-              
-            h2 The difference is focus & knowhow
-            p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
-            p 
-              | Want to know more? Read the 
-              nuxt-link(to="/journal") Journal
-              | , where I write about design process and web systems through the lens of the human moments connecting them:
+      .TextScope
+        p
+          | Hi, I’m Callum. 
+          nuxt-link(to="/about") I'm interested and curious
+          |  to know about you, your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+          
+        h2 The difference is focus & knowhow
+        p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. Want to know more? Read the 
+          nuxt-link(to="/journal") Journal:
 
-            blockquote.Figure.Post.u-noQuote
-              nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-                h1.Massive.u-width100.u-marginT0.u-marginB3 Designers should code
-                p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
-                  em
-                    span.LinkSignal-target Read the article →
+        //- blockquote.Figure.Post.u-noQuote
+          nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
+            h1.Title.u-width100.u-marginT0.u-marginB3 Designers should code
+            p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
+              em
+                span.LinkSignal-target Read the article →
 
-            h2 Follow curiosity, find delight
-            p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
-            
-            c-newsletter.Text
+        //- h2 Follow curiosity, find delight
+        //- p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
+        
+        //- c-newsletter.Text
 
 </template>
 
@@ -73,8 +68,12 @@ export default {
 
 .Work:hover img,
 .Work:focus img {
-  opacity: 0;
+  opacity: 0.05;
   transition: opacity 0.15s ease;
+}
+
+.bg {
+  background-color: var(--color-metal);
 }
 
 .Post {
