@@ -5,7 +5,7 @@
     c-nav-toggled(role="navigation")
     .Page
       nuxt
-    .PageSpacer
+    //- .PageSpacer
     .FooterSpacer
     footer.Footer(role="contentinfo")
       c-nav
@@ -38,6 +38,7 @@ export default {
 
 .Page {
   background-color: var(--color-bg);
+  padding-bottom: 50vh;
   position: relative;
   z-index: 3;
 }
@@ -61,7 +62,7 @@ export default {
   background-color: #47bbff;*/
   /* background: linear-gradient(180deg, #fdfdfd 0%, rgba(71, 187, 255, 0.25) 100%); */
   /* background: linear-gradient(180deg, #fdfdfd 0%, #d5d5d5 90%); */
-  background-color: var(--color-bg);
+  background-color: var(--color-text);
 
   align-items: flex-end;
   display: flex;

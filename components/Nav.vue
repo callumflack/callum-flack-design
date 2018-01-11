@@ -132,6 +132,13 @@ hr {
   width: 100vw;
 }
 
+.Massive,
+.Subtitle,
+.Title,
+.Text {
+  color: var(--color-bg);
+}
+
 .Massive a + a,
 .Subtitle a + a,
 .Title a + a {

@@ -14,7 +14,7 @@
 @font-face {
   font-family: var(--font-medium);
   src: url("~static/fonts/UntitledSansWeb-Medium.woff") format("woff");
-  src: url("~static/fonts/Graphik-Semibold.woff") format("woff");
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -40,8 +40,9 @@
   font-family: var(--font-massive);
   src: url("~static/fonts/UntitledSansWeb-Regular.woff") format("woff");
   src: url("~static/fonts/DrukWide-Medium.woff2") format("woff");
-  src: url("~static/fonts/d-cond.ttf") format("woff");
   src: url("~static/fonts/Druk-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("~static/fonts/d-cond.ttf") format("woff");
+  src: url("~static/fonts/Graphik-Light.woff") format("woff");
+  // font-weight: 700;
   font-style: normal;
 }

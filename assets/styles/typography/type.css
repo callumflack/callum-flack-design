@@ -8,7 +8,7 @@
  */
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-text);
   color: var(--color-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
@@ -99,12 +99,20 @@ ul,
     font-size: 3em;
     font-size: calc(1.25 * var(--s-massive));
 
+    /*DRUK*/ 
     font-size: 6em;
     font-size: 4.875em;
     letter-spacing: 0;
     line-height: 0.9;
     text-transform: uppercase;
     width: 66%;
+
+    /*GRAPHIK*/ 
+    font-size: 4.5em;
+    line-height: 1;
+    letter-spacing: -0.0333em;
+    text-transform: initial;
+    width: 75%;
   }
 }
 
@@ -119,11 +127,12 @@ ul,
 .Title {
   font-family: var(--font-title), var(--font-stack-sans);
   font-family: var(--font-bold), var(--font-stack-sans);
-  font-weight: 700;
+  font-family: var(--font-medium), var(--font-stack-sans);
+  // font-weight: 700;
   // font-size: 1.25em;
   // letter-spacing: 0.02em;
-  line-height: 0.9;
-  text-transform: uppercase;
+  // line-height: 0.9;
+  // text-transform: uppercase;
 }
 
 /*
