@@ -37,8 +37,11 @@
 .color-highlight {
   color: var(--color-highlight) !important;
 }
+.color-black {
+  color: black !important;
+}
 .color-title {
-  color: var(--color-title) !important;
+  color: var(--color-title);
 }
 .color-text {
   color: var(--color-text) !important;
@@ -49,8 +52,11 @@
 .color-neutral {
   color: var(--color-neutral) !important;
 }
-.color-white {
+.color-bg {
   color: var(--color-bg) !important;
+}
+.color-white {
+  color: white !important;
 }
 .color-textBlock > * {
   color: var(--color-text-light) !important;
@@ -110,7 +116,7 @@
 } */
 
 /*
- * Text helpers
+ * text helpers
  */
 
 .text-lowercase {
@@ -119,7 +125,7 @@
 .text-capitalise {
   text-transform: capitalize !important;
 }
-.u-noIndent {
+.text-noIndent {
   text-indent: 0 !important;
 }
 

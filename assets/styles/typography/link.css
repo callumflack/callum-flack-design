@@ -12,11 +12,10 @@ button {
   text-decoration: none;
 }
 
+.visualLink,
 p a:not(.Button),
 p a:not(.linkSignal),
-.textscope a:not(.Button),
-.title--sub.is-active .title-visualLink,
-.title--sub:hover .title-visualLink {
+.textscope a:not(.Button) {
   background-image: 
     linear-gradient(var(--color-bg), var(--color-bg)), 
     linear-gradient(var(--color-bg), var(--color-bg)), 
@@ -41,6 +40,14 @@ p a:not(.linkSignal),
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
       background-position-y: 96%, 96%, 96%;
   }
+}
+
+.icon-targetblank:after {
+  content: "→";
+  display: inline-block;
+  font-weight: 200;
+  margin-left: 3px;
+  transform: rotate(-45deg);
 }
 
 /* 
@@ -86,6 +93,7 @@ p a:not(.linkSignal),
 
 .linkSignal-target {
   display: inline-block;
+  font-weight: 200;
   transform: translateX(0);
   transition: all 0.1s ease-out;
 }

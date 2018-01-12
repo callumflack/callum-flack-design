@@ -12,11 +12,11 @@ My job is to help you bridge the gap between you and your audience by understand
 
 ## Experienced
 
-I've been in the game since 2000. I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios and advertising agencies. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. [Read further on LinkedIn.](https://www.linkedin.com/in/callumflack)
+I've been in the game since 2000. I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios and advertising agencies. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. <a class="icon-targetblank" target="_blank" href="https://www.linkedin.com/in/callumflack">Read further on LinkedIn.</a>
 
 ## How we can work together
 
-[Based in Cairns](https://www.instagram.com/p/BXbsNdrAt-v), I currently work with local, Australian and international clients. I can
+<a class="icon-targetblank" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns</a>, I currently work with local, Australian and international clients. I can
 plug into a product team as a freelance designer, or work one-to-one with owners,
 organisations and creators to implement their digital business vision. I also enjoy
 travelling to meet in person.
@@ -39,5 +39,8 @@ Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone
 
 ## Connect
 
-Arena: [callum](mailto:callum@patternworks.com.au)<br> Instagram:
-[callumflack](tel:610-408-767-540)<br> Linkedin: Callum Flack
+<a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">Twitter</a><br>
+<a class="icon-targetblank" target="_blank" href="https://github.com/callumflack">Github</a><br>
+<a class="icon-targetblank" target="_blank" href="https://are.na/callum-flack">Arena</a><br>
+<a class="icon-targetblank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a><br>
+<a class="icon-targetblank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>

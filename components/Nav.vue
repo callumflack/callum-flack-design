@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    .block--navbar
+    .block--masthead
       nav.title
         c-navlink(
           v-for="item in navLinks"

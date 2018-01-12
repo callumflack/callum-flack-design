@@ -1,8 +1,11 @@
 ---
 section: Journal
-title: Designers should code&#58;<br>thoughts from an ex-graphic designer
-headline: 
-date: December 21, 2017
+title: Designers should code
+lede: Thoughts from an ex-graphic designer
+published: December 21, 2017
+updated: January 12, 2018
+note: Many thanks to Michael Fogleman for his input with this article.
+tweet: https://twitter.com/necolas/status/950792091050921985
 ---
 
 <p class="intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in the product design process, the better the product (and more valuable you'll become). That's reason enough to learn to code.</p>
@@ -54,5 +57,3 @@ Like a city, software fails when elements of the whole don't overlap. That disco
 Designers should code so they understand the forces the coder has to deal with (although that doesn't mean they need to be able to handle production-level server-side Javascript!). And by that token, developers should understand they're programming for people who respond emotionally to aesthetics, and not just for the love of programming.
 
 The more you're aware of the contstraints and necessary overlaps of the "hats" within your software creation process, the better chance your digital product stands to resonate with and provide value to real people.
-
-**Published: December 21, 2017**

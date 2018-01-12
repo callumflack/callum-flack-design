@@ -1,7 +1,7 @@
 <template lang="pug">
-  header.Navbar
+  header.masthead
     .container
-      .block--navbar
+      .block--masthead
         h3.title(v-if="title")
           nuxt-link(:to="link", v-html="title")
         h1.text(v-if="lede", v-html="lede")
@@ -21,14 +21,13 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Navbar .block--navbar {
+.masthead .block--masthead {
   @media (--small-viewport) {
     width: 50%;
   }
 }
 
-.title,
-.text {
+.title + .text {
   margin: 0;
 }
 

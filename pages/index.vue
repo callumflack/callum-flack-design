@@ -3,7 +3,7 @@ div
   c-pagetitle(
     title="Digital brands + services for makers + shakers"
     link="/"
-    lede="Callum Flack provides graphic design, user experience design and frontend development to help individuals, groups and businesses find, connect and service their audience"
+    lede="Callum Flack provides graphic design, user experience design and frontend development to help individuals, groups and businesses find, connect and service their audience."
   )
 
   main(role="main")
@@ -18,28 +18,25 @@ div
                   | View the work #[span.linkSignal-target →]
               img.w100.u-posRelative(src="/images/loop-04.gif")
       p
-        | Hi, I’m Callum. 
-        nuxt-link(to="/about") I'm interested to know about you,
-        |  your valuable service and who your market is. I can help you create authentic, seamless experiences. Solve the right interaction problems. Build something your customers are proud of. Together we can make things happen.
+        nuxt-link(to="/about") Hi, I’m Callum.
+        |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
         
       h2 The difference is focus & knowhow
-      p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
+      p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
 
-      h3.title.title-ruled 
+      h3.title.title--ruled 
         nuxt-link(to="/journal") Journal
-
-      blockquote.figure.post.no-quote
-        nuxt-link.noVisualLink.linkSignal(to="/journal/designers-should-code")
+      p I regularly write about designing and building for the needs of real people. To get a big picture view, read the 
+        nuxt-link(to="/journal") Journal.
+        |  Here's the most recent:
+      .figure.post.no-quote
+        nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
           h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.linkSignal-target →]
           p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
 
-      p Want to know more? Read the 
-        nuxt-link(to="/journal") Journal.
-
-      //- h2 Follow curiosity, find delight
-      //- p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
-      
-      //- c-newsletter.text
+      h3.title.title--ruled Subscribe
+      p Everyone hungers for the experience of delight. I write a newsletter every week about what I've fed on. It fuels perspective. It's also great way to keep in touch. You should sign-up:
+      c-newsletter.text
 </template>
 
 <script>
@@ -72,18 +69,22 @@ export default {
   transition: opacity 0.15s ease;
 }
 
-.bg {
-  background-color: var(--color-metal);
-}
-
 .post {
   & a {
-    /* background-color: var(--color-neutral); */
-    display: block;
-    /* padding: 2rem; */
+    @media (--medium-viewport) {
+      margin: auto;
+      width: 50%;
+    }
+  }
+
+  & p {
+    @media (--medium-viewport) {
+      width: 100%;
+    }
   }
 }
 
+/* perhaps req'd occassionally */
 .post-image {
   background-color: var(--color-text);
   background-image: url("/images/post-bubble.jpg");

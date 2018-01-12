@@ -22,15 +22,15 @@ export default {
   computed: {
     figureClasses() {
       return [
-        "Figure",
-        "Device",
+        "figure",
+        "device",
         {
-          "Figure--medium": this.medium,
-          "Figure--large": this.large,
-          "Device--iphone6": this.iphone,
-          "Device--ipad": this.ipad,
-          "Device--ipadLandscape": this.ipadLandscape,
-          "Device--laptop": this.laptop
+          "figure--medium": this.medium,
+          "figure--large": this.large,
+          "device--iphone6": this.iphone,
+          "device--ipad": this.ipad,
+          "device--ipadLandscape": this.ipadLandscape,
+          "device--laptop": this.laptop
         }
       ];
     }

@@ -3,6 +3,7 @@ div
   c-pagetitle(
     title="Journal"
     link="/journal"
+    lede="The long view of designing and building for the needs of real people."
   )
   main(role="main")
     .container

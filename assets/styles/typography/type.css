@@ -82,35 +82,20 @@ h2 {
 
 a.title,
 .title > a {
-  background-image: none !important;
+  // background-image: none !important;
 }
 
-/*.title-ruled {
-  position: relative;
-
-  & a {
-    background: var(--color-bg);
-    padding-right: 1rem;
-    position: relative;
-  }
-
-  &:before {
-    background-color: var(--color-title);
-    content: "";
-    height: 1px;
-    left: 0;
-    position: absolute;
-    top: calc(0.375 * 1.5625em);
-    width: 100%;
-  }
-}*/
-
-.title-ruled {
+.title--ruled {
   border-top: 1px solid var(--color-title);
   margin-top: calc(1.25 * var(--s5));
   padding-top: var(--s2);
 }
 
+.title--subscribe {
+  // border-width: 2px;
+  border-color: var(--color-highlight);
+  color: var(--color-highlight);
+}
 
 /*
   -------------------------------------------------
@@ -168,7 +153,6 @@ blockquote {
 }
 
 .intro,
-.post p,
 blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -186,7 +170,7 @@ blockquote p {
 blockquote p {
   &:before {
     content: "“";
-    left: 1.4375rem;
+    // left: 1.4375rem;
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);
@@ -230,7 +214,7 @@ h3 {
   margin-bottom: var(--s2);
 
   @media (--small-viewport) {
-    margin-bottom: var(--s3);
+    margin-bottom: var(--s2);
   }
 
   &:not(:first-child) {
@@ -239,6 +223,25 @@ h3 {
     @media (--small-viewport) {
       margin-top: var(--s5);
     }
+  }
+}
+
+/* illusion: manages .figure & .form in context */ 
+.title--ruled + .figure,
+p + .form {
+  margin-top: calc(0.666 * var(--s4));
+
+  @media (--large-viewport) {
+    margin-top: calc(0.666 * var(--s5));
+  }
+}
+
+/* illusion: manages .figure before .title--ruled in context */ 
+.figure ~ .title--ruled {
+  margin-top: calc(1.5 * var(--s4));
+
+  @media (--large-viewport) {
+    margin-top: calc(1.5 * var(--s5));
   }
 }
 
@@ -267,64 +270,74 @@ blockquote + h2,
 }
 
 /* 
+  -------------------------------------------------
 
   Post & about themes 
 
+  -------------------------------------------------
  */
 
-.textscope-post {
+.journal-scope {
   @media (--medium-viewport) {
     width: calc(100% * 2/3);
   }
 }
 
-.textscope-post p strong,
-.textscope-post p em,
-.textscope-post blockquote {
-  font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
+.journal-scope p,
+.journal-scope ol,
+.journal-scope ul,
+.journal-scope blockquote,
+.journal-scope h2 {
+  width: auto;
 }
 
-.textscope-post p strong {
-  color: var(--color-text-light);
+.journal-scope p strong,
+.journal-scope p em,
+.journal-scope blockquote {
+  // font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
 }
 
-.textscope-post .intro,
-.textscope-post blockquote {
+.journal-scope .intro,
+.journal-scope blockquote {
   @media (--medium-viewport) {
+    margin-left: 0;
     padding-left: 0;
     padding-right: 0;
-    left: 0;
   }
 }
 
-.textscope-post blockquote {
+.journal-scope blockquote {
   @media (--small-viewport) {
-    margin-top: calc(2 * var(--s3));
-    margin-bottom: calc(2 * var(--s3));
+    margin-top: calc(2 * var(--s2));
+    margin-bottom: calc(2 * var(--s2));
   }
 }
 
-.textscope-post p + blockquote {
+.journal-scope p + blockquote {
   @media (--small-viewport) {
-    margin-top: calc(2 * var(--s3));
+    // margin-top: calc(2 * var(--s3));
   }
 }
 
-.textscope-post blockquote p {
+.journal-scope blockquote p {
   border: initial;
   border-left: 1px solid currentColor;
   margin-right: 7.5%;
   padding: initial;
-  padding-left: calc(1.5 * var(--s3));
+  padding-left: calc(1.5 * var(--s2));
+
+  @media (--small-viewport) {
+    padding-left: calc(1.5 * var(--s3));
+  }
 }
 
-.textscope-post blockquote p em {
+.journal-scope blockquote p em {
   display: table;
   font-size: 1em;
   margin-top: var(--s1);
 }
 
-.textscope-post .intro {
+.journal-scope .intro {
   margin-bottom: var(--s4);
 
   @media (--small-viewport) {
@@ -332,15 +345,7 @@ blockquote + h2,
   }
 }
 
-.textscope-post hr {
-  margin: var(--s5)) 0 !important;
-
-  @media (--small-viewport) {
-    margin: var(--s6) 0 !important;
-  }
-}
-
-.textscope-post hr {
+.journal-scope hr {
   background-color: transparent;
 
   &:after {

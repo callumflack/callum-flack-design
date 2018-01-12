@@ -3,7 +3,7 @@ div
   c-pagetitle(
     title="Work"
     link="/work"
-    lede="Selected projects since 2014"
+    lede="Selected projects since 2014."
   )
   main(role="main")
     //- .block--halfSandwich

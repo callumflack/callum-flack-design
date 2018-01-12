@@ -27,7 +27,7 @@
 
  /*
 
-    sizes
+    Sizes
  
   */ 
 
@@ -56,6 +56,8 @@
 
   --border-radius: 4px;
 
+  --field-spacing: 1rem 1.25rem;
+
   /* 
     
     Colors
@@ -65,12 +67,12 @@
   --color-brand: #00ffff;
   --color-highlight: #bee8fb;
   --color-highlight: #47bbff;
-  --color-highlight: #b32273;
   --color-highlight: #44729c;
+  --color-highlight: #b32273;
   --color-red: #ff3700;
   --color-title: #0a0a0a;
   --color-text: #8a8a8a;
-  --color-border: #ccc;
+  --color-border: #ddd;
   --color-neutral: #eee;
   --color-bg: #fdfdfd;
   --color-bg: #f9f9f9;

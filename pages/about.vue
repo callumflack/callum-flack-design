@@ -2,7 +2,8 @@
   div
     c-pagetitle(
       link="/about"
-      title="Callum Flack is a design-obsessed, code-based, systems-thinking craftsman."
+      title="About"
+      lede="Callum Flack is a design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
       .container

@@ -34,7 +34,7 @@ export default {
 
 .page {
   background-color: var(--color-bg);
-  padding-bottom: 50vh;
+  padding-bottom: 33.333333vh;
   position: relative;
   z-index: 3;
 }

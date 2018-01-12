@@ -4,8 +4,8 @@
     .toggle-logo
       .title
         a(href="#", @click.prevent="handleNavToggle")
-          span.pb Patter–
-          span.pb.align nworks
+          span.u-block Patter–
+          span.u-block.align nworks
         
 </template>
 
@@ -39,13 +39,6 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.pb {
-  display: block;
-  font-size: 1.05em;
-  line-height: 1.3;
-  /* transform: translateX(500px); */
-}
-
 .align {
   padding-left: 0.95em;
   padding-left: 1.333em;
@@ -54,6 +47,7 @@ export default {
   padding-left: 1.175em;
   padding-left: 0.8em;
   padding-left: 0.7em;
+  transform: translateY(-0.25em);
   /* transform: translateY(-0.333em); */
   /* transform: translateY(-11px); */
   /* transform: translateY(-24px); */
@@ -79,10 +73,10 @@ export default {
   }
 
   @media (min-width: 1488px) {
-    left: 5vw;
   }
 
   @media (min-width: 1648px) {
+    left: 5vw;
     top: var(--s7);
   }
 

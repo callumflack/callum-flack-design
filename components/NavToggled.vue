@@ -84,4 +84,24 @@ export default {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
 }
+
+/* 
+
+  modal theme
+
+ */
+
+.modal {
+  background-color: var(--color-metal);
+}
+
+.modal .container {
+  height: 100vh;
+}
+
+.modal .title,
+.modal .text,
+.modal .text--meta {
+  width: 100%;
+}
 </style>

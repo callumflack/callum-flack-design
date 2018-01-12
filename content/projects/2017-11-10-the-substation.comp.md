@@ -33,9 +33,6 @@ event grids allow easy persual without compromising the immersive experience.
 
 We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
-> Callum has helped us understand and fix many, many issues that we had with our site.
-> After working with him over 12 months, we're confidently growing our brand and our digital marketing is in good shape for the future. _Brad Spolding, Managing Director_
-
 > Callum has helped us understand and fix many, many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _Brad Spolding, Managing Director_
 
 @[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")

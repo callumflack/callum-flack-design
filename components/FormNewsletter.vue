@@ -1,6 +1,6 @@
 <template lang="pug">
 //- .formWrapper
-form.form-stroke(
+form.form(
   action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
   method="post", 
   name="mc-embedded-subscribe-form", 
@@ -9,7 +9,7 @@ form.form-stroke(
 )
   .form-group
     input(
-      placeholder="Your email address", 
+      placeholder="Your email", 
       type="email", 
       name="EMAIL", 
       value="", 
@@ -22,10 +22,10 @@ form.form-stroke(
         tabindex="-1", 
         value=""
       )
-    button.Button.Button--outline(
+    button.Button.Button--transparent.linkSignal(
       type="submit", 
       name="subscribe", 
-    ) {{buttonText}}
+    ) {{buttonText}} #[span.linkSignal-target →]
 </template>
 
 <script>
@@ -49,12 +49,19 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.form-stroke {
-  background-color: var(--color-bg);
-  padding: 2px;
+.form {
+  @media (--medium-viewport) {
+    width: 50%;
+  }
+}
 
-  @media (--small-viewport) {
-    padding: 3px;
+input {
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: none;
+  padding-left: 0;
+
+  &:focus {
+    border-color: var(--color-title);
   }
 }
 </style>

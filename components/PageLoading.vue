@@ -3,7 +3,7 @@
   //- .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
   .loading-page(v-if="loading")
     .container
-      .block--navbar
+      .block--masthead
         .title Patternworks
 </template>
 

@@ -16,7 +16,7 @@
     .Banner-text
       .container--tuck(v-if="imageUrl")
         div(:class="['Container', { 'is-right': alignRight, 'is-reset': hi }]", )
-          h1.title.color-white {{ heading }}
+          h1.title.color-bg {{ heading }}
             span(v-html="text")
           div(v-if="link")
             a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}

@@ -1,20 +1,33 @@
 <template lang="pug">
-  article(role="banner")
+  article
     c-pagetitle(
       :title="page.title", 
       link="/journal"
+      :lede="page.lede", 
     )
     .container(v-if="page.heroImage")
       figure.figure.figure--large
         img(:src="page.heroImage", alt="")
     main(role="main")
       .container
-        .textscope.textscope-post
+        .journal-scope
           no-ssr
             nuxtent-body(:body="page.body")
           
-          hr
-          p Thanks for reading! I like dialogue. Please #[a(href="https://twitter.com/callumflack") tweet] or #[a(href="mailto:callum@patternworks.com.au") email] comments. I also write a newsletter every week about what I've been into, where new posts will also be mentioned. It's great way to keep in touch. You should sign-up:
+          time.u-block.block--touch.text.text--meta(:date-time="page.date") Published: {{ page.published }}
+          p.text.text--meta(v-if="page.updated") Updated: {{ page.updated }}
+          p.text.text--meta.text-noIndent(v-if="page.note") {{ page.note }}
+          
+          .block(v-if="page.tweet")
+            //- hr.color-title.mb3
+            p.title.u-textCenter
+              | Comments?
+              br
+              a.visualLink.color-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
+          hr.block(v-else)
+          
+          h3.title.title--ruled Subscribe
+          p I send an email newsletter every Sunday with my notes for the past week—the stories and links I saw that were actually interesting, and why they mattered. It's a good way to keep in touch. You should sign up too:
           c-newsletter.text
 </template>
 
@@ -29,6 +42,11 @@ export default {
   },
   props: {
     title: String,
+    lede: String,
+    published: String,
+    updated: String,
+    note: String,
+    tweet: String,
     heroImage: String,
     heroVideo: String
   },
@@ -44,15 +62,4 @@ export default {
 
 <style>
 @import "../../assets/styles/vars.css";
-
-.Highlight {
-  background-color: var(--color-bg-blue);
-  background-color: color(var(--color-bg-blue) tint(20%));
-  background-color: #c6e4ff;
-  padding: var(--s3);
-
-  & p {
-    padding: initial;
-  }
-}
 </style>
