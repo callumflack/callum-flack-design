@@ -3,7 +3,7 @@
     .Banner-image.u-posFit(:class="[{ hi }]", v-if="imageUrl")
       img(:src="`/images/${imageUrl}`", alt="")
     .Banner-image.u-posFit.u-flex.u-flexAlignItemsCenter(v-if="figureUrl")
-      .Container
+      .container
         figure.Figure--large
           img(:src="`/images/${figureUrl}`", alt="")
       //- lazy-image(
@@ -14,16 +14,16 @@
         class='filter',
         :style='filterStyle')
     .Banner-text
-      .Container--tuck(v-if="imageUrl")
+      .container--tuck(v-if="imageUrl")
         div(:class="['Container', { 'is-right': alignRight, 'is-reset': hi }]", )
-          h1.Title.u-colorWhite {{ heading }}
+          h1.title.color-white {{ heading }}
             span(v-html="text")
           div(v-if="link")
             a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
           .u-marginT4(v-if="newsletter")
             c-formnews
-      .Container(v-else)
-        h1.Title {{ heading }}
+      .container(v-else)
+        h1.title {{ heading }}
           span(v-html="text")
         div(v-if="link")
           a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
@@ -88,7 +88,7 @@ export default {
   width: 100%;
 }
 
-.Banner-text .Title {
+.Banner-text .title {
   transform: translateX(-3px);
 }
 
@@ -110,17 +110,17 @@ export default {
  * with image 
  */
 
-.--withImage .Container {
+.--withImage .container {
   margin-left: 0;
   padding: 0;
 }
 
-.--withImage .Container.is-right {
+.--withImage .container.is-right {
   margin-left: auto;
   margin-right: 0;
 }
 
-.--withImage .Container.is-reset {
+.--withImage .container.is-reset {
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--grid-gutter);
@@ -140,13 +140,13 @@ export default {
   opacity: 0.25;
 }
 
-.--withFigure .Banner-text .Container {
+.--withFigure .Banner-text .container {
   /* background-color: var(--color-neutral);
   padding-top: var(--grid-gutter);
   padding-bottom: var(--grid-gutter); */
 }
 
-.--withFigure .Title {
+.--withFigure .title {
   color: var(--color-border);
   color: white;
 }

@@ -1,7 +1,6 @@
 <template lang="pug">
-  .FigureWrapper
-    figure(:class="figureClasses")
-      img(:src="src", alt="src")
+  figure(:class="figureClasses")
+    img(:src="src", alt="src")
 </template>
 
 <script scoped>

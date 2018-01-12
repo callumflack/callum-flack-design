@@ -1,6 +1,7 @@
-
 /*
- * Base HTML elements
+
+  Base HTML elements
+
  */
 
 html,
@@ -8,8 +9,4 @@ body {
 }
 
 html {
-}
-
-body {
-  background-color: var(--color-bg);
 }

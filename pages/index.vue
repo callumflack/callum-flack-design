@@ -1,24 +1,24 @@
 <template lang="pug">
 div
   c-pagetitle(
-    title="Callum Flack Design + Development"
-    link="/about"
-    massive="Digital brands & products for makers & shakers"
+    title="Digital brands + services for makers + shakers"
+    link="/"
+    lede="Callum Flack does graphic design, user experience design and frontend development that helps individuals, groups and businesses carve their path"
   )
 
   main(role="main")
-    .Container
+    .container
       figure.Figure.Figure--large
         nuxt-link.Work.LinkSignal.u-noVisualLink(to="/work")
           .FlexEmbed
             .FlexEmbed-ratio.FlexEmbed-ratio--16by9
             .FlexEmbed-content
-              .u-posPin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-bgColorWhite
-                .Title.u-textCenter
+              .pin.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.bgcolor-white
+                .title.text-Center
                   | View the work #[span.LinkSignal-target →]
-              img.u-width100.u-posRelative(src="/images/loop-04.gif")
+              img.w100.u-posRelative(src="/images/loop-04.gif")
 
-      .TextScope
+      .textscope
         p
           | Hi, I’m Callum. 
           nuxt-link(to="/about") I'm interested to know about you,
@@ -28,15 +28,15 @@ div
         p Work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. Want to know more? Read the 
           nuxt-link(to="/journal") Journal:
 
-        blockquote.Figure.Post.u-noQuote
+        blockquote.Figure.post.no-quote
           nuxt-link.u-noVisualLink.LinkSignal(to="/journal/designers-should-code")
-            h1.Title.u-width100.u-marginT0.u-marginB3 Designers should code #[span.LinkSignal-target →]
+            h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.LinkSignal-target →]
             p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
 
         //- h2 Follow curiosity, find delight
         //- p I write a newsletter every week about what I've found. It's great way to keep in touch. You should sign-up:
         
-        //- c-newsletter.Text
+        //- c-newsletter.text
 
 </template>
 
@@ -74,7 +74,7 @@ export default {
   background-color: var(--color-metal);
 }
 
-.Post {
+.post {
   left: 50% !important;
   padding-left: 0 !important;
 
@@ -85,7 +85,7 @@ export default {
   }
 }
 
-.Post-image {
+.post-image {
   background-color: var(--color-text);
   background-image: url("/images/post-bubble.jpg");
   background-size: cover;
@@ -96,17 +96,17 @@ export default {
   }
 }
 
-.Post-summary {
+.post-summary {
   background-color: var(--color-neutral);
   padding: var(--s4);
   padding-right: var(--s2);
 }
 
-.Post-title {
+.post-title {
   transform: translateY(-1.75em);
 }
 
-.Post-titleX {
+.post-titleX {
   display: inline;
   margin: 0 !important;
   position: absolute;

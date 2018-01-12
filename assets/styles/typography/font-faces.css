@@ -1,11 +1,11 @@
 /*
- * Font-faces
- * ----------
+
+  Font-faces
+
  */
 
 @font-face {
   font-family: var(--font-regular);
-  src: url("~static/fonts/AttenNew-Book.woff") format("woff");
   src: url("~static/fonts/Graphik-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;

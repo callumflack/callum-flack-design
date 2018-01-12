@@ -5,7 +5,7 @@ div
     link="/journal"
   )
   main(role="main")
-    .Container
+    .container
       .Grid.Grid--alignCenter.Grid--withTinyGutter
         c-post(
           v-for="post in posts"

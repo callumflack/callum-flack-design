@@ -2,10 +2,10 @@
  * Forms
  */
 
-.Form {
+.form {
 }
 
-.Form-group {
+.form-group {
   background-color: var(--color-bg);
   display: flex;
   flex-direction: column;

@@ -1,5 +1,4 @@
 /*
-  -------------------------------------------------
   
   Variables
 
@@ -8,9 +7,8 @@
   Single variables within media queries are a great idea:
   https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
 
-  But postcss-custom-properties limits vars to the :root:
-  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
-  https://github.com/postcss/postcss-custom-properties
+  …but postcss-custom-properties limits vars to the :root:
+  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —> https://github.com/postcss/postcss-custom-properties
   
   :root { --s-title: 20px; }
 
@@ -18,7 +16,6 @@
     :root { --s-title: 40px; }
   }
 
-  -------------------------------------------------
 */
 
 /* eslint-disable */
@@ -30,9 +27,11 @@
   @custom-media --large-viewport (min-width: 1280px);
   @custom-media --xlarge-viewport (min-width: 1600px);
 
-  /*
-   * sizes
-   */ 
+ /*
+
+    sizes
+ 
+  */ 
 
   --grid-gutter: 3rem;
   --spacer: 24px;
@@ -60,7 +59,9 @@
   --border-radius: 4px;
 
   /* 
-   * Colors
+    
+    Colors
+  
    */
    
   --color-brand: #00ffff;
@@ -79,7 +80,9 @@
   --color-metal: #cdd8e2;
 
   /* 
-   * Typefaces
+  
+    Typefaces
+  
    */
 
   --font-regular: "Regular";
@@ -90,38 +93,30 @@
   --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* 
-   * Font sizes
-   * For your thoughts: http://type-scale.com/
+  
+    Font sizes
+    For your thoughts: http://type-scale.com/
+   
    */
 
-  --s-massive: 3em;
-  --s-title: 1.125em;
-  --s-subtitle: 3em;
-  --s-heading: var(--s-title);
-  --s-subheading: 1.5em;
+  --s-text-unit: 1.5625;
   --s-text: 1.5625em;
   --s-text-meta: 1.125em;
-  --s-text-sm: 0.875em;
-  
-  --s-text-unit: 1.5;
 
   /* 
-   * ls & lh 
+  
+    ls & lh 
+   
    */
   
-  --ls-heading: -0.0225em;
-  --ls-heading-sm: -0.005em;
-  --ls-body: -0.005em;
   --ls-text: -0.025em;
-  --ls-meta: -0.0125em; /*0.075em*/
-
-  --lh-heading: 1;
-  --lh-subheading: 1.2;
-  --lh-text: 1.4; /*1.347826087*/
-  --lh-meta: 1.3;
+  --ls-meta: -0.0125em;
+  --lh-text: 1.4;
 
   /* 
-   * Transitions 
+  
+    Transitions 
+  
    */
 
   --transition-duration: 0.2s;

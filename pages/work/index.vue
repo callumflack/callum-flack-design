@@ -3,11 +3,11 @@ div
   c-pagetitle(
     title="Work"
     link="/work"
-    massive="Selected projects since 2014"
+    lede="Selected projects since 2014"
   )
   main(role="main")
-    //- .Block--halfSandwich
-      .Container
+    //- .block--halfSandwich
+      .container
         .Meta
           | Filter projects by:&nbsp;
           br
@@ -17,11 +17,11 @@ div
             href="#"
             :class="[{ 'is-active': tag === activeTag }]"
           )
-            span.Title-visualLink {{tag}}
+            span.title-visualLink {{tag}}
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
-    .Container
+    .container
       .Grid.Grid--withTinyGutter
         c-project(
           v-if="project.featured"

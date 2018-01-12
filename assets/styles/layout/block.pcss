@@ -1,14 +1,10 @@
 /* 
- * Block
+
+  Block
+  
  */
 
-
-/* 
- Used elsewhere:
- - .Figure but using padding 
-*/
-
-.Space {
+.block--navbar {
   margin-bottom: 0;
   padding: var(--s6) 0 var(--s5);
 
@@ -24,19 +20,7 @@
   }
 }
 
-.Block {
-  margin-bottom: var(--s5);
-
-  @media (--medium-viewport) {
-    margin-bottom: var(--s6);
-  }
-
-  @media (--large-viewport) {
-    margin-bottom: var(--s7);
-  }
-}
-
-.Block--sandwichPadding {
+.block {
   padding: var(--s5) 0;
 
   @media (--medium-viewport) {
@@ -48,7 +32,7 @@
   }
 }
 
-.Block--half {
+.block--half {
   margin-bottom: var(--s4);
 
   @media (--medium-viewport) {
@@ -60,7 +44,7 @@
   }
 }
 
-.Block--touch {
+.block--touch {
   margin-top: var(--s3);
 
   @media (--medium-viewport) {

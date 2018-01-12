@@ -1,8 +1,10 @@
 /*
- * arrows
+
+  arrows
+
  */
 
-.u-arrowEast {
+.arrow-east {
   border-top: 0.3125em solid transparent;
   border-bottom: 0.3125em solid transparent;
   border-left: 0.4375em solid;
@@ -13,7 +15,7 @@
   width: 0;
 }
 
-.u-arrowSouth {
+.arrow-south {
   border-right: 0.3125em solid transparent;
   border-left: 0.3125em solid transparent;
   border-top: 0.4375em solid;
@@ -24,75 +26,63 @@
 }
 
 /*
- * colors
+
+  colors
+
  */
 
-.u-colorBrand {
+.color-brand {
   color: var(--color-brand) !important;
 }
-.u-colorHighlight {
+.color-highlight {
   color: var(--color-highlight) !important;
 }
-.u-colorTitle {
+.color-title {
   color: var(--color-title) !important;
 }
-.u-colorText {
+.color-text {
   color: var(--color-text) !important;
 }
-.u-colorBorder {
+.color-border {
   color: var(--color-border) !important;
 }
-.u-colorNeutral {
+.color-neutral {
   color: var(--color-neutral) !important;
 }
-.u-colorWhite {
+.color-white {
   color: var(--color-bg) !important;
 }
-
-.u-colorTextLightBlock * {
+.color-textBlock > * {
   color: var(--color-text-light) !important;
 }
 
-.Red {
-  color: #0070c9 !important;
-  color: #ed4d21 !important;
-  color: #0085ff !important;
-  color: #0070c9 !important;
-  color: #ff3700 !important;
-  color: #FF6F00 !important;
-}
-
-
 /*
- * bg colors
+
+  bg colors
+
  */ 
 
-.u-bgColorTitle {
+.bgcolor-title {
   background-color: var(--color-title) !important;
 }
-.u-bgColorText {
+.bgcolor-text {
   background-color: var(--color-text) !important;
 }
-.u-bgColorBrand {
+.bgcolor-brand {
   background-color: var(--color-brand) !important;
 }
-.u-bgColorBorder {
+.bgcolor-border {
   background-color: var(--color-border) !important;
 }
-.u-bgColorNeutral {
+.bgcolor-neutral {
   background-color: var(--color-neutral) !important;
 }
-.u-bgColorWhite {
-  background-color: white !important;
+.bgcolor-white {
+  background-color: var(--color-bg) !important;
 }
-.u-bgColorTransparent {
+.bgcolor-transparent {
   background-color: transparent !important;
 }
-
-
-/*
- * hr rules
- */
 
 
 /*
@@ -123,13 +113,13 @@
  * Text helpers
  */
 
-.u-textLowercase {
+.text-lowercase {
   text-transform: lowercase !important;
 }
-.u-textCapitalise {
+.text-capitalise {
   text-transform: capitalize !important;
 }
-.u-noTextIndent {
+.u-noIndent {
   text-indent: 0 !important;
 }
 
@@ -141,7 +131,7 @@
  * positions & layout 
  */
 
-.u-coverImage {
+.coverImage {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +140,7 @@
   // max-width: 600px;
 }
 
-.u-posPin {
+.pin {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -158,36 +148,24 @@
   top: 0;
 }
 
-.u-height100 {
+.h100 {
   height: 100% !important;
 }
 
-.u-width100 {
+.w100 {
   width: 100% !important;
 }
 
-.u-width50 {
+.w50 {
   width: 50% !important;
 }
 
-.u-sm-width50 {
+.sm-w50 {
   @media (--small-viewport) {
     width: 50% !important;
   }
 }
 
-/*
- * container & block utils
- */
-
-.u-containerWidth {
+.wContainer {
   max-width: var(--container);
-}
-
-.u-containerWidthLarge {
-  max-width: var(--container-lg);
-}
-
-.u-blockInset {
-  padding: 30px 24px;
 }

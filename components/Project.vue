@@ -1,16 +1,16 @@
 <template lang="pug">
   div(:class="cellClass")
-    nuxt-link.Project.Block--half(:to="link")
-      figure.Project-image
+    nuxt-link.project.block--half(:to="link")
+      figure.project-image
         c-lazyimage(project, :src="image", v-if="cloudinary")
         img(:src="image", v-else)
-      .Project-text
-        h2.Title
-          span.Project-visualLink {{ title }}
-        p.Project-subtext.Text.Text--meta
+      .project-text
+        h2.title
+          span.project-visualLink {{ title }}
+        p.project-subtext.text.text--meta
           span.u-marginR1(v-if="year") {{ year }}
           span(v-if="tags") {{ tags }}
-          span.Project-divider &nbsp;——&nbsp;
+          span.project-divider &nbsp;——&nbsp;
           | {{ headline }}
 
 </template>
@@ -53,22 +53,22 @@ export default {
 /* .Grid-cell:nth-child(7), */
 /* .Grid-cell:nth-child(8), */
 .Grid-cell:nth-child(9) {
-  & .Project {
+  & .project {
     margin-bottom: 0 !important;
   }
 }
 
-.Project {
+.project {
   display: block;
 }
 
 /* use the SVG filter that's secreted on work/index */
 /* reused & scoped in LazyImage */
-.Project:hover img {
+.project:hover img {
   filter: url("#gray");
 }
 
-.Project-text h2 {
+.project-text h2 {
   margin: var(--s2) 0;
 
   @media (--small-viewport) {
@@ -76,7 +76,7 @@ export default {
   }
 }
 
-.Project-subtext {
+.project-subtext {
   color: var(--color-text);
   width: 80%;
 
@@ -89,7 +89,7 @@ export default {
   }
 }
 
-.Project-divider {
+.project-divider {
   letter-spacing: -0.2em;
   /* margin-left: -0.1em; */
   margin-right: 0.2em;

@@ -2,9 +2,9 @@
 .toggle
   .u-posRelative
     .toggle-logo
-      .Title
+      .title
         a(href="#", @click.prevent="handleNavToggle")
-          span.pb patter–
+          span.pb Patter–
           span.pb.align nworks
         
 </template>
@@ -53,6 +53,7 @@ export default {
   padding-left: 1.2em;
   padding-left: 1.175em;
   padding-left: 0.8em;
+  padding-left: 0.7em;
   /* transform: translateY(-0.333em); */
   /* transform: translateY(-11px); */
   /* transform: translateY(-24px); */
@@ -93,35 +94,7 @@ export default {
 .toggle-logo {
   position: relative;
   display: inline-block;
-
-  & .Title {
-    /* font-family: var(--font-medium), var(--font-stack-sans); */
-    /* font-weight: 500; */
-  }
 }
-
-/*.Navbar {
-  background-color: transparent;
-  opacity: 1;
-  position: relative;
-  transform: translateY(0);
-  transition: opacity var(--transition-duration),
-    transform 250ms var(--transition-duration);
-  width: 100%;
-  z-index: 1;
-
-  &.hidden {
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity var(--transition-duration),
-      transform 250ms var(--transition-duration);
-  }
-}
-
-.Navbar a {
-  white-space: initial !important;
-  z-index: 99;
-}*/
 
 .nuxt-link-active {
 }

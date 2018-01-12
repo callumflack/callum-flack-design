@@ -4,9 +4,9 @@
       c-pagetitle(
         :title="page.title"
         link="/work"
-        :massive="page.lede"
+        :lede="page.lede"
       )
-      .Container
+      .container
         c-movie(
           frame, 
           large, 
@@ -23,8 +23,8 @@
           )
           img(:src="page.heroImage", v-else)
     main(role="main")
-      .Container
-        nuxtent-body.TextScope(:body="page.body")
+      .container
+        nuxtent-body.textscope(:body="page.body")
 </template>
 
 <script>
@@ -65,8 +65,8 @@ export default {
  * Project details addendum 
  */
 
-.Project-details p,
-.Project-details ul {
+.project-details p,
+.project-details ul {
   font-size: 0.75rem !important;
   text-indent: 0;
 
@@ -80,8 +80,8 @@ export default {
   }
 }
 
-.Project-details p,
-.Project-details ul {
+.project-details p,
+.project-details ul {
   margin: 13px 0;
 }
 </style>

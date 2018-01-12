@@ -2,11 +2,10 @@
   div(:class="currentPageClass")
     c-toggle
     c-nav-toggled(role="navigation")
-    .Page
+    .page
       nuxt
-    //- .PageSpacer
-    .FooterSpacer
-    footer.Footer(role="contentinfo")
+    .footer-spacer
+    footer.footer(role="contentinfo")
       c-nav
 
 </template>
@@ -33,36 +32,20 @@ export default {
 <style>
 @import "../assets/styles/vars.css";
 
-.Page {
+.page {
   background-color: var(--color-bg);
   padding-bottom: 50vh;
   position: relative;
   z-index: 3;
 }
 
-.PageSpacer {
-  background: linear-gradient(to bottom, #fdfdfd 0%, transparent 100%);
-  height: 25vh;
-  position: relative;
-  z-index: 3;
-}
-
-.FooterSpacer {
-  height: 75vh;
+.footer-spacer {
   height: 100vh;
 }
 
-.Footer {
-  /* background: linear-gradient(180deg, #fdfdfd 0%, #f3f3f3 100%); */
-  /* background: linear-gradient(180deg, #fdfdfd 0%, #eee 100%); */
-  /* background-color: #00b4ff;
-  background-color: #47bbff;*/
-  /* background: linear-gradient(180deg, #fdfdfd 0%, rgba(71, 187, 255, 0.25) 100%); */
-  /* background: linear-gradient(180deg, #fdfdfd 0%, #d5d5d5 90%); */
-  background-color: var(--color-metal);
-  /* background-color: transparent; */
-
+.footer {
   align-items: flex-end;
+  background-color: var(--color-metal);
   display: flex;
   height: 100vh;
   opacity: 1;
@@ -75,7 +58,7 @@ export default {
   -webkit-backface-visibility: hidden;
 }
 
-.Footer > * {
+.footer > * {
   width: 100%;
 }
 

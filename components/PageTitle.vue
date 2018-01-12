@@ -1,19 +1,16 @@
 <template lang="pug">
   header.Navbar
-    .Container
-      .Space
-        h3.Title(v-if="title")
+    .container
+      .block--navbar
+        h3.title(v-if="title")
           nuxt-link(:to="link", v-html="title")
-        h1.Text(v-if="massive", v-html="massive")
-        //- p.Text(v-if="lede", v-html="lede")
+        h1.text(v-if="lede", v-html="lede")
 </template>
 
 <script>
 export default {
   name: "page-title",
   props: {
-    section: String,
-    massive: String,
     title: String,
     lede: String,
     link: String
@@ -24,7 +21,7 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Navbar .Space {
+.Navbar .block--navbar {
   @media (--small-viewport) {
     width: 50%;
   }

@@ -1,5 +1,7 @@
 /*
- * Link
+
+  Link
+
  */
 
 a,
@@ -12,9 +14,9 @@ button {
 
 p a:not(.Button),
 p a:not(.LinkSignal),
-.TextScope a:not(.Button),
-.Title--sub.is-active .Title-visualLink,
-.Title--sub:hover .Title-visualLink {
+.textscope a:not(.Button),
+.title--sub.is-active .title-visualLink,
+.title--sub:hover .title-visualLink {
   background-image: 
     linear-gradient(var(--color-bg), var(--color-bg)), 
     linear-gradient(var(--color-bg), var(--color-bg)), 
@@ -48,7 +50,7 @@ p a:not(.LinkSignal),
 
 /*.link.is-active*/
 /*.nuxt-link-active span,*/
-.Project:hover .Project-visualLink {
+.project:hover .project-visualLink {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 2px 2px;
   background-repeat: repeat-x;
@@ -60,7 +62,7 @@ p a:not(.LinkSignal),
   }
 }
 
-.Modal .nuxt-link-active span {
+.modal .nuxt-link-active span {
   // background-image: linear-gradient(var(--color-bg), var(--color-bg));
 }
 

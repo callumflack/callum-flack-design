@@ -1,7 +1,7 @@
 <template lang="pug">
-  .Container
-    .Space
-      nav.Title
+  .container
+    .block--navbar
+      nav.title
         c-navlink(
           v-for="item in navLinks"
           :key="item.label"
@@ -10,7 +10,7 @@
           :currentPage="currentPage"
           :exact="item.exact"
         )
-      .Text.Text--meta.u-colorTitle.Block--touch
+      .text.text--meta.color-title.block--touch
         c-navlink(
           v-for="item in navContacts"
           :key="item.label"
@@ -18,7 +18,7 @@
           :link="item.link"
           external
         )
-      //- .Text--small.u-marginT2
+      //- .text--small.u-marginT2
         c-navlink(
           v-for="item in navButtons",
           :key="item.label",

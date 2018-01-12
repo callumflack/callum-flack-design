@@ -149,7 +149,7 @@ export default {
 }
 
 /* use the SVG filter that's secreted on work/index */
-.Project:hover img {
+.project:hover img {
   filter: url("#gray");
 }
 </style>

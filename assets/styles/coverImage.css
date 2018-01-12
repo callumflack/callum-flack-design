@@ -6,7 +6,7 @@
 
 /* ALT
 
-.Project-image {
+.project-image {
   @apply --stick;
   background-color: var(--color-hilight);
   height: 100%;
@@ -17,26 +17,26 @@
 
 */
 
-.CoverImage {
+.coverimage {
   @apply --stick;
   background-color: var(--color-hilight);
   max-width: initial;
 }
 
-.CoverImage--byWidth {
+.coverimage--byWidth {
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.CoverImage--byHeight {
+.coverimage--byHeight {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
 }
 
 /* use in conjunction with var(--sticky) */
-.CoverImage--bg {
+.coverimage--bg {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

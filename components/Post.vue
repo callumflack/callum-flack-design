@@ -1,14 +1,14 @@
 <template lang="pug">
   div(:class="cellClass")
-    nuxt-link.Project.Block--half(:to="link")
-      figure.Project-image
+    nuxt-link.project.block--half(:to="link")
+      figure.project-image
         img(v-if="image", :src="image")
-      .Project-text
-        h2.Title
-          span.Project-visualLink(v-html="title")
-        p.Project-subtext.TextScope-reset
+      .project-text
+        h2.title
+          span.project-visualLink(v-html="title")
+        p.project-subtext.textscope-reset
           span(v-if="date") {{ date }}
-          span.Project-divider ——
+          span.project-divider ——
           | {{ headline }}
 </template>
 
@@ -44,16 +44,16 @@ export default {
 /* .Grid-cell:nth-child(7), */
 /* .Grid-cell:nth-child(8), */
 .Grid-cell:nth-child(9) {
-  & .Project {
+  & .project {
     margin-bottom: 0 !important;
   }
 }
 
-.Project {
+.project {
   display: block;
 }
 
-.Project-text h2 {
+.project-text h2 {
   margin: var(--s2) 0;
 
   @media (--small-viewport) {
@@ -61,7 +61,7 @@ export default {
   }
 }
 
-.Project-subtext {
+.project-subtext {
   color: var(--color-text);
   width: 80%;
 
@@ -74,7 +74,7 @@ export default {
   }
 }
 
-.Project-divider {
+.project-divider {
   letter-spacing: -0.2em;
   margin-left: 0.1em;
   margin-right: 0.2em;

@@ -5,11 +5,11 @@
       title="Callum Flack is a design-obsessed, code-based, systems-thinking craftsman."
     )
     section(role="banner")
-      .Container
+      .container
         c-image(portrait, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
-      .Container
-        .TextScope
+      .container
+        .textscope
           nuxtent-body(:body="page.body")
 </template>
 

@@ -1,36 +1,10 @@
 /* 
- * Container 
+
+  Container 
+
  */
 
-.Column {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
-  @media (--small-viewport) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  @media (--medium-viewport) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  @media (--large-viewport) {
-    /* ideas from thisalso.com */ 
-    // padding-left: calc( ( ( ( (100vw - 15rem ) / 12) * 2 ) + (1rem * 1) ) + 1.5rem );
-    // padding-right: calc(((((100vw - (15rem))/ 12) * 2) + (1rem * 1)) + 1.5rem);
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  @media (--xlarge-viewport) {
-    padding-left: 16.666667vw;
-    padding-right: 16.666667vw;
-  }
-}
-
-.Container {
+.container {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -52,7 +26,7 @@
  */ 
 
 .Figure--tuck,
-.Container--tuck {
+.container--tuck {
   margin: 0;
   max-width: initial;
   padding-left: var(--grid-gutter);

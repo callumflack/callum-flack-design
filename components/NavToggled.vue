@@ -16,9 +16,9 @@ export default {
   computed: {
     navClass() {
       return [
-        "Modal",
+        "modal",
         {
-          hidden: !this.isVisible, // u-hiddenVisually?
+          hidden: !this.isVisible,
           "delay-transition": this.delayTransition
         }
       ];
@@ -56,8 +56,7 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Modal {
-  /* background-color: rgba(255, 255, 255, 1); */
+.modal {
   bottom: 0;
   left: 0;
   opacity: 1;
@@ -70,18 +69,18 @@ export default {
 
   &:hover,
   &:focus {
-    /* cursor: url("../static/images/icon-close.png"), auto; */
+    cursor: url("../static/images/icon-close.png"), auto;
   }
 }
 
-.Modal.hidden {
+.modal.hidden {
   opacity: 0;
   transform: translateY(100vh);
   transition: opacity var(--transition-duration),
     transform 0s var(--transition-duration);
 }
 
-.Modal.delay-transition {
+.modal.delay-transition {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
 }

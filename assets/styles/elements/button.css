@@ -1,3 +1,10 @@
+/*
+
+  Button
+  Capitalised so we get Suit's button, then override
+
+ */ 
+
 .Button {
   appearance: none;
   background-color: var(--color-text);
@@ -67,15 +74,11 @@
       inset 0 0 16px var(--color-title);
     color: var(--color-bg);
   }
-
-  @media (--small-viewport) {
-    // box-shadow: inset 0 0 0 1px;
-  }
 }
 
 /* 
  * transparent variation
- * used w/ .Title
+ * used w/ .title
  */
 
 .Button--transparent {

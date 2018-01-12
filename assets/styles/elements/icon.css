@@ -1,7 +1,9 @@
 /*
- * Icon
- * 1. so we can adjust it within <p>s.
- *    Imported 'svgicon' does the rest.
+ 
+  Icon
+  1. so we can adjust it within <p>s.
+     Imported 'svgicon' does the rest.
+
  */
 
 .svg-icon {

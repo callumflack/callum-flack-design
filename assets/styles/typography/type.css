@@ -28,12 +28,12 @@ body {
   -------------------------------------------------
  */
 
-/*.Project-details > em,
-.Project-details > li*/
+/*.project-details > em,
+.project-details > li*/
 body,
 blockquote p em,
-.TextScope-reset,
-.Text--small {
+.textscope-reset,
+.text--small {
   font-size: 0.75rem !important;
 
   @media (--small-viewport) {
@@ -57,11 +57,11 @@ blockquote p em,
 
 p,
 ul,
-.Text {
+.text {
   font-size: var(--s-text);
 }
 
-.Text--meta {
+.text--meta {
   font-size: var(--s-text-meta) !important;
 }
 
@@ -75,9 +75,8 @@ ul,
   -------------------------------------------------
  */
 
-.Title,
-.Subheading,
-.TextScope h2 {
+.title,
+h2 {
   color: var(--color-title);
   font-size: var(--s-text);
   font-weight: 400;
@@ -92,26 +91,34 @@ ul,
   -------------------------------------------------
  */
 
-.TextScope {
+p,
+ol,
+ul,
+blockquote,
+h2 {
   @media (--medium-viewport) {
     width: 50%;
   }
 }
 
-.TextScope p,
-.TextScope ol,
-.TextScope ul,
-.TextScope h2 {
+blockquote p {
+  width: 100%;
+}
+
+p,
+ol,
+ul,
+h2 {
   @media (--medium-viewport) {
     padding-right: calc(0.5 * var(--grid-gutter));
   }
 }
 
-.TextScope p + p {
+p + p {
   text-indent: 4rem;
 }
 
-.TextScope .Intro + p {
+.intro + p {
   text-indent: 0;
 }
 
@@ -123,17 +130,16 @@ ul,
   -------------------------------------------------
  */
 
-.Intro,
+.intro,
 blockquote {
   @media (--medium-viewport) {
+    margin-left: 50%;
     padding-left: calc(0.5 * var(--grid-gutter));
-    position: relative;
-    left: 100%;
   }
 }
 
-.Intro,
-.Post p,
+.intro,
+.post p,
 blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -147,6 +153,7 @@ blockquote p {
   }
 }
 
+/* quote */
 blockquote p {
   &:before {
     content: "“";
@@ -157,16 +164,16 @@ blockquote p {
   }
 }
 
-.u-noQuote p:before {
+.no-quote p:before {
   content: none !important;
 }
 
-.Intro em,
+.intro em,
 blockquote p em {
   display: table;
-  // font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);
+  /* method for resetting ems:
+  font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);*/
   font-size: var(--s-text-meta);
-  line-height: var(--lh-text);
   margin-top: var(--s1);
 
   @media (--large-viewport) {
@@ -182,14 +189,14 @@ blockquote p em {
   -------------------------------------------------
  */
 
-p,
+/*p,
 ul {
-  // margin-bottom: var(--s3);
+  margin-bottom: var(--s3);
 
   @media (--small-viewport) {
-    // margin-bottom: calc(2 * var(--s3));
+    margin-bottom: calc(2 * var(--s3));
   }
-}
+}*/
 
 h2 {
   margin-bottom: var(--s2);
@@ -199,7 +206,8 @@ h2 {
   }
 }
 
-.TextScope * + .Button {
+/* THIS? */
+* + .Button {
   margin-top: var(--s3);
 
   @media (--small-viewport) {
@@ -241,7 +249,7 @@ h2:not(:first-child) {
 
 blockquote:first-child,
 blockquote + h2,
-.Text--large:first-child {
+.text--large:first-child {
   margin-top: 0 !important;
 }
 
@@ -270,24 +278,24 @@ blockquote + h2,
   -------------------------------------------------
  */
 
-.TextScope-post {
+.textscope-post {
   @media (--medium-viewport) {
     width: calc(100% * 2/3);
   }
 }
 
-.TextScope-post p strong,
-.TextScope-post p em,
-.TextScope-post blockquote {
+.textscope-post p strong,
+.textscope-post p em,
+.textscope-post blockquote {
   font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
 }
 
-.TextScope-post p strong {
+.textscope-post p strong {
   color: var(--color-text-light);
 }
 
-.TextScope-post .Intro,
-.TextScope-post blockquote {
+.textscope-post .intro,
+.textscope-post blockquote {
   @media (--medium-viewport) {
     padding-left: 0;
     padding-right: 0;
@@ -295,20 +303,20 @@ blockquote + h2,
   }
 }
 
-.TextScope-post blockquote {
+.textscope-post blockquote {
   @media (--small-viewport) {
     margin-top: calc(2 * var(--s3));
     margin-bottom: calc(2 * var(--s3));
   }
 }
 
-.TextScope-post p + blockquote {
+.textscope-post p + blockquote {
   @media (--small-viewport) {
     margin-top: calc(2 * var(--s3));
   }
 }
 
-.TextScope-post blockquote p {
+.textscope-post blockquote p {
   border: initial;
   border-left: 1px solid currentColor;
   margin-right: 7.5%;
@@ -316,13 +324,13 @@ blockquote + h2,
   padding-left: calc(1.5 * var(--s3));
 }
 
-.TextScope-post blockquote p em {
+.textscope-post blockquote p em {
   display: table;
   font-size: 1em;
   margin-top: var(--s1);
 }
 
-.TextScope-post .Intro {
+.textscope-post .intro {
   margin-bottom: var(--s4);
 
   @media (--small-viewport) {
@@ -330,7 +338,7 @@ blockquote + h2,
   }
 }
 
-.TextScope-post hr {
+.textscope-post hr {
   margin: var(--s5)) 0 !important;
 
   @media (--small-viewport) {
@@ -338,7 +346,7 @@ blockquote + h2,
   }
 }
 
-.TextScope-post hr {
+.textscope-post hr {
   background-color: transparent;
 
   &:after {

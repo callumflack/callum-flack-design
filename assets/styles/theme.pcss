@@ -1,102 +1,7 @@
 /* 
-  -------------------------------------------------
-
-  Index page 
-
-  -------------------------------------------------
- */
-
-/*.page-index {
-  & .Page {
-    background-color: var(--color-text);
-  }
-
-  & .Massive,
-  & .Title,
-  & .Text,
-  & .TextScope p,
-  & .TextScope h2,
-  & .TextScope li,
-  & .TextScope blockquote,
-  & .icon {
-    color: white !important;
-  }
-}*/
-
-/* 
-  -------------------------------------------------
-
-  Work page 
-
-  -------------------------------------------------
- */
-
-/*.page-work-page,
-.page-work-page .Page {
-  background-color: #dde6ee;
-  background-color: var(--color-neutral);
-
-  & .Button--outline:hover {
-    color: var(--color-neutral);
-  }
-
-  & p a:not(.Button),
-  & .TextScope a:not(.Button),
-  & .Project:hover .Project-visualLink {
-    background-image: 
-      linear-gradient(var(--color-neutral), var(--color-neutral)), 
-      linear-gradient(var(--color-neutral), var(--color-neutral)), 
-      linear-gradient(var(--color-text), var(--color-text));
-    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    text-shadow: 
-      0.03em 0 var(--color-neutral), 
-      -0.03em 0 var(--color-neutral), 
-      0 0.03em var(--color-neutral), 
-      0 -0.03em var(--color-neutral), 
-      0.06em 0 var(--color-neutral), 
-      -0.06em 0 var(--color-neutral), 
-      0.09em 0 var(--color-neutral), 
-      -0.09em 0 var(--color-neutral), 
-      0.12em 0 var(--color-neutral), 
-      -0.12em 0 var(--color-neutral), 
-      0.15em 0 var(--color-neutral), 
-      -0.15em 0 var(--color-neutral);
-    background-position: 0% 93%, 100% 93%, 0% 93%;
-
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-        background-position-y: 96%, 96%, 96%;
-    }
-  }
-
-  & .Project:hover .Project-visualLink {
-    background-size: 0;
-    box-shadow: inset 0 -1px 0 0 var(--color-neutral), inset 0 -3px 0 0 var(--color-text);
-  }
-}*/
-
-/* 
-  -------------------------------------------------
-
-  About page 
-
-  -------------------------------------------------
- */
-
-.page-about {
-  // background-color: var(--color-bg-blue);
-
-  .TextScope p:nth-child(2) {
-    // margin-left: 50%;
-  }
-}
-
-/* 
-  -------------------------------------------------
 
   Post page
 
-  -------------------------------------------------
  */
 
 .page-journal-page .Footer hr {
@@ -106,31 +11,29 @@
 }
 
 /* 
-  -------------------------------------------------
 
   Nav modal
 
-  -------------------------------------------------
  */
 
-.Modal {
+.modal {
   background-color: #ff8900;
   background-color: var(--color-text);
   background-color: var(--color-metal);
 }
-.Modal .Column {
+.modal .container {
   height: 100vh;
 }
 
-.Modal .Title,
-.Modal .Text,
-.Modal .Text--meta {
+.modal .title,
+.modal .text,
+.modal .text--meta {
   // margin: 0;
   // text-align: right;
   width: 100%;
 }
 
-.Modal hr {
+.modal hr {
   display: none;
 }
 

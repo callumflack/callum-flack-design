@@ -31,12 +31,12 @@ li {
   padding-left: 0 !important;
 }
 
-.TextScope ul {
+.textscope ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.TextScope li {
+.textscope li {
   position: relative;
 
   &:before {
