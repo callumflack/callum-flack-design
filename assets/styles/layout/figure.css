@@ -1,13 +1,11 @@
 /*
-  -------------------------------------------------
 
   Figures
 
-  -------------------------------------------------
  */
 
-.Figure {
-  margin: calc(1 * var(--s5)) auto;
+.figure {
+  margin: calc(1.25 * var(--s4)) auto;
   position: relative;
 
   & img {
@@ -15,37 +13,31 @@
   }
 
   @media (--large-viewport) {
-    margin: var(--s5) auto;
+    margin: calc(1.25 * var(--s5)) auto;
+  }
+
+  &:first-child {
+    margin-top: 0 !important;
   }
 }
 
-.Figure:first-child {
-  margin-top: 0 !important;
-}
-
-.Figure--frame {
+.figure--frame {
   border: 1px solid var(--color-border);
 }
 
-.Figure--portrait {
+.figure--portrait {
   @media (--small-viewport) {
     width: 50%;
     margin-left: 0;
   }
 }
 
-.Figure--large {
+.figure--large {
   left: calc(-50vw + 50%);
   padding: 0;
   width: 100vw;
 
-  @media (min-width: 1440px) {
-    // left: calc(-720px + 50%);
-    // width: 1440px;
-  }
   @media (min-width: 1488px) {
-    // padding-left: var(--grid-gutter);
-    // padding-right: var(--grid-gutter);
     left: calc(-50vw + 50%);
     width: 100vw;
   }

@@ -28,8 +28,6 @@ body {
   -------------------------------------------------
  */
 
-/*.project-details > em,
-.project-details > li*/
 body,
 blockquote p em,
 .textscope-reset,
@@ -80,6 +78,37 @@ h2 {
   color: var(--color-title);
   font-size: var(--s-text);
   font-weight: 400;
+}
+
+a.title,
+.title > a {
+  background-image: none !important;
+}
+
+/*.title-ruled {
+  position: relative;
+
+  & a {
+    background: var(--color-bg);
+    padding-right: 1rem;
+    position: relative;
+  }
+
+  &:before {
+    background-color: var(--color-title);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: calc(0.375 * 1.5625em);
+    width: 100%;
+  }
+}*/
+
+.title-ruled {
+  border-top: 1px solid var(--color-title);
+  margin-top: calc(1.25 * var(--s5));
+  padding-top: var(--s2);
 }
 
 
@@ -189,35 +218,27 @@ blockquote p em {
   -------------------------------------------------
  */
 
-/*p,
-ul {
-  margin-bottom: var(--s3);
+p:last-child,
+ul:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
 
-  @media (--small-viewport) {
-    margin-bottom: calc(2 * var(--s3));
-  }
-}*/
-
-h2 {
+h1,
+h2,
+h3 {
   margin-bottom: var(--s2);
 
   @media (--small-viewport) {
     margin-bottom: var(--s3);
   }
-}
 
-/* THIS? */
-* + .Button {
-  margin-top: var(--s3);
+  &:not(:first-child) {
+    margin-top: var(--s4);
 
-  @media (--small-viewport) {
-    margin-top: calc(2 * var(--s3));
-  }
-}
-
-p + blockquote {
-  @media (--small-viewport) {
-    // margin-top: calc(-2 * var(--s3));
+    @media (--small-viewport) {
+      margin-top: var(--s5);
+    }
   }
 }
 
@@ -231,51 +252,24 @@ blockquote {
   }
 }
 
-p:last-child,
-ul:last-child,
-blockquote:last-child {
-  margin-bottom: 0;
-}
-
-h2:not(:first-child) {
-  margin-top: calc(3 * var(--s3));
-  margin-top: var(--s4);
-
-  @media (--small-viewport) {
-    margin-top: calc(6 * var(--s3));
-    margin-top: var(--s5);
-  }
-}
-
 blockquote:first-child,
 blockquote + h2,
 .text--large:first-child {
   margin-top: 0 !important;
 }
 
+* + .Button {
+  margin-top: var(--s3);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  @media (--small-viewport) {
+    margin-top: calc(2 * var(--s3));
+  }
+}
 
 /* 
-  -------------------------------------------------
 
   Post & about themes 
 
-  -------------------------------------------------
  */
 
 .textscope-post {

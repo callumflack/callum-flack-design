@@ -9,11 +9,11 @@ export default {
   computed: {
     figureClasses() {
       return [
-        "Figure",
+        "figure",
         {
-          "Figure--portrait": this.portrait,
-          "Figure--large": this.large,
-          "Figure--frame": this.frame
+          "figure--portrait": this.portrait,
+          "figure--large": this.large,
+          "figure--frame": this.frame
         }
       ];
     }

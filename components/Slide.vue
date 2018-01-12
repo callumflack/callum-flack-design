@@ -4,7 +4,7 @@
       img(:src="`/images/${imageUrl}`", alt="")
     .Banner-image.u-posFit.u-flex.u-flexAlignItemsCenter(v-if="figureUrl")
       .container
-        figure.Figure--large
+        figure.figure--large
           img(:src="`/images/${figureUrl}`", alt="")
       //- lazy-image(
         v-if="backgroundImage",

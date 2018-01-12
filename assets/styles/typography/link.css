@@ -13,7 +13,7 @@ button {
 }
 
 p a:not(.Button),
-p a:not(.LinkSignal),
+p a:not(.linkSignal),
 .textscope a:not(.Button),
 .title--sub.is-active .title-visualLink,
 .title--sub:hover .title-visualLink {
@@ -43,13 +43,12 @@ p a:not(.LinkSignal),
   }
 }
 
+/* 
 
+  Title links 
+ 
+ */ 
 
-
-/* Title links */ 
-
-/*.link.is-active*/
-/*.nuxt-link-active span,*/
 .project:hover .project-visualLink {
   background-image: linear-gradient(currentColor, currentColor);
   background-size: 2px 2px;
@@ -62,26 +61,30 @@ p a:not(.LinkSignal),
   }
 }
 
-.modal .nuxt-link-active span {
-  // background-image: linear-gradient(var(--color-bg), var(--color-bg));
-}
+/* 
 
-/* no visual link */ 
+  no visual link 
 
-.u-noVisualLink {
+ */ 
+
+.noVisualLink {
   background-image: initial !important;
   text-decoration: initial !important;
   text-shadow: initial !important;
 }
 
-/* arrow signal */ 
+/* 
 
-.LinkSignal:hover .LinkSignal-target {
+  arrow signal 
+
+ */ 
+
+.linkSignal:hover .linkSignal-target {
   transform: translateX(1rem);
   transition: all 0.5s ease;
 }
 
-.LinkSignal-target {
+.linkSignal-target {
   display: inline-block;
   transform: translateX(0);
   transition: all 0.1s ease-out;

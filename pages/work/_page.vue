@@ -15,7 +15,7 @@
           :src="page.heroVideo",
           v-if="page.heroVideo"
         )
-        figure.Figure.Figure--large(v-else)
+        figure.figure.figure--large(v-else)
           c-lazyimage(
             :src="page.heroImage", 
             :ratio="page.heroRatio",

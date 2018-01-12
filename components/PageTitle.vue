@@ -27,6 +27,11 @@ export default {
   }
 }
 
+.title,
+.text {
+  margin: 0;
+}
+
 .nuxt-link-active {
 }
 
