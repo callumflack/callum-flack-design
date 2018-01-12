@@ -59,7 +59,7 @@
   color: white !important;
 }
 .color-textBlock > * {
-  color: var(--color-text-light) !important;
+  color: var(--color-text) !important;
 }
 
 /*
