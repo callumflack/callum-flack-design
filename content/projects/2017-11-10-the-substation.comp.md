@@ -39,7 +39,6 @@ We targeted usability and mobile performance in the upgrade to fulfil the needs 
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
-Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital
-marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
+Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 
 @[MarkdownButton](link="http://www.thesubstation.org.au/" label="Visit The Substation")

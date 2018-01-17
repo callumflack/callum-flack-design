@@ -128,6 +128,8 @@ h2 {
   }
 }
 
+/* h6 is used to define a markdown section */
+h6 + p,
 p + p {
   text-indent: 4rem;
 }
@@ -208,9 +210,11 @@ blockquote:last-child {
   margin-bottom: 0;
 }
 
+/* h6 is used to define a markdown section */
 h1,
 h2,
-h3 {
+h3,
+h6 {
   margin-bottom: var(--s2);
 
   @media (--small-viewport) {
@@ -226,7 +230,7 @@ h3 {
   }
 }
 
-/* illusion: manages .figure & .form in context */ 
+/* illusion: manages .figure & .form in context */
 .title--ruled + .figure,
 p + .form {
   margin-top: calc(0.666 * var(--s4));
@@ -236,7 +240,7 @@ p + .form {
   }
 }
 
-/* illusion: manages .figure before .title--ruled in context */ 
+/* illusion: manages .figure before .title--ruled in context */
 .figure ~ .title--ruled {
   margin-top: calc(1.5 * var(--s4));
 
@@ -248,7 +252,7 @@ p + .form {
 blockquote {
   margin-top: var(--s3);
   margin-bottom: var(--s3);
-  
+
   @media (--small-viewport) {
     margin-top: 0;
     margin-bottom: 0;
@@ -358,4 +362,10 @@ blockquote + h2,
     text-align: center;
     transform: translateY(-0.175em);
   }
+}
+
+/* h6 is used to define a markdown section */
+h6 {
+  font-size: var(--s-text);
+  margin-bottom: 0;
 }

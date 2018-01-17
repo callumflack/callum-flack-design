@@ -1,9 +1,8 @@
 <template lang="pug">
   article
     c-pagetitle(
-      :title="page.title", 
+      :title="page.title"
       link="/journal"
-      :lede="page.lede", 
     )
     .container(v-if="page.heroImage")
       figure.figure.figure--large
@@ -25,10 +24,7 @@
               br
               a.visualLink.color-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
           hr.block(v-else)
-          
-          h3.title.title--ruled Subscribe
-          p I send an email newsletter every Sunday with my notes for the past week—the stories and links I saw that were actually interesting, and why they mattered. It's a good way to keep in touch. You should sign up too:
-          c-newsletter.text
+          c-newsletter
 </template>
 
 <script>

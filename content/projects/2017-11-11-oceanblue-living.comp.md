@@ -40,4 +40,4 @@ allows OceanBlue Living to create high-impact social media at will. -->
 The goal of the website is to become a place people can dream of their perfect home and
 office space, and create a community around OceanBlue's works.
 
-@[MarkdownButton](link="https://oceanblueliving.com.au" label="Visit the site")
+@[MarkdownButton](link="https://oceanblueliving.com.au" label="Visit Oceanblue Living")

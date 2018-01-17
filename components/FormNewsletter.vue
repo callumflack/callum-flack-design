@@ -1,31 +1,34 @@
 <template lang="pug">
-//- .formWrapper
-form.form(
-  action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
-  method="post", 
-  name="mc-embedded-subscribe-form", 
-  target='_blank', 
-  novalidate=''
-)
-  .form-group
-    input(
-      placeholder="Your email", 
-      type="email", 
-      name="EMAIL", 
-      value="", 
-      required
-    )
-    div(style="position: absolute; left: -5000px;", aria-hidden="true")
+div
+  h3.title.title--ruled Subscribe
+  p I send an occassional email newsletter with notes of the stories, links and things-in-between that I found interesting, and why they resonated. You should sign up:
+  //- .formWrapper
+  form.form.text(
+    action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
+    method="post", 
+    name="mc-embedded-subscribe-form", 
+    target='_blank', 
+    novalidate=''
+  )
+    .form-group
       input(
-        type="text", 
-        name="b_027f0219cdd96399fb792993e_f1f20b580e", 
-        tabindex="-1", 
-        value=""
+        placeholder="Your email", 
+        type="email", 
+        name="EMAIL", 
+        value="", 
+        required
       )
-    button.Button.Button--transparent.linkSignal(
-      type="submit", 
-      name="subscribe", 
-    ) {{buttonText}} #[span.linkSignal-target →]
+      div(style="position: absolute; left: -5000px;", aria-hidden="true")
+        input(
+          type="text", 
+          name="b_027f0219cdd96399fb792993e_f1f20b580e", 
+          tabindex="-1", 
+          value=""
+        )
+      button.Button.Button--transparent.linkSignal(
+        type="submit", 
+        name="subscribe", 
+      ) {{buttonText}} #[span.linkSignal-target →]
 </template>
 
 <script>

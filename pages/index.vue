@@ -3,7 +3,7 @@ div
   c-pagetitle(
     title="Digital brands + services for makers + shakers"
     link="/"
-    lede="Callum Flack provides graphic design, user experience design and frontend development to help individuals, groups and businesses find, connect and service their audience."
+    lede="Callum Flack provides digital strategy, graphic design, user experience design and frontend development to help individuals, groups and businesses find, connect with and service their audience."
   )
 
   main(role="main")
@@ -16,7 +16,7 @@ div
               .pin.bgcolor-white.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter
                 .title.u-textCenter
                   | View the work #[span.linkSignal-target →]
-              img.w100.u-posRelative(src="/images/loop-04.gif")
+              img.w100.u-posRelative(src="/images/loop-05.gif")
       p
         nuxt-link(to="/about") Hi, I’m Callum.
         |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
@@ -26,17 +26,14 @@ div
 
       h3.title.title--ruled 
         nuxt-link(to="/journal") Journal
-      p I regularly write about designing and building for the needs of real people. To get a big picture view, read the 
+      p I write about designing and building human interfaces in the 
         nuxt-link(to="/journal") Journal.
         |  Here's the most recent:
       .figure.post.no-quote
         nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
           h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.linkSignal-target →]
-          p It's difficult to apply fine design sensibility to software products. But as a visual designer, the more agency you have in the product design process, the better the product.
-
-      h3.title.title--ruled Subscribe
-      p Everyone hungers for the experience of delight. I write a newsletter every week about what I've fed on. It fuels perspective. It's also great way to keep in touch. You should sign-up:
-      c-newsletter.text
+          p If you want to know how to make software for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with&#58; lessons learned by an ex-graphic designer.
+      c-newsletter
 </template>
 
 <script>

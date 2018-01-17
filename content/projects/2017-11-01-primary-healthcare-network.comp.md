@@ -1,8 +1,8 @@
 ---
 section: Projects
 title: Primary Healthcare Network
-headline: A mobile-first web app to survey patient well-being in North Queensland.
-lede: A mobile-first web app for <span style="color:rgb(110,190,68)">PRIMARY HEALTHCARE NETWORK</span> to survey patient well-being in North Queensland.
+lede: A mobile-first web app to survey patient well-being in North Queensland.
+note: This app is not publicly available.<br>Please get in touch for a demo.
 heroImage: /images/phn-hero.png
 thumbImage: /images/thumb-phn.jpg
 featured: true
@@ -31,5 +31,3 @@ We also provided guides and screencasts to clearly explain to staff how the surv
 @[MarkdownImage](src="/images/primary-healthcare-network-guide.png")
 
 We made a survey that immediately created value for PHN. It's an experience that patients and staff find fast, simple and easy. And the app is easily adaptable as we discover further use cases over time. This helps PHN to collect better data and increase the quality of their services.
-
-@[MarkdownButton](link="https://qolsurvey.primaryhealth.com.au" label="See the app")

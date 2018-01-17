@@ -6,6 +6,7 @@ div
     lede="Selected projects since 2014."
   )
   main(role="main")
+    //- sort by tags:
     //- .block--halfSandwich
       .container
         .Meta
@@ -26,13 +27,12 @@ div
         c-project(
           v-if="project.featured"
           v-for="project in visibleProjects"
+          post,
           :key="project.title"
-          featured,
           :link="project.permalink",
           :tags="project.tags",
           :year="project.year",
           :title="project.title",
-          :headline="project.headline",
           :lede="project.lede",
           :image="project.thumbImage",
           :cloudinary="project.cloudinary",
@@ -101,16 +101,15 @@ export default {
   async asyncData({ app }) {
     const projects = await app.$content("/projects").getAll();
 
-    const uniqueTags = projects.filter(project => project.tags).reduce((
-      tags,
-      project
-    ) => {
-      const projectTags = projectTagStringToList(project.tags);
-      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
+    const uniqueTags = projects.filter(project => project.tags).reduce(
+      (tags, project) => {
+        const projectTags = projectTagStringToList(project.tags);
+        const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
 
-      return [...tags, ...uniqueProjectTags];
-    },
-    [allTagName]);
+        return [...tags, ...uniqueProjectTags];
+      },
+      [allTagName]
+    );
 
     uniqueTags.sort();
 

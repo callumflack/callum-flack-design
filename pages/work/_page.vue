@@ -25,6 +25,7 @@
     main(role="main")
       .container
         nuxtent-body.textscope(:body="page.body")
+        p.block--touch.text.text--meta.text-noIndent(v-if="page.note", v-html="page.note")
 </template>
 
 <script>

@@ -34,13 +34,14 @@ travelling to meet in person.
 
 ## Contact
 
-Email: [callum@patternworks.com.au](mailto:callum@patternworks.com.au)<br> Phone:
-[+61(0) 408 767 540](tel:610-408-767-540)<br> Skype: callumflack
+Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">callum@patternworks.com.au</a><br>
+Phone: [+61(0) 408 767 540](tel:610-408-767-540)<br>
+Twitter: <a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">@callumflack</a><br>
+Skype: callumflack
 
 ## Connect
 
-<a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">Twitter</a><br>
-<a class="icon-targetblank" target="_blank" href="https://github.com/callumflack">Github</a><br>
 <a class="icon-targetblank" target="_blank" href="https://are.na/callum-flack">Arena</a><br>
 <a class="icon-targetblank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a><br>
+<a class="icon-targetblank" target="_blank" href="https://github.com/callumflack">Github</a><br>
 <a class="icon-targetblank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>

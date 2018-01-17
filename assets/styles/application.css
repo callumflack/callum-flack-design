@@ -15,6 +15,7 @@
 @import "elements/icon.css";
 @import "elements/img.css";
 @import "elements/form.css";
+@import "components/project-item.css";
 @import "utils.css";
 @import "utils-spacers.css";
 @import "theme.css";

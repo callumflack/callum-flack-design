@@ -2,7 +2,7 @@
 section: Projects
 title: Oceanblue Boats
 headline: A website to tell a story of fishing boats and far-away places.
-lede: A website that tells a story about building boats for far-away places.
+lede: A website that tells a story about building boats for those who want to get away.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
 thumbImage: /images/thumb-oceanblueboats.jpg
 year: 2017
@@ -32,4 +32,4 @@ local drawcards.
 As our relationship continues, we'll document their boats to build a library for
 ongoing brand marketing. This will position OceanBlue Boats as the craftspeople they are.
 
-@[MarkdownButton](link="https://oceanblueboats.com.au" label="Visit the site")
+@[MarkdownButton](link="https://oceanblueboats.com.au" label="Visit Oceanblue Boats")

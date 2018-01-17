@@ -3,20 +3,20 @@ div
   c-pagetitle(
     title="Journal"
     link="/journal"
-    lede="The long view of designing and building for the needs of real people."
+    lede="From navigating rhizomes to the aesthetics of #premiummediocre, a selection of writing about designing and building human interfaces."
   )
   main(role="main")
     .container
-      .Grid.Grid--alignCenter.Grid--withTinyGutter
-        c-post(
-          v-for="post in posts"
-          :key="post.title"
-          :link="post.permalink",
-          :image="post.thumbImage",
-          :title="post.title",
-          :headline="post.headline",
-          :date="post.date",
-        )
+      c-post(
+        journalpost
+        v-for="post in posts"
+        :key="post.title"
+        :link="post.permalink"
+        :image="post.thumbImage"
+        :title="post.title"
+        :lede="post.lede"
+        :date="post.date"
+      )
 </template>
 
 <script>
