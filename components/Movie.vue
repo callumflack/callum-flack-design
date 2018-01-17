@@ -47,7 +47,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .iphone {
   padding-bottom: 205.81395%;

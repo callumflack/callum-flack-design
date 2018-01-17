@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .masthead .block--masthead {
   @media (--small-viewport) {
@@ -37,4 +37,3 @@ export default {
 .nuxt-link-exact-active {
 }
 </style>
-

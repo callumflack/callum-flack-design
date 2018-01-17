@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .loading-page {
   background: var(--color-bg);

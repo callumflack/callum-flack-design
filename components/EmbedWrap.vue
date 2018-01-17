@@ -31,7 +31,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .figure {
   margin: var(--s4) 0;

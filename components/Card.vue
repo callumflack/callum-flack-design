@@ -48,7 +48,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .Card {
   border: 1px solid var(--color-text);

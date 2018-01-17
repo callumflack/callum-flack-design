@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 li {
   display: inline-block;

@@ -101,16 +101,15 @@ export default {
   async asyncData({ app }) {
     const projects = await app.$content("/projects").getAll();
 
-    const uniqueTags = projects.filter(project => project.tags).reduce((
-      tags,
-      project
-    ) => {
-      const projectTags = projectTagStringToList(project.tags);
-      const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
+    const uniqueTags = projects.filter(project => project.tags).reduce(
+      (tags, project) => {
+        const projectTags = projectTagStringToList(project.tags);
+        const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
 
-      return [...tags, ...uniqueProjectTags];
-    },
-    [allTagName]);
+        return [...tags, ...uniqueProjectTags];
+      },
+      [allTagName]
+    );
 
     uniqueTags.sort();
 
@@ -124,7 +123,7 @@ export default {
 </script>
 
 <style scope lang="css">
-@import "../../assets/styles/vars.css";
+@import "../../assets/styles/vars.pcss";
 
 .GridWrapper {
   margin-left: calc(2 * var(--grid-gutter));
