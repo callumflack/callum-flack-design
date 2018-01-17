@@ -109,7 +109,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.pcss";
+@import "../assets/styles/vars.css";
 
 .Image {
   background-color: var(--color-neutral);

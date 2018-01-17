@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.pcss";
+@import "../assets/styles/vars.css";
 
 .form {
   @media (--medium-viewport) {

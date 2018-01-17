@@ -48,7 +48,7 @@ module.exports = {
     }
     */
   },
-  css: ["~/assets/styles/application.pcss"],
+  css: ["~/assets/styles/application.css"],
   plugins: [
     { src: "~/plugins/vue-slick", ssr: false },
     { src: "~plugins/ga.js", ssr: false }

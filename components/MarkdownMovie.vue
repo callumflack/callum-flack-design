@@ -52,7 +52,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.pcss";
+@import "../assets/styles/vars.css";
 
 .frame {
   border: 1px solid var(--color-border);

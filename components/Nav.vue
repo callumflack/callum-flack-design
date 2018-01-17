@@ -103,5 +103,5 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.pcss";
+@import "../assets/styles/vars.css";
 </style>

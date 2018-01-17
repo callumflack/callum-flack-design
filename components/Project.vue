@@ -48,7 +48,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.pcss";
+@import "../assets/styles/vars.css";
 
 /* .Grid-cell:nth-child(7), */
 /* .Grid-cell:nth-child(8), */

@@ -61,5 +61,5 @@ export default {
 </script>
 
 <style>
-@import "../../assets/styles/vars.pcss";
+@import "../../assets/styles/vars.css";
 </style>
