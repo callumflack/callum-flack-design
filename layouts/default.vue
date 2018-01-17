@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .page {
   background-color: var(--color-bg);

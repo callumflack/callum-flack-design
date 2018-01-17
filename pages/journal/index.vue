@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scope>
-@import "../../assets/styles/vars.css";
+@import "../../assets/styles/vars.pcss";
 
 .Grid-cell:nth-child(even) {
   @media (--small-viewport) {

@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/vars.pcss";
 
 .Banner {
   background-color: var(--color-bg);
