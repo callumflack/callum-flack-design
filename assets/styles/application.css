@@ -8,13 +8,13 @@
 @import "typography/link.css";
 @import "layout/grid.css";
 @import "layout/container.css";
-@import "layout/block.pcss";
+@import "layout/block.css";
 @import "layout/figure.css";
-@import "layout/hr.pcss";
+@import "layout/hr.css";
 @import "elements/button.css";
 @import "elements/icon.css";
 @import "elements/img.css";
 @import "elements/form.css";
 @import "utils.css";
 @import "utils-spacers.css";
-@import "theme.pcss";
+@import "theme.css";
