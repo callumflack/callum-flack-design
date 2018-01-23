@@ -4,7 +4,7 @@
       :title="page.title"
       link="/journal"
     )
-    .container(v-if="page.heroImage")
+    header.container(v-if="page.heroImage")
       figure.figure.figure--large
         img(:src="page.heroImage", alt="")
     main(role="main")

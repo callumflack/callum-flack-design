@@ -30,7 +30,8 @@ export default {
           "device--iphone6": this.iphone,
           "device--ipad": this.ipad,
           "device--ipadLandscape": this.ipadLandscape,
-          "device--laptop": this.laptop
+          "device--laptop": this.laptop,
+          "device--desktop": this.desktop
         }
       ];
     }
@@ -43,6 +44,7 @@ export default {
     ipadLandscape: Boolean,
     ipad: Boolean,
     laptop: Boolean,
+    desktop: Boolean,
     poster: String,
     src: String
   }
@@ -120,5 +122,9 @@ export default {
 
 .device--laptop .device-ratio {
   padding-bottom: 69.25%;
+}
+
+.device--desktop .device-ratio {
+  padding-bottom: 52.0833333%;
 }
 </style>

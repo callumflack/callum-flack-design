@@ -1,6 +1,6 @@
 <template lang="pug">
-  div
-    article(role="banner")
+  article
+    header(role="banner")
       c-pagetitle(
         :title="page.title"
         link="/work"
@@ -10,9 +10,10 @@
         c-movie(
           frame, 
           large, 
-          laptop, 
-          :poster="page.heroVideoPoster",
-          :src="page.heroVideo",
+          :laptop="page.heroVideoLaptop"
+          :desktop="page.heroVideoDesktop"
+          :poster="page.heroVideoPoster"
+          :src="page.heroVideo"
           v-if="page.heroVideo"
         )
         figure.figure.figure--large(v-else)
@@ -25,7 +26,12 @@
     main(role="main")
       .container
         nuxtent-body.textscope(:body="page.body")
-        p.block--touch.text.text--meta.text-noIndent(v-if="page.note", v-html="page.note")
+    nuxt-link.next-project(:to="page.nextProject")
+      .container.u-flex.u-flexAlignItemsCenter
+        hgroup
+          .text.text--small Next project
+          .text {{ page.nextProjectTitle }}
+        
 </template>
 
 <script>
@@ -44,10 +50,14 @@ export default {
     massive: String,
     lede: String,
     heroImage: String,
+    heroRatio: String,
     heroVideo: String,
+    heroVideoLaptop: Boolean,
+    heroVideoDesktoptop: Boolean,
     heroVideoPoster: String,
     heroInCloudinary: Boolean,
-    heroRatio: String
+    nextProject: String,
+    nextProjectTitle: String
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/projects").get(route.path);
@@ -62,27 +72,9 @@ export default {
 <style>
 @import "../../assets/styles/vars.css";
 
-/* 
- * Project details addendum 
- */
-
-.project-details p,
-.project-details ul {
-  font-size: 0.75rem !important;
-  text-indent: 0;
-
-  @media (--small-viewport) {
-    font-size: 0.8125rem !important;
-  }
-  @media (--large-viewport) {
-    font-size: 0.875rem;
-    font-size: 0.9375rem;
-    font-size: 1rem !important;
-  }
-}
-
-.project-details p,
-.project-details ul {
-  margin: 13px 0;
+.next-project {
+  display: block;
+  height: 33.333333vh;
+  height: 50vh;
 }
 </style>

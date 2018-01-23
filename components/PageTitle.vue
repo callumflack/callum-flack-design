@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.masthead
+  .masthead
     .container
       .block--masthead
         h3.title(v-if="title")
@@ -37,4 +37,3 @@ export default {
 .nuxt-link-exact-active {
 }
 </style>
-

@@ -44,10 +44,20 @@
   margin-top: var(--s3);
 
   @media (--medium-viewport) {
-    margin-top: var(--s3);
+    // margin-top: var(--s3);
   }
 
   @media (--large-viewport) {
     margin-top: var(--s4);
   }
+}
+
+/*
+
+  .page--end adds bottom padding to a .page, when it's not a post.
+
+*/
+
+.page--end {
+  padding-bottom: 33.333333vh;
 }

@@ -1,11 +1,10 @@
 <template lang="pug">
-div
+.page--end
   c-pagetitle(
     title="Digital brands + services for makers + shakers"
     link="/"
-    lede="Callum Flack provides digital strategy, graphic design, user experience design and frontend development to help individuals, groups and businesses find, connect with and service their audience."
+    lede="Callum Flack provides digital strategy, UX/UI and graphic design, and frontend development to help individuals, groups and businesses find, connect with and service their audience."
   )
-
   main(role="main")
     .container
       figure.figure.figure--large

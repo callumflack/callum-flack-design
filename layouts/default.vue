@@ -1,12 +1,12 @@
 <template lang="pug">
   div(:class="currentPageClass")
     c-toggle
-    c-nav-toggled(role="navigation")
     .page
       nuxt
     .footer-spacer
     footer.footer(role="contentinfo")
       c-nav
+    c-nav-toggled(role="navigation")
 
 </template>
 
@@ -35,7 +35,7 @@ export default {
 .page {
   background-color: var(--color-bg);
   min-height: 100vh;
-  padding-bottom: 33.333333vh;
+  /* padding-bottom: 33.333333vh; */
   position: relative;
   z-index: 3;
 }

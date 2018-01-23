@@ -1,21 +1,26 @@
 @import "suit.css";
 @import "vars.css";
 @import "base.css";
+
 @import "typography/font-faces.css";
 @import "typography/type-reset.css";
 @import "typography/type.css";
 @import "typography/list.css";
 @import "typography/link.css";
+
 @import "layout/grid.css";
 @import "layout/container.css";
 @import "layout/block.css";
 @import "layout/figure.css";
 @import "layout/hr.css";
+
 @import "elements/button.css";
 @import "elements/icon.css";
 @import "elements/img.css";
 @import "elements/form.css";
+
 @import "components/project-item.css";
+
 @import "utils.css";
 @import "utils-spacers.css";
 @import "theme.css";

@@ -41,7 +41,7 @@ li {
 
   &:before {
     content: "—";
-    left: -2rem;
+    left: -1.25em;
     position: absolute;
   }
 }

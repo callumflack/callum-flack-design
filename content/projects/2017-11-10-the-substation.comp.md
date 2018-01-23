@@ -10,9 +10,8 @@ heroRatio: 65%
 featured: true
 tags: website, branding
 year: 2016
-projectColor: rgb(191, 166, 87)
-bannerColor: rgba(191, 166, 87, 0.25)
-nextproject: /work/oceanblue-living
+nextProject: /work/album-registry
+nextProjectTitle: Album Registry
 ---
 
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
@@ -33,11 +32,11 @@ event grids allow easy persual without compromising the immersive experience.
 
 We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
-> Callum has helped us understand and fix many, many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _Brad Spolding, Managing Director_
-
 @[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
+
+> Callum has helped us understand and fix many, many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _Brad Spolding, Managing Director_
 
 Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 

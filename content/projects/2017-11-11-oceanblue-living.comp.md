@@ -3,8 +3,9 @@ section: Projects
 title: Oceanblue Living
 headline: A website to help create a community around architectural metalworks.
 lede: A website to help create a community around transformative architectural metalworks.
-heroImage: /images/oceanblueliving-hero.jpg
 heroVideo: /images/oceanblueliving-video.mp4
+heroVideoLaptop: true
+heroVideoImage: /images/oceanblueliving-hero.jpg
 thumbImage: /images/thumb-oceanblueliving.jpg
 year: 2016
 featured: true

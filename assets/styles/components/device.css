@@ -3,17 +3,24 @@
  */
 
 .Frame {
-    border: 1px solid #d5d5d5;
+  border: 1px solid #d5d5d5;
 }
 
 .FlexEmbed-ratio {
   /*&.iphone6 { padding-bottom: 205.81395%; }*/
-  &.ipad    { padding-bottom: 126.953125%; }
-  &.ipadL   { padding-bottom: 74.75%; }
-  &.laptop  { padding-bottom: 69.25%; }
+  &.ipad {
+    padding-bottom: 126.953125%;
+  }
+  &.ipadL {
+    padding-bottom: 74.75%;
+  }
+  &.laptop {
+    padding-bottom: 69.25%;
+  }
+  &.desktop {
+    padding-bottom: 52.0833333%;
+  }
 }
-
-
 
 .screen {
   width: 100%;
@@ -21,9 +28,10 @@
 
 /*
  * Devices
- */ 
+ */
 
-.device {}
+.device {
+}
 
 .device-style {
   background-position: 50%;
@@ -53,7 +61,7 @@
   }
 
   & .device-style {
-    background-image: url('/images/device-iphone6-outline.svg');
+    background-image: url("/images/device-iphone6-outline.svg");
     // fill: none;
     // stroke: var(--color-text);
     // stroke-width: 1;

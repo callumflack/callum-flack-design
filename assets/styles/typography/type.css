@@ -265,11 +265,12 @@ blockquote + h2,
   margin-top: 0 !important;
 }
 
-* + .Button {
+* + .Button,
+* + .project-link {
   margin-top: var(--s3);
 
-  @media (--small-viewport) {
-    margin-top: calc(2 * var(--s3));
+  @media (--large-viewport) {
+    margin-top: var(--s4);
   }
 }
 

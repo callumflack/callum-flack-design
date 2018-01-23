@@ -4,8 +4,8 @@
     .toggle-logo
       .title
         a(href="#", @click.prevent="handleNavToggle")
-          span.u-block Patter–
-          span.u-block.align nworks
+          span.u-block Pattern–
+          span.u-block.align works
         
 </template>
 
@@ -40,21 +40,25 @@ export default {
 @import "../assets/styles/vars.css";
 
 .align {
-  padding-left: 0.95em;
-  padding-left: 1.333em;
-  padding-left: 1.75em;
-  padding-left: 1.2em;
-  padding-left: 1.175em;
-  padding-left: 0.8em;
-  padding-left: 0.7em;
-  transform: translateY(-0.25em);
+  /* padding-left: 0.95em; */
+  /* padding-left: 1.333em; */
+  /* padding-left: 1.75em; */
+  /* padding-left: 1.2em; */
+  /* padding-left: 1.175em; */
+  /* padding-left: 0.8em; */
+  /* padding-left: 0.7em; */
+  padding-left: 1.31em;
+  padding-left: 1.65em;
+  /* transform: translateY(-0.25em); */
   /* transform: translateY(-0.333em); */
   /* transform: translateY(-11px); */
   /* transform: translateY(-24px); */
 
   @media (max-width: 512px) {
-    padding-left: 0.66em;
-    transform: translateY(-7px);
+    /* padding-left: 0.66em; */
+    /* padding-left: 0.66em; */
+    /* transform: translateY(-7px); */
+    /* transform: translateY(-15px); */
   }
 }
 
