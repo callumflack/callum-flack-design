@@ -36,10 +36,11 @@ module.exports = {
       }
     }
     /* 
-      cssnext is available by default in Nuxt:
+      cssnext is available by default in Nuxt, 
+      but there's TWO different methods shown in the docs:
       https://nuxtjs.org/api/configuration-build#postcss
       https://nuxtjs.org/faq/postcss-plugins
-      but both methods FAIL to load postcss-mixins:
+      …and both FAIL to load postcss-mixins:
       
     postcss: {
       plugins: {
@@ -53,7 +54,7 @@ module.exports = {
     { src: "~/plugins/vue-slick", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
   ],
-  modules: ["nuxtent"],
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM--TZ36J9" }]],
   axios: {
     credentials: false
   },
