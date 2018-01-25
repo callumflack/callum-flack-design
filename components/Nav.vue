@@ -38,7 +38,7 @@ export default {
     return {
       navLinks: [
         {
-          label: "Index",
+          label: "Home",
           link: "/",
           exact: true
         },
