@@ -1,16 +1,17 @@
 ---
 section: Projects
 year: 2017
-title: Album Registry
-headline: Helping photographers grow their business with gift-funding.
+heading: Album Registry
 lede: A crowd-funding platform to help pro photographers grow their business.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513210344/thumb-albumregistry_vojzwp.jpg
-cloudinary: true
-featured: true
+thumbInCloudinary: true
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg
+heroFrame: true
+heroInCloudinary: true
 tags: web app, branding
-nextProject: /work/the-substation
-nextProjectTitle: The Substation
+nextProject: /work/oceanblue-living
+nextProjectHeading: Oceanblue Living
+featured: true
 ---
 
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
@@ -18,12 +19,12 @@ be, and rebuild the platform for a community of photographers around the world.
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden, Founder_
 
-@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
+@[MarkdownMovie](frame src="/images/albumregistry-block-registries.mp4")
 
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownMovie](src="/images/albumregistry-block-registries.mp4")
+@[MarkdownImage](large frame src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg")
 
 ## Built for future iteration
 
@@ -35,7 +36,7 @@ We're able to design and adjust new features in the browser using the brand desi
 
 <!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large src="/images/albumregistry-mobile-screens.png")
+@[MarkdownImage](large src="/images/albumregistry-mobile-screens-lg.png")
 
 We aim to offer the Album Registry photographers an ecommerce platform, a marketing
 toolkit, and a community to share with.

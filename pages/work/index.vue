@@ -1,7 +1,7 @@
 <template lang="pug">
-div
-  c-pagetitle(
-    title="Work"
+.block--pageEnd
+  c-pageheading(
+    heading="Work"
     link="/work"
     lede="Selected projects since 2014."
   )
@@ -28,14 +28,14 @@ div
           v-if="project.featured"
           v-for="project in visibleProjects"
           post,
-          :key="project.title"
+          :key="project.heading"
           :link="project.permalink",
           :tags="project.tags",
           :year="project.year",
-          :title="project.title",
+          :heading="project.heading",
           :lede="project.lede",
           :image="project.thumbImage",
-          :cloudinary="project.cloudinary",
+          :cloudinary="project.thumbInCloudinary",
         )
 
     <svg class='u-hiddenVisually'>
@@ -51,7 +51,7 @@ div
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import Project from "~/components/Project.vue";
 
 const allTagName = "all";
@@ -72,7 +72,7 @@ export default {
   name: "projects",
   components: {
     "c-project": Project,
-    "c-pagetitle": PageTitle
+    "c-pageheading": PageHeading
   },
   data() {
     return {

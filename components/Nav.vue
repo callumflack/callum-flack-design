@@ -18,13 +18,6 @@
           :link="item.link"
           external
         )
-      //- .text--small.u-marginT2
-        c-navlink(
-          v-for="item in navButtons",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
-        )
 </template>
 
 

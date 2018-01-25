@@ -4,11 +4,13 @@
   Body
   …which is all the typography this site uses.
 
+  1. this is the underscroll blue-metal color.
+
   -------------------------------------------------
  */
 
 body {
-  background-color: var(--color-metal);
+  background-color: var(--color-metal); /* 1 */
   color: var(--color-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
@@ -29,9 +31,7 @@ body {
  */
 
 body,
-blockquote p em,
-.textscope-reset,
-.text--small {
+.text-scope-reset {
   font-size: 0.75rem !important;
 
   @media (--small-viewport) {
@@ -74,7 +74,8 @@ ul,
  */
 
 .title,
-h2 {
+.text-scope h2,
+.journal-scope h2 {
   color: var(--color-title);
   font-size: var(--s-text);
   font-weight: 400;
@@ -89,6 +90,10 @@ a.title,
   border-top: 1px solid var(--color-title);
   margin-top: calc(1.25 * var(--s5));
   padding-top: var(--s2);
+
+  & a {
+    background-image: none !important;
+  }
 }
 
 .title--subscribe {
@@ -159,6 +164,7 @@ blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: rgba(138, 138, 138, 0.5);
+  border-color: var(--color-border);
   padding: calc(2 * var(--s3)) 0 calc(2.166 * var(--s3));
   width: auto;
 
@@ -186,9 +192,8 @@ blockquote p {
 .intro em,
 blockquote p em {
   display: table;
-  /* method for resetting ems:
-  font-size: calc( (19 / (var(--s-text-unit) * 16)) * 1em);*/
-  font-size: var(--s-text-meta);
+  /* method for resetting ems, then apply text--meta sizing: */
+  font-size: calc( (18 / (var(--s-text-unit) * 16)) * 1em);
   margin-top: var(--s1);
 
   @media (--large-viewport) {
@@ -230,6 +235,14 @@ h6 {
   }
 }
 
+.journal-scope .intro {
+  margin-bottom: var(--s4);
+
+  @media (--small-viewport) {
+    margin-bottom: var(--s5);
+  }
+}
+
 /* illusion: manages .figure & .form in context */
 .title--ruled + .figure,
 p + .form {
@@ -241,11 +254,22 @@ p + .form {
 }
 
 /* illusion: manages .figure before .title--ruled in context */
-.figure ~ .title--ruled {
-  margin-top: calc(1.5 * var(--s4));
+/* .figure ~ .title--ruled {*/
+.title--ruled:not(:first-child) {
+  margin-top: calc(1.25 * var(--s4));
 
   @media (--large-viewport) {
-    margin-top: calc(1.5 * var(--s5));
+    margin-top: calc(1.25 * var(--s5));
+  }
+}
+
+.post:not(:first-child) {
+  margin-top: calc(1 * var(--s4));
+  margin-bottom: calc(1.25 * var(--s4));
+
+  @media (--large-viewport) {
+    margin-top: calc(1 * var(--s5));
+    margin-bottom: calc(1.25 * var(--s5));
   }
 }
 
@@ -340,14 +364,6 @@ blockquote + h2,
   display: table;
   font-size: 1em;
   margin-top: var(--s1);
-}
-
-.journal-scope .intro {
-  margin-bottom: var(--s4);
-
-  @media (--small-viewport) {
-    margin-bottom: var(--s5);
-  }
 }
 
 .journal-scope hr {

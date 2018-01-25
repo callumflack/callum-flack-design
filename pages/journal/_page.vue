@@ -1,12 +1,14 @@
 <template lang="pug">
+.block--pageEnd
   article
-    c-pagetitle(
-      :title="page.title"
-      link="/journal"
-    )
-    header.container(v-if="page.heroImage")
-      figure.figure.figure--large
-        img(:src="page.heroImage", alt="")
+    header(role="banner")
+      c-pageheading(
+        :heading="page.heading"
+        link="/journal"
+      )
+      .container(v-if="page.heroImage")
+        figure.figure.figure--large
+          img(:src="page.heroImage", alt="")
     main(role="main")
       .container
         .journal-scope
@@ -28,16 +30,16 @@
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import FormNewsletter from "~/components/FormNewsletter.vue";
 
 export default {
   components: {
-    "c-pagetitle": PageTitle,
+    "c-pageheading": PageHeading,
     "c-newsletter": FormNewsletter
   },
   props: {
-    title: String,
+    heading: String,
     lede: String,
     published: String,
     updated: String,

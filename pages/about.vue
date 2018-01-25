@@ -1,26 +1,26 @@
 <template lang="pug">
-  div
-    c-pagetitle(
-      link="/about"
-      title="About"
-      lede="Callum Flack is a design-obsessed, code-based, systems-thinking craftsman."
-    )
-    section(role="banner")
+  .block--pageEnd
+    header(role="banner")
+      c-pageheading(
+        link="/about"
+        heading="About"
+        lede="Callum Flack is a design-obsessed, systems-thinking, code-based craftsman."
+      )
       .container
         c-image(portrait, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
       .container
-        .textscope
+        .text-scope
           nuxtent-body(:body="page.body")
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
 
 export default {
   components: {
-    "c-pagetitle": PageTitle,
+    "c-pageheading": PageHeading,
     "c-image": MarkdownImage
   },
   props: {},

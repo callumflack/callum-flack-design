@@ -15,7 +15,7 @@ button {
 .visualLink,
 p a:not(.Button),
 p a:not(.linkSignal),
-.textscope a:not(.Button) {
+.text-scope a:not(.Button) {
   background-image: linear-gradient(var(--color-bg), var(--color-bg)),
     linear-gradient(var(--color-bg), var(--color-bg)),
     linear-gradient(currentColor, currentColor);
@@ -80,7 +80,7 @@ p a:not(.linkSignal),
 
 .linkSignal-target {
   display: inline-block;
-  font-weight: 200;
+  font-weight: 300;
   transform: translateX(0);
   transition: all 0.1s ease-out;
 }

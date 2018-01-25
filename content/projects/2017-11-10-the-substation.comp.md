@@ -1,17 +1,18 @@
 ---
 section: Projects
-title: The Substation
-headline: A website and branding revision for a large-scale Melbourne arts venue.
+year: 2016
+heading: The Substation
 lede: A website and branding revision for the large-scale Melbourne arts venue.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 thumbImage: /images/thumb-thesubstation.jpg
+thumbInCloudinary: false
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 heroInCloudinary: true
 heroRatio: 65%
-featured: true
+heroFrame: true
 tags: website, branding
-year: 2016
-nextProject: /work/album-registry
-nextProjectTitle: Album Registry
+nextProject: /work/primary-healthcare-network
+nextProjectHeading: Primary Healthcare Network
+featured: true
 ---
 
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
@@ -28,7 +29,7 @@ exploded the grid system, so that images, gifs and video would immerse people in
 Redesigning the user experience, we prioritised events. Event details and the 'buy' button were brought to the forefront. Clear navigation and
 event grids allow easy persual without compromising the immersive experience.
 
-@[MarkdownMovie](laptop src="/images/thesubstation-desktop-events.mp4")
+@[MarkdownMovie](laptop frame src="/images/thesubstation-desktop-events.mp4")
 
 We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
@@ -40,4 +41,4 @@ We targeted usability and mobile performance in the upgrade to fulfil the needs 
 
 Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 
-@[MarkdownButton](link="http://www.thesubstation.org.au/" label="Visit The Substation")
+@[MarkdownProjectLink](link="http://www.thesubstation.org.au/" label="Visit The Substation")

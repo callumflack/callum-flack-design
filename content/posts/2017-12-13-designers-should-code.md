@@ -1,6 +1,6 @@
 ---
 section: Journal
-title: Designers should code
+heading: Designers should code
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 published: December 21, 2017
 updated: January 12, 2018

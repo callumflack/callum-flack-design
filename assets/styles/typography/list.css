@@ -31,12 +31,12 @@ li {
   padding-left: 0 !important;
 }
 
-.textscope ul {
+.text-scope ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.textscope li {
+.text-scope li {
   position: relative;
 
   &:before {

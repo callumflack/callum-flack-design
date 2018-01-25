@@ -1,11 +1,11 @@
 <template>
-  <div class="Image">
+  <div class="image">
     <div :class="ratioClasses" :style="ratioStyle" ref="placeholder">
     <img
       :class="[
         'low-rez',
         {
-          loaded: smallUrl
+          'is-loaded': smallUrl
         }
       ]"
       :src="smallUrl"
@@ -14,7 +14,7 @@
       :class="[
         'full-rez',
         {
-          loaded: largeUrl
+          'is-loaded': largeUrl
         }
       ]"
       :src="largeUrl"
@@ -40,6 +40,7 @@ export default {
       type: String,
       required: true
     },
+    frame: Boolean,
     square: Boolean,
     face: Boolean,
     project: Boolean,
@@ -49,9 +50,10 @@ export default {
   computed: {
     ratioClasses() {
       return [
-        "Image-aspectRatio",
+        "image-aspectRatio",
         {
-          "Image-aspectRatio--4by3": this.project
+          "figure--frame": this.frame,
+          "image-aspectRatio--4by3": this.project
         }
       ];
     },
@@ -111,11 +113,11 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Image {
+.image {
   background-color: var(--color-neutral);
 }
 
-.Image-aspectRatio {
+.image-aspectRatio {
   height: 0;
   overflow: hidden;
   padding-bottom: 100%;
@@ -123,11 +125,11 @@ export default {
   width: 100%;
 }
 
-.Image-aspectRatio--4by3 {
+.image-aspectRatio--4by3 {
   padding-bottom: 75%;
 }
 
-.Image img {
+.image img {
   opacity: 0;
   min-height: 100%;
   min-width: 100%;
@@ -138,10 +140,11 @@ export default {
   width: 100%;
 }
 
-.Image img.loaded {
+.image img.is-loaded {
   opacity: 1;
 }
 
+.low-rez,
 .img-small {
   filter: blur(50px);
   /* this is needed so Safari keeps sharp edges */

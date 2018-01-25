@@ -49,7 +49,7 @@
   --s4: 2.5rem;
   --s5: 5rem;
   --s6: 10rem;
-  --s7: 15rem;
+  --s7: 13rem;
   
   --tuck: 6vw;
   --tuck-lg: 9vw;
@@ -71,13 +71,17 @@
   --color-highlight: #b32273;
   --color-red: #ff3700;
   --color-title: #0a0a0a;
-  --color-text: #8a8a8a;
-  --color-border: #ddd;
+  --color-text: #999;
+  --color-device: #e7e7e7;
+  --color-border: #ccc;
   --color-neutral: #eee;
   --color-bg: #fdfdfd;
   --color-bg: #f9f9f9;
+  --color-bg: #fff;
   --color-bg-blue: #cdd8e2;
   --color-metal: #cdd8e2;
+  --color-metal: rgba(208, 218, 227, 0.7);
+  --color-metal: rgba(222, 229, 235, 1);
 
   /* 
   

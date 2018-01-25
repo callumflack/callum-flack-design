@@ -1,10 +1,11 @@
 <template lang="pug">
-.page--end
-  c-pagetitle(
-    title="Digital brands + services for makers + shakers"
-    link="/"
-    lede="Callum Flack provides digital strategy, UX/UI and graphic design, and frontend development to help individuals, groups and businesses find, connect with and service their audience."
-  )
+.block--pageEnd
+  header(role="banner")
+    c-pageheading(
+      heading="Digital brands + services for makers + shakers"
+      link="/"
+      lede="Callum Flack provides user interface design, graphic design and frontend development to help individuals, groups and businesses find, connect with and service their audience."
+    )
   main(role="main")
     .container
       figure.figure.figure--large
@@ -16,37 +17,38 @@
                 .title.u-textCenter
                   | View the work #[span.linkSignal-target →]
               img.w100.u-posRelative(src="/images/loop-05.gif")
-      p
-        nuxt-link(to="/about") Hi, I’m Callum.
-        |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
-        
-      h2 The difference is focus & knowhow
-      p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and programmer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
+      .text-scope
+        p
+          nuxt-link(to="/about") Hi, I’m Callum.
+          |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
+          
+        h2 The difference is digital focus & knowhow
+        p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
 
-      h3.title.title--ruled 
-        nuxt-link(to="/journal") Journal
-      p I write about designing and building human interfaces in the 
-        nuxt-link(to="/journal") Journal.
-        |  Here's the most recent:
-      .figure.post.no-quote
-        nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
-          h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.linkSignal-target →]
-          p If you want to know how to make software for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with&#58; lessons learned by an ex-graphic designer.
-      c-newsletter
+        h3.title.title--ruled 
+          nuxt-link(to="/journal") Journal
+        p I write about designing and building human interfaces in the 
+          nuxt-link(to="/journal") Journal.
+          |  Here's the most recent:
+        .post.no-quote
+          nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
+            h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.linkSignal-target →]
+            p If you want to know how to make software for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with&#58; lessons learned by an ex-graphic designer.
+        c-newsletter
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import Newsletter from "~/components/FormNewsletter.vue";
 
 export default {
   components: {
-    "c-pagetitle": PageTitle,
+    "c-pageheading": PageHeading,
     "c-newsletter": Newsletter
   },
   props: {
     massive: String,
-    title: String
+    heading: String
   }
 };
 </script>

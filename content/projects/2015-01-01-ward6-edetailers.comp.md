@@ -1,16 +1,20 @@
 ---
 section: Projects
-title: Pharma eDetailer apps
-headline: A series of iPad apps explaining complex Pharmaceutical products with simple and engaging digital stories.
-lede: Explaining complex pharma products with simple and engaging digital stories.
-heroImage: /images/pharmaceutical-edetailers-hero.png
-thumbImage: /images/thumb-actifuse.jpg
 year: 2014
+heading: Pharma eDetailer apps
+lede: Explaining complex Pharma products with simple and engaging digital stories.
+thumbImage: /images/thumb-actifuse.jpg
+thumbInCloudinary: false
+heroImage: /images/pharmaceutical-edetailers-hero.png
+herobInCloudinary: false
+heroFrame: false
 tags: website, branding
+nextProject: /work/vj-ray
+nextProjectHeading: VJ Ray Real Estate
 featured: true
 ---
 
-Ward 6 Digital specialised in creating sophisticated, interactive iPad-based sales tools for Pharma and Health clients. I worked with the team to modernise development processes and bring design sensibility to data-based showcases.
+Ward 6 Digital specialised in creating sophisticated, interactive iPad-based sales tools for Pharma and Health clients. I worked with the team to modernise development processes and bring design sensibility to data-driven showcases.
 
 @[MarkdownMovie](ipadLandscape src="/images/ward6-baxter.mp4")
 

@@ -1,14 +1,16 @@
 ---
 section: About
-title: About
+heading: About
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/me2.jpg
+heroImage: images/me2a.jpg
 heroImageFirst: true
 ---
 
 <!-- <p class="intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->
 
 My job is to help you bridge the gap between you and your audience by understanding your unique context, designing for emotional connection, and building a digital system that satisifies you and your toughest customers years from now.
+
+The relationship matters. We will collaborate to shape what tomorrow looks like for your audience and your business. Because we all respond and yearn for delight, the process always yields better ways of resonating with your audience. And it's fun!
 
 ## Experienced
 

@@ -2,16 +2,16 @@
   .masthead
     .container
       .block--masthead
-        h3.title(v-if="title")
-          nuxt-link(:to="link", v-html="title")
-        h1.text(v-if="lede", v-html="lede")
+        h1.title(v-if="heading")
+          nuxt-link(:to="link", v-html="heading")
+        h2.text(v-if="lede", v-html="lede")
 </template>
 
 <script>
 export default {
-  name: "page-title",
+  name: "page-heading",
   props: {
-    title: String,
+    heading: String,
     lede: String,
     link: String
   }
@@ -29,6 +29,7 @@ export default {
 
 .title + .text {
   margin: 0;
+  width: auto;
 }
 
 .nuxt-link-active {

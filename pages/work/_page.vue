@@ -1,53 +1,58 @@
 <template lang="pug">
-  article
+div
+  article.block--articleEnd
     header(role="banner")
-      c-pagetitle(
-        :title="page.title"
+      c-pageheading(
+        :heading="page.heading"
         link="/work"
         :lede="page.lede"
       )
       .container
         c-movie(
-          frame, 
-          large, 
+          v-if="page.heroVideo"
+          :src="page.heroVideo"
+          large
+          :frame="page.heroFrame"
           :laptop="page.heroVideoLaptop"
           :desktop="page.heroVideoDesktop"
           :poster="page.heroVideoPoster"
-          :src="page.heroVideo"
-          v-if="page.heroVideo"
         )
         figure.figure.figure--large(v-else)
           c-lazyimage(
-            :src="page.heroImage", 
-            :ratio="page.heroRatio",
             v-if="page.heroInCloudinary"
+            :src="page.heroImage"
+            :frame="page.heroFrame"
+            :ratio="page.heroRatio"
           )
-          img(:src="page.heroImage", v-else)
+          img(
+            v-else
+            :src="page.heroImage"
+          )
     main(role="main")
       .container
-        nuxtent-body.textscope(:body="page.body")
-    nuxt-link.next-project(:to="page.nextProject")
-      .container.u-flex.u-flexAlignItemsCenter
-        hgroup
-          .text.text--small Next project
-          .text {{ page.nextProjectTitle }}
-        
+        nuxtent-body.text-scope(:body="page.body")
+  nuxt-link.next-project.linkSignal.block--nextProject(:to="page.nextProject")
+    .container.u-flex.u-flexAlignItemsCenter
+      hgroup
+        .text.text--meta.u-marginB1 Next project
+        .title.small-space 
+          | {{ page.nextProjectHeading }}
+          span.ml2.linkSignal-target →
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   components: {
-    "c-pagetitle": PageTitle,
+    "c-pageheading": PageHeading,
     "c-movie": MarkdownMovie,
     "c-lazyimage": LazyImage
   },
   props: {
-    title: String,
-    massive: String,
+    heading: String,
     lede: String,
     heroImage: String,
     heroRatio: String,
@@ -55,9 +60,23 @@ export default {
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
     heroVideoPoster: String,
+    heroFrame: Boolean,
     heroInCloudinary: Boolean,
     nextProject: String,
-    nextProjectTitle: String
+    nextProjectheading: String
+  },
+  data() {
+    return {
+      title: this.heading
+    };
+  },
+  head() {
+    return {
+      title: "Patternworks—" + this.title,
+      meta: [
+        { hid: "description", name: "description", content: "My custom description" }
+      ]
+    };
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/projects").get(route.path);
@@ -73,8 +92,17 @@ export default {
 @import "../../assets/styles/vars.css";
 
 .next-project {
+  border-top: 1px solid rgba(138, 138, 138, 0.15);
+  border-color: var(--color-border);
   display: block;
-  height: 33.333333vh;
-  height: 50vh;
+}
+
+/* matches `blockquote p em` in type.css */
+.small-space {
+  margin-top: var(--s1);
+
+  @media (--large-viewport) {
+    margin-top: var(--s2);
+  }
 }
 </style>

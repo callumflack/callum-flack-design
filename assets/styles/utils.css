@@ -46,6 +46,9 @@
 .color-text {
   color: var(--color-text) !important;
 }
+.color-device {
+  color: var(--color-device) !important;
+}
 .color-border {
   color: var(--color-border) !important;
 }
@@ -66,7 +69,7 @@
 
   bg colors
 
- */ 
+ */
 
 .bgcolor-title {
   background-color: var(--color-title) !important;
@@ -89,7 +92,6 @@
 .bgcolor-transparent {
   background-color: transparent !important;
 }
-
 
 /*
  * font sizes

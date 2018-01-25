@@ -1,32 +1,33 @@
 <template lang="pug">
-div
-  c-pagetitle(
-    title="Journal"
-    link="/journal"
-    lede="From navigating rhizomes to the aesthetics of #premiummediocre, a selection of writing about designing and building human interfaces."
-  )
+.block--pageEnd
+  header(role="banner")
+    c-pageheading(
+      heading="Journal"
+      link="/journal"
+      lede="Writing about the contradictions and nuance of designing and building human interfaces."
+    )
   main(role="main")
     .container
       c-post(
         journalpost
         v-for="post in posts"
-        :key="post.title"
+        :key="post.heading"
         :link="post.permalink"
         :image="post.thumbImage"
-        :title="post.title"
+        :heading="post.heading"
         :lede="post.lede"
         :date="post.date"
       )
 </template>
 
 <script>
-import PageTitle from "~/components/PageTitle.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import Post from "~/components/Post.vue";
 
 export default {
   name: "journal",
   components: {
-    "c-pagetitle": PageTitle,
+    "c-pageheading": PageHeading,
     "c-post": Post
   },
   data() {

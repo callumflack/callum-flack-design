@@ -7,7 +7,6 @@
     footer.footer(role="contentinfo")
       c-nav
     c-nav-toggled(role="navigation")
-
 </template>
 
 <script>
@@ -35,7 +34,6 @@ export default {
 .page {
   background-color: var(--color-bg);
   min-height: 100vh;
-  /* padding-bottom: 33.333333vh; */
   position: relative;
   z-index: 3;
 }

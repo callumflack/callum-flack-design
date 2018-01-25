@@ -92,6 +92,8 @@ export default {
 .toggle-logo {
   position: relative;
   display: inline-block;
+  transform: translateX(-2px);
+  transform: translateX(-0.075em);
 }
 
 .nuxt-link-active {

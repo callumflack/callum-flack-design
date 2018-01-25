@@ -4,11 +4,11 @@
       figure.project-image
         img(v-if="image", :src="image")
       .project-text
-        h2.title.title--ruled {{ title }}
+        h2.title.title--ruled {{ heading }}
           span.linkSignal-target &nbsp;→
         p.text(v-html="lede") 
           
-        //- p.project-subtext.textscope-reset
+        //- p.project-subtext.text-scope-reset
           span(v-if="date") {{ date }}
 </template>
 
@@ -21,7 +21,7 @@ export default {
     post: Boolean,
     link: String,
     image: String,
-    title: String,
+    heading: String,
     lede: String,
     date: String
   }
