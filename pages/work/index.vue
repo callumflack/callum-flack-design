@@ -27,15 +27,15 @@
         c-project(
           v-if="project.featured"
           v-for="project in visibleProjects"
-          post,
+          post
           :key="project.heading"
-          :link="project.permalink",
-          :tags="project.tags",
-          :year="project.year",
-          :heading="project.heading",
-          :lede="project.lede",
-          :image="project.thumbImage",
-          :cloudinary="project.thumbInCloudinary",
+          :link="project.permalink"
+          :heading="project.heading"
+          :lede="project.lede"
+          :image="project.thumbImage"
+          :cloudinary="project.thumbInCloudinary"
+          :year="project.year"
+          :tags="project.tags"
         )
 
     <svg class='u-hiddenVisually'>

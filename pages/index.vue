@@ -22,7 +22,7 @@
           nuxt-link(to="/about") Hi, I’m Callum.
           |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
           
-        h2 The difference is digital focus & knowhow
+        h2 I bridge the gap between human design and technical knowhow.
         p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
 
         h3.title.title--ruled 

@@ -2,8 +2,7 @@
 section: About
 heading: About
 headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: images/callum-flack.jpg
-heroImageFirst: true
+heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516952627/okok/callum-flack.jpg
 ---
 
 <!-- <p class="intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->
