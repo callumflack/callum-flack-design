@@ -54,7 +54,7 @@ module.exports = {
     { src: "~/plugins/vue-slick", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
   ],
-  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM--TZ36J9" }]],
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-TZ36J9" }]],
   axios: {
     credentials: false
   },
