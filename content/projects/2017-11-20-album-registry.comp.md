@@ -38,8 +38,7 @@ We're able to design and adjust new features in the browser using the brand desi
 
 @[MarkdownImage](large src="/images/albumregistry-mobile-screens-lg.png")
 
-We aim to offer the Album Registry photographers an ecommerce platform, a marketing
-toolkit, and a community to share with.
+We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
 > Every wedding I do starts with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
 

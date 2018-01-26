@@ -28,10 +28,9 @@ the 'craftsmanship' archetype central to their brand repositioning.
 
 @[MarkdownImage](src="/images/oceanblueliving-visual-system.png")
 
-> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site gets commented on all the time.” _LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. Peoplpe seem to naturally just commented on all the time, which means it's working.” _LeaAnne Cassaniti, Owner_
 
-<!-- We continue to document new works. The image library we've built over the last 18 months
-allows OceanBlue Living to create high-impact social media at will. -->
+<!-- We continue to document new works. The image library we've built over the last 18 months allows OceanBlue Living to create high-impact social media at will. -->
 
 The goal of the website is to become a place people can dream of their perfect home and
 office space, and create a community around OceanBlue's works.
