@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   h3.title.title--ruled Subscribe
-  p I send an occassional email newsletter with notes of the stories, links and things-in-between that I found interesting, and why they resonated. You should sign up:
+  p I send an occassional email newsletter with notes of the stories and links about designing great interfaces that I've found worthwhile, and why they resonate. You should sign up:
   //- .formWrapper
   form.form.text(
     action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
