@@ -73,14 +73,11 @@
   --color-title: #0a0a0a;
   --color-text: #999;
   --color-device: #e7e7e7;
-  --color-border: #ccc;
+  --color-border: #e7e7e7;
   --color-neutral: #eee;
-  --color-bg: #fdfdfd;
-  --color-bg: #f9f9f9;
-  --color-bg: #fff;
+  --color-bg: #fefefe;
   --color-bg-blue: #cdd8e2;
   --color-metal: #cdd8e2;
-  --color-metal: rgba(208, 218, 227, 0.7);
   --color-metal: rgba(222, 229, 235, 1);
 
   /* 
