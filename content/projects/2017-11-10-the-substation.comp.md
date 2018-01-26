@@ -3,7 +3,7 @@ section: Projects
 year: 2016
 heading: The Substation
 lede: A website and branding revision for the large-scale Melbourne arts venue.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 heroInCloudinary: true
@@ -21,7 +21,7 @@ efficiency, flexibility and performance.
 As we progressed, I came to understand their vision and evolved their digital branding
 to match.
 
-@[MarkdownImage](large src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
 
 The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography. We
 exploded the grid system, so that images, gifs and video would immerse people in this electric world.

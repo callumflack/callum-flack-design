@@ -3,7 +3,7 @@ section: Projects
 year: 2014
 heading: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging digital stories.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true
 heroImage: /images/pharmaceutical-edetailers-hero.png
 herobInCloudinary: false

@@ -3,7 +3,7 @@ section: Projects
 year: 2017
 heading: Album Registry
 lede: A crowd-funding platform to help pro photographers grow their business.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg
 heroInCloudinary: true
@@ -36,7 +36,7 @@ We're able to design and adjust new features in the browser using the brand desi
 
 <!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 

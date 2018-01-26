@@ -3,7 +3,7 @@ section: Projects
 year: 2016
 heading: Oceanblue Living
 lede: A website to help create a community around transformative architectural metalworks.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
 heroVideo: /images/oceanblueliving-video.mp4
 heroVideoLaptop: true

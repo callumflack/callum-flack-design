@@ -3,7 +3,7 @@ section: Projects
 year: 2017
 heading: Oceanblue Boats
 lede: A website that tells a story about building boats for those who wish to get away.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true
 heroVideo: /images/oceanblueboats-desktop-video-180123.mp4
 heroVideoDesktop: true

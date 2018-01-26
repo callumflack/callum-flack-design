@@ -3,7 +3,7 @@ section: Projects
 year: 2016
 heading: Primary Healthcare Network
 lede: A mobile-first web app to survey patient well-being in North Queensland.
-thumbImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 thumbInCloudinary: true
 heroImage: /images/phn-mobile-screens-1.png
 heroInCloudinary: false
