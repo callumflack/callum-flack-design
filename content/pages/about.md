@@ -9,8 +9,6 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952627/okok/c
 
 My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection, and by building a digital system that satisifies you and your toughest customers years from now.
 
-Our relationship matters. We'll collaborate to shape what your tomorrow looks like. We can make that change happen if we understand that websites aren't for organisations, they're for people.
-
 ## Experienced
 
 I've been in the game since 2000. I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios, advertising agencies and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself web programming languages in 2010, my career highlight was a stint as a brand designer at Saatchi & Saatchi, London. <a class="icon-targetblank" target="_blank" href="https://www.linkedin.com/in/callumflack">Read further on LinkedIn.</a>
