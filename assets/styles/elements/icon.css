@@ -1,7 +1,9 @@
 /*
- * Icon
- * 1. so we can adjust it within <p>s.
- *    Imported 'svgicon' does the rest.
+ 
+  Icon
+  1. so we can adjust it within <p>s.
+     Imported 'svgicon' does the rest.
+
  */
 
 .svg-icon {
@@ -9,4 +11,67 @@
 }
 
 .svg-fill {
+}
+
+.icon-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  margin: -20px;
+  padding: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  text-align: center;
+}
+
+.icon svg {
+  fill: currentColor;
+  transition: fill 400ms ease;
+}
+
+/* THEME */ 
+
+.icon-logo {
+  margin-right: 0.5rem;
+  transform: translateY(1px);
+
+  @media (--large-viewport) {
+    margin-right: 0.666rem;
+    transform: translateY(2px);
+  }
+}
+
+/* https://css-tricks.com/scale-svg/ */ 
+.icon-logo svg {
+  height: 24px;
+  width: 24px;
+
+  @media (--medium-viewport) {
+    height: 29px;
+    width: 29px;
+  }
+
+  @media (--large-viewport) {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+.icon-toggle svg {
+  height: 1.5em;
+  width: 1.5em;
+
+  @media (--medium-viewport) {
+    // height: 29px;
+    // width: 29px;
+  }
+
+  @media (--large-viewport) {
+    height: 2rem;
+    width: 2rem;
+  }
 }

@@ -1,6 +1,7 @@
-
 /*
- * Base HTML elements
+
+  Base HTML elements
+
  */
 
 html,
@@ -9,15 +10,3 @@ body {
 
 html {
 }
-
-body {
-  background-color: #f9f4dd !important; /* about */
-  background-color: var(--color-neutral) !important;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-

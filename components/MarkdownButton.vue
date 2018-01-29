@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.Meta.Button.Button--outline(:href="link") {{ label }}
+  a.text.Button.Button--outline.color-title.icon-targetblank(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>
@@ -13,5 +13,7 @@ export default {
 </script>
 
 <style scoped>
-
+a + a {
+  margin-left: 12px;
+}
 </style>

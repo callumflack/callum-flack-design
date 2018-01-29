@@ -3,7 +3,8 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "Patternworks",
+    title:
+      "Patternworks • Callum Flack • Digital design & development • Cairns, Australia",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -13,8 +14,10 @@ module.exports = {
   },
   /*
   ** Customize the progress-bar color
+  ** loading: { color: "#1f1f1f" },
+  ** loading: "~/components/PageLoading.vue",
   */
-  loading: { color: "#1f1f1f" },
+  loading: { color: "#0a0a0a" },
   /*
   ** Build configuration
   */
@@ -32,10 +35,20 @@ module.exports = {
         });
       }
     }
+    /* 
+      cssnext is available by default in Nuxt, 
+      but there's TWO different methods shown in the docs:
+      https://nuxtjs.org/api/configuration-build#postcss
+      https://nuxtjs.org/faq/postcss-plugins
+      …and both FAIL to load postcss-mixins:
+      
+    postcss: {
+      plugins: {
+        "postcss-mixins": {}
+      }
+    }
+    */
   },
-  // https://nuxtjs.org/api/configuration-build#postcss
-  // cssnext is available by default in Nuxt.
-  postcss: [],
   css: ["~/assets/styles/application.css"],
   plugins: [
     { src: "~/plugins/vue-slick", ssr: false },
@@ -49,7 +62,6 @@ module.exports = {
     routes: [
       "/",
       "/about",
-      "/contact",
       "/work",
       "/work/oceanblue-living",
       "/work/oceanblue-boats",
@@ -59,13 +71,14 @@ module.exports = {
       "/work/album-registry",
       "/work/vj-ray",
       "/work/ward6",
-      "/work/ward6-edetailers"
+      "/work/ward6-edetailers",
+      "/journal",
+      "/journal/designers-should-code"
     ]
   },
   router: {
     middleware: "currentPage",
-    // this errors, WTF.
-    // async scrolling docs look diff now:
+    // FYI: async scrolling docs look diff now:
     // https://router.vuejs.org/en/advanced/scroll-behavior.html
     async scrollBehavior(to, from, savedPosition) {
       setTimeout(() => {
@@ -83,7 +96,7 @@ module.exports = {
           savedPosition
         );
         window.scrollTo(scrollTo.x, scrollTo.y);
-      }, 400);
+      }, 100);
     }
   }
 };

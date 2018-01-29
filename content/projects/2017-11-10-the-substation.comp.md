@@ -1,38 +1,44 @@
 ---
 section: Projects
-title: The Substation
-headline: A website and branding revision for a large-scale Melbourne arts venue.
-lede: A website and branding revision for <span style="color:rgb(191, 166, 87)">THE SUBSTATION</span>, a large-scale Melbourne arts venue.
-heroImage: /images/thesubstation-hero.jpg
-thumbImage: /images/thumb-thesubstation.jpg
-featured: true
-tags: website, branding
 year: 2016
-projectColor: rgb(191, 166, 87)
-bannerColor: rgba(191, 166, 87, 0.25)
-nextproject: /work/oceanblue-living
+heading: The Substation
+lede: A website and branding revision for the large-scale Melbourne arts venue.
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg
+thumbInCloudinary: true
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
+heroInCloudinary: true
+heroRatio: 65%
+heroFrame: true
+tags: website, branding
+nextProject: /work/primary-healthcare-network
+nextProjectHeading: Primary Healthcare Network
+featured: true
 ---
 
-**I began working with The Substation** by rebuilding their website platform for efficiency and flexibility so they could spend more time building their vision instead of being stuck in technology.
+The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
+efficiency, flexibility and performance.
 
-As we progressed, were able to understand their vision and evolve their digital branding to match, so that their current audience and new audiences can engage intimately with new Australian art.
+As we progressed, I came to understand their vision and evolved their digital branding
+to match.
 
-@[MarkdownImage](large src="/images/thesubstation-artists.png")
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
 
-We targeted mobile performance in the upgrade because we wanted to fulfil the needs of real customers. For example, a person travelling home from work by tram should, upon receiving a friend's show invite, be able to buy a ticket right away, on 2 bars of 3G in the suburbs. To do this, the website performance was audited and a checklist of improvements made.
+The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography. We
+exploded the grid system, so that images, gifs and video would immerse people in this electric world.
+
+Redesigning the user experience, we prioritised events. Event details and the 'buy' button were brought to the forefront. Clear navigation and
+event grids allow easy persual without compromising the immersive experience.
+
+@[MarkdownMovie](laptop frame src="/images/thesubstation-video-desktop-events.mp4")
+
+We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
 @[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
 
-Redesigning the user experience, we prioritised events—The Substation's reason for being. Event details and the 'buy' button were brought to the forefront. Obvious navigation and event grids were designed to help people find events without effort.
+<!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
-Our visual design rework focussed on giving The Substation's brilliant, eclectic photography centre stage, framed by whitespace and clean typography. In the original website design, the photography was placed within the bounds of the text column. We exploded this grid system, so that images, gifs and video would immerse people in the electric world of The Substation.
+> Callum has helped us understand and fix many, many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile.” _Brad Spolding, Managing Director_
 
-> The wordmark has been extended with a distinctive line that can be customized for a series of transformations that reflect the dynamic nature of the organization and its initiatives.” _Brad Spalding, Managing Director_
+Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 
-Our initial remit was bug fixes yet after understanding their issues, we proposed a change of website platform to stem the constant maintenance costs draining their digital marketing effectiveness. In the process, it became easy to improve the site's content structure, usability and performance without a big time spend. With a performant codebase, we were also able to polish their visual brand.
-
-@[MarkdownImage](medium src="/images/thesubstation-event.png")
-
-The new website platform and branding is allowing The Substation to revitalise their digital marketing. By improving CMS access and efficiency, using a flexible development workflow and reducing website maintenance costs, they have control over their website so they can spend more time implementing their vision.
-
-@[MarkdownButton](link="http://www.thesubstation.org.au/" label="Visit The Substation")
+@[MarkdownProjectLink](link="http://www.thesubstation.org.au/" label="Visit The Substation")

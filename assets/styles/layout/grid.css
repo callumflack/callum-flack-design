@@ -1,6 +1,8 @@
 /*
- * Using SuitCSS's .Grid component
- * TODO: build Suit again w/ correct vars.
+
+  Using SuitCSS's .Grid component
+  TODO: build Suit again w/ correct vars.
+
  */
 
 .Grid--withGutter {
@@ -52,11 +54,11 @@
 }
 
 .Grid--withTinyGutter {
-  margin: calc(-1 * 1px);
+  margin: calc(-1 * 2px);
 }
 
 .Grid--withTinyGutter > .Grid-cell {
-  padding: 1px;
+  padding: 2px;
 }
 
 .Grid--withProjects {
@@ -66,7 +68,7 @@
     margin: 0 calc(-0.5 * var(--s4));
   }
 
-  @media (--large-viewport) {
+  @media (--xlarge-viewport) {
     margin: 0 calc(-0.5 * var(--s7));
   }
 }

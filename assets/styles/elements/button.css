@@ -1,3 +1,10 @@
+/*
+
+  Button.
+  Capitalised so we get Suit's button, then override it.
+
+ */
+
 .Button {
   appearance: none;
   background-color: var(--color-text);
@@ -13,10 +20,10 @@
   /* theme */
   box-shadow: inset 0 0 0 1px var(--color-text);
   font-weight: inherit;
-  letter-spacing: var(--ls-meta);
+  letter-spacing: 0;
   line-height: inherit;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
+  padding: var(--field-spacing);
+  text-transform: inherit;
 
   /* pseudos */
   &:hover {
@@ -27,11 +34,11 @@
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 4px var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-neutral);
   }
 
   &:active {
-    background-color: var(--color-bg);
+    background-color: var(--color-neutral);
     box-shadow: inset 0 0 16px var(--color-text);
   }
 
@@ -42,46 +49,59 @@
 
 /* 
  * outline variation
+ * different padding as for text-based buttons
  */
 
 .Button--outline {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px;
+  box-shadow: inset 0 0 0 1px;
   color: var(--color-text);
+  letter-spacing: inherit !important;
 
   &:hover {
-    background-color: var(--color-text);
+    background-color: var(--color-title);
     color: var(--color-bg);
   }
 
   &:focus {
-    box-shadow: inset 0 0 0 4px, 0 0 0 2px;
+    box-shadow: inset 0 0 0 1px, 0 0 0 2px;
   }
 
   &:active {
-    background-color: var(--color-text);
-    box-shadow: inset 0 0 0 1px var(--color-text),
-      inset 0 0 16px var(--color-text);
+    background-color: var(--color-title);
+    box-shadow: inset 0 0 0 4px var(--color-title), inset 0 0 16px var(--color-title);
     color: var(--color-bg);
   }
 }
 
 /* 
  * transparent variation
+ * used w/ .title
  */
 
 .Button--transparent {
   background-color: transparent;
   box-shadow: initial;
-  color: var(--color-text);
-  padding: 1rem 0.75rem;
+  color: inherit;
+  letter-spacing: inherit !important;
+  text-align: left;
+  width: initial;
 
-  /* theme */
+  &:hover,
+  &:focus,
+  &:active {
+    // box-shadow: inset 0 0 0 2px var(--color-text);
+    color: var(--color-title);
+  }
 
-  &:hover {
-    box-shadow: initial;
-    background-color: initial;
-    color: var(--color-text);
+  &:focus {
+    // box-shadow: inset 0 0 0 2px, 0 0 0 2px;
+    // box-shadow: 0 0 0 1px var(--color-title);
+  }
+
+  &:active {
+    // background-color: var(--color-text);
+    // color: var(--color-neutral);
   }
 }
 

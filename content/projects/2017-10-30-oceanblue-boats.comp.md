@@ -1,30 +1,40 @@
 ---
 section: Projects
-title: Oceanblue Boats
-headline: A website to tell a story of fishing boats and far-away places.
-lede: A website for <span style="color:rgb(41,170,150)">OCEANBLUE BOATS</span> tell a story about fishing boats and far-away places.
-heroImage: /images/oceanblueboats-hero.jpg
-thumbImage: /images/thumb-oceanblueboats.jpg
 year: 2017
-featured: true
+heading: Oceanblue Boats
+lede: A website that tells a story about building boats for those who wish to get away.
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
+thumbInCloudinary: true
+heroVideo: /images/oceanblueboats-desktop-video-180123.mp4
+heroVideoDesktop: true
+heroVideoImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
+heroInCloudinary: false
+heroFrame: true
 tags: website, branding
-projectColor: rgb(41, 170, 150)
+nextProject: /work/ward6
+nextProjectHeading: Ward6
+featured: true
 ---
 
-**OceanBlue Boats had just moved** into a new warehouse space that was four times larger. I was brought in to redesign their brand and build a website that told their love for all things boating, fishing and fabrication. 
+OceanBlue Boats had just moved into a new warehouse space that was four times larger. I
+was asked to redesign their branding and build a website around their love for all
+things boat-making and general fabrication.
 
-@[MarkdownMovie](medium laptop src="/images/oceanblueboats-desktop-video.mp4")
+@[MarkdownImage](src="/images/oceanblueboats-mobile-screens-1.png")
 
-Vince, the owner, knows fishing boats. The website acts as a storybook, each page is a chapter that talks about Vince's love for boats, how he grew up with them and how he loves making them for fishermen who know the difference between a reel positioned off port versus off starboard.
+<!-- @[MarkdownMovie](large src="/images/oceanblueboats-desktop-video.mp4") -->
 
-> We love our new website! It tells out story really well, and people just get it. Callum has understood who we build boats for, and why we do it. _Vince Cassaniti, owner_
+Vince, the owner, knows fishing boats. The website acts as a storybook, each page is a
+chapter that talks about Vince's boat making specialty, what the new factory workspace offers, the fabrication processes used and the base boat designs they customise.
 
-@[MarkdownImage](medium src="/images/oceanblueboats-layout.jpg")
+I worked with [J-Create Photography](http://j-create.com.au/) to capture the tight-knit team and the workshop space in action, portraying them as uncommon local craftspeople.
 
-I worked with [J-Create Photography](http://j-create.com.au/) to capture the team's love of boat building. We portrayed a tight-knit crew dedicated to their craft. We showcased their factory-sized workspace and their fabrication technology capability as uncommon local drawcards. 
+> We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it.” _Vince Cassaniti, Owner_
 
-@[MarkdownImage](medium src="/images/oceanblueboats-photography.jpg")
+@[MarkdownImage](frame src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597571/okok/oceanblueboats-layout.jpg")
 
-As our relationship continues, we'll document their work and build a library of images for ongoing brand marketing. This will position OceanBlue Boats as the premium craftspeople they are.
+Over time, we'll continue to document their boat-making and improve the website to suit their audience. This will leave Vince & his crew with more time to do what they do best.
 
-@[MarkdownButton](link="https://oceanblueboats.com.au" label="Visit the site")
+<!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
+
+@[MarkdownProjectLink](link="https://oceanblueboats.com.au" label="Visit Oceanblue Boats")

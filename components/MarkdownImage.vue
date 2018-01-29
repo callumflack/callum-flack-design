@@ -9,18 +9,17 @@ export default {
   computed: {
     figureClasses() {
       return [
-        "Figure",
-        "Block--halfSandwich",
+        "figure",
         {
-          "Figure--medium": this.medium,
-          "Figure--large": this.large,
-          "Figure--frame": this.frame
+          "figure--portrait": this.portrait,
+          "figure--large": this.large,
+          "figure--frame": this.frame
         }
       ];
     }
   },
   props: {
-    medium: Boolean,
+    portrait: Boolean,
     large: Boolean,
     frame: Boolean,
     src: String

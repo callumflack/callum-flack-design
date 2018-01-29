@@ -1,23 +1,22 @@
 <template lang="pug">
-  .Block--sandwichPadding
-    .Container
-      .Block--quarter
-        ul.Nav-menu.u-marginT0
-          c-navlink(
-            v-for="item in navLinks",
-            :key="item.label",
-            :label="item.label",
-            :link="item.link",
-            :lede="item.lede",
-            :currentPage="currentPage"
-            :exact="item.exact"
-          )
-      .Nav-buttons.Meta.--medium.u-textCenter
-        c-navbutton(
-          v-for="item in navButtons",
-          :key="item.label",
-          :label="item.label",
-          :link="item.link",
+  .container
+    .block--masthead
+      nav.title
+        c-navlink(
+          v-for="item in navLinks"
+          :key="item.label"
+          :label="item.label"
+          :link="item.link"
+          :currentPage="currentPage"
+          :exact="item.exact"
+        )
+      .text.text--meta.color-title.block--touch
+        c-navlink(
+          v-for="item in navContacts"
+          :key="item.label"
+          :label="item.label"
+          :link="item.link"
+          external
         )
 </template>
 
@@ -35,45 +34,44 @@ export default {
   props: {
     currentPage: String
   },
-  computed: {
-    // plainNewsletterButton: true,
-  },
   data() {
     return {
       navLinks: [
         {
-          label: "Overview",
+          label: "Home",
           link: "/",
-          lede: "Digital craftsmanship",
           exact: true
         },
         {
           label: "Work",
-          link: "/work",
-          lede: "VJ Ray Website"
+          link: "/work"
         },
         {
           label: "Journal",
-          link: "/journal",
-          lede: "Should designers code?"
+          link: "/journal"
         },
         {
           label: "About",
-          link: "/about",
-          lede: "A designer who codes"
+          link: "/about"
+        }
+      ],
+
+      navContacts: [
+        {
+          label: "callum@patternworks.com.au",
+          link: "mailto:callum@patternworks.com.au"
         },
         {
-          label: "Contact",
-          link: "/contact",
-          lede: "Located in Cairns, Australia"
+          label: "+61 408 767 540",
+          link: "tel:610-408-767-540"
+        },
+        {
+          label: "@callumflack",
+          link: "https://twitter.com/callumflack"
         }
       ],
 
       navButtons: [
-        {
-          label: "Email",
-          link: "mailto:hi@patternworks.com.au"
-        },
         {
           label: "Twitter",
           link: "https://twitter.com/callumflack"
@@ -87,7 +85,8 @@ export default {
           link: "https://www.linkedin.com/in/callumflack"
         },
         {
-          label: "© 2018 Callum Flack"
+          label: "Instagram",
+          link: "https://www.linkedin.com/in/callumflack"
         }
       ]
     };
@@ -98,28 +97,4 @@ export default {
 
 <style scoped>
 @import "../assets/styles/vars.css";
-
-.Nav {
-  position: relative;
-  top: 0;
-}
-
-.Nav-menu ul {
-  margin-bottom: 0;
-}
-
-.Nav-menu li + li {
-  margin-top: var(--s4);
-}
-
-.Nav-buttons {
-  & a {
-    margin-left: 0;
-  }
-}
-
-.NewsletterWrapper {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-}
 </style>

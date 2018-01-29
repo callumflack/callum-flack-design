@@ -1,51 +1,32 @@
 /* 
- * Container 
+
+  Container 
+
  */
 
-.Container {
+.container {
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-rg);
-  padding-left: var(--grid-gutter);
-  padding-right: var(--grid-gutter);
+  max-width: var(--container);
+  padding-left: calc(0.5 * var(--grid-gutter));
+  padding-right: calc(0.5 * var(--grid-gutter));
   width: 100%;
-}
 
-.InnerTextColumn > h1,
-.InnerTextColumn > h2,
-.InnerTextColumn > p,
-.InnerTextColumn > blockquote {
-  // margin-right: 3vw;
-}
-
-.Container--left {
-  padding-left: 0;
-}
-
-.Container--medium {
-  max-width: var(--container-md);
-}
-
-.Container--large {
-  max-width: var(--container-lg);
-}
-
-.Container--hero {
-  background-color: white;
-  max-width: var(--container-xl);
-  padding: var(--s4);
-
-  @media (--medium-viewport) {
-    padding: var(--s5);
-  }
-
-  @media (--large-viewport) {
-    padding: var(--s6);
+  @media (--small-viewport) {
+    padding-left: var(--grid-gutter);
+    padding-right: var(--grid-gutter);
   }
 }
 
-.Figure--tuck,
-.Container--tuck {
+/*
+  
+  Container variations
+ 
+ */ 
+
+.figure--tuck,
+.container--tuck {
   margin: 0;
   max-width: initial;
   padding-left: var(--grid-gutter);

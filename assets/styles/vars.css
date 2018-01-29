@@ -1,152 +1,126 @@
 /*
- * Variables
- * --------------------
- */
+  
+  Variables
+
+  Notes on css custom properties & postcss-custom-properties:
+  Single variables within media queries are a great idea:
+  https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
+  …but postcss-custom-properties limits vars to the :root:
+  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —> https://github.com/postcss/postcss-custom-properties
+  
+  :root { --s-title: 20px; }
+
+  @media (min-width: 80em) {
+    :root { --s-title: 40px; }
+  }
+
+*/
 
 /* eslint-disable */
 /* prettier-ignore */
+
 :root {
-  @custom-media --small-viewport (min-width: 32em);
-  @custom-media --medium-viewport (min-width: 48em);
-  @custom-media --large-viewport (min-width: 80em);
-  @custom-media --xlarge-viewport (min-width: 100em);
+  @custom-media --small-viewport (min-width: 512px);
+  @custom-media --medium-viewport (min-width: 768px);
+  @custom-media --large-viewport (min-width: 1280px);
+  @custom-media --xlarge-viewport (min-width: 1600px);
 
-  /*
-   * sizes
-   */ 
+ /*
 
-  --grid-gutter: 24px;
+    Sizes
+ 
+  */ 
+
+  --grid-gutter: 3rem;
   --spacer: 24px;
+  --spacer-large: 0.75rem;
 
+  --container: calc(72.5em + 6rem);
+  --container-rg: 72.5em;
+  
   --container-sm: 400px;
-  --container-rg: 45em;
   --container-md: 808px;
   --container-lg: 1120px;
   --container-xl: 1600px;
 
-  /* --s1: 4px;
-  --s2: 8px;
-  --s3: 16px;
-  --s4: 32px;
-  --s5: 64px;
-  --s6: 128px;
-  --s7: 256px; */
-
-  /* or 6, 12, 24, 48, 96… */
-
   --s1: 0.25rem;
   --s2: 0.5rem;
   --s3: 1rem;
-  --s4: 2rem;
-  --s5: 4rem;
-  --s6: 8rem;
-  --s7: 10rem;
+  --s4: 2.5rem;
+  --s5: 5rem;
+  --s6: 10rem;
+  --s7: 13rem;
   
-  /* instrument's tuck inset */
   --tuck: 6vw;
   --tuck-lg: 9vw;
 
   --border-radius: 4px;
 
+  --field-spacing: 1rem 1.25rem;
+
   /* 
-   * Colors
+    
+    Colors
+  
    */
    
   --color-brand: #00ffff;
-  /*--color-highlight: #0070c9;*/
-  --color-highlight: #FF6F00;
-  --color-text: #1f1f1f;
-  --color-text-medium: #757575;
-  --color-text-light: #959595;
-  --color-border: #e5e5e5;
-  --color-neutral: #f2f2f2;
-  --color-bg: #fdfdfd;
+  --color-highlight: #bee8fb;
+  --color-highlight: #47bbff;
+  --color-highlight: #44729c;
+  --color-highlight: #b32273;
+  --color-red: #ff3700;
+  --color-title: #0a0a0a;
+  --color-text: #999;
+  --color-device: #e7e7e7;
+  --color-border: #e7e7e7;
+  --color-neutral: #eee;
+  --color-bg: #fefefe;
+  --color-bg-blue: #cdd8e2;
+  --color-metal: #cdd8e2;
+  --color-metal: rgba(222, 229, 235, 1);
 
   /* 
-   * Typefaces
+  
+    Typefaces
+  
    */
 
-  --font-serif-regular: "PortraitText-Regular";
-  --font-serif-italic: "PortraitText-RegularItalic";
-  --font-regular: "Atten-Book";
-  --font-heading-medium: "Atten-Medium";
-  --font-heading-bold: "Atten-Bold";
-  --font-button: var(--font-heading-bold);
+  --font-regular: "Regular";
+  --font-italic: var(--font-regular);
+  --font-button: var(--font-regular);
 
   --font-stack-serif: Georgia, "Times New Roman", Times, serif;
   --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* 
-   * Font sizes
-   * Using the perfect fourth: http://type-scale.com/
+  
+    Font sizes
+    For your thoughts: http://type-scale.com/
+   
    */
 
-  /* headings */
-  --s-title-1: 25px;
-  --s-title-2: 32px;
-  --s-title-3: 39px;
-  --s-title: 2.369em;
-
-  // --s-heading-1: 24px;
-  // --s-heading-2: 30px;
-  // --s-heading-3: 35px;
-
-  --s-heading-meta-1: 11px;
-  --s-heading-meta-2: 13px;
-  --s-heading-meta-3: 15px;
-  --s-heading-meta: 0.9375em;
-
-  --s-lede-1: 21px;
-  --s-lede-2: 25px;
-  --s-lede-3: 28px;
-  --s-lede: 1.999em;
-  --s-lede: 1.75em;
-
-  /* text serif */
-  --s-text-1: 18px;
-  --s-text-2: 20px;
-  --s-text-3: 23px;
-  --s-text: 1.414em;
-
-  --s-text-sm-1: 11px;
-  --s-text-sm-2: 12px;
-  --s-text-sm-3: 14px;
-  --s-text-sm: 0.875em;
+  --s-text-unit: 1.5625;
+  --s-text: 1.5625em;
+  --s-text-meta: 1.125em;
 
   /* 
-   * ls & lh 
+  
+    ls & lh 
+   
    */
   
-  --ls-heading: -0.0225em;
-  --ls-heading-sm: -0.005em;
-  --ls-text: -0.01em;
-  --ls-meta: 0.075em;
-
-  --lh-heading: 1.25;
-  --lh-subheading: 1.4;
-  --lh-text: 1.4; /*1.347826087*/
-  --lh-meta: 1.3;
+  --ls-text: -0.025em;
+  --ls-meta: -0.0125em;
+  --lh-text: 1.4;
 
   /* 
-   * Transitions 
+  
+    Transitions 
+  
    */
 
   --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
   --transition-debounce: 2.5s;
 }
-
-
-
-/*
-Single variables within media queries are a great idea:
-https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
-
-But postcss-custom-properties limits vars to the :root
- 
-:root { --s-title: 20px; }
-
-@media (min-width: 80em) {
-  :root { --s-title: 40px; }
-}
-*/

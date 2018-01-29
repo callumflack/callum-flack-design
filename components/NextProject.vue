@@ -1,17 +1,17 @@
 <template lang="pug">
-  footer.u-bgColorWhite(role="contentinfo")
+  footer.bgcolor-white(role="contentinfo")
     router-link(:to="project.permalink", v-if="project")
-      .Block--sandwichPadding
-        .Container
-          h1.Title.u-sm-size11of12
-            span.Title--sub Next →
+      .block
+        .container
+          h1.title.u-sm-size11of12
+            span.title--sub Next →
             br
             span(:style="projectColor") {{ project.title }}
     router-link(to="/work", v-else)
-      .Block--sandwichPadding
-        .Container
-          h1.Title.u-sm-size11of12
-            span.Title--sub Next →
+      .block
+        .container
+          h1.title.u-sm-size11of12
+            span.title--sub Next →
             br
             span View all work
 </template>
@@ -24,9 +24,7 @@ export default {
   },
   computed: {
     projectColor() {
-      return this.project.projectColor
-        ? `color: ${this.project.projectColor}`
-        : "";
+      return this.project.projectColor ? `color: ${this.project.projectColor}` : "";
     }
   }
 };

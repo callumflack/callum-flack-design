@@ -1,44 +1,54 @@
 ---
 section: Projects
-title: Album Registry
-headline: Helping photographers grow their business with gift-funding.
-lede: <span style="color:rgb(151, 62, 167)">ALBUM REGISTRY</span> is a gift-giving platform for anyone to gift beautiful pro photography.
-heroImage: /images/albumregistry-new-profile@2x.jpg
-thumbImage: /images/thumb-albumregistry.jpg
 year: 2017
-featured: true
+heading: Album Registry
+lede: A crowd-funding platform to help pro photographers grow their business.
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
+thumbInCloudinary: true
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg
+heroInCloudinary: true
+heroFrame: true
 tags: web app, branding
-projectColor: rgb(151, 62, 167)
+nextProject: /work/oceanblue-living
+nextProjectHeading: Oceanblue Living
+featured: true
 ---
 
-**After setbacks and investor problems,** I was asked to help rethink what Album Registry can be, and rebuild the platform for a community of photographers around the world.
+Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
+be, and rebuild the platform for a community of photographers around the world.
 
-> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves. _Jannah Dryden, founder_
+> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden, Founder_
 
-@[MarkdownImage](large src="/images/albumregistry-new-registry-detail.jpg")
+@[MarkdownMovie](frame src="/images/albumregistry-block-registries.mp4")
 
-Album Registry bridges the gap between people celebrating the big moments of their lives, and artisinal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class, secure e-commerce experience. 
+Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
+experience.
 
-@[MarkdownMovie](medium src="/images/albumregistry-block-registries.mp4")
+@[MarkdownImage](large frame src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg")
 
 ## Built for future iteration
 
-The resulting website is fully responsive, provides many levels of user access, with a flexible backend content management system to record registry payments and an email notification system for admin, customers and gifters. Microservices are added when required, so we can test and adapt quickly.
+The resulting website is fully responsive, provides multiple levels of user access, with a flexible backend content management system to record registry payments and an email notification system for admin, customers and gifters.
 
-The codebase is Javascript-based, allowing us to make advantage of new developments in the Node.js ecosystem. 
+The codebase uses the Node.js ecosystem, allowing us to take advantage of the rapid developments in open-source web development.
 
 We're able to design and adjust new features in the browser using the brand design system we designed and built.
 
-@[MarkdownImage](large src="/images/albumregistry-responsive-alt1@2x.jpg")
+<!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-We aim to offer the Album Registry photographers an ecommerce platform, a marketing toolkit, and a community to share with. 
+@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
 
-> Every wedding I do starts with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders! _Vince Cassaniti, J-Create Photography_
+We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
-@[MarkdownImage](medium src="/images/albumregistry-moment.jpg")
+> Every wedding I do starts with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
 
-> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost that great photography deserves. _Jannah Dryden, founder_
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
 
-Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to focus on building tools that help our photographer community, and to help people give the gift of memories.
+Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
+focus on building tools that help photographers grow their business, and help people give the gift of memories.
 
-@[MarkdownButton](link="https://albumregistry.com" label="Visit the site")
+<!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
+
+<!-- @[MarkdownButton](link="https://albumregistry.com" label="Visit Album Registry") -->
+
+@[MarkdownProjectLink](link="https://albumregistry.com" label="Visit Album Registry")

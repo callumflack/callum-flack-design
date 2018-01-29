@@ -1,35 +1,52 @@
 /*
- * Forms
+
+  Forms
+
  */
 
-.Form {
+.form {
 }
 
-.Form-group {
+/*.form-group {
   display: flex;
   flex-direction: column;
 
   & * + * {
-    margin: 0 !important;
-    margin-left: -1px;
+    margin: 0;
+    margin-top: var(--s3);
   }
 
   @media (--small-viewport) {
     flex-direction: row;
+    
+    & * + * {
+      margin-top: 0;
+      margin-left: var(--s2);
+    }
+  }
+}*/
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+
+  & * + * {
+    margin-left: var(--s2);
+    margin-top: 0;
   }
 }
 
 input:not([type-file]),
 textarea,
 button {
-  border: 0;
+  /*border: 0;*/
 }
 
 input:not([type-file]),
 textarea {
   /* font-family: inherit;
-  font-size: inherit; */
-  background-color: white;
+  font-size: inherit; 
+  background-color: white;*/
 }
 
 input:not([type-file]),
@@ -40,12 +57,13 @@ textarea {
   width: 100%;
 }
 
-/* REBASS */
+/* REBASS THEME */
 
 input {
   appearance: none;
   border: 0;
-  box-shadow: inset 0 0 0 1px var(--color-text);
+  // border-bottom: 1px solid var(--color-text);
+  box-shadow: inset 0 0 0 2px var(--color-text);
   display: inline-block;
   font-family: inherit;
   line-height: inherit;
@@ -53,7 +71,7 @@ input {
 
   &:focus {
     outline: none;
-    box-shadow: inset 0 0 0 1px var(--color-text);
+    /*box-shadow: inset 0 0 0 1px var(--color-text);*/
   }
 }
 
@@ -65,6 +83,6 @@ input {
   color: inherit;
   background-color: transparent;
 
-  /* theme */
-  padding: 1rem 2rem;
+  /* theme from .Button--transparent */
+  padding: var(--field-spacing);
 }

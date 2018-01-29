@@ -1,10 +1,11 @@
 <template>
-  <div class="placeholder" ref="placeholder">
+  <div class="image">
+    <div :class="ratioClasses" :style="ratioStyle" ref="placeholder">
     <img
       :class="[
         'low-rez',
         {
-          loaded: smallUrl
+          'is-loaded': smallUrl
         }
       ]"
       :src="smallUrl"
@@ -13,12 +14,14 @@
       :class="[
         'full-rez',
         {
-          loaded: largeUrl
+          'is-loaded': largeUrl
         }
       ]"
       :src="largeUrl"
     />
   </div>
+  </div>
+  
 </template>
 
 <script>
@@ -37,8 +40,27 @@ export default {
       type: String,
       required: true
     },
+    frame: Boolean,
     square: Boolean,
-    face: Boolean
+    face: Boolean,
+    project: Boolean,
+    ratio: String
+  },
+
+  computed: {
+    ratioClasses() {
+      return [
+        "image-aspectRatio",
+        {
+          "figure--frame": this.frame,
+          "image-aspectRatio--4by3": this.project
+        }
+      ];
+    },
+    ratioStyle() {
+      // (v-if="page.projectColor", :style = 'projectColor')
+      return this.ratio ? `padding-bottom: ${this.ratio}` : "";
+    }
   },
 
   data() {
@@ -89,33 +111,48 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/vars.css";
+@import "../assets/styles/vars.css";
 
-.placeholder {
-  background-color: var(--color-brand);
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.image {
+  background-color: var(--color-neutral);
 }
 
-.placeholder img {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
+.image-aspectRatio {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
   width: 100%;
+}
+
+.image-aspectRatio--4by3 {
+  padding-bottom: 75%;
+}
+
+.image img {
+  opacity: 0;
   min-height: 100%;
   min-width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   transition: opacity 1s linear;
+  width: 100%;
 }
 
-.placeholder img.loaded {
+.image img.is-loaded {
   opacity: 1;
 }
 
+.low-rez,
 .img-small {
   filter: blur(50px);
   /* this is needed so Safari keeps sharp edges */
   transform: scale(1);
+}
+
+/* use the SVG filter that's secreted on work/index */
+.project:hover img {
+  filter: url("#gray");
 }
 </style>

@@ -1,49 +1,37 @@
 <template lang="pug">
-  div
-    .Block--sandwich(role="banner")
-      .Container
-        .u-sm-size2of3.Grid-cell--center
-          figure.Figure
-            img(:src="page.heroImage", alt="", style="opacity:0.9")
-    main.Block(role="main")
-      .Container
-        nuxtent-body.TypeScope(:body="page.body")
-    footer.u-bgColorWhite(role="contentinfo")
-      c-nav
+  .block--pageEnd
+    header(role="banner")
+      c-pageheading(
+        link="/about"
+        heading="About"
+        lede="Callum Flack is a design-obsessed, systems-thinking, code-based craftsman."
+      )
+      .container
+        c-image(portrait, :src="page.heroImage", style="opacity:0.9")
+    main(role="main")
+      .container
+        .text-scope
+          nuxtent-body(:body="page.body")
 </template>
 
 <script>
-import Nav from "~/components/Nav.vue";
+import PageHeading from "~/components/PageHeading.vue";
+import MarkdownImage from "~/components/MarkdownImage.vue";
 
 export default {
   components: {
-    "c-nav": Nav
+    "c-pageheading": PageHeading,
+    "c-image": MarkdownImage
   },
-  computed: {
-    titleColor() {
-      // (v-if="page.projectColor", :style = 'titleColor')
-      return this.page.projectColor ? `color: ${this.page.projectColor}` : "";
-    }
-  },
-  props: {
-    dropCap: Boolean,
-    title: String,
-    headline: String
-  },
-  async asyncData({ app, route, payload }) {
-    // If more than 1 x page, change the const to `const contentType = ['/about', '/other'].includes(route.path)`.
-    // If there ends up being many pages then create another solution.
-    const contentType = "/pages";
-
+  props: {},
+  async asyncData({ app, route }) {
     return {
-      page: await app.$content(contentType).get(route.path)
+      page: await app.$content("/pages").get(route.path)
     };
   }
 };
 </script>
 
 <style scoped>
-body {
-  background-color: salmon !important;
-}
+@import "../assets/styles/vars.css";
 </style>

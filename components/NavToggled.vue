@@ -4,23 +4,21 @@
 </template>
 
 <script>
-import Navbar from "~/components/NavBar.vue";
 import Nav from "~/components/Nav.vue";
 
 export default {
   name: "NavToggled",
 
   components: {
-    "c-navbar": Navbar,
     "c-nav": Nav
   },
 
   computed: {
     navClass() {
       return [
-        "Modal",
+        "modal",
         {
-          hidden: !this.isVisible, // u-hiddenVisually?
+          hidden: !this.isVisible,
           "delay-transition": this.delayTransition
         }
       ];
@@ -33,42 +31,6 @@ export default {
     currentPage: function() {
       return this.$store.state.currentPage;
     }
-  },
-
-  data() {
-    return {
-      navLinks: [
-        {
-          label: "The home page",
-          link: "/"
-        },
-        {
-          label: "The history",
-          link: "/the-history"
-        },
-        {
-          label: "The factory",
-          link: "/the-factory"
-        },
-        {
-          label: "The process",
-          link: "/the-process"
-        },
-        {
-          label: "The boat builders",
-          link: "/the-boat-builders"
-        },
-        {
-          label: "The designs",
-          link: "/the-designs"
-        },
-        {
-          label: "The location",
-          link: "/contact-us"
-        }
-      ],
-      delayTransition: false
-    };
   },
 
   methods: {
@@ -94,8 +56,7 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.Modal {
-  background-color: #fff;
+.modal {
   bottom: 0;
   left: 0;
   opacity: 1;
@@ -104,21 +65,43 @@ export default {
   top: 0;
   transform: translateY(0);
   transition: opacity var(--transition-duration), transform 0s 0s;
-  z-index: 15;
+  z-index: 99;
 
-  /* account for the navbar */
-  padding-top: 72px;
+  &:hover,
+  &:focus {
+    cursor: url("../static/images/icon-close.png"), auto;
+  }
 }
 
-.Modal.hidden {
+.modal.hidden {
   opacity: 0;
   transform: translateY(100vh);
   transition: opacity var(--transition-duration),
     transform 0s var(--transition-duration);
 }
 
-.Modal.delay-transition {
+.modal.delay-transition {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
+}
+
+/* 
+
+  modal theme
+
+ */
+
+.modal {
+  background-color: var(--color-metal);
+}
+
+.modal .container {
+  height: 100vh;
+}
+
+.modal .title,
+.modal .text,
+.modal .text--meta {
+  width: 100%;
 }
 </style>

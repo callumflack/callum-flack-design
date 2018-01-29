@@ -1,0 +1,40 @@
+.project {
+  display: block;
+}
+
+/* use the SVG filter that's secreted on work/index */
+/* reused & scoped in LazyImage */
+.project:hover img {
+  filter: url("#gray");
+}
+
+.project-text .title {
+  margin: var(--s2) 0;
+
+  @media (--small-viewport) {
+    margin: calc(1.6 * var(--s3)) 0 calc(0.8 * var(--s3));
+  }
+}
+
+.project-text {
+  width: 80%;
+
+  @media (--small-viewport) {
+    width: 75%;
+  }
+}
+
+.project-text h2,
+.project-text p {
+  width: 100%;
+}
+
+.project-subtext {
+  color: var(--color-text);
+}
+
+.project-divider {
+  letter-spacing: -0.2em;
+  /* margin-left: -0.1em; */
+  margin-right: 0.2em;
+}

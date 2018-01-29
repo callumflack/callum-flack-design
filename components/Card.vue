@@ -10,25 +10,26 @@
           )
       .Card-info
         h2.Heading {{ headline }}
-        p.u-colorTextLight(v-html="subtext")
+        p.color-textLight(v-html="subtext")
         p.meta(v-if="tags") {{ tags }}
 </template>
 
 
 <script>
-
 export default {
-  name: 'card',
-  components: {
-  },
+  name: "card",
+  components: {},
   computed: {
-    classes () {
-      return ['Grid-cell', {
-        'u-sm-size1of3': this.feature,
-        'u-sm-size1of6': this.casestudy,
-        'u-size1of2 u-sm-size1of12': this.archive,
-        'Grid-cell--center': this.center
-      }]
+    classes() {
+      return [
+        "Grid-cell",
+        {
+          "u-sm-size1of3": this.feature,
+          "u-sm-size1of6": this.casestudy,
+          "u-size1of2 u-sm-size1of12": this.archive,
+          "Grid-cell--center": this.center
+        }
+      ];
     }
   },
   props: {
@@ -42,7 +43,7 @@ export default {
     subtext: String,
     tags: String
   }
-}
+};
 </script>
 
 

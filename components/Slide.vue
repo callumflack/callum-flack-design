@@ -3,8 +3,8 @@
     .Banner-image.u-posFit(:class="[{ hi }]", v-if="imageUrl")
       img(:src="`/images/${imageUrl}`", alt="")
     .Banner-image.u-posFit.u-flex.u-flexAlignItemsCenter(v-if="figureUrl")
-      .Container
-        figure.Figure--large
+      .container
+        figure.figure--large
           img(:src="`/images/${figureUrl}`", alt="")
       //- lazy-image(
         v-if="backgroundImage",
@@ -14,23 +14,23 @@
         class='filter',
         :style='filterStyle')
     .Banner-text
-      .Container--tuck(v-if="imageUrl")
+      .container--tuck(v-if="imageUrl")
         div(:class="['Container', { 'is-right': alignRight, 'is-reset': hi }]", )
-          h1.Title.u-colorWhite {{ heading }}
+          h1.title.color-bg {{ heading }}
             span(v-html="text")
           div(v-if="link")
             a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
           .u-marginT4(v-if="newsletter")
             c-formnews
-      .Container(v-else)
-        h1.Title {{ heading }}
+      .container(v-else)
+        h1.title {{ heading }}
           span(v-html="text")
         div(v-if="link")
           a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
 </template>
 
 <script>
-import FormNews from "~/components/FormNews.vue";
+import FormNews from "~/components/FormNewsletter.vue";
 
 export default {
   components: {
@@ -55,29 +55,27 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Banner {
-  background-color: var(--color-neutral);
+  background-color: var(--color-bg);
   position: relative;
   /* min-height: calc(100vh - 60px);
   max-height: calc((100vh - 370px)/1.5); */
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 90vh;
+  max-height: 90vh;
 
   display: flex;
   align-items: center;
 }
 
-.Banner-image {
-  & img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+.Banner-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .hi {
   background-color: rgba(110, 0, 255, 0.7);
   background-color: rgba(31, 31, 31, 1);
-  background-color: rgba(21, 21, 21, 0.96);
+  background-color: rgba(10, 10, 10, 0.96);
 
   & img {
     opacity: 0.15;
@@ -90,7 +88,7 @@ export default {
   width: 100%;
 }
 
-.Banner-text .Title {
+.Banner-text .title {
   transform: translateX(-3px);
 }
 
@@ -112,17 +110,17 @@ export default {
  * with image 
  */
 
-.--withImage .Container {
+.--withImage .container {
   margin-left: 0;
   padding: 0;
 }
 
-.--withImage .Container.is-right {
+.--withImage .container.is-right {
   margin-left: auto;
   margin-right: 0;
 }
 
-.--withImage .Container.is-reset {
+.--withImage .container.is-reset {
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--grid-gutter);
@@ -142,13 +140,13 @@ export default {
   opacity: 0.25;
 }
 
-.--withFigure .Banner-text .Container {
+.--withFigure .Banner-text .container {
   /* background-color: var(--color-neutral);
   padding-top: var(--grid-gutter);
   padding-bottom: var(--grid-gutter); */
 }
 
-.--withFigure .Title {
+.--withFigure .title {
   color: var(--color-border);
   color: white;
 }
