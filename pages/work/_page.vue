@@ -65,16 +65,15 @@ export default {
     nextProject: String,
     nextProjectheading: String
   },
-  data() {
-    return {
-      title: this.heading
-    };
-  },
   head() {
     return {
-      title: "Patternworks—" + this.title,
+      title: `${this.page.heading} – Patternworks`,
       meta: [
-        { hid: "description", name: "description", content: "My custom description" }
+        {
+          hid: "description",
+          name: "description",
+          content: `${this.page.lede}`
+        }
       ]
     };
   },
