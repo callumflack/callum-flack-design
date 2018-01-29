@@ -1,6 +1,6 @@
-# patternworks2017
+# patternworks 2018
 
-> Nuxt.js project
+Static site business portfolio and blog.
 
 ## Build Setup
 
