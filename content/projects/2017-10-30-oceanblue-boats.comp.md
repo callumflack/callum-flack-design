@@ -5,11 +5,9 @@ heading: Oceanblue Boats
 lede: A website that tells a story about building boats for those who wish to get away.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true
-heroVideo: /images/oceanblueboats-desktop-video-180123.mp4
-heroVideoDesktop: true
-heroVideoImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
-heroInCloudinary: false
-heroFrame: true
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
+heroInCloudinary: true
+heroFrame: false
 tags: website, branding
 nextProject: /work/ward6
 nextProjectHeading: Ward6
@@ -20,7 +18,7 @@ OceanBlue Boats had just moved into a new warehouse space that was four times la
 was asked to redesign their branding and build a website around their love for all
 things boat-making and general fabrication.
 
-@[MarkdownImage](src="/images/oceanblueboats-mobile-screens-1.png")
+@[MarkdownImage](large src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517378364/okok/oceanblueboats-mobile-screens.png")
 
 <!-- @[MarkdownMovie](large src="/images/oceanblueboats-desktop-video.mp4") -->
 
@@ -31,7 +29,7 @@ I worked with [J-Create Photography](http://j-create.com.au/) to capture the tig
 
 > We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it.” _Vince Cassaniti, Owner_
 
-@[MarkdownImage](frame src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597571/okok/oceanblueboats-layout.jpg")
+@[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517378751/okok/oceanblueboats-layout-d.jpg")
 
 Over time, we'll continue to document their boat-making and improve the website to suit their audience. This will leave Vince & his crew with more time to do what they do best.
 

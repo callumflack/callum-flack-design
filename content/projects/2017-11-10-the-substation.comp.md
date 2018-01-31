@@ -2,13 +2,13 @@
 section: Projects
 year: 2016
 heading: The Substation
-lede: A website and branding revision for the large-scale Melbourne arts venue.
+lede: A website and branding revision for the Melbourne not-for-profit arts centre.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 heroInCloudinary: true
-heroRatio: 65%
-heroFrame: true
+heroRatio: 65
+heroFrame: false
 tags: website, branding
 nextProject: /work/primary-healthcare-network
 nextProjectHeading: Primary Healthcare Network
@@ -23,17 +23,15 @@ to match.
 
 @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
 
-The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography. We
-exploded the grid system, so that images, gifs and video would immerse people in this electric world.
+The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography.
 
-Redesigning the user experience, we prioritised events. Event details and the 'buy' button were brought to the forefront. Clear navigation and
-event grids allow easy persual without compromising the immersive experience.
+Redesigning the user experience, we prioritised events. Event details and the 'buy' button were prioritised. Clear navigation and event grids allow easy persual without compromising the immersive experience.
 
-@[MarkdownMovie](laptop frame src="/images/thesubstation-video-desktop-events.mp4")
-
-We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
+<!-- @[MarkdownMovie](laptop frame src="/images/thesubstation-video-desktop-events.mp4") -->
 
 @[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
+
+<!-- We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made. -->
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 

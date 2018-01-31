@@ -5,9 +5,9 @@ heading: Album Registry
 lede: A crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
-heroFrame: true
+heroFrame: false
 tags: web app, branding
 nextProject: /work/oceanblue-living
 nextProjectHeading: Oceanblue Living
@@ -19,12 +19,12 @@ be, and rebuild the platform for a community of photographers around the world.
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden, Founder_
 
-@[MarkdownMovie](frame src="/images/albumregistry-block-registries.mp4")
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownImage](large frame src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg")
+@[MarkdownMovie](src="/images/albumregistry-block-registries.mp4")
 
 ## Built for future iteration
 

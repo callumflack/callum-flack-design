@@ -5,9 +5,8 @@ heading: Oceanblue Living
 lede: A website to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
-heroVideo: /images/oceanblueliving-video.mp4
-heroVideoLaptop: true
-heroVideoImage: /images/oceanblueliving-hero.jpg
+heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
+heroInCloudinary: true
 tags: website, branding
 nextProject: /work/the-substation
 nextProjectHeading: The Substation
@@ -17,16 +16,18 @@ featured: true
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I
 designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
 
-@[MarkdownImage](src="/images/oceanblueliving-desktop-layouts.png")
+@[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1513597614/okok/oceanblueliving-desktop-layouts.png")
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 
-@[MarkdownImage](src="/images/oceanblueliving-responsive-layouts.png")
+@[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517372252/okok/oceanblueliving-responsive-layouts.png")
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
-@[MarkdownImage](src="/images/oceanblueliving-visual-system.png")
+@[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4")
+
+<!-- @[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517372170/okok/oceanblueliving-visual-system.png") -->
 
 > Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. Peoplpe seem to naturally just commented on all the time, which means it's working.” _LeaAnne Cassaniti, Owner_
 

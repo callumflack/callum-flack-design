@@ -1,8 +1,8 @@
 ---
 section: About
 heading: About
-headline: Hi, I'm Callum. I work with interesting people to make better interfaces.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952627/okok/callum-flack.jpg
+lede: Callum Flack is a design-obsessed, systems-thinking, code-based craftsman.
+heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1517290657/okok/callum-flack-a.jpg
 ---
 
 <!-- <p class="intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->
@@ -32,12 +32,11 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">callum@patternworks.com.au</a><br>
 Phone: [+61(0) 408 767 540](tel:610-408-767-540)<br>
-Twitter: <a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">@callumflack</a><br>
-Skype: callumflack
+Twitter: <a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">@callumflack</a>
 
 ## Connect
 
-<a class="icon-targetblank" target="_blank" href="https://are.na/callum-flack">Arena</a><br>
 <a class="icon-targetblank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a><br>
 <a class="icon-targetblank" target="_blank" href="https://github.com/callumflack">Github</a><br>
+<a class="icon-targetblank" target="_blank" href="https://are.na/callum-flack">Arena</a><br>
 <a class="icon-targetblank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
