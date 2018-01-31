@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .container.nav-mobile-layout
     .block--masthead
       nav.title
         c-navlink(
@@ -19,7 +19,6 @@
           external
         )
 </template>
-
 
 <script scoped>
 import NavLink from "~/components/NavLink.vue";
@@ -94,7 +93,31 @@ export default {
 };
 </script>
 
-
 <style scoped>
 @import "../assets/styles/vars.css";
+
+.nav-mobile-layout {
+  @media (max-width: 1135px) {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+    & .block--masthead {
+      padding-bottom: var(--grid-gutter);
+    }
+
+    & a + a {
+      margin-top: 1px;
+    }
+  }
+
+  @media (min-width: 1136px) and (max-width: 1281px) {
+    align-items: flex-end;
+    display: flex;
+    left: calc((100 - 90) * 0.5vw);
+    right: auto;
+    text-align: right;
+  }
+}
 </style>

@@ -61,13 +61,14 @@ ul,
 
 .text--meta {
   font-size: var(--s-text-meta) !important;
+  letter-spacing: var(--ls-meta);
 }
 
 /* 
   -------------------------------------------------
   
   Headings
-  --------
+  
   Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document.
 
   -------------------------------------------------
@@ -77,8 +78,9 @@ ul,
 .text-scope h2,
 .journal-scope h2 {
   color: var(--color-title);
+  font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-text);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a.title,
@@ -87,9 +89,13 @@ a.title,
 }
 
 .title--ruled {
-  border-top: 1px solid var(--color-title);
-  margin-top: calc(1.25 * var(--s5));
-  padding-top: var(--s2);
+  border-top: 1px solid var(--color-rule);
+  padding-top: 0.666rem;
+
+  @media (--small-viewport) {
+    border-width: 1px;
+    width: 50%;
+  }
 
   & a {
     background-image: none !important;
@@ -163,8 +169,8 @@ blockquote {
 blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: var(--color-text);
-  padding: calc(2 * var(--s3)) 0 calc(2.166 * var(--s3));
+  border-color: var(--color-rule);
+  padding: var(--s3) 0 calc(1.1 * var(--s3));
   width: auto;
 
   & p {
@@ -192,7 +198,7 @@ blockquote p {
 blockquote p em {
   display: table;
   /* method for resetting ems, then apply text--meta sizing: */
-  font-size: calc( (18 / (var(--s-text-unit) * 16)) * 1em);
+  font-size: calc( (16 / (var(--s-text-unit) * 16)) * 1em);
   margin-top: var(--s1);
 
   @media (--large-viewport) {
@@ -221,14 +227,14 @@ h3,
 h6 {
   margin-bottom: var(--s2);
 
-  @media (--small-viewport) {
+  @media (--medium-viewport) {
     margin-bottom: var(--s2);
   }
 
   &:not(:first-child) {
     margin-top: var(--s4);
 
-    @media (--small-viewport) {
+    @media (--medium-viewport) {
       margin-top: var(--s5);
     }
   }
@@ -237,18 +243,18 @@ h6 {
 .journal-scope .intro {
   margin-bottom: var(--s4);
 
-  @media (--small-viewport) {
+  @media (--medium-viewport) {
     margin-bottom: var(--s5);
   }
 }
 
-/* illusion: manages .figure & .form in context */
-.title--ruled + .figure,
-p + .form {
-  margin-top: calc(0.666 * var(--s4));
+.post:not(:first-child) {
+  margin-top: var(--s4);
+  margin-bottom: calc(1 * var(--s4));
 
-  @media (--large-viewport) {
-    margin-top: calc(0.666 * var(--s5));
+  @media (--medium-viewport) {
+    margin-top: var(--s5);
+    margin-bottom: calc(1 * var(--s5));
   }
 }
 
@@ -257,18 +263,27 @@ p + .form {
 .title--ruled:not(:first-child) {
   margin-top: calc(1.25 * var(--s4));
 
-  @media (--large-viewport) {
+  @media (--medium-viewport) {
     margin-top: calc(1.25 * var(--s5));
   }
 }
 
-.post:not(:first-child) {
-  margin-top: calc(1 * var(--s4));
-  margin-bottom: calc(1.25 * var(--s4));
+/* illusion: manages .figure & .form in context */
+.title--ruled + .figure,
+p + .form {
+  margin-top: calc(0.666 * var(--s4));
 
-  @media (--large-viewport) {
-    margin-top: calc(1 * var(--s5));
-    margin-bottom: calc(1.25 * var(--s5));
+  @media (--medium-viewport) {
+    margin-top: calc(0.666 * var(--s5));
+  }
+}
+
+/* used in project grid only */
+.title--underThumbnail {
+  margin: var(--s2) 0;
+
+  @media (--medium-viewport) {
+    margin: calc(1.25 * var(--s3)) 0 calc(0.8 * var(--s3));
   }
 }
 
@@ -276,16 +291,21 @@ blockquote {
   margin-top: var(--s3);
   margin-bottom: var(--s3);
 
-  @media (--small-viewport) {
+  @media (--medium-viewport) {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
 blockquote:first-child,
-blockquote + h2,
 .text--large:first-child {
   margin-top: 0 !important;
+}
+
+blockquote + h2 {
+  @media (--medium-viewport) {
+    margin-top: 0 !important;
+  }
 }
 
 * + .Button,

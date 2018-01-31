@@ -1,12 +1,9 @@
 <template lang="pug">
 .toggle
-  .u-posRelative
-    .toggle-logo
-      .title
-        a(href="#", @click.prevent="handleNavToggle")
-          span.u-block Pattern–
-          span.u-block.align works
-        
+  .toggle-logo
+    a.icon-tap(href="#", @click.prevent="handleNavToggle")
+      .icon.icon-logo
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 19"><path d="M47.61,14.66a2.15,2.15,0,1,0,2.13,2.13A2.14,2.14,0,0,0,47.61,14.66ZM9.29,0H0V.05a3.47,3.47,0,0,1,2,3.2V15.38a3.45,3.45,0,0,1-2,3.19v.06H8.14v-.06a3.42,3.42,0,0,1-2-3.19V9.93a16.46,16.46,0,0,0,2.16.13c4.58,0,6.63-2.08,6.63-5C15,1.7,12.13,0,9.29,0Zm-2,9.05A8.65,8.65,0,0,1,6.17,9V.88h.19a4.22,4.22,0,0,1,4.26,4.44C10.62,8.06,9.21,9.05,7.32,9.05ZM46,0H41.29V.05c1.41.54,2.12,1.63,1.43,3.44l-3.38,8.94L35.91,3.51c-.72-1.83-.08-2.9,1.41-3.46V0H28.91V.05c.91.54,1.73,1.68,2.74,4.1l.61,1.46-2.79,7L25.93,3.51C25.21,1.7,25.85.61,27.31.05V0H19V.05c.9.54,1.73,1.68,2.74,4.1L27.82,19h.11L32.8,7l4.92,12h.11l5.9-15.25A8.43,8.43,0,0,1,46,.05ZM18.08,14.66a2.15,2.15,0,1,0,2.13,2.13A2.14,2.14,0,0,0,18.08,14.66Z"/></svg>
 </template>
 
 
@@ -39,66 +36,57 @@ export default {
 <style scoped>
 @import "../assets/styles/vars.css";
 
-.align {
-  /* padding-left: 0.95em; */
-  /* padding-left: 1.333em; */
-  /* padding-left: 1.75em; */
-  /* padding-left: 1.2em; */
-  /* padding-left: 1.175em; */
-  /* padding-left: 0.8em; */
-  /* padding-left: 0.7em; */
-  padding-left: 1.31em;
-  padding-left: 1.65em;
-  /* transform: translateY(-0.25em); */
-  /* transform: translateY(-0.333em); */
-  /* transform: translateY(-11px); */
-  /* transform: translateY(-24px); */
-
-  @media (max-width: 512px) {
-    /* padding-left: 0.66em; */
-    /* padding-left: 0.66em; */
-    /* transform: translateY(-7px); */
-    /* transform: translateY(-15px); */
-  }
-}
-
 .toggle {
-  left: calc(0.5 * var(--grid-gutter));
   position: fixed;
-  top: calc(0.9 * var(--grid-gutter));
+  right: calc(0.5 * var(--grid-gutter));
+  top: calc(0.5 * var(--grid-gutter));
   z-index: 100;
 
+  /* y */
   @media (--small-viewport) {
-    left: calc(1 * var(--grid-gutter));
+    top: calc(1 * var(--grid-gutter));
   }
-
-  @media (--large-viewport) {
-    top: calc(1.8 * var(--grid-gutter));
-  }
-
-  @media (min-width: 1488px) {
-  }
-
-  @media (min-width: 1648px) {
-    left: 5vw;
+  @media (min-width: 1281px) {
     top: var(--s7);
   }
 
+  /* x */
+  @media (--small-viewport) {
+    right: calc(1 * var(--grid-gutter));
+  }
+  @media (min-width: 1136px) {
+    left: calc((100 - 90) * 0.5vw);
+    right: auto;
+  }
   @media (min-width: 1840px) {
-    left: 12.5vw;
+    left: calc((100 - 66) * 0.5vw);
   }
 }
 
 .toggle-logo {
-  position: relative;
   display: inline-block;
-  transform: translateX(-2px);
-  transform: translateX(-0.075em);
+  position: relative;
+  transform: translateX(-0.0125em);
+  transform: translate(0, 0.29em);
 }
 
-.nuxt-link-active {
+.icon-tap {
+  display: block;
+  margin: calc(-0.5 * var(--grid-gutter));
 }
 
-.nuxt-link-exact-active {
+.icon {
+  padding: calc(0.5 * var(--grid-gutter));
+}
+
+/* .icon-logo, */
+.icon-logo svg {
+  height: calc(0.75 * 19px);
+  width: calc(0.75 * 50px);
+
+  @media (--small-viewport) {
+    height: 19px;
+    width: 50px;
+  }
 }
 </style>

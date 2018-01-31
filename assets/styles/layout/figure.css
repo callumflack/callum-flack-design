@@ -36,20 +36,14 @@
 }
 
 .figure--large {
-  left: calc(-50vw + 50%);
-  padding: 0;
-  width: 100vw;
+  width: 100%;
 
-  @media (min-width: 1488px) {
-    left: calc(-50vw + 50%);
-    width: 100vw;
-  }
-  @media (min-width: 1648px) {
+  @media (min-width: 1136px) {
     left: calc(-45vw + 50%);
     width: 90vw;
   }
   @media (min-width: 1840px) {
-    left: calc(-37.5vw + 50%);
-    width: 75vw;
+    left: calc(-33vw + 50%);
+    width: 66vw;
   }
 }

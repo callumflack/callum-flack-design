@@ -35,8 +35,8 @@
   --spacer: 24px;
   --spacer-large: 0.75rem;
 
-  --container: calc(72.5em + 6rem);
-  --container-rg: 72.5em;
+  --container: calc(65em + 6rem); /*1136*/
+  --container-rg: 65em;
   
   --container-sm: 400px;
   --container-md: 808px;
@@ -48,7 +48,7 @@
   --s3: 1rem;
   --s4: 2.5rem;
   --s5: 5rem;
-  --s6: 10rem;
+  --s6: 9rem;
   --s7: 13rem;
   
   --tuck: 6vw;
@@ -70,12 +70,13 @@
   --color-highlight: #44729c;
   --color-highlight: #b32273;
   --color-red: #ff3700;
-  --color-title: #0a0a0a;
-  --color-text: #999;
-  --color-device: #e7e7e7;
+  --color-title: #222;
+  --color-text: #222;
+  --color-rule: #888;
   --color-border: #e7e7e7;
+  --color-device: #e7e7e7;
   --color-neutral: #eee;
-  --color-bg: #fefefe;
+  --color-bg: #fafafa;
   --color-bg-blue: #cdd8e2;
   --color-metal: #cdd8e2;
   --color-metal: rgba(222, 229, 235, 1);
@@ -87,6 +88,7 @@
    */
 
   --font-regular: "Regular";
+  --font-heading: "Medium";
   --font-italic: var(--font-regular);
   --font-button: var(--font-regular);
 
@@ -100,9 +102,9 @@
    
    */
 
-  --s-text-unit: 1.5625;
-  --s-text: 1.5625em;
-  --s-text-meta: 1.125em;
+  --s-text-unit: 1.375;
+  --s-text: 1.375em;
+  --s-text-meta: 1em;
 
   /* 
   
@@ -110,8 +112,8 @@
    
    */
   
-  --ls-text: -0.025em;
-  --ls-meta: -0.0125em;
+  --ls-text: -0.0125em;
+  --ls-meta: 0.00625em;
   --lh-text: 1.4;
 
   /* 

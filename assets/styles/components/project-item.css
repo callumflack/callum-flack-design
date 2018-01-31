@@ -8,14 +8,6 @@
   filter: url("#gray");
 }
 
-.project-text .title {
-  margin: var(--s2) 0;
-
-  @media (--small-viewport) {
-    margin: calc(1.6 * var(--s3)) 0 calc(0.8 * var(--s3));
-  }
-}
-
 .project-text {
   width: 80%;
 

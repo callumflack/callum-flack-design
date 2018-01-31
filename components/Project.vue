@@ -5,7 +5,7 @@
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
       .project-text
-        h2.title
+        h2.title.title--underThumbnail
           span.project-visualLink {{ heading }}
         p.project-subtext.text.text--meta
           span(v-if="year") {{ year }}

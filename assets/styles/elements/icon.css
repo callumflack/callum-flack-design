@@ -33,33 +33,8 @@
   transition: fill 400ms ease;
 }
 
-/* THEME */ 
-
-.icon-logo {
-  margin-right: 0.5rem;
-  transform: translateY(1px);
-
-  @media (--large-viewport) {
-    margin-right: 0.666rem;
-    transform: translateY(2px);
-  }
-}
-
-/* https://css-tricks.com/scale-svg/ */ 
-.icon-logo svg {
-  height: 24px;
-  width: 24px;
-
-  @media (--medium-viewport) {
-    height: 29px;
-    width: 29px;
-  }
-
-  @media (--large-viewport) {
-    height: 34px;
-    width: 34px;
-  }
-}
+/* THEME */
+/* https://css-tricks.com/scale-svg/ */
 
 .icon-toggle svg {
   height: 1.5em;
