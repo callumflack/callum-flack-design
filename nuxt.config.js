@@ -3,12 +3,19 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title:
-      "Patternworks • Callum Flack • Digital design & development • Cairns, Australia",
+    title: "Patternworks – Digital design & development",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "C.F." }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Patternworks – Digital design & development by Callum Flack – Cairns, Australia"
+      },
+      { hid: "twitter:card", name: "twitter:card", content: "summary" },
+      { hid: "twitter:site", name: "twitter:site", content: "@callumflack" },
+      { hid: "twitter:creator", name: "twitter:creator", content: "@callumflack" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
