@@ -3,11 +3,11 @@
     header(role="banner")
       c-pageheading(
         link="/about"
-        heading="About"
-        lede="Callum Flack is a design-obsessed, systems-thinking, code-based craftsman."
+        :heading="page.heading"
+        :lede="page.lede"
       )
       .container
-        c-image(portrait, :src="page.heroImage", style="opacity:0.9")
+        c-lazyimage(portrait, :src="page.heroImage", style="opacity:0.9")
     main(role="main")
       .container
         .text-scope
@@ -16,14 +16,30 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
-import MarkdownImage from "~/components/MarkdownImage.vue";
+import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
-    "c-image": MarkdownImage
+    "c-lazyimage": LazyImage
   },
-  props: {},
+  props: {
+    heading: String,
+    lede: String,
+    heroImage: String
+  },
+  head() {
+    return {
+      title: `${this.page.heading} – Patternworks`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `${this.page.heading} – ${this.page.lede}`
+        }
+      ]
+    };
+  },
   async asyncData({ app, route }) {
     return {
       page: await app.$content("/pages").get(route.path)

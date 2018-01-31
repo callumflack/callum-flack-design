@@ -74,6 +74,19 @@ export default {
     "c-project": Project,
     "c-pageheading": PageHeading
   },
+  head() {
+    return {
+      title: "Work – Patternworks",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Selected digital design & development projects by Callum Flack since 2014"
+        }
+      ]
+    };
+  },
   data() {
     return {
       projects: [],

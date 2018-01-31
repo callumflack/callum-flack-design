@@ -3,31 +3,26 @@ div
   article.block--articleEnd
     header(role="banner")
       c-pageheading(
-        :heading="page.heading"
         link="/work"
+        :heading="page.heading"
         :lede="page.lede"
       )
       .container
-        c-movie(
-          v-if="page.heroVideo"
-          :src="page.heroVideo"
+        c-lazyimage(
+          v-if="page.heroInCloudinary"
           large
+          :src="page.heroImage"
           :frame="page.heroFrame"
-          :laptop="page.heroVideoLaptop"
-          :desktop="page.heroVideoDesktop"
-          :poster="page.heroVideoPoster"
+          :ratio="page.heroRatio"
         )
-        figure.figure.figure--large(v-else)
-          c-lazyimage(
-            v-if="page.heroInCloudinary"
-            :src="page.heroImage"
-            :frame="page.heroFrame"
-            :ratio="page.heroRatio"
-          )
-          img(
-            v-else
-            :src="page.heroImage"
-          )
+        c-image(
+          v-else
+          large
+          local
+          :src="page.heroImage"
+          :frame="page.heroFrame"
+          :ratio="page.heroRatio"
+        )
     main(role="main")
       .container
         nuxtent-body.text-scope(:body="page.body")
@@ -37,19 +32,21 @@ div
         .text.text--meta.u-marginB1 Next project
         .title.small-space 
           | {{ page.nextProjectHeading }}
-          span.ml2.linkSignal-target →
+          span.ml1.linkSignal-target →
 </template>
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
+import MarkdownImage from "~/components/MarkdownImage.vue";
 import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
     "c-movie": MarkdownMovie,
-    "c-lazyimage": LazyImage
+    "c-lazyimage": LazyImage,
+    "c-image": MarkdownImage
   },
   props: {
     heading: String,
@@ -72,7 +69,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: `${this.page.lede}`
+          content: `${this.page.heading} – ${this.page.lede}`
         }
       ]
     };

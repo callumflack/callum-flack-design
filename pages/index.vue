@@ -22,10 +22,10 @@
           nuxt-link(to="/about") Hi, I’m Callum.
           |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
           
-        h2 I bridge the gap between human design and technical knowhow.
+        h2 From human design to technical knowhow.
         p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
 
-        h3.title.title--ruled 
+        h2.title.title--ruled 
           nuxt-link(to="/journal") Journal
         p I write about designing and building human interfaces in the 
           nuxt-link(to="/journal") Journal.
@@ -45,10 +45,6 @@ export default {
   components: {
     "c-pageheading": PageHeading,
     "c-newsletter": Newsletter
-  },
-  props: {
-    massive: String,
-    heading: String
   }
 };
 </script>
@@ -70,7 +66,7 @@ export default {
 .post {
   & a {
     @media (--medium-viewport) {
-      margin: auto;
+      margin-left: auto;
       width: 50%;
     }
   }

@@ -21,7 +21,7 @@
           
           .block(v-if="page.tweet")
             //- hr.color-title.mb3
-            p.title.u-textCenter
+            p.text.u-textCenter
               | Comments?
               br
               a.visualLink.color-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
@@ -47,6 +47,18 @@ export default {
     tweet: String,
     heroImage: String,
     heroVideo: String
+  },
+  head() {
+    return {
+      title: `${this.page.heading} – Patternworks`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `${this.page.heading} – ${this.page.lede}`
+        }
+      ]
+    };
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/posts").get(route.path);

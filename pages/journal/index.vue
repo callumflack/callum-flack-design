@@ -30,6 +30,18 @@ export default {
     "c-pageheading": PageHeading,
     "c-post": Post
   },
+  head() {
+    return {
+      title: "Journal – Patternworks",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Selected by Callum Flack writing about digital design & development"
+        }
+      ]
+    };
+  },
   data() {
     return {
       posts: []
