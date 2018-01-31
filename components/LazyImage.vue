@@ -1,32 +1,29 @@
 <template>
-  <div class="image">
-    <div :class="ratioClasses" :style="ratioStyle" ref="placeholder">
+  <figure :class="figureClasses" ref="placeholder">
     <img
       :class="[
         'low-rez',
         {
-          'is-loaded': smallUrl
+          'is-loaded': largeUrl
         }
       ]"
       :src="smallUrl"
     />
     <img
       :class="[
-        'full-rez',
+        'high-rez',
         {
           'is-loaded': largeUrl
         }
       ]"
       :src="largeUrl"
     />
-  </div>
-  </div>
-  
+  </figure>
 </template>
 
 <script>
 const baseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
-const blurUrl = `${baseUrl}/w_100,e_blur:300`;
+const blurUrl = `${baseUrl}/w_50,e_blur:300`;
 
 function calcImageDimension(length, pixelRatio) {
   return 100 * Math.round(length * pixelRatio / 100);
@@ -40,14 +37,30 @@ export default {
       type: String,
       required: true
     },
-    frame: Boolean,
     square: Boolean,
     face: Boolean,
     project: Boolean,
-    ratio: String
+    ratio: Number,
+    frame: Boolean,
+    large: Boolean,
+    portrait: Boolean
   },
 
   computed: {
+    figureClasses() {
+      return [
+        "image",
+        "figure",
+        {
+          "figure--frame": this.frame,
+          "figure--large": this.large,
+          "figure--portrait": this.portrait
+        }
+      ];
+    },
+    // attempt at retaining image aspect ratio space
+    // unfortunately, cloudinary size computations are just out
+    // if we use Math.round to save data space…
     ratioClasses() {
       return [
         "image-aspectRatio",
@@ -59,7 +72,7 @@ export default {
     },
     ratioStyle() {
       // (v-if="page.projectColor", :style = 'projectColor')
-      return this.ratio ? `padding-bottom: ${this.ratio}` : "";
+      return this.ratio ? `height: calc(66vw * ${this.ratio})` : "";
     }
   },
 
@@ -86,17 +99,17 @@ export default {
     // Load large image
     const image = this.$refs.placeholder;
 
-    const { clientWidth, clientHeight } = image;
+    const { clientWidth } = image;
     const pixelRatio = window.devicePixelRatio || 1.0;
     const isSquare = this.square;
 
     const imageWidth = calcImageDimension(clientWidth, pixelRatio);
-    const imageHeight = isSquare
-      ? imageWidth
-      : calcImageDimension(clientHeight, pixelRatio);
+    // const imageHeight = isSquare
+    //   ? imageWidth
+    //   : calcImageDimension(clientHeight, pixelRatio);
 
     const gPosition = this.face ? "g_face" : "g_center";
-    const imageParams = `w_${imageWidth},h_${imageHeight},c_fill,${gPosition},f_auto`;
+    const imageParams = `w_${imageWidth},c_fill,${gPosition},f_auto`;
 
     const largeUrl = `${baseUrl}/${imageParams}/${this.src}`;
 
@@ -114,7 +127,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .image {
-  background-color: var(--color-neutral);
+  position: relative;
 }
 
 .image-aspectRatio {
@@ -130,28 +143,44 @@ export default {
 }
 
 .image img {
-  opacity: 0;
   min-height: 100%;
   min-width: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   transition: opacity 1s linear;
   width: 100%;
 }
 
-.image img.is-loaded {
+/* 
+  1. enable Safari to keep sharp edges 
+     …but only works if pos-abs within an aspect-ratio div.
+*/
+.low-rez {
+  filter: blur(50px);
+  opacity: 1;
+  transform: scale(1); /*1*/
+}
+
+.high-rez {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* 
+  on full-res image load 
+*/
+
+.low-rez.is-loaded {
+  opacity: 0;
+}
+
+.high-rez.is-loaded {
   opacity: 1;
 }
 
-.low-rez,
-.img-small {
-  filter: blur(50px);
-  /* this is needed so Safari keeps sharp edges */
-  transform: scale(1);
-}
-
-/* use the SVG filter that's secreted on work/index */
+/* 
+  use the SVG filter that's secreted on work/index 
+*/
 .project:hover img {
   filter: url("#gray");
 }
