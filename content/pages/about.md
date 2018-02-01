@@ -32,10 +32,11 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">callum@patternworks.com.au</a><br>
 Phone: [+61(0) 408 767 540](tel:610-408-767-540)<br>
-Twitter: <a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">@callumflack</a>
+Calendly: <a class="icon-targetblank" target="_blank" href="https://calendly.com/callumflack">/callumflack</a>
 
 ## Connect
 
+<a class="icon-targetblank" target="_blank" href="https://twitter.com/callumflack">Twitter</a><br>
 <a class="icon-targetblank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a><br>
 <a class="icon-targetblank" target="_blank" href="https://github.com/callumflack">Github</a><br>
 <a class="icon-targetblank" target="_blank" href="https://are.na/callum-flack">Arena</a><br>
