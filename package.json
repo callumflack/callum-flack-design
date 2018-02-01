@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "4.3.1",
-    "@nuxtjs/google-tag-manager": "^1.1.0",
+    "@nuxtjs/google-tag-manager": "1.1.0",
+    "jquery": "3.2.1",
     "nuxt": "1.0.0-rc11",
     "nuxtent": "1.2.1",
     "suitcss": "3.0.0",
     "suitcss-preprocessor": "4.0.0",
-    "vue-slick": "1.1.12",
-    "jquery": "3.2.1"
+    "vue-slick": "1.1.12"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
