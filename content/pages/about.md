@@ -19,7 +19,7 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 > The wordmark has been extended with a distinctive line that can be customized for a
 > series of transformations that reflect the dynamic nature of the organization and its
-> initiatives.” _Brad Spalding, Managing Director of The Substation_
+> initiatives.” _Brad Spolding, Managing Director of The Substation_
 
 ## Ways to engage my services
 
@@ -32,7 +32,7 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">callum@patternworks.com.au</a><br>
 Phone: [+61(0) 408 767 540](tel:610-408-767-540)<br>
-Calendly: <a class="icon-targetblank" target="_blank" href="https://calendly.com/callumflack">/callumflack</a>
+Calendly: <a class="icon-targetblank" target="_blank" href="https://calendly.com/callumflack">callumflack</a>
 
 ## Connect
 
