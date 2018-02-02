@@ -2,9 +2,9 @@
 .block--pageEnd
   header(role="banner")
     c-pageheading(
-      heading="Digital brands + services for makers + shakers"
+      heading="Design for the experience of delight."
       link="/"
-      lede="Callum Flack provides user interface design, graphic design and frontend development to help individuals, groups and businesses find, connect with and service their audience."
+      lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and service their audience."
     )
   main(role="main")
     .container
@@ -20,10 +20,11 @@
       .text-scope
         p
           nuxt-link(to="/about") Hi, I’m Callum.
-          |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences, solve the right problems, and build something your customers are proud of. Together we can make things happen.
+          |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences that connect your ideas with your audience. Together we can build something that your customers are proud of.
           
-        h2 From human design to technical knowhow.
-        p Work with me and you work directly with a multi-skilled, self-sufficient digital strategist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation, no cookie-cutter preconceptions. 
+        h2 Systems thinking. Technical fluidity. Human outcomes.
+        p Work with me and you work directly with a multi-skilled, self-sufficient creative technologist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation. 
+          nuxt-link(to="/work") Here's some examples. 
 
         h2.title.title--ruled 
           nuxt-link(to="/journal") Journal
