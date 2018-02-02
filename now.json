@@ -1,6 +1,6 @@
 {
   "name": "patternworks-2018",
-  "alias": ["patternworks.com.au, www.patternworks.com.au"],
+  "alias": ["patternworks.com.au", "www.patternworks.com.au"],
   "env": {
     "NODE_ENV": "production"
   }
