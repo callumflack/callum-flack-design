@@ -17,9 +17,7 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 <a class="icon-targetblank" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns</a>, I currently work with local, Australian and international clients. I can plug into a product team as a freelance designer, or work one-to-one with owners, organisations and creators to implement their digital business vision. I also enjoy travelling to meet in person.
 
-> The wordmark has been extended with a distinctive line that can be customized for a
-> series of transformations that reflect the dynamic nature of the organization and its
-> initiatives.” _Brad Spolding, Managing Director of The Substation_
+<!-- > The wordmark has been extended with a distinctive line that can be customized for a series of transformations that reflect the dynamic nature of the organization and its initiatives.” _Brad Spolding, Managing Director of The Substation_ -->
 
 ## Ways to engage my services
 
