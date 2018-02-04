@@ -4,7 +4,7 @@
     c-pageheading(
       heading="Design for the experience of delight."
       link="/"
-      lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and service their audience."
+      lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and serve their audience."
     )
   main(role="main")
     .container
