@@ -43,7 +43,7 @@ export default {
       return [
         {
           "u-hiddenVisually": this.isActive,
-          "is-dark": this.reverseButton
+          "is-dark": this.reverseOverlay
         }
       ];
     },
@@ -51,7 +51,7 @@ export default {
       return [
         "video-button",
         {
-          // "color-text": this.reverseButton
+          "color-text": this.reverseButton
         }
       ];
     }
@@ -83,6 +83,7 @@ export default {
     desktop: Boolean,
     poster: String,
     src: String,
+    reverseOverlay: Boolean,
     reverseButton: Boolean
   }
 };
