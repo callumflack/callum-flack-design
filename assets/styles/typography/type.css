@@ -32,7 +32,7 @@ body {
 
 body,
 .text-scope-reset {
-  font-size: 0.75rem !important;
+  font-size: 0.795rem !important;
 
   @media (--small-viewport) {
     font-size: 0.875rem !important;
@@ -142,7 +142,11 @@ h2 {
 /* h6 is used to define a markdown section */
 h6 + p,
 p + p {
-  text-indent: 4rem;
+  text-indent: 3rem;
+
+  @media (--small-viewport) {
+    text-indent: 4rem;
+  }
 }
 
 .intro + p {

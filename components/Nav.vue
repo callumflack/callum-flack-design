@@ -108,16 +108,14 @@ export default {
     }
 
     & a + a {
-      margin-top: 1px;
+      margin-top: 4px;
     }
   }
-
   @media (min-width: 1136px) and (max-width: 1281px) {
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
     left: calc((100 - 90) * 0.5vw);
     right: auto;
-    text-align: right;
   }
 }
 </style>
