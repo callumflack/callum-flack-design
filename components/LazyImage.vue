@@ -101,6 +101,7 @@ export default {
 
     const { clientWidth } = image;
     const pixelRatio = window.devicePixelRatio || 1.0;
+    // eslint-disable-next-line
     const isSquare = this.square;
 
     const imageWidth = calcImageDimension(clientWidth, pixelRatio);
