@@ -13,8 +13,8 @@
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 1381">
             <path class="cls-1" d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09ZM628.31,1210.53H41.69V168.24H628.31Z"/>
           </svg>
-        .video-button-wrapper(:class="[{ 'u-hiddenVisually': isActive }]")
-          button.video-button(@click="play")
+        .video-button-wrapper(:class="wrapButtonClasses")
+          button(:class="playButtonClasses", @click="play")
             span.icon.icon--play-button
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 80 80" xml:space="preserve"><path d="M40 0C17.9 0 0 17.9 0 40c0 22.1 17.9 40 40 40s40-17.9 40-40C80 17.9 62.1 0 40 0zM40 78C19 78 2 61 2 40S19 2 40 2s38 17 38 38S61 78 40 78z"></path><polygon class="st0" points="33.9 51.4 51.1 39.6 33.9 28 "></polygon></svg>
 </template>
@@ -36,6 +36,22 @@ export default {
           "device--ipadLandscape": this.ipadLandscape,
           "device--laptop": this.laptop,
           "device--desktop": this.desktop
+        }
+      ];
+    },
+    wrapButtonClasses() {
+      return [
+        {
+          "u-hiddenVisually": this.isActive,
+          "is-dark": this.reverseButton
+        }
+      ];
+    },
+    playButtonClasses() {
+      return [
+        "video-button",
+        {
+          // "color-text": this.reverseButton
         }
       ];
     }
@@ -66,7 +82,8 @@ export default {
     laptop: Boolean,
     desktop: Boolean,
     poster: String,
-    src: String
+    src: String,
+    reverseButton: Boolean
   }
 };
 </script>
@@ -92,6 +109,10 @@ export default {
 
   @media (--small-viewport) {
     display: none;
+  }
+
+  &.is-dark {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
