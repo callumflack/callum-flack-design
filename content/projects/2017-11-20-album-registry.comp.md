@@ -24,7 +24,7 @@ be, and rebuild the platform for a community of photographers around the world.
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownMovie](src="/images/albumregistry-block-registries.mp4")
+@[MarkdownMovie](reverseOverlay src="/images/albumregistry-block-registries.mp4")
 
 ## Built for future iteration
 

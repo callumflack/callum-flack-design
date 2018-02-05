@@ -25,7 +25,7 @@ Primary Healthcare Network North Queensland wanted to digitise the World Health 
 
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
-@[MarkdownMovie](iphone src="/images/phn-video-m.mp4")
+@[MarkdownMovie](reverseButton iphone src="/images/phn-video-m.mp4")
 
 <!-- All data collected is anonymous. At survey completion, users are presented with a score that rates their quality of life. Users can share their score by email or SMS. -->
 
