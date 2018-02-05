@@ -57,33 +57,20 @@ module.exports = {
     */
   },
   css: ["~/assets/styles/application.css"],
-  plugins: [
-    { src: "~/plugins/vue-slick", ssr: false },
-    { src: "~plugins/ga.js", ssr: false }
-  ],
-  modules: [
-    "nuxtent",
-    ["@nuxtjs/google-tag-manager", { id: "GTM-TZ36J9" }]
-  ],
+  /*plugins: [{ src: "~/plugins/vue-slick", ssr: false }],*/
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-TZ36J9" }]],
   axios: {
     credentials: false
   },
   generate: {
     routes: [
+      // You shouldn't need to include any content routes inside generate.routes
+      // as nuxtent handles this for you:
+      // https://github.com/nuxt-community/nuxtent-module/issues/104
       "/",
       "/about",
       "/work",
-      "/work/oceanblue-living",
-      "/work/oceanblue-boats",
-      "/work/primary-healthcare-network",
-      "/work/the-substation",
-      "/work/raatsicc",
-      "/work/album-registry",
-      "/work/vj-ray",
-      "/work/ward6",
-      "/work/ward6-edetailers",
-      "/journal",
-      "/journal/designers-should-code"
+      "/journal"
     ]
   },
   router: {

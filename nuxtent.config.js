@@ -1,5 +1,3 @@
-const config = require("./config/config.js");
-
 module.exports = {
   content: [
     [
@@ -31,10 +29,9 @@ module.exports = {
     ]
   ],
 
-  api: {
-    baseURL:
-      process.env.NODE_ENV === "production"
-        ? config.productionUrl
-        : config.developmentUrl
+  api: function(isStatic) {
+    return {
+      browserBaseURL: isStatic ? "https://patternworks.com.au" : ""
+    };
   }
 };
