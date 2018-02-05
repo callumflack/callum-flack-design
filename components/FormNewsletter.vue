@@ -58,13 +58,20 @@ export default {
   }
 }
 
-input {
+.form input {
   border-bottom: 1px solid var(--color-border);
   box-shadow: none;
   padding-left: 0;
 
   &:focus {
     border-color: var(--color-title);
+  }
+}
+
+.form .Button {
+  @media (max-width: 512px) {
+    text-align: right;
+    padding-right: 0;
   }
 }
 </style>
