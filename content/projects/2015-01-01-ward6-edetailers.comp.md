@@ -5,7 +5,7 @@ heading: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging digital stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true
-heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 heroInCloudinary: true
 tags: website, branding
 nextProject: /work/vj-ray

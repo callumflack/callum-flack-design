@@ -2,7 +2,7 @@
 section: About
 heading: About
 lede: Callum Flack is a design-obsessed, systems-thinking, code-based craftsman.
-heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1517290657/okok/callum-flack-a.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517290657/okok/callum-flack-a.jpg
 ---
 
 <!-- <p class="intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->

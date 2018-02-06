@@ -5,7 +5,7 @@ heading: Primary Healthcare Network
 lede: A mobile-first web app to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 thumbInCloudinary: true
-heroImage: http://res.cloudinary.com/pw-img-cdn/image/upload/v1517285211/okok/phn-mobile-screens-1.png
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517285211/okok/phn-mobile-screens-1.png
 heroInCloudinary: true
 heroFrame: false
 heroRatio: 0.45
@@ -19,7 +19,7 @@ Primary Healthcare Network North Queensland wanted to digitise the World Health 
 
 <!-- @[MarkdownMovie](laptop src="/images/phn-video.mp4") -->
 
-@[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
 
 <!-- We built the app using React.js to allow flexible iteration as feedback required it. For example, we can now add offline capability into the app without rewritting it. This may become useful in remote parts of Queensland with intermittent internet coverage. -->
 
@@ -33,7 +33,7 @@ A well-defined series of workflows with clear interface design means the app can
 
 <!-- > Client quote here” _CEO dude_ -->
 
-@[MarkdownImage](src="http://res.cloudinary.com/pw-img-cdn/image/upload/v1517278720/okok/phn-guide.png")
+@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278720/okok/phn-guide.png")
 
 <!-- And the app is easily adaptable as we discover further use cases over time.  -->
 
