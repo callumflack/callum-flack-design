@@ -335,12 +335,29 @@ blockquote + h2 {
   }
 }
 
+.journal-scope p + p {
+  text-indent: 0;
+}
+
 .journal-scope p,
 .journal-scope ol,
 .journal-scope ul,
 .journal-scope blockquote,
 .journal-scope h2 {
   width: auto;
+}
+
+.journal-scope p,
+.journal-scope ol,
+.journal-scope ul,
+.journal-scope blockquote {
+  &:not(last-child) {
+    margin-bottom: var(--s3);
+
+    @media (--large-viewport) {
+      margin-bottom: var(--s4);
+    }
+  }
 }
 
 .journal-scope p strong,
@@ -373,7 +390,7 @@ blockquote + h2 {
 
 .journal-scope blockquote p {
   border: initial;
-  border-left: 1px solid currentColor;
+  border-left: 3px solid currentColor;
   margin-right: 7.5%;
   padding: initial;
   padding-left: calc(1.5 * var(--s2));
