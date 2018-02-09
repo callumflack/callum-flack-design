@@ -17,7 +17,7 @@
           
           time.u-block.block--touch.text.text--meta(:date-time="page.date") Published: {{ page.published }}
           p.text.text--meta(v-if="page.updated") Updated: {{ page.updated }}
-          p.text.text--meta.text-noIndent(v-if="page.note") {{ page.note }}
+          p.text.text--meta.text-noIndent(v-if="page.note", v-html="page.note")
           
           .block(v-if="page.tweet")
             //- hr.color-title.mb3
@@ -31,6 +31,7 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
+import MarkdownImage from "~/components/MarkdownImage.vue";
 import FormNewsletter from "~/components/FormNewsletter.vue";
 
 export default {
