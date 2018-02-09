@@ -29,7 +29,7 @@ the 'craftsmanship' archetype central to their brand repositioning.
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372170/okok/oceanblueliving-visual-system.png") -->
 
-> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site naturally draws comments quite often, which means it's working.” _LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It's working for us.” _LeaAnne Cassaniti, Owner_
 
 <!-- We continue to document new works. The image library we've built over the last 18 months allows OceanBlue Living to create high-impact social media at will. -->
 
