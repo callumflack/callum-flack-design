@@ -16,7 +16,7 @@
               .pin.bgcolor-white.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter
                 .title.u-textCenter
                   | View the work #[span.linkSignal-target →]
-              img.w100.u-posRelative(src="/images/loop-05.gif")
+              img.w100.u-posRelative(src="/images/loop-06.gif")
       .text-scope
         p
           nuxt-link(to="/about") Hi, I’m Callum.
@@ -33,7 +33,9 @@
           |  Here's the most recent:
         .post.no-quote
           nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
-            h1.title.w100.u-marginT0.u-marginB3 Designers should code #[span.linkSignal-target →]
+            h1.title.w100.u-marginT0.u-marginB3 
+              | Designers should code
+              span.linkSignal-target →
             p If you want to know how to make software for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with&#58; lessons learned by an ex-graphic designer.
         c-newsletter
 </template>
