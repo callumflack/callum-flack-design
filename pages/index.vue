@@ -34,9 +34,9 @@
         .post.no-quote
           nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
             h1.title.w100.u-marginT0.u-marginB3 
-              | Designers should code
+              | Designers should code 
               span.linkSignal-target →
-            p If you want to know how to make software for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with&#58; lessons learned by an ex-graphic designer.
+            p Rich digital experiences happen when the "necessary overlaps" in play are interconnected. As a designer, the closer you can get to understanding these complex systems, the greater your agency. Just don't mind that the learning process hurts a little.
         c-newsletter
 </template>
 
