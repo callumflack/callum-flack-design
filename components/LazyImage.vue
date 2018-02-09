@@ -155,7 +155,7 @@ export default {
      …but only works if pos-abs within an aspect-ratio div.
 */
 .low-rez {
-  filter: blur(50px);
+  /* filter: blur(50px); */
   opacity: 1;
   transform: scale(1); /*1*/
 }
