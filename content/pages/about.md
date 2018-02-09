@@ -5,9 +5,7 @@ lede: Callum Flack is a design-obsessed, systems-thinking, code-based craftsman.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517290657/okok/callum-flack-a.jpg
 ---
 
-<!-- <p class="intro">Hi, I’m Callum Flack. I'm a design-obsessed, code-based, systems-thinking craftsman. I’ve been designing and developing brands and products since 2000.</p> -->
-
-My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection, and by building a digital system that satisifies you and your toughest customers years from now.
+My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection and by building a digital system that satisifies you and your toughest customers years from now.
 
 ## Experienced
 
@@ -15,7 +13,7 @@ I've been in the game since 2000. I've worked in London, Melbourne, Sydney and B
 
 ## How we can work together
 
-<a class="icon-targetblank" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns</a>, I currently work with local, Australian and international clients. I can plug into a product team as a freelance designer, or work one-to-one with owners, organisations and creators to implement their digital business vision. I also enjoy travelling to meet in person.
+<a class="icon-targetblank" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns</a>, I currently work with local, Australian and international clients. I can plug into a product team as a freelance designer or work one-to-one with owners, organisations and creators to implement their digital business vision. I also enjoy travelling to meet in person.
 
 > Callum has great eye for detail to create great looking designs and understands users needs to be able to make great user experiences to match. He excels at immersing himself into whatever project he is working on to achieve the users needs and the business goals.” _Brian Hur, founder of VetPronto (YCW15)_
 
