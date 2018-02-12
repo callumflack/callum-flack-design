@@ -7,7 +7,19 @@
         :lede="page.lede"
       )
       .container
-        c-lazyimage(portrait, :src="page.heroImage", style="opacity:0.9")
+        c-lazyimage(
+          v-if="page.heroInCloudinary"
+          portrait
+          :src="page.heroImage"
+          style="opacity:0.9"
+        )
+        c-image(
+          v-else
+          portrait
+          local
+          :src="page.heroImage"
+          style="opacity:0.9"
+        )
     main(role="main")
       .container
         .text-scope
@@ -17,11 +29,13 @@
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import LazyImage from "~/components/LazyImage.vue";
+import MarkdownImage from "~/components/MarkdownImage.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
-    "c-lazyimage": LazyImage
+    "c-lazyimage": LazyImage,
+    "c-image": MarkdownImage
   },
   props: {
     heading: String,

@@ -2,7 +2,8 @@
 section: About
 heading: About
 lede: Callum Flack is a design-obsessed, systems-thinking, code-based craftsman.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517290657/okok/callum-flack-a.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1518410159/okok/callum-flack.jpg
+heroInCloudinary: true
 ---
 
 My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection and by building a digital system that satisifies you and your toughest customers years from now.
