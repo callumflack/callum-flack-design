@@ -6,7 +6,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1518410159/okok/c
 heroInCloudinary: true
 ---
 
-My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection and by building a digital system that satisifies you and your toughest customers years from now.
+My job is to help you bridge the gap between you and your audience by understanding your unique context, by designing for emotional connection and by building a digital system that satisfies you and your toughest customers years from now.
 
 ## Experienced
 
