@@ -38,7 +38,7 @@ body,
     font-size: 0.875rem !important;
   }
   @media (--medium-viewport) {
-    font-size: 0.9375rem !important;
+    // font-size: 0.9375rem !important;
   }
   @media (--large-viewport) {
     font-size: 1rem !important;
