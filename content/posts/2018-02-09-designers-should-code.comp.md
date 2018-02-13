@@ -12,7 +12,7 @@ tweet: https://twitter.com/callumflack
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack some essential ingredient because they are too ordered.
 
-<!-- @[MarkdownImage](src="/images/post-tree-semilattice.jpg") -->
+@[MarkdownImage](src="/images/post-tree-semilattice.jpg" local)
 
 If you’ve ever been to Melbourne, Australia, and walked around the city, you will probably have chanced-upon it’s worn laneways and hidden surprises: they have become naturally complex, interconnected and overlapping over a long period of time. Mr. Alexander would call these surprises the “necessary overlaps” for creating rich experiences.
 
