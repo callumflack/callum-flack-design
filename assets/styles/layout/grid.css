@@ -22,26 +22,26 @@
 }
 
 .Grid--withLargeGutter {
-  margin: 0 calc(-0.5 * var(--s5));
+  margin: 0 calc(-0.5 * var(--s-5));
 
   @media (--medium-viewport) {
-    margin: 0 calc(-0.5 * var(--s6));
+    margin: 0 calc(-0.5 * var(--s-6));
   }
 
   @media (--large-viewport) {
-    margin: 0 calc(-0.5 * var(--s7));
+    margin: 0 calc(-0.5 * var(--s-7));
   }
 }
 
 .Grid--withLargeGutter > .Grid-cell {
-  padding: 0 calc(0.5 * var(--s5));
+  padding: 0 calc(0.5 * var(--s-5));
 
   @media (--medium-viewport) {
-    padding: 0 calc(0.5 * var(--s6));
+    padding: 0 calc(0.5 * var(--s-6));
   }
 
   @media (--xlarge-viewport) {
-    padding: 0 calc(0.5 * var(--s7));
+    padding: 0 calc(0.5 * var(--s-7));
   }
 }
 
@@ -62,25 +62,25 @@
 }
 
 .Grid--withProjects {
-  margin: 0 calc(-0.5 * var(--s2));
+  margin: 0 calc(-0.5 * var(--s-2));
 
   @media (--medium-viewport) {
-    margin: 0 calc(-0.5 * var(--s4));
+    margin: 0 calc(-0.5 * var(--s-4));
   }
 
   @media (--xlarge-viewport) {
-    margin: 0 calc(-0.5 * var(--s7));
+    margin: 0 calc(-0.5 * var(--s-7));
   }
 }
 
 .Grid--withProjects > .Grid-cell {
-  padding: 0 calc(0.5 * var(--s2));
+  padding: 0 calc(0.5 * var(--s-2));
 
   @media (--medium-viewport) {
-    padding: 0 calc(0.5 * var(--s4));
+    padding: 0 calc(0.5 * var(--s-4));
   }
 
   @media (--xlarge-viewport) {
-    padding: 0 calc(0.5 * var(--s7));
+    padding: 0 calc(0.5 * var(--s-7));
   }
 }

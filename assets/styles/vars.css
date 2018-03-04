@@ -43,13 +43,14 @@
   --container-lg: 1120px;
   --container-xl: 1600px;
 
-  --s1: 0.25rem;
-  --s2: 0.5rem;
-  --s3: 1rem;
-  --s4: 2.5rem;
-  --s5: 5rem;
-  --s6: 9rem;
-  --s7: 13rem;
+  --s-0: 0;
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 1rem;
+  --s-4: 2.5rem;
+  --s-5: 5rem;
+  --s-6: 9rem;
+  --s-7: 13rem;
   
   --tuck: 6vw;
   --tuck-lg: 9vw;

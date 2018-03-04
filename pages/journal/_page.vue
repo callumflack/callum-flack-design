@@ -21,9 +21,8 @@
           
           .block(v-if="page.tweet")
             //- hr.color-title.mb3
+            p.title.m-b0.u-textCenter Comments?
             p.text.u-textCenter
-              | Comments?
-              br
               a.visualLink.color-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
           hr.block(v-else)
           c-newsletter

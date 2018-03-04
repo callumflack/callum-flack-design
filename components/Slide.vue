@@ -98,12 +98,12 @@ export default {
 
 .Banner-text span {
   display: table;
-  margin-top: var(--s3);
+  margin-top: var(--s-3);
   text-transform: initial;
 }
 
 .Banner-text .Button {
-  margin-top: var(--s4);
+  margin-top: var(--s-4);
 }
 
 /* 

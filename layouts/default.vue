@@ -3,7 +3,8 @@
     c-toggle
     .page
       nuxt
-    c-footer
+    .footer-spacer
+      c-footer
 </template>
 
 <script>
@@ -27,6 +28,10 @@ export default {
 
 <style>
 @import "../assets/styles/vars.css";
+
+.footer-spacer {
+  height: 100vh;
+}
 
 .page-enter-active {
   /* background-color: var(--color-bg); */

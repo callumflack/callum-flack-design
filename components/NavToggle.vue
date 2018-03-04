@@ -41,7 +41,7 @@ export default {
     top: calc(1 * var(--grid-gutter));
   }
   @media (min-width: 1281px) {
-    top: var(--s7);
+    top: var(--s-7);
   }
 
   /* x */

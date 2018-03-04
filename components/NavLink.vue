@@ -6,7 +6,7 @@
     v-if="external"
   )
     span {{ label }}
-  nuxt-link.u-block(
+  nuxt-link.u-block.ruled(
     :class="currentPage"
     :to='link'
     :exact="exact"
@@ -51,10 +51,19 @@ li {
 }
 
 li + li {
-  margin-left: var(--s3);
+  margin-left: var(--s-3);
 }
 
 .link {
+}
+
+.ruled {
+  border-top: 1px solid var(--color-border);
+  padding: var(--s-3) 0;
+
+  &:last-of-type {
+    border-bottom: 1px solid var(--color-border);
+  }
 }
 
 /*.link.is-active

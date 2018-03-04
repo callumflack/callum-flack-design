@@ -69,8 +69,8 @@ export default {
 
 .Card-info {
   background-color: white;
-  padding: var(--s3);
-  padding-left: calc(1.15 * var(--s3));
-  padding-top: var(--s4);
+  padding: var(--s-3);
+  padding-left: calc(1.15 * var(--s-3));
+  padding-top: var(--s-4);
 }
 </style>

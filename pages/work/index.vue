@@ -145,7 +145,7 @@ export default {
 
 .Grid-cell:nth-child(even) {
   @media (--small-viewport) {
-    margin-top: var(--s4);
+    margin-top: var(--s-4);
   }
 }
 </style>

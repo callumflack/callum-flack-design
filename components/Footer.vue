@@ -1,9 +1,6 @@
 <template lang="pug">
-  div
-    c-toggle
-    .footer-spacer
-    footer.footer(role="contentinfo")
-      c-nav
+  footer.footer(role="contentinfo")
+    c-nav
 </template>
 
 <script>
@@ -25,17 +22,6 @@ export default {
 
 <style>
 @import "../assets/styles/vars.css";
-
-.page {
-  background-color: var(--color-bg);
-  min-height: 100vh;
-  position: relative;
-  z-index: 3;
-}
-
-.footer-spacer {
-  height: 100vh;
-}
 
 .footer {
   align-items: flex-end;

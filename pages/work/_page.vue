@@ -95,10 +95,10 @@ export default {
 
 /* matches `blockquote p em` in type.css */
 .small-space {
-  margin-top: var(--s1);
+  margin-top: var(--s-1);
 
   @media (--large-viewport) {
-    margin-top: var(--s2);
+    margin-top: var(--s-2);
   }
 }
 </style>

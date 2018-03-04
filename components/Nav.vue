@@ -1,31 +1,35 @@
 <template lang="pug">
   div
-    header(role="banner")
-      c-pageheading(
-        heading="Design for the experience of delight."
-        link="/"
-        lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and serve their audience."
-      )
-    main(role="main")
+    header.block--masthead.p-b0(role="banner")
+      .container
+        h1.title Callum Flack is a designer who codes.
+        p
+          | Hi! I'm a multi-skilled, self-sufficient designer and developer who can see the big picture and execute the details. Read 
+          nuxt-link(to="/about") about me.
+        p Here's a selection of recent projects. I also 
+          nuxt-link(to="/journal") blog 
+          | about the process.
+
+    //- main.block--pageEnd.block--touch(role="main")
+    main.block--touch(role="main")
       .container.nav-mobile-layout
-        .block--masthead
-          nav.title
-            c-navlink(
-              v-for="item in navLinks"
-              :key="item.label"
-              :label="item.label"
-              :link="item.link"
-              :currentPage="currentPage"
-              :exact="item.exact"
-            )
-          .text.text--meta.color-title.block--touch
-            c-navlink(
-              v-for="item in navContacts"
-              :key="item.label"
-              :label="item.label"
-              :link="item.link"
-              external
-            )
+        nav.title
+          c-navlink(
+            v-for="item in navLinks"
+            :key="item.label"
+            :label="item.label"
+            :link="item.link"
+            :currentPage="currentPage"
+            :exact="item.exact"
+          )
+        .text.text--meta.color-title.block--touch
+          c-navlink(
+            v-for="item in navContacts"
+            :key="item.label"
+            :label="item.label"
+            :link="item.link"
+            external
+          )
 </template>
 
 <script scoped>
@@ -47,21 +51,36 @@ export default {
     return {
       navLinks: [
         {
-          label: "Home",
-          link: "/",
-          exact: true
+          label: "VJ Ray",
+          link: "/work/vj-ray"
         },
         {
-          label: "Work",
-          link: "/work"
+          label: "Oceanblue Living",
+          link: "/work/oceanblue-living"
         },
         {
-          label: "Journal",
-          link: "/journal"
+          label: "Primary Healthcare Network",
+          link: "/work/primary-healthcare-network"
         },
         {
-          label: "About",
-          link: "/about"
+          label: "Album Registry",
+          link: "/work/album-registry"
+        },
+        {
+          label: "Ward6",
+          link: "/work/ward6"
+        },
+        {
+          label: "Oceanblue Boats",
+          link: "/work/oceanblue-boats"
+        },
+        {
+          label: "The Substation",
+          link: "/work/the-substation"
+        },
+        {
+          label: "Pharma eDetailer apps",
+          link: "/work/ward6-edetailers"
         }
       ],
 

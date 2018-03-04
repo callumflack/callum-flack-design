@@ -2,7 +2,6 @@
 .block--pageEnd
   header(role="banner")
     c-pageheading(
-      link="/about"
       :heading="page.heading"
       :lede="page.lede"
     )

@@ -5,14 +5,14 @@
  */
 
 .figure {
-  margin: var(--s5) auto;
+  margin: var(--s-5) auto;
   position: relative;
 
   @media (--medium-viewport) {
-    margin: var(--s6) 0;
+    margin: var(--s-6) 0;
   }
   @media (--large-viewport) {
-    margin: var(--s7) auto;
+    margin: var(--s-7) auto;
   }
 
   &:first-child {
@@ -30,8 +30,8 @@
 
 .figure--portrait {
   @media (--small-viewport) {
-    width: 50%;
-    margin-left: 0;
+    width: 25%;
+    margin-left: 12.5%;
   }
 }
 

@@ -6,82 +6,82 @@
 
 .block--masthead {
   margin-bottom: 0;
-  padding: var(--s6) 0 var(--s5);
+  padding: var(--s-6) 0 var(--s-5);
 
   @media (--small-viewport) {
-    margin-bottom: var(--s2);
+    // margin-bottom: var(--s-2);
   }
   @media (--medium-viewport) {
-    padding: var(--s6) 0;
+    padding: var(--s-6) 0;
   }
   @media (--large-viewport) {
-    padding: var(--s7) 0;
+    padding: var(--s-7) 0;
   }
 }
 
 .block--articleEnd {
-  padding-bottom: var(--s5);
+  padding-bottom: var(--s-5);
 
   @media (--medium-viewport) {
-    padding-bottom: var(--s6);
+    padding-bottom: var(--s-6);
   }
   @media (--large-viewport) {
-    padding-bottom: var(--s7);
+    padding-bottom: var(--s-7);
   }
 }
 
 .block--pageEnd {
-  padding-bottom: calc(2 * var(--s5));
+  padding-bottom: calc(2 * var(--s-5));
 
   @media (--medium-viewport) {
-    padding-bottom: calc(2 * var(--s6));
+    padding-bottom: calc(2 * var(--s-6));
   }
   @media (--large-viewport) {
-    padding-bottom: calc(2 * var(--s7));
+    padding-bottom: calc(2 * var(--s-7));
   }
 }
 
 .block--nextProject {
-  padding: var(--s5) 0;
+  padding: var(--s-5) 0;
 
   @media (--medium-viewport) {
-    padding: var(--s6) 0;
+    padding: var(--s-6) 0;
   }
   @media (--large-viewport) {
-    padding: var(--s7) 0;
+    padding: var(--s-7) 0;
   }
 }
 
 /* other blocks */
 
 .block {
-  margin: calc(1 * var(--s5)) auto;
+  margin: calc(1 * var(--s-5)) auto;
 
   @media (--large-viewport) {
-    margin: calc(1 * var(--s6)) auto;
+    margin: calc(1 * var(--s-6)) auto;
   }
 }
 
 .block--half {
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s-4);
 
   @media (--medium-viewport) {
-    margin-bottom: var(--s5);
+    margin-bottom: var(--s-5);
   }
 
   @media (--large-viewport) {
-    margin-bottom: var(--s6);
+    margin-bottom: var(--s-6);
   }
 }
 
 .block--touch {
-  margin-top: var(--s3);
+  margin-top: var(--s-3);
 
   @media (--medium-viewport) {
-    // margin-top: var(--s3);
+    // margin-top: var(--s-3);
   }
 
   @media (--large-viewport) {
-    margin-top: var(--s4);
+    margin-top: var(--s-4);
   }
 }

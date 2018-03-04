@@ -8,6 +8,7 @@
 @import "typography/list.css";
 @import "typography/link.css";
 
+@import "layout/page.css";
 @import "layout/grid.css";
 @import "layout/container.css";
 @import "layout/block.css";
@@ -21,6 +22,6 @@
 
 @import "components/project-item.css";
 
+@import "utilities/spacing.css";
 @import "utils.css";
-@import "utils-spacers.css";
 @import "theme.css";

@@ -140,7 +140,7 @@ h2 {
   }
 }
 
-/* h6 is used to define a markdown section */
+/* h6 is used to define a markdown section
 h6 + p,
 p + p {
   text-indent: 3rem;
@@ -152,7 +152,7 @@ p + p {
 
 .intro + p {
   text-indent: 0;
-}
+} */
 
 /*
   -------------------------------------------------
@@ -175,7 +175,7 @@ blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: var(--color-rule);
-  padding: var(--s3) 0 calc(1.1 * var(--s3));
+  padding: var(--s-3) 0 calc(1.1 * var(--s-3));
   width: auto;
 
   & p {
@@ -204,10 +204,10 @@ blockquote p em {
   display: table;
   /* method for resetting ems, then apply text--meta sizing: */
   font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
-  margin-top: var(--s1);
+  margin-top: var(--s-1);
 
   @media (--large-viewport) {
-    margin-top: var(--s2);
+    margin-top: var(--s-2);
   }
 }
 
@@ -219,82 +219,96 @@ blockquote p em {
   -------------------------------------------------
  */
 
-p:last-child,
-ul:last-child,
-blockquote:last-child {
-  margin-bottom: 0;
+p,
+ul,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin-bottom: var(--s-2);
+
+  @media (--medium-viewport) {
+    margin-bottom: var(--s-2);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* h6 is used to define a markdown section */
 h1,
 h2,
 h3,
+h4,
 h6 {
-  margin-bottom: var(--s2);
+  margin-bottom: var(--s-2);
 
   @media (--medium-viewport) {
-    margin-bottom: var(--s2);
+    margin-bottom: var(--s-2);
   }
 
   &:not(:first-child) {
-    margin-top: var(--s4);
+    margin-top: var(--s-4);
 
     @media (--medium-viewport) {
-      margin-top: var(--s5);
+      margin-top: var(--s-5);
     }
   }
 }
 
 .journal-scope .intro {
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s-4);
 
   @media (--medium-viewport) {
-    margin-bottom: var(--s5);
+    margin-bottom: var(--s-5);
   }
 }
 
 .post:not(:first-child) {
-  margin-top: var(--s4);
-  margin-bottom: calc(1 * var(--s4));
+  margin-top: var(--s-4);
+  margin-bottom: calc(1 * var(--s-4));
 
   @media (--medium-viewport) {
-    margin-top: var(--s5);
-    margin-bottom: calc(1 * var(--s5));
+    margin-top: var(--s-5);
+    margin-bottom: calc(1 * var(--s-5));
   }
 }
 
 /* illusion: manages .figure before .title--ruled in context */
 /* .figure ~ .title--ruled {*/
 .title--ruled:not(:first-child) {
-  margin-top: calc(1.25 * var(--s4));
+  margin-top: calc(1.25 * var(--s-4));
 
   @media (--medium-viewport) {
-    margin-top: calc(1.25 * var(--s5));
+    margin-top: calc(1.25 * var(--s-5));
   }
 }
 
 /* illusion: manages .figure & .form in context */
 .title--ruled + .figure,
 p + .form {
-  margin-top: calc(0.666 * var(--s4));
+  margin-top: calc(0.666 * var(--s-4));
 
   @media (--medium-viewport) {
-    margin-top: calc(0.666 * var(--s5));
+    margin-top: calc(0.666 * var(--s-5));
   }
 }
 
 /* used in project grid only */
 .title--underThumbnail {
-  margin: var(--s2) 0;
+  margin: var(--s-2) 0;
 
   @media (--medium-viewport) {
-    margin: calc(1.25 * var(--s3)) 0 calc(0.8 * var(--s3));
+    margin: calc(1.25 * var(--s-3)) 0 calc(0.8 * var(--s-3));
   }
 }
 
 blockquote {
-  margin-top: var(--s3);
-  margin-bottom: var(--s3);
+  margin-top: var(--s-3);
+  margin-bottom: var(--s-3);
 
   @media (--medium-viewport) {
     margin-top: 0;
@@ -315,10 +329,10 @@ blockquote + h2 {
 
 * + .Button,
 * + .project-link {
-  margin-top: var(--s3);
+  margin-top: var(--s-3);
 
   @media (--large-viewport) {
-    margin-top: var(--s4);
+    margin-top: var(--s-4);
   }
 }
 
@@ -353,10 +367,10 @@ blockquote + h2 {
 .journal-scope ul,
 .journal-scope blockquote {
   &:not(last-child) {
-    margin-bottom: var(--s3);
+    margin-bottom: var(--s-3);
 
     @media (--large-viewport) {
-      margin-bottom: var(--s4);
+      margin-bottom: var(--s-4);
     }
   }
 }
@@ -378,14 +392,14 @@ blockquote + h2 {
 
 .journal-scope blockquote {
   @media (--small-viewport) {
-    margin-top: calc(2 * var(--s2));
-    margin-bottom: calc(2 * var(--s2));
+    margin-top: calc(2 * var(--s-2));
+    margin-bottom: calc(2 * var(--s-2));
   }
 }
 
 .journal-scope p + blockquote {
   @media (--small-viewport) {
-    // margin-top: calc(2 * var(--s3));
+    // margin-top: calc(2 * var(--s-3));
   }
 }
 
@@ -394,17 +408,17 @@ blockquote + h2 {
   border-left: 3px solid currentColor;
   margin-right: 7.5%;
   padding: initial;
-  padding-left: calc(1.5 * var(--s2));
+  padding-left: calc(1.5 * var(--s-2));
 
   @media (--small-viewport) {
-    padding-left: calc(1.5 * var(--s3));
+    padding-left: calc(1.5 * var(--s-3));
   }
 }
 
 .journal-scope blockquote p em {
   display: table;
   font-size: 1em;
-  margin-top: var(--s1);
+  margin-top: var(--s-1);
 }
 
 .journal-scope hr {

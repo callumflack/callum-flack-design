@@ -25,11 +25,11 @@ Their metalworks are rugged and beautiful. To capture this, we collaborated with
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
+> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It's working for us.” _LeaAnne Cassaniti, Owner_
+
 @[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4")
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372170/okok/oceanblueliving-visual-system.png") -->
-
-> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It's working for us.” _LeaAnne Cassaniti, Owner_
 
 <!-- We continue to document new works. The image library we've built over the last 18 months allows OceanBlue Living to create high-impact social media at will. -->
 

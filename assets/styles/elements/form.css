@@ -13,14 +13,14 @@
 
   & * + * {
     margin: 0;
-    margin-top: var(--s2);
+    margin-top: var(--s-2);
   }
 
   @media (--small-viewport) {
     flex-direction: row;
 
     & * + * {
-      margin-left: var(--s2);
+      margin-left: var(--s-2);
       margin-top: 0;
     }
   }
