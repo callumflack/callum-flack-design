@@ -1,32 +1,42 @@
 <template lang="pug">
-  .container.nav-mobile-layout
-    .block--masthead
-      nav.title
-        c-navlink(
-          v-for="item in navLinks"
-          :key="item.label"
-          :label="item.label"
-          :link="item.link"
-          :currentPage="currentPage"
-          :exact="item.exact"
-        )
-      .text.text--meta.color-title.block--touch
-        c-navlink(
-          v-for="item in navContacts"
-          :key="item.label"
-          :label="item.label"
-          :link="item.link"
-          external
-        )
+  div
+    header(role="banner")
+      c-pageheading(
+        heading="Design for the experience of delight."
+        link="/"
+        lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and serve their audience."
+      )
+    main(role="main")
+      .container.nav-mobile-layout
+        .block--masthead
+          nav.title
+            c-navlink(
+              v-for="item in navLinks"
+              :key="item.label"
+              :label="item.label"
+              :link="item.link"
+              :currentPage="currentPage"
+              :exact="item.exact"
+            )
+          .text.text--meta.color-title.block--touch
+            c-navlink(
+              v-for="item in navContacts"
+              :key="item.label"
+              :label="item.label"
+              :link="item.link"
+              external
+            )
 </template>
 
 <script scoped>
+import PageHeading from "~/components/PageHeading.vue";
 import NavLink from "~/components/NavLink.vue";
 import NavButton from "~/components/NavButton.vue";
 
 export default {
   name: "nav-bottom",
   components: {
+    "c-pageheading": PageHeading,
     "c-navlink": NavLink,
     "c-navbutton": NavButton
   },

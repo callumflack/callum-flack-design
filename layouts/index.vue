@@ -3,7 +3,6 @@
     c-toggle
     .page
       nuxt
-    c-footer
 </template>
 
 <script>

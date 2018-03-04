@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: var(--font-heading);
-  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("~static/fonts/TiemposHeadline-Semibold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }

@@ -112,8 +112,10 @@
    
    */
   
-  --ls-text: -0.0125em;
+  --ls-heading: 0.015em;
   --ls-meta: 0.00625em;
+  --ls-text: -0.0125em;
+
   --lh-text: 1.4;
 
   /* 

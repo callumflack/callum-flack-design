@@ -80,7 +80,8 @@ ul,
   color: var(--color-title);
   font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-text);
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: var(--ls-heading);
 }
 
 a.title,
@@ -202,7 +203,7 @@ blockquote p {
 blockquote p em {
   display: table;
   /* method for resetting ems, then apply text--meta sizing: */
-  font-size: calc( (16 / (var(--s-text-unit) * 16)) * 1em);
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
   margin-top: var(--s1);
 
   @media (--large-viewport) {
@@ -331,7 +332,7 @@ blockquote + h2 {
 
 .journal-scope {
   @media (--medium-viewport) {
-    width: calc(100% * 2/3);
+    width: calc(100% * 2 / 3);
   }
 }
 

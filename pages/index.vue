@@ -1,51 +1,16 @@
 <template lang="pug">
-.block--pageEnd
-  header(role="banner")
-    c-pageheading(
-      heading="Design for the experience of delight."
-      link="/"
-      lede="Callum Flack is a code-based designer who obsesses over the user experience. He helps individuals, groups and businesses to connect with and serve their audience."
-    )
-  main(role="main")
-    .container
-      figure.figure.figure--large
-        nuxt-link.work.linkSignal.noVisualLink(to="/work")
-          .FlexEmbed
-            .FlexEmbed-ratio.FlexEmbed-ratio--16by9
-            .FlexEmbed-content
-              .pin.bgcolor-white.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter
-                .title.u-textCenter
-                  | View the work #[span.linkSignal-target →]
-              img.w100.u-posRelative(src="/images/loop-06.gif")
-      .text-scope
-        p
-          nuxt-link(to="/about") Hi, I’m Callum.
-          |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences that connect your ideas with your audience. Together we can build something that your customers are proud of.
-          
-        h2 Systems thinking. Technical fluidity. Human outcomes.
-        p Work with me and you work directly with a multi-skilled, self-sufficient creative technologist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation. 
-          nuxt-link(to="/work") Here's some examples. 
-
-        h2.title.title--ruled 
-          nuxt-link(to="/journal") Journal
-        p I write about designing and building human interfaces in the 
-          nuxt-link(to="/journal") Journal.
-          |  Here's the most recent:
-        .post.no-quote
-          nuxt-link.u-block.noVisualLink.linkSignal(to="/journal/designers-should-code")
-            h1.title.w100.u-marginT0.u-marginB3 
-              | Designers should code 
-              span.linkSignal-target →
-            p Rich digital experiences happen when the "necessary overlaps" in play are interconnected. As a designer, the closer you can get to understanding these complex systems, the greater your agency. Just don't mind that the learning process hurts a little.
-        c-newsletter
+  c-nav
 </template>
 
 <script>
+import Nav from "~/components/Nav.vue";
 import PageHeading from "~/components/PageHeading.vue";
 import Newsletter from "~/components/FormNewsletter.vue";
 
 export default {
+  layout: "index",
   components: {
+    "c-nav": Nav,
     "c-pageheading": PageHeading,
     "c-newsletter": Newsletter
   }
