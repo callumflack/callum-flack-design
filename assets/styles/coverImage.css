@@ -2,13 +2,11 @@
  * Sticking images to ratio
  */
 
-
-
 /* ALT
 
 .project-image {
   @apply --stick;
-  background-color: var(--color-hilight);
+  background-color: var(--c-hilight);
   height: 100%;
   left: 50%;
   max-width: initial;
@@ -19,7 +17,7 @@
 
 .coverimage {
   @apply --stick;
-  background-color: var(--color-hilight);
+  background-color: var(--c-hilight);
   max-width: initial;
 }
 

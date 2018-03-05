@@ -9,7 +9,7 @@
             type="video/mp4"
           )
           | Your browser does not support the video tag. Please upgrade your browser.
-        .pin.color-device(v-if="iphone")
+        .pin.c-device(v-if="iphone")
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 1381">
             <path class="cls-1" d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09ZM628.31,1210.53H41.69V168.24H628.31Z"/>
           </svg>
@@ -95,7 +95,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .frame {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--c-border);
 }
 
 .video-button-wrapper {
@@ -118,7 +118,7 @@ export default {
 }
 
 .video-button {
-  color: var(--color-bg);
+  color: var(--c-bg);
 }
 
 .icon--play-button {
@@ -164,7 +164,7 @@ export default {
   }
 
   & .device-position {
-    /* border: 1px solid var(--color-border); */
+    /* border: 1px solid var(--c-border); */
     margin-top: 25.2%;
     width: 87.45%;
   }
@@ -173,7 +173,7 @@ export default {
   /* & .device-style > svg {
     background-image: url("/images/device-iphone6-outline.svg");
     fill: none;
-    stroke: var(--color-text);
+    stroke: var(--c-text);
     stroke-width: 1;
 }*/
 }

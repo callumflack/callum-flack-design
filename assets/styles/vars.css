@@ -47,6 +47,7 @@
   --s-1: 0.25rem;
   --s-2: 0.5rem;
   --s-3: 1rem;
+  --s-3a: 1.25rem;
   --s-4: 2.5rem;
   --s-5: 5rem;
   --s-6: 9rem;
@@ -65,22 +66,27 @@
   
    */
    
-  --color-brand: #00ffff;
-  --color-highlight: #bee8fb;
-  --color-highlight: #47bbff;
-  --color-highlight: #44729c;
-  --color-highlight: #b32273;
-  --color-red: #ff3700;
-  --color-title: #222;
-  --color-text: #222;
-  --color-rule: #888;
-  --color-border: #e7e7e7;
-  --color-device: #e7e7e7;
-  --color-neutral: #eee;
-  --color-bg: #fafafa;
-  --color-bg-blue: #cdd8e2;
-  --color-metal: #cdd8e2;
-  --color-metal: rgba(222, 229, 235, 1);
+  --c-brand: #00ffff;
+  --c-highlight: #bee8fb;
+  --c-highlight: #47bbff;
+  --c-highlight: #44729c;
+  --c-highlight: #b32273;
+  
+  --c-success: #ff3700;
+  --c-warning: #ff3700;
+  --c-danger: #ff3700;
+
+  --c-text: #222;
+  --c-textLight: #aaa;
+  --c-rule: #888;
+  --c-gray: #aaa;
+  --c-border: #e7e7e7;
+  --c-device: #e7e7e7;
+  --c-neutral: #eee;
+  --c-bg: #fafafa;
+  
+  --c-metal: #cdd8e2;
+  --c-metal: rgba(222, 229, 235, 1);
 
   /* 
   

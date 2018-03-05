@@ -89,7 +89,7 @@ export default {
 
 .next-project {
   border-top: 1px solid rgba(138, 138, 138, 0.15);
-  border-color: var(--color-border);
+  border-color: var(--c-border);
   display: block;
 }
 

@@ -13,16 +13,17 @@
     //- main.block--pageEnd.block--touch(role="main")
     main.block--touch(role="main")
       .container.nav-mobile-layout
-        nav.title
+        nav
           c-navlink(
             v-for="item in navLinks"
             :key="item.label"
             :label="item.label"
+            :year="item.year"
             :link="item.link"
             :currentPage="currentPage"
             :exact="item.exact"
           )
-        .text.text--meta.color-title.block--touch
+        .text.text--meta.c-title.block--touch
           c-navlink(
             v-for="item in navContacts"
             :key="item.label"
@@ -52,34 +53,42 @@ export default {
       navLinks: [
         {
           label: "VJ Ray",
+          year: 2017,
           link: "/work/vj-ray"
         },
         {
           label: "Oceanblue Living",
+          year: 2017,
           link: "/work/oceanblue-living"
         },
         {
           label: "Primary Healthcare Network",
+          year: 2017,
           link: "/work/primary-healthcare-network"
         },
         {
           label: "Album Registry",
+          year: 2017,
           link: "/work/album-registry"
         },
         {
           label: "Ward6",
+          year: 2017,
           link: "/work/ward6"
         },
         {
           label: "Oceanblue Boats",
+          year: 2017,
           link: "/work/oceanblue-boats"
         },
         {
           label: "The Substation",
+          year: 2017,
           link: "/work/the-substation"
         },
         {
           label: "Pharma eDetailer apps",
+          year: 2017,
           link: "/work/ward6-edetailers"
         }
       ],

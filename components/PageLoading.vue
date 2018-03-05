@@ -28,7 +28,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .loading-page {
-  background: var(--color-bg);
+  background: var(--c-bg);
   height: 100%;
   left: 0;
   position: fixed;

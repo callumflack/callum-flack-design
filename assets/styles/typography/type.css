@@ -10,8 +10,8 @@
  */
 
 body {
-  background-color: var(--color-metal); /* 1 */
-  color: var(--color-text);
+  background-color: var(--c-metal); /* 1 */
+  color: var(--c-text);
   font-family: var(--font-regular), var(--font-stack-sans);
   font-weight: 400;
   letter-spacing: var(--ls-text);
@@ -77,7 +77,7 @@ ul,
 .title,
 .text-scope h2,
 .journal-scope h2 {
-  color: var(--color-title);
+  color: var(--c-text);
   font-family: var(--font-heading), var(--font-stack-sans);
   font-size: var(--s-text);
   font-weight: 700;
@@ -90,7 +90,7 @@ a.title,
 }
 
 .title--ruled {
-  border-top: 1px solid var(--color-rule);
+  border-top: 1px solid var(--c-rule);
   padding-top: 0.666rem;
 
   @media (--small-viewport) {
@@ -105,8 +105,8 @@ a.title,
 
 .title--subscribe {
   // border-width: 2px;
-  border-color: var(--color-highlight);
-  color: var(--color-highlight);
+  border-color: var(--c-highlight);
+  color: var(--c-highlight);
 }
 
 /*
@@ -174,7 +174,7 @@ blockquote {
 blockquote p {
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: var(--color-rule);
+  border-color: var(--c-rule);
   padding: var(--s-3) 0 calc(1.1 * var(--s-3));
   width: auto;
 
@@ -230,7 +230,7 @@ h6 {
   margin-bottom: var(--s-2);
 
   @media (--medium-viewport) {
-    margin-bottom: var(--s-2);
+    margin-bottom: var(--s-3);
   }
 
   &:last-child {
@@ -244,12 +244,6 @@ h2,
 h3,
 h4,
 h6 {
-  margin-bottom: var(--s-2);
-
-  @media (--medium-viewport) {
-    margin-bottom: var(--s-2);
-  }
-
   &:not(:first-child) {
     margin-top: var(--s-4);
 

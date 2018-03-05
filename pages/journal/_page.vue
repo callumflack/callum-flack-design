@@ -20,10 +20,10 @@
           p.text.text--meta.text-noIndent(v-if="page.note", v-html="page.note")
           
           .block(v-if="page.tweet")
-            //- hr.color-title.mb3
+            //- hr.c-title.mb3
             p.title.m-b0.u-textCenter Comments?
             p.text.u-textCenter
-              a.visualLink.color-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
+              a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
           hr.block(v-else)
           c-newsletter
 </template>

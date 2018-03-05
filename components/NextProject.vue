@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.bgcolor-white(role="contentinfo")
+  footer.bg-white(role="contentinfo")
     router-link(:to="project.permalink", v-if="project")
       .block
         .container

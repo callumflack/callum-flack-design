@@ -63,7 +63,7 @@
   & .device-style {
     background-image: url("/images/device-iphone6-outline.svg");
     // fill: none;
-    // stroke: var(--color-text);
+    // stroke: var(--c-text);
     // stroke-width: 1;
   }
 }

@@ -7,7 +7,7 @@
 
 .Button {
   appearance: none;
-  background-color: var(--color-text);
+  background-color: var(--c-text);
   border: 0;
   border-radius: 0;
   color: white;
@@ -18,7 +18,7 @@
   white-space: nowrap;
 
   /* theme */
-  box-shadow: inset 0 0 0 1px var(--color-text);
+  box-shadow: inset 0 0 0 1px var(--c-text);
   font-weight: inherit;
   letter-spacing: 0;
   line-height: inherit;
@@ -27,19 +27,19 @@
 
   /* pseudos */
   &:hover {
-    // background-color: var(--color-highlight);
-    // box-shadow: inset 0 0 0 999px var(--color-text);
+    // background-color: var(--c-highlight);
+    // box-shadow: inset 0 0 0 999px var(--c-text);
     color: white;
   }
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px var(--color-neutral);
+    box-shadow: 0 0 0 2px var(--c-neutral);
   }
 
   &:active {
-    background-color: var(--color-neutral);
-    box-shadow: inset 0 0 16px var(--color-text);
+    background-color: var(--c-neutral);
+    box-shadow: inset 0 0 16px var(--c-text);
   }
 
   &:disabled {
@@ -55,12 +55,12 @@
 .Button--outline {
   background-color: transparent;
   box-shadow: inset 0 0 0 1px;
-  color: var(--color-text);
+  color: var(--c-text);
   letter-spacing: inherit !important;
 
   &:hover {
-    background-color: var(--color-title);
-    color: var(--color-bg);
+    background-color: var(--c-text);
+    color: var(--c-bg);
   }
 
   &:focus {
@@ -68,9 +68,9 @@
   }
 
   &:active {
-    background-color: var(--color-title);
-    box-shadow: inset 0 0 0 4px var(--color-title), inset 0 0 16px var(--color-title);
-    color: var(--color-bg);
+    background-color: var(--c-text);
+    box-shadow: inset 0 0 0 4px var(--c-text), inset 0 0 16px var(--c-text);
+    color: var(--c-bg);
   }
 }
 
@@ -90,18 +90,18 @@
   &:hover,
   &:focus,
   &:active {
-    // box-shadow: inset 0 0 0 2px var(--color-text);
-    color: var(--color-title);
+    // box-shadow: inset 0 0 0 2px var(--c-text);
+    color: var(--c-text);
   }
 
   &:focus {
     // box-shadow: inset 0 0 0 2px, 0 0 0 2px;
-    // box-shadow: 0 0 0 1px var(--color-title);
+    // box-shadow: 0 0 0 1px var(--c-text);
   }
 
   &:active {
-    // background-color: var(--color-text);
-    // color: var(--color-neutral);
+    // background-color: var(--c-text);
+    // color: var(--c-neutral);
   }
 }
 

@@ -16,7 +16,7 @@
     .Banner-text
       .container--tuck(v-if="imageUrl")
         div(:class="['Container', { 'is-right': alignRight, 'is-reset': hi }]", )
-          h1.title.color-bg {{ heading }}
+          h1.title.c-bg {{ heading }}
             span(v-html="text")
           div(v-if="link")
             a.Button.Button--outline.Meta.--medium(:href="link") {{ linkLabel }}
@@ -55,7 +55,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Banner {
-  background-color: var(--color-bg);
+  background-color: var(--c-bg);
   position: relative;
   /* min-height: calc(100vh - 60px);
   max-height: calc((100vh - 370px)/1.5); */
@@ -141,13 +141,13 @@ export default {
 }
 
 .--withFigure .Banner-text .container {
-  /* background-color: var(--color-neutral);
+  /* background-color: var(--c-neutral);
   padding-top: var(--grid-gutter);
   padding-bottom: var(--grid-gutter); */
 }
 
 .--withFigure .title {
-  color: var(--color-border);
+  color: var(--c-border);
   color: white;
 }
 </style>

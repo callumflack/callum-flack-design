@@ -48,7 +48,7 @@ export default {
 
 /* perhaps req'd occassionally */
 .post-image {
-  background-color: var(--color-text);
+  background-color: var(--c-text);
   background-image: url("/images/post-bubble.jpg");
   background-size: cover;
   display: none !important;

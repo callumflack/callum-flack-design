@@ -63,7 +63,7 @@ export default {
 }
 
 .frame {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--c-border);
 }
 
 .screen {

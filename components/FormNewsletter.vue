@@ -59,12 +59,12 @@ export default {
 }
 
 .form input {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--c-border);
   box-shadow: none;
   padding-left: 0;
 
   &:focus {
-    border-color: var(--color-title);
+    border-color: var(--c-text);
   }
 }
 

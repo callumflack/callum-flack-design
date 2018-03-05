@@ -25,9 +25,9 @@ export default {
 
 .footer {
   align-items: flex-end;
-  background-color: var(--color-metal);
+  background-color: var(--c-metal);
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   opacity: 1;
   left: 0;
   position: fixed;

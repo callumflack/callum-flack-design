@@ -10,7 +10,7 @@
           )
       .Card-info
         h2.Heading {{ headline }}
-        p.color-textLight(v-html="subtext")
+        p.c-textLight(v-html="subtext")
         p.meta(v-if="tags") {{ tags }}
 </template>
 
@@ -51,7 +51,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .Card {
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--c-text);
   border-color: rgba(17, 17, 17, 0.25);
   border-radius: 4px;
   display: block;
@@ -60,7 +60,7 @@ export default {
 
 .Card-image {
   @apply --stick;
-  background-color: var(--color-hilight);
+  background-color: var(--c-hilight);
   height: 100%;
   left: 50%;
   max-width: initial;

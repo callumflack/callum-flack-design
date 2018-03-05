@@ -12,7 +12,9 @@
     :exact="exact"
     v-else
   )
-    span {{ label }}
+    .u-flex.u-flexJustifyBetween
+      span.title {{ label }}
+      span.text.c-textLight {{ year }}
 </template>
 
 <script>
@@ -21,6 +23,7 @@ export default {
 
   props: {
     label: String,
+    year: Number,
     link: String,
     external: Boolean,
     exact: Boolean
@@ -58,11 +61,11 @@ li + li {
 }
 
 .ruled {
-  border-top: 1px solid var(--color-border);
-  padding: var(--s-3) 0;
+  border-top: 1px solid var(--c-border);
+  padding: var(--s-3a) 0 calc(1.25 * var(--s-3a));
 
   &:last-of-type {
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--c-border);
   }
 }
 

@@ -28,7 +28,7 @@ export default {
 @import "../assets/styles/vars.css";
 
 .page-enter-active {
-  /* background-color: var(--color-bg); */
+  /* background-color: var(--c-bg); */
   /* height: 100vh; */
   /* opacity: 1; */
   transition: opacity 0.15s;
