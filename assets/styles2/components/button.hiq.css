@@ -1,0 +1,57 @@
+/* https://jonathanharrell.github.io/hiq/guide/buttons/#customization */
+
+[role="button"].is-outline,
+[role="button"].is-outline-reverse,
+[role="button"].is-outline-primary {
+  --hiq-button-border-radius: 999px;
+  --hiq-button-horizontal-padding: 1.5rem;
+}
+
+[role="button"].is-outline {
+  --hiq-button-border-color: var(--hiq-color-primary);
+  --hiq-button-background-color: transparent;
+  --hiq-button-text-color: var(--hiq-color-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: hsl(294, 66%, 50%);
+    border-color: var(--hiq-button-focus-border-color);
+    color: white;
+  }
+
+  /* hover colors */
+  --hiq-button-hover-border-color: hsl(294, 66%, 15%);
+  --hiq-button-hover-background-color: hsl(294, 66%, 15%);
+  --hiq-button-hover-text-color: white;
+
+  /* focus colors */
+  --hiq-button-focus-border-color: hsl(294, 66%, 50%);
+  --hiq-button-focus-background-color: hsl(294, 66%, 50%);
+  --hiq-button-focus-text-color: white;
+
+  /* active colors */
+  --hiq-button-active-border-color: hsl(294, 66%, 30%);
+  --hiq-button-active-background-color: hsl(294, 66%, 30%);
+  --hiq-button-active-text-color: white;
+}
+
+[role="button"].is-outline-primary {
+  --hiq-button-border-color: white;
+}
+
+[role="button"].is-outline-reverse {
+  --hiq-button-border-color: white;
+  --hiq-button-background-color: transparent;
+  --hiq-button-text-color: white;
+}
+
+[role="button"].is-invisible {
+  --hiq-button-border-color: transparent;
+  --hiq-button-background-color: transparent;
+  --hiq-button-text-color: var(--hiq-color-primary);
+
+  --hiq-button-hover-border-color: transparent;
+  --hiq-button-hover-background-color: transparent;
+  --hiq-button-hover-text-color: var(--hiq-color-primary-hover);
+}

@@ -39,10 +39,11 @@ export default {
     },
     square: Boolean,
     face: Boolean,
-    project: Boolean,
+    aspect: Boolean,
     ratio: Number,
     frame: Boolean,
     large: Boolean,
+    project: Boolean,
     portrait: Boolean
   },
 
@@ -54,6 +55,7 @@ export default {
         {
           "figure--frame": this.frame,
           "figure--large": this.large,
+          "figure--project": this.project,
           "figure--portrait": this.portrait
         }
       ];
@@ -66,7 +68,7 @@ export default {
         "image-aspectRatio",
         {
           "figure--frame": this.frame,
-          "image-aspectRatio--4by3": this.project
+          "image-aspectRatio--4by3": this.aspect
         }
       ];
     },
@@ -125,7 +127,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .image {
   position: relative;

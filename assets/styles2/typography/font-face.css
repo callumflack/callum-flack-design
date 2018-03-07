@@ -1,0 +1,38 @@
+/* 
+
+  https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/#unique-font-family-names-matching-weights-and-styles 
+
+*/
+
+@font-face {
+  font-family: "Camphor";
+  font-style: normal;
+  font-weight: 200;
+  src: 
+    url("/fonts/Camphor-Light.woff") format("woff"),
+    url("/fonts/Camphor-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Camphor";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    url("/fonts/Camphor-Regular.woff") format("woff"),
+    url("/fonts/Camphor-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Camphor";
+  font-style: normal;
+  font-weight: 500;
+  src: 
+    url("/fonts/Camphor-Medium.woff") format("woff"),
+    url("/fonts/Camphor-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Camphor";
+  font-style: normal;
+  font-weight: 700;
+  src: 
+    url("/fonts/Camphor-Bold.woff") format("woff"),
+    url("/fonts/Camphor-Bold.ttf") format("truetype");
+}

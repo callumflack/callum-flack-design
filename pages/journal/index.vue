@@ -1,15 +1,13 @@
 <template lang="pug">
-.block--pageEnd
+.block--pb7
   header(role="banner")
     c-pageheading(
       heading="Journal"
-      link="/journal"
       lede="Writing about the contradictions and nuance of designing and building human interfaces."
     )
   main(role="main")
-    .container
+    .container.journal-scope
       c-post(
-        journalpost
         v-for="post in posts"
         :key="post.heading"
         :link="post.permalink"
@@ -37,7 +35,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Selected by Callum Flack writing about digital design & development"
+          content: "Selected writing by Callum Flack about digital design & development"
         }
       ]
     };
@@ -58,11 +56,5 @@ export default {
 </script>
 
 <style scope>
-@import "../../assets/styles/vars.css";
-
-.Grid-cell:nth-child(even) {
-  @media (--small-viewport) {
-    margin-top: var(--s-4);
-  }
-}
+@import "../../assets/styles/variables.css";
 </style>

@@ -1,15 +1,14 @@
 <template lang="pug">
-  .w100
-    nuxt-link.project.linkSignal.block--half(:to="link")
-      figure.project-image
-        img(v-if="image", :src="image")
-      .project-text
-        h2.title.title--ruled {{ heading }}
-          span.linkSignal-target &nbsp;→
-        p.text(v-html="lede") 
-          
-        //- p.project-subtext.text-scope-reset
-          span(v-if="date") {{ date }}
+  nuxt-link.project.linkSignal.block--mb6(:to="link")
+    figure.project-imag(v-if="image")
+      img(:src="image")
+    .project-text
+      h1.title {{ heading }}
+        //- span.linkSignal-target &nbsp;→
+      p.text(v-html="lede") 
+        
+      //- p.project-subtext.text-scope-reset
+        span(v-if="date") {{ date }}
 </template>
 
 
@@ -30,11 +29,5 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.css";
-
-.w100:last-child {
-  & .project {
-    margin-bottom: 0 !important;
-  }
-}
+@import "../assets/styles/variables.css";
 </style>

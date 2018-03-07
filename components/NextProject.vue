@@ -1,14 +1,14 @@
 <template lang="pug">
   footer.bg-white(role="contentinfo")
     router-link(:to="project.permalink", v-if="project")
-      .block
+      .block--my6
         .container
           h1.title.u-sm-size11of12
             span.title--sub Next →
             br
             span(:style="projectColor") {{ project.title }}
     router-link(to="/work", v-else)
-      .block
+      .block--my6
         .container
           h1.title.u-sm-size11of12
             span.title--sub Next →

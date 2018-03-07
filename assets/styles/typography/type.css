@@ -1,61 +1,15 @@
-/* 
-  -------------------------------------------------
-
-  Body
-  …which is all the typography this site uses.
-
-  1. this is the underscroll blue-metal color.
-
-  -------------------------------------------------
- */
-
-body {
-  background-color: var(--c-metal); /* 1 */
-  color: var(--c-text);
-  font-family: var(--font-regular), var(--font-stack-sans);
-  font-weight: 400;
-  letter-spacing: var(--ls-text);
-  line-height: var(--lh-text);
-  text-rendering: geometricPrecision;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* 
-  -------------------------------------------------
-
-  Responsive sizing 
-
-  -------------------------------------------------
- */
-
-body,
-.text-scope-reset {
-  font-size: 0.795rem !important;
-
-  @media (--small-viewport) {
-    font-size: 0.875rem !important;
-  }
-  @media (--medium-viewport) {
-    // font-size: 0.9375rem !important;
-  }
-  @media (--large-viewport) {
-    font-size: 1rem !important;
-  }
-}
-
 /*
   -------------------------------------------------
 
-  Text variations
+  Text
 
   -------------------------------------------------
  */
 
 p,
 ul,
-.text {
+.text,
+.text-scope h2 {
   font-size: var(--s-text);
 }
 
@@ -75,38 +29,13 @@ ul,
  */
 
 .title,
-.text-scope h2,
-.journal-scope h2 {
+.journal-scope h2,
+.text-scope h3 {
   color: var(--c-text);
-  font-family: var(--font-heading), var(--font-stack-sans);
+  font-family: var(--ff-sans-heading), var(--ff-stack-sans);
   font-size: var(--s-text);
   font-weight: 700;
   letter-spacing: var(--ls-heading);
-}
-
-a.title,
-.title > a {
-  // background-image: none !important;
-}
-
-.title--ruled {
-  border-top: 1px solid var(--c-rule);
-  padding-top: 0.666rem;
-
-  @media (--small-viewport) {
-    border-width: 1px;
-    width: 50%;
-  }
-
-  & a {
-    background-image: none !important;
-  }
-}
-
-.title--subscribe {
-  // border-width: 2px;
-  border-color: var(--c-highlight);
-  color: var(--c-highlight);
 }
 
 /*
@@ -117,97 +46,30 @@ a.title,
   -------------------------------------------------
  */
 
-p,
-ol,
-ul,
-blockquote,
-h2 {
-  @media (--medium-viewport) {
-    width: 50%;
+.text-scope {
+  & p,
+  & ol,
+  & ul,
+  & blockquote,
+  & h1,
+  & h2,
+  & h3 {
+    width: 90%;
+
+    @media (--medium-viewport) {
+      width: 50%;
+    }
   }
-}
 
-blockquote p {
-  width: 100%;
-}
-
-p,
-ol,
-ul,
-h2 {
-  @media (--medium-viewport) {
-    padding-right: calc(0.5 * var(--grid-gutter));
-  }
-}
-
-/* h6 is used to define a markdown section
-h6 + p,
-p + p {
-  text-indent: 3rem;
-
-  @media (--small-viewport) {
-    text-indent: 4rem;
-  }
-}
-
-.intro + p {
-  text-indent: 0;
-} */
-
-/*
-  -------------------------------------------------
-
-  blockquote
-
-  -------------------------------------------------
- */
-
-.intro,
-blockquote {
-  @media (--medium-viewport) {
-    margin-left: 50%;
-    padding-left: calc(0.5 * var(--grid-gutter));
-  }
-}
-
-.intro,
-blockquote p {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: var(--c-rule);
-  padding: var(--s-3) 0 calc(1.1 * var(--s-3));
-  width: auto;
-
-  & p {
-    border: initial;
-    padding: initial;
-  }
-}
-
-/* quote */
-blockquote p {
-  &:before {
-    content: "“";
-    // left: 1.4375rem;
-    display: block;
-    position: absolute;
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.no-quote p:before {
-  content: none !important;
-}
-
-.intro em,
-blockquote p em {
-  display: table;
-  /* method for resetting ems, then apply text--meta sizing: */
-  font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
-  margin-top: var(--s-1);
-
-  @media (--large-viewport) {
-    margin-top: var(--s-2);
+  & p,
+  & ol,
+  & ul,
+  & h1,
+  & h2,
+  & h3 {
+    @media (--medium-viewport) {
+      // padding-right: calc(0.25 * var(--grid-gutter));
+    }
   }
 }
 
@@ -221,16 +83,17 @@ blockquote p em {
 
 p,
 ul,
+ol,
 blockquote,
 h1,
 h2,
 h3,
 h4,
 h6 {
-  margin-bottom: var(--s-2);
+  margin-bottom: var(--s-3);
 
   @media (--medium-viewport) {
-    margin-bottom: var(--s-3);
+    margin-bottom: var(--s-3b);
   }
 
   &:last-child {
@@ -253,14 +116,6 @@ h6 {
   }
 }
 
-.journal-scope .intro {
-  margin-bottom: var(--s-4);
-
-  @media (--medium-viewport) {
-    margin-bottom: var(--s-5);
-  }
-}
-
 .post:not(:first-child) {
   margin-top: var(--s-4);
   margin-bottom: calc(1 * var(--s-4));
@@ -268,26 +123,6 @@ h6 {
   @media (--medium-viewport) {
     margin-top: var(--s-5);
     margin-bottom: calc(1 * var(--s-5));
-  }
-}
-
-/* illusion: manages .figure before .title--ruled in context */
-/* .figure ~ .title--ruled {*/
-.title--ruled:not(:first-child) {
-  margin-top: calc(1.25 * var(--s-4));
-
-  @media (--medium-viewport) {
-    margin-top: calc(1.25 * var(--s-5));
-  }
-}
-
-/* illusion: manages .figure & .form in context */
-.title--ruled + .figure,
-p + .form {
-  margin-top: calc(0.666 * var(--s-4));
-
-  @media (--medium-viewport) {
-    margin-top: calc(0.666 * var(--s-5));
   }
 }
 
@@ -300,13 +135,71 @@ p + .form {
   }
 }
 
-blockquote {
+* + .Button,
+* + .project-link {
   margin-top: var(--s-3);
-  margin-bottom: var(--s-3);
 
+  @media (--large-viewport) {
+    margin-top: var(--s-4);
+  }
+}
+
+.Button + .Button,
+.project-link + .project-link {
+  margin-top: var(--s-2);
+
+  @media (--large-viewport) {
+    margin-top: var(--s-2);
+  }
+}
+
+/*
+  -------------------------------------------------
+
+  blockquote (incl. spacing)
+
+  -------------------------------------------------
+ */
+
+blockquote {
   @media (--medium-viewport) {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 50%;
+    padding-left: calc(0.5 * var(--grid-gutter));
+  }
+}
+
+blockquote p {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--c-rule);
+  padding: var(--s-3) 0 calc(1.1 * var(--s-3));
+  width: 100% !important;
+
+  &:before {
+    content: "“";
+    display: block;
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  & p {
+    border: initial;
+    padding: initial;
+  }
+}
+
+.no-quote p:before {
+  content: none !important;
+}
+
+blockquote p em {
+  display: table;
+  /* method for resetting ems, then apply text--meta sizing: */
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
+  margin-top: var(--s-1);
+
+  @media (--large-viewport) {
+    margin-top: var(--s-2);
   }
 }
 
@@ -315,18 +208,10 @@ blockquote:first-child,
   margin-top: 0 !important;
 }
 
-blockquote + h2 {
+.text-scope blockquote + h3,
+.journal-scope blockquote + h2 {
   @media (--medium-viewport) {
     margin-top: 0 !important;
-  }
-}
-
-* + .Button,
-* + .project-link {
-  margin-top: var(--s-3);
-
-  @media (--large-viewport) {
-    margin-top: var(--s-4);
   }
 }
 
@@ -339,79 +224,38 @@ blockquote + h2 {
  */
 
 .journal-scope {
+  width: 90%;
+
   @media (--medium-viewport) {
     width: calc(100% * 2 / 3);
+    width: 75%;
   }
 }
 
-.journal-scope p + p {
-  text-indent: 0;
-}
-
-.journal-scope p,
-.journal-scope ol,
-.journal-scope ul,
-.journal-scope blockquote,
-.journal-scope h2 {
-  width: auto;
-}
-
-.journal-scope p,
-.journal-scope ol,
-.journal-scope ul,
 .journal-scope blockquote {
-  &:not(last-child) {
-    margin-bottom: var(--s-3);
-
-    @media (--large-viewport) {
-      margin-bottom: var(--s-4);
-    }
-  }
-}
-
-.journal-scope p strong,
-.journal-scope p em,
-.journal-scope blockquote {
-  // font-size: calc( (21 / (var(--s-text-unit) * 16)) * 1em);
-}
-
-.journal-scope .intro,
-.journal-scope blockquote {
-  @media (--medium-viewport) {
+  @media (--small-viewport) {
     margin-left: 0;
     padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.journal-scope blockquote {
-  @media (--small-viewport) {
-    margin-top: calc(2 * var(--s-2));
-    margin-bottom: calc(2 * var(--s-2));
-  }
-}
-
-.journal-scope p + blockquote {
-  @media (--small-viewport) {
-    // margin-top: calc(2 * var(--s-3));
+    padding-bottom: 2px;
   }
 }
 
 .journal-scope blockquote p {
   border: initial;
-  border-left: 3px solid currentColor;
+  // border-left: 3px solid currentColor;
+  // border-color: var(--c-text);
+  color: var(--c-textLight);
   margin-right: 7.5%;
   padding: initial;
-  padding-left: calc(1.5 * var(--s-2));
+  padding-left: var(--s-3a);
 
   @media (--small-viewport) {
-    padding-left: calc(1.5 * var(--s-3));
+    padding-left: var(--s-4);
   }
 }
 
 .journal-scope blockquote p em {
   display: table;
-  font-size: 1em;
   margin-top: var(--s-1);
 }
 
@@ -430,7 +274,7 @@ blockquote + h2 {
   }
 }
 
-/* h6 is used to define a markdown section */
+/* h6 is used in markdown sections ??? */
 h6 {
   font-size: var(--s-text);
   margin-bottom: 0;

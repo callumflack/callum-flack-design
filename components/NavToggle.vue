@@ -2,7 +2,7 @@
 .toggle
   .toggle-logo
     nuxt-link.icon-tap(to="/")
-      .icon.title P.W.
+      .icon.title C.F.
 </template>
 
 <script scoped>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .toggle {
   position: fixed;

@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .modal {
   bottom: 0;
@@ -98,7 +98,7 @@ export default {
  */
 
 .modal {
-  background-color: var(--c-metal);
+  background-color: var(--c-grayl);
 }
 
 .modal .container {

@@ -5,14 +5,14 @@
  */
 
 .figure {
-  margin: var(--s-5) auto;
+  margin: var(--s-3) auto;
   position: relative;
 
   @media (--medium-viewport) {
-    margin: var(--s-6) 0;
+    margin: var(--s-4) 0;
   }
   @media (--large-viewport) {
-    margin: var(--s-7) auto;
+    margin: var(--s-5) auto;
   }
 
   &:first-child {
@@ -24,14 +24,15 @@
   }
 }
 
-.figure--frame {
-  border: 1px solid var(--c-border);
-}
+.figure--project {
+  margin: var(--s-5) auto;
+  position: relative;
 
-.figure--portrait {
-  @media (--small-viewport) {
-    width: 25%;
-    margin-left: 12.5%;
+  @media (--medium-viewport) {
+    margin: var(--s-6) 0;
+  }
+  @media (--large-viewport) {
+    margin: var(--s-7) auto;
   }
 }
 
@@ -45,5 +46,21 @@
   @media (min-width: 1840px) {
     left: calc(-33vw + 50%);
     width: 66vw;
+  }
+}
+
+.figure--frame {
+  border: 1px solid var(--c-border);
+}
+
+.figure--portrait {
+  overflow: hidden;
+
+  @media (--small-viewport) {
+    border-radius: 999px;
+    height: 167px;
+    margin-left: 12.5%;
+    width: 25%;
+    width: 167px;
   }
 }

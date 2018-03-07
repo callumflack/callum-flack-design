@@ -1,5 +1,5 @@
 <template lang="pug">
-.block--pageEnd
+.block--pb7
   header(role="banner")
     c-pageheading(
       :heading="page.heading"
@@ -20,24 +20,20 @@
         style="opacity:0.9"
       )
   main(role="main")
-    .container
-      .text-scope
-        nuxtent-body(:body="page.body")
-  
+    .container.text-scope
+      nuxtent-body(:body="page.body")
 </template>
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import LazyImage from "~/components/LazyImage.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
-import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
     "c-lazyimage": LazyImage,
-    "c-image": MarkdownImage,
-    "c-footer": Footer
+    "c-image": MarkdownImage
   },
   props: {
     heading: String,
@@ -65,5 +61,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 </style>

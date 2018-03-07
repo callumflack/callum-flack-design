@@ -5,7 +5,7 @@
   Notes on css custom properties & postcss-custom-properties:
   Single variables within media queries are a great idea:
   https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
-  …but postcss-custom-properties limits vars to the :root:
+  …but postcss-custom-properties limits vars to the `:root`:
   "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —> https://github.com/postcss/postcss-custom-properties
   
   :root { --s-title: 20px; }
@@ -28,8 +28,8 @@
  /*
 
     Sizes
- 
-  */ 
+
+  */
 
   --grid-gutter: 3rem;
   --spacer: 24px;
@@ -43,21 +43,29 @@
   --container-lg: 1120px;
   --container-xl: 1600px;
 
+  --space: 1rem;
+  
   --s-0: 0;
   --s-1: 0.25rem;
   --s-2: 0.5rem;
   --s-3: 1rem;
   --s-3a: 1.25rem;
+  --s-3b: 1.5rem;
   --s-4: 2.5rem;
   --s-5: 5rem;
   --s-6: 9rem;
   --s-7: 13rem;
   
-  --tuck: 6vw;
-  --tuck-lg: 9vw;
-
+  --rs-1: 0.25rem;
+  --rs-2: 0.5rem;
+  --rs-3: 1rem;
+  --rs-3a: 1.25rem;
+  --rs-4: 2.5rem;
+  --rs-5: 5rem;
+  --rs-6: 9rem;
+  --rs-7: 13rem;
+  
   --border-radius: 4px;
-
   --field-spacing: 1rem 1.25rem;
 
   /* 
@@ -67,23 +75,25 @@
    */
    
   --c-brand: #00ffff;
-  --c-highlight: #bee8fb;
-  --c-highlight: #47bbff;
-  --c-highlight: #44729c;
-  --c-highlight: #b32273;
+  --c-brandHover: #00ffff;
+  --c-brandLight: #00ffff;
   
+  --c-highlight: #b32273;
   --c-success: #ff3700;
   --c-warning: #ff3700;
   --c-danger: #ff3700;
 
+  --c-black: black;
+  --c-ash: #222;
   --c-text: #222;
-  --c-textLight: #aaa;
-  --c-rule: #888;
-  --c-gray: #aaa;
-  --c-border: #e7e7e7;
+  --c-textLight: #888;
+  --c-rule: #ddd;
+  --c-gray: #ccc;
+  --c-border: #ccc;
   --c-device: #e7e7e7;
   --c-neutral: #eee;
   --c-bg: #fafafa;
+  --c-white: white;
   
   --c-metal: #cdd8e2;
   --c-metal: rgba(222, 229, 235, 1);
@@ -94,13 +104,14 @@
   
    */
 
-  --font-regular: "Regular";
-  --font-heading: "Medium";
-  --font-italic: var(--font-regular);
-  --font-button: var(--font-regular);
+  --ff-sans-regular: "Regular";
+  --ff-sans-heading: "Medium";
+  
+  --ff-italic: var(--ff-sans-regular);
+  --ff-button: var(--ff-sans-regular);
 
-  --font-stack-serif: Georgia, "Times New Roman", Times, serif;
-  --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
+  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* 
   
@@ -119,9 +130,9 @@
    
    */
   
-  --ls-heading: 0.015em;
+  --ls-heading: 0.0175em;
   --ls-meta: 0.00625em;
-  --ls-text: -0.0125em;
+  --ls-text: -0.0175em;
 
   --lh-text: 1.4;
 

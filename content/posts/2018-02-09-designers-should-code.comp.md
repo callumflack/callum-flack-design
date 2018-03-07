@@ -12,23 +12,24 @@ tweet: https://twitter.com/callumflack
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack some essential ingredient because they are too ordered.
 
-@[MarkdownImage](src="/images/post-tree-semilattice.jpg" local)
+@[MarkdownImage](src="/images/post-tree-semilattice.png" local)
 
-If you’ve ever been to Melbourne, Australia, and walked around the city, you will probably have chanced-upon it’s worn laneways and hidden surprises: they have become naturally complex, interconnected and overlapping over a long period of time. Mr. Alexander would call these surprises the “necessary overlaps” for creating rich experiences.
+If you’ve ever been to Melbourne, Australia, and walked around the city, you will probably have chanced-upon it’s worn laneways and hidden surprises: they have become naturally complex, interconnected and overlapping over a long period of time. Mr. Alexander would say that these laneways are rich experiences due to their complexity and interconnectedness making “necessary overlaps” between .
 
-If you tried to recreate Melbourne from scratch, all “Melbourne-ness” would be lost. Melbourne’s essential character is the accumulation of many, many overlapping details that each feedback and influence each-other over time.
+If you tried to recreate Melbourne from scratch, all “Melbourne-ness” would be lost. Melbourne’s essential character is the accumulation of many overlapping details that each feedback and influence each-other over time.
 
 By contrast, let’s imagine Canberra. If you tried to recreate Australia’s capital city, you’d probably do a better job. Canberra is less abstract and highly ordered—[essentially it is high-modernist urban architecture](http://www.naa.gov.au/collection/fact-sheets/fs95.aspx)—where “no piece of any unit is ever connected to other units, except through the medium of the unit as a whole”. No fun surprises.
 
 ## Natural semilattices in User Interface creation
+
 The “natural semi-lattice” metaphor is a good way to understand how complex processes can’t be reduced to simple templates. Delineating the skillsets involved into distinct, separate domains creates artificial order. The result lacks character. The same holds true for the complexities of User Interface creation.
 
 ## Self-sufficient UI creators
+
 Hi! I’m a designer who really enjoys coding. I’m self-taught, and I started more than a decade into a graphic design career. Here’s a few reasons why I think designers should code:
 
-If you work with others, learning to code will help you understand the systems you’re working with, and the skills and people that will overlap your domain.
-
-If you work by yourself, learning to code gives you agency and self-sufficiency. This gives you more options in the current work climate, for more reasons than just getting paid.
+* If you work with others, learning to code will help you understand the systems you’re working with, and the skills and people that will overlap your domain.
+* If you work by yourself, learning to code gives you agency and self-sufficiency. This gives you more options in the current work climate, for more reasons than just getting paid.
 
 How, might you ask?
 
@@ -40,9 +41,9 @@ If I can code the design myself, I don’t have to communicate the nuance of aes
 
 ## An immediate connection
 
-A cook sips the broth. A pilot turns and feels G-forces pulling from below. A painter paints, and sees mistakes become new ideas. As Bret Victor says:
+A cook sips the broth. A pilot turns and feels G-forces pulling from below. A painter paints, and sees mistakes become new ideas. As [Bret Victor says](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/):
 
-> Creators need an [immediate connection](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/) to what they’re creating.”
+> Creators need an immediate connection to what they’re creating.”
 
 Code is far more immediate than “design” tools. If you’re a designer who codes, your design is the code.
 
@@ -54,19 +55,18 @@ Doing both UI design and development is hard. Progress in design tools and moder
 
 But if it’s an all-you-can eat buffet, do you dig in all night? You can’t master everything, and you shouldn’t try to. You can, however, embrace the [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity), go taste-testing and make informed decisions. In this situation, I’d prefer the problem of abundance over that of scarcity. The trick is to reframe the problem as [not one of input, but of throughput](https://www.ribbonfarm.com/2008/09/11/how-to-measure-information-work/). Jump in. See what sticks.
 
-> The trick, William Potter, is [not minding that it hurts](https://en.wikiquote.org/wiki/Lawrence_of_Arabia_%28film%29).”
+> The trick, William Potter, is not minding that it hurts.” _Peter O'Toole as Lawrence of Arabia_
 
 If you can let go of your identity, expose yourself to strange, new ways and give yourself [“the freedom to search in the darkness where the problems lie”](https://ia.net/topics/innovation-as-art-at-scale/), you’ll come out the other side with some mutant pollen stuck to your skin.
 
-Those pollen are “one-percenters” waiting to compound. And that’s why designers should code.
+Those mutant pollen are “one-percenters” waiting to compound. And that’s why designers should code.
 
 ## When designers code
 
 When you code, designer, you will understand that surprising and contradictory insights are part of the trials of writing software. This is [the knowledge that will make you successful](https://medium.com/@MrAlanCooper/should-designers-code-417de265531c) and [increase your agency](https://twitter.com/callumflack/status/899053290406633472).
 
-If you work in a team, you’ll have [higher-resolution information](https://twitter.com/Kpaxs/status/947516453691052034) you can use to communicate, and make better decisions.
+If you work in a team, you’ll have [higher-resolution information](https://twitter.com/Kpaxs/status/947516453691052034) you can use to communicate with, and make better decisions.
 
 If you work by yourself, you will have greatly enhanced your ability to implement your vision, which is the [“hallmark of great craftsmanship. It teaches you both the limits and the possibilities of your medium.”](https://medium.com/@irondavy/designers-will-code-6c423fc5ccef)
 
 Code chops will help you, dear designer, to see the “necessary overlaps” that allow characteristically rich experiences to happen.
-

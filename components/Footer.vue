@@ -21,13 +21,12 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .footer {
-  align-items: flex-end;
-  background-color: var(--c-metal);
-  display: flex;
-  /* height: 100vh; */
+  /* align-items: flex-end; */
+  /* display: flex; */
+  height: 100vh;
   opacity: 1;
   left: 0;
   position: fixed;

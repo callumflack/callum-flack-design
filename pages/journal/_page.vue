@@ -1,5 +1,5 @@
 <template lang="pug">
-.block--pageEnd
+.block--pb7
   article
     header(role="banner")
       c-pageheading(
@@ -7,7 +7,7 @@
         link="/journal"
       )
       .container(v-if="page.heroImage")
-        figure.figure.figure--large
+        figure.figure.figure--post.figure--large
           img(:src="page.heroImage", alt="")
     main(role="main")
       .container
@@ -15,17 +15,17 @@
           no-ssr
             nuxtent-body(:body="page.body")
           
-          time.u-block.block--touch.text.text--meta(:date-time="page.date") Published: {{ page.published }}
-          p.text.text--meta(v-if="page.updated") Updated: {{ page.updated }}
-          p.text.text--meta.text-noIndent(v-if="page.note", v-html="page.note")
+          time.u-block.block--mt4.text.text--meta.c-textLight(:date-time="page.date") Published: {{ page.published }}
+          p.text.text--meta.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
+          p.text.text--meta.c-textLight(v-if="page.note", v-html="page.note")
           
-          .block(v-if="page.tweet")
+          .block--mt6(v-if="page.tweet")
             //- hr.c-title.mb3
             p.title.m-b0.u-textCenter Comments?
             p.text.u-textCenter
               a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
-          hr.block(v-else)
-          c-newsletter
+          //- hr.block--my6(v-else)
+          //- c-newsletter
 </template>
 
 <script>
@@ -71,5 +71,5 @@ export default {
 </script>
 
 <style>
-@import "../../assets/styles/vars.css";
+@import "../../assets/styles/variables.css";
 </style>

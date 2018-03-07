@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .page-enter-active {
   /* background-color: var(--c-bg); */

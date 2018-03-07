@@ -1,5 +1,5 @@
 <template lang="pug">
-  p.block--touch.text.text--meta.text-noIndent(v-html="note")
+  p.block--mt4.text.text--meta.text-noIndent(v-html="note")
 </template>
 
 <script scoped>

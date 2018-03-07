@@ -1,0 +1,37 @@
+/* 
+
+  The web is typography.
+
+  1. font-feature-settings from http://fadeyev.net 
+
+*/
+
+html {
+  background-color: var(--c-metal);
+  color: var(--c-text);
+  font-family: var(--ff-sans-regular), var(--ff-stack-sans);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: var(--ls-text);
+  line-height: var(--lh-text);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+.text-scope-reset {
+  font-size: 0.795rem !important;
+
+  @media (--small-viewport) {
+    font-size: 0.875rem !important;
+  }
+  @media (--medium-viewport) {
+    // font-size: 0.9375rem !important;
+  }
+  @media (--large-viewport) {
+    font-size: 1rem !important;
+  }
+}

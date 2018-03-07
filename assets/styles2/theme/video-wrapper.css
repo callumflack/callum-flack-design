@@ -1,0 +1,13 @@
+.video-poster {
+  background-color: var(--hiq-gray-darkest);
+  opacity: 1;
+  transition: opacity 800ms, height 0s;
+  transition-delay: 0s, 0s;
+}
+
+.is-active .video-poster {
+  opacity: 0;
+  height: 0;
+  transition-delay: 0s, 800ms;
+}
+

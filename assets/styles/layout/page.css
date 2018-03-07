@@ -1,6 +1,0 @@
-.page {
-  background-color: var(--c-bg);
-  min-height: 100vh;
-  position: relative;
-  z-index: 3;
-}

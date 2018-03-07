@@ -1,17 +1,16 @@
 <template lang="pug">
   div
-    header.block--masthead.p-b0(role="banner")
-      .container
+    header.block--pt7.block--header(role="banner")
+      .container.text-scope
         h1.title Callum Flack is a designer who codes.
         p
-          | Hi! I'm a multi-skilled, self-sufficient designer and developer who can see the big picture and execute the details. Read 
-          nuxt-link(to="/about") about me.
-        p Here's a selection of recent projects. I also 
-          nuxt-link(to="/journal") blog 
-          | about the process.
+          | I make interfaces that merge brand with product by understanding the big picture and executing the details. I 
+          nuxt-link(to="/journal") blog
+          | &nbsp;about the process. Read 
+          nuxt-link(to="/about") about
+          | &nbsp;me. Interested? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
 
-    //- main.block--pageEnd.block--touch(role="main")
-    main.block--touch(role="main")
+    main.block--mt4.block--pb7(role="main")
       .container.nav-mobile-layout
         nav
           c-navlink(
@@ -23,7 +22,7 @@
             :currentPage="currentPage"
             :exact="item.exact"
           )
-        .text.text--meta.c-title.block--touch
+        //- .text.text--meta.c-title.block--mt4
           c-navlink(
             v-for="item in navContacts"
             :key="item.label"
@@ -31,6 +30,14 @@
             :link="item.link"
             external
           )
+      //- .block--mt4
+        .container.text-scope
+          //- p The best way to contact me is by <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
+           or <a class="icon-targetblan" target="_blank" href="https://twitter.com/callumflack">Twitter</a>
+          //- p.text--meta.c-textLight Looking for digital design advice and execution? Get in touch by <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
+          //- p.text--meta.c-textLight Looking for digital design advice and execution? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email</a>.
+          //- p Interested? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email me</a>.
+          p Need specialist advice? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email me</a>.
 </template>
 
 <script scoped>
@@ -52,19 +59,19 @@ export default {
     return {
       navLinks: [
         {
+          label: "Should designers code?",
+          year: 2018,
+          link: "/journal/designers-should-code"
+        },
+        {
           label: "VJ Ray",
           year: 2017,
           link: "/work/vj-ray"
         },
         {
           label: "Oceanblue Living",
-          year: 2017,
+          year: 2016,
           link: "/work/oceanblue-living"
-        },
-        {
-          label: "Primary Healthcare Network",
-          year: 2017,
-          link: "/work/primary-healthcare-network"
         },
         {
           label: "Album Registry",
@@ -72,24 +79,14 @@ export default {
           link: "/work/album-registry"
         },
         {
-          label: "Ward6",
-          year: 2017,
-          link: "/work/ward6"
-        },
-        {
-          label: "Oceanblue Boats",
-          year: 2017,
-          link: "/work/oceanblue-boats"
-        },
-        {
           label: "The Substation",
-          year: 2017,
+          year: 2016,
           link: "/work/the-substation"
         },
         {
-          label: "Pharma eDetailer apps",
-          year: 2017,
-          link: "/work/ward6-edetailers"
+          label: "Projects archive",
+          year: "since 2014",
+          link: "/work"
         }
       ],
 
@@ -132,7 +129,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .nav-mobile-layout {
   @media (max-width: 1135px) {
@@ -141,7 +138,7 @@ export default {
     justify-content: flex-end;
     text-align: right;
 
-    & .block--masthead {
+    & .block--py7 {
       padding-bottom: var(--grid-gutter);
     }
 

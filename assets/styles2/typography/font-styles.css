@@ -1,0 +1,92 @@
+/* 
+
+  Font sizes 
+
+  https://github.com/jonathanharrell/hiq/blob/master/pcss/typography/sizes.pcss
+
+*/
+
+@define-mixin fs-text { font-size: var(--fs-text); }
+@define-mixin fs-textMeta { font-size: var(--fs-textMeta); }
+@define-mixin fs-textLarge { font-size: var(--fs-textLarge); }
+@define-mixin fs-subheading { font-size: var(--fs-subheading); }
+@define-mixin fs-heading { font-size: var(--fs-heading); }
+
+.fs-text {@mixin fs-text; }
+.fs-textMeta {@mixin fs-textMeta; }
+.fs-textLarge {@mixin fs-textLarge; }
+.fs-heading {@mixin fs-heading; }
+.fs-subheading {@mixin fs-subheading; }
+
+/*
+
+  Font weights
+
+ */
+
+@define-mixin fw-light { font-weight: var(--fw-light); }
+@define-mixin fw-regular { font-weight: var(--fw-regular); }
+@define-mixin fw-medium { font-weight: var(--fw-medium); }
+@define-mixin fw-bold { font-weight: var(--fw-bold); }
+
+.fw-light { @mixin fw-light; }
+.fw-regular { @mixin fw-regular; }
+.fw-medium { @mixin fw-medium; }
+.fw-bold { @mixin fw-bold; }
+
+/*
+
+  Font leading
+
+ */
+
+@define-mixin fl-tight { line-height: var(--fl-tight); }
+@define-mixin fl-regular { line-height: var(--fl-regular); }
+@define-mixin fl-loose { line-height: var(--fl-loose); }
+
+.fl-tight { @mixin fl-tight; }
+.fl-regular { @mixin fl-regular; }
+.fl-loose { @mixin fl-loose; }
+
+/*
+
+  Font tracking
+
+ */
+
+@define-mixin ft-tight { letter-spacing: var(--ft-tight); }
+@define-mixin ft-regular { letter-spacing: var(--ft-regular); }
+@define-mixin ft-loose { letter-spacing: var(--ft-loose); }
+
+.ft-tight { @mixin ft-tight; }
+.ft-regular { @mixin ft-regular; }
+.ft-loose { @mixin ft-loose; }
+
+/*
+
+  Mixin applied
+
+ */
+
+p,
+ul,
+ol,{
+  @mixin fs-text;
+  @mixin fw-regular;
+  @mixin fl-regular;
+  @mixin ft-regular;
+}
+
+h2 {
+  @mixin fs-subheading;
+  @mixin fw-bold;
+  @mixin fl-tight;
+  @mixin ft-tight;
+}
+
+h1 {
+  @mixin fs-heading;
+  @mixin fw-bold;
+  @mixin fl-tight;
+  @mixin ft-tight;
+}

@@ -1,5 +1,5 @@
 <template lang="pug">
-.block--pageEnd
+.block--pb7
   c-pageheading(
     heading="Work"
     link="/work"
@@ -7,7 +7,7 @@
   )
   main(role="main")
     //- sort by tags:
-    //- .block--halfSandwich
+    //- .block--mb6Sandwich
       .container
         .Meta
           | Filter projects by:&nbsp;
@@ -136,7 +136,7 @@ export default {
 </script>
 
 <style scope lang="css">
-@import "../../assets/styles/vars.css";
+@import "../../assets/styles/variables.css";
 
 .GridWrapper {
   margin-left: calc(2 * var(--grid-gutter));

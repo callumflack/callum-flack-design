@@ -1,16 +1,16 @@
 <template lang="pug">
-div
-  article.block--articleEnd
+  article.block--pb7
     header(role="banner")
       c-pageheading(
-        link="/work"
         :heading="page.heading"
         :lede="page.lede"
+        project
       )
       .container
         c-lazyimage(
           v-if="page.heroInCloudinary"
           large
+          project
           :src="page.heroImage"
           :frame="page.heroFrame"
           :ratio="page.heroRatio"
@@ -18,6 +18,7 @@ div
         c-image(
           v-else
           large
+          project
           local
           :src="page.heroImage"
           :frame="page.heroFrame"
@@ -26,7 +27,7 @@ div
     main(role="main")
       .container
         nuxtent-body.text-scope(:body="page.body")
-  nuxt-link.next-project.linkSignal.block--nextProject(:to="page.nextProject")
+  //- nuxt-link.next-project.linkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
         .text.text--meta.u-marginB1 Next project
@@ -85,7 +86,7 @@ export default {
 </script>
 
 <style>
-@import "../../assets/styles/vars.css";
+@import "../../assets/styles/variables.css";
 
 .next-project {
   border-top: 1px solid rgba(138, 138, 138, 0.15);

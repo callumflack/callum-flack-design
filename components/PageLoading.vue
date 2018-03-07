@@ -3,7 +3,7 @@
   //- .loading-page.u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter(v-if="loading")
   .loading-page(v-if="loading")
     .container
-      .block--masthead
+      .block--py7
         .title Patternworks
 </template>
 
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .loading-page {
   background: var(--c-bg);

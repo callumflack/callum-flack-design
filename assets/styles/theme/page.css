@@ -1,0 +1,22 @@
+/* 
+
+  Page themes
+
+ */
+
+.page {
+  background-color: var(--c-bg);
+  min-height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+.page-journal-page .masthead .block--py7 {
+  @media (--medium-viewport) {
+    width: calc(100% * 2 / 3) !important;
+  }
+}
+
+.page-journal-page .form {
+  width: 100% !important;
+}

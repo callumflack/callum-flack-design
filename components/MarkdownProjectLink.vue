@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 a + a {
   margin-left: 12px;

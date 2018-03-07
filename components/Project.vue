@@ -1,6 +1,6 @@
 <template lang="pug">
   .Grid-cell.u-sm-size1of2
-    nuxt-link.project.block--half(:to="link")
+    nuxt-link.project.block--mb6(:to="link")
       figure.project-image
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
@@ -36,7 +36,7 @@ export default {
 
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 /* .Grid-cell:nth-child(7), */
 /* .Grid-cell:nth-child(8), */

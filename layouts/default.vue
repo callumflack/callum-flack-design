@@ -4,7 +4,7 @@
     .page
       nuxt
     .footer-spacer
-      c-footer
+    c-footer
 </template>
 
 <script>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .footer-spacer {
   height: 100vh;

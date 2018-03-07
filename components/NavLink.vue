@@ -13,8 +13,8 @@
     v-else
   )
     .u-flex.u-flexJustifyBetween
-      span.title {{ label }}
-      span.text.c-textLight {{ year }}
+      span.text {{ label }}
+      span.text(v-if="year") {{ year }}
 </template>
 
 <script>
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 li {
   display: inline-block;
@@ -61,12 +61,18 @@ li + li {
 }
 
 .ruled {
-  border-top: 1px solid var(--c-border);
-  padding: var(--s-3a) 0 calc(1.25 * var(--s-3a));
+  border-top: 1px solid;
+  border-bottom: 0 solid;
+  border-color: var(--c-rule);
+  padding: var(--s-3a) 0 var(--s-3a);
 
   &:last-of-type {
-    border-bottom: 1px solid var(--c-border);
+    border-bottom-width: 1px;
   }
+}
+
+.footer .ruled {
+  border-color: var(--c-gray);
 }
 
 /*.link.is-active

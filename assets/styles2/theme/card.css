@@ -1,0 +1,238 @@
+/*
+
+  Card
+
+  */
+
+.CardGrid > .Card {
+    flex: 0 0 240px;
+}
+
+/* Pinterest-like card hover */
+@keyframes hoverAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.Card {
+  cursor: pointer;
+  margin: -10px;
+  padding: 10px;
+  position: relative;
+
+  @media (--desktop) {
+    min-height: 367px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.Card:hover::before {
+  animation: hoverAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
+}
+
+.Card::before {
+  border: 1px solid var(--c-brandMedium);
+  border-radius: 8px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: scale(0.96);
+  width: 100%;
+  z-index: 1;
+}
+
+/*
+
+  Card visual
+
+*/
+
+.Card-visual {
+  display: flex;
+  height: var(--s-7);
+  position: relative;
+}
+
+.is-funded .Card-visual { 
+  color: var(--c-brand);
+}
+
+.Card-image {
+  @mixin CoverImage;
+  @mixin absolutePin;
+  border-radius: var(--cardRadius);
+  
+  &.is-muted { 
+    filter: grayscale(1); 
+  }
+
+  &.is-unfundedAndArchived { 
+    filter: grayscale(1); 
+    opacity: 0.25;
+  }
+}
+
+/* from here to card info still to do… */ 
+.Card-infoInsideVisual,
+.Card-visualStatusContainer {
+  @mixin absolutePin;
+  border-radius: var(--cardRadius);
+  display: flex;
+  flex: 1 1 0%;
+  
+  &.is-funded { 
+    align-items: center;
+    background-color: rgba(97, 22, 106, 0.85);
+    background-blend-mode: multiply;
+    color: var(--c-white); 
+  }
+  
+  .c-registryStatus { display: none; }
+
+  &.is-draft { 
+    background-color: rgba( palette(highlight-action-dark), 0.85 );
+    background-blend-mode: multiply;
+    color: var(--c-white); 
+    
+    & .c-registryStatus { display: inline-block; }
+    & .c-registryProgress { display: none; }
+  }
+}
+
+.Card-infoInsideVisual {
+  background-image: linear-gradient( rgba(palette(black),0.1) 50%, rgba(palette(black),0.7) 100% ); 
+  flex-direction: column;
+  padding: space(0.5) space(0.75);
+}
+
+.Card-visualStatusContainer-screen {
+  @mixin fs-heading;
+  @mixin fw-bold;
+  color: inherit;
+  flex-basis: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*
+
+  Card info
+
+*/
+
+.Card-info {
+  padding: 10px var(--s-2);
+}
+
+.Cards--community .Card-info { height: 100px; }
+
+.c-registries--archived .Card-title { 
+  color: var(--c-gray); 
+}
+
+.Card-infoInsideVisual .Card-title { 
+  color: var(--c-white); 
+}
+
+.Card-metaSecondary {
+  @mixin fs-textMeta;
+  @mixin fw-light;
+  color: var(--c-gray);
+  margin-top: 2px;
+}
+
+/*
+
+  Card buttons
+  …to do
+
+ */
+
+.Card-button {
+  background-color: var(--c-border);
+  border-color: var(--c-border);
+  color: var(--c-gray);
+  width: 100%;
+  
+  &:hover,
+  &:active {
+    background-color: var(--c-border);
+    border-color: var(--c-border);
+    color: var(--c-text);
+  }
+  
+  &--download {
+    background-color: palette(background);
+    border-color: var(--c-border);
+    z-index: 2;
+
+    &:hover,
+    &:active {
+      background-color: var(--c-white);
+      border-color: var(--c-gray);
+      color: var(--c-text);
+    }
+  }
+}
+
+.Card-createDisabledButton,
+.Card-createButton {
+  align-items: center;
+  border: 1px solid var(--c-brandHover);
+  border-radius: var(--border-radius);
+  color: var(--c-brandHover);
+  display: flex;
+  height: 100%;
+  min-height: 362px;
+  text-align: center;
+}
+
+.Card-createDisabledButton {
+  border-color: var(--c-border);
+  cursor: initial;
+  min-height: 313px;
+}
+
+/*
+
+  Card vars
+
+ */
+
+.Card--create::before {
+  /* background: var(--c-brandMedium); 
+  border: initial;*/
+}
+
+.Card--create > a {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  
+  span {
+    margin-top: 5px;
+  }
+  
+  &:hover {
+    color: var(--c-brandHover);
+    text-decoration: none;
+  }
+}
+
+.Card--build::before {
+  content: none;
+}

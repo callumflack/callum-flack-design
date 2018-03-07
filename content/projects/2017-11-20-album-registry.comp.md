@@ -19,7 +19,7 @@ be, and rebuild the platform for a community of photographers around the world.
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves.” _— Jannah Dryden, Founder_
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
@@ -36,13 +36,13 @@ We're able to design and adjust new features in the browser using the brand desi
 
 <!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
+@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
 > Every wedding I do starts with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
 
 Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
 focus on building tools that help photographers grow their business, and help people give the gift of memories.

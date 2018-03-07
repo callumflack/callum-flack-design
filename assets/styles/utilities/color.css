@@ -26,6 +26,9 @@
 .c-gray {
   color: var(--c-gray);
 }
+.c-device {
+  color: var(--c-device);
+}
 .c-border {
   color: var(--c-border);
 }

@@ -16,16 +16,16 @@ featured: true
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I
 designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597614/okok/oceanblueliving-desktop-layouts.png")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597614/okok/oceanblueliving-desktop-layouts.png")
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372252/okok/oceanblueliving-responsive-layouts.png")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372252/okok/oceanblueliving-responsive-layouts.png")
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
-> Callum showed us a bigger vision of what our works mean to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It's working for us.” _LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It creates better business for us.” _LeaAnne Cassaniti, Owner_
 
 @[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4")
 

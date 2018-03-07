@@ -1,0 +1,11 @@
+.Cards {
+  &:not(:last-child) { 
+    padding-bottom: space(4.5); 
+  }
+
+  &--archived {
+    background-color: palette("black-5");
+    background: linear-gradient( palette("black-5"), palette(white) 50% ); // https://css-tricks.com/css3-gradients/
+    border-top: 1px solid palette(border);
+  }
+}

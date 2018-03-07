@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 
 .work img {
   opacity: 1;

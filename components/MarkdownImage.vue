@@ -19,6 +19,7 @@ export default {
         "figure",
         {
           "figure--portrait": this.portrait,
+          "figure--project": this.project,
           "figure--large": this.large,
           "figure--frame": this.frame
         }
@@ -33,6 +34,7 @@ export default {
     square: Boolean,
     face: Boolean,
     portrait: Boolean,
+    project: Boolean,
     large: Boolean,
     frame: Boolean,
     local: Boolean
@@ -67,5 +69,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/vars.css";
+@import "../assets/styles/variables.css";
 </style>

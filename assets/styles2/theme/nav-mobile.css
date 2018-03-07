@@ -1,0 +1,117 @@
+.c-mobileNav {
+    position: relative;
+    
+    p,
+    ul {
+        margin-bottom: 0;
+    }
+
+    a {
+        padding: space(1) 0;
+        
+        @include on-event() {
+            text-decoration: none;
+        }
+    }
+}
+
+.c-mobileNav-header {
+    @include containerWindow();
+    display: flex;
+}
+
+.c-mobileNav-logo {
+}
+
+.c-mobileNav-menu {
+    @include listClean();
+    border-top: 1px solid rgba(white, 0.25);
+    opacity: 0;
+    padding-top: $blockSpace;
+    padding-left: $gutterSpace;
+    padding-right: $gutterSpace;
+    transform: translateY(48px);
+    transition: all 500ms ease-in-out;
+    
+    @include when-inside(".o-modal.is-active") {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    &:last-of-type {
+        @include when-inside(".o-modal.is-active") {
+            transition-delay: 150ms;
+        }
+    }
+    
+    li {
+        @include display();
+
+        &:not(:last-child) {
+            margin-bottom: space(0.75);
+        }
+    }
+    
+    li a {
+        color: white;
+        padding: 0;
+
+        @include on-event(true) {
+            font-family: $font-text-light !important;
+        }
+    }
+}
+
+.c-mobileNav-memberLinks {
+    .c-button {
+        border: 1px solid white;
+        border-radius: map-fetch($Button, Button-height) * 0.5;
+        min-width: space(6);
+        padding: 0;
+        
+        @include on-event(true) {
+            background-color: white;
+            border-color: white;
+            color: palette(brand-aubergine);
+        }
+    }
+
+    .c-button--reversed {
+        border: 1px solid white;
+        
+        @include on-event(true) {
+            background-color: transparent;
+            border-color: currentColor;
+            color: white;
+        }
+    }
+    
+    .o-icon {
+        margin-right: space(0.25);
+        transform: translateY(3px);
+    }
+}
+
+
+
+/* this done */
+
+.Nav-mobileClose {
+    margin-left: auto;
+    padding: 0 0 0 var(--space);
+
+    &:before {
+        content: '\2630';
+        font-size: 112%;
+        margin-right: 3px;
+    }
+}
+
+.c-mobileNav-close {
+    color: white;
+    
+    &:before {
+        content: none;
+    }
+}

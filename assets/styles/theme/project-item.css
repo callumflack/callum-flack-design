@@ -1,5 +1,9 @@
 .project {
   display: block;
+
+  &:last-child {
+    // margin-bottom: 0 !important;
+  }
 }
 
 /* use the SVG filter that's secreted on work/index */
