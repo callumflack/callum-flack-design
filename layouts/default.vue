@@ -4,7 +4,7 @@
     .page
       nuxt
     .footer-spacer
-    c-footer
+      c-footer
 </template>
 
 <script>
@@ -30,7 +30,12 @@ export default {
 @import "../assets/styles/variables.css";
 
 .footer-spacer {
+  display: none;
   height: 100vh;
+
+  @media (--md) {
+    display: block;
+  }
 }
 
 .page-enter-active {

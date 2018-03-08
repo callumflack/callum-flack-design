@@ -109,7 +109,7 @@ export default {
   right: 0;
   top: 0;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     display: none;
   }
 
@@ -156,7 +156,7 @@ export default {
 .device--iphone6 {
   max-width: 70%;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     max-width: 358px;
   }
 

@@ -53,7 +53,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .form {
-  @media (--medium-viewport) {
+  @media (--md) {
     width: 50%;
   }
 }

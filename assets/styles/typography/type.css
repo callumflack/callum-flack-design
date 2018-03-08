@@ -32,7 +32,7 @@ ul,
 .journal-scope h2,
 .text-scope h3 {
   color: var(--c-text);
-  font-family: var(--ff-sans-heading), var(--ff-stack-sans);
+  font-family: var(--ff-sans-heading), var(--ff-stack-serif);
   font-size: var(--s-text);
   font-weight: 700;
   letter-spacing: var(--ls-heading);
@@ -54,9 +54,9 @@ ul,
   & h1,
   & h2,
   & h3 {
-    width: 90%;
+    width: 96%;
 
-    @media (--medium-viewport) {
+    @media (--md) {
       width: 50%;
     }
   }
@@ -67,7 +67,7 @@ ul,
   & h1,
   & h2,
   & h3 {
-    @media (--medium-viewport) {
+    @media (--md) {
       // padding-right: calc(0.25 * var(--grid-gutter));
     }
   }
@@ -92,7 +92,7 @@ h4,
 h6 {
   margin-bottom: var(--s-3);
 
-  @media (--medium-viewport) {
+  @media (--md) {
     margin-bottom: var(--s-3b);
   }
 
@@ -110,7 +110,7 @@ h6 {
   &:not(:first-child) {
     margin-top: var(--s-4);
 
-    @media (--medium-viewport) {
+    @media (--md) {
       margin-top: var(--s-5);
     }
   }
@@ -120,7 +120,7 @@ h6 {
   margin-top: var(--s-4);
   margin-bottom: calc(1 * var(--s-4));
 
-  @media (--medium-viewport) {
+  @media (--md) {
     margin-top: var(--s-5);
     margin-bottom: calc(1 * var(--s-5));
   }
@@ -130,7 +130,7 @@ h6 {
 .title--underThumbnail {
   margin: var(--s-2) 0;
 
-  @media (--medium-viewport) {
+  @media (--md) {
     margin: calc(1.25 * var(--s-3)) 0 calc(0.8 * var(--s-3));
   }
 }
@@ -139,7 +139,7 @@ h6 {
 * + .project-link {
   margin-top: var(--s-3);
 
-  @media (--large-viewport) {
+  @media (--lg) {
     margin-top: var(--s-4);
   }
 }
@@ -148,115 +148,31 @@ h6 {
 .project-link + .project-link {
   margin-top: var(--s-2);
 
-  @media (--large-viewport) {
+  @media (--lg) {
     margin-top: var(--s-2);
-  }
-}
-
-/*
-  -------------------------------------------------
-
-  blockquote (incl. spacing)
-
-  -------------------------------------------------
- */
-
-blockquote {
-  @media (--medium-viewport) {
-    margin-left: 50%;
-    padding-left: calc(0.5 * var(--grid-gutter));
-  }
-}
-
-blockquote p {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: var(--c-rule);
-  padding: var(--s-3) 0 calc(1.1 * var(--s-3));
-  width: 100% !important;
-
-  &:before {
-    content: "“";
-    display: block;
-    position: absolute;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  & p {
-    border: initial;
-    padding: initial;
-  }
-}
-
-.no-quote p:before {
-  content: none !important;
-}
-
-blockquote p em {
-  display: table;
-  /* method for resetting ems, then apply text--meta sizing: */
-  font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
-  margin-top: var(--s-1);
-
-  @media (--large-viewport) {
-    margin-top: var(--s-2);
-  }
-}
-
-blockquote:first-child,
-.text--large:first-child {
-  margin-top: 0 !important;
-}
-
-.text-scope blockquote + h3,
-.journal-scope blockquote + h2 {
-  @media (--medium-viewport) {
-    margin-top: 0 !important;
   }
 }
 
 /* 
   -------------------------------------------------
 
-  Post & about themes 
+  Journal theme
 
   -------------------------------------------------
  */
 
 .journal-scope {
-  width: 90%;
+  width: 96%;
 
-  @media (--medium-viewport) {
+  @media (--md) {
     width: calc(100% * 2 / 3);
     width: 75%;
   }
 }
 
-.journal-scope blockquote {
-  @media (--small-viewport) {
-    margin-left: 0;
-    padding-left: 0;
-    padding-bottom: 2px;
-  }
-}
-
-.journal-scope blockquote p {
-  border: initial;
-  // border-left: 3px solid currentColor;
-  // border-color: var(--c-text);
-  color: var(--c-textLight);
-  margin-right: 7.5%;
-  padding: initial;
-  padding-left: var(--s-3a);
-
-  @media (--small-viewport) {
-    padding-left: var(--s-4);
-  }
-}
-
-.journal-scope blockquote p em {
-  display: table;
-  margin-top: var(--s-1);
+.journal-scope strong {
+  font-family: var(--ff-sans-bold), var(--ff-stack-sans);
+  font-weight: 500;
 }
 
 .journal-scope hr {
@@ -278,4 +194,95 @@ blockquote:first-child,
 h6 {
   font-size: var(--s-text);
   margin-bottom: 0;
+}
+
+/*
+  -------------------------------------------------
+
+  blockquote (incl. spacing)
+
+  -------------------------------------------------
+ */
+
+.text-scope blockquote {
+  @media (--md) {
+    margin-left: 50%;
+    padding-left: calc(0.5 * var(--grid-gutter));
+  }
+}
+
+.text-scope blockquote p {
+  // border-top: 1px solid;
+  // border-bottom: 1px solid;
+  // border-color: var(--c-rule);
+  // padding: var(--s-3) 0 calc(1.1 * var(--s-3));
+  width: 100% !important;
+
+  &:before {
+    content: "“";
+    display: block;
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  & p {
+    border: initial;
+    padding: initial;
+  }
+}
+
+.no-quote p:before {
+  content: none !important;
+}
+
+.text-scope blockquote p em {
+  display: table;
+  /* method for resetting ems, then apply text--meta sizing: */
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
+  margin-top: var(--s-1);
+
+  @media (--lg) {
+    margin-top: var(--s-2);
+  }
+}
+
+.text-scope blockquote:first-child,
+.text--large:first-child {
+  margin-top: 0 !important;
+}
+
+/* journal */
+.journal-scope blockquote {
+  @media (--sm) {
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 2px;
+  }
+}
+
+.journal-scope blockquote p {
+  border: initial;
+  border-left: 1px solid currentColor;
+  border-color: var(--c-border);
+  color: var(--c-textLight);
+  margin-right: 7.5%;
+  padding: initial;
+  padding-left: var(--s-3a);
+
+  @media (--sm) {
+    padding-left: var(--s-4);
+  }
+}
+
+.journal-scope blockquote p em {
+  display: table;
+  margin-top: var(--s-1);
+}
+
+/* blockquote + h */
+.text-scope blockquote + h3,
+.journal-scope blockquote + h2 {
+  @media (--md) {
+    margin-top: 0 !important;
+  }
 }

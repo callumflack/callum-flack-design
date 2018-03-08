@@ -7,7 +7,7 @@
 */
 
 html {
-  background-color: var(--c-metal);
+  background-color: var(--c-bg);
   color: var(--c-text);
   font-family: var(--ff-sans-regular), var(--ff-stack-sans);
   font-size: 16px;
@@ -19,19 +19,30 @@ html {
   -webkit-font-smoothing: antialiased;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  @media (--md) {
+    background-color: var(--c-metal);
+  }
 }
+
+/*
+  <size you want>/(16*1.375)
+  17/(16*1.375) = .772727273
+ */
 
 body,
 .text-scope-reset {
-  font-size: 0.795rem !important;
+  font-size: 0.818181818rem !important;
+  font-size: 0.772727273rem !important;
 
-  @media (--small-viewport) {
-    font-size: 0.875rem !important;
+  @media (--sm) {
+    font-size: 0.863636364rem !important;
+    // font-size: 0.875rem !important;
   }
-  @media (--medium-viewport) {
+  @media (--md) {
     // font-size: 0.9375rem !important;
   }
-  @media (--large-viewport) {
+  @media (--lg) {
     font-size: 1rem !important;
   }
 }

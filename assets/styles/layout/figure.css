@@ -5,18 +5,18 @@
  */
 
 .figure {
-  margin: var(--s-3) auto;
+  margin: var(--s-4) auto;
   position: relative;
 
-  @media (--medium-viewport) {
+  @media (--md) {
     margin: var(--s-4) 0;
   }
-  @media (--large-viewport) {
+  @media (--lg) {
     margin: var(--s-5) auto;
   }
 
   &:first-child {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
 
   & img {
@@ -28,10 +28,10 @@
   margin: var(--s-5) auto;
   position: relative;
 
-  @media (--medium-viewport) {
+  @media (--md) {
     margin: var(--s-6) 0;
   }
-  @media (--large-viewport) {
+  @media (--lg) {
     margin: var(--s-7) auto;
   }
 }
@@ -56,11 +56,14 @@
 .figure--portrait {
   overflow: hidden;
 
-  @media (--small-viewport) {
-    border-radius: 999px;
-    height: 167px;
-    margin-left: 12.5%;
-    width: 25%;
-    width: 167px;
+  @media (--sm) {
+    // border-radius: 999px;
+    // height: 167px;
+    // margin-left: 12.5%;
+    // width: 25%;
+    // width: 167px;
+
+    margin-right: 50%;
+    width: 50%;
   }
 }

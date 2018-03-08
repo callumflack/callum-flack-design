@@ -77,7 +77,7 @@
 }
 
 .sm-w50 {
-  @media (--small-viewport) {
+  @media (--sm) {
     width: 50% !important;
   }
 }

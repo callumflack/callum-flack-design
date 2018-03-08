@@ -28,7 +28,7 @@ p a:not(.linkSignal),
   background-position: 0% 93%, 100% 93%, 0% 93%;
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    background-position-y: 97%, 97%, 97%;
+    background-position-y: 102%, 102%, 102%;
   }
 }
 
@@ -48,12 +48,13 @@ p a:not(.linkSignal),
 .icon-targetblank:after {
   content: "→";
   display: inline-block;
-  font-size: 60%;
+  font-family: var(--ff-sans-stack);
   font-weight: 400;
+  font-size: 60%;
   position: absolute;
   transform: rotate(-45deg);
   vertical-align: top;
-  right: -1.1em;
+  right: -1em;
   top: -0.25em;
 }
 

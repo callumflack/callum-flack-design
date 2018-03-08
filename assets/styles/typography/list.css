@@ -31,28 +31,34 @@ li {
   padding-left: 0 !important;
 }
 
-/* text-scope */
-.text-scope ul {
+/* 
+
+  THEME
+
+  */
+
+.text-scope ul,
+.journal-scope ul {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 1em;
 }
 
-.text-scope li {
+.text-scope li,
+.journal-scope li {
   position: relative;
 
   &:before {
-    content: "—";
-    left: -1.25em;
+    content: "•";
+    left: -1em;
     position: absolute;
   }
 }
 
-/* journal-scope */
-.journal-scope ul {
+/*ul {
   list-style-type: disc;
   padding-left: var(--s-3a);
 
-  @media (--small-viewport) {
+  @media (--sm) {
     padding-left: var(--s-4);
   }
-}
+}*/

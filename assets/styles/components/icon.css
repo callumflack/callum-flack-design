@@ -40,12 +40,12 @@
   height: 1.5em;
   width: 1.5em;
 
-  @media (--medium-viewport) {
+  @media (--md) {
     // height: 29px;
     // width: 29px;
   }
 
-  @media (--large-viewport) {
+  @media (--lg) {
     height: 2rem;
     width: 2rem;
   }

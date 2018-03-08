@@ -15,7 +15,7 @@
 .project-text {
   width: 80%;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     width: 75%;
   }
 }

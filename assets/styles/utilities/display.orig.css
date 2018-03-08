@@ -16,11 +16,15 @@
   display: none;
 }
 
+.u-inline {
+  display: inline;
+}
+
 /**
   Completely remove from the flow but leave available to screen readers.
 */
 
-.u-hiddenVisually {
+@define-mixin hiddenVisually {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -31,22 +35,27 @@
   white-space: nowrap;
 }
 
-.u-inline {
-  display: inline;
+.u-hiddenVisually {
+  @mixin hiddenVisually;
 }
 
 /*
   Has inline children.
   Useful for `ul` and `ol` elements.
+  Taken from Hi-Q.
 */
 
-.u-inlineBlockChildren {
+@define-mixin inlineBlockChildren {
   & > * {
     display: inline-block;
     &:not(:last-child) {
       margin-right: var(--inlineBlockChildrenSpace);
     }
   }
+}
+
+.u-inlineBlockChildren {
+  @mixin inlineBlockChildren;
 }
 
 /**

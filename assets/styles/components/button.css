@@ -120,10 +120,10 @@
 /*.Button--small {
   font-size: var(--s-text-1);
   letter-spacing: 0.025em;
-  @media (--medium-viewport) {
+  @media (--md) {
     font-size: var(--s-text-2);
   }
-  @media (--large-viewport) {
+  @media (--lg) {
     font-size: var(--s-text-3);
   }
 }*/

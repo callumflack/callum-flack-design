@@ -13,7 +13,7 @@
   padding-right: calc(0.5 * var(--grid-gutter));
   width: 100%;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     padding-left: var(--grid-gutter);
     padding-right: var(--grid-gutter);
   }

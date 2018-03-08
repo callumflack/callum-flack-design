@@ -1,17 +1,24 @@
 <template lang="pug">
   div
-    header.block--pt7.block--header(role="banner")
-      .container.text-scope
-        h1.title Callum Flack is a designer who codes.
-        p
-          | I make interfaces that merge brand with product by understanding the big picture and executing the details. I 
-          nuxt-link(to="/journal") blog
-          | &nbsp;about the process. Read 
-          nuxt-link(to="/about") about
-          | &nbsp;me. Interested? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
+    header.block--pt7(role="banner")
+      .container
+        .journal-scope
+          h1.title Callum Flack is a designer + developer.
+          p
+            | I help owners and creators design and build interfaces that merge brand with product. I'll counsel you on the big picture. I'll execute the details that seamless, authentic experiences are made of. I 
+            nuxt-link(to="/journal") blog
+            | &nbsp;about this process.
+            
+          p.nav-space I've been a professional designer since 2000. Read more  
+            nuxt-link(to="/about") about
+            | &nbsp;me. Need specialist digital design help? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
+          
+          //- p Below is a list of recent projects and posts since 2014, draw from an 
+            nuxt-link(to="/work") archive
+            | .
 
-    main.block--mt4.block--pb7(role="main")
-      .container.nav-mobile-layout
+    main.block--pb7(role="main")
+      .container
         nav
           c-navlink(
             v-for="item in navLinks"
@@ -22,6 +29,9 @@
             :currentPage="currentPage"
             :exact="item.exact"
           )
+        //- p.text--meta 
+          nuxt-link(to="/work") View work archive
+        
         //- .text.text--meta.c-title.block--mt4
           c-navlink(
             v-for="item in navContacts"
@@ -60,32 +70,27 @@ export default {
       navLinks: [
         {
           label: "Should designers code?",
-          year: 2018,
+          year: "2018",
           link: "/journal/designers-should-code"
         },
         {
-          label: "VJ Ray",
-          year: 2017,
-          link: "/work/vj-ray"
-        },
-        {
           label: "Oceanblue Living",
-          year: 2016,
+          year: "2016",
           link: "/work/oceanblue-living"
         },
         {
           label: "Album Registry",
-          year: 2017,
+          year: "2017",
           link: "/work/album-registry"
         },
         {
-          label: "The Substation",
-          year: 2016,
-          link: "/work/the-substation"
+          label: "VJ Ray",
+          year: "2017",
+          link: "/work/vj-ray"
         },
         {
-          label: "Projects archive",
-          year: "since 2014",
+          label: "All projects",
+          year: "→",
           link: "/work"
         }
       ],
@@ -130,6 +135,14 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.nav-space {
+  margin-bottom: calc(1.5 * var(--s-3)) !important;
+
+  @media (--md) {
+    margin-bottom: calc(1.5 * var(--s-3b)) !important;
+  }
+}
 
 .nav-mobile-layout {
   @media (max-width: 1135px) {

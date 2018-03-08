@@ -33,14 +33,14 @@ export default {
 
 .post {
   & a {
-    @media (--medium-viewport) {
+    @media (--md) {
       margin-left: auto;
       width: 50%;
     }
   }
 
   & p {
-    @media (--medium-viewport) {
+    @media (--md) {
       width: 100%;
     }
   }
@@ -53,7 +53,7 @@ export default {
   background-size: cover;
   display: none !important;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     display: flex !important;
   }
 }

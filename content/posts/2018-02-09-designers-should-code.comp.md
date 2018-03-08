@@ -31,13 +31,11 @@ Hi! I’m a designer who really enjoys coding. I’m self-taught, and I started 
 * If you work with others, learning to code will help you understand the systems you’re working with, and the skills and people that will overlap your domain.
 * If you work by yourself, learning to code gives you agency and self-sufficiency. This gives you more options in the current work climate, for more reasons than just getting paid.
 
-How, might you ask?
+How, might you ask? Working self-sufficiently as a web creator, I can execute what I’ve designed without asking or paying another person.
 
-Working self-sufficiently as a web creator, I can execute what I’ve designed without asking or paying another person.
+**Not asking someone is more important than not paying.** As soon as more than one person is involved in a project, I have to communicate to them a tangible vision of what my design is. This can be difficult. In this way, asking is more expensive than paying. Nor does paying prevent asking. (This doesn’t apply if you’re in a shit-hot “pizza team” who finishes each-other’s sentences. But most of us aren’t.)
 
-Not asking someone is more important than not paying. As soon as more than one person is involved in a project, I have to communicate to them a tangible vision of what my design is. This can be difficult. In this way, asking is more expensive than paying. Nor does paying prevent asking. (This doesn’t apply if you’re in a shit-hot “pizza team” who finishes each-other’s sentences. But most of us aren’t.)
-
-If I can code the design myself, I don’t have to communicate the nuance of aesthetic or workflow choices. Nor do I have to roll out every instance of those choices as approximate “design” mockups to use to communicate with. It saves time and energy not having to communicate with another person.
+**If I can code the design myself, I don’t have to communicate the nuance of aesthetic or workflow choices.** Nor do I have to roll out every instance of those choices as approximate “design” mockups to use to communicate with. It saves time and energy not having to communicate with another person.
 
 ## An immediate connection
 
@@ -51,9 +49,9 @@ Code is far more immediate than “design” tools. If you’re a designer who c
 
 ## But wait, it’s pretty hard
 
-Doing both UI design and development is hard. Progress in design tools and modern frontend development is rapid and ceaseless, which is both a help and a hindrance. [Fatigue ensues](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4).
+There's no doubt that doing both UI design and development is hard. Progress in design tools and modern frontend development is rapid and ceaseless, which is both a help and a hindrance. Developers simulate computers in their minds. It's taxing to take a client call about strategy when you're in the middle of some [javascript fatigue](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4).
 
-But if it’s an all-you-can eat buffet, do you dig in all night? You can’t master everything, and you shouldn’t try to. You can, however, embrace the [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity), go taste-testing and make informed decisions. In this situation, I’d prefer the problem of abundance over that of scarcity. The trick is to reframe the problem as [not one of input, but of throughput](https://www.ribbonfarm.com/2008/09/11/how-to-measure-information-work/). Jump in. See what sticks.
+But if it’s an all-you-can eat buffet, do you dig in all night? You can’t master everything, and you shouldn’t try to. You can, however, **embrace the [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity)**, go taste-testing and make informed decisions. In this situation, I’d prefer the problem of abundance over that of scarcity. The trick is to reframe the problem as [not one of input, but of throughput](https://www.ribbonfarm.com/2008/09/11/how-to-measure-information-work/). Jump in. See what sticks.
 
 > The trick, William Potter, is not minding that it hurts.” _Peter O'Toole as Lawrence of Arabia_
 
@@ -63,10 +61,10 @@ Those mutant pollen are “one-percenters” waiting to compound. And that’s w
 
 ## When designers code
 
-When you code, designer, you will understand that surprising and contradictory insights are part of the trials of writing software. This is [the knowledge that will make you successful](https://medium.com/@MrAlanCooper/should-designers-code-417de265531c) and [increase your agency](https://twitter.com/callumflack/status/899053290406633472).
+When designers they understand surprising and contradictory insights are part of the trials of writing software. This is crucial knowledge that will [increase a designer's agency](https://twitter.com/callumflack/status/899053290406633472) and allow them to design far more intentionally.
 
-If you work in a team, you’ll have [higher-resolution information](https://twitter.com/Kpaxs/status/947516453691052034) you can use to communicate with, and make better decisions.
+If you work in a team, you’ll have higher-resolution information you can use to communicate with, and make better decisions.
 
-If you work by yourself, you will have greatly enhanced your ability to implement your vision, which is the [“hallmark of great craftsmanship. It teaches you both the limits and the possibilities of your medium.”](https://medium.com/@irondavy/designers-will-code-6c423fc5ccef)
+If you work by yourself, you will have greatly enhanced your ability to implement your vision, which is, as [David Cole says](https://medium.com/@irondavy/designers-will-code-6c423fc5ccef), the “hallmark of great craftsmanship. It teaches you both the limits and the possibilities of your medium.”
 
-Code chops will help you, dear designer, to see the “necessary overlaps” that allow characteristically rich experiences to happen.
+Code chops help designers to see and understand the “necessary overlaps” that allow characteristically rich experiences to happen.

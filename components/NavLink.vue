@@ -23,7 +23,7 @@ export default {
 
   props: {
     label: String,
-    year: Number,
+    year: String,
     link: String,
     external: Boolean,
     exact: Boolean
@@ -72,7 +72,7 @@ li + li {
 }
 
 .footer .ruled {
-  border-color: var(--c-gray);
+  border-color: var(--c-textLight);
 }
 
 /*.link.is-active

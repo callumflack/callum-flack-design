@@ -98,7 +98,7 @@ export default {
 .small-space {
   margin-top: var(--s-1);
 
-  @media (--large-viewport) {
+  @media (--lg) {
     margin-top: var(--s-2);
   }
 }

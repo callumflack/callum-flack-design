@@ -123,7 +123,7 @@ export default {
   top: calc(0.5 * var(--grid-gutter));
   z-index: 100;
 
-  @media (--small-viewport) {
+  @media (--sm) {
     right: var(--grid-gutter);
     top: var(--grid-gutter);
   }
@@ -136,7 +136,7 @@ export default {
   height: calc(0.75 * 27px);
   width: calc(0.75 * 27px);
 
-  @media (--small-viewport) {
+  @media (--sm) {
     height: 27px;
     width: 27px;
   }

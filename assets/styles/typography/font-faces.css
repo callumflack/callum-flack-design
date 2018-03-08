@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: var(--ff-sans-bold);
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
   font-family: var(--ff-sans-heading);
   src: url("~static/fonts/TiemposHeadline-Bold.woff") format("woff");
   font-weight: 700;

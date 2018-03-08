@@ -261,7 +261,7 @@
 }
 
 .sm-ml3 {
-  @media (--small-viewport) {
+  @media (--sm) {
     margin-left: var(--s-3) !important;
   }
 }

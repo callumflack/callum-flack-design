@@ -16,7 +16,7 @@
     margin-top: var(--s-2);
   }
 
-  @media (--small-viewport) {
+  @media (--sm) {
     flex-direction: row;
 
     & * + * {

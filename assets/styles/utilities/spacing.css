@@ -431,7 +431,7 @@
 
  */
 
-@media (--small-viewport) {
+@media (--sm) {
   .sm-p-t0 {
     padding-top: var(--s-0) !important;
   }
