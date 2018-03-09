@@ -1,0 +1,65 @@
+.project {
+  border-top: 1px solid;
+  border-bottom: 0 solid;
+  border-color: var(--c-rule);
+  display: block;
+  padding: var(--s-3a) 0 var(--s-3a);
+
+  &:last-child {
+    // margin-bottom: 0 !important;
+  }
+
+  &:last-of-type {
+    border-bottom-width: 1px;
+  }
+}
+
+/* use the SVG filter that's secreted on work/index */
+/* reused & scoped in LazyImage */
+.project:hover img {
+  filter: url("#gray");
+}
+
+.project-image {
+  padding-right: calc(0.25 * var(--grid-gutter));
+  width: 50%;
+
+  @media (--sm) {
+    width: 40%;
+  }
+}
+
+.project-text {
+  padding-left: calc(0.25 * var(--grid-gutter));
+  width: 50%;
+
+  @media (--sm) {
+    width: 35%;
+  }
+}
+
+.project-text h2,
+.project-text p {
+  width: 100%;
+}
+
+.project-divider {
+  letter-spacing: -0.2em;
+  /* margin-left: -0.1em; */
+  margin-right: 0.2em;
+}
+
+/*
+
+  JOURNAL THEME
+
+*/
+
+.page-journal .project-text {
+  padding-left: 0;
+  width: auto;
+
+  @media (--sm) {
+    width: 75%;
+  }
+}

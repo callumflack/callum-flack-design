@@ -4,6 +4,7 @@
     c-pageheading(
       :heading="page.heading"
       :lede="page.lede"
+      projectScope
     )
     .container
       c-lazyimage(
@@ -20,8 +21,8 @@
         style="opacity:0.9"
       )
   main(role="main")
-    .container.text-scope
-      nuxtent-body(:body="page.body")
+    .container
+      nuxtent-body.project-scope(:body="page.body")
 </template>
 
 <script>
@@ -42,7 +43,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.heading} – Patternworks`,
+      title: `${this.page.heading} – Callum Flack Design`,
       meta: [
         {
           hid: "description",

@@ -3,11 +3,11 @@
     figure.project-imag(v-if="image")
       img(:src="image")
     .project-text
-      h1.title {{ heading }}
+      h1.heading {{ heading }}
         //- span.linkSignal-target &nbsp;→
       p.text(v-html="lede") 
         
-      //- p.project-subtext.text-scope-reset
+      //- p.project-subtext.project-scope-reset
         span(v-if="date") {{ date }}
 </template>
 

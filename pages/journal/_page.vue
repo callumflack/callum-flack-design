@@ -2,10 +2,7 @@
 .block--pb7
   article
     header(role="banner")
-      c-pageheading(
-        :heading="page.heading"
-        link="/journal"
-      )
+      c-pageheading(:heading="page.heading")
       .container(v-if="page.heroImage")
         figure.figure.figure--post.figure--large
           img(:src="page.heroImage", alt="")
@@ -21,7 +18,7 @@
           
           .block--mt6(v-if="page.tweet")
             //- hr.c-title.mb3
-            p.title.m-b0.u-textCenter Comments?
+            p.subheading.m-b0.u-textCenter Comments?
             p.text.u-textCenter
               a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
           //- hr.block--my6(v-else)
@@ -30,7 +27,6 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
-import MarkdownImage from "~/components/MarkdownImage.vue";
 import FormNewsletter from "~/components/FormNewsletter.vue";
 
 export default {
@@ -50,7 +46,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.heading} – Patternworks`,
+      title: `${this.page.heading} – Callum Flack Design`,
       meta: [
         {
           hid: "description",

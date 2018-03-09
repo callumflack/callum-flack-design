@@ -3,15 +3,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: "Patternworks – Digital design & development",
+    title: "Callum Flack digital design & development",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content:
-          "Patternworks – Digital design & development by Callum Flack – Cairns, Australia"
+        content: "Callum Flack digital design & development – Cairns, Australia"
       },
       { hid: "twitter:card", name: "twitter:card", content: "summary" },
       { hid: "twitter:site", name: "twitter:site", content: "@callumflack" },
@@ -24,7 +23,7 @@ module.exports = {
   ** loading: { color: "#1f1f1f" },
   ** loading: "~/components/PageLoading.vue",
   */
-  loading: { color: "#0a0a0a" },
+  loading: { color: "#222" },
   /*
   ** Build configuration
   */
@@ -58,7 +57,7 @@ module.exports = {
   },
   css: ["~/assets/styles/application.css"],
   /*plugins: [{ src: "~/plugins/vue-slick", ssr: false }],*/
-  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-TZ36J9" }]],
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-M4FPKD6" }]],
   axios: {
     credentials: false
   },

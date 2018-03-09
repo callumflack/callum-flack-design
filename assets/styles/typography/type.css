@@ -9,12 +9,14 @@
 p,
 ul,
 .text,
-.text-scope h2 {
+.project-scope h2 {
   font-size: var(--s-text);
+  font-weight: 400;
 }
 
 .text--meta {
   font-size: var(--s-text-meta) !important;
+  font-weight: 400;
   letter-spacing: var(--ls-meta);
 }
 
@@ -28,25 +30,47 @@ ul,
   -------------------------------------------------
  */
 
-.title,
-.journal-scope h2,
-.text-scope h3 {
-  color: var(--c-text);
-  font-family: var(--ff-sans-heading), var(--ff-stack-serif);
+.heading {
+  font-family: var(--ff-serif-heading), var(--ff-stack-serif);
   font-size: var(--s-text);
   font-weight: 700;
   letter-spacing: var(--ls-heading);
 }
 
+.subheading,
+.journal-scope h2,
+.project-scope h2 {
+  font-family: var(--ff-sans-bold), var(--ff-stack-serif);
+  font-size: var(--s-text);
+  font-weight: 500;
+}
+
+/*.journal-scope h3 {
+  font-family: var(--ff-serif-caps), var(--ff-stack-serif);
+  font-size: calc(1 * var(--s-text-meta));
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}*/
+
+.journal-scope h3,
+.project-scope h3 {
+  font-family: var(--ff-sans-bold), var(--ff-stack-serif);
+  font-size: var(--s-text-meta) !important;
+  font-weight: 500;
+  letter-spacing: var(--ls-meta);
+  // text-transform: uppercase;
+}
+
 /*
   -------------------------------------------------
 
-  Text scope
+  Project scope
 
   -------------------------------------------------
  */
 
-.text-scope {
+.project-scope {
   & p,
   & ol,
   & ul,
@@ -118,20 +142,11 @@ h6 {
 
 .post:not(:first-child) {
   margin-top: var(--s-4);
-  margin-bottom: calc(1 * var(--s-4));
+  margin-bottom: var(--s-4);
 
   @media (--md) {
     margin-top: var(--s-5);
-    margin-bottom: calc(1 * var(--s-5));
-  }
-}
-
-/* used in project grid only */
-.title--underThumbnail {
-  margin: var(--s-2) 0;
-
-  @media (--md) {
-    margin: calc(1.25 * var(--s-3)) 0 calc(0.8 * var(--s-3));
+    margin-bottom: var(--s-5);
   }
 }
 
@@ -165,14 +180,14 @@ h6 {
   width: 96%;
 
   @media (--md) {
-    width: calc(100% * 2 / 3);
     width: 75%;
   }
 }
 
 .journal-scope strong {
-  font-family: var(--ff-sans-bold), var(--ff-stack-sans);
-  font-weight: 500;
+  // font-family: var(--ff-sans-bold), var(--ff-stack-sans);
+  // font-weight: 500;
+  background-color: var(--c-highlight);
 }
 
 .journal-scope hr {
@@ -204,14 +219,7 @@ h6 {
   -------------------------------------------------
  */
 
-.text-scope blockquote {
-  @media (--md) {
-    margin-left: 50%;
-    padding-left: calc(0.5 * var(--grid-gutter));
-  }
-}
-
-.text-scope blockquote p {
+blockquote p {
   // border-top: 1px solid;
   // border-bottom: 1px solid;
   // border-color: var(--c-rule);
@@ -231,11 +239,7 @@ h6 {
   }
 }
 
-.no-quote p:before {
-  content: none !important;
-}
-
-.text-scope blockquote p em {
+blockquote p em {
   display: table;
   /* method for resetting ems, then apply text--meta sizing: */
   font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
@@ -246,15 +250,27 @@ h6 {
   }
 }
 
-.text-scope blockquote:first-child,
+.no-quote p:before {
+  content: none !important;
+}
+
+.project-scope blockquote {
+  @media (--md) {
+    margin-left: 50%;
+    padding-left: calc(0.5 * var(--grid-gutter));
+  }
+}
+
+.project-scope blockquote:first-child,
 .text--large:first-child {
   margin-top: 0 !important;
 }
 
 /* journal */
 .journal-scope blockquote {
+  margin: 0;
+
   @media (--sm) {
-    margin-left: 0;
     padding-left: 0;
     padding-bottom: 2px;
   }
@@ -262,15 +278,28 @@ h6 {
 
 .journal-scope blockquote p {
   border: initial;
-  border-left: 1px solid currentColor;
-  border-color: var(--c-border);
-  color: var(--c-textLight);
+  // border-left: 1px solid currentColor;
+  // border-color: var(--c-border);
+  // color: var(--c-textLight);
   margin-right: 7.5%;
   padding: initial;
   padding-left: var(--s-3a);
 
   @media (--sm) {
-    padding-left: var(--s-4);
+    padding-left: var(--s-3b);
+  }
+
+  /* figure space*/
+  margin-top: var(--s-3);
+  margin-bottom: var(--s-3);
+
+  @media (--md) {
+    margin-top: var(--s-3b);
+    margin-bottom: var(--s-3b);
+  }
+  @media (--lg) {
+    margin-top: var(--s-4);
+    margin-bottom: var(--s-4);
   }
 }
 
@@ -280,7 +309,7 @@ h6 {
 }
 
 /* blockquote + h */
-.text-scope blockquote + h3,
+.project-scope blockquote + h3,
 .journal-scope blockquote + h2 {
   @media (--md) {
     margin-top: 0 !important;

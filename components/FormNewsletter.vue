@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h2.title.title--ruled Subscribe
+  h2.heading.heading--ruled Subscribe
   p I send an occassional email newsletter with notes of the stories and links about designing great interfaces that I've found worthwhile, and why they resonate. You should sign up:
   //- .formWrapper
   form.form.text(

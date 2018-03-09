@@ -4,7 +4,8 @@
       c-pageheading(
         :heading="page.heading"
         :lede="page.lede"
-        project
+        projectScope
+        projectSpace
       )
       .container
         c-lazyimage(
@@ -26,12 +27,12 @@
         )
     main(role="main")
       .container
-        nuxtent-body.text-scope(:body="page.body")
+        nuxtent-body.project-scope(:body="page.body")
   //- nuxt-link.next-project.linkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
         .text.text--meta.u-marginB1 Next project
-        .title.small-space 
+        .heading.small-space 
           | {{ page.nextProjectHeading }}
           span.ml1.linkSignal-target →
 </template>
@@ -65,7 +66,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.heading} – Patternworks`,
+      title: `${this.page.heading} – Callum Flack Design`,
       meta: [
         {
           hid: "description",

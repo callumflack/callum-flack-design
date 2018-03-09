@@ -13,7 +13,7 @@
     v-else
   )
     .u-flex.u-flexJustifyBetween
-      span.text {{ label }}
+      span.heading {{ label }}
       span.text(v-if="year") {{ year }}
 </template>
 
@@ -72,7 +72,7 @@ li + li {
 }
 
 .footer .ruled {
-  border-color: var(--c-textLight);
+  border-color: var(--c-border);
 }
 
 /*.link.is-active

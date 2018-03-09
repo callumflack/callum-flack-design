@@ -29,7 +29,7 @@
 }
 
 .block--pt7 {
-  padding-top: var(--s-4);
+  padding-top: var(--s-5);
 
   @media (--md) {
     padding-top: var(--s-6);
@@ -40,7 +40,7 @@
 }
 
 .block--pb5 {
-  padding-bottom: var(--s-4);
+  padding-bottom: var(--s-3);
 
   @media (--md) {
     padding-bottom: var(--s-4);
@@ -51,7 +51,7 @@
 }
 
 .block--pb7 {
-  padding-bottom: var(--s-6);
+  padding-bottom: var(--s-5);
 
   @media (--md) {
     padding-bottom: var(--s-6);
@@ -93,23 +93,11 @@
   }
 }
 
-.block--mt3b {
+.block--mt4 {
   margin-top: var(--s-3);
 
   @media (--md) {
-    margin-top: var(--s-3a);
-  }
-
-  @media (--lg) {
-    margin-top: var(--s-3b);
-  }
-}
-
-.block--mt4 {
-  margin-top: var(--s-3a);
-
-  @media (--md) {
-    // margin-top: var(--s-3b);
+    margin-top: var(--s-3b); /* matches paragraph space at this MQ */
   }
 
   @media (--lg) {

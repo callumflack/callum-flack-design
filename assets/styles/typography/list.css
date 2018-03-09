@@ -37,13 +37,13 @@ li {
 
   */
 
-.text-scope ul,
+.project-scope ul,
 .journal-scope ul {
   list-style-type: none;
   padding-left: 1em;
 }
 
-.text-scope li,
+.project-scope li,
 .journal-scope li {
   position: relative;
 

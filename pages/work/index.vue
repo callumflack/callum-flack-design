@@ -18,25 +18,24 @@
             href="#"
             :class="[{ 'is-active': tag === activeTag }]"
           )
-            span.title-visualLink {{tag}}
+            span.heading-visualLink {{tag}}
             span(v-if="index !== tags.length - 1") ,&nbsp;
             span(v-else) .
 
     .container
-      .Grid.Grid--withTinyGutter
-        c-project(
-          v-if="project.featured"
-          v-for="project in visibleProjects"
-          post
-          :key="project.heading"
-          :link="project.permalink"
-          :heading="project.heading"
-          :lede="project.lede"
-          :image="project.thumbImage"
-          :cloudinary="project.thumbInCloudinary"
-          :year="project.year"
-          :tags="project.tags"
-        )
+      c-project(
+        v-if="project.featured"
+        v-for="project in visibleProjects"
+        post
+        :key="project.heading"
+        :link="project.permalink"
+        :heading="project.heading"
+        :lede="project.lede"
+        :image="project.thumbImage"
+        :cloudinary="project.thumbInCloudinary"
+        :year="project.year"
+        :tags="project.tags"
+      )
 
     <svg class='u-hiddenVisually'>
       <filter id='gray' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
@@ -52,7 +51,7 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
-import Project from "~/components/Project.vue";
+import Project from "~/components/Project2.vue";
 
 const allTagName = "all";
 
@@ -76,13 +75,12 @@ export default {
   },
   head() {
     return {
-      title: "Work – Patternworks",
+      title: "Work – Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "Selected digital design & development projects by Callum Flack since 2014"
+          content: "Selected digital design & development projects by Callum Flack"
         }
       ]
     };

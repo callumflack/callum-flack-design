@@ -15,7 +15,8 @@ button {
 .visualLink,
 p a:not(.Button),
 p a:not(.linkSignal),
-.text-scope a:not(.Button) {
+.project-scope a:not(.Button),
+.project:hover .project-visualLink {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(currentColor, currentColor);
@@ -32,6 +33,14 @@ p a:not(.linkSignal),
   }
 }
 
+/* headings */
+.project-link a,
+.project:hover .project-visualLink {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background-position: 0% 93%, 100% 93%, 0% 93% !important;
+  }
+}
+
 .footer p a:not(.Button) {
   text-shadow: 0.03em 0 var(--c-metal), -0.03em 0 var(--c-metal),
     0 0.03em var(--c-metal), 0 -0.03em var(--c-metal), 0.06em 0 var(--c-metal),
@@ -40,15 +49,30 @@ p a:not(.linkSignal),
     -0.15em 0 var(--c-metal);
 }
 
+.page-journal-page strong a {
+  text-shadow: 0.03em 0 var(--c-highlight), -0.03em 0 var(--c-highlight),
+    0 0.03em var(--c-highlight), 0 -0.03em var(--c-highlight),
+    0.06em 0 var(--c-highlight), -0.06em 0 var(--c-highlight),
+    0.09em 0 var(--c-highlight), -0.09em 0 var(--c-highlight),
+    0.12em 0 var(--c-highlight), -0.12em 0 var(--c-highlight),
+    0.15em 0 var(--c-highlight), -0.15em 0 var(--c-highlight);
+}
+
 .icon-targetblank {
   position: relative;
   // margin-right: 2px;
 }
 
+/* 
+
+  target blank icon
+
+ */
+
 .icon-targetblank:after {
   content: "→";
   display: inline-block;
-  font-family: var(--ff-sans-stack);
+  font-family: var(--ff-stack-sans);
   font-weight: 400;
   font-size: 60%;
   position: absolute;
@@ -56,20 +80,6 @@ p a:not(.linkSignal),
   vertical-align: top;
   right: -1em;
   top: -0.25em;
-}
-
-/* 
-
-  Title links 
- 
- */
-
-.project:hover .project-visualLink {
-  background-image: linear-gradient(currentColor, currentColor);
-  background-size: 2px 2px;
-  background-repeat: repeat-x;
-  background-position: 0% 100%;
-  padding-bottom: 4px;
 }
 
 /* 

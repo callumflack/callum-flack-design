@@ -3,10 +3,10 @@
   header(role="banner")
     c-pageheading(
       heading="Journal"
-      lede="Writing about the contradictions and nuance of designing and building human interfaces."
+      lede="Writing about the process of designing and building human interfaces."
     )
   main(role="main")
-    .container.journal-scope
+    .container
       c-post(
         v-for="post in posts"
         :key="post.heading"
@@ -30,7 +30,7 @@ export default {
   },
   head() {
     return {
-      title: "Journal – Patternworks",
+      title: "Journal – Callum Flack Design",
       meta: [
         {
           hid: "description",

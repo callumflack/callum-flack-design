@@ -3,19 +3,19 @@
     header.block--pt7(role="banner")
       .container
         .journal-scope
-          h1.title Callum Flack is a designer + developer.
-          p
-            | I help owners and creators design and build interfaces that merge brand with product. I'll counsel you on the big picture. I'll execute the details that seamless, authentic experiences are made of. I 
+          h1.heading Callum Flack is a designer + developer.
+          p.nav-space
+            | Since 2000, I've helped owners and creators design and build interfaces that merge brand with product. I'll counsel you on the big picture. I'll execute the details that seamless, authentic experiences are made of. I also 
             nuxt-link(to="/journal") blog
-            | &nbsp;about this process.
-            
-          p.nav-space I've been a professional designer since 2000. Read more  
+            | &nbsp;about this process. Read 
             nuxt-link(to="/about") about
-            | &nbsp;me. Need specialist digital design help? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
-          
-          //- p Below is a list of recent projects and posts since 2014, draw from an 
-            nuxt-link(to="/work") archive
-            | .
+            | &nbsp;me. Interested? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
+      //- c-pageheading(
+      //-   heading="Callum Flack is a designer + developer."
+      //-   :lede="page.lede"
+      //-   projectScope
+      //-   projectSpace
+      //- )
 
     main.block--pb7(role="main")
       .container
@@ -29,25 +29,7 @@
             :currentPage="currentPage"
             :exact="item.exact"
           )
-        //- p.text--meta 
-          nuxt-link(to="/work") View work archive
-        
-        //- .text.text--meta.c-title.block--mt4
-          c-navlink(
-            v-for="item in navContacts"
-            :key="item.label"
-            :label="item.label"
-            :link="item.link"
-            external
-          )
-      //- .block--mt4
-        .container.text-scope
-          //- p The best way to contact me is by <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
-           or <a class="icon-targetblan" target="_blank" href="https://twitter.com/callumflack">Twitter</a>
-          //- p.text--meta.c-textLight Looking for digital design advice and execution? Get in touch by <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
-          //- p.text--meta.c-textLight Looking for digital design advice and execution? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email</a>.
-          //- p Interested? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email me</a>.
-          p Need specialist advice? <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">Please email me</a>.
+          
 </template>
 
 <script scoped>

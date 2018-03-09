@@ -17,7 +17,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: var(--ff-sans-heading);
+  font-family: var(--ff-serif-heading);
   src: url("~static/fonts/TiemposHeadline-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;

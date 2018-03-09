@@ -1,8 +1,9 @@
 <template lang="pug">
   div(:class="blockClasses")
-    .container.text-scope
-      h1.title(v-if="heading", v-html="heading")
-      h2.text.m-t0.m-b0(v-if="lede", v-html="lede")
+    .container
+      div(:class="scopeClasses")
+        h1.heading(v-if="heading", v-html="heading")
+        p.text.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>
@@ -11,15 +12,24 @@ export default {
   props: {
     heading: String,
     lede: String,
-    project: Boolean
+    projectSpace: Boolean,
+    projectScope: Boolean
   },
   computed: {
     blockClasses() {
       return [
         "block--pt7",
-        "block--pb5",
         {
-          "block--pb7": this.project
+          "block--pb7": this.projectSpace,
+          "block--pb5": !this.projectSpace
+        }
+      ];
+    },
+    scopeClasses() {
+      return [
+        {
+          "project-scope": this.projectScope,
+          "journal-scope": !this.projectScope
         }
       ];
     }

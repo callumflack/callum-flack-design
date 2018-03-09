@@ -2,9 +2,9 @@
 .toggle
   .toggle-logo
     nuxt-link.icon-tap(to="/")
-      .icon.title
-        span.u-md-hidden Menu
-        span.u-hidden.u-md-block.tracking C.F.
+      .icon.heading
+        span.u-lg-hidden Menu
+        span.u-hidden.u-lg-block.tracking C.F.
 </template>
 
 <script scoped>
@@ -35,24 +35,28 @@ export default {
 .toggle {
   position: fixed;
   right: calc(0.75 * var(--grid-gutter));
-  /* top: calc(0.5 * var(--grid-gutter)); */
   bottom: calc(0.75 * var(--grid-gutter));
   transform: translate(0, -0.1em);
   z-index: 100;
 
   /* y */
   @media (--sm) {
-    /* top: calc(1 * var(--grid-gutter)); */
-    bottom: calc(1 * var(--grid-gutter));
+    bottom: var(--grid-gutter);
+  }
+  @media (--md) {
+    /* top: var(--grid-gutter); */
+  }
+  @media (min-width: 769px) {
+    bottom: auto;
+    top: var(--grid-gutter);
   }
   @media (min-width: 1460px) {
-    bottom: auto;
     top: var(--s-7);
   }
 
   /* x */
   @media (--sm) {
-    right: calc(1 * var(--grid-gutter));
+    right: var(--grid-gutter);
   }
   /*@media (min-width: 1136px) {*/
   @media (min-width: 1460px) {
@@ -67,8 +71,15 @@ export default {
   border-radius: 999px;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15), 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
 
-  @media (--md) {
+  @media (--lg) {
     box-shadow: initial;
+    transition: box-shadow 1s ease;
+
+    &:hover {
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15),
+        0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 1s ease;
+    }
   }
 }
 
@@ -82,19 +93,14 @@ export default {
 }
 
 .toggle-logo {
-  display: inline-block;
   position: relative;
-  /* transform: translateX(-0.0125em); */
-  /* transform: translate(0, 0.29em); */
-
   background-color: var(--c-bg);
   border: 1px solid currentColor;
   border-radius: 999px;
-  padding: 9px 14px 7px 15px;
+  padding: 9px 14px 8px 15px;
 
-  @media (--md) {
+  @media (--lg) {
     background-color: transparent;
-    display: block;
     padding: 6px 11px 4px 12px;
   }
 }

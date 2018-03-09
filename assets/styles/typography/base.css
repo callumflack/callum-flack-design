@@ -31,12 +31,12 @@ html {
  */
 
 body,
-.text-scope-reset {
+.project-scope-reset {
   font-size: 0.818181818rem !important;
   font-size: 0.772727273rem !important;
 
   @media (--sm) {
-    font-size: 0.863636364rem !important;
+    font-size: 0.847826087rem !important;
     // font-size: 0.875rem !important;
   }
   @media (--md) {

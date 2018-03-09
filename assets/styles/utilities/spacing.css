@@ -457,3 +457,9 @@
     padding-top: var(--s-7) !important;
   }
 }
+
+@media (max-width: 512px) {
+  .msm-m-b1 {
+    margin-bottom: var(--s-1) !important;
+  }
+}

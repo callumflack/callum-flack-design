@@ -1,15 +1,15 @@
 <template lang="pug">
-  .Grid-cell.u-sm-size1of2
-    nuxt-link.project.block--mb6(:to="link")
+  nuxt-link.project.ruled(:to="link")
+    .u-flex.u-flexJustifyStart
       figure.project-image
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
       .project-text
-        h2.heading.heading--underThumbnail
+        h2.heading.m-t0.msm-m-b1
           span.project-visualLink {{ heading }}
-        p.project-subtext.text.text--meta
+        p.text.text--meta.c-textLight
           span(v-if="year") {{ year }}
-          span.project-divider &nbsp;——&nbsp;
+          span.project-divider &nbsp;&nbsp;——&nbsp;
           | {{ lede }}
 </template>
 
@@ -37,20 +37,4 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
-
-/* .Grid-cell:nth-child(7), */
-/* .Grid-cell:nth-child(8), */
-.Grid-cell:nth-child(9) {
-  & .project {
-    margin-bottom: 0 !important;
-  }
-}
-
-.heading--underThumbnail {
-  margin: var(--s-2) 0;
-
-  @media (--md) {
-    margin: calc(1.25 * var(--s-3)) 0 calc(0.8 * var(--s-3));
-  }
-}
 </style>

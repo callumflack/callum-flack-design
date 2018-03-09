@@ -30,8 +30,6 @@ module.exports = {
   ],
 
   api: function(isStatic) {
-    return {
-      browserBaseURL: isStatic ? "https://patternworks.com.au" : ""
-    };
+    return { browserBaseURL: isStatic ? "https://callumflack.design" : "" };
   }
 };
