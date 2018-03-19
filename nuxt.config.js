@@ -46,13 +46,9 @@ module.exports = {
       but there's TWO different methods shown in the docs:
       https://nuxtjs.org/api/configuration-build#postcss
       https://nuxtjs.org/faq/postcss-plugins
-      …and both FAIL to load postcss-mixins:
-
-    postcss: {
-      plugins: {
-        "postcss-mixins": {}
-      }
-    }
+      …and both FAIL to load, for e.g., postcss-mixins:
+    
+    postcss: [require("postcss-mixins")()]
     */
   },
   css: ["~/assets/styles/application.css"],
