@@ -15,6 +15,7 @@ ul,
 }
 
 .text--meta {
+  font-family: var(--ff-meta), var(--ff-stack-sans);
   font-size: var(--s-text-meta) !important;
   font-weight: 400;
   letter-spacing: var(--ls-meta);
@@ -30,19 +31,48 @@ ul,
   -------------------------------------------------
  */
 
+.super,
 .heading {
   font-family: var(--ff-serif-heading), var(--ff-stack-serif);
-  font-size: var(--s-text);
-  font-weight: 700;
+  font-size: var(--s-heading);
+  font-weight: 400;
   letter-spacing: var(--ls-heading);
+}
+
+.heading--inLede {
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * var(--s-heading)) !important;
+}
+
+.super {
+  // font-family: var(--ff-italic), var(--ff-stack-serif);
+  // font-style: italic;
+  // font-size: calc(3 * var(--s-text));
+  font-size: calc(3 * var(--s-heading));
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
 }
 
 .subheading,
 .journal-scope h2,
 .project-scope h2 {
-  font-family: var(--ff-sans-bold), var(--ff-stack-serif);
+  font-family: var(--ff-italic), var(--ff-stack-serif);
   font-size: var(--s-text);
-  font-weight: 500;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: var(--ls-heading);
+}
+
+.italic {
+  font-family: var(--ff-italic), var(--ff-stack-serif);
+  font-style: italic;
+}
+
+.caps {
+  font-family: var(--ff-sans-regular), var(--ff-stack-serif);
+  font-family: var(--ff-serif-heading), var(--ff-stack-serif);
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * var(--s-caps));
+  text-transform: uppercase;
 }
 
 /*.journal-scope h3 {
@@ -53,48 +83,16 @@ ul,
   text-transform: uppercase;
 }*/
 
+blockquote p em,
 .journal-scope h3,
 .project-scope h3 {
-  font-family: var(--ff-sans-bold), var(--ff-stack-serif);
+  font-family: var(--ff-caps), var(--ff-stack-serif);
   font-size: var(--s-text-meta) !important;
-  font-weight: 500;
-  letter-spacing: var(--ls-meta);
-  // text-transform: uppercase;
-}
-
-/*
-  -------------------------------------------------
-
-  Project scope
-
-  -------------------------------------------------
- */
-
-.project-scope {
-  & p,
-  & ol,
-  & ul,
-  & blockquote,
-  & h1,
-  & h2,
-  & h3 {
-    width: 96%;
-
-    @media (--md) {
-      width: 50%;
-    }
-  }
-
-  & p,
-  & ol,
-  & ul,
-  & h1,
-  & h2,
-  & h3 {
-    @media (--md) {
-      // padding-right: calc(0.25 * var(--grid-gutter));
-    }
-  }
+  font-style: normal;
+  // font-weight: 400;
+  font-weight: 700;
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
 }
 
 /* 
@@ -132,10 +130,10 @@ h3,
 h4,
 h6 {
   &:not(:first-child) {
-    margin-top: var(--s-4);
+    margin-top: calc(3 * var(--s-3));
 
     @media (--md) {
-      margin-top: var(--s-5);
+      margin-top: calc(3 * var(--s-3b));
     }
   }
 }
@@ -177,17 +175,17 @@ h6 {
  */
 
 .journal-scope {
-  width: 96%;
+  // width: 96%;
 
   @media (--md) {
-    width: 75%;
+    // width: 75%;
   }
 }
 
 .journal-scope strong {
   // font-family: var(--ff-sans-bold), var(--ff-stack-sans);
   // font-weight: 500;
-  background-color: var(--c-highlight);
+  // background-color: var(--c-highlight);
 }
 
 .journal-scope hr {
@@ -220,14 +218,18 @@ h6 {
  */
 
 blockquote p {
-  // border-top: 1px solid;
-  // border-bottom: 1px solid;
-  // border-color: var(--c-rule);
-  // padding: var(--s-3) 0 calc(1.1 * var(--s-3));
-  width: 100% !important;
+  border-left: 1px solid;
+  border-color: var(--c-textLight);
+  color: var(--c-textLight);
+  font-family: var(--ff-italic), var(--ff-stack-sans);
+  padding-left: var(--s-3);
+
+  @media (--sm) {
+    padding-left: var(--s-3a);
+  }
 
   &:before {
-    content: "“";
+    // content: "“";
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);
@@ -241,77 +243,17 @@ blockquote p {
 
 blockquote p em {
   display: table;
+  font-family: var(--ff-sans-regular), var(--ff-stack-serif);
   /* method for resetting ems, then apply text--meta sizing: */
   font-size: calc((16 / (var(--s-text-unit) * 16)) * 1em);
-  margin-top: var(--s-1);
+  font-size: calc((16 / (var(--s-text-unit) * 16)) * var(--s-text-meta)) !important;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: var(--s-2);
+  letter-spacing: var(--ls-caps);
+  text-transform: uppercase;
 
   @media (--lg) {
-    margin-top: var(--s-2);
-  }
-}
-
-.no-quote p:before {
-  content: none !important;
-}
-
-.project-scope blockquote {
-  @media (--md) {
-    margin-left: 50%;
-    padding-left: calc(0.5 * var(--grid-gutter));
-  }
-}
-
-.project-scope blockquote:first-child,
-.text--large:first-child {
-  margin-top: 0 !important;
-}
-
-/* journal */
-.journal-scope blockquote {
-  margin: 0;
-
-  @media (--sm) {
-    padding-left: 0;
-    padding-bottom: 2px;
-  }
-}
-
-.journal-scope blockquote p {
-  border: initial;
-  // border-left: 1px solid currentColor;
-  // border-color: var(--c-border);
-  // color: var(--c-textLight);
-  margin-right: 7.5%;
-  padding: initial;
-  padding-left: var(--s-3a);
-
-  @media (--sm) {
-    padding-left: var(--s-3b);
-  }
-
-  /* figure space*/
-  margin-top: var(--s-3);
-  margin-bottom: var(--s-3);
-
-  @media (--md) {
-    margin-top: var(--s-3b);
-    margin-bottom: var(--s-3b);
-  }
-  @media (--lg) {
-    margin-top: var(--s-4);
-    margin-bottom: var(--s-4);
-  }
-}
-
-.journal-scope blockquote p em {
-  display: table;
-  margin-top: var(--s-1);
-}
-
-/* blockquote + h */
-.project-scope blockquote + h3,
-.journal-scope blockquote + h2 {
-  @media (--md) {
-    margin-top: 0 !important;
+    margin-top: var(--s-3);
   }
 }

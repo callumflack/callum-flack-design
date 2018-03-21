@@ -1,22 +1,26 @@
 <template lang="pug">
   div(:class="currentPageClass")
-    c-toggle
-    .page
-      nuxt
-    .footer-spacer
-      c-footer
+    //- c-toggle
+    c-menu
+    //- .page
+    nuxt
+    //- .footer-spacer
+      //- c-footer
+    //- c-nav-toggled(role="navigation")
 </template>
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
-import Nav from "~/components/Nav.vue";
+import NavToggled from "~/components/NavToggled.vue";
 import Footer from "~/components/Footer.vue";
+import Menu from "~/components/Menu.vue";
 
 export default {
   components: {
     "c-toggle": NavToggle,
-    "c-nav": Nav,
-    "c-footer": Footer
+    "c-nav-toggled": NavToggled,
+    "c-footer": Footer,
+    "c-menu": Menu
   },
   computed: {
     currentPageClass: function() {

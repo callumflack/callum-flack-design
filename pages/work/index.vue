@@ -1,8 +1,6 @@
 <template lang="pug">
 .block--pb7
   c-pageheading(
-    heading="Work"
-    link="/work"
     lede="Selected projects since 2014."
   )
   main(role="main")

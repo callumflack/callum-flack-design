@@ -28,6 +28,20 @@
   }
 }
 
+.block--py5 {
+  padding-top: var(--s-3);
+  padding-bottom: var(--s-3);
+
+  @media (--md) {
+    padding-top: var(--s-4);
+    padding-bottom: var(--s-4);
+  }
+  @media (--lg) {
+    padding-top: var(--s-5);
+    padding-bottom: var(--s-5);
+  }
+}
+
 .block--pt7 {
   padding-top: var(--s-5);
 
@@ -58,6 +72,18 @@
   }
   @media (--lg) {
     padding-bottom: var(--s-7);
+  }
+}
+
+/* manage fixed menu */
+.block--matchFixedMenu {
+  padding-bottom: calc(0.725 * var(--s-5));
+
+  @media (--md) {
+    padding-bottom: calc(0.725 * var(--s-6));
+  }
+  @media (--lg) {
+    padding-bottom: calc(0.725 * var(--s-7));
   }
 }
 

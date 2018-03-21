@@ -1,10 +1,9 @@
 <template lang="pug">
+div
   article.block--pb7
     header(role="banner")
       c-pageheading(
-        :heading="page.heading"
         :lede="page.lede"
-        projectScope
         projectSpace
       )
       .container
@@ -28,7 +27,7 @@
     main(role="main")
       .container
         nuxtent-body.project-scope(:body="page.body")
-  //- nuxt-link.next-project.linkSignal.block--py7(:to="page.nextProject")
+  nuxt-link.next-project.linkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
         .text.text--meta.u-marginB1 Next project

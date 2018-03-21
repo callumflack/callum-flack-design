@@ -63,7 +63,7 @@ li + li {
 .ruled {
   border-top: 1px solid;
   border-bottom: 0 solid;
-  border-color: var(--c-rule);
+  border-color: var(--c-text);
   padding: var(--s-3a) 0 var(--s-3a);
 
   &:last-of-type {

@@ -1,10 +1,15 @@
 <template lang="pug">
-.toggle
+.toggle.promote
   .toggle-logo
+    //- a.icon-tap(href="#", @click.prevent="handleNavToggle")
     nuxt-link.icon-tap(to="/")
       .icon.heading
         span.u-lg-hidden Menu
-        span.u-hidden.u-lg-block.tracking C.F.
+        //- span.u-hidden.u-lg-block.tracking ☰ CF/d
+        //- span.u-hidden.u-lg-block.tracking CF/d
+        span.u-hidden.u-lg-block.tracking 
+          span.caps CF
+          span.italic d
 </template>
 
 <script scoped>
@@ -95,9 +100,15 @@ export default {
 .toggle-logo {
   position: relative;
   background-color: var(--c-bg);
-  border: 1px solid currentColor;
+  /* border: 1px solid currentColor; */
   border-radius: 999px;
   padding: 9px 14px 8px 15px;
+
+  &:before {
+    /* content: "\2630"; */
+    font-size: 112%;
+    margin-right: 3px;
+  }
 
   @media (--lg) {
     background-color: transparent;
@@ -126,6 +137,7 @@ export default {
 }
 
 .tracking {
+  /* color: var(--c-red); */
   letter-spacing: 0.07em;
 }
 </style>

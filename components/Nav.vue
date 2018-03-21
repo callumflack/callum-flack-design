@@ -1,21 +1,24 @@
 <template lang="pug">
-  div
+  .promote
     header.block--pt7(role="banner")
       .container
         .journal-scope
-          h1.heading Callum Flack is a designer + developer.
-          p.nav-space
+          //- h1.heading(v-if="index") Change happens in moments of sudden delight.
+          //- h1.heading(v-else) Callum Flack is a designer + developer. 
+          //- p.nav-space
             | Since 2000, I've helped owners and creators design and build interfaces that merge brand with product. I'll counsel you on the big picture. I'll execute the details that seamless, authentic experiences are made of. I also 
             nuxt-link(to="/journal") blog
             | &nbsp;about this process. Read 
             nuxt-link(to="/about") about
             | &nbsp;me. Interested? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
-      //- c-pageheading(
-      //-   heading="Callum Flack is a designer + developer."
-      //-   :lede="page.lede"
-      //-   projectScope
-      //-   projectSpace
-      //- )
+          
+          p.nav-space
+            span.italic(v-if="index") Change happens in moments of sudden delight. 
+            | Callum Flack is a designer + developer. 
+            nuxt-link(to="/journal") blog
+            | &nbsp;about this process. Read 
+            nuxt-link(to="/about") about
+            | &nbsp;me. Interested? Please <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">email</a>.
 
     main.block--pb7(role="main")
       .container
@@ -45,7 +48,8 @@ export default {
     "c-navbutton": NavButton
   },
   props: {
-    currentPage: String
+    currentPage: String,
+    index: Boolean
   },
   data() {
     return {
@@ -117,35 +121,4 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
-
-.nav-space {
-  margin-bottom: calc(1.5 * var(--s-3)) !important;
-
-  @media (--md) {
-    margin-bottom: calc(1.5 * var(--s-3b)) !important;
-  }
-}
-
-.nav-mobile-layout {
-  @media (max-width: 1135px) {
-    align-items: flex-end;
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
-
-    & .block--py7 {
-      padding-bottom: var(--grid-gutter);
-    }
-
-    & a + a {
-      margin-top: 4px;
-    }
-  }
-  @media (min-width: 1136px) and (max-width: 1281px) {
-    align-items: flex-start;
-    display: flex;
-    left: calc((100 - 90) * 0.5vw);
-    right: auto;
-  }
-}
 </style>

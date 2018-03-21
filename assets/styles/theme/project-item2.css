@@ -2,6 +2,7 @@
   border-top: 1px solid;
   border-bottom: 0 solid;
   border-color: var(--c-rule);
+  border-color: transparent;
   display: block;
   padding: var(--s-3a) 0 var(--s-3a);
 
@@ -20,46 +21,16 @@
   filter: url("#gray");
 }
 
-.project-image {
+.project-item-left {
   padding-right: calc(0.25 * var(--grid-gutter));
-  width: 50%;
-
-  @media (--sm) {
-    width: 40%;
-  }
 }
 
-.project-text {
+.project-item-right {
   padding-left: calc(0.25 * var(--grid-gutter));
-  width: 50%;
-
-  @media (--sm) {
-    width: 35%;
-  }
-}
-
-.project-text h2,
-.project-text p {
-  width: 100%;
 }
 
 .project-divider {
-  letter-spacing: -0.2em;
+  // letter-spacing: -0.15em;
   /* margin-left: -0.1em; */
-  margin-right: 0.2em;
-}
-
-/*
-
-  JOURNAL THEME
-
-*/
-
-.page-journal .project-text {
-  padding-left: 0;
-  width: auto;
-
-  @media (--sm) {
-    width: 75%;
-  }
+  // margin-right: 0.15em;
 }

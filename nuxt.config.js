@@ -52,7 +52,10 @@ module.exports = {
     */
   },
   css: ["~/assets/styles/application.css"],
-  /*plugins: [{ src: "~/plugins/vue-slick", ssr: false }],*/
+  plugins: [
+    /*{ src: "~/plugins/vue-slick", ssr: false },
+    "~/plugins/vue-fixed-header"*/
+  ],
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-M4FPKD6" }]],
   axios: {
     credentials: false

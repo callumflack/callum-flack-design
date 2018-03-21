@@ -98,7 +98,7 @@ export default {
  */
 
 .modal {
-  background-color: var(--c-grayl);
+  background-color: var(--c-bg);
 }
 
 .modal .container {

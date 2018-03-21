@@ -30,6 +30,7 @@ p a:not(.linkSignal),
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position-y: 102%, 102%, 102%;
+    background-position-y: 90%, 90%, 90%;
   }
 }
 
@@ -39,14 +40,6 @@ p a:not(.linkSignal),
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position: 0% 93%, 100% 93%, 0% 93% !important;
   }
-}
-
-.footer p a:not(.Button) {
-  text-shadow: 0.03em 0 var(--c-metal), -0.03em 0 var(--c-metal),
-    0 0.03em var(--c-metal), 0 -0.03em var(--c-metal), 0.06em 0 var(--c-metal),
-    -0.06em 0 var(--c-metal), 0.09em 0 var(--c-metal), -0.09em 0 var(--c-metal),
-    0.12em 0 var(--c-metal), -0.12em 0 var(--c-metal), 0.15em 0 var(--c-metal),
-    -0.15em 0 var(--c-metal);
 }
 
 .page-journal-page strong a {
@@ -101,13 +94,18 @@ p a:not(.linkSignal),
  */
 
 .linkSignal:hover .linkSignal-target {
-  transform: translateX(1rem);
+  transform: translate(1rem, -0.2em);
   transition: all 0.5s ease;
 }
 
 .linkSignal-target {
   display: inline-block;
-  font-weight: 300;
-  transform: translateX(0);
+  font-family: var(--ff-stack-sans);
+  // font-size: 60%;
+  font-weight: 400;
+  transform: translate(0, -0.2em);
   transition: all 0.1s ease-out;
+
+  vertical-align: top;
+  margin-left: 0.25em;
 }

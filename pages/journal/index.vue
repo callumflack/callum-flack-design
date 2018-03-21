@@ -2,7 +2,6 @@
 .block--pb7
   header(role="banner")
     c-pageheading(
-      heading="Journal"
       lede="Writing about the process of designing and building human interfaces."
     )
   main(role="main")

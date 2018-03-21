@@ -1,16 +1,17 @@
 <template lang="pug">
   nuxt-link.project.ruled(:to="link")
     .u-flex.u-flexJustifyStart
-      figure.project-image
+      figure.project-image.project-item-left.u-size5of12
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
-      .project-text
-        h2.heading.m-t0.msm-m-b1
+      .project-text.project-item-right.u-size7of12
+        //- h2.heading.m-t0.m-b1
           span.project-visualLink {{ heading }}
-        p.text.text--meta.c-textLight
+        p.text
           span(v-if="year") {{ year }}
-          span.project-divider &nbsp;&nbsp;——&nbsp;
-          | {{ lede }}
+          //- span.project-divider &nbsp;&nbsp;——&nbsp;
+          span.project-divider &nbsp;—&nbsp;
+          span(v-html="lede")
 </template>
 
 

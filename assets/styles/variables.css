@@ -37,6 +37,8 @@
 
   --container: calc(65em + 6rem); /*1136*/
   --container-rg: 65em;
+  --container: calc(48em + 6rem); /*848*/
+  --container-rg: 48em;
   
   --container-sm: 400px;
   --container-md: 808px;
@@ -52,10 +54,10 @@
   --s-3: 1rem;
   --s-3a: 1.25rem;
   --s-3b: 1.5rem;
-  --s-4: 2.5rem;
-  --s-5: 4rem;
-  --s-6: 8rem;
-  --s-7: 12rem;
+  --s-4: 2.25rem;
+  --s-5: 4.5rem;
+  --s-6: 9rem;
+  --s-7: 18rem;
   
   --rs-1: 0.25rem;
   --rs-2: 0.5rem;
@@ -81,13 +83,15 @@
   
   --c-highlight: rgba(255, 235, 0, 0.25);
   --c-highlight: #FCF7C9;
+  --c-red: #ff0000;
+
   --c-success: #ff3700;
   --c-warning: #ff3700;
   --c-danger: #ff3700;
 
   --c-black: black;
   --c-ash: #222;
-  --c-text: #222;
+  --c-text: #151515;
   --c-textLight: #888;
   --c-rule: #ddd;
   --c-gray: #aaa;
@@ -95,6 +99,8 @@
   --c-device: #e7e7e7;
   --c-neutral: #eee;
   --c-bg: #fafafa;
+  --c-bg: #fdfdfd;
+  --c-bg: white;
   --c-white: white;
   
   --c-metal: #cdd8e2;
@@ -107,10 +113,12 @@
    */
 
   --ff-sans-regular: "Regular";
+  --ff-italic: "RegularItalic";
   --ff-sans-bold: "Bold";
   --ff-serif-heading: "Heading";
+  --ff-meta: "Meta";
+  --ff-caps: "Caps";
   
-  --ff-italic: var(--ff-sans-regular);
   --ff-button: var(--ff-sans-regular);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
@@ -123,9 +131,14 @@
    
    */
 
-  --s-text-unit: 1.3125;
-  --s-text: 1.3125em;
+  --s-text-unit: 1.875;
+  --s-text: 1.875em;
+  --s-heading: calc(0.92em * var(--s-text-unit));
+  --s-heading: calc(0.853333333em * var(--s-text-unit));
+  --s-caps: calc(0.9em * var(--s-text-unit));
+  --s-text-meta: 0.9375em;
   --s-text-meta: 1.0625em;
+  --s-nav: calc(0.853333333em * 0.75 * var(--s-text-unit));
 
   /* 
   
@@ -133,11 +146,13 @@
    
    */
   
-  --ls-heading: 0.0175em;
+  --ls-heading: 0;
   --ls-meta: 0.00625em;
-  --ls-text: -0.0175em;
+  --ls-text: -0.01em;
+  --ls-caps: 0.1em;
+  --ls-executive: -0.01em;
 
-  --lh-text: 1.45;
+  --lh-text: 1.333;
 
   /* 
   

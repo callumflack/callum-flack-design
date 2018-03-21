@@ -1,11 +1,11 @@
 <template lang="pug">
-.block--pb7
+.block--pb7.block--pt7
   header(role="banner")
-    c-pageheading(
-      :heading="page.heading"
-      :lede="page.lede"
-      projectScope
-    )
+    //- c-pageheading(
+    //-   :heading="page.heading"
+    //-   :lede="page.lede"
+    //-   projectScope
+    //- )
     .container
       c-lazyimage(
         v-if="page.heroInCloudinary"
@@ -14,8 +14,7 @@
         style="opacity:0.9"
       )
       c-image(
-        v-else
-        portrait
+        v-else-if="page.heroImage"
         local
         :src="page.heroImage"
         style="opacity:0.9"

@@ -12,12 +12,13 @@
 
 @import "components/button.css";
 @import "components/container.css";
+@import "components/cover-image.css";
+@import "components/cover-image.css";
 @import "components/form.css";
 @import "components/icon.css";
 @import "components/img.css";
 
 @import "layout/block.css";
-/*@import "layout/block2.css";*/
 @import "layout/figure.css";
 @import "layout/grid.css";
 

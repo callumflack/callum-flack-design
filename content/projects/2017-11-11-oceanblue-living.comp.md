@@ -2,7 +2,7 @@
 section: Projects
 year: 2016
 heading: Oceanblue Living
-lede: A website to help create a community around transformative architectural metalworks.
+lede: A website and brand polish for <span class="heading heading--inLede">Oceanblue Living</span> to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg

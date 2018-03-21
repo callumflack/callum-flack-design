@@ -30,15 +30,25 @@
 .figure--project {
   margin-top: var(--s-5);
   margin-bottom: var(--s-5);
+  width: 100%;
 
   @media (--md) {
     margin-top: var(--s-6);
     margin-bottom: var(--s-6);
   }
   @media (--lg) {
-    margin-top: var(--s-7);
-    margin-bottom: var(--s-7);
+    // margin-top: var(--s-7);
+    // margin-bottom: var(--s-7);
   }
+
+  /*@media (min-width: 1136px) {
+    left: calc(-37.5vw + 50%);
+    width: 75vw;
+  }
+  @media (min-width: 1840px) {
+    left: calc(-25vw + 50%);
+    width: 50vw;
+  }*/
 }
 
 .figure--large {
@@ -62,7 +72,9 @@
   overflow: hidden;
 
   @media (--sm) {
-    margin-right: 50%;
+    margin-left: 50%;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
   }
 }

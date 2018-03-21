@@ -22,6 +22,7 @@
     "nuxtent": "1.2.1",
     "suitcss": "3.0.0",
     "suitcss-preprocessor": "4.0.0",
+    "vue-fixed-header": "^1.0.1",
     "vue-slick": "1.1.12"
   },
   "devDependencies": {

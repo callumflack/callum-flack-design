@@ -12,9 +12,9 @@
           no-ssr
             nuxtent-body(:body="page.body")
           
-          time.u-block.block--mt4.text.text--meta.c-textLight(:date-time="page.date") Published: {{ page.published }}
-          p.text.text--meta.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
-          p.text.text--meta.c-textLight(v-if="page.note", v-html="page.note")
+          time.u-block.block--mt4.text.text--meta(:date-time="page.date") Published: {{ page.published }}
+          p.text.text--meta(v-if="page.updated") Updated: {{ page.updated }}
+          p.text.text--meta(v-if="page.note", v-html="page.note")
           
           .block--mt6(v-if="page.tweet")
             //- hr.c-title.mb3

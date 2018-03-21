@@ -1,6 +1,6 @@
 <template lang="pug">
   nuxt-link.project.linkSignal.block--mb6(:to="link")
-    figure.project-imag(v-if="image")
+    //- figure.project-image(v-if="image")
       img(:src="image")
     .project-text
       h1.heading {{ heading }}

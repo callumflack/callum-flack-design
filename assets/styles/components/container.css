@@ -18,3 +18,14 @@
     padding-right: var(--grid-gutter);
   }
 }
+
+.container--large {
+  @media (min-width: 1136px) {
+    // left: calc(-45vw + 50%);
+    max-width: 90vw;
+  }
+  @media (min-width: 1840px) {
+    // left: calc(-33vw + 50%);
+    max-width: 66vw;
+  }
+}

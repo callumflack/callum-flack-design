@@ -6,17 +6,24 @@
 
 .page {
   background-color: var(--c-bg);
+  border-bottom: 1px solid var(--c-rule);
   min-height: 100vh;
   position: relative;
   z-index: 3;
 }
 
-.page-journal-page .masthead .block--py7 {
-  @media (--md) {
-    width: calc(100% * 2 / 3) !important;
-  }
-}
+.page-index .promote {
+  position: relative;
+  z-index: 1;
 
-.page-journal-page .form {
-  width: 100% !important;
+  & h1,
+  & p,
+  & a {
+    // border-color: var(--c-white);
+    // color: var(--c-white);
+  }
+
+  & a {
+    text-shadow: initial;
+  }
 }

@@ -3,7 +3,7 @@
     .container
       div(:class="scopeClasses")
         h1.heading(v-if="heading", v-html="heading")
-        p.text.m-t0.m-b0(v-if="lede", v-html="lede")
+        p.text.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
       return [
         "block--pt7",
         {
-          "block--pb7": this.projectSpace,
+          "block--matchFixedMenu": this.projectSpace,
           "block--pb5": !this.projectSpace
         }
       ];
