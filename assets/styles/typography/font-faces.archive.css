@@ -1,0 +1,78 @@
+/*
+
+  Font-faces
+
+ */
+
+@font-face {
+  font-family: var(--ff-sans-regular);
+  src: url("~static/fonts/Calibre-Regular.woff") format("woff");
+  src: url("~static/fonts/Metric-Regular.woff") format("woff");
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/Executive-55Regular.otf") format("woff");
+  src: url("~static/fonts/IBMPlexSans-Regular.otf") format("woff");
+  src: url("~static/fonts/Noe-Text-Book.woff") format("woff");
+  src: url("~static/fonts/NeueHaasGroteskTextRegular-3.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/Minion-Regular.otf") format("woff");
+  src: url("~static/fonts/quadraat.ttf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-sans-bold);
+  src: url("~static/fonts/Calibre-Regular.woff") format("woff");
+  src: url("~static/fonts/Metric-Regular.woff") format("woff");
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/Executive-55Regular.otf") format("woff");
+  src: url("~static/fonts/IBMPlexSans-Regular.otf") format("woff");
+  src: url("~static/fonts/Noe-Text-Book.woff") format("woff");
+  src: url("~static/fonts/NeueHaasGroteskTextRegular-3.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/Minion-Regular.otf") format("woff");
+  src: url("~static/fonts/quadraat.ttf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-serif-heading);
+  src: url("~static/fonts/Metric-Regular.woff") format("woff");
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/IBMPlexSans-Regular.otf") format("woff");
+  src: url("~static/fonts/Noe-Text-Book.woff") format("woff");
+  src: url("~static/fonts/Executive-65Medium.otf") format("woff");
+  src: url("~static/fonts/NeueHaasUnicaPro-Heavy.woff") format("woff");
+  src: url("~static/fonts/NeueHaasGroteskTextRegular-3.woff") format("woff");
+  src: url("~static/fonts/quadraat-italic.ttf") format("woff");
+  src: url("~static/fonts/Minion-Italic.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.ttf") format("woff");
+  src: url("~static/fonts/Calibre-Semibold.woff") format("woff");
+  src: url("~static/fonts/BWHaasText-65Medium.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-italic);
+  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/Minion-Italic.otf") format("woff");
+  src: url("~static/fonts/quadraat-italic.ttf") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-meta);
+  src: url("~static/fonts/PitchSansWeb-Medium.woff") format("woff");
+  src: url("~static/fonts/Executive-55Regular.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/Minion-Regular.otf") format("woff");
+  src: url("~static/fonts/quadraat.ttf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-caps);
+  src: url("~static/fonts/Minion-Bold.otf") format("woff");
+  src: url("~static/fonts/quadraat-bold.ttf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

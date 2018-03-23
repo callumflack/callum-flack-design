@@ -1,9 +1,15 @@
 <template lang="pug">
   div(:class="blockClasses")
     .container
-      div(:class="scopeClasses")
-        h1.heading(v-if="heading", v-html="heading")
-        p.text.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
+      //- div(:class="scopeClasses")
+      .u-size5of6(:class="scopeClasses")
+        h1.heading(
+          v-if="heading"
+          :projectColor="headingColor"
+          v-html="heading"
+        )
+        //- p.text.italic.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
+        h2.text.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>
@@ -12,26 +18,32 @@ export default {
   props: {
     heading: String,
     lede: String,
+    projectColor: Boolean,
     projectSpace: Boolean,
     projectScope: Boolean
   },
   computed: {
     blockClasses() {
       return [
-        "block--pt7",
+        "block--pb7",
+        "block--matchFixedMenu",
         {
-          "block--matchFixedMenu": this.projectSpace,
-          "block--pb5": !this.projectSpace
+          // "block--matchFixedMenu": this.projectSpace,
+          // "block--pb5": !this.projectSpace,
+          x: !this.projectSpace
         }
       ];
     },
     scopeClasses() {
       return [
         {
-          "project-scope": this.projectScope,
+          TypeScope: this.projectScope,
           "journal-scope": !this.projectScope
         }
       ];
+    },
+    headingColor() {
+      return ["style='color: `${projectColor}`'"];
     }
   }
 };

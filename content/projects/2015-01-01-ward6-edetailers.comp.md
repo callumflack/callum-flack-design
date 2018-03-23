@@ -7,7 +7,9 @@ thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 heroInCloudinary: true
-tags: website, branding
+heroImageNoShadow: true
+projectColor: rgb(126, 158, 185)
+tags: Brand, Interface, Development
 nextProject: /work/vj-ray
 nextProjectHeading: VJ Ray Real Estate
 featured: true

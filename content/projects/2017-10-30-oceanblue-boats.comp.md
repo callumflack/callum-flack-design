@@ -8,14 +8,15 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
 heroInCloudinary: true
 heroFrame: false
-tags: website, branding
+projectColor: rgb(12, 46, 82)
+tags: Brand, Interface, Development
 nextProject: /work/ward6
 nextProjectHeading: Ward6
 featured: true
 ---
 
 OceanBlue Boats had just moved into a new warehouse space that was four times larger. I
-was asked to redesign their branding and build a website around their love for all
+was asked to redesign their Branding and build a website around their love for all
 things boat-making and general fabrication.
 
 @[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517378364/okok/oceanblueboats-mobile-screens.png")
@@ -27,7 +28,7 @@ chapter that talks about Vince's boat making specialty, what the new factory wor
 
 I worked with [J-Create Photography](http://j-create.com.au/) to capture the tight-knit team and the workshop space in action, portraying them as uncommon local craftspeople.
 
-> We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it.” _Vince Cassaniti, Owner_
+> We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it.” _— Vince Cassaniti, Owner_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517378751/okok/oceanblueboats-layout-d.jpg")
 

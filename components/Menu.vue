@@ -1,11 +1,10 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
     .container
-      //- nav.Nav
       nav.Nav.u-flex.u-flexJustifyBetween
         div
           c-menulink.heading(
-            label="CFd"
+            label="CF/d"
             link="/"
             exact
           )
@@ -63,7 +62,7 @@ export default {
         },
         {
           label: "Blog",
-          link: "/journal"
+          link: "/journal/designers-should-code"
         },
         {
           label: "About",
@@ -122,6 +121,8 @@ export default {
   /* height: 73px; */
   position: fixed;
   top: 0;
+  /* left: 0;
+  right: 0; */
   width: 100%;
   z-index: 999;
 }
@@ -134,6 +135,7 @@ export default {
   animation: open 0.5s ease forwards;
   background-color: rgba(253, 253, 253, 0.96);
   background-color: rgba(255, 255, 255, 0.96);
+  background-color: var(--c-bg);
 }
 
 @keyframes collapse {
@@ -161,41 +163,11 @@ export default {
 .Nav {
   border-bottom: 0.15rem solid var(--c-text);
   border-bottom: 1px solid var(--c-text);
-  padding-bottom: calc(0.5 * var(--s-3));
+  border-color: transparent;
+  /* padding-bottom: calc(0.5 * var(--s-3)); */
   padding-top: var(--s-4);
-  /* padding-bottom: var(--s-4); */
+  padding-bottom: var(--s-4);
 
-  font-size: calc((16 / (var(--s-text-unit) * 16)) * var(--s-nav));
-}
-
-.nav-space {
-  margin-bottom: calc(1.5 * var(--s-3)) !important;
-
-  @media (--md) {
-    margin-bottom: calc(1.5 * var(--s-4)) !important;
-  }
-}
-
-.nav-mobile-layout {
-  @media (max-width: 1135px) {
-    align-items: flex-end;
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
-
-    & .block--py7 {
-      padding-bottom: var(--grid-gutter);
-    }
-
-    & a + a {
-      margin-top: 4px;
-    }
-  }
-  @media (min-width: 1136px) and (max-width: 1281px) {
-    align-items: flex-start;
-    display: flex;
-    left: calc((100 - 90) * 0.5vw);
-    right: auto;
-  }
+  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-nav)); */
 }
 </style>

@@ -1,0 +1,23 @@
+/*
+
+  Utility: Responsive line break
+  https://css-tricks.com/injecting-line-break/
+  1. emulates text-align: center
+
+*/
+
+@media (--lg) {
+  span.u-lg-lineBreak {
+    display: table !important;
+  }
+  span.u-lg-lineBreakCenter {
+    display: table !important;
+    margin: auto; /* 1. */
+  }
+}
+
+@media (--sm) {
+  .u-sm-lineBreak {
+    display: table !important;
+  }
+}

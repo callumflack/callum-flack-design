@@ -1,13 +1,13 @@
 <template lang="pug">
-  nuxt-link.project.linkSignal.block--mb6(:to="link")
+  nuxt-link.project.LinkSignal.block--mb6(:to="link")
     //- figure.project-image(v-if="image")
       img(:src="image")
     .project-text
       h1.heading {{ heading }}
-        //- span.linkSignal-target &nbsp;→
+        //- span.LinkSignal-target &nbsp;→
       p.text(v-html="lede") 
         
-      //- p.project-subtext.project-scope-reset
+      //- p.project-subtext.TypeScope-reset
         span(v-if="date") {{ date }}
 </template>
 

@@ -1,0 +1,63 @@
+/* selector for non-writable inputs from hi-q */
+
+@custom-selector :--not-writable
+  &:disabled,
+  &[aria-disabled],
+  &[readonly];
+
+/* 
+  input mixin 
+*/
+
+@define-mixin input {
+  /* remove default browser appearance */
+  @mixin is-controlled;
+  margin: 0;
+  border: 1px solid var(--c-border);
+  border-radius: 0.2rem;
+  background-color: var(--c-white);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--fw-regular);
+  line-height: inherit;
+  color: var(--c-textLight);
+  transition: border-color var(--speed, 0.1s) var(--easing), color var(--speed) var(--easing), background-color var(--speed, 0.1s) var(--easing);
+  
+  &::placeholder {
+    color: var(--c-gray);
+  }
+  &:hover {
+    border-color: var(--c-brand);
+    background-color: var(--c-white);
+    color: var(--c-text);
+    &::placeholder {
+      color: var(--c-gray);
+    }
+  }
+  &:focus {
+    border-color: var(--c-brand);
+    background-color: var(--c-white);
+    box-shadow: 0 0 0 0.2rem var(--c-brand);
+    color: var(--c-text);
+    &::placeholder {
+      color: var(--c-gray);
+    }
+  }
+  :--not-writable {
+    border-color: var(--c-border);
+    background-color: var(--c-neutral);
+    color: var(--c-gray);
+    &::placeholder {
+      color: var(--c-gray);
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:required:invalid {
+    border-color: var(--c-danger);
+  }
+  &:required:valid {
+    border-color: var(--c-success);
+  }
+}

@@ -53,7 +53,7 @@ There's no doubt that doing both UI design and development is hard. Progress in 
 
 But if it’s an all-you-can eat buffet, do you dig in all night? You can’t master everything, and you shouldn’t try to. You can, however, **embrace the [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity), go taste-testing and make informed decisions about what interests you.** In this situation, I’d prefer the problem of abundance over that of scarcity. The trick is to reframe the problem as [not one of input, but of throughput](https://www.ribbonfarm.com/2008/09/11/how-to-measure-information-work/). Jump in. See what sticks.
 
-> The trick, William Potter, is not minding that it hurts.” _Peter O'Toole as Lawrence of Arabia_
+> The trick, William Potter, is not minding that it hurts.” _— Peter O'Toole as Lawrence of Arabia_
 
 If you can let go of your identity, expose yourself to strange, new ways and give yourself [“the freedom to search in the darkness where the problems lie”](https://ia.net/topics/innovation-as-art-at-scale/), you’ll come out the other side with some mutant pollen stuck to your skin.
 

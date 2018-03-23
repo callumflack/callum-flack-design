@@ -1,0 +1,121 @@
+/* 
+
+  Font sizes 
+
+  https://github.com/jonathanharrell/hiq/blob/master/pcss/typography/sizes.pcss
+
+*/
+
+.fs-text {
+  font-size: var(--fs-text);
+}
+.fs-textMeta {
+  font-size: var(--fs-textMeta);
+}
+.fs-textLarge {
+  font-size: var(--fs-textLarge);
+}
+.fs-subheading {
+  font-size: var(--fs-subheading);
+}
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+
+/*
+
+  Font weights
+
+ */
+
+.fw-light {
+  font-family: var(--ff-text-regular), , var(--ff-stack-sans) !important;
+  font-weight: var(--fw-light) !important;
+}
+.fw-regular {
+  font-family: var(--ff-text-regular), , var(--ff-stack-sans) !important;
+  font-weight: var(--fw-regular) !important;
+}
+.fw-medium {
+  font-family: var(--ff-text-medium), , var(--ff-stack-sans) !important;
+  font-weight: var(--fw-medium) !important;
+}
+.fw-bold {
+  font-family: var(--ff-text-bold), , var(--ff-stack-sans) !important;
+  font-weight: var(--fw-bold) !important;
+}
+
+/*
+
+  Font styles
+
+ */
+
+.fs-normal {
+  font-style: normal;
+}
+.fs-italic {
+  font-family: var(--ff-text-regular-italic), , var(--ff-stack-sans) !important;
+  font-style: italic;
+}
+
+/*
+
+  Font leading
+
+ */
+
+.fl-tight {
+  line-height: var(--fl-tight);
+}
+.fl-regular {
+  line-height: var(--fl-regular);
+}
+.fl-loose {
+  line-height: var(--fl-loose);
+}
+
+/*
+
+  Font tracking
+
+ */
+
+.ft-tight {
+  letter-spacing: var(--ft-tight);
+}
+.ft-regular {
+  letter-spacing: var(--ft-regular);
+}
+.ft-loose {
+  letter-spacing: var(--ft-loose);
+}
+
+/*
+
+  Variables applied
+
+ */
+
+p,
+ul,
+ol {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-regular);
+  line-height: var(--fl-regular);
+  letter-spacing: var(--ft-regular);
+}
+
+h1 {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  line-height: var(--fl-tight);
+  letter-spacing: var(--ft-tight);
+}
+
+h2 {
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-bold);
+  line-height: var(--fl-tight);
+  letter-spacing: var(--ft-tight);
+}

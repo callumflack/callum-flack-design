@@ -2,7 +2,7 @@
 .block--pb7
   header(role="banner")
     c-pageheading(
-      lede="Writing about the process of designing and building human interfaces."
+      lede="How to create digital experiences that resonate."
     )
   main(role="main")
     .container

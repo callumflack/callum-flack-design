@@ -31,20 +31,15 @@
 
   */
 
-  --grid-gutter: 3rem;
+  --grid-gutter: 2rem;
   --spacer: 24px;
   --spacer-large: 0.75rem;
 
-  --container: calc(65em + 6rem); /*1136*/
-  --container-rg: 65em;
-  --container: calc(48em + 6rem); /*848*/
-  --container-rg: 48em;
+  --container: calc(600px + (2 * var(--grid-gutter)));
+  --container-md: calc(960px + (2 * var(--grid-gutter)));
+  --container-sm: calc(460px + (2 * var(--grid-gutter)));
+  --container-rg-img: 800px;
   
-  --container-sm: 400px;
-  --container-md: 808px;
-  --container-lg: 1120px;
-  --container-xl: 1600px;
-
   --space: 1rem;
   --inlineBlockChildrenSpace: var(--space);
   
@@ -54,10 +49,10 @@
   --s-3: 1rem;
   --s-3a: 1.25rem;
   --s-3b: 1.5rem;
-  --s-4: 2.25rem;
-  --s-5: 4.5rem;
-  --s-6: 9rem;
-  --s-7: 18rem;
+  --s-4: 2rem;
+  --s-5: 4rem;
+  --s-6: 7rem;
+  --s-7: 10rem;
   
   --rs-1: 0.25rem;
   --rs-2: 0.5rem;
@@ -90,17 +85,19 @@
   --c-danger: #ff3700;
 
   --c-black: black;
-  --c-ash: #222;
-  --c-text: #151515;
-  --c-textLight: #888;
-  --c-rule: #ddd;
+  --c-dark: #171515;
+  --c-ash: #24292e;
+  --c-text: var(--c-ash);
+  --c-text: #111;
+  --c-textLight: #999;
   --c-gray: #aaa;
   --c-border: #ccc;
+  --c-rule: #d5d5d5;
+  --c-rule: #eaeaea;
   --c-device: #e7e7e7;
   --c-neutral: #eee;
+  --c-bg: #f2f2f2;
   --c-bg: #fafafa;
-  --c-bg: #fdfdfd;
-  --c-bg: white;
   --c-white: white;
   
   --c-metal: #cdd8e2;
@@ -112,14 +109,15 @@
   
    */
 
-  --ff-sans-regular: "Regular";
-  --ff-italic: "RegularItalic";
-  --ff-sans-bold: "Bold";
-  --ff-serif-heading: "Heading";
-  --ff-meta: "Meta";
-  --ff-caps: "Caps";
+  --ff-text-regular: "Regular";
+  --ff-text-regular-italic: "RegularItalic";
+  --ff-text-medium: "Medium";
+  --ff-text-bold: "Bold";
+  --ff-text-meta: var(--ff-text-regular);
+
+  --ff-heading: "Heading";
   
-  --ff-button: var(--ff-sans-regular);
+  --ff-button: var(--ff-text-regular);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
   --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -131,28 +129,51 @@
    
    */
 
-  --s-text-unit: 1.875;
-  --s-text: 1.875em;
-  --s-heading: calc(0.92em * var(--s-text-unit));
-  --s-heading: calc(0.853333333em * var(--s-text-unit));
-  --s-caps: calc(0.9em * var(--s-text-unit));
-  --s-text-meta: 0.9375em;
-  --s-text-meta: 1.0625em;
-  --s-nav: calc(0.853333333em * 0.75 * var(--s-text-unit));
+  --fs-text-unit: 1.3125;
+  --fs-text-unit: 1.25;
+  --fs-text-unit: 1;
+  --fs-text-unit: 1.0625;
+  --fs-text-unit: 1.125;
+
+  --fs-text: calc(1em * var(--fs-text-unit));
+  --fs-text-meta: calc(1em * var(--fs-text-unit));
+  --fs-heading: calc(1.6875em * var(--fs-text-unit));
+
+  --fs-nav: var(--fs-text-meta);
+  --fs-caps: var(--fs-text-meta);
+
+  /* 
+
+    Font weights
+
+   */
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;  
 
   /* 
   
-    ls & lh 
+    Font leading (line-height) and font tracking (letter-spacing)
    
    */
   
-  --ls-heading: 0;
-  --ls-meta: 0.00625em;
-  --ls-text: -0.01em;
-  --ls-caps: 0.1em;
-  --ls-executive: -0.01em;
+  --ft-text: -0.0025em;
+  --ft-meta: 0.00625em;
+  --ft-caps: 0.1em;
+  --ft-heading: -0.0025em;
+  --ft-super: -0.005em;
 
-  --lh-text: 1.333;
+  --fl-text: 1.4;
+
+  --ft-tight: -0.005em;
+  --ft-regular: 0;
+  --ft-loose: 0.01em;
+
+  --fl-tight: 1.15;
+  --fl-regular: 1.4;
+  --fl-loose: 1.7;
 
   /* 
   
@@ -163,4 +184,12 @@
   --transition-duration: 0.2s;
   --transition-delayed: 0.4s;
   --transition-debounce: 2.5s;
+
+  /* 
+  
+    Project theme 
+  
+   */
+
+  --fixedMenuHeight: 87px;
 }

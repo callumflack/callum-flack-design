@@ -44,7 +44,8 @@ export default {
     frame: Boolean,
     large: Boolean,
     project: Boolean,
-    portrait: Boolean
+    portrait: Boolean,
+    noHeroShadow: Boolean
   },
 
   computed: {
@@ -53,6 +54,7 @@ export default {
         "image",
         "figure",
         {
+          "ProjectHero-noShadow": this.noHeroShadow,
           "figure--frame": this.frame,
           "figure--large": this.large,
           "figure--project": this.project,

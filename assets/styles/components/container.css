@@ -5,12 +5,11 @@
  */
 
 .container {
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   max-width: var(--container);
-  padding-left: calc(0.5 * var(--grid-gutter));
-  padding-right: calc(0.5 * var(--grid-gutter));
+  padding-left: calc(1 * var(--grid-gutter));
+  padding-right: calc(1 * var(--grid-gutter));
   width: 100%;
 
   @media (--sm) {
@@ -19,7 +18,15 @@
   }
 }
 
-.container--large {
+.container--sm {
+  max-width: var(--container-sm);
+}
+
+.container--md {
+  max-width: var(--container-md);
+}
+
+.container--lg {
   @media (min-width: 1136px) {
     // left: calc(-45vw + 50%);
     max-width: 90vw;

@@ -1,5 +1,7 @@
 <template lang="pug">
-  p.block--mt4.text.text--meta.text-noIndent(v-html="note")
+.heading-space
+  hr
+  p.c-textLight.note(v-html="note")
 </template>
 
 <script scoped>

@@ -37,14 +37,12 @@ li {
 
   */
 
-.project-scope ul,
-.journal-scope ul {
+.TypeScope ul {
   list-style-type: none;
   padding-left: 1em;
 }
 
-.project-scope li,
-.journal-scope li {
+.TypeScope li {
   position: relative;
 
   &:before {

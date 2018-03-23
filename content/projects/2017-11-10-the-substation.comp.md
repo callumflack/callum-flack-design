@@ -2,14 +2,14 @@
 section: Projects
 year: 2016
 heading: The Substation
-lede: A website and branding revision for the Melbourne not-for-profit arts centre.
+lede: A website and Branding revision for The Substation, <span class="u-lg-lineBreak">a not-for-profit arts centre in Melbourne, Australia.</span>
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/thesubstation-hero-THIS_baprpq.jpg
 heroInCloudinary: true
 heroRatio: 65
 heroFrame: false
-tags: website, branding
+tags: Interface, Development
 nextProject: /work/primary-healthcare-network
 nextProjectHeading: Primary Healthcare Network
 featured: true
@@ -18,7 +18,7 @@ featured: true
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
 efficiency, flexibility and performance.
 
-As we progressed, I came to understand their vision and evolved their digital branding
+As we progressed, I came to understand their vision and evolved their digital Branding
 to match.
 
 @[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
@@ -35,7 +35,7 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
-> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile.” _Brad Spolding, Managing Director_
+> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile.” _— Brad Spolding, Managing Director_
 
 Together with The Substation team, we've stemmed the constant maintenance costs that drained their digital marketing effectiveness. Now with a performant codebase, we're able to continue improving their digital marketing.
 

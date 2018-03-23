@@ -1,10 +1,10 @@
 <template lang="pug">
-  nuxt-link.link(
+  nuxt-link(
     :class="currentPage"
     :to='link'
     :exact="exact"
-    v-html="label"
-  ) 
+  )
+    span {{ label }}
 </template>
 
 <script>
@@ -38,8 +38,12 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
+.link + .link {
+  margin-left: var(--s-3b);
+}
+
 .link:after {
-  content: "/";
+  /* content: "/";
   content: "";
   display: inline-block;
   font-family: var(--ff-stack-sans);
@@ -47,23 +51,28 @@ export default {
   font-weight: 200;
   margin: 0 var(--s-3);
   position: relative;
-  transform: translateY(-2px);
+  transform: translateY(-2px); */
 }
 
 .link:last-of-type:after {
-  content: initial;
+  /* content: initial; */
 }
 
 .link:last-of-type:before {
-  width: 100%;
+  /* width: 100%; */
 }
 
-.nuxt-link-active {
+.nuxt-link-active span {
+  /* font-family: var(--ff-text-medium), var(--ff-stack-serif); */
+  /* font-weight: 500; */
   /* padding-left: 0.75rem; */
   position: relative;
+  /* text-decoration: underline; */
 }
 
-.nuxt-link-active:before {
+.nuxt-link-active span:before {
+  /* pointer */
+
   /* content: "→";
   font-family: var(--ff-stack-sans);
   font-size: 0.8em;
@@ -72,19 +81,6 @@ export default {
   margin-right: var(--s-2);
   position: relative;
   transform: translateY(-1px); */
-
-  content: "\25FC";
-  content: "\25B7";
-  content: "\25B6";
-  content: "\00B0";
-  display: inline-block;
-  /* font-family: var(--ff-stack-sans);
-  font-size: 1.25em;
-  font-weight: 700; */
-  left: -0.1875rem;
-  left: -9px;
-  position: absolute;
-  /* line-height: 0.75; */
 
   /* line-thru */
 
@@ -97,5 +93,29 @@ export default {
   height: 1px;
   position: absolute;
   width: 69%; */
+
+  /* signal */
+
+  /* content: "\25FC";
+  content: "\25B7";
+  content: "\25B6";
+  content: "\00B0";
+  content: "*";
+  content: "";
+  display: inline-block;
+  left: -0.1875rem;
+  left: -10px;
+  position: absolute; */
+
+  /* signal */
+
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  position: absolute;
 }
 </style>

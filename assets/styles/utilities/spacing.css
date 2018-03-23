@@ -234,6 +234,15 @@
   padding-right: var(--s-7) !important;
 }
 
+/*
+
+  Responsive
+
+ */
+
+.m-aAuto {
+  margin: auto !important;
+}
 .m-a0 {
   margin: var(--s-0) !important;
 }
@@ -392,6 +401,10 @@
   margin-bottom: var(--s-7) !important;
 }
 
+.m-xAuto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .m-x0 {
   margin-left: var(--s-0) !important;
   margin-right: var(--s-0) !important;

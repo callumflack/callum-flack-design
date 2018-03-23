@@ -2,30 +2,32 @@
 section: Projects
 year: 2016
 heading: Primary Healthcare Network
-lede: A mobile-first web app to survey patient well-being in North Queensland.
+lede: A mobile-first  to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517285211/okok/phn-mobile-screens-1.png
-heroInCloudinary: true
+heroImage: /images/phn-mobile-screens-ash.png
+heroInCloudinary: false
+heroImageNoShadow: true
 heroFrame: false
 heroRatio: 0.45
-tags: web app
+projectColor: rgb(35, 75, 103)
+tags: Interface, Development
 nextProject: /work/raatsicc
 nextProjectHeading: RATSICC
 featured: true
 ---
 
-Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a maintainable, easy to use web app that worked on any device, and securely stored patient responses.
+Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a maintainable, easy to use that worked on any device, and securely stored patient responses.
 
 <!-- @[MarkdownMovie](laptop src="/images/phn-video.mp4") -->
 
-@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
+@[MarkdownMovie](reverseButton iphone src="/images/phn-video-m.mp4")
 
 <!-- We built the app using React.js to allow flexible iteration as feedback required it. For example, we can now add offline capability into the app without rewritting it. This may become useful in remote parts of Queensland with intermittent internet coverage. -->
 
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
-@[MarkdownMovie](reverseButton iphone src="/images/phn-video-m.mp4")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
 
 <!-- All data collected is anonymous. At survey completion, users are presented with a score that rates their quality of life. Users can share their score by email or SMS. -->
 

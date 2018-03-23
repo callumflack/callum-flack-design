@@ -1,0 +1,31 @@
+/*
+
+  Flex grid
+
+ */
+
+.FlexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--grid-gutter));
+  margin-left: calc(-1 * var(--grid-gutter));
+
+  & > * {
+    flex: 1 1 auto;
+    padding-right: var(--grid-gutter);
+    padding-left: var(--grid-gutter);
+  }
+}
+
+.FlexGrid--sm {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * 1rem);
+  margin-left: calc(-1 * 1rem);
+
+  & > * {
+    flex: 1 1 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

@@ -13,19 +13,6 @@ function calcImageDimension(length, pixelRatio) {
 
 export default {
   name: "markdown-image",
-  computed: {
-    figureClasses() {
-      return [
-        "figure",
-        {
-          "figure--portrait": this.portrait,
-          "figure--project": this.project,
-          "figure--large": this.large,
-          "figure--frame": this.frame
-        }
-      ];
-    }
-  },
   props: {
     src: {
       type: String,
@@ -37,7 +24,23 @@ export default {
     project: Boolean,
     large: Boolean,
     frame: Boolean,
+    noHeroShadow: Boolean,
     local: Boolean
+  },
+  computed: {
+    figureClasses() {
+      return [
+        "figure",
+        {
+          "ProjectHero-noShadow": this.noHeroShadow,
+          "figure--textColumnImage": !this.large,
+          "figure--project": this.project,
+          "figure--portrait": this.portrait,
+          "figure--large": this.large,
+          "figure--frame": this.frame
+        }
+      ];
+    }
   },
   data() {
     return {

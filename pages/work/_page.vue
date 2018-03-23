@@ -3,41 +3,41 @@ div
   article.block--pb7
     header(role="banner")
       c-pageheading(
+        :heading="page.heading"
         :lede="page.lede"
         projectSpace
       )
       .container
-        c-lazyimage(
-          v-if="page.heroInCloudinary"
-          large
-          project
-          :src="page.heroImage"
-          :frame="page.heroFrame"
-          :ratio="page.heroRatio"
-        )
-        c-image(
-          v-else
-          large
-          project
-          local
-          :src="page.heroImage"
-          :frame="page.heroFrame"
-          :ratio="page.heroRatio"
-        )
+        .ProjectHero(:style="projectColor")
+          c-lazyimage(
+            v-if="page.heroInCloudinary"
+            :src="page.heroImage"
+            :noHeroShadow="page.heroImageNoShadow"
+            :frame="page.heroFrame"
+            :ratio="page.heroRatio"
+          )
+          c-image(
+            v-else
+            local
+            :src="page.heroImage"
+            :noHeroShadow="page.heroImageNoShadow"
+            :frame="page.heroFrame"
+            :ratio="page.heroRatio"
+          )
     main(role="main")
       .container
-        nuxtent-body.project-scope(:body="page.body")
-  nuxt-link.next-project.linkSignal.block--py7(:to="page.nextProject")
+        nuxtent-body.TypeScope(:body="page.body")
+  nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
-        .text.text--meta.u-marginB1 Next project
-        .heading.small-space 
+        .text.m-b3 Next project
+        .super
           | {{ page.nextProjectHeading }}
-          span.ml1.linkSignal-target →
+          //- span.ml1.LinkSignal-target →
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
+import PageHeading from "~/components/PageHeading2.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
 import LazyImage from "~/components/LazyImage.vue";
@@ -53,15 +53,24 @@ export default {
     heading: String,
     lede: String,
     heroImage: String,
+    heroImageNoShadow: Boolean,
     heroRatio: String,
+    heroFrame: Boolean,
+    heroInCloudinary: Boolean,
     heroVideo: String,
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
     heroVideoPoster: String,
-    heroFrame: Boolean,
-    heroInCloudinary: Boolean,
     nextProject: String,
     nextProjectheading: String
+  },
+  computed: {
+    projectColor() {
+      // (v-if="page.projectColor", :style = 'projectColor')
+      return this.page.projectColor
+        ? `background-color: ${this.page.projectColor}`
+        : "background-color: rgb(70,70,70)";
+    }
   },
   head() {
     return {
@@ -88,18 +97,16 @@ export default {
 <style>
 @import "../../assets/styles/variables.css";
 
-.next-project {
-  border-top: 1px solid rgba(138, 138, 138, 0.15);
-  border-color: var(--c-border);
+.NextProject {
+  background-color: var(--c-dark);
+  /* border-top: 1px solid rgba(138, 138, 138, 0.15); */
+  /* border-color: var(--c-rule); */
   display: block;
-}
 
-/* matches `blockquote p em` in type.css */
-.small-space {
-  margin-top: var(--s-1);
-
-  @media (--lg) {
-    margin-top: var(--s-2);
+  & .text,
+  & .super {
+    border-color: var(--c-bg);
+    color: var(--c-bg);
   }
 }
 </style>

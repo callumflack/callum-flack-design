@@ -4,12 +4,8 @@
 
  */
 
-.page {
-  background-color: var(--c-bg);
-  border-bottom: 1px solid var(--c-rule);
-  min-height: 100vh;
-  position: relative;
-  z-index: 3;
+.page-index {
+  // background-color: #fbf06f;
 }
 
 .page-index .promote {

@@ -1,6 +1,6 @@
 <template lang="pug">
-.block--pb7.block--pt7
-  header(role="banner")
+article
+  header.block--matchFixedMenu.block--pb7(role="banner")
     //- c-pageheading(
     //-   :heading="page.heading"
     //-   :lede="page.lede"
@@ -11,17 +11,18 @@
         v-if="page.heroInCloudinary"
         portrait
         :src="page.heroImage"
-        style="opacity:0.9"
+        style="opacity:1"
       )
       c-image(
         v-else-if="page.heroImage"
         local
+        portrait
         :src="page.heroImage"
-        style="opacity:0.9"
+        style="opacity:1"
       )
-  main(role="main")
+  main.block--pb7(role="main")
     .container
-      nuxtent-body.project-scope(:body="page.body")
+      nuxtent-body.TypeScope(:body="page.body")
 </template>
 
 <script>

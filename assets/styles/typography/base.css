@@ -7,13 +7,13 @@
 */
 
 html {
-  background-color: var(--c-bg);
+  background-color: var(--c-dark);
   color: var(--c-text);
-  font-family: var(--ff-sans-regular), var(--ff-stack-sans);
+  font-family: var(--ff-text-regular), var(--ff-stack-sans);
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: var(--ls-text);
-  line-height: var(--lh-text);
+  letter-spacing: var(--ft-text);
+  line-height: var(--fl-text);
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ html {
  */
 
 body,
-.project-scope-reset {
+.TypeScope-reset {
   font-size: 0.818181818rem !important;
   font-size: 0.772727273rem !important;
 

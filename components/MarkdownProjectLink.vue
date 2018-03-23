@@ -1,6 +1,6 @@
 <template lang="pug">
-.u-block.project-link
-  a.text.icon-targetblank(:href="link", target="_blank") {{ label }}
+p
+  a.icon-targetblank(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>

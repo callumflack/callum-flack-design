@@ -1,17 +1,20 @@
-.project {
-  border-top: 1px solid;
-  border-bottom: 0 solid;
-  border-color: var(--c-rule);
-  border-color: transparent;
+.project,
+.project-filter {
+  border-top: 1px solid var(--c-rule);
   display: block;
-  padding: var(--s-3a) 0 var(--s-3a);
+  padding: var(--s-3) 0;
 
-  &:last-child {
-    // margin-bottom: 0 !important;
+  &:first-of-type {
+    // border-top-color: var(--c-text);
   }
+}
 
-  &:last-of-type {
-    border-bottom-width: 1px;
+.project-filter {
+  border-top: 2px solid var(--c-text);
+  padding-top: calc(0.75 * var(--s-3));
+
+  & a {
+    margin-left: var(--s-3);
   }
 }
 
@@ -19,18 +22,4 @@
 /* reused & scoped in LazyImage */
 .project:hover img {
   filter: url("#gray");
-}
-
-.project-item-left {
-  padding-right: calc(0.25 * var(--grid-gutter));
-}
-
-.project-item-right {
-  padding-left: calc(0.25 * var(--grid-gutter));
-}
-
-.project-divider {
-  // letter-spacing: -0.15em;
-  /* margin-left: -0.1em; */
-  // margin-right: 0.15em;
 }

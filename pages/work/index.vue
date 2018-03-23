@@ -1,26 +1,28 @@
 <template lang="pug">
-.block--pb7
-  c-pageheading(
-    lede="Selected projects since 2014."
-  )
-  main(role="main")
-    //- sort by tags:
-    //- .block--mb6Sandwich
-      .container
-        .Meta
-          | Filter projects by:&nbsp;
-          br
-          a(
-            v-for="(tag, index) in tags"
-            @click.prevent="filterProjectsByTag(tag)"
-            href="#"
-            :class="[{ 'is-active': tag === activeTag }]"
-          )
-            span.heading-visualLink {{tag}}
-            span(v-if="index !== tags.length - 1") ,&nbsp;
-            span(v-else) .
+  main.block--matchFixedMenu.block--pb7(role="main")
+    .container.container--md
+      .project-filter
+        .u-flex.u-flexJustifyBetween
+          .text.c-textLight.m-a0
+            | Filter by: 
+            //- form
+              select
+                option(value='1') 1
+                option(value='2') 2
+                option(value='3') 3
+                option(value='4') 4
+                option(value='5') 5
+          .text.c-textLight.m-a0
+            a(
+              v-for="(tag, index) in tags"
+              @click.prevent="filterProjectsByTag(tag)"
+              href="#"
+              :class="[{ 'fw-medium c-text': tag === activeTag }]"
+            )
+              span {{ tag }}
+              //- span(v-if="index !== tags.length - 1") ,&nbsp;
+              //- span(v-else) .
 
-    .container
       c-project(
         v-if="project.featured"
         v-for="project in visibleProjects"
@@ -49,9 +51,9 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
-import Project from "~/components/Project2.vue";
+import Project from "~/components/Project3.vue";
 
-const allTagName = "all";
+const allTagName = "All";
 
 // Functions are defined outside component since asyncData does not have access
 // to the component because it's called before initializing the component
@@ -133,15 +135,4 @@ export default {
 
 <style scope lang="css">
 @import "../../assets/styles/variables.css";
-
-.GridWrapper {
-  margin-left: calc(2 * var(--grid-gutter));
-  margin-right: calc(2 * var(--grid-gutter));
-}
-
-.Grid-cell:nth-child(even) {
-  @media (--sm) {
-    margin-top: var(--s-4);
-  }
-}
 </style>

@@ -2,12 +2,13 @@
 section: Projects
 year: 2016
 heading: Oceanblue Living
-lede: A website and brand polish for <span class="heading heading--inLede">Oceanblue Living</span> to help create a community around transformative architectural metalworks.
+lede: A website and brand revision to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
-tags: website, branding
+tags: Brand, Interface, Development
+projectColor: rgb(96,120,148)
 nextProject: /work/the-substation
 nextProjectHeading: The Substation
 featured: true
@@ -20,12 +21,12 @@ designed and built a website that told a simple, powerful story of how their met
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 
-@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372252/okok/oceanblueliving-responsive-layouts.png")
+@[MarkdownImage](project local src="/images/oceanblueliving-responsive-layouts-dark.png")
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
-> Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It creates better business for us.” _LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It creates better business for us.” _— LeaAnne Cassaniti, Owner_
 
 @[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4")
 

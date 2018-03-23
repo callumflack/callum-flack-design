@@ -2,13 +2,14 @@
 section: Projects
 year: 2017
 heading: Album Registry
-lede: <span class="heading heading--inLede">Album Registry</span> is a crowd-funding platform to help pro photographers grow their business. I designed the interface and built the web app.
+lede: A crowd-funding platform to help pro photographers grow their business. I designed and built the web app.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
 heroFrame: false
-tags: web app, branding
+projectColor: rgb(112,83,119)
+tags: Brand, Interface, Development
 nextProject: /work/oceanblue-living
 nextProjectHeading: Oceanblue Living
 featured: true
@@ -17,7 +18,7 @@ featured: true
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
 be, and rebuild the platform for a community of photographers around the world.
 
-> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves. _Jannah Dryden, Founder_
+> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves. _— Jannah Dryden, Founder_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 

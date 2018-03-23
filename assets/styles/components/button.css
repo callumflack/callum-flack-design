@@ -118,12 +118,12 @@
  */
 
 /*.Button--small {
-  font-size: var(--s-text-1);
+  font-size: var(--fs-text-1);
   letter-spacing: 0.025em;
   @media (--md) {
-    font-size: var(--s-text-2);
+    font-size: var(--fs-text-2);
   }
   @media (--lg) {
-    font-size: var(--s-text-3);
+    font-size: var(--fs-text-3);
   }
 }*/

@@ -25,10 +25,10 @@ div
           tabindex="-1", 
           value=""
         )
-      button.Button.Button--transparent.linkSignal(
+      button.Button.Button--transparent.LinkSignal(
         type="submit", 
         name="subscribe", 
-      ) {{buttonText}} #[span.linkSignal-target →]
+      ) {{buttonText}} #[span.LinkSignal-target →]
 </template>
 
 <script>

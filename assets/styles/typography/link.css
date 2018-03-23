@@ -14,28 +14,29 @@ button {
 
 .visualLink,
 p a:not(.Button),
-p a:not(.linkSignal),
-.project-scope a:not(.Button),
+p a:not(.LinkSignal),
+.TypeScope a:not(.Button),
 .project:hover .project-visualLink {
-  background-image: linear-gradient(var(--c-bg), var(--c-bg)),
-    linear-gradient(var(--c-bg), var(--c-bg)),
-    linear-gradient(currentColor, currentColor);
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 var(--c-bg), -0.03em 0 var(--c-bg), 0 0.03em var(--c-bg),
-    0 -0.03em var(--c-bg), 0.06em 0 var(--c-bg), -0.06em 0 var(--c-bg),
-    0.09em 0 var(--c-bg), -0.09em 0 var(--c-bg), 0.12em 0 var(--c-bg),
-    -0.12em 0 var(--c-bg), 0.15em 0 var(--c-bg), -0.15em 0 var(--c-bg);
-  background-position: 0% 93%, 100% 93%, 0% 93%;
+  // background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+  //   linear-gradient(var(--c-bg), var(--c-bg)),
+  //   linear-gradient(currentColor, currentColor);
+  // background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  // background-repeat: no-repeat, no-repeat, repeat-x;
+  // text-shadow: 0.03em 0 var(--c-bg), -0.03em 0 var(--c-bg), 0 0.03em var(--c-bg),
+  //   0 -0.03em var(--c-bg), 0.06em 0 var(--c-bg), -0.06em 0 var(--c-bg),
+  //   0.09em 0 var(--c-bg), -0.09em 0 var(--c-bg), 0.12em 0 var(--c-bg),
+  //   -0.12em 0 var(--c-bg), 0.15em 0 var(--c-bg), -0.15em 0 var(--c-bg);
+  // background-position: 0% 93%, 100% 93%, 0% 93%;
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    background-position-y: 102%, 102%, 102%;
-    background-position-y: 90%, 90%, 90%;
+    // background-position-y: 102%, 102%, 102%;
+    // background-position-y: 90%, 90%, 90%;
   }
+
+  text-decoration: underline;
 }
 
 /* headings */
-.project-link a,
 .project:hover .project-visualLink {
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position: 0% 93%, 100% 93%, 0% 93% !important;
@@ -43,12 +44,12 @@ p a:not(.linkSignal),
 }
 
 .page-journal-page strong a {
-  text-shadow: 0.03em 0 var(--c-highlight), -0.03em 0 var(--c-highlight),
-    0 0.03em var(--c-highlight), 0 -0.03em var(--c-highlight),
-    0.06em 0 var(--c-highlight), -0.06em 0 var(--c-highlight),
-    0.09em 0 var(--c-highlight), -0.09em 0 var(--c-highlight),
-    0.12em 0 var(--c-highlight), -0.12em 0 var(--c-highlight),
-    0.15em 0 var(--c-highlight), -0.15em 0 var(--c-highlight);
+  // text-shadow: 0.03em 0 var(--c-highlight), -0.03em 0 var(--c-highlight),
+  //   0 0.03em var(--c-highlight), 0 -0.03em var(--c-highlight),
+  //   0.06em 0 var(--c-highlight), -0.06em 0 var(--c-highlight),
+  //   0.09em 0 var(--c-highlight), -0.09em 0 var(--c-highlight),
+  //   0.12em 0 var(--c-highlight), -0.12em 0 var(--c-highlight),
+  //   0.15em 0 var(--c-highlight), -0.15em 0 var(--c-highlight);
 }
 
 .icon-targetblank {
@@ -72,7 +73,7 @@ p a:not(.linkSignal),
   transform: rotate(-45deg);
   vertical-align: top;
   right: -1em;
-  top: -0.25em;
+  top: 0.25em;
 }
 
 /* 
@@ -93,17 +94,17 @@ p a:not(.linkSignal),
 
  */
 
-.linkSignal:hover .linkSignal-target {
-  transform: translate(1rem, -0.2em);
+.LinkSignal:hover .LinkSignal-target {
+  transform: translateX(1rem);
   transition: all 0.5s ease;
 }
 
-.linkSignal-target {
+.LinkSignal-target {
   display: inline-block;
   font-family: var(--ff-stack-sans);
   // font-size: 60%;
-  font-weight: 400;
-  transform: translate(0, -0.2em);
+  font-weight: 300;
+  transform: translateX(0);
   transition: all 0.1s ease-out;
 
   vertical-align: top;
