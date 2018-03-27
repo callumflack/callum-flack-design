@@ -191,4 +191,10 @@
   .u-sm-flexJustifyBetween {
     justify-content: space-between;
   }
+  .u-sm-flexJustifyEnd {
+    justify-content: flex-end;
+  }
+  .u-sm-flexOrderFirst {
+    order: -1;
+  }
 }

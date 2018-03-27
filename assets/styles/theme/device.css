@@ -51,6 +51,10 @@
   max-width: 358px;
   text-align: center;
 
+  /* reset `.figure--textColumnImage` */
+  left: initial;
+  width: 100%;
+
   & .device-ratio {
     padding-bottom: 205.81395%;
   }
@@ -66,4 +70,10 @@
     // stroke: var(--c-text);
     // stroke-width: 1;
   }
+}
+
+.device--home {
+  left: auto;
+  margin: 0;
+  width: auto;
 }

@@ -8,10 +8,17 @@
 
  */
 
-
 /* Add this to all size classes  */
 
-[class*="u-size"] { flex-basis: auto !important; }
+[class*="u-size"],
+[class*="w-"] {
+  flex-basis: auto !important;
+}
+
+/* Basics widths */
+.w-100 {
+  width: 100%;
+}
 
 /* Make an element shrink wrap its content. */
 

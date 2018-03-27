@@ -23,7 +23,7 @@
   letter-spacing: 0;
   line-height: inherit;
   padding: var(--field-spacing);
-  text-transform: inherit;
+  text-decoration: initial;
 
   /* pseudos */
   &:hover {

@@ -445,6 +445,31 @@
  */
 
 @media (--sm) {
+  .sm-m-t0 {
+    margin-top: var(--s-0) !important;
+  }
+  .sm-m-t1 {
+    margin-top: var(--s-1) !important;
+  }
+  .sm-m-t2 {
+    margin-top: var(--s-2) !important;
+  }
+  .sm-m-t3 {
+    margin-top: var(--s-3) !important;
+  }
+  .sm-m-t4 {
+    margin-top: var(--s-4) !important;
+  }
+  .sm-m-t5 {
+    margin-top: var(--s-5) !important;
+  }
+  .sm-m-t6 {
+    margin-top: var(--s-6) !important;
+  }
+  .sm-m-t7 {
+    margin-top: var(--s-7) !important;
+  }
+
   .sm-p-t0 {
     padding-top: var(--s-0) !important;
   }

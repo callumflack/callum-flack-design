@@ -9,13 +9,13 @@ button {
   color: inherit;
   cursor: pointer;
   font-family: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .visualLink,
+a:not(.Button),
 p a:not(.Button),
 p a:not(.LinkSignal),
-.TypeScope a:not(.Button),
 .project:hover .project-visualLink {
   // background-image: linear-gradient(var(--c-bg), var(--c-bg)),
   //   linear-gradient(var(--c-bg), var(--c-bg)),
@@ -33,13 +33,13 @@ p a:not(.LinkSignal),
     // background-position-y: 90%, 90%, 90%;
   }
 
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
 /* headings */
 .project:hover .project-visualLink {
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    background-position: 0% 93%, 100% 93%, 0% 93% !important;
+    // background-position: 0% 93%, 100% 93%, 0% 93% !important;
   }
 }
 
@@ -52,16 +52,15 @@ p a:not(.LinkSignal),
   //   0.15em 0 var(--c-highlight), -0.15em 0 var(--c-highlight);
 }
 
-.icon-targetblank {
-  position: relative;
-  // margin-right: 2px;
-}
-
 /* 
 
   target blank icon
 
  */
+
+.icon-targetblank {
+  position: relative;
+}
 
 .icon-targetblank:after {
   content: "→";
@@ -82,7 +81,7 @@ p a:not(.LinkSignal),
 
  */
 
-.noVisualLink {
+.u-noVisualLink {
   background-image: initial !important;
   text-decoration: initial !important;
   text-shadow: initial !important;

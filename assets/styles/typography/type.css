@@ -102,9 +102,26 @@ h2,
 
 .sexy {
   // color: var(--c-red);
-  font-size: calc(3em * var(--fs-text-unit));
+  font-size: calc(2.75em * var(--fs-text-unit));
   line-height: 0.95;
   letter-spacing: -0.0005em;
+  margin-top: 0 !important;
+}
+
+.sexy-number {
+  background-color: var(--c-text);
+  border-radius: 999px;
+  color: var(--c-bg);
+  display: inline-block;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  width: 25px;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin-left: auto;
 }
 
 /* 
@@ -123,7 +140,8 @@ h1,
 h2,
 h3,
 h4,
-h6 {
+h6,
+.ParagraphSpace {
   margin-bottom: var(--s-3);
 
   @media (--md) {
@@ -248,7 +266,7 @@ blockquote p {
 }
 
 blockquote p em {
-  // display: table;
+  display: table;
   /* resetting ems before applying font sizing: */
   font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text-meta)) !important;
 }

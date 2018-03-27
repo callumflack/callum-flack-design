@@ -18,7 +18,7 @@ featured: true
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
 be, and rebuild the platform for a community of photographers around the world.
 
-> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering, by sharing the cost that great photography deserves. _— Jannah Dryden, Founder_
+> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost of great photography." _— Jannah Dryden, Founder_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 
@@ -37,11 +37,11 @@ We're able to design and adjust new features in the browser using the brand desi
 
 <!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954751/okok/albumregistry-mobile-screens-lg.png")
+@[MarkdownImage](large local project src="/images/albumregistry-mobile-screens-lg-dark.png")
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
-> Every wedding I do starts with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
+> I begin every wedding I do with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
 

@@ -38,6 +38,10 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
+.link {
+  text-decoration: none;
+}
+
 .link + .link {
   margin-left: var(--s-3b);
 }
@@ -112,6 +116,7 @@ export default {
   background-color: currentColor;
   content: "";
   display: inline-block;
+  height: 0.15rem;
   height: 1px;
   left: 0;
   right: 0;

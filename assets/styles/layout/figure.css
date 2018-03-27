@@ -35,32 +35,18 @@
 .figure--textColumnImage {
   @media (--md) {
     left: calc((-0.5 * var(--container-rg-img)) + 50%);
-    width: var(--container-rg-img) !important;
+    width: var(--container-rg-img);
   }
 }
 
 .figure--project {
   margin-top: var(--s-5);
   margin-bottom: var(--s-5);
-  width: 100%;
 
   @media (--md) {
     margin-top: var(--s-6);
     margin-bottom: var(--s-6);
   }
-  @media (--lg) {
-    // margin-top: var(--s-7);
-    // margin-bottom: var(--s-7);
-  }
-
-  /*@media (min-width: 1136px) {
-    left: calc(-37.5vw + 50%);
-    width: 75vw;
-  }
-  @media (min-width: 1840px) {
-    left: calc(-25vw + 50%);
-    width: 50vw;
-  }*/
 }
 
 .figure--large {
@@ -79,17 +65,13 @@
 .figure--portrait {
   overflow: hidden;
   margin: 0 auto;
-  width: 75%;
-
-  @media (--sm) {
-    width: 50%;
-  }
 }
 
 /* funky shit */
 
 .ProjectHero {
   left: calc(-50vw + 50%);
+  min-height: 100vh;
   position: relative;
   width: 100vw;
 

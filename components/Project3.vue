@@ -1,25 +1,20 @@
 <template lang="pug">
-  nuxt-link.project.project3.ruled(:to="link")
-    .u-flex.u-flexJustifyStart
+  nuxt-link.project(:to="link")
     .FlexGrid--sm
       .u-sm-size1of2
         figure
           c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
           img(:src="image", v-else)
-      
       .u-sm-size1of2
         .u-flex.u-flexAlignContentStretch.h-100
           .u-flex.u-flexAlignItemsCenter
             div
               h2.super.super--project {{ heading }}
-              //- span.project-visualLink {{ heading }}
-              //- p.text.c-textLight.m-b2(v-html="lede")
               p.text.c-textLight.m-b0
                 span(v-if="year") {{ year }}
                 span.m-x2 •
                 span(v-if="tags") {{ tags }}
-                br
-                span {{ lede }}
+                //- span(v-html="lede")
 </template>
 
 

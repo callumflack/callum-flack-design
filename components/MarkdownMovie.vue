@@ -30,6 +30,7 @@ export default {
         "figure--project",
         "device",
         {
+          "device--home": this.home,
           "figure--textColumnImage": !this.large,
           "figure--large": this.large,
           "device--iphone6": this.iphone,
@@ -74,7 +75,7 @@ export default {
     }
   },
   props: {
-    medium: Boolean,
+    home: Boolean,
     large: Boolean,
     frame: Boolean,
     iphone: Boolean,
@@ -155,6 +156,9 @@ export default {
 
 .device--iphone6 {
   max-width: 70%;
+  /* reset `.figure--textColumnImage` */
+  left: initial;
+  width: 100%;
 
   @media (--sm) {
     max-width: 358px;
@@ -193,5 +197,11 @@ export default {
 
 .device--desktop .device-ratio {
   padding-bottom: 52.0833333%;
+}
+
+.device--home {
+  left: auto;
+  margin: 0;
+  width: 100%;
 }
 </style>

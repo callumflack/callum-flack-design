@@ -1,9 +1,8 @@
 <template lang="pug">
 .block--pb7
-  header(role="banner")
-    c-pageheading(
-      lede="How to create digital experiences that resonate."
-    )
+  c-pageheading(
+    lede="How to create digital experiences that resonate."
+  )
   main(role="main")
     .container
       c-post(

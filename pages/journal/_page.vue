@@ -23,7 +23,9 @@
             p.subheading.m-b0.u-textCenter Comments?
             p.text.u-textCenter
               a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
-    //- c-postslist
+  
+  //- c-postslist
+  
 </template>
 
 <script>

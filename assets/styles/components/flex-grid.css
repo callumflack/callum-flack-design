@@ -4,8 +4,14 @@
 
  */
 
+.FlexGridWrapper {
+  margin-right: calc(1 * var(--grid-gutter));
+  margin-left: calc(1 * var(--grid-gutter));
+}
+
 .FlexGrid {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--grid-gutter));
   margin-left: calc(-1 * var(--grid-gutter));
@@ -14,6 +20,10 @@
     flex: 1 1 auto;
     padding-right: var(--grid-gutter);
     padding-left: var(--grid-gutter);
+  }
+
+  @media (--sm) {
+    flex-direction: initial;
   }
 }
 
@@ -28,4 +38,8 @@
     padding-right: 1rem;
     padding-left: 1rem;
   }
+}
+
+.sm-FlexGrid {
+  flex-wrap: row;
 }
