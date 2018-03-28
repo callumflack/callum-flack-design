@@ -23,20 +23,18 @@ html {
 
 /*
   <size you want>/(16*1.375)
-  17/(16*1.375) = .772727273
+  18/(16*1.375) = .772727273
  */
 
 body,
 .TypeScope-reset {
-  font-size: 0.818181818rem !important;
-  font-size: 0.772727273rem !important;
+  font-size: 0.777777778rem !important;
+  font-size: 0.833333333rem !important;
 
   @media (--sm) {
-    font-size: 0.847826087rem !important;
-    // font-size: 0.875rem !important;
+    font-size: 0.888888889rem !important;
   }
   @media (--md) {
-    // font-size: 0.9375rem !important;
   }
   @media (--lg) {
     font-size: 1rem !important;

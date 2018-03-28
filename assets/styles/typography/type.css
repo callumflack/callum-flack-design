@@ -87,19 +87,6 @@ h2,
   padding-bottom: 0;
 }
 
-.super--number {
-  border-bottom: 1px solid currentColor;
-  position: relative;
-
-  & :before {
-    border: 1px solid currentColor;
-    border-radius: 999px;
-    content: "";
-    padding: 5px;
-    position: absolute;
-  }
-}
-
 .sexy {
   // color: var(--c-red);
   font-size: calc(2.75em * var(--fs-text-unit));
@@ -160,10 +147,10 @@ h3,
 h4,
 h6 {
   &:not(:first-child) {
-    margin-top: calc(2.5 * var(--s-3));
+    margin-top: calc(3 * var(--s-3));
 
     @media (--md) {
-      margin-top: calc(2.5 * var(--s-3));
+      margin-top: calc(3 * var(--s-3));
     }
   }
 }
@@ -179,12 +166,12 @@ h6 {
 }
 
 blockquote {
-  margin-top: calc(1.25 * var(--s-3));
-  margin-bottom: calc(1.25 * var(--s-3));
+  margin-top: calc(1.5 * var(--s-3));
+  margin-bottom: calc(1.5 * var(--s-3));
 
   @media (--md) {
-    margin-top: calc(1.25 * var(--s-3));
-    margin-bottom: calc(1.25 * var(--s-3));
+    // margin-top: calc(1.25 * var(--s-3));
+    // margin-bottom: calc(1.25 * var(--s-3));
   }
 }
 

@@ -79,6 +79,10 @@
  */
 
 @media (--sm) {
+  .u-sm-inlineBlock {
+    display: inline-block;
+    max-width: 100%; /* 1 */
+  }
   .u-sm-block {
     display: block;
   }

@@ -19,6 +19,9 @@
 .w-100 {
   width: 100%;
 }
+.w-100 {
+  width: 50%;
+}
 
 /* Make an element shrink wrap its content. */
 
@@ -164,9 +167,37 @@
 */
 
 @media (--sm) {
+  .u-sm-size1of2 {
+    width: 50%;
+  }
+
   .u-sm-size1of3,
   .u-sm-size2of6,
   .u-sm-size4of12 {
+    width: calc(100% * 1 / 3) !important;
+  }
+}
+
+@media (--md) {
+  .u-md-size1of2 {
+    width: 50%;
+  }
+
+  .u-md-size1of3,
+  .u-md-size2of6,
+  .u-md-size4of12 {
+    width: calc(100% * 1 / 3) !important;
+  }
+}
+
+@media (--lg) {
+  .u-lg-size1of2 {
+    width: 50%;
+  }
+
+  .u-lg-size1of3,
+  .u-lg-size2of6,
+  .u-lg-size4of12 {
     width: calc(100% * 1 / 3) !important;
   }
 }

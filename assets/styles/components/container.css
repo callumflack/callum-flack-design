@@ -13,8 +13,8 @@
   width: 100%;
 
   @media (--sm) {
-    padding-left: var(--grid-gutter);
-    padding-right: var(--grid-gutter);
+    // padding-left: var(--grid-gutter);
+    // padding-right: var(--grid-gutter);
   }
 }
 

@@ -43,8 +43,8 @@
 }
 
 .block--py5 {
-  padding-top: var(--s-3);
-  padding-bottom: var(--s-3);
+  padding-top: var(--s-4);
+  padding-bottom: var(--s-4);
 
   @media (--md) {
     padding-top: var(--s-4);
@@ -80,6 +80,7 @@
 
 .block--pt5 {
   padding-top: var(--s-3);
+  padding-top: var(--s-4);
 
   @media (--md) {
     padding-top: var(--s-4);
@@ -124,6 +125,7 @@
 
 .block--pb5 {
   padding-bottom: var(--s-3);
+  padding-bottom: var(--s-4);
 
   @media (--md) {
     padding-bottom: var(--s-4);
@@ -178,7 +180,7 @@
 }
 
 .block--mt5 {
-  margin-top: var(--s-3);
+  margin-top: var(--s-4);
 
   @media (--md) {
     margin-top: var(--s-4);

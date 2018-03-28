@@ -6,6 +6,12 @@
 
 */
 
+@media (--sm) {
+  .u-sm-lineBreak {
+    display: table !important;
+  }
+}
+
 @media (--lg) {
   span.u-lg-lineBreak {
     display: table !important;
@@ -13,11 +19,5 @@
   span.u-lg-lineBreakCenter {
     display: table !important;
     margin: auto; /* 1. */
-  }
-}
-
-@media (--sm) {
-  .u-sm-lineBreak {
-    display: table !important;
   }
 }
