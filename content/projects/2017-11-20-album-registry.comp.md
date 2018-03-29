@@ -37,7 +37,7 @@ We're able to design and adjust new features in the browser using the brand desi
 
 <!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large local project src="/images/albumregistry-mobile-screens-lg-dark.png")
+@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320484/okok/albumregistry-mobile-screens-lg-dark.png")
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 

@@ -3,7 +3,7 @@
     .container.container--md
       .project-filter
         .u-flex.u-flexJustifyBetween
-          .text.m-a0 Filter by: 
+          .Text.m-a0 Filter by: 
             //- form
               select
                 option(value='1') 1
@@ -11,7 +11,7 @@
                 option(value='3') 3
                 option(value='4') 4
                 option(value='5') 5
-          .text.c-textLight.m-a0
+          .Text.c-textLight.m-a0
             a.u-noVisualLink(
               v-for="(tag, index) in tags"
               @click.prevent="filterProjectsByTag(tag)"

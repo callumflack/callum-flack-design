@@ -3,8 +3,8 @@
     router-link(:to="project.permalink", v-if="project")
       .block--my6
         .container
-          h1.heading.u-sm-size11of12
-            span.heading--sub Next →
+          h1.Heading.u-sm-size11of12
+            span.Heading--sub Next →
             br
             span(:style="projectColor") {{ project.heading }}
     router-link(to="/work", v-else)

@@ -12,16 +12,16 @@
           no-ssr
             nuxtent-body(:body="page.body")
           
-          .heading-space
+          .HeadingSpace
             hr
-            time.u-block.text.c-textLight(:date-time="page.date") Published: {{ page.published }}
-            p.text.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
-            p.text.c-textLight(v-if="page.note", v-html="page.note")
+            time.u-block.Text.c-textLight(:date-time="page.date") Published: {{ page.published }}
+            p.Text.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
+            p.Text.c-textLight(v-if="page.note", v-html="page.note")
           
           .block--mt6(v-if="page.tweet")
             //- hr.c-title.mb3
-            p.subheading.m-b0.u-textCenter Comments?
-            p.text.u-textCenter
+            p.Heading.m-b0.u-textCenter Comments?
+            p.Text.u-textCenter
               a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
   
   //- c-postslist

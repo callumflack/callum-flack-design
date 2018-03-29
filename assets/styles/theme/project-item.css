@@ -1,8 +1,26 @@
-.project {
+.project,
+.project-filter {
   display: block;
+  text-decoration: initial;
+}
 
-  &:last-child {
-    // margin-bottom: 0 !important;
+.project {
+  border-top: 1px solid var(--c-rule);
+  padding-top: var(--s-3);
+  padding-bottom: var(--s-3);
+
+  &:first-of-type {
+    // border-top: initial;
+  }
+}
+
+.project-filter {
+  border-bottom: 1px solid var(--c-text);
+  padding-top: 0;
+  padding-bottom: calc(0.666 * var(--s-3));
+
+  & a {
+    margin-left: var(--s-3);
   }
 }
 
@@ -10,27 +28,4 @@
 /* reused & scoped in LazyImage */
 .project:hover img {
   filter: url("#gray");
-}
-
-.project-text {
-  width: 80%;
-
-  @media (--sm) {
-    width: 75%;
-  }
-}
-
-.project-text h2,
-.project-text p {
-  width: 100%;
-}
-
-.project-subtext {
-  color: var(--c-text);
-}
-
-.project-divider {
-  letter-spacing: -0.2em;
-  /* margin-left: -0.1em; */
-  margin-right: 0.2em;
 }

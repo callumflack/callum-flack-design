@@ -9,16 +9,16 @@ article
     .container
       c-lazyimage(
         v-if="page.heroInCloudinary"
+        project
         portrait
         :src="page.heroImage"
-        style="opacity:1"
       )
       c-image(
         v-else-if="page.heroImage"
-        local
+        project
         portrait
+        local
         :src="page.heroImage"
-        style="opacity:1"
       )
   main.block--pb7(role="main")
     .container

@@ -3,9 +3,9 @@
     //- figure.project-image(v-if="image")
       img(:src="image")
     .project-text
-      h1.heading {{ heading }}
+      h1.Heading {{ heading }}
         //- span.LinkSignal-target &nbsp;→
-      p.text(v-html="lede") 
+      p.Text(v-html="lede") 
         
       //- p.project-subtext.TypeScope-reset
         span(v-if="date") {{ date }}

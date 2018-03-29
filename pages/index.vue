@@ -4,7 +4,7 @@
       c-pageheading(
         projectSpace
         title="change-making digital design"
-        lede="<span class='u-block ParagraphSpace'>Hi, I'm Callum Flack. I help owners and creators make websites and apps that attract, motivate and retain their audience. To achieve this, I work fluidly across both brand and product design. I'm also an accomplished frontend developer.</span><span class='u-block'>Here's 5 ways I design for audience change:</span>"
+        lede="<span class='u-block ParagraphSpace'>Hi, I'm Callum Flack. I help owners and creators make websites and apps that attract, motivate and retain their audience. I work fluidly across both brand and product design. I'm also an accomplished frontend developer.</span><span class='u-block'>Here's 5 ways I design for audience change:</span>"
       )
     main(role="content")
       section.Slide(style="background-color:rgba(236, 223, 194,0.5)")
@@ -15,12 +15,11 @@
               .u-flex.u-flexAlignItemsCenter.h-100
                 .container.container--sm.m-l0
                   p
-                    span.sexy-number 1
-                  h2.sexy 
+                    span.Super-number 1
+                  h2.Super 
                     | We all respond<br>to beauty
                   p.m-t0.m-b0 
-                    | You'll know in a heartbeat when it's right. To resonate deeply with people, I design first for the heart. 
-                    //- nuxt-link(to="/work") See examples.
+                    | You'll know in a heartbeat when it's right. To resonate deeply with people, I design for the heart first. 
       
       section.Slide
         .FlexGridWrapper
@@ -28,18 +27,19 @@
             .u-md-size1of2
               .container.m-l0.p-a0
                 .u-flex.u-flexAlignItemsCenter.sm-vh-Slide
-                  img(src="/images/_glow5.jpg")
+                  c-lazyimage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317578/okok/_glow5.jpg")
             .u-md-size1of2.m-t5.sm-m-t0.u-sm-flexOrderFirst
               .u-flex.u-flexAlignItemsCenter.u-flexJustifyEnd.h-100
                 .container.container--sm.m-x0.u-md-textRight
                   p.u-md-textRight
-                    span.sexy-number 2
-                  h2.sexy 
+                    span.Super-number 2
+                  h2.Super 
                     | Your digital brand is a product 
                     span.u-table.u-sm-inlineBlock in use
                   p.m-t0.m-b0 
-                    | Your user's experience is dependent on load time as much as it is on visual feel and flow. The digital brand is inseparable from the product. That's why I 
-                    nuxt-link(to="/journal") design in code.
+                    | Your user's experience is as dependent on load time as it is on visual feel and flow. The digital brand is inseparable from the product. That's why I can 
+                    nuxt-link(to="/journal") design in code
+                    | &nbsp;— it gives the most immediate UX feedback.
       
       section.Slide(style="background-color:rgb(229, 232, 232)")
         .FlexGridWrapper
@@ -52,8 +52,8 @@
               .u-flex.u-flexAlignItemsCenter.h-100
                 .container.container--sm.m-x0
                   p
-                    span.sexy-number 3
-                  h2.sexy 
+                    span.Super-number 3
+                  h2.Super 
                     | Good design<br>is good business
                   p.m-t0.m-b0 
                     | All business is about making bets on human behaviour. My job is to create digital communications and services that anticipate your audience with seamless experiences they'll trust intuitively. Good design creates customers. 
@@ -65,26 +65,26 @@
             .container
               .container.container--sm.m-x0
                 p
-                  span.sexy-number 4
-                h2.sexy A daily practice<br>since 2000
+                  span.Super-number 4
+                h2.Super A daily practice<br>since 2000
                 p.m-t0.m-b0 Here's a few things I've learned on the journey so far:
             .container.container--md.block--pt5
               .FlexGridWrapper
                 .FlexGrid
                   .u-md-size1of3.Box
-                    .Box-heading.super
+                    .Box-heading.Title
                       span.Box-icon
                         img(src="/images/_listen.png", alt="")
                       span Listening
                     p I've worked around the world with great companies and talented people. Yet the place where I've learned the most is sitting with owners and creators, and listening. Great work results from a mutual understanding of problem and possibility.
                   .u-md-size1of3.Box
-                    .Box-heading.super
+                    .Box-heading.Title
                       span.Box-icon
                         img(src="/images/_look.png", alt="")
                       span Seeing
                     p The turning point in my career was learning to code. I already had a decade of experience as a graphic designer. It was hard! Doing so has allowed me to understand the world differently, like peering behind the curtains and suddenly seeing the gears.
                   .u-md-size1of3.Box
-                    .Box-heading.super
+                    .Box-heading.Title
                       span.Box-icon
                         img(src="/images/_joy.png", alt="")
                       span Fun
@@ -95,8 +95,8 @@
         .FlexChildrenCenter.vh-Slide
           .container
             .container.container--sm.m-x0
-              p.sexy-number 5
-              h2.sexy everyone hungers for delight.
+              p.Super-number 5
+              h2.Super everyone hungers for delight.
               p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
               p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
               p
@@ -107,6 +107,7 @@
 <script>
 import PageHeading from "~/components/PageHeading2.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
+import LazyImage from "~/components/LazyImage.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 
 export default {
@@ -114,6 +115,7 @@ export default {
   components: {
     "c-pageheading": PageHeading,
     "c-image": MarkdownImage,
+    "c-lazyimage": LazyImage,
     "c-movie": MarkdownMovie
   }
 };
@@ -146,6 +148,12 @@ export default {
 
   @media (--md) {
     padding: 0;
+  }
+
+  /* counter .figure & .u-flex */
+  & .figure {
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -190,14 +198,15 @@ export default {
 
 .Slide-texture--pattern {
   background-blend-mode: multiply;
-  background-color: hsl(41, 30%, 23%);
+  /* background-color: hsl(41, 30%, 23%);
   background-color: #292522;
   background-color: #aaa;
-  background-color: #886262;
+  background-color: #886262; */
   background-color: #626c88;
   /* background-image: url(/images/_sudden.jpg); */
   /* background-image: url(/images/_enticing-as-it-seems.jpg); */
-  background-image: url(/images/_overcast-night.jpg);
+  /* background-image: url(/images/_overcast-night.jpg); */
+  background-image: url("http://res.cloudinary.com/pw-img-cdn/image/upload/v1522321387/okok/_overcast-night.jpg");
 }
 
 .Slide-texture--interface {
@@ -221,7 +230,7 @@ export default {
     color: var(--c-bg);
   }
 
-  & .sexy-number {
+  & .Super-number {
     background-color: var(--c-bg);
     color: var(--c-text);
   }
@@ -256,20 +265,30 @@ export default {
   border-bottom: 1px solid currentColor;
   border-color: transparent;
   color: var(--c-bg);
-  padding-bottom: 0.75rem;
+  padding-bottom: 0;
   position: relative;
 
   & span {
     display: inline-block;
   }
+
+  @media (--sm) {
+    padding-bottom: 0.75rem;
+  }
 }
 
 .Box-icon {
   display: inline-block;
-  height: 48px;
+  height: 32px;
   margin-right: var(--s-2);
-  transform: translateY(12px);
-  width: 48px;
+  transform: translateY(4px);
+  width: 32px;
+
+  @media (--md) {
+    height: 48px;
+    transform: translateY(12px);
+    width: 48px;
+  }
 
   @media (--md) {
     transform: translateY(9px);

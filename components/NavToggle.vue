@@ -3,7 +3,7 @@
   .toggle-logo
     //- a.icon-tap(href="#", @click.prevent="handleNavToggle")
     nuxt-link.icon-tap(to="/")
-      .icon.heading
+      .icon.Heading
         span.u-lg-hidden Menu
         //- span.u-hidden.u-lg-block.tracking ☰ CF/d
         //- span.u-hidden.u-lg-block.tracking CF/d
@@ -137,7 +137,6 @@ export default {
 }
 
 .tracking {
-  /* color: var(--c-red); */
   letter-spacing: 0.07em;
 }
 </style>

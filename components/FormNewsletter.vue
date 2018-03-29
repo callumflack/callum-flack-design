@@ -1,9 +1,9 @@
 <template lang="pug">
 div
-  h2.heading.heading--ruled Subscribe
+  h2.Heading.Heading--ruled Subscribe
   p I send an occassional email newsletter with notes of the stories and links about designing great interfaces that I've found worthwhile, and why they resonate. You should sign up:
   //- .formWrapper
-  form.form.text(
+  form.form.Text(
     action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
     method="post", 
     name="mc-embedded-subscribe-form", 

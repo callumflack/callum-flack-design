@@ -8,8 +8,8 @@
 
 p,
 ul,
-.text,
-.text--meta,
+.Text,
+.Text--meta,
 blockquote p em,
 .TypeScope h3,
 .TypeScope h2 {
@@ -17,17 +17,6 @@ blockquote p em,
   font-weight: 400;
   letter-spacing: var(--ft-text);
   line-height: var(--fl-text);
-}
-
-blockquote p em,
-.TypeScope h3,
-.text--meta {
-  // font-family: var(--ff-text-regular), var(--ff-stack-sans);
-  // font-size: var(--fs-text-meta) !important;
-  // font-style: normal;
-  // font-weight: 400;
-  // letter-spacing: var(--ft-meta);
-  // line-height: var(--fl-text);
 }
 
 /* 
@@ -42,9 +31,9 @@ blockquote p em,
 
 h1,
 h2,
-.heading,
-.subheading {
-  font-family: var(--ff-text-regular), var(--ff-stack-serif);
+.Heading,
+.Subheading {
+  font-family: var(--ff-text-regular), var(--ff-stack-sans);
   font-size: var(--fs-text);
   font-weight: 400;
   letter-spacing: var(--ft-text);
@@ -53,49 +42,40 @@ h2,
 
 .TypeScope h2,
 .TypeScope h3,
-.heading {
-  font-family: var(--ff-text-medium), var(--ff-stack-serif);
+.Heading {
+  font-family: var(--ff-text-medium), var(--ff-stack-sans);
   font-weight: 500;
 }
 
-.heading--inLede {
-  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-heading)) !important;
-}
+/* Big fat serif titles */
 
-/* fly shit */
-
-.super,
-.sexy {
-  font-family: "Sexy", var(--ff-stack-serif);
+.Title,
+.Super {
+  border-bottom: 3px solid var(--c-text);
+  font-family: var(--ff-title), var(--ff-stack-serif);
   font-size: calc(2em * var(--fs-text-unit));
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.025em;
+  margin-bottom: var(--s-3a);
+  padding-bottom: var(--s-3);
   text-transform: uppercase;
 }
 
-.super,
-.sexy {
-  border-bottom: 3px solid var(--c-text);
-  margin-bottom: var(--s-3a);
-  padding-bottom: var(--s-3);
-}
-
-.super--project {
+.Title--project {
   border: initial;
   margin-bottom: var(--s-2);
   padding-bottom: 0;
 }
 
-.sexy {
-  // color: var(--c-red);
+.Super {
   font-size: calc(2.75em * var(--fs-text-unit));
   line-height: 0.95;
-  letter-spacing: -0.0005em;
+  letter-spacing: 0.005em;
   margin-top: 0 !important;
 }
 
-.sexy-number {
+.Super-number {
   background-color: var(--c-text);
   border-radius: 999px;
   color: var(--c-bg);
@@ -104,11 +84,6 @@ h2,
   line-height: 22px;
   text-align: center;
   width: 25px;
-
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // margin-left: auto;
 }
 
 /* 
@@ -140,22 +115,12 @@ h6,
   }
 }
 
-/* h6 is used to define a markdown section */
 h1,
 h2,
 h3,
 h4,
-h6 {
-  &:not(:first-child) {
-    margin-top: calc(3 * var(--s-3));
-
-    @media (--md) {
-      margin-top: calc(3 * var(--s-3));
-    }
-  }
-}
-
-.heading-space {
+h6,
+.HeadingSpace {
   &:not(:first-child) {
     margin-top: calc(3 * var(--s-3));
 
@@ -168,11 +133,6 @@ h6 {
 blockquote {
   margin-top: calc(1.5 * var(--s-3));
   margin-bottom: calc(1.5 * var(--s-3));
-
-  @media (--md) {
-    // margin-top: calc(1.25 * var(--s-3));
-    // margin-bottom: calc(1.25 * var(--s-3));
-  }
 }
 
 * + .Button {
@@ -199,13 +159,13 @@ blockquote {
   -------------------------------------------------
  */
 
-.journal-scope strong {
+.BlogScope strong {
   // font-family: var(--ff-text-regular), var(--ff-stack-sans);
   // font-weight: 500;
   // background-color: var(--c-highlight);
 }
 
-.journal-scope hr {
+.BlogScope hr {
   background-color: transparent;
 
   &:after {
@@ -255,5 +215,5 @@ blockquote p {
 blockquote p em {
   display: table;
   /* resetting ems before applying font sizing: */
-  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text-meta)) !important;
+  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important;
 }

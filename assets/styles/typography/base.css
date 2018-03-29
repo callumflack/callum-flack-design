@@ -22,21 +22,21 @@ html {
 }
 
 /*
-  <size you want>/(16*1.375)
-  18/(16*1.375) = .772727273
+  <size you want>/(16*1.125)
+  Example: 18/(16*1.125) = x
  */
 
 body,
 .TypeScope-reset {
-  font-size: 0.777777778rem !important;
-  font-size: 0.833333333rem !important;
+  font-size: 0.833333333rem !important; /*15pt*/
 
   @media (--sm) {
-    font-size: 0.888888889rem !important;
+    font-size: 0.888888889rem !important; /*16pt*/
   }
   @media (--md) {
+    font-size: 0.944444444rem !important; /*17pt*/
   }
   @media (--lg) {
-    font-size: 1rem !important;
+    font-size: 1rem !important; /*18pt*/
   }
 }

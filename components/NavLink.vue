@@ -13,8 +13,8 @@
     v-else
   )
     .u-flex.u-flexJustifyBetween
-      span.heading {{ label }}
-      span.text(v-if="year") {{ year }}
+      span.Heading {{ label }}
+      span.Text(v-if="year") {{ year }}
 </template>
 
 <script>

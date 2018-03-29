@@ -4,7 +4,7 @@
   .loading-page(v-if="loading")
     .container
       .block--py7
-        .heading Patternworks
+        .Heading Patternworks
 </template>
 
 <script>

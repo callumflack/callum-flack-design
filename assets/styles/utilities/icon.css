@@ -30,7 +30,6 @@
   }
 }
 
-
 /* THEME */
 /* https://css-tricks.com/scale-svg/ */
 
@@ -60,7 +59,7 @@
   height: 1.5em;
   width: 1.5em;
 
-  @media (--tablet) {
+  @media (--md) {
     height: 2rem;
     width: 2rem;
   }

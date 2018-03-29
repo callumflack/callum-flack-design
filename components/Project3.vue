@@ -9,8 +9,8 @@
         .u-flex.u-flexAlignContentStretch.h-100
           .u-flex.u-flexAlignItemsCenter
             div
-              h2.super.super--project {{ heading }}
-              p.text.c-textLight.m-b0
+              h2.Title.Title--project {{ heading }}
+              p.Text.c-textLight.m-b0
                 span(v-if="year") {{ year }}
                 span.m-x2 •
                 span(v-if="tags") {{ tags }}

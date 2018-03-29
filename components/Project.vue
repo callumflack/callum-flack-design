@@ -5,9 +5,9 @@
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
       .project-text
-        h2.heading.heading--underThumbnail
+        h2.Heading.Heading--underThumbnail
           span.project-visualLink {{ heading }}
-        p.project-subtext.text.text--meta
+        p.project-subtext.Text.Text--meta
           span(v-if="year") {{ year }}
           span.project-divider &nbsp;——&nbsp;
           | {{ lede }}
@@ -46,7 +46,7 @@ export default {
   }
 }
 
-.heading--underThumbnail {
+.Heading--underThumbnail {
   margin: var(--s-2) 0;
 
   @media (--md) {

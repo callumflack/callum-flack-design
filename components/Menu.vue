@@ -3,13 +3,13 @@
     .container
       nav.Nav.u-flex.u-flexJustifyBetween
         div
-          c-menulink.heading(
+          c-menulink.Heading(
             label="CF/d"
             link="/"
             exact
           )
         div
-          c-menulink.heading(
+          c-menulink.Heading(
             v-for="item in menuLinks"
             :key="item.label"
             :label="item.label"
@@ -51,11 +51,6 @@ export default {
       scrollState: 0,
       // Menu list
       menuLinks: [
-        // {
-        //   label: "cFd",
-        //   link: "/",
-        //   exact: true
-        // },
         {
           label: "Work",
           link: "/work"
@@ -117,12 +112,8 @@ export default {
 @import "../assets/styles/variables.css";
 
 .FixedMenu {
-  /* background-color: var(--c-bg); */
-  /* height: 73px; */
   position: fixed;
   top: 0;
-  /* left: 0;
-  right: 0; */
   width: 100%;
   z-index: 999;
 }
@@ -133,9 +124,8 @@ export default {
 
 .open {
   animation: open 0.5s ease forwards;
-  background-color: rgba(253, 253, 253, 0.96);
-  background-color: rgba(255, 255, 255, 0.96);
   background-color: var(--c-bg);
+  /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
 }
 
 @keyframes collapse {
@@ -145,14 +135,14 @@ export default {
   }
   to {
     opacity: 0;
-    top: -122px;
+    top: calc(-1 * var(--fixedMenuHeight));
   }
 }
 
 @keyframes open {
   from {
     opacity: 0;
-    top: -122px;
+    top: calc(-1 * var(--fixedMenuHeight));
   }
   to {
     opacity: 1;
@@ -161,13 +151,10 @@ export default {
 }
 
 .Nav {
-  border-bottom: 0.15rem solid var(--c-text);
+  /* border-bottom: 0.15rem solid var(--c-text);
   border-bottom: 1px solid var(--c-text);
-  border-color: transparent;
-  /* padding-bottom: calc(0.5 * var(--s-3)); */
+  border-color: transparent; */
   padding-top: var(--s-4);
   padding-bottom: var(--s-4);
-
-  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-nav)); */
 }
 </style>

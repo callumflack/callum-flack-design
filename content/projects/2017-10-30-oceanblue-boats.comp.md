@@ -19,7 +19,7 @@ OceanBlue Boats had just moved into a new warehouse space that was four times la
 was asked to redesign their Branding and build a website around their love for all
 things boat-making and general fabrication.
 
-@[MarkdownImage](large project local src="/images/oceanblueboats-mobile-screens-dark.png")
+@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320737/okok/oceanblueboats-mobile-screens-dark.png")
 
 <!-- @[MarkdownMovie](large src="/images/oceanblueboats-desktop-video.mp4") -->
 

@@ -5,8 +5,8 @@ heading: Primary Healthcare Network
 lede: A mobile-first  to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 thumbInCloudinary: true
-heroImage: /images/phn-mobile-screens-ash.png
-heroInCloudinary: false
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320430/okok/phn-mobile-screens-ash.png
+heroInCloudinary: true
 heroImageNoShadow: true
 heroFrame: false
 heroRatio: 0.45

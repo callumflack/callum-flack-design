@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.text.Button.Button--outline.c-title.icon-targetblank(:href="link", target="_blank") {{ label }}
+  a.Text.Button.Button--outline.c-title.icon-targetblank(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>

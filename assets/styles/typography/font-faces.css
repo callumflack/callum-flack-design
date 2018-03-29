@@ -6,37 +6,41 @@
 
 @font-face {
   font-family: var(--ff-text-regular);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.ttf") format("truetype"),
+    url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff"),
+    url("~static/fonts/neue-haas-unica-pro-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text-regular-italic);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.ttf") format("truetype"),
+    url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff"),
+    url("~static/fonts/neue-haas-unica-pro-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: var(--ff-text-medium);
-  src: url("~static/fonts/neue-haas-unica-pro-medium.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-medium.ttf") format("truetype"),
+    url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff"),
+    url("~static/fonts/neue-haas-unica-pro-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text-bold);
-  src: url("~static/fonts/neue-haas-unica-pro-bold.ttf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.ttf") format("truetype"),
+    url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff"),
+    url("~static/fonts/neue-haas-unica-pro-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: var(--ff-heading);
-  src: url("~static/fonts/neue-haas-unica-pro-bold.ttf") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Sexy";
-  src: url("~static/fonts/LouizeDisplayTrial-Bold.otf") format("woff");
+  font-family: var(--ff-title);
+  src: url("~static/fonts/louize-display-bold.ttf") format("truetype"),
+    url("~static/fonts/louize-display-bold.woff") format("woff"),
+    url("~static/fonts/louize-display-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }

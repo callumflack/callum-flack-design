@@ -3,8 +3,8 @@
     header.block--pt7(role="banner")
       .container
         .journal-scope
-          //- h1.heading(v-if="index") Change happens in moments of sudden delight.
-          //- h1.heading(v-else) Callum Flack is a designer + developer. 
+          //- h1.Heading(v-if="index") Change happens in moments of sudden delight.
+          //- h1.Heading(v-else) Callum Flack is a designer + developer. 
           //- p.nav-space
             | Since 2000, I've helped owners and creators design and build interfaces that merge brand with product. I'll counsel you on the big picture. I'll execute the details that seamless, authentic experiences are made of. I also 
             nuxt-link(to="/journal") blog

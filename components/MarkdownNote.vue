@@ -1,5 +1,5 @@
 <template lang="pug">
-.heading-space
+.HeadingSpace
   hr
   p.c-textLight.note(v-html="note")
 </template>

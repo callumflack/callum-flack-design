@@ -3,13 +3,13 @@
     .container
       //- div(:class="scopeClasses")
       .u-size5of6(:class="scopeClasses")
-        h1.heading(
+        h1.Heading(
           v-if="heading"
           :projectColor="headingColor"
           v-html="heading"
         )
-        //- p.text.italic.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
-        h2.text.m-t0.m-b0(v-if="lede", v-html="lede")
+        //- p.Text.italic.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
+        h2.Text.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>

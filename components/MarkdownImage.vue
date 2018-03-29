@@ -22,6 +22,7 @@ export default {
     face: Boolean,
     portrait: Boolean,
     project: Boolean,
+    post: Boolean,
     large: Boolean,
     frame: Boolean,
     noHeroShadow: Boolean,
@@ -33,8 +34,8 @@ export default {
         "figure",
         {
           "ProjectHero-noShadow": this.noHeroShadow,
-          "figure--textColumnImage": !this.large,
           "figure--project": this.project,
+          "figure--post": this.post,
           "figure--portrait": this.portrait,
           "figure--large": this.large,
           "figure--frame": this.frame

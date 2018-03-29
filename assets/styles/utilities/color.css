@@ -5,55 +5,55 @@
  */
 
 .c-brand {
-  color: var(--c-brand);
+  color: var(--c-brand) !important;
 }
 .c-brandHover {
-  color: var(--c-brandHover);
+  color: var(--c-brandHover) !important;
 }
 .c-brandLight {
-  color: var(--c-brandLight);
+  color: var(--c-brandLight) !important;
 }
 
 .c-black {
   color: black;
 }
 .c-text {
-  color: var(--c-text);
+  color: var(--c-text) !important;
 }
 .c-textLight {
-  color: var(--c-textLight);
+  color: var(--c-textLight) !important;
 }
 .c-gray {
-  color: var(--c-gray);
+  color: var(--c-gray) !important;
 }
 .c-device {
-  color: var(--c-device);
+  color: var(--c-device) !important;
 }
 .c-border {
-  color: var(--c-border);
+  color: var(--c-border) !important;
 }
 .c-neutral {
-  color: var(--c-neutral);
+  color: var(--c-neutral) !important;
 }
 .c-bg {
-  color: var(--c-bg);
+  color: var(--c-bg) !important;
 }
 .c-white {
   color: white;
 }
 
 .c-success {
-  color: var(--c-success);
+  color: var(--c-success) !important;
 }
 .c-warning {
-  color: var(--c-warning);
+  color: var(--c-warning) !important;
 }
 .c-danger {
-  color: var(--c-danger);
+  color: var(--c-danger) !important;
 }
 
 .c-textBlock > * {
-  color: var(--c-text);
+  color: var(--c-text) !important;
 }
 
 /*
@@ -63,48 +63,48 @@
  */
 
 .bg-brand {
-  background-color: var(--c-brand);
+  background-color: var(--c-brand) !important;
 }
 .bg-black {
   background-color: black;
 }
 .bg-dark {
-  background-color: var(--c-dark);
+  background-color: var(--c-dark) !important;
 }
 .bg-ash {
-  background-color: var(--c-ash);
+  background-color: var(--c-ash) !important;
 }
 .bg-text {
-  background-color: var(--c-text);
+  background-color: var(--c-text) !important;
 }
 .bg-textLight {
-  background-color: var(--c-textLight);
+  background-color: var(--c-textLight) !important;
 }
 .bg-gray {
-  background-color: var(--c-gray);
+  background-color: var(--c-gray) !important;
 }
 .bg-rule {
-  background-color: var(--c-rule);
+  background-color: var(--c-rule) !important;
 }
 .bg-border {
-  background-color: var(--c-border);
+  background-color: var(--c-border) !important;
 }
 .bg-neutral {
-  background-color: var(--c-brand);
+  background-color: var(--c-brand) !important;
 }
 .bg-bg {
-  background-color: var(--c-brand);
+  background-color: var(--c-brand) !important;
 }
 .bg-white {
   background-color: white;
 }
 
 .bg-success {
-  background-color: var(--c-success);
+  background-color: var(--c-success) !important;
 }
 .bg-warning {
-  background-color: var(--c-warning);
+  background-color: var(--c-warning) !important;
 }
 .bg-danger {
-  background-color: var(--c-danger);
+  background-color: var(--c-danger) !important;
 }

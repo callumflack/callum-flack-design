@@ -1,15 +1,15 @@
 <template lang="pug">
   div(:class="blockClasses")
     .container.container--sm
-      h1.sexy(
+      h1.Super(
         v-if="title"
         v-html="title"
       )
-      h1.super(
+      h1.Title(
         v-if="heading"
         v-html="heading"
       )
-      h2.text.m-t0.m-b0(v-if="lede", v-html="lede")
+      h2.Text.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>

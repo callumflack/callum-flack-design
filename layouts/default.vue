@@ -1,13 +1,8 @@
 <template lang="pug">
   div(:class="currentPageClass")
-    //- c-toggle
-    .FixedMenuSpace
     c-menu
     .Page
       nuxt
-    //- .footer-spacer
-      //- c-footer
-    //- c-nav-toggled(role="navigation")
 </template>
 
 <script>
@@ -34,15 +29,10 @@ export default {
 <style>
 @import "../assets/styles/variables.css";
 
-.FixedMenuSpace {
-  background-color: var(--c-bg);
-  height: var(--fixedMenuHeight);
-  width: 100%;
-}
-
 .Page {
   background-color: var(--c-bg);
   min-height: 100vh;
+  padding-top: var(--fixedMenuHeight);
   position: relative;
   z-index: 3;
 }

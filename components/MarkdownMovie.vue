@@ -53,7 +53,7 @@ export default {
       return [
         "video-button",
         {
-          "color-text": this.reverseButton
+          "c-text": this.reverseButton
         }
       ];
     }
@@ -169,7 +169,6 @@ export default {
   }
 
   & .device-position {
-    /* border: 1px solid var(--c-border); */
     margin-top: 25.2%;
     width: 87.45%;
   }

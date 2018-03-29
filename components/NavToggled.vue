@@ -105,9 +105,9 @@ export default {
   height: 100vh;
 }
 
-.modal .heading,
-.modal .text,
-.modal .text--meta {
+.modal .Heading,
+.modal .Text,
+.modal .Text--meta {
   width: 100%;
 }
 

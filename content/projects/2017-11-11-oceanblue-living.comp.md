@@ -21,7 +21,7 @@ designed and built a website that told a simple, powerful story of how their met
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 
-@[MarkdownImage](project local src="/images/oceanblueliving-responsive-layouts-dark.png")
+@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320503/okok/oceanblueliving-responsive-layouts-dark.png")
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.

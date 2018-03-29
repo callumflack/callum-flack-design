@@ -5,9 +5,9 @@
         c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
         img(:src="image", v-else)
       .project-text.project-item-right.u-size7of12
-        //- h2.heading.m-t0.m-b1
+        //- h2.Heading.m-t0.m-b1
           span.project-visualLink {{ heading }}
-        p.text
+        p.Text
           span(v-if="year") {{ year }}
           //- span.project-divider &nbsp;&nbsp;——&nbsp;
           span.project-divider &nbsp;—&nbsp;

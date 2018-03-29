@@ -1,22 +1,26 @@
 ---
 section: About
 heading: About
-lede: Callum Flack is a design-obsessed, systems-thinking, code-based interface craftsman.
-heroImage: /images/_memoria1a.jpg
-heroInCloudinary: false
+lede: Callum Flack is a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps.
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg
+heroInCloudinary: true
 ---
 
-<!-- <span class="intro">Callum Flack</span> -->
+<!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 
-Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic and poetic websites and apps.
+Hi, Callum Flack. I'm a digital designer who works fluidly across user experience, visual design, and code to make pragmatic, poetic websites and apps.
 
-I can counsel you on the big picture. I can execute the stack of details that good digital experiences are made of.
+<!-- I help owners and creators make websites and apps that attract, motivate and retain their audience.  -->
+
+<!-- I can counsel you on the big picture.  -->
+
+I can counsel you on defining goals and intentions to design for. I can execute the stack of details that good digital experiences are made of.
 
 I'm a graphic designer by trade. I've been immersed in interface design and user experience design since 2006, when I was unable to update my MySpace account.
 
-I'm also an accomplished frontend developer. I learned to code so that I could gain more design control.
+I'm also an accomplished frontend developer. I learned to code so that I could gain more design control. I'm now as comfortable in a code editor as I am in design programs.
 
-In my spare moments, I collect vinyl records from every diaspora of recorded music. Finding the uncommon on forgotten records is a lesson in noticing wonder that I take with me everywhere.
+In my spare time, I collect vinyl records from every diaspora of recorded music. Finding the uncommon on forgotten records is a lesson in noticing wonder that I take with me everywhere. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween".
 
 ## Experienced
 
@@ -27,10 +31,10 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 ## The services I offer
 
 * Brand identity design
-* Digital product design (user interface and user experience design)
-* Website and app design & development (including ecommerce and membership admin)
+* User interface design (including user experience design)
+* Website and app design and development (including ecommerce and membership admin)
 * Art direction
-* Editorial & book design
+* Editorial design
 
 ## How we can work together
 

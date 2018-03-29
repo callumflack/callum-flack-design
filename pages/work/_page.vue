@@ -30,8 +30,8 @@ div
   nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
-        .text.m-b3 Next project
-        .super
+        .Text.m-b3 Next project
+        .Title
           | {{ page.nextProjectHeading }}
           //- span.ml1.LinkSignal-target →
 </template>
@@ -103,8 +103,8 @@ export default {
   /* border-color: var(--c-rule); */
   display: block;
 
-  & .text,
-  & .super {
+  & .Text,
+  & .Title {
     border-color: var(--c-bg);
     color: var(--c-bg);
   }

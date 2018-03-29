@@ -59,7 +59,7 @@
 .AspectRatio--home {
   padding-bottom: 500px;
 
-  @media (--tablet) {
+  @media (--md) {
     padding-bottom: 56.25%;
   }
 }
