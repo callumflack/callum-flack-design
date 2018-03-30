@@ -60,7 +60,7 @@ module.exports = {
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
   ],
-  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-M4FPKD6" }]],
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
   axios: {
     credentials: false
   },
