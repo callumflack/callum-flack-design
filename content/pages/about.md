@@ -54,7 +54,7 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 
 ## Contact
 
-Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@patternworks.com.au">me@callumflack.design</a><br>
+Email: <a class="icon-targetblank" target="_blank" href="mailto:callum@callumflack.design">callum@callumflack.design</a><br>
 Phone: [+61(0) 408 767 540](tel:610-408-767-540)<br>
 Schedule: <a class="icon-targetblank" target="_blank" href="https://calendly.com/callumflack">callumflack</a>
 
