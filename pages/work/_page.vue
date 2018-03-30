@@ -37,7 +37,7 @@ div
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading2.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
 import LazyImage from "~/components/LazyImage.vue";

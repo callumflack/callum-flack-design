@@ -23,7 +23,7 @@ module.exports = {
   ** loading: { color: "#1f1f1f" },
   ** loading: "~/components/PageLoading.vue",
   */
-  loading: { color: "#222" },
+  loading: { color: "#151515" },
   /*
   ** Build configuration
   */
@@ -48,7 +48,7 @@ module.exports = {
       https://nuxtjs.org/faq/postcss-plugins
       …and both FAIL to load, for e.g., postcss-mixins:
     
-    postcss: [require("postcss-mixins")()]
+      postcss: [require("postcss-mixins")()]
     */
   },
   css: ["~/assets/styles/application.css"],
@@ -68,7 +68,7 @@ module.exports = {
       "/",
       "/about",
       "/work",
-      "/journal"
+      "/blog"
     ]
   },
   router: {

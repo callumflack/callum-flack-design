@@ -22,19 +22,20 @@ import PageHeading from "~/components/PageHeading.vue";
 import Post from "~/components/Post.vue";
 
 export default {
-  name: "journal",
+  name: "blog",
   components: {
     "c-pageheading": PageHeading,
     "c-post": Post
   },
   head() {
     return {
-      title: "Journal – Callum Flack Design",
+      title: "Blog – Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Selected writing by Callum Flack about digital design & development"
+          content:
+            "Selected writing by Callum Flack about digital design, user experience & code"
         }
       ]
     };

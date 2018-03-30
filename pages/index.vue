@@ -38,7 +38,7 @@
                     span.u-table.u-sm-inlineBlock in use
                   p.m-t0.m-b0 
                     | Your user's experience is as dependent on load time as it is on visual feel and flow. The digital brand is inseparable from the product. That's why I can 
-                    nuxt-link(to="/journal") design in code
+                    nuxt-link(to="/blog/designers-should-code") design in code
                     | &nbsp;— it gives the most immediate UX feedback.
       
       section.Slide(style="background-color:rgb(229, 232, 232)")
@@ -105,7 +105,7 @@
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading2.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
 import LazyImage from "~/components/LazyImage.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";

@@ -1,7 +1,7 @@
 <template lang="pug">
   main.block--matchFixedMenu.block--pb7(role="main")
     .container.container--md
-      .project-filter
+      //- .project-filter
         .u-flex.u-flexJustifyBetween
           .Text.m-a0 Filter by: 
             //- form
@@ -50,7 +50,7 @@
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
-import Project from "~/components/Project3.vue";
+import Project from "~/components/Project.vue";
 
 const allTagName = "All";
 

@@ -26,15 +26,20 @@ In my spare time, I collect vinyl records from every diaspora of recorded music.
 
 Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios, advertising agencies and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself web programming in 2010, my career highlight was working as a brand designer at Saatchi & Saatchi, London. Please read further on <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/callumflack">LinkedIn.</a>
 
-> Callum has great eye for detail to create great looking designs and understands users needs to be able to make great user experiences to match. He excels at immersing himself into whatever project he is working on to achieve the users needs and the business goals.” _— Brian Hur, founder of VetPronto (YCW15)_
+> Callum has great eye for detail to create great looking designs and understands users needs to be able to make great user experiences to match. He excels at immersing himself into whatever project he is working on to achieve the users needs and the business goals.” _— <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
+
+> Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action" _— Barry Phillip Hall, developer_
+
+<!-- https://github.com/barryph -->
 
 ## The services I offer
 
 * Brand identity design
+* Visual design
 * User interface design (including user experience design)
-* Website and app design and development (including ecommerce and membership admin)
+* Website and app frontend development (including ecommerce and membership admin)
 * Art direction
-* Editorial design
+* Editorial design (print & digital)
 
 ## How we can work together
 

@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading2.vue";
+import PageHeading from "~/components/PageHeading.vue";
 import FormNewsletter from "~/components/FormNewsletter.vue";
 import PostsList from "~/components/PostsList.vue";
 

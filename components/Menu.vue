@@ -57,7 +57,7 @@ export default {
         },
         {
           label: "Blog",
-          link: "/journal/designers-should-code"
+          link: "/blog/designers-should-code"
         },
         {
           label: "About",

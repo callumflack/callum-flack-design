@@ -6,7 +6,6 @@
       h1.Heading {{ heading }}
         //- span.LinkSignal-target &nbsp;→
       p.Text(v-html="lede") 
-        
       //- p.project-subtext.TypeScope-reset
         span(v-if="date") {{ date }}
 </template>

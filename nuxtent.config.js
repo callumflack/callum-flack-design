@@ -22,7 +22,7 @@ module.exports = {
       "posts",
       {
         page: "/_slug",
-        permalink: "/journal/:slug",
+        permalink: "/blog/:slug",
         isPost: true,
         generate: ["get", "getAll"]
       }

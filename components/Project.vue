@@ -1,16 +1,20 @@
 <template lang="pug">
-  .Grid-cell.u-sm-size1of2
-    nuxt-link.project.block--mb6(:to="link")
-      figure.project-image
-        c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
-        img(:src="image", v-else)
-      .project-text
-        h2.Heading.Heading--underThumbnail
-          span.project-visualLink {{ heading }}
-        p.project-subtext.Text.Text--meta
-          span(v-if="year") {{ year }}
-          span.project-divider &nbsp;——&nbsp;
-          | {{ lede }}
+  nuxt-link.project(:to="link")
+    .FlexGrid--sm
+      .u-sm-size1of2
+        figure
+          c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
+          img(:src="image", v-else)
+      .u-sm-size1of2
+        .u-flex.u-flexAlignContentStretch.h-100
+          .u-flex.u-flexAlignItemsCenter
+            div
+              h2.Title.Title--project {{ heading }}
+              p.Text.c-textLight.m-b0
+                span(v-if="year") {{ year }}
+                span.m-x2 •
+                span(v-if="tags") {{ tags }}
+                //- span(v-html="lede")
 </template>
 
 
@@ -38,19 +42,11 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
-/* .Grid-cell:nth-child(7), */
-/* .Grid-cell:nth-child(8), */
-.Grid-cell:nth-child(9) {
-  & .project {
-    margin-bottom: 0 !important;
-  }
+.m-r3plus {
+  margin-right: var(--s-3a) !important;
 }
-
-.Heading--underThumbnail {
-  margin: var(--s-2) 0;
-
-  @media (--md) {
-    margin: calc(1.25 * var(--s-3)) 0 calc(0.8 * var(--s-3));
-  }
+.m-x3plus {
+  margin-right: var(--s-3a) !important;
+  margin-left: var(--s-3a) !important;
 }
 </style>
