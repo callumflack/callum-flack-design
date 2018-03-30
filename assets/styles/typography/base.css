@@ -30,6 +30,9 @@ body,
 .TypeScope-reset {
   font-size: 0.833333333rem !important; /*15pt*/
 
+  @media (max-width: 320px) {
+    font-size: 0.722222222rem !important; /*13pt*/
+  }
   @media (--sm) {
     font-size: 0.888888889rem !important; /*16pt*/
   }

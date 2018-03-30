@@ -3,16 +3,15 @@ div
   article.block--pb7
     header(role="banner")
       c-pageheading(
-        :heading="page.heading"
+        :titleXl="page.title"
         :lede="page.lede"
         projectSpace
       )
       .container
-        .ProjectHero(:style="projectColor")
+        div(:class="heroClasses", :style="projectColor")
           c-lazyimage(
             v-if="page.heroInCloudinary"
             :src="page.heroImage"
-            :noHeroShadow="page.heroImageNoShadow"
             :frame="page.heroFrame"
             :ratio="page.heroRatio"
           )
@@ -20,7 +19,6 @@ div
             v-else
             local
             :src="page.heroImage"
-            :noHeroShadow="page.heroImageNoShadow"
             :frame="page.heroFrame"
             :ratio="page.heroRatio"
           )
@@ -32,8 +30,7 @@ div
       hgroup
         .Text.m-b3 Next project
         .Title
-          | {{ page.nextProjectHeading }}
-          //- span.ml1.LinkSignal-target →
+          | {{ page.nextProjectTitle }}
 </template>
 
 <script>
@@ -50,19 +47,19 @@ export default {
     "c-image": MarkdownImage
   },
   props: {
-    heading: String,
+    title: String,
     lede: String,
     heroImage: String,
-    heroImageNoShadow: Boolean,
     heroRatio: String,
     heroFrame: Boolean,
     heroInCloudinary: Boolean,
+    heroIsDevice: Boolean,
     heroVideo: String,
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
     heroVideoPoster: String,
     nextProject: String,
-    nextProjectheading: String
+    nextProjectTitle: String
   },
   computed: {
     projectColor() {
@@ -70,16 +67,24 @@ export default {
       return this.page.projectColor
         ? `background-color: ${this.page.projectColor}`
         : "background-color: rgb(70,70,70)";
+    },
+    heroClasses() {
+      return [
+        "ProjectHero",
+        {
+          "ProjectHero--isDevice": this.page.heroIsDevice
+        }
+      ];
     }
   },
   head() {
     return {
-      title: `${this.page.heading} – Callum Flack Design`,
+      title: `${this.page.title} – Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `${this.page.heading} – ${this.page.lede}`
+          content: `${this.page.title} – ${this.page.lede}`
         }
       ]
     };
@@ -94,13 +99,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "../../assets/styles/variables.css";
 
 .NextProject {
   background-color: var(--c-dark);
-  /* border-top: 1px solid rgba(138, 138, 138, 0.15); */
-  /* border-color: var(--c-rule); */
   display: block;
 
   & .Text,

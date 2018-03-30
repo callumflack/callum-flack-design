@@ -13,11 +13,11 @@ export default {
     Slick
   },
   props: {
-    images: String,
-  },
+    images: String
+  }
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "node_modules/slick-carousel/slick/slick.css";
 </style>

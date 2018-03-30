@@ -1,7 +1,7 @@
 ---
 section: Projects
 year: 2016
-heading: Oceanblue Living
+title: Oceanblue Living
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
@@ -10,7 +10,7 @@ heroInCloudinary: true
 tags: Brand, Interface, Development
 projectColor: rgb(96,120,148)
 nextProject: /work/the-substation
-nextProjectHeading: The Substation
+nextProjectTitle: The Substation
 featured: true
 ---
 

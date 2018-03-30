@@ -3,7 +3,7 @@
     //- figure.project-image(v-if="image")
       img(:src="image")
     .project-text
-      h1.Heading {{ heading }}
+      h1.Title {{ title }}
         //- span.LinkSignal-target &nbsp;→
       p.Text(v-html="lede") 
       //- p.project-subtext.TypeScope-reset
@@ -19,7 +19,7 @@ export default {
     post: Boolean,
     link: String,
     image: String,
-    heading: String,
+    title: String,
     lede: String,
     date: String
   }

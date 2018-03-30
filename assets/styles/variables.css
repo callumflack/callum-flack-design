@@ -36,7 +36,7 @@
 
   --container: calc(600px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-sm: calc(460px + (2 * var(--grid-gutter)));
+  --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg-img: 800px;
   
   --s-0: 0;
@@ -74,6 +74,7 @@
   --c-brandLight: #00ffff;
   --c-highlight: rgba(255, 235, 0, 0.25);
   --c-highlight: #FCF7C9;
+  --c-highlight: #47caf5;
 
   --c-black: black;
   --c-dark: #171515;

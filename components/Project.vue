@@ -5,11 +5,11 @@
         figure
           c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
           img(:src="image", v-else)
-      .u-sm-size1of2
+      .u-sm-size1of2.m-t3.m-sm-t0
         .u-flex.u-flexAlignContentStretch.h-100
           .u-flex.u-flexAlignItemsCenter
             div
-              h2.Title.Title--project {{ heading }}
+              h2.Title.Title--project {{ title }}
               p.Text.c-textLight.m-b0
                 span(v-if="year") {{ year }}
                 span.m-x2 •
@@ -30,7 +30,7 @@ export default {
     link: String,
     thumbInCloudinary: Boolean,
     image: String,
-    heading: String,
+    title: String,
     lede: String,
     tags: String,
     year: Number

@@ -1,19 +1,18 @@
 ---
 section: Projects
 year: 2016
-heading: Primary Healthcare Network
-lede: A mobile-first  to survey patient well-being in North Queensland.
+title: Primary Healthcare Network
+lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320430/okok/phn-mobile-screens-ash.png
 heroInCloudinary: true
-heroImageNoShadow: true
+heroIsDevice: true
 heroFrame: false
-heroRatio: 0.45
 projectColor: rgb(35, 75, 103)
 tags: Interface, Development
 nextProject: /work/raatsicc
-nextProjectHeading: RATSICC
+nextProjectTitle: RATSICC
 featured: true
 ---
 

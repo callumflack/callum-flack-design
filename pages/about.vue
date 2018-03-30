@@ -1,11 +1,6 @@
 <template lang="pug">
 article
   header.block--matchFixedMenu.block--pb7(role="banner")
-    //- c-pageheading(
-    //-   :heading="page.heading"
-    //-   :lede="page.lede"
-    //-   projectScope
-    //- )
     .container
       c-lazyimage(
         v-if="page.heroInCloudinary"
@@ -37,18 +32,18 @@ export default {
     "c-image": MarkdownImage
   },
   props: {
-    heading: String,
+    title: String,
     lede: String,
     heroImage: String
   },
   head() {
     return {
-      title: `${this.page.heading} – Callum Flack Design`,
+      title: `${this.page.title} – Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `${this.page.heading} – ${this.page.lede}`
+          content: `${this.page.title} – ${this.page.lede}`
         }
       ]
     };

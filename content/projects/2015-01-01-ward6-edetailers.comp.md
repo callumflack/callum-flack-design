@@ -1,7 +1,7 @@
 ---
 section: Projects
 year: 2014
-heading: Pharma eDetailer apps
+title: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging digital stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true
@@ -11,7 +11,7 @@ heroImageNoShadow: true
 projectColor: rgb(126, 158, 185)
 tags: Brand, Interface, Development
 nextProject: /work/vj-ray
-nextProjectHeading: VJ Ray Real Estate
+nextProjectTitle: VJ Ray Real Estate
 featured: true
 ---
 

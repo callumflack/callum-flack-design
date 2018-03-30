@@ -2,7 +2,7 @@
 .block--pb7
   article
     header(role="banner")
-      c-pageheading(:heading="page.heading")
+      c-pageheading(:titleXl="page.title")
       .container(v-if="page.heroImage")
         figure.figure.figure--post.figure--large
           img(:src="page.heroImage", alt="")
@@ -40,7 +40,7 @@ export default {
     "c-postslist": PostsList
   },
   props: {
-    heading: String,
+    title: String,
     lede: String,
     published: String,
     updated: String,
@@ -51,12 +51,12 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.heading} – Callum Flack Design`,
+      title: `${this.page.title} – Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `${this.page.heading} – ${this.page.lede}`
+          content: `${this.page.title} – ${this.page.lede}`
         }
       ]
     };
@@ -71,6 +71,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="postcss">
 @import "../../assets/styles/variables.css";
 </style>

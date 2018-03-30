@@ -28,7 +28,7 @@
         post
         :key="project.heading"
         :link="project.permalink"
-        :heading="project.heading"
+        :title="project.title"
         :lede="project.lede"
         :image="project.thumbImage"
         :cloudinary="project.thumbInCloudinary"
@@ -79,7 +79,8 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Selected digital design & development projects by Callum Flack"
+          content:
+            "Selected digital design & development projects by Callum Flack since 2014"
         }
       ]
     };

@@ -49,17 +49,18 @@ h2,
 
 /* Big fat serif titles */
 
-.Title,
-.Super {
-  border-bottom: 3px solid var(--c-text);
+.Title {
   font-family: var(--ff-title), var(--ff-stack-serif);
-  font-size: calc(2em * var(--fs-text-unit));
+  font-size: calc(2.25em * var(--fs-text-unit));
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.025em;
-  margin-bottom: var(--s-3a);
-  padding-bottom: var(--s-3);
   text-transform: uppercase;
+
+  /* underline */
+  // border-bottom: 3px solid var(--c-text);
+  // margin-bottom: var(--s-3a);
+  // padding-bottom: var(--s-3);
 }
 
 .Title--project {
@@ -68,14 +69,14 @@ h2,
   padding-bottom: 0;
 }
 
-.Super {
-  font-size: calc(2.75em * var(--fs-text-unit));
-  line-height: 0.95;
-  letter-spacing: 0.005em;
+.Title--xl {
+  font-size: calc(3.25em * var(--fs-text-unit));
+  line-height: 0.9;
+  letter-spacing: -0.005em;
   margin-top: 0 !important;
 }
 
-.Super-number {
+.Title-number {
   background-color: var(--c-text);
   border-radius: 999px;
   color: var(--c-bg);

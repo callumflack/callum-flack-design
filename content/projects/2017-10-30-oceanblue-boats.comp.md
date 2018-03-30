@@ -1,7 +1,7 @@
 ---
 section: Projects
 year: 2017
-heading: Oceanblue Boats
+title: Oceanblue Boats
 lede: A website that tells a story about building boats for those who wish to get away.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true
@@ -11,7 +11,7 @@ heroFrame: false
 projectColor: rgb(12, 46, 82)
 tags: Brand, Interface, Development
 nextProject: /work/ward6
-nextProjectHeading: Ward6
+nextProjectTitle: Ward6
 featured: true
 ---
 

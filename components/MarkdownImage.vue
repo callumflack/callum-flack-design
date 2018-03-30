@@ -25,7 +25,6 @@ export default {
     post: Boolean,
     large: Boolean,
     frame: Boolean,
-    noHeroShadow: Boolean,
     local: Boolean
   },
   computed: {
@@ -33,7 +32,6 @@ export default {
       return [
         "figure",
         {
-          "ProjectHero-noShadow": this.noHeroShadow,
           "figure--project": this.project,
           "figure--post": this.post,
           "figure--portrait": this.portrait,

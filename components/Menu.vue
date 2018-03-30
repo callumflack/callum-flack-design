@@ -70,12 +70,12 @@ export default {
     scrollDetect(home, down, up) {
       // Current scroll position
       const currentScroll = this.scrollTop();
-      if (this.scrollTop() === 0) {
-        home();
-      } else if (currentScroll > this.scrollState) {
+      if (currentScroll > this.scrollState) {
         down();
-      } else {
+      } else if (currentScroll < this.scrollState) {
         up();
+      } else {
+        home();
       }
       // Set previous scroll position
       this.scrollState = this.scrollTop();
@@ -126,6 +126,7 @@ export default {
   animation: open 0.5s ease forwards;
   background-color: var(--c-bg);
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
 }
 
 @keyframes collapse {

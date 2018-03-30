@@ -1,6 +1,6 @@
 ---
 section: About
-heading: About
+title: About
 lede: Callum Flack is a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps.
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg
 heroInCloudinary: true
@@ -8,7 +8,7 @@ heroInCloudinary: true
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 
-Hi, Callum Flack. I'm a digital designer who works fluidly across user experience, visual design, and code to make pragmatic, poetic websites and apps.
+Hi, Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps.
 
 <!-- I help owners and creators make websites and apps that attract, motivate and retain their audience.  -->
 
@@ -28,7 +28,7 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 
 > Callum has great eye for detail to create great looking designs and understands users needs to be able to make great user experiences to match. He excels at immersing himself into whatever project he is working on to achieve the users needs and the business goals.” _— <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
 
-> Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action" _— Barry Phillip Hall, developer_
+> Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall</a>, JavaScript engineer_
 
 <!-- https://github.com/barryph -->
 

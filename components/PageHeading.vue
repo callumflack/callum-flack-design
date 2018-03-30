@@ -1,9 +1,13 @@
 <template lang="pug">
   div(:class="blockClasses")
     .container.container--sm
+      h1.Title.Title--xl(
+        v-if="titleXl"
+        v-html="titleXl"
+      )
       h1.Title(
-        v-if="heading"
-        v-html="heading"
+        v-if="title"
+        v-html="title"
       )
       h2.Text.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
@@ -12,7 +16,8 @@
 export default {
   name: "page-heading",
   props: {
-    heading: String,
+    titleXl: String,
+    title: String,
     lede: String,
     projectSpace: Boolean,
     projectScope: Boolean

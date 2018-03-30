@@ -5,9 +5,9 @@
 }
 
 .project {
-  border-top: 1px solid var(--c-rule);
-  padding-top: var(--s-3);
-  padding-bottom: var(--s-3);
+  // border-top: 1px solid var(--c-rule);
+  padding-top: var(--s-4);
+  padding-bottom: var(--s-4);
 
   &:first-of-type {
     // border-top: initial;
