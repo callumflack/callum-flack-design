@@ -8,6 +8,10 @@ module.exports = {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
+        name: "google-site-verification",
+        content: "HN9v-wB-PoQjHk1CGpr5YVG9VUNrcOaOjHACfG3SSSI"
+      },
+      {
         hid: "description",
         name: "description",
         content: "Callum Flack digital design & development – Cairns, Australia"
