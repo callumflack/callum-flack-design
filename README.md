@@ -1,10 +1,10 @@
-# patternworks 2018
+# Callum Flack Design
 
-Static site business portfolio and blog.
+Portfolio and blog.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
