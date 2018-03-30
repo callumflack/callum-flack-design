@@ -22,7 +22,7 @@
           nuxt-link(to="/about") Hi, I’m Callum.
           |  I'm interested to know about you, what you do and who your market is. I can help you create authentic, seamless experiences that connect your ideas with your audience. Together we can build something that your customers are proud of.
           
-        h2 Systems thinking. Technical fluidity. Human outcomes.
+        h2 Systems thinking. Technical fluidity. Human outcomes. 
         p Work with me and you work directly with a multi-skilled, self-sufficient creative technologist, designer and developer who can take your idea from zero to reality—no middlemen, nothing lost in translation. 
           nuxt-link(to="/work") Here's some examples. 
 
