@@ -70,6 +70,13 @@ export default {
     scrollDetect(home, down, up) {
       // Current scroll position
       const currentScroll = this.scrollTop();
+
+      // Do nothing if scroll position is above the window
+      // Handles iOS bounce scrolling
+      if (this.scrollState < 0) {
+        return;
+      }
+
       if (currentScroll > this.scrollState) {
         down();
       } else if (currentScroll < this.scrollState) {
@@ -77,6 +84,7 @@ export default {
       } else {
         home();
       }
+
       // Set previous scroll position
       this.scrollState = this.scrollTop();
     },
