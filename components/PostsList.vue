@@ -7,10 +7,10 @@
     .container
       c-post(
         v-for="post in posts"
-        :key="post.heading"
+        :key="post.title"
         :link="post.permalink"
         :image="post.thumbImage"
-        :heading="post.heading"
+        :heading="post.title"
         :lede="post.lede"
         :date="post.date"
       )
@@ -26,18 +26,9 @@ export default {
     "c-pageheading": PageHeading,
     "c-post": Post
   },
-  data() {
-    return {
-      posts: []
-    };
+  props: {
+    posts: Array,
   },
-  async asyncData({ app }) {
-    const posts = await app.$content("/posts").getAll();
-
-    return {
-      posts
-    };
-  }
 };
 </script>
 
