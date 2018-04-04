@@ -24,7 +24,7 @@
             p.Text.u-textCenter
               a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
 
-  c-postslist(:posts="posts")
+  //- c-postslist(:posts="posts")
 </template>
 
 <script>
