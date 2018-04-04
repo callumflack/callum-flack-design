@@ -39,6 +39,7 @@ export default {
     "c-postslist": PostsList
   },
   props: {
+    pageTitle: String,
     title: String,
     lede: String,
     published: String,
@@ -50,12 +51,12 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.title} – Callum Flack Design`,
+      title: `${this.page.pageTitle} – Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `${this.page.title} – ${this.page.lede}`
+          content: `${this.page.pageTitle} – ${this.page.lede}`
         }
       ]
     };
@@ -66,7 +67,7 @@ export default {
 
     return {
       page,
-      posts,
+      posts
     };
   }
 };
