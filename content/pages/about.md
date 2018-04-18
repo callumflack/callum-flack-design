@@ -8,7 +8,7 @@ heroInCloudinary: true
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 
-Hi, Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps.
+Hi, I'm Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps.
 
 <!-- I help owners and creators make websites and apps that attract, motivate and retain their audience.  -->
 
