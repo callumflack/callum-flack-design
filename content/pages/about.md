@@ -10,7 +10,7 @@ heroInCloudinary: true
 
 Hi, I'm Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps. I can counsel you on defining goals and intentions to design for. And I can execute the stack of details that good digital experiences are made of.
 
-I'm a graphic designer by trade. I've been immersed in interface design and user experience design since 2006, when I was unable to update my MySpace account.
+I'm a graphic designer by trade. I've been immersed in interface design and user experience design since 2006, when I couldn't figure out how to update my MySpace account.
 
 I'm also an accomplished frontend developer. I learned to code so that I could gain more design control. I'm now as comfortable in a code editor as I am in design programs.
 

@@ -23,3 +23,9 @@
     text-shadow: initial;
   }
 }
+
+.MetaSeparator {
+  display: inline-block;
+  margin-left: var(--s-3);
+  margin-right: var(--s-3);
+}

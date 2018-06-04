@@ -2,6 +2,7 @@
 title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry. In other words, we seek beauty.
 readingtime: 5
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
 published: true
 tweet: https://twitter.com/callumflack
 ---
@@ -18,7 +19,7 @@ Like a shadow felt but not consciously seen, we're hardly aware that the languag
 
 @[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
 
-# Danger and beauty
+## Danger and beauty
 
 When we use language, we have to think. We have to choose words, connect ideas, assemble metaphors, and then speak them. Thinking is expensive. We use aesthetic-based pattern-matching to give us answers before we consciously start thinking. We rely on aesthetics to make very fast decisions based on a library of intuitons built over a lifetime. The language of aesthetics is pre-verbal by necessity.
 
@@ -34,7 +35,7 @@ Danger and beauty are the two extremes on the spectrum of the language of aesthe
 
 <!-- caption="A Blue-ringed Octopus displays blue iridescent rings across their yellow-colored body when disturbed, hunting or mating. When calm, it displays an overall yellowish-beige colouration without any visible blue rings." -->
 
-# Beauty invites participation
+## Beauty invites participation
 
 We understand danger overtly. Our body reacts like an electricity switch, automatically overriding the need for conceptual thought. Beauty, however, is far more subtle. Beauty invites. _Beauty is a lure._
 
@@ -46,7 +47,7 @@ _Beauty invites participation and attention._
 
 @[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
 
-# Beauty is opportunity
+## Beauty is opportunity
 
 <!--It's been said that humans evolved large brains primarily to keep track of gossip within social circles as we began to live in larger groups. -->
 
@@ -64,7 +65,7 @@ _Humans naturally seek beauty in order to make use of it._
 
 @[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
 
-# Irrational beauty matters more than we dare admit
+## Irrational beauty matters more than we dare admit
 
 Our irrational response to beauty is the reason why advertising sells not to our intellect but to our emotional feelings: "you’ll feel better when you have this". It's why people will say "I'll know it when I see it" even though they can't explain what they're looking for. It's why a picture is worth a thousand words. It's what Buckminster Fuller meant when he said "if the solution is not beautiful, I know it is wrong."
 

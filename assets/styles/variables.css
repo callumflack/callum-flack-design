@@ -75,6 +75,8 @@
   --c-highlight: rgba(255, 235, 0, 0.25);
   --c-highlight: #FCF7C9;
   --c-highlight: #47caf5;
+  --c-link: #bd0a20;
+  --c-link: #f53813;
 
   --c-black: black;
   --c-dark: #171515;
@@ -106,9 +108,9 @@
   --ff-text-regular-italic: var(--ff-text-regular);
   --ff-text-medium: "Medium";
   --ff-text-bold: "Bold";
-  --ff-text-meta: var(--ff-text-regular);
 
-  --ff-title: "Title";
+  --ff-text-meta: "BG35";
+  --ff-title: "BG15";
   
   --ff-button: var(--ff-text-regular);
 
@@ -122,10 +124,10 @@
    
    */
 
-  --fs-text-unit: 1.1875;
+  --fs-text-unit: 1.125;
 
   --fs-text: calc(1em * var(--fs-text-unit));
-  --fs-text-meta: calc(1em * var(--fs-text-unit));
+  --fs-text-meta: calc(0.944444444em * var(--fs-text-unit));
   --fs-heading: calc(1.6875em * var(--fs-text-unit));
 
   /* 
@@ -145,7 +147,7 @@
    
    */
   
-  --ft-text: -0.0025em;
+  --ft-text: -0.001em;
   --ft-meta: 0.00625em;
   --ft-caps: 0.1em;
   --ft-heading: -0.0025em;

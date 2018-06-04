@@ -1,15 +1,16 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
     .container
-      nav.Nav.u-flex.u-flexJustifyBetween
+      nav.Nav.u-flex.u-flexJustifyCenter
         div
-          c-menulink.Heading(
+          c-menulink.Meta(
             label="CF/d"
             link="/"
             exact
           )
+        .Meta.MetaSeparator • 
         div
-          c-menulink.Heading(
+          c-menulink.Meta(
             v-for="item in menuLinks"
             :key="item.label"
             :label="item.label"

@@ -8,15 +8,27 @@
 
 p,
 ul,
+.Meta,
 .Text,
 .Text--meta,
 blockquote p em,
-.TypeScope h3,
-.TypeScope h2 {
+.MarkdownScope h3,
+.MarkdownScope h2 {
   font-size: var(--fs-text);
   font-weight: 400;
   letter-spacing: var(--ft-text);
   line-height: var(--fl-text);
+}
+
+p em {
+  font-family: var(--ff-text-regular-italic), var(--ff-stack-sans);
+  font-style: italic;
+}
+
+.Text--sm {
+  font-size: calc(0.833333333em * var(--fs-text-unit));
+  font-size: 14px;
+  letter-spacing: 0.005em;
 }
 
 /* 
@@ -29,41 +41,48 @@ blockquote p em,
   -------------------------------------------------
  */
 
-h1,
-h2,
-.Heading,
-.Subheading {
-  font-family: var(--ff-text-regular), var(--ff-stack-sans);
+.Meta,
+.Text--meta {
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
+  font-weight: 500;
+  font-size: var(--fs-text-meta);
+  letter-spacing: var(--ft-text);
+  line-height: var(--fl-text);
+  text-transform: uppercase;
+}
+
+.Subheading,
+.MarkdownScope h2 {
+  font-family: var(--ff-text-bold), var(--ff-stack-sans);
   font-size: var(--fs-text);
   font-weight: 400;
   letter-spacing: var(--ft-text);
   line-height: var(--fl-text);
 }
 
-.TypeScope h2,
-.TypeScope h3,
-.Heading {
-  font-family: var(--ff-text-medium), var(--ff-stack-sans);
-  font-weight: 500;
-}
-
 /* Big fat serif titles */
 
 .Title {
-  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-family: var(--ff-title), var(--ff-stack-serif);
   font-size: calc(2em * var(--fs-text-unit));
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.0001em;
 
-  /* FG */
-  /* letter-spacing: -0.001em; */
-  /* text-transform: uppercase; */
+  /* alt */
+  font-size: calc(2.25em * var(--fs-text-unit));
+  letter-spacing: -0.001em;
+  line-height: 1.02;
+  text-transform: uppercase;
 
   /* underline */
   // border-bottom: 3px solid var(--c-text);
   // margin-bottom: var(--s-3a);
   // padding-bottom: var(--s-3);
+
+  & a:hover {
+    color: var(--c-link);
+  }
 }
 
 .Title--project {
@@ -88,7 +107,7 @@ h2,
   border-radius: 999px;
   color: var(--c-bg);
   display: inline-block;
-  font-family: var(--ff-text-medium), var(--ff-stack-sans);
+  font-family: var(--ff-text-bold), var(--ff-stack-sans);
   height: 25px;
   line-height: 22px;
   text-align: center;
@@ -105,10 +124,10 @@ h2,
 
 .Title,
 .Title--xl {
-  margin-bottom: var(--s-3b);
+  margin-bottom: var(--s-1);
 
   @media (--md) {
-    margin-bottom: var(--s-4);
+    margin-bottom: var(--s-2);
   }
 
   &:last-child {

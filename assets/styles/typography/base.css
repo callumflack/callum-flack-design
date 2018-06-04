@@ -27,7 +27,7 @@ html {
  */
 
 body,
-.TypeScope-reset {
+.MarkdownScope-reset {
   font-size: 0.833333333rem !important; /*15pt*/
 
   @media (max-width: 320px) {

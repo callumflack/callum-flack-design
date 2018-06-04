@@ -1,22 +1,20 @@
 <template lang="pug">
-.block--pb7
+.block--pb7.block--matchFixedMenu
   main(role="main")
     .container
-      c-post(
+      c-postexcerpt(
         v-if="post.published"
-        v-for="post in posts.slice(0, 1)"
+        v-for="post in posts"
         :key="post.permalink"
         :link="post.permalink"
-        :image="post.heroImage"
+        :heroImage="post.heroImage"
         :title="post.title"
-        :lede="post.lede"
-        :body="post.body"
-        :readingtime="post.readingtime"
         :date="post.date"
-        :published="post.published"
+        :readingtime="post.readingtime"
+        :lede="post.lede"
       )
       
-      .InterludeSpace
+      //- .InterludeSpace
         hr
         .block--my7
           p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
@@ -25,16 +23,7 @@
               | &nbsp;is writing about the things inbetween. Here's the most recent posts:
         hr
 
-      c-postexcerpt(
-        v-if="post.published"
-        v-for="post in posts.slice(1)"
-        :key="post.title"
-        :link="post.permalink"
-        :image="post.thumbImage"
-        :title="post.title"
-        :lede="post.lede"
-        :date="post.date"
-      )
+      
 </template>
 
 <script>
@@ -44,7 +33,6 @@ import PostExcerpt from "~/components/PostExcerpt.vue";
 export default {
   name: "blog",
   components: {
-    "c-post": Post,
     "c-postexcerpt": PostExcerpt
   },
   head() {

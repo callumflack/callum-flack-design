@@ -24,7 +24,7 @@ div
           )
     main(role="main")
       .container
-        nuxtent-body.TypeScope(:body="page.body")
+        nuxtent-body.MarkdownScope(:body="page.body")
   nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
@@ -66,7 +66,7 @@ export default {
       // (v-if="page.projectColor", :style = 'projectColor')
       return this.page.projectColor
         ? `background-color: ${this.page.projectColor}`
-        : "background-color: rgb(70,70,70)";
+        : "background-color: rgb(250, 250, 250)";
     },
     heroClasses() {
       return [

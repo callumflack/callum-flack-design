@@ -40,6 +40,7 @@ export default {
 
 .link {
   background-image: none;
+  /* font-size: var(--fs-text-meta); */
   text-decoration: none;
 }
 
@@ -68,11 +69,7 @@ export default {
 }
 
 .nuxt-link-active span {
-  /* font-family: var(--ff-text-medium), var(--ff-stack-serif); */
-  /* font-weight: 500; */
-  /* padding-left: 0.75rem; */
   position: relative;
-  /* text-decoration: underline; */
 }
 
 .nuxt-link-active span:before {

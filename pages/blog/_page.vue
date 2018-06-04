@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+.container
   c-post(
     :link="page.permalink"
     :title="page.title"
@@ -7,16 +7,15 @@ div
     :readingtime="page.readingtime"
     :body="page.body"
   )
-  .container
-    .HeadingSpace(v-if="page.updated || page.note")
-      hr
-      p.Text.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
-      p.Text.c-textLight(v-if="page.note", v-html="page.note")
+  .HeadingSpace(v-if="page.updated || page.note")
+    hr
+    p.Text.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
+    p.Text.c-textLight(v-if="page.note", v-html="page.note")
 
-    .block--mt6(v-if="page.tweet")
-      p.Heading.m-b0.u-textCenter Comments?
-      p.Text.u-textCenter
-        a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
+  .block--mt6(v-if="page.tweet")
+    p.Heading.m-b0.u-textCenter Comments?
+    p.Text.u-textCenter
+      a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
 </template>
 
 <script>

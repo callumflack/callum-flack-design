@@ -1,6 +1,7 @@
 <template lang="pug">
 article
   header.block--matchFixedMenu.block--pb7(role="banner")
+    c-pageheading(title="Callum Flack is a designer who codes")
     .container
       c-lazyimage(
         v-if="page.heroInCloudinary"
@@ -17,7 +18,7 @@ article
       )
   main.block--pb7(role="main")
     .container
-      nuxtent-body.TypeScope(:body="page.body")
+      nuxtent-body.MarkdownScope(:body="page.body")
 </template>
 
 <script>

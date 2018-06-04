@@ -1,23 +1,41 @@
 <template lang="pug">
-  nuxt-link.project.LinkSignal.block--mb5(:to="link")
-    .project-text
-      h1.Subtitle.m-t0
-        span.LinkSignal-title {{ title }}
-      p.Text(v-html="lede") 
+  .Article
+    .u-lg-size7of12.m-xAuto(role="banner")
+      h1.Title.u-textCenter
+        nuxt-link(:to="link") {{ title }}
+      .u-block.u-textCenter
+        time.Text.Text--sm(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+        span(v-if="readingtime")
+          span.MetaSeparator • 
+          span.Text.Text--sm {{ readingtime }} minutes
+    
+    //- nuxt-link(:to="link")
+    c-image(v-if="heroImage" :src="heroImage" post)
+    
+    p.Text.p-t2
+      | {{ lede }} 
+      nuxt-link(:to="link") Read
+
 </template>
 
 
 <script>
+import LazyImage from "~/components/LazyImage.vue";
+
 export default {
   name: "post-excerpt",
-  components: {},
+  components: {
+    "c-image": LazyImage
+  },
   props: {
     post: Boolean,
+    published: String,
     link: String,
     title: String,
-    lede: String,
-    published: String,
-    date: String
+    date: String,
+    readingtime: Number,
+    heroImage: String,
+    lede: String
   }
 };
 </script>

@@ -9,7 +9,7 @@
 import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
 import Footer from "~/components/Footer.vue";
-import Menu from "~/components/Menu.vue";
+import Menu from "~/components/MenuOrange.vue";
 
 export default {
   components: {

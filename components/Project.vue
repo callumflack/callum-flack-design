@@ -10,7 +10,7 @@
           .u-flex.u-flexAlignItemsCenter
             div
               h2.Title.Title--project {{ title }}
-              p.Text.c-textLight.m-b0
+              p.Text--sm.m-b0
                 span(v-if="year") {{ year }}
                 span.m-x2 •
                 span(v-if="tags") {{ tags }}
