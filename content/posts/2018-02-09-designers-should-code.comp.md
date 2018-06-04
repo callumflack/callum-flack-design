@@ -1,9 +1,8 @@
 ---
-section: Blog
-pageTitle: Should designers code?
-title: Should<span class="u-table">designers</span>code?
+title: Should designers code?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
-published: February 9, 2018
+published: true
+readingtime: 5
 updated: false
 note: Many thanks to Michael Fogleman for his input.<br>This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.
 tweet: https://twitter.com/callumflack

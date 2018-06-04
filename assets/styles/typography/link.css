@@ -9,14 +9,17 @@ button {
   color: inherit;
   cursor: pointer;
   font-family: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*.visualLink,
+.project:hover .project-visualLink,
+a:not(.Button),*/
 a:not(.Button),
-p a:not(.Button),
-p a:not(.LinkSignal),
-.project:hover .project-visualLink {
+a:not(.LinkSignal),
+h1 a:hover,
+h1 a:active,
+.LinkSignal:hover .LinkSignal-title {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(currentColor, currentColor);
@@ -30,11 +33,16 @@ p a:not(.LinkSignal),
 
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position-y: 102%, 102%, 102%;
-    background-position-y: 90%, 90%, 90%;
   }
+}
 
-  text-decoration: underline;
-}*/
+h1 a:hover,
+h1 a:active,
+.LinkSignal:hover .LinkSignal-title {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background-position-y: 93%, 93%, 93%;
+  }
+}
 
 /* 
 

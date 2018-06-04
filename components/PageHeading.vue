@@ -1,15 +1,15 @@
 <template lang="pug">
   div(:class="blockClasses")
     .container.container--sm
-      h1.Title.Title--xl(
+      h1.Title.Title--xl.u-textCenter(
         v-if="titleXl"
         v-html="titleXl"
       )
-      h1.Title(
+      h1.Title.u-textCenter(
         v-if="title"
         v-html="title"
       )
-      h2.Text.m-t0.m-b0(v-if="lede", v-html="lede")
+      h2.Text.u-textLeft.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>

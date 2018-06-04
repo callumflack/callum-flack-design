@@ -18,7 +18,8 @@
     "@nuxtjs/axios": "4.3.1",
     "@nuxtjs/google-tag-manager": "1.1.0",
     "nuxt": "1.1.0",
-    "nuxtent": "1.4.1"
+    "nuxtent": "1.4.1",
+    "vue-moment": "^4.0.0-0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

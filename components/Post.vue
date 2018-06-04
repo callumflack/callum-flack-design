@@ -1,13 +1,18 @@
 <template lang="pug">
-  nuxt-link.project.LinkSignal.block--mb6(:to="link")
-    //- figure.project-image(v-if="image")
-      img(:src="image")
-    .project-text
-      h1.Title {{ title }}
-        //- span.LinkSignal-target &nbsp;→
-      p.Text(v-html="lede") 
-      //- p.project-subtext.TypeScope-reset
-        span(v-if="date") {{ date }}
+  article.Article.block--pb7.block--matchFixedMenu
+    header.block--pb5.u-lg-size5of6.m-xAuto(role="banner")
+      h1.Title.u-textCenter
+        nuxt-link(:to="link") {{ title }}
+      .u-block.u-textCenter
+        span(v-if="readingtime")
+          span.MetaSeparator.c-textLight • 
+          span.Meta.c-textLight {{ readingtime }} minutes
+    
+    main(role="main")
+      .container
+        .TypeScope
+          no-ssr
+            nuxtent-body(:body="body")
 </template>
 
 
@@ -16,12 +21,12 @@ export default {
   name: "post",
   components: {},
   props: {
-    post: Boolean,
+    published: Boolean,
     link: String,
-    image: String,
     title: String,
-    lede: String,
-    date: String
+    date: String,
+    readingtime: Number,
+    body: Object
   }
 };
 </script>
@@ -29,4 +34,9 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.MetaSeparator {
+  margin-left: var(--s-2);
+  margin-right: var(--s-2);
+}
 </style>

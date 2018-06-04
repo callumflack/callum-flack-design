@@ -39,6 +39,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .link {
+  background-image: none;
   text-decoration: none;
 }
 

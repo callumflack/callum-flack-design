@@ -8,13 +8,7 @@ heroInCloudinary: true
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 
-Hi, I'm Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps.
-
-<!-- I help owners and creators make websites and apps that attract, motivate and retain their audience.  -->
-
-<!-- I can counsel you on the big picture.  -->
-
-I can counsel you on defining goals and intentions to design for. I can execute the stack of details that good digital experiences are made of.
+Hi, I'm Callum Flack. I'm a digital designer who works fluidly across visual design, user experience, and code to make pragmatic, poetic websites and apps. I can counsel you on defining goals and intentions to design for. And I can execute the stack of details that good digital experiences are made of.
 
 I'm a graphic designer by trade. I've been immersed in interface design and user experience design since 2006, when I was unable to update my MySpace account.
 

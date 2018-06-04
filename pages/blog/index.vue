@@ -1,31 +1,51 @@
 <template lang="pug">
 .block--pb7
-  header(role="banner")
-    c-pageheading(
-      lede="How to create digital experiences that resonate."
-    )
   main(role="main")
     .container
       c-post(
-        v-for="post in posts"
-        :key="post.heading"
+        v-if="post.published"
+        v-for="post in posts.slice(0, 1)"
+        :key="post.permalink"
+        :link="post.permalink"
+        :image="post.heroImage"
+        :title="post.title"
+        :lede="post.lede"
+        :body="post.body"
+        :readingtime="post.readingtime"
+        :date="post.date"
+        :published="post.published"
+      )
+      
+      .InterludeSpace
+        hr
+        .block--my7
+          p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
+            span.u-block
+              nuxt-link.u-linkClean(to="/about") Callum Flack
+              | &nbsp;is writing about the things inbetween. Here's the most recent posts:
+        hr
+
+      c-postexcerpt(
+        v-if="post.published"
+        v-for="post in posts.slice(1)"
+        :key="post.title"
         :link="post.permalink"
         :image="post.thumbImage"
-        :heading="post.heading"
+        :title="post.title"
         :lede="post.lede"
         :date="post.date"
       )
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
 import Post from "~/components/Post.vue";
+import PostExcerpt from "~/components/PostExcerpt.vue";
 
 export default {
   name: "blog",
   components: {
-    "c-pageheading": PageHeading,
-    "c-post": Post
+    "c-post": Post,
+    "c-postexcerpt": PostExcerpt
   },
   head() {
     return {

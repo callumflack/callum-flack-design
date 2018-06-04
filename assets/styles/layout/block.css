@@ -135,6 +135,18 @@
   }
 }
 
+.Article + .Article,
+.block--mt7 {
+  margin-top: var(--s-5);
+
+  @media (--md) {
+    margin-top: var(--s-6);
+  }
+  @media (--lg) {
+    margin-top: var(--s-7);
+  }
+}
+
 .block--mt6 {
   margin-top: var(--s-4);
 

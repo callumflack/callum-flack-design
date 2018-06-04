@@ -6,41 +6,48 @@
 
 @font-face {
   font-family: var(--ff-text-regular);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.ttf") format("truetype"),
-    url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff"),
-    url("~static/fonts/neue-haas-unica-pro-regular.woff2") format("woff2");
+  src: url("~static/fonts/noe-text-book.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
+  src: url("~static/fonts/TiemposText-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text-regular-italic);
-  src: url("~static/fonts/neue-haas-unica-pro-regular.ttf") format("truetype"),
-    url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff"),
-    url("~static/fonts/neue-haas-unica-pro-regular.woff2") format("woff2");
+  src: url("~static/fonts/TiemposText-RegularItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: var(--ff-text-medium);
-  src: url("~static/fonts/neue-haas-unica-pro-medium.ttf") format("truetype"),
-    url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff"),
-    url("~static/fonts/neue-haas-unica-pro-medium.woff2") format("woff2");
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  src: url("~static/fonts/Dia-Black.woff") format("woff");
+  src: url("~static/fonts/Franklin-Gothic-Extra-Condensed-BT.woff") format("woff");
+  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
+  src: url("~static/fonts/NeueHaasGrotDisp-65Medium.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium-WebXL.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text-bold);
-  src: url("~static/fonts/neue-haas-unica-pro-bold.ttf") format("truetype"),
-    url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff"),
-    url("~static/fonts/neue-haas-unica-pro-bold.woff2") format("woff2");
+  src: url("~static/fonts/noe-text-semibold.woff") format("woff");
+  src: url("~static/fonts/TiemposText-Bold.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium-WebXL.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
-  src: url("~static/fonts/louize-display-bold.ttf") format("truetype"),
-    url("~static/fonts/louize-display-bold.woff") format("woff"),
-    url("~static/fonts/louize-display-bold.woff2") format("woff2");
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  src: url("~static/fonts/Dia-Black.woff") format("woff");
+  src: url("~static/fonts/Franklin-Gothic-Extra-Condensed-BT.woff") format("woff");
+  src: url("~static/fonts/NeueHaasGrotDisp-65Medium.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
+  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Semibold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

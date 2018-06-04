@@ -44,7 +44,8 @@ export default {
     frame: Boolean,
     large: Boolean,
     project: Boolean,
-    portrait: Boolean
+    portrait: Boolean,
+    post: Boolean
   },
 
   computed: {
@@ -56,7 +57,8 @@ export default {
           "figure--frame": this.frame,
           "figure--large": this.large,
           "figure--project": this.project,
-          "figure--portrait": this.portrait
+          "figure--portrait": this.portrait,
+          "figure--post": this.post
         }
       ];
     },
