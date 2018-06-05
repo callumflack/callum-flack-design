@@ -1,5 +1,5 @@
 <template lang="pug">
-  nav.Plain.Title(:class="navBar")
+  nav.Plain.Title
     nuxt-link(to="/" exact) CF/#[span d]
 </template>
 

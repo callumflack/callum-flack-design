@@ -3,8 +3,8 @@
     header(role="banner")
       c-pageheading(
         projectSpace
-        titleXl="change-making digital design"
-        lede="<span class='u-block ParagraphSpace'>Hi, I'm Callum Flack. I help owners and creators make websites and apps that attract, motivate and retain their audience. I work fluidly across visual design, user experience, and code.</span><span class='u-block'>Here's 5 ways I design for audience change:</span>"
+        title="Digital-first branding"
+        lede="Hi, I'm Callum Flack. I help owners and creators make websites and apps that attract, motivate and retain their audience. I work fluidly across visual design, user experience, and code. Here's 5 ways I design for audience change:"
       )
     main(role="content")
       section.Slide(style="background-color:rgba(236, 223, 194,0.5)")

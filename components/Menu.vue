@@ -8,7 +8,7 @@
             link="/"
             exact
           )
-        .Meta.MetaSeparator • 
+        .Meta.LinkSeparator •
         div
           c-menulink.Meta(
             v-for="item in menuLinks"
@@ -121,6 +121,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .FixedMenu {
+  border-bottom: 1px solid #e5e5e5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -158,13 +159,5 @@ export default {
     opacity: 1;
     top: 0;
   }
-}
-
-.Nav {
-  /* border-bottom: 0.15rem solid var(--c-text);
-  border-bottom: 1px solid var(--c-text);
-  border-color: transparent; */
-  padding-top: var(--s-4);
-  padding-bottom: var(--s-4);
 }
 </style>

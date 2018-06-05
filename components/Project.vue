@@ -3,14 +3,14 @@
     .FlexGrid--sm
       .u-sm-size1of2
         figure
-          c-lazyimage(project, :src="image", v-if="thumbInCloudinary")
-          img(:src="image", v-else)
+          c-lazyimage(v-if="thumbInCloudinary", :src="image", project)
+          img(v-else, :src="image")
       .u-sm-size1of2.m-t3.m-sm-t0
         .u-flex.u-flexAlignContentStretch.h-100
           .u-flex.u-flexAlignItemsCenter
             div
               h2.Title.Title--project {{ title }}
-              p.Text--sm.m-b0
+              .u-block.Meta.c-textLight
                 span(v-if="year") {{ year }}
                 span.m-x2 •
                 span(v-if="tags") {{ tags }}

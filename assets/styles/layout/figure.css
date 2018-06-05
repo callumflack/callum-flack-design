@@ -14,8 +14,8 @@
     margin-bottom: var(--s-4);
   }
   @media (--lg) {
-    /* margin-top: var(--s-5);
-    margin-bottom: var(--s-5); */
+    margin-top: var(--s-5);
+    margin-bottom: var(--s-5);
   }
 
   &:first-child {
@@ -27,13 +27,32 @@
   }
 }
 
+.figure--bottomSpace {
+  margin-bottom: var(--s-3);
+
+  @media (--md) {
+    margin-bottom: var(--s-4);
+  }
+  @media (--lg) {
+    margin-bottom: var(--s-4a);
+  }
+}
+
 .figure--frame {
   border: 1px solid var(--c-border);
 }
 
-/* break the text column grid */
+/* 
+
+  break the text column grid 
+
+*/
+
 .figure--project,
 .figure--post {
+  left: calc(-50vw + 50%);
+  width: 100vw;
+
   @media (--md) {
     left: calc((-0.5 * var(--container-rg-img)) + 50%);
     width: var(--container-rg-img);
@@ -68,31 +87,25 @@
   margin: 0 auto;
 }
 
-/* funky shit */
+/* 
+
+  Project hero
+
+*/
 
 .ProjectHero {
   left: calc(-50vw + 50%);
+  margin-bottom: var(--s-5);
   min-height: 40vh;
   position: relative;
   width: 100vw;
 
-  background-color: var(--c-gray);
-  background-color: var(--c-bg);
-  margin-bottom: var(--s-5);
-  padding-top: var(--s-5);
-  padding-bottom: var(--s-5);
-
-  @media (--md) {
-    min-height: 70vh;
-  }
   @media (--md) {
     margin-bottom: var(--s-6);
-    padding-top: var(--s-6);
-    padding-bottom: var(--s-6);
+    min-height: 45vh;
   }
   @media (--lg) {
-    padding-top: var(--s-7);
-    padding-bottom: var(--s-7);
+    min-height: 64vh;
   }
 
   & .figure {
@@ -109,7 +122,6 @@
   }
 
   & img {
-    // border: 11px solid var(--c-text);
     // box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 9px 50px 0 rgba(0, 0, 0, 0.1);
     // box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 9px 50px 0 rgba(0, 0, 0, 0.4), 0 19px 100px 0 rgba(0, 0, 0, 0.2);

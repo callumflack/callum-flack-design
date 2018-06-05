@@ -1,6 +1,5 @@
 <template lang="pug">
-.block--pb7.block--matchFixedMenu
-  main(role="main")
+  main.block--pb7.block--matchFixedMenu(role="main")
     .container
       c-postexcerpt(
         v-if="post.published"
@@ -22,12 +21,9 @@
               nuxt-link.u-linkClean(to="/about") Callum Flack
               | &nbsp;is writing about the things inbetween. Here's the most recent posts:
         hr
-
-      
 </template>
 
 <script>
-import Post from "~/components/Post.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 
 export default {

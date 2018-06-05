@@ -26,6 +26,18 @@
 
 .MetaSeparator {
   display: inline-block;
-  margin-left: var(--s-3);
-  margin-right: var(--s-3);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.LinkSeparator {
+  margin-left: var(--s-3a);
+  margin-right: var(--s-3a);
+  padding-top: var(--s-3b);
+  padding-bottom: var(--s-3b);
+
+  @media (--sm) {
+    padding-top: var(--s-4a);
+    padding-bottom: var(--s-4a);
+  }
 }

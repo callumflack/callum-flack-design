@@ -1,16 +1,15 @@
 <template lang="pug">
-  .Article
-    .u-lg-size7of12.m-xAuto(role="banner")
+  .Excerpt
+    .u-lg-size10of12.m-xAuto
       h1.Title.u-textCenter
         nuxt-link(:to="link") {{ title }}
-      .u-block.u-textCenter
-        time.Text.Text--sm(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span(v-if="readingtime")
-          span.MetaSeparator • 
-          span.Text.Text--sm {{ readingtime }} minutes
+      .u-block.Text--sm.c-textLight.u-textCenter
+        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+        span.MetaSeparator • 
+        span {{ readingtime }} minutes
     
-    //- nuxt-link(:to="link")
-    c-image(v-if="heroImage" :src="heroImage" post)
+    nuxt-link.u-block.figure(:to="link")
+      c-image(v-if="heroImage" :src="heroImage" post wrappedInLink)
     
     p.Text.p-t2
       | {{ lede }} 

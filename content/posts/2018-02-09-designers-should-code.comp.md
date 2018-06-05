@@ -3,7 +3,7 @@ title: Should designers code?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 published: true
 readingtime: 5
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 updated: false
 note: Many thanks to Michael Fogleman for his input.<br>This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.
 tweet: https://twitter.com/callumflack
@@ -29,8 +29,8 @@ The same holds true for the complexities of User Interface design. Why, for exam
 
 Hi! I’m a designer who really enjoys coding. I’m self-taught, and I started more than a decade into a graphic design career. Here’s a few reasons why I think designers should code:
 
-* **If you work with others, learning to code will help you understand the systems you’re working with**, and the skills and people that will overlap your domain.
-* **If you work by yourself, learning to code gives you agency and self-sufficiency.** This gives you more options in the current work climate, for more reasons than just getting paid.
+- **If you work with others, learning to code will help you understand the systems you’re working with**, and the skills and people that will overlap your domain.
+- **If you work by yourself, learning to code gives you agency and self-sufficiency.** This gives you more options in the current work climate, for more reasons than just getting paid.
 
 How, might you ask? Working self-sufficiently as a web creator, I can execute what I’ve designed without asking or paying another person.
 

@@ -14,11 +14,11 @@ button {
 
 /*.visualLink,
 .project:hover .project-visualLink,
-a:not(.Button),*/
+a:not(.Button),
+h1 a:hover,
+h1 a:active,*/
 a:not(.Button),
 a:not(.LinkSignal),
-h1 a:hover,
-h1 a:active,
 .LinkSignal:hover .LinkSignal-title {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-bg), var(--c-bg)),
@@ -36,9 +36,22 @@ h1 a:active,
   }
 }
 
+a:not(.Button),
+a:not(.LinkSignal) {
+  &:hover {
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(currentColor, currentColor);
+    color: var(--c-link);
+  }
+}
+
 h1 a:hover,
 h1 a:active,
 .LinkSignal:hover .LinkSignal-title {
+  background-image: none !important;
+  text-shadow: none !important;
+
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position-y: 93%, 93%, 93%;
   }
@@ -64,7 +77,7 @@ h1 a:active,
   transform: rotate(-45deg);
   vertical-align: top;
   right: -1em;
-  top: 0.25em;
+  /* top: 0.25em; */
 }
 
 /* 

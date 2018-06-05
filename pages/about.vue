@@ -1,8 +1,9 @@
 <template lang="pug">
 article
-  header.block--matchFixedMenu.block--pb7(role="banner")
-    c-pageheading(title="Callum Flack is a designer who codes")
-    .container
+  header(role="banner")
+    //- c-pageheading(titleXl="seamless digital . by design." pageSpace)
+    c-pageheading(titleXl="design vision. seamless execution." titleHighlight pageSpace)
+    //- .container
       c-lazyimage(
         v-if="page.heroInCloudinary"
         project

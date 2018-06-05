@@ -11,9 +11,7 @@ ul,
 .Meta,
 .Text,
 .Text--meta,
-blockquote p em,
-.MarkdownScope h3,
-.MarkdownScope h2 {
+blockquote p em {
   font-size: var(--fs-text);
   font-weight: 400;
   letter-spacing: var(--ft-text);
@@ -25,10 +23,28 @@ p em {
   font-style: italic;
 }
 
+/* 
+  -------------------------------------------------
+  
+  Metas
+
+  -------------------------------------------------
+ */
+
+.Meta,
+.Text--meta,
 .Text--sm {
-  font-size: calc(0.833333333em * var(--fs-text-unit));
-  font-size: 14px;
-  letter-spacing: 0.005em;
+  font-size: var(--fs-meta);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.Meta,
+.Text--meta,
+.Text--sm {
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
+  font-weight: 800;
 }
 
 /* 
@@ -41,28 +57,30 @@ p em {
   -------------------------------------------------
  */
 
-.Meta,
-.Text--meta {
-  font-family: var(--ff-text-meta), var(--ff-stack-sans);
-  font-weight: 500;
-  font-size: var(--fs-text-meta);
-  letter-spacing: var(--ft-text);
+.Subheading,
+.MarkdownScope h2 {
+  font-family: var(--ff-text-subheading), var(--ff-stack-sans);
+  /* resetting ems before applying font sizing: */
+  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
+  font-size: var(--fs-subheading);
+  font-weight: 800;
+  letter-spacing: 0.05em;
   line-height: var(--fl-text);
   text-transform: uppercase;
 }
 
-.Subheading,
-.MarkdownScope h2 {
-  font-family: var(--ff-text-bold), var(--ff-stack-sans);
-  font-size: var(--fs-text);
-  font-weight: 400;
-  letter-spacing: var(--ft-text);
-  line-height: var(--fl-text);
+.Lede {
+  font-family: var(--ff-text-lede), var(--ff-stack-serif);
+  font-size: var(--fs-lede);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.33333;
 }
 
 /* Big fat serif titles */
 
-.Title {
+.Title,
+.Title--xl {
   font-family: var(--ff-title), var(--ff-stack-serif);
   font-size: calc(2em * var(--fs-text-unit));
   font-weight: 700;
@@ -70,9 +88,9 @@ p em {
   letter-spacing: -0.0001em;
 
   /* alt */
-  font-size: calc(2.25em * var(--fs-text-unit));
-  letter-spacing: -0.001em;
-  line-height: 1.02;
+  font-size: var(--fs-title);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
   text-transform: uppercase;
 
   /* underline */
@@ -85,21 +103,22 @@ p em {
   }
 }
 
+.Title--xl {
+  font-size: calc(2.666em * var(--fs-text-unit));
+}
+
+/* 
+  -------------------------------------------------
+
+  Index pg things
+
+  -------------------------------------------------
+ */
+
 .Title--project {
   border: initial;
   margin-bottom: var(--s-2);
   padding-bottom: 0;
-}
-
-.Title--xl {
-  /* font-size: calc(3em * var(--fs-text-unit));
-  line-height: 0.96;
-  letter-spacing: -0.04em;
-  margin-top: 0 !important; */
-
-  /* FG */
-  /* letter-spacing: -0.01em; */
-  /* text-transform: uppercase; */
 }
 
 .Title-number {
@@ -124,10 +143,10 @@ p em {
 
 .Title,
 .Title--xl {
-  margin-bottom: var(--s-1);
+  margin-bottom: var(--s-2);
 
   @media (--md) {
-    margin-bottom: var(--s-2);
+    margin-bottom: var(--s-3);
   }
 
   &:last-child {
@@ -177,10 +196,10 @@ blockquote {
 }
 
 blockquote em {
-  margin-top: 3px;
+  /* margin-top: 3px; */
 
   @media (--lg) {
-    margin-top: 6px;
+    /* margin-top: 6px; */
   }
 }
 
@@ -239,8 +258,8 @@ blockquote em {
 
 blockquote p {
   border-left: 1px solid;
-  border-color: var(--c-border);
-  font-family: var(--ff-text-regular-italic), var(--ff-stack-sans);
+  border-color: var(--c-text);
+  font-family: var(--ff-text-regular-italic), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
 

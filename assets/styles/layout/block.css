@@ -105,13 +105,13 @@
 
 /* manage fixed menu */
 .block--matchFixedMenu {
-  padding-top: calc(var(--s-5) - 3.75em);
+  padding-top: calc(var(--s-5) + 66px);
 
   @media (--md) {
-    padding-top: calc(var(--s-6) - 3.75em);
+    padding-top: calc(var(--s-6) + 66px);
   }
   @media (--lg) {
-    padding-top: calc(var(--s-7) - 3.75em);
+    padding-top: calc(var(--s-7) + 66px);
   }
 }
 
@@ -135,7 +135,7 @@
   }
 }
 
-.Article + .Article,
+.Excerpt + .Excerpt,
 .block--mt7 {
   margin-top: var(--s-5);
 
