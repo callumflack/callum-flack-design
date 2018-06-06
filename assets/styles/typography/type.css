@@ -8,15 +8,43 @@
 
 p,
 ul,
+.Meta,
 .Text,
 .Text--meta,
-blockquote p em,
-.TypeScope h3,
-.TypeScope h2 {
+blockquote p em {
   font-size: var(--fs-text);
   font-weight: 400;
   letter-spacing: var(--ft-text);
   line-height: var(--fl-text);
+}
+
+p em {
+  font-family: var(--ff-text-regular-italic), var(--ff-stack-sans);
+  font-style: italic;
+}
+
+/* 
+  -------------------------------------------------
+  
+  Metas
+
+  -------------------------------------------------
+ */
+
+.Meta,
+.Text--meta,
+.Text--sm {
+  font-size: var(--fs-meta);
+  letter-spacing: 0.075em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.Meta,
+.Text--meta,
+.Text--sm {
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
+  font-weight: 800;
 }
 
 /* 
@@ -29,39 +57,71 @@ blockquote p em,
   -------------------------------------------------
  */
 
-h1,
-h2,
-.Heading,
-.Subheading {
-  font-family: var(--ff-text-regular), var(--ff-stack-sans);
-  font-size: var(--fs-text);
-  font-weight: 400;
-  letter-spacing: var(--ft-text);
+.Subheading,
+.MarkdownScope h2 {
+  font-family: var(--ff-text-subheading), var(--ff-stack-sans);
+  /* resetting ems before applying font sizing: */
+  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
+  font-size: var(--fs-subheading);
+  font-weight: 800;
+  letter-spacing: 0.075em;
   line-height: var(--fl-text);
+  text-transform: uppercase;
 }
 
-.TypeScope h2,
-.TypeScope h3,
-.Heading {
-  font-family: var(--ff-text-medium), var(--ff-stack-sans);
-  font-weight: 500;
+.Lede {
+  font-family: var(--ff-text-lede), var(--ff-stack-serif);
+  font-size: var(--fs-lede);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+
+  /* alt 
+  font-family: var(--ff-title), var(--ff-stack-serif);
+  font-size: var(--fs-lede);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.0001em;
+  text-transform: uppercase; */
 }
 
 /* Big fat serif titles */
 
-.Title {
-  font-family: var(--ff-title), var(--ff-stack-serif);
-  font-size: calc(2.25em * var(--fs-text-unit));
+.Title,
+.Title--xl {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-size: calc(2em * var(--fs-text-unit));
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.025em;
+  line-height: 1.2;
+  letter-spacing: -0.0001em;
+
+  /* alt */
+  font-size: var(--fs-title);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
   text-transform: uppercase;
 
   /* underline */
   // border-bottom: 3px solid var(--c-text);
   // margin-bottom: var(--s-3a);
   // padding-bottom: var(--s-3);
+
+  & a:hover {
+    color: var(--c-link);
+  }
 }
+
+.Title--xl {
+  font-size: calc(2.666em * var(--fs-text-unit));
+}
+
+/* 
+  -------------------------------------------------
+
+  Index pg things
+
+  -------------------------------------------------
+ */
 
 .Title--project {
   border: initial;
@@ -69,20 +129,15 @@ h2,
   padding-bottom: 0;
 }
 
-.Title--xl {
-  font-size: calc(3.25em * var(--fs-text-unit));
-  line-height: 0.9;
-  letter-spacing: -0.005em;
-  margin-top: 0 !important;
-}
-
 .Title-number {
   background-color: var(--c-text);
   border-radius: 999px;
   color: var(--c-bg);
   display: inline-block;
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
   height: 25px;
-  line-height: 22px;
+  line-height: 24px;
+  margin-bottom: var(--s-1);
   text-align: center;
   width: 25px;
 }
@@ -95,6 +150,19 @@ h2,
   -------------------------------------------------
  */
 
+.Title,
+.Title--xl {
+  margin-bottom: var(--s-2);
+
+  @media (--md) {
+    margin-bottom: var(--s-3);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 p,
 ul,
 ol,
@@ -105,7 +173,7 @@ h3,
 h4,
 h6,
 .ParagraphSpace {
-  margin-bottom: var(--s-3);
+  margin-bottom: var(--s-2a);
 
   @media (--md) {
     margin-bottom: var(--s-3);
@@ -123,10 +191,10 @@ h4,
 h6,
 .HeadingSpace {
   &:not(:first-child) {
-    margin-top: calc(3 * var(--s-3));
+    margin-top: var(--s-3b);
 
     @media (--md) {
-      margin-top: calc(3 * var(--s-3));
+      margin-top: var(--s-4);
     }
   }
 }
@@ -134,6 +202,14 @@ h6,
 blockquote {
   margin-top: calc(1.5 * var(--s-3));
   margin-bottom: calc(1.5 * var(--s-3));
+}
+
+blockquote em {
+  /* margin-top: 3px; */
+
+  @media (--lg) {
+    /* margin-top: 6px; */
+  }
 }
 
 * + .Button {
@@ -192,8 +268,8 @@ blockquote {
 blockquote p {
   border-left: 1px solid;
   border-color: var(--c-border);
-  color: var(--c-textLight);
-  font-family: var(--ff-text-regular-italic), var(--ff-stack-sans);
+  font-family: var(--ff-text-regular-italic), var(--ff-stack-serif);
+  font-style: italic;
   padding-left: var(--s-3a);
 
   @media (--sm) {
@@ -201,7 +277,7 @@ blockquote p {
   }
 
   &:before {
-    content: "“";
+    /* content: "“"; */
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);

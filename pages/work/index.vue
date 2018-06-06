@@ -1,5 +1,11 @@
 <template lang="pug">
-  main.block--matchFixedMenu.block--pb7(role="main")
+div
+  header(role="banner")
+    c-pageheading(
+      titleXl="Enter full screen"
+      lede="Selected projects since 2014."
+    )
+  main(role="main").block--pb7
     .container.container--md
       //- .project-filter
         .u-flex.u-flexJustifyBetween
@@ -29,6 +35,7 @@
         :key="project.heading"
         :link="project.permalink"
         :title="project.title"
+        :titleColor="project.titleColor"
         :lede="project.lede"
         :image="project.thumbImage"
         :cloudinary="project.thumbInCloudinary"
@@ -37,7 +44,7 @@
       )
 
     <svg class='u-hiddenVisually'>
-      <filter id='gray' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
+      <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
         <feGaussianBlur stdDeviation="33" />
         //- Clip edge artifacts:
         //- https://stackoverflow.com/questions/24416564/svg-blur-filter-edge-artifacts

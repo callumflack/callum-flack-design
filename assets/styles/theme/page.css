@@ -23,3 +23,32 @@
     text-shadow: initial;
   }
 }
+
+.page-about .Page {
+  /* background-color: #efecda; */
+  /* background-color: rgba(236, 223, 194, 0.5); */
+}
+
+/* 
+
+  bits 
+
+ */
+
+.MetaSeparator {
+  display: inline-block;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.LinkSeparator {
+  margin-left: var(--s-3a);
+  margin-right: var(--s-3a);
+  padding-top: var(--s-3b);
+  padding-bottom: var(--s-3b);
+
+  @media (--sm) {
+    padding-top: var(--s-4a);
+    padding-bottom: var(--s-4a);
+  }
+}

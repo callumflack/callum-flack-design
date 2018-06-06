@@ -34,7 +34,7 @@
   --space: 1rem;
   --grid-gutter: calc(2 * var(--space));
 
-  --container: calc(600px + (2 * var(--grid-gutter)));
+  --container: calc(640px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg-img: 800px;
@@ -42,13 +42,15 @@
   --s-0: 0;
   --s-1: 0.25rem;
   --s-2: 0.5rem;
+  --s-2a: 0.75rem;
   --s-3: 1rem;
   --s-3a: 1.25rem;
   --s-3b: 1.5rem;
   --s-4: 2rem;
-  --s-5: 4rem;
-  --s-6: 7rem;
-  --s-7: 10rem;
+  --s-4a: 2.15rem;
+  --s-5: 2.5rem;
+  --s-6: 4rem;
+  --s-7: 6rem;
   
   --rs-1: 0.25rem;
   --rs-2: 0.5rem;
@@ -75,21 +77,25 @@
   --c-highlight: rgba(255, 235, 0, 0.25);
   --c-highlight: #FCF7C9;
   --c-highlight: #47caf5;
+  --c-link: #bd0a20;
+  --c-link: #f53813;
+  --c-link: #f51713;
+  --c-highlight: var(--c-link);
 
   --c-black: black;
   --c-dark: #171515;
   --c-ash: #24292e;
   --c-text: var(--c-ash);
-  --c-text: #111;
+  --c-text: #050505;
   --c-textLight: #999;
   --c-gray: #aaa;
   --c-border: #ccc;
-  --c-rule: #d5d5d5;
-  --c-rule: #eaeaea;
+  --c-rule: #e5e5e5;
   --c-device: #e7e7e7;
   --c-neutral: #eee;
-  --c-bg: #f2f2f2;
   --c-bg: #fafafa;
+  --c-bg: #f2f2f2;
+  --c-bg: #f7f7f7;
   --c-white: white;
   
   --c-success: #ff3700;
@@ -103,11 +109,13 @@
    */
 
   --ff-text-regular: "Regular";
-  --ff-text-regular-italic: var(--ff-text-regular);
+  --ff-text-regular-italic: "RegularItalic";
   --ff-text-medium: "Medium";
   --ff-text-bold: "Bold";
-  --ff-text-meta: var(--ff-text-regular);
+  --ff-text-lede: "Lede";
 
+  --ff-text-meta: "Meta";
+  --ff-text-subheading: "Subheading";
   --ff-title: "Title";
   
   --ff-button: var(--ff-text-regular);
@@ -125,8 +133,10 @@
   --fs-text-unit: 1.125;
 
   --fs-text: calc(1em * var(--fs-text-unit));
-  --fs-text-meta: calc(1em * var(--fs-text-unit));
-  --fs-heading: calc(1.6875em * var(--fs-text-unit));
+  --fs-meta: calc(0.7em * var(--fs-text-unit));
+  --fs-subheading: calc(0.88em * var(--fs-text-unit));
+  --fs-lede: calc(1.3333em * var(--fs-text-unit));
+  --fs-title: calc(2em * var(--fs-text-unit));
 
   /* 
 
@@ -145,13 +155,13 @@
    
    */
   
-  --ft-text: -0.0025em;
+  --ft-text: -0.001em;
   --ft-meta: 0.00625em;
   --ft-caps: 0.1em;
   --ft-heading: -0.0025em;
   --ft-super: -0.005em;
 
-  --fl-text: 1.4;
+  --fl-text: 1.5;
 
   --ft-tight: -0.005em;
   --ft-regular: 0;

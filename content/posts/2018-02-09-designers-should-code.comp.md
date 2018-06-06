@@ -1,9 +1,9 @@
 ---
-section: Blog
-pageTitle: Should designers code?
-title: Should<span class="u-table">designers</span>code?
+title: Should designers code?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
-published: February 9, 2018
+published: true
+readingtime: 5
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 updated: false
 note: Many thanks to Michael Fogleman for his input.<br>This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.
 tweet: https://twitter.com/callumflack
@@ -13,7 +13,7 @@ tweet: https://twitter.com/callumflack
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack richness because they design away suppossedly unneccessary interconnections, reducing them to tree structures.
 
-@[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522319240/okok/post-should-designers-code.png" post)
+@[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post)
 
 As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally complex [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. **The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time.** Put it this way: if you tried to recreate Melbourne's laneways from scratch, all “Melbourne-ness” would be lost.
 
@@ -29,8 +29,8 @@ The same holds true for the complexities of User Interface design. Why, for exam
 
 Hi! I’m a designer who really enjoys coding. I’m self-taught, and I started more than a decade into a graphic design career. Here’s a few reasons why I think designers should code:
 
-* **If you work with others, learning to code will help you understand the systems you’re working with**, and the skills and people that will overlap your domain.
-* **If you work by yourself, learning to code gives you agency and self-sufficiency.** This gives you more options in the current work climate, for more reasons than just getting paid.
+- **If you work with others, learning to code will help you understand the systems you’re working with**, and the skills and people that will overlap your domain.
+- **If you work by yourself, learning to code gives you agency and self-sufficiency.** This gives you more options in the current work climate, for more reasons than just getting paid.
 
 How, might you ask? Working self-sufficiently as a web creator, I can execute what I’ve designed without asking or paying another person.
 
@@ -42,7 +42,7 @@ How, might you ask? Working self-sufficiently as a web creator, I can execute wh
 
 A cook sips the broth. A pilot turning feels G-forces pulling below. A painter paints, and sees mistakes become new ideas. As [Bret Victor says](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/):
 
-> Creators need an immediate connection to what they’re creating.”
+> Creators need an immediate connection to what they’re creating.
 
 Code is far more immediate than “design” tools. **If you’re a designer who codes, your design is the code.**
 
@@ -54,11 +54,9 @@ There's no doubt that doing both UI design and development is hard. Progress in 
 
 But if it’s an all-you-can eat buffet, do you dig in all night? You can’t master everything, and you shouldn’t try to. You can, however, **embrace the [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity), go taste-testing and make informed decisions about what interests you.** In this situation, I’d prefer the problem of abundance over that of scarcity. The trick is to reframe the problem as [not one of input, but of throughput](https://www.ribbonfarm.com/2008/09/11/how-to-measure-information-work/). Jump in. See what sticks.
 
-> The trick, William Potter, is not minding that it hurts.” _— Peter O'Toole as Lawrence of Arabia_
+> The trick, William Potter, is not minding that it hurts. _— Peter O'Toole as Lawrence of Arabia_
 
-If you can let go of your identity, expose yourself to strange, new ways and give yourself [“the freedom to search in the darkness where the problems lie”](https://ia.net/topics/innovation-as-art-at-scale/), you’ll come out the other side with some mutant pollen stuck to your skin.
-
-Those mutant pollen are “one-percenters” waiting to compound. And that’s why designers should code.
+If you can let go of your identity, expose yourself to strange, new ways and give yourself [“the freedom to search in the darkness where the problems lie”](https://ia.net/topics/innovation-as-art-at-scale/), you’ll come out the other side with some mutant pollen stuck to your skin. Those mutant pollen are “one-percenters” waiting to compound. And that’s why designers should code.
 
 ## When designers code
 

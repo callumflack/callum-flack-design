@@ -10,7 +10,7 @@
   padding-bottom: var(--s-4);
 
   &:first-of-type {
-    // border-top: initial;
+    padding-top: 0;
   }
 }
 
@@ -25,7 +25,13 @@
 }
 
 /* use the SVG filter that's secreted on work/index */
-/* reused & scoped in LazyImage */
 .project:hover img {
-  filter: url("#gray");
+  /* filter: grayscale(100%) url("#blur"); */
+  /* filter: grayscale(50%); */
+  transition: filter 250ms ease-out;
+}
+
+.project img {
+  /* filter: grayscale(0%); */
+  transition: filter 750s ease-in;
 }

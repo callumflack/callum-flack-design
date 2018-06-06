@@ -1,15 +1,19 @@
 <template lang="pug">
   div(:class="blockClasses")
-    .container.container--sm
-      h1.Title.Title--xl(
+    .container
+      h1.Title.Title--xl.u-textCenter.u-lg-size10of12.m-xAuto(
         v-if="titleXl"
         v-html="titleXl"
+        :style="titleColor"
+        :class="titleClasses"
       )
-      h1.Title(
+      h1.Title.u-textCenter.u-lg-size10of12.m-xAuto(
         v-if="title"
         v-html="title"
+        :style="titleColor"
+        :class="titleClasses"
       )
-      h2.Text.m-t0.m-b0(v-if="lede", v-html="lede")
+      h2.Lede.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
 </template>
 
 <script>
@@ -18,27 +22,25 @@ export default {
   props: {
     titleXl: String,
     title: String,
+    titleColor: String,
+    titleHighlight: Boolean,
     lede: String,
-    projectSpace: Boolean,
-    projectScope: Boolean
+    pageSpace: Boolean
   },
   computed: {
     blockClasses() {
       return [
-        "block--pb7",
         "block--matchFixedMenu",
         {
-          // "block--matchFixedMenu": this.projectSpace,
-          // "block--pb5": !this.projectSpace,
-          // x: !this.projectSpace
+          "block--pb7": !this.pageSpace,
+          "figure--bottomSpace": this.pageSpace
         }
       ];
     },
-    scopeClasses() {
+    titleClasses() {
       return [
         {
-          TypeScope: this.projectScope,
-          BlogScope: !this.projectScope
+          "c-highlight": this.titleHighlight
         }
       ];
     }
@@ -48,4 +50,8 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.Title + .Lede {
+  padding-top: var(--s-3);
+}
 </style>

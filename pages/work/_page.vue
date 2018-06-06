@@ -3,12 +3,13 @@ div
   article.block--pb7
     header(role="banner")
       c-pageheading(
-        :titleXl="page.title"
+        :title="page.title"
+        :titleColor="titleColor"
         :lede="page.lede"
-        projectSpace
       )
       .container
-        div(:class="heroClasses", :style="projectColor")
+        //- div(:class="heroClasses", :style="projectColor")
+        div(:class="heroClasses")
           c-lazyimage(
             v-if="page.heroInCloudinary"
             :src="page.heroImage"
@@ -24,13 +25,13 @@ div
           )
     main(role="main")
       .container
-        nuxtent-body.TypeScope(:body="page.body")
-  nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
+        nuxtent-body.MarkdownScope(:body="page.body")
+
+  //- nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
         .Text.m-b3 Next project
-        .Title
-          | {{ page.nextProjectTitle }}
+        .Title {{ page.nextProjectTitle }}
 </template>
 
 <script>
@@ -54,6 +55,7 @@ export default {
     heroFrame: Boolean,
     heroInCloudinary: Boolean,
     heroIsDevice: Boolean,
+    heroImageNoShadow: Boolean,
     heroVideo: String,
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
@@ -66,13 +68,16 @@ export default {
       // (v-if="page.projectColor", :style = 'projectColor')
       return this.page.projectColor
         ? `background-color: ${this.page.projectColor}`
-        : "background-color: rgb(70,70,70)";
+        : "background-color: transparent";
+    },
+    titleColor() {
+      return this.page.titleColor && `color: ${this.page.titleColor}`;
     },
     heroClasses() {
       return [
         "ProjectHero",
         {
-          "ProjectHero--isDevice": this.page.heroIsDevice
+          "ProjectHero--isDevice": this.page.heroImageNoShadow
         }
       ];
     }

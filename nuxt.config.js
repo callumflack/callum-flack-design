@@ -59,6 +59,7 @@ module.exports = {
   plugins: [
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
+    "~/plugins/vue-moment"
   ],
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
   axios: {

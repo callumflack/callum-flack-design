@@ -13,6 +13,9 @@
 .c-brandLight {
   color: var(--c-brandLight) !important;
 }
+.c-highlight {
+  color: var(--c-highlight) !important;
+}
 
 .c-black {
   color: black;

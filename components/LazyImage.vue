@@ -44,7 +44,9 @@ export default {
     frame: Boolean,
     large: Boolean,
     project: Boolean,
-    portrait: Boolean
+    portrait: Boolean,
+    post: Boolean,
+    wrappedInLink: Boolean
   },
 
   computed: {
@@ -56,13 +58,16 @@ export default {
           "figure--frame": this.frame,
           "figure--large": this.large,
           "figure--project": this.project,
-          "figure--portrait": this.portrait
+          "figure--portrait": this.portrait,
+          "figure--post": this.post,
+          "p-a0": this.wrappedInLink
         }
       ];
     },
     // attempt at retaining image aspect ratio space
     // unfortunately, cloudinary size computations are just out
     // if we use Math.round to save data space…
+    // DO NOT USE
     ratioClasses() {
       return [
         "image-aspectRatio",
@@ -185,6 +190,6 @@ export default {
   use the SVG filter that's secreted on work/index 
 */
 .project:hover img {
-  filter: url("#gray");
+  filter: url("#blur");
 }
 </style>

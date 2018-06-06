@@ -3,8 +3,8 @@
     header(role="banner")
       c-pageheading(
         projectSpace
-        titleXl="change-making digital design"
-        lede="<span class='u-block ParagraphSpace'>Hi, I'm Callum Flack. I help owners and creators make websites and apps that attract, motivate and retain their audience. I work fluidly across visual design, user experience, and code.</span><span class='u-block'>Here's 5 ways I design for audience change:</span>"
+        titleXl="Make change.<br>Not websites."
+        lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to win their audience by inspiring change. Here's 5 ways I help do this:"
       )
     main(role="content")
       section.Slide(style="background-color:rgba(236, 223, 194,0.5)")
@@ -16,10 +16,11 @@
                 .container.container--sm.m-l0
                   p
                     span.Title-number 1
-                  h2.Title.Title--xl 
+                  h2.Title.Title--xl.m-t0 
                     | We all respond<br>to beauty
-                  p.m-t0.m-b0 
-                    | You'll know in a heartbeat when it's right. To resonate deeply with people, I design for the heart first. 
+                  p.Slide-1--link.m-t0.m-b0 
+                    | You'll know in a heartbeat when it's right. To instigate change in people, 
+                    nuxt-link(to="/blog/the-instantaneous-language-of-beauty") I design for the heart first.
       
       section.Slide
         .FlexGridWrapper
@@ -27,15 +28,16 @@
             .u-md-size1of2
               .container.m-l0.p-a0
                 .u-flex.u-flexAlignItemsCenter.sm-vh-Slide
-                  c-lazyimage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317578/okok/_glow5.jpg")
+                  c-lazyimage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528294818/okok/_glow-av.jpg")
             .u-md-size1of2.m-t5.sm-m-t0.u-sm-flexOrderFirst
               .u-flex.u-flexAlignItemsCenter.u-flexJustifyEnd.h-100
                 .container.container--sm.m-x0.u-md-textRight
-                  p.u-md-textRight
+                  p.u-md-textRight.m-b0
                     span.Title-number 2
-                  h2.Title.Title--xl 
-                    | Your digital brand is a product 
-                    span.u-table.u-sm-inlineBlock in use
+                  h2.Title.Title--xl.m-t0 
+                    | Your digital brand is tactile 
+                    //- | Your digital brand is a product 
+                    //- span.u-table.u-sm-inlineBlock in use
                   p.m-t0.m-b0 
                     | Your user's experience is as dependent on load time as it is on visual feel and flow. The digital brand is inseparable from the product. That's why I can 
                     nuxt-link(to="/blog/designers-should-code") design in code
@@ -51,11 +53,11 @@
             .u-md-size1of2.m-t5.sm-m-t0
               .u-flex.u-flexAlignItemsCenter.h-100
                 .container.container--sm.m-x0
-                  p
+                  p.m-b0
                     span.Title-number 3
-                  h2.Title.Title--xl 
+                  h2.Title.Title--xl.m-t0 
                     | Good design<br>is good business
-                  p.m-t0.m-b0 
+                  p.Slide-3--link.m-t0.m-b0
                     | All business is about making bets on human behaviour. My job is to create digital communications and services that anticipate your audience with seamless experiences they'll trust intuitively. Good design creates customers. 
                     nuxt-link(to="/work") See project case studies.
       
@@ -64,9 +66,9 @@
           div
             .container
               .container.container--sm
-                p
+                p.m-b0
                   span.Title-number 4
-                h2.Title.Title--xl A daily practice<br>since 2000
+                h2.Title.Title--xl.m-t0 A daily practice<br>since 2000
                 p.m-t0.m-b0 Here's a few things I've learned on the journey so far:
             .container.container--md.block--pt5
               .FlexGridWrapper
@@ -76,31 +78,31 @@
                       span.Box-icon
                         img(src="/images/_listen.svg", alt="listen")
                       span Listening
-                    p.Box-text I've worked around the world with great companies and talented people. Yet the place where I've learned the most is sitting with owners and creators, and listening. Great work results from a mutual understanding of problem and possibility.
+                    p.Box-text I've worked around the world with great companies and talented people. Yet the place where I've learned the most is sitting with my clients, and listening. Great work results from a mutual understanding of problem and possibility.
                   .u-md-size1of3.Box
                     .Box-heading.Title
                       span.Box-icon
                         img(src="/images/_look.svg", alt="look")
                       span Seeing
-                    p.Box-text The turning point in my career was learning to code. I already had a decade of experience as a graphic designer. It was hard! Doing so has allowed me to understand the world differently, like peering behind the curtains and suddenly seeing the gears.
+                    p.Box-text The turning point in my career was learning to code. I already had a decade of experience as a graphic designer. It was hard! It taught me that unless I'm approaching my work with an open mind, I'm developing blindspots.
                   .u-md-size1of3.Box
                     .Box-heading.Title
                       span.Box-icon
                         img(src="/images/_fun.svg", alt="fun")
-                      span Fun
-                    p.Box-text I think design is a matter of paying attention. Both to the big picture and the stack of details. I find this process fun—it feeds me, I never tire of it. Having fun allows me to see opportunities to transform the ordinary into an energising experience. 
-                      nuxt-link(to="/about") Read about me.
+                      span Playing
+                    p.Box-text I think design is a matter of paying attention. Both to the big picture and the stack of details. I find this process fun—it feeds me, I never tire of it. Having fun allows me to transform the ordinary into something people talk about. 
+                      nuxt-link(to="/about") Read more about me.
       
       section.Slide
         .FlexChildrenCenter.vh-Slide
           .container
             .container.container--sm
-              p.Title-number 5
-              h2.Title.Title--xl everyone hungers for delight.
+              p.m-b0.Title-number 5
+              h2.Title.Title--xl.m-t0 everyone hungers for delight.
               p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
               p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
               p
-                a.Button.m-t1(href="mailto:callum@callumflack.design") Please email me
+                a.Button.m-t1(href="mailto:callum@callumflack.design") Start a conversation
 
 </template>
 
@@ -159,6 +161,25 @@ export default {
   /* margin-top: 1rem; */
 }
 
+.Slide-1--link a {
+  text-shadow: 0.03em 0 #f1ebdd, -0.03em 0 #f1ebdd, 0 0.03em #f1ebdd, 0 -0.03em #f1ebdd,
+    0.06em 0 #f1ebdd, -0.06em 0 #f1ebdd, 0.09em 0 #f1ebdd, -0.09em 0 #f1ebdd,
+    0.12em 0 #f1ebdd, -0.12em 0 #f1ebdd, 0.15em 0 #f1ebdd, -0.15em 0 #f1ebdd;
+}
+
+.Slide-3--link a {
+  text-shadow: 0.03em 0 #e5e8e8, -0.03em 0 #e5e8e8, 0 0.03em #e5e8e8, 0 -0.03em #e5e8e8,
+    0.06em 0 #e5e8e8, -0.06em 0 #e5e8e8, 0.09em 0 #e5e8e8, -0.09em 0 #e5e8e8,
+    0.12em 0 #e5e8e8, -0.12em 0 #e5e8e8, 0.15em 0 #e5e8e8, -0.15em 0 #e5e8e8;
+}
+
+.Box-text a {
+  background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+    linear-gradient(var(--c-bg), var(--c-bg)),
+    linear-gradient(currentColor, currentColor);
+  text-shadow: none;
+}
+
 .Slide-texture--darken:after {
   background-color: rgba(0, 0, 0, 1);
   content: "";
@@ -210,10 +231,10 @@ export default {
   // background-image: url("http://res.cloudinary.com/pw-img-cdn/image/upload/v1522321387/okok/_overcast-night.jpg");
   // background-image: url(/images/_stripes.jpg);
   // background-image: url(/images/_spys.jpg);
-  background-image: url(/images/_sagatiba.jpg);
+  background-image: url(/images/_sagatiba-bw.jpg);
 
   &:after {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.875);
     content: "";
     height: 100%;
     left: 0;

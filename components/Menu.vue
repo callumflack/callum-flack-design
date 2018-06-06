@@ -1,19 +1,19 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
     .container
-      nav.Nav.u-flex.u-flexJustifyBetween
+      nav.u-flex.u-flexJustifyCenter
         div
-          c-menulink.Heading(
+          c-menulink.Meta(
             label="CF/d"
             link="/"
             exact
           )
+        .Meta.LinkSeparator •
         div
-          c-menulink.Heading(
+          c-menulink.Meta(
             v-for="item in menuLinks"
             :key="item.label"
             :label="item.label"
-            :year="item.year"
             :link="item.link"
             :currentPage="currentPage"
             :exact="item.exact"
@@ -57,7 +57,7 @@ export default {
         },
         {
           label: "Blog",
-          link: "/blog/designers-should-code"
+          link: "/blog"
         },
         {
           label: "About",
@@ -120,10 +120,13 @@ export default {
 @import "../assets/styles/variables.css";
 
 .FixedMenu {
+  background-color: var(--c-bg);
+  border-bottom: 1px solid #e5e5e5;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+  -webkit-backface-visibility: hidden;
 }
 
 .collapse {
@@ -132,7 +135,7 @@ export default {
 
 .open {
   animation: open 0.5s ease forwards;
-  background-color: var(--c-bg);
+  /* background-color: var(--c-white); */
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
   /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
 }
@@ -157,13 +160,5 @@ export default {
     opacity: 1;
     top: 0;
   }
-}
-
-.Nav {
-  /* border-bottom: 0.15rem solid var(--c-text);
-  border-bottom: 1px solid var(--c-text);
-  border-color: transparent; */
-  padding-top: var(--s-4);
-  padding-bottom: var(--s-4);
 }
 </style>

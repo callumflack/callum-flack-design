@@ -7,7 +7,7 @@
 */
 
 html {
-  background-color: var(--c-dark);
+  background-color: var(--c-bg);
   color: var(--c-text);
   font-family: var(--ff-text-regular), var(--ff-stack-sans);
   font-size: 16px;
@@ -27,7 +27,7 @@ html {
  */
 
 body,
-.TypeScope-reset {
+.MarkdownScope-reset {
   font-size: 0.833333333rem !important; /*15pt*/
 
   @media (max-width: 320px) {

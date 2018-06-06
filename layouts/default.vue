@@ -3,12 +3,13 @@
     c-menu
     .Page
       nuxt
+      c-footer
 </template>
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
-import Footer from "~/components/Footer.vue";
+import Footer from "~/components/Footer2.vue";
 import Menu from "~/components/Menu.vue";
 
 export default {
@@ -32,7 +33,7 @@ export default {
 .Page {
   background-color: var(--c-bg);
   min-height: 100vh;
-  padding-top: var(--fixedMenuHeight);
+  /* padding-top: var(--fixedMenuHeight); */
   position: relative;
   z-index: 3;
 }

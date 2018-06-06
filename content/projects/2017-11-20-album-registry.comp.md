@@ -1,14 +1,13 @@
 ---
-section: Projects
 year: 2017
 title: Album Registry
-lede: A crowd-funding platform to help pro photographers grow their business. I designed and built the web app.
+titleColor: rgb(148, 23, 160)
+lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
 heroFrame: false
-projectColor: rgb(112,83,119)
 tags: Brand, Interface, Development
 nextProject: /work/oceanblue-living
 nextProjectTitle: Oceanblue Living

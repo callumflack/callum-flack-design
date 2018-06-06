@@ -1,31 +1,35 @@
 <template lang="pug">
-.block--pb7
-  header(role="banner")
-    c-pageheading(
-      lede="How to create digital experiences that resonate."
-    )
-  main(role="main")
+  main.block--pb7.block--matchFixedMenu(role="main")
     .container
-      c-post(
+      c-postexcerpt(
+        v-if="post.published"
         v-for="post in posts"
-        :key="post.heading"
+        :key="post.permalink"
         :link="post.permalink"
-        :image="post.thumbImage"
-        :heading="post.heading"
-        :lede="post.lede"
+        :heroImage="post.heroImage"
+        :title="post.title"
         :date="post.date"
+        :readingtime="post.readingtime"
+        :lede="post.lede"
       )
+      
+      //- .InterludeSpace
+        hr
+        .block--my7
+          p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
+            span.u-block
+              nuxt-link.u-linkClean(to="/about") Callum Flack
+              | &nbsp;is writing about the things inbetween. Here's the most recent posts:
+        hr
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
-import Post from "~/components/Post.vue";
+import PostExcerpt from "~/components/PostExcerpt.vue";
 
 export default {
   name: "blog",
   components: {
-    "c-pageheading": PageHeading,
-    "c-post": Post
+    "c-postexcerpt": PostExcerpt
   },
   head() {
     return {

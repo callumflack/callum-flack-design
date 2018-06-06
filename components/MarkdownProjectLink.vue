@@ -1,6 +1,6 @@
 <template lang="pug">
 p
-  a.icon-targetblank(:href="link", target="_blank") {{ label }}
+  a.Button(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>
