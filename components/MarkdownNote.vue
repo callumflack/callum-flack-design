@@ -1,6 +1,6 @@
 <template lang="pug">
 .HeadingSpace
-  hr
+  hr.u-sm-size1of2.m-l0
   p.c-textLight.note(v-html="note")
 </template>
 
@@ -14,5 +14,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

@@ -35,7 +35,7 @@ p em {
 .Text--meta,
 .Text--sm {
   font-size: var(--fs-meta);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.075em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -64,7 +64,7 @@ p em {
   /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
   font-size: var(--fs-subheading);
   font-weight: 800;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.075em;
   line-height: var(--fl-text);
   text-transform: uppercase;
 }
@@ -73,15 +73,23 @@ p em {
   font-family: var(--ff-text-lede), var(--ff-stack-serif);
   font-size: var(--fs-lede);
   font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.33333;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+
+  /* alt 
+  font-family: var(--ff-title), var(--ff-stack-serif);
+  font-size: var(--fs-lede);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.0001em;
+  text-transform: uppercase; */
 }
 
 /* Big fat serif titles */
 
 .Title,
 .Title--xl {
-  font-family: var(--ff-title), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: calc(2em * var(--fs-text-unit));
   font-weight: 700;
   line-height: 1.2;
@@ -126,9 +134,10 @@ p em {
   border-radius: 999px;
   color: var(--c-bg);
   display: inline-block;
-  font-family: var(--ff-text-bold), var(--ff-stack-sans);
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
   height: 25px;
-  line-height: 22px;
+  line-height: 24px;
+  margin-bottom: var(--s-1);
   text-align: center;
   width: 25px;
 }
@@ -164,7 +173,7 @@ h3,
 h4,
 h6,
 .ParagraphSpace {
-  margin-bottom: var(--s-3);
+  margin-bottom: var(--s-2a);
 
   @media (--md) {
     margin-bottom: var(--s-3);
@@ -182,10 +191,10 @@ h4,
 h6,
 .HeadingSpace {
   &:not(:first-child) {
-    margin-top: calc(3 * var(--s-3));
+    margin-top: var(--s-3b);
 
     @media (--md) {
-      margin-top: calc(3 * var(--s-3));
+      margin-top: var(--s-4);
     }
   }
 }
@@ -258,7 +267,7 @@ blockquote em {
 
 blockquote p {
   border-left: 1px solid;
-  border-color: var(--c-text);
+  border-color: var(--c-border);
   font-family: var(--ff-text-regular-italic), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
@@ -268,7 +277,7 @@ blockquote p {
   }
 
   &:before {
-    content: "“";
+    /* content: "“"; */
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);

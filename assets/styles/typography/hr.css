@@ -5,7 +5,7 @@
 */
 
 hr {
-  background-color: var(--c-border);
+  background-color: var(--c-rule);
   border: 0;
   box-sizing: content-box;
   height: 1px;

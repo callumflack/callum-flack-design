@@ -27,7 +27,7 @@ div
       .container
         nuxtent-body.MarkdownScope(:body="page.body")
 
-  nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
+  //- nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .container.u-flex.u-flexAlignItemsCenter
       hgroup
         .Text.m-b3 Next project
@@ -55,6 +55,7 @@ export default {
     heroFrame: Boolean,
     heroInCloudinary: Boolean,
     heroIsDevice: Boolean,
+    heroImageNoShadow: Boolean,
     heroVideo: String,
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
@@ -76,7 +77,7 @@ export default {
       return [
         "ProjectHero",
         {
-          "ProjectHero--isDevice": this.page.heroIsDevice
+          "ProjectHero--isDevice": this.page.heroImageNoShadow
         }
       ];
     }

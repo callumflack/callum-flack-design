@@ -9,7 +9,7 @@
   --Button-font: inherit;
   --Button-font-weight: var(--fw-medium);
   --Button-height: 2.25rem;
-  --Button-padding: 0.6em 1.25em 0.8em;
+  --Button-padding: 0.85em 1.25em 0.7em;
   --Button-radius: var(--border-radius);
 }
 

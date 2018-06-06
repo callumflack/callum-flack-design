@@ -8,7 +8,6 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
 tags: Brand, Interface, Development
-projectColor: rgb(96,120,148)
 nextProject: /work/the-substation
 nextProjectTitle: The Substation
 featured: true

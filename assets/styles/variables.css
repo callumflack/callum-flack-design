@@ -47,8 +47,8 @@
   --s-3a: 1.25rem;
   --s-3b: 1.5rem;
   --s-4: 2rem;
-  --s-4a: 2.5rem;
-  --s-5: 3.25rem;
+  --s-4a: 2.15rem;
+  --s-5: 2.5rem;
   --s-6: 4rem;
   --s-7: 6rem;
   
@@ -79,19 +79,18 @@
   --c-highlight: #47caf5;
   --c-link: #bd0a20;
   --c-link: #f53813;
-  --c-link: #f51713fc;
+  --c-link: #f51713;
   --c-highlight: var(--c-link);
 
   --c-black: black;
   --c-dark: #171515;
   --c-ash: #24292e;
   --c-text: var(--c-ash);
-  --c-text: #111;
+  --c-text: #050505;
   --c-textLight: #999;
   --c-gray: #aaa;
   --c-border: #ccc;
-  --c-rule: #d5d5d5;
-  --c-rule: #eaeaea;
+  --c-rule: #e5e5e5;
   --c-device: #e7e7e7;
   --c-neutral: #eee;
   --c-bg: #fafafa;
@@ -135,8 +134,8 @@
 
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-meta: calc(0.7em * var(--fs-text-unit));
-  --fs-subheading: calc(0.9em * var(--fs-text-unit));
-  --fs-lede: calc(1.5em * var(--fs-text-unit));
+  --fs-subheading: calc(0.88em * var(--fs-text-unit));
+  --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-title: calc(2em * var(--fs-text-unit));
 
   /* 

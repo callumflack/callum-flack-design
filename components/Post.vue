@@ -14,6 +14,16 @@
       .MarkdownScope
         no-ssr
           nuxtent-body(:body="body")
+
+    .HeadingSpace(v-if="updated || note")
+      hr
+      p.Text.c-textLight(v-if="updated") Updated: {{ updated }}
+      p.Text.c-textLight(v-if="note", v-html="note")
+
+    //- .block--mt6(v-if="tweet")
+      p.Heading.m-b0.u-textCenter Comments?
+      p.Text.u-textCenter
+        a.visualLink.c-text.icon-targetblank(:href="tweet", target="_blank") Twitter
 </template>
 
 <script>
@@ -33,7 +43,10 @@ export default {
     date: String,
     readingtime: Number,
     heroImage: String,
-    body: Object
+    body: Object,
+    updated: String,
+    note: String,
+    tweet: String
   }
 };
 </script>

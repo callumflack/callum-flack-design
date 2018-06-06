@@ -24,6 +24,17 @@
   }
 }
 
+.page-about .Page {
+  /* background-color: #efecda; */
+  /* background-color: rgba(236, 223, 194, 0.5); */
+}
+
+/* 
+
+  bits 
+
+ */
+
 .MetaSeparator {
   display: inline-block;
   margin-left: 0.75rem;

@@ -1,8 +1,11 @@
 <template lang="pug">
 div
   header(role="banner")
-    c-pageheading(lede="Selected web design & development projects since 2014.")
-  main(role="main")
+    c-pageheading(
+      titleXl="Enter full screen"
+      lede="Selected projects since 2014."
+    )
+  main(role="main").block--pb7
     .container.container--md
       //- .project-filter
         .u-flex.u-flexJustifyBetween

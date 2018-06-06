@@ -2,13 +2,13 @@
 section: Projects
 year: 2014
 title: Pharma eDetailer apps
+titleColor: rgb(218, 23, 63)
 lede: Explaining complex Pharma products with simple and engaging digital stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 heroInCloudinary: true
 heroImageNoShadow: true
-projectColor: rgb(126, 158, 185)
 tags: Brand, Interface, Development
 nextProject: /work/vj-ray
 nextProjectTitle: VJ Ray Real Estate

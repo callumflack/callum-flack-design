@@ -3,12 +3,13 @@
     c-menu
     .Page
       nuxt
+      c-footer
 </template>
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
-import Footer from "~/components/Footer.vue";
+import Footer from "~/components/Footer2.vue";
 import Menu from "~/components/Menu.vue";
 
 export default {

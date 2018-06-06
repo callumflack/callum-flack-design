@@ -6,30 +6,18 @@
     :date="page.date"
     :readingtime="page.readingtime"
     :body="page.body"
+    :updated="page.updated"
+    :note="page.note"
   )
-  .HeadingSpace(v-if="page.updated || page.note")
-    hr
-    p.Text.c-textLight(v-if="page.updated") Updated: {{ page.updated }}
-    p.Text.c-textLight(v-if="page.note", v-html="page.note")
-
-  .block--mt6(v-if="page.tweet")
-    p.Heading.m-b0.u-textCenter Comments?
-    p.Text.u-textCenter
-      a.visualLink.c-text.icon-targetblank(:href="page.tweet", target="_blank") Twitter
 </template>
 
 <script>
 import Post from "~/components/Post.vue";
-import FormNewsletter from "~/components/FormNewsletter.vue";
+/* import FormNewsletter from "~/components/FormNewsletter.vue"; */
 
 export default {
   components: {
     "c-post": Post
-  },
-  props: {
-    updated: String,
-    note: String,
-    tweet: String
   },
   head() {
     return {

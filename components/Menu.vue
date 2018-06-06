@@ -1,7 +1,7 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
     .container
-      nav.Nav.u-flex.u-flexJustifyCenter
+      nav.u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(
             label="CF/d"
@@ -14,7 +14,6 @@
             v-for="item in menuLinks"
             :key="item.label"
             :label="item.label"
-            :year="item.year"
             :link="item.link"
             :currentPage="currentPage"
             :exact="item.exact"
@@ -121,11 +120,13 @@ export default {
 @import "../assets/styles/variables.css";
 
 .FixedMenu {
+  background-color: var(--c-bg);
   border-bottom: 1px solid #e5e5e5;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+  -webkit-backface-visibility: hidden;
 }
 
 .collapse {
@@ -134,7 +135,7 @@ export default {
 
 .open {
   animation: open 0.5s ease forwards;
-  background-color: var(--c-bg);
+  /* background-color: var(--c-white); */
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
   /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
 }

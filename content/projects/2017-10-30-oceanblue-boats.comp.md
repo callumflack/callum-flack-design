@@ -2,7 +2,8 @@
 section: Projects
 year: 2017
 title: Oceanblue Boats
-lede: A website that tells a story about building boats for those who wish to get away.
+titleColor: rgb(1, 163, 115)
+lede: A website that tells a story about building boats and getaway adventures.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg

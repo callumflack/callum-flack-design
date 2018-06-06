@@ -16,13 +16,14 @@ button {
 .project:hover .project-visualLink,
 a:not(.Button),
 h1 a:hover,
-h1 a:active,*/
+h1 a:active,
+a:not(.LinkSignal),*/
+
 a:not(.Button),
-a:not(.LinkSignal),
 .LinkSignal:hover .LinkSignal-title {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-bg), var(--c-bg)),
-    linear-gradient(currentColor, currentColor);
+    linear-gradient(var(--c-textLight), var(--c-textLight));
   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
   text-shadow: 0.03em 0 var(--c-bg), -0.03em 0 var(--c-bg), 0 0.03em var(--c-bg),
@@ -36,8 +37,7 @@ a:not(.LinkSignal),
   }
 }
 
-a:not(.Button),
-a:not(.LinkSignal) {
+a:not(.Button) {
   &:hover {
     background-image: linear-gradient(var(--c-bg), var(--c-bg)),
       linear-gradient(var(--c-bg), var(--c-bg)),

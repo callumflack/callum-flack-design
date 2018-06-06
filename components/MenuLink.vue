@@ -1,7 +1,13 @@
 <template lang="pug">
+  a(
+    v-if="targetBlank"
+    href="link"
+    target="_blank"
+  )
   nuxt-link(
+    v-else
     :class="currentPage"
-    :to='link'
+    :to="link"
     :exact="exact"
   )
     span {{ label }}
@@ -10,15 +16,13 @@
 <script>
 export default {
   name: "NavLink",
-
   props: {
     label: String,
-    year: String,
     link: String,
     external: Boolean,
+    targetBlank: Boolean,
     exact: Boolean
   },
-
   computed: {
     currentPage() {
       let classes = ["link"];

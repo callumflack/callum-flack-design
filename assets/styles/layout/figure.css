@@ -6,16 +6,16 @@
 
 .figure {
   margin-top: var(--s-3);
-  margin-bottom: var(--s-3);
+  margin-bottom: calc(1.1 * var(--s-3));
   position: relative;
 
   @media (--md) {
     margin-top: var(--s-4);
-    margin-bottom: var(--s-4);
+    margin-bottom: calc(1.1 * var(--s-4));
   }
   @media (--lg) {
-    margin-top: var(--s-5);
-    margin-bottom: var(--s-5);
+    margin-top: var(--s-4a);
+    margin-bottom: calc(1.1 * var(--s-4a));
   }
 
   &:first-child {
@@ -28,13 +28,13 @@
 }
 
 .figure--bottomSpace {
-  margin-bottom: var(--s-3);
+  margin-bottom: calc(1.1 * var(--s-3));
 
   @media (--md) {
-    margin-bottom: var(--s-4);
+    margin-bottom: calc(1.1 * var(--s-4));
   }
   @media (--lg) {
-    margin-bottom: var(--s-4a);
+    margin-bottom: calc(1.1 * var(--s-4a));
   }
 }
 
@@ -130,7 +130,7 @@
 }
 
 .ProjectHero--isDevice {
-  background-color: salmon;
+  /* background-color: salmon; */
   min-height: auto;
 
   & img {

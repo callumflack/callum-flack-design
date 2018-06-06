@@ -5,7 +5,7 @@
         figure
           c-lazyimage(v-if="thumbInCloudinary", :src="image", project)
           img(v-else, :src="image")
-      .u-sm-size1of2.m-t3.m-sm-t0
+      .u-sm-size1of2
         .u-flex.u-flexAlignContentStretch.h-100
           .u-flex.u-flexAlignItemsCenter
             div
