@@ -2,7 +2,7 @@
 
 Value prop, folio and blog.
 
-![Project screen-shot](blob/master/screen-shot.png?raw=true "Project screen-shot")
+![Project screen-shot](screen-shot.png?raw=true "Project screen-shot")
 
 ![Project screen-shot](https://raw.githubusercontent.com/callumflack/callum-flack-design/master/screen-shot.png?raw=true "Project screen-shot")
 
