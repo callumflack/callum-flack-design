@@ -3,7 +3,7 @@
     header(role="banner")
       c-pageheading(
         projectSpace
-        titleXl="Make change.<br>Not websites."
+        titleXl="Websites that<br>stir hearts &<br>change minds"
         lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to win their audience by inspiring change. Here's 5 ways I help do this:"
       )
     main(role="content")
