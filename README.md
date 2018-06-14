@@ -1,6 +1,8 @@
 # Callum Flack Design
 
-Portfolio and blog.
+Value prop, folio and blog.
+
+[[https://github.com/callumflack/callum-flack-design/blob/master/screen-shot.png|alt=project screenshot]]
 
 ## Build Setup
 
