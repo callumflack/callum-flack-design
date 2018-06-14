@@ -2,7 +2,7 @@
 
 Value prop, folio and blog.
 
-[[https://github.com/callumflack/callum-flack-design/blob/master/screen-shot.png|alt=project screenshot]]
+[[https://github.com/callumflack/callum-flack-design/blob/master/screen-shot.png]]
 
 ## Build Setup
 
