@@ -12,6 +12,10 @@ module.exports = {
         content: "HN9v-wB-PoQjHk1CGpr5YVG9VUNrcOaOjHACfG3SSSI"
       },
       {
+        name: "p: domain_verify",
+        content: "8280c00ce54aef1d74f05dc38cd9fb91"
+      },
+      {
         hid: "description",
         name: "description",
         content: "Callum Flack digital design & development – Cairns, Australia"
