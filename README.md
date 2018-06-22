@@ -1,6 +1,8 @@
 # Callum Flack Design
 
-Portfolio and blog.
+Value prop, folio and blog.
+
+![Project screen-shot](screen-shot.png?raw=true "Project screen-shot")
 
 ## Build Setup
 
