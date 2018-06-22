@@ -4,7 +4,7 @@
       c-pageheading(
         projectSpace
         titleXl="Websites that<br>stir hearts &<br>change minds"
-        lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to win their audience by inspiring change. Here's 5 ways I help do this:"
+        lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to stir hearts and inspire change. Here's 5 ways I help do this:"
       )
     main(role="content")
       section.Slide(style="background-color:rgba(236, 223, 194,0.5)")
