@@ -9,7 +9,7 @@
 html {
   background-color: var(--c-bg);
   color: var(--c-text);
-  font-family: var(--ff-text-regular), var(--ff-stack-sans);
+  font-family: var(--ff-text-regular), var(--ff-stack-serif);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: var(--ft-text);
