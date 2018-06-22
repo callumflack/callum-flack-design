@@ -4,6 +4,7 @@ lede: We use the pre-verbal language of asethetics to sense our environment befo
 readingtime: 5
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
 published: true
+updated: false
 tweet: https://twitter.com/callumflack
 ---
 
