@@ -26,6 +26,15 @@ module.exports = {
         isPost: true,
         generate: ["get", "getAll"]
       }
+    ],
+    [
+      "newsletter",
+      {
+        page: "/_slug",
+        permalink: "/newsletter/:slug",
+        isPost: true,
+        generate: ["get", "getAll"]
+      }
     ]
   ],
 
