@@ -3,7 +3,8 @@
     .FlexEmbed(:class="[{ 'figure--frame': frame }]")
       .FlexEmbed-ratio.device-ratio
       .FlexEmbed-content
-        video.device-position(autoplay, loop, :poster="poster", ref="videoref")
+        // https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+        video.device-position(autoplay, muted, loop, :poster="poster", ref="videoref")
           source(
             :src="src",
             type="video/mp4"
