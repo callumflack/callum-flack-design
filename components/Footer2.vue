@@ -5,7 +5,8 @@
       .u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(
-            label="CF/D"
+            style="text-transform: initial"
+            label="CFd"
             link="/"
             exact
           )
@@ -19,6 +20,7 @@
           //- )
           a.Meta.link(target="_blank" href="mailto:callum@callumflack.design") Email
           a.Meta.link(target="_blank" href="https://twitter.com/callumflack") Twitter
+          // nuxt-link.Meta.link(to="/newsletter") Interesting
 </template>
 
 <script>

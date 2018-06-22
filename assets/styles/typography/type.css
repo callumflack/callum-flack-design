@@ -38,7 +38,7 @@ p em {
   font-family: var(--ff-text-meta), var(--ff-stack-serif);
   font-size: var(--fs-meta);
   font-weight: 800;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.0875em;
   line-height: 1;
   text-transform: uppercase;
 }

@@ -4,7 +4,8 @@
       nav.u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(
-            label="CF/d"
+            style="text-transform: initial"
+            label="CFd"
             link="/"
             exact
           )
