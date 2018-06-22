@@ -44,7 +44,7 @@ export default {
     readingtime: Number,
     heroImage: String,
     body: Object,
-    updated: String,
+    updated: Boolean,
     note: String,
     tweet: String
   }
