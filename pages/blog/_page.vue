@@ -9,15 +9,17 @@
     :updated="page.updated"
     :note="page.note"
   )
+  // c-signup
 </template>
 
 <script>
 import Post from "~/components/Post.vue";
-/* import FormNewsletter from "~/components/FormNewsletter.vue"; */
+import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
   components: {
-    "c-post": Post
+    "c-post": Post,
+    "c-signup": NewsletterSignupForm
   },
   head() {
     return {

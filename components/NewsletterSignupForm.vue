@@ -4,7 +4,7 @@ div
   p I send an occassional email newsletter with notes of the stories and links about designing great interfaces that I've found worthwhile, and why they resonate. You should sign up:
   //- .formWrapper
   form.form.Text(
-    action="https://patternworks.us13.list-manage.com/subscribe/post?u=027f0219cdd96399fb792993e&id=f1f20b580e",
+    action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
     target='_blank', 
@@ -21,7 +21,7 @@ div
       div(style="position: absolute; left: -5000px;", aria-hidden="true")
         input(
           type="text", 
-          name="b_027f0219cdd96399fb792993e_f1f20b580e", 
+          name="b_b6d465003f797d00bb8c2a7a0_3eb35e7129", 
           tabindex="-1", 
           value=""
         )
