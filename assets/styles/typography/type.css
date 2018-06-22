@@ -35,7 +35,7 @@ p em {
 .Meta,
 .Text--meta,
 .Text--sm {
-  font-family: var(--ff-text-meta), var(--ff-stack-serif);
+  font-family: var(--ff-text-meta), var(--ff-stack-sans);
   font-size: var(--fs-meta);
   font-weight: 800;
   letter-spacing: 0.0875em;
