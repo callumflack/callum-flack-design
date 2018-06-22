@@ -1,6 +1,6 @@
 <template lang="pug">
   main.block--pb7.block--matchFixedMenu(role="main")
-    .container
+    .container.container--newsletter
       c-postexcerpt(
         v-if="post.published"
         v-for="post in posts"
@@ -27,7 +27,7 @@
 import PostExcerpt from "~/components/PostExcerpt.vue";
 
 export default {
-  name: "blog",
+  name: "newsletter-index",
   components: {
     "c-postexcerpt": PostExcerpt
   },
