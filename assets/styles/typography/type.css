@@ -65,7 +65,7 @@ p em {
   /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
   font-size: var(--fs-subheading);
   font-weight: 800;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   line-height: var(--fl-text);
   text-transform: uppercase;
 }

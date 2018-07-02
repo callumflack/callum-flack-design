@@ -7,7 +7,6 @@ article
     c-pageheading(
       titleXl="Remarkability lies in seamless edges"
       lede="Hi! I'm Callum. I provide digital design and technology services for business owners and creative leaders who are driven to leap forward, establish trust and inspire change."
-      titleHighlight
       pageSpace
     )
     //- .container
