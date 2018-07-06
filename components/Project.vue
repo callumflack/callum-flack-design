@@ -42,6 +42,10 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
+.project:hover {
+  color: var(--c-text);
+}
+
 .m-r3plus {
   margin-right: var(--s-3a) !important;
 }

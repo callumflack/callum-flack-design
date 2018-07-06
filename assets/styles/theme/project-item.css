@@ -26,7 +26,7 @@
 
 /* use the SVG filter that's secreted on work/index */
 .project:hover img {
-  /* filter: grayscale(100%) url("#blur"); */
+  filter: url("#blur");
   /* filter: grayscale(50%); */
   transition: filter 250ms ease-out;
 }
