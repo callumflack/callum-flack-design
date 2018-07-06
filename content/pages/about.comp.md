@@ -15,7 +15,7 @@ heroInCloudinary: true
 
 <!-- <p class="Lede">Hi! I'm Callum. I provide web design and technology services for business owners and creative leaders who are driven to establish trust and inspire change.</p> -->
 
-I ask my clients to participate directy with me to understand their audience and define intended outcomes. I design to reach those objectives, and I execute in code the stack of details that successful digital products and services are made of.
+I ask my clients to participate directly with me to understand their audience and define intended outcomes. I design to reach those objectives, and I execute in code the stack of details that successful digital products and services are made of.
 
 While focussed on design, I'm also an accomplished frontend developer. Being able to code allows greater speed and agility in the build process, in turn creating holistic project management and scope understanding, which gives room for higher rates of design iteration.
 
