@@ -28,7 +28,7 @@ chapter that talks about Vince's boat making specialty, what the new factory wor
 
 I worked with [J-Create Photography](http://j-create.com.au/) to capture the tight-knit team and the workshop space in action, portraying them as uncommon local craftspeople.
 
-> We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it.” _— Vince Cassaniti, Owner_
+> We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it. _— Vince Cassaniti, Owner_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517378751/okok/oceanblueboats-layout-d.jpg")
 

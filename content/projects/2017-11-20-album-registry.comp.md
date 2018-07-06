@@ -40,7 +40,7 @@ We're able to design and adjust new features in the browser using the brand desi
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
-> I begin every wedding I do with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders!” _— Benn, Bluesky Photography_
+> I begin every wedding I do with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders! _— Benn, Bluesky Photography_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
 
