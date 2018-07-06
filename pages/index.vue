@@ -2,7 +2,6 @@
   div
     header(role="banner")
       c-pageheading(
-        projectSpace
         titleXl="Websites that<br>stir hearts &<br>change minds"
         lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to stir hearts and inspire change. Here's 5 ways I help do this:"
       )
@@ -68,28 +67,28 @@
               .container.container--sm
                 p.m-b0
                   span.Title-number 4
-                h2.Title.Title--xl.m-t0 A daily practice<br>since 2000
+                h2.Title.Title--xl.m-t0 A daily practise<br>since 2000
                 p.m-t0.m-b0 Here's a few things I've learned on the journey so far:
             .container.container--md.block--pt5
               .FlexGridWrapper
                 .FlexGrid
                   .u-md-size1of3.Box
-                    .Box-heading.Title
-                      span.Box-icon
+                    .Box-heading.Title.u-textCenter
+                      // span.Box-icon
                         img(src="/images/_listen.svg", alt="listen")
-                      span Listening
+                      | Listening
                     p.Box-text I've worked around the world with great companies and talented people. Yet the place where I've learned the most is sitting with my clients, and listening. Great work results from a mutual understanding of problem and possibility.
                   .u-md-size1of3.Box
-                    .Box-heading.Title
-                      span.Box-icon
+                    .Box-heading.Title.u-textCenter
+                      // span.Box-icon
                         img(src="/images/_look.svg", alt="look")
-                      span Seeing
+                      | Seeing
                     p.Box-text The turning point in my career was learning to code. I already had a decade of experience as a graphic designer. It was hard! It taught me that unless I'm approaching my work with an open mind, I'm developing blindspots.
                   .u-md-size1of3.Box
-                    .Box-heading.Title
-                      span.Box-icon
+                    .Box-heading.Title.u-textCenter
+                      // span.Box-icon
                         img(src="/images/_fun.svg", alt="fun")
-                      span Playing
+                      | Playing
                     p.Box-text I think design is a matter of paying attention. Both to the big picture and the stack of details. I find this process fun—it feeds me, I never tire of it. Having fun allows me to transform the ordinary into something people talk about. 
                       nuxt-link(to="/about") Read more about me.
       
@@ -98,7 +97,7 @@
           .container
             .container.container--sm
               p.m-b0.Title-number 5
-              h2.Title.Title--xl.m-t0 everyone hungers for delight.
+              h2.Title.Title--xl.m-t0 everyone hungers for delight
               p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
               p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
               p
