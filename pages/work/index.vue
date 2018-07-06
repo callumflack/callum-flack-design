@@ -2,8 +2,7 @@
 div
   header(role="banner")
     c-pageheading(
-      titleXl="Enter full screen"
-      lede="Selected projects since 2014."
+      titleXl="Selected projects since 2014"
     )
   main(role="main").block--pb7
     .container.container--md
