@@ -13,7 +13,10 @@
         :style="titleColor"
         :class="titleClasses"
       )
-      h2.Lede.u-textCenter.m-t0.m-b0(v-if="lede", v-html="lede")
+      h2.Lede.u-textCenter.m-t0.m-b0(
+        v-if="lede"
+        v-html="lede"
+      )
 </template>
 
 <script>
