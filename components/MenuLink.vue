@@ -53,6 +53,10 @@ export default {
     padding-top: var(--s-4a);
     padding-bottom: var(--s-4a);
   }
+
+  &:hover {
+    color: var(--c-text);
+  }
 }
 
 .link + .link {
