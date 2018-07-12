@@ -1,5 +1,5 @@
 <template lang="pug">
-  main.block--pb7.block--matchFixedMenu(role="main")
+  main.block--pb7.block--matchFixedMenuTop(role="main")
     .container
       c-postexcerpt(
         v-if="post.published"

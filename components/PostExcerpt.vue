@@ -5,15 +5,18 @@
         nuxt-link(:to="link") {{ title }}
       .u-block.Text--sm.c-textLight.u-textCenter
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span.MetaSeparator • 
-        span {{ readingtime }} minutes
+        span.MetaSeparator(v-if="readingtime") • 
+          span {{ readingtime }} minutes
     
-    nuxt-link.u-block.figure(:to="link")
-      c-image(v-if="heroImage" :src="heroImage" post wrappedInLink)
+    nuxt-link.u-block.figure(v-if="heroImage", :to="link")
+      c-image(:src="heroImage" post wrappedInLink)
     
-    p.Text.p-t2
+    p.Text.p-t2(v-if="lede")
       | {{ lede }} 
       nuxt-link(:to="link") Read
+
+    p.Text.c-textLight.u-textCenter.p-t3(v-if="summary")
+      em {{ summary }} 
 
 </template>
 
@@ -34,7 +37,8 @@ export default {
     date: String,
     readingtime: Number,
     heroImage: String,
-    lede: String
+    lede: String,
+    summary: String
   }
 };
 </script>

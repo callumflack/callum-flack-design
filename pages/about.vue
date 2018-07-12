@@ -6,7 +6,7 @@ article
     //- c-pageheading(titleXl="Remarkability lies within the seamless edges." titleHighlight pageSpace)
     c-pageheading(
       titleXl="Remarkability lies in seamless edges"
-      lede="Hi! I'm Callum. I provide digital design and technology services for business owners and creative leaders who are driven to leap forward, establish trust and inspire change."
+      lede="Hi! I'm Callum. I provide digital design and technology services for business owners and creative leaders who are driven to establish trust, inspire change and leap forward."
       pageSpace
     )
     //- .container
@@ -24,20 +24,25 @@ article
         :src="page.heroImage"
       )
   main.block--pb7(role="main")
-    .container
+    .container.block--pb7
       nuxtent-body.MarkdownScope(:body="page.body")
+    .container
+      .figure.figure--post
+        c-interesting
 </template>
 
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import LazyImage from "~/components/LazyImage.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
+import NewsletterSignup from "~/components/NewsletterSignup.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
     "c-lazyimage": LazyImage,
-    "c-image": MarkdownImage
+    "c-image": MarkdownImage,
+    "c-interesting": NewsletterSignup
   },
   props: {
     title: String,

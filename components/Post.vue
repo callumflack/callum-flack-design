@@ -1,5 +1,5 @@
 <template lang="pug">
-  article.block--pb7.block--matchFixedMenu
+  article.block--pb7.block--matchFixedMenuTop
     header.figure--bottomSpace.u-lg-size10of12.m-xAuto(role="banner")
       h1.Title.u-textCenter
         nuxt-link(:to="link") {{ title }}

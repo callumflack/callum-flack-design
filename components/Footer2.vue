@@ -1,7 +1,7 @@
 <template lang="pug">
   footer.footer.block--pb7(role="contentinfo")
     .container
-      hr.bg-textLight
+      hr.bg-textLight(style="margin: 0 0 1px 0")
       .u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(
@@ -20,7 +20,8 @@
           //- )
           a.Meta.link(target="_blank" href="mailto:callum@callumflack.design") Email
           a.Meta.link(target="_blank" href="https://twitter.com/callumflack") Twitter
-          // nuxt-link.Meta.link(to="/newsletter") Interesting
+          nuxt-link.Meta.link(to="/interesting") 
+            span Interesting
 </template>
 
 <script>
@@ -51,26 +52,5 @@ export default {
 
 <style lang="postcss">
 @import "../assets/styles/variables.css";
-
-.nuxt-link-active span:before {
-  content: initial;
-}
-
-.link {
-  background-image: none;
-  display: inline-block;
-  padding-top: var(--s-3b);
-  padding-bottom: var(--s-3b);
-  text-decoration: none;
-
-  @media (--sm) {
-    padding-top: var(--s-4a);
-    padding-bottom: var(--s-4a);
-  }
-}
-
-.link + .link {
-  margin-left: var(--s-3b);
-}
 </style>
 

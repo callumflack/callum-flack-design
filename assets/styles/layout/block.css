@@ -103,15 +103,31 @@
   }
 }
 
-/* manage fixed menu */
-.block--matchFixedMenu {
-  padding-top: calc(var(--s-5) + 66px);
+/* 
+
+  Manage fixed menu
+
+*/
+
+.block--matchFixedMenuTop {
+  padding-top: calc(var(--s-5) + 60px);
 
   @media (--md) {
-    padding-top: calc(var(--s-6) + 66px);
+    padding-top: calc(var(--s-6) + 60px);
   }
   @media (--lg) {
-    padding-top: calc(var(--s-7) + 66px);
+    padding-top: calc(var(--s-7) + 60px);
+  }
+}
+
+.block--matchFixedMenuBottom {
+  padding-bottom: calc(var(--s-5) - 30px);
+
+  @media (--md) {
+    padding-bottom: calc(var(--s-6) - 30px);
+  }
+  @media (--lg) {
+    padding-bottom: calc(var(--s-7) - 30px);
   }
 }
 

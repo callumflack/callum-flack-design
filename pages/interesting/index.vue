@@ -1,16 +1,17 @@
 <template lang="pug">
-  main.block--pb7.block--matchFixedMenu(role="main")
+div
+  c-interesting
+  
+  // main.block--pb7.block--matchFixedMenuTop(role="main")
     .container.container--newsletter
       c-postexcerpt(
         v-if="post.published"
         v-for="post in posts"
         :key="post.permalink"
         :link="post.permalink"
-        :heroImage="post.heroImage"
         :title="post.title"
         :date="post.date"
-        :readingtime="post.readingtime"
-        :lede="post.lede"
+        :summary="post.summary"
       )
       
       //- .InterludeSpace
@@ -24,12 +25,16 @@
 </template>
 
 <script>
+import PageHeading from "~/components/PageHeading.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
+import NewsletterSignup from "~/components/NewsletterSignup.vue";
 
 export default {
   name: "newsletter-index",
   components: {
-    "c-postexcerpt": PostExcerpt
+    "c-pageheading": PageHeading,
+    "c-postexcerpt": PostExcerpt,
+    "c-interesting": NewsletterSignup
   },
   head() {
     return {
@@ -61,4 +66,29 @@ export default {
 
 <style scope>
 @import "../../assets/styles/variables.css";
+
+.Hero:before {
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.Hero {
+  background-color: var(--c-text);
+  background-image: url(/images/_slump.jpg);
+  background-image: url(/images/_overcast-night.jpg);
+  background-image: url(/images/_spys.jpg);
+  background-position-y: 80%;
+  position: relative;
+}
+
+.Hero p,
+.Hero {
+  color: var(--c-bg);
+}
 </style>

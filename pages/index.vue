@@ -2,23 +2,23 @@
   div
     header(role="banner")
       c-pageheading(
-        titleXl="Websites that<br>stir hearts &<br>change minds"
-        lede="Callum Flack Design provides digital design and technology services for creative leaders who are driven to stir hearts and inspire change. Here's 5 ways I help do this:"
+        titleXl="Websites that<br>inspire change"
+        lede="Callum Flack Design plans, designs and executes website systems for creative leaders who are driven to stir hearts and build communities. Here's 5 ways I help do this:"
       )
     main(role="content")
       section.Slide(style="background-color:rgba(236, 223, 194,0.5)")
         .FlexGridWrapper
           .FlexGrid
-            .u-md-size1of2.vh-Slide.Slide-texture--hi.CoverImage
+            .u-md-size1of2.Slide-inner.Slide-texture--hi.CoverImage
             .u-md-size1of2.m-t5.sm-m-t0
               .u-flex.u-flexAlignItemsCenter.h-100
                 .container.container--sm.m-l0
-                  p
+                  p.m-b1
                     span.Title-number 1
                   h2.Title.Title--xl.m-t0 
                     | We all respond<br>to beauty
                   p.Slide-1--link.m-t0.m-b0 
-                    | You'll know in a heartbeat when it's right. To instigate change in people, 
+                    | You'll know in a heartbeat when it's right. To create change in people, 
                     nuxt-link(to="/blog/the-instantaneous-language-of-beauty") I design for the heart first.
       
       section.Slide
@@ -26,46 +26,48 @@
           .FlexGrid
             .u-md-size1of2
               .container.m-l0.p-a0
-                .u-flex.u-flexAlignItemsCenter.sm-vh-Slide
+                .u-flex.u-flexAlignItemsCenter.md-Slide-height
                   c-lazyimage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528294818/okok/_glow-av.jpg")
             .u-md-size1of2.m-t5.sm-m-t0.u-sm-flexOrderFirst
               .u-flex.u-flexAlignItemsCenter.u-flexJustifyEnd.h-100
                 .container.container--sm.m-x0.u-md-textRight
-                  p.u-md-textRight.m-b0
+                  p.u-md-textRight.m-b1
                     span.Title-number 2
                   h2.Title.Title--xl.m-t0 
                     | Your digital brand is tactile 
                     //- | Your digital brand is a product 
                     //- span.u-table.u-sm-inlineBlock in use
                   p.m-t0.m-b0 
-                    | Your user's experience is as dependent on load time as it is on visual feel and flow. The digital brand is inseparable from the product. That's why I can 
-                    nuxt-link(to="/blog/designers-should-code") design in code
-                    | &nbsp;— it gives the most immediate feedback.
+                    | Your user's experience is as dependent on load time as it is on visual feel and flow. The technology is inseparable from the digital brand. 
+                    nuxt-link(to="/blog/designers-should-code") That's why I build what I design
+                    | . Working iteratively in code is the best design feedback.
       
       section.Slide(style="background-color:rgb(229, 232, 232)")
         .FlexGridWrapper
           .FlexGrid
             .u-md-size1of2
               .container.m-r0.p-a0.u-textRight
-                .u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-sm-flexJustifyEnd.vh-Slide
+                .u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-sm-flexJustifyEnd.Slide-inner
                   c-movie(reverseButton iphone home src="/images/phn-video-m.mp4")
             .u-md-size1of2.m-t5.sm-m-t0
               .u-flex.u-flexAlignItemsCenter.h-100
                 .container.container--sm.m-x0
-                  p.m-b0
+                  p.m-b1
                     span.Title-number 3
                   h2.Title.Title--xl.m-t0 
                     | Good design<br>is good business
                   p.Slide-3--link.m-t0.m-b0
-                    | All business is about making bets on human behaviour. My job is to create digital communications and services that anticipate your audience with seamless experiences they'll trust intuitively. Good design creates customers. 
+                    // | All business is about making bets on human behaviour. 
+                    // | People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. 
+                    | My job is to create digital communications and services that anticipate your audience with seamless experiences they'll trust intuitively. Change happens suddenly in those moments. Good design creates customers. 
                     nuxt-link(to="/work") See project case studies.
       
       section.Slide.Slide-texture--reverse.Slide-texture--pattern.CoverImage
-        .FlexChildrenCenter.vh-Slide
+        .FlexChildrenCenter.Slide-inner
           div
             .container
               .container.container--sm
-                p.m-b0
+                p.m-b1
                   span.Title-number 4
                 h2.Title.Title--xl.m-t0 A daily practise<br>since 2000
                 p.m-t0.m-b0 Here's a few things I've learned on the journey so far:
@@ -92,15 +94,18 @@
                     p.Box-text I think design is a matter of paying attention. Both to the big picture and the stack of details. I find this process fun—it feeds me, I never tire of it. Having fun allows me to transform the ordinary into something people talk about. 
                       nuxt-link(to="/about") Read more about me.
       
-      section.Slide
-        .FlexChildrenCenter.vh-Slide
+      section.Slide.SlideWithFooter
+        .FlexChildrenCenter.SlideWithFooter-inner
           .container
             .container.container--sm
-              p.m-b0.Title-number 5
-              h2.Title.Title--xl.m-t0 everyone hungers for delight
-              p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
-              p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
-              p
+              p.m-b1.Title-number 5
+              // h2.Title.Title--xl.m-t0 everyone hungers for interesting
+              h2.Title.Title--xl.m-t0 hungry for interesting
+              // p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
+              // p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
+              
+              c-signup
+              // p
                 a.Button.m-t1(href="mailto:callum@callumflack.design") Start a conversation
 
 </template>
@@ -110,6 +115,7 @@ import PageHeading from "~/components/PageHeading.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
 import LazyImage from "~/components/LazyImage.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
+import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
   layout: "default",
@@ -117,7 +123,8 @@ export default {
     "c-pageheading": PageHeading,
     "c-image": MarkdownImage,
     "c-lazyimage": LazyImage,
-    "c-movie": MarkdownMovie
+    "c-movie": MarkdownMovie,
+    "c-signup": NewsletterSignupForm
   }
 };
 </script>
@@ -126,15 +133,26 @@ export default {
 @import "../assets/styles/variables.css";
 
 .Slide,
-.vh-Slide {
-  min-height: 75vh;
+.Slide-inner {
+  min-height: 66vh;
+
+  @media (--md) {
+    min-height: 90vh;
+  }
 }
 
-.Slide,
-.vh-Slide,
-.sm-vh-Slide {
+.SlideWithFooter,
+.SlideWithFooter-inner {
+  min-height: calc(66vh - 194px);
+
   @media (--md) {
-    min-height: 100vh;
+    min-height: calc(90vh - 194px);
+  }
+}
+
+.md-Slide-height {
+  @media (--md) {
+    min-height: 90vh;
   }
 }
 

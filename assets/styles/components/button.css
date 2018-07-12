@@ -113,5 +113,21 @@
  * Variations
  */
 
-.Button--outline {
+.Button--reverse {
+  background-color: var(--c-bg);
+  border-color: var(--c-text);
+  color: var(--c-text);
+
+  &:hover {
+    box-shadow: var(--c-bg) 0 0 0 2px;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: var(--c-bg) 0 0 0 3px;
+  }
+
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px inset;
+  }
 }

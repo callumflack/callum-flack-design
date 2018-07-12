@@ -134,7 +134,7 @@
 
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-meta: calc(0.7em * var(--fs-text-unit));
-  --fs-subheading: calc(1em * var(--fs-text-unit));
+  --fs-subheading: calc(0.925em * var(--fs-text-unit));
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-title: calc(2em * var(--fs-text-unit));
 

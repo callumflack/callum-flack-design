@@ -33,9 +33,9 @@ export default {
   computed: {
     blockClasses() {
       return [
-        "block--matchFixedMenu",
+        "block--matchFixedMenuTop",
         {
-          "block--pb7": !this.pageSpace,
+          "block--matchFixedMenuBottom": !this.pageSpace,
           "figure--bottomSpace": this.pageSpace
         }
       ];

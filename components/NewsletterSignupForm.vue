@@ -1,9 +1,12 @@
 <template lang="pug">
 div
-  h2.Heading.Heading--ruled Subscribe
-  p I send an occassional email newsletter with notes of the stories and links about designing great interfaces that I've found worthwhile, and why they resonate. You should sign up:
+  // h2.Heading.Heading--ruled Subscribe
+  p Once or twice a month I write an email letter about "things inbetween"—the stories, ideas and links that I've found curious, resonating, <em>interesting</em>. 
+  // p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to notice and connect the dots.
+  p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to see systems and connect dots.
+  p I hope it's a worthwhile way to keep in touch:
   //- .formWrapper
-  form.form.Text(
+  form.form.Text.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
@@ -12,7 +15,7 @@ div
   )
     .form-group
       input(
-        placeholder="Your email", 
+        placeholder="Add your email", 
         type="email", 
         name="EMAIL", 
         value="", 
@@ -25,17 +28,30 @@ div
           tabindex="-1", 
           value=""
         )
-      button.Button.Button--transparent.LinkSignal(
+      button(
+        :class="buttonClasses", 
         type="submit", 
         name="subscribe", 
-      ) {{buttonText}} #[span.LinkSignal-target →]
+      ) {{buttonText}} 
+      // #[span.LinkSignal-target →]
 </template>
 
 <script>
 export default {
   name: "FormNews",
-
+  props: {
+    reverse: Boolean
+  },
   computed: {
+    buttonClasses() {
+      return [
+        "Button",
+        "LinkSignal",
+        {
+          "Button--reverse": this.reverse
+        }
+      ];
+    },
     buttonText() {
       // if (this.loading) {
       //   return "Loading";
@@ -43,7 +59,7 @@ export default {
       //   return "Sent";
       // }
 
-      return "Stay in touch";
+      return "Subscribe";
     }
   }
 };
@@ -53,9 +69,6 @@ export default {
 @import "../assets/styles/variables.css";
 
 .form {
-  @media (--md) {
-    width: 50%;
-  }
 }
 
 .form input {

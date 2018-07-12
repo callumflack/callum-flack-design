@@ -128,7 +128,6 @@ p em {
   font-family: var(--ff-text-meta), var(--ff-stack-sans);
   height: 25px;
   line-height: 24px;
-  margin-bottom: var(--s-1);
   text-align: center;
   width: 25px;
 }
