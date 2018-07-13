@@ -2,14 +2,14 @@
 
 :root {
   --Button-background-color: var(--c-text);
-  --Button-border-color: currentcolor;
-  --Button-border-width: 2px;
+  --Button-border-color: var(--c-text);
+  --Button-border-width: 1px;
   --Button-color: var(--c-bg);
   --Button-disabled-opacity: 0.6;
   --Button-font: inherit;
   --Button-font-weight: var(--fw-medium);
   --Button-height: 2.25rem;
-  --Button-padding: 0.85em 1.25em 0.7em;
+  --Button-padding: 0 2em;
   --Button-radius: var(--border-radius);
 }
 
@@ -36,8 +36,8 @@
   box-sizing: border-box;
   color: var(--Button-color);
   display: inline-block;
-  font: var(--Button-font);
-  font-weight: var(--Button-font-weight);
+  /* font: var(--Button-font);
+  font-weight: var(--Button-font-weight); */
   line-height: inherit;
   margin: 0;
   padding: var(--Button-padding);
@@ -57,12 +57,12 @@
   /* pseudos */
   &:hover {
     // box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 0px 999px inset;
-    box-shadow: var(--Button-background-color) 0 0 0 2px;
+    /* box-shadow: var(--Button-background-color) 0 0 0 2px; */
   }
 
   &:focus {
     outline: 0;
-    box-shadow: var(--Button-background-color) 0 0 0 3px;
+    box-shadow: var(--Button-background-color) 0 0 0 2px;
   }
 
   &:active {

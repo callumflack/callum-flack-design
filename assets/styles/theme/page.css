@@ -52,3 +52,48 @@
     padding-bottom: var(--s-4a);
   }
 }
+
+/* 
+
+  Interesting hero, etc
+
+ */
+
+.NewsletterHero:before {
+  /* background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(212, 203, 184, 0.85);
+  background-color: rgba(228, 226, 220, 0.9); */
+  background-color: rgba(239, 236, 229, 0.92);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.NewsletterHero {
+  background-color: var(--c-text);
+  /* background-image: url(/images/_slump.jpg);
+  background-image: url(/images/_overcast-night.jpg);
+  background-image: url(/images/_spys.jpg); */
+  background-image: url(/images/_kiss.jpg);
+  /* background-position-y: 80%; */
+  background-position-y: 0;
+  position: relative;
+}
+
+.NewsletterHero p,
+.NewsletterHero {
+  /* color: var(--c-bg); */
+}
+
+/* turn off footer rule until there's an archive list */
+.page-interesting,
+.page-index {
+  & .footer hr {
+    background-color: transparent !important;
+  }
+}

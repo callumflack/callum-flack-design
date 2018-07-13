@@ -1,5 +1,5 @@
 <template lang="pug">
-  article.block--pb7.block--matchFixedMenuTop
+  article.block--matchFixedMenuTop
     header.figure--bottomSpace.u-lg-size10of12.m-xAuto(role="banner")
       h1.Title.u-textCenter
         nuxt-link(:to="link") {{ title }}
@@ -19,6 +19,8 @@
       hr
       p.Text.c-textLight(v-if="updated") Updated: {{ updated }}
       p.Text.c-textLight(v-if="note", v-html="note")
+    .block--py7
+      .u-textCenter.Lede *&nbsp;&nbsp;*&nbsp;&nbsp;*
 
     //- .block--mt6(v-if="tweet")
       p.Heading.m-b0.u-textCenter Comments?

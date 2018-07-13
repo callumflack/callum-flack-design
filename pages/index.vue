@@ -6,7 +6,7 @@
         lede="Callum Flack Design plans, designs and executes website systems for creative leaders who are driven to stir hearts and build communities. Here's 5 ways I help do this:"
       )
     main(role="content")
-      section.Slide(style="background-color:rgba(236, 223, 194,0.5)")
+      section.Slide.Slide-1
         .FlexGridWrapper
           .FlexGrid
             .u-md-size1of2.Slide-inner.Slide-texture--hi.CoverImage
@@ -19,7 +19,7 @@
                     | We all respond<br>to beauty
                   p.Slide-1--link.m-t0.m-b0 
                     | You'll know in a heartbeat when it's right. To create change in people, 
-                    nuxt-link(to="/blog/the-instantaneous-language-of-beauty") I design for the heart first.
+                    nuxt-link(to="/blog/the-instantaneous-language-of-beauty") I design for emotional trust.
       
       section.Slide
         .FlexGridWrapper
@@ -94,19 +94,18 @@
                     p.Box-text I think design is a matter of paying attention. Both to the big picture and the stack of details. I find this process fun—it feeds me, I never tire of it. Having fun allows me to transform the ordinary into something people talk about. 
                       nuxt-link(to="/about") Read more about me.
       
-      section.Slide.SlideWithFooter
-        .FlexChildrenCenter.SlideWithFooter-inner
-          .container
-            .container.container--sm
-              p.m-b1.Title-number 5
-              // h2.Title.Title--xl.m-t0 everyone hungers for interesting
-              h2.Title.Title--xl.m-t0 hungry for interesting
-              // p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
-              // p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
-              
-              c-signup
-              // p
-                a.Button.m-t1(href="mailto:callum@callumflack.design") Start a conversation
+      section.Slide.NewsletterHero.CoverImage
+        .FlexChildrenCenter.Slide-inner.u-posRelative
+          .container.container--sm
+            p.m-b1.Title-number 5
+            // h2.Title.Title--xl.m-t0 everyone hungers for interesting
+            h2.Title.Title--xl.m-t0 hungry for interesting
+            // p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
+            // p I create change by designing digital brands and products that help your audience remember you. Interested? Let's discuss your ideas. 
+            
+            c-signupform.u-posRelative
+            // p
+              a.Button.m-t1(href="mailto:callum@callumflack.design") Start a conversation
 
 </template>
 
@@ -124,7 +123,7 @@ export default {
     "c-image": MarkdownImage,
     "c-lazyimage": LazyImage,
     "c-movie": MarkdownMovie,
-    "c-signup": NewsletterSignupForm
+    "c-signupform": NewsletterSignupForm
   }
 };
 </script>
@@ -137,7 +136,7 @@ export default {
   min-height: 66vh;
 
   @media (--md) {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 }
 
@@ -146,13 +145,13 @@ export default {
   min-height: calc(66vh - 194px);
 
   @media (--md) {
-    min-height: calc(90vh - 194px);
+    min-height: calc(80vh - 194px);
   }
 }
 
 .md-Slide-height {
   @media (--md) {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 }
 
@@ -178,10 +177,33 @@ export default {
   /* margin-top: 1rem; */
 }
 
+:root {
+  --slide-1-color: var(--c-link);
+  --slide-1-color: rgb(230, 238, 245);
+  --slide-1-color: rgb(255, 168, 60);
+}
+
+.Slide-1 {
+  /* background-color:rgba(236, 223, 194,0.5);
+  background-color: rgba(255, 129, 0, 0.68);*/
+  background-color: #fff5d3;
+  background-color: var(--slide-1-color);
+}
+
+.Slide-1 .Title-number {
+  color: var(--slide-1-color);
+}
+
 .Slide-1--link a {
-  text-shadow: 0.03em 0 #f1ebdd, -0.03em 0 #f1ebdd, 0 0.03em #f1ebdd, 0 -0.03em #f1ebdd,
-    0.06em 0 #f1ebdd, -0.06em 0 #f1ebdd, 0.09em 0 #f1ebdd, -0.09em 0 #f1ebdd,
-    0.12em 0 #f1ebdd, -0.12em 0 #f1ebdd, 0.15em 0 #f1ebdd, -0.15em 0 #f1ebdd;
+  background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+    linear-gradient(var(--c-bg), var(--c-bg)),
+    linear-gradient(var(--c-text), var(--c-text));
+  text-shadow: 0.03em 0 var(--slide-1-color), -0.03em 0 var(--slide-1-color),
+    0 0.03em var(--slide-1-color), 0 -0.03em var(--slide-1-color),
+    0.06em 0 var(--slide-1-color), -0.06em 0 var(--slide-1-color),
+    0.09em 0 var(--slide-1-color), -0.09em 0 var(--slide-1-color),
+    0.12em 0 var(--slide-1-color), -0.12em 0 var(--slide-1-color),
+    0.15em 0 var(--slide-1-color), -0.15em 0 var(--slide-1-color);
 }
 
 .Slide-3--link a {

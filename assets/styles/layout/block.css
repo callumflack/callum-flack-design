@@ -121,13 +121,13 @@
 }
 
 .block--matchFixedMenuBottom {
-  padding-bottom: calc(var(--s-5) - 30px);
+  padding-bottom: calc(var(--s-5) - 24px);
 
   @media (--md) {
-    padding-bottom: calc(var(--s-6) - 30px);
+    padding-bottom: calc(var(--s-6) - 24px);
   }
   @media (--lg) {
-    padding-bottom: calc(var(--s-7) - 30px);
+    padding-bottom: calc(var(--s-7) - 24px);
   }
 }
 
@@ -192,6 +192,17 @@
 
   @media (--lg) {
     margin-top: var(--s-4);
+  }
+}
+
+.block--mb7 {
+  margin-bottom: var(--s-5);
+
+  @media (--md) {
+    margin-bottom: var(--s-6);
+  }
+  @media (--lg) {
+    margin-bottom: var(--s-7);
   }
 }
 

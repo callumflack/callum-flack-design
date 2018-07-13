@@ -2,9 +2,10 @@
 div
   // h2.Heading.Heading--ruled Subscribe
   p Once or twice a month I write an email letter about "things inbetween"—the stories, ideas and links that I've found curious, resonating, <em>interesting</em>. 
-  // p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to notice and connect the dots.
-  p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to see systems and connect dots.
-  p I hope it's a worthwhile way to keep in touch:
+  // p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to notice / see systems and connect the dots.
+  // p While the subject matter is broad, it always involves wonder, design, tech and writing. It's for folks who're hungry to notice and connect the dots.
+  p While the subject matter is broad, it always involves wonder, design, writing and internet technology. It's for hungry folks seeking to connect dots.
+  // p I hope that it becomes a worthwhile way to keep in touch:
   //- .formWrapper
   form.form.Text.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
@@ -46,7 +47,7 @@ export default {
     buttonClasses() {
       return [
         "Button",
-        "LinkSignal",
+        "Meta",
         {
           "Button--reverse": this.reverse
         }
@@ -72,8 +73,9 @@ export default {
 }
 
 .form input {
-  border-bottom: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-text);
   box-shadow: none;
+  color: var(--c-text);
   padding-left: 0;
 
   &:focus {

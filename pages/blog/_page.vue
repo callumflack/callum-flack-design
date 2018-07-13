@@ -1,25 +1,28 @@
 <template lang="pug">
-.container
-  c-post(
-    :link="page.permalink"
-    :title="page.title"
-    :date="page.date"
-    :readingtime="page.readingtime"
-    :body="page.body"
-    :updated="page.updated"
-    :note="page.note"
-  )
-  // c-signup
+main
+  .container
+    c-post(
+      :link="page.permalink"
+      :title="page.title"
+      :date="page.date"
+      :readingtime="page.readingtime"
+      :body="page.body"
+      :updated="page.updated"
+      :note="page.note"
+    )
+  .container.p-b7
+    .figure.figure--post
+      c-signup
 </template>
 
 <script>
 import Post from "~/components/Post.vue";
-import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   components: {
     "c-post": Post,
-    "c-signup": NewsletterSignupForm
+    "c-signup": NewsletterSignupBlock
   },
   head() {
     return {

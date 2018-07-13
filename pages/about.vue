@@ -35,14 +35,14 @@ article
 import PageHeading from "~/components/PageHeading.vue";
 import LazyImage from "~/components/LazyImage.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
-import NewsletterSignup from "~/components/NewsletterSignup.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
     "c-lazyimage": LazyImage,
     "c-image": MarkdownImage,
-    "c-interesting": NewsletterSignup
+    "c-interesting": NewsletterSignupBlock
   },
   props: {
     title: String,

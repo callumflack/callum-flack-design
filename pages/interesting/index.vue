@@ -1,6 +1,11 @@
 <template lang="pug">
 div
-  c-interesting
+  header.NewsletterHero.CoverImage(role="banner")
+    c-pageheading.u-posRelative(
+      titleXl="interesting"
+    )
+    .container.u-posRelative.block--pb7
+      c-signupform
   
   // main.block--pb7.block--matchFixedMenuTop(role="main")
     .container.container--newsletter
@@ -27,24 +32,23 @@ div
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
-import NewsletterSignup from "~/components/NewsletterSignup.vue";
+import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
   name: "newsletter-index",
   components: {
     "c-pageheading": PageHeading,
     "c-postexcerpt": PostExcerpt,
-    "c-interesting": NewsletterSignup
+    "c-signupform": NewsletterSignupForm
   },
   head() {
     return {
-      title: "Blog – Callum Flack Design",
+      title: "Interesting – a mailing list by Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content:
-            "Selected writing by Callum Flack about digital design, user experience & code"
+          content: "Interesting – a mailing list by Callum Flack Design. It's "
         }
       ]
     };
@@ -63,32 +67,3 @@ export default {
   }
 };
 </script>
-
-<style scope>
-@import "../../assets/styles/variables.css";
-
-.Hero:before {
-  background-color: rgba(0, 0, 0, 0.7);
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-
-.Hero {
-  background-color: var(--c-text);
-  background-image: url(/images/_slump.jpg);
-  background-image: url(/images/_overcast-night.jpg);
-  background-image: url(/images/_spys.jpg);
-  background-position-y: 80%;
-  position: relative;
-}
-
-.Hero p,
-.Hero {
-  color: var(--c-bg);
-}
-</style>
