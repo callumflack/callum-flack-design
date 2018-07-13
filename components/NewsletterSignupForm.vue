@@ -82,11 +82,4 @@ export default {
     border-color: var(--c-text);
   }
 }
-
-.form .Button {
-  @media (max-width: 512px) {
-    text-align: right;
-    padding-right: 0;
-  }
-}
 </style>

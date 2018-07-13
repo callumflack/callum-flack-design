@@ -8,7 +8,7 @@
   --Button-disabled-opacity: 0.6;
   --Button-font: inherit;
   --Button-font-weight: var(--fw-medium);
-  --Button-height: 2.25rem;
+  --Button-height: 4.25em;
   --Button-padding: 0 2em;
   --Button-radius: var(--border-radius);
 }
@@ -36,6 +36,7 @@
   box-sizing: border-box;
   color: var(--Button-color);
   display: inline-block;
+  height: var(--Button-height);
   /* font: var(--Button-font);
   font-weight: var(--Button-font-weight); */
   line-height: inherit;

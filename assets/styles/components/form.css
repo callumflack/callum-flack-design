@@ -14,7 +14,7 @@
 
   & * + * {
     margin: 0;
-    margin-top: var(--s-2);
+    margin-top: var(--s-3);
   }
 
   @media (--sm) {
