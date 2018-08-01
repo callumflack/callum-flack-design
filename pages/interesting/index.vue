@@ -2,13 +2,13 @@
 div
   header.NewsletterHero.CoverImage(role="banner")
     c-pageheading.u-posRelative(
-      titleXl="interesting"
+      titleXl="❏ interesting"
     )
-    .container.u-posRelative.block--pb7
+    .Container.u-posRelative.block--pb7
       c-signupform
   
   // main.block--pb7.block--matchFixedMenuTop(role="main")
-    .container.container--newsletter
+    .Container.Container--newsletter
       c-postexcerpt(
         v-if="post.published"
         v-for="post in posts"

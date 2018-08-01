@@ -4,7 +4,7 @@
 
  */
 
-.figure {
+/* .figure {
   margin-top: var(--s-3);
   margin-bottom: calc(1.1 * var(--s-3));
   position: relative;
@@ -40,52 +40,7 @@
 
 .figure--frame {
   border: 1px solid var(--c-border);
-}
-
-/* 
-
-  break the text column grid 
-
-*/
-
-.figure--project,
-.figure--post {
-  left: calc(-50vw + 50%);
-  width: 100vw;
-
-  @media (--md) {
-    left: calc((-0.5 * var(--container-rg-img)) + 50%);
-    width: var(--container-rg-img);
-  }
-}
-
-.figure--project {
-  margin-top: var(--s-5);
-  margin-bottom: var(--s-5);
-
-  @media (--md) {
-    margin-top: var(--s-6);
-    margin-bottom: var(--s-6);
-  }
-}
-
-.figure--large {
-  width: 100%;
-
-  @media (min-width: 1136px) {
-    left: calc(-40vw + 50%);
-    width: 80vw;
-  }
-  @media (min-width: 1840px) {
-    left: calc(-30vw + 50%);
-    width: 60vw;
-  }
-}
-
-.figure--portrait {
-  overflow: hidden;
-  margin: 0 auto;
-}
+} */
 
 /* 
 

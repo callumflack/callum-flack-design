@@ -1,26 +1,25 @@
 <template lang="pug">
-  main.block--pb7.block--matchFixedMenuTop(role="main")
-    .container
-      c-postexcerpt(
-        v-if="post.published"
-        v-for="post in posts"
-        :key="post.permalink"
-        :link="post.permalink"
-        :heroImage="post.heroImage"
-        :title="post.title"
-        :date="post.date"
-        :readingtime="post.readingtime"
-        :lede="post.lede"
-      )
-      
-      //- .InterludeSpace
-        hr
-        .block--my7
-          p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
-            span.u-block
-              nuxt-link.u-linkClean(to="/about") Callum Flack
-              | &nbsp;is writing about the things inbetween. Here's the most recent posts:
-        hr
+  main.Container(role="main")
+    post-excerpt(
+      v-if="post.published"
+      v-for="post in posts"
+      :key="post.permalink"
+      :link="post.permalink"
+      :heroImage="post.heroImage"
+      :title="post.title"
+      :date="post.date"
+      :readingtime="post.readingtime"
+      :lede="post.lede"
+    )
+    
+    //- .InterludeSpace
+      hr
+      .block--my7
+        p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
+          span.u-block
+            nuxt-link.u-linkClean(to="/about") Callum Flack
+            | &nbsp;is writing about the things inbetween. Here's the most recent posts:
+      hr
 </template>
 
 <script>
@@ -29,7 +28,7 @@ import PostExcerpt from "~/components/PostExcerpt.vue";
 export default {
   name: "blog",
   components: {
-    "c-postexcerpt": PostExcerpt
+    PostExcerpt
   },
   head() {
     return {

@@ -13,7 +13,7 @@
             .u-md-size1of2.vh-Slide.Slide-texture--hi.CoverImage
             .u-md-size1of2.m-t5.sm-m-t0
               .u-flex.u-flexAlignItemsCenter.h-100
-                .container.container--sm.m-l0
+                .Container.Container--sm.m-l0
                   p
                     span.Title-number 1
                   h2.Title.Title--xl 
@@ -25,12 +25,12 @@
         .FlexGridWrapper
           .FlexGrid
             .u-md-size1of2
-              .container.m-l0.p-a0
+              .Container.m-l0.p-a0
                 .u-flex.u-flexAlignItemsCenter.sm-vh-Slide
-                  c-lazyimage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317578/okok/_glow5.jpg")
+                  ImageLazy(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317578/okok/_glow5.jpg")
             .u-md-size1of2.m-t5.sm-m-t0.u-sm-flexOrderFirst
               .u-flex.u-flexAlignItemsCenter.u-flexJustifyEnd.h-100
-                .container.container--sm.m-x0.u-md-textRight
+                .Container.Container--sm.m-x0.u-md-textRight
                   p.u-md-textRight
                     span.Title-number 2
                   h2.Title.Title--xl 
@@ -45,12 +45,12 @@
         .FlexGridWrapper
           .FlexGrid
             .u-md-size1of2
-              .container.m-r0.p-a0.u-textRight
+              .Container.m-r0.p-a0.u-textRight
                 .u-flex.u-flexAlignItemsCenter.u-flexJustifyCenter.u-sm-flexJustifyEnd.vh-Slide
                   c-movie(reverseButton iphone home src="/images/phn-video-m.mp4")
             .u-md-size1of2.m-t5.sm-m-t0
               .u-flex.u-flexAlignItemsCenter.h-100
-                .container.container--sm.m-x0
+                .Container.Container--sm.m-x0
                   p
                     span.Title-number 3
                   h2.Title.Title--xl 
@@ -62,13 +62,13 @@
       section.Slide.Slide-texture--reverse.Slide-texture--pattern.CoverImage
         .FlexChildrenCenter.vh-Slide
           div
-            .container
-              .container.container--sm
+            .Container
+              .Container.Container--sm
                 p
                   span.Title-number 4
                 h2.Title.Title--xl A daily practice<br>since 2000
                 p.m-t0.m-b0 Here's a few things I've learned on the journey so far:
-            .container.container--md.block--pt5
+            .Container.Container--md.block--pt5
               .FlexGridWrapper
                 .FlexGrid
                   .u-md-size1of3.Box
@@ -93,8 +93,8 @@
       
       section.Slide
         .FlexChildrenCenter.vh-Slide
-          .container
-            .container.container--sm
+          .Container
+            .Container.Container--sm
               p.Title-number 5
               h2.Title.Title--xl everyone hungers for delight.
               p.m-t0 People feel delighted when they've been acknowledged by good service. Change happens suddenly in those moments. You'll be remembered and trusted. 
@@ -107,7 +107,7 @@
 <script>
 import PageHeading from "~/components/PageHeading.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
-import LazyImage from "~/components/LazyImage.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 
 export default {
@@ -115,7 +115,7 @@ export default {
   components: {
     "c-pageheading": PageHeading,
     "c-image": MarkdownImage,
-    "c-lazyimage": LazyImage,
+    ImageLazy,
     "c-movie": MarkdownMovie
   }
 };
@@ -225,7 +225,7 @@ export default {
 }
 
 .Slide-texture--reverse {
-  & .container {
+  & .Container {
     position: relative;
     z-index: 1;
   }

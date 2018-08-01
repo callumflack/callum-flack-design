@@ -4,20 +4,59 @@
 
  */
 
+body {
+  /* border-left: 1px solid var(--c-border);
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container);
+  padding-left: calc(1 * var(--grid-gutter));
+  padding-right: calc(1 * var(--grid-gutter));
+  width: 100%; */
+
+  &:before {
+    /* background-color: var(--c-textLight);
+    content: " ";
+    display: block;
+    height: 100vh;
+    left: calc(-1 * var(--grid-gutter));
+    left: -1px;
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    transform: translateY(-100%);
+    width: 1px; */
+  }
+}
+
+/* …failing attempt at having the line run underneath the entire browser space */
+/* html {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) calc(50% - 0.5px),
+    rgba(0, 0, 0, 1) calc(50%),
+    rgba(0, 0, 0, 0) calc(50% + 0.5px)
+  );
+} */
+
+/* 
+
+  Page themes
+
+ */
+
 .page-index {
-  // background-color: #fbf06f;
+  background-color: #fbf06f;
+  background-color: var(--c-neutral);
+}
+
+.page-index .Nav-list {
+  background-color: initial !important;
 }
 
 .page-index .promote {
   position: relative;
   z-index: 1;
-
-  & h1,
-  & p,
-  & a {
-    // border-color: var(--c-white);
-    // color: var(--c-white);
-  }
 
   & a {
     text-shadow: initial;
@@ -27,6 +66,21 @@
 .page-about .Page {
   /* background-color: #efecda; */
   /* background-color: rgba(236, 223, 194, 0.5); */
+}
+
+/* 
+
+  Essay drop caps
+
+ */
+.page-about .MarkdownScope div > p:first-of-type:first-letter,
+.page-blog-page .MarkdownScope div > p:first-of-type:first-letter {
+  float: left;
+  font-family: var(--ff-text-lede);
+  font-size: 4.6em;
+  line-height: 1;
+  padding-top: 2px;
+  padding-right: 2.5rem;
 }
 
 /* 

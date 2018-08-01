@@ -1,6 +1,6 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
-    .container
+    .Container
       nav.u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(

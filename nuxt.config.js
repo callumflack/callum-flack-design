@@ -36,6 +36,11 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    postcss: [
+      require("postcss-easy-import")(),
+      require("postcss-mixins")(),
+      require("postcss-preset-env")()
+    ],
     /*
     ** Run ESLINT on save
     */
@@ -63,7 +68,11 @@ module.exports = {
   plugins: [
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
-    "~/plugins/vue-moment"
+    "~/plugins/vue-moment",
+    {
+      src: "~/plugins/v-lazy-image",
+      ssr: false
+    }
   ],
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
   axios: {

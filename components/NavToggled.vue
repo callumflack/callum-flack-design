@@ -1,8 +1,8 @@
 <template lang="pug">
-  div(@click="close", :class="navClass")
-    c-nav
-    .toggle
-      span.icon.icon-close
+  div(@click="close", :class="modalClasses")
+    nav-list
+    // .toggle
+      span.u-icon.icon-close
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
           <g><rect y="12.74" width="27" height="1.5" transform="translate(13.51 32.57) rotate(-135)"/><rect y="12.74" width="27" height="1.5" transform="translate(-5.58 13.5) rotate(-45)"/></g>
         </svg>
@@ -10,48 +10,40 @@
 </template>
 
 <script>
-import Nav from "~/components/Nav.vue";
+import NavList from "~/components/NavList.vue";
 
 export default {
-  name: "NavToggled",
-
   components: {
-    "c-nav": Nav
+    NavList
   },
-
   computed: {
-    navClass() {
+    modalClasses() {
       return [
-        "modal",
+        "Modal",
         {
-          hidden: !this.isVisible,
-          "delay-transition": this.delayTransition
+          "is-hidden": !this.isVisible,
+          "is-transitioning": this.delayTransition
         }
       ];
     },
-
     isVisible: function() {
       return this.$store.state.isMobileNavVisible;
     },
-
     currentPage: function() {
       return this.$store.state.currentPage;
     }
   },
-
   methods: {
     applyDelayTransition(event) {
       if (event.target.getAttribute("href") === this.$route.path) {
         return;
       }
-
       this.delayTransition = true;
 
       setTimeout(() => {
         this.delayTransition = false;
       }, 1000);
     },
-
     close() {
       this.$store.commit("SET_MODAL_VISIBILITY", false);
     }
@@ -62,7 +54,7 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
-.modal {
+.Modal {
   bottom: 0;
   left: 0;
   opacity: 1;
@@ -77,16 +69,20 @@ export default {
   &:focus {
     cursor: url("../static/images/icon-close.png"), auto;
   }
+
+  & > div {
+    height: 100vh;
+  }
 }
 
-.modal.hidden {
+.Modal.is-hidden {
   opacity: 0;
   transform: translateY(100vh);
   transition: opacity var(--transition-duration),
     transform 0s var(--transition-duration);
 }
 
-.modal.delay-transition {
+.Modal.is-transitioning {
   transition: opacity var(--transition-duration) var(--transition-delayed),
     transform 0s var(--transition-delayed);
 }
@@ -97,18 +93,8 @@ export default {
 
  */
 
-.modal {
+.Modal {
   background-color: var(--c-bg);
-}
-
-.modal .container {
-  height: 100vh;
-}
-
-.modal .Heading,
-.modal .Text,
-.modal .Text--meta {
-  width: 100%;
 }
 
 /* 

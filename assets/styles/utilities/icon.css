@@ -1,6 +1,7 @@
 /*
 
-  Icon
+  SVG icon
+  NB: https://css-tricks.com/scale-svg/ 
 
  */
 
@@ -14,15 +15,11 @@
 .u-icon {
   display: inline-block;
   fill: currentColor;
-  // height: var(--s-4);
-  height: 1.5rem;
   line-height: 1;
   max-width: 100%;
   position: relative;
   text-align: center;
   user-select: none;
-  // vertical-align: text-bottom;
-  width: 1.5rem;
 
   & > svg {
     fill: currentColor;
@@ -30,37 +27,26 @@
   }
 }
 
-/* THEME */
-/* https://css-tricks.com/scale-svg/ */
+/*
 
-.u-icon--logo {
-  height: 36px;
-  transform: translateY(5px);
-  width: 95px;
+  Target blank icon
+
+ */
+
+.icon-targetblank {
+  position: relative;
 }
 
-.u-icon--sm,
-.u-icon--sm svg {
-  height: 1rem;
-  width: 1rem;
-}
-
-.u-icon--sm {
-  transform: translateY(2px);
-}
-
-.u-icon--tiny,
-.u-icon--tiny svg {
-  height: 0.75rem;
-  width: 0.75rem;
-}
-
-.u-icon-toggle svg {
-  height: 1.5em;
-  width: 1.5em;
-
-  @media (--md) {
-    height: 2rem;
-    width: 2rem;
-  }
+.icon-targetblank:after {
+  content: "\2192";
+  display: inline-block;
+  font-family: var(--ff-stack-sans);
+  font-weight: 400;
+  font-size: 60%;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  vertical-align: top;
+  right: -1em;
+  top: 0.25em;
 }

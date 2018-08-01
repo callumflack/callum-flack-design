@@ -1,48 +1,41 @@
 <template lang="pug">
 article
-  header(role="banner")
-    //- c-pageheading(titleXl="seamless digital . by design." pageSpace)
-    //- c-pageheading(titleXl="design vision. seamless execution." titleHighlight pageSpace)
-    //- c-pageheading(titleXl="Remarkability lies within the seamless edges." titleHighlight pageSpace)
-    c-pageheading(
-      titleXl="Remarkability lies in seamless edges"
-      lede="Hi! I'm Callum. I provide digital design and technology services for business owners and creative leaders who are driven to establish trust, inspire change and leap forward."
-      pageSpace
-    )
-    //- .container
-      c-lazyimage(
-        v-if="page.heroInCloudinary"
-        project
-        portrait
-        :src="page.heroImage"
-      )
-      c-image(
-        v-else-if="page.heroImage"
-        project
-        portrait
-        local
-        :src="page.heroImage"
-      )
-  main.block--pb7(role="main")
-    .container.block--pb7
-      nuxtent-body.MarkdownScope(:body="page.body")
-    .container
+  header.CoverImage(role="banner")
+    .AspectRatio.AspectRatio--2x1
+      .AspectRatio-object
+        ImageSVGFilter(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
+      .AspectRatio-object.Blend
+        .Container.h-100
+          .Extract-hero.h-100
+            .f.f-alignItemsCenter.h-100
+              // h1.Subtitle.b-mb1.c-bg.fw-light.w-lg-9x12
+              h1.Super.c-bg.w-md-7x12.b-pb4
+                | Callum works at the intersection between user experience, visual design & code.
+    // h2.Text
+      span.fs-scale-reset
+        span.Meta2.fw-bold Tiago Forte — 
+      | “Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
+      nuxt-link(to="/about") Learn more…
+    
+    
+  main(role="main")
+    .Container.b-pb3
+    .Container.b-pb3
+      .MarkdownScope
+        nuxtent-body(:body="page.body")
+    // .Container
       .figure.figure--post
-        c-interesting
+        NewsletterSignupBlock
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
-import LazyImage from "~/components/LazyImage.vue";
-import MarkdownImage from "~/components/MarkdownImage.vue";
+import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   components: {
-    "c-pageheading": PageHeading,
-    "c-lazyimage": LazyImage,
-    "c-image": MarkdownImage,
-    "c-interesting": NewsletterSignupBlock
+    ImageSVGFilter,
+    NewsletterSignupBlock
   },
   props: {
     title: String,
@@ -71,4 +64,13 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.Blend {
+  background-blend-mode: multiply;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.25) 80%
+  );
+}
 </style>

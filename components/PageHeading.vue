@@ -1,6 +1,6 @@
 <template lang="pug">
   div(:class="blockClasses")
-    .container
+    .Container
       h1.Title.Title--xl.u-textCenter.u-lg-size10of12.m-xAuto(
         v-if="titleXl"
         v-html="titleXl"
@@ -13,7 +13,7 @@
         :style="titleColor"
         :class="titleClasses"
       )
-      h2.Lede.u-textCenter.m-t0.m-b0(
+      h2.Title--lede.u-textCenter.m-t0.m-b0(
         v-if="lede"
         v-html="lede"
       )
@@ -54,7 +54,7 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
-.Title + .Lede {
+.Title + .Title--lede {
   padding-top: var(--s-3);
 }
 </style>

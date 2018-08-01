@@ -9,10 +9,12 @@
 .u-linkClean:hover,
 .u-linkClean:focus,
 .u-linkClean:active {
+  background-image: none !important;
   text-decoration: none !important;
 }
 
 .u-linkCleanChildren a {
+  background-image: none !important;
   color: currentColor;
   text-decoration: none !important;
 }
@@ -27,6 +29,7 @@
 .u-linkComplex:hover .u-linkComplexTarget,
 .u-linkComplex:focus .u-linkComplexTarget,
 .u-linkComplex:active .u-linkComplexTarget {
+  background-image: none !important;
   text-decoration: underline !important;
 }
 
@@ -34,6 +37,7 @@
 .u-linkBlock:hover,
 .u-linkBlock:focus,
 .u-linkBlock:active {
+  background-image: none !important;
   display: block !important;
   text-decoration: none !important;
 }

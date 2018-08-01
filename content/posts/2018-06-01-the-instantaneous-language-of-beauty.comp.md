@@ -8,17 +8,13 @@ updated: false
 tweet: https://twitter.com/callumflack
 ---
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg")
-
-A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead _feel_.
-
-We sense the world before we are consciously aware of it through instinctive reactions to the aesthetics of our environment. We understand these reactions in ourselves emotionally. We do this well before we have time to use our linguistic system to think and create meaning. And we do it unconsciously, like breathing, every second of our waking lives.
+A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead _feel_. We sense the world before we are consciously aware of it through instinctive reactions to the aesthetics of our environment. We understand these reactions in ourselves emotionally. We do this well before we have time to use our linguistic system to think and create meaning. And we do it unconsciously, like breathing, every second of our waking lives.
 
 This happens quickly. At a glance, we notice and assess the multitude of patterns before us. When a pattern signals danger, we feel immediately that "something isn't quite right" even though we can't "put our finger on it". And when a pattern draws us in, we feel it's beauty, and our curiosity.
 
 Like a shadow felt but not consciously seen, we're hardly aware that the language of aesthetics is our first mode of understanding the world.
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
+@[ImageLazy](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
 
 ## Danger and beauty
 
@@ -32,7 +28,7 @@ We are _drawn to beauty_ and _repelled by danger_.
 
 Danger and beauty are the two extremes on the spectrum of the language of aesthetics. When we sense danger, we do not think. Instead we react to avoid the situation. Beauty, however, invites us to think. To find beauty is to find information we can use in our favour.
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
+@[ImageLazy](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
 
 <!-- caption="A Blue-ringed Octopus displays blue iridescent rings across their yellow-colored body when disturbed, hunting or mating. When calm, it displays an overall yellowish-beige colouration without any visible blue rings." -->
 
@@ -46,7 +42,7 @@ As an adrenalised response is the defense for a target animal, a beautiful invit
 
 _Beauty invites participation and attention._
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
+@[ImageLazy](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
 
 ## Beauty is opportunity
 
@@ -64,7 +60,7 @@ In this way, a spreadsheet can absolutely contain beauty.
 
 _Humans naturally seek beauty in order to make use of it._
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
+@[ImageLazy](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
 
 ## Irrational beauty matters more than we dare admit
 

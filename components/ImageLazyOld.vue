@@ -1,24 +1,15 @@
-<template>
-  <figure :class="figureClasses" ref="placeholder">
-    <img
-      :class="[
-        'low-rez',
-        {
-          'is-loaded': largeUrl
-        }
-      ]"
-      :src="smallUrl"
-    />
-    <img
-      :class="[
-        'high-rez',
-        {
-          'is-loaded': largeUrl
-        }
-      ]"
-      :src="largeUrl"
-    />
-  </figure>
+<template lang="pug">
+  figure(:class="figureClasses" ref="placeholder")
+    .AspectRatio.AspectRatio--16x9
+      .AspectRatio-object
+        img(
+          :class="['low-rez', {'is-loaded': largeUrl}]"
+          :src="smallUrl"
+        )
+        img(
+          :class="['high-rez', {'is-loaded': largeUrl}]"
+          :src="largeUrl"
+        )
 </template>
 
 <script>
@@ -31,7 +22,6 @@ function calcImageDimension(length, pixelRatio) {
 
 export default {
   name: "lazy-image",
-
   props: {
     src: {
       type: String,
@@ -46,15 +36,15 @@ export default {
     project: Boolean,
     portrait: Boolean,
     post: Boolean,
+    figure: Boolean,
     wrappedInLink: Boolean
   },
-
   computed: {
     figureClasses() {
       return [
         "image",
-        "figure",
         {
+          figure: this.figure,
           "figure--frame": this.frame,
           "figure--large": this.large,
           "figure--project": this.project,
@@ -138,18 +128,6 @@ export default {
   position: relative;
 }
 
-.image-aspectRatio {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.image-aspectRatio--4by3 {
-  padding-bottom: 75%;
-}
-
 .image img {
   min-height: 100%;
   min-width: 100%;
@@ -159,7 +137,7 @@ export default {
 
 /* 
   1. enable Safari to keep sharp edges 
-     …but only works if pos-abs within an aspect-ratio div.
+  …but only works if pos-abs within an aspect-ratio div.
 */
 .low-rez {
   /* filter: blur(50px); */
@@ -174,9 +152,7 @@ export default {
   top: 0;
 }
 
-/* 
-  on full-res image load 
-*/
+/* on full-res image load */
 
 .low-rez.is-loaded {
   opacity: 0;
@@ -186,9 +162,22 @@ export default {
   opacity: 1;
 }
 
-/* 
-  use the SVG filter that's secreted on work/index 
-*/
+/* attempts at retaining aspect-ratio on load */
+
+.image-aspectRatio {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.image-aspectRatio--4by3 {
+  padding-bottom: 75%;
+}
+
+/* use the SVG filter that's secreted on work/index */
+
 .project:hover img {
   filter: url("#blur");
 }

@@ -1,46 +1,42 @@
 <template lang="pug">
-div
-  header(role="banner")
-    c-pageheading(
-      titleXl="Selected projects since 2014"
-    )
-  main(role="main").block--pb7
-    .container.container--md
-      //- .project-filter
-        .u-flex.u-flexJustifyBetween
-          .Text.m-a0 Filter by: 
-            //- form
-              select
-                option(value='1') 1
-                option(value='2') 2
-                option(value='3') 3
-                option(value='4') 4
-                option(value='5') 5
-          .Text.c-textLight.m-a0
-            a.u-noVisualLink(
-              v-for="(tag, index) in tags"
-              @click.prevent="filterProjectsByTag(tag)"
-              href="#"
-              :class="[{ 'c-text': tag === activeTag }]"
-            )
-              span {{ tag }}
-              //- span(v-if="index !== tags.length - 1") ,&nbsp;
-              //- span(v-else) .
-
-      c-project(
-        v-if="project.featured"
-        v-for="project in visibleProjects"
-        post
-        :key="project.heading"
-        :link="project.permalink"
-        :title="project.title"
-        :titleColor="project.titleColor"
-        :lede="project.lede"
-        :image="project.thumbImage"
-        :cloudinary="project.thumbInCloudinary"
-        :year="project.year"
-        :tags="project.tags"
-      )
+.Container
+  main(role="main").b-pb3
+    //- .project-filter
+      .u-flex.u-flexJustifyBetween
+        .Text.m-a0 Filter by: 
+          //- form
+            select
+              option(value='1') 1
+              option(value='2') 2
+              option(value='3') 3
+              option(value='4') 4
+              option(value='5') 5
+        .Text.c-textLight.m-a0
+          a.u-noVisualLink(
+            v-for="(tag, index) in tags"
+            @click.prevent="filterProjectsByTag(tag)"
+            href="#"
+            :class="[{ 'c-text': tag === activeTag }]"
+          )
+            span {{ tag }}
+            //- span(v-if="index !== tags.length - 1") ,&nbsp;
+            //- span(v-else) .
+    .Extract-super
+      .FlexGrid
+        Project(
+          v-if="project.featured"
+          v-for="project in visibleProjects"
+          post
+          :key="project.heading"
+          :link="project.permalink"
+          :title="project.title"
+          :titleColor="project.titleColor"
+          :lede="project.lede"
+          :image="project.thumbImage"
+          :cloudinary="project.thumbInCloudinary"
+          :year="project.year"
+          :tags="project.tags"
+        )
 
     <svg class='u-hiddenVisually'>
       <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
@@ -55,8 +51,7 @@ div
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
-import Project from "~/components/Project.vue";
+import Project from "~/components/Project2.vue";
 
 const allTagName = "All";
 
@@ -75,8 +70,7 @@ function projectTagStringToList(projectTags) {
 export default {
   name: "projects",
   components: {
-    "c-project": Project,
-    "c-pageheading": PageHeading
+    Project
   },
   head() {
     return {

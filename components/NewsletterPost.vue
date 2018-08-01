@@ -1,5 +1,5 @@
 <template lang="pug">
-  td.container.nl-container
+  td.Container.nl-container
     .nl-content
       .nl-spacer
         p.Text--sm.c-textLight.u-textCenter(v-if="archive") Just visiting? 
@@ -17,13 +17,11 @@
 
 <script>
 import moment from "vue-moment";
-import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   name: "post",
   components: {
-    moment,
-    "c-image": LazyImage
+    moment
   },
   props: {
     published: Boolean,

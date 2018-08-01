@@ -5,7 +5,7 @@
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
-import Nav from "~/components/Nav.vue";
+import Nav from "~/components/NavList.vue";
 
 export default {
   components: {

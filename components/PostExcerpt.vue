@@ -1,19 +1,19 @@
 <template lang="pug">
-  .Excerpt
-    .u-lg-size10of12.m-xAuto
-      h1.Title.u-textCenter
+  .Excerpt.b-mt3
+    nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="link")
+      ImageLazy(:src="heroImage" wrappedInLink)
+    
+    .b-my1.w-lg-8x12.m-xAuto
+      h2.Heading.u-textCenter.m-t2.m-b3
         nuxt-link(:to="link") {{ title }}
-      .u-block.Text--sm.c-textLight.u-textCenter
+      .Meta2.u-textCenter.u-block
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
         span.MetaSeparator(v-if="readingtime") • 
           span {{ readingtime }} minutes
-    
-    nuxt-link.u-block.figure(v-if="heroImage", :to="link")
-      c-image(:src="heroImage" post wrappedInLink)
-    
-    p.Text.p-t2(v-if="lede")
+
+    p.Text(v-if="lede")
       | {{ lede }} 
-      nuxt-link(:to="link") Read
+      nuxt-link.Text--italic(:to="link") Continue reading
 
     p.Text.c-textLight.u-textCenter.p-t3(v-if="summary")
       em {{ summary }} 
@@ -22,15 +22,21 @@
 
 
 <script>
-import LazyImage from "~/components/LazyImage.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 
 export default {
-  name: "post-excerpt",
   components: {
-    "c-image": LazyImage
+    ImageLazy
   },
+  /* 
+    Can refactor to accept a single post prop: 
+    https://vuejs.org/v2/guide/components.html
+    
+    props: ["post"]
+
+    …but it fails. Prob due Nuxtent?
+  */
   props: {
-    post: Boolean,
     published: String,
     link: String,
     title: String,
@@ -44,14 +50,10 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
 @import "../assets/styles/variables.css";
 
-.RuleMargin {
-  margin-bottom: calc(1.25 * var(--s-3a));
-}
-
-.TimeMargin {
-  margin-bottom: var(--s-3);
+.Excerpt:first-of-type {
+  margin: 0;
 }
 </style>

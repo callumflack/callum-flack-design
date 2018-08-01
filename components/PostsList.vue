@@ -4,7 +4,7 @@
   //-   lede="How to create digital experiences that resonate."
   //- )
   main(role="main")
-    .container
+    .Container
       c-post(
         v-for="post in posts"
         :key="post.title"
@@ -27,8 +27,8 @@ export default {
     "c-post": Post
   },
   props: {
-    posts: Array,
-  },
+    posts: Array
+  }
 };
 </script>
 

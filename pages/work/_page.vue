@@ -7,10 +7,10 @@ div
         :titleColor="titleColor"
         :lede="page.lede"
       )
-      .container
+      .Container
         //- div(:class="heroClasses", :style="projectColor")
         div(:class="heroClasses")
-          c-lazyimage(
+          ImageLazy(
             v-if="page.heroInCloudinary"
             :src="page.heroImage"
             :frame="page.heroFrame"
@@ -24,11 +24,11 @@ div
             :ratio="page.heroRatio"
           )
     main(role="main")
-      .container
+      .Container
         nuxtent-body.MarkdownScope(:body="page.body")
 
   //- nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
-    .container.u-flex.u-flexAlignItemsCenter
+    .Container.u-flex.u-flexAlignItemsCenter
       hgroup
         .Text.m-b3 Next project
         .Title {{ page.nextProjectTitle }}
@@ -38,13 +38,13 @@ div
 import PageHeading from "~/components/PageHeading.vue";
 import MarkdownMovie from "~/components/MarkdownMovie.vue";
 import MarkdownImage from "~/components/MarkdownImage.vue";
-import LazyImage from "~/components/LazyImage.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 
 export default {
   components: {
     "c-pageheading": PageHeading,
     "c-movie": MarkdownMovie,
-    "c-lazyimage": LazyImage,
+    ImageLazy,
     "c-image": MarkdownImage
   },
   props: {

@@ -8,7 +8,7 @@ div(:class="currentPageClass")
   table.nl-footer
     tbody
       tr
-        td.container.nl-container
+        td.Container.nl-container
           .nl-content
             table
               tbody

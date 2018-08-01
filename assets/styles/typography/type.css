@@ -15,12 +15,12 @@ ul,
 blockquote p em {
   font-size: var(--fs-text);
   font-weight: 400;
-  letter-spacing: var(--ft-text);
-  line-height: var(--fl-text);
+  letter-spacing: var(--fls-text);
+  line-height: var(--flh-regular);
 }
 
-p em {
-  font-family: var(--ff-text-regular-italic), var(--ff-stack-serif);
+p em,
+.Text--italic {
   font-style: italic;
 }
 
@@ -32,19 +32,31 @@ p em {
   -------------------------------------------------
  */
 
-.Meta,
-.Text--meta,
-.Text--sm {
-  font-family: var(--ff-text-meta), var(--ff-stack-sans);
+.Text--meta {
+  font-family: var(--ff-text-title-light), var(--ff-stack-sans);
+  font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--fs-meta);
-  font-weight: 800;
-  letter-spacing: 0.0875em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.Text--footer {
-  line-height: 1.75;
+.Meta2 {
+  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-size: var(--fs-meta);
+  font-size: 12px;
+  /* font-weight: 500; */
+  letter-spacing: var(--fls-loose);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.Meta {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-size: var(--fs-meta);
+  /* font-weight: 700; */
+  letter-spacing: 0.2em;
+  line-height: 1;
 }
 
 /* 
@@ -57,53 +69,108 @@ p em {
   -------------------------------------------------
  */
 
-.Subheading,
-.MarkdownScope h2,
+.Minorheading,
+.MarkdownScope h3,
 .nl-content h3 {
-  font-family: var(--ff-text-subheading), var(--ff-stack-sans);
+  font-family: var(--ff-text), var(--ff-stack-serif);
   /* resetting ems before applying font sizing: */
   /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
   font-size: var(--fs-subheading);
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  line-height: var(--fl-text);
-  text-transform: uppercase;
-}
-
-.Lede {
-  font-family: var(--ff-text-lede), var(--ff-stack-serif);
-  font-size: var(--fs-lede);
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-
-  /* alt 
-  font-family: var(--ff-title), var(--ff-stack-serif);
-  font-size: var(--fs-lede);
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.0001em;
+  font-weight: 600;
+  /* letter-spacing: 0.05em;
+  line-height: var(--flh-regular);
   text-transform: uppercase; */
 }
 
-/* Big fat serif titles */
+/* 
+  -------------------------------------------------
 
+  Ginto
+
+  -------------------------------------------------
+*/
+
+.Subheading,
+.MarkdownScope h2,
+.Heading,
+.Subtitle,
+.Subtitle--light,
+.Title--lede,
+.Title--light,
 .Title,
-.Title--xl {
+.Super {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-size: var(--fs-title);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0;
 
   & a:hover {
     color: var(--c-link);
   }
 }
 
-.Title--xl {
-  font-size: calc(2.666em * var(--fs-text-unit));
+.Subheading,
+.MarkdownScope h2 {
+  font-size: var(--fs-subheading);
+  font-weight: 500;
+}
+
+.Heading {
+  font-size: var(--fs-heading);
+}
+
+.Subtitle--lede,
+.Subtitle--light,
+.Subtitle {
+  font-size: var(--fs-subtitle);
+}
+
+.Title--lede,
+.Title--light,
+.Title {
+  font-size: var(--fs-title);
+  /* text-transform: uppercase; */
+}
+
+.Super {
+  font-size: var(--fs-super);
+  /* text-transform: uppercase; */
+}
+
+.Subtitle--light,
+.Title--light {
+  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-weight: 200;
+}
+
+/* Tiempos Headline */
+.Subtitle--lede,
+.Title--lede {
+  font-family: var(--ff-lede), var(--ff-stack-serif);
+  /* font-size: var(--fs-subtitle); */
+  font-weight: 300;
+  letter-spacing: var(--fls-touch);
+  line-height: var(--flh-regular);
+}
+
+/* 
+  -------------------------------------------------
+
+  LOGO
+
+  -------------------------------------------------
+*/
+
+.Logo {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: var(--fw-bold);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.666em;
+
+  & a:hover {
+    color: var(--c-link);
+  }
 }
 
 /* 
@@ -114,7 +181,7 @@ p em {
   -------------------------------------------------
  */
 
-.Title--project {
+/* .Title--project {
   border: initial;
   margin-bottom: var(--s-2);
   padding-bottom: 0;
@@ -130,7 +197,7 @@ p em {
   line-height: 24px;
   text-align: center;
   width: 25px;
-}
+} */
 
 /* 
   -------------------------------------------------
@@ -140,12 +207,12 @@ p em {
   -------------------------------------------------
  */
 
-.Title,
-.Title--xl {
+.Subtitle,
+.Title {
   margin-bottom: var(--s-2);
 
   @media (--md) {
-    margin-bottom: var(--s-3);
+    margin-bottom: var(--s-2a);
   }
 
   &:last-child {
@@ -162,11 +229,12 @@ h2,
 h3,
 h4,
 h6,
+.MarkdownScope figure,
 .ParagraphSpace {
-  margin-bottom: var(--s-2a);
+  margin-bottom: var(--s-3);
 
   @media (--md) {
-    margin-bottom: var(--s-3);
+    margin-bottom: var(--s-3a);
   }
 
   &:last-child {
@@ -174,17 +242,34 @@ h6,
   }
 }
 
-h1,
+.MarkdownScope figure {
+  padding: 6px 0;
+}
+
+/* h1,
 h2,
 h3,
 h4,
 h6,
 .HeadingSpace {
   &:not(:first-child) {
-    margin-top: var(--s-3b);
+    margin-top: var(--s-4);
 
     @media (--md) {
-      margin-top: var(--s-4);
+      margin-top: var(--s-5);
+    }
+  }
+} */
+
+.MarkdownScope h2,
+.MarkdownScope h3,
+.MarkdownScope h4,
+.HeadingSpace {
+  &:not(:first-child) {
+    margin-top: var(--s-4);
+
+    @media (--md) {
+      margin-top: var(--s-5);
     }
   }
 }
@@ -256,9 +341,8 @@ blockquote em {
  */
 
 blockquote p {
-  border-left: 1px solid;
-  border-color: var(--c-border);
-  font-family: var(--ff-text-regular-italic), var(--ff-stack-serif);
+  /* border-left: 1px solid var(--c-border); */
+  font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
 

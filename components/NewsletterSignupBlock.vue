@@ -2,7 +2,7 @@
   .NewsletterHero.CoverImage(role="banner")
     .block--pt7.block--matchFixedMenuBottom.u-posRelative
       h1.Title.u-textCenter.u-lg-size10of12.m-xAuto interesting
-    .container.u-posRelative.block--pb7
+    .Container.u-posRelative.block--pb7
       c-signup
 </template>
 

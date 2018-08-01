@@ -31,12 +31,16 @@
 
   */
 
-  --space: 1rem;
+  --space: 1.5rem;
   --grid-gutter: calc(2 * var(--space));
 
-  --container: calc(640px + (2 * var(--grid-gutter)));
-  --container-md: calc(960px + (2 * var(--grid-gutter)));
+  --container: calc(704px + (2 * var(--grid-gutter)));
+  --container: calc(704px + 6rem);
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
+  --container-md: calc(960px + (2 * var(--grid-gutter)));
+  --container-lg: calc(902px + (2 * var(--grid-gutter)));
+  --container-xl: calc(1200px + (2 * var(--grid-gutter)));
+  --container-su: calc(1344px + (2 * var(--grid-gutter)));
   --container-rg-img: 800px;
   
   --s-0: 0;
@@ -80,6 +84,10 @@
   --c-link: #bd0a20;
   --c-link: #f53813;
   --c-link: #f51713;
+  --c-link: #f52b13;
+  --c-link: #9411c5;
+  --c-link: #e4b830; /* yellow */
+  --c-link: #e62f0d; /* red */
   --c-highlight: var(--c-link);
 
   --c-black: black;
@@ -88,11 +96,21 @@
   --c-text: var(--c-ash);
   --c-text: #050505;
   --c-textLight: #999;
+  --c-textUnderline: rgba(5, 5, 5, 0.5);
+  
   --c-gray: #aaa;
   --c-border: #ccc;
-  --c-rule: #e5e5e5;
+  --c-rule: rgba(0,0,0,0.125);
   --c-device: #e7e7e7;
+
   --c-neutral: #eee;
+  --c-neutral: #fae592;
+  --c-neutral: #fae592;
+  --c-neutral: hsl(48, 36%, 86%);
+  --c-neutral: hsl(48, 44%, 87%);
+  --c-neutral: hsl(48, 16%, 91%);
+  --c-neutral: var(--c-bg);
+
   --c-bg: #fafafa;
   --c-bg: #f2f2f2;
   --c-bg: #f7f7f7;
@@ -108,20 +126,27 @@
   
    */
 
+  --ff-text: "TiemposText";
   --ff-text-regular: "Regular";
   --ff-text-regular-italic: "RegularItalic";
   --ff-text-medium: "Medium";
   --ff-text-bold: "Bold";
-  --ff-text-lede: "Lede";
+  
+  --ff-lede: "TiemposHeadline";
+  --ff-text-meta: var(--ff-title);
+  --ff-text-subheading: var(--ff-title);
+  --ff-text-subheading: var(--ff-text-bold);
 
-  --ff-text-meta: "Meta";
-  --ff-text-subheading: "Subheading";
-  --ff-title: "Title";
+  --ff-heading: "GintoNord";
+  --ff-title: "GintoNord";
   
   --ff-button: var(--ff-text-regular);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
-  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ff-stack-sans: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --ff-stack-text: var(--ff-stack-serif);
+  --ff-stack-heading: var(--ff-stack-sans);
 
   /* 
   
@@ -130,13 +155,32 @@
    
    */
 
-  --fs-text-unit: 1.125;
+  --rfs-0: 0.833333333rem; /* 12pt if fs-text = 1em or 16px */
+  --rfs-1: 0.888888889rem; /* 13pt */
+  --rfs-2: 0.944444444rem; /* 14pt */
+  --rfs-3: 0.9375rem; /* 15pt */
+  --rfs-4: 1rem; /* 16pt */
 
+  --fs-text-unit: 1.1875; /* 19pt */
+
+  --fs-text-xs: calc(1em * var(--fs-text-unit));
+  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit));
   --fs-text: calc(1em * var(--fs-text-unit));
-  --fs-meta: calc(0.7em * var(--fs-text-unit));
-  --fs-subheading: calc(0.925em * var(--fs-text-unit));
+  --fs-text-md: calc(1em * var(--fs-text-unit));
+  --fs-text-lg: calc(1em * var(--fs-text-unit));
+  --fs-meta: calc(0.789473684em * var(--fs-text-unit)); /* 15 */
+  --fs-meta: calc(0.736842105em * var(--fs-text-unit)); /* 14 */
+  --fs-meta: calc(0.684210526em * var(--fs-text-unit)); /* 13 */
+
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-title: calc(2em * var(--fs-text-unit));
+  --fs-subheading: calc(1.263157895 * var(--fs-text-unit));
+  --fs-subheading: 20px;
+  --fs-heading: calc(1.421052632em * var(--fs-text-unit)); /* 27 */
+  --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
+  --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
+  --fs-super: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
+  --fs-super: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
+  --fs-super: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
 
   /* 
 
@@ -144,10 +188,15 @@
 
    */
 
+  --fw-heirline: 100;
   --fw-light: 200;
+  --fw-book: 300;
   --fw-regular: 400;
   --fw-medium: 500;
-  --fw-bold: 700;  
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-heavy: 800;
+  --fw-black: 900;
 
   /* 
   
@@ -155,36 +204,57 @@
    
    */
   
-  --ft-text: -0.001em;
-  --ft-meta: 0.00625em;
-  --ft-caps: 0.1em;
-  --ft-heading: -0.0025em;
-  --ft-super: -0.005em;
+  --fls-text: -0.001em;
+  --fls-meta: 0.00625em;
+  --fls-caps: 0.1em;
+  --fls-heading: -0.0025em;
+  --fls-super: -0.005em;
 
-  --fl-text: 1.5;
 
-  --ft-tight: -0.005em;
-  --ft-regular: 0;
-  --ft-loose: 0.01em;
+  --fls-tight: -0.005em;
+  --fls-regular: 0;
+  --fls-touch: 0.02em;
+  --fls-loose: 0.15em;
 
-  --fl-tight: 1.15;
-  --fl-regular: 1.4;
-  --fl-loose: 1.7;
+  --flh-super: 1;
+  --flh-tight: 1.15;
+  --flh-reduced: 1.3333;
+  --flh-regular: 1.45;
+  --flh-loose: 1.55;
 
   /* 
-  
-    Transitions 
-  
+
+    Transitions
+
    */
 
-  --transition-duration: 0.2s;
-  --transition-delayed: 0.4s;
-  --transition-debounce: 2.5s;
+  --speed: 0.15s;
+  --easing: ease-out;
+  --cubic-static: cubic-bezier(0, -0.1, 1, -0.1);
+  --cubic-state: cubic-bezier(0, 1.1, 1, 1.1);
+  --thisalso: cubic-bezier(0.19, 1, 0.22, 1);
 
   /* 
+
+    Utility variables
+
+   */
+
+  --field-height: 3rem;
   
-    Project theme 
+  --figure-space: calc(2 * var(--space));
+  --figcaption-margin-top: 0.5rem;
+  --figcaption-font-weight: var(--fw-regular);
+  --figcaption-text-color: var(--c-text-light);
   
+  --border-radius: 4px;
+  --inline-block-children-space: calc(1.25 * var(--s-3));
+  --progress-height: 32px;
+
+  /* 
+
+    Theme
+
    */
 
   --fixedMenuHeight: 89px;

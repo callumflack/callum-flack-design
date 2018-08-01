@@ -1,18 +1,19 @@
 <template lang="pug">
 main
-  .container
-    c-post(
-      :link="page.permalink"
-      :title="page.title"
-      :date="page.date"
-      :readingtime="page.readingtime"
-      :body="page.body"
-      :updated="page.updated"
-      :note="page.note"
-    )
-  .container.p-b7
+  Post(
+    :link="page.permalink"
+    :heroImage="page.heroImage"
+    :heroRatio="page.heroRatio"
+    :title="page.title"
+    :date="page.date"
+    :readingtime="page.readingtime"
+    :body="page.body"
+    :updated="page.updated"
+    :note="page.note"
+  )
+  // .Container.p-b7
     .figure.figure--post
-      c-signup
+      NewsletterSignupBlock
 </template>
 
 <script>
@@ -21,8 +22,8 @@ import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   components: {
-    "c-post": Post,
-    "c-signup": NewsletterSignupBlock
+    Post,
+    NewsletterSignupBlock
   },
   head() {
     return {
@@ -54,5 +55,4 @@ export default {
 </script>
 
 <style lang="postcss">
-@import "../../assets/styles/variables.css";
 </style>

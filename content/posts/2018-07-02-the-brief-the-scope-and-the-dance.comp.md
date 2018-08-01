@@ -2,14 +2,12 @@
 title: The brief, the scope and the dance 
 lede: Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold.
 readingtime: 8
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498744/okok/post-process-stream-inspection.jpg
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1533008018/okok/post-process-2a.jpg
 published: true
 tweet: https://twitter.com/callumflack
 ---
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498744/okok/post-process-stream-inspection.jpg")
-
-Recently I started work on a new website with a new client. To kick-off the project, I met them in person and spent a day facilitating a series of branding and website design exercises for them. In a concentrated day of focus, we were able to dive deep into their problems, understand what they hoped to achieve and also uncover a surprising amount of new insights. These exercises helped both parties to clarify the problem, set boundaries for executing the solution, and to get to know each other.
+Recently I started work on a new website with a new client. To kick-off the project, I met them in person and spent a day facilitating a series of branding and website design exercises with them. In a concentrated day of focus, we were able to dive deep into their problems, understand what they hoped to achieve and also uncover a surprising amount of new insights. These exercises helped both parties to clarify the problem, set boundaries for executing the solution, and to get to know each other.
 
 <!-- I enjoyed listening to and leading the conversations that sprung forward from the exercises. -->
 
@@ -47,7 +45,7 @@ Objectives defined in the brief are quantifiable. But constraints, which are def
 
 <!-- (By the way, depending on the domain you’re involved in, people will refer to this flowing project process under codified terms like “Design Thinking” if you happen to be a designer of some kind, or “Agile” if you happen to be in software development). -->
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498752/okok/post-process-mississippi.jpg")
+@[ImageLazy](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498752/okok/post-process-mississippi.jpg")
 
 ## The Scope maps beliefs to reality
 
@@ -87,7 +85,7 @@ Going back to my (excellent and responsive) new clients and the workshop day I s
 
 I asked them to trust the process. And because we'd already worked through the brief and scope in an initial form, my comments were trusted. If I were to change tack, google "B2B websites checklist" and execute on it without recourse to actually understanding the client's business and customers, I guarantee that result would not fulfil the mandate I have with client. That map would not match their reality. The result would be a website that looks websitey but in fact would create little to no value for their business.
 
-@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498762/okok/post-process-russia.jpg")
+@[ImageLazy](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498762/okok/post-process-russia.jpg")
 
 ## To create market value, engage in the process together
 

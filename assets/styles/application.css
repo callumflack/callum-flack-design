@@ -1,39 +1,46 @@
-@import "./lib/suit.css";
+/* Resets */
+@import "normalize.css";
+@import "suitcss-base/lib/*.css";
 
+/* Variables */
 @import "./variables.css";
 
-@import "./typography/base.css";
-@import "./typography/base-reset.css";
+/* Typography */
 @import "./typography/font-faces.css";
-/*@import "./typography/font-styles.css";*/
+@import "./typography/font-styles.css";
+@import "./typography/base.css";
 @import "./typography/hr.css";
 @import "./typography/list.css";
 @import "./typography/link.css";
 @import "./typography/type.css";
 
+/* Utilities */
+@import "./utilities/block.css";
+@import "./utilities/color.css";
+@import "./utilities/display.css";
+@import "./utilities/flexbox.css";
+@import "./utilities/height.css";
+@import "./utilities/line-break.css";
+@import "./utilities/position.css";
+@import "./utilities/media.css";
+@import "./utilities/spacing.css";
+@import "./utilities/text.css";
+@import "./utilities/width.css";
+@import "./utilities/zindex.css";
+
+/* Components */
 @import "./components/aspect-ratio.css";
 @import "./components/button.css";
 @import "./components/container.css";
 @import "./components/cover-image.css";
 @import "./components/flex-grid.css";
 @import "./components/form.css";
-@import "./components/icon.css";
-@import "./components/img.css";
+@import "./components/image-blend.css";
 
-@import "./layout/block.css";
-@import "./layout/figure.css";
-@import "./layout/grid.css";
+/* @import "./layout/grid.css"; */
 
-@import "./utilities/color.css";
-@import "./utilities/display.css";
-@import "./utilities/flexbox.css";
-@import "./utilities/height.css";
-@import "./utilities/line-break.css";
-/*@import "./utilities/position.css";*/
-@import "./utilities/spacing.css";
-@import "./utilities/text.css";
-@import "./utilities/width.css";
-@import "./utilities/zindex.css";
-
+/* Theme */
+@import "./theme/grid-extractors.css";
 @import "./theme/project-item.css";
+@import "./theme/project-hero.css";
 @import "./theme/page.css";

@@ -1,6 +1,6 @@
 <template lang="pug">
   footer.footer.block--pb7(role="contentinfo")
-    .container
+    .Container
       hr.bg-textLight(style="margin: 0 0 1px 0")
       .u-flex.u-flexJustifyCenter
         div
@@ -51,6 +51,5 @@ export default {
 </script>
 
 <style lang="postcss">
-@import "../assets/styles/variables.css";
 </style>
 
