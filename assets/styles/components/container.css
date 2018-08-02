@@ -12,25 +12,6 @@
   padding-left: calc(1 * var(--grid-gutter));
   padding-right: calc(1 * var(--grid-gutter));
   width: 100%;
-
-  /* THEME */
-  /* border-left: 1px solid var(--c-rule);
-  border-right: 1px solid var(--c-rule); */
-  position: relative;
-
-  &:before {
-    background-color: var(--c-rule);
-    content: " ";
-    display: block;
-    height: 100%;
-    left: -1px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    /* transform: translateY(-100%); */
-    width: 1px;
-    z-index: 9999;
-  }
 }
 
 .Container--sm {

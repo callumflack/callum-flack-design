@@ -1,82 +1,35 @@
-/** @define Button */
-
-:root {
-  --Button-background-color: var(--c-text);
-  --Button-border-color: var(--c-text);
-  --Button-border-width: 1px;
-  --Button-color: var(--c-bg);
-  --Button-disabled-opacity: 0.6;
-  --Button-font: inherit;
-  --Button-font-weight: var(--fw-medium);
-  --Button-height: 4.25em;
-  --Button-padding: 0 2em;
-  --Button-radius: var(--border-radius);
-}
-
-/**
- * The button classes are best applied to links and buttons.
- * These components can be used in forms, as calls to action, or as part of the
- * general UI of the site/app.
- */
-
-/**
- * 1. Normalize `box-sizing` across all elements that this component could be
- *    applied to.
- * 2. Inherit text color from ancestor.
- * 3. Inherit font styles from ancestor.
- * 4. Prevent button text from being selectable.
- */
-
 .Button {
+  align-items: center;
   background-color: var(--Button-background-color);
+  background-image: initial;
   border-color: var(--Button-border-color);
   border-radius: var(--Button-radius);
   border-style: solid;
   border-width: var(--Button-border-width);
   box-sizing: border-box;
   color: var(--Button-color);
-  display: inline-block;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--Button-font-family);
+  font-size: var(--Button-font-size);
+  font-weight: var(--Button-font-weight);
   height: var(--Button-height);
-  /* font: var(--Button-font);
-  font-weight: var(--Button-font-weight); */
-  line-height: inherit;
+  justify-content: center;
+  letter-spacing: var(--Button-letter-spacing);
+  line-height: 1;
   margin: 0;
-  padding: var(--Button-padding);
+  padding-top: var(--Button-text-alignment);
+  padding-left: var(--Button-xpadding);
+  padding-right: var(--Button-xpadding);
   position: relative;
-  text-align: center;
-  text-decoration: none;
+  text-decoration: initial;
+  text-shadow: initial;
+  text-transform: var(--Button-font-case);
   user-select: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-
-  /* flex style */
-  // align-items: center;
-  // display: inline-flex;
-  // height: var(--Button-height);
-  // justify-content: center;
-
-  /* pseudos */
-  &:hover {
-    // box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 0px 999px inset;
-    /* box-shadow: var(--Button-background-color) 0 0 0 2px; */
-  }
-
-  &:focus {
-    outline: 0;
-    box-shadow: var(--Button-background-color) 0 0 0 2px;
-  }
-
-  &:active {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px inset;
-  }
-
-  &:disabled {
-    opacity: var(--Button-disabled-opacity);
-  }
 }
 
-/**
- * Remove excess padding and border in Firefox 4+
+/*
+  Remove excess padding and border in Firefox 4+
  */
 
 .Button::-moz-focus-inner {
@@ -84,18 +37,18 @@
   padding: 0;
 }
 
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
+/*
+  Work around a Firefox/IE bug where the transparent `button` background
+  results in a loss of the default `button` focus styles.
  */
 
 .Button:focus {
-  // outline: 1px dotted;
-  // outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
-/**
- * UI states
+/*
+  UI states
  */
 
 .Button:hover,
@@ -104,31 +57,18 @@
   text-decoration: none;
 }
 
+.Button:hover {
+  box-shadow: var(--Button-box-shadow-color) 0 0 0 2px;
+}
+
+.Button:focus,
+.Button:active {
+  outline: 0;
+  box-shadow: var(--Button-box-shadow-color) 0 0 0 3px;
+}
+
 .Button:disabled,
 .Button.is-disabled {
   cursor: default;
   opacity: var(--Button-disabled-opacity);
-}
-
-/**
- * Variations
- */
-
-.Button--reverse {
-  background-color: var(--c-bg);
-  border-color: var(--c-text);
-  color: var(--c-text);
-
-  &:hover {
-    box-shadow: var(--c-bg) 0 0 0 2px;
-  }
-
-  &:focus {
-    outline: 0;
-    box-shadow: var(--c-bg) 0 0 0 3px;
-  }
-
-  &:active {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px inset;
-  }
 }

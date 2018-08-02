@@ -9,7 +9,7 @@ article
           .Extract-hero.h-100
             .f.f-alignItemsCenter.h-100
               // h1.Subtitle.b-mb1.c-bg.fw-light.w-lg-9x12
-              h1.Super.c-bg.w-md-7x12.b-pb4
+              h1.Super.c-bg.w-8x12.w-md-7x12.b-pb4
                 | Callum works at the intersection between user experience, visual design & code.
     // h2.Text
       span.fs-scale-reset
@@ -20,8 +20,8 @@ article
     
   main(role="main")
     .Container.b-pb3
-    .Container.b-pb3
-      .MarkdownScope
+    .Container
+      .Scope-post
         nuxtent-body(:body="page.body")
     // .Container
       .figure.figure--post
@@ -70,7 +70,7 @@ export default {
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.9) 40%,
-    rgba(0, 0, 0, 0.25) 80%
+    rgba(0, 0, 0, 0.075) 80%
   );
 }
 </style>

@@ -18,6 +18,9 @@
   @media (--md) {
     font-size: var(--rfs-2) !important;
   }
+  @media (--md-landscape) {
+    font-size: var(--rfs-3) !important;
+  }
   @media (--lg) {
     font-size: var(--rfs-4) !important;
   }

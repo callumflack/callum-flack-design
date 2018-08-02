@@ -33,11 +33,11 @@
 
  */
 
-.icon-targetblank {
+.icon-targetBlank {
   position: relative;
 }
 
-.icon-targetblank:after {
+.icon-targetBlank:after {
   content: "\2192";
   display: inline-block;
   font-family: var(--ff-stack-sans);
@@ -49,4 +49,11 @@
   vertical-align: top;
   right: -1em;
   top: 0.25em;
+}
+
+.icon-targetBlank--withinButton:after {
+  font-size: 100%;
+  position: relative;
+  right: -0.5em;
+  top: -0.125em;
 }

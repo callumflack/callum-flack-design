@@ -45,7 +45,7 @@ p em,
 .Meta2 {
   font-family: var(--ff-heading), var(--ff-stack-sans);
   font-size: var(--fs-meta);
-  font-size: 12px;
+  /* font-size: 12px; */
   /* font-weight: 500; */
   letter-spacing: var(--fls-loose);
   line-height: 1;
@@ -70,7 +70,7 @@ p em,
  */
 
 .Minorheading,
-.MarkdownScope h3,
+.Scope-post h3,
 .nl-content h3 {
   font-family: var(--ff-text), var(--ff-stack-serif);
   /* resetting ems before applying font sizing: */
@@ -91,7 +91,7 @@ p em,
 */
 
 .Subheading,
-.MarkdownScope h2,
+.Scope-post h2,
 .Heading,
 .Subtitle,
 .Subtitle--light,
@@ -110,13 +110,16 @@ p em,
 }
 
 .Subheading,
-.MarkdownScope h2 {
+.Scope-post h2 {
   font-size: var(--fs-subheading);
   font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.333;
 }
 
 .Heading {
   font-size: var(--fs-heading);
+  line-height: 1.333;
 }
 
 .Subtitle--lede,
@@ -133,8 +136,20 @@ p em,
 }
 
 .Super {
-  font-size: var(--fs-super);
-  /* text-transform: uppercase; */
+  font-size: calc(0.45 * var(--fs-super));
+
+  @media (--sm) {
+    font-size: calc(0.55 * var(--fs-super));
+  }
+  @media (--md) {
+    font-size: calc(0.666 * var(--fs-super));
+  }
+  @media (--md-landscape) {
+    font-size: calc(0.8 * var(--fs-super));
+  }
+  @media (--lg) {
+    font-size: var(--fs-super);
+  }
 }
 
 .Subtitle--light,
@@ -176,32 +191,6 @@ p em,
 /* 
   -------------------------------------------------
 
-  Index pg things
-
-  -------------------------------------------------
- */
-
-/* .Title--project {
-  border: initial;
-  margin-bottom: var(--s-2);
-  padding-bottom: 0;
-}
-
-.Title-number {
-  background-color: var(--c-text);
-  border-radius: 999px;
-  color: var(--c-bg);
-  display: inline-block;
-  font-family: var(--ff-text-meta), var(--ff-stack-sans);
-  height: 25px;
-  line-height: 24px;
-  text-align: center;
-  width: 25px;
-} */
-
-/* 
-  -------------------------------------------------
-
   Spaces
 
   -------------------------------------------------
@@ -229,7 +218,7 @@ h2,
 h3,
 h4,
 h6,
-.MarkdownScope figure,
+figure,
 .ParagraphSpace {
   margin-bottom: var(--s-3);
 
@@ -242,28 +231,13 @@ h6,
   }
 }
 
-.MarkdownScope figure {
-  padding: 6px 0;
+figure {
+  padding: 12px 0;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h6,
-.HeadingSpace {
-  &:not(:first-child) {
-    margin-top: var(--s-4);
-
-    @media (--md) {
-      margin-top: var(--s-5);
-    }
-  }
-} */
-
-.MarkdownScope h2,
-.MarkdownScope h3,
-.MarkdownScope h4,
+.Scope-post h2,
+.Scope-post h3,
+.Scope-post h4,
 .HeadingSpace {
   &:not(:first-child) {
     margin-top: var(--s-4);
@@ -287,6 +261,12 @@ blockquote em {
   }
 }
 
+/* 
+
+  with Buttons
+
+*/
+
 * + .Button {
   margin-top: var(--s-3);
 
@@ -296,40 +276,7 @@ blockquote em {
 }
 
 .Button + .Button {
-  margin-top: var(--s-2);
-
-  @media (--lg) {
-    margin-top: var(--s-2);
-  }
-}
-
-/* 
-  -------------------------------------------------
-
-  Blog markdown theme
-
-  -------------------------------------------------
- */
-
-.BlogScope strong {
-  // font-family: var(--ff-text-regular), var(--ff-stack-sans);
-  // font-weight: 500;
-  // background-color: var(--c-highlight);
-}
-
-.BlogScope hr {
-  background-color: transparent;
-
-  &:after {
-    content: "* * *";
-    display: block;
-    font-size: var(--fs-text);
-    letter-spacing: 0.025em;
-    line-height: 1;
-    margin: auto;
-    text-align: center;
-    transform: translateY(-0.175em);
-  }
+  margin-left: var(--s-2);
 }
 
 /*
@@ -341,13 +288,13 @@ blockquote em {
  */
 
 blockquote p {
-  /* border-left: 1px solid var(--c-border); */
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
 
   @media (--sm) {
     padding-left: var(--s-3b);
+    /* padding-left: var(--grid-gutter); */
   }
 
   &:before {

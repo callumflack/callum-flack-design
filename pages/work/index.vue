@@ -1,17 +1,12 @@
 <template lang="pug">
 .Container
-  main(role="main").b-pb3
-    //- .project-filter
+  header(role="header")
+    h1.Super Selected projects
+    // p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
+    .Project-filter.b-pb3
       .u-flex.u-flexJustifyBetween
-        .Text.m-a0 Filter by: 
-          //- form
-            select
-              option(value='1') 1
-              option(value='2') 2
-              option(value='3') 3
-              option(value='4') 4
-              option(value='5') 5
-        .Text.c-textLight.m-a0
+        .Meta2.m-a0 Filter by: 
+        .Meta2.c-textLight.m-a0
           a.u-noVisualLink(
             v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
@@ -21,12 +16,14 @@
             span {{ tag }}
             //- span(v-if="index !== tags.length - 1") ,&nbsp;
             //- span(v-else) .
+      // hr.m-t3
+  
+  main(role="main")
     .Extract-super
-      .FlexGrid
+      .FlexGrid.FlexGrid--noGrow
         Project(
           v-if="project.featured"
           v-for="project in visibleProjects"
-          post
           :key="project.heading"
           :link="project.permalink"
           :title="project.title"

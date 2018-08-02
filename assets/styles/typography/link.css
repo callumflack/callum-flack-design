@@ -13,7 +13,7 @@ button {
 }
 
 /*.visualLink,
-.project:hover .project-visualLink,
+.Project:hover .Project-visualLink,
 a:not(.Button),
 h1 a:hover,
 h1 a:active,
@@ -22,8 +22,8 @@ a:not(.LinkSignal),*/
 /* a:not(.Button),
 .LinkSignal:hover .LinkSignal-title */
 
-.Text a,
-.MarkdownScope p a {
+.Text a:not(.Button),
+.Scope-post p a:not(.Button) {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-bg), var(--c-bg)),
     linear-gradient(var(--c-gray), var(--c-gray));
@@ -35,19 +35,30 @@ a:not(.LinkSignal),*/
     -0.12em 0 var(--c-bg), 0.15em 0 var(--c-bg), -0.15em 0 var(--c-bg);
   background-position: 0% 93%, 100% 93%, 0% 93%;
 
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    /* background-position-y: 102%, 102%, 102%; */
-  }
+  /* @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background-position-y: 102%, 102%, 102%;
+  } */
 }
 
-a:not(.Button) {
+a:not(.Button),
+.Text a:not(.Button),
+.Scope-post p a:not(.Button) {
   &:hover {
-    /* background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)),
       linear-gradient(var(--c-bg), var(--c-bg)),
-      linear-gradient(currentColor, currentColor); */
+      linear-gradient(currentColor, currentColor);
     color: var(--c-link);
   }
 }
+
+/* a:not(.Button) {
+  &:hover {
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(currentColor, currentColor);
+    color: var(--c-link);
+  }
+} */
 
 h1 a:hover,
 h1 a:active,
@@ -62,30 +73,9 @@ h1 a:active,
 
 /* 
 
-  Menu links
+  Nuxt menu links
 
  */
-
-.link {
-  background-image: none;
-  display: inline-block;
-  padding-top: var(--s-3b);
-  padding-bottom: var(--s-3b);
-  text-decoration: none;
-
-  @media (--sm) {
-    padding-top: var(--s-4a);
-    padding-bottom: var(--s-4a);
-  }
-
-  &:hover {
-    color: var(--c-text) !important;
-  }
-}
-
-.link + .link {
-  margin-left: var(--s-3b);
-}
 
 .link:last-of-type:after {
   /* content: initial; */
@@ -108,29 +98,6 @@ h1 a:active,
   right: 0;
   bottom: -2px;
   position: absolute; */
-}
-
-/* 
-
-  target blank icon
-
- */
-
-.icon-targetblank {
-  position: relative;
-}
-
-.icon-targetblank:after {
-  content: "→";
-  display: inline-block;
-  font-family: var(--ff-stack-sans);
-  font-weight: 400;
-  font-size: 60%;
-  position: absolute;
-  transform: rotate(-45deg);
-  vertical-align: top;
-  right: -1em;
-  /* top: 0.25em; */
 }
 
 /* 

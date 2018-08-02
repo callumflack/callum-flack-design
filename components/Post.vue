@@ -1,7 +1,8 @@
 <template lang="pug">
   article.Container
     .Extract-hero.m-a0(v-if="heroImage")
-      .AspectRatio(:class="heroAspectClasses")
+      // .AspectRatio(:class="heroAspectClasses")
+      .AspectRatio(:style="heroAspectStyle")
         .AspectRatio-object
           ImageSVGFilter(:src="heroImage")
 
@@ -14,18 +15,15 @@
       
 
     main(role="main")
-      .MarkdownScope
-        no-ssr
-          nuxtent-body(:body="body")
+      .Scope-post.Scope-post-figure
+        // no-ssr
+        nuxtent-body(:body="body")
 
     .HeadingSpace(v-if="updated || note")
-      hr
+      hr.ParagraphSpace
       p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
       p.fs-text-sm.c-textLight(v-if="note", v-html="note")
     
-    .block--py7
-      .u-textCenter.Title--lede *&nbsp;&nbsp;*&nbsp;&nbsp;*
-
 </template>
 
 <script>
@@ -47,7 +45,7 @@ export default {
     heroImage: String,
     heroRatio: {
       type: String,
-      default: "16x9"
+      default: "56.25"
     },
     src: String,
     body: Object,
@@ -58,6 +56,9 @@ export default {
   computed: {
     heroAspectClasses() {
       return this.heroRatio && `AspectRatio--${this.heroRatio}`;
+    },
+    heroAspectStyle() {
+      return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
     }
   }
 };

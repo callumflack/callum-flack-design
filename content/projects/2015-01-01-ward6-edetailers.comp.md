@@ -3,12 +3,13 @@ section: Projects
 year: 2014
 title: Pharma eDetailer apps
 titleColor: rgb(218, 23, 63)
-lede: Explaining complex Pharma products with simple and engaging digital stories.
+lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 heroInCloudinary: true
 heroImageNoShadow: true
+heroRatio: 60
 tags: Brand, Interface, Development
 nextProject: /work/vj-ray
 nextProjectTitle: VJ Ray Real Estate
@@ -25,4 +26,4 @@ The Baxter Peritoneal Dialysis app (above) was a simple value proposition projec
 
 The Actifuse Bone Graft Substitute app held a large information set, so it's success relied on clear a information architecture and well-designed navigation. I designed the user journeys, applied a design direction across the app, and also built it, managing detailed client feedback throughout.
 
-@[MarkdownNote](note="These projects are not publicly available. Completed in collaboration with Grant Foster, Jonathan Palasty, Antonio de Perio and Cynthia Sánchez García while working for Ward6.")
+@[MarkdownNote](note="These projects are not publicly available. Completed in collaboration with Grant Foster, Jason Armstrong, Jonathan Palasty, Cynthia Sánchez García and Antonio de Perio while working for Ward6.")

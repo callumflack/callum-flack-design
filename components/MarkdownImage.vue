@@ -32,7 +32,7 @@ export default {
       return [
         "figure",
         {
-          "figure--project": this.project,
+          "Extract-large b-my2": this.project,
           "figure--post": this.post,
           "figure--portrait": this.portrait,
           "figure--large": this.large,

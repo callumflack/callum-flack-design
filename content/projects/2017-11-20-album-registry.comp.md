@@ -7,7 +7,7 @@ thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
-heroFrame: false
+heroRatio: 99.16
 tags: Brand, Interface, Development
 nextProject: /work/oceanblue-living
 nextProjectTitle: Oceanblue Living
@@ -42,7 +42,7 @@ We aim to offer the Album Registry photographers three ways to do what they love
 
 > I begin every wedding I do with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders! _— Benn, Bluesky Photography_
 
-@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg")
+<!-- @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg") -->
 
 Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
 focus on building tools that help photographers grow their business, and help people give the gift of memories.

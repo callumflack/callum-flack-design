@@ -1,11 +1,9 @@
 <template lang="pug">
 div
   header.NewsletterHero.CoverImage(role="banner")
-    c-pageheading.u-posRelative(
-      titleXl="❏ interesting"
-    )
-    .Container.u-posRelative.block--pb7
-      c-signupform
+    .Container.u-relative.b-py4
+      h1.Super.u-textCenter.p-t1.b-mb2 ❏ interesting
+      NewsletterSignupForm
   
   // main.block--pb7.block--matchFixedMenuTop(role="main")
     .Container.Container--newsletter
@@ -30,16 +28,13 @@ div
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
-  name: "newsletter-index",
   components: {
-    "c-pageheading": PageHeading,
-    "c-postexcerpt": PostExcerpt,
-    "c-signupform": NewsletterSignupForm
+    PostExcerpt,
+    NewsletterSignupForm
   },
   head() {
     return {

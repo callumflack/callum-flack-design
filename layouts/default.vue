@@ -2,7 +2,7 @@
   div(:class="currentPageClass")
     NavToggle
     nuxt
-    // .Container.b-pt4
+    .Container.b-pt4
     footer
       NavList
     NavToggled

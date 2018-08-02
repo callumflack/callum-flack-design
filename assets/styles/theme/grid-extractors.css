@@ -4,38 +4,61 @@
 
  */
 
-.Extract-edge,
-.MarkdownScope figure {
+/* .Scope-post-figure figure, */
+.Extract-edge {
   left: calc(-1 * var(--grid-gutter));
   position: relative;
   width: calc(var(--container));
 }
 
 .Extract-large {
-  left: calc(
-    (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * -0.5
-  );
   position: relative;
-  width: var(--container-lg);
+
+  @media (--lg) {
+    left: calc(
+      (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * -0.5
+    );
+    width: var(--container-lg);
+  }
+}
+
+.Extract-hero,
+.Extract-super {
+  left: calc(-50vw + 50%);
+  padding: 0 var(--grid-gutter);
+  position: relative;
+  width: 100vw;
 }
 
 .Extract-hero {
-  left: calc(
-    (var(--container-xl) - var(--container) + (2 * var(--grid-gutter))) * -0.5
-  );
-  position: relative;
-  width: var(--container-xl);
+  @media (--lg) {
+    left: calc(
+      (var(--container-xl) - var(--container) + (2 * var(--grid-gutter))) * -0.5
+    );
+    padding: 0;
+    width: var(--container-xl);
+  }
 }
 
 .Extract-super {
-  left: calc(
-    (var(--container-su) - var(--container) + (2 * var(--grid-gutter))) * -0.5
-  );
-  position: relative;
-  width: var(--container-su);
-
-  left: calc(-35vw + 50%);
-  width: 70vw;
+  @media (--md) {
+    left: calc(-45vw + 50%);
+    padding: 0;
+    width: 90vw;
+  }
+  @media (--lg) {
+    left: calc(-40vw + 50%);
+    padding: 0;
+    width: 80vw;
+  }
+  @media (--xl) {
+    left: calc(-35vw + 50%);
+    width: 70vw;
+  }
+  @media (--su) {
+    left: calc(-27vw + 50%);
+    width: 54vw;
+  }
 }
 
 /* UTILS */
@@ -52,49 +75,4 @@
   margin-left: calc(
     (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * 0.5
   );
-}
-
-/* 
-
-  break the text column grid 
-
-*/
-
-/* .figure--project,
-.figure--post {
-  left: calc(-50vw + 50%);
-  width: 100vw;
-
-  @media (--md) {
-    left: calc((-0.5 * var(--container-rg-img)) + 50%);
-    width: var(--container-rg-img);
-  }
-}
-
-.figure--project {
-  margin-top: var(--s-5);
-  margin-bottom: var(--s-5);
-
-  @media (--md) {
-    margin-top: var(--s-6);
-    margin-bottom: var(--s-6);
-  }
-} */
-
-.figure--large {
-  width: 100%;
-
-  @media (min-width: 1136px) {
-    left: calc(-40vw + 50%);
-    width: 80vw;
-  }
-  @media (min-width: 1840px) {
-    left: calc(-30vw + 50%);
-    width: 60vw;
-  }
-}
-
-.figure--portrait {
-  overflow: hidden;
-  margin: 0 auto;
 }

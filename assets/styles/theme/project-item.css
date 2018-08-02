@@ -1,36 +1,46 @@
-.project,
-.project-filter {
+.Project,
+.Project-filter {
   display: block;
   text-decoration: initial;
 }
 
-.project {
+.Project {
   // border-top: 1px solid var(--c-rule);
   padding-bottom: var(--s-7);
 }
 
-.project-filter {
-  border-bottom: 1px solid var(--c-text);
+.Project-filter {
+  /* border-bottom: 1px solid var(--c-text);
   padding-top: 0;
-  padding-bottom: calc(0.666 * var(--s-3));
+  padding-bottom: calc(0.666 * var(--s-3)); */
 
   & a {
     margin-left: var(--s-3);
   }
 }
 
-.project:hover h2 {
-  /* color: var(--c-highlight); */
+.Project:hover {
+  color: var(--c-text);
 }
 
-.project:hover img {
+.Project:hover .Project-tags {
+  /* color: var(--c-text); */
+}
+
+.Project:hover p {
+  color: var(--c-text);
+}
+
+.Project:hover img {
   /* use the SVG filter that's secreted on work/index */
   /* filter: url("#blur"); */
   filter: grayscale(0);
-  transition: filter 250ms ease-out;
+  transition: filter 5000ms ease-out;
 }
 
-.project img {
-  filter: grayscale(100%);
+.Project img {
+  /* filter: grayscale(100%); */
+  filter: grayscale(1);
+  /* opacity: 0.5; */
   transition: filter 750s ease-in;
 }

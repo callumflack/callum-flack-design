@@ -1,6 +1,8 @@
 <template lang="pug">
 nav.Nav-list
   .Container
+    .Extract-edge(:class="hideHorizontalRule")
+      hr
     .Extract-large.b-py4
       nuxt-link.Nav-link.f(
         v-for="item in navItems"
@@ -10,7 +12,7 @@ nav.Nav-list
       )
         span.Extract-large-unit.Subtitle--light.Nav-link-level {{ item.level }}
         span.Subtitle {{ item.label }}
-        span.Subtitle--lede.LedeAdjustment {{ item.lede }}
+        span.Subtitle.fw-light.LedeAdjustment {{ item.lede }}
 
       .Extract-large-inset
         p.Meta2.fw-bold Contact
@@ -18,7 +20,7 @@ nav.Nav-list
           v-for="contact in navContacts"
           :key="contact.link"
         )
-          a.Text.fs-text-sm.flh-loose(href="contact.link" target="_blank") {{ contact.label }}
+          a.Text.fs-text-sm.flh-loose(:href="contact.link" target="_blank") {{ contact.label }}
 </template>
 
 <script scoped>
@@ -30,6 +32,13 @@ export default {
     NavLink
   },
   props: {},
+  computed: {
+    hideHorizontalRule() {
+      if (this.$store.state.isMobileNavVisible) {
+        return "u-hiddenVisually";
+      }
+    }
+  },
   data() {
     return {
       navItems: [
@@ -104,15 +113,16 @@ export default {
 
 .Nav-link {
   background-image: none;
+  padding-bottom: var(--responsive-space);
   text-decoration: none;
 }
 
 .Nav-link:last-of-type {
-  margin-bottom: calc(2 * var(--responsive-space));
+  margin-bottom: var(--responsive-space);
 }
 
 .Nav-link + .Nav-link {
-  margin-top: var(--responsive-space);
+  /* margin-top: var(--responsive-space); */
 }
 
 .LedeAdjustment {
@@ -126,23 +136,38 @@ export default {
   transform: translateY(19px);
 } */
 
+.nuxt-link-active {
+  color: var(--c-highlight);
+}
+
 .nuxt-link-active .LedeAdjustment {
   /* padding-left: 2rem; */
   position: relative;
 }
 
 .nuxt-link-active .LedeAdjustment:after {
-  content: "✳";
-  content: "— you're here";
+  /* content: "— you're here"; */
+  /* content: "✳"; */
   display: inline-block;
-  font-family: var(--ff-heading), var(--ff-stack-sans);
-  font-weight: 200;
+
   font-family: var(--ff-lede), var(--ff-stack-serif);
   font-weight: 400;
   font-style: italic;
-  margin-left: 0.5rem;
-  /* right: 0; */
-  /* top: 0; */
+  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-weight: 200;
+  font-style: initial;
+
+  margin-left: 0.25rem;
   position: relative;
+}
+
+.page-index .nuxt-link-active .LedeAdjustment:after {
+  /* content: "— hello, you're welcome!"; */
+}
+.page-work-page .nuxt-link-active .LedeAdjustment:after {
+  /* content: "— view another"; */
+}
+.page-blog-page .nuxt-link-active .LedeAdjustment:after {
+  /* content: "— read another"; */
 }
 </style>

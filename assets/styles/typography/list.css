@@ -37,12 +37,12 @@ li {
 
   */
 
-.MarkdownScope ul {
+.Scope-post ul {
   list-style-type: none;
   padding-left: 1em;
 }
 
-.MarkdownScope li {
+.Scope-post li {
   position: relative;
 
   &:before {

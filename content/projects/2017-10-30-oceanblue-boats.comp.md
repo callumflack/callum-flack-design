@@ -8,7 +8,7 @@ thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
 heroInCloudinary: true
-heroFrame: false
+heroRatio: 69.2592593
 tags: Brand, Interface, Development
 nextProject: /work/ward6
 nextProjectTitle: Ward6

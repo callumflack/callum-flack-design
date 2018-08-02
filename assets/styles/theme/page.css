@@ -41,6 +41,39 @@ body {
 
 /* 
 
+  Container theme
+
+ */
+
+.Container {
+  /* THEME */
+  /* border-left: 1px solid var(--c-rule);
+  border-right: 1px solid var(--c-rule); */
+  position: relative;
+
+  @media (--md-landscape) {
+    &:before {
+      background-color: var(--c-rule);
+      content: " ";
+      display: block;
+      height: 100%;
+      left: -1px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      /* transform: translateY(-100%); */
+      width: 1px;
+      z-index: 9999;
+    }
+  }
+}
+
+.Container--noRule:before {
+  content: none;
+}
+
+/* 
+
   Page themes
 
  */
@@ -73,8 +106,8 @@ body {
   Essay drop caps
 
  */
-.page-about .MarkdownScope div > p:first-of-type:first-letter,
-.page-blog-page .MarkdownScope div > p:first-of-type:first-letter {
+.page-about .Scope-post div > p:first-of-type:first-letter,
+.page-blog-page .Scope-post div > p:first-of-type:first-letter {
   float: left;
   font-family: var(--ff-text-lede);
   font-size: 4.6em;

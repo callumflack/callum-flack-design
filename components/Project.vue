@@ -1,6 +1,6 @@
 <template lang="pug">
 .w-sm-1x3
-  nuxt-link.project(:to="link")
+  nuxt-link.Project(:to="link")
     .FlexGrid--sm
       .u-sm-size1of2
         figure.BW

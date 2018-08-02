@@ -1,31 +1,25 @@
 <template lang="pug">
-div
-  article.block--pb7
+  article
     header(role="banner")
-      c-pageheading(
-        :title="page.title"
-        :titleColor="titleColor"
-        :lede="page.lede"
-      )
-      .Container
-        //- div(:class="heroClasses", :style="projectColor")
-        div(:class="heroClasses")
-          ImageLazy(
-            v-if="page.heroInCloudinary"
-            :src="page.heroImage"
-            :frame="page.heroFrame"
-            :ratio="page.heroRatio"
-          )
-          c-image(
-            v-else
-            local
-            :src="page.heroImage"
-            :frame="page.heroFrame"
-            :ratio="page.heroRatio"
-          )
+      .Container.b-pb2
+        .Extract-super
+          .AspectRatio(:style="heroAspectStyle")
+            .AspectRatio-object
+              .Project-hero(:class="heroFrameClasses")
+                ImageSVGFilter(:src="page.heroImage")
+        .b-pt2.w-5x6.w-lg-9x12.m-xAuto
+          // h1.Title.u-textCenter(:style="titleColor") {{ page.title }}
+          // h2.Subheading.fw-regular.u-textCenter {{ page.lede }}
+          h1.Title.u-textCenter.p-t2 {{ page.title }}
+          .Meta2.u-textCenter
+            span(v-if="page.year") {{ page.year }}
+            span.m-x2(v-if="page.tags") •
+            span(v-if="page.tags") {{ page.tags }}
+            // time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+
     main(role="main")
-      .Container
-        nuxtent-body.MarkdownScope(:body="page.body")
+      .Container.p-t2
+        nuxtent-body.Scope-post(:body="page.body")
 
   //- nuxt-link.NextProject.LinkSignal.block--py7(:to="page.nextProject")
     .Container.u-flex.u-flexAlignItemsCenter
@@ -35,24 +29,26 @@ div
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
-import MarkdownMovie from "~/components/MarkdownMovie.vue";
-import MarkdownImage from "~/components/MarkdownImage.vue";
-import ImageLazy from "~/components/ImageLazy.vue";
+import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 
 export default {
   components: {
-    "c-pageheading": PageHeading,
-    "c-movie": MarkdownMovie,
-    ImageLazy,
-    "c-image": MarkdownImage
+    ImageSVGFilter
   },
   props: {
     title: String,
     lede: String,
+    year: String,
+    tags: String,
     heroImage: String,
-    heroRatio: String,
-    heroFrame: Boolean,
+    heroRatio: {
+      type: String,
+      default: "56.25"
+    },
+    heroFrame: {
+      type: Boolean,
+      default: false
+    },
     heroInCloudinary: Boolean,
     heroIsDevice: Boolean,
     heroImageNoShadow: Boolean,
@@ -65,7 +61,6 @@ export default {
   },
   computed: {
     projectColor() {
-      // (v-if="page.projectColor", :style = 'projectColor')
       return this.page.projectColor
         ? `background-color: ${this.page.projectColor}`
         : "background-color: transparent";
@@ -73,13 +68,18 @@ export default {
     titleColor() {
       return this.page.titleColor && `color: ${this.page.titleColor}`;
     },
-    heroClasses() {
+    heroFrameClasses() {
       return [
-        "ProjectHero",
         {
-          "ProjectHero--isDevice": this.page.heroImageNoShadow
+          "Project-hero--isDevice": this.page.heroImageNoShadow
         }
       ];
+    },
+    heroAspectClasses() {
+      return this.heroRatio && `AspectRatio--${this.page.heroRatio}`;
+    },
+    heroAspectStyle() {
+      return this.heroRatio && `padding-bottom: ${this.page.heroRatio}%`;
     }
   },
   head() {

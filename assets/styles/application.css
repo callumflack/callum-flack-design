@@ -20,6 +20,7 @@
 @import "./utilities/display.css";
 @import "./utilities/flexbox.css";
 @import "./utilities/height.css";
+@import "./utilities/icon.css";
 @import "./utilities/line-break.css";
 @import "./utilities/position.css";
 @import "./utilities/media.css";
@@ -36,8 +37,6 @@
 @import "./components/flex-grid.css";
 @import "./components/form.css";
 @import "./components/image-blend.css";
-
-/* @import "./layout/grid.css"; */
 
 /* Theme */
 @import "./theme/grid-extractors.css";

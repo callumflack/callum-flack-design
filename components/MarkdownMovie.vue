@@ -1,16 +1,16 @@
 <template lang="pug">
   figure(:class="figureClasses")
-    .FlexEmbed(:class="[{ 'figure--frame': frame }]")
-      .FlexEmbed-ratio.device-ratio
-      .FlexEmbed-content
-        // https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
-        video.device-position(autoplay, muted, loop, :poster="poster", ref="videoref")
-          source(
-            :src="src",
-            type="video/mp4"
-          )
-          | Your browser does not support the video tag. Please upgrade your browser.
-        .u-posFit.c-text(v-if="iphone")
+    div(:class="[{ 'figure--frame': frame }]")
+      .AspectRatio.device-ratio
+        .AspectRatio-object
+          // https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+          video.device-position(autoplay, muted, loop, :poster="poster", ref="videoref")
+            source(
+              :src="src",
+              type="video/mp4"
+            )
+            | Your browser does not support the video tag. Please upgrade your browser.
+        .AspectRatio-object.c-text(v-if="iphone")
           <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 1381">
             <path class="cls-1" d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09ZM628.31,1210.53H41.69V168.24H628.31Z"/>
           </svg>
@@ -27,8 +27,8 @@ export default {
   computed: {
     figureClasses() {
       return [
-        "figure",
-        "figure--project",
+        "Extract-large",
+        "b-my2",
         "device",
         {
           "device--home": this.home,

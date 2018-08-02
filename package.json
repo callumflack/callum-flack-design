@@ -17,8 +17,9 @@
   "dependencies": {
     "@nuxtjs/axios": "4.3.1",
     "@nuxtjs/google-tag-manager": "1.1.0",
+    "cloudinary-core": "^2.5.0",
     "normalize.css": "^8.0.0",
-    "nuxt": "^1.4.1",
+    "nuxt": "^1.4.2",
     "nuxtent": "1.4.1",
     "postcss": "^7.0.2",
     "postcss-easy-import": "^3.0.0",

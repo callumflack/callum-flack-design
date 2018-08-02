@@ -1,8 +1,12 @@
 <template lang="pug">
 .Toggle
-  .Container
+  .Container(:class="{ 'Container--noRule': isVisible }")
     .Extract-large.Toggle-align.b-py2
-      a.Toggle-anchor.Logo.u-fixed.z-top(href="#", @click.prevent="handleNavToggle") 
+      a.Toggle-anchor.Logo.u-fixed.z-top(
+        href="#"
+        @click.prevent="handleNavToggle"
+        :class="{ 'is-active': isVisible }"
+      ) 
         span CFD
       // span.w-100.u-textCenter.Meta2.fw-bold {{ currentPageName }}
       // span.Extract-large-inset.Meta2.fw-medium {{ currentPageName }}
@@ -13,10 +17,10 @@
 export default {
   components: {},
   computed: {
-    isVisible: function() {
+    isVisible() {
       return this.$store.state.isMobileNavVisible;
     },
-    currentPageName: function() {
+    currentPageName() {
       if (this.$store.state.currentPage !== "index") {
         return this.$store.state.currentPage;
       }
@@ -33,7 +37,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 @import "../assets/styles/variables.css";
 
 .Toggle {
@@ -53,34 +57,43 @@ export default {
 }
 
 .Toggle-anchor {
-  align-items: center;
+  /* align-items: center;
   align-content: center;
   display: flex;
   height: 100%;
   height: inherit;
   width: inherit;
-  width: 80px;
+  width: 80px; */
+}
 
-  &:hover span {
-    background-color: var(--c-highlight);
-    border-color: var(--c-highlight);
-    color: var(--c-bg);
-  }
+.Toggle-anchor:hover {
+  background-image: initial;
+}
+
+.Toggle-anchor:hover span,
+.Toggle-anchor.is-active span {
+  background-color: var(--c-highlight);
+  border-color: var(--c-highlight);
+  color: var(--c-bg);
 }
 
 .Toggle-anchor span {
   align-items: center;
   border: 2px solid var(--c-text);
-  /* border-radius: 999px; */
   background-color: var(--c-bg);
   display: flex;
   height: 36px;
   justify-content: center;
-  /* padding: 0.8rem 1rem 0.75rem 1.25rem; */
-  padding: 0 0.75rem 0 1.25rem;
   padding: 2px 0.55rem 0 0.85rem;
   position: relative;
-  left: -1rem;
+
+  /* theme */
+  /* border-color: var(--c-highlight);
+  color: var(--c-highlight); */
+
+  @media (--lg) {
+    left: -1rem;
+  }
 }
 
 .icon-tap {

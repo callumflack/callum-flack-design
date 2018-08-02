@@ -14,8 +14,9 @@ div
 
   main(role="main")
     article.Container
-      // .b-pb2
-        .Meta2.fw-bold.u-textCenter Recently
+      // .b-pb1
+      .p-b4
+        .Meta2.fw-medium.u-textCenter Latest post
       
       // POST (til I can compute the most recent post…)
       .Extract-hero.m-a0
@@ -28,7 +29,7 @@ div
           ImageLazy(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg")
         
         header.b-my2.w-lg-5x6.m-xAuto(role="banner")
-          .Meta2.fw-medium.u-textCenter.p-t1 The latest…
+          // .Meta2.fw-medium.u-textCenter.p-t1 The latest…
           h1.Title.u-textCenter.p-t3 
             nuxt-link(to="/blog") The brief, the scope and the dance
           .Meta2.u-textCenter.u-block
@@ -89,7 +90,17 @@ export default {
 @import "../assets/styles/variables.css";
 
 .Adjacent {
+  /* background-color: var(--c-highlight); */
   border: 2px solid var(--c-text);
   padding: 1.5rem 1.75rem;
+
+  & h1 {
+    /* color: var(--c-highlight) !important; */
+  }
+
+  & h1,
+  & h2 {
+    /* color: var(--c-bg) !important; */
+  }
 }
 </style>
