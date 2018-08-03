@@ -56,7 +56,7 @@ div
 
 <script>
 import ImageLazy from "~/components/ImageLazy.vue";
-import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
+import ImageSVGFilter from "~/components/ImageSVGFilterCld.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
