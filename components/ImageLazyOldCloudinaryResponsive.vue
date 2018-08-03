@@ -93,7 +93,11 @@ export default {
       this.smallUrl = smallUrl;
     };
 
-    // Load large image
+    /*
+
+      Load large image
+
+     */
     const image = this.$refs.placeholder;
 
     const { clientWidth } = image;
@@ -111,6 +115,7 @@ export default {
 
     const largeUrl = `${baseUrl}/${imageParams}/${this.src}`;
 
+    // The Image() constructor creates a new HTMLImageElement instance: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
     const largeImage = new Image();
     largeImage.src = largeUrl;
 

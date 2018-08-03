@@ -7,7 +7,7 @@ div
         | Callum Flack designs and develops website systems to reach each before all.
       h2.Text
         span.fs-scale-reset
-          span.Meta2.fw-bold Tiago Forte 
+          span.Meta.fw-bold Tiago Forte 
         | —&nbsp;“Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
         nuxt-link(to="/about") 
           em.Text--italic Learn more…
@@ -16,23 +16,25 @@ div
     article.Container
       // .b-pb1
       .p-b4
-        .Meta2.fw-medium.u-textCenter Latest post
+        .Meta.fw-medium.u-textCenter Latest post
       
       // POST (til I can compute the most recent post…)
       .Extract-hero.m-a0
         .AspectRatio.AspectRatio--16x9
           .AspectRatio-object
-            ImageSVGFilter(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg")
+            ImageSVGFilter(
+              src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
+            )
       
       .Excerpt
         // nuxt-link.u-block.Extract-edge.b-mb1(to="/blog")
           ImageLazy(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg")
         
         header.b-my2.w-lg-5x6.m-xAuto(role="banner")
-          // .Meta2.fw-medium.u-textCenter.p-t1 The latest…
+          // .Meta.fw-medium.u-textCenter.p-t1 The latest…
           h1.Title.u-textCenter.p-t3 
             nuxt-link(to="/blog") The brief, the scope and the dance
-          .Meta2.u-textCenter.u-block
+          .Meta.u-textCenter.u-block
             time July 2nd, 2018
             span.MetaSeparator • 
               span 8 minutes
@@ -40,7 +42,7 @@ div
         // .b-mb1.w-lg-9x12.m-xAuto
           h2.Subtitle.u-textCenter.p-t2
             nuxt-link(to="/blog") The brief, the scope and the dance
-          .Meta2.u-textCenter.u-block
+          .Meta.u-textCenter.u-block
             time July 2nd, 2018
             span.MetaSeparator • 
               span 8 minutes

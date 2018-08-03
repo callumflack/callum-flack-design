@@ -2,7 +2,7 @@
 div
   header.NewsletterHero.CoverImage(role="banner")
     .Container.u-relative.b-py4
-      h1.Super.u-textCenter.p-t1.b-mb2 ❏ interesting
+      h1.Supertitle.u-textCenter.p-t1.b-mb2 ❏ interesting
       NewsletterSignupForm
   
   // main.block--pb7.block--matchFixedMenuTop(role="main")

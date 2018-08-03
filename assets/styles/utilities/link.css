@@ -1,4 +1,4 @@
-/**
+/*
 
   Link
   https://github.com/suitcss/utils-link/blob/master/lib/link.css
@@ -11,19 +11,23 @@
 .u-linkClean:active {
   background-image: none !important;
   text-decoration: none !important;
+  text-shadow: initial !important;
 }
 
 .u-linkCleanChildren a {
   background-image: none !important;
   color: currentColor;
   text-decoration: none !important;
+  text-shadow: initial !important;
 }
 
 .u-linkComplex,
 .u-linkComplex:hover,
 .u-linkComplex:focus,
 .u-linkComplex:active {
+  background-image: none !important;
   text-decoration: none !important;
+  text-shadow: initial !important;
 }
 
 .u-linkComplex:hover .u-linkComplexTarget,
@@ -31,6 +35,7 @@
 .u-linkComplex:active .u-linkComplexTarget {
   background-image: none !important;
   text-decoration: underline !important;
+  text-shadow: initial !important;
 }
 
 .u-linkBlock,

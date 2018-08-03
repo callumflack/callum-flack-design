@@ -6,7 +6,7 @@
     .b-my1.w-lg-8x12.m-xAuto
       h2.Heading.u-textCenter.p-t2.m-b3
         nuxt-link(:to="link") {{ title }}
-      .Meta2.u-textCenter.u-block
+      .Meta.u-textCenter.u-block
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
         span.MetaSeparator(v-if="readingtime") • 
           span {{ readingtime }} minutes

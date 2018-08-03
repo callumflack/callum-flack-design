@@ -9,17 +9,17 @@
 /* @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)  */
 
 :root {
-  --responsive-space: 1.25rem;
+  --responsive-space: 2rem;
 }
 
 @media (--md) {
   :root {
-    --responsive-space: 2rem;
+    --responsive-space: 2.5rem;
   }
 }
 @media (--lg) {
   :root {
-    --responsive-space: 3.75rem;
+    --responsive-space: 4rem;
   }
 }
 

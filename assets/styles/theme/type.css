@@ -42,7 +42,7 @@ p em,
   text-transform: uppercase;
 }
 
-.Meta2 {
+.Meta {
   font-family: var(--ff-heading), var(--ff-stack-sans);
   font-size: var(--fs-meta);
   /* font-size: 12px; */
@@ -50,13 +50,6 @@ p em,
   letter-spacing: var(--fls-loose);
   line-height: 1;
   text-transform: uppercase;
-}
-.Meta {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-size: var(--fs-meta);
-  /* font-weight: 700; */
-  letter-spacing: 0.2em;
-  line-height: 1;
 }
 
 /* 
@@ -98,7 +91,7 @@ p em,
 .Title--lede,
 .Title--light,
 .Title,
-.Super {
+.Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 900;
   line-height: 1.2;
@@ -125,17 +118,36 @@ p em,
 .Subtitle--lede,
 .Subtitle--light,
 .Subtitle {
-  font-size: var(--fs-subtitle);
+  font-size: calc(0.75 * var(--fs-subtitle));
+
+  @media (--sm) {
+    font-size: calc(0.85 * var(--fs-subtitle));
+  }
+  @media (--md) {
+    font-size: calc(0.95 * var(--fs-subtitle));
+  }
+  @media (--lg) {
+    font-size: var(--fs-subtitle);
+  }
 }
 
 .Title--lede,
 .Title--light,
 .Title {
-  font-size: var(--fs-title);
-  /* text-transform: uppercase; */
+  font-size: calc(0.7 * var(--fs-title));
+
+  @media (--sm) {
+    font-size: calc(0.8 * var(--fs-title));
+  }
+  @media (--md) {
+    font-size: calc(0.9 * var(--fs-title));
+  }
+  @media (--lg) {
+    font-size: var(--fs-title);
+  }
 }
 
-.Super {
+.Supertitle {
   font-size: calc(0.45 * var(--fs-super));
 
   @media (--sm) {
@@ -188,97 +200,6 @@ p em,
   }
 }
 
-/* 
-  -------------------------------------------------
-
-  Spaces
-
-  -------------------------------------------------
- */
-
-.Subtitle,
-.Title {
-  margin-bottom: var(--s-2);
-
-  @media (--md) {
-    margin-bottom: var(--s-2a);
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p,
-ul,
-ol,
-blockquote,
-h1,
-h2,
-h3,
-h4,
-h6,
-figure,
-.ParagraphSpace {
-  margin-bottom: var(--s-3);
-
-  @media (--md) {
-    margin-bottom: var(--s-3a);
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-figure {
-  padding: 12px 0;
-}
-
-.Scope-post h2,
-.Scope-post h3,
-.Scope-post h4,
-.HeadingSpace {
-  &:not(:first-child) {
-    margin-top: var(--s-4);
-
-    @media (--md) {
-      margin-top: var(--s-5);
-    }
-  }
-}
-
-blockquote {
-  margin-top: calc(1.5 * var(--s-3));
-  margin-bottom: calc(1.5 * var(--s-3));
-}
-
-blockquote em {
-  /* margin-top: 3px; */
-
-  @media (--lg) {
-    /* margin-top: 6px; */
-  }
-}
-
-/* 
-
-  with Buttons
-
-*/
-
-* + .Button {
-  margin-top: var(--s-3);
-
-  @media (--lg) {
-    margin-top: var(--s-3a);
-  }
-}
-
-.Button + .Button {
-  margin-left: var(--s-2);
-}
-
 /*
   -------------------------------------------------
 
@@ -294,15 +215,14 @@ blockquote p {
 
   @media (--sm) {
     padding-left: var(--s-3b);
-    /* padding-left: var(--grid-gutter); */
   }
 
-  &:before {
-    /* content: "“"; */
+  /* &:before {
+    content: "“";
     display: block;
     position: absolute;
     transform: translate3d(-100%, 0, 0);
-  }
+  } */
 
   & p {
     border: initial;
@@ -315,3 +235,11 @@ blockquote p em {
   /* resetting ems before applying font sizing: */
   font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important;
 }
+
+/* blockquote em {
+  margin-top: 3px;
+
+  @media (--lg) {
+    margin-top: 6px;
+  }
+} */

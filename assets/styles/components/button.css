@@ -72,3 +72,58 @@
   cursor: default;
   opacity: var(--Button-disabled-opacity);
 }
+
+/*
+  Variations
+ */
+
+.Button--alt {
+  --Button-background-color: var(--c-brand-highlight);
+  --Button-box-shadow-color: var(--c-brand-highlight);
+}
+
+.Button--outline {
+  --Button-background-color: var(--c-bg);
+  --Button-border-color: var(--c-brand);
+  --Button-box-shadow-color: var(--c-brand);
+  --Button-color: var(--c-brand);
+
+  &:hover {
+    border-color: var(--c-bg);
+    box-shadow: var(--Button-box-shadow-color) 0 0 0 1px inset,
+      var(--Button-box-shadow-color) 0 0 0 2px;
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--c-bg);
+    box-shadow: var(--Button-box-shadow-color) 0 0 0 1px inset,
+      var(--Button-box-shadow-color) 0 0 0 3px;
+  }
+}
+
+.Button--outline-alt {
+  --Button-background-color: var(--c-bg);
+  --Button-border-color: var(--c-brand-highlight);
+  --Button-box-shadow-color: var(--c-brand-highlight);
+  --Button-color: var(--c-brand-highlight);
+
+  &:hover {
+    border-color: var(--c-bg);
+    box-shadow: var(--Button-box-shadow-color) 0 0 0 1px inset,
+      var(--Button-box-shadow-color) 0 0 0 2px;
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--c-bg);
+    box-shadow: var(--Button-box-shadow-color) 0 0 0 1px inset,
+      var(--Button-box-shadow-color) 0 0 0 3px;
+  }
+}
+
+.Button--transparent {
+  --Button-background-color: transparent;
+  --Button-border-color: transparent;
+  --Button-box-shadow-color: var(--c-text);
+}

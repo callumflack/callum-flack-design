@@ -1,22 +1,23 @@
 <template lang="pug">
 article
   header.CoverImage(role="banner")
-    .AspectRatio.AspectRatio--2x1
+    .AspectRatio.AspectRatio--6x4.md-AspectRatio--2x1.bg-text
       .AspectRatio-object
-        ImageSVGFilter(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
+        ImageSVGFilter(
+          src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg"
+          src-placeholder="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_50,e_blur:300/https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg"
+        )
       .AspectRatio-object.Blend
-        .Container.h-100
+        .Container
           .Extract-hero.h-100
             .f.f-alignItemsCenter.h-100
-              // h1.Subtitle.b-mb1.c-bg.fw-light.w-lg-9x12
-              h1.Super.c-bg.w-8x12.w-md-7x12.b-pb4
-                | Callum works at the intersection between user experience, visual design & code.
-    // h2.Text
-      span.fs-scale-reset
-        span.Meta2.fw-bold Tiago Forte — 
-      | “Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
-      nuxt-link(to="/about") Learn more…
-    
+              .w-8x12.w-md-7x12.ResponsivePadding
+                h1.Supertitle.c-bg
+                  | Callum works at the intersection between user experience, visual design & code.
+                h2.Subheading.fw-regular.c-bg.w-10x12
+                  | “…if the solution is not beautiful, I know it is wrong.” 
+                  span.fs-scale-reset
+                    span.Meta.fw-medium — Buckminster Fuller
     
   main(role="main")
     .Container.b-pb3
@@ -62,7 +63,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 @import "../assets/styles/variables.css";
 
 .Blend {
@@ -72,5 +73,13 @@ export default {
     rgba(0, 0, 0, 0.9) 40%,
     rgba(0, 0, 0, 0.075) 80%
   );
+}
+
+.ResponsivePadding {
+  padding-left: calc(0.75 * var(--grid-gutter));
+
+  @media (--lg) {
+    padding-left: 0;
+  }
 }
 </style>

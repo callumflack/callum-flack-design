@@ -236,7 +236,7 @@
 
 /*
 
-  Responsive
+  Margins
 
  */
 
@@ -499,5 +499,8 @@
 @media (max-width: 512px) {
   .msm-m-b1 {
     margin-bottom: var(--s-1) !important;
+  }
+  .msm-p-l6 {
+    padding-left: var(--s-6) !important;
   }
 }

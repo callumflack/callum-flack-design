@@ -12,7 +12,8 @@
 @import "./typography/hr.css";
 @import "./typography/list.css";
 @import "./typography/link.css";
-@import "./typography/type.css";
+/* @import "./typography/type.css"; */
+@import "./typography/spacing.css";
 
 /* Utilities */
 @import "./utilities/block.css";
@@ -39,7 +40,10 @@
 @import "./components/image-blend.css";
 
 /* Theme */
+@import "./theme/container.css";
 @import "./theme/grid-extractors.css";
+@import "./theme/link.css";
 @import "./theme/project-item.css";
 @import "./theme/project-hero.css";
 @import "./theme/page.css";
+@import "./theme/type.css";

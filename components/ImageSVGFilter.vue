@@ -16,6 +16,7 @@
 </template>
 
 <script>
+/* import IntersectionObserver from "intersection-observer"; */
 import VLazyImage from "v-lazy-image";
 
 /* 

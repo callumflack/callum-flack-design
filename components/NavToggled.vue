@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 @import "../assets/styles/variables.css";
 
 .Modal {

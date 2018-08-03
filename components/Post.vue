@@ -6,9 +6,9 @@
         .AspectRatio-object
           ImageSVGFilter(:src="heroImage")
 
-    header.b-my2.w-lg-5x6.m-xAuto(role="banner")
+    header.b-my2.w-md-5x6.m-xAuto(role="banner")
       h1.Title.u-textCenter.p-t1 {{ title }}
-      .Meta2.u-textCenter.u-block
+      .Meta.u-textCenter.u-block
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
         span.MetaSeparator • 
         span {{ readingtime }} minutes

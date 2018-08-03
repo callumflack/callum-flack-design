@@ -31,16 +31,16 @@
   color: var(--c-text);
 }
 
-.Project:hover img {
-  /* use the SVG filter that's secreted on work/index */
-  /* filter: url("#blur"); */
-  filter: grayscale(0);
-  transition: filter 5000ms ease-out;
-}
-
 .Project img {
   /* filter: grayscale(100%); */
   filter: grayscale(1);
   /* opacity: 0.5; */
   transition: filter 750s ease-in;
+}
+
+.Project:hover img {
+  /* use the SVG filter that's secreted on work/index */
+  /* filter: url("#blur"); */
+  filter: grayscale(0);
+  transition: filter 3000ms ease-out;
 }

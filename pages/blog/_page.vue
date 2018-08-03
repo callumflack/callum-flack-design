@@ -1,5 +1,5 @@
 <template lang="pug">
-main
+div
   Post(
     :link="page.permalink"
     :heroImage="page.heroImage"

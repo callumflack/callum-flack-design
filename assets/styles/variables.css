@@ -40,7 +40,7 @@
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container: calc(672px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-lg: calc(854px + (2 * var(--grid-gutter)));
+  --container-lg: calc(846px + (2 * var(--grid-gutter)));
   --container-xl: calc(1200px + (2 * var(--grid-gutter)));
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
   
@@ -152,26 +152,25 @@
    
    */
 
-  --rfs-0: 0.833333333rem; /* 12pt if fs-text = 1em or 16px */
-  --rfs-1: 0.888888889rem; /* 13pt */
-  --rfs-2: 0.944444444rem; /* 14pt */
-  --rfs-3: 0.9375rem; /* 15pt */
+  --rfs-0: 0.79rem; /* 12pt if fs-text = 1em or 16px */
+  --rfs-1: 0.8425rem; /* 13pt */
+  --rfs-2: 0.895rem; /* 14pt */
+  --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.1875; /* 19pt */
+  --fs-text-unit: 1.1875; /* 1.1875 * 16 * 1 = 19pt */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
   --fs-text-sm: calc(0.894736842em * var(--fs-text-unit));
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
-  --fs-text-lg: calc(1em * var(--fs-text-unit));
+  --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
   --fs-meta: calc(0.631578947em * var(--fs-text-unit)); /* 12 */
   --fs-button: calc(0.684210526em * var(--fs-text-unit)); /* 13 */
   --fs-button: calc(0.736842105em * var(--fs-text-unit)); /* 14 */
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(1.263157895 * var(--fs-text-unit));
-  --fs-subheading: 18px;
+  --fs-subheading: calc(0.947368421em * var(--fs-text-unit));
   --fs-heading: calc(1.421052632em * var(--fs-text-unit)); /* 27 */
   --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
   --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
@@ -218,26 +217,6 @@
   --flh-regular: 1.5;
   --flh-loose: 1.55;
 
-
-  /* 
-
-    Utility variables
-
-   */
-
-  --border-radius: 4px;
-  --field-height: 3rem;
-  --field-space: 1rem 1.25rem;
-  --figure-space: calc(2 * var(--space));
-  --figcaption-margin-top: 0.5rem;
-  --figcaption-font-weight: var(--fw-regular);
-  --figcaption-text-color: var(--c-text-light);
-  --horizontal-rule-color: var(--c-rule);
-  --horizontal-rule-space: 0;
-  --inline-block-children-space: calc(1.25 * var(--s-3));
-  --progress-height: 32px;
-
-
   /* 
 
     Button
@@ -277,9 +256,29 @@
 
   /* 
 
+    Utility variables
+
+   */
+
+  --border-radius: 4px;
+  --field-height: 3rem;
+  --field-space: 1rem 1.25rem;
+  --figure-space: calc(2 * var(--space));
+  --figure-space-within-text: calc(0.75 * var(--space));
+  --figcaption-margin-top: 0.5rem;
+  --figcaption-font-weight: var(--fw-regular);
+  --figcaption-text-color: var(--c-text-light);
+  --horizontal-rule-color: var(--c-rule);
+  --horizontal-rule-space: 0;
+  --inline-block-children-space: calc(1.25 * var(--s-3));
+  --progress-height: 32px;
+  --text-link-decoration: none;
+
+  /* 
+
     Theme
 
    */
 
-  --fixedMenuHeight: 89px;
+  --fixed-menu-height: 89px;
 }

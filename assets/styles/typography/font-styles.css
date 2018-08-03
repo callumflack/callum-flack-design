@@ -9,9 +9,9 @@
 .fs-scale-reset {
   font-size: var(--rfs-0) !important;
 
-  @media (max-width: 320px) {
+  /* @media (max-width: 320px) {
     font-size: 0.722222222rem !important;
-  }
+  } */
   @media (--sm) {
     font-size: var(--rfs-1) !important;
   }

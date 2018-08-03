@@ -33,7 +33,7 @@ export default {
 /* .Page {
   background-color: var(--c-bg);
   min-height: 100vh;
-  padding-top: var(--fixedMenuHeight);
+  padding-top: var(--fixed-menu-height);
   position: relative;
   z-index: 3;
 } */

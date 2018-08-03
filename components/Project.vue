@@ -10,7 +10,7 @@
           .u-flex.u-flexAlignItemsCenter
             .b-my0
               h2.Subheading.fw-bold.p-t1.m-b2 {{ title }}
-              .u-block.Meta2
+              .u-block.Meta
                 span(v-if="year") {{ year }}
                 span.m-x2 •
                 span(v-if="tags") {{ tags }}

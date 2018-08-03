@@ -4,11 +4,16 @@
 
  */
 
-/* .Scope-post-figure figure, */
+.Scope-post-figure figure,
 .Extract-edge {
-  left: calc(-1 * var(--grid-gutter));
+  left: calc(-0.75 * var(--grid-gutter));
   position: relative;
-  width: calc(var(--container));
+  width: 100vw;
+
+  @media (--md) {
+    left: calc(-1 * var(--grid-gutter));
+    width: calc(var(--container));
+  }
 }
 
 .Extract-large {
@@ -25,9 +30,12 @@
 .Extract-hero,
 .Extract-super {
   left: calc(-50vw + 50%);
-  padding: 0 var(--grid-gutter);
   position: relative;
   width: 100vw;
+
+  @media (--lg) {
+    padding: 0 var(--grid-gutter);
+  }
 }
 
 .Extract-hero {
@@ -65,14 +73,22 @@
 
 .Extract-large-unit {
   display: block;
-  width: calc(
-    (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * 0.5
-  );
+  margin-right: var(--space);
+
+  @media (--lg) {
+    margin-right: 0;
+    width: calc(
+      (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * 0.5
+    );
+  }
 }
 
 .Extract-large-inset {
   display: block;
-  margin-left: calc(
-    (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * 0.5
-  );
+
+  @media (--lg) {
+    margin-left: calc(
+      (var(--container-lg) - var(--container) + (2 * var(--grid-gutter))) * 0.5
+    );
+  }
 }

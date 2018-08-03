@@ -8,8 +8,8 @@
         :class="{ 'is-active': isVisible }"
       ) 
         span CFD
-      // span.w-100.u-textCenter.Meta2.fw-bold {{ currentPageName }}
-      // span.Extract-large-inset.Meta2.fw-medium {{ currentPageName }}
+      // span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
+      // span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
 
 </template>
 

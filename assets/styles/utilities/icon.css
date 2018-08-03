@@ -48,7 +48,7 @@
   transform: rotate(-45deg);
   vertical-align: top;
   right: -1em;
-  top: 0.25em;
+  top: -0.25em;
 }
 
 .icon-targetBlank--withinButton:after {

@@ -1,13 +1,13 @@
 <template lang="pug">
 .Container
   header(role="header")
-    h1.Super Selected projects
+    h1.Supertitle Selected projects
     // p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
     .Project-filter.b-pb3
       .u-flex.u-flexJustifyBetween
-        .Meta2.m-a0 Filter by: 
-        .Meta2.c-textLight.m-a0
-          a.u-noVisualLink(
+        .Meta.m-a0 Filter by: 
+        .Meta.c-textLight.m-a0
+          a.u-linkClean(
             v-for="(tag, index) in tags"
             @click.prevent="filterProjectsByTag(tag)"
             href="#"

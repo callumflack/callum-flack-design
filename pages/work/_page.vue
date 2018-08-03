@@ -10,8 +10,8 @@
         .b-pt2.w-5x6.w-lg-9x12.m-xAuto
           // h1.Title.u-textCenter(:style="titleColor") {{ page.title }}
           // h2.Subheading.fw-regular.u-textCenter {{ page.lede }}
-          h1.Title.u-textCenter.p-t2 {{ page.title }}
-          .Meta2.u-textCenter
+          h1.Title.u-textCenter.p-t3 {{ page.title }}
+          .Meta.u-textCenter
             span(v-if="page.year") {{ page.year }}
             span.m-x2(v-if="page.tags") •
             span(v-if="page.tags") {{ page.tags }}
