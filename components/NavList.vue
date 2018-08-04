@@ -78,12 +78,12 @@ export default {
           label: "About",
           level: "05",
           link: "/about"
-        },
-        {
+        }
+        /* {
           label: "Should we team up?",
           level: "06",
           link: "/about/should-we-team-up"
-        }
+        } */
       ],
       navContacts: [
         {
@@ -157,12 +157,13 @@ export default {
   }
 }
 
-.nuxt-link-active {
-  color: var(--c-highlight);
+.Nav-link,
+.Nav-link:hover {
+  background-image: initial;
 }
 
 .nuxt-link-active {
-  background-image: initial;
+  color: var(--c-highlight);
 }
 
 .nuxt-link-active .Nav-link-lede {
@@ -200,7 +201,7 @@ export default {
   position: relative;
 }
 .nuxt-link-active .Nav-link-label:before {
-  content: "➔";
+  /* content: "➔";
   content: "⚑";
   content: "✳";
   content: "✺";
@@ -208,11 +209,21 @@ export default {
   content: "↳";
   display: inline-block;
   font-family: var(--ff-heading), var(--ff-stack-sans);
-  font-weight: 100;
+  font-weight: 100; 
   left: -5rem;
-  position: absolute;
+  position: absolute;*/
   left: 0;
-  margin-right: 0.5rem;
+  margin-right: 0.125rem;
+  top: -0.125rem;
   position: relative;
+
+  border-color: transparent;
+  border-left-color: currentColor;
+  border-style: solid;
+  border-width: 9px;
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
 }
 </style>
