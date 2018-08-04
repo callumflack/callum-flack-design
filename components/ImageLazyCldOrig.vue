@@ -1,15 +1,13 @@
 <template lang="pug">
   figure(:class="figureClasses" ref="placeholder")
-    .AspectRatio.AspectRatio--16x9
-      .AspectRatio-object
-        img(
-          :class="['low-rez', {'is-loaded': largeUrl}]"
-          :src="smallUrl"
-        )
-        img(
-          :class="['high-rez', {'is-loaded': largeUrl}]"
-          :src="largeUrl"
-        )
+    img(
+      :class="['low-rez', {'is-loaded': largeUrl}]"
+      :src="smallUrl"
+    )
+    img(
+      :class="['high-rez', {'is-loaded': largeUrl}]"
+      :src="largeUrl"
+    )
 </template>
 
 <script>
@@ -130,7 +128,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .image {
-  position: relative;
+  /* position: relative; */
 }
 
 .image img {

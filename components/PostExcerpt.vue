@@ -1,7 +1,9 @@
 <template lang="pug">
   .Excerpt.b-mt3
     nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="link")
-      ImageLazy(:src="heroImage" wrappedInLink)
+      .AspectRatio.AspectRatio--16x9
+        .AspectRatio-object.bg-highlight
+          ImageCld(:src="heroImage")
     
     .b-my1.w-lg-8x12.m-xAuto
       h2.Heading.u-textCenter.p-t2.m-b3
@@ -22,11 +24,11 @@
 
 
 <script>
-import ImageLazy from "~/components/ImageLazy.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 
 export default {
   components: {
-    ImageLazy
+    ImageCld
   },
   /* 
     Can refactor to accept a single post prop: 

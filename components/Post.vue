@@ -1,10 +1,9 @@
 <template lang="pug">
   article.Container
     .Extract-hero.m-a0(v-if="heroImage")
-      // .AspectRatio(:class="heroAspectClasses")
       .AspectRatio(:style="heroAspectStyle")
-        .AspectRatio-object
-          ImageSVGFilter(:src="heroImage")
+        .AspectRatio-object.bg-highlight
+          ImageCld(:src="heroImage")
 
     header.b-my2.w-md-5x6.m-xAuto(role="banner")
       h1.Title.u-textCenter.p-t1 {{ title }}
@@ -12,7 +11,6 @@
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
         span.MetaSeparator • 
         span {{ readingtime }} minutes
-      
 
     main(role="main")
       .Scope-post.Scope-post-figure
@@ -28,13 +26,13 @@
 
 <script>
 import moment from "vue-moment";
-import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 
 export default {
   name: "post",
   components: {
     moment,
-    ImageSVGFilter
+    ImageCld
   },
   props: {
     published: Boolean,

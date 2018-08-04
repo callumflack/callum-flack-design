@@ -1,11 +1,10 @@
 <template lang="pug">
 article
   header.CoverImage(role="banner")
-    .AspectRatio.AspectRatio--6x4.md-AspectRatio--2x1.bg-text
-      .AspectRatio-object
-        ImageSVGFilter(
+    .AspectRatio.AspectRatio--6x4.md-AspectRatio--2x1
+      .AspectRatio-object.bg-text
+        ImageCld(
           src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg"
-          src-placeholder="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_50,e_blur:300/https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg"
         )
       .AspectRatio-object.Blend
         .Container
@@ -13,7 +12,7 @@ article
             .f.f-alignItemsCenter.h-100
               .w-8x12.w-md-7x12.ResponsivePadding
                 h1.Supertitle.c-bg
-                  | Callum works at the intersection between user experience, visual design & code.
+                  | Callum works at the intersection between user experience, visual design &amp; code.
                 h2.Subheading.fw-regular.c-bg.w-10x12
                   | “…if the solution is not beautiful, I know it is wrong.” 
                   span.fs-scale-reset
@@ -30,12 +29,14 @@ article
 </template>
 
 <script>
-import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
+
+/* src-placeholder="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_50,e_blur:300/https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg" */
 
 export default {
   components: {
-    ImageSVGFilter,
+    ImageCld,
     NewsletterSignupBlock
   },
   props: {

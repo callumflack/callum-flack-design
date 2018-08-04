@@ -14,33 +14,18 @@ div
 
   main(role="main")
     article.Container
-      // .b-pb1
       .p-b4
         .Meta.fw-medium.u-textCenter Latest post
       
-      // POST (til I can compute the most recent post…)
       .Extract-hero.m-a0
         .AspectRatio.AspectRatio--16x9
-          .AspectRatio-object
-            ImageSVGFilter(
+          .AspectRatio-object.bg-text
+            ImageCld(
               src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
             )
-      
       .Excerpt
-        // nuxt-link.u-block.Extract-edge.b-mb1(to="/blog")
-          ImageLazy(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg")
-        
         header.b-my2.w-lg-5x6.m-xAuto(role="banner")
-          // .Meta.fw-medium.u-textCenter.p-t1 The latest…
           h1.Title.u-textCenter.p-t3 
-            nuxt-link(to="/blog") The brief, the scope and the dance
-          .Meta.u-textCenter.u-block
-            time July 2nd, 2018
-            span.MetaSeparator • 
-              span 8 minutes
-        
-        // .b-mb1.w-lg-9x12.m-xAuto
-          h2.Subtitle.u-textCenter.p-t2
             nuxt-link(to="/blog") The brief, the scope and the dance
           .Meta.u-textCenter.u-block
             time July 2nd, 2018
@@ -55,16 +40,14 @@ div
 </template>
 
 <script>
-import ImageLazy from "~/components/ImageLazy.vue";
-import ImageSVGFilter from "~/components/ImageSVGFilterCld.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
   layout: "default",
   components: {
-    ImageLazy,
-    ImageSVGFilter,
+    ImageCld,
     PostExcerpt,
     NewsletterSignupForm
   },
@@ -88,21 +71,11 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @import "../assets/styles/variables.css";
 
 .Adjacent {
-  /* background-color: var(--c-highlight); */
   border: 2px solid var(--c-text);
   padding: 1.5rem 1.75rem;
-
-  & h1 {
-    /* color: var(--c-highlight) !important; */
-  }
-
-  & h1,
-  & h2 {
-    /* color: var(--c-bg) !important; */
-  }
 }
 </style>

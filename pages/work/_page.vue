@@ -4,12 +4,9 @@
       .Container.b-pb2
         .Extract-super
           .AspectRatio(:style="heroAspectStyle")
-            .AspectRatio-object
-              .Project-hero(:class="heroFrameClasses")
-                ImageSVGFilter(:src="page.heroImage")
+            .AspectRatio-object.Project-hero.bg-highlight(:class="heroFrameClasses")
+              ImageCld(:src="page.heroImage")
         .b-pt2.w-5x6.w-lg-9x12.m-xAuto
-          // h1.Title.u-textCenter(:style="titleColor") {{ page.title }}
-          // h2.Subheading.fw-regular.u-textCenter {{ page.lede }}
           h1.Title.u-textCenter.p-t3 {{ page.title }}
           .Meta.u-textCenter
             span(v-if="page.year") {{ page.year }}
@@ -29,11 +26,11 @@
 </template>
 
 <script>
-import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 
 export default {
   components: {
-    ImageSVGFilter
+    ImageCld
   },
   props: {
     title: String,
