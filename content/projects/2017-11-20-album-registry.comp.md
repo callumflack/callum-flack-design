@@ -8,7 +8,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
 heroRatio: 99.16
-tags: Brand, Interface, Development
+tags: Design, Development
 nextProject: /work/oceanblue-living
 nextProjectTitle: Oceanblue Living
 featured: true

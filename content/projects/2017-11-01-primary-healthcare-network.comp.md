@@ -11,7 +11,7 @@ heroInCloudinary: true
 heroImageNoShadow: true
 heroFrame: false
 heroRatio: 45
-tags: Interface, Development
+tags: Design, Development
 nextProject: /work/raatsicc
 nextProjectTitle: RATSICC
 featured: true

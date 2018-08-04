@@ -10,7 +10,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/p
 heroInCloudinary: true
 heroImageNoShadow: true
 heroRatio: 60
-tags: Brand, Interface, Development
+tags: Design, Development
 nextProject: /work/vj-ray
 nextProjectTitle: VJ Ray Real Estate
 featured: true

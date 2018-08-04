@@ -9,7 +9,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/okok/t
 heroInCloudinary: true
 heroRatio: 65
 heroFrame: false
-tags: Interface, Development
+tags: Design, Development
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
 featured: true

@@ -8,7 +8,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
 heroRatio: 62.5130163
-tags: Brand, Interface, Development
+tags: Design, Development
 nextProject: /work/the-substation
 nextProjectTitle: The Substation
 featured: true

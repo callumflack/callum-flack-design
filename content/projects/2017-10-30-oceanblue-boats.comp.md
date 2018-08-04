@@ -9,7 +9,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
 heroInCloudinary: true
 heroRatio: 69.2592593
-tags: Brand, Interface, Development
+tags: Design, Development
 nextProject: /work/ward6
 nextProjectTitle: Ward6
 featured: true
