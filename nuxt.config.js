@@ -37,12 +37,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    postcss: [
-      require("postcss-easy-import")(),
-      require("postcss-mixins")(),
-      require("postcss-preset-env")()
-    ],
-    vendor: ["intersection-observer/intersection-observer"],
+    postcss: [],
+    /* vendor: ["intersection-observer/intersection-observer"], */
     /*
     ** Run ESLINT on save
     */
@@ -71,10 +67,10 @@ module.exports = {
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
     "~/plugins/vue-moment",
-    {
+    /* {
       src: "~/plugins/intersection-observer",
       ssr: false
-    },
+    }, */
     {
       src: "~/plugins/v-lazy-image",
       ssr: false
