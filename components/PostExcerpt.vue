@@ -40,6 +40,10 @@ export default {
   */
   props: {
     published: String,
+    category: {
+      type: String,
+      default: "blog"
+    },
     link: String,
     title: String,
     date: String,

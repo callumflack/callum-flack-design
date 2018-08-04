@@ -1,7 +1,7 @@
 <template lang="pug">
   main.Container(role="main")
     post-excerpt(
-      v-if="post.published"
+      v-if="post.published && post.category !== 'projects'"
       v-for="post in posts"
       :key="post.permalink"
       :link="post.permalink"
