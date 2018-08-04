@@ -1,6 +1,7 @@
 <template lang="pug">
 .Toggle
-  .Container(:class="{ 'Container--noRule': isVisible }")
+  // .Container(:class="{ 'Container--noRule': isVisible }")
+  .Container
     .Extract-large.Toggle-align.b-py2
       a.Toggle-anchor.Logo.u-fixed.z-top(
         href="#"
@@ -57,24 +58,6 @@ export default {
 }
 
 .Toggle-anchor {
-  /* align-items: center;
-  align-content: center;
-  display: flex;
-  height: 100%;
-  height: inherit;
-  width: inherit;
-  width: 80px; */
-}
-
-.Toggle-anchor:hover {
-  background-image: initial;
-}
-
-.Toggle-anchor:hover span,
-.Toggle-anchor.is-active span {
-  background-color: var(--c-highlight);
-  border-color: var(--c-highlight);
-  color: var(--c-bg);
 }
 
 .Toggle-anchor span {
@@ -94,6 +77,21 @@ export default {
   @media (--lg) {
     left: -1rem;
   }
+}
+
+.Toggle-anchor:hover {
+  background-image: initial;
+}
+
+.Toggle-anchor:hover span,
+.Toggle-anchor.is-active span {
+  background-color: var(--c-text);
+  /* border-color: var(--c-highlight); */
+  color: var(--c-bg);
+}
+
+.Toggle-anchor.is-active span {
+  color: var(--c-border);
 }
 
 .icon-tap {

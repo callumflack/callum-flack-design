@@ -94,7 +94,22 @@ export default {
  */
 
 .Modal {
-  background-color: var(--c-bg);
+  background-color: rgba(230, 47, 13, 0.96);
+  background-color: var(--c-highlight);
+  background-color: var(--c-border);
+}
+
+.Modal /deep/ {
+  /* & .Nav-link:hover,
+  & .Nav-list .nuxt-link-active {
+    color: var(--c-bg);
+  } */
+
+  & .Text {
+    background-image: linear-gradient(var(--c-border), var(--c-border)),
+      linear-gradient(var(--c-border), var(--c-border)),
+      linear-gradient(currentColor, currentColor);
+  }
 }
 
 /* 
