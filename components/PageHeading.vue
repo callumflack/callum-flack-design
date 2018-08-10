@@ -1,13 +1,13 @@
 <template lang="pug">
   div(:class="blockClasses")
     .Container
-      h1.Title.Title--xl.u-textCenter.u-lg-size10of12.m-xAuto(
+      h1.Title.Title--xl.u-textCenter.u-lg-size10of12.m-xA(
         v-if="titleXl"
         v-html="titleXl"
         :style="titleColor"
         :class="titleClasses"
       )
-      h1.Title.u-textCenter.u-lg-size10of12.m-xAuto(
+      h1.Title.u-textCenter.u-lg-size10of12.m-xA(
         v-if="title"
         v-html="title"
         :style="titleColor"

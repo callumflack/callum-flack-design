@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: "Callum Flack digital design & development",
     meta: [
@@ -27,42 +24,11 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
     /* script: [{ src: "./javascript/intersection-observer.js" }] */
   },
-  /*
-  ** Customize the progress-bar color
-  ** loading: { color: "#1f1f1f" },
-  ** loading: "~/components/PageLoading.vue",
-  */
+
   loading: { color: "#151515" },
-  /*
-  ** Build configuration
-  */
-  build: {
-    postcss: [],
-    /* vendor: ["intersection-observer/intersection-observer"], */
-    /*
-    ** Run ESLINT on save
-    */
-    extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-    }
-    /*
-      cssnext is available by default in Nuxt,
-      but there's TWO different methods shown in the docs:
-      https://nuxtjs.org/api/configuration-build#postcss
-      https://nuxtjs.org/faq/postcss-plugins
-      …and both FAIL to load, for e.g., postcss-mixins:
-    
-      postcss: [require("postcss-mixins")()]
-    */
-  },
+
   css: ["~/assets/styles/application.css"],
+
   plugins: [
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
@@ -76,10 +42,13 @@ module.exports = {
       ssr: false
     }
   ],
+
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
+
   axios: {
     credentials: false
   },
+
   generate: {
     routes: [
       // You shouldn't need to include any content routes inside generate.routes
@@ -91,6 +60,7 @@ module.exports = {
       "/blog"
     ]
   },
+
   router: {
     middleware: "currentPage",
     // FYI: async scrolling docs look diff now:
@@ -112,6 +82,47 @@ module.exports = {
         );
         window.scrollTo(scrollTo.x, scrollTo.y);
       }, 100);
+    }
+  },
+
+  build: {
+    /*
+      cssnext is available by default in Nuxt,
+      but there's TWO different methods shown in the docs:
+      https://nuxtjs.org/api/configuration-build#postcss
+      https://nuxtjs.org/faq/postcss-plugins
+      …and both FAIL to load, for e.g., postcss-mixins:
+    
+      postcss: [require("postcss-mixins")()]
+    */
+    /* postcss: {
+      plugins: {
+        "postcss-cssnext": {
+          features: {
+            customProperties: false
+          }
+        }
+      }
+    }, */
+    /* styleResources FAILS: doesn't render custom props wrapped in custom media queries */
+    /* styleResources: {
+      scss: "./assets/styles/variables.css",
+      options: {
+        // See https://github.com/yenshih/style-resources-loader#options
+        // Except `patterns` property
+      }
+    }, */
+    /* vendor: ["intersection-observer/intersection-observer"], */
+    extend(config, ctx) {
+      /* Run ESLINT on save */
+      if (ctx.dev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: "pre",
+          test: /\.(js|vue)$/,
+          loader: "eslint-loader",
+          exclude: /(node_modules)/
+        });
+      }
     }
   }
 };

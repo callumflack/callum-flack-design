@@ -8,12 +8,12 @@
 /* Typography */
 @import "./typography/font-faces.css";
 @import "./typography/font-styles.css";
+@import "./typography/font-spacing.css";
 @import "./typography/base.css";
-@import "./typography/hr.css";
+@import "./typography/horinzontal-rule.css";
 @import "./typography/list.css";
 @import "./typography/link.css";
 /* @import "./typography/type.css"; */
-@import "./typography/spacing.css";
 
 /* Utilities */
 @import "./utilities/block.css";

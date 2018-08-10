@@ -20,7 +20,7 @@ export default {
     NavList
   },
   computed: {
-    currentPageClass: function() {
+    currentPageClass() {
       return `fs-scale-reset page-${this.$store.state.currentPage}`;
     }
   }

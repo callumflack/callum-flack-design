@@ -2,7 +2,6 @@
 div
   header.Container.b-pb3(role="banner")
     .Adjacent
-      // h1.Title.b-mb1.c-highlight.fw-light 
       h1.Heading.m-b3
         | Callum Flack designs and develops website systems to reach each before all.
       h2.Text
@@ -11,6 +10,12 @@ div
         | —&nbsp;“Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
         nuxt-link(to="/about") 
           em.Text--italic Learn more…
+
+  .Test
+    p 
+      | YO
+      button.Button One
+      button.Button.Button--alt Two
 
   main(role="main")
     article.Container
@@ -24,7 +29,7 @@ div
               src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
             )
       .Excerpt
-        header.b-my2.w-lg-5x6.m-xAuto(role="banner")
+        header.b-my2.w-lg-5x6.m-xA(role="banner")
           h1.Title.u-textCenter.p-t3 
             nuxt-link(to="/blog") The brief, the scope and the dance
           .Meta.u-textCenter.u-block
@@ -72,7 +77,20 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-@import "../assets/styles/variables.css";
+/* @import "../assets/styles/variables.css"; */
+
+@define-mixin bullshit {
+  color: var(--c-warning);
+}
+
+.Test {
+  @mixin bullshit;
+  background-color: var(--c-brand);
+
+  @media (--lg) {
+    background-color: var(--c-text);
+  }
+}
 
 .Adjacent {
   border: 2px solid var(--c-text);

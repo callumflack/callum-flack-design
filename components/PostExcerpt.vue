@@ -5,7 +5,7 @@
         .AspectRatio-object.bg-highlight
           ImageCld(:src="heroImage")
     
-    .b-my1.w-lg-8x12.m-xAuto
+    .b-my1.w-lg-8x12.m-xA
       h2.Heading.u-textCenter.p-t2.m-b3
         nuxt-link(:to="link") {{ title }}
       .Meta.u-textCenter.u-block

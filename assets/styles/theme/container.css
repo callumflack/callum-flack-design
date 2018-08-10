@@ -37,3 +37,30 @@
 .Container--noRule:before {
   content: none;
 }
+
+.Container--super {
+  max-width: 100%;
+  padding: 0;
+
+  @media (--sm) {
+    padding: 0 1.5vw;
+  }
+  @media (--md) {
+    padding: 0 3vw;
+  }
+  @media (--lg) {
+    padding: 0 5vw;
+  }
+  @media (--xl) {
+    padding: 0 10vw;
+  }
+
+  /* @media (min-width: 1136px) {
+    // left: calc(-45vw + 50%);
+    max-width: 90vw;
+  }
+  @media (min-width: 1840px) {
+    // left: calc(-33vw + 50%);
+    max-width: 66vw;
+  } */
+}

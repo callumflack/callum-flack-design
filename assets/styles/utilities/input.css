@@ -1,9 +1,6 @@
 /* selector for non-writable inputs from hi-q */
 
-@custom-selector :--not-writable
-  &:disabled,
-  &[aria-disabled],
-  &[readonly];
+@custom-selector :--not-writable &:disabled, &[aria-disabled], &[readonly];
 
 /* 
   input mixin 
@@ -18,11 +15,12 @@
   background-color: var(--c-white);
   font-family: inherit;
   font-size: inherit;
-  font-weight: var(--fw-regular);
+  font-weight: 400;
   line-height: inherit;
   color: var(--c-textLight);
-  transition: border-color var(--speed, 0.1s) var(--easing), color var(--speed) var(--easing), background-color var(--speed, 0.1s) var(--easing);
-  
+  transition: border-color var(--speed, 0.1s) var(--easing),
+    color var(--speed) var(--easing), background-color var(--speed, 0.1s) var(--easing);
+
   &::placeholder {
     color: var(--c-gray);
   }

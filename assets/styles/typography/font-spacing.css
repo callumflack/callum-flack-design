@@ -51,8 +51,7 @@ blockquote {
 
 button + button,
 .Button + .Button {
-  margin-left: calc(0.5 * var(--inline-block-children-space));
-  margin-left: var(--s-2);
+  margin-left: var(--button-inline-spacing);
 }
 
 /*

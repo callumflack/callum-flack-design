@@ -20,7 +20,7 @@ div
       //- .InterludeSpace
         hr
         .block--my7
-          p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xAuto.u-size3of4
+          p.Meta.Meta--isParagraph.c-textLight.u-textCenter.m-xA.u-size3of4
             span.u-block
               nuxt-link.u-linkClean(to="/about") Callum Flack
               | &nbsp;is writing about the things inbetween. Here's the most recent posts:

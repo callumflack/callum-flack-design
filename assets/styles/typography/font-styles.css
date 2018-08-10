@@ -1,17 +1,22 @@
 /* 
-  Responsive typography with ems.
-  <size you want>/(16*1.125)
-  Example: 18/(16*1.125) = x
 
-  Applied to <body>.
+  Responsive typography with ems.
+
+  The maths:
+
+  <desired-pt-size>/<text-unit>/16 * 16
+  48/19/16 * 16 = 2.526315789
+
+  <text-unit> * 16 * 1
+  1.1875 * 16 * 1 = 19pt
+
+  Applied to first child of <nuxt>.
+
 */
 
 .fs-scale-reset {
   font-size: var(--rfs-0) !important;
 
-  /* @media (max-width: 320px) {
-    font-size: 0.722222222rem !important;
-  } */
   @media (--sm) {
     font-size: var(--rfs-1) !important;
   }
@@ -41,14 +46,14 @@
   Font sizes
  */
 
-.fs-text {
-  font-size: var(--fs-text) !important;
-}
 .fs-text-xs {
   font-size: var(--fs-text-xs) !important;
 }
 .fs-text-sm {
   font-size: var(--fs-text-sm) !important;
+}
+.fs-text {
+  font-size: var(--fs-text) !important;
 }
 .fs-text-md {
   font-size: var(--fs-text-md) !important;
@@ -67,6 +72,9 @@
 }
 .fs-title {
   font-size: var(--fs-title) !important;
+}
+.fs-supertitle {
+  font-size: var(--fs-supertitle) !important;
 }
 
 /* 
@@ -107,26 +115,32 @@
   Font weights
  */
 
+.fw-hairline {
+  font-weight: 100 !important;
+}
+.fw-thin {
+  font-weight: 200 !important;
+}
 .fw-light {
-  font-weight: var(--fw-light) !important;
+  font-weight: 300 !important;
 }
 .fw-regular {
-  font-weight: var(--fw-regular) !important;
+  font-weight: 400 !important;
 }
 .fw-medium {
-  font-weight: var(--fw-medium) !important;
+  font-weight: 500 !important;
 }
 .fw-semibold {
-  font-weight: var(--fw-semibold) !important;
+  font-weight: 600 !important;
 }
 .fw-bold {
-  font-weight: var(--fw-bold) !important;
+  font-weight: 700 !important;
 }
 .fw-heavy {
-  font-weight: var(--fw-heavy) !important;
+  font-weight: 800 !important;
 }
 .fw-black {
-  font-weight: var(--fw-black) !important;
+  font-weight: 900 !important;
 }
 
 /*
@@ -165,6 +179,6 @@
   & > ul,
   & > li {
     font-family: var(--fs-text-lg);
-    font-weight: var(--fw-light);
+    font-weight: 200;
   }
 }

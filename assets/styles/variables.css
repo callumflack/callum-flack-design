@@ -1,12 +1,21 @@
-/*
-  
-  Variables
+/* eslint-disable */
+/* prettier-ignore */
 
-  Notes on css custom properties & postcss-custom-properties:
+/* 
+
+
+
+
+
+
+
+  Responsive custom properties!
+  
+  On css custom properties & postcss-custom-properties:
   Single variables within media queries are a great idea:
   https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
   …but postcss-custom-properties limits vars to the `:root`:
-  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —> https://github.com/postcss/postcss-custom-properties
+  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —  https://github.com/postcss/postcss-custom-properties
   
   :root { --s-title: 20px; }
 
@@ -14,20 +23,63 @@
     :root { --s-title: 40px; }
   }
 
-*/
 
-/* eslint-disable */
-/* prettier-ignore */
+
+
+
+
+
+ */
 
 :root {
-  @custom-media --sm (min-width: 512px);
+  --responsive-space: 2rem;
+  --responsive-typography-space: 1rem;
+  --responsive-hero: 24rem;
+}
+
+@media (--md) {
+  :root {
+    --responsive-space: 3rem;
+    --responsive-typography-space: 1.5rem;
+    --responsive-hero: 38rem;
+  }
+}
+
+@media (--lg) {
+  :root {
+    --responsive-space: 4rem;
+    --responsive-hero: 47rem;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+  Every other custom property
+
+
+
+
+
+
+
+ */
+
+:root {
+  @custom-media --mo (max-width: 512px); /* mo = mobile only */
+  @custom-media --sm (min-width: 513px);
   @custom-media --md (min-width: 768px);
   @custom-media --md-landscape (min-width: 1024px);
   @custom-media --lg (min-width: 1280px);
   @custom-media --xl (min-width: 1500px);
   @custom-media --su (min-width: 1900px);
 
- /*
+  /*
 
     Sizes
 
@@ -38,12 +90,12 @@
   --flex-grid-gutter: calc(0.75 * var(--space));
 
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
-  --container: calc(672px + (2 * var(--grid-gutter)));
+  --container-rg: calc(672px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
   --container-lg: calc(846px + (2 * var(--grid-gutter)));
   --container-xl: calc(1184px + (2 * var(--grid-gutter)));
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
-  
+
   --s-0: 0;
   --s-1: 0.25rem;
   --s-2: 0.5rem;
@@ -56,7 +108,7 @@
   --s-5: 2.5rem;
   --s-6: 4rem;
   --s-7: 6rem;
-  
+
   --rs-1: 0.25rem;
   --rs-2: 0.5rem;
   --rs-3: 1rem;
@@ -71,12 +123,12 @@
     Colors
   
    */
-   
+
   --c-brand: #00ffff;
   --c-brandHover: #00ffff;
   --c-brandLight: #00ffff;
   --c-highlight: rgba(255, 235, 0, 0.25);
-  --c-highlight: #FCF7C9;
+  --c-highlight: #fcf7c9;
   --c-highlight: #47caf5;
   --c-link: #bd0a20;
   --c-link: #f53813;
@@ -94,10 +146,10 @@
   --c-text: #050505;
   --c-textLight: #999;
   --c-textUnderline: rgba(5, 5, 5, 0.5);
-  
+
   --c-gray: #aaa;
   --c-border: #ccc;
-  --c-rule: rgba(0,0,0,0.125);
+  --c-rule: rgba(0, 0, 0, 0.125);
   --c-device: #e7e7e7;
 
   --c-neutral: #eee;
@@ -112,7 +164,7 @@
   --c-bg: #f2f2f2;
   --c-bg: #f7f7f7;
   --c-white: white;
-  
+
   --c-success: #ff3700;
   --c-warning: #ff3700;
   --c-danger: #ff3700;
@@ -128,7 +180,7 @@
   --ff-text-regular-italic: "RegularItalic";
   --ff-text-medium: "Medium";
   --ff-text-bold: "Bold";
-  
+
   --ff-lede: "TiemposHeadline";
   --ff-text-meta: var(--ff-title);
   --ff-text-subheading: var(--ff-title);
@@ -136,7 +188,7 @@
 
   --ff-heading: "GintoNord";
   --ff-title: "GintoNord";
-  
+
   --ff-button: var(--ff-text-regular);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
@@ -149,16 +201,27 @@
   
     Font sizes
     For your thoughts: http://type-scale.com/
+
+    The maths:
+
+    <text-unit> * 16 * 1
+    1.1875 * 16 * 1 = 19pt
+
+    <desired-pt-size>/<text-unit>/16 * 16
+    48/19/16 * 16
+
+    <desired-pt-size>/<responsive-text-unit-in-px>/16 * 16
+    27/13/16 * 16
    
    */
 
-  --rfs-0: 0.79rem; /* 12pt if fs-text = 1em or 16px */
+  --rfs-0: 0.79rem; /* 12pt */
   --rfs-1: 0.8425rem; /* 13pt */
   --rfs-2: 0.895rem; /* 14pt */
   --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.1875; /* 1.1875 * 16 * 1 = 19pt */
+  --fs-text-unit: 1.1875;
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
   --fs-text-sm: calc(0.894736842em * var(--fs-text-unit));
@@ -174,32 +237,16 @@
   --fs-heading: calc(1.421052632em * var(--fs-text-unit)); /* 27 */
   --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
   --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
-  --fs-super: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
-  --fs-super: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
-  --fs-super: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
-
-  /* 
-
-    Font weights
-
-   */
-
-  --fw-heirline: 100;
-  --fw-light: 200;
-  --fw-book: 300;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  --fw-heavy: 800;
-  --fw-black: 900;
+  --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
+  --fs-supertitle: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
+  --fs-supertitle: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
 
   /* 
   
-    Font leading (line-height) and font tracking (letter-spacing)
+    Font leading (line-height), tracking (letter-spacing) & weights
    
    */
-  
+
   --fls-text: -0.001em;
   --fls-meta: 0.00625em;
   --fls-caps: 0.1em;
@@ -207,8 +254,9 @@
   --fls-super: -0.005em;
 
   --fls-tight: -0.005em;
+  --fls-touch-negative: 0;
   --fls-regular: 0;
-  --fls-touch: 0.02em;
+  --fls-touch-positive: 0.02em;
   --fls-loose: 0.1em;
 
   --flh-super: 1;
@@ -223,24 +271,30 @@
 
    */
 
-  --Button-background-color: var(--c-text);
-  --Button-border-color: inherit;
-  --Button-border-color: currentcolor;
-  --Button-border-width: 2px;
-  --Button-box-shadow-color: var(--c-text);
-  --Button-color: var(--c-bg);
-  --Button-disabled-opacity: 0.6;
-  --Button-height: calc(0.9 * var(--field-height));
-  --Button-xpadding: 1.5em;
-  --Button-radius: 0;
+  --button-background-color: var(--c-text);
+  --button-border-color: inherit;
+  --button-border-color: currentcolor;
+  --button-border-radius: 0;
+  --button-border-width: 2px;
+  --button-box-shadow-color: var(--c-text);
+  --button-box-shadow-stroke-hover: 2px;
+  --button-box-shadow-stroke-active: 3px;
+  --button-box-shadow-stroke-inset: 1px;
+  --button-color: var(--c-bg);
+  --button-disabled-opacity: 0.6;
+  --button-height: calc(0.9 * var(--field-height));
+  --button-xpadding: 1.5em;
 
   /* typography */
-  --Button-font-case: uppercase;
-  --Button-font-family: var(--ff-heading), var(--ff-stack-sans);
-  --Button-font-size: var(--fs-button);
-  --Button-font-weight: var(--fw-regular);
-  --Button-letter-spacing-case: var(--fls-loose);
-  --Button-text-alignment: 0.5px;
+  --button-font-case: uppercase;
+  --button-font-family: var(--ff-heading), var(--ff-stack-sans);
+  --button-font-size: var(--fs-button);
+  --button-font-weight: 400;
+  --button-letter-spacing-case: var(--fls-loose);
+  --button-text-alignment: 0;
+
+  /* button + button inline spacing */
+  --button-inline-spacing: var(--s-2);
 
   /* 
 
@@ -261,12 +315,13 @@
    */
 
   --border-radius: 4px;
+  --cover-image-screen-color: rgba(0, 0, 0, 0.25);
   --field-height: 3rem;
   --field-space: 1rem 1.25rem;
   --figure-space: calc(2 * var(--space));
   --figure-space-within-text: calc(0.75 * var(--space));
   --figcaption-margin-top: 0.5rem;
-  --figcaption-font-weight: var(--fw-regular);
+  --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);
   --horizontal-rule-color: var(--c-rule);
   --horizontal-rule-space: 0;

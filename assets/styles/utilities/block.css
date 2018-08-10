@@ -4,27 +4,6 @@
   to create better white space across responsive screen sizes.
   See: https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
 
-*/
-
-/* @media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)  */
-
-:root {
-  --responsive-space: 2rem;
-}
-
-@media (--md) {
-  :root {
-    --responsive-space: 2.5rem;
-  }
-}
-@media (--lg) {
-  :root {
-    --responsive-space: 4rem;
-  }
-}
-
-/* 
-
   Responsive margin blocks
 
  */
@@ -75,6 +54,7 @@
 .b-mb4 {
   margin-bottom: calc(3 * var(--responsive-space));
 }
+
 /* 
 
   Responsive padding blocks

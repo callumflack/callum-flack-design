@@ -6,7 +6,7 @@
           .AspectRatio(:style="heroAspectStyle")
             .AspectRatio-object.Project-hero.bg-highlight(:class="heroFrameClasses")
               ImageCld(:src="page.heroImage")
-        .b-pt2.w-5x6.w-lg-9x12.m-xAuto
+        .b-pt2.w-5x6.w-lg-9x12.m-xA
           h1.Title.u-textCenter.p-t3 {{ page.title }}
           .Meta.u-textCenter
             span(v-if="page.year") {{ page.year }}

@@ -148,19 +148,19 @@ p em,
 }
 
 .Supertitle {
-  font-size: calc(0.45 * var(--fs-super));
+  font-size: calc(0.45 * var(--fs-supertitle));
 
   @media (--sm) {
-    font-size: calc(0.55 * var(--fs-super));
+    font-size: calc(0.55 * var(--fs-supertitle));
   }
   @media (--md) {
-    font-size: calc(0.666 * var(--fs-super));
+    font-size: calc(0.666 * var(--fs-supertitle));
   }
   @media (--md-landscape) {
-    font-size: calc(0.8 * var(--fs-super));
+    font-size: calc(0.8 * var(--fs-supertitle));
   }
   @media (--lg) {
-    font-size: var(--fs-super);
+    font-size: var(--fs-supertitle);
   }
 }
 
@@ -176,7 +176,7 @@ p em,
   font-family: var(--ff-lede), var(--ff-stack-serif);
   /* font-size: var(--fs-subtitle); */
   font-weight: 300;
-  letter-spacing: var(--fls-touch);
+  letter-spacing: var(--fls-touch-positive);
   line-height: var(--flh-regular);
 }
 
@@ -190,7 +190,7 @@ p em,
 
 .Logo {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: var(--fw-bold);
+  font-weight: 700;
   font-size: 12px;
   line-height: 1;
   letter-spacing: 0.666em;
