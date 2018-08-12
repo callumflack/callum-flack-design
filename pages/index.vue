@@ -11,7 +11,7 @@ div
         nuxt-link(to="/about") 
           em.Text--italic Learn more…
 
-  .Test
+  //- .Test
     p 
       | YO
       button.Button One
@@ -87,7 +87,8 @@ export default {
   @mixin bullshit;
   background-color: var(--c-brand);
 
-  @media (--lg) {
+  /* @media (--lg) { */
+  @media (min-width: 1024px) {
     background-color: var(--c-text);
   }
 }

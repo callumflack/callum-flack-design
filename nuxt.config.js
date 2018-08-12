@@ -32,15 +32,15 @@ module.exports = {
   plugins: [
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
-    "~/plugins/vue-moment",
+    "~/plugins/vue-moment"
     /* {
-      src: "~/plugins/intersection-observer",
-      ssr: false
-    }, */
-    {
       src: "~/plugins/v-lazy-image",
       ssr: false
-    }
+    },
+    {
+      src: "~/plugins/intersection-observer",
+      ssr: false
+    } */
   ],
 
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
@@ -112,7 +112,7 @@ module.exports = {
         // Except `patterns` property
       }
     }, */
-    /* vendor: ["intersection-observer/intersection-observer"], */
+    /* vendor: ["intersection-observer"], */
     extend(config, ctx) {
       /* Run ESLINT on save */
       if (ctx.dev && ctx.isClient) {
