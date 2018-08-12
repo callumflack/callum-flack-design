@@ -1,11 +1,12 @@
 <template lang="pug">
   main.Container(role="main")
     post-excerpt(
-      v-if="post.published && post.category !== 'projects'"
+      v-if="post.published"
       v-for="post in posts"
       :key="post.permalink"
       :link="post.permalink"
       :heroImage="post.heroImage"
+      :heroImageNoShadow="post.heroImageNoShadow"
       :title="post.title"
       :date="post.date"
       :readingtime="post.readingtime"
@@ -37,8 +38,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content:
-            "Selected writing by Callum Flack about digital design, user experience & code"
+          content: "Selected writing by Callum Flack about digital design, user experience & code"
         }
       ]
     };

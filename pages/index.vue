@@ -79,6 +79,12 @@ export default {
 <style lang="postcss" scoped>
 /* @import "../assets/styles/variables.css"; */
 
+/* 
+  This proves that:
+  1. mixins work
+  2. styleResource loads the variables w/o @importing
+  3. custom props re-evaluation works on a button selector
+ */
 @define-mixin bullshit {
   color: var(--c-warning);
 }

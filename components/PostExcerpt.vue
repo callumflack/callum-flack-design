@@ -2,7 +2,7 @@
   .Excerpt.b-mt3
     nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="link")
       .AspectRatio.AspectRatio--16x9
-        .AspectRatio-object.bg-highlight
+        .AspectRatio-object(:class="{ 'bg-border': !heroImageNoShadow }")
           ImageCld(:src="heroImage")
     
     .b-my1.w-lg-8x12.m-xA
@@ -36,7 +36,7 @@ export default {
     
     props: ["post"]
 
-    …but it fails. Prob due Nuxtent?
+    …but it fails here. Prob due Nuxtent?
   */
   props: {
     published: String,
@@ -49,6 +49,10 @@ export default {
     date: String,
     readingtime: Number,
     heroImage: String,
+    heroImageNoShadow: {
+      type: Boolean,
+      default: false
+    },
     lede: String,
     summary: String
   }

@@ -2,7 +2,7 @@
   article.Container
     .Extract-hero.m-a0(v-if="heroImage")
       .AspectRatio(:style="heroAspectStyle")
-        .AspectRatio-object.bg-highlight
+        .AspectRatio-object(:class="{ 'bg-border': !heroImageNoShadow }")
           ImageCld(:src="heroImage")
 
     header.b-my2.w-md-5x6.m-xA(role="banner")
@@ -44,6 +44,10 @@ export default {
     heroRatio: {
       type: String,
       default: "56.25"
+    },
+    heroImageNoShadow: {
+      type: Boolean,
+      default: false
     },
     src: String,
     body: Object,

@@ -4,7 +4,7 @@
       .Container.b-pb2
         .Extract-super
           .AspectRatio(:style="heroAspectStyle")
-            .AspectRatio-object.Project-hero.bg-highlight(:class="heroFrameClasses")
+            .AspectRatio-object.Project-hero.bg-text(:class="heroFrameClasses")
               ImageCld(:src="page.heroImage")
         .b-pt2.w-5x6.w-lg-9x12.m-xA
           h1.Title.u-textCenter.p-t3 {{ page.title }}
@@ -48,7 +48,10 @@ export default {
     },
     heroInCloudinary: Boolean,
     heroIsDevice: Boolean,
-    heroImageNoShadow: Boolean,
+    heroImageNoShadow: {
+      type: Boolean,
+      default: false
+    },
     heroVideo: String,
     heroVideoLaptop: Boolean,
     heroVideoDesktoptop: Boolean,
