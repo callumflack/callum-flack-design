@@ -93,7 +93,7 @@
   --container-rg: calc(672px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
   --container-lg: calc(846px + (2 * var(--grid-gutter)));
-  --container-xl: calc(1184px + (2 * var(--grid-gutter)));
+  --container-xl: calc(1104px + (2 * var(--grid-gutter)));
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
   --s-0: 0;
@@ -148,7 +148,7 @@
   --c-textUnderline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
-  --c-border: #ccc;
+  --c-border: #ddd;
   --c-rule: rgba(0, 0, 0, 0.125);
   --c-device: #e7e7e7;
 

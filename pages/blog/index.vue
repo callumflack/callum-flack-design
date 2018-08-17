@@ -5,6 +5,7 @@
       v-for="post in posts"
       :key="post.permalink"
       :link="post.permalink"
+      :thumbImage="post.thumbImage"
       :heroImage="post.heroImage"
       :heroImageNoShadow="post.heroImageNoShadow"
       :title="post.title"

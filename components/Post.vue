@@ -13,11 +13,11 @@
         span {{ readingtime }} minutes
 
     main(role="main")
-      .Scope-post.Scope-post-figure
+      .Scope-post.Scope-post-figure(:class="postDropcapClass")
         // no-ssr
         nuxtent-body(:body="body")
 
-    .HeadingSpace(v-if="updated || note")
+    //- .Post-note.HeadingSpace(v-if="updated || note")
       hr.ParagraphSpace
       p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
       p.fs-text-sm.c-textLight(v-if="note", v-html="note")
@@ -42,7 +42,7 @@ export default {
     readingtime: Number,
     heroImage: String,
     heroRatio: {
-      type: String,
+      type: Number,
       default: "56.25"
     },
     heroImageNoShadow: {
@@ -61,6 +61,9 @@ export default {
     },
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
+    },
+    postDropcapClass() {
+      /* return this.project.category === "essay" && "Scope-post-dropcap"; */
     }
   }
 };

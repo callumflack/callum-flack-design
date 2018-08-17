@@ -4,6 +4,7 @@ div
     :link="page.permalink"
     :heroImage="page.heroImage"
     :heroRatio="page.heroRatio"
+    :heroImageNoShadow="page.heroImageNoShadow"
     :title="page.title"
     :date="page.date"
     :readingtime="page.readingtime"

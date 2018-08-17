@@ -2,7 +2,7 @@
   div(:class="currentPageClass")
     NavToggle
     nuxt
-    .Container.b-pt4
+    .Container(:class="contentNavSpace")
     footer
       NavList
     NavToggled
@@ -22,6 +22,9 @@ export default {
   computed: {
     currentPageClass() {
       return `fs-scale-reset page-${this.$store.state.currentPage}`;
+    },
+    contentNavSpace() {
+      return this.$route.name !== "interesting" && `b-pt4`;
     }
   }
 };

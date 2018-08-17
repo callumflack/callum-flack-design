@@ -9,8 +9,8 @@
  */
 
 .b-my0 {
-  margin-top: calc(0.375 * var(--responsive-space));
-  margin-bottom: calc(0.375 * var(--responsive-space));
+  margin-top: calc(0.5 * var(--responsive-space));
+  margin-bottom: calc(0.5 * var(--responsive-space));
 }
 .b-my1 {
   margin-top: calc(0.75 * var(--responsive-space));

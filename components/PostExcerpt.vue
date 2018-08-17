@@ -3,10 +3,11 @@
     nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="link")
       .AspectRatio.AspectRatio--16x9
         .AspectRatio-object(:class="{ 'bg-border': !heroImageNoShadow }")
-          ImageCld(:src="heroImage")
+          //- ImageCld(:src="heroImage")
+          ImageCld(:src="thumbImage || heroImage")
     
-    .b-my1.w-lg-8x12.m-xA
-      h2.Heading.u-textCenter.p-t2.m-b3
+    .b-my0.w-lg-8x12.m-xA
+      h2.Heading.u-textCenter.p-t2.m-b2
         nuxt-link(:to="link") {{ title }}
       .Meta.u-textCenter.u-block
         time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
@@ -39,7 +40,7 @@ export default {
     …but it fails here. Prob due Nuxtent?
   */
   props: {
-    published: String,
+    published: Boolean,
     category: {
       type: String,
       default: "blog"
@@ -48,6 +49,7 @@ export default {
     title: String,
     date: String,
     readingtime: Number,
+    thumbImage: String,
     heroImage: String,
     heroImageNoShadow: {
       type: Boolean,

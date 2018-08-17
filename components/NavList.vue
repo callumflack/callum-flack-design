@@ -37,10 +37,8 @@ export default {
       if (this.$store.state.isMobileNavVisible) {
         return "u-hiddenVisually";
       }
-    },
-    hideContainerRule() {
-      if (this.$store.state.isMobileNavVisible) {
-        return "Container--noRule";
+      if (this.$route.name === "interesting") {
+        return "u-hiddenVisually";
       }
     }
   },
@@ -66,7 +64,7 @@ export default {
         {
           label: "Projects",
           level: "03",
-          link: "/work"
+          link: "/projects"
         },
         {
           label: "Interesting",

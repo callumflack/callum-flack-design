@@ -1,12 +1,7 @@
 <template lang="pug">
 div
-  // h2.Heading.Heading--ruled Subscribe
   p Once or twice a month I write an email letter about "things inbetween"—the stories, ideas and links that I've found curious, resonating, <em>interesting</em>. 
-  // p While the subject matter is broad, it usually involves wonder, art, design and writing. It's for folks who're hungry to notice / see systems and connect the dots.
-  // p While the subject matter is broad, it always involves wonder, design, tech and writing. It's for folks who're hungry to notice and connect the dots.
-  p While the subject matter is broad, it always involves wonder, design, writing and internet technology. It's for hungry folks seeking to connect dots.
-  // p I hope that it becomes a worthwhile way to keep in touch:
-  //- .formWrapper
+  p While the subject matter is unapologetically broad, the lenses are wonder, design, writing and internet tech. It's for folks hungry to connect dots.
   form.form.Text.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 

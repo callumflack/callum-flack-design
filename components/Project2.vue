@@ -1,7 +1,7 @@
 <template lang="pug">
 .w-1x2.w-lg-1x3
   nuxt-link.Project(:to="link")
-    .AspectRatio.AspectRatio--4x3.bg-highlight
+    .AspectRatio.AspectRatio--4x3.bg-text
       .AspectRatio-object
         ImageLazy(:src="image")
     .b-my0

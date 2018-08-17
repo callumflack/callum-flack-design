@@ -83,17 +83,18 @@ body {
   Essay drop caps
 
  */
-.page-about .Scope-post div > p:first-of-type:first-letter,
-.page-blog-page .Scope-post div > p:first-of-type:first-letter {
+.Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
   font-family: var(--ff-text-lede);
-  font-size: 4.6em;
+  font-family: var(--ff-title);
+  font-size: 4.9em;
   line-height: 1;
-  padding-top: 2px;
+  margin-top: -1px;
+  padding-top: 0;
   padding-right: 2rem;
 
   @media (--md) {
-    padding-right: 3rem;
+    padding-right: 2.5rem;
   }
 }
 

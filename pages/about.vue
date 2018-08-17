@@ -13,10 +13,13 @@ article
               .w-8x12.w-md-7x12.ResponsivePadding
                 h1.Supertitle.c-bg
                   | Callum works at the intersection between user experience, visual design &amp; code.
-                h2.Subheading.fw-regular.c-bg.w-10x12
+                //- h2.Subheading.fw-regular.c-bg.w-10x12
                   | “…if the solution is not beautiful, I know it is wrong.” 
-                  span.fs-scale-reset
-                    span.Meta.fw-medium — Buckminster Fuller
+                  span.fs-scale-reset #[span.Meta — Buckminster Fuller]
+                h2.Subheading.fw-regular.c-bg.w-10x12
+                  | The quality of the connections is the key to quality
+                  br 
+                  span.fs-scale-reset #[span.Meta — Charles Eames]
     
   main(role="main")
     .Container.b-pb3
@@ -69,11 +72,7 @@ export default {
 
 .Blend {
   background-blend-mode: multiply;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.9) 40%,
-    rgba(0, 0, 0, 0.075) 80%
-  );
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.075) 80%);
 }
 
 .ResponsivePadding {
