@@ -1,5 +1,6 @@
 ---
-title: The brief, the scope and the dance 
+category: essays
+title: The brief, the scope and the dance
 lede: Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold.
 readingtime: 8
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1533008018/okok/post-process-2a.jpg

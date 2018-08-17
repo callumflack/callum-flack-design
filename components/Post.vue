@@ -1,21 +1,30 @@
 <template lang="pug">
-  article.Container
-    .Extract-hero.m-a0(v-if="heroImage")
-      .AspectRatio(:style="heroAspectStyle")
-        .AspectRatio-object(:class="{ 'bg-border': !heroImageNoShadow }")
-          ImageCld(:src="heroImage")
+  article
+    header(role="banner")
+      .Container
+        .m-a0(v-if="heroImage", :class="heroExtractClasses")
+          .AspectRatio(:style="heroAspectStyle")
+            //- .AspectRatio-object.Project-hero.bg-text(:class="heroFrameClasses")
+            .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+              ImageCld(:src="heroImage")
 
-    header.b-my2.w-md-5x6.m-xA(role="banner")
-      h1.Title.u-textCenter.p-t1 {{ title }}
-      .Meta.u-textCenter.u-block
-        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span.MetaSeparator • 
-        span {{ readingtime }} minutes
+        .b-my2.w-md-5x6.m-xA
+          h1.Title.u-textCenter.p-t3 {{ title }}
+          .Meta.u-textCenter(v-if="category !== 'projects'")
+            time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            span.MetaSeparator • 
+            span {{ readingtime }} minutes
+          .Meta.u-textCenter(v-else)
+            time(:date-time="date") {{ date | moment("YYYY") }}
+            span.MetaSeparator •
+            span {{ tags }}
+            
 
     main(role="main")
-      .Scope-post.Scope-post-figure(:class="postDropcapClass")
-        // no-ssr
-        nuxtent-body(:body="body")
+      .Container.p-t2
+        .Scope-post.Scope-post-figure(:class="dropcapClass")
+          // no-ssr
+          nuxtent-body(:body="body")
 
     //- .Post-note.HeadingSpace(v-if="updated || note")
       hr.ParagraphSpace
@@ -35,41 +44,47 @@ export default {
     ImageCld
   },
   props: {
-    published: Boolean,
-    link: String,
-    title: String,
+    body: Object,
+    category: String,
     date: String,
-    readingtime: Number,
     heroImage: String,
-    heroRatio: {
-      type: Number,
-      default: "56.25"
-    },
     heroImageNoShadow: {
       type: Boolean,
       default: false
     },
-    src: String,
-    body: Object,
-    updated: Boolean,
+    heroRatio: {
+      type: Number,
+      default: 56.25
+    },
+    link: String,
     note: String,
-    tweet: String
+    published: Boolean,
+    readingtime: Number,
+    src: String,
+    tags: {
+      type: String,
+      default: null
+    },
+    title: String,
+    tweet: String,
+    updated: Boolean
   },
   computed: {
+    heroExtractClasses() {
+      if (this.category === "projects") {
+        ("Extract-super");
+      }
+      return "Extract-hero";
+    },
     heroAspectClasses() {
       return this.heroRatio && `AspectRatio--${this.heroRatio}`;
     },
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
     },
-    postDropcapClass() {
-      /* return this.project.category === "essay" && "Scope-post-dropcap"; */
+    dropcapClass() {
+      return this.category === "essays" && "Scope-post-dropcap";
     }
   }
 };
 </script>
-
-
-<style scoped>
-@import "../assets/styles/variables.css";
-</style>

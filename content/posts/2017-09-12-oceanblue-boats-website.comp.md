@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Oceanblue Boats
+title: Oceanblue Boats website
 lede: A website that tells a story about building boats and getaway adventures.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true

@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Primary Healthcare Network
+title: Primary Healthcare Network responsive web app
 titleColor: rgb(112, 190, 68)
 lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg

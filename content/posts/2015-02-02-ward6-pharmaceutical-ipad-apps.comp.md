@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Pharma eDetailer apps
+title: Pharma eDetailer tablet apps
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true

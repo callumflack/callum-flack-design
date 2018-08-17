@@ -165,7 +165,7 @@ export default {
 }
 
 .nuxt-link-active .Nav-link-lede {
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   position: relative;
 }
 

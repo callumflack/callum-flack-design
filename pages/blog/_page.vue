@@ -1,16 +1,18 @@
 <template lang="pug">
 div
   Post(
-    :link="page.permalink"
-    :heroImage="page.heroImage"
-    :heroRatio="page.heroRatio"
-    :heroImageNoShadow="page.heroImageNoShadow"
-    :title="page.title"
-    :date="page.date"
-    :readingtime="page.readingtime"
     :body="page.body"
-    :updated="page.updated"
+    :category="page.category"
+    :date="page.date"
+    :heroImage="page.heroImage"
+    :heroImageNoShadow="page.heroImageNoShadow"
+    :heroRatio="page.heroRatio"
+    :link="page.permalink"
     :note="page.note"
+    :readingtime="page.readingtime"
+    :tags="page.tags"
+    :title="page.title"
+    :updated="page.updated"
   )
   // .Container.p-b7
     .figure.figure--post
@@ -45,11 +47,11 @@ export default {
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/posts").get(route.path);
-    const posts = await app.$content("/posts").getAll();
+    // const posts = await app.$content("/posts").getAll();
 
     return {
-      page,
-      posts
+      page
+      // posts
     };
   }
 };

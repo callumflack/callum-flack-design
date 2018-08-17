@@ -1,7 +1,7 @@
 <template lang="pug">
   div(:class="currentPageClass")
     NavToggle
-    nuxt
+    nuxt.Page
     .Container(:class="contentNavSpace")
     footer
       NavList
@@ -38,6 +38,7 @@ export default {
   min-height: 100vh;
   padding-top: var(--fixed-menu-height);
   position: relative;
+  transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: 3;
 } */
 
@@ -49,20 +50,4 @@ export default {
     display: block;
   }
 } */
-
-.page-enter-active {
-  /* background-color: var(--c-bg); */
-  /* height: 100vh; */
-  /* opacity: 1; */
-  transition: opacity 0.15s;
-  /* width: 100vw; */
-  /* z-index: 999; */
-}
-.page-leave-active {
-  transition: opacity 0.15s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
 </style>

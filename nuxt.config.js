@@ -25,7 +25,9 @@ module.exports = {
     /* script: [{ src: "./javascript/intersection-observer.js" }] */
   },
 
-  loading: { color: "#151515" },
+  /* loading: { color: "#151515" }, */
+  /* loading: "~/components/loading.vue", */
+  loading: false,
 
   css: ["~/assets/styles/application.css"],
 
@@ -65,23 +67,37 @@ module.exports = {
     middleware: "currentPage",
     // FYI: async scrolling docs look diff now:
     // https://router.vuejs.org/en/advanced/scroll-behavior.html
+    // async scrollBehavior(to, from, savedPosition) {
+    //   setTimeout(() => {
+    //     if (to.matched[0] && to.matched[0].name === "page") {
+    //       return window.scrollTo(0, 0);
+    //     }
+    //     const scrollTo = Object.assign(
+    //       {
+    //         x: 0,
+    //         y: 0
+    //       },
+    //       savedPosition
+    //     );
+    //     window.scrollTo(scrollTo.x, scrollTo.y);
+    //   }, 20);
+    // },
+    // https://github.com/nuxt/nuxt.js/issues/2738#issuecomment-372007743
     async scrollBehavior(to, from, savedPosition) {
-      setTimeout(() => {
-        // Pages using the _page.vue file share a savedPosition as they
-        // are all the same page to nuxt
-        // This is undesired so to scoll to top instead
-        if (to.matched[0] && to.matched[0].name === "page") {
-          return window.scrollTo(0, 0);
+      if (savedPosition) {
+        return savedPosition;
+      } else {
+        let position = {};
+        if (to.matched.length < 2) {
+          position = { x: 0, y: 0 };
+        } else if (to.matched.some(r => r.components.default.options.scrollToTop)) {
+          position = { x: 0, y: 0 };
         }
-        const scrollTo = Object.assign(
-          {
-            x: 0,
-            y: 0
-          },
-          savedPosition
-        );
-        window.scrollTo(scrollTo.x, scrollTo.y);
-      }, 100);
+        if (to.hash) {
+          position = { selector: to.hash };
+        }
+        return position;
+      }
     }
   },
 

@@ -41,6 +41,39 @@ body {
 
 /* 
 
+  Page transitions
+  https://vuejs.org/v2/guide/transitions.html#Custom-Transition-Classes
+  v-enter => v-enter-active => v-enter-to
+  v-leave => v-leave-active => v-leave-to
+
+ */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.15s ease;
+  background-color: var(--c-bg);
+  /* height: 100vh; */
+  /* opacity: 1; */
+  /* width: 100vw; */
+  z-index: 999;
+}
+
+.page-enter-active,
+.page-leave-active {
+  opacity: 1;
+}
+
+.page-leave-active {
+  transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter,
+.page-leave-to {
+  /* transform: translateX(3px); */
+  opacity: 0;
+}
+
+/* 
+
   Page themes
 
  */
@@ -63,21 +96,6 @@ body {
   }
 }
 
-.page-about .Page {
-  /* background-color: #efecda; */
-  /* background-color: rgba(236, 223, 194, 0.5); */
-}
-
-/* 
-
-  Image loading bg
-
- */
-
-.AspectRatio {
-  /* background-color: var(--c-text); */
-}
-
 /* 
 
   Essay drop caps
@@ -85,12 +103,12 @@ body {
  */
 .Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
+  font-family: var(--ff-heading);
   font-family: var(--ff-text-lede);
-  font-family: var(--ff-title);
-  font-size: 4.9em;
+  font-size: 4.8em;
   line-height: 1;
-  margin-top: -1px;
-  padding-top: 0;
+  /* margin-top: -1px; */
+  padding-top: 2px;
   padding-right: 2rem;
 
   @media (--md) {
@@ -110,7 +128,7 @@ body {
 
 /* 
 
-  bits 
+  Separators & things 
 
  */
 

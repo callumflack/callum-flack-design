@@ -3,15 +3,17 @@
     post-excerpt(
       v-if="post.published"
       v-for="post in posts"
-      :key="post.permalink"
-      :link="post.permalink"
-      :thumbImage="post.thumbImage"
+      :category="post.category"
+      :date="post.date"
       :heroImage="post.heroImage"
       :heroImageNoShadow="post.heroImageNoShadow"
-      :title="post.title"
-      :date="post.date"
-      :readingtime="post.readingtime"
+      :key="post.permalink"
       :lede="post.lede"
+      :link="post.permalink"
+      :readingtime="post.readingtime"
+      :thumbImage="post.thumbImage"
+      :tags="post.tags"
+      :title="post.title"
     )
     
     //- .InterludeSpace
@@ -21,7 +23,6 @@
           span.u-block
             nuxt-link.u-linkClean(to="/about") Callum Flack
             | &nbsp;is writing about the things inbetween. Here's the most recent posts:
-      hr
 </template>
 
 <script>
@@ -31,18 +32,6 @@ export default {
   name: "blog",
   components: {
     PostExcerpt
-  },
-  head() {
-    return {
-      title: "Blog – Callum Flack Design",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: "Selected writing by Callum Flack about digital design, user experience & code"
-        }
-      ]
-    };
   },
   data() {
     return {
@@ -54,6 +43,18 @@ export default {
 
     return {
       posts
+    };
+  },
+  head() {
+    return {
+      title: "Blog – Callum Flack Design",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Posts by Callum Flack about digital design, user experience & code"
+        }
+      ]
     };
   }
 };

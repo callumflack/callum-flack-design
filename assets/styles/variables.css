@@ -234,7 +234,7 @@
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-subheading: calc(0.947368421em * var(--fs-text-unit));
-  --fs-heading: calc(1.421052632em * var(--fs-text-unit)); /* 27 */
+  --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
   --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
   --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
   --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */

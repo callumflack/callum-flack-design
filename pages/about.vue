@@ -3,9 +3,7 @@ article
   header.CoverImage(role="banner")
     .AspectRatio.AspectRatio--6x4.md-AspectRatio--2x1
       .AspectRatio-object.bg-text
-        ImageCld(
-          src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg"
-        )
+        ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
       .AspectRatio-object.Blend
         .Container
           .Extract-hero.h-100
@@ -24,7 +22,7 @@ article
   main(role="main")
     .Container.b-pb3
     .Container
-      .Scope-post
+      .Scope-post.Scope-post-dropcap
         nuxtent-body(:body="page.body")
     // .Container
       .figure.figure--post
@@ -59,6 +57,7 @@ export default {
       ]
     };
   },
+  scrollToTop: false,
   async asyncData({ app, route }) {
     return {
       page: await app.$content("/pages").get(route.path)

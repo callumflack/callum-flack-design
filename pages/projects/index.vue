@@ -2,7 +2,7 @@
 .Container
   header(role="header")
     h1.Supertitle Selected projects
-    // p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
+    //- p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
     .Project-filter.b-pb3
       .u-flex.u-flexJustifyBetween
         .Meta.m-a0 Filter by: 
@@ -16,8 +16,7 @@
             span {{ tag }}
             //- span(v-if="index !== tags.length - 1") ,&nbsp;
             //- span(v-else) .
-      // hr.m-t3
-  
+
   main(role="main")
     .Extract-super
       .FlexGrid.FlexGrid--noGrow

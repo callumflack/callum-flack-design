@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Oceanblue Living
+title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true

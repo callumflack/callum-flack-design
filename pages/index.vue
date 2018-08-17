@@ -48,6 +48,11 @@ import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
+// timeout for loading component
+// https://stackoverflow.com/questions/33289726/combination-of-async-function-await-settimeout
+// send multiple requests in asyncData: https://github.com/nuxt/nuxt.js/issues/978
+const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 export default {
   layout: "default",
   components: {
@@ -65,8 +70,11 @@ export default {
       posts: [1]
     };
   },
+  /* scrollToTop: false, */
   async asyncData({ app, route }) {
-    const posts = await app.$content("/posts").getAll();
+    let posts = await app.$content("/posts").getAll();
+    /* show loading component */
+    /* await timeout(500); */
 
     return {
       posts
