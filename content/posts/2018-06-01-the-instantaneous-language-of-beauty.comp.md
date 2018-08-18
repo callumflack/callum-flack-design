@@ -1,12 +1,12 @@
 ---
 category: essays
+showOnHomePage: true
 title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry. In other words, we seek beauty.
-readingtime: 5
+readingTime: 5
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
 published: true
 updated: false
-tweet: https://twitter.com/callumflack
 ---
 
 A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead _feel_. We sense the world before we are consciously aware of it through instinctive reactions to the aesthetics of our environment. We understand these reactions in ourselves emotionally. We do this well before we have time to use our linguistic system to think and create meaning. And we do it unconsciously, like breathing, every second of our waking lives.

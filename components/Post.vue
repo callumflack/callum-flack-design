@@ -7,22 +7,20 @@
             //- .AspectRatio-object.Project-hero.bg-text(:class="heroFrameClasses")
             .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
               ImageCld(:src="heroImage")
-
-        .b-my2.w-md-5x6.m-xA
-          h1.Title.u-textCenter.p-t3 {{ title }}
+        .b-py2.w-md-5x6.m-xA
+          h1.Title.u-textCenter.p-t2.m-b3 {{ title }}
           .Meta.u-textCenter(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
             span.MetaSeparator • 
-            span {{ readingtime }} minutes
+            span {{ readingTime }} minutes
           .Meta.u-textCenter(v-else)
             time(:date-time="date") {{ date | moment("YYYY") }}
             span.MetaSeparator •
             span {{ tags }}
-            
 
     main(role="main")
       .Container.p-t2
-        .Scope-post.Scope-post-figure(:class="dropcapClass")
+        .Scope-post(:class="scopeClasses")
           // no-ssr
           nuxtent-body(:body="body")
 
@@ -59,7 +57,7 @@ export default {
     link: String,
     note: String,
     published: Boolean,
-    readingtime: Number,
+    readingTime: Number,
     src: String,
     tags: {
       type: String,
@@ -72,7 +70,7 @@ export default {
   computed: {
     heroExtractClasses() {
       if (this.category === "projects") {
-        ("Extract-super");
+        return "Extract-super";
       }
       return "Extract-hero";
     },
@@ -82,7 +80,8 @@ export default {
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
     },
-    dropcapClass() {
+    scopeClasses() {
+      // return this.category === "essays" && "Scope-post-figure Scope-post-dropcap";
       return this.category === "essays" && "Scope-post-dropcap";
     }
   }

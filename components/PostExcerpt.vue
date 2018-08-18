@@ -1,34 +1,55 @@
 <template lang="pug">
-  .Excerpt.b-mt3
-    nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="link")
-      .AspectRatio.AspectRatio--16x9
-        .AspectRatio-object(:class="{ 'bg-border': !heroImageNoShadow }")
+  .Excerpt
+    nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+      .AspectRatio(:style="heroAspectStyle")
+        .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
           ImageCld(:src="thumbImage || heroImage")
-    
-    .b-my0.w-lg-8x12.m-xA
-      h2.Heading.u-textCenter.p-t2.m-b2
-        nuxt-link(:to="link") {{ title }}
+
+    .m-xA(:class="titleBlockClasses")
+      h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
+        nuxt-link(:to="permalink") {{ title }}
+      h2.Heading.u-textCenter.p-t2.m-b2(v-else)
+        nuxt-link(:to="permalink") {{ title }}
+
       .Meta.u-textCenter.u-block.p-t1
-        time(v-if="category !== 'projects'" :date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        time(v-else :date-time="date") {{ date | moment("YYYY") }}
-        span.MetaSeparator(v-if="readingtime") • 
-          span {{ readingtime }} minutes
-        span.MetaSeparator(v-if="tags") • 
-          span {{ tags }}
+        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+        span.MetaSeparator • 
+        span(v-if="category") {{ category }}
+        span.MetaSeparator(v-if="readingTime" ) • 
+        span(v-if="readingTime" ) {{ readingTime }} minutes
 
     p.Text(v-if="lede")
       | {{ lede }} 
-      nuxt-link.Text--italic(:to="link") Continue reading
+      nuxt-link.Text--italic(:to="permalink") Continue reading
 
+  //- .Extract-hero.m-a0
+    .AspectRatio.AspectRatio--16x9
+      .AspectRatio-object.bg-text
+        ImageCld(
+          src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
+        )
+    .Excerpt
+      header.b-my2.w-lg-5x6.m-xA(role="banner")
+        h1.Title.u-textCenter.p-t3 
+          nuxt-link(to="/blog") The brief, the scope and the dance
+        .Meta.u-textCenter.u-block
+          time July 2nd, 2018
+          span.MetaSeparator • 
+            span 8 minutes
+      p.Text
+        | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
+        nuxt-link.Text--italic(to="/blog") Continue reading
 </template>
 
 
 <script>
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import moment from "vue-moment";
 
 export default {
   components: {
-    ImageCld
+    ImageCld,
+    moment
   },
   /* 
     Can refactor to accept a single post prop: 
@@ -44,19 +65,44 @@ export default {
       default: "blog"
     },
     date: String,
+    showOnHomePage: {
+      type: Boolean,
+      default: false
+    },
     heroImage: String,
     heroImageNoShadow: {
       type: Boolean,
       default: false
     },
+    heroRatio: {
+      type: Number,
+      default: 56.25
+    },
     lede: String,
-    link: String,
+    permalink: String,
     published: Boolean,
-    readingtime: Number,
+    readingTime: Number,
     summary: String,
     tags: String,
     thumbImage: String,
     title: String
+  },
+  computed: {
+    heroExtractClasses() {
+      if (this.showOnHomePage === true) {
+        return "Extract-hero";
+      }
+      return "Extract-edge";
+    },
+    heroAspectStyle() {
+      return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
+    },
+    titleBlockClasses() {
+      if (this.showOnHomePage === true) {
+        return "b-py2 w-md-5x6";
+      }
+      return "b-py0 w-lg-4x6";
+    }
   }
 };
 </script>
@@ -64,6 +110,11 @@ export default {
 
 <style>
 @import "../assets/styles/variables.css";
+
+.Excerpt {
+  /* slight increase on .b-mt3 */
+  margin-top: calc(2.25 * var(--responsive-space));
+}
 
 .Excerpt:first-of-type {
   margin: 0;

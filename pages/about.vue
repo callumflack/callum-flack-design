@@ -15,7 +15,7 @@ article
                   | “…if the solution is not beautiful, I know it is wrong.” 
                   span.fs-scale-reset #[span.Meta — Buckminster Fuller]
                 h2.Subheading.fw-regular.c-bg.w-10x12
-                  | The quality of the connections is the key to quality
+                  | "The quality of the connections is the key to quality"
                   br 
                   span.fs-scale-reset #[span.Meta — Charles Eames]
     

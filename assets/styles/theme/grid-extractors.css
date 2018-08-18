@@ -32,11 +32,12 @@
   width: 100vw;
 
   @media (--lg) {
-    padding: 0 var(--grid-gutter);
+    /* padding: 0 var(--grid-gutter); */
   }
 }
 
-.Extract-hero {
+.Extract-hero,
+.Extract-super {
   @media (--lg) {
     left: calc((var(--container-xl) - var(--container-rg) + (2 * var(--grid-gutter))) * -0.5);
     padding: 0;
@@ -45,20 +46,16 @@
 }
 
 .Extract-super {
-  @media (--md) {
+  /* @media (--md) {
     left: calc(-45vw + 50%);
     padding: 0;
     width: 90vw;
-  }
-  @media (--lg) {
+  } */
+  /* @media (--lg) {
     left: calc(-40vw + 50%);
     padding: 0;
     width: 80vw;
-  }
-  @media (--xl) {
-    left: calc(-35vw + 50%);
-    width: 70vw;
-  }
+  } */
   @media (--su) {
     left: calc(-27vw + 50%);
     width: 54vw;

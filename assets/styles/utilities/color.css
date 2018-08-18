@@ -96,10 +96,10 @@
   background-color: var(--c-border) !important;
 }
 .bg-neutral {
-  background-color: var(--c-brand) !important;
+  background-color: var(--c-neutral) !important;
 }
 .bg-bg {
-  background-color: var(--c-brand) !important;
+  background-color: var(--c-bg) !important;
 }
 .bg-white {
   background-color: white;

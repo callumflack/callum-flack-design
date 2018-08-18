@@ -17,13 +17,13 @@ heroInCloudinary: true
 
 <!-- LFunctional simplicity is the result of hard, iterative design work. but they are never simply about making things it look nice. -->
 
-Seamless web experiences that live up to their promises create audiences and grow business. What it looks like is your promise. How it works is the measure of keeping your word. I believe that the two main factors that drive user interface excellence are design that is rooted in a deep understanding of user intentions, and the ability to execute that design in code.
+Seamless web experiences that live up to their promises create audiences and grow business. What it looks like is your promise. How it works is the measure of keeping your word. I believe that the two main factors that drive user interface excellence are design rooted in a deep understanding of user intentions, and the ability to execute that design in code.
 
-I design interfaces that live up to the brand promise, and I execute in code the stack of details that deliver the promise. I can only do this in collaboration with my client. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what tomorrow looks like.
+I design interfaces that live up to the brand promise, and I execute in code the stack of details that deliver that promise. I can only do this in collaboration with my client. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what a better tomorrow looks like.
 
 <!-- successful digital products and services are made of. -->
 
-While focussed on design, I'm also an accomplished frontend developer. Being able to code means design is no longer a daydream but a choice made with the knowledge of what it takes to build it. In turn, this also means better decision making and greater scope understanding, all of which gives room for higher rates of design iteration.
+While focussed on design, I'm also an accomplished frontend developer. Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means better decision making and greater scope understanding, all of which gives room for higher rates of design iteration.
 
 <!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween". -->
 

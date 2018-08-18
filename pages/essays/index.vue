@@ -1,7 +1,7 @@
 <template lang="pug">
   main.Container(role="main")
     post-excerpt(
-      v-if="post.published"
+      v-if="post.published && post.category === 'essays'"
       v-for="post in posts"
       :category="post.category"
       :date="post.date"

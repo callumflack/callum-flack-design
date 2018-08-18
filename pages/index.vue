@@ -20,27 +20,26 @@ div
   main(role="main")
     article.Container
       .p-b4
-        .Meta.fw-medium.u-textCenter Latest post
-      
-      .Extract-hero.m-a0
-        .AspectRatio.AspectRatio--16x9
-          .AspectRatio-object.bg-text
-            ImageCld(
-              src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
-            )
-      .Excerpt
-        header.b-my2.w-lg-5x6.m-xA(role="banner")
-          h1.Title.u-textCenter.p-t3 
-            nuxt-link(to="/blog") The brief, the scope and the dance
-          .Meta.u-textCenter.u-block
-            time July 2nd, 2018
-            span.MetaSeparator • 
-              span 8 minutes
-        p.Text
-          | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
-          nuxt-link.Text--italic(to="/blog") Continue reading
-
-
+        .Meta.u-textCenter 
+          span.fw-medium Pinned post
+          span.MetaSeparator • 
+          nuxt-link(to="/blog") see all →
+      post-excerpt.m-t0(
+        v-for="post in homePagePost"
+        :category="post.category"
+        :date="post.date"
+        :heroImage="post.heroImage"
+        :heroImageNoShadow="post.heroImageNoShadow"
+        :heroRatio="post.heroRatio"
+        :key="post.permalink"
+        :lede="post.lede"
+        :permalink="post.permalink"
+        :readingTime="post.readingTime"
+        :showOnHomePage="post.showOnHomePage"
+        :thumbImage="post.thumbImage"
+        :tags="post.tags"
+        :title="post.title"
+      )
 </template>
 
 <script>
@@ -51,7 +50,7 @@ import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 // timeout for loading component
 // https://stackoverflow.com/questions/33289726/combination-of-async-function-await-settimeout
 // send multiple requests in asyncData: https://github.com/nuxt/nuxt.js/issues/978
-const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
+// const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export default {
   layout: "default",
@@ -61,17 +60,17 @@ export default {
     NewsletterSignupForm
   },
   computed: {
-    /* mostRecentPost() {
-      return posts.splice(1);
-    } */
+    homePagePost() {
+      return this.posts.filter(post => post.showOnHomePage === true);
+    }
   },
   data() {
     return {
-      posts: [1]
+      posts: []
     };
   },
   /* scrollToTop: false, */
-  async asyncData({ app, route }) {
+  async asyncData({ app }) {
     let posts = await app.$content("/posts").getAll();
     /* show loading component */
     /* await timeout(500); */

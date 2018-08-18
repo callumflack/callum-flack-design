@@ -59,7 +59,7 @@ export default {
         {
           label: "Essays",
           level: "02",
-          link: "/blog?essays"
+          link: "/essays"
         },
         {
           label: "Projects",

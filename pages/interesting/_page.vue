@@ -4,7 +4,7 @@
     :link="page.permalink"
     :title="page.title"
     :date="page.date"
-    :readingtime="page.readingtime"
+    :readingTime="page.readingTime"
     :body="page.body"
   )
 </template>

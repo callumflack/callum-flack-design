@@ -9,7 +9,7 @@
         h2.m-y0.Text--sm.c-textLight.u-textCenter
           time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
           span.MetaSeparator • 
-          span {{ readingtime }} minutes
+          span {{ readingTime }} minutes
       
       no-ssr
         nuxtent-body.nl-spacer(:body="body")
@@ -29,7 +29,7 @@ export default {
     link: String,
     title: String,
     date: String,
-    readingtime: Number,
+    readingTime: Number,
     body: Object
   }
 };

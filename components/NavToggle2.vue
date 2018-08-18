@@ -67,7 +67,8 @@ export default {
   display: flex;
   height: 36px;
   justify-content: center;
-  padding: 2px 0.55rem 0 0.85rem;
+  /* padding: 2px 0.55rem 0 0.85rem; */
+  padding: 2px 0.35rem 0 0.8rem;
   position: relative;
 
   /* theme */

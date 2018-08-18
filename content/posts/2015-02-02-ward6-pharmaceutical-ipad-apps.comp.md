@@ -22,4 +22,6 @@ The Baxter Peritoneal Dialysis app (above) was a simple value proposition projec
 
 The Actifuse Bone Graft Substitute app held a large information set, so it's success relied on clear a information architecture and well-designed navigation. I designed the user journeys, applied a design direction across the app, and also built it, managing detailed client feedback throughout.
 
-@[MarkdownNote](note="These projects are not publicly available. Completed in collaboration with Grant Foster, Jason Armstrong, Jonathan Palasty, Cynthia Sánchez García and Antonio de Perio while working for Ward6.")
+<!-- @[MarkdownNote](note="These projects are not publicly available. Completed in collaboration with Grant Foster, Jason Armstrong, Jonathan Palasty, Cynthia Sánchez García and Antonio de Perio while working for Ward6.") -->
+
+@[MarkdownNote](note="These projects are not publicly available. Completed while working for Ward6.")

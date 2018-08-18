@@ -23,14 +23,14 @@
         Project(
           v-if="project.published && project.category === 'projects'"
           v-for="project in visibleProjects"
-          :key="project.permalink"
-          :link="project.permalink"
-          :title="project.title"
-          :lede="project.lede"
-          :image="project.thumbImage"
           :cloudinary="project.thumbInCloudinary"
-          :year="project.year"
+          :image="project.thumbImage"
+          :lede="project.lede"
+          :link="project.permalink"
+          :key="project.permalink"
           :tags="project.tags"
+          :title="project.title"
+          :year="project.year"
         )
 
     <svg class='u-hiddenVisually'>

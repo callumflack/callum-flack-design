@@ -3,7 +3,7 @@ category: essays
 title: Should designers code?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 published: true
-readingtime: 5
+readingTime: 5
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 updated: false
