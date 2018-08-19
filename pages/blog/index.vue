@@ -3,6 +3,7 @@
     post-excerpt(
       v-if="post.published"
       v-for="post in posts"
+      :body="post.body"
       :category="post.category"
       :date="post.date"
       :heroImage="post.heroImage"
@@ -12,6 +13,7 @@
       :permalink="post.permalink"
       :readingTime="post.readingTime"
       :thumbImage="post.thumbImage"
+      :showFullArticle="post.showFullArticle"
       :tags="post.tags"
       :title="post.title"
     )

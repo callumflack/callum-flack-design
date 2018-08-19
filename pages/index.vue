@@ -3,13 +3,21 @@ div
   header.Container.b-pb3(role="banner")
     .Adjacent
       h1.Heading.m-b3
-        | Callum Flack designs and develops website systems to reach each before all.
+        | Callum Flack designs and develops website systems your audience will trust in a heartbeat.
       h2.Text
-        span.fs-scale-reset
-          span.Meta.fw-bold Tiago Forte 
-        | —&nbsp;“Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
+        //- span.fs-scale-reset
+        //-   span.Meta.fw-bold Tiago Forte 
+        //- | —&nbsp;“Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
+        //- nuxt-link(to="/about") 
+        //-   em.Text--italic Learn more…
+
+        //- span.fs-scale-reset
+          //- span.Meta.fw-bold What I do 
+        //- | —&nbsp;
+        | To create change in people, you first have to win their emotional trust. We know this as branding. But in the digital age, your brand is tactile. People won't interact with your interfaces if they don't function seamlessly. The technology is inseparable from the brand. That's where I come in. I'm a brand designer who's fluid in code. 
         nuxt-link(to="/about") 
-          em.Text--italic Learn more…
+          em.Text--italic Learn more about me…
+      //- p.fs-text-sm (Why all the writing? Because 
 
   //- .Test
     p 
@@ -21,9 +29,10 @@ div
     article.Container
       .p-b4
         .Meta.u-textCenter 
-          span.fw-medium Pinned post
-          span.MetaSeparator • 
-          nuxt-link(to="/blog") see all →
+          span Pinned post
+          //- span.fw-medium Pinned post
+          //- span.MetaSeparator • 
+          //- nuxt-link(to="/blog") see all →
       post-excerpt.m-t0(
         v-for="post in homePagePost"
         :category="post.category"

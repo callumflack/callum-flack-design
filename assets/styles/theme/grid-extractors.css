@@ -57,8 +57,8 @@
     width: 80vw;
   } */
   @media (--su) {
-    left: calc(-27vw + 50%);
-    width: 54vw;
+    left: calc(-30vw + 50%);
+    width: 60vw;
   }
 }
 

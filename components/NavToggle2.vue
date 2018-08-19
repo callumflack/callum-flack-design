@@ -1,7 +1,7 @@
 <template lang="pug">
 .Toggle
-  // .Container(:class="{ 'Container--noRule': isVisible }")
-  .Container
+  //- .Container(:class="{ 'Container--noRule': isVisible }")
+  .Container.p-b1
     .Extract-large.Toggle-align.b-py2
       a.Toggle-anchor.Logo.u-fixed.z-top(
         href="#"
@@ -9,8 +9,8 @@
         :class="{ 'is-active': isVisible }"
       ) 
         span CFD
-      // span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
-      // span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
+      //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
+      //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
 
 </template>
 
@@ -76,7 +76,7 @@ export default {
   color: var(--c-highlight); */
 
   @media (--lg) {
-    left: -1rem;
+    left: -1.05rem;
   }
 }
 

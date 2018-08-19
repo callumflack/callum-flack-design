@@ -123,7 +123,7 @@ body {
  */
 
 .Button {
-  padding-top: 1px;
+  padding-top: 2px;
 }
 
 /* 
@@ -134,8 +134,8 @@ body {
 
 .MetaSeparator {
   display: inline-block;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: calc(0.5 * var(--responsive-typography-space));
+  margin-right: calc(0.5 * var(--responsive-typography-space));
 }
 
 .LinkSeparator {

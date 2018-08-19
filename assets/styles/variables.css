@@ -33,14 +33,14 @@
 
 :root {
   --responsive-space: 2rem;
-  --responsive-typography-space: 1rem;
+  --responsive-typography-space: 0.75rem;
   --responsive-hero: 24rem;
 }
 
 @media (--md) {
   :root {
     --responsive-space: 3rem;
-    --responsive-typography-space: 1.5rem;
+    --responsive-typography-space: 1rem;
     --responsive-hero: 38rem;
   }
 }
@@ -77,7 +77,7 @@
   @custom-media --md-landscape (min-width: 1024px);
   @custom-media --lg (min-width: 1280px);
   @custom-media --xl (min-width: 1500px);
-  @custom-media --su (min-width: 1900px);
+  @custom-media --su (min-width: 1760px);
 
   /*
 
@@ -92,8 +92,8 @@
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg: calc(672px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-lg: calc(846px + (2 * var(--grid-gutter)));
-  --container-xl: calc(1104px + (2 * var(--grid-gutter)));
+  --container-lg: 942px; /* calc(846px + (2 * var(--grid-gutter))) */
+  --container-xl: 1032px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
   --s-0: 0;
@@ -224,7 +224,7 @@
   --fs-text-unit: 1.1875;
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
-  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit));
+  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
   --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
@@ -233,7 +233,7 @@
   --fs-button: calc(0.736842105em * var(--fs-text-unit)); /* 14 */
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(0.947368421em * var(--fs-text-unit));
+  --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
   --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
   --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
   --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */

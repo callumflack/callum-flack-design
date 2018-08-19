@@ -1,26 +1,30 @@
 <template lang="pug">
-  .Excerpt
-    nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
-      .AspectRatio(:style="heroAspectStyle")
-        .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
-          ImageCld(:src="thumbImage || heroImage")
+  article.Excerpt
+    header(role="header")
+      nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+        .AspectRatio(:style="heroAspectStyle")
+          .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+            ImageCld(:src="thumbImage || heroImage")
 
-    .m-xA(:class="titleBlockClasses")
-      h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
-        nuxt-link(:to="permalink") {{ title }}
-      h2.Heading.u-textCenter.p-t2.m-b2(v-else)
-        nuxt-link(:to="permalink") {{ title }}
+      .m-xA(:class="titleBlockClasses")
+        h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
+          nuxt-link(:to="permalink") {{ title }}
+        h2.Heading.u-textCenter.p-t2.m-b2(v-else)
+          nuxt-link(:to="permalink") {{ title }}
 
-      .Meta.u-textCenter.u-block.p-t1
-        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span.MetaSeparator • 
-        span(v-if="category") {{ category }}
-        span.MetaSeparator(v-if="readingTime" ) • 
-        span(v-if="readingTime" ) {{ readingTime }} minutes
+        .Meta.u-textCenter.p-t1
+          time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+          span.MetaSeparator • 
+          span(v-if="category") {{ category }}
+          span.MetaSeparator(v-if="readingTime" ) • 
+          span(v-if="readingTime" ) {{ readingTime }} minutes
 
-    p.Text(v-if="lede")
-      | {{ lede }} 
-      nuxt-link.Text--italic(:to="permalink") Continue reading
+    main(role="main", :class="mainAlignClasses")
+      .Scope-post(v-if="showFullArticle")
+        nuxtent-body(:body="body")
+      p.Text(v-else)
+        | {{ lede }} 
+        nuxt-link.Text--italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
     .AspectRatio.AspectRatio--16x9
@@ -60,15 +64,15 @@ export default {
     …but it fails here. Prob due Nuxtent?
   */
   props: {
+    body: {
+      type: Object,
+      default: null
+    },
     category: {
       type: String,
       default: "blog"
     },
     date: String,
-    showOnHomePage: {
-      type: Boolean,
-      default: false
-    },
     heroImage: String,
     heroImageNoShadow: {
       type: Boolean,
@@ -82,6 +86,14 @@ export default {
     permalink: String,
     published: Boolean,
     readingTime: Number,
+    showOnHomePage: {
+      type: Boolean,
+      default: false
+    },
+    showFullArticle: {
+      type: Boolean,
+      default: false
+    },
     summary: String,
     tags: String,
     thumbImage: String,
@@ -102,6 +114,9 @@ export default {
         return "b-py2 w-md-5x6";
       }
       return "b-py0 w-lg-4x6";
+    },
+    mainAlignClasses() {
+      return !this.showOnHomePage === true && "p-t1";
     }
   }
 };

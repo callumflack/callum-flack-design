@@ -61,7 +61,7 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 
 <!-- Schedule: <a class="icon-targetBlank" target="_blank" href="https://calendly.com/callumflack">callumflack</a> -->
 
-You can also find me at these internet places:
+You can also find me on these internet places:
 
 - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a>
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
