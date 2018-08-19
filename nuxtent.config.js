@@ -10,28 +10,10 @@ module.exports = {
       }
     ],
     [
-      "projects",
-      {
-        page: "/_slug",
-        permalink: "/work/:slug",
-        isPost: true,
-        generate: ["get", "getAll"]
-      }
-    ],
-    [
       "posts",
       {
         page: "/_slug",
         permalink: "/blog/:slug",
-        isPost: true,
-        generate: ["get", "getAll"]
-      }
-    ],
-    [
-      "newsletter",
-      {
-        page: "/_slug",
-        permalink: "/newsletter/:slug",
         isPost: true,
         generate: ["get", "getAll"]
       }

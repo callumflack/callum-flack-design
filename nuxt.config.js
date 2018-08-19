@@ -58,8 +58,10 @@ module.exports = {
       // https://github.com/nuxt-community/nuxtent-module/issues/104
       "/",
       "/about",
-      "/work",
-      "/blog"
+      "/blog",
+      "/essays",
+      "/projects",
+      "/interesting"
     ]
   },
 
