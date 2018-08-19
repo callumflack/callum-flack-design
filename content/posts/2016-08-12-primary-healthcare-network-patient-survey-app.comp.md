@@ -14,7 +14,7 @@ heroRatio: 45
 tags: Design, Development
 ---
 
-Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a maintainable, easy to use that worked on any device, and securely stored patient responses.
+Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a maintainable, easy to use responsive website that worked on any screen size, and which securely stored patient responses.
 
 <!-- @[MarkdownMovie](laptop src="/images/phn-video.mp4") -->
 
