@@ -161,7 +161,10 @@ export default {
 }
 
 .nuxt-link-active {
-  color: var(--c-highlight);
+  /* show it as unselectable */
+  cursor: initial;
+  /* never make it red */
+  color: var(--c-text) !important;
 }
 
 .nuxt-link-active .Nav-link-lede {
