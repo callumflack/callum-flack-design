@@ -6,10 +6,10 @@ article
         ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
       .AspectRatio-object.Blend
         .Container
-          .Extract-hero.h-100
+          .Extract-super.h-100
             .f.f-alignItemsCenter.h-100
-              .w-8x12.w-md-7x12.ResponsivePadding
-                h1.Supertitle.c-bg
+              .w-8x12.w-md-7x12.w-su-5x12.ResponsivePadding
+                h1.Title.c-bg
                   | Callum works at the intersection between user experience, visual design &amp; code.
                 //- h2.Subheading.fw-regular.c-bg.w-10x12
                   | “…if the solution is not beautiful, I know it is wrong.” 
@@ -79,6 +79,12 @@ export default {
 
   @media (--lg) {
     padding-left: 0;
+  }
+}
+
+.w-su-5x12 {
+  @media (--su) {
+    width: calc(6 / 12 * 100%) !important;
   }
 }
 </style>
