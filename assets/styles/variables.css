@@ -272,7 +272,6 @@
    */
 
   --button-background-color: var(--c-text);
-  --button-border-color: inherit;
   --button-border-color: currentcolor;
   --button-border-radius: 0;
   --button-border-width: 2px;
