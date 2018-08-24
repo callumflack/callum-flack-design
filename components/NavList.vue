@@ -222,6 +222,7 @@ export default {
   border-left-color: currentColor;
   border-style: solid;
   border-width: 9px;
+  border-width: 0.28125em;
   content: "";
   display: inline-block;
   height: 0;
