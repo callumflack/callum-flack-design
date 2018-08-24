@@ -213,6 +213,10 @@ blockquote p {
   font-style: italic;
   padding-left: var(--s-3a);
 
+  @media (--mo) {
+    border-left: 1px solid var(--c-rule);
+  }
+
   @media (--sm) {
     padding-left: var(--s-3b);
   }

@@ -5,7 +5,7 @@
         .m-a0(v-if="heroImage", :class="heroExtractClasses")
           .AspectRatio(:style="heroAspectStyle")
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
-            .AspectRatio-object(:class="heroFrameClasses")
+            .AspectRatio-object(:class="heroObjectBgClasses")
               ImageCld(:src="heroImage")
         .b-py2.w-md-5x6.m-xA
           h1.Title.u-textCenter.p-t2.m-b3 {{ title }}
@@ -85,17 +85,15 @@ export default {
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
     },
-    heroFrameClasses() {
+    heroObjectBgClasses() {
       // const shadow = !this.heroImageNoShadow && "bg-text";
       // const project = this.category === "projects" && "Project-hero";
       // return { shadow, project };
-      if (!this.heroImageNoShadow) {
-        return "bg-text";
-      }
       // if (this.category === "projects" && !this.heroImageNoShadow) {
       //   return "Project-hero-shadow bg-text";
       // }
       // return "bg-text";
+      return !this.heroImageNoShadow && "bg-text";
     },
     scopeClasses() {
       // return this.category === "essays" && "Scope-post-figure Scope-post-dropcap";

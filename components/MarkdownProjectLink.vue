@@ -1,4 +1,5 @@
 <template lang="pug">
+p
   a.Button.icon-targetBlank.icon-targetBlank--withinButton(:href="link", target="_blank") {{ label }}
 </template>
 
@@ -13,4 +14,8 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.Button {
+  transform: translateX(-2px);
+}
 </style>

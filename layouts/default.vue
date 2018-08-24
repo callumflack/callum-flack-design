@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import NavToggle from "~/components/NavToggle2.vue";
+import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
 import NavList from "~/components/NavList.vue";
 

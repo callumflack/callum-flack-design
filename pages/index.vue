@@ -14,7 +14,7 @@ div
         //- span.fs-scale-reset
           //- span.Meta.fw-bold What I do 
         //- | —&nbsp;
-        | To create change in people, you first have to win their emotional trust. We know this as branding. But in the digital age, your brand is tactile. People won't interact with your interfaces if they don't function seamlessly. The technology is inseparable from the brand. That's where I come in. I'm a brand designer who's fluid in code. 
+        | To create change in people, you first have to win their emotional trust. We know this as branding. But in the digital age, your brand is tactile. People won't interact with you if your interfaces don't function seamlessly. The technology is inseparable from the brand. That's where I come in. I'm a brand designer who's fluid in code. 
         nuxt-link(to="/about") 
           em.Text--italic Learn more about me…
       //- p.fs-text-sm (Why all the writing? Because 

@@ -32,7 +32,7 @@
  */
 
 :root {
-  --responsive-space: 2rem;
+  --responsive-space: 1.5rem;
   --responsive-typography-space: 0.75rem;
   --responsive-hero: 24rem;
 }
@@ -160,9 +160,9 @@
   --c-neutral: hsl(48, 16%, 91%);
   --c-neutral: var(--c-bg);
 
-  --c-bg: #fafafa;
   --c-bg: #f2f2f2;
   --c-bg: #f7f7f7;
+  --c-bg: #fafafa;
   --c-white: white;
 
   --c-success: #ff3700;
@@ -281,7 +281,7 @@
   --button-box-shadow-stroke-inset: 1px;
   --button-color: var(--c-bg);
   --button-disabled-opacity: 0.6;
-  --button-height: calc(0.9 * var(--field-height));
+  --button-height: calc(1 * var(--field-height));
   --button-xpadding: 1.5em;
 
   /* typography */
@@ -318,7 +318,7 @@
   --field-height: 3rem;
   --field-space: 1rem 1.25rem;
   --figure-space: calc(2 * var(--space));
-  --figure-space-within-text: calc(0.25 * var(--space));
+  --figure-space-within-text: calc(0.25 * var(--responsive-space));
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);
@@ -335,4 +335,5 @@
    */
 
   --fixed-menu-height: 89px;
+  --toggle-x-align: -1.05rem;
 }

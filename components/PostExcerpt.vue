@@ -3,7 +3,7 @@
     header(role="header")
       nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
         .AspectRatio(:style="heroAspectStyle")
-          .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+          .AspectRatio-object.bg-text
             ImageCld(:src="thumbImage || heroImage")
 
       .m-xA(:class="titleBlockClasses")
@@ -107,6 +107,9 @@ export default {
       }
       return "Extract-edge";
     },
+    /* heroObjectBgClasses() {
+      return this.heroImageNoShadow ? "bg-text" : "bg-border";
+    }, */
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
     },

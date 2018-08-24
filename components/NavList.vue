@@ -188,6 +188,14 @@ export default {
   position: relative;
 }
 
+.page-blog .nuxt-link-active,
+.page-blog-page .nuxt-link-active {
+  /* show as selectable if in the blog */
+  cursor: pointer !important;
+  &:hover {
+    color: var(--c-link) !important;
+  }
+}
 .page-index .nuxt-link-active .Nav-link-lede:after {
   /* content: "— hello, you're welcome!"; */
 }

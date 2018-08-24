@@ -6,9 +6,9 @@ article
         ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
       .AspectRatio-object.Blend
         .Container
-          .Extract-super.h-100
+          .Extract-large.h-100
             .f.f-alignItemsCenter.h-100
-              .w-8x12.w-md-7x12.w-su-5x12.ResponsivePadding
+              .w-8x12.w-md-7x12.w-lg-8x12.ResponsivePadding
                 h1.Title.c-bg
                   | Callum works at the intersection between user experience, visual design &amp; code.
                 //- h2.Subheading.fw-regular.c-bg.w-10x12
@@ -75,10 +75,13 @@ export default {
 }
 
 .ResponsivePadding {
-  padding-left: calc(0.75 * var(--grid-gutter));
+  /* padding-left: calc(0.75 * var(--grid-gutter)); */
 
   @media (--lg) {
+    /* match toggle */
+    left: var(--toggle-x-align);
     padding-left: 0;
+    position: relative;
   }
 }
 

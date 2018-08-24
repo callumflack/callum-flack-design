@@ -73,13 +73,17 @@ export default {
   & > div {
     height: 100vh;
   }
+
+  /* theme */
+  @media (--mo) {
+    padding-top: calc(0.75 * var(--responsive-space));
+  }
 }
 
 .Modal.is-hidden {
   opacity: 0;
   transform: translateY(100vh);
-  transition: opacity var(--transition-duration),
-    transform 0s var(--transition-duration);
+  transition: opacity var(--transition-duration), transform 0s var(--transition-duration);
 }
 
 .Modal.is-transitioning {
@@ -107,8 +111,7 @@ export default {
 
   & .Text {
     background-image: linear-gradient(var(--c-border), var(--c-border)),
-      linear-gradient(var(--c-border), var(--c-border)),
-      linear-gradient(currentColor, currentColor);
+      linear-gradient(var(--c-border), var(--c-border)), linear-gradient(currentColor, currentColor);
   }
 }
 

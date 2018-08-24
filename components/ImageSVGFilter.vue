@@ -7,7 +7,7 @@
         </filter>
       </defs>
     </svg>
-     <v-lazy-image
+    <v-lazy-image
       :src="src"
       :src-placeholder="srcPlaceholder"
       @load="animate"
