@@ -54,7 +54,7 @@ export default {
     reverseButton: Boolean,
     videoRatio: {
       type: String,
-      default: 56.25
+      default: "56.25"
     }
   },
   data() {
