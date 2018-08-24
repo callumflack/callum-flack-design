@@ -9,6 +9,14 @@
   margin-left: calc(1 * var(--flex-grid-gutter));
 }
 
+.mo-FlexGridWrapper {
+  @media (--mo) {
+    /* use project's container theme */
+    margin-right: calc(0.75 * var(--grid-gutter));
+    margin-left: calc(0.75 * var(--grid-gutter));
+  }
+}
+
 .FlexGrid {
   display: flex;
   flex-direction: row;

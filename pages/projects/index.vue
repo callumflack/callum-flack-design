@@ -1,9 +1,9 @@
 <template lang="pug">
 .Container
-  header(role="header")
+  header.b-pb3(role="header")
     h1.Supertitle Selected projects
     //- p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
-    .Project-filter.b-pb3
+    //- .Project-filter
       .u-flex.u-flexJustifyBetween
         .Meta.m-a0 Filter by: 
         .Meta.c-textLight.m-a0
@@ -19,19 +19,20 @@
 
   main(role="main")
     .Extract-super
-      .FlexGrid.FlexGrid--noGrow
-        Project(
-          v-if="project.published && project.category === 'projects'"
-          v-for="project in visibleProjects"
-          :cloudinary="project.thumbInCloudinary"
-          :image="project.thumbImage"
-          :lede="project.lede"
-          :link="project.permalink"
-          :key="project.permalink"
-          :tags="project.tags"
-          :title="project.title"
-          :year="project.year"
-        )
+      .mo-FlexGridWrapper
+        .FlexGrid.FlexGrid--noGrow
+          Project(
+            v-if="project.published && project.category === 'projects'"
+            v-for="project in visibleProjects"
+            :cloudinary="project.thumbInCloudinary"
+            :image="project.thumbImage"
+            :lede="project.lede"
+            :link="project.permalink"
+            :key="project.permalink"
+            :tags="project.tags"
+            :title="project.title"
+            :year="project.year"
+          )
 
     <svg class='u-hiddenVisually'>
       <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
@@ -46,7 +47,7 @@
 </template>
 
 <script>
-import Project from "~/components/Project2.vue";
+import Project from "~/components/Project.vue";
 
 const allTagName = "All";
 

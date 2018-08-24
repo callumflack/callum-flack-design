@@ -13,6 +13,7 @@
           nuxt-link(:to="permalink") {{ title }}
 
         .Meta.u-textCenter.p-t1
+          //- time(:date-time="date") {{ date | moment("YYYY.MM.DD") }} ? NAH
           time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
           span.MetaSeparator • 
           span(v-if="category") {{ category }}
@@ -129,6 +130,11 @@ export default {
 .Excerpt {
   /* slight increase on .b-mt3 */
   margin-top: calc(2.25 * var(--responsive-space));
+
+  @media (--mo) {
+    /* matches .Project on mobile-only */
+    margin-top: calc(1.5 * var(--responsive-space));
+  }
 }
 
 .Excerpt:first-of-type {

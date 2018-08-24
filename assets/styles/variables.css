@@ -318,7 +318,7 @@
   --field-height: 3rem;
   --field-space: 1rem 1.25rem;
   --figure-space: calc(2 * var(--space));
-  --figure-space-within-text: calc(0.75 * var(--space));
+  --figure-space-within-text: calc(0.25 * var(--space));
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);

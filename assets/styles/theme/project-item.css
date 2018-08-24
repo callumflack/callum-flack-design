@@ -5,8 +5,9 @@
 }
 
 .Project {
-  // border-top: 1px solid var(--c-rule);
-  padding-bottom: var(--s-7);
+  /* border-top: 1px solid var(--c-rule); */
+  /* padding-bottom: var(--s-7); */
+  padding-bottom: calc(1.5 * var(--responsive-space));
 }
 
 .Project-filter {
