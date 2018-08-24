@@ -22,7 +22,7 @@ independent health communications agency. I helped transfer this reputation onli
 
 Poorly maintained content-managed websites cost significant time and effort to resurrect. To avoid this long-term expense, I researched CMS systems against a checklist of modern web development requirements, and settled on a [JAMstack](https://www.siteleaf.com/blog/jamstack-ecommerce/) (JavaScript, APIs, & Markup) setup that gave us git-based content-management, flexible third-party integrations and easy local web development.
 
-@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/ward6-mobile-screens-dark.png")
+@[ImageLazyCldOrig](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/ward6-mobile-screens-dark.png")
 
 > Callum's broad understanding of web systems allowed us to understand and choose better long-term decisions during our redevelopment. His diligence meant the final product really does represent what we had imagined. _— Jason Armstrong, Digital Director_
 
