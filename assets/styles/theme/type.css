@@ -32,7 +32,7 @@ p em,
   -------------------------------------------------
  */
 
-.Text--meta {
+/* .Text--meta {
   font-family: var(--ff-text-title-light), var(--ff-stack-sans);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--fs-meta);
@@ -40,7 +40,7 @@ p em,
   letter-spacing: 0.1em;
   line-height: 1;
   text-transform: uppercase;
-}
+} */
 
 .Meta {
   font-family: var(--ff-heading), var(--ff-stack-sans);
@@ -93,7 +93,7 @@ p em,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0;
 
