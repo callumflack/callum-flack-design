@@ -72,14 +72,18 @@ body {
   float: left;
   font-family: var(--ff-heading);
   font-family: var(--ff-text-lede);
-  font-size: 4.8em;
+  font-size: 3em;
   line-height: 1;
   /* margin-top: -1px; */
-  padding-top: 2px;
-  padding-right: 2rem;
+  padding-top: 3px;
+  padding-right: 0.666em;
 
   @media (--md) {
-    padding-right: 2.5rem;
+    font-size: 3.25em;
+  }
+  @media (--lg) {
+    padding-top: 4px;
+    font-size: 4.5em;
   }
 }
 

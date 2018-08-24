@@ -221,7 +221,7 @@
   --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.1875;
+  --fs-text-unit: 1.1875; /* 19 */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
   --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
