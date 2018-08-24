@@ -19,7 +19,7 @@ featured: true
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
 efficiency, flexibility and performance. As we progressed, I came to understand their vision and evolved their digital branding to match.
 
-@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
+@[MarkdownImage](extractLarge project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
 
 The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography.
 

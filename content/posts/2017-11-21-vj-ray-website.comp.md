@@ -26,7 +26,7 @@ My response was to focus on putting customers first by using portraits of real s
 
 Values of openness, honesty and accessibility are created through the interface design: strong, clear typography, with icons that highlight features, and reduced, straightforward forms.
 
-@[MarkdownMovie](reverseOverlay desktop large src="/images/vjray-video-group-desktop.mp4")
+@[MarkdownMovie](desktop large src="/images/vjray-video-group-desktop.mp4" videoRatio="52.0833333")
 
 VJ Ray's business is winning people's trust through their service. The new websites set the scene by being clear, fast and honest.
 

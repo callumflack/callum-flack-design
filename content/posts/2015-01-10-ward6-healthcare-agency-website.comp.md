@@ -18,7 +18,7 @@ featured: true
 With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading
 independent health communications agency. I helped transfer this reputation online with a mobile-first website that was easy to use, very fast and a cinch to update and maintain.
 
-@[MarkdownMovie](reverseOverlay large laptop src="/images/ward6-laptop-video.mp4")
+@[MarkdownMovie](large laptop poster="/images/ward6-laptop-video-poster.jpg" src="/images/ward6-laptop-video.mp4" videoRatio="70.3154762")
 
 Poorly maintained content-managed websites cost significant time and effort to resurrect. To avoid this long-term expense, I researched CMS systems against a checklist of modern web development requirements, and settled on a [JAMstack](https://www.siteleaf.com/blog/jamstack-ecommerce/) (JavaScript, APIs, & Markup) setup that gave us git-based content-management, flexible third-party integrations and easy local web development.
 
@@ -26,7 +26,7 @@ Poorly maintained content-managed websites cost significant time and effort to r
 
 > Callum's broad understanding of web systems allowed us to understand and choose better long-term decisions during our redevelopment. His diligence meant the final product really does represent what we had imagined. _— Jason Armstrong, Digital Director_
 
-The new Ward6 website allowed us to focus on repeatably presenting and distributing first-class work showcases, rather than wrestling with website technologies.
+The new Ward6 website allowed us to focus on repeatably presenting and distributing first-class campaign showcases, rather than wrestling with website technologies.
 
 @[MarkdownProjectLink](link="http://www.ward6.asia" label="Visit Ward6")
 

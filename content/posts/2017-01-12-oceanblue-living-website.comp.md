@@ -25,7 +25,7 @@ the 'craftsmanship' archetype central to their brand repositioning.
 
 > Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It creates better business for us.” _— LeaAnne Cassaniti, Owner_
 
-@[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4")
+@[MarkdownMovie](large laptop frame src="/images/oceanblueliving-video.mp4" videoRatio="69.4422442")
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372170/okok/oceanblueliving-visual-system.png") -->
 

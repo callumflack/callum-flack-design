@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Album Registry website & product
+title: Album Registry web app
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
@@ -21,7 +21,7 @@ be, and rebuild the platform for a community of photographers around the world.
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownMovie](reverseOverlay src="/images/albumregistry-block-registries.mp4")
+@[MarkdownMovie](reverseOverlay src="/images/albumregistry-block-registries.mp4" videoRatio="100")
 
 ## Built for future iteration
 
@@ -41,11 +41,12 @@ We aim to offer the Album Registry photographers three ways to do what they love
 
 <!-- @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg") -->
 
-Album Registry grows slowly but surely, and since joining as co-founder, I'm excited to
-focus on building tools that help photographers grow their business, and help people give the gift of memories.
+Album Registry grows slowly but surely, and since joining as co-founder in mid 2017, I'm excited to focus on building tools that help photographers grow their business, and help people give the gift of memories.
 
 <!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
 
 <!-- @[MarkdownButton](link="https://albumregistry.com" label="Visit Album Registry") -->
 
 @[MarkdownProjectLink](link="https://albumregistry.com" label="Visit Album Registry")
+
+@[MarkdownNote](note="Please note that as of June 2018, I'm no longer part of Album Registry.")
