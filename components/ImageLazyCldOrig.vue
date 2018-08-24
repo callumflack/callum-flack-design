@@ -128,7 +128,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .image {
-  /* position: relative; */
+  position: relative;
 }
 
 .image img {
