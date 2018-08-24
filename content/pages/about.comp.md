@@ -5,9 +5,9 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/c
 heroInCloudinary: true
 ---
 
-<!-- @[ImageLazyCldOrig](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
+<!-- @[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
 
-<!-- @[ImageLazyCldOrig](post local src="/images/cf-2.jpg") -->
+<!-- @[MarkdownImage](post local src="/images/cf-2.jpg") -->
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 

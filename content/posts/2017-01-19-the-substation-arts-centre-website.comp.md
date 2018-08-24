@@ -19,7 +19,7 @@ featured: true
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for
 efficiency, flexibility and performance. As we progressed, I came to understand their vision and evolved their digital branding to match.
 
-@[ImageLazyCldOrig](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
+@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
 
 The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography.
 
@@ -31,7 +31,7 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 <!-- We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made. -->
 
-<!-- @[ImageLazyCldOrig](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
+<!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
 > Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _— Brad Spolding, Managing Director_
 

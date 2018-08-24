@@ -15,7 +15,7 @@ This happens quickly. At a glance, we notice and assess the multitude of pattern
 
 Like a shadow felt but not consciously seen, we're hardly aware that the language of aesthetics is our first mode of understanding the world.
 
-@[ImageLazyCldOrig](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
+@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
 
 ## Danger and beauty
 
@@ -29,7 +29,7 @@ We are _drawn to beauty_ and _repelled by danger_.
 
 Danger and beauty are the two extremes on the spectrum of the language of aesthetics. When we sense danger, we do not think. Instead we react to avoid the situation. Beauty, however, invites us to think. To find beauty is to find information we can use in our favour.
 
-@[ImageLazyCldOrig](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
+@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
 
 <!-- caption="A Blue-ringed Octopus displays blue iridescent rings across their yellow-colored body when disturbed, hunting or mating. When calm, it displays an overall yellowish-beige colouration without any visible blue rings." -->
 
@@ -43,7 +43,7 @@ As an adrenalised response is the defense for a target animal, a beautiful invit
 
 _Beauty invites participation and attention._
 
-@[ImageLazyCldOrig](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
+@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
 
 ## Beauty is opportunity
 
@@ -61,7 +61,7 @@ In this way, a spreadsheet can absolutely contain beauty.
 
 _Humans naturally seek beauty in order to make use of it._
 
-@[ImageLazyCldOrig](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
+@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
 
 ## Irrational beauty matters more than we dare admit
 
