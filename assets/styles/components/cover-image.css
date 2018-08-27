@@ -1,6 +1,6 @@
 /* 
 
-  https://codepen.io/necolas/pen/Aksni 
+  http://nicolasgallagher.com/flexible-css-cover-images/
 
 */
 
@@ -12,10 +12,8 @@
   margin-right: auto;
 }
 
-/* THEME */
-
-.CoverImage--home:before {
-  background-color: rgba(137, 0, 99, 0.3);
+.CoverImage--withScreen:before {
+  background-color: var(--cover-image-screen-color);
   content: "";
   height: 100%;
   left: 0;

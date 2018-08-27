@@ -1,27 +1,30 @@
 <template lang="pug">
   div(:class="currentPageClass")
-    c-menu
-    .Page
-      nuxt
-      c-footer
+    NavToggle
+    nuxt.Page
+    .Container(:class="contentNavSpace")
+    footer
+      NavList
+    NavToggled
 </template>
 
 <script>
 import NavToggle from "~/components/NavToggle.vue";
 import NavToggled from "~/components/NavToggled.vue";
-import Footer from "~/components/Footer2.vue";
-import Menu from "~/components/Menu.vue";
+import NavList from "~/components/NavList.vue";
 
 export default {
   components: {
-    "c-toggle": NavToggle,
-    "c-nav-toggled": NavToggled,
-    "c-footer": Footer,
-    "c-menu": Menu
+    NavToggle,
+    NavToggled,
+    NavList
   },
   computed: {
-    currentPageClass: function() {
-      return `page-${this.$store.state.currentPage}`;
+    currentPageClass() {
+      return `fs-scale-reset page-${this.$store.state.currentPage}`;
+    },
+    contentNavSpace() {
+      return this.$route.name !== "interesting" && `b-pt4`;
     }
   }
 };
@@ -30,36 +33,21 @@ export default {
 <style lang="postcss">
 @import "../assets/styles/variables.css";
 
-.Page {
+/* .Page {
   background-color: var(--c-bg);
   min-height: 100vh;
-  /* padding-top: var(--fixedMenuHeight); */
+  padding-top: var(--fixed-menu-height);
   position: relative;
+  transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: 3;
-}
+} */
 
-.footer-spacer {
+/* .footer-spacer {
   display: none;
   height: 100vh;
 
   @media (--md) {
     display: block;
   }
-}
-
-.page-enter-active {
-  /* background-color: var(--c-bg); */
-  /* height: 100vh; */
-  /* opacity: 1; */
-  transition: opacity 0.15s;
-  /* width: 100vw; */
-  /* z-index: 999; */
-}
-.page-leave-active {
-  transition: opacity 0.15s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
+} */
 </style>

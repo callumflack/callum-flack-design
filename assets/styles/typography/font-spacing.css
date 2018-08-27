@@ -1,0 +1,70 @@
+/* 
+
+  Text spacing
+
+ */
+
+p,
+ul,
+ol,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h6,
+figure,
+* + button,
+* + .Button,
+.ParagraphSpace {
+  margin-bottom: var(--responsive-typography-space);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+figure {
+  padding: var(--figure-space-within-text) 0;
+}
+
+blockquote {
+  margin-top: calc(1.5 * var(--responsive-typography-space));
+  margin-bottom: calc(1.5 * var(--responsive-typography-space));
+}
+
+/*
+
+  Inline button spacing
+
+ */
+
+button + button,
+.Button + .Button {
+  margin-left: var(--button-inline-spacing);
+}
+
+/*
+
+  Heading spacing
+
+ */
+
+.Subtitle,
+.Title,
+.Supertitle {
+  margin-bottom: calc(1 * var(--responsive-typography-space));
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.Scope-post h2,
+.Scope-post h3,
+.Scope-post h4,
+.HeadingSpace {
+  &:not(:first-child) {
+    margin-top: calc(3 * var(--responsive-typography-space));
+  }
+}

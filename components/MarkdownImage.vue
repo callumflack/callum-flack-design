@@ -18,10 +18,17 @@ export default {
       type: String,
       required: true
     },
+    extractLarge: {
+      type: Boolean,
+      default: false
+    },
     square: Boolean,
     face: Boolean,
     portrait: Boolean,
-    project: Boolean,
+    project: {
+      type: Boolean,
+      default: false
+    },
     post: Boolean,
     large: Boolean,
     frame: Boolean,
@@ -32,11 +39,12 @@ export default {
       return [
         "figure",
         {
-          "figure--project": this.project,
-          "figure--post": this.post,
+          "b-my2": this.project,
+          "Extract-large": this.extractLarge
+          /* "figure--post": this.post,
           "figure--portrait": this.portrait,
           "figure--large": this.large,
-          "figure--frame": this.frame
+          "figure--frame": this.frame */
         }
       ];
     }
@@ -72,4 +80,8 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
+
+.figure img {
+  margin: 0 auto;
+}
 </style>

@@ -2,77 +2,69 @@
 
   Height
 
-  http://tachyons.io/docs/layout/heights/
-
 */
 
-/* Height Scale */
+/* Height scale */
 
 .h-1 {
-  height: var(--s-3);
+  height: var(--s-3) !important;
 }
 .h-2 {
-  height: var(--s-4);
+  height: var(--s-4) !important;
 }
 .h-3 {
-  height: var(--s-5);
+  height: var(--s-5) !important;
 }
 .h-4 {
-  height: var(--s-6);
+  height: var(--s-6) !important;
 }
 .h-5 {
-  height: var(--s-7);
+  height: var(--s-7) !important;
 }
 
-/* Height Percentages - Based off of height of parent */
+/* Height percentages - relative to the height of parent */
 
 .h-25 {
-  height: 25%;
+  height: 25% !important;
 }
 .h-50 {
-  height: 50%;
-}
-.h-66 {
-  height: calc(100% * 2 / 3);
+  height: 50% !important;
 }
 .h-75 {
-  height: 75%;
+  height: 75% !important;
 }
 .h-100 {
-  height: 100%;
+  height: 100% !important;
 }
 
 .min-h-100 {
-  min-height: 100%;
+  min-height: 100% !important;
 }
 
-/* Screen Height Percentage */
+/* Screen height percentage */
 
 .vh-25 {
-  height: 25vh;
+  height: 25vh !important;
 }
 .vh-50 {
-  height: 50vh;
-}
-.vh-66 {
-  height: calc(100vh * 2 / 3);
+  height: 50vh !important;
 }
 .vh-75 {
-  height: 75vh;
+  height: 75vh !important;
 }
 .vh-100 {
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .min-vh-100 {
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 
-/* String Properties */
+/* String properties */
 
 .h-auto {
-  height: auto;
+  height: auto !important;
 }
 .h-inherit {
-  height: inherit;
+  height: inherit !important;
 }

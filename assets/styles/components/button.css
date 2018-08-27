@@ -1,82 +1,30 @@
-/** @define Button */
-
-:root {
-  --Button-background-color: var(--c-text);
-  --Button-border-color: var(--c-text);
-  --Button-border-width: 1px;
-  --Button-color: var(--c-bg);
-  --Button-disabled-opacity: 0.6;
-  --Button-font: inherit;
-  --Button-font-weight: var(--fw-medium);
-  --Button-height: 4.25em;
-  --Button-padding: 0 2em;
-  --Button-radius: var(--border-radius);
-}
-
-/**
- * The button classes are best applied to links and buttons.
- * These components can be used in forms, as calls to action, or as part of the
- * general UI of the site/app.
- */
-
-/**
- * 1. Normalize `box-sizing` across all elements that this component could be
- *    applied to.
- * 2. Inherit text color from ancestor.
- * 3. Inherit font styles from ancestor.
- * 4. Prevent button text from being selectable.
- */
-
 .Button {
-  background-color: var(--Button-background-color);
-  border-color: var(--Button-border-color);
-  border-radius: var(--Button-radius);
+  align-items: center;
+  background-color: var(--button-background-color);
+  border-color: var(--button-border-color);
+  border-radius: var(--button-border-radius);
   border-style: solid;
-  border-width: var(--Button-border-width);
+  border-width: var(--button-border-width);
   box-sizing: border-box;
-  color: var(--Button-color);
-  display: inline-block;
-  height: var(--Button-height);
-  /* font: var(--Button-font);
-  font-weight: var(--Button-font-weight); */
-  line-height: inherit;
+  color: var(--button-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  height: var(--button-height);
+  justify-content: center;
   margin: 0;
-  padding: var(--Button-padding);
+  padding-left: var(--button-xpadding);
+  padding-right: var(--button-xpadding);
   position: relative;
-  text-align: center;
   text-decoration: none;
+  text-transform: var(--button-font-case);
   user-select: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-
-  /* flex style */
-  // align-items: center;
-  // display: inline-flex;
-  // height: var(--Button-height);
-  // justify-content: center;
-
-  /* pseudos */
-  &:hover {
-    // box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 0px 999px inset;
-    /* box-shadow: var(--Button-background-color) 0 0 0 2px; */
-  }
-
-  &:focus {
-    outline: 0;
-    box-shadow: var(--Button-background-color) 0 0 0 2px;
-  }
-
-  &:active {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px inset;
-  }
-
-  &:disabled {
-    opacity: var(--Button-disabled-opacity);
-  }
 }
 
-/**
- * Remove excess padding and border in Firefox 4+
+/*
+  Remove excess padding and border in Firefox 4+
  */
 
 .Button::-moz-focus-inner {
@@ -84,18 +32,18 @@
   padding: 0;
 }
 
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
+/*
+  Work around a Firefox/IE bug where the transparent `button` background
+  results in a loss of the default `button` focus styles.
  */
 
 .Button:focus {
-  // outline: 1px dotted;
-  // outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
-/**
- * UI states
+/*
+  UI states
  */
 
 .Button:hover,
@@ -104,31 +52,86 @@
   text-decoration: none;
 }
 
+.Button {
+  &:hover {
+    box-shadow: var(--button-box-shadow-color) 0 0 0 2px;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    box-shadow: var(--button-box-shadow-color) 0 0 0 3px;
+  }
+}
+
 .Button:disabled,
 .Button.is-disabled {
   cursor: default;
-  opacity: var(--Button-disabled-opacity);
+  opacity: var(--button-disabled-opacity);
 }
 
-/**
- * Variations
+/*
+  Variations
  */
 
-.Button--reverse {
-  background-color: var(--c-bg);
-  border-color: var(--c-text);
-  color: var(--c-text);
+.Button--alt {
+  --button-background-color: var(--c-highlight);
+  --button-box-shadow-color: var(--c-highlight);
+}
+
+.Button--outline {
+  --button-background-color: var(--c-bg);
+  --button-border-color: var(--c-brand);
+  --button-box-shadow-color: var(--c-brand);
+  --button-color: var(--c-brand);
 
   &:hover {
-    box-shadow: var(--c-bg) 0 0 0 2px;
+    border-color: var(--c-bg);
+    box-shadow: var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-inset) inset,
+      var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-hover);
   }
 
-  &:focus {
-    outline: 0;
-    box-shadow: var(--c-bg) 0 0 0 3px;
-  }
-
+  &:focus,
   &:active {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0 8px inset;
+    border-color: var(--c-bg);
+    box-shadow: var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-inset) inset,
+      var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-active);
+  }
+}
+
+.Button--outline-alt {
+  --button-background-color: var(--c-bg);
+  --button-border-color: var(--c-brand-highlight);
+  --button-box-shadow-color: var(--c-brand-highlight);
+  --button-color: var(--c-brand-highlight);
+
+  &:hover {
+    border-color: var(--c-bg);
+    box-shadow: var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-inset) inset,
+      var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-hover);
+  }
+
+  &:focus,
+  &:active {
+    border-color: var(--c-bg);
+    box-shadow: var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-inset) inset,
+      var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-active);
+  }
+}
+
+.Button--transparent {
+  --button-background-color: transparent;
+  --button-border-color: transparent;
+  --button-box-shadow-color: var(--c-text);
+
+  &:hover {
+    border-color: none;
+    box-shadow: initial;
+  }
+
+  &:focus,
+  &:active {
+    border-color: none;
+    box-shadow: initial;
   }
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
   .FixedMenu(:class="navBar")
-    .container
+    .Container
       nav.u-flex.u-flexJustifyCenter
         div
           c-menulink.Meta(
@@ -148,14 +148,14 @@ export default {
   }
   to {
     opacity: 0;
-    top: calc(-1 * var(--fixedMenuHeight));
+    top: calc(-1 * var(--fixed-menu-height));
   }
 }
 
 @keyframes open {
   from {
     opacity: 0;
-    top: calc(-1 * var(--fixedMenuHeight));
+    top: calc(-1 * var(--fixed-menu-height));
   }
   to {
     opacity: 1;

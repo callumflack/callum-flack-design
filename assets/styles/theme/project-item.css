@@ -1,37 +1,47 @@
-.project,
-.project-filter {
+.Project,
+.Project-filter {
   display: block;
   text-decoration: initial;
 }
 
-.project {
-  // border-top: 1px solid var(--c-rule);
-  padding-top: var(--s-4);
-  padding-bottom: var(--s-4);
-
-  &:first-of-type {
-    padding-top: 0;
-  }
+.Project {
+  /* border-top: 1px solid var(--c-rule); */
+  /* padding-bottom: var(--s-7); */
+  padding-bottom: calc(1.5 * var(--responsive-space));
 }
 
-.project-filter {
-  border-bottom: 1px solid var(--c-text);
+.Project-filter {
+  /* border-bottom: 1px solid var(--c-text);
   padding-top: 0;
-  padding-bottom: calc(0.666 * var(--s-3));
+  padding-bottom: calc(0.666 * var(--s-3)); */
 
   & a {
     margin-left: var(--s-3);
   }
 }
 
-/* use the SVG filter that's secreted on work/index */
-.project:hover img {
-  filter: url("#blur");
-  /* filter: grayscale(50%); */
-  transition: filter 250ms ease-out;
+.Project:hover {
+  color: var(--c-text);
 }
 
-.project img {
-  /* filter: grayscale(0%); */
+.Project:hover .Project-tags {
+  /* color: var(--c-text); */
+}
+
+.Project:hover p {
+  color: var(--c-text);
+}
+
+.Project img {
+  /* filter: grayscale(100%); */
+  filter: grayscale(1);
+  /* opacity: 0.5; */
   transition: filter 750s ease-in;
+}
+
+.Project:hover img {
+  /* use the SVG filter that's secreted on work/index */
+  /* filter: url("#blur"); */
+  filter: grayscale(0);
+  transition: filter 3000ms ease-out;
 }

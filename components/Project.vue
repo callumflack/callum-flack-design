@@ -1,30 +1,28 @@
 <template lang="pug">
-  nuxt-link.project(:to="link")
-    .FlexGrid--sm
-      .u-sm-size1of2
-        figure
-          c-lazyimage(v-if="thumbInCloudinary", :src="image", project)
-          img(v-else, :src="image")
-      .u-sm-size1of2
-        .u-flex.u-flexAlignContentStretch.h-100
-          .u-flex.u-flexAlignItemsCenter
-            div
-              h2.Title.Title--project {{ title }}
-              .u-block.Meta.c-textLight
-                span(v-if="year") {{ year }}
-                span.m-x2 •
-                span(v-if="tags") {{ tags }}
-                //- span(v-html="lede")
+.w-md-1x2.w-lg-1x3
+  nuxt-link.Project(:to="link")
+    .AspectRatio.AspectRatio--4x3.bg-text
+      .AspectRatio-object
+        ImageLazy(:src="image")
+    .b-my0
+      h2.Subheading.Project-headline.p-t1.m-b2 {{ title }}
+      .Meta.Project-tags
+        // span(v-if="year") {{ year }}
+        // span.m-x2 •
+        span(v-if="tags") {{ tags }}
+      p.m-t3(v-html="lede")
 </template>
 
 
 <script>
-import LazyImage from "~/components/LazyImage.vue";
+import ImageLazy from "~/components/ImageLazyCldOrig.vue";
+import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 
 export default {
   name: "post",
   components: {
-    "c-lazyimage": LazyImage
+    ImageLazy,
+    ImageSVGFilter
   },
   props: {
     link: String,
@@ -41,16 +39,4 @@ export default {
 
 <style scoped>
 @import "../assets/styles/variables.css";
-
-.project:hover {
-  color: var(--c-text);
-}
-
-.m-r3plus {
-  margin-right: var(--s-3a) !important;
-}
-.m-x3plus {
-  margin-right: var(--s-3a) !important;
-  margin-left: var(--s-3a) !important;
-}
 </style>

@@ -1,32 +1,36 @@
 <template lang="pug">
-.toggle.promote
-  .toggle-logo
-    //- a.icon-tap(href="#", @click.prevent="handleNavToggle")
-    nuxt-link.icon-tap(to="/")
-      .icon.Heading
-        span.u-lg-hidden Menu
-        //- span.u-hidden.u-lg-block.tracking ☰ CF/d
-        //- span.u-hidden.u-lg-block.tracking CF/d
-        span.u-hidden.u-lg-block.tracking 
-          span.caps CF
-          span.italic d
+.Toggle
+  //- .Container(:class="{ 'Container--noRule': isVisible }")
+  .Container.p-b1
+    .Extract-large.Toggle-align.b-py2
+      a.Toggle-anchor.Logo.u-fixed.z-top(
+        href="#"
+        @click.prevent="handleNavToggle"
+        :class="{ 'is-active': isVisible }"
+      ) 
+        span CFD
+      //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
+      //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
+
 </template>
 
 <script scoped>
 export default {
-  name: "toggle",
   components: {},
   computed: {
-    isVisible: function() {
+    isVisible() {
       return this.$store.state.isMobileNavVisible;
+    },
+    currentPageName() {
+      if (this.$store.state.currentPage !== "index") {
+        return this.$store.state.currentPage;
+      }
     }
   },
-
   methods: {
     handleNavToggle() {
       this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
     },
-
     hideNav() {
       this.$store.commit("SET_MODAL_VISIBILITY", false);
     }
@@ -34,86 +38,61 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 @import "../assets/styles/variables.css";
 
-.toggle {
-  position: fixed;
-  right: calc(0.75 * var(--grid-gutter));
-  bottom: calc(0.75 * var(--grid-gutter));
-  transform: translate(0, -0.1em);
-  z-index: 100;
+.Toggle {
+  display: block;
 
-  /* y */
-  @media (--sm) {
-    bottom: var(--grid-gutter);
-  }
-  @media (--md) {
-    /* top: var(--grid-gutter); */
-  }
-  @media (min-width: 769px) {
-    bottom: auto;
-    top: var(--grid-gutter);
-  }
-  @media (min-width: 1460px) {
-    top: var(--s-7);
-  }
-
-  /* x */
-  @media (--sm) {
-    right: var(--grid-gutter);
-  }
-  /*@media (min-width: 1136px) {*/
-  @media (min-width: 1460px) {
-    left: calc((100 - 90) * 0.5vw);
-    right: auto;
-  }
-  @media (min-width: 1840px) {
-    left: calc((100 - 66) * 0.5vw);
-  }
-
-  /* box-shadow on mobile */
-  border-radius: 999px;
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15), 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
-
-  @media (--lg) {
-    box-shadow: initial;
-    transition: box-shadow 1s ease;
-
-    &:hover {
-      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15),
-        0px 9px 50px 0px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 1s ease;
-    }
-  }
+  /* &:hover {
+    background-color: var(--c-highlight);
+    color: var(--c-text);
+  } */
 }
 
-/* don't display on mobile home page */
-.page-index .toggle {
-  display: none;
-
-  @media (--md) {
-    display: block;
-  }
+.Toggle-align {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  height: calc(2 * var(--responsive-space) + 36px);
 }
 
-.toggle-logo {
-  position: relative;
+.Toggle-anchor {
+}
+
+.Toggle-anchor span {
+  align-items: center;
+  border: 2px solid var(--c-text);
   background-color: var(--c-bg);
-  /* border: 1px solid currentColor; */
-  border-radius: 999px;
-  padding: 9px 14px 8px 15px;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  /* padding: 2px 0.55rem 0 0.85rem; */
+  padding: 2px 0.35rem 0 0.8rem;
+  position: relative;
 
-  &:before {
-    /* content: "\2630"; */
-    font-size: 112%;
-    margin-right: 3px;
-  }
+  /* theme */
+  /* border-color: var(--c-highlight);
+  color: var(--c-highlight); */
 
   @media (--lg) {
-    background-color: transparent;
-    padding: 6px 11px 4px 12px;
+    left: var(--toggle-x-align);
   }
+}
+
+.Toggle-anchor:hover {
+  background-image: initial;
+}
+
+.Toggle-anchor:hover span,
+.Toggle-anchor.is-active span {
+  background-color: var(--c-highlight);
+  border-color: var(--c-highlight);
+  color: var(--c-bg);
+}
+
+.Toggle-anchor.is-active span {
+  color: var(--c-border);
 }
 
 .icon-tap {
@@ -123,20 +102,5 @@ export default {
 
 .icon {
   padding: calc(0.5 * var(--grid-gutter));
-}
-
-/* .icon-logo, */
-.icon-logo svg {
-  height: calc(0.75 * 19px);
-  width: calc(0.75 * 50px);
-
-  @media (--sm) {
-    height: 19px;
-    width: 50px;
-  }
-}
-
-.tracking {
-  letter-spacing: 0.07em;
 }
 </style>

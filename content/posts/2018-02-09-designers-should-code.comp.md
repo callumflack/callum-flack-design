@@ -1,8 +1,10 @@
 ---
+category: essays
 title: Should designers code?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 published: true
-readingtime: 5
+readingTime: 5
+thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 updated: false
 note: Many thanks to Michael Fogleman for his input.<br>This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.
@@ -13,7 +15,7 @@ tweet: https://twitter.com/callumflack
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack richness because they design away suppossedly unneccessary interconnections, reducing them to tree structures.
 
-@[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post)
+<!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post) -->
 
 As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally complex [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. **The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time.** Put it this way: if you tried to recreate Melbourne's laneways from scratch, all “Melbourne-ness” would be lost.
 

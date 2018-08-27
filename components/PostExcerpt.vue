@@ -1,57 +1,146 @@
 <template lang="pug">
-  .Excerpt
-    .u-lg-size10of12.m-xAuto
-      h1.Title.u-textCenter
-        nuxt-link(:to="link") {{ title }}
-      .u-block.Text--sm.c-textLight.u-textCenter
-        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span.MetaSeparator(v-if="readingtime") • 
-          span {{ readingtime }} minutes
-    
-    nuxt-link.u-block.figure(v-if="heroImage", :to="link")
-      c-image(:src="heroImage" post wrappedInLink)
-    
-    p.Text.p-t2(v-if="lede")
-      | {{ lede }} 
-      nuxt-link(:to="link") Read
+  article.Excerpt
+    header(role="header")
+      nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+        .AspectRatio(:style="heroAspectStyle")
+          .AspectRatio-object.bg-text
+            ImageCld(:src="thumbImage || heroImage")
 
-    p.Text.c-textLight.u-textCenter.p-t3(v-if="summary")
-      em {{ summary }} 
+      .m-xA(:class="titleBlockClasses")
+        h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
+          nuxt-link(:to="permalink") {{ title }}
+        h2.Heading.u-textCenter.p-t2.m-b2(v-else)
+          nuxt-link(:to="permalink") {{ title }}
 
+        .Meta.u-textCenter.p-t1
+          //- time(:date-time="date") {{ date | moment("YYYY.MM.DD") }} ? NAH
+          time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+          span.MetaSeparator • 
+          span(v-if="category") {{ category }}
+          span.MetaSeparator(v-if="readingTime" ) • 
+          span(v-if="readingTime" ) {{ readingTime }} minutes
+
+    main(role="main", :class="mainAlignClasses")
+      .Scope-post(v-if="showFullArticle")
+        nuxtent-body(:body="body")
+      p.Text(v-else)
+        | {{ lede }} 
+        nuxt-link.Text--italic(:to="permalink") Continue reading
+
+  //- .Extract-hero.m-a0
+    .AspectRatio.AspectRatio--16x9
+      .AspectRatio-object.bg-text
+        ImageCld(
+          src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
+        )
+    .Excerpt
+      header.b-my2.w-lg-5x6.m-xA(role="banner")
+        h1.Title.u-textCenter.p-t3 
+          nuxt-link(to="/blog") The brief, the scope and the dance
+        .Meta.u-textCenter.u-block
+          time July 2nd, 2018
+          span.MetaSeparator • 
+            span 8 minutes
+      p.Text
+        | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
+        nuxt-link.Text--italic(to="/blog") Continue reading
 </template>
 
 
 <script>
-import LazyImage from "~/components/LazyImage.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import moment from "vue-moment";
 
 export default {
-  name: "post-excerpt",
   components: {
-    "c-image": LazyImage
+    ImageCld,
+    moment
   },
+  /* 
+    Can refactor to accept a single post prop: 
+    https://vuejs.org/v2/guide/components.html
+    
+    props: ["post"]
+
+    …but it fails here. Prob due Nuxtent?
+  */
   props: {
-    post: Boolean,
-    published: String,
-    link: String,
-    title: String,
+    body: {
+      type: Object,
+      default: null
+    },
+    category: {
+      type: String,
+      default: "blog"
+    },
     date: String,
-    readingtime: Number,
     heroImage: String,
+    heroImageNoShadow: {
+      type: Boolean,
+      default: false
+    },
+    heroRatio: {
+      type: Number,
+      default: 56.25
+    },
     lede: String,
-    summary: String
+    permalink: String,
+    published: Boolean,
+    readingTime: Number,
+    showOnHomePage: {
+      type: Boolean,
+      default: false
+    },
+    showFullArticle: {
+      type: Boolean,
+      default: false
+    },
+    summary: String,
+    tags: String,
+    thumbImage: String,
+    title: String
+  },
+  computed: {
+    heroExtractClasses() {
+      if (this.showOnHomePage === true) {
+        return "Extract-hero";
+      }
+      return "Extract-edge";
+    },
+    /* heroObjectBgClasses() {
+      return this.heroImageNoShadow ? "bg-text" : "bg-border";
+    }, */
+    heroAspectStyle() {
+      return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
+    },
+    titleBlockClasses() {
+      if (this.showOnHomePage === true) {
+        return "b-py2 w-md-5x6";
+      }
+      return "b-py0 w-lg-4x6";
+    },
+    mainAlignClasses() {
+      return !this.showOnHomePage === true && "p-t1";
+    }
   }
 };
 </script>
 
 
-<style scoped>
+<style>
 @import "../assets/styles/variables.css";
 
-.RuleMargin {
-  margin-bottom: calc(1.25 * var(--s-3a));
+.Excerpt {
+  /* slight increase on .b-mt3 */
+  margin-top: calc(2.25 * var(--responsive-space));
+
+  @media (--mo) {
+    /* matches .Project on mobile-only */
+    margin-top: calc(1.5 * var(--responsive-space));
+  }
 }
 
-.TimeMargin {
-  margin-bottom: var(--s-3);
+.Excerpt:first-of-type {
+  margin: 0;
 }
 </style>

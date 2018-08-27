@@ -1,28 +1,42 @@
 <template lang="pug">
-main
-  .container
-    c-post(
-      :link="page.permalink"
-      :title="page.title"
-      :date="page.date"
-      :readingtime="page.readingtime"
-      :body="page.body"
-      :updated="page.updated"
-      :note="page.note"
-    )
-  .container.p-b7
+div
+  Post(
+    :body="page.body"
+    :category="page.category"
+    :date="page.date"
+    :heroImage="page.heroImage"
+    :heroImageNoShadow="page.heroImageNoShadow"
+    :heroRatio="page.heroRatio"
+    :link="page.permalink"
+    :note="page.note"
+    :readingTime="page.readingTime"
+    :tags="page.tags"
+    :title="page.title"
+    :updated="page.updated"
+  )
+  //- .Container.p-b7
     .figure.figure--post
-      c-signup
+      NewsletterSignupBlock
 </template>
 
 <script>
 import Post from "~/components/Post.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   components: {
-    "c-post": Post,
-    "c-signup": NewsletterSignupBlock
+    Post
+  },
+  data() {
+    return {
+      page: {}
+    };
+  },
+  async asyncData({ app, route }) {
+    const page = await app.$content("/posts").get(route.path);
+
+    return {
+      page
+    };
   },
   head() {
     return {
@@ -35,24 +49,6 @@ export default {
         }
       ]
     };
-  },
-  data() {
-    return {
-      posts: []
-    };
-  },
-  async asyncData({ app, route }) {
-    const page = await app.$content("/posts").get(route.path);
-    const posts = await app.$content("/posts").getAll();
-
-    return {
-      page,
-      posts
-    };
   }
 };
 </script>
-
-<style lang="postcss">
-@import "../../assets/styles/variables.css";
-</style>

@@ -4,35 +4,24 @@
 
 */
 
-/**
-  Useful pin mixins.
- */
-
-@define-mixin pin {
+.u-absolutePin {
   bottom: 0;
   height: 100%;
   left: 0;
   margin: auto;
+  position: absolute;
   top: 0;
   width: 100%;
 }
 
-@define-mixin absolutePin {
-  @mixin pin;
-  position: absolute;
-}
-
-.u-absolutePin {
-  @mixin absolutePin;
-}
-
-@define-mixin fullScreen {
-  @mixin pin;
-  position: fixed;
-}
-
 .u-fullScreen {
-  @mixin fullScreen;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /**

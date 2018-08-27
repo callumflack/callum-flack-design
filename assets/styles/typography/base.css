@@ -1,7 +1,6 @@
 /* 
 
   The web is typography.
-
   1. font-feature-settings from http://fadeyev.net 
 
 */
@@ -9,11 +8,11 @@
 html {
   background-color: var(--c-bg);
   color: var(--c-text);
-  font-family: var(--ff-text-regular), var(--ff-stack-serif);
+  font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: var(--ft-text);
-  line-height: var(--fl-text);
+  letter-spacing: var(--fls-text);
+  line-height: var(--flh-regular);
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -21,25 +20,36 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font-size: 16px;
+}
+
 /*
-  <size you want>/(16*1.125)
-  Example: 18/(16*1.125) = x
+
+  Resets
+
  */
 
-body,
-.MarkdownScope-reset {
-  font-size: 0.833333333rem !important; /*15pt*/
+p,
+ul,
+ol,
+li,
+em,
+strong {
+  font-style: normal;
+}
 
-  @media (max-width: 320px) {
-    font-size: 0.722222222rem !important; /*13pt*/
-  }
-  @media (--sm) {
-    font-size: 0.888888889rem !important; /*16pt*/
-  }
-  @media (--md) {
-    font-size: 0.944444444rem !important; /*17pt*/
-  }
-  @media (--lg) {
-    font-size: 1rem !important; /*18pt*/
-  }
+em,
+strong {
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: normal;
 }

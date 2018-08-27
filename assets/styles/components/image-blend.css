@@ -1,0 +1,72 @@
+/*
+
+  Image blend
+  
+  http://codepen.io/Guilh/pen/LEQWev?editors=110
+  https://sarasoueidan.com/demos/css-blender/
+  http://una.im/CSSgram/
+  https://css-tricks.com/css3-gradients/
+  https://css-tricks.com/snippets/css/css-linear-gradient/
+
+ */
+
+/*
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+@mixin icon twitter {
+    background: url(twt.png);
+}
+@mixin icon youtube, red {
+    background: url(youtube.png);
+}
+*/
+
+@define-mixin imageBlend $color: var(--initial-blend-color) {
+  background-blend-mode: multiply;
+  background-color: $color;
+}
+
+.ImageBlend {
+  @mixin imageBlend;
+
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/*
+.o-imageBlend--deep       { @include imageBlend($color: rgba( palette(brand-purplemud), 0.9 ) ); }
+.o-imageBlend--dark       { @include imageBlend($color: $darkBlendColor); }
+.o-imageBlend--grey       { @include imageBlend($color: $greyBlendColor); }
+.o-imageBlend--light      { @include imageBlend($blend: overlay, $color: $lightBlendColor); }
+.o-imageBlend--whiten     { @include imageBlend($blend: overlay, $color: $whiteBlendColor); filter: grayscale(100%); }
+
+.o-imageBlend--brand      { @include imageBlend($color: $brandBlendColor); }
+.o-imageBlend--brandLight { @include imageBlend($color: $brandLightBlendColor); }
+
+.o-imageBlend--gradient   { @include imageBlend($gradient: true); }
+
+.o-imageBlend--darkGradient:after { 
+    @include o-posFullScreen(absolute);
+    background-image: linear-gradient( rgba( palette(black), 0 ), rgba( palette(black), 1 ) 100% ); 
+    background-image: linear-gradient( rgba( palette(brand-purplemud), 0 ), rgba( palette(brand-purplemud), 1 ) 100% ); 
+    //background-image: linear-gradient( rgba( $color-brand-purplemud-dark, 0 ), rgba( $color-brand-purplemud-dark, 1 ) 100% ); 
+    background-blend-mode: multiply;
+    content: "";
+}
+
+.o-imageBlend--stormGradient:after { 
+    @include o-posFullScreen(absolute);
+    background-image: linear-gradient( rgba( 30, 27, 34, 0 ), rgba( 30, 27, 34, 0.85 ) 70% ); 
+    background-blend-mode: multiply;
+    content: "";
+}
+*/

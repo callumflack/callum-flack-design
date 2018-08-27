@@ -1,36 +1,33 @@
 <template lang="pug">
-  a.u-block(
-    :class="currentPage"
-    :href='link'
-    target="_blank"
-    v-if="external"
+  nuxt-link(
+    :class="classes"
+    :to="link"
+    :exact="exact"
   )
     span {{ label }}
-  nuxt-link.u-block.ruled(
-    :class="currentPage"
-    :to='link'
-    :exact="exact"
-    v-else
-  )
-    .u-flex.u-flexJustifyBetween
-      span.Heading {{ label }}
-      span.Text(v-if="year") {{ year }}
 </template>
 
 <script>
 export default {
   name: "NavLink",
-
   props: {
     label: String,
     year: String,
     link: String,
+    block: Boolean,
     external: Boolean,
     exact: Boolean
   },
-
   computed: {
-    currentPage() {
+    classes() {
+      return [
+        "Nav-link",
+        {
+          "Nav-link--block": this.block
+        }
+      ];
+    }
+    /* currentPage() {
       let classes = ["link"];
       if (this.link === this.$store.state.currentPage) {
         classes.push("is-active");
@@ -40,41 +37,11 @@ export default {
         classes.push("");
       }
       return classes.join(" ");
-    }
+    } */
   }
 };
 </script>
 
 <style scoped>
 @import "../assets/styles/variables.css";
-
-li {
-  display: inline-block;
-  font-size: 1rem;
-}
-
-li + li {
-  margin-left: var(--s-3);
-}
-
-.link {
-}
-
-.ruled {
-  border-top: 1px solid;
-  border-bottom: 0 solid;
-  border-color: var(--c-text);
-  padding: var(--s-3a) 0 var(--s-3a);
-
-  &:last-of-type {
-    border-bottom-width: 1px;
-  }
-}
-
-.footer .ruled {
-  border-color: var(--c-border);
-}
-
-/*.link.is-active
-.nuxt-link-active*/
 </style>

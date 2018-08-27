@@ -1,11 +1,10 @@
 <template lang="pug">
 p
-  a.Button(:href="link", target="_blank") {{ label }}
+  a.Button.icon-targetBlank.icon-targetBlank--withinButton(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>
 export default {
-  name: "markdown-project-link",
   props: {
     link: String,
     label: String
@@ -16,7 +15,7 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
-a + a {
-  margin-left: 12px;
+.Button {
+  transform: translateX(-2px);
 }
 </style>

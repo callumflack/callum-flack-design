@@ -1,0 +1,249 @@
+/*
+  -------------------------------------------------
+
+  Text
+
+  -------------------------------------------------
+ */
+
+p,
+ul,
+.Meta,
+.Text,
+.Text--sm,
+.Text--meta,
+blockquote p em {
+  font-size: var(--fs-text);
+  font-weight: 400;
+  letter-spacing: var(--fls-text);
+  line-height: var(--flh-regular);
+}
+
+p em,
+.Text--italic {
+  font-style: italic;
+}
+
+/* 
+  -------------------------------------------------
+  
+  Metas
+
+  -------------------------------------------------
+ */
+
+/* .Text--meta {
+  font-family: var(--ff-text-title-light), var(--ff-stack-sans);
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-size: var(--fs-meta);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+} */
+
+.Meta {
+  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-size: var(--fs-meta);
+  /* font-size: 12px; */
+  /* font-weight: 500; */
+  letter-spacing: var(--fls-loose);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* 
+  -------------------------------------------------
+  
+  Headings
+  
+  Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document.
+
+  -------------------------------------------------
+ */
+
+.Minorheading,
+.Scope-post h3,
+.nl-content h3 {
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  /* resetting ems before applying font sizing: */
+  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
+  font-size: var(--fs-subheading);
+  font-weight: 600;
+  /* letter-spacing: 0.05em;
+  line-height: var(--flh-regular);
+  text-transform: uppercase; */
+}
+
+/* 
+  -------------------------------------------------
+
+  Ginto
+
+  -------------------------------------------------
+*/
+
+.Subheading,
+.Scope-post h2,
+.Heading,
+.Subtitle,
+.Subtitle--light,
+.Title--lede,
+.Title--light,
+.Title,
+.Supertitle {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  & a:hover {
+    color: var(--c-link);
+  }
+}
+
+.Subheading,
+.Scope-post h2 {
+  font-size: var(--fs-subheading);
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  line-height: 1.333;
+}
+
+.Heading {
+  font-size: var(--fs-heading);
+  line-height: 1.333;
+}
+
+.Subtitle--lede,
+.Subtitle--light,
+.Subtitle {
+  font-size: calc(0.75 * var(--fs-subtitle));
+
+  @media (--sm) {
+    font-size: calc(0.85 * var(--fs-subtitle));
+  }
+  @media (--md) {
+    font-size: calc(0.95 * var(--fs-subtitle));
+  }
+  @media (--lg) {
+    font-size: var(--fs-subtitle);
+  }
+}
+
+.Title--lede,
+.Title--light,
+.Title {
+  font-size: calc(0.7 * var(--fs-title));
+
+  @media (--sm) {
+    font-size: calc(0.8 * var(--fs-title));
+  }
+  @media (--md) {
+    font-size: calc(0.9 * var(--fs-title));
+  }
+  @media (--lg) {
+    font-size: var(--fs-title);
+  }
+}
+
+.Supertitle {
+  font-size: calc(0.45 * var(--fs-supertitle));
+
+  @media (--sm) {
+    font-size: calc(0.55 * var(--fs-supertitle));
+  }
+  @media (--md) {
+    font-size: calc(0.666 * var(--fs-supertitle));
+  }
+  @media (--md-landscape) {
+    font-size: calc(0.8 * var(--fs-supertitle));
+  }
+  @media (--lg) {
+    font-size: var(--fs-supertitle);
+  }
+}
+
+.Subtitle--light,
+.Title--light {
+  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-weight: 200;
+}
+
+/* Tiempos Headline */
+.Subtitle--lede,
+.Title--lede {
+  font-family: var(--ff-lede), var(--ff-stack-serif);
+  /* font-size: var(--fs-subtitle); */
+  font-weight: 300;
+  letter-spacing: var(--fls-touch-positive);
+  line-height: var(--flh-regular);
+}
+
+/* 
+  -------------------------------------------------
+
+  LOGO
+
+  -------------------------------------------------
+*/
+
+.Logo {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.666em;
+
+  & a:hover {
+    color: var(--c-link);
+  }
+}
+
+/*
+  -------------------------------------------------
+
+  blockquote (not incl. spacing)
+
+  -------------------------------------------------
+ */
+
+blockquote p {
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-style: italic;
+  padding-left: var(--s-3a);
+
+  @media (--mo) {
+    border-left: 1px solid var(--c-rule);
+  }
+
+  @media (--sm) {
+    padding-left: var(--s-3b);
+  }
+
+  /* &:before {
+    content: "“";
+    display: block;
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+  } */
+
+  & p {
+    border: initial;
+    padding: initial;
+  }
+}
+
+blockquote p em {
+  display: table;
+  /* resetting ems before applying font sizing: */
+  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important;
+}
+
+/* blockquote em {
+  margin-top: 3px;
+
+  @media (--lg) {
+    margin-top: 6px;
+  }
+} */

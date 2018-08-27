@@ -1,59 +1,104 @@
 <template lang="pug">
-  article.block--matchFixedMenuTop
-    header.figure--bottomSpace.u-lg-size10of12.m-xAuto(role="banner")
-      h1.Title.u-textCenter
-        nuxt-link(:to="link") {{ title }}
-      .u-block.Text--sm.c-textLight.u-textCenter
-        time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-        span.MetaSeparator • 
-        span {{ readingtime }} minutes
-      
-    c-image(v-if="heroImage" src="heroImage" post)
+  article
+    header(role="banner")
+      .Container
+        .m-a0(v-if="heroImage", :class="heroExtractClasses")
+          .AspectRatio(:style="heroAspectStyle")
+            //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+            .AspectRatio-object(:class="heroObjectBgClasses")
+              ImageCld(:src="heroImage")
+        .b-py2.w-md-5x6.m-xA
+          h1.Title.u-textCenter.p-t2.m-b3 {{ title }}
+
+          .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
+            time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            span.MetaSeparator • 
+            span(v-if="category") {{ category }}
+            span.MetaSeparator(v-if="readingTime" ) • 
+            span(v-if="readingTime" ) {{ readingTime }} minutes
+          .Meta.u-textCenter.p-t1(v-else)
+            time(:date-time="date") {{ date | moment("YYYY") }}
+            span.MetaSeparator • 
+            span(v-if="category") {{ category }}
+            span.MetaSeparator •
+            span {{ tags }}
 
     main(role="main")
-      .MarkdownScope
-        no-ssr
+      .Container
+        .Scope-post(:class="scopeClasses")
+          // no-ssr
           nuxtent-body(:body="body")
 
-    .HeadingSpace(v-if="updated || note")
-      hr
-      p.Text.c-textLight(v-if="updated") Updated: {{ updated }}
-      p.Text.c-textLight(v-if="note", v-html="note")
-    .block--py7
-      .u-textCenter.Lede *&nbsp;&nbsp;*&nbsp;&nbsp;*
-
-    //- .block--mt6(v-if="tweet")
-      p.Heading.m-b0.u-textCenter Comments?
-      p.Text.u-textCenter
-        a.visualLink.c-text.icon-targetblank(:href="tweet", target="_blank") Twitter
+    //- .Post-note.HeadingSpace(v-if="updated || note")
+      hr.ParagraphSpace
+      p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
+      p.fs-text-sm.c-textLight(v-if="note", v-html="note")
+    
 </template>
 
 <script>
 import moment from "vue-moment";
-import LazyImage from "~/components/LazyImage.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
 
 export default {
   name: "post",
   components: {
     moment,
-    "c-image": LazyImage
+    ImageCld
   },
   props: {
-    published: Boolean,
-    link: String,
-    title: String,
-    date: String,
-    readingtime: Number,
-    heroImage: String,
     body: Object,
-    updated: Boolean,
+    category: String,
+    date: String,
+    heroImage: String,
+    heroImageNoShadow: {
+      type: Boolean,
+      default: false
+    },
+    heroRatio: {
+      type: Number,
+      default: 56.25
+    },
+    link: String,
     note: String,
-    tweet: String
+    published: Boolean,
+    readingTime: Number,
+    src: String,
+    tags: {
+      type: String,
+      default: null
+    },
+    title: String,
+    tweet: String,
+    updated: Boolean
+  },
+  computed: {
+    heroExtractClasses() {
+      if (this.category === "projects") {
+        return "Extract-super";
+      }
+      return "Extract-hero";
+    },
+    heroAspectClasses() {
+      return this.heroRatio && `AspectRatio--${this.heroRatio}`;
+    },
+    heroAspectStyle() {
+      return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
+    },
+    heroObjectBgClasses() {
+      // const shadow = !this.heroImageNoShadow && "bg-text";
+      // const project = this.category === "projects" && "Project-hero";
+      // return { shadow, project };
+      // if (this.category === "projects" && !this.heroImageNoShadow) {
+      //   return "Project-hero-shadow bg-text";
+      // }
+      // return "bg-text";
+      return !this.heroImageNoShadow && "bg-text";
+    },
+    scopeClasses() {
+      // return this.category === "essays" && "Scope-post-figure Scope-post-dropcap";
+      return this.category === "essays" && "Scope-post-dropcap";
+    }
   }
 };
 </script>
-
-
-<style scoped>
-@import "../assets/styles/variables.css";
-</style>

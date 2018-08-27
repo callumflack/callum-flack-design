@@ -1,0 +1,66 @@
+/* 
+
+  Container theme
+
+ */
+
+.Container {
+  /* THEME */
+  /* border-left: 1px solid var(--c-rule);
+  border-right: 1px solid var(--c-rule); */
+  padding-left: calc(0.75 * var(--grid-gutter));
+  padding-right: calc(0.75 * var(--grid-gutter));
+  position: relative;
+
+  @media (--md) {
+    padding-left: calc(1 * var(--grid-gutter));
+    padding-right: calc(1 * var(--grid-gutter));
+  }
+
+  @media (--md-landscape) {
+    &:before {
+      background-color: var(--c-rule);
+      content: " ";
+      display: block;
+      height: 100%;
+      left: -1px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      /* transform: translateY(-100%); */
+      width: 1px;
+      z-index: 9999;
+    }
+  }
+}
+
+.Container--noRule:before {
+  content: none;
+}
+
+.Container--super {
+  max-width: 100%;
+  padding: 0;
+
+  @media (--sm) {
+    padding: 0 1.5vw;
+  }
+  @media (--md) {
+    padding: 0 3vw;
+  }
+  @media (--lg) {
+    padding: 0 5vw;
+  }
+  @media (--xl) {
+    padding: 0 10vw;
+  }
+
+  /* @media (min-width: 1136px) {
+    // left: calc(-45vw + 50%);
+    max-width: 90vw;
+  }
+  @media (min-width: 1840px) {
+    // left: calc(-33vw + 50%);
+    max-width: 66vw;
+  } */
+}

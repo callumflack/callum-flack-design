@@ -1,12 +1,21 @@
-/*
-  
-  Variables
+/* eslint-disable */
+/* prettier-ignore */
 
-  Notes on css custom properties & postcss-custom-properties:
+/* 
+
+
+
+
+
+
+
+  Responsive custom properties!
+  
+  On css custom properties & postcss-custom-properties:
   Single variables within media queries are a great idea:
   https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
   …but postcss-custom-properties limits vars to the `:root`:
-  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —> https://github.com/postcss/postcss-custom-properties
+  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —  https://github.com/postcss/postcss-custom-properties
   
   :root { --s-title: 20px; }
 
@@ -14,31 +23,79 @@
     :root { --s-title: 40px; }
   }
 
-*/
 
-/* eslint-disable */
-/* prettier-ignore */
+
+
+
+
+
+ */
 
 :root {
-  @custom-media --sm (min-width: 512px);
-  @custom-media --md (min-width: 768px);
-  @custom-media --lg (min-width: 1280px);
-  @custom-media --xl (min-width: 1600px);
+  --responsive-space: 1.5rem;
+  --responsive-typography-space: 0.75rem;
+  --responsive-hero: 24rem;
+}
 
- /*
+@media (--md) {
+  :root {
+    --responsive-space: 3rem;
+    --responsive-typography-space: 1rem;
+    --responsive-hero: 38rem;
+  }
+}
+
+@media (--lg) {
+  :root {
+    --responsive-space: 4rem;
+    --responsive-hero: 47rem;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+  Every other custom property
+
+
+
+
+
+
+
+ */
+
+:root {
+  @custom-media --mo (max-width: 512px); /* mo = mobile only */
+  @custom-media --sm (min-width: 513px);
+  @custom-media --md (min-width: 768px);
+  @custom-media --md-landscape (min-width: 1024px);
+  @custom-media --lg (min-width: 1280px);
+  @custom-media --xl (min-width: 1500px);
+  @custom-media --su (min-width: 1760px);
+
+  /*
 
     Sizes
 
   */
 
-  --space: 1rem;
+  --space: 1.5rem;
   --grid-gutter: calc(2 * var(--space));
+  --flex-grid-gutter: calc(0.75 * var(--space));
 
-  --container: calc(640px + (2 * var(--grid-gutter)));
-  --container-md: calc(960px + (2 * var(--grid-gutter)));
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
-  --container-rg-img: 800px;
-  
+  --container-rg: calc(672px + (2 * var(--grid-gutter)));
+  --container-md: calc(960px + (2 * var(--grid-gutter)));
+  --container-lg: 942px; /* calc(846px + (2 * var(--grid-gutter))) */
+  --container-xl: 1032px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
+  --container-su: calc(1344px + (2 * var(--grid-gutter)));
+
   --s-0: 0;
   --s-1: 0.25rem;
   --s-2: 0.5rem;
@@ -51,7 +108,7 @@
   --s-5: 2.5rem;
   --s-6: 4rem;
   --s-7: 6rem;
-  
+
   --rs-1: 0.25rem;
   --rs-2: 0.5rem;
   --rs-3: 1rem;
@@ -60,26 +117,26 @@
   --rs-5: 5rem;
   --rs-6: 9rem;
   --rs-7: 13rem;
-  
-  --border-radius: 2px;
-  --field-spacing: 1rem 1.25rem;
-  --inlineBlockChildrenSpace: var(--space);
 
   /* 
     
     Colors
   
    */
-   
+
   --c-brand: #00ffff;
   --c-brandHover: #00ffff;
   --c-brandLight: #00ffff;
   --c-highlight: rgba(255, 235, 0, 0.25);
-  --c-highlight: #FCF7C9;
+  --c-highlight: #fcf7c9;
   --c-highlight: #47caf5;
   --c-link: #bd0a20;
   --c-link: #f53813;
   --c-link: #f51713;
+  --c-link: #f52b13;
+  --c-link: #9411c5;
+  --c-link: #e4b830; /* yellow */
+  --c-link: #e62f0d; /* red */
   --c-highlight: var(--c-link);
 
   --c-black: black;
@@ -88,16 +145,26 @@
   --c-text: var(--c-ash);
   --c-text: #050505;
   --c-textLight: #999;
+  --c-textUnderline: rgba(5, 5, 5, 0.5);
+
   --c-gray: #aaa;
-  --c-border: #ccc;
-  --c-rule: #e5e5e5;
+  --c-border: #ddd;
+  --c-rule: rgba(0, 0, 0, 0.125);
   --c-device: #e7e7e7;
+
   --c-neutral: #eee;
-  --c-bg: #fafafa;
+  --c-neutral: #fae592;
+  --c-neutral: #fae592;
+  --c-neutral: hsl(48, 36%, 86%);
+  --c-neutral: hsl(48, 44%, 87%);
+  --c-neutral: hsl(48, 16%, 91%);
+  --c-neutral: var(--c-bg);
+
   --c-bg: #f2f2f2;
   --c-bg: #f7f7f7;
+  --c-bg: #fafafa;
   --c-white: white;
-  
+
   --c-success: #ff3700;
   --c-warning: #ff3700;
   --c-danger: #ff3700;
@@ -108,84 +175,165 @@
   
    */
 
+  --ff-text: "TiemposText";
   --ff-text-regular: "Regular";
   --ff-text-regular-italic: "RegularItalic";
   --ff-text-medium: "Medium";
   --ff-text-bold: "Bold";
-  --ff-text-lede: "Lede";
 
-  --ff-text-meta: "Meta";
-  --ff-text-subheading: "Subheading";
-  --ff-title: "Title";
-  
+  --ff-lede: "TiemposHeadline";
+  --ff-text-meta: var(--ff-title);
+  --ff-text-subheading: var(--ff-title);
+  --ff-text-subheading: var(--ff-text-bold);
+
+  --ff-heading: "GintoNord";
+  --ff-title: "GintoNord";
+
   --ff-button: var(--ff-text-regular);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
-  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ff-stack-sans: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --ff-stack-text: var(--ff-stack-serif);
+  --ff-stack-heading: var(--ff-stack-sans);
 
   /* 
   
     Font sizes
     For your thoughts: http://type-scale.com/
+
+    The maths:
+
+    <text-unit> * 16 * 1
+    1.1875 * 16 * 1 = 19pt
+
+    <desired-pt-size>/<text-unit>/16 * 16
+    48/19/16 * 16
+
+    <desired-pt-size>/<responsive-text-unit-in-px>/16 * 16
+    27/13/16 * 16
    
    */
 
-  --fs-text-unit: 1.125;
+  --rfs-0: 0.79rem; /* 12pt */
+  --rfs-1: 0.8425rem; /* 13pt */
+  --rfs-2: 0.895rem; /* 14pt */
+  --rfs-3: 0.95rem; /* 15pt */
+  --rfs-4: 1rem; /* 16pt */
 
+  --fs-text-unit: 1.1875; /* 19 */
+
+  --fs-text-xs: calc(1em * var(--fs-text-unit));
+  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
   --fs-text: calc(1em * var(--fs-text-unit));
-  --fs-meta: calc(0.7em * var(--fs-text-unit));
-  --fs-subheading: calc(0.925em * var(--fs-text-unit));
+  --fs-text-md: calc(1em * var(--fs-text-unit));
+  --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
+  --fs-meta: calc(0.631578947em * var(--fs-text-unit)); /* 12 */
+  --fs-button: calc(0.684210526em * var(--fs-text-unit)); /* 13 */
+  --fs-button: calc(0.736842105em * var(--fs-text-unit)); /* 14 */
+
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-title: calc(2em * var(--fs-text-unit));
-
-  /* 
-
-    Font weights
-
-   */
-
-  --fw-light: 200;
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-bold: 700;  
+  --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
+  --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
+  --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
+  --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
+  --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
+  --fs-supertitle: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
+  --fs-supertitle: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
 
   /* 
   
-    Font leading (line-height) and font tracking (letter-spacing)
+    Font leading (line-height), tracking (letter-spacing) & weights
    
    */
-  
-  --ft-text: -0.001em;
-  --ft-meta: 0.00625em;
-  --ft-caps: 0.1em;
-  --ft-heading: -0.0025em;
-  --ft-super: -0.005em;
 
-  --fl-text: 1.5;
+  --fls-text: -0.001em;
+  --fls-meta: 0.00625em;
+  --fls-caps: 0.1em;
+  --fls-heading: -0.0025em;
+  --fls-super: -0.005em;
 
-  --ft-tight: -0.005em;
-  --ft-regular: 0;
-  --ft-loose: 0.01em;
+  --fls-tight: -0.005em;
+  --fls-touch-negative: 0;
+  --fls-regular: 0;
+  --fls-touch-positive: 0.02em;
+  --fls-loose: 0.1em;
 
-  --fl-tight: 1.15;
-  --fl-regular: 1.4;
-  --fl-loose: 1.7;
-
-  /* 
-  
-    Transitions 
-  
-   */
-
-  --transition-duration: 0.2s;
-  --transition-delayed: 0.4s;
-  --transition-debounce: 2.5s;
+  --flh-super: 1;
+  --flh-tight: 1.15;
+  --flh-reduced: 1.3333;
+  --flh-regular: 1.5;
+  --flh-loose: 1.55;
 
   /* 
-  
-    Project theme 
-  
+
+    Button
+
    */
 
-  --fixedMenuHeight: 89px;
+  --button-background-color: var(--c-text);
+  --button-border-color: currentcolor;
+  --button-border-radius: 0;
+  --button-border-width: 2px;
+  --button-box-shadow-color: var(--c-text);
+  --button-box-shadow-stroke-hover: 2px;
+  --button-box-shadow-stroke-active: 3px;
+  --button-box-shadow-stroke-inset: 1px;
+  --button-color: var(--c-bg);
+  --button-disabled-opacity: 0.6;
+  --button-height: calc(1 * var(--field-height));
+  --button-xpadding: 1.5em;
+
+  /* typography */
+  --button-font-case: uppercase;
+  --button-font-family: var(--ff-heading), var(--ff-stack-sans);
+  --button-font-size: var(--fs-button);
+  --button-font-weight: 400;
+  --button-letter-spacing-case: var(--fls-loose);
+  --button-text-alignment: 0;
+
+  /* button + button inline spacing */
+  --button-inline-spacing: var(--s-2);
+
+  /* 
+
+    Transitions
+
+   */
+
+  --speed: 0.15s;
+  --easing: ease-out;
+  --cubic-static: cubic-bezier(0, -0.1, 1, -0.1);
+  --cubic-state: cubic-bezier(0, 1.1, 1, 1.1);
+  --thisalso: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* 
+
+    Utility variables
+
+   */
+
+  --border-radius: 4px;
+  --cover-image-screen-color: rgba(0, 0, 0, 0.25);
+  --field-height: 3rem;
+  --field-space: 1rem 1.25rem;
+  --figure-space: calc(2 * var(--space));
+  --figure-space-within-text: calc(0.25 * var(--responsive-space));
+  --figcaption-margin-top: 0.5rem;
+  --figcaption-font-weight: 400;
+  --figcaption-text-color: var(--c-text-light);
+  --horizontal-rule-color: var(--c-rule);
+  --horizontal-rule-space: 0;
+  --inline-block-children-space: calc(1.25 * var(--s-3));
+  --progress-height: 32px;
+  --text-link-decoration: none;
+
+  /* 
+
+    Theme
+
+   */
+
+  --fixed-menu-height: 89px;
+  --toggle-x-align: -1.05rem;
 }

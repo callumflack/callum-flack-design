@@ -68,6 +68,9 @@
 .bg-brand {
   background-color: var(--c-brand) !important;
 }
+.bg-highlight {
+  background-color: var(--c-highlight) !important;
+}
 .bg-black {
   background-color: black;
 }
@@ -93,10 +96,10 @@
   background-color: var(--c-border) !important;
 }
 .bg-neutral {
-  background-color: var(--c-brand) !important;
+  background-color: var(--c-neutral) !important;
 }
 .bg-bg {
-  background-color: var(--c-brand) !important;
+  background-color: var(--c-bg) !important;
 }
 .bg-white {
   background-color: white;
