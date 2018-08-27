@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/TiemposText-Medium.otf") format("woff");
+  src: url("~static/fonts/TiemposText-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -36,9 +36,7 @@
 }
 @font-face {
   font-family: var(--ff-lede);
-  src: url("~static/fonts/TiemposHeadline-Regular.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Light.woff") format("woff");
-  src: url("~static/fonts/TiemposHeadline-LightItalic.otf") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -47,26 +45,25 @@
 
 @font-face {
   font-family: var(--ff-heading);
-  src: url("~static/fonts/Ginto-Light.woff2") format("woff2");
-  src: url("~static/fonts/GintoNord-Thin.otf") format("woff");
+  src: url("~static/fonts/GintoNord-Thin.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-heading);
-  src: url("~static/fonts/GintoNord-Regular.otf") format("woff");
+  src: url("~static/fonts/GintoNord-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-heading);
-  src: url("~static/fonts/GintoNord-Medium.otf") format("woff");
+  src: url("~static/fonts/GintoNord-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
-  src: url("~static/fonts/GintoNord-Bold.otf") format("woff");
+  src: url("~static/fonts/GintoNord-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
