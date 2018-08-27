@@ -2,7 +2,7 @@
 
 Value prop, folio and blog.
 
-![Project screen-shot](screen-shot.png?raw=true "Project screen-shot")
+![Project screen-shot](screen-shot.jpg?raw=true "Project screen-shot")
 
 ## Build Setup
 
