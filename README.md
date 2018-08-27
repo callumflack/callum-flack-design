@@ -1,6 +1,6 @@
 # Callum Flack Design
 
-Value prop, folio and blog.
+Value prop, folio and blog — this branch is the one where I used Newlyn's "Atten" sans. Was done ~June 2018.
 
 ![Project screen-shot](screen-shot.png?raw=true "Project screen-shot")
 
