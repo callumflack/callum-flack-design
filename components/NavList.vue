@@ -12,7 +12,9 @@ nav.Nav-list
       )
         span.Extract-large-unit.Subtitle--light.Nav-link-level {{ item.level }}
         span.Subtitle.Nav-link-label {{ item.label }}
-        span.Subtitle.fw-light.Nav-link-lede {{ item.lede }}
+        span.Subtitle.fw-light.Nav-link-lede(v-if="item.lede") 
+          span ---
+          | {{ item.lede }}
 
       .Extract-large-inset
         p.Meta.fw-bold Contact
@@ -69,7 +71,7 @@ export default {
         {
           label: "Interesting",
           level: "04",
-          lede: "— it's a mailing list",
+          lede: "it’s a mailing list",
           link: "/interesting"
         },
         {
@@ -142,6 +144,11 @@ export default {
   margin-left: 0.5rem;
   transform: translateY(0.7rem);
 
+  & span {
+    letter-spacing: -0.175em;
+    margin-right: 0.75rem;
+  }
+
   @media (--md) {
     display: inline;
   }
@@ -180,7 +187,6 @@ export default {
   /* content: "— you're here"; */
   /* content: "✳"; */
   display: inline-block;
-
   font-family: var(--ff-lede), var(--ff-stack-serif);
   font-weight: 400;
   font-style: italic;
