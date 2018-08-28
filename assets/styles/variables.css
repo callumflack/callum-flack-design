@@ -271,12 +271,12 @@
    */
 
   --button-background-color: var(--c-text);
-  --button-border-color: currentcolor;
+  --button-border-color: var(--c-text);
   --button-border-radius: 0;
-  --button-border-width: 2px;
+  --button-border-width: 0;
   --button-box-shadow-color: var(--c-text);
-  --button-box-shadow-stroke-hover: 2px;
-  --button-box-shadow-stroke-active: 3px;
+  --button-box-shadow-stroke-hover: 1px;
+  --button-box-shadow-stroke-active: 2px;
   --button-box-shadow-stroke-inset: 1px;
   --button-color: var(--c-bg);
   --button-disabled-opacity: 0.6;
@@ -288,7 +288,7 @@
   --button-font-family: var(--ff-button), var(--ff-stack-sans);
   --button-font-size: var(--fs-button);
   --button-font-weight: 400;
-  --button-letter-spacing-case: var(--fls-loose);
+  --button-letter-spacing: var(--fls-loose);
   --button-text-alignment: 0;
 
   /* button + button inline spacing */

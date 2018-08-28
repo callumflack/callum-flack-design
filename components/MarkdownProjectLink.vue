@@ -14,7 +14,7 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
-.Button {
+/* .Button {
   transform: translateX(-2px);
-}
+} */
 </style>

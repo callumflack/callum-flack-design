@@ -42,7 +42,6 @@ export default {
     buttonClasses() {
       return [
         "Button",
-        "Meta",
         {
           "Button--reverse": this.reverse
         }
@@ -76,5 +75,9 @@ export default {
   &:focus {
     border-color: var(--c-text);
   }
+}
+
+.Button {
+  --button-border-color: transparent;
 }
 </style>
