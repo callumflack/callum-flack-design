@@ -70,8 +70,7 @@ body {
  */
 .Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
-  font-family: var(--ff-heading);
-  font-family: var(--ff-text-lede);
+  font-family: var(--ff-lede);
   font-size: 3em;
   line-height: 1;
   /* margin-top: -1px; */

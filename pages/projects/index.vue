@@ -21,7 +21,7 @@
     .Extract-super
       .mo-FlexGridWrapper
         .FlexGrid.FlexGrid--noGrow
-          Project(
+          ProjectExcerpt(
             v-if="project.published && project.category === 'projects'"
             v-for="project in visibleProjects"
             :cloudinary="project.thumbInCloudinary"
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import Project from "~/components/Project.vue";
+import ProjectExcerpt from "~/components/ProjectExcerpt.vue";
 
 const allTagName = "All";
 
@@ -66,7 +66,7 @@ function projectTagStringToList(projectTags) {
 export default {
   name: "projects",
   components: {
-    Project
+    ProjectExcerpt
   },
   head() {
     return {

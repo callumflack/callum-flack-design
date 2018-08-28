@@ -14,9 +14,9 @@ div
         //- span.fs-scale-reset
           //- span.Meta.fw-bold What I do 
         //- | —&nbsp;
-        | To create change in people, you first have to win their emotional trust. We know this as branding. But in the digital age, your brand is tactile. People won't interact with you if your interfaces don't function seamlessly. The technology is inseparable from the brand. That's where I come in. I'm a brand designer who's fluid in code. 
+        | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if your interfaces aren't seamless. That's where I come in. I'm a brand identity designer who codes. 
         nuxt-link(to="/about") 
-          em.Text--italic Learn more about me…
+          em.Text--italic Learn more about me
       //- p.fs-text-sm (Why all the writing? Because 
 
   //- .Test
@@ -117,5 +117,6 @@ export default {
 .Adjacent {
   border: 2px solid var(--c-text);
   padding: 1.5rem 1.75rem;
+  padding: calc(0.375 * var(--responsive-space)) calc(0.3925 * var(--responsive-space));
 }
 </style>

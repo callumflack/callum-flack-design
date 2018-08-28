@@ -116,12 +116,12 @@ export default {
 
 .Nav-link {
   background-image: none;
-  padding-bottom: calc(0.5 * var(--responsive-space));
+  padding-bottom: calc(1 * var(--responsive-space));
   text-decoration: none;
 
-  @media (--lg) {
+  /* @media (--lg) {
     padding-bottom: var(--responsive-space);
-  }
+  } */
 }
 
 .Nav-link:last-of-type {
@@ -158,6 +158,10 @@ export default {
 .Nav-link,
 .Nav-link:hover {
   background-image: initial;
+}
+
+.Nav-link-label {
+  margin-bottom: 0;
 }
 
 .nuxt-link-active {
@@ -229,7 +233,7 @@ export default {
   border-color: transparent;
   border-left-color: currentColor;
   border-style: solid;
-  border-width: 9px;
+  /* border-width: 9px; */
   border-width: 0.28125em;
   content: "";
   display: inline-block;

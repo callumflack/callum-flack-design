@@ -189,7 +189,7 @@
   --ff-heading: "GintoNord";
   --ff-title: "GintoNord";
 
-  --ff-button: var(--ff-text-regular);
+  --ff-button: var(--ff-text-meta);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
   --ff-stack-sans: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -229,8 +229,7 @@
   --fs-text-md: calc(1em * var(--fs-text-unit));
   --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
   --fs-meta: calc(0.631578947em * var(--fs-text-unit)); /* 12 */
-  --fs-button: calc(0.684210526em * var(--fs-text-unit)); /* 13 */
-  --fs-button: calc(0.736842105em * var(--fs-text-unit)); /* 14 */
+  --fs-button: var(--fs-meta);
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
@@ -286,7 +285,7 @@
 
   /* typography */
   --button-font-case: uppercase;
-  --button-font-family: var(--ff-heading), var(--ff-stack-sans);
+  --button-font-family: var(--ff-button), var(--ff-stack-sans);
   --button-font-size: var(--fs-button);
   --button-font-weight: 400;
   --button-letter-spacing-case: var(--fls-loose);

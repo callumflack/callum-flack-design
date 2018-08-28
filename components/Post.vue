@@ -8,7 +8,7 @@
             .AspectRatio-object(:class="heroObjectBgClasses")
               ImageCld(:src="heroImage")
         .b-py2.w-md-5x6.m-xA
-          h1.Title.u-textCenter.p-t2.m-b3 {{ title }}
+          h1.Title.u-textCenter.p-t2.m-b2 {{ title }}
 
           .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
@@ -20,8 +20,8 @@
             time(:date-time="date") {{ date | moment("YYYY") }}
             span.MetaSeparator • 
             span(v-if="category") {{ category }}
-            span.MetaSeparator •
-            span {{ tags }}
+            //- span.MetaSeparator •
+            //- span {{ tags }}
 
     main(role="main")
       .Container

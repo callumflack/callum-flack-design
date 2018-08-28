@@ -8,10 +8,8 @@
 
 p,
 ul,
-.Meta,
 .Text,
 .Text--sm,
-.Text--meta,
 blockquote p em {
   font-size: var(--fs-text);
   font-weight: 400;
@@ -45,8 +43,7 @@ p em,
 .Meta {
   font-family: var(--ff-heading), var(--ff-stack-sans);
   font-size: var(--fs-meta);
-  /* font-size: 12px; */
-  /* font-weight: 500; */
+  font-weight: 400;
   letter-spacing: var(--fls-loose);
   line-height: 1;
   text-transform: uppercase;
@@ -134,7 +131,7 @@ p em,
 .Title--lede,
 .Title--light,
 .Title {
-  font-size: calc(0.7 * var(--fs-title));
+  font-size: calc(0.6 * var(--fs-title));
 
   @media (--sm) {
     font-size: calc(0.8 * var(--fs-title));
