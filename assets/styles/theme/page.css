@@ -76,6 +76,7 @@ body {
   /* margin-top: -1px; */
   padding-top: 3px;
   padding-right: 0.666em;
+  padding-bottom: 0.25em;
 
   @media (--md) {
     font-size: 3.25em;
