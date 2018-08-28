@@ -29,6 +29,8 @@ I worked with [J-Create Photography](http://j-create.com.au/) to capture the tig
 
 > We love our new website! It tells out story really well, and our clients have found it easy and fun to understand. Callum has understood who we build boats for, and why we do it. _— Vince Cassaniti, Owner_
 
+@[MarkdownMovie](src="287001487" videoRatio="69.4444444")
+
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517378751/okok/oceanblueboats-layout-d.jpg")
 
 Over time, we'll continue to document their boat-making and improve the website to suit their audience. This will leave Vince & his crew with more time to do what they do best.

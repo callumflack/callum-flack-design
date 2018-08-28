@@ -19,7 +19,7 @@ RAATSICC is a grassroots organisation that provides social services for Aborigin
 
 > Callum has responded to our needs by listening and helping us through the process so that we've got a website that helps us talk to out communities. We have trust and control in our relationship. _— Emma Schuh, Secretary_
 
-@[MarkdownMovie](laptop frame src="/images/raatsicc-desktop-video.mp4" videoRatio="69.4434524")
+@[MarkdownMovie](laptop frame src="287001742" videoRatio="69.4434524")
 
 I've been working with RAATSICC for over two years. Our relationship is fluent, so we're able to maintain and update their platform quickly as their needs change. This helps RAATSICC use their website to help educate and service many remote communities.
 

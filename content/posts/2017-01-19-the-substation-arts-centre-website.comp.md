@@ -27,7 +27,7 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 <!-- @[MarkdownMovie](laptop frame src="/images/thesubstation-video-desktop-events.mp4") -->
 
-@[MarkdownMovie](iphone src="/images/thesubstation-video-mobile.mp4")
+@[MarkdownMovie](iphone src="286999966")
 
 <!-- We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made. -->
 

@@ -1,7 +1,7 @@
 ---
 category: projects
 published: true
-title: Album Registry web app
+title: Album Registry<br>web app
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
@@ -21,7 +21,7 @@ be, and rebuild the platform for a community of photographers around the world.
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
 experience.
 
-@[MarkdownMovie](reverseOverlay src="/images/albumregistry-block-registries.mp4" videoRatio="100")
+@[MarkdownMovie](src="287000708" videoRatio="100")
 
 ## Built for future iteration
 
