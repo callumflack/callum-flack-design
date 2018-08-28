@@ -6,10 +6,11 @@
         <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 1381">
           <path d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09Z"/>
         </svg>
+      .AspectRatio-object.f-childrenCenter(:class="{ 'bg-text' : !this.iphone }")
+        .Meta.c-bg Video loading…
       .AspectRatio-object(v-if="vimeo")
         iframe(
           :src="vimeoSrc"
-          :class="{ 'bg-text' : !this.iphone }"
           width="100%"
           height="100%"
           frameborder="0"
@@ -108,12 +109,12 @@ export default {
         return "padding-bottom: 205.81395%";
       }
       return this.videoRatio && `padding-bottom: ${this.videoRatio}%`;
-    },
-    wrapButtonClasses() {
+    }
+    /* wrapButtonClasses() {
       return [
         {
-          "u-hiddenVisually": this.isActive
-          /* "is-dark": this.reverseOverlay */
+          "u-hiddenVisually": this.isActive,
+          "is-dark": this.reverseOverlay
         }
       ];
     },
@@ -124,7 +125,7 @@ export default {
           "c-text": this.reverseButton
         }
       ];
-    }
+    } */
   }
   /* methods: {
     play: function() {
