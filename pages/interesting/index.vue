@@ -29,12 +29,13 @@ export default {
   },
   head() {
     return {
-      title: "Interesting – a mailing list by Callum Flack Design",
+      title: "Interesting—a mailing list by Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Interesting – a mailing list by Callum Flack Design. It's "
+          content:
+            "Interesting—a mailing list by Callum Flack Design. It's about 'things inbetween'—the stories, ideas and links that I've found curious, resonating, interesting"
         }
       ]
     };

@@ -70,12 +70,12 @@ export default {
   },
   head() {
     return {
-      title: "Work – Callum Flack Design",
+      title: "Projects—Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Selected digital design & development projects by Callum Flack since 2014"
+          content: "Selected design & development projects by Callum Flack since 2014"
         }
       ]
     };

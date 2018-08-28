@@ -39,12 +39,13 @@ export default {
   },
   head() {
     return {
-      title: "Blog – Callum Flack Design",
+      title: "Essays—Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Posts by Callum Flack about digital design, user experience & code"
+          content:
+            "Essays by Callum Flack about design, user experience, code and the 'things inbetween' that inform their success"
         }
       ]
     };

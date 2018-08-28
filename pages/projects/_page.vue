@@ -84,12 +84,12 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.title} – Callum Flack Design`,
+      title: `${this.page.title}—Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: `${this.page.title} – ${this.page.lede}`
+          content: `${this.page.title}—${this.page.lede}`
         }
       ]
     };
