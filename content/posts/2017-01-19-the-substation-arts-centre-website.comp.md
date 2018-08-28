@@ -37,4 +37,6 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 Together, we've stemmed the constant maintenance costs that drained The Substation's digital marketing effectiveness. With a performant and adaptable codebase, The Substation can focus on their customers.
 
+<p>
 @[MarkdownProjectLink](link="http://www.thesubstation.org.au/" label="Visit The Substation")
+</p>

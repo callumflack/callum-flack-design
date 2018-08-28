@@ -49,4 +49,6 @@ Album Registry grows slowly but surely, and since joining as co-founder in mid 2
 
 @[MarkdownProjectLink](link="https://albumregistry.com" label="Visit Album Registry")
 
+<p>
 @[MarkdownNote](note="Please note that as of June 2018, I'm no longer part of Album Registry.")
+</p>

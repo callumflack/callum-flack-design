@@ -25,4 +25,6 @@ I've been working with RAATSICC for over two years. Our relationship is fluent, 
 
 <!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
 
+<p>
 @[MarkdownProjectLink](link="https://raatsicc.org.au" label="Visit RAATSICC")
+</p>

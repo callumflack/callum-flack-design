@@ -38,5 +38,7 @@ The website never shouts, never wastes a person's time. Instead, it starts by ai
 
 <!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
 
+<p>
 @[MarkdownProjectLink](link="https://vjray.com.au" label="Visit VJ Ray")
 @[MarkdownProjectLink](link="https://vjraystrata.com.au" label="Visit VJ Ray Strata")
+</p>

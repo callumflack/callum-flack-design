@@ -34,4 +34,6 @@ the 'craftsmanship' archetype central to their brand repositioning.
 The goal of the website is to become a place people can dream of their perfect home and
 office space, and create a community around OceanBlue's works.
 
+<p>
 @[MarkdownProjectLink](link="https://oceanblueliving.com.au" label="Visit Oceanblue Living")
+</p>

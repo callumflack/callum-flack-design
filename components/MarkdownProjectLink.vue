@@ -1,5 +1,4 @@
 <template lang="pug">
-p
   a.Button.icon-targetBlank.icon-targetBlank--withinButton(:href="link", target="_blank") {{ label }}
 </template>
 
