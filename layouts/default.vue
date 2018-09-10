@@ -24,7 +24,7 @@ export default {
       return `fs-scale-reset page-${this.$store.state.currentPage}`;
     },
     contentNavSpace() {
-      return this.$route.name !== "interesting" && `b-pt4`;
+      return this.$route.name !== "interesting" && `b-pt3`;
     }
   }
 };

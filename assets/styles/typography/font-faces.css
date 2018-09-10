@@ -41,11 +41,23 @@
   font-style: normal;
 }
 
+/* mono */
+
+@font-face {
+  font-family: var(--ff-meta);
+  src: url("~static/fonts/IBMPlexSans-Regular.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* fatness */
 
 @font-face {
   font-family: var(--ff-heading);
   src: url("~static/fonts/GintoNord-Thin.woff") format("woff");
+  src: url("~static/fonts/AttenNew-Book.otf") format("woff");
+  src: url("~static/fonts/TiemposFineTest-Light.otf") format("woff");
+  src: url("~static/fonts/BureauGrotesque-OneOne.otf") format("woff");
   font-weight: 200;
   font-style: normal;
 }
@@ -64,6 +76,14 @@
 @font-face {
   font-family: var(--ff-title);
   src: url("~static/fonts/GintoNord-Bold.woff") format("woff");
+  src: url("~static/fonts/TiemposFineTest-Semibold.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Semibold.otf") format("woff");
+  src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff");
+  src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
+  src: url("~static/fonts/MarrSansCondensed-Semibold-Reduced.otf") format("woff");
+  src: url("~static/fonts/BureauGrotesque-OneFive.otf") format("woff");
+  /* src: url("~static/fonts/MFred.otf") format("woff"); */
+  /* src: url("~static/fonts/JeanLuc-Thin.ttf") format("truetype"); */
   font-weight: 700;
   font-style: normal;
 }

@@ -1,4 +1,12 @@
 <template lang="pug">
+div
+  nav.Container.b-nav
+    h3.Nav-locator.Meta.c-textLight
+      span.m-r2 02
+      //- em.Text--italic Essays
+      span Essays
+    .Extract-large
+      hr
   main.Container(role="main")
     post-excerpt(
       v-if="post.published && post.category === 'essays'"

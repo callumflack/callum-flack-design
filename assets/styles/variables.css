@@ -32,14 +32,14 @@
  */
 
 :root {
-  --responsive-space: 1.5rem;
+  --responsive-space: 1.75rem;
   --responsive-typography-space: 0.75rem;
   --responsive-hero: 24rem;
 }
 
 @media (--md) {
   :root {
-    --responsive-space: 3rem;
+    --responsive-space: 3.25rem;
     --responsive-typography-space: 1rem;
     --responsive-hero: 38rem;
   }
@@ -92,8 +92,8 @@
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg: calc(660px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-lg: 942px; /* calc(846px + (2 * var(--grid-gutter))) */
-  --container-xl: 1032px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
+  --container-lg: 1040px; /* calc(846px + (2 * var(--grid-gutter))) */
+  --container-xl: 1200px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
   --s-0: 0;
@@ -145,11 +145,12 @@
   --c-ash: #24292e;
   --c-text: var(--c-ash);
   --c-text: #050505;
-  --c-textLight: #999;
+  --c-textLight: #aaa;
   --c-textUnderline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
   --c-border: #ddd;
+  --c-rule: rgba(0, 0, 0, 0.1);
   --c-rule: rgba(0, 0, 0, 0.075);
   --c-device: #e7e7e7;
 
@@ -183,13 +184,13 @@
   --ff-text-bold: "Bold";
 
   --ff-lede: "TiemposHeadline";
-  --ff-text-meta: var(--ff-title);
-  --ff-text-subheading: var(--ff-title);
-  --ff-text-subheading: var(--ff-text-bold);
 
   --ff-heading: "GintoNord";
   --ff-title: "GintoNord";
 
+  --ff-text-meta: var(--ff-title);
+  --ff-text-subheading: var(--ff-title);
+  --ff-text-subheading: var(--ff-text-bold);
   --ff-button: var(--ff-text-meta);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
@@ -222,21 +223,22 @@
   --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.125; /* 19 */
+  --fs-text-unit: 1.125; /* 18 */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
   --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
   --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
-  --fs-meta: calc(0.631578947em * var(--fs-text-unit)); /* 12 */
+  --fs-meta: calc(0.666666667em * var(--fs-text-unit)); /* 12/18/16 * 16 */
   --fs-button: var(--fs-meta);
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
+  --fs-subheading: calc(1em * var(--fs-text-unit)); /* 17 */
   --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
   --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
-  --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
+  --fs-title: calc(2.842105263em * var(--fs-text-unit)); /* 40/19/16 * 16 */
   --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
   --fs-supertitle: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
   --fs-supertitle: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */

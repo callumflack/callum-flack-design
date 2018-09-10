@@ -1,21 +1,22 @@
 <template lang="pug">
 nav.Nav-list
   .Container
-    .Extract-edge(:class="hideHorizontalRule")
-      hr
-    .Extract-large.b-py4
+    .Extract-large(:class="hideHorizontalRule")
+      hr.bg-textLight
+    .Extract-large.b-py3
       nuxt-link.Nav-link.f(
         v-for="item in navItems"
         :key="item.link"
         :to="item.link"
         :exact="item.exact"
       )
-        span.Extract-large-unit.Subtitle--light.Nav-link-level {{ item.level }}
+        span.Extract-large-unit.Subtitle.Subtitle--light.Nav-link-level {{ item.level }}
         span.Subtitle.Nav-link-label {{ item.label }}
-        span.Subtitle.fw-light.Nav-link-lede(v-if="item.lede") 
+        //- span.Subtitle.fw-light.Nav-link-lede(v-if="item.lede") 
           span ---
           | {{ item.lede }}
-
+      //- hr.bg-text
+      //- .b-pb3
       .Extract-large-inset
         p.Meta.fw-bold Contact
         div(
@@ -121,9 +122,9 @@ export default {
   padding-bottom: calc(1 * var(--responsive-space));
   text-decoration: none;
 
-  /* @media (--lg) {
-    padding-bottom: var(--responsive-space);
-  } */
+  @media (--lg) {
+    padding-bottom: calc(0.666 * var(--responsive-space));
+  }
 }
 
 .Nav-link:last-of-type {
@@ -167,6 +168,7 @@ export default {
   background-image: initial;
 }
 
+.Nav-link-level,
 .Nav-link-label {
   margin-bottom: 0;
 }
@@ -232,7 +234,6 @@ export default {
   left: -5rem;
   position: absolute;*/
   left: 0;
-  margin-right: 0.125rem;
   top: -0.125rem;
   position: relative;
 

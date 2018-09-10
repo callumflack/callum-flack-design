@@ -1,4 +1,11 @@
 <template lang="pug">
+div
+  nav.Container.b-nav
+    h3.Nav-locator.Meta.c-textLight
+      span.m-r2 01
+      span Blog
+    .Extract-large
+      hr
   main.Container(role="main")
     post-excerpt(
       v-if="post.published"

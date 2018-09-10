@@ -20,7 +20,7 @@
   @media (--md-landscape) {
     &:before {
       background-color: var(--c-rule);
-      content: " ";
+      /* content: " "; */
       display: block;
       height: 100%;
       left: -1px;

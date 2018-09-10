@@ -52,7 +52,7 @@
 .u-fixedCenter,
 .u-fixed {
   backface-visibility: hidden; /* 1 */
-  position: fixed;
+  position: fixed !important;
 }
 
 .u-relative {

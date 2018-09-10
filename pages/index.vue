@@ -1,5 +1,18 @@
 <template lang="pug">
 div
+  //- nav.Container.p-y3
+    h3.Text.c-textLight.u-textCenter.p-b2
+      span.m-r2 00
+      em.Text--italic Home
+    .Extract-large
+      hr
+  nav.Container.b-nav
+    h3.Nav-locator.Meta.c-textLight
+      span.m-r2 00
+      //- em.Text--italic Essays
+      span Home
+    .Extract-large
+      hr
   header.Container.b-pb3(role="banner")
     .Adjacent
       h1.Heading.m-b3
@@ -14,7 +27,8 @@ div
         //- span.fs-scale-reset
           //- span.Meta.fw-bold What I do 
         //- | —&nbsp;
-        | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if your interfaces aren't seamless. That's where I come in. I'm a brand identity designer who codes. 
+        //- | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if your interfaces aren't seamless. That's where I come in. I'm a brand identity designer who codes. 
+        | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if they don't trust your interface. That's where I come in. I'm a brand identity designer who codes. 
         nuxt-link(to="/about") 
           em.Text--italic Learn more about me
       //- p.fs-text-sm (Why all the writing? Because 
@@ -28,7 +42,7 @@ div
   main(role="main")
     article.Container
       .p-b4
-        .Meta.u-textCenter
+        .Meta.fw-medium.u-textCenter
           icon-base.Icon(icon-name="icon-pin" height="14" width="14")
             icon-pin
           span Pinned post

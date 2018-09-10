@@ -1,5 +1,5 @@
 <template lang="pug">
-  article.Excerpt
+  article.Excerpt.b-pt3
     header(role="header")
       nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
         .AspectRatio(:style="heroAspectStyle")
@@ -132,15 +132,16 @@ export default {
 
 .Excerpt {
   /* slight increase on .b-mt3 */
-  margin-top: calc(2.25 * var(--responsive-space));
+  /* margin-top: calc(2.25 * var(--responsive-space)); */
 
   @media (--mo) {
     /* matches .Project on mobile-only */
-    margin-top: calc(1.5 * var(--responsive-space));
+    /* margin-top: calc(1.5 * var(--responsive-space)); */
   }
 }
 
 .Excerpt:first-of-type {
   margin: 0;
+  padding: 0;
 }
 </style>

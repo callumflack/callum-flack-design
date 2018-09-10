@@ -7,8 +7,8 @@
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             .AspectRatio-object(:class="heroObjectBgClasses")
               ImageCld(:src="heroImage")
-        .b-py2.w-md-5x6.m-xA
-          h1.Title.u-textCenter.p-t2.m-b2 {{ title }}
+        .b-py2.w-md-5x6.w-lg-9x12.m-xA
+          h1.Title.u-textCenter.p-t3.m-b3 {{ title }}
 
           .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}

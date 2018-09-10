@@ -1,16 +1,18 @@
 <template lang="pug">
 .Toggle
   //- .Container(:class="{ 'Container--noRule': isVisible }")
-  .Container.p-b1
-    .Extract-large.Toggle-align.b-py2
-      a.Toggle-anchor.Logo.u-fixed.z-top(
-        href="#"
-        @click.prevent="handleNavToggle"
-        :class="{ 'is-active': isVisible }"
-      ) 
-        span CFD
-      //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
-      //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
+  .Container
+    .Extract-large.Toggle-align.b-pt2
+      .u-fixed.z-top
+        a.Toggle-anchor.Meta(
+          href="#"
+          @click.prevent="handleNavToggle"
+          :class="{ 'is-active': isVisible }"
+        ) 
+          span.fw-bold(style="text-transform:initial") CFd
+        //- span CFD
+        //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
+        //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
 
 </template>
 
@@ -43,6 +45,8 @@ export default {
 
 .Toggle {
   display: block;
+  position: absolute;
+  width: 100%;
 
   /* &:hover {
     background-color: var(--c-highlight);
@@ -51,10 +55,16 @@ export default {
 }
 
 .Toggle-align {
-  align-items: center;
+  /* align-items: center;
   display: flex;
-  height: 36px;
-  height: calc(2 * var(--responsive-space) + 36px);
+  flex-direction: column; */
+  height: 32px;
+  /* height: calc(2.125 * var(--responsive-space) + 32px); */
+}
+
+.Toggle-width {
+  max-width: var(--container-lg);
+  width: var(--container-lg);
 }
 
 .Toggle-anchor {
@@ -62,22 +72,29 @@ export default {
 
 .Toggle-anchor span {
   align-items: center;
-  border: 2px solid var(--c-text);
+  border: 0px solid var(--c-text);
   background-color: var(--c-bg);
   display: flex;
-  height: 36px;
+  height: 32px;
   justify-content: center;
   /* padding: 2px 0.55rem 0 0.85rem; */
-  padding: 2px 0.35rem 0 0.8rem;
+  /* padding: 2px 0.35rem 0 0.8rem; */
+  padding: 2px 1rem 0;
   position: relative;
 
   /* theme */
+  /* transform: translateY(-12px); */
   /* border-color: var(--c-highlight);
   color: var(--c-highlight); */
 
-  @media (--lg) {
+  /* border-radius: 999px;
+  border-width: 6px;
+  height: 44px;
+  width: 44px; */
+
+  /* @media (--lg) {
     left: var(--toggle-x-align);
-  }
+  } */
 }
 
 .Toggle-anchor:hover {

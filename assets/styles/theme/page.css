@@ -65,13 +65,29 @@ body {
 
 /* 
 
+  Nav specials
+
+ */
+
+.b-nav {
+  padding-top: var(--responsive-space);
+  padding-bottom: calc(1.25 * var(--responsive-space));
+}
+
+.Nav-locator {
+  margin-top: 13px;
+  margin-bottom: calc(1.1 * var(--responsive-typography-space));
+}
+
+/* 
+
   Essay drop caps
 
  */
 .Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
   font-family: var(--ff-lede);
-  font-size: 3em;
+  font-size: 2.25em;
   line-height: 1;
   /* margin-top: -1px; */
   padding-top: 3px;
@@ -79,12 +95,12 @@ body {
   padding-bottom: 0.25em;
 
   @media (--md) {
-    font-size: 3.25em;
+    font-size: 2.75em;
   }
   @media (--lg) {
     padding-right: 0.5em;
-    padding-top: 4px;
-    font-size: 4.5em;
+    /* padding-top: 4px; */
+    font-size: 3.25em;
   }
 }
 

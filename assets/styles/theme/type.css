@@ -25,7 +25,7 @@ p em,
 /* 
   -------------------------------------------------
   
-  Metas
+  Meta & logo
 
   -------------------------------------------------
  */
@@ -42,11 +42,26 @@ p em,
 
 .Meta {
   font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-family: "IBMPlexSans-Regular", var(--ff-stack-sans);
+  font-family: var(--ff-text), var(--ff-stack-sans);
   font-size: var(--fs-meta);
   font-weight: 400;
   letter-spacing: var(--fls-loose);
   line-height: 1;
   text-transform: uppercase;
+}
+
+.Logo {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  font-size: 12px;
+  font-size: var(--fs-meta);
+  line-height: 1;
+  letter-spacing: 0.666em;
+
+  & a:hover {
+    color: var(--c-link);
+  }
 }
 
 /* 
@@ -80,8 +95,16 @@ p em,
   -------------------------------------------------
 */
 
+/* .Subheading, */
+.Scope-post h2 {
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-size: var(--fs-subheading);
+  font-weight: 600;
+  /* letter-spacing: 0.025em;
+  line-height: 1.333; */
+}
+
 .Subheading,
-.Scope-post h2,
 .Heading,
 .Subtitle,
 .Subtitle--light,
@@ -92,19 +115,19 @@ p em,
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 700;
   line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 0.01em;
   letter-spacing: 0;
+  text-transform: uppercase;
 
   & a:hover {
     color: var(--c-link);
   }
 }
 
-.Subheading,
-.Scope-post h2 {
+.Subheading {
   font-size: var(--fs-subheading);
-  font-weight: 500;
-  letter-spacing: 0.025em;
-  line-height: 1.333;
+  font-weight: 600;
 }
 
 .Heading {
@@ -125,6 +148,7 @@ p em,
   }
   @media (--lg) {
     font-size: var(--fs-subtitle);
+    font-size: 54px;
   }
 }
 
@@ -165,6 +189,7 @@ p em,
 .Title--light {
   font-family: var(--ff-heading), var(--ff-stack-sans);
   font-weight: 200;
+  letter-spacing: 0.075em;
 }
 
 /* Tiempos Headline */
@@ -177,26 +202,6 @@ p em,
   line-height: var(--flh-regular);
 }
 
-/* 
-  -------------------------------------------------
-
-  LOGO
-
-  -------------------------------------------------
-*/
-
-.Logo {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.666em;
-
-  & a:hover {
-    color: var(--c-link);
-  }
-}
-
 /*
   -------------------------------------------------
 
@@ -206,12 +211,12 @@ p em,
  */
 
 blockquote p {
+  border-left: 1px solid var(--c-rule);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
 
   @media (--mo) {
-    border-left: 1px solid var(--c-rule);
   }
 
   @media (--sm) {
