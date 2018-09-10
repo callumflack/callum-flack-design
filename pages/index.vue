@@ -28,7 +28,9 @@ div
   main(role="main")
     article.Container
       .p-b4
-        .Meta.u-textCenter 
+        .Meta.u-textCenter
+          icon-base.Icon(icon-name="icon-pin" height="14" width="14")
+            icon-pin
           span Pinned post
           //- span.fw-medium Pinned post
           //- span.MetaSeparator • 
@@ -55,6 +57,8 @@ div
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
 import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
+import IconBase from "~/components/IconBase.vue";
+import IconPin from "~/components/icons/IconPin.vue";
 
 // timeout for loading component
 // https://stackoverflow.com/questions/33289726/combination-of-async-function-await-settimeout
@@ -66,7 +70,9 @@ export default {
   components: {
     ImageCld,
     PostExcerpt,
-    NewsletterSignupForm
+    NewsletterSignupForm,
+    IconBase,
+    IconPin
   },
   computed: {
     homePagePost() {
@@ -115,8 +121,25 @@ export default {
 }
 
 .Adjacent {
-  border: 2px solid var(--c-text);
+  /* border: 2px solid var(--c-text); */
+  background-color: var(--c-highlight-alt);
+  border-radius: 1em;
   padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--responsive-space)) calc(0.3925 * var(--responsive-space));
+  padding: calc(0.375 * var(--responsive-space)) calc(0.45 * var(--responsive-space));
+
+  & a {
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(currentColor, currentColor) !important;
+    text-shadow: 0.03em 0 var(--c-highlight-alt), -0.03em 0 var(--c-highlight-alt),
+      0 0.03em var(--c-highlight-alt), 0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
+      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt), -0.09em 0 var(--c-highlight-alt),
+      0.12em 0 var(--c-highlight-alt), -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
+      -0.15em 0 var(--c-highlight-alt) !important;
+  }
+}
+
+.Icon {
+  margin-right: var(--s-2);
+  transform: translateY(2px);
 }
 </style>

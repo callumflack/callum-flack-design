@@ -90,7 +90,7 @@
   --flex-grid-gutter: calc(0.75 * var(--space));
 
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
-  --container-rg: calc(672px + (2 * var(--grid-gutter)));
+  --container-rg: calc(660px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
   --container-lg: 942px; /* calc(846px + (2 * var(--grid-gutter))) */
   --container-xl: 1032px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
@@ -138,6 +138,7 @@
   --c-link: #e4b830; /* yellow */
   --c-link: #e62f0d; /* red */
   --c-highlight: var(--c-link);
+  --c-highlight-alt: #ffea97;
 
   --c-black: black;
   --c-dark: #171515;
@@ -149,7 +150,7 @@
 
   --c-gray: #aaa;
   --c-border: #ddd;
-  --c-rule: rgba(0, 0, 0, 0.125);
+  --c-rule: rgba(0, 0, 0, 0.075);
   --c-device: #e7e7e7;
 
   --c-neutral: #eee;
@@ -221,7 +222,7 @@
   --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.1875; /* 19 */
+  --fs-text-unit: 1.125; /* 19 */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
   --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
