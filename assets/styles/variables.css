@@ -87,7 +87,7 @@
 
   --space: 1.5rem;
   --grid-gutter: calc(2 * var(--space));
-  --flex-grid-gutter: calc(0.75 * var(--space));
+  --flex-grid-gutter: calc(1.25 * var(--space));
 
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg: calc(660px + (2 * var(--grid-gutter)));
@@ -177,16 +177,9 @@
   
    */
 
-  --ff-text: "TiemposText";
-  --ff-text-regular: "Regular";
-  --ff-text-regular-italic: "RegularItalic";
-  --ff-text-medium: "Medium";
-  --ff-text-bold: "Bold";
-
+  --ff-text: "Libre";
   --ff-lede: "TiemposHeadline";
-
-  --ff-heading: "GintoNord";
-  --ff-title: "GintoNord";
+  --ff-title: "Grotesque";
 
   --ff-text-meta: var(--ff-title);
   --ff-text-subheading: var(--ff-title);
@@ -226,7 +219,7 @@
   --fs-text-unit: 1.125; /* 18 */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
-  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
+  --fs-text-sm: calc(0.833333333em * var(--fs-text-unit)); /* 15/18/16 * 16 */
   --fs-text: calc(1em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
   --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
@@ -235,13 +228,11 @@
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
   --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
-  --fs-subheading: calc(1em * var(--fs-text-unit)); /* 17 */
-  --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
-  --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
-  --fs-title: calc(2.842105263em * var(--fs-text-unit)); /* 40/19/16 * 16 */
-  --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
-  --fs-supertitle: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
-  --fs-supertitle: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
+  --fs-subheading: calc(1.055555556em * var(--fs-text-unit)); /* 19/18/16 * 16 */
+  --fs-heading: calc(1.5em * var(--fs-text-unit)); /* 27/18/16 * 16 */
+  --fs-subtitle: calc(2.5em * var(--fs-text-unit)); /* 45/18/16 * 16 */
+  --fs-title: calc(2.5em * var(--fs-text-unit)); /* 45/18/16 * 16 */
+  --fs-supertitle: calc(4em * var(--fs-text-unit)); /* 72/18/16 * 16 */
 
   /* 
   
@@ -259,7 +250,7 @@
   --fls-touch-negative: 0;
   --fls-regular: 0;
   --fls-touch-positive: 0.02em;
-  --fls-loose: 0.1em;
+  --fls-loose: 0.15em;
 
   --flh-super: 1;
   --flh-tight: 1.15;
@@ -273,25 +264,25 @@
 
    */
 
-  --button-background-color: var(--c-text);
+  --button-background-color: var(--c-bg);
   --button-border-color: var(--c-text);
   --button-border-radius: 0;
-  --button-border-width: 0;
+  --button-border-width: 1px;
   --button-box-shadow-color: var(--c-text);
   --button-box-shadow-stroke-hover: 1px;
   --button-box-shadow-stroke-active: 2px;
   --button-box-shadow-stroke-inset: 1px;
-  --button-color: var(--c-bg);
+  --button-color: var(--c-text);
   --button-disabled-opacity: 0.6;
   --button-height: calc(1 * var(--field-height));
   --button-xpadding: 1.5em;
 
   /* typography */
-  --button-font-case: uppercase;
-  --button-font-family: var(--ff-button), var(--ff-stack-sans);
-  --button-font-size: var(--fs-button);
-  --button-font-weight: 400;
-  --button-letter-spacing: var(--fls-loose);
+  --button-font-case: inherit;
+  --button-font-family: inherit;
+  --button-font-size: inherit;
+  --button-font-weight: inherit;
+  --button-letter-spacing: inherit;
   --button-text-alignment: 0;
 
   /* button + button inline spacing */
@@ -317,7 +308,8 @@
 
   --border-radius: 4px;
   --cover-image-screen-color: rgba(0, 0, 0, 0.25);
-  --field-height: 3rem;
+  --field-height: 3em;
+  --field-height: 2.75rem;
   --field-space: 1rem 1.25rem;
   --figure-space: calc(2 * var(--space));
   --figure-space-within-text: calc(0.25 * var(--responsive-space));

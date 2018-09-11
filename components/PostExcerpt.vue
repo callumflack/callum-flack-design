@@ -5,9 +5,10 @@
         .AspectRatio(:style="heroAspectStyle")
           .AspectRatio-object.bg-text
             ImageCld(:src="thumbImage || heroImage")
+      hr(v-else)
 
       .m-xA(:class="titleBlockClasses")
-        h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
+        h2.Title.fw-black.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
           nuxt-link(:to="permalink") {{ title }}
         h2.Heading.u-textCenter.p-t2.m-b2(v-else)
           nuxt-link(:to="permalink") {{ title }}
@@ -115,9 +116,11 @@ export default {
     },
     titleBlockClasses() {
       if (this.showOnHomePage === true) {
-        return "b-py2 w-md-5x6";
+        return "b-py2 w-lg-5x6";
+        // return "b-py2";
       }
-      return "b-py0 w-lg-4x6";
+      return "b-py0 w-lg-5x6";
+      // return "b-py0";
     },
     mainAlignClasses() {
       return !this.showOnHomePage === true && "p-t1";

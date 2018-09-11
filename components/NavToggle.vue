@@ -4,12 +4,12 @@
   .Container
     .Extract-large.Toggle-align.b-pt2
       .u-fixed.z-top
-        a.Toggle-anchor.Meta(
+        a.Toggle-button.Button.Meta.fw-black(
           href="#"
           @click.prevent="handleNavToggle"
           :class="{ 'is-active': isVisible }"
         ) 
-          span.fw-bold(style="text-transform:initial") CFd
+          span(style="text-transform:initial") CFd
         //- span CFD
         //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
         //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
@@ -55,11 +55,7 @@ export default {
 }
 
 .Toggle-align {
-  /* align-items: center;
-  display: flex;
-  flex-direction: column; */
-  height: 32px;
-  /* height: calc(2.125 * var(--responsive-space) + 32px); */
+  height: var(--button-height);
 }
 
 .Toggle-width {
@@ -67,18 +63,16 @@ export default {
   width: var(--container-lg);
 }
 
-.Toggle-anchor {
+.Toggle-button {
+  /* box-shadow: var(--c-bg) 0 0 0 3px; */
 }
 
 .Toggle-anchor span {
   align-items: center;
-  border: 0px solid var(--c-text);
+  border: 1px solid var(--c-text);
   background-color: var(--c-bg);
   display: flex;
-  height: 32px;
   justify-content: center;
-  /* padding: 2px 0.55rem 0 0.85rem; */
-  /* padding: 2px 0.35rem 0 0.8rem; */
   padding: 2px 1rem 0;
   position: relative;
 

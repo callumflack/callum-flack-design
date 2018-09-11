@@ -53,37 +53,66 @@
 /* fatness */
 
 @font-face {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-title);
   src: url("~static/fonts/GintoNord-Thin.woff") format("woff");
   src: url("~static/fonts/AttenNew-Book.otf") format("woff");
   src: url("~static/fonts/TiemposFineTest-Light.otf") format("woff");
   src: url("~static/fonts/BureauGrotesque-OneOne.otf") format("woff");
+  src: url("~static/fonts/BureauGrotesque-FiveOne.otf") format("woff");
+  src: url("~static/fonts/Dia-Regular.woff") format("woff");
+  src: url("~static/fonts/PilatWideTest-Thin.otf") format("woff");
+  src: url("~static/fonts/CenturySchoolbookZT.otf") format("woff");
+  src: url("~static/fonts/Executive-45Light.otf") format("woff");
+  src: url("~static/fonts/IBMPlexMono-Light.ttf") format("truetype");
+  src: url("~static/fonts/TiemposHeadline-Light.otf") format("woff");
+  src: url("~static/fonts/LarishNeue.woff") format("woff");
   font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: var(--ff-heading);
-  src: url("~static/fonts/GintoNord-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: var(--ff-heading);
-  src: url("~static/fonts/GintoNord-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
   src: url("~static/fonts/GintoNord-Bold.woff") format("woff");
-  src: url("~static/fonts/TiemposFineTest-Semibold.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Semibold.otf") format("woff");
   src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff");
   src: url("~static/fonts/FranklinGothic-ExtraCond.woff") format("woff");
   src: url("~static/fonts/MarrSansCondensed-Semibold-Reduced.otf") format("woff");
+  src: url("~static/fonts/Druk-Bold.woff") format("woff");
+  src: url("~static/fonts/DrukWide-Super.woff") format("woff");
+  src: url("~static/fonts/TiemposFineTest-Semibold.otf") format("woff");
   src: url("~static/fonts/BureauGrotesque-OneFive.otf") format("woff");
+  src: url("~static/fonts/Gothic-Thirteen.otf") format("woff");
+  src: url("~static/fonts/GrotzecCond-Bold.woff") format("woff");
+  src: url("~static/fonts/BureauGrotesque-FiveFive.otf") format("woff");
+  src: url("~static/fonts/Dia-Bold.woff") format("woff");
+  src: url("~static/fonts/PilatWideTest-Demi.otf") format("woff");
+  src: url("~static/fonts/CenturySchoolbookZT.otf") format("woff");
+  src: url("~static/fonts/Executive-75Bold.otf") format("woff");
+  src: url("~static/fonts/IBMPlexMono-Medium.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Bold.otf") format("woff");
+  src: url("~static/fonts/LarishNeue.woff") format("woff");
+  /* src: url("~static/fonts/d-cond.ttf") format("truetype"); */
   /* src: url("~static/fonts/MFred.otf") format("woff"); */
   /* src: url("~static/fonts/JeanLuc-Thin.ttf") format("truetype"); */
-  font-weight: 700;
+  font-weight: 600;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/TiemposFineTest-MediumItalic.otf") format("woff");
+  font-weight: 500;
+  font-style: italic;
+} */
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/BureauGrotesque-SevenNine.otf") format("woff");
+  src: url("~static/fonts/Dia-Black.woff") format("woff");
+  src: url("~static/fonts/PilatWideTest-Heavy.otf") format("woff");
+  src: url("~static/fonts/CenturySchoolbookZT.otf") format("woff");
+  src: url("~static/fonts/Executive-75Bold.otf") format("woff");
+  src: url("~static/fonts/IBMPlexMono-Semibold.ttf") format("truetype");
+  src: url("~static/fonts/IBMPlexMono-Medium.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Bold.otf") format("woff");
+  src: url("~static/fonts/LarishNeue.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }

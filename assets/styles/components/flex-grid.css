@@ -39,6 +39,14 @@
   flex-grow: initial;
 }
 
+.FlexGrid--noGap {
+  margin: 0;
+
+  & > * {
+    padding: 0;
+  }
+}
+
 .FlexGrid--sm {
   display: flex;
   flex-wrap: wrap;

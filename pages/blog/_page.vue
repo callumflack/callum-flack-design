@@ -1,5 +1,11 @@
 <template lang="pug">
-div
+div.b-pt4
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-bold
+      span.m-r2 1.
+      span Blog
+    //- .Extract-large
+      hr
   Post(
     :body="page.body"
     :category="page.category"

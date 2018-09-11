@@ -5,25 +5,37 @@
  */
 
 .Container {
-  /* THEME */
-  /* border-left: 1px solid var(--c-rule);
-  border-right: 1px solid var(--c-rule); */
-  padding-left: calc(0.75 * var(--grid-gutter));
-  padding-right: calc(0.75 * var(--grid-gutter));
-  position: relative;
+  padding-left: calc(0.5 * var(--grid-gutter));
+  padding-right: calc(0.5 * var(--grid-gutter));
 
   @media (--md) {
     padding-left: calc(1 * var(--grid-gutter));
     padding-right: calc(1 * var(--grid-gutter));
   }
+}
+
+.Modal .Container--verticalRule {
+  /* THEME */
+  /* border-left: 1px solid var(--c-rule);
+  border-right: 1px solid var(--c-rule); */
+
+  height: 100vh;
+  padding-top: calc(1.5 * var(--responsive-space));
+  position: relative;
+
+  @media (--sm) {
+    padding-top: calc(1 * var(--responsive-space));
+  }
 
   @media (--md-landscape) {
     &:before {
       background-color: var(--c-rule);
-      /* content: " "; */
+      background-color: var(--c-text);
+      content: " ";
       display: block;
       height: 100%;
       left: -1px;
+      left: -14px;
       position: absolute;
       top: 0;
       bottom: 0;

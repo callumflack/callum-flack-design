@@ -2,8 +2,7 @@
   div(:class="currentPageClass")
     NavToggle
     nuxt.Page
-    .Container(:class="contentNavSpace")
-    footer
+    footer(:class="contentNavSpace")
       NavList
     NavToggled
 </template>

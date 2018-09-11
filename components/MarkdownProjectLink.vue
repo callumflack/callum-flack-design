@@ -1,5 +1,5 @@
 <template lang="pug">
-  a.Button.icon-targetBlank.icon-targetBlank--withinButton(:href="link", target="_blank") {{ label }}
+  a.Button.Meta.fw-bold.icon-targetBlank.icon-targetBlank--withinButton.m-t1(:href="link", target="_blank") {{ label }}
 </template>
 
 <script scoped>

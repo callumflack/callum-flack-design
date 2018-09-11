@@ -1,0 +1,43 @@
+.rp-a0 {
+  padding: 0 !important;
+}
+.rp-a1 {
+  padding: calc(0.25 * var(--responsive-typography-space)) !important;
+}
+.rp-a2 {
+  padding: calc(0.5 * var(--responsive-typography-space)) !important;
+}
+.rp-a3 {
+  padding: calc(1 * var(--responsive-typography-space)) !important;
+}
+.rp-a4 {
+  padding: calc(1.5 * var(--responsive-typography-space)) !important;
+}
+.rp-a5 {
+  padding: calc(3 * var(--responsive-typography-space)) !important;
+}
+.rp-a6 {
+  padding: calc(6 * var(--responsive-typography-space)) !important;
+}
+
+.rm-t0 {
+  margin-top: 0 !important;
+}
+.rm-t1 {
+  margin-top: calc(0.25 * var(--responsive-typography-space)) !important;
+}
+.rm-t2 {
+  margin-top: calc(0.5 * var(--responsive-typography-space)) !important;
+}
+.rm-t3 {
+  margin-top: calc(1 * var(--responsive-typography-space)) !important;
+}
+.rm-t4 {
+  margin-top: calc(1.5 * var(--responsive-typography-space)) !important;
+}
+.rm-t5 {
+  margin-top: calc(3 * var(--responsive-typography-space)) !important;
+}
+.rm-t6 {
+  margin-top: calc(6 * var(--responsive-typography-space)) !important;
+}

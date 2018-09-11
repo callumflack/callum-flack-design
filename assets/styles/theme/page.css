@@ -65,7 +65,7 @@ body {
 
 /* 
 
-  Nav specials
+  Top of the page nav specials
 
  */
 
@@ -76,7 +76,12 @@ body {
 
 .Nav-locator {
   margin-top: 13px;
+  margin-top: 1.083333333em;
   margin-bottom: calc(1.1 * var(--responsive-typography-space));
+
+  @media (--mo) {
+    text-align: right;
+  }
 }
 
 /* 
@@ -86,23 +91,29 @@ body {
  */
 .Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
-  font-family: var(--ff-lede);
-  font-size: 2.25em;
+  font-family: var(--ff-lede), var(--ff-stack-serif);
+  font-size: 3em;
   line-height: 1;
-  /* margin-top: -1px; */
   padding-top: 3px;
-  padding-right: 0.666em;
+  padding-right: 0.7em;
   padding-bottom: 0.25em;
 
   @media (--md) {
-    font-size: 2.75em;
+    /* font-size: 2.75em; */
   }
   @media (--lg) {
+    font-size: 3.5em;
     padding-right: 0.5em;
-    /* padding-top: 4px; */
-    font-size: 3.25em;
+    padding-bottom: 0;
   }
 }
+
+/* .Scope-post-dropcap div > p span:first-of-type {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+} */
 
 /* 
 
@@ -111,10 +122,10 @@ body {
  */
 
 .Button {
-  padding-top: 1px;
+  /* padding-top: 1px;
   @media (--lg) {
     padding-top: 0.5px;
-  }
+  } */
 }
 
 /* 
@@ -138,6 +149,32 @@ body {
   @media (--sm) {
     padding-top: var(--s-4a);
     padding-bottom: var(--s-4a);
+  }
+}
+
+/* 
+
+  Utils, etc
+
+ */
+
+@media (--md) {
+  .md-AspectRatio--2x1 {
+    padding-bottom: 50%;
+  }
+
+  .md-AspectRatio--10x4 {
+    padding-bottom: 40%;
+  }
+}
+
+@media (--lg) {
+  .lg-AspectRatio--2x1 {
+    padding-bottom: 50%;
+  }
+
+  .lg-AspectRatio--10x4 {
+    padding-bottom: 40%;
   }
 }
 

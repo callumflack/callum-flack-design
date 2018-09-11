@@ -1,14 +1,14 @@
 ---
 category: projects
 published: true
-title: Album Registry ecommerce app
+title: Album Registry ecommerce web app
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroInCloudinary: true
 heroRatio: 99.16
-tags: Design, Development
+tags: branding, ui, code
 ---
 
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
@@ -49,6 +49,4 @@ Album Registry grows slowly but surely, and since joining as co-founder in mid 2
 
 @[MarkdownProjectLink](link="https://albumregistry.com" label="Visit Album Registry")
 
-<p>
 @[MarkdownNote](note="Please note that as of June 2018, I'm no longer part of Album Registry.")
-</p>

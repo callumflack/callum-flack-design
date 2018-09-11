@@ -29,8 +29,8 @@ figure {
 }
 
 blockquote {
-  margin-top: calc(1.5 * var(--responsive-typography-space));
-  margin-bottom: calc(1.5 * var(--responsive-typography-space));
+  margin-top: calc(1.25 * var(--responsive-typography-space));
+  margin-bottom: calc(1.25 * var(--responsive-typography-space));
 }
 
 /*

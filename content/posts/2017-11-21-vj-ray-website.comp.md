@@ -10,7 +10,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952892/okok/v
 heroInCloudinary: true
 heroFrame: false
 heroRatio: 68.6458333
-tags: Design, Development
+tags: UI, code
 ---
 
 VJ Ray Real Estate are one of Sydney's original Strata Management agencies.

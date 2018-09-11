@@ -41,9 +41,8 @@ p em,
 } */
 
 .Meta {
-  font-family: var(--ff-heading), var(--ff-stack-sans);
-  font-family: "IBMPlexSans-Regular", var(--ff-stack-sans);
-  font-family: var(--ff-text), var(--ff-stack-sans);
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: var(--fs-meta);
   font-weight: 400;
   letter-spacing: var(--fls-loose);
@@ -99,6 +98,7 @@ p em,
 .Scope-post h2 {
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--fs-subheading);
+  font-size: var(--fs-text);
   font-weight: 600;
   /* letter-spacing: 0.025em;
   line-height: 1.333; */
@@ -107,18 +107,17 @@ p em,
 .Subheading,
 .Heading,
 .Subtitle,
-.Subtitle--light,
-.Title--lede,
-.Title--light,
 .Title,
 .Supertitle {
+  font-family: var(--ff-stack-sans);
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
-  line-height: 1;
+  line-height: 1.15;
   letter-spacing: 0.01em;
+  letter-spacing: -0.005em;
   letter-spacing: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   & a:hover {
     color: var(--c-link);
@@ -132,11 +131,9 @@ p em,
 
 .Heading {
   font-size: var(--fs-heading);
-  line-height: 1.333;
+  line-height: 1.25;
 }
 
-.Subtitle--lede,
-.Subtitle--light,
 .Subtitle {
   font-size: calc(0.75 * var(--fs-subtitle));
 
@@ -148,22 +145,22 @@ p em,
   }
   @media (--lg) {
     font-size: var(--fs-subtitle);
-    font-size: 54px;
   }
 }
 
-.Title--lede,
-.Title--light,
 .Title {
-  font-size: calc(0.6 * var(--fs-title));
+  font-size: calc(0.5 * var(--fs-title));
 
   @media (--sm) {
-    font-size: calc(0.8 * var(--fs-title));
+    font-size: calc(0.7 * var(--fs-title));
   }
   @media (--md) {
-    font-size: calc(0.9 * var(--fs-title));
+    font-size: calc(0.8 * var(--fs-title));
   }
   @media (--lg) {
+    font-size: calc(0.9 * var(--fs-title));
+  }
+  @media (--xl) {
     font-size: var(--fs-title);
   }
 }
@@ -178,18 +175,21 @@ p em,
     font-size: calc(0.666 * var(--fs-supertitle));
   }
   @media (--md-landscape) {
-    font-size: calc(0.8 * var(--fs-supertitle));
+    font-size: calc(0.75 * var(--fs-supertitle));
   }
   @media (--lg) {
+    font-size: calc(0.875 * var(--fs-supertitle));
+  }
+  @media (--xl) {
     font-size: var(--fs-supertitle);
   }
 }
 
 .Subtitle--light,
 .Title--light {
-  font-family: var(--ff-heading), var(--ff-stack-sans);
+  /* font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 200;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.075em; */
 }
 
 /* Tiempos Headline */
@@ -211,7 +211,7 @@ p em,
  */
 
 blockquote p {
-  border-left: 1px solid var(--c-rule);
+  border-left: 1px solid var(--c-textLight);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);

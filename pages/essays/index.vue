@@ -1,11 +1,10 @@
 <template lang="pug">
-div
-  nav.Container.b-nav
-    h3.Nav-locator.Meta.c-textLight
-      span.m-r2 02
-      //- em.Text--italic Essays
+div.b-pt4
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-bold
+      span.m-r2 2.
       span Essays
-    .Extract-large
+    //- .Extract-large
       hr
   main.Container(role="main")
     post-excerpt(

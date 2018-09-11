@@ -1,15 +1,14 @@
 <template lang="pug">
-div
-  nav.Container.b-nav
-    h3.Nav-locator.Meta.c-textLight
-      span.m-r2 03
-      //- em.Text--italic Essays
+div.b-pt4
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-bold
+      span.m-r2 3.
       span Projects
-    .Extract-large
+    //- .Extract-large
       hr
   //- .Container
     header.b-pb3(role="header")
-      h1.Supertitle Selected projects
+      h1.Supertitle.u-textCenter Selected projects since 2014
       //- p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
       //- .Project-filter
         .u-flex.u-flexJustifyBetween

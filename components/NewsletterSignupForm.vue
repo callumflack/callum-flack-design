@@ -24,8 +24,7 @@ div
           tabindex="-1", 
           value=""
         )
-      button(
-        :class="buttonClasses", 
+      button.Button.Meta.fw-bold(
         type="submit", 
         name="subscribe", 
       ) {{buttonText}} 
@@ -35,18 +34,7 @@ div
 <script>
 export default {
   name: "FormNews",
-  props: {
-    reverse: Boolean
-  },
   computed: {
-    buttonClasses() {
-      return [
-        "Button",
-        {
-          "Button--reverse": this.reverse
-        }
-      ];
-    },
     buttonText() {
       // if (this.loading) {
       //   return "Loading";
@@ -75,9 +63,5 @@ export default {
   &:focus {
     border-color: var(--c-text);
   }
-}
-
-.Button {
-  --button-border-color: transparent;
 }
 </style>

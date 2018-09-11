@@ -7,7 +7,7 @@
 .Project {
   /* border-top: 1px solid var(--c-rule); */
   /* padding-bottom: var(--s-7); */
-  padding-bottom: calc(1.5 * var(--responsive-space));
+  padding-bottom: calc(1 * var(--responsive-space));
 }
 
 .Project-filter {
@@ -34,7 +34,7 @@
 
 .Project img {
   /* filter: grayscale(100%); */
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   /* opacity: 0.5; */
   transition: filter 750s ease-in;
 }
@@ -42,6 +42,6 @@
 .Project:hover img {
   /* use the SVG filter that's secreted on work/index */
   /* filter: url("#blur"); */
-  filter: grayscale(0);
+  /* filter: grayscale(0); */
   transition: filter 3000ms ease-out;
 }

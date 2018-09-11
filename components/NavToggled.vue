@@ -73,11 +73,6 @@ export default {
   & > div {
     height: 100vh;
   }
-
-  /* theme */
-  @media (--mo) {
-    padding-top: calc(0.75 * var(--responsive-space));
-  }
 }
 
 .Modal.is-hidden {

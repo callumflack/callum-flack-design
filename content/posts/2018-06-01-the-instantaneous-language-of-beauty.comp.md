@@ -9,7 +9,7 @@ published: true
 updated: false
 ---
 
-A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead _feel_. We sense the world before we are consciously aware of it through instinctive reactions to the aesthetics of our environment. We understand these reactions in ourselves emotionally. We do this well before we have time to use our linguistic system to think and create meaning. And we do it unconsciously, like breathing, every second of our waking lives.
+<span>A shadow passes</span> just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead _feel_. We sense the world before we are consciously aware of it through instinctive reactions to the aesthetics of our environment. We understand these reactions in ourselves emotionally. We do this well before we have time to use our linguistic system to think and create meaning. And we do it unconsciously, like breathing, every second of our waking lives.
 
 This happens quickly. At a glance, we notice and assess the multitude of patterns before us. When a pattern signals danger, we feel immediately that "something isn't quite right" even though we can't "put our finger on it". And when a pattern draws us in, we feel it's beauty, and our curiosity.
 

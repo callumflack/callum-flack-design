@@ -1,19 +1,18 @@
 <template lang="pug">
-div
+div.b-pt4
   //- nav.Container.p-y3
     h3.Text.c-textLight.u-textCenter.p-b2
       span.m-r2 00
       em.Text--italic Home
     .Extract-large
       hr
-  nav.Container.b-nav
-    h3.Nav-locator.Meta.c-textLight
-      span.m-r2 00
-      //- em.Text--italic Essays
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-bold
+      span.m-r2 0.
       span Home
-    .Extract-large
+    //- .Extract-large
       hr
-  header.Container.b-pb3(role="banner")
+  //- header.Container.b-pb3(role="banner")
     .Adjacent
       h1.Heading.m-b3
         | Callum Flack designs and develops website systems your audience will trust in a heartbeat.
@@ -41,8 +40,19 @@ div
 
   main(role="main")
     article.Container
+      .b-pb2
+        h1.Title.u-textCenter.c-highlight.m-b3 Trusted within a heartbeat.
+        //- h2.Meta.u-textCenter.p-t1
+        h2.Text.fs-text-lg.u-textCenter.p-t1
+          | Callum Flack designs and codes intuitively seamless website systems for businesses whose audience demands servcie.
+
+      .Scope-post.Scope-post-dropcap
+        div
+          p Hi, she said.
+
+    //- article.Container
       .p-b4
-        .Meta.fw-medium.u-textCenter
+        .Meta.fw-bold.u-textCenter
           icon-base.Icon(icon-name="icon-pin" height="14" width="14")
             icon-pin
           span Pinned post

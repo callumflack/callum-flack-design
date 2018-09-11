@@ -1,9 +1,9 @@
 ---
 title: About
 lede: Callum Flack is a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps.
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg
-heroInCloudinary: true
 ---
+
+<!-- > The quality of the connections is the key to quality _— Charles Eames_ -->
 
 <!-- @[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
 
@@ -17,9 +17,9 @@ heroInCloudinary: true
 
 <!-- LFunctional simplicity is the result of hard, iterative design work. but they are never simply about making things it look nice. -->
 
-Seamless web experiences that live up to their promises create audiences and grow business. What it looks like is your promise. How it works is the measure of keeping your word. I believe that the two main factors that drive user interface excellence are design rooted in a deep understanding of user intentions, and the ability to execute that design in code.
+Seamless web experiences that live up to their promises create audiences and grow business. What it looks like is your promise. How it works is the measure of it. I believe that the two main factors that drive user interface excellence are design rooted in a deep understanding of user intentions, and the ability to execute that design in code.
 
-I design interfaces that live up to the brand promise, and I execute in code the stack of details that deliver that promise. I can only do this in collaboration. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what a better tomorrow looks like.
+I design interfaces that live up to the brand promise, and I execute in code the stack of details that keep the promise. I can only do this in collaboration. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what a better tomorrow looks like.
 
 <!-- successful digital products and services are made of. -->
 
@@ -61,7 +61,7 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 
 <!-- Schedule: <a class="icon-targetBlank" target="_blank" href="https://calendly.com/callumflack">callumflack</a> -->
 
-You can also find me on these internet places:
+You can also find me on these internet locations:
 
 - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a>
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>

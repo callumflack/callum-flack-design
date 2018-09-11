@@ -9,7 +9,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroInCloudinary: true
 heroRatio: 69.2361111
-tags: Design, Development
+tags: UI, Code
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 featured: true

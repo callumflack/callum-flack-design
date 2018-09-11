@@ -26,6 +26,7 @@
 @import "./utilities/position.css";
 @import "./utilities/media.css";
 @import "./utilities/spacing.css";
+@import "./utilities/spacing-responsive.css";
 @import "./utilities/text.css";
 @import "./utilities/width.css";
 @import "./utilities/zindex.css";

@@ -8,7 +8,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
 heroRatio: 62.5130163
-tags: Design, Development
+tags: Branding, UI, Code
 ---
 
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I

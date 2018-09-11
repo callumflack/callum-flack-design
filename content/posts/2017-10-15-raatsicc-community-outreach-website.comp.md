@@ -10,7 +10,7 @@ heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/r
 heroInCloudinary: true
 heroFrame: false
 heroRatio: 65
-tags: Design, Development
+tags: UI, code
 ---
 
 RAATSICC is a grassroots organisation that provides social services for Aboriginal and Torres Strait Island children and families in remote far north Queensland. I helped them rethink what their website could be, and created a performant online resource for all their audiences.

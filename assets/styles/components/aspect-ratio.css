@@ -71,11 +71,3 @@
     object-fit: cover;
   }
 }
-
-/* RS */
-
-@media (--md) {
-  .md-AspectRatio--2x1 {
-    padding-bottom: 50%;
-  }
-}

@@ -1,11 +1,11 @@
 <template lang="pug">
-.w-md-1x2.w-lg-1x3
+.w-md-1x3.w-lg-1x4
   nuxt-link.Project(:to="link")
     .AspectRatio.AspectRatio--4x3.bg-text
       .AspectRatio-object
         ImageLazy(:src="image")
     .b-my0
-      h2.Subheading.Project-headline.p-t1.m-b2 {{ title }}
+      h2.Heading.Project-headline.p-t1.m-b2 {{ title }}
       .Meta.Project-tags
         // span(v-if="year") {{ year }}
         // span.m-x2 •
