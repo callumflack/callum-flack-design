@@ -35,6 +35,4 @@ Over time, we'll continue to document their boat-making and improve the website 
 
 <!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
 
-<p>
 @[MarkdownProjectLink](link="https://oceanblueboats.com.au" label="Visit Oceanblue Boats")
-</p>

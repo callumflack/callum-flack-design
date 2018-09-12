@@ -17,7 +17,7 @@ a:not(.LinkSignal),*/
   text-shadow: 0.03em 0 var(--c-bg), -0.03em 0 var(--c-bg), 0 0.03em var(--c-bg), 0 -0.03em var(--c-bg),
     0.06em 0 var(--c-bg), -0.06em 0 var(--c-bg), 0.09em 0 var(--c-bg), -0.09em 0 var(--c-bg),
     0.12em 0 var(--c-bg), -0.12em 0 var(--c-bg), 0.15em 0 var(--c-bg), -0.15em 0 var(--c-bg);
-  background-position: 0% 100%, 100% 100%, 0% 100%;
+  background-position: 0% 96%, 100% 96%, 0% 96%;
 
   /* @media screen and (-webkit-min-device-pixel-ratio: 0) {
     background-position-y: 102%, 102%, 102%;

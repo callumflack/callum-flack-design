@@ -9,10 +9,11 @@
               ImageCld(:src="heroImage")
         //- .b-py2.w-md-5x6.w-lg-9x12.m-xA
         .b-py2.w-lg-5x6.m-xA
-          h1.Title.fw-heavy.u-textCenter.p-t3.m-b3 {{ title }}
+          h1.Title.u-textCenter.p-t3.m-b3 {{ title }}
 
           .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
-            time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
             span.MetaSeparator • 
             span(v-if="category") {{ category }}
             span.MetaSeparator(v-if="readingTime" ) • 

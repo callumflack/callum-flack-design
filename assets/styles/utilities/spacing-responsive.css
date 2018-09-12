@@ -41,3 +41,25 @@
 .rm-t6 {
   margin-top: calc(6 * var(--responsive-typography-space)) !important;
 }
+
+.rm-b0 {
+  margin-bottom: 0 !important;
+}
+.rm-b1 {
+  margin-bottom: calc(0.25 * var(--responsive-typography-space)) !important;
+}
+.rm-b2 {
+  margin-bottom: calc(0.5 * var(--responsive-typography-space)) !important;
+}
+.rm-b3 {
+  margin-bottom: calc(1 * var(--responsive-typography-space)) !important;
+}
+.rm-b4 {
+  margin-bottom: calc(1.5 * var(--responsive-typography-space)) !important;
+}
+.rm-b5 {
+  margin-bottom: calc(3 * var(--responsive-typography-space)) !important;
+}
+.rm-b6 {
+  margin-bottom: calc(6 * var(--responsive-typography-space)) !important;
+}

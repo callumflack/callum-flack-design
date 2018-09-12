@@ -48,6 +48,16 @@
 }
 
 .FlexGrid--sm {
+  margin-right: calc(-0.5 * var(--flex-grid-gutter));
+  margin-left: calc(-0.5 * var(--flex-grid-gutter));
+
+  & > * {
+    padding-right: calc(0.5 * var(--flex-grid-gutter));
+    padding-left: calc(0.5 * var(--flex-grid-gutter));
+  }
+}
+
+.FlexGrid--sm {
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * 1rem);

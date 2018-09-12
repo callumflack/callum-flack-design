@@ -1,13 +1,13 @@
 <template lang="pug">
 div.b-pt4
   //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-bold
+    h3.Nav-locator.Meta.fw-700
       span.m-r2 2.
       span Essays
     //- .Extract-large
       hr
   main.Container(role="main")
-    post-excerpt(
+    PostExcerptEssay(
       v-if="post.published && post.category === 'essays'"
       v-for="post in posts"
       :category="post.category"
@@ -25,12 +25,12 @@ div.b-pt4
 </template>
 
 <script>
-import PostExcerpt from "~/components/PostExcerpt.vue";
+import PostExcerptEssay from "~/components/PostExcerptEssay.vue";
 
 export default {
   name: "blog",
   components: {
-    PostExcerpt
+    PostExcerptEssay
   },
   data() {
     return {

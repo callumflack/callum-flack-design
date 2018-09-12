@@ -19,11 +19,11 @@ lede: Callum Flack is a digital designer who works fluidly across both brand and
 
 Seamless web experiences that live up to their promises create audiences and grow business. What it looks like is your promise. How it works is the measure of it. I believe that the two main factors that drive user interface excellence are design rooted in a deep understanding of user intentions, and the ability to execute that design in code.
 
-I design interfaces that live up to the brand promise, and I execute in code the stack of details that keep the promise. I can only do this in collaboration. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what a better tomorrow looks like.
+I design interfaces that live up to the brand promise, and I execute in code the stack of details that keep the promise. Which means I have to understand your intent, what what you offer to your audience. I can only do this in collaboration. So I ask my clients to participate directly with me to understand their audience, prioritise the work within constraints and define what a better tomorrow looks like.
 
 <!-- successful digital products and services are made of. -->
 
-While focussed on design, I'm also an accomplished frontend developer. Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means better decision making and greater scope understanding, all of which gives room for higher rates of design iteration.
+While focussed on design, I'm also an accomplished frontend developer. Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means greater scope understanding and better decision making, in turn allowing higher rates of design iteration.
 
 <!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween". -->
 
@@ -53,7 +53,7 @@ Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisban
 
 ## Contact
 
-<a class="icon-targetblan" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns, Australia</a>, I currently work with local, interstate and international clients. I plug into product teams or work one-to-one with owners, organisations and creators. I enjoy travelling to meet in person.
+<a class="icon-targetblan" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in Cairns, Australia</a>, I currently work with local, interstate and international clients. I plug into product teams, agencies or work one-to-one with my clients. I enjoy travelling to meet in person.
 
 - Email: <a class="icon-targetBlank" target="_blank" href="mailto:callum@callumflack.design">callum@callumflack.design</a>
 - Phone: [+61(0) 408 767 540](tel:610-408-767-540)

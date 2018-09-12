@@ -44,7 +44,7 @@ p em,
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: var(--fs-meta);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: var(--fls-loose);
   line-height: 1;
   text-transform: uppercase;
@@ -97,11 +97,13 @@ p em,
 /* .Subheading, */
 .Scope-post h2 {
   font-family: var(--ff-text), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: var(--fs-subheading);
-  font-size: var(--fs-text);
   font-weight: 600;
-  /* letter-spacing: 0.025em;
-  line-height: 1.333; */
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: var(--fls-touch-positive);
+  /* line-height: 1.333; */
 }
 
 .Subheading,
@@ -111,12 +113,12 @@ p em,
 .Supertitle {
   font-family: var(--ff-stack-sans);
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  letter-spacing: -0.005em;
   letter-spacing: 0;
+  letter-spacing: -0.0075em;
   /* text-transform: uppercase; */
 
   & a:hover {
@@ -126,7 +128,7 @@ p em,
 
 .Subheading {
   font-size: var(--fs-subheading);
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .Heading {
@@ -149,7 +151,7 @@ p em,
 }
 
 .Title {
-  font-size: calc(0.5 * var(--fs-title));
+  font-size: calc(0.55 * var(--fs-title));
 
   @media (--sm) {
     font-size: calc(0.7 * var(--fs-title));
@@ -239,7 +241,7 @@ blockquote p {
 blockquote p em {
   display: table;
   /* resetting ems before applying font sizing: */
-  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important;
+  font-size: calc((16 / (var(--fs-text-unit) * 16 * 1.111111111)) * var(--fs-text)) !important;
 }
 
 /* blockquote em {

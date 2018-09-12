@@ -1,8 +1,8 @@
 <template lang="pug">
 nav.Nav-list
-  //- hr.bg-rule(style="height:1px", :class="hideHorizontalRule")
+  hr.bg-rule(style="height:1px", :class="hideHorizontalRule")
   .Container.Container--verticalRule
-    .Extract-super(:class="hideHorizontalRule")
+    //- .Extract-super(:class="hideHorizontalRule")
       hr.bg-rule(style="height:1px")
     .Extract-large.b-py3
       nuxt-link.Nav-link.f(
@@ -11,15 +11,15 @@ nav.Nav-list
         :to="item.link"
         :exact="item.exact"
       )
-        .Extract-large-unit.Title.Nav-link-level.fw-regular
+        .Extract-large-unit.Title.Nav-link-level.fw-300
           span {{ item.level }}
-        .Title.Nav-link-label {{ item.label }}
-        .Title.fw-light.Nav-link-lede(v-if="item.lede") 
+        .Title.Nav-link-label.fw-500 {{ item.label }}
+        .Title.Nav-link-lede.fw-300(v-if="item.lede") 
           span — 
           | {{ item.lede }}
 
       .Extract-large-inset
-        p.Meta.fw-bold Contact
+        p.Meta.fw-600 Contact
         div(
           v-for="contact in navContacts"
           :key="contact.link"
@@ -45,6 +45,9 @@ export default {
       if (this.$route.name === "interesting") {
         return "u-hiddenVisually";
       }
+      // if (this.$route.name === "index") {
+      //   return "u-hiddenVisually";
+      // }
     }
   },
   data() {
@@ -161,6 +164,10 @@ export default {
   }
 }
 
+.Nav-link-label {
+  font-weight: 500;
+}
+
 .Nav-link-lede {
   display: none;
   line-height: 0.5;
@@ -180,6 +187,7 @@ export default {
 .nuxt-link-active {
   /* show it as unselectable */
   cursor: initial;
+  /* color: var(--c-link); */
   /* never make it red */
   color: var(--c-text) !important;
 }

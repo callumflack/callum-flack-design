@@ -1,7 +1,4 @@
 <template lang="pug">
-div
-  p Once or twice a month I write an email letter about "things inbetween"—the stories, ideas and links that I've found curious, resonating, <em>interesting</em>. 
-  p While the subject matter is unapologetically broad, the lenses are wonder, design, writing and internet tech. It's for folks hungry to connect dots.
   form.form.Text.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
@@ -24,7 +21,7 @@ div
           tabindex="-1", 
           value=""
         )
-      button.Button.Meta.fw-bold(
+      button.Button.Meta(
         type="submit", 
         name="subscribe", 
       ) {{buttonText}} 
@@ -55,13 +52,15 @@ export default {
 }
 
 .form input {
-  border-bottom: 1px solid var(--c-text);
+  border: 1px solid var(--c-text);
   box-shadow: none;
   color: var(--c-text);
-  padding-left: 0;
 
   &:focus {
     border-color: var(--c-text);
   }
+}
+
+.form input + button {
 }
 </style>

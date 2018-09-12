@@ -4,11 +4,6 @@
 /* 
 
 
-
-
-
-
-
   Responsive custom properties!
   
   On css custom properties & postcss-custom-properties:
@@ -24,17 +19,13 @@
   }
 
 
-
-
-
-
-
  */
 
 :root {
   --responsive-space: 1.75rem;
   --responsive-typography-space: 0.75rem;
   --responsive-hero: 24rem;
+  --field-height: 2.75rem;
 }
 
 @media (--md) {
@@ -49,23 +40,14 @@
   :root {
     --responsive-space: 4rem;
     --responsive-hero: 47rem;
+    --field-height: 2.75rem;
   }
 }
 
 /* 
 
 
-
-
-
-
-
   Every other custom property
-
-
-
-
-
 
 
  */
@@ -137,6 +119,12 @@
   --c-link: #9411c5;
   --c-link: #e4b830; /* yellow */
   --c-link: #e62f0d; /* red */
+  --c-link: #33f; /* dow-smith blue */
+  --c-link: #962cff; /* newlyn purple */
+  --c-link: #8c3add; /* newlyn purple */
+  --c-link: #6e32ff; /* kremers purple */
+  --c-link: #fe5000; /* pantone 021C */
+  --c-link: #fe3600; /* pantone 021C plus */
   --c-highlight: var(--c-link);
   --c-highlight-alt: #ffea97;
 
@@ -219,19 +207,18 @@
   --fs-text-unit: 1.125; /* 18 */
 
   --fs-text-xs: calc(1em * var(--fs-text-unit));
-  --fs-text-sm: calc(0.833333333em * var(--fs-text-unit)); /* 15/18/16 * 16 */
-  --fs-text: calc(1em * var(--fs-text-unit));
+  --fs-text-sm: calc(0.888888889em * var(--fs-text-unit)); /* 16/18/16 * 16 */
+  --fs-text: calc(1.111111111em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
-  --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
+  --fs-text-lg: calc(1.25em * var(--fs-text-unit)); /* 22.5/18/16 * 16 */
   --fs-meta: calc(0.666666667em * var(--fs-text-unit)); /* 12/18/16 * 16 */
   --fs-button: var(--fs-meta);
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
-  --fs-subheading: calc(1.055555556em * var(--fs-text-unit)); /* 19/18/16 * 16 */
-  --fs-heading: calc(1.5em * var(--fs-text-unit)); /* 27/18/16 * 16 */
-  --fs-subtitle: calc(2.5em * var(--fs-text-unit)); /* 45/18/16 * 16 */
-  --fs-title: calc(2.5em * var(--fs-text-unit)); /* 45/18/16 * 16 */
+  --fs-subheading: calc(0.888888889em * var(--fs-text-unit)); /* 16/18/16 * 16 */
+  --fs-heading: calc(1.375em * var(--fs-text-unit)); /* 27/18/16 * 16 */
+  --fs-subtitle: calc(1.666666667em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
+  --fs-title: calc(2.25em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
   --fs-supertitle: calc(4em * var(--fs-text-unit)); /* 72/18/16 * 16 */
 
   /* 
@@ -249,7 +236,7 @@
   --fls-tight: -0.005em;
   --fls-touch-negative: 0;
   --fls-regular: 0;
-  --fls-touch-positive: 0.02em;
+  --fls-touch-positive: 0.05em;
   --fls-loose: 0.15em;
 
   --flh-super: 1;
@@ -308,9 +295,7 @@
 
   --border-radius: 4px;
   --cover-image-screen-color: rgba(0, 0, 0, 0.25);
-  --field-height: 3em;
-  --field-height: 2.75rem;
-  --field-space: 1rem 1.25rem;
+  --field-space: 0 1rem;
   --figure-space: calc(2 * var(--space));
   --figure-space-within-text: calc(0.25 * var(--responsive-space));
   --figcaption-margin-top: 0.5rem;

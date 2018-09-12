@@ -1,32 +1,28 @@
 <template lang="pug">
   article.Excerpt.b-pt3
-    header(role="header")
-      nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
-        .AspectRatio(:style="heroAspectStyle")
-          .AspectRatio-object.bg-text
-            ImageCld(:src="thumbImage || heroImage")
-      hr(v-else)
-
-      .m-xA(:class="titleBlockClasses")
-        h2.Title.fw-black.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
-          nuxt-link(:to="permalink") {{ title }}
-        h2.Heading.u-textCenter.p-t2.m-b2(v-else)
-          nuxt-link(:to="permalink") {{ title }}
-
-        .Meta.u-textCenter.p-t1
-          //- time(:date-time="date") {{ date | moment("YYYY.MM.DD") }} ? NAH
-          time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-          span.MetaSeparator • 
-          span(v-if="category") {{ category }}
-          span.MetaSeparator(v-if="readingTime" ) • 
-          span(v-if="readingTime" ) {{ readingTime }} minutes
-
-    main(role="main", :class="mainAlignClasses")
-      .Scope-post(v-if="showFullArticle")
-        nuxtent-body(:body="body")
-      p.Text(v-else)
-        | {{ lede }} 
-        nuxt-link.Text--italic(:to="permalink") Continue reading
+    .Extract-edge
+      .FlexGrid.FlexGrid--sm
+        .w-3x12(v-if="heroImage")
+          nuxt-link.u-block(:to="permalink")
+            //- .AspectRatio(:style="heroAspectStyle")
+            .AspectRatio
+              .AspectRatio-object.bg-text
+                ImageCld(:src="thumbImage || heroImage")
+        .w-9x12
+          .Meta.rm-b2
+            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+            span.MetaSeparator • 
+            span(v-if="category") {{ category }}
+            //- span.MetaSeparator(v-if="readingTime" ) • 
+            //- span(v-if="readingTime" ) {{ readingTime }} minutes
+          h2.Subtitle.fw-500.rm-b2.p-t1
+            nuxt-link(:to="permalink") {{ title }}
+          .p-t3
+            .Scope-post
+              nuxtent-body(v-if="showFullArticle", :body="body")
+              p(v-else)
+                | {{ lede }} 
+                nuxt-link.Text--italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
     .AspectRatio.AspectRatio--16x9
@@ -102,28 +98,11 @@ export default {
     title: String
   },
   computed: {
-    heroExtractClasses() {
-      if (this.showOnHomePage === true) {
-        return "Extract-hero";
-      }
-      return "Extract-edge";
-    },
     /* heroObjectBgClasses() {
       return this.heroImageNoShadow ? "bg-text" : "bg-border";
     }, */
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
-    },
-    titleBlockClasses() {
-      if (this.showOnHomePage === true) {
-        return "b-py2 w-lg-5x6";
-        // return "b-py2";
-      }
-      return "b-py0 w-lg-5x6";
-      // return "b-py0";
-    },
-    mainAlignClasses() {
-      return !this.showOnHomePage === true && "p-t1";
     }
   }
 };

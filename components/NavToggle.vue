@@ -4,15 +4,16 @@
   .Container
     .Extract-large.Toggle-align.b-pt2
       .u-fixed.z-top
-        a.Toggle-button.Button.Meta.fw-black(
+        a.Toggle-button.Button.Meta.fw-600(
           href="#"
           @click.prevent="handleNavToggle"
+          style="letter-spacing: 0.25em;"
           :class="{ 'is-active': isVisible }"
         ) 
           span(style="text-transform:initial") CFd
         //- span CFD
-        //- span.w-100.u-textCenter.Meta.fw-bold {{ currentPageName }}
-        //- span.Extract-large-inset.Meta.fw-medium {{ currentPageName }}
+        //- span.w-100.u-textCenter.Meta.fw-700 {{ currentPageName }}
+        //- span.Extract-large-inset.Meta.fw-500 {{ currentPageName }}
 
 </template>
 

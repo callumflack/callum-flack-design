@@ -1,7 +1,7 @@
 <template lang="pug">
 div.b-pt4
   //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-bold
+    h3.Nav-locator.Meta.fw-700
       span.m-r2 1.
       span Blog
     //- .Extract-large

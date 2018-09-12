@@ -45,9 +45,14 @@ body {
 
  */
 
-.page-index {
+/* .page-index {
   background-color: #fbf06f;
   background-color: var(--c-neutral);
+} */
+
+.page-index .Page {
+  /* background-color: #ffef72; */
+  /* background-color: var(--c-link); */
 }
 
 .page-index .Nav-list {
