@@ -29,21 +29,21 @@ div
                 .Extract-large.h-100
                   .f.f-alignItemsCenter.h-100
                     .w-8x12.w-md-9x12.w-lg-8x12
-                      h1.Title.fw-600.c-bg.m-b0
+                      h1.Supertitle.fw-600.c-bg.m-b0
                         //- | Working at the intersection between user experience, visual design &amp; code.
                         //- | Visual design plus user experience plus code.
                         | Working within
                         br
                         | visual design,
                         br
-                        | user experience,
+                        | user experience
                         br 
-                        | &amp; code.
+                        | and code.
                       //- h2.Subheading.fw-400.c-bg.w-10x12
                         | “…if the solution is not beautiful, I know it is wrong.” 
                         span.fs-scale-reset #[span.Meta — Buckminster Fuller]
                       h2.Text.fw-400.c-bg.w-lg-10x12.u-hidden.u-sm-block.rm-t4
-                        | The quality of the connections is the key to quality.
+                        span.Text--italic The quality of the connections is the key to quality.
                         br 
                         span.fs-scale-reset #[span.Meta.fw-500 — Charles Eames]
       

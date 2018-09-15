@@ -1,28 +1,28 @@
 <template lang="pug">
   article.Excerpt.b-pt3
-    .Extract-edge
-      .FlexGrid.FlexGrid--sm
-        .w-3x12(v-if="heroImage")
-          nuxt-link.u-block(:to="permalink")
-            //- .AspectRatio(:style="heroAspectStyle")
-            .AspectRatio
-              .AspectRatio-object.bg-text
-                ImageCld(:src="thumbImage || heroImage")
-        .w-9x12
-          .Meta.rm-b2
-            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-            span.MetaSeparator • 
-            span(v-if="category") {{ category }}
-            //- span.MetaSeparator(v-if="readingTime" ) • 
-            //- span(v-if="readingTime" ) {{ readingTime }} minutes
-          h2.Subtitle.fw-500.rm-b2.p-t1
-            nuxt-link(:to="permalink") {{ title }}
-          .p-t3
-            .Scope-post
-              nuxtent-body(v-if="showFullArticle", :body="body")
-              p(v-else)
-                | {{ lede }} 
-                nuxt-link.Text--italic(:to="permalink") Continue reading
+    //- .Extract-edge
+    //- .FlexGrid.FlexGrid--sm
+      .w-3x12(v-if="heroImage")
+        nuxt-link.u-block(:to="permalink")
+          //- .AspectRatio(:style="heroAspectStyle")
+          .AspectRatio
+            .AspectRatio-object.bg-text
+              ImageCld(:src="thumbImage || heroImage")
+      .w-9x12
+    .Meta.c-textLight.rm-b2
+      time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+      span.MetaSeparator • 
+      span.u-textCapitalise(v-if="category") {{ category }}
+      //- span.MetaSeparator(v-if="readingTime" ) • 
+      //- span(v-if="readingTime" ) {{ readingTime }} minutes
+    h2.Subtitle.fw-500.p-t1.m-b0
+      nuxt-link(:to="permalink") {{ title }}
+    .p-t3
+      .Scope-post
+        nuxtent-body(v-if="showFullArticle", :body="body")
+        p(v-else)
+          | {{ lede }} 
+          nuxt-link.Text--italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
     .AspectRatio.AspectRatio--16x9

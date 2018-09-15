@@ -14,12 +14,12 @@
 div
   .b-pt4
     article.Container
-      .b-pb2
+      .b-pb1
         //- h1.Title.u-textCenter.c-highlight.m-b3 Trusted within a heartbeat.
         //- .fw-600.c-highlight
         h1.Title
-          | Callum Flack 
-          span.c-highlight designs &amp; develops website systems 
+          //- | Callum Flack 
+          span.c-highlight Callum Flack designs &amp; develops website systems 
           | for businesses, entrepreneurs &amp; artists driven to connect with people.
         //- h2.Meta.u-textCenter.p-t1
         //- h2.Text.fs-text-lg.u-textCenter.p-t1
@@ -28,22 +28,25 @@ div
       .Scope-post.Scope-post-dropca
         //- .fs-block-lg.b-pb1
         .fs-block-lg.rs-m3
-          p 
-            span.u-textUppercase To create change 
-            | in people, you first have to create an emotional connection. But in the digital age, you can't just rely on a logo or a campaign. 
+          p.m-b0
+            //- span.u-textUppercase To create change 
+            span In the digital age, you can't just rely on graphic design. 
             em Your branding is tactile—
-            | the technology is inseparable from the brand. If people don't trust your interfaces, they won't pay attention. That's where I can help you. 
+            | the technology is inseparable from the brand. People only pay attention when they trust the interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
+            em felt. 
+            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
-              em.Text--italic I'm a brand identity designer who codes.
+              em.Text--italic I'm a designer who codes.
             | &nbsp;
-          p It's clear now that design is a competitive advantage. But I learned to code because execution is hard. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. You'll know in a heartbeat when it's right. And so will your audience.
-          p.u-textCenter(style="font-size:2em;transform:translateY(0.25em)") * * *
+          //- p It's clear now that design is a competitive advantage. But I learned to code because execution is hard. 
+          //- p.u-textCenter(style="font-size:2em;transform:translateY(0.25em)") * * *
+          hr.bg-text.m-l0.b-my0(style="width:5%;transform:translateY(-0.25em)")
 
-      .rm-t3
+      .rm-t3.fs-block-sm
         //- NewsletterSignupLede
-        p.fs-text-lg Ps. I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and society. You should sign up:
+        p Ps. I write an email letter once or twice a month about visual design, user experience and website development through the lens of people and society. You should sign up:
         NewsletterSignupForm
-        p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
+        //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
 
   //- .bg-highlight
   //- .NewsletterHero.CoverImage

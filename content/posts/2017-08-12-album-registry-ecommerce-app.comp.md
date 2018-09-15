@@ -14,7 +14,7 @@ tags: branding, ui, code
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
 be, and rebuild the platform for a community of photographers around the world.
 
-> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost of great photography." _— Jannah Dryden, Founder_
+> Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost of great photography. _— Jannah Dryden, Founder_
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 

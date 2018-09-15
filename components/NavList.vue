@@ -11,7 +11,7 @@ nav.Nav-list
         :to="item.link"
         :exact="item.exact"
       )
-        .Extract-large-unit.Title.Nav-link-level.fw-300
+        .Extract-large-unit.Title.Nav-link-level.fw-500
           span {{ item.level }}
         .Title.Nav-link-label.fw-500 {{ item.label }}
         .Title.Nav-link-lede.fw-300(v-if="item.lede") 
@@ -19,12 +19,14 @@ nav.Nav-list
           | {{ item.lede }}
 
       .Extract-large-inset
-        p.Meta.fw-600 Contact
-        div(
+        //- p.Meta.fw-500.rm-b2 Contact
+        .Meta.fw-400.c-text.rm-b1 Contact
+        .Meta.fw-400.c-textLight.rm-b1(
           v-for="contact in navContacts"
           :key="contact.link"
         )
-          a.Text.fs-text-sm.flh-loose(:href="contact.link" target="_blank") {{ contact.label }}
+          //- a.Text.fs-text-sm.flh-loose(:href="contact.link" target="_blank") {{ contact.label }}
+          a(:href="contact.link" target="_blank") {{ contact.label }}
 
 </template>
 
@@ -54,7 +56,7 @@ export default {
     return {
       navItems: [
         {
-          label: "Home",
+          label: "Intro",
           level: "0.",
           link: "/",
           exact: true
@@ -96,10 +98,10 @@ export default {
           label: "callum@callumflack.design",
           link: "mailto:callum@callumflack.design"
         },
-        {
+        /* {
           label: "+61(0) 408 767 540",
           link: "tel:610-408-767-540"
-        },
+        }, */
         {
           label: "@callumflack",
           link: "https://twitter.com/callumflack"
@@ -128,16 +130,16 @@ export default {
   text-decoration: none;
 
   @media (--lg) {
-    padding-bottom: calc(0.5 * var(--responsive-space));
+    padding-bottom: calc(0.333 * var(--responsive-space));
   }
 }
 
 .Nav-link:last-of-type {
-  margin-bottom: calc(0.75 * var(--responsive-space));
+  margin-bottom: calc(0.5 * var(--responsive-space));
 
-  /* @media (--lg) {
-    margin-bottom: var(--responsive-space);
-  } */
+  @media (--lg) {
+    margin-bottom: calc(0.5 * var(--responsive-space));
+  }
 }
 
 /* .Nav-link + .Nav-link {

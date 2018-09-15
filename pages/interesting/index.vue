@@ -3,7 +3,9 @@ div
   header.NewsletterHero.CoverImage(role="banner")
     .Container.u-relative.b-pt4.b-pb3
       //- h1.Supertitle.u-textCenter.p-t1.b-mb2 ❏ Interesting
-      h1.Supertitle.u-textCenter.b-mb1 ✺ Interesting
+      h1.Supertitle.rm-b4
+        span.fw-300 ✺ 
+        | Interesting
       NewsletterSignupLede
       NewsletterSignupForm
   

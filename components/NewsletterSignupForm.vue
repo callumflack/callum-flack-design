@@ -7,7 +7,7 @@
     novalidate=''
   )
     .form-group
-      input(
+      input.Meta(
         placeholder="Add your email", 
         type="email", 
         name="EMAIL", 

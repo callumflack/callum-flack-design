@@ -68,6 +68,10 @@ body {
   }
 }
 
+.page-interesting .Toggle-button {
+  background-color: transparent;
+}
+
 /* 
 
   Top of the page nav specials
@@ -97,9 +101,12 @@ body {
 .Scope-post-dropcap div > p:first-of-type:first-letter {
   float: left;
   font-family: var(--ff-lede), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 300;
   font-size: 3em;
   line-height: 1;
   padding-top: 3px;
+  padding-top: 0;
   padding-right: 0.7em;
   padding-bottom: 0.25em;
 
@@ -126,11 +133,12 @@ body {
 
  */
 
-.Button {
+.Button--sm {
   /* padding-top: 1px;
   @media (--lg) {
     padding-top: 0.5px;
   } */
+  --field-height: 2.75rem;
 }
 
 /* 
@@ -141,6 +149,7 @@ body {
 
 .MetaSeparator {
   display: inline-block;
+  /* letter-spacing: -0.5em; */
   margin-left: calc(0.5 * var(--responsive-typography-space));
   margin-right: calc(0.5 * var(--responsive-typography-space));
 }
@@ -195,7 +204,7 @@ body {
   background-color: rgba(212, 203, 184, 0.85);
   background-color: rgba(228, 226, 220, 0.9); */
   background-color: rgba(239, 236, 229, 0.92);
-  content: "";
+  /* content: ""; */
   height: 100%;
   left: 0;
   position: absolute;
@@ -206,11 +215,13 @@ body {
 
 .NewsletterHero {
   background-color: var(--c-text);
+  background-color: rgba(239, 236, 229, 0.92);
+  background-color: rgba(255, 203, 5, 0.92);
   /* background-image: url(/images/_slump.jpg);
   background-image: url(/images/_overcast-night.jpg);
   background-image: url(/images/_spys.jpg);
   background-image: url(/images/_kiss.jpg);*/
-  background-image: url("https://res.cloudinary.com/pw-img-cdn/image/upload/v1531451032/okok/_kiss.jpg");
+  /* background-image: url("https://res.cloudinary.com/pw-img-cdn/image/upload/v1531451032/okok/_kiss.jpg"); */
   /* background-position-y: 80%; */
   background-position-y: 0;
   position: relative;

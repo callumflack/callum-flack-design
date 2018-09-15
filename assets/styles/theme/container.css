@@ -34,8 +34,8 @@
       content: " ";
       display: block;
       height: 100%;
-      left: -1px;
-      left: -14px;
+      /* left: -14px; */
+      left: 0;
       position: absolute;
       top: 0;
       bottom: 0;

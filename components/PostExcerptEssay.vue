@@ -8,16 +8,16 @@
       hr(v-else)
 
       .m-xA(:class="titleBlockClasses")
-        h2.Title.fw-500.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
+        h2.Title.fw-500.u-textCenter.p-t2.m-b2(v-if="showOnHomePage")
           nuxt-link(:to="permalink") {{ title }}
-        h2.Heading.fw-500.u-textCenter.p-t2.m-b2(v-else)
+        h2.Subtitle.fw-500.u-textCenter.p-t2.m-b2(v-else)
           nuxt-link(:to="permalink") {{ title }}
 
-        .Meta.u-textCenter.p-t1
-          //- time(:date-time="date") {{ date | moment("YYYY.MM.DD") }} ? NAH
-          time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+        .Meta.c-textLight.u-textCenter.p-t1
+          //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+          time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
           span.MetaSeparator • 
-          span(v-if="category") {{ category }}
+          span.u-textCapitalise(v-if="category") {{ category }}
           span.MetaSeparator(v-if="readingTime" ) • 
           span(v-if="readingTime" ) {{ readingTime }} minutes
 
