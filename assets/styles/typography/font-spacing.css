@@ -41,7 +41,9 @@ blockquote {
 
 button + button,
 .Button + .Button {
-  margin-left: var(--button-inline-spacing);
+  @media (--sm) {
+    margin-left: var(--button-inline-spacing);
+  }
 }
 
 /*

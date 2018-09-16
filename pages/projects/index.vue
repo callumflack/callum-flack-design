@@ -23,10 +23,11 @@ div.b-pt4
               span {{ tag }}
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
-  .Container
-    main(role="main")
+  .Container.Container-inset
+    main.rp-t2(role="main")
       .Extract-super
-        .mo-FlexGridWrapper
+        //- .FlexGridWrapper.m-xl-x0
+        .FlexGridWrapper
           .FlexGrid.FlexGrid--noGrow
             ProjectExcerpt(
               v-if="project.published && project.category === 'projects'"

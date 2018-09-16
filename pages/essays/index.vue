@@ -6,7 +6,7 @@ div.b-pt4
       span Essays
     //- .Extract-large
       hr
-  main.Container(role="main")
+  main.Container.rp-t2(role="main")
     PostExcerptEssay(
       v-if="post.published && post.category === 'essays'"
       v-for="post in posts"

@@ -4,7 +4,8 @@
 
  */
 
-.Container {
+.Container,
+.Container-inset {
   padding-left: calc(0.5 * var(--grid-gutter));
   padding-right: calc(0.5 * var(--grid-gutter));
 

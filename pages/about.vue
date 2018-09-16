@@ -5,7 +5,7 @@ div
       span.m-r2 5.
       span About
   article.b-pt4
-    header.CoverImage(role="banner")
+    header.CoverImage.rp-t2(role="banner")
       //- .Container.b-py
         .Extract-super.h-100
           .FlexGrid
@@ -51,21 +51,17 @@ div
       .Container.b-pt3
         .Scope-post.Scope-post-dropcap
           nuxtent-body(:body="page.body")
-      // .Container
-        .figure.figure--post
-          NewsletterSignupBlock
+
 </template>
 
 <script>
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 /* src-placeholder="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_50,e_blur:300/https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg" */
 
 export default {
   components: {
-    ImageCld,
-    NewsletterSignupBlock
+    ImageCld
   },
   props: {
     title: String,

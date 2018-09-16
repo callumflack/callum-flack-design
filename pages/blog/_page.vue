@@ -6,7 +6,7 @@ div.b-pt4
       span Blog
     //- .Extract-large
       hr
-  Post(
+  Post.rp-t2(
     :body="page.body"
     :category="page.category"
     :date="page.date"

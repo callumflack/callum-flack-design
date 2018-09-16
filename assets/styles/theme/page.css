@@ -134,11 +134,9 @@ body {
  */
 
 .Button--sm {
-  /* padding-top: 1px;
   @media (--lg) {
-    padding-top: 0.5px;
-  } */
-  --field-height: 2.75rem;
+    --field-height: 2.75rem;
+  }
 }
 
 /* 

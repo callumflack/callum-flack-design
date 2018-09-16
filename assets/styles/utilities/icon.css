@@ -54,6 +54,6 @@
 .icon-targetBlank--withinButton:after {
   font-size: 100%;
   position: relative;
-  right: -0.5em;
+  right: -0.125em;
   top: -0.125em;
 }

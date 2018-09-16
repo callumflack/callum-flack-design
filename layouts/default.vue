@@ -23,12 +23,12 @@ export default {
       return `fs-scale-reset page-${this.$store.state.currentPage}`;
     },
     contentNavSpace() {
+      if (this.$route.name === "projects") {
+        return "p-b0";
+      }
       if (this.$route.name !== "interesting") {
         return "b-pb3";
       }
-      /* if (this.$route.name === "index") {
-        return "p-t0";
-      } */
     }
   }
 };

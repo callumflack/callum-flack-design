@@ -1,12 +1,12 @@
 <template lang="pug">
-div
+div.b-pt4
   //- nav.Container.b-nav
     h3.Nav-locator.Meta
       span.m-r2 01
       span Blog
     //- .Extract-large
       hr
-  main.Container.b-pt4(role="main")
+  main.Container.rp-t2(role="main")
     post-excerpt(
       v-if="post.published"
       v-for="post in posts"

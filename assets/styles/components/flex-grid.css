@@ -5,29 +5,55 @@
  */
 
 .FlexGridWrapper {
-  margin-right: calc(1 * var(--flex-grid-gutter));
-  margin-left: calc(1 * var(--flex-grid-gutter));
-}
+  /* margin-right: calc(1 * var(--flex-grid-gutter));
+  margin-left: calc(1 * var(--flex-grid-gutter)); */
+  margin-right: calc(0.5 * var(--grid-gutter));
+  margin-left: calc(0.5 * var(--grid-gutter));
 
-.mo-FlexGridWrapper {
-  @media (--mo) {
-    /* use project's container theme */
-    margin-right: calc(0.75 * var(--grid-gutter));
-    margin-left: calc(0.75 * var(--grid-gutter));
+  @media (--sm) {
+    margin-right: calc(1 * var(--grid-gutter));
+    margin-left: calc(1 * var(--grid-gutter));
   }
 }
+
+/* use project's container theme */
+.mo-FlexGridWrapper {
+  @media (--mo) {
+    margin-right: calc(0.5 * var(--grid-gutter));
+    margin-left: calc(0.5 * var(--grid-gutter));
+  }
+}
+
+/* 
+
+  --grid-gutter: calc(2 * var(--space));
+  --flex-grid-gutter: calc(1.25 * var(--space));
+
+ */
 
 .FlexGrid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--flex-grid-gutter));
-  margin-left: calc(-1 * var(--flex-grid-gutter));
+  /* margin-right: calc(-1 * var(--flex-grid-gutter));
+  margin-left: calc(-1 * var(--flex-grid-gutter)); */
+  margin-left: calc(-0.5 * var(--grid-gutter));
+  margin-right: calc(-0.5 * var(--grid-gutter));
+
+  /* @media (--md) {
+    margin-left: calc(-1 * var(--grid-gutter));
+    margin-right: calc(-1 * var(--grid-gutter));
+  } */
 
   & > * {
     flex: 1 1 auto;
-    padding-right: var(--flex-grid-gutter);
-    padding-left: var(--flex-grid-gutter);
+    padding-right: calc(0.5 * var(--grid-gutter));
+    padding-left: calc(0.5 * var(--grid-gutter));
+
+    /* @media (--md) {
+      padding-left: calc(1 * var(--grid-gutter));
+      padding-right: calc(1 * var(--grid-gutter));
+    } */
   }
 
   @media (--sm) {
@@ -47,7 +73,7 @@
   }
 }
 
-.FlexGrid--sm {
+/* .FlexGrid--sm {
   margin-right: calc(-0.5 * var(--flex-grid-gutter));
   margin-left: calc(-0.5 * var(--flex-grid-gutter));
 
@@ -55,7 +81,7 @@
     padding-right: calc(0.5 * var(--flex-grid-gutter));
     padding-left: calc(0.5 * var(--flex-grid-gutter));
   }
-}
+} */
 
 .FlexGrid--sm {
   display: flex;

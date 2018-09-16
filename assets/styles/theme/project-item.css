@@ -8,6 +8,21 @@
   /* border-top: 1px solid var(--c-rule); */
   /* padding-bottom: var(--s-7); */
   padding-bottom: calc(1 * var(--responsive-space));
+  padding-bottom: calc(2 * var(--responsive-space));
+}
+
+/* 
+
+There is no `.b-pb3` on the .Page for the projects route.
+Instead, apply it here.
+
+*/
+/* .Project:last-of-type {
+  padding-bottom: calc(2 * var(--responsive-space));
+} */
+
+.Project-tags span:first-letter {
+  text-transform: capitalize;
 }
 
 .Project-filter {

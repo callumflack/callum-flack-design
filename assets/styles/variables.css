@@ -135,7 +135,7 @@
   --c-textUnderline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
-  --c-border: #ddd;
+  --c-border: #e5e5e5;
   --c-rule: rgba(0, 0, 0, 0.1);
   --c-rule: rgba(0, 0, 0, 0.15);
   --c-device: #e7e7e7;
@@ -269,7 +269,7 @@
   --button-font-size: inherit;
   --button-font-weight: inherit;
   --button-letter-spacing: inherit;
-  --button-text-alignment: 0;
+  --button-text-alignment: 1px;
 
   /* button + button inline spacing */
   --button-inline-spacing: var(--s-2);

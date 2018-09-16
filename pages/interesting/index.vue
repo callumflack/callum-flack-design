@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  header.NewsletterHero.CoverImage(role="banner")
+  header.NewsletterHero.CoverImage.rp-t2(role="banner")
     .Container.u-relative.b-pt4.b-pb3
       //- h1.Supertitle.u-textCenter.p-t1.b-mb2 ❏ Interesting
       h1.Supertitle.rm-b4

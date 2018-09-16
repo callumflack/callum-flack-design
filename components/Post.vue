@@ -3,7 +3,7 @@
     header.b-pb2(role="banner")
       .Container.p-b3
         .b-pb2.w-lg-5x6.m-xA
-          h1.Title.u-textCenter.m-b3 {{ title }}
+          h1.Title.u-textCenter.rm-b2 {{ title }}
           .Meta.c-textLight.u-textCenter.p-t1(v-if="category !== 'projects'")
             //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}

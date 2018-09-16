@@ -13,14 +13,15 @@
 
 div
   .b-pt4
-    article.Container
+    article.Container.rp-t2
       .b-pb1
         //- h1.Title.u-textCenter.c-highlight.m-b3 Trusted within a heartbeat.
         //- .fw-600.c-highlight
         h1.Title
           //- | Callum Flack 
           span.c-highlight Callum Flack designs &amp; develops website systems 
-          | for businesses, entrepreneurs &amp; artists driven to connect with people.
+          //- | for businesses, entrepreneurs &amp; artists driven to connect with people.
+          | for businesses &amp; individuals who wish to make the complex simple, and the simple unique.
         //- h2.Meta.u-textCenter.p-t1
         //- h2.Text.fs-text-lg.u-textCenter.p-t1
           | Callum Flack designs and codes intuitively seamless website systems for businesses whose audience demands servcie.
@@ -32,7 +33,7 @@ div
             //- span.u-textUppercase To create change 
             span In the digital age, you can't just rely on graphic design. 
             em Your branding is tactile—
-            | the technology is inseparable from the brand. People only pay attention when they trust the interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
+            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
             em felt. 
             | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
