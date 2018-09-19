@@ -48,6 +48,14 @@
           // no-ssr
           nuxtent-body(:body="body")
 
+        hr.Post-endRule.b-mb0.b-mt2
+        .rm-t3.fs-block-sm
+          p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
+          //- testing NewsletterSignupForm2 failure
+          //- NewsletterSignupForm(action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129")
+          NewsletterSignupForm(action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129")
+
+    //- Post notes now in :body
     //- .Post-note.HeadingSpace(v-if="updated || note")
       hr.ParagraphSpace
       p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
@@ -58,12 +66,14 @@
 <script>
 import moment from "vue-moment";
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
 
 export default {
   name: "post",
   components: {
     moment,
-    ImageCld
+    ImageCld,
+    NewsletterSignupForm
   },
   props: {
     body: Object,
@@ -116,7 +126,7 @@ export default {
     },
     scopeClasses() {
       // return this.category === "essays" && "Scope-post-figure Scope-post-dropcap";
-      return this.category === "essays" && "Scope-post-dropcap";
+      return this.category === "essay" && "Scope-post-dropcap";
     }
   }
 };
