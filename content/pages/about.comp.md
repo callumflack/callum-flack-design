@@ -31,7 +31,7 @@ Being able to code means design is no longer fanciful but rather a choice made w
 
 <!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween". -->
 
-You can roughly breakdown the work I do into three parts:
+You can roughly break down the work I do into three parts:
 
 - Brand identity and graphic design
 - User interface design
@@ -40,9 +40,9 @@ You can roughly breakdown the work I do into three parts:
 
 ## Experienced
 
-Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisbane, for startups, design studios, advertising agencies and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself to code websites (starting in 2010), my career highlight was working as a brand designer at Saatchi & Saatchi, London.
+Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies, startups and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself to code websites  in 2010, my career highlight was working as a brand designer at Saatchi & Saatchi, London in 2006. I've also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>, so I know how to create products for a niche community.
 
-> Callum has great eye for detail to create great looking designs and understands users needs to be able to make great user experiences to match. He excels at immersing himself into whatever project he is working on to achieve the users needs and the business goals. _— <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
+> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and understands the importance of using design as a tool to cater for user need. He immerses himself in his work, so he's very easy to collaborate with. _— <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
 
 <!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall</a>, JavaScript engineer_ -->
 
@@ -70,7 +70,7 @@ You can also find me on these internet locations:
 - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a>
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
 - <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
-- <a class="icon-targetBlank" target="_blank" href="https://angel.co/callum-flack">AngelList</a>
+- <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>
 
 The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and society:
 
