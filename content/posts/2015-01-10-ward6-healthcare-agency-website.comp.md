@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Ward6 website
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.

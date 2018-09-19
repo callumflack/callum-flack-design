@@ -30,7 +30,7 @@ div.b-pt4
         .FlexGridWrapper
           .FlexGrid.FlexGrid--noGrow
             ProjectExcerpt(
-              v-if="project.published && project.category === 'projects'"
+              v-if="project.published && project.category === 'project'"
               v-for="project in visibleProjects"
               :cloudinary="project.thumbInCloudinary"
               :image="project.thumbImage"

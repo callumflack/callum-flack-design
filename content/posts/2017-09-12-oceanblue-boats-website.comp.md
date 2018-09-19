@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Oceanblue Boats website
 lede: A website that tells a story about building boats and getaway adventures.

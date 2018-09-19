@@ -129,6 +129,21 @@ body {
 
 /* 
 
+  Post endRule
+  Reqs: `.b-mb0.b-mt2`
+
+ */
+
+.Post-endRule {
+  background-color: var(--c-text);
+  margin-left: 0;
+  transform:translateY(-0.25em);
+  width: 5%;
+}
+
+
+/* 
+
   Button theme
 
  */

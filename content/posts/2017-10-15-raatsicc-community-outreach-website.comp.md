@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: RAATSICC website
 lede: A content-managed website to help spread positive community outreach news.

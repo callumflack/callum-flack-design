@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.

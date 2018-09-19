@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: PHNNQ web app
 titleColor: rgb(112, 190, 68)

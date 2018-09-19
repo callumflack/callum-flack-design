@@ -72,7 +72,7 @@ You can also find me on these internet locations:
 - <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
 - <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>
 
-The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and society:
+The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and attention:
 
 <div class="fs-scale-reset">
   @[NewsletterSignupForm]

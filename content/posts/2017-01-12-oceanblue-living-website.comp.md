@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.

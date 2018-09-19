@@ -1,5 +1,5 @@
 ---
-category: essays
+category: essay
 showOnHomePage: true
 title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry, which we find beautiful. We are naturally attuned to beauty because we know it represents a higher chance of holding worthwhile information.

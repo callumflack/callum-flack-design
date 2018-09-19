@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Album Registry ecommerce web app
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.

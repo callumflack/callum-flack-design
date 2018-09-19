@@ -21,7 +21,7 @@ div
           //- | Callum Flack 
           span.c-highlight Callum Flack designs &amp; develops website systems 
           //- | for businesses, entrepreneurs &amp; artists driven to connect with people.
-          | for businesses &amp; individuals who wish to make the complex simple, and the simple unique.
+          | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
         //- h2.Meta.u-textCenter.p-t1
         //- h2.Text.fs-text-lg.u-textCenter.p-t1
           | Callum Flack designs and codes intuitively seamless website systems for businesses whose audience demands servcie.
@@ -41,11 +41,11 @@ div
             | &nbsp;
           //- p It's clear now that design is a competitive advantage. But I learned to code because execution is hard. 
           //- p.u-textCenter(style="font-size:2em;transform:translateY(0.25em)") * * *
-          hr.bg-text.m-l0.b-my0(style="width:5%;transform:translateY(-0.25em)")
+          hr.Post-endRule.b-mb0.b-mt2
 
       .rm-t3.fs-block-sm
         //- NewsletterSignupLede
-        p Ps. I write an email letter once or twice a month about visual design, user experience and website development through the lens of people and society. You should sign up:
+        p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
         NewsletterSignupForm
         //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
 

@@ -8,7 +8,7 @@ div.b-pt4
       hr
   main.Container.rp-t2(role="main")
     PostExcerptEssay(
-      v-if="post.published && post.category === 'essays'"
+      v-if="post.published && post.category === 'essay'"
       v-for="post in posts"
       :category="post.category"
       :date="post.date"

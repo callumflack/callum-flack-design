@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: The Substation website
 titleColor: rgb(165, 97, 17)
