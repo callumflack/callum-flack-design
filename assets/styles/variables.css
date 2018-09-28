@@ -268,7 +268,7 @@
   --button-font-size: inherit;
   --button-font-weight: inherit;
   --button-letter-spacing: inherit;
-  --button-text-alignment: 1px;
+  --button-text-alignment: 0;
 
   /* button + button inline spacing */
   --button-inline-spacing: var(--s-2);
