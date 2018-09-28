@@ -44,7 +44,7 @@ export default {
       if (this.$store.state.isMobileNavVisible) {
         return "u-hiddenVisually";
       }
-      if (this.$route.name === "interesting") {
+      if (this.$route.name === "the-littoral-line") {
         return "u-hiddenVisually";
       }
       // if (this.$route.name === "index") {
@@ -77,10 +77,10 @@ export default {
           link: "/projects"
         },
         {
-          label: "Interesting",
+          label: "The Littoral Line",
           level: "4.",
           lede: "a mailing list",
-          link: "/interesting"
+          link: "/the-littoral-line"
         },
         {
           label: "About",

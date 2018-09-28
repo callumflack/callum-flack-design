@@ -21,7 +21,7 @@ RAATSICC is a grassroots organisation that provides social services for Aborigin
 
 @[MarkdownMovie](laptop frame src="287001742" videoRatio="69.4434524")
 
-I've been working with RAATSICC for over two years. Our relationship is fluent, so we're able to maintain and update their platform quickly as their needs change. This helps RAATSICC use their website to help educate and service many remote communities.
+I've been working with RAATSICC since 2016. Our relationship is fluent, so we're able to talk about their changing needs and update their platform quickly and easily. This helps RAATSICC use their website to help educate and service many remote communities.
 
 <!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
 

@@ -1,5 +1,9 @@
 <template lang="pug">
-div(:class="space")
+blockquote
+  p(v-html="quote")
+    em {{ quoteAuthor }}
+
+//- div(:class="space")
   hr.ParagraphSpace(:class="rule")
   p.fs-text-sm.c-textLight(v-html="note")
 </template>
@@ -7,8 +11,8 @@ div(:class="space")
 <script scoped>
 export default {
   props: {
-    note: String,
-    notFirstNote: Boolean
+    quote: String,
+    quoteAuthor: String
   },
   computed: {
     space() {

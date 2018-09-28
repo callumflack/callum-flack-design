@@ -26,9 +26,9 @@ export default {
       if (this.$route.name === "projects") {
         return "p-b0";
       }
-      if (this.$route.name !== "interesting") {
+      /* if (this.$route.name !== "the-littoral-line") {
         return "b-pb3";
-      }
+      } */
     }
   }
 };

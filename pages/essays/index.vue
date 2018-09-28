@@ -1,12 +1,6 @@
 <template lang="pug">
-div.b-pt4
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 2.
-      span Essays
-    //- .Extract-large
-      hr
-  main.Container.rp-t2(role="main")
+.b-pt4.b-pb3
+  main.Container(role="main")
     PostExcerptEssay(
       v-if="post.published && post.category === 'essay'"
       v-for="post in posts"

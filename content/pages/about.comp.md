@@ -27,7 +27,7 @@ Seamless web experiences that live up to their promises create audiences and gro
 
 <!-- While focussed on design, I'm also an accomplished frontend developer. Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means greater scope understanding and better decision making, in turn allowing higher rates of design iteration. -->
 
-Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means greater scope understanding and better decision making, in turn allowing higher rates of design iteration.
+Being able to code means design is no longer fanciful but rather a choice made with the knowledge of what it takes to build it. In turn, this also means greater scope understanding and better decision making, allowing higher rates of design iteration.
 
 <!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween". -->
 
@@ -40,9 +40,9 @@ You can roughly break down the work I do into three parts:
 
 ## Experienced
 
-Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies, startups and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself to code websites  in 2010, my career highlight was working as a brand designer at Saatchi & Saatchi, London in 2006. I've also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>, so I know how to create products for a niche community.
+Since starting out in 2000, I've worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies, startups and SMEs. Since 2015, my wife, our young family and I have lived in Cairns, Australia. Before teaching myself to code websites in 2010, my career highlight was working as a brand designer at Saatchi & Saatchi, London in 2006. I've also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>, so I know how to create products for a niche community.
 
-> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and understands the importance of using design as a tool to cater for user need. He immerses himself in his work, so he's very easy to collaborate with. _— <a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
+> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and understands the importance of using design as a tool to cater for user need. He immerses himself in his work, so he's very easy to collaborate with. _<a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, founder of VetPronto (YCW15)_
 
 <!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall</a>, JavaScript engineer_ -->
 

@@ -1,30 +1,34 @@
 <template lang="pug">
-div.b-pt4
+//- div.b-pt4
+div
   //- nav.Container.b-nav
     h3.Nav-locator.Meta
       span.m-r2 01
       span Blog
     //- .Extract-large
       hr
-  //- article
-    Post.rp-t2(
-      v-for="post in mostRecentPost"
-      :body="post.body"
-      :category="post.category"
-      :date="post.date"
-      :heroImage="post.heroImage"
-      :heroImageNoShadow="post.heroImageNoShadow"
-      :heroRatio="post.heroRatio"
-      :link="post.permalink"
-      :note="post.note"
-      :readingTime="post.readingTime"
-      :tags="post.tags"
-      :title="post.title"
-      :updated="post.updated"
-    )
-    hr.bg-text.b-my3
-  main.Container.rp-t2(role="main")
-    post-excerpt(
+  PostExcerptMostRecent(
+    v-for="post in mostRecentPost"
+    :blockColor="post.blockColor"
+    :category="post.category"
+    :date="post.date"
+    :heroImage="post.heroImage"
+    :heroImageNoShadow="post.heroImageNoShadow"
+    :heroImageMultiply="post.heroImageMultiply"
+    :heroRatio="post.heroRatio"
+    :key="post.permalink"
+    :lede="post.lede"
+    :link="post.permalink"
+    :mostRecentPost = "post.mostRecentPost"
+    :permalink="post.permalink"
+    :readingTime="post.readingTime"
+    :tags="post.tags"
+    :title="post.title"
+  )
+  //- hr.bg-text.b-my3
+  main.Container.b-py3(role="main")
+    //- .rp-t2
+    PostExcerpt(
       v-if="post.published"
       v-for="post in everyOtherPost"
       :body="post.body"
@@ -45,12 +49,14 @@ div.b-pt4
 
 <script>
 import PostExcerpt from "~/components/PostExcerpt.vue";
+import PostExcerptMostRecent from "~/components/PostExcerptMostRecent.vue";
 import Post from "~/components/Post.vue";
 
 export default {
   name: "blog",
   components: {
     PostExcerpt,
+    PostExcerptMostRecent,
     Post
   },
   data() {

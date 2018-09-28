@@ -1,12 +1,10 @@
 ---
 category: essay
-mostRecentPost: true
 title: The brief, the scope and the dance
 lede: Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold.
 readingTime: 8
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1533008018/okok/post-process-2a.jpg
 published: true
-tweet: https://twitter.com/callumflack
 ---
 
 Recently I started work on a new website with a new client. To kick-off the project, I met them in person and spent a day facilitating a series of branding and website design exercises with them. In a concentrated day of focus, we were able to dive deep into their problems, understand what they hoped to achieve and also uncover a surprising amount of new insights. These exercises helped both parties to clarify the problem, set boundaries for executing the solution, and to get to know each other.

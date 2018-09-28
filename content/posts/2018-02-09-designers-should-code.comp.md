@@ -7,8 +7,6 @@ readingTime: 5
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 updated: false
-note: Many thanks to Michael Fogleman for his input.<br>This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.
-tweet: https://twitter.com/callumflack
 ---
 
 <!-- <p class="intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in the product design process, the better the product (and more valuable you'll become). That's reason enough to learn to code.</p> -->
@@ -69,3 +67,7 @@ When designers code they understand surprising and contradictory insights are pa
 **If you work by yourself, you will have greatly enhanced your ability to implement your vision**, which is, as [David Cole says](https://medium.com/@irondavy/designers-will-code-6c423fc5ccef), the “hallmark of great craftsmanship. It teaches you both the limits and the possibilities of your medium.”
 
 Code chops help designers to see and understand the “necessary overlaps” that allow characteristically rich experiences to happen.
+
+<!-- @[MarkdownNote](note="Many thanks to Michael Fogleman for his input. This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.")
+
+@[MarkdownNote](note="Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Price while working for Ward6.") -->

@@ -131,7 +131,7 @@
   --c-ash: #24292e;
   --c-text: var(--c-ash);
   --c-text: #050505;
-  --c-textLight: #aaa;
+  --c-textLight: #858585;
   --c-textUnderline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
@@ -204,17 +204,16 @@
 
   --fs-text-unit: 1.125; /* 18 */
 
-  --fs-text-xs: calc(1em * var(--fs-text-unit));
+  --fs-text-xs: calc(0.777777778em * var(--fs-text-unit)); /* 14/18/16 * 16 */
   --fs-text-sm: calc(0.888888889em * var(--fs-text-unit)); /* 16/18/16 * 16 */
-  --fs-text: calc(1.111111111em * var(--fs-text-unit));
+  --fs-text: calc(1.055555556em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
   --fs-text-lg: calc(1.333333333em * var(--fs-text-unit)); /* 22.5/18/16 * 16 */
-  --fs-meta: calc(0.722222222em * var(--fs-text-unit)); /* 12/18/16 * 16 */
+  --fs-meta: calc(0.722222222em * var(--fs-text-unit)); /* 13/18/16 * 16 */
   --fs-button: var(--fs-meta);
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(0.777777778em * var(--fs-text-unit)); /* 13/18/16 * 16 */
-  --fs-subheading: calc(1.055555556em * var(--fs-text-unit)); /* 16/18/16 * 16 */
+  --fs-subheading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
   --fs-heading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
   --fs-subtitle: calc(1.666666667em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
   --fs-title: calc(2.5em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */

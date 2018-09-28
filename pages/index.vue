@@ -11,43 +11,31 @@
             .w-8x12.w-md-9x12.w-lg-8x12
               h1.Title.fw-900.c-bg.m-b0
 
-div
-  .b-pt4
-    article.Container.rp-t2
-      .b-pb1
-        //- h1.Title.u-textCenter.c-highlight.m-b3 Trusted within a heartbeat.
-        //- .fw-600.c-highlight
-        h1.Title
-          //- | Callum Flack 
-          span.c-highlight Callum Flack designs &amp; develops website systems 
-          //- | for businesses, entrepreneurs &amp; artists driven to connect with people.
-          | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
-        //- h2.Meta.u-textCenter.p-t1
-        //- h2.Text.fs-text-lg.u-textCenter.p-t1
-          | Callum Flack designs and codes intuitively seamless website systems for businesses whose audience demands servcie.
+.b-pt4.b-pb3
+  article.Container.rp-t2
+    .b-pb1
+      h1.Title
+        span.c-highlight Callum Flack designs &amp; develops website systems 
+        | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
+    .Scope-post.Scope-post-dropca
+      .fs-block-lg.rs-m3
+        p.m-b0
+          span In the digital age, you can't just rely on graphic design. 
+          em Your branding is tactile—
+          | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
+          em felt. 
+          | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
+          nuxt-link(to="/about") 
+            em.Text--italic I'm a designer who codes.
+          | &nbsp;
 
-      .Scope-post.Scope-post-dropca
-        //- .fs-block-lg.b-pb1
-        .fs-block-lg.rs-m3
-          p.m-b0
-            //- span.u-textUppercase To create change 
-            span In the digital age, you can't just rely on graphic design. 
-            em Your branding is tactile—
-            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
-            em felt. 
-            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
-            nuxt-link(to="/about") 
-              em.Text--italic I'm a designer who codes.
-            | &nbsp;
-          //- p It's clear now that design is a competitive advantage. But I learned to code because execution is hard. 
-          //- p.u-textCenter(style="font-size:2em;transform:translateY(0.25em)") * * *
-          hr.Post-endRule.b-mb0.b-mt2
+    NewsletterSignupBlock
 
-      .rm-t3.fs-block-sm
-        //- NewsletterSignupLede
-        p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
-        NewsletterSignupForm
-        //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
+    //- hr.Post-endRule.b-mb0.b-mt2
+    //- .rm-t3.fs-block-sm
+      p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
+      NewsletterSignupForm
+      //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
 
   //- .bg-highlight
   //- .NewsletterHero.CoverImage
@@ -87,8 +75,7 @@ div
 <script>
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import PostExcerpt from "~/components/PostExcerpt.vue";
-import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
-import NewsletterSignupLede from "~/components/NewsletterSignupLede.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 import IconBase from "~/components/IconBase.vue";
 import IconPin from "~/components/icons/IconPin.vue";
 
@@ -102,8 +89,7 @@ export default {
   components: {
     ImageCld,
     PostExcerpt,
-    NewsletterSignupForm,
-    NewsletterSignupLede,
+    NewsletterSignupBlock,
     IconBase,
     IconPin
   },

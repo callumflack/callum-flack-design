@@ -1,83 +1,58 @@
 <template lang="pug">
-  article
+  //- article.rp-t2(:style="postExcerptBlockColor")
+  article(:style="postExcerptBlockColor")
     header.b-pb2(role="banner")
-      .Container.p-b3
+      .Container.b-pt4
         .b-pb2.w-lg-5x6.m-xA
           h1.Title.u-textCenter.rm-b2 {{ title }}
           .Meta.c-textLight.u-textCenter.p-t1(v-if="category !== 'projects'")
             //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
             span.MetaSeparator • 
-            span.u-textCapitalise(v-if="category") {{ category }}
+            span.u-textCapitalise {{ category }}
             span.MetaSeparator(v-if="readingTime" ) • 
             span(v-if="readingTime" ) {{ readingTime }} minutes
           .Meta.c-textLight.u-textCenter.p-t1(v-else)
             time(:date-time="date") {{ date | moment("YYYY") }}
             span.MetaSeparator • 
-            span.u-textCapitalise(v-if="category") {{ category }}
+            span.u-textCapitalise {{ category }}
             //- span.MetaSeparator •
             //- span {{ tags }}
-
         .m-a0(v-if="heroImage", :class="heroExtractClasses")
           .AspectRatio(:style="heroAspectStyle")
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             .AspectRatio-object(:class="heroObjectBgClasses")
               ImageCld(:src="heroImage")
 
-        //- .b-py2.w-md-5x6.w-lg-9x12.m-xA
-        //- .b-py2.w-lg-5x6.m-xA
-          h1.Title.u-textCenter.p-t3.m-b3 {{ title }}
-
-          .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
-            //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-            span.MetaSeparator • 
-            span.u-textCapitalise(v-if="category") {{ category }}
-            span.MetaSeparator(v-if="readingTime" ) • 
-            span(v-if="readingTime" ) {{ readingTime }} minutes
-          .Meta.u-textCenter.p-t1(v-else)
-            time(:date-time="date") {{ date | moment("YYYY") }}
-            span.MetaSeparator • 
-            span.u-textCapitalise(v-if="category") {{ category }}
-            //- span.MetaSeparator •
-            //- span {{ tags }}
-
-    main(role="main")
+    main(role="main", v-if="body")
       .Container
         .Scope-post(:class="scopeClasses")
-          // no-ssr
+          //- no-ssr
           nuxtent-body(:body="body")
 
-        hr.Post-endRule.b-mb0.b-mt2
-        .rm-t3.fs-block-sm
-          p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
-          //- testing NewsletterSignupForm2 failure
-          //- NewsletterSignupForm(action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129")
-          NewsletterSignupForm(action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129")
+        NewsletterSignupBlock
 
-    //- Post notes now in :body
-    //- .Post-note.HeadingSpace(v-if="updated || note")
-      hr.ParagraphSpace
-      p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
-      p.fs-text-sm.c-textLight(v-if="note", v-html="note")
-    
 </template>
 
 <script>
 import moment from "vue-moment";
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import NewsletterSignupForm from "~/components/NewsletterSignupForm.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   name: "post",
   components: {
     moment,
     ImageCld,
-    NewsletterSignupForm
+    NewsletterSignupBlock
   },
   props: {
     body: Object,
-    category: String,
+    blockColor: String,
+    category: {
+      type: String,
+      required: true
+    },
     date: String,
     heroImage: String,
     heroImageNoShadow: {
@@ -88,20 +63,35 @@ export default {
       type: Number,
       default: 56.25
     },
+    lede: String,
     link: String,
+    mostRecentPost: {
+      type: Boolean,
+      default: false
+    },
     note: String,
+    permalink: String,
     published: Boolean,
     readingTime: Number,
-    src: String,
     tags: {
       type: String,
       default: null
     },
     title: String,
-    tweet: String,
     updated: Boolean
   },
   computed: {
+    postExcerptBlockColor() {
+      return this.blockColor && `background-color: ${this.blockColor}`;
+    },
+    postExcerptLede() {
+      return this.$route.name === "blog-page" && this.mostRecentPost;
+    },
+    /* headerClasses() {
+      if (this.$route.name === "blog-page") {
+        return "b-pb2";
+      }
+    }, */
     heroExtractClasses() {
       if (this.category === "projects") {
         return "Extract-super";

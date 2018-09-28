@@ -100,47 +100,36 @@ p em,
   -------------------------------------------------
 */
 
-/* .Subheading, */
-.Scope-post h2 {
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-size: var(--fs-subheading);
-  font-weight: 500;
-  font-style: normal;
-  /* text-transform: uppercase; */
-  letter-spacing: var(--fls-touch-positive);
-  letter-spacing: 0.0125em;
-  /* line-height: 1.333; */
-}
-
+.Scope-post h2,
 .Subheading,
 .Heading,
 .Subtitle,
 .Title,
 .Supertitle {
-  font-family: var(--ff-stack-sans);
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 500;
-  line-height: 1.2;
   line-height: 1.05;
-  letter-spacing: 0.01em;
   letter-spacing: 0;
-  letter-spacing: -0.02em;
-  /* text-transform: uppercase; */
 
   & a:hover {
     color: var(--c-link);
   }
 }
 
+.Scope-post h2,
 .Subheading {
   font-size: var(--fs-subheading);
-  /* font-weight: 600; */
 }
 
 .Heading {
   font-size: var(--fs-heading);
-  line-height: 1.25;
+  /* line-height: 1.25; */
+}
+
+.Subtitle,
+.Title,
+.Supertitle {
+  letter-spacing: -0.02em;
 }
 
 .Subtitle {
@@ -242,10 +231,22 @@ blockquote p {
   }
 }
 
+.Blockquote-author,
 blockquote p em {
-  /* display: table; */
   /* resetting ems before applying font sizing: */
-  font-size: calc((16 / (var(--fs-text-unit) * 16 * 1.111111111)) * var(--fs-text)) !important;
+  /* font-size: calc((18 / (var(--fs-text-unit) * 16 * 1)) * var(--fs-text-xs)) !important; */
+  /* font-size: var(--fs-text-xs); */
+  font-size: calc(14 / 19 / 16 * 16 * 1em) !important;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+blockquote p em {
+  display: table;
+  margin-top: 5px;
+  margin-top: 0.125em;
 }
 
 /* blockquote em {

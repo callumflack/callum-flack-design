@@ -4,21 +4,9 @@ div
     h3.Nav-locator.Meta.fw-700
       span.m-r2 5.
       span About
-  article.b-pt4
-    header.CoverImage.rp-t2(role="banner")
-      //- .Container.b-py
-        .Extract-super.h-100
-          .FlexGrid
-            .w-1x2
-              .AspectRatio.AspectRatio--8x5
-                .AspectRatio-object
-                  img(src="/images/a.jpg")
-            .w-1x2
-              .f.f-alignItemsCenter.h-100
-                .w-10x12
-                  h1.Title.fw-900.m-b0.u-textRight
-                    | Working within graphic design, user experience &amp; code.
-
+  article.b-pt4.b-pb3
+    //- header.CoverImage.rp-t2(role="banner")
+    header.CoverImage(role="banner")
       .Container
         .Extract-super
           .AspectRatio.md-AspectRatio--10x4
@@ -28,8 +16,9 @@ div
               .Container
                 .Extract-large.h-100
                   .f.f-alignItemsCenter.h-100
-                    .w-8x12.w-md-9x12.w-lg-8x12
-                      h1.Supertitle.fw-600.c-bg.m-b0
+                    //- .w-8x12.w-md-9x12.w-lg-8x12
+                    div
+                      h1.Title.fw-600.c-bg.m-b0
                         //- | Working at the intersection between user experience, visual design &amp; code.
                         //- | Visual design plus user experience plus code.
                         | Working within
@@ -42,10 +31,10 @@ div
                       //- h2.Subheading.fw-400.c-bg.w-10x12
                         | “…if the solution is not beautiful, I know it is wrong.” 
                         span.fs-scale-reset #[span.Meta — Buckminster Fuller]
-                      h2.Text.fw-400.c-bg.w-lg-10x12.u-hidden.u-sm-block.rm-t4
+                      h2.Text.fw-400.c-bg.w-lg-8x12.u-hidden.u-sm-block.rm-t4
                         span.Text--italic The quality of the connections is the key to quality.
                         br 
-                        span.fs-scale-reset #[span.Meta.fw-500 — Charles Eames]
+                        span.Blockquote-author — Charles Eames
       
     main(role="main")
       .Container.b-pt3
