@@ -12,6 +12,10 @@ div
         em.Text--italic Interesting:
       p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things" that wash up in the littoral zone, so to speak. I'll share curious and generative links, stories and insights that I hope resonate with you as much they did me:
       NewsletterSignupForm
+      p.fs-text-sm.rm-t4 
+        | Ps. If you sign up, I'll send you a 
+        em Wardley Map for branded websites. 
+        | People say it's helped them clarify what to focus on when attempting differentiate with their website.
   
   //- main.block--pb7.block--matchFixedMenuTop(role="main")
     .Container.Container--newsletter

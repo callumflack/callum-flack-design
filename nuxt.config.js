@@ -61,7 +61,7 @@ module.exports = {
       "/blog",
       "/essays",
       "/projects",
-      "/interesting"
+      "/the-littoral-line"
     ]
   },
 
