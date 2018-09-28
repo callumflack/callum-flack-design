@@ -3,7 +3,7 @@
   //- .b-mt3--illusion
   .b-mt2
     //- .ff-title.fw-300(style="font-size:2em") ✺ 
-    IconBase(icon-name="icon-camp-fire")
+    IconBase(icon-name="icon-camp-fire" height="30" width="30")
       IconSun
     .rm-t2.fs-block-sm
       p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
