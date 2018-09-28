@@ -17,7 +17,7 @@ RAATSICC is a grassroots organisation that provides social services for Aborigin
 
 @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/raatsicc-mobile-screens-dark.png")
 
-> Callum has responded to our needs by listening and helping us through the process so that we've got a website that helps us talk to out communities. We have trust and control in our relationship. _— Emma Schuh, Secretary_
+> Callum has responded to our needs by listening and helping us through the process so that we've got a website that helps us talk to out communities. We have trust and control in our relationship. _Emma Schuh, Secretary_
 
 @[MarkdownMovie](laptop frame src="287001742" videoRatio="69.4434524")
 

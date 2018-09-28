@@ -33,7 +33,7 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 <!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
 
-> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _— Brad Spolding, Managing Director_
+> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. _Brad Spolding, Managing Director_
 
 Together, we've stemmed the constant maintenance costs that drained The Substation's digital marketing effectiveness. With a performant and adaptable codebase, The Substation can focus on their customers.
 

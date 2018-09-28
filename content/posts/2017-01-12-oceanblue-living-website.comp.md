@@ -23,7 +23,7 @@ Their metalworks are rugged and beautiful. To capture this, we collaborated with
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
-> Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It certainly creates better business for us. _— LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our work means to our audience. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It certainly creates better business for us. _LeaAnne Cassaniti, Owner_
 
 @[MarkdownMovie](large laptop frame src="286998027" videoRatio="69.4422442")
 
