@@ -45,13 +45,13 @@ export default {
   },
   head() {
     return {
-      title: "Interesting—a mailing list by Callum Flack Design",
+      title: "The Littoral Line—a mailing list by Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "Interesting—a mailing list by Callum Flack Design. It's about 'things inbetween'—the stories, ideas and links that I've found curious, resonating, interesting"
+            "The Littoral Line—a mailing list by Callum Flack Design. It's about 'things inbetween' that wash up in the littoral zone—the stories, ideas and links that I've found curious, resonating, interesting"
         }
       ]
     };
