@@ -5,9 +5,9 @@ div
       h1.Supertitle.rm-b4
         //- span.fw-300 ❏ 
         //- span.fw-300 ✺ 
-        IconBase(icon-name="icon-sun" height="48" width="48")
+        IconBase(icon-name="icon-sun")
           IconSun
-        | &nbsp;The Littoral Line
+        | The Littoral Line
       //- p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things", those that live in the littoral zone, so to speak, where . I hope to share curious and generative links, stories and insights with you. Even if you think your digital interfaces are resonating with your audience, I hope you'll get something generative out of reading 
         em.Text--italic Interesting:
       p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things" that wash up in the littoral zone, so to speak. I'll share curious and generative links, stories and insights that I hope resonate with you as much they did me:
@@ -70,3 +70,32 @@ export default {
   } */
 };
 </script>
+
+<style scoped>
+.u-icon {
+  margin-right: 0.25em;
+  transform: translateY(3px);
+
+  @media (min-width: 768px) {
+    margin-right: 0.175em;
+    transform: translateY(2px);
+  }
+  @media (min-width: 1280px) {
+    transform: translateY(4px);
+  }
+}
+
+.u-icon >>> svg {
+  height: 30px;
+  width: 30px;
+
+  @media (min-width: 513px) {
+    height: 36px;
+    width: 36px;
+  }
+  @media (min-width: 1280px) {
+    height: 54px;
+    width: 54px;
+  }
+}
+</style>
