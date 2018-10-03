@@ -4,11 +4,6 @@
 /* 
 
 
-
-
-
-
-
   Responsive custom properties!
   
   On css custom properties & postcss-custom-properties:
@@ -24,22 +19,17 @@
   }
 
 
-
-
-
-
-
  */
 
 :root {
-  --responsive-space: 1.5rem;
+  --responsive-space: 1.75rem;
   --responsive-typography-space: 0.75rem;
   --responsive-hero: 24rem;
 }
 
 @media (--md) {
   :root {
-    --responsive-space: 3rem;
+    --responsive-space: 3.25rem;
     --responsive-typography-space: 1rem;
     --responsive-hero: 38rem;
   }
@@ -55,17 +45,7 @@
 /* 
 
 
-
-
-
-
-
   Every other custom property
-
-
-
-
-
 
 
  */
@@ -87,13 +67,13 @@
 
   --space: 1.5rem;
   --grid-gutter: calc(2 * var(--space));
-  --flex-grid-gutter: calc(0.75 * var(--space));
+  --flex-grid-gutter: calc(1.25 * var(--space));
 
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg: calc(660px + (2 * var(--grid-gutter)));
   --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-lg: 942px; /* calc(846px + (2 * var(--grid-gutter))) */
-  --container-xl: 1032px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
+  --container-lg: 960px; /* calc(846px + (2 * var(--grid-gutter))) */
+  --container-xl: 1200px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
   --s-0: 0;
@@ -137,6 +117,12 @@
   --c-link: #9411c5;
   --c-link: #e4b830; /* yellow */
   --c-link: #e62f0d; /* red */
+  --c-link: #33f; /* dow-smith blue */
+  --c-link: #962cff; /* newlyn purple */
+  --c-link: #8c3add; /* newlyn purple */
+  --c-link: #6e32ff; /* kremers purple */
+  --c-link: #fe5000; /* pantone 021C */
+  --c-link: #fe3600; /* pantone 021C plus */
   --c-highlight: var(--c-link);
   --c-highlight-alt: #ffea97;
 
@@ -145,12 +131,13 @@
   --c-ash: #24292e;
   --c-text: var(--c-ash);
   --c-text: #050505;
-  --c-textLight: #999;
+  --c-textLight: #858585;
   --c-textUnderline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
-  --c-border: #ddd;
-  --c-rule: rgba(0, 0, 0, 0.075);
+  --c-border: #e5e5e5;
+  --c-rule: rgba(0, 0, 0, 0.1);
+  --c-rule: rgba(0, 0, 0, 0.15);
   --c-device: #e7e7e7;
 
   --c-neutral: #eee;
@@ -176,20 +163,13 @@
   
    */
 
-  --ff-text: "TiemposText";
-  --ff-text-regular: "Regular";
-  --ff-text-regular-italic: "RegularItalic";
-  --ff-text-medium: "Medium";
-  --ff-text-bold: "Bold";
-
+  --ff-text: "Libre";
   --ff-lede: "TiemposHeadline";
+  --ff-title: "Grotesque";
+
   --ff-text-meta: var(--ff-title);
   --ff-text-subheading: var(--ff-title);
   --ff-text-subheading: var(--ff-text-bold);
-
-  --ff-heading: "GintoNord";
-  --ff-title: "GintoNord";
-
   --ff-button: var(--ff-text-meta);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
@@ -222,24 +202,22 @@
   --rfs-3: 0.95rem; /* 15pt */
   --rfs-4: 1rem; /* 16pt */
 
-  --fs-text-unit: 1.125; /* 19 */
+  --fs-text-unit: 1.125; /* 18 */
 
-  --fs-text-xs: calc(1em * var(--fs-text-unit));
-  --fs-text-sm: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
-  --fs-text: calc(1em * var(--fs-text-unit));
+  --fs-text-xs: calc(0.777777778em * var(--fs-text-unit)); /* 14/18/16 * 16 */
+  --fs-text-sm: calc(0.888888889em * var(--fs-text-unit)); /* 16/18/16 * 16 */
+  --fs-text: calc(1.055555556em * var(--fs-text-unit));
   --fs-text-md: calc(1em * var(--fs-text-unit));
-  --fs-text-lg: calc(1.263157895em * var(--fs-text-unit)); /* 24 */
-  --fs-meta: calc(0.631578947em * var(--fs-text-unit)); /* 12 */
+  --fs-text-lg: calc(1.333333333em * var(--fs-text-unit)); /* 22.5/18/16 * 16 */
+  --fs-meta: calc(0.722222222em * var(--fs-text-unit)); /* 13/18/16 * 16 */
   --fs-button: var(--fs-meta);
 
   --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(0.894736842em * var(--fs-text-unit)); /* 17 */
-  --fs-heading: calc(1.263157895em * var(--fs-text-unit)); /* 27 */
-  --fs-subtitle: calc(1.684210526em * var(--fs-text-unit)); /* 32 */
-  --fs-title: calc(2.105263158em * var(--fs-text-unit)); /* 40/19/16 * 16 */
-  --fs-supertitle: calc(3.157894737em * var(--fs-text-unit)); /* 60/19/16 * 16 */
-  --fs-supertitle: calc(2.842105263em * var(--fs-text-unit)); /* 54/19/16 * 16 */
-  --fs-supertitle: calc(2.526315789em * var(--fs-text-unit)); /* 48/19/16 * 16 */
+  --fs-subheading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
+  --fs-heading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
+  --fs-subtitle: calc(1.666666667em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
+  --fs-title: calc(2.5em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
+  --fs-supertitle: calc(3.25em * var(--fs-text-unit)); /* 72/18/16 * 16 */
 
   /* 
   
@@ -256,8 +234,8 @@
   --fls-tight: -0.005em;
   --fls-touch-negative: 0;
   --fls-regular: 0;
-  --fls-touch-positive: 0.02em;
-  --fls-loose: 0.1em;
+  --fls-touch-positive: 0.05em;
+  --fls-loose: 0.15em;
 
   --flh-super: 1;
   --flh-tight: 1.15;
@@ -271,25 +249,25 @@
 
    */
 
-  --button-background-color: var(--c-text);
+  --button-background-color: var(--c-bg);
   --button-border-color: var(--c-text);
   --button-border-radius: 0;
-  --button-border-width: 0;
+  --button-border-width: 1px;
   --button-box-shadow-color: var(--c-text);
   --button-box-shadow-stroke-hover: 1px;
   --button-box-shadow-stroke-active: 2px;
   --button-box-shadow-stroke-inset: 1px;
-  --button-color: var(--c-bg);
+  --button-color: var(--c-text);
   --button-disabled-opacity: 0.6;
   --button-height: calc(1 * var(--field-height));
   --button-xpadding: 1.5em;
 
   /* typography */
-  --button-font-case: uppercase;
-  --button-font-family: var(--ff-button), var(--ff-stack-sans);
-  --button-font-size: var(--fs-button);
-  --button-font-weight: 400;
-  --button-letter-spacing: var(--fls-loose);
+  --button-font-case: inherit;
+  --button-font-family: inherit;
+  --button-font-size: inherit;
+  --button-font-weight: inherit;
+  --button-letter-spacing: inherit;
   --button-text-alignment: 0;
 
   /* button + button inline spacing */
@@ -315,8 +293,8 @@
 
   --border-radius: 4px;
   --cover-image-screen-color: rgba(0, 0, 0, 0.25);
-  --field-height: 3rem;
-  --field-space: 1rem 1.25rem;
+  --field-space: 0 1rem;
+  --field-height: 3em;
   --figure-space: calc(2 * var(--space));
   --figure-space-within-text: calc(0.25 * var(--responsive-space));
   --figcaption-margin-top: 0.5rem;

@@ -1,5 +1,11 @@
 <template lang="pug">
-div
+.b-pb3
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-700
+      span.m-r2 1.
+      span Blog
+    //- .Extract-large
+      hr
   Post(
     :body="page.body"
     :category="page.category"
@@ -8,7 +14,7 @@ div
     :heroImageNoShadow="page.heroImageNoShadow"
     :heroRatio="page.heroRatio"
     :link="page.permalink"
-    :note="page.note"
+    :mostRecentPost = "page.mostRecentPost"
     :readingTime="page.readingTime"
     :tags="page.tags"
     :title="page.title"

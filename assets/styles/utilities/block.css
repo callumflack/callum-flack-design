@@ -29,6 +29,9 @@
   margin-bottom: calc(3 * var(--responsive-space));
 }
 
+.b-mt0 {
+  margin-top: calc(0.5 * var(--responsive-space));
+}
 .b-mt1 {
   margin-top: calc(0.75 * var(--responsive-space));
 }
@@ -42,6 +45,9 @@
   margin-top: calc(3 * var(--responsive-space));
 }
 
+.b-mb0 {
+  margin-bottom: calc(0.5 * var(--responsive-space));
+}
 .b-mb1 {
   margin-bottom: calc(0.75 * var(--responsive-space));
 }

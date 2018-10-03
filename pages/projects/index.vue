@@ -1,38 +1,46 @@
 <template lang="pug">
-.Container
-  header.b-pb3(role="header")
-    h1.Supertitle Selected projects
-    //- p.Subheading.fw-regular We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
-    //- .Project-filter
-      .u-flex.u-flexJustifyBetween
-        .Meta.m-a0 Filter by: 
-        .Meta.c-textLight.m-a0
-          a.u-linkClean(
-            v-for="(tag, index) in tags"
-            @click.prevent="filterProjectsByTag(tag)"
-            href="#"
-            :class="[{ 'c-highlight': tag === activeTag }]"
-          )
-            span {{ tag }}
-            //- span(v-if="index !== tags.length - 1") ,&nbsp;
-            //- span(v-else) .
-
-  main(role="main")
-    .Extract-super
-      .mo-FlexGridWrapper
-        .FlexGrid.FlexGrid--noGrow
-          ProjectExcerpt(
-            v-if="project.published && project.category === 'projects'"
-            v-for="project in visibleProjects"
-            :cloudinary="project.thumbInCloudinary"
-            :image="project.thumbImage"
-            :lede="project.lede"
-            :link="project.permalink"
-            :key="project.permalink"
-            :tags="project.tags"
-            :title="project.title"
-            :year="project.year"
-          )
+div.b-pt4
+  //- nav.Container.b-nav
+    h3.Nav-locator.Meta.fw-700
+      span.m-r2 3.
+      span Projects
+    //- .Extract-large
+      hr
+  //- .Container
+    header.b-pb3(role="header")
+      h1.Supertitle.u-textCenter Selected projects since 2014
+      //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
+      //- .Project-filter
+        .u-flex.u-flexJustifyBetween
+          .Meta.m-a0 Filter by: 
+          .Meta.c-textLight.m-a0
+            a.u-linkClean(
+              v-for="(tag, index) in tags"
+              @click.prevent="filterProjectsByTag(tag)"
+              href="#"
+              :class="[{ 'c-highlight': tag === activeTag }]"
+            )
+              span {{ tag }}
+              //- span(v-if="index !== tags.length - 1") ,&nbsp;
+              //- span(v-else) .
+  .Container.Container-inset
+    main.rp-t2(role="main")
+      .Extract-super
+        //- .FlexGridWrapper.m-xl-x0
+        .FlexGridWrapper
+          .FlexGrid.FlexGrid--noGrow
+            ProjectExcerpt(
+              v-if="project.published && project.category === 'project'"
+              v-for="project in visibleProjects"
+              :cloudinary="project.thumbInCloudinary"
+              :image="project.thumbImage"
+              :lede="project.lede"
+              :link="project.permalink"
+              :key="project.permalink"
+              :tags="project.tags"
+              :title="project.title"
+              :year="project.year"
+            )
 
     <svg class='u-hiddenVisually'>
       <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>

@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Ward6 website
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.
@@ -9,7 +9,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroInCloudinary: true
 heroRatio: 69.2361111
-tags: Design, Development
+tags: UI, code
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 featured: true
@@ -24,7 +24,7 @@ Poorly maintained content-managed websites cost significant time and effort to r
 
 @[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/ward6-mobile-screens-dark.png")
 
-> Callum's broad understanding of web systems allowed us to understand and choose better long-term decisions during our redevelopment. His diligence meant the final product really does represent what we had imagined. _— Jason Armstrong, Digital Director_
+> Callum's broad understanding of web systems allowed us to understand and choose better long-term decisions during our redevelopment. His diligence meant the final product really does represent what we had imagined. _Jason Armstrong, Digital Director_
 
 The new Ward6 website allowed us to focus on repeatably presenting and distributing first-class campaign showcases, rather than wrestling with website technologies.
 

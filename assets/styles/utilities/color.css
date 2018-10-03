@@ -4,6 +4,9 @@
 
  */
 
+.c-transparent {
+  color: transparent !important;
+}
 .c-brand {
   color: var(--c-brand) !important;
 }
@@ -65,6 +68,9 @@
 
  */
 
+.bg-transparent {
+  background-color: transparent !important;
+}
 .bg-brand {
   background-color: var(--c-brand) !important;
 }

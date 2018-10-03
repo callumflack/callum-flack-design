@@ -1,54 +1,58 @@
 <template lang="pug">
-  article
-    header(role="banner")
-      .Container
+  //- article.rp-t2(:style="postExcerptBlockColor")
+  article(:style="postExcerptBlockColor")
+    header.b-pb2(role="banner")
+      .Container.b-pt4
+        .b-pb2.w-lg-5x6.m-xA
+          h1.Title.u-textCenter.rm-b2 {{ title }}
+          .Meta.c-textLight.u-textCenter.p-t1(v-if="category !== 'projects'")
+            //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+            span.MetaSeparator • 
+            span.u-textCapitalise {{ category }}
+            span.MetaSeparator(v-if="readingTime" ) • 
+            span(v-if="readingTime" ) {{ readingTime }} minutes
+          .Meta.c-textLight.u-textCenter.p-t1(v-else)
+            time(:date-time="date") {{ date | moment("YYYY") }}
+            span.MetaSeparator • 
+            span.u-textCapitalise {{ category }}
+            //- span.MetaSeparator •
+            //- span {{ tags }}
         .m-a0(v-if="heroImage", :class="heroExtractClasses")
           .AspectRatio(:style="heroAspectStyle")
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             .AspectRatio-object(:class="heroObjectBgClasses")
               ImageCld(:src="heroImage")
-        .b-py2.w-md-5x6.m-xA
-          h1.Title.u-textCenter.p-t2.m-b2 {{ title }}
 
-          .Meta.u-textCenter.p-t1(v-if="category !== 'projects'")
-            time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-            span.MetaSeparator • 
-            span(v-if="category") {{ category }}
-            span.MetaSeparator(v-if="readingTime" ) • 
-            span(v-if="readingTime" ) {{ readingTime }} minutes
-          .Meta.u-textCenter.p-t1(v-else)
-            time(:date-time="date") {{ date | moment("YYYY") }}
-            span.MetaSeparator • 
-            span(v-if="category") {{ category }}
-            //- span.MetaSeparator •
-            //- span {{ tags }}
-
-    main(role="main")
+    main(role="main", v-if="body")
       .Container
         .Scope-post(:class="scopeClasses")
-          // no-ssr
+          //- no-ssr
           nuxtent-body(:body="body")
 
-    //- .Post-note.HeadingSpace(v-if="updated || note")
-      hr.ParagraphSpace
-      p.fs-text-sm.c-textLight(v-if="updated") Updated: {{ updated }}
-      p.fs-text-sm.c-textLight(v-if="note", v-html="note")
-    
+        NewsletterSignupBlock
+
 </template>
 
 <script>
 import moment from "vue-moment";
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   name: "post",
   components: {
     moment,
-    ImageCld
+    ImageCld,
+    NewsletterSignupBlock
   },
   props: {
     body: Object,
-    category: String,
+    blockColor: String,
+    category: {
+      type: String,
+      required: true
+    },
     date: String,
     heroImage: String,
     heroImageNoShadow: {
@@ -59,20 +63,35 @@ export default {
       type: Number,
       default: 56.25
     },
+    lede: String,
     link: String,
+    mostRecentPost: {
+      type: Boolean,
+      default: false
+    },
     note: String,
+    permalink: String,
     published: Boolean,
     readingTime: Number,
-    src: String,
     tags: {
       type: String,
       default: null
     },
     title: String,
-    tweet: String,
     updated: Boolean
   },
   computed: {
+    postExcerptBlockColor() {
+      return this.blockColor && `background-color: ${this.blockColor}`;
+    },
+    postExcerptLede() {
+      return this.$route.name === "blog-page" && this.mostRecentPost;
+    },
+    /* headerClasses() {
+      if (this.$route.name === "blog-page") {
+        return "b-pb2";
+      }
+    }, */
     heroExtractClasses() {
       if (this.category === "projects") {
         return "Extract-super";
@@ -97,7 +116,7 @@ export default {
     },
     scopeClasses() {
       // return this.category === "essays" && "Scope-post-figure Scope-post-dropcap";
-      return this.category === "essays" && "Scope-post-dropcap";
+      return this.category === "essay" && "Scope-post-dropcap";
     }
   }
 };

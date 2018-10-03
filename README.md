@@ -1,6 +1,6 @@
 # Callum Flack Design
 
-Value prop, folio and blog.
+Value prop, folio and blog: https://callumflack.design/
 
 ![Project screen-shot](screen-shot.jpg?raw=true "Project screen-shot")
 

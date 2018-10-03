@@ -1,8 +1,7 @@
 <template lang="pug">
   div(:class="currentPageClass")
     NavToggle
-    nuxt.Page
-    .Container(:class="contentNavSpace")
+    nuxt.Page(:class="contentNavSpace")
     footer
       NavList
     NavToggled
@@ -24,7 +23,12 @@ export default {
       return `fs-scale-reset page-${this.$store.state.currentPage}`;
     },
     contentNavSpace() {
-      return this.$route.name !== "interesting" && `b-pt4`;
+      if (this.$route.name === "projects") {
+        return "p-b0";
+      }
+      /* if (this.$route.name !== "the-littoral-line") {
+        return "b-pb3";
+      } */
     }
   }
 };

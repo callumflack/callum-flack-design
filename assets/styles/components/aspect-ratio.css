@@ -54,7 +54,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  // z-index: 100;
+  /* z-index: 100; */
 
   & figure,
   & img {
@@ -69,13 +69,5 @@
 
   & img {
     object-fit: cover;
-  }
-}
-
-/* RS */
-
-@media (--md) {
-  .md-AspectRatio--2x1 {
-    padding-bottom: 50%;
   }
 }

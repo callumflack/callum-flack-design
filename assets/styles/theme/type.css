@@ -25,7 +25,7 @@ p em,
 /* 
   -------------------------------------------------
   
-  Metas
+  Meta & logo
 
   -------------------------------------------------
  */
@@ -41,12 +41,32 @@ p em,
 } */
 
 .Meta {
-  font-family: var(--ff-heading), var(--ff-stack-sans);
-  font-size: var(--fs-meta);
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-size: calc(1.15 * var(--fs-meta));
   font-weight: 400;
   letter-spacing: var(--fls-loose);
+  letter-spacing: 0.05em;
+  letter-spacing: 0.025em !important;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+
+  @media (--sm) {
+    font-size: var(--fs-meta);
+  }
+}
+
+.Logo {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  font-size: 12px;
+  font-size: var(--fs-meta);
+  line-height: 1;
+  letter-spacing: 0.666em;
+
+  & a:hover {
+    color: var(--c-link);
+  }
 }
 
 /* 
@@ -80,18 +100,15 @@ p em,
   -------------------------------------------------
 */
 
-.Subheading,
 .Scope-post h2,
+.Subheading,
 .Heading,
 .Subtitle,
-.Subtitle--light,
-.Title--lede,
-.Title--light,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 500;
+  line-height: 1.05;
   letter-spacing: 0;
 
   & a:hover {
@@ -99,21 +116,22 @@ p em,
   }
 }
 
-.Subheading,
-.Scope-post h2 {
+.Scope-post h2,
+.Subheading {
   font-size: var(--fs-subheading);
-  font-weight: 500;
-  letter-spacing: 0.025em;
-  line-height: 1.333;
 }
 
 .Heading {
   font-size: var(--fs-heading);
-  line-height: 1.333;
+  /* line-height: 1.25; */
 }
 
-.Subtitle--lede,
-.Subtitle--light,
+.Subtitle,
+.Title,
+.Supertitle {
+  letter-spacing: -0.02em;
+}
+
 .Subtitle {
   font-size: calc(0.75 * var(--fs-subtitle));
 
@@ -128,43 +146,45 @@ p em,
   }
 }
 
-.Title--lede,
-.Title--light,
 .Title {
-  font-size: calc(0.6 * var(--fs-title));
+  font-size: calc(0.7 * var(--fs-title));
 
   @media (--sm) {
-    font-size: calc(0.8 * var(--fs-title));
+    font-size: calc(0.775 * var(--fs-title));
   }
   @media (--md) {
-    font-size: calc(0.9 * var(--fs-title));
+    font-size: calc(0.85 * var(--fs-title));
   }
   @media (--lg) {
+    font-size: calc(0.925 * var(--fs-title));
+  }
+  @media (--xl) {
     font-size: var(--fs-title);
   }
 }
 
 .Supertitle {
-  font-size: calc(0.45 * var(--fs-supertitle));
+  font-size: calc(0.7 * var(--fs-supertitle));
 
   @media (--sm) {
-    font-size: calc(0.55 * var(--fs-supertitle));
+    font-size: calc(0.775 * var(--fs-supertitle));
   }
   @media (--md) {
-    font-size: calc(0.666 * var(--fs-supertitle));
-  }
-  @media (--md-landscape) {
-    font-size: calc(0.8 * var(--fs-supertitle));
+    font-size: calc(0.85 * var(--fs-supertitle));
   }
   @media (--lg) {
+    font-size: calc(0.925 * var(--fs-supertitle));
+  }
+  @media (--xl) {
     font-size: var(--fs-supertitle);
   }
 }
 
 .Subtitle--light,
 .Title--light {
-  font-family: var(--ff-heading), var(--ff-stack-sans);
+  /* font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 200;
+  letter-spacing: 0.075em; */
 }
 
 /* Tiempos Headline */
@@ -177,26 +197,6 @@ p em,
   line-height: var(--flh-regular);
 }
 
-/* 
-  -------------------------------------------------
-
-  LOGO
-
-  -------------------------------------------------
-*/
-
-.Logo {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.666em;
-
-  & a:hover {
-    color: var(--c-link);
-  }
-}
-
 /*
   -------------------------------------------------
 
@@ -206,12 +206,12 @@ p em,
  */
 
 blockquote p {
+  border-left: 1px solid var(--c-textLight);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--s-3a);
 
   @media (--mo) {
-    border-left: 1px solid var(--c-rule);
   }
 
   @media (--sm) {
@@ -231,10 +231,22 @@ blockquote p {
   }
 }
 
+.Blockquote-author,
+blockquote p em {
+  /* resetting ems before applying font sizing: */
+  /* font-size: calc((18 / (var(--fs-text-unit) * 16 * 1)) * var(--fs-text-xs)) !important; */
+  /* font-size: var(--fs-text-xs); */
+  font-size: calc(14 / 19 / 16 * 16 * 1em) !important;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
 blockquote p em {
   display: table;
-  /* resetting ems before applying font sizing: */
-  font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important;
+  margin-top: 5px;
+  margin-top: 0.125em;
 }
 
 /* blockquote em {

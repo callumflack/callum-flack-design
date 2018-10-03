@@ -29,6 +29,9 @@
 .u-textCapitalise {
   text-transform: capitalize !important;
 }
+.u-textUppercase {
+  text-transform: uppercase !important;
+}
 .u-text-noIndent {
   text-indent: 0 !important;
 }

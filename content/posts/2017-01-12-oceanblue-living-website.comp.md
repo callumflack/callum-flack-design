@@ -1,5 +1,5 @@
 ---
-category: projects
+category: project
 published: true
 title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
@@ -8,7 +8,7 @@ thumbInCloudinary: true
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
 heroRatio: 62.5130163
-tags: Design, Development
+tags: Branding, UI, code
 ---
 
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I
@@ -23,7 +23,7 @@ Their metalworks are rugged and beautiful. To capture this, we collaborated with
 The visual design system uses highly structured fonts, with hand-drawn icons that match
 the 'craftsmanship' archetype central to their brand repositioning.
 
-> Callum showed us a bigger vision of what our work means to people. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It creates better business for us.” _— LeaAnne Cassaniti, Owner_
+> Callum showed us a bigger vision of what our work means to our audience. And he's been able to convert ideas into reality. The site naturally draws comments and filters our clients. It certainly creates better business for us. _LeaAnne Cassaniti, Owner_
 
 @[MarkdownMovie](large laptop frame src="286998027" videoRatio="69.4422442")
 
@@ -34,6 +34,4 @@ the 'craftsmanship' archetype central to their brand repositioning.
 The goal of the website is to become a place people can dream of their perfect home and
 office space, and create a community around OceanBlue's works.
 
-<p>
 @[MarkdownProjectLink](link="https://oceanblueliving.com.au" label="Visit Oceanblue Living")
-</p>

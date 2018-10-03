@@ -1,28 +1,33 @@
 <template lang="pug">
 nav.Nav-list
-  .Container
-    .Extract-edge(:class="hideHorizontalRule")
-      hr
-    .Extract-large.b-py4
+  hr.bg-rule(style="height:1px", :class="hideHorizontalRule")
+  .Container.Container--verticalRule
+    //- .Extract-super(:class="hideHorizontalRule")
+      hr.bg-rule(style="height:1px")
+    .Extract-large.b-py3
       nuxt-link.Nav-link.f(
         v-for="item in navItems"
         :key="item.link"
         :to="item.link"
         :exact="item.exact"
       )
-        span.Extract-large-unit.Subtitle--light.Nav-link-level {{ item.level }}
-        span.Subtitle.Nav-link-label {{ item.label }}
-        span.Subtitle.fw-light.Nav-link-lede(v-if="item.lede") 
-          span ---
+        .Extract-large-unit.Title.Nav-link-level.fw-500
+          span {{ item.level }}
+        .Title.Nav-link-label.fw-500 {{ item.label }}
+        .Title.Nav-link-lede.fw-300(v-if="item.lede") 
+          span — 
           | {{ item.lede }}
 
       .Extract-large-inset
-        p.Meta.fw-bold Contact
-        div(
+        //- p.Meta.fw-500.rm-b2 Contact
+        .Meta.fw-400.c-text.rm-b1 Contact
+        .Meta.fw-400.c-textLight.rm-b1(
           v-for="contact in navContacts"
           :key="contact.link"
         )
-          a.Text.fs-text-sm.flh-loose(:href="contact.link" target="_blank") {{ contact.label }}
+          //- a.Text.fs-text-sm.flh-loose(:href="contact.link" target="_blank") {{ contact.label }}
+          a(:href="contact.link" target="_blank") {{ contact.label }}
+
 </template>
 
 <script scoped>
@@ -39,49 +44,52 @@ export default {
       if (this.$store.state.isMobileNavVisible) {
         return "u-hiddenVisually";
       }
-      if (this.$route.name === "interesting") {
+      if (this.$route.name === "the-littoral-line") {
         return "u-hiddenVisually";
       }
+      // if (this.$route.name === "index") {
+      //   return "u-hiddenVisually";
+      // }
     }
   },
   data() {
     return {
       navItems: [
         {
-          label: "Home",
-          level: "00",
+          label: "Intro",
+          level: "0.",
           link: "/",
           exact: true
         },
         {
           label: "Blog",
-          level: "01",
+          level: "1.",
           link: "/blog"
         },
         {
           label: "Essays",
-          level: "02",
+          level: "2.",
           link: "/essays"
         },
         {
           label: "Projects",
-          level: "03",
+          level: "3.",
           link: "/projects"
         },
         {
-          label: "Interesting",
-          level: "04",
-          lede: "it’s a mailing list",
-          link: "/interesting"
+          label: "The Littoral Line",
+          level: "4.",
+          lede: "a mailing list",
+          link: "/the-littoral-line"
         },
         {
           label: "About",
-          level: "05",
+          level: "5.",
           link: "/about"
         }
         /* {
           label: "Should we team up?",
-          level: "06",
+          level: "6",
           link: "/about/should-we-team-up"
         } */
       ],
@@ -90,10 +98,10 @@ export default {
           label: "callum@callumflack.design",
           link: "mailto:callum@callumflack.design"
         },
-        {
+        /* {
           label: "+61(0) 408 767 540",
           link: "tel:610-408-767-540"
-        },
+        }, */
         {
           label: "@callumflack",
           link: "https://twitter.com/callumflack"
@@ -121,16 +129,16 @@ export default {
   padding-bottom: calc(1 * var(--responsive-space));
   text-decoration: none;
 
-  /* @media (--lg) {
-    padding-bottom: var(--responsive-space);
-  } */
+  @media (--lg) {
+    padding-bottom: calc(0.333 * var(--responsive-space));
+  }
 }
 
 .Nav-link:last-of-type {
   margin-bottom: calc(0.5 * var(--responsive-space));
 
   @media (--lg) {
-    margin-bottom: var(--responsive-space);
+    margin-bottom: calc(0.5 * var(--responsive-space));
   }
 }
 
@@ -138,20 +146,9 @@ export default {
   margin-top: var(--responsive-space);
 } */
 
-.Nav-link-lede {
-  display: none;
-  line-height: 0.5;
-  margin-left: 0.5rem;
-  transform: translateY(0.7rem);
-
-  & span {
-    letter-spacing: -0.175em;
-    margin-right: 0.75rem;
-  }
-
-  @media (--md) {
-    display: inline;
-  }
+.Nav-link,
+.Nav-link:hover {
+  background-image: initial;
 }
 
 .Nav-link-level {
@@ -160,13 +157,31 @@ export default {
   @media (--lg) {
     display: inline;
   }
+
+  & span {
+    display: inline-block;
+    /* margin-left: calc(0.25 * var(--responsive-typography-space)); */
+    text-align: center;
+    width: 70px;
+  }
 }
 
-.Nav-link,
-.Nav-link:hover {
-  background-image: initial;
+.Nav-link-label {
+  font-weight: 500;
 }
 
+.Nav-link-lede {
+  display: none;
+  line-height: 0.5;
+  margin-left: 0.5rem;
+  transform: translateY(0.7rem);
+
+  @media (--md) {
+    display: inline;
+  }
+}
+
+.Nav-link-level,
 .Nav-link-label {
   margin-bottom: 0;
 }
@@ -174,6 +189,7 @@ export default {
 .nuxt-link-active {
   /* show it as unselectable */
   cursor: initial;
+  /* color: var(--c-link); */
   /* never make it red */
   color: var(--c-text) !important;
 }
@@ -183,16 +199,19 @@ export default {
   position: relative;
 }
 
-.nuxt-link-active .Nav-link-lede:after {
+/* .nuxt-link-active .Nav-link-lede:after { */
+.nuxt-link-active .Nav-link-label:after {
   /* content: "— you're here"; */
-  /* content: "✳"; */
+  content: "⚑";
+  content: "✳";
+  content: "*";
   display: inline-block;
-  font-family: var(--ff-lede), var(--ff-stack-serif);
+  /* font-family: var(--ff-lede), var(--ff-stack-serif);
   font-weight: 400;
   font-style: italic;
-  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 200;
-  font-style: initial;
+  font-style: initial; */
 
   margin-left: 0.25rem;
   position: relative;
@@ -227,13 +246,14 @@ export default {
   content: "——";
   content: "↳";
   display: inline-block;
-  font-family: var(--ff-heading), var(--ff-stack-sans);
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 100; 
   left: -5rem;
   position: absolute;*/
   left: 0;
-  margin-right: 0.125rem;
   top: -0.125rem;
+  /* right: -0.125rem; */
+  /* bottom: 12px; */
   position: relative;
 
   border-color: transparent;
@@ -241,7 +261,7 @@ export default {
   border-style: solid;
   /* border-width: 9px; */
   border-width: 0.28125em;
-  content: "";
+  /* content: ""; */
   display: inline-block;
   height: 0;
   width: 0;

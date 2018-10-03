@@ -115,32 +115,40 @@
   Font weights
  */
 
-.fw-hairline {
+.fw-100 {
   font-weight: 100 !important;
 }
-.fw-thin {
+.fw-200 {
   font-weight: 200 !important;
 }
-.fw-light {
+.fw-300 {
   font-weight: 300 !important;
 }
-.fw-regular {
+.fw-400 {
   font-weight: 400 !important;
 }
-.fw-medium {
+.fw-500 {
   font-weight: 500 !important;
 }
-.fw-semibold {
+.fw-600 {
   font-weight: 600 !important;
 }
-.fw-bold {
+.fw-700 {
   font-weight: 700 !important;
 }
-.fw-heavy {
+.fw-800 {
   font-weight: 800 !important;
 }
-.fw-black {
+.fw-900 {
   font-weight: 900 !important;
+}
+
+/* 
+  Font style
+ */
+
+.fs-italic {
+  font-style: italic !important;
 }
 
 /*
@@ -153,7 +161,7 @@
   & > p,
   & > ul,
   & > li {
-    font-family: var(--fs-text);
+    font-size: var(--fs-text);
   }
 }
 
@@ -161,7 +169,7 @@
   & > p,
   & > ul,
   & > li {
-    font-family: var(--fs-text-sm);
+    font-size: var(--fs-text-sm);
   }
 }
 
@@ -169,7 +177,7 @@
   & > p,
   & > ul,
   & > li {
-    font-family: var(--fs-text-md);
+    font-size: var(--fs-text-md);
     line-height: var(--flh-reduced);
   }
 }
@@ -178,7 +186,7 @@
   & > p,
   & > ul,
   & > li {
-    font-family: var(--fs-text-lg);
+    font-size: var(--fs-text-lg);
     font-weight: 200;
   }
 }

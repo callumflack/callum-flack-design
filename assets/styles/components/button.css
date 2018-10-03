@@ -18,6 +18,7 @@
   margin: 0;
   padding-left: var(--button-xpadding);
   padding-right: var(--button-xpadding);
+  padding-top: var(--button-text-alignment);
   position: relative;
   text-decoration: none;
   text-transform: var(--button-font-case);

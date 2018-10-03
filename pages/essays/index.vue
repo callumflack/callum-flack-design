@@ -1,7 +1,8 @@
 <template lang="pug">
+.b-pt4.b-pb3
   main.Container(role="main")
-    post-excerpt(
-      v-if="post.published && post.category === 'essays'"
+    PostExcerptEssay(
+      v-if="post.published && post.category === 'essay'"
       v-for="post in posts"
       :category="post.category"
       :date="post.date"
@@ -18,12 +19,12 @@
 </template>
 
 <script>
-import PostExcerpt from "~/components/PostExcerpt.vue";
+import PostExcerptEssay from "~/components/PostExcerptEssay.vue";
 
 export default {
   name: "blog",
   components: {
-    PostExcerpt
+    PostExcerptEssay
   },
   data() {
     return {

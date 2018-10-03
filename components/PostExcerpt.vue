@@ -1,31 +1,25 @@
 <template lang="pug">
-  article.Excerpt
-    header(role="header")
-      nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
-        .AspectRatio(:style="heroAspectStyle")
-          .AspectRatio-object.bg-text
-            ImageCld(:src="thumbImage || heroImage")
+  article.Excerpt.b-pt2
+    //- hr.b-my1
+    //- .Meta.c-textLight.rm-b2
+      time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+      span.MetaSeparator • 
+      span.u-textCapitalise(v-if="category") {{ category }}
+      //- span.MetaSeparator(v-if="readingTime" ) • 
+      //- span(v-if="readingTime" ) {{ readingTime }} minutes
+    h2.Subtitle.fw-500.p-t1.m-b0
+      nuxt-link.u-block(:to="permalink") 
+        | {{ title }}
+        span.fs-scale-reset
+          span.Meta.c-textLight.Excerpt-category(v-if="category") {{ category }}
 
-      .m-xA(:class="titleBlockClasses")
-        h2.Title.u-textCenter.p-t2.m-b3(v-if="showOnHomePage")
-          nuxt-link(:to="permalink") {{ title }}
-        h2.Heading.u-textCenter.p-t2.m-b2(v-else)
-          nuxt-link(:to="permalink") {{ title }}
-
-        .Meta.u-textCenter.p-t1
-          //- time(:date-time="date") {{ date | moment("YYYY.MM.DD") }} ? NAH
-          time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-          span.MetaSeparator • 
-          span(v-if="category") {{ category }}
-          span.MetaSeparator(v-if="readingTime" ) • 
-          span(v-if="readingTime" ) {{ readingTime }} minutes
-
-    main(role="main", :class="mainAlignClasses")
-      .Scope-post(v-if="showFullArticle")
-        nuxtent-body(:body="body")
-      p.Text(v-else)
-        | {{ lede }} 
-        nuxt-link.Text--italic(:to="permalink") Continue reading
+    //- Old shit…
+    //- .p-t3
+      .Scope-post
+        nuxtent-body(v-if="showFullArticle", :body="body")
+        p(v-else)
+          | {{ lede }} 
+          nuxt-link.Text--italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
     .AspectRatio.AspectRatio--16x9
@@ -101,26 +95,11 @@ export default {
     title: String
   },
   computed: {
-    heroExtractClasses() {
-      if (this.showOnHomePage === true) {
-        return "Extract-hero";
-      }
-      return "Extract-edge";
-    },
     /* heroObjectBgClasses() {
       return this.heroImageNoShadow ? "bg-text" : "bg-border";
     }, */
     heroAspectStyle() {
       return this.heroRatio && `padding-bottom: ${this.heroRatio}%`;
-    },
-    titleBlockClasses() {
-      if (this.showOnHomePage === true) {
-        return "b-py2 w-md-5x6";
-      }
-      return "b-py0 w-lg-4x6";
-    },
-    mainAlignClasses() {
-      return !this.showOnHomePage === true && "p-t1";
     }
   }
 };
@@ -132,15 +111,23 @@ export default {
 
 .Excerpt {
   /* slight increase on .b-mt3 */
-  margin-top: calc(2.25 * var(--responsive-space));
+  /* margin-top: calc(2.25 * var(--responsive-space)); */
 
   @media (--mo) {
     /* matches .Project on mobile-only */
-    margin-top: calc(1.5 * var(--responsive-space));
+    /* margin-top: calc(1.5 * var(--responsive-space)); */
   }
 }
 
 .Excerpt:first-of-type {
   margin: 0;
+  padding: 0;
+}
+
+.Excerpt-category {
+  display: inline-block;
+  margin-left: var(--s-2);
+  text-transform: capitalize;
+  transform: translateY(-0.9em);
 }
 </style>
