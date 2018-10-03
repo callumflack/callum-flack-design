@@ -9,6 +9,7 @@ module.exports = {
         content: "HN9v-wB-PoQjHk1CGpr5YVG9VUNrcOaOjHACfG3SSSI"
       },
       {
+        /* failing pinterest bullshit */
         name: "p: domain_verify",
         content: "8280c00ce54aef1d74f05dc38cd9fb91"
       },
@@ -32,9 +33,9 @@ module.exports = {
   css: ["~/assets/styles/application.css"],
 
   plugins: [
+    "~/plugins/vue-moment"
     /*{ src: "~/plugins/vue-slick", ssr: false },
     "~/plugins/vue-fixed-header"*/
-    "~/plugins/vue-moment"
     /* {
       src: "~/plugins/v-lazy-image",
       ssr: false

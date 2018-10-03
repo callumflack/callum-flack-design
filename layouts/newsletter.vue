@@ -15,16 +15,17 @@ div(:class="currentPageClass")
                 tr
                   td(align="center")
                     .nl-spacer
-                      // p.Text--sm.c-textLight.u-textCenter ———
+                      //- p.Text--sm.c-textLight.u-textCenter ———
                       hr
                       p.Text.Text--sm.Text--footer.c-textLight.u-textCenter
-                        | ❏ Interesting
+                        //- | ☀ The Littoral Line
+                        | ✺ The Littoral Line
                         br
                         | An infrequent electronic letter from 
                         a(href="http://twitter.com/callumflack/") Callum Flack
-                        | .
+                        | . 
                         br
-                        | Subscribe here.
+                        nuxt-link(to="/the-littoral-line") Subscribe here.
 
 </template>
 

@@ -1,7 +1,5 @@
 <template lang="pug">
-  c-post(
-    archive
-    :link="page.permalink"
+  Post(
     :title="page.title"
     :date="page.date"
     :readingTime="page.readingTime"
@@ -15,32 +13,32 @@ import Post from "~/components/NewsletterPost.vue";
 export default {
   layout: "newsletter",
   components: {
-    "c-post": Post
-  },
-  head() {
-    return {
-      title: `${this.page.title} – Callum Flack Design`,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: `${this.page.title} – ${this.page.lede}`
-        }
-      ]
-    };
+    Post
   },
   data() {
     return {
-      posts: []
+      page: {}
     };
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/newsletter").get(route.path);
-    const posts = await app.$content("/newsletter").getAll();
 
     return {
-      page,
-      posts
+      page
+    };
+  },
+  head() {
+    return {
+      title: `${this.page.title}—The Littoral Line`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `Issue ${
+            this.page.title
+          }—The Littoral Line by Callum Flack Design. Curious and generative links, stories and insights about visual design, user experience and website development systems through the lens of people and attention.`
+        }
+      ]
     };
   }
 };
@@ -86,5 +84,33 @@ export default {
   /* background-color: var(--c-text); */
   /* height: 1rem; */
   margin-bottom: calc(1.1 * var(--s-4a));
+}
+
+/* dupe from LL index */
+.u-icon {
+  margin-right: 0.25em;
+  transform: translateY(3px);
+
+  @media (min-width: 768px) {
+    margin-right: 0.175em;
+    transform: translateY(2px);
+  }
+  @media (min-width: 1280px) {
+    transform: translateY(4px);
+  }
+}
+
+.u-icon >>> svg {
+  height: 30px;
+  width: 30px;
+
+  @media (min-width: 513px) {
+    height: 36px;
+    width: 36px;
+  }
+  @media (min-width: 1280px) {
+    height: 54px;
+    width: 54px;
+  }
 }
 </style>

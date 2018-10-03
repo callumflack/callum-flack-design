@@ -17,6 +17,15 @@ module.exports = {
         isPost: true,
         generate: ["get", "getAll"]
       }
+    ],
+    [
+      "newsletter",
+      {
+        page: "/_slug",
+        permalink: "/the-littoral-line/:slug",
+        isPost: false,
+        generate: ["get", "getAll"]
+      }
     ]
   ],
 
