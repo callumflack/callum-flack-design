@@ -3,7 +3,7 @@ module.exports = {
     [
       "pages",
       {
-        page: "/_slug",
+        page: "/pages/_slug",
         permalink: "/:slug",
         isPost: false,
         generate: ["get"]
@@ -12,7 +12,7 @@ module.exports = {
     [
       "projects",
       {
-        page: "/_slug",
+        page: "/projects/_slug",
         permalink: "/work/:slug",
         isPost: true,
         generate: ["get", "getAll"]
@@ -21,7 +21,7 @@ module.exports = {
     [
       "posts",
       {
-        page: "/_slug",
+        page: "/posts/_slug",
         permalink: "/blog/:slug",
         isPost: true,
         generate: ["get", "getAll"]
@@ -30,8 +30,8 @@ module.exports = {
     [
       "newsletter",
       {
-        page: "/_slug",
-        permalink: "/newsletter/:slug",
+        page: "/newsletter/_slug",
+        permalink: "/interesting/:slug",
         isPost: true,
         generate: ["get", "getAll"]
       }

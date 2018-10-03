@@ -77,7 +77,8 @@ module.exports = {
       "/",
       "/about",
       "/work",
-      "/blog"
+      "/blog",
+      "/interesting"
     ]
   },
   router: {

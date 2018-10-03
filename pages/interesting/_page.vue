@@ -1,10 +1,9 @@
 <template lang="pug">
-  c-post(
+  Post(
     archive
-    :link="page.permalink"
     :title="page.title"
     :date="page.date"
-    :readingtime="page.readingtime"
+    :readingTime="page.readingTime"
     :body="page.body"
   )
 </template>
@@ -15,7 +14,7 @@ import Post from "~/components/NewsletterPost.vue";
 export default {
   layout: "newsletter",
   components: {
-    "c-post": Post
+    Post
   },
   head() {
     return {
@@ -29,18 +28,12 @@ export default {
       ]
     };
   },
-  data() {
-    return {
-      posts: []
-    };
-  },
   async asyncData({ app, route }) {
-    const page = await app.$content("/newsletter").get(route.path);
-    const posts = await app.$content("/newsletter").getAll();
-
     return {
-      page,
-      posts
+      page: await app
+        .$content("/newsletter")
+        /* .query({ exclude: ["attributes"] }) */
+        .get(route.path)
     };
   }
 };

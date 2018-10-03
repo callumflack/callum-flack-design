@@ -7,7 +7,7 @@ div
     .container.u-posRelative.block--pb7
       c-signupform
   
-  // main.block--pb7.block--matchFixedMenuTop(role="main")
+  //- main.block--pb7.block--matchFixedMenuTop(role="main")
     .container.container--newsletter
       c-postexcerpt(
         v-if="post.published"
@@ -52,8 +52,8 @@ export default {
         }
       ]
     };
-  },
-  data() {
+  }
+  /* data() {
     return {
       posts: []
     };
@@ -64,6 +64,6 @@ export default {
     return {
       posts
     };
-  }
+  } */
 };
 </script>
