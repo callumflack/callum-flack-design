@@ -15,8 +15,8 @@
         p.Text.fs-text-sm.c-textLight.u-textCenter(v-if="archive") 
           | Just visiting? 
           nuxt-link(to="/the-littoral-line") Subscribe to The Littoral Line.
-      
-      //- no-ssr // placeholder is undefined, so this breaks everything!
+
+      //- no-ssr
       .Scope-post
         nuxtent-body.nl-spacer(:body="body")
 </template>

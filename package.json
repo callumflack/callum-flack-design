@@ -9,7 +9,6 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "STATIC=true nuxt generate && cp now.json dist/",
-    "svg": "vsvg -s assets/icons -t static/icons",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
@@ -21,8 +20,6 @@
     "normalize.css": "^8.0.0",
     "nuxt": "^1.4.2",
     "nuxtent": "1.4.1",
-    "postcss-custom-media": "^6.0.0",
-    "postcss-custom-selectors": "^4.0.1",
     "postcss-discard-comments": "^4.0.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-mixins": "^6.2.0",
