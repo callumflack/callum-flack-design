@@ -2,7 +2,7 @@
   td.Container.nl-container
     .nl-content
       .nl-spacer
-        p.u-textCenter.m-b2
+        .u-textCenter.m-b2
           IconBase(icon-name="icon-sun")
             IconSun
         h1.Title.u-textCenter {{ title }}
@@ -16,7 +16,8 @@
           | Just visiting? 
           nuxt-link(to="/the-littoral-line") Subscribe to The Littoral Line.
       
-      no-ssr.Scope-post
+      //- no-ssr // placeholder is undefined, so this breaks everything!
+      .Scope-post
         nuxtent-body.nl-spacer(:body="body")
 </template>
 
@@ -33,12 +34,10 @@ export default {
     IconSun
   },
   props: {
-    published: Boolean,
     archive: {
       type: Boolean,
       default: true
     },
-    link: String,
     title: String,
     date: String,
     readingTime: Number,

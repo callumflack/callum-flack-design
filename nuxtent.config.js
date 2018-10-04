@@ -23,7 +23,7 @@ module.exports = {
       {
         page: "/newsletter/_slug",
         permalink: "/the-littoral-line/:slug",
-        isPost: false,
+        isPost: true,
         generate: ["get", "getAll"]
       }
     ]
