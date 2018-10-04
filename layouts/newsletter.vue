@@ -17,14 +17,13 @@ div(:class="currentPageClass")
                     .nl-spacer
                       //- p.Text--sm.c-textLight.u-textCenter ———
                       hr
-                      p.Text.Text--sm.Text--footer.c-textLight.u-textCenter
+                      p.Text.fs-text-sm.c-textLight.u-textCenter
                         //- | ☀ The Littoral Line
                         | ✺ The Littoral Line
                         br
-                        | An infrequent electronic letter from 
+                        | An electronic letter about design, the web and noticing from 
                         a(href="http://twitter.com/callumflack/") Callum Flack
                         | . 
-                        br
                         nuxt-link(to="/the-littoral-line") Subscribe here.
 
 </template>

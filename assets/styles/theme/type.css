@@ -121,6 +121,10 @@ p em,
   font-size: var(--fs-subheading);
 }
 
+.Scope-post h2 {
+  line-height: var(--flh-regular);
+}
+
 .Heading {
   font-size: var(--fs-heading);
   /* line-height: 1.25; */

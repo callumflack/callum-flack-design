@@ -5,7 +5,7 @@ div
       h1.Supertitle.rm-b4
         //- span.fw-300 ❏ 
         //- span.fw-300 ✺ 
-        IconBase(icon-name="icon-sun")
+        IconBase.LittoralIcon(icon-name="icon-sun")
           IconSun
         | The Littoral Line
       //- p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things", those that live in the littoral zone, so to speak, where . I hope to share curious and generative links, stories and insights with you. Even if you think your digital interfaces are resonating with your audience, I hope you'll get something generative out of reading 
@@ -71,21 +71,8 @@ export default {
 };
 </script>
 
-<style scoped>
-.u-icon {
-  margin-right: 0.25em;
-  transform: translateY(3px);
-
-  @media (min-width: 768px) {
-    margin-right: 0.175em;
-    transform: translateY(2px);
-  }
-  @media (min-width: 1280px) {
-    transform: translateY(4px);
-  }
-}
-
-.u-icon >>> svg {
+<style lang="postcss" scoped>
+.LittoralIcon >>> svg {
   height: 30px;
   width: 30px;
 

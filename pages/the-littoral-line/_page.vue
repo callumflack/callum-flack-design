@@ -15,16 +15,12 @@ export default {
   components: {
     Post
   },
-  data() {
-    return {
-      page: {}
-    };
-  },
   async asyncData({ app, route }) {
-    const page = await app.$content("/newsletter").get(route.path);
-
     return {
-      page
+      page: await app
+        .$content("/newsletter")
+        /* .query({ exclude: ["attributes"] }) */
+        .get(route.path)
     };
   },
   head() {
@@ -44,7 +40,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style>
 @import "../../assets/styles/variables.css";
 
 .nl-container {
@@ -84,33 +80,5 @@ export default {
   /* background-color: var(--c-text); */
   /* height: 1rem; */
   margin-bottom: calc(1.1 * var(--s-4a));
-}
-
-/* dupe from LL index */
-.u-icon {
-  margin-right: 0.25em;
-  transform: translateY(3px);
-
-  @media (min-width: 768px) {
-    margin-right: 0.175em;
-    transform: translateY(2px);
-  }
-  @media (min-width: 1280px) {
-    transform: translateY(4px);
-  }
-}
-
-.u-icon >>> svg {
-  height: 30px;
-  width: 30px;
-
-  @media (min-width: 513px) {
-    height: 36px;
-    width: 36px;
-  }
-  @media (min-width: 1280px) {
-    height: 54px;
-    width: 54px;
-  }
 }
 </style>

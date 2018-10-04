@@ -20,7 +20,7 @@
     .Scope-post.Scope-post-dropca
       .fs-block-lg.rs-m3
         p.m-b0
-          span In the digital age, you can't just rely on graphic design. 
+          span In the digital age, you can't differentiate with just design. 
           em Your branding is tactile—
           | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
           em felt. 

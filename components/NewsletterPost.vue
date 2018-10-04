@@ -1,19 +1,20 @@
 <template lang="pug">
   td.Container.nl-container
     .nl-content
-      //- .nl-spacer
-        p.fs-text-sm.c-textLight.u-textCenter(v-if="archive") Just visiting? 
-          nuxt-link(to="/the-littoral-line") Subscribe to The Littoral Line mailing list.
-        h1.Title.u-textCenter 
+      .nl-spacer
+        p.u-textCenter.m-b2
           IconBase(icon-name="icon-sun")
             IconSun
-          | {{ title }}
-        h2.m-y0.Text--sm.c-textLight.u-textCenter
+        h1.Title.u-textCenter {{ title }}
+        p.fs-text-sm.c-textLight.u-textCenter.m-b2
           span LL01
           span.MetaSeparator • 
           time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
           span.MetaSeparator • 
           span {{ readingTime }} minutes
+        p.Text.fs-text-sm.c-textLight.u-textCenter(v-if="archive") 
+          | Just visiting? 
+          nuxt-link(to="/the-littoral-line") Subscribe to The Littoral Line.
       
       no-ssr.Scope-post
         nuxtent-body.nl-spacer(:body="body")
@@ -46,7 +47,57 @@ export default {
 };
 </script>
 
+<style lang="postcss">
+.LittoralIcon--md >>> svg {
+  height: 24px;
+  width: 24px;
 
-<style scoped>
-@import "../assets/styles/variables.css";
+  @media (min-width: 513px) {
+    height: 30px;
+    width: 30px;
+  }
+  @media (min-width: 1280px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.nl-container {
+  max-width: 600px !important;
+  padding: 0;
+}
+
+.nl-content {
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.nl-content table {
+  width: 100%;
+}
+
+.nl-img-fullbleed {
+  display: inline;
+  /* border-radius: 3px; */
+  /* margin-bottom: 1.5em; */
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: auto !important;
+}
+
+.nl-spacer {
+  margin-top: var(--s-4a);
+  margin-bottom: calc(1.1 * var(--s-4a));
+}
+
+.nl-content hr {
+  /* background-color: var(--c-text); */
+  /* height: 1rem; */
+  margin-bottom: calc(1.1 * var(--s-4a));
+}
 </style>
