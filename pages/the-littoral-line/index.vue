@@ -51,7 +51,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "The Littoral Line—a mailing list by Callum Flack Design. It's about 'things inbetween' that wash up in the littoral zone—the stories, ideas and links that I've found curious, resonating, interesting"
+            "Design, UX & the web thru the lens of people + attention. Discover adjacent possibles by exploring the atypical in-betweens that wash-up in the littoral zone."
         }
       ]
     };
