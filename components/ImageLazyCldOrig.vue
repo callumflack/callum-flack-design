@@ -15,7 +15,7 @@ const baseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
 const blurUrl = `${baseUrl}/w_50,e_blur:300`;
 
 function calcImageDimension(length, pixelRatio) {
-  return 100 * Math.round(length * pixelRatio / 100);
+  return 100 * Math.round((length * pixelRatio) / 100);
 }
 
 export default {
@@ -91,11 +91,7 @@ export default {
       this.smallUrl = smallUrl;
     };
 
-    /*
-
-      Load large image
-
-     */
+    // Load large image
     const image = this.$refs.placeholder;
 
     const { clientWidth } = image;
