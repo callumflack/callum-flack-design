@@ -23,7 +23,7 @@
   @media (--md) {
     font-size: var(--rfs-2) !important;
   }
-  @media (--md-landscape) {
+  @media (--mdl) {
     font-size: var(--rfs-3) !important;
   }
   @media (--lg) {
@@ -188,5 +188,6 @@
   & > li {
     font-size: var(--fs-text-lg);
     font-weight: 200;
+    line-height: var(--flh-reduced);
   }
 }

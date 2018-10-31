@@ -1,0 +1,57 @@
+/* 
+
+  taken from patternworks v1 site via thisalso.com 
+  https://css-tricks.com/almanac/properties/a/animation/
+
+*/
+
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Nav--animate {
+  /* animation: logoIn 1000ms cubic-bezier(0.19, 1, 0.22, 1) 200ms 1 normal both; */
+}
+
+@keyframes headerIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Header--animate {
+  animation: headerIn 500ms cubic-bezier(0.19, 1, 0.22, 1) 400ms 1 normal both;
+}
+
+@keyframes contentIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Hero--animate,
+.Content--animate,
+.Footer--animate {
+  animation: contentIn 500ms cubic-bezier(0.19, 1, 0.22, 1) 700ms 1 normal both;
+}
+
+.Footer--animate {
+  animation-duration: 1000ms;
+}

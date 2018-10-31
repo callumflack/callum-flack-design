@@ -149,7 +149,7 @@ export default {
   background-color: var(--c-highlight-alt);
   border-radius: 1em;
   padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--responsive-space)) calc(0.45 * var(--responsive-space));
+  padding: calc(0.375 * var(--rs-block-space)) calc(0.45 * var(--rs-block-space));
 
   & a {
     background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),

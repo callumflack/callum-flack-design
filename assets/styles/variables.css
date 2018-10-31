@@ -4,48 +4,7 @@
 /* 
 
 
-  Responsive custom properties!
-  
-  On css custom properties & postcss-custom-properties:
-  Single variables within media queries are a great idea:
-  https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
-  …but postcss-custom-properties limits vars to the `:root`:
-  "Since we do not know the DOM in the context of this plugin, we cannot produce safe output." —  https://github.com/postcss/postcss-custom-properties
-  
-  :root { --s-title: 20px; }
-
-  @media (min-width: 80em) {
-    :root { --s-title: 40px; }
-  }
-
-
- */
-
-:root {
-  --responsive-space: 1.75rem;
-  --responsive-typography-space: 0.75rem;
-  --responsive-hero: 24rem;
-}
-
-@media (--md) {
-  :root {
-    --responsive-space: 3.25rem;
-    --responsive-typography-space: 1rem;
-    --responsive-hero: 38rem;
-  }
-}
-
-@media (--lg) {
-  :root {
-    --responsive-space: 4rem;
-    --responsive-hero: 47rem;
-  }
-}
-
-/* 
-
-
-  Every other custom property
+  Static custom properties only
 
 
  */
@@ -54,7 +13,7 @@
   @custom-media --mo (max-width: 512px); /* mo = mobile only */
   @custom-media --sm (min-width: 513px);
   @custom-media --md (min-width: 768px);
-  @custom-media --md-landscape (min-width: 1024px);
+  @custom-media --mdl (min-width: 1024px);
   @custom-media --lg (min-width: 1280px);
   @custom-media --xl (min-width: 1500px);
   @custom-media --su (min-width: 1760px);
@@ -66,37 +25,29 @@
   */
 
   --space: 1.5rem;
-  --grid-gutter: calc(2 * var(--space));
-  --flex-grid-gutter: calc(1.25 * var(--space));
+  --grid-gutter: calc(2 * var(--rs-space));
+  --flex-grid-gutter: calc(1.25 * var(--rs-space));
 
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
-  --container-rg: calc(660px + (2 * var(--grid-gutter)));
-  --container-md: calc(960px + (2 * var(--grid-gutter)));
-  --container-lg: 960px; /* calc(846px + (2 * var(--grid-gutter))) */
-  --container-xl: 1200px; /* was 1200… width + (2 * var(--grid-gutter)) or 96px */
+  --container-rg: calc(630px + (2 * var(--grid-gutter)));
+  --container-md: calc(740px + (2 * var(--grid-gutter)));
+  --container-lg: calc(960px + (2 * var(--grid-gutter)));
+  --container-xl: calc(1140px + (2 * var(--grid-gutter)));
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
-  --s-0: 0;
-  --s-1: 0.25rem;
-  --s-2: 0.5rem;
-  --s-2a: 0.75rem;
-  --s-3: 1rem;
-  --s-3a: 1.25rem;
-  --s-3b: 1.5rem;
-  --s-4: 2rem;
-  --s-4a: 2.15rem;
-  --s-5: 2.5rem;
-  --s-6: 4rem;
-  --s-7: 6rem;
+  --s-1: calc(0.25 * var(--rs-space));
+  --s-2: calc(0.5 * var(--rs-space));
+  --s-3: calc(1 * var(--rs-space));
+  --s-3a: calc(1.25 * var(--rs-space));
+  --s-3b: calc(1.5 * var(--rs-space));
+  --s-4: calc(2 * var(--rs-space));
+  --s-5: calc(4 * var(--rs-space));
+  --s-6: calc(8 * var(--rs-space));
+  --s-7: calc(16 * var(--rs-space));
 
-  --rs-1: 0.25rem;
-  --rs-2: 0.5rem;
-  --rs-3: 1rem;
-  --rs-3a: 1.25rem;
-  --rs-4: 2.5rem;
-  --rs-5: 5rem;
-  --rs-6: 9rem;
-  --rs-7: 13rem;
+  --s-paragraph: calc(1.25 * var(--rs-space));
+  --s-headline: calc(2.5 * var(--s-paragraph));
+  --s-blockquote: calc(1 * var(--s-paragraph));
 
   /* 
     
@@ -107,22 +58,10 @@
   --c-brand: #00ffff;
   --c-brandHover: #00ffff;
   --c-brandLight: #00ffff;
-  --c-highlight: rgba(255, 235, 0, 0.25);
-  --c-highlight: #fcf7c9;
   --c-highlight: #47caf5;
-  --c-link: #bd0a20;
-  --c-link: #f53813;
-  --c-link: #f51713;
-  --c-link: #f52b13;
-  --c-link: #9411c5;
-  --c-link: #e4b830; /* yellow */
-  --c-link: #e62f0d; /* red */
-  --c-link: #33f; /* dow-smith blue */
-  --c-link: #962cff; /* newlyn purple */
-  --c-link: #8c3add; /* newlyn purple */
-  --c-link: #6e32ff; /* kremers purple */
-  --c-link: #fe5000; /* pantone 021C */
   --c-link: #fe3600; /* pantone 021C plus */
+  --c-link: #ff5600;
+  --c-link: #0085ff; /* blue */
   --c-highlight: var(--c-link);
   --c-highlight-alt: #ffea97;
 
@@ -131,8 +70,8 @@
   --c-ash: #24292e;
   --c-text: var(--c-ash);
   --c-text: #050505;
-  --c-textLight: #858585;
-  --c-textUnderline: rgba(5, 5, 5, 0.5);
+  --c-text-light: #858585;
+  --c-text-underline: rgba(5, 5, 5, 0.5);
 
   --c-gray: #aaa;
   --c-border: #e5e5e5;
@@ -148,9 +87,8 @@
   --c-neutral: hsl(48, 16%, 91%);
   --c-neutral: var(--c-bg);
 
-  --c-bg: #f2f2f2;
-  --c-bg: #f7f7f7;
   --c-bg: #fafafa;
+  --c-bg: #f3f2f1;
   --c-white: white;
 
   --c-success: #ff3700;
@@ -164,8 +102,8 @@
    */
 
   --ff-text: "Libre";
-  --ff-lede: "TiemposHeadline";
   --ff-title: "Grotesque";
+  --ff-meta: "Meta";
 
   --ff-text-meta: var(--ff-title);
   --ff-text-subheading: var(--ff-title);
@@ -177,47 +115,6 @@
 
   --ff-stack-text: var(--ff-stack-serif);
   --ff-stack-heading: var(--ff-stack-sans);
-
-  /* 
-  
-    Font sizes
-    For your thoughts: http://type-scale.com/
-
-    The maths:
-
-    <text-unit> * 16 * 1
-    1.1875 * 16 * 1 = 19pt
-
-    <desired-pt-size>/<text-unit>/16 * 16
-    48/19/16 * 16
-
-    <desired-pt-size>/<responsive-text-unit-in-px>/16 * 16
-    27/13/16 * 16
-   
-   */
-
-  --rfs-0: 0.79rem; /* 12pt */
-  --rfs-1: 0.8425rem; /* 13pt */
-  --rfs-2: 0.895rem; /* 14pt */
-  --rfs-3: 0.95rem; /* 15pt */
-  --rfs-4: 1rem; /* 16pt */
-
-  --fs-text-unit: 1.125; /* 18 */
-
-  --fs-text-xs: calc(0.777777778em * var(--fs-text-unit)); /* 14/18/16 * 16 */
-  --fs-text-sm: calc(0.888888889em * var(--fs-text-unit)); /* 16/18/16 * 16 */
-  --fs-text: calc(1.055555556em * var(--fs-text-unit));
-  --fs-text-md: calc(1em * var(--fs-text-unit));
-  --fs-text-lg: calc(1.333333333em * var(--fs-text-unit)); /* 22.5/18/16 * 16 */
-  --fs-meta: calc(0.722222222em * var(--fs-text-unit)); /* 13/18/16 * 16 */
-  --fs-button: var(--fs-meta);
-
-  --fs-lede: calc(1.3333em * var(--fs-text-unit));
-  --fs-subheading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
-  --fs-heading: calc(1.166666667em * var(--fs-text-unit)); /* 21/18/16 * 16 */
-  --fs-subtitle: calc(1.666666667em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
-  --fs-title: calc(2.5em * var(--fs-text-unit)); /* 40.5/18/16 * 16 */
-  --fs-supertitle: calc(3.25em * var(--fs-text-unit)); /* 72/18/16 * 16 */
 
   /* 
   
@@ -235,13 +132,35 @@
   --fls-touch-negative: 0;
   --fls-regular: 0;
   --fls-touch-positive: 0.05em;
+  --fls-touch-loose: 0.075em;
   --fls-loose: 0.15em;
 
   --flh-super: 1;
   --flh-tight: 1.15;
-  --flh-reduced: 1.3333;
+  --flh-reduced: 1.45;
   --flh-regular: 1.5;
   --flh-loose: 1.55;
+
+  /* 
+
+    Utility variables
+
+   */
+
+  --border-radius: 4px;
+  --cover-image-screen-color: rgba(0, 0, 0, 0.25);
+  --figure-space-align-within-text: calc(0.25 * var(--rs-space));
+  --figcaption-margin-top: 0.5rem;
+  --figcaption-font-weight: 400;
+  --figcaption-text-color: var(--c-text-light);
+  --horizontal-rule-color: var(--c-rule);
+  --horizontal-rule-space: 0;
+  --html-c: var(--c-text);
+  --html-bg: var(--c-bg);
+  --inline-block-children-space: calc(1 * var(--s-3));
+  --list-inset-padding: calc(2 * var(--rs-space));
+  --progress-height: 32px;
+  --text-link-decoration: none;
 
   /* 
 
@@ -260,6 +179,7 @@
   --button-color: var(--c-text);
   --button-disabled-opacity: 0.6;
   --button-height: calc(1 * var(--field-height));
+  --button-inline-spacing: var(--s-2);
   --button-xpadding: 1.5em;
 
   /* typography */
@@ -268,10 +188,30 @@
   --button-font-size: inherit;
   --button-font-weight: inherit;
   --button-letter-spacing: inherit;
-  --button-text-alignment: 0;
 
-  /* button + button inline spacing */
-  --button-inline-spacing: var(--s-2);
+  /* 
+
+    Forms
+
+   */
+
+  --field-height: 3rem;
+  --field-space: 1rem 1.25rem;
+  --field-xpadding: 0.75em;
+  --input-border-color: var(--c-brand-rule);
+  --input-border-color-hover: var(--c-brand-rule);
+  --input-border-color-focus: var(--c-brand-rule);
+  --input-border-radius: 0;
+  --input-box-shadow-focus: transparent;
+  --input-bg-color: transparent;
+  --input-bg-color-hover: transparent;
+  --input-bg-color-focus: var(--c-bg);
+  --input-notwriteable-border-color: var(--c-text-light);
+  --input-notwriteable-bg-color: var(--c-text-light);
+  --input-notwriteable-text-color: var(--c-gray);
+  --input-text-color: var(--c-brand);
+  --input-text-color-hover: var(--c-brand);
+  --input-text-color-focus: var(--c-brand);
 
   /* 
 
@@ -287,31 +227,10 @@
 
   /* 
 
-    Utility variables
-
-   */
-
-  --border-radius: 4px;
-  --cover-image-screen-color: rgba(0, 0, 0, 0.25);
-  --field-space: 0 1rem;
-  --field-height: 3em;
-  --figure-space: calc(2 * var(--space));
-  --figure-space-within-text: calc(0.25 * var(--responsive-space));
-  --figcaption-margin-top: 0.5rem;
-  --figcaption-font-weight: 400;
-  --figcaption-text-color: var(--c-text-light);
-  --horizontal-rule-color: var(--c-rule);
-  --horizontal-rule-space: 0;
-  --inline-block-children-space: calc(1.25 * var(--s-3));
-  --progress-height: 32px;
-  --text-link-decoration: none;
-
-  /* 
-
     Theme
 
    */
 
-  --fixed-menu-height: 89px;
+  --nav-height: calc(24px + var(--rs-block-space));
   --toggle-x-align: -1.05rem;
 }

@@ -1,48 +1,15 @@
-/* Resets */
-@import "normalize.css";
-@import "suitcss-base/lib/*.css";
-
 /* Variables */
+@import "./variables-dynamic.css";
 @import "./variables.css";
+@import "./font-face.css";
 
-/* Typography */
-@import "./typography/font-faces.css";
-@import "./typography/font-styles.css";
-@import "./typography/font-spacing.css";
-@import "./typography/base.css";
-@import "./typography/horinzontal-rule.css";
-@import "./typography/list.css";
-@import "./typography/link.css";
-/* @import "./typography/type.css"; */
-
-/* Utilities */
-@import "./utilities/block.css";
-@import "./utilities/color.css";
-@import "./utilities/display.css";
-@import "./utilities/flexbox.css";
-@import "./utilities/height.css";
-@import "./utilities/icon.css";
-@import "./utilities/line-break.css";
-@import "./utilities/position.css";
-@import "./utilities/media.css";
-@import "./utilities/spacing.css";
-@import "./utilities/spacing-responsive.css";
-@import "./utilities/text.css";
-@import "./utilities/width.css";
-@import "./utilities/zindex.css";
-
-/* Components */
-@import "./components/arrow.css";
-@import "./components/aspect-ratio.css";
-@import "./components/button.css";
-@import "./components/container.css";
-@import "./components/cover-image.css";
-@import "./components/flex-grid.css";
-@import "./components/form.css";
-@import "./components/image-blend.css";
+/* Iremono */
+@import "iremono";
 
 /* Theme */
+@import "./theme/animations.css";
 @import "./theme/container.css";
+@import "./theme/form.css";
 @import "./theme/grid-extractors.css";
 @import "./theme/link.css";
 @import "./theme/project-item.css";

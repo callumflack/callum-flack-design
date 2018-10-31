@@ -10,9 +10,8 @@ heroImageMultiply: true
 published: true
 ---
 
-<blockquote><p class="c-textLight">What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<em>John Dewey, Art as Experience</em></p></blockquote>
+<blockquote><p class="c-text-light">What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<em>John Dewey, Art as Experience</em></p></blockquote>
 
-<br>
 <br>
 
 Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to _see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into a muscle memory of shortcuts that are stored as _aesthetic feelings_, away from the cognitive expense of language and reason. Much more than just a style of doing, good taste is the intuitive understanding of a problem space.
@@ -23,7 +22,7 @@ Rather than understanding taste as the particular way a person does a thing, I w
 
 Given our revised definition of taste as a unit of creative problem-solving ability, the question is, so what? Why does taste matter? As software destroys, transmutes and unbundles markets into recursively smaller niches, the user experience of these products becomes a major battleground for competitive differentiation. When all is said and done, business success will be decided by how well their product's interfaces _make people feel_. A frustrating interface will be dismissed, and a satisfying interface will create a customer.
 
-But what makes an interface successful? Beyond speed of performance, cohesive information sequences and anticipation of the human context and need, designing an experience that hopes to create feeling can only be done _with feeling_. The difference between good and bad becomes a matter of who can bring to bear greater focus and knowhow within the problem space, who can build a greater _taste_ for it.
+But what makes an interface successful? Beyond speed of performance, cohesive information sequences and anticipation of the human context and need, designing an experience that hopes to create feeling can only be done _with feeling_. The difference between good and bad becomes a matter of who can bring to bear greater focus and knowhow within the problem space, who can build with better _taste_.
 
 <!-- These fine-grained attention to the problem   -->
 

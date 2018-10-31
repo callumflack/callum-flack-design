@@ -1,0 +1,98 @@
+/* eslint-disable */
+/* prettier-ignore */
+
+/* 
+
+
+  Responsive custom properties
+
+  Single variables within media queries are a great idea:
+  * https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
+  * https://www.madebymike.com.au/writing/using-css-variables/
+
+  …altho postcss-custom-properties limits vars to the `:root`:
+  "[it's] a limited subset (to :root selector) of the features provided by native CSS custom properties. 
+  Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
+  See:
+  * https://github.com/postcss/postcss-custom-properties
+  * https://css-tricks.com/issue-preprocessing-css-custom-properties/
+
+  So you must ensure custom properties are tied to a selector, like :root. 
+  Note that Hi-Q does this well.
+
+  :root { --s-title: 20px; }
+
+  @media (min-width: 80em) {
+    :root { --s-title: 40px; }
+  }
+
+ */
+
+:root {
+  --rs-space: 0.75rem;
+  --rs-block-space: 1.5rem;
+}
+@media (--sm) {
+  :root {
+    --rs-space: 0.666rem;
+  }
+}
+@media (--md) {
+  :root {
+    --rs-space: 0.875rem;
+    --rs-block-space: 2.5rem;
+  }
+}
+@media (--lg) {
+  :root {
+    --rs-space: 1rem;
+    --rs-block-space: 3.5rem;
+  }
+}
+
+/* 
+
+  Font-sizes
+
+ */
+
+:root {
+  --rfs-text-xs: 10px;
+  --rfs-text-sm: 13px;
+  --rfs-text: 13px;
+  --rfs-text-md: 13px;
+  --rfs-text-lg: 16px;
+  --rfs-heading: 16px;
+  --rfs-subtitle: 24px;
+  --rfs-title: 27px;
+}
+@media (--sm) {
+  :root {
+    --rfs-text-xs: 12px;
+    --rfs-text-sm: 14px;
+    --rfs-text: 16px;
+    --rfs-text-md: 16px;
+    --rfs-text-lg: 19px;
+    --rfs-heading: 19px;
+    --rfs-subtitle: 27px;
+    --rfs-title: 30px;
+  }
+}
+@media (--mdl) {
+  :root {
+    --rfs-title: 36px;
+  }
+}
+@media (--lg) {
+  :root {
+    --rfs-text-xs: 13px;
+    --rfs-text-sm: 15px;
+    --rfs-text: 18px;
+    --rfs-text-md: 19px;
+    --rfs-text-lg: 22px;
+    --rfs-heading: 22px;
+    --rfs-subtitle: 30px;
+    --rfs-title: 44px;
+    --rfs-supertitle: 48px;
+  }
+}

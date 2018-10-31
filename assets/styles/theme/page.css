@@ -4,6 +4,10 @@
 
  */
 
+.Page {
+  padding-top: var(--nav-height);
+}
+
 .page-index .Nav-list {
   background-color: initial !important;
 }
@@ -36,14 +40,14 @@
  */
 
 .b-nav {
-  padding-top: var(--responsive-space);
-  padding-bottom: calc(1.25 * var(--responsive-space));
+  padding-top: var(--rs-block-space);
+  padding-bottom: calc(1.25 * var(--rs-block-space));
 }
 
 .Nav-locator {
   margin-top: 13px;
   margin-top: 1.083333333em;
-  margin-bottom: calc(1.1 * var(--responsive-typography-space));
+  margin-bottom: calc(1.1 * var(--rs-space));
 
   @media (--mo) {
     text-align: right;
@@ -57,9 +61,9 @@
  */
 .Scope-post-dropcap div:first-child > p:first-of-type:first-letter {
   float: left;
-  font-family: var(--ff-lede), var(--ff-stack-serif);
+  font-family: var(--ff-meta), var(--ff-stack-serif);
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3em;
   line-height: 1;
   padding-top: 3px;
@@ -125,8 +129,8 @@
 .MetaSeparator {
   display: inline-block;
   /* letter-spacing: -0.5em; */
-  margin-left: calc(0.5 * var(--responsive-typography-space));
-  margin-right: calc(0.5 * var(--responsive-typography-space));
+  margin-left: calc(0.5 * var(--rs-space));
+  margin-right: calc(0.5 * var(--rs-space));
 }
 
 .LinkSeparator {

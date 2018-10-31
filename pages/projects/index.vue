@@ -1,5 +1,5 @@
 <template lang="pug">
-div.b-pt4
+div.b-py2
   //- nav.Container.b-nav
     h3.Nav-locator.Meta.fw-700
       span.m-r2 3.
@@ -24,7 +24,7 @@ div.b-pt4
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
   .Container.Container-inset
-    main.rp-t2(role="main")
+    main(role="main")
       .Extract-super
         //- .FlexGridWrapper.m-xl-x0
         .FlexGridWrapper

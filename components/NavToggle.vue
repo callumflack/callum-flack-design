@@ -1,11 +1,10 @@
 <template lang="pug">
 .Toggle
-  //- .Container(:class="{ 'Container--noRule': isVisible }")
   .Container
     .Extract-large.Toggle-align.b-pt2
       .u-fixed.z-top
         //- a.Toggle-button.Button.Button--transparent.Meta.fw-600(
-        a.Toggle-button.Button.Button--sm.Meta.fw-600(
+        a.Toggle-button.Button.Button--transparent.Meta.fw-600(
           href="#"
           @click.prevent="handleNavToggle"
           style="letter-spacing: 0.125em !important;"

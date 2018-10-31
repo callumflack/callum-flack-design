@@ -1,36 +1,28 @@
 <template lang="pug">
-//- div.b-pt4
 div
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta
-      span.m-r2 01
-      span Blog
-    //- .Extract-large
-      hr
-  PostExcerptMostRecent(
-    v-for="post in mostRecentPost"
-    :blockColor="post.blockColor"
-    :category="post.category"
-    :date="post.date"
-    :heroImage="post.heroImage"
-    :heroImageNoShadow="post.heroImageNoShadow"
-    :heroImageMultiply="post.heroImageMultiply"
-    :heroRatio="post.heroRatio"
-    :key="post.permalink"
-    :lede="post.lede"
-    :link="post.permalink"
-    :mostRecentPost = "post.mostRecentPost"
-    :permalink="post.permalink"
-    :readingTime="post.readingTime"
-    :tags="post.tags"
-    :title="post.title"
-  )
-  //- hr.bg-text.b-my3
-  main.Container.b-py3(role="main")
-    //- .rp-t2
+  .Container.b-pt2
+    header(role="header")
+      //- h1.Supertitle.u-textCenter Selected projects since 2014
+      //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
+      .Project-filter
+        .f.f-justifyCenter
+          .Meta.m-a0 Filter by: 
+          .Meta.c-text-light.m-l2 Note
+          .Meta.c-text-light.m-l2 Essay
+          .Meta.c-text-light.m-l2 Project
+            //- a.u-linkClean(
+            //-   v-for="(tag, index) in tags"
+            //-   @click.prevent="filterProjectsByTag(tag)"
+            //-   href="#"
+            //-   :class="[{ 'c-highlight': tag === activeTag }]"
+            //- )
+            //-   span {{ tag }}
+              //- span(v-if="index !== tags.length - 1") ,&nbsp;
+              //- span(v-else) .
+  main.Container.b-py2(role="main")
     PostExcerpt(
       v-if="post.published"
-      v-for="post in everyOtherPost"
+      v-for="post in posts"
       :body="post.body"
       :category="post.category"
       :date="post.date"
@@ -41,16 +33,24 @@ div
       :permalink="post.permalink"
       :readingTime="post.readingTime"
       :thumbImage="post.thumbImage"
-      :showFullArticle="post.showFullArticle"
       :tags="post.tags"
       :title="post.title"
     )
 </template>
 
 <script>
-import PostExcerpt from "~/components/PostExcerpt.vue";
+import PostExcerpt from "~/components/PostExcerptEssay.vue";
 import PostExcerptMostRecent from "~/components/PostExcerptMostRecent.vue";
 import Post from "~/components/Post.vue";
+
+const trimTags = tags => tags.map(tag => tag.trim());
+
+function projectTagStringToList(projectTags) {
+  const trimmedProjectTags = projectTags.endsWith(",")
+    ? projectTags.substring(0, projectTags.length - 1)
+    : projectTags;
+  return trimTags(trimmedProjectTags.split(","));
+}
 
 export default {
   name: "blog",

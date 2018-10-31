@@ -1,5 +1,5 @@
 <template lang="pug">
-  article.Excerpt.b-pt3
+  article.Excerpt.b-pt2
     header(role="header")
       nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
         .AspectRatio(:style="heroAspectStyle")
@@ -8,12 +8,12 @@
       hr(v-else)
 
       .m-xA(:class="titleBlockClasses")
-        h2.Title.fw-500.u-textCenter.p-t2.m-b2(v-if="showOnHomePage")
+        h2.Title.u-textCenter.p-t3.m-b3(v-if="showOnHomePage")
           nuxt-link(:to="permalink") {{ title }}
-        h2.Subtitle.fw-500.u-textCenter.p-t2.m-b2(v-else)
+        h2.Subtitle.u-textCenter.p-t3.m-b3(v-else)
           nuxt-link(:to="permalink") {{ title }}
 
-        .Meta.c-textLight.u-textCenter.p-t1
+        .Meta.c-text-light.u-textCenter
           //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
           time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
           span.MetaSeparator • 
@@ -119,7 +119,7 @@ export default {
         return "b-py2 w-lg-5x6";
         // return "b-py2";
       }
-      return "b-py0 w-lg-5x6";
+      return "b-py05 w-lg-5x6";
       // return "b-py0";
     },
     mainAlignClasses() {
@@ -132,16 +132,6 @@ export default {
 
 <style>
 @import "../assets/styles/variables.css";
-
-.Excerpt {
-  /* slight increase on .b-mt3 */
-  /* margin-top: calc(2.25 * var(--responsive-space)); */
-
-  @media (--mo) {
-    /* matches .Project on mobile-only */
-    /* margin-top: calc(1.5 * var(--responsive-space)); */
-  }
-}
 
 .Excerpt:first-of-type {
   margin: 0;

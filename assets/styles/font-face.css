@@ -1,0 +1,132 @@
+/*
+
+  Font-faces
+
+ */
+
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/Begum-Regular.otf") format("woff");
+  src: url("~static/fonts/Bely-Regular.otf") format("woff");
+  src: url("~static/fonts/TiemposText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-MediumItalic.otf") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-SemiboldItalic.otf") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* meta */
+
+@font-face {
+  font-family: var(--ff-meta);
+  src: url("~static/fonts/SpotMono-Regular.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-meta);
+  src: url("~static/fonts/SpotMono-Medium.otf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-meta);
+  src: url("~static/fonts/SpotMono-Bold.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* fatness */
+
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/Unica-Light.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Light.otf") format("woff");
+  src: url("~static/fonts/Begum-Light.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Light.otf") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/TiemposHeadline-LightItalic.otf") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/Unica-Regular.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Regular.otf") format("woff");
+  src: url("~static/fonts/Begum-Regular.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Regular.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/Unica-Medium.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium.ttf") format("truetype");
+  src: url("~static/fonts/Begum-Medium.otf") format("woff");
+  src: url("~static/fonts/BaskervilleBook-Regular.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Medium.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Medium.otf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/SuisseIntl-Semibold.otf") format("woff");
+  src: url("~static/fonts/Begum-Semibold.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Bold.otf") format("woff");
+  src: url("~static/fonts/BaskervilleBook-Regular.otf") format("woff");
+  src: url("~static/fonts/Nocturno-Display-Pro-Medium.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Semibold.otf") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/Unica-Bold.woff") format("woff");
+  src: url("~static/fonts/SuisseIntl-Semibold.otf") format("woff");
+  src: url("~static/fonts/Begum-Semibold.otf") format("woff");
+  src: url("~static/fonts/TiemposHeadline-Bold.otf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

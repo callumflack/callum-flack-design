@@ -11,18 +11,22 @@
             .w-8x12.w-md-9x12.w-lg-8x12
               h1.Title.fw-900.c-bg.m-b0
 
-.b-pt4.b-pb3
-  article.Container.rp-t2
+article.b-py2
+  .Container
     .b-pb1
-      h1.Title
-        span.c-highlight Callum Flack designs &amp; develops website systems 
-        | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
+      h1.Title.u-textCenter
+        //- span.c-highlight Callum Flack designs &amp; develops website systems 
+        //- | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
+        span.c-link
+          | Make the complex simple 
+          br 
+          | and the simple unique.
     .Scope-post.Scope-post-dropca
       .fs-block-lg.rs-m3
         p.m-b0
-          span In the digital age, you can't differentiate with just design. 
-          em Your branding is tactile—
-          | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
+          span In the digital age, 
+          em your branding is tactile—
+          | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. The difference is easily 
           em felt. 
           | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
           nuxt-link(to="/about") 
@@ -144,7 +148,7 @@ export default {
   background-color: var(--c-highlight-alt);
   border-radius: 1em;
   padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--responsive-space)) calc(0.45 * var(--responsive-space));
+  padding: calc(0.375 * var(--rs-block-space)) calc(0.45 * var(--rs-block-space));
 
   & a {
     background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),

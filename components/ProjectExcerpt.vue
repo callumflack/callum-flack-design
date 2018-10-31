@@ -4,13 +4,13 @@
     .AspectRatio.AspectRatio--4x3.bg-text
       .AspectRatio-object
         ImageLazy(:src="image")
-    .b-mt0
+    .m-t3
       .Meta.Project-tags.c-textLight(v-if="tags")
         // span(v-if="year") {{ year }}
         // span.m-x2 •
         span {{ tags }}
-      h2.Heading.Project-headline.rp-t2.rm-b2 {{ title }}
-      p.m-t3.w-lg-5x6(v-html="lede")
+      h2.Heading.Project-headline.p-y2 {{ title }}
+      p.fs-text-sm.m-t3.w-lg-5x6(v-html="lede")
 </template>
 
 

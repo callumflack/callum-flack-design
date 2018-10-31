@@ -62,7 +62,8 @@ module.exports = {
       "/blog",
       "/essays",
       "/projects",
-      "/the-littoral-line"
+      "/the-littoral-line",
+      "404"
     ]
   },
 

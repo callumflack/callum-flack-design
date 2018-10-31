@@ -7,8 +7,8 @@
 .Project {
   /* border-top: 1px solid var(--c-rule); */
   /* padding-bottom: var(--s-7); */
-  padding-bottom: calc(1 * var(--responsive-space));
-  padding-bottom: calc(2 * var(--responsive-space));
+  padding-bottom: calc(1 * var(--rs-block-space));
+  padding-bottom: calc(2 * var(--rs-block-space));
 }
 
 /* 
@@ -18,7 +18,7 @@ Instead, apply it here.
 
 */
 /* .Project:last-of-type {
-  padding-bottom: calc(2 * var(--responsive-space));
+  padding-bottom: calc(2 * var(--rs-block-space));
 } */
 
 .Project-tags span:first-letter {

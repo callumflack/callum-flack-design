@@ -218,6 +218,7 @@ export default {
 
   & .device-position,
   & iframe {
+    margin: auto;
     width: 87.45%;
   }
 

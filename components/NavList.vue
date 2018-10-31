@@ -126,24 +126,24 @@ export default {
 
 .Nav-link {
   background-image: none;
-  padding-bottom: calc(1 * var(--responsive-space));
+  padding-bottom: calc(1 * var(--rs-block-space));
   text-decoration: none;
 
   @media (--lg) {
-    padding-bottom: calc(0.333 * var(--responsive-space));
+    padding-bottom: calc(0.333 * var(--rs-block-space));
   }
 }
 
 .Nav-link:last-of-type {
-  margin-bottom: calc(0.5 * var(--responsive-space));
+  margin-bottom: calc(0.5 * var(--rs-block-space));
 
   @media (--lg) {
-    margin-bottom: calc(0.5 * var(--responsive-space));
+    margin-bottom: calc(0.5 * var(--rs-block-space));
   }
 }
 
 /* .Nav-link + .Nav-link {
-  margin-top: var(--responsive-space);
+  margin-top: var(--rs-block-space);
 } */
 
 .Nav-link,
@@ -160,7 +160,7 @@ export default {
 
   & span {
     display: inline-block;
-    /* margin-left: calc(0.25 * var(--responsive-typography-space)); */
+    /* margin-left: calc(0.25 * var(--rs-space)); */
     text-align: center;
     width: 70px;
   }

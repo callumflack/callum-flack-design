@@ -26,7 +26,7 @@ export default {
 
 <style lang="postcss" scoped>
 .b-mt3--illusion {
-  margin-top: calc(2 * 0.7 * var(--responsive-space));
+  margin-top: calc(2 * 0.7 * var(--rs-block-space));
 }
 
 .BlackLittoralIcon {

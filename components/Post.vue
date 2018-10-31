@@ -1,28 +1,29 @@
 <template lang="pug">
   //- article.rp-t2(:style="postExcerptBlockColor")
   article(:style="postExcerptBlockColor")
-    header.b-pb2(role="banner")
-      .Container.b-pt4
+    header(role="banner")
+      .Container
         .b-pb2.w-lg-5x6.m-xA
-          h1.Title.u-textCenter.rm-b2 {{ title }}
-          .Meta.c-textLight.u-textCenter.p-t1(v-if="category !== 'projects'")
+          h1.Title.u-textCenter.m-b3 {{ title }}
+          .Meta.c-text-light.u-textCenter.p-t1(v-if="category !== 'projects'")
             //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
             span.MetaSeparator • 
             span.u-textCapitalise {{ category }}
             span.MetaSeparator(v-if="readingTime" ) • 
             span(v-if="readingTime" ) {{ readingTime }} minutes
-          .Meta.c-textLight.u-textCenter.p-t1(v-else)
+          .Meta.c-text-light.u-textCenter.p-t1(v-else)
             time(:date-time="date") {{ date | moment("YYYY") }}
             span.MetaSeparator • 
             span.u-textCapitalise {{ category }}
             //- span.MetaSeparator •
             //- span {{ tags }}
-        .m-a0(v-if="heroImage", :class="heroExtractClasses")
-          .AspectRatio(:style="heroAspectStyle")
-            //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
-            .AspectRatio-object(:class="heroObjectBgClasses")
-              ImageCld(:src="heroImage")
+        .b-pb2
+          .m-a0(v-if="heroImage", :class="heroExtractClasses")
+            .AspectRatio(:style="heroAspectStyle")
+              //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+              .AspectRatio-object(:class="heroObjectBgClasses")
+                ImageCld(:src="heroImage")
 
     main(role="main", v-if="body")
       .Container

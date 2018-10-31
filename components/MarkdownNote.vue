@@ -1,7 +1,7 @@
 <template lang="pug">
 div(:class="space")
   hr.ParagraphSpace(:class="rule")
-  p.fs-text-sm.c-textLight(v-html="note")
+  p.fs-text-sm.c-text-light(v-html="note")
 </template>
 
 <script scoped>

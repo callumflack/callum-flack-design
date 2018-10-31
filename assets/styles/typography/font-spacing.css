@@ -17,7 +17,7 @@ figure,
 * + button,
 * + .Button,
 .ParagraphSpace {
-  margin-bottom: var(--responsive-typography-space);
+  margin-bottom: var(--rs-space);
 
   &:last-child {
     margin-bottom: 0;
@@ -28,9 +28,14 @@ figure {
   padding: var(--figure-space-within-text) 0;
 }
 
+.Scope-post figure + h2,
+.Scope-post figure + h3 {
+  margin-top: 0 !important;
+}
+
 blockquote {
-  margin-top: calc(1.25 * var(--responsive-typography-space));
-  margin-bottom: calc(1.25 * var(--responsive-typography-space));
+  margin-top: calc(1.25 * var(--rs-space));
+  margin-bottom: calc(1.25 * var(--rs-space));
 }
 
 /*
@@ -55,7 +60,7 @@ button + button,
 .Subtitle,
 .Title,
 .Supertitle {
-  margin-bottom: calc(1 * var(--responsive-typography-space));
+  margin-bottom: calc(1 * var(--rs-space));
 
   &:last-child {
     margin-bottom: 0;
@@ -67,6 +72,6 @@ button + button,
 .Scope-post h4,
 .HeadingSpace {
   &:not(:first-child) {
-    margin-top: calc(3 * var(--responsive-typography-space));
+    margin-top: calc(3 * var(--rs-space));
   }
 }

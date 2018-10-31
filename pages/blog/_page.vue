@@ -1,11 +1,5 @@
 <template lang="pug">
-.b-pb3
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 1.
-      span Blog
-    //- .Extract-large
-      hr
+.b-py2
   Post(
     :body="page.body"
     :category="page.category"

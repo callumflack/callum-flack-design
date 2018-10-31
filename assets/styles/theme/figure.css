@@ -58,8 +58,8 @@
 }
 
 .Project-figure {
-  margin-top: var(--responsive-space);
-  margin-bottom: var(--responsive-space);
+  margin-top: var(--rs-block-space);
+  margin-bottom: var(--rs-block-space);
 }
 
 .figure--large {

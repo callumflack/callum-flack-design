@@ -111,11 +111,11 @@ export default {
 
 .Excerpt {
   /* slight increase on .b-mt3 */
-  /* margin-top: calc(2.25 * var(--responsive-space)); */
+  /* margin-top: calc(2.25 * var(--rs-block-space)); */
 
   @media (--mo) {
     /* matches .Project on mobile-only */
-    /* margin-top: calc(1.5 * var(--responsive-space)); */
+    /* margin-top: calc(1.5 * var(--rs-block-space)); */
   }
 }
 
