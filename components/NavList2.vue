@@ -54,12 +54,12 @@ export default {
           link: "/projects"
         },
         {
-          label: "About",
-          link: "/about"
+          label: "Newsletter",
+          link: "/the-littoral-line"
         },
         {
-          label: "The Littoral Line",
-          link: "/the-littoral-line"
+          label: "About",
+          link: "/about"
         }
         /* {
           label: "Essays",
