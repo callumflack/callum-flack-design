@@ -1,33 +1,69 @@
 <template lang="pug">
   div(:class="currentPageClass")
     Nav
-    .Page
-      nuxt(:class="contentNavSpace")
-    footer
+
+    nuxt(:class="contentNavSpace")
+
+    footer.b-pb3
+      .Container
+        hr
+        .Nav-list.f.f-justifyCenter
+          nuxt-link.Nav-link(
+            v-for="item in contacts"
+            :key="item.link"
+            :to="item.link"
+          )
+            span.Meta.fs-text-xs {{ item.label }}
+
+    Showreel
+
 </template>
 
 <script>
 import Nav from "~/components/Nav.vue";
-import NavToggle from "~/components/NavToggle.vue";
-import NavToggled from "~/components/NavToggled.vue";
-import NavList from "~/components/NavList.vue";
+import Showreel from "~/components/Showreel.vue";
 
 export default {
   components: {
-    Nav
+    Nav,
+    Showreel
   },
   computed: {
     currentPageClass() {
       return `page-${this.$store.state.currentPage}`;
     },
     contentNavSpace() {
-      if (this.$route.name === "projects") {
-        return "p-b0";
+      if (this.$route.name === "about") {
+        return "Page--about";
+      } else {
+        return "Page";
       }
       /* if (this.$route.name !== "the-littoral-line") {
         return "b-pb3";
       } */
     }
+  },
+  data() {
+    return {
+      contacts: [
+        {
+          label: "callum@callumflack.design",
+          link: "mailto:callum@callumflack.design"
+        },
+        /* {
+          label: "+61(0) 408 767 540",
+          link: "tel:610-408-767-540"
+        }, */
+        {
+          label: "@callumflack",
+          link: "https://twitter.com/callumflack"
+        },
+        {
+          label: "Cairns, Australia",
+          link: "https://www.instagram.com/p/BXbsNdrAt-v"
+        }
+      ]
+    };
   }
 };
 </script>

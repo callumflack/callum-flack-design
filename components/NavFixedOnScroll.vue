@@ -30,7 +30,7 @@ export default {
     fixMobileNav() {
       // could also add class to body with
       // height: 100%; overflow:hiddden?
-      return this.$store.state.isMobileNavVisible && `animation:initial;`;
+      return this.$store.state.isModalVisible && `animation:initial;`;
     }
   }, */
   methods: {
@@ -121,13 +121,13 @@ export default {
 @keyframes open {
   from {
     opacity: 0;
-    /* background-color: transparent; */
-    /* border-bottom: 1px solid transparent; */
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
   }
   to {
     opacity: 1;
-    /* background-color: var(--c-white); */
-    /* border-bottom: 1px solid var(--c-text); */
+    background-color: var(--c-bg);
+    border-bottom: 1px solid var(--c-text);
   }
 }
 </style>

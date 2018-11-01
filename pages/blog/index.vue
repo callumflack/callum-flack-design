@@ -1,7 +1,7 @@
 <template lang="pug">
 div
-  .Container.b-pt2
-    header(role="header")
+  header(role="header")
+    .Container
       //- h1.Supertitle.u-textCenter Selected projects since 2014
       //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
       .Project-filter

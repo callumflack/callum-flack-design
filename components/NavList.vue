@@ -41,7 +41,7 @@ export default {
   props: {},
   computed: {
     hideHorizontalRule() {
-      if (this.$store.state.isMobileNavVisible) {
+      if (this.$store.state.isModalVisible) {
         return "u-hiddenVisually";
       }
       if (this.$route.name === "the-littoral-line") {

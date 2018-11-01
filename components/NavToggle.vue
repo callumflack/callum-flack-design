@@ -23,7 +23,7 @@ export default {
   components: {},
   computed: {
     isVisible() {
-      return this.$store.state.isMobileNavVisible;
+      return this.$store.state.isModalVisible;
     },
     currentPageName() {
       if (this.$store.state.currentPage !== "index") {
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     handleNavToggle() {
-      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isModalVisible);
     },
     hideNav() {
       this.$store.commit("SET_MODAL_VISIBILITY", false);

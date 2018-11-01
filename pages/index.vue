@@ -1,39 +1,50 @@
 <template lang="pug">
+div
+  header.b-pb2
+    .Container
+      .Extract-hero(role="banner")
+        .AspectRatio.AspectRatio--16x9
+          .AspectRatio-object.bg-text
+            iframe(
+              src="https://player.vimeo.com/video/261113972?background=1"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              allowTransparency="true"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen>
+            )
+          .AspectRatio-object.Blend
+            .Container
+              .f.f-alignItemsCenter.h-100
+                .w-11x12
+                  h1.Title.u-textCenter.c-bg
+                    | Make the complex simple 
+                    br 
+                    | and the simple unique.
+                  p.u-textCenter.m-t7
+                    button.Button.Button--roundRev.Meta.fs-text.fw-400(@click.prevent="handleModalToggle")
+                      | Watch the showreel
+                      span.Arrow.Arrow--right.m-l2
 
-//- div
-  header.CoverImage(role="banner")
-    .AspectRatio.AspectRatio--16x9.md-AspectRatio--2x1
-      .AspectRatio-object.bg-text
-        ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522321387/okok/_overcast-night.jpg")
-      .AspectRatio-object.Blend
-        .Container
-          .f.f-alignItemsCenter.h-100
-            .w-8x12.w-md-9x12.w-lg-8x12
-              h1.Title.fw-900.c-bg.m-b0
+  article.b-pb2
+    .Container
+      .Scope-post.Scope-post-dropcap
+        .fs-block-lg.rs-m3
+          p.m-b0
+            span In the digital age, 
+            em your branding is tactile—
+            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. The difference is easily 
+            em felt. 
+            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
+            nuxt-link(to="/about") 
+              em.Text--italic I'm a designer who codes.
+            | &nbsp;
 
-article.b-py2
-  .Container
-    .b-pb1
-      h1.Title.u-textCenter
-        //- span.c-highlight Callum Flack designs &amp; develops website systems 
-        //- | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
-        span.c-link
-          | Make the complex simple 
-          br 
-          | and the simple unique.
-    .Scope-post.Scope-post-dropca
-      .fs-block-lg.rs-m3
-        p.m-b0
-          span In the digital age, 
-          em your branding is tactile—
-          | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. The difference is easily 
-          em felt. 
-          | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
-          nuxt-link(to="/about") 
-            em.Text--italic I'm a designer who codes.
-          | &nbsp;
-
-    NewsletterSignupBlock
+      NewsletterSignupBlock
+  
+  
 
     //- hr.Post-endRule.b-mb0.b-mt2
     //- .rm-t3.fs-block-sm
@@ -107,12 +118,19 @@ export default {
       posts: []
     };
   },
+  methods: {
+    handleModalToggle() {
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isModalVisible);
+    },
+    hideNav() {
+      this.$store.commit("SET_MODAL_VISIBILITY", false);
+    }
+  },
   /* scrollToTop: false, */
   async asyncData({ app }) {
     let posts = await app.$content("/posts").getAll();
     /* show loading component */
     /* await timeout(500); */
-
     return {
       posts
     };
@@ -141,6 +159,12 @@ export default {
   @media (min-width: 1024px) {
     background-color: var(--c-text);
   }
+}
+
+.Blend {
+  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgb(36, 41, 46, 0.85);
+  background-color: rgba(5, 5, 5, 0.8);
 }
 
 .Adjacent {

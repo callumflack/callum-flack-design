@@ -87,8 +87,8 @@
   --c-neutral: hsl(48, 16%, 91%);
   --c-neutral: var(--c-bg);
 
-  --c-bg: #fafafa;
   --c-bg: #f3f2f1;
+  --c-bg: #fafafa;
   --c-white: white;
 
   --c-success: #ff3700;
@@ -231,6 +231,6 @@
 
    */
 
-  --nav-height: calc(24px + var(--rs-block-space));
+  --nav-height: calc(1em + (5 * var(--rs-space)));
   --toggle-x-align: -1.05rem;
 }

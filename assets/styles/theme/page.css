@@ -5,32 +5,11 @@
  */
 
 .Page {
+  padding-top: calc((2 * var(--rs-block-space)) + (0.5 * var(--nav-height)));
+}
+
+.Page--about {
   padding-top: var(--nav-height);
-}
-
-.page-index .Nav-list {
-  background-color: initial !important;
-}
-
-.page-index .promote {
-  position: relative;
-  z-index: 1;
-
-  & a {
-    text-shadow: initial;
-  }
-}
-
-.page-interesting .Toggle-button {
-  background-color: transparent;
-}
-
-/* turn off footer rule until there's an archive list */
-.page-interesting,
-.page-index {
-  & .footer hr {
-    background-color: transparent !important;
-  }
 }
 
 /* 
@@ -150,6 +129,17 @@
   Utils, etc
 
  */
+
+.GutterInsetX {
+  @media (--lg) {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+  @media (--xl) {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+}
 
 @media (--md) {
   .md-AspectRatio--2x1 {

@@ -3718,7 +3718,7 @@ ipaddr.js@1.8.0:
 
 iremono@callumflack/iremono#experiments:
   version "0.0.1"
-  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/81cf0a3d658ffcb01456eee5c8bcff85044c4ae4"
+  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/023fa5bdbc9ae2fbebf953322749a6d922af0721"
   dependencies:
     normalize.css "^8.0.0"
     postcss-easy-import "^3.0.0"

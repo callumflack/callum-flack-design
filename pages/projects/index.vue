@@ -23,24 +23,25 @@ div.b-py2
               span {{ tag }}
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
-  .Container.Container-inset
+  //- .Container.Container-inset
+  .GutterInsetX
     main(role="main")
-      .Extract-super
+      //- .Extract-super
         //- .FlexGridWrapper.m-xl-x0
-        .FlexGridWrapper
-          .FlexGrid.FlexGrid--noGrow
-            ProjectExcerpt(
-              v-if="project.published && project.category === 'project'"
-              v-for="project in visibleProjects"
-              :cloudinary="project.thumbInCloudinary"
-              :image="project.thumbImage"
-              :lede="project.lede"
-              :link="project.permalink"
-              :key="project.permalink"
-              :tags="project.tags"
-              :title="project.title"
-              :year="project.year"
-            )
+      .FlexGridWrapper
+        .FlexGrid.FlexGrid--noGrow
+          ProjectExcerpt(
+            v-if="project.published && project.category === 'project'"
+            v-for="project in visibleProjects"
+            :cloudinary="project.thumbInCloudinary"
+            :image="project.thumbImage"
+            :lede="project.lede"
+            :link="project.permalink"
+            :key="project.permalink"
+            :tags="project.tags"
+            :title="project.title"
+            :year="project.year"
+          )
 
     <svg class='u-hiddenVisually'>
       <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
@@ -55,7 +56,7 @@ div.b-py2
 </template>
 
 <script>
-import ProjectExcerpt from "~/components/ProjectExcerpt.vue";
+import ProjectExcerpt from "~/components/ProjectExcerpt2.vue";
 
 const allTagName = "All";
 

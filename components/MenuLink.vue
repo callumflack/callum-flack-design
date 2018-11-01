@@ -28,7 +28,7 @@ export default {
       let classes = ["link"];
       if (this.link === this.$store.state.currentPage) {
         classes.push("is-active");
-      } else if (this.$store.state.isMobileNavVisible) {
+      } else if (this.$store.state.isModalVisible) {
         classes.push("");
       } else {
         classes.push("");

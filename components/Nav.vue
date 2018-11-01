@@ -1,7 +1,7 @@
 <template lang="pug">
-  NavFixedOnScroll.Nav.Nav--animate.u-relative
-    //- .Container.Container--lg
-    .GutterInsetX
+  NavFixedOnScroll.Nav.Nav--animate.z-1.u-relative
+    //- .GutterInsetX
+    .Container.Container--lg
       NavList
 
 </template>
@@ -20,14 +20,14 @@ export default {
     NavFixedOnScroll
   },
   computed: {
-    isMobileNavVisible: function() {
-      return this.$store.state.isMobileNavVisible;
+    isModalVisible: function() {
+      return this.$store.state.isModalVisible;
     }
   },
   methods: {
     handleNavToggle() {
-      this.$store.commit("SET_MOBILENAV_VISIBILITY", !this.$store.state.isMobileNavVisible);
-      // this.navBar.static = this.$store.state.isMobileNavVisible;
+      this.$store.commit("SET_MOBILENAV_VISIBILITY", !this.$store.state.isModalVisible);
+      // this.navBar.static = this.$store.state.isModalVisible;
       /* to NavFixedOnScroll via $emit: */
       this.$emit("emitMobileNavIsToggled");
     }
@@ -43,6 +43,5 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
 }
 </style>
