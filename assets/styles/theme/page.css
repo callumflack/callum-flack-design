@@ -43,10 +43,10 @@
   font-family: var(--ff-meta), var(--ff-stack-serif);
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 400;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1;
-  padding-top: 3px;
   padding-top: 0;
+  padding-top: 3px;
   padding-right: 0.7em;
   padding-bottom: 0.25em;
 
@@ -54,9 +54,9 @@
     /* font-size: 2.75em; */
   }
   @media (--lg) {
-    font-size: 3.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0;
+    font-size: 3em;
+    padding-right: 0.666em;
+    padding-bottom: 0.25em;
   }
 }
 

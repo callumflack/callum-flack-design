@@ -6,8 +6,10 @@
 
     footer.b-pb3
       .Container
-        hr
+        //- hr
         .Nav-list.f.f-justifyCenter
+          .Nav-link
+            span.Meta.fs-text-xs Callum Flack Design
           nuxt-link.Nav-link(
             v-for="item in contacts"
             :key="item.link"
@@ -46,10 +48,10 @@ export default {
   data() {
     return {
       contacts: [
-        {
+        /* {
           label: "callum@callumflack.design",
           link: "mailto:callum@callumflack.design"
-        },
+        }, */
         /* {
           label: "+61(0) 408 767 540",
           link: "tel:610-408-767-540"
