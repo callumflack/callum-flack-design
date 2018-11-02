@@ -183,7 +183,7 @@ export default {
 .Blend {
   background-color: rgba(0, 0, 0, 0.85);
   background-color: rgb(36, 41, 46, 0.85);
-  background-color: rgba(5, 5, 5, 0.8);
+  background-color: rgba(5, 5, 5, 0.9);
 }
 
 .Adjacent {
