@@ -3,8 +3,8 @@
     .Page
       .Container.h-auto
         //- .f.f-childrenCenter
-        .Extract-hero
-          .AspectRatio.AspectRatio--16x9
+        .Extract-hero.u-relative
+          .AspectRatio.AspectRatio--8x5
             .AspectRatio-object.bg-text
               iframe(
                 src="https://player.vimeo.com/video/261113972?background=1"
@@ -16,11 +16,11 @@
                 mozallowfullscreen
                 allowfullscreen>
               )
-      .toggle(@click="close")
-        span.u-icon.icon-close
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
-            <g><rect y="12.74" width="27" height="1.5" transform="translate(13.51 32.57) rotate(-135)"/><rect y="12.74" width="27" height="1.5" transform="translate(-5.58 13.5) rotate(-45)"/></g>
-          </svg>
+          .toggle(@click="close")
+            span.u-icon.icon-close
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                <g><rect y="12.74" width="27" height="1.5" transform="translate(13.51 32.57) rotate(-135)"/><rect y="12.74" width="27" height="1.5" transform="translate(-5.58 13.5) rotate(-45)"/></g>
+              </svg>
 
 </template>
 
@@ -113,6 +113,7 @@ export default {
   background-color: rgba(230, 47, 13, 0.96);
   background-color: var(--c-highlight);
   background-color: var(--c-border);
+  background-color: var(--c-bg);
   background-color: rgba(0, 0, 0, 0.96);
 }
 
@@ -137,11 +138,13 @@ export default {
   z-index: 100;
 
   @media (--sm) {
-    right: var(--grid-gutter);
-    top: var(--grid-gutter);
+    /* right: calc(-0.25 * var(--grid-gutter));
+    top: calc(-1.75 * var(--grid-gutter)); */
   }
-  @media (max-width: 1135px) {
-    display: none;
+  @media (--mdl) {
+    position: absolute;
+    right: calc(-2 * var(--grid-gutter));
+    top: calc(-2 * var(--grid-gutter));
   }
 }
 

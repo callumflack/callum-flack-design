@@ -8,6 +8,7 @@ a:not(.LinkSignal),*/
 /* a:not(.Button),
 .LinkSignal:hover .LinkSignal-title */
 
+p a:not(.Button),
 .Text a:not(.Button),
 .Scope-post p a:not(.Button) {
   background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),
@@ -24,7 +25,7 @@ a:not(.LinkSignal),*/
   } */
 }
 
-a:not(.Button),
+p a:not(.Button),
 .Text a:not(.Button),
 .Scope-post p a:not(.Button) {
   &:hover {

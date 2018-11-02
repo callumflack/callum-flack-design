@@ -1,5 +1,5 @@
 <template lang="pug">
-.w-md-1x3.w-lg-1x4.w-su-1x5
+.w-md-1x3.w-lg-1x3.w-su-1x4
   //- nuxt-link.Project(:to="link")
     .AspectRatio.AspectRatio--4x3.bg-text
       .AspectRatio-object
@@ -12,7 +12,7 @@
       h2.Heading.Project-headline.p-y2 {{ title }}
       p.fs-text-sm.m-t3.w-lg-5x6(v-html="lede")
 
-  article.b-pb2
+  article.b-pb1
     nuxt-link.Project(:to="link")
       //- .AspectRatio(:style="heroAspectStyle")
       //- .AspectRatio.AspectRatio--4x3.bg-text
@@ -20,14 +20,14 @@
         .AspectRatio-object.bg-text
           ImageLazy(:src="image")
 
-    .b-pt05
+    .b-mt05
       .Project-tags.Meta.c-text-light
         time(:date-time="date") {{ date | moment("YYYY") }}
         span.MetaSeparator(v-if="tags" ) • 
         span(v-if="tags" ) {{ tags }}
-      h2.Subtitle.Project-headline.p-t3.m-b3.w-xl-5x6
+      h2.Subtitle.Project-headline.m-t3.m-b3.w-xl-5x6
         nuxt-link(:to="link") {{ title }}
-      p.fs-text-sm.m-t3.w-lg-5x6.w-xl-4x6(v-html="lede") 
+      p.fs-text-sm.w-lg-5x6(v-html="lede") 
         //- nuxt-link.Text--italic(:to="link") Continue reading
 </template>
 

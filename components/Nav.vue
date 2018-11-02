@@ -1,5 +1,6 @@
 <template lang="pug">
   NavFixedOnScroll.Nav.Nav--animate.z-1.u-relative
+    //- hr.NavRule.bg-text
     //- .GutterInsetX
     .Container.Container--lg
       NavList
@@ -43,5 +44,9 @@ export default {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.NavRule {
+  height: 3px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  form.form.Text.p-t2(
+  form.form.Meta.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
@@ -52,6 +52,7 @@ export default {
 }
 
 .form input {
+  background-color: var(--c-white);
   border: 1px solid var(--c-text);
   box-shadow: none;
   color: var(--c-text);

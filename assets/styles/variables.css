@@ -76,7 +76,6 @@
   --c-gray: #aaa;
   --c-border: #e5e5e5;
   --c-rule: rgba(0, 0, 0, 0.1);
-  --c-rule: rgba(0, 0, 0, 0.15);
   --c-device: #e7e7e7;
 
   --c-neutral: #eee;
@@ -87,8 +86,11 @@
   --c-neutral: hsl(48, 16%, 91%);
   --c-neutral: var(--c-bg);
 
+  --c-neutral: #f2f2f2;
+
   --c-bg: #f3f2f1;
   --c-bg: #fafafa;
+  --c-bg: #fefefe;
   --c-white: white;
 
   --c-success: #ff3700;
@@ -101,8 +103,8 @@
   
    */
 
-  --ff-text: "Libre";
-  --ff-title: "Grotesque";
+  --ff-text: "Text";
+  --ff-title: "Title";
   --ff-meta: "Meta";
 
   --ff-text-meta: var(--ff-title);
@@ -149,7 +151,7 @@
 
   --border-radius: 4px;
   --cover-image-screen-color: rgba(0, 0, 0, 0.25);
-  --figure-space-align-within-text: calc(0.25 * var(--rs-space));
+  --figure-space-align-within-text: calc(0.75 * var(--rs-space));
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);
@@ -173,8 +175,8 @@
   --button-border-radius: 0;
   --button-border-width: 1px;
   --button-box-shadow-color: var(--c-text);
-  --button-box-shadow-stroke-hover: 1px;
-  --button-box-shadow-stroke-active: 2px;
+  --button-box-shadow-stroke-hover: 2px;
+  --button-box-shadow-stroke-active: 3px;
   --button-box-shadow-stroke-inset: 1px;
   --button-color: var(--c-text);
   --button-disabled-opacity: 0.6;
@@ -197,7 +199,7 @@
 
   --field-height: 3rem;
   --field-space: 1rem 1.25rem;
-  --field-xpadding: 0.75em;
+  --field-xpadding: 1.25em;
   --input-border-color: var(--c-brand-rule);
   --input-border-color-hover: var(--c-brand-rule);
   --input-border-color-focus: var(--c-brand-rule);

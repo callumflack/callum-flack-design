@@ -55,7 +55,7 @@
   }
   @media (--lg) {
     font-size: 3em;
-    padding-right: 0.666em;
+    padding-right: 0.55em;
     padding-bottom: 0.25em;
   }
 }
@@ -126,9 +126,13 @@
 
 /* 
 
-  Utils, etc
+  Utils, etc (overriding Iremono)
 
  */
+
+.icon-targetBlank:after {
+  top: -0.5em;
+}
 
 .GutterInsetX {
   @media (--lg) {

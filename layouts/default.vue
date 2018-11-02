@@ -4,18 +4,18 @@
 
     nuxt(:class="contentNavSpace")
 
-    footer.b-pb3
-      .Container
-        //- hr
+    footer.b-pb2.bg-neutral
+      //- .Container
+        .Extract-md
+          hr.bg-text
+      .Container.b-pt075
+        NewsletterSignupBlock
         .Nav-list.f.f-justifyCenter
-          .Nav-link
-            span.Meta.fs-text-xs Callum Flack Design
-          nuxt-link.Nav-link(
-            v-for="item in contacts"
-            :key="item.link"
-            :to="item.link"
-          )
-            span.Meta.fs-text-xs {{ item.label }}
+          nuxt-link.Nav-link(to="/about")
+            span.Meta.fs-text-xs ©2018 Callum Flack Design
+          //- .Nav-link.Nav-divide •
+          //- nuxt-link.Nav-link(to="/about")
+            span.Meta.fs-text-xs Get in touch
 
     Showreel
 
@@ -23,11 +23,13 @@
 
 <script>
 import Nav from "~/components/Nav.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 import Showreel from "~/components/Showreel.vue";
 
 export default {
   components: {
     Nav,
+    NewsletterSignupBlock,
     Showreel
   },
   computed: {
@@ -90,4 +92,13 @@ export default {
     display: block;
   }
 } */
+
+.Extract-md {
+  position: relative;
+
+  @media (--lg) {
+    left: calc((var(--container-md) - var(--container-rg) + (2 * var(--grid-gutter))) * -0.5);
+    width: var(--container-md);
+  }
+}
 </style>

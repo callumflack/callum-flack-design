@@ -16,7 +16,7 @@
             span.u-textCapitalise {{ category }}
             //- span.MetaSeparator •
             //- span {{ tags }}
-        .b-pb1
+        .b-pb1.m-b2
           .m-a0(v-if="heroImage", :class="heroExtractClasses")
             .AspectRatio(:style="heroAspectStyle")
               //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
@@ -29,7 +29,7 @@
           //- no-ssr
           nuxtent-body(:body="body")
 
-        NewsletterSignupBlock
+        //- NewsletterSignupBlock
 
 </template>
 

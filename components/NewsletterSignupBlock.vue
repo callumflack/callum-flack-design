@@ -1,14 +1,13 @@
 <template lang="pug">
-  //- hr.Post-endRule.b-mb0.b-mt2
-  //- .b-mt3--illusion
-  .b-mt2
-    //- .ff-title.fw-300(style="font-size:2em") ✺ 
+  div
     .u-textCenter
-      IconBase(icon-name="icon-camp-fire" height="30" width="30")
+      IconBase(icon-name="icon-camp-fire" height="27" width="27")
         IconSun
-    .m-t4.fs-block-sm
-      p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
-      NewsletterSignupForm
+    p.m-t4.fs-text-sm.u-textCenter.w-lg-11x12.m-xA
+      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
+      a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
+      | &nbsp;You should sign up:
+    NewsletterSignupForm
 </template>
 
 <script>
@@ -26,10 +25,6 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.b-mt3--illusion {
-  margin-top: calc(2 * 0.7 * var(--rs-block-space));
-}
-
 .BlackLittoralIcon {
   & >>> svg {
     border-radius: 999px;

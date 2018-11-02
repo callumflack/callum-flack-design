@@ -3,7 +3,7 @@ div
   header.b-pb2
     .Container
       .Extract-hero(role="banner")
-        .AspectRatio.AspectRatio--16x9
+        .AspectRatio.AspectRatio--8x5
           .AspectRatio-object.bg-text
             iframe(
               src="https://player.vimeo.com/video/261113972?background=1"
@@ -23,6 +23,8 @@ div
                     | Make the complex simple 
                     br 
                     | and the simple unique.
+                  h2.Text.fs-text-lg.u-textCenter.c-bg 
+                    | Custom website design + development
                   p.u-textCenter.m-t7
                     button.Button.Button--roundRev.Meta.fs-text.fw-400(@click.prevent="handleModalToggle")
                       | Watch the showreel
@@ -31,18 +33,35 @@ div
   article.b-pb2
     .Container
       .Scope-post.Scope-post-dropcap
-        .fs-block-lg.rs-m3
+        .fs-block-lg
           p.m-b0
-            span In the digital age, 
-            em your branding is tactile—
-            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. The difference is easily 
-            em felt. 
+            span In the information age, 
+            em your branding is tactile. 
+            | The technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. So you can 
+            em feel 
+            | how it works. 
             | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
               em.Text--italic I'm a designer who codes.
             | &nbsp;
+  article.b-pb2
+    .Container
+      .Scope-post
+        .fs-block-lg.u-textCenter
+          p.m-b0
+            span In the digital age, 
+            em your branding is tactile—
+            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. So you can 
+            em feel 
+            | how it works. 
+            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
+            nuxt-link(to="/about") 
+              em.Text--italic I'm a designer who codes.
+            | &nbsp;
+    .Container
+      .Extract-hero
 
-      NewsletterSignupBlock
+  //- NewsletterSignupBlock
   
   
 

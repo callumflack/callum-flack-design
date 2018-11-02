@@ -114,10 +114,9 @@ p em,
 
 .Scope-post h2,
 .Subheading {
-  /* font-family: var(--ff-meta), var(--ff-stack-sans); */
-  /* font-size: var(--rfs-subheading); */
+  font-family: var(--ff-text), var(--ff-stack-sans);
   font-size: var(--rfs-text-sm);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: var(--fls-touch-loose);
   line-height: var(--flh-regular);
   text-transform: uppercase;
@@ -215,3 +214,17 @@ blockquote p em {
     margin-top: 6px;
   }
 } */
+
+/*
+  -------------------------------------------------
+
+  Iremono font-spacing overrides
+
+  -------------------------------------------------
+ */
+
+.Scope-post figure + h2,
+.Scope-post figure + h3 {
+  margin-top: 0 !important;
+  padding-top: calc(0.125 * var(--s-headline));
+}
