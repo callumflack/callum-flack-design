@@ -1,16 +1,15 @@
 <template lang="pug">
-  article.Excerpt.b-pt2
+  article(:class="containerClasses")
     header(role="header")
-      nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+      //- nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+      nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="permalink")
         .AspectRatio(:style="heroAspectStyle")
           .AspectRatio-object.bg-text
             ImageCld(:src="thumbImage || heroImage")
       hr(v-else)
 
-      .m-xA(:class="titleBlockClasses")
-        h2.Title.u-textCenter.p-t3.m-b3(v-if="showOnHomePage")
-          nuxt-link(:to="permalink") {{ title }}
-        h2.Subtitle.u-textCenter.p-t3.m-b3(v-else)
+      .b-py05.w-lg-5x6.m-xA
+        h2.Subtitle.u-textCenter.p-t3.m-b3
           nuxt-link(:to="permalink") {{ title }}
 
         .Meta.c-text-light.u-textCenter
@@ -21,30 +20,13 @@
           span.MetaSeparator(v-if="readingTime" ) • 
           span(v-if="readingTime" ) {{ readingTime }} minutes
 
-    main(role="main", :class="mainAlignClasses")
-      .Scope-post(v-if="showFullArticle")
+    main(role="main")
+      //- .Scope-post(v-if="showFullArticle")
         nuxtent-body(:body="body")
-      p.Text(v-else)
+      p.Text
         | {{ lede }} 
         nuxt-link.Text--italic(:to="permalink") Continue reading
 
-  //- .Extract-hero.m-a0
-    .AspectRatio.AspectRatio--16x9
-      .AspectRatio-object.bg-text
-        ImageCld(
-          src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg"
-        )
-    .Excerpt
-      header.b-my2.w-lg-5x6.m-xA(role="banner")
-        h1.Title.u-textCenter.p-t3 
-          nuxt-link(to="/blog") The brief, the scope and the dance
-        .Meta.u-textCenter.u-block
-          time July 2nd, 2018
-          span.MetaSeparator • 
-            span 8 minutes
-      p.Text
-        | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
-        nuxt-link.Text--italic(to="/blog") Continue reading
 </template>
 
 
@@ -102,6 +84,12 @@ export default {
     title: String
   },
   computed: {
+    containerClasses() {
+      if (this.$route.name === "index") {
+        return "Container";
+      }
+      return "Excerpt b-pt2";
+    },
     heroExtractClasses() {
       if (this.showOnHomePage === true) {
         return "Extract-hero";

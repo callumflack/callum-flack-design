@@ -12,6 +12,10 @@
   padding-top: var(--nav-height);
 }
 
+.page-projects {
+  background-color: var(--c-neutral);
+}
+
 /* 
 
   Top of the page nav specials
@@ -132,6 +136,15 @@
 
 .icon-targetBlank:after {
   top: -0.5em;
+}
+
+.Extract-md {
+  position: relative;
+
+  @media (--lg) {
+    left: calc((var(--container-md) - var(--container-rg) + (2 * var(--grid-gutter))) * -0.5);
+    width: var(--container-md);
+  }
 }
 
 .GutterInsetX {

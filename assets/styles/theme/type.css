@@ -135,6 +135,7 @@ p em,
 
 .Subtitle {
   font-size: var(--rfs-subtitle);
+  letter-spacing: var(--fls-touch-positive);
 }
 
 .Title {

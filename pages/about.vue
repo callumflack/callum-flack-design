@@ -11,14 +11,15 @@ div
         .w-mdl-1x2
           .AspectRatio.Hero
             .AspectRatio-object.bg-text
-              ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
-            //- .AspectRatio-object.Blend
+              //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
+              img(src="/images/cf-dwts-01-recut.jpg")
+            .AspectRatio-object.Blend
         .w-mdl-1x2
           .bg-text.h-100
             .Container
               //- .Extract-large.h-100
               .f.f-alignItemsCenter.h-100
-                .w-100
+                .b-py2.w-100
                   h1.Title.fw-600.c-bg.m-b0.u-textCente
                     //- | Working at the intersection between user experience, visual design &amp; code.
                     //- | Visual design plus user experience plus code.
@@ -94,8 +95,13 @@ export default {
 }
 
 .Hero {
-  @media (max-width: 1280px) {
-    padding-bottom: 150%;
+  padding-bottom: 62.5%;
+
+  @media (--md) {
+    padding-bottom: 80%;
+  }
+  @media (--xl) {
+    padding-bottom: 90%;
   }
 }
 
@@ -106,9 +112,15 @@ export default {
     flex-direction: row;
   }
 
+  /* manually manage .Hero within the grid when the cells are stacked */
   & > *:first-child {
+    /* padding-bottom: 62.5%; */
+
+    @media (max-width: 768px) {
+      padding-bottom: 62.5%;
+    }
     @media (max-width: 1024px) {
-      order: 1;
+      padding-bottom: 80%;
     }
   }
 }

@@ -1,19 +1,13 @@
 <template lang="pug">
-div.b-py2
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 3.
-      span Projects
-    //- .Extract-large
-      hr
-  //- .Container
-    header.b-pb3(role="header")
-      h1.Supertitle.u-textCenter Selected projects since 2014
-      //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
-      //- .Project-filter
-        .u-flex.u-flexJustifyBetween
+div.b-pb2
+  header.b-pb2(role="header")
+    .Container
+      h1.Title.u-textCenter.m-b3 Selected projects since 2014
+      p.fs-text-l.u-textCenter We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
+      .Project-filter
+        .f.f-justifyCenter
           .Meta.m-a0 Filter by: 
-          .Meta.c-textLight.m-a0
+          .Meta.c-text-light.m-a0
             a.u-linkClean(
               v-for="(tag, index) in tags"
               @click.prevent="filterProjectsByTag(tag)"
@@ -24,8 +18,8 @@ div.b-py2
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
   //- .Container.Container-inset
-  .GutterInsetX
-    main(role="main")
+  main(role="main")
+    .GutterInsetX
       //- .Extract-super
         //- .FlexGridWrapper.m-xl-x0
       .FlexGridWrapper

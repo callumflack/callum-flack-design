@@ -20,7 +20,7 @@
         .AspectRatio-object.bg-text
           ImageLazy(:src="image")
 
-    .b-mt05
+    .Project-detail.b-py05.p-x5.bg-white
       .Project-tags.Meta.c-text-light
         time(:date-time="date") {{ date | moment("YYYY") }}
         span.MetaSeparator(v-if="tags" ) • 

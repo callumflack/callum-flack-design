@@ -11,15 +11,13 @@
   padding-bottom: calc(2 * var(--rs-block-space)); */
 }
 
-/* 
+.Project-detail {
+  background-color: var(--c-white);
 
-There is no `.b-pb3` on the .Page for the projects route.
-Instead, apply it here.
-
-*/
-/* .Project:last-of-type {
-  padding-bottom: calc(2 * var(--rs-block-space));
-} */
+  @media (--lg) {
+    min-height: 240px;
+  }
+}
 
 .Project-tags span:first-letter {
   text-transform: capitalize;

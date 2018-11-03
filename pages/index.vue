@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   header.b-pb2
-    .Container
+    .Container.Header--animate
       .Extract-hero(role="banner")
         .AspectRatio.AspectRatio--8x5
           .AspectRatio-object.bg-text
@@ -18,77 +18,60 @@ div
           .AspectRatio-object.Blend
             .Container
               .f.f-alignItemsCenter.h-100
-                .w-11x12
+                .w-lg-11x12.m-xA
                   h1.Title.u-textCenter.c-bg
                     | Make the complex simple 
                     br 
                     | and the simple unique.
                   h2.Text.fs-text-lg.u-textCenter.c-bg 
-                    | Custom website design + development
-                  p.u-textCenter.m-t7
-                    button.Button.Button--roundRev.Meta.fs-text.fw-400(@click.prevent="handleModalToggle")
+                    | Attractive website design + development
+                    br
+                    | for perceptive audiences.
+                  p.u-textCenter.m-md-t6
+                    button.Button.Button--roundRev.Meta.fs-text-sm.fw-400(@click.prevent="handleModalToggle")
                       | Watch the showreel
                       span.Arrow.Arrow--right.m-l2
 
   article.b-pb2
-    .Container
+    .Container.Header--animate
       .Scope-post.Scope-post-dropcap
         .fs-block-lg
-          p.m-b0
+          p
             span In the information age, 
             em your branding is tactile. 
-            | The technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. So you can 
-            em feel 
-            | how it works. 
-            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
+            | The technology envelopes the brand. People only pay attention when they trust that your interface will work. It's not enough to make it look nice, it has to 
+            em behave nicely. 
+            | You'll know the difference in a heartbeat. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
               em.Text--italic I'm a designer who codes.
-            | &nbsp;
-  article.b-pb2
-    .Container
+          p.u-textCenter
+            nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
+              | About Callum
+              span.Arrow.Arrow--right.m-l2
+          p 
+            | | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
+            nuxt-link(to="/blog") the blog.
+  //- article.b-pb2
+    //- .Container
       .Scope-post
         .fs-block-lg.u-textCenter
           p.m-b0
-            span In the digital age, 
-            em your branding is tactile—
-            | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. So you can 
+            | In the digital age, your branding is tactile—the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to visualise it. You have to be able to build it. So you can 
             em feel 
-            | how it works. 
-            | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
+            | how it works. You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
               em.Text--italic I'm a designer who codes.
             | &nbsp;
+  .b-pb2
     .Container
-      .Extract-hero
-
-  //- NewsletterSignupBlock
-  
-  
-
-    //- hr.Post-endRule.b-mb0.b-mt2
-    //- .rm-t3.fs-block-sm
-      p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
-      NewsletterSignupForm
-      //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
-
-  //- .bg-highlight
-  //- .NewsletterHero.CoverImage
-    .Container.u-relative.b-py2
-      h1.Supertitle.u-textCenter.p-t1.b-mb1 Interesting
-      NewsletterSignupLede.rm-b3
-      NewsletterSignupForm
-
-  //- hr.b-my4
-  //- article.Container
-    .p-b4
-      .Meta.fw-700.u-textCenter
-        icon-base.Icon(icon-name="icon-pin" height="14" width="14")
-          icon-pin
-        span Pinned post
-        //- span.fw-500 Pinned post
-        //- span.MetaSeparator • 
-        //- nuxt-link(to="/blog") see all →
-    post-excerpt.m-t0(
+      .Extract-edge
+        hr
+      //- .fs-block-l
+        p.m-b0.u-textCente
+          | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
+          nuxt-link(to="/blog") the blog.
+  .b-pb2
+    PostExcerpt(
       v-for="post in homePagePost"
       :category="post.category"
       :date="post.date"
@@ -104,14 +87,12 @@ div
       :tags="post.tags"
       :title="post.title"
     )
+
 </template>
 
 <script>
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import PostExcerpt from "~/components/PostExcerpt.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
-import IconBase from "~/components/IconBase.vue";
-import IconPin from "~/components/icons/IconPin.vue";
+import PostExcerpt from "~/components/PostExcerptEssay.vue";
 
 // timeout for loading component
 // https://stackoverflow.com/questions/33289726/combination-of-async-function-await-settimeout
@@ -122,10 +103,7 @@ export default {
   layout: "default",
   components: {
     ImageCld,
-    PostExcerpt,
-    NewsletterSignupBlock,
-    IconBase,
-    IconPin
+    PostExcerpt
   },
   computed: {
     homePagePost() {
@@ -182,8 +160,10 @@ export default {
 
 .Blend {
   background-color: rgba(0, 0, 0, 0.85);
-  background-color: rgb(36, 41, 46, 0.85);
-  background-color: rgba(5, 5, 5, 0.9);
+  background-color: rgba(5, 5, 5, 0.85);
+  background-color: rgba(236, 234, 228, 0.7);
+  background-color: rgba(36, 41, 46, 0.85);
+  background-color: rgba(37, 37, 22, 0.8);
 }
 
 .Adjacent {

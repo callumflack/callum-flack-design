@@ -4,11 +4,11 @@
 
     nuxt(:class="contentNavSpace")
 
-    footer.b-pb2.bg-neutral
+    footer.b-pb1.bg-neutral
       //- .Container
         .Extract-md
           hr.bg-text
-      .Container.b-pt075
+      .Container.p-t6
         NewsletterSignupBlock
         .Nav-list.f.f-justifyCenter
           nuxt-link.Nav-link(to="/about")
@@ -92,13 +92,4 @@ export default {
     display: block;
   }
 } */
-
-.Extract-md {
-  position: relative;
-
-  @media (--lg) {
-    left: calc((var(--container-md) - var(--container-rg) + (2 * var(--grid-gutter))) * -0.5);
-    width: var(--container-md);
-  }
-}
 </style>
