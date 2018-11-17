@@ -91,11 +91,11 @@ export default {
 
 <style scoped>
 .collapse {
-  animation: collapse 0.15s ease-in-out 0.4s forwards;
+  animation: collapse 0.1s ease-in-out 0s forwards;
 }
 
 .open {
-  animation: open 0.5s ease-in-out forwards;
+  animation: open 0.25s ease-in-out 0s forwards;
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
   /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
   /* border-bottom: 1px solid var(--c-text); */

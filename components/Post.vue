@@ -2,8 +2,8 @@
   article(:style="postExcerptBlockColor")
     header(role="banner")
       .Container
-        .b-pb1.w-lg-5x6.m-xA
-          h1.Title.u-textCenter.m-b3 {{ title }}
+        .b-pb1.w-lg-9x12.m-xA
+          h1.Title.fw-500.u-textCenter.m-b3 {{ title }}
           .Meta.c-text-light.u-textCenter.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
             span.MetaSeparator • 

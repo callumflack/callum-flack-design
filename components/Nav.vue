@@ -8,11 +8,7 @@
 </template>
 
 <script>
-import IconBase from "~/components/IconBase.vue";
-import IconHamburger from "~/components/icons/IconHamburger.vue";
-import IconHamburgerClose from "~/components/icons/IconHamburgerClose.vue";
 import NavList from "~/components/NavList2";
-/* import NavMobile from "~/components/NavMobile"; */
 import NavFixedOnScroll from "~/components/NavFixedOnScroll.vue";
 
 export default {

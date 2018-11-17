@@ -38,7 +38,7 @@ export default {
     },
     contentNavSpace() {
       if (this.$route.name === "about") {
-        return "Page--about";
+        return "Page";
       } else {
         return "Page";
       }

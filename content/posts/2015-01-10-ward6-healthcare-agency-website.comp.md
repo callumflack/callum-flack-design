@@ -28,8 +28,8 @@ Poorly maintained content-managed websites cost significant time and effort to r
 
 The new Ward6 website allowed us to focus on repeatably presenting and distributing first-class campaign showcases, rather than wrestling with website technologies.
 
+@[MarkdownNote](note="Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Price while working for Ward6.")
+
 <p>
 @[MarkdownProjectLink](link="http://www.ward6.asia" label="Visit Ward6")
 </p>
-
-@[MarkdownNote](note="Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Price while working for Ward6.")

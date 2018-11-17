@@ -2,7 +2,7 @@
 nav.Nav-list.f.f-justifyCenter
   div
     nuxt-link.Nav-link.Logo(to="/" exact)
-      span.Meta.fs-text-sm CFd
+      span.Meta.Meta--nav.fs-text-sm CFd
   div
     .Nav-link.Nav-divider •
   div
@@ -12,7 +12,7 @@ nav.Nav-list.f.f-justifyCenter
       :to="item.link"
       :exact="item.exact"
     )
-      span.Meta.fs-text-sm {{ item.label }}
+      span.Meta.Meta--nav.fs-text-sm {{ item.label }}
 
 </template>
 

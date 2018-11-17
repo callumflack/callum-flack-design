@@ -3,7 +3,7 @@
     .u-textCenter
       IconBase(icon-name="icon-camp-fire" height="27" width="27")
         IconSun
-    p.m-t4.fs-text-sm.u-textCenter.w-lg-11x12.m-xA
+    p.Meta.Meta--text.fs-text-sm.u-textCenter.m-t4.w-lg-11x12.m-xA
       | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
       a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
       | &nbsp;You should sign up:

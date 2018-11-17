@@ -40,16 +40,28 @@ p em,
   text-transform: uppercase;
 } */
 
+.Scope-post h2,
 .Meta {
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-family: var(--ff-meta), var(--ff-stack-sans);
   font-size: var(--rfs-text-xs);
   font-weight: 400;
-  letter-spacing: var(--fls-loose);
-  letter-spacing: 0.025em !important;
+  /* letter-spacing: var(--fls-loose); */
+  letter-spacing: 0.0125em;
   line-height: 1;
   /* text-transform: uppercase; */
+}
+
+.Meta--text,
+.Scope-post h2 {
+  font-size: var(--rfs-text);
+  letter-spacing: 0 !important;
+  line-height: var(--flh-regular);
+}
+
+.Scope-post h2 {
+  font-weight: 500 !important;
 }
 
 .Logo {
@@ -103,16 +115,16 @@ p em,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.1;
-  letter-spacing: 0;
+  letter-spacing: -0.0125em;
 
   & a:hover {
     color: var(--c-link);
   }
 }
 
-.Scope-post h2,
+/* .Scope-post h2, */
 .Subheading {
   font-family: var(--ff-text), var(--ff-stack-sans);
   font-size: var(--rfs-text-sm);
@@ -135,15 +147,18 @@ p em,
 
 .Subtitle {
   font-size: var(--rfs-subtitle);
-  letter-spacing: var(--fls-touch-positive);
+  font-weight: 500;
+  /* letter-spacing: var(--fls-touch-positive); */
 }
 
 .Title {
   font-size: var(--rfs-title);
+  font-weight: 500;
 }
 
 .Supertitle {
   font-size: var(--rfs-supertitle);
+  line-height: 1.05;
 }
 
 .Subtitle--lede,

@@ -6,8 +6,7 @@
 
 @font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/Begum-Regular.otf") format("woff");
-  src: url("~static/fonts/Bely-Regular.otf") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
   src: url("~static/fonts/TiemposText-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -20,6 +19,7 @@
 }
 @font-face {
   font-family: var(--ff-text);
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
   src: url("~static/fonts/TiemposText-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -32,6 +32,7 @@
 }
 @font-face {
   font-family: var(--ff-text);
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
   src: url("~static/fonts/TiemposText-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -44,6 +45,7 @@
 }
 @font-face {
   font-family: var(--ff-text);
+  src: url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff");
   src: url("~static/fonts/TiemposText-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -54,18 +56,27 @@
 @font-face {
   font-family: var(--ff-meta);
   src: url("~static/fonts/SpotMono-Regular.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Regular.otf") format("woff");
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-meta);
   src: url("~static/fonts/SpotMono-Medium.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium.ttf") format("truetype");
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-meta);
   src: url("~static/fonts/SpotMono-Bold.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-SemiBold.otf") format("woff");
+  src: url("~static/fonts/Graphik-SemiBold.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -76,9 +87,11 @@
   font-family: var(--ff-title);
   src: url("~static/fonts/Unica-Light.woff") format("woff");
   src: url("~static/fonts/SuisseIntl-Light.otf") format("woff");
-  src: url("~static/fonts/Begum-Light.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Light.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Regular.otf") format("woff");
+  src: url("~static/fonts/Graphik-Light.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -91,42 +104,46 @@
 @font-face {
   font-family: var(--ff-title);
   src: url("~static/fonts/Unica-Regular.woff") format("woff");
-  src: url("~static/fonts/SuisseIntl-Regular.otf") format("woff");
-  src: url("~static/fonts/Begum-Regular.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Regular.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Regular.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Regular.otf") format("woff");
+  src: url("~static/fonts/Graphik-Regular.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
   src: url("~static/fonts/Unica-Medium.woff") format("woff");
-  src: url("~static/fonts/SuisseIntl-Medium.ttf") format("truetype");
-  src: url("~static/fonts/Begum-Medium.otf") format("woff");
   src: url("~static/fonts/BaskervilleBook-Regular.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Medium.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Medium.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium.ttf") format("truetype");
+  src: url("~static/fonts/Graphik-Medium.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
-  src: url("~static/fonts/SuisseIntl-Semibold.otf") format("woff");
-  src: url("~static/fonts/Begum-Semibold.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Bold.otf") format("woff");
   src: url("~static/fonts/BaskervilleBook-Regular.otf") format("woff");
   src: url("~static/fonts/Nocturno-Display-Pro-Medium.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Semibold.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-Medium.ttf") format("truetype");
+  src: url("~static/fonts/Graphik-SemiBold.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-medium.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
   src: url("~static/fonts/Unica-Bold.woff") format("woff");
-  src: url("~static/fonts/SuisseIntl-Semibold.otf") format("woff");
-  src: url("~static/fonts/Begum-Semibold.otf") format("woff");
   src: url("~static/fonts/TiemposHeadline-Bold.otf") format("woff");
+  src: url("~static/fonts/SuisseIntl-SemiBold.otf") format("woff");
+  src: url("~static/fonts/Graphik-Bold.woff") format("woff");
+  src: url("~static/fonts/neue-haas-unica-pro-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }

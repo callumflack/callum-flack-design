@@ -9,7 +9,7 @@
       hr(v-else)
 
       .b-py05.w-lg-5x6.m-xA
-        h2.Subtitle.u-textCenter.p-t3.m-b3
+        h2.Subtitle.u-textCenter.p-t2.m-b3
           nuxt-link(:to="permalink") {{ title }}
 
         .Meta.c-text-light.u-textCenter

@@ -31,7 +31,7 @@
   --container-sm: calc(480px + (2 * var(--grid-gutter)));
   --container-rg: calc(630px + (2 * var(--grid-gutter)));
   --container-md: calc(740px + (2 * var(--grid-gutter)));
-  --container-lg: calc(960px + (2 * var(--grid-gutter)));
+  --container-lg: calc(880px + (2 * var(--grid-gutter)));
   --container-xl: calc(1140px + (2 * var(--grid-gutter)));
   --container-su: calc(1344px + (2 * var(--grid-gutter)));
 
@@ -59,9 +59,9 @@
   --c-brandHover: #00ffff;
   --c-brandLight: #00ffff;
   --c-highlight: #47caf5;
-  --c-link: #fe3600; /* pantone 021C plus */
   --c-link: #ff5600;
   --c-link: #0085ff; /* blue */
+  --c-link: #fe3600; /* pantone 021C plus */
   --c-highlight: var(--c-link);
   --c-highlight-alt: #ffea97;
 
@@ -151,6 +151,7 @@
 
   --border-radius: 4px;
   --cover-image-screen-color: rgba(0, 0, 0, 0.25);
+  --container-window-inset: 5vw;
   --figure-space-align-within-text: calc(0.75 * var(--rs-space));
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
