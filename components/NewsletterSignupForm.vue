@@ -43,12 +43,7 @@ export default {
 };
 </script>
 
-<style scoped>
-@import "../assets/styles/variables.css";
-
-.form {
-}
-
+<style lang="postcss" scoped>
 .form input {
   background-color: var(--c-white);
   border-bottom: 1px solid var(--c-text);
@@ -58,9 +53,5 @@ export default {
   &:focus {
     border-color: var(--c-text);
   }
-}
-
-.form input + button {
-  margin-left: var(--s-1);
 }
 </style>

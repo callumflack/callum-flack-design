@@ -30,8 +30,6 @@
           //- no-ssr
           nuxtent-body(:body="body")
 
-        //- NewsletterSignupBlock
-
 </template>
 
 <script>

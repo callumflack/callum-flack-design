@@ -126,7 +126,7 @@
    
    */
 
-  --fls-text: -0.009em;
+  --fls-text: -0.00125em;
   --fls-meta: 0.00625em;
   --fls-caps: 0.1em;
   --fls-heading: -0.0025em;
@@ -159,7 +159,8 @@
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);
-  --horizontal-rule-color: var(--c-rule);
+  --horizontal-rule-color: var(--c-text);
+  --horizontal-rule-height: 1px;
   --horizontal-rule-space: 0;
   --html-c: var(--c-text);
   --html-bg: var(--c-bg);

@@ -1,6 +1,5 @@
 .Nav {
   backface-visibility: hidden;
-  /* background-color: var(--c-white); */
   left: 0;
   position: fixed;
   top: 0;
@@ -25,7 +24,11 @@
   transform: translateY(-0.1875em);
 }
 
-/* NAV LINK */
+/* 
+
+  NAV LINK
+
+*/
 
 .Nav-link {
   align-items: center;
@@ -39,11 +42,15 @@
 
 .Nav-link,
 .Nav-link:hover {
-  background-image: initial;
   text-decoration: none;
+  color: var(--c-text);
+
+  &:not(.nuxt-link-active) {
+    background-image: initial;
+  }
 }
 
-.nuxt-link-active span {
+/* .nuxt-link-active span {
   position: relative;
 
   &:after {
@@ -55,11 +62,7 @@
     left: 0;
     bottom: -0.25em;
   }
-}
-
-footer .nuxt-link-active span:after {
-  content: initial;
-}
+} */
 
 /* .nuxt-link-exact-active {
   cursor: initial;

@@ -87,7 +87,7 @@ I asked them to trust the process. And because we'd already worked through the b
 
 @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1530498762/okok/post-process-russia.jpg")
 
-## To create market value, engage in the process together
+## To create value, collaborate in the process
 
 <!-- That person isn't a category, or a label, but a person. As Michael Wolff says on his [fantastic website](http://www.wolff.eu.com/): "we reach each of us before all of us".-->
 

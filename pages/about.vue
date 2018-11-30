@@ -28,14 +28,10 @@ article
     .Container
       .b-pt3.w-sm-10x12
         h1.Supertitle.fw-300.m-b0
-          | Callum Flack Design is
-          | Fluid across
-          | visual design,
-          | user experience
-          | and code.
+          | Callum Flack Design is fluid across visual design, user experience and code.
         h2.Text.fw-400.m-t3
           span.fs-italic The quality of the connections is the key to quality.
-          span.u-block.Blockquote-author — Charles Eames
+          span.Blockquote-author — Charles Eames
 
   main(role="main")
     .Container

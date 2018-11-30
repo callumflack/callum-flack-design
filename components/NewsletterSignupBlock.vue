@@ -5,7 +5,9 @@ div
       IconSun
 
   p.Text.m-t4
-    | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
+    //- span.Title.fs-text.u-textCapitalise Ps.
+    | Ps. 
+    | I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
     a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
     | &nbsp;You should sign up:
 

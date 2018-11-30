@@ -161,28 +161,13 @@ blockquote p {
 
 .Blockquote-author,
 blockquote p em {
-  /* resetting ems before applying font sizing: */
-  /* font-size: calc((18 / (var(--rfs-text-unit) * 16 * 1)) * var(--rfs-text-xs)) !important; */
-  /* font-size: var(--rfs-text-xs); */
-  /* font-size: calc(14 / 19 / 16 * 16 * 1em) !important; */
+  display: table;
   font-style: normal;
   font-size: calc(var(--rfs-text-sm) + 0.1em);
   letter-spacing: 0.075em;
+  margin-top: 0.25em;
   text-transform: uppercase;
 }
-
-blockquote p em {
-  display: table;
-  margin-top: 0.25em;
-}
-
-/* blockquote em {
-  margin-top: 3px;
-
-  @media (--lg) {
-    margin-top: 6px;
-  }
-} */
 
 /*
   -------------------------------------------------
@@ -234,6 +219,16 @@ blockquote p em {
   margin-left: 0;
   transform: translateY(-0.25em);
   width: 5%;
+}
+
+.Post-intro-quote p {
+  color: var(--c-text-light);
+  padding-left: 0;
+}
+.Post-intro-rule {
+  background-color: var(--c-text-underline);
+  margin-left: 0;
+  width: 10%;
 }
 
 /*
