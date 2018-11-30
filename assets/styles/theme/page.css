@@ -8,8 +8,48 @@
   padding-top: var(--nav-height);
 }
 
-.Page--about {
-  padding-top: var(--nav-height);
+/* 
+
+  Index theme
+
+ */
+
+.page-index {
+  --html-bg: var(--c-black);
+  --html-c: var(--c-bg);
+  --c-indexbg: var(--c-orange);
+  --c-indexbg: #2242dc;
+  color: var(--c-bg);
+
+  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--c-indexbg);
+  background-blend-mode: multiply;
+  background-image: url("/images/_index-1.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.page-index .Nav-link,
+.page-index .Nav-link:hover {
+  color: var(--c-bg);
+}
+
+.page-index {
+  & .nuxt-link-active span,
+  & p a:not(.Button),
+  & .Text a:not(.Button),
+  & .Scope-post p a:not(.Button) {
+    --underline-bgimg: var(--c-indexbg);
+    --underline: rgba(255, 255, 255, 0.2);
+    --underline-hover: currentColor;
+    --underline-textshadow: var(--underline-bgimg);
+    /* background-image: initial; */
+    text-shadow: initial;
+  }
 }
 
 /* 

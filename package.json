@@ -16,6 +16,7 @@
     "@nuxtjs/axios": "4.3.1",
     "@nuxtjs/google-tag-manager": "1.1.0",
     "@nuxtjs/style-resources": "^0.1.1",
+    "greensock": "^1.20.2",
     "intersection-observer": "^0.5.0",
     "iremono": "callumflack/iremono#experiments",
     "nuxt": "^2.3.4",

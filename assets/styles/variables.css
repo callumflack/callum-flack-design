@@ -62,7 +62,8 @@
   --c-highlight: #47caf5;
   --c-link: #ff5600;
   --c-link: #0085ff; /* blue */
-  --c-link: #fe3600; /* pantone 021C plus */
+  --c-orange: #fe3600; /* pantone 021C plus */
+  --c-link: #fe3600;
   --c-highlight: var(--c-link);
   --c-highlight-alt: #ffea97;
 

@@ -57,6 +57,17 @@ article
           target="_blank"
         )
 
+      h2.Heading.fs-normal.b-pt1 Twenty Thirteen
+      .Projects
+        ProjectListItem(
+          v-for="item in twentythirteen"
+          :key="item.title"
+          :href="item.link"
+          :title="item.title"
+          :tags="item.tags"
+          target="_blank"
+        )
+
 </template>
 
 <script>
@@ -94,6 +105,12 @@ const twentyseventeen = [
     link: "https://www.vjray.com.au/"
   },
   {
+    title: "AUM.ai",
+    client: "",
+    tags: "Design, Frontend development",
+    link: ""
+  },
+  {
     title: "RAATSICC",
     client: "",
     tags: "Design, Frontend development",
@@ -121,10 +138,20 @@ const twentyseventeen = [
 
 const twentysixteen = [
   {
-    title: "Album Registry",
+    title: "Gravitas Energy",
+    client: "",
+    tags: "Design, Frontend development"
+  },
+  {
+    title: "Wild Aviation",
     client: "",
     tags: "Design, Frontend development",
-    link: "https://albumregistry.com/"
+    link: "https://wildaviationservices.com.au/"
+  },
+  {
+    title: "Papa Chango",
+    client: "",
+    tags: "Design"
   },
   {
     title: "Primary Healthcare Network NQ",
@@ -151,6 +178,21 @@ const twentyfifteen = [
     client: "",
     tags: "Design, Frontend development",
     link: "http://www.ward6.asia/"
+  },
+  {
+    title: "Ward6",
+    client: "",
+    tags: "Design, Frontend development",
+    link: "http://www.ward6.asia/"
+  }
+];
+
+const twentythirteen = [
+  {
+    title: "Ellis Jones Communications",
+    client: "",
+    tags: "Design, Frontend development",
+    link: "https://ellisjones.com.au/"
   }
 ];
 
@@ -165,7 +207,8 @@ export default {
       twentyeighteen,
       twentyseventeen,
       twentysixteen,
-      twentyfifteen
+      twentyfifteen,
+      twentythirteen
     };
   },
   head() {
@@ -185,7 +228,7 @@ export default {
 
 <style lang="postcss" scoped>
 .Projects {
-  border-top: 1px solid var(--c-text);
+  /* border-top: 1px solid var(--c-text); */
   padding-left: var(--text-indent);
 }
 
