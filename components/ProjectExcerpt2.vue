@@ -28,7 +28,7 @@
       h2.Subtitle.Project-headline.m-t3.m-b3.w-xl-5x6
         nuxt-link(:to="link") {{ title }}
       p.fs-text-sm.w-lg-5x6(v-html="lede") 
-        //- nuxt-link.Text--italic(:to="link") Continue reading
+        //- nuxt-link.fs-italic(:to="link") Continue reading
 </template>
 
 

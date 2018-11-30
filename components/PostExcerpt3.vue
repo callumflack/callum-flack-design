@@ -1,31 +1,30 @@
 <template lang="pug">
   article(:class="containerClasses")
-    header(role="header")
-      //- nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
-      nuxt-link.u-block.Extract-edge(v-if="heroImage", :to="permalink")
-        .AspectRatio(:style="heroAspectStyle")
-          .AspectRatio-object.bg-text
-            ImageCld(:src="thumbImage || heroImage")
-      //- hr(v-else)
+    .FlexGrid
+      //- .w-5x12(role="header")
+        //- nuxt-link.u-block(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
+        nuxt-link.u-block(v-if="heroImage", :to="permalink")
+          .AspectRatio(:style="heroAspectStyle")
+            .AspectRatio-object.bg-text
+              ImageCld(:src="thumbImage || heroImage")
+        //- hr(v-else)
+      .w-7x12
+        .b-py05.w-lg-5x6
+          h2.Subtitle.m-b2
+            nuxt-link(:to="permalink") {{ title }}
 
-      .b-py05.w-lg-5x6
-        h2.Subtitle.p-t2.m-b2
-          nuxt-link(:to="permalink") {{ title }}
-
-        .Meta.c-text-light
-          //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
-          time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-          span.MetaSeparator • 
-          span.u-textCapitalise(v-if="category") {{ category }}
-          span.MetaSeparator(v-if="readingTime" ) • 
-          span(v-if="readingTime" ) {{ readingTime }} minutes
-
-    main(role="main")
-      //- .Scope-post(v-if="showFullArticle")
-        nuxtent-body(:body="body")
-      p.Text
-        | {{ lede }} 
-        nuxt-link.fs-italic(:to="permalink") Continue reading
+          .Meta.c-text-light
+            //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
+            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+            span.MetaSeparator • 
+            span.u-textCapitalise(v-if="category") {{ category }}
+            span.MetaSeparator(v-if="readingTime" ) • 
+            span(v-if="readingTime" ) {{ readingTime }} minutes
+        //- .Scope-post(v-if="showFullArticle")
+          nuxtent-body(:body="body")
+        p.Text
+          | {{ lede }} 
+          nuxt-link.fs-italic(:to="permalink") Continue reading
 
 </template>
 

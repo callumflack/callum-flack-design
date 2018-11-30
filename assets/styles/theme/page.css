@@ -1,94 +1,15 @@
 /* 
 
-  Page themes
+  Clear fixed nav
 
  */
 
-.Page {
-  padding-top: calc((2 * var(--rs-block-space)) + (0.5 * var(--nav-height)));
+.b-clearFixedNav {
+  padding-top: var(--nav-height);
 }
 
 .Page--about {
   padding-top: var(--nav-height);
-}
-
-.page-projects {
-  background-color: var(--c-neutral);
-}
-
-/* 
-
-  Top of the page nav specials
-
- */
-
-.b-nav {
-  padding-top: var(--rs-block-space);
-  padding-bottom: calc(1.25 * var(--rs-block-space));
-}
-
-.Nav-locator {
-  margin-top: 13px;
-  margin-top: 1.083333333em;
-  margin-bottom: calc(1.1 * var(--rs-space));
-
-  @media (--mo) {
-    text-align: right;
-  }
-}
-
-/* 
-
-  Post: essay drop caps, etc
-
- */
-.Scope-post-dropcap div:first-child > p:first-of-type:first-letter {
-  float: left;
-  font-family: var(--ff-meta), var(--ff-stack-serif);
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 300;
-  font-size: 2em;
-  line-height: 1;
-  padding-top: 0;
-  padding-top: 3px;
-  padding-right: 0.7em;
-  padding-bottom: 0.25em;
-
-  @media (--md) {
-    /* font-size: 2.75em; */
-  }
-  @media (--lg) {
-    font-size: 3em;
-    padding-right: 0.55em;
-    padding-bottom: 0.25em;
-  }
-}
-
-/* .Scope-post-dropcap div > p span:first-of-type {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-} */
-
-.Footnote-marker {
-  display: inline-block;
-  font-size: 60%;
-  transform: translateY(-0.666em);
-}
-
-/* 
-
-  Post endRule
-  Reqs: `.b-mb0.b-mt2`
-
- */
-
-.Post-endRule {
-  background-color: var(--c-text);
-  margin-left: 0;
-  transform: translateY(-0.25em);
-  width: 5%;
 }
 
 /* 
@@ -103,9 +24,14 @@
   }
 }
 
+.Button {
+  padding-bottom: calc(3 / var(--rfs-text));
+  padding-bottom: 0.142857143em;
+}
+
 /* 
 
-  Separators & things 
+  Separators & misc things 
 
  */
 
@@ -128,14 +54,19 @@
   }
 }
 
+.ParagraphImage {
+  float: left;
+  transform: translateY(0.5em);
+}
+
 /* 
 
-  Utils, etc (overriding Iremono)
+  Iremono overrides & new utils
 
  */
 
-.icon-targetBlank:after {
-  top: -0.5em;
+.bg-neutral-dark {
+  background-color: var(--c-neutral-dark);
 }
 
 .Extract-md {
@@ -148,14 +79,17 @@
 }
 
 .GutterInsetX {
-  @media (--lg) {
+  padding-left: calc(1 * var(--grid-gutter));
+  padding-right: calc(1 * var(--grid-gutter));
+
+  /* @media (--lg) {
     padding-left: 12vw;
     padding-right: 12vw;
   }
   @media (--xl) {
     padding-left: 12vw;
     padding-right: 12vw;
-  }
+  } */
 }
 
 @media (--md) {

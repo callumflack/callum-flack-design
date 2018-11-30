@@ -6,7 +6,6 @@ lede: Building an online reputation for a renowned Australasian Healthcare commu
 h: A content-managed website for a leading Australasian healthcare communications agency.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953103/okok/thumb-ward6.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroInCloudinary: true
 heroRatio: 69.2361111
 tags: UI, code
@@ -14,6 +13,8 @@ nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 featured: true
 ---
+
+<!-- heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg -->
 
 With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading
 independent health communications agency. I helped transfer this reputation online with a mobile-first website that was easy to use, very fast and a cinch to update and maintain.

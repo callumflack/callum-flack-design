@@ -2,20 +2,20 @@
   div(:class="currentPageClass")
     Nav
 
-    nuxt(:class="contentNavSpace")
+    nuxt.b-clearFixedNav.b-pb2
 
-    footer.b-pb1.bg-neutral
+    footer.b-pb4
       //- .Container
         .Extract-md
           hr.bg-text
-      .Container.p-t6
+      .Container
         NewsletterSignupBlock
-        .Nav-list.f.f-justifyCenter
+        //- .Nav-list
           nuxt-link.Nav-link(to="/about")
             span.Meta.fs-text-xs ©2018 Callum Flack Design
-          //- .Nav-link.Nav-divide •
-          //- nuxt-link.Nav-link(to="/about")
-            span.Meta.fs-text-xs Get in touch
+          .Nav-link.Nav-divide •
+          nuxt-link.Nav-link(to="/about")
+            span.Meta.fs-text-xs Contact
 
     Showreel
 
@@ -38,9 +38,9 @@ export default {
     },
     contentNavSpace() {
       if (this.$route.name === "about") {
-        return "Page";
+        return "b-clearFixedNav";
       } else {
-        return "Page";
+        return "b-clearFixedNav";
       }
       /* if (this.$route.name !== "the-littoral-line") {
         return "b-pb3";

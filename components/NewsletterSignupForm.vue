@@ -1,18 +1,17 @@
 <template lang="pug">
-  form.form.Meta.p-t2(
+  form.form.Text.p-t2(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
     target='_blank', 
-    novalidate=''
+    novalidate
   )
     .form-group
-      input.Meta(
+      input(
         placeholder="Add your email", 
         type="email", 
         name="EMAIL", 
-        value="", 
-        required
+        value=""
       )
       div(style="position: absolute; left: -5000px;", aria-hidden="true")
         input(
@@ -21,16 +20,15 @@
           tabindex="-1", 
           value=""
         )
-      button.Button.Meta(
+      button.Button.Text(
         type="submit", 
         name="subscribe", 
-      ) {{buttonText}} 
+      ) {{ buttonText }} 
       // #[span.LinkSignal-target →]
 </template>
 
 <script>
 export default {
-  name: "FormNews",
   computed: {
     buttonText() {
       // if (this.loading) {
@@ -53,7 +51,7 @@ export default {
 
 .form input {
   background-color: var(--c-white);
-  border: 1px solid var(--c-text);
+  border-bottom: 1px solid var(--c-text);
   box-shadow: none;
   color: var(--c-text);
 
@@ -63,5 +61,6 @@ export default {
 }
 
 .form input + button {
+  margin-left: var(--s-1);
 }
 </style>

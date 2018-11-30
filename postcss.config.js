@@ -4,9 +4,7 @@ module.exports = {
   plugins: {
     "postcss-easy-import": {},
     "postcss-mixins": {},
-    "postcss-preset-env": {
-      stage: 0
-      /* features: { "custom-properties": false } */
-    }
+    "postcss-preset-env": { stage: 0 },
+    "postcss-discard-comments": {}
   }
 };

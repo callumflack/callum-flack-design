@@ -1,71 +1,46 @@
 
 <template lang="pug">
-div
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 5.
-      span About
-  //- article.b-pb2
-    header.b-pb2(role="banner")
+article
+  //- header.b-pb1(role="banner")
+    .FlexGridWrapper
       .FlexGrid.FlexGrid--noGutter.FlexGrid--hero
         .w-mdl-1x2
-          .AspectRatio.Hero
-            .AspectRatio-object.bg-text
+          .AspectRatio.Hero2
+            .AspectRatio-object
               //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
               img(src="/images/cf-dwts-01-recut.jpg")
             .AspectRatio-object.Blend
-        .w-mdl-1x2
-          .bg-text.h-100
+        .w-mdl-1x2.bg-neutral-dar
+          .h-100
             .Container
               //- .Extract-large.h-100
               .f.f-alignItemsCenter.h-100
-                .b-py2.w-100
-                  h1.Title.fw-400.c-bg.m-b0.u-textCente
-                    //- | Working at the intersection between user experience, visual design &amp; code.
-                    //- | Visual design plus user experience plus code.
+                .b-py2.w-sm-3x4
+                  h1.Supertitle.fw-300.m-b0
                     | Fluid across
-                    br
                     | visual design,
-                    br
                     | user experience
-                    br 
                     | and code.
-                  //- h2.Subheading.fw-400.c-bg.w-10x12
-                    | “…if the solution is not beautiful, I know it is wrong.” 
-                    span.fs-scale-reset #[span.Meta — Buckminster Fuller]
-                  h2.Text.fw-400.c-bg.m-t4.u-textCente
-                    span.Text--italic The quality of the connections is the key to quality.
-                    br 
-                    span.Blockquote-author — Charles Eames
-  article.b-pb2
-    header.b-pb2(role="banner")
-      .Container.Container--windowInset
-        .FlexGrid.FlexGrid--noGutter.FlexGrid--hero
-          .w-mdl-1x2
-            .AspectRatio.Hero2
-              .AspectRatio-object
-                //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
-                img(src="/images/cf-dwts-01-recut.jpg")
-              .AspectRatio-object.Blend
-          .w-mdl-1x2
-            .h-100
-              .Container
-                //- .Extract-large.h-100
-                .f.f-alignItemsCenter.h-100
-                  .b-py2.w-100
-                    h1.Supertitle.fw-400.m-b0
-                      | Fluid across#[br]
-                      | visual design,#[br]
-                      | user experience#[br]
-                      | and code.
-                    h2.Text.fw-400.m-t5.u-textCente
-                      span.Text--italic The quality of the connections is the key to quality.#[br]
-                      span.Blockquote-author — Charles Eames
-      
-    main(role="main")
-      .Container
-        .Scope-post.Scope-post-dropcap
-          nuxtent-body(:body="page.body")
+                  h2.Text.fw-400.m-t3
+                    span.fs-italic The quality of the connections is the key to quality.
+                    span.u-block.Blockquote-author — Charles Eames
+  header.b-pb1(role="banner")
+    .Container
+      .b-pt3.w-sm-10x12
+        h1.Supertitle.fw-300.m-b0
+          | Callum Flack Design is
+          | Fluid across
+          | visual design,
+          | user experience
+          | and code.
+        h2.Text.fw-400.m-t3
+          span.fs-italic The quality of the connections is the key to quality.
+          span.u-block.Blockquote-author — Charles Eames
+
+  main(role="main")
+    .Container
+      .Scope-post.Scope-post-dropcap
+        nuxtent-body(:body="page.body")
 
 </template>
 
@@ -109,7 +84,11 @@ export default {
 
 .Blend {
   background-blend-mode: multiply;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.05) 80%);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.05) 80%
+  );
 }
 
 .w-su-5x12 {

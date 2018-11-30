@@ -3,7 +3,7 @@ div.b-pt4
   //- nav.Container.p-y3
     h3.Text.c-textLight.u-textCenter.p-b2
       span.m-r2 00
-      em.Text--italic Home
+      em.fs-italic Home
     .Extract-large
       hr
   //- nav.Container.b-nav
@@ -21,7 +21,7 @@ div.b-pt4
         //-   span.Meta.fw-700 Tiago Forte 
         //- | —&nbsp;“Routinely entrusted with digital product innovation for companies like Apple, Google, Nike, and Facebook, which rarely approach outside firms.” 
         //- nuxt-link(to="/about") 
-        //-   em.Text--italic Learn more…
+        //-   em.fs-italic Learn more…
 
         //- span.fs-scale-reset
           //- span.Meta.fw-700 What I do 
@@ -29,7 +29,7 @@ div.b-pt4
         //- | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if your interfaces aren't seamless. That's where I come in. I'm a brand identity designer who codes. 
         | To create change in people, you first have to win their emotional trust. But in the digital age, your brand is tactile. The technology is inseparable from the brand. People won't interact with you if they don't trust your interface. That's where I come in. I'm a brand identity designer who codes. 
         nuxt-link(to="/about") 
-          em.Text--italic Learn more about me
+          em.fs-italic Learn more about me
       //- p.fs-text-sm (Why all the writing? Because 
 
   //- .Test

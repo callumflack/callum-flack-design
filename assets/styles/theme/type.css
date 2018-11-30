@@ -15,11 +15,27 @@ blockquote p em {
   font-weight: 400;
   letter-spacing: var(--fls-text);
   line-height: var(--flh-regular);
+  font-variant-numeric: oldstyle-nums; /* this? */
 }
 
-p em,
-.Text--italic {
+p em {
   font-style: italic;
+}
+
+.Scope-post {
+  & p,
+  & ul {
+    margin-bottom: 0;
+  }
+
+  & p + p,
+  & ul + p {
+    text-indent: var(--text-indent);
+  }
+
+  & ul {
+    margin: var(--s-blockquote) 0;
+  }
 }
 
 /* 
@@ -30,51 +46,13 @@ p em,
   -------------------------------------------------
  */
 
-/* .Text--meta {
-  font-family: var(--ff-text-title-light), var(--ff-stack-sans);
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-size: var(--rfs-meta);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1;
-  text-transform: uppercase;
-} */
-
-.Scope-post h2,
 .Meta {
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-family: var(--ff-title), var(--ff-stack-sans);
   font-family: var(--ff-meta), var(--ff-stack-sans);
+  font-family: var(--ff-stack-sans);
   font-size: var(--rfs-text-xs);
   font-weight: 400;
-  /* letter-spacing: var(--fls-loose); */
   letter-spacing: 0.0125em;
   line-height: 1;
-  /* text-transform: uppercase; */
-}
-
-.Meta--text,
-.Scope-post h2 {
-  font-size: var(--rfs-text);
-  letter-spacing: 0 !important;
-  line-height: var(--flh-regular);
-}
-
-.Scope-post h2 {
-  font-weight: 500 !important;
-}
-
-.Logo {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  font-size: 12px;
-  font-size: var(--rfs-meta);
-  line-height: 1;
-  letter-spacing: 0.666em;
-
-  & a:hover {
-    color: var(--c-link);
-  }
 }
 
 /* 
@@ -103,20 +81,29 @@ p em,
 /* 
   -------------------------------------------------
 
-  Ginto
+  Titles
 
   -------------------------------------------------
 */
 
 .Scope-post h2,
 .Subheading,
-.Heading,
+.Heading {
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-size: var(--rfs-heading);
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  letter-spacing: var(--fls-text);
+  line-height: var(--flh-regular);
+}
+
 .Subtitle,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-weight: 400;
   line-height: 1.1;
+  line-height: 1.25;
   letter-spacing: -0.0125em;
 
   & a:hover {
@@ -124,50 +111,25 @@ p em,
   }
 }
 
-/* .Scope-post h2, */
-.Subheading {
-  font-family: var(--ff-text), var(--ff-stack-sans);
-  font-size: var(--rfs-text-sm);
-  font-weight: 600;
-  letter-spacing: var(--fls-touch-loose);
-  line-height: var(--flh-regular);
-  text-transform: uppercase;
-}
-
-.Heading {
-  font-size: var(--rfs-heading);
-  /* line-height: 1.25; */
-}
-
 .Subtitle,
 .Title,
 .Supertitle {
-  /* letter-spacing: -0.02em; */
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .Subtitle {
   font-size: var(--rfs-subtitle);
-  font-weight: 500;
-  /* letter-spacing: var(--fls-touch-positive); */
 }
 
 .Title {
   font-size: var(--rfs-title);
-  font-weight: 500;
 }
 
 .Supertitle {
   font-size: var(--rfs-supertitle);
   line-height: 1.05;
-}
-
-.Subtitle--lede,
-.Title--lede {
-  font-family: var(--ff-lede), var(--ff-stack-serif);
-  /* font-size: var(--rfs-subtitle); */
-  font-weight: 300;
-  letter-spacing: var(--fls-touch-positive);
-  line-height: var(--flh-regular);
 }
 
 /*
@@ -182,14 +144,7 @@ blockquote p {
   border-left: 1px solid var(--c-rule);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
-  padding-left: var(--s-3a);
-
-  @media (--mo) {
-  }
-
-  @media (--sm) {
-    padding-left: var(--s-3b);
-  }
+  padding-left: var(--text-indent);
 
   /* &:before {
     content: "“";
@@ -209,18 +164,16 @@ blockquote p em {
   /* resetting ems before applying font sizing: */
   /* font-size: calc((18 / (var(--rfs-text-unit) * 16 * 1)) * var(--rfs-text-xs)) !important; */
   /* font-size: var(--rfs-text-xs); */
-  font-size: calc(14 / 19 / 16 * 16 * 1em) !important;
+  /* font-size: calc(14 / 19 / 16 * 16 * 1em) !important; */
   font-style: normal;
-  font-weight: 500;
+  font-size: calc(var(--rfs-text-sm) + 0.1em);
   letter-spacing: 0.075em;
-  letter-spacing: var(--fls-touch-loose);
   text-transform: uppercase;
 }
 
 blockquote p em {
   display: table;
-  margin-top: 5px;
-  margin-top: 0.125em;
+  margin-top: 0.25em;
 }
 
 /* blockquote em {
@@ -234,6 +187,58 @@ blockquote p em {
 /*
   -------------------------------------------------
 
+  Post: essay drop caps, etc.
+
+  -------------------------------------------------
+ */
+
+.Scope-post-dropcap div:first-child > p:first-of-type:first-letter {
+  /* float: left;
+  font-family: var(--ff-meta), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 400;
+  font-size: 2em;
+  font-size: calc(2 * var(--rfs-text));
+  line-height: 1;
+  padding-top: 0;
+  padding-top: 3px;
+  padding-right: 0.7em;
+  padding-bottom: 0.25em; */
+
+  @media (--md) {
+    /* font-size: 2.75em; */
+  }
+  @media (--lg) {
+    /* font-size: 3em; */
+    /* padding-right: 0.55em;
+    padding-bottom: 0.25em; */
+  }
+}
+
+/* .Scope-post-dropcap div > p span:first-of-type {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+} */
+
+.Footnote-marker {
+  display: inline-block;
+  font-size: 60%;
+  transform: translateY(-0.666em);
+}
+
+/* Reqs: `.b-mb0.b-mt2` */
+.Post-endRule {
+  background-color: var(--c-text);
+  margin-left: 0;
+  transform: translateY(-0.25em);
+  width: 5%;
+}
+
+/*
+  -------------------------------------------------
+
   Iremono font-spacing overrides
 
   -------------------------------------------------
@@ -243,4 +248,9 @@ blockquote p em {
 .Scope-post figure + h3 {
   margin-top: 0 !important;
   padding-top: calc(0.125 * var(--s-headline));
+}
+
+figure {
+  padding: 0;
+  margin: var(--figure-space-align-within-text) 0;
 }

@@ -10,9 +10,7 @@ heroImageMultiply: true
 published: true
 ---
 
-<blockquote><p class="c-text-light">What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<em>John Dewey, Art as Experience</em></p></blockquote>
-
-<br>
+> What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium._John Dewey, Art as Experience_
 
 Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to _see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into a muscle memory of shortcuts that are stored as _aesthetic feelings_, away from the cognitive expense of language and reason. Much more than just a style of doing, good taste is the intuitive understanding of a problem space.
 
@@ -52,7 +50,7 @@ The simplicity of understanding in Thiel's quote hides a receptivity to aestheti
 
 <!-- Taste is a kind of dark matter that can only be discerned by careful observation of the choices of a person, business or product within a domain which the observer has some understanding. We can only detect it by looking at how it effects people. We will notice references to taste as emotive, airy phrases such as "I don't know why but I think this is the one" or "I can't put my finger on it, but there's something that's not right about it". We may not be able to describe in words what we want, but immediately _we know it when we see it_. And I venture, in broader terms, _we know it when we feel it_. -->
 
-When you have a cultivated your attention for a problem space so deeply that you've turned your knowhow into _feeling_—what German speakers call [_fingerspitzengefühl_](https://en.wikipedia.org/wiki/Fingerspitzengef%C3%BChl), translated literally as _finger-tip-feeling_—then you have created for yourself the competitive advantage of perspective. As Alan Kay says, “A change of perspective is worth 80 IQ points.” Thus, we can say that _taste is a measure of imagination growth._
+When you have a cultivated your attention for a problem space so deeply that you've turned your knowhow into feeling—what German speakers call [_fingerspitzengefühl_](https://en.wikipedia.org/wiki/Fingerspitzengef%C3%BChl), translated literally as _finger-tip-feeling_—then you have created for yourself the competitive advantage of perspective. As Alan Kay says, “A change of perspective is worth 80 IQ points.” Thus, we can say that _taste is a measure of imagination growth._
 
 ## You can't buy taste
 

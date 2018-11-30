@@ -1,8 +1,5 @@
 <template lang="pug">
 .block--pb7
-  //- c-pageheading(
-  //-   lede="How to create digital experiences that resonate."
-  //- )
   main(role="main")
     .Container
       c-post(
@@ -17,13 +14,11 @@
 </template>
 
 <script>
-import PageHeading from "~/components/PageHeading.vue";
 import Post from "~/components/Post.vue";
 
 export default {
   name: "posts-list",
   components: {
-    "c-pageheading": PageHeading,
     "c-post": Post
   },
   props: {

@@ -91,11 +91,11 @@ export default {
 
 <style scoped>
 .collapse {
-  animation: collapse 0.1s ease-in-out 0s forwards;
+  animation: collapse 0.5s ease-out forwards;
 }
 
 .open {
-  animation: open 0.25s ease-in-out 0s forwards;
+  animation: open 0.5s ease-in-out forwards;
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
   /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
   /* border-bottom: 1px solid var(--c-text); */
@@ -110,11 +110,13 @@ export default {
     opacity: 1;
     /* background-color: var(--c-white); */
     /* border-bottom: 1px solid transparent; */
+    top: 0;
   }
   to {
     opacity: 0;
     /* background-color: transparent; */
     /* border-bottom: 1px solid transparent; */
+    top: -100%;
   }
 }
 
@@ -123,11 +125,13 @@ export default {
     opacity: 0;
     background-color: transparent;
     border-bottom: 1px solid transparent;
+    top: -100%;
   }
   to {
     opacity: 1;
     background-color: var(--c-bg);
     border-bottom: 1px solid var(--c-text);
+    top: 0;
   }
 }
 </style>

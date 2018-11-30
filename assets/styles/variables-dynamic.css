@@ -35,18 +35,20 @@
 @media (--sm) {
   :root {
     --rs-space: 0.666rem;
+    --rs-block-space: 2rem;
   }
 }
 @media (--md) {
   :root {
     --rs-space: 0.875rem;
-    --rs-block-space: 2.5rem;
+    --rs-block-space: 3.25rem;
   }
 }
 @media (--lg) {
   :root {
     --rs-space: 1rem;
-    --rs-block-space: 3.25rem;
+    --rs-block-space: 4.5rem;
+    /* --rs-nav-height: calc(1em + (5 * var(--rs-space))); */
   }
 }
 
@@ -76,7 +78,7 @@
     --rfs-text-lg: 19px;
     --rfs-heading: 19px;
     --rfs-subtitle: 21px;
-    --rfs-title: 30px;
+    --rfs-title: 27px;
     --rfs-supertitle: 36px;
   }
 }
@@ -87,14 +89,14 @@
 }
 @media (--lg) {
   :root {
-    --rfs-text-xs: 13px;
+    --rfs-text-xs: 14px;
     --rfs-text-sm: 15px;
-    --rfs-text: 18.5px;
-    --rfs-text-md: 19px;
-    --rfs-text-lg: 22px;
-    --rfs-heading: 22px;
-    --rfs-subtitle: 25px;
-    --rfs-title: 36px;
-    --rfs-supertitle: 48px;
+    --rfs-text: 21px;
+    --rfs-text-md: 24px;
+    --rfs-text-lg: 24px;
+    --rfs-heading: 27px;
+    --rfs-subtitle: 24px;
+    --rfs-title: 32px;
+    --rfs-supertitle: 44px;
   }
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  header.b-pb2
+  //- header.b-pb2
     .Container.Header--animate
       .Extract-hero(role="banner")
         .AspectRatio.AspectRatio--8x5
@@ -32,28 +32,36 @@ div
                       | Watch the showreel
                       span.Arrow.Arrow--right.m-l2
 
-  article
-    .Container.Header--animate
-      .Scope-post.Scope-post-dropcap
-        div
-          p.fs-text-lg
-            span In the information age, 
-            em your branding is tactile. 
-            | The technology envelopes the brand. People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
-            em behave beautifully. 
-            | You'll know the difference in a heartbeat. And so will your audience. This is where I can help. 
-            nuxt-link(to="/about") 
-              em.Text--italic I'm a designer who codes.
-          //- p.fs-text-lg.u-textCenter.b-my1
-            nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
-              | About Callum
-              span.Arrow.Arrow--right.m-l2
-            nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
-              | Peruse the blog
-              span.Arrow.Arrow--right.m-l2
-          p.fs-text-lg 
-            | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
-            nuxt-link(to="/blog") the blog.
+  article.b-pb2
+    .Header--animate
+      .Container
+        .w-sm-11x12
+          h1.Supertitle.c-lin.b-py2.fw-300
+            | Make the complex simple#[br]
+            | and the simple unique.
+          .Scope-post.Scope-post-dropcap
+            div
+              p.fs-text-lg
+                //- span In the information age, 
+                span In the internet era, 
+                em your branding is tactile. 
+                //- | The technology envelopes the brand. 
+                //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
+                | People only pay attention after they trust the interface. It's not enough to make it look pretty, it has to 
+                em behave beautifully. 
+                | You'll know the difference in a heartbeat. And so will your audience. This is where I can help. 
+                nuxt-link(to="/about") 
+                  em.fs-italic I'm a designer who codes.
+              //- p.fs-text-lg.u-textCenter.b-my1
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
+                  | About Callum
+                  span.Arrow.Arrow--right.m-l2
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
+                  | Peruse the blog
+                  span.Arrow.Arrow--right.m-l2
+              p.fs-text-lg 
+                | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
+                nuxt-link(to="/blog") the blog.
         
   //- article.b-pb2
     //- .Container
@@ -64,9 +72,9 @@ div
             em feel 
             | how it works. You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
             nuxt-link(to="/about") 
-              em.Text--italic I'm a designer who codes.
+              em.fs-italic I'm a designer who codes.
             | &nbsp`;
-  .b-pb2
+  //- .b-pb2
     .Container
       //- .Extract-large
       hr.bg-text.b-mt2
@@ -81,7 +89,7 @@ div
         p.m-b0.u-textCente
           | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
           nuxt-link(to="/blog") the blog.
-  .b-pb2
+  //- .b-pb2
     PostExcerpt(
       v-for="post in homePagePost"
       :category="post.category"
@@ -128,7 +136,10 @@ export default {
   },
   methods: {
     handleModalToggle() {
-      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isModalVisible);
+      this.$store.commit(
+        "SET_MODAL_VISIBILITY",
+        !this.$store.state.isModalVisible
+      );
     },
     hideNav() {
       this.$store.commit("SET_MODAL_VISIBILITY", false);
@@ -182,15 +193,19 @@ export default {
   background-color: var(--c-highlight-alt);
   border-radius: 1em;
   padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--rs-block-space)) calc(0.45 * var(--rs-block-space));
+  padding: calc(0.375 * var(--rs-block-space))
+    calc(0.45 * var(--rs-block-space));
 
   & a {
-    background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)),
+      linear-gradient(var(--c-bg), var(--c-bg)),
       linear-gradient(currentColor, currentColor) !important;
-    text-shadow: 0.03em 0 var(--c-highlight-alt), -0.03em 0 var(--c-highlight-alt),
-      0 0.03em var(--c-highlight-alt), 0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
-      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt), -0.09em 0 var(--c-highlight-alt),
-      0.12em 0 var(--c-highlight-alt), -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
+    text-shadow: 0.03em 0 var(--c-highlight-alt),
+      -0.03em 0 var(--c-highlight-alt), 0 0.03em var(--c-highlight-alt),
+      0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
+      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt),
+      -0.09em 0 var(--c-highlight-alt), 0.12em 0 var(--c-highlight-alt),
+      -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
       -0.15em 0 var(--c-highlight-alt) !important;
   }
 }

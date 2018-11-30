@@ -26,7 +26,7 @@ article(:style="postBlockColor")
       .b-pt2
         .Scope-post.p-t3
           p {{ lede }} 
-            nuxt-link.Text--italic(:to="permalink", :class="postLedeLink", :style="postLedeLinkColor") Continue reading
+            nuxt-link.fs-italic(:to="permalink", :class="postLedeLink", :style="postLedeLinkColor") Continue reading
 </template>
 
 <script>

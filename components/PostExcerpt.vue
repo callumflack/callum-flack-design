@@ -19,7 +19,7 @@
         nuxtent-body(v-if="showFullArticle", :body="body")
         p(v-else)
           | {{ lede }} 
-          nuxt-link.Text--italic(:to="permalink") Continue reading
+          nuxt-link.fs-italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
     .AspectRatio.AspectRatio--16x9
@@ -37,7 +37,7 @@
             span 8 minutes
       p.Text
         | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
-        nuxt-link.Text--italic(to="/blog") Continue reading
+        nuxt-link.fs-italic(to="/blog") Continue reading
 </template>
 
 

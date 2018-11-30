@@ -1,11 +1,11 @@
 <template lang="pug">
 div
-  header(role="header")
+  //- header.b-pb2(role="header")
     .Container
       //- h1.Supertitle.u-textCenter Selected projects since 2014
       //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
       .Project-filter
-        .f.f-justifyCenter
+        .f
           .Meta.m-a0 Filter by: 
           .Meta.c-text-light.m-l2 Note
           .Meta.c-text-light.m-l2 Essay
@@ -19,7 +19,7 @@ div
             //-   span {{ tag }}
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
-  main.Container.b-py2(role="main")
+  main.Container.b-pb2(role="main")
     PostExcerpt(
       v-if="post.published"
       v-for="post in posts"
@@ -39,7 +39,7 @@ div
 </template>
 
 <script>
-import PostExcerpt from "~/components/PostExcerptEssay.vue";
+import PostExcerpt from "~/components/PostExcerpt3.vue";
 import PostExcerptMostRecent from "~/components/PostExcerptMostRecent.vue";
 import Post from "~/components/Post.vue";
 

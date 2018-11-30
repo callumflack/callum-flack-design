@@ -1,48 +1,46 @@
-/* .Logo,
-.Tab {
-  background-color: var(--c-text);
-  color: var(--c-bg) !important;
-  padding-right: calc(0.5 * var(--rs-space));
-  padding-left: calc(0.5 * var(--rs-space));
+.Nav {
+  backface-visibility: hidden;
+  /* background-color: var(--c-white); */
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* .Nav .Nav-list {
+  opacity: 0;
+  transition: opacity 150ms var(--thisalso);
+}
+
+.Nav:hover .Nav-list {
+  opacity: 1;
+  transition: opacity 150ms var(--thisalso);
 } */
 
+.Nav-logo {
+  transform: translateY(0.125em);
+}
+
+.Nav-divider {
+  transform: translateY(-0.1875em);
+}
+
+/* NAV LINK */
+
 .Nav-link {
-  align-content: center;
+  align-items: center;
   display: inline-flex;
   height: var(--nav-height);
-  padding-top: calc(2.5 * var(--rs-space));
-  padding-bottom: calc(2.5 * var(--rs-space));
 }
 
 .Nav-link + .Nav-link {
-  margin-left: calc(1.25 * var(--rs-space));
-}
-
-/* .Nav-link, */
-.Nav-divider {
-  margin-left: calc(1.15 * var(--rs-space));
-  margin-right: calc(1.15 * var(--rs-space));
-  transform: translateY(-0.1875em);
+  /* margin-left: calc(1.25 * var(--rs-space)); */
 }
 
 .Nav-link,
 .Nav-link:hover {
   background-image: initial;
   text-decoration: none;
-}
-
-.Nav-link span {
-  /* transform: translateY(3px);
-  transform: translateY(0.1875em); */
-}
-
-.nuxt-link-active {
-  /* border-bottom: 1px solid currentColor; */
-  /* background-color: var(--c-text); */
-}
-.nuxt-link-active span {
-  /* color: var(--c-bg); */
-  /* font-weight: 500; */
 }
 
 .nuxt-link-active span {
@@ -55,7 +53,7 @@
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -0.45em;
+    bottom: -0.25em;
   }
 }
 
@@ -63,11 +61,11 @@ footer .nuxt-link-active span:after {
   content: initial;
 }
 
-.nuxt-link-exact-active {
+/* .nuxt-link-exact-active {
   cursor: initial;
 
   &:hover,
   &:active {
     color: var(--c-text);
   }
-}
+} */

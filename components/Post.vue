@@ -1,22 +1,8 @@
 <template lang="pug">
   article(:style="postExcerptBlockColor")
     header(role="banner")
-      .Container
-        .b-pb1.w-lg-9x12.m-xA
-          h1.Title.fw-500.u-textCenter.m-b3 {{ title }}
-          .Meta.c-text-light.u-textCenter.p-t1(v-if="category !== 'projects'")
-            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-            span.MetaSeparator • 
-            span.u-textCapitalise {{ category }}
-            span.MetaSeparator(v-if="readingTime" ) • 
-            span(v-if="readingTime" ) {{ readingTime }} minutes
-          .Meta.c-text-light.u-textCenter.p-t1(v-else)
-            time(:date-time="date") {{ date | moment("YYYY") }}
-            span.MetaSeparator • 
-            span.u-textCapitalise {{ category }}
-            //- span.MetaSeparator •
-            //- span {{ tags }}
-        .b-pb1.m-b2
+      .bg-black
+        .Container
           .m-a0(v-if="heroImage", :class="heroExtractClasses")
             .AspectRatio(:style="heroAspectStyle")
               //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
@@ -25,6 +11,21 @@
 
     main(role="main", v-if="body")
       .Container
+        .b-pt1.b-pb05.m-t2
+          h1.Title.m-b2 {{ title }}
+          .Meta.c-text-light.p-t1(v-if="category !== 'projects'")
+            time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
+            span.MetaSeparator • 
+            span.u-textCapitalise {{ category }}
+            span.MetaSeparator(v-if="readingTime" ) • 
+            span(v-if="readingTime" ) {{ readingTime }} minutes
+          .Meta.c-text-light.p-t1(v-else)
+            time(:date-time="date") {{ date | moment("YYYY") }}
+            span.MetaSeparator • 
+            span.u-textCapitalise {{ category }}
+            //- span.MetaSeparator •
+            //- span {{ tags }}
+
         .Scope-post(:class="scopeClasses")
           //- no-ssr
           nuxtent-body(:body="body")
@@ -36,14 +37,12 @@
 <script>
 import moment from "vue-moment";
 import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 
 export default {
   name: "post",
   components: {
     moment,
-    ImageCld,
-    NewsletterSignupBlock
+    ImageCld
   },
   props: {
     body: Object,
@@ -60,7 +59,7 @@ export default {
     },
     heroRatio: {
       type: Number,
-      default: 56.25
+      default: 62.5
     },
     lede: String,
     link: String,

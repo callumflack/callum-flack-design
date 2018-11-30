@@ -1,14 +1,12 @@
 <template lang="pug">
   NavFixedOnScroll.Nav.Nav--animate.z-1.u-relative
-    //- hr.NavRule.bg-text
-    //- .GutterInsetX
-    .Container.Container--lg
+    .Container
       NavList
 
 </template>
 
 <script>
-import NavList from "~/components/NavList2";
+import NavList from "~/components/NavList";
 import NavFixedOnScroll from "~/components/NavFixedOnScroll.vue";
 
 export default {
@@ -23,7 +21,10 @@ export default {
   },
   methods: {
     handleNavToggle() {
-      this.$store.commit("SET_MOBILENAV_VISIBILITY", !this.$store.state.isModalVisible);
+      this.$store.commit(
+        "SET_MOBILENAV_VISIBILITY",
+        !this.$store.state.isModalVisible
+      );
       // this.navBar.static = this.$store.state.isModalVisible;
       /* to NavFixedOnScroll via $emit: */
       this.$emit("emitMobileNavIsToggled");
@@ -31,18 +32,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.Nav {
-  backface-visibility: hidden;
-  /* background-color: var(--c-white); */
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.NavRule {
-  height: 3px;
-}
-</style>

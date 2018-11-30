@@ -32,7 +32,7 @@ div
                         | “…if the solution is not beautiful, I know it is wrong.” 
                         span.fs-scale-reset #[span.Meta — Buckminster Fuller]
                       h2.Text.fw-400.c-bg.w-lg-8x12.u-hidden.u-sm-block.rm-t4
-                        span.Text--italic The quality of the connections is the key to quality.
+                        span.fs-italic The quality of the connections is the key to quality.
                         br 
                         span.Blockquote-author — Charles Eames
       

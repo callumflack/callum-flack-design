@@ -1,13 +1,17 @@
 <template lang="pug">
-  div
-    .u-textCenter
-      IconBase(icon-name="icon-camp-fire" height="27" width="27")
-        IconSun
-    p.Meta.Meta--text.fs-text-sm.u-textCenter.m-t4.w-lg-11x12.m-xA
-      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
-      a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
-      | &nbsp;You should sign up:
+div
+  .u-textLeft
+    IconBase(icon-name="icon-sun" height="32" width="32")
+      IconSun
+
+  p.Text.m-t4
+    | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
+    a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
+    | &nbsp;You should sign up:
+
+  .w-sm-3x4
     NewsletterSignupForm
+
 </template>
 
 <script>
@@ -25,11 +29,11 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.BlackLittoralIcon {
+.LittoralIcon {
   & >>> svg {
     border-radius: 999px;
-    background-color: var(--c-text);
-    color: var(--c-bg);
+    border: 1px solid var(--c-text);
+    padding: 6px;
   }
 }
 </style>

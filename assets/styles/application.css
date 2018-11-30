@@ -9,7 +9,6 @@
 /* Theme */
 @import "./theme/animations.css";
 @import "./theme/button.css";
-/* @import "./theme/container.css"; */
 @import "./theme/form.css";
 @import "./theme/grid-extractors2.css";
 @import "./theme/link.css";
