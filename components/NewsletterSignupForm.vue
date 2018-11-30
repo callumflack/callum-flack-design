@@ -1,5 +1,5 @@
 <template lang="pug">
-  form.form.Text.p-t2(
+  form.form.Text(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
@@ -20,7 +20,7 @@
           tabindex="-1", 
           value=""
         )
-      button.Button.Text(
+      button.Button.Button--transparent.Text(
         type="submit", 
         name="subscribe", 
       ) {{ buttonText }} 
@@ -44,14 +44,38 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.form input {
+@import "../assets/styles/variables.css";
+@import "../assets/styles/variables-dynamic.css";
+
+.form-group {
   background-color: var(--c-white);
-  border-bottom: 1px solid var(--c-text);
+  border-top: 1px solid var(--c-text);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  & * + * {
+    margin: 0;
+    margin-top: -1px;
+  }
+
+  @media (--sm) {
+    flex-direction: row;
+
+    & * + * {
+      margin-left: -1px;
+      margin-top: 0;
+    }
+  }
+}
+
+.form input {
+  /* border-bottom: 1px solid var(--c-text); */
   box-shadow: none;
   color: var(--c-text);
 
   &:focus {
-    border-color: var(--c-text);
+    /* border-color: var(--c-text); */
   }
 }
 </style>

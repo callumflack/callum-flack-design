@@ -26,7 +26,7 @@ article
                     span.u-block.Blockquote-author — Charles Eames
   header.b-pb1(role="banner")
     .Container
-      .b-pt3.w-sm-10x12
+      .b-ptTitle.w-sm-10x12
         h1.Supertitle.fw-300.m-b0
           | Callum Flack Design is fluid across visual design, user experience and code.
         h2.Text.fw-400.m-t3

@@ -19,7 +19,7 @@
 
     & * + * {
       margin-left: -1px;
-      margin-left: var(--s-2);
+      /* margin-left: var(--s-2); */
       margin-top: 0;
     }
   }

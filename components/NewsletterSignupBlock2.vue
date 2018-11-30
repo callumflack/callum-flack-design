@@ -1,15 +1,13 @@
 <template lang="pug">
-div
-  .u-textLeft
-    IconBase.LittoralIcon(icon-name="icon-sun" height="36" width="36")
-      IconSun
+.Block.f
+  .Block-cell.w-3x12
+    .p-y3.p-x4.u-textLeft
+      IconBase.LittoralIcon(icon-name="icon-sun" height="36" width="36")
+        IconSun
 
-  //- .TextIndent.w-sm-7x12
-  .w-sm-8x12
-    p.Text.m-t4
-      //- span.Title.fs-text.u-textCapitalise Ps.
-      | Ps. 
-      | I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
+  .Block-cell.w-sm-9x12
+    p.Text.p-t3.p-b6.p-x4.m-b0
+      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
       a(href="https://the-littoral-line.callumflack.design/" target="_blank") the archives.
       | &nbsp;You should sign up:
 
@@ -32,6 +30,15 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.Block {
+  border: 1px solid var(--c-text);
+  border-left: 0;
+}
+.Block-cell {
+  border-left: 1px solid var(--c-text);
+  /* padding: var(--s-3) var(--s-3a); */
+}
+
 .LittoralIcon {
   & >>> svg {
     border-radius: 999px;

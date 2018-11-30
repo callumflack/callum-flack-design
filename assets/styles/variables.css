@@ -204,8 +204,8 @@
 
    */
 
-  --field-height: 3.25rem;
-  --field-padding-x: 0;
+  --field-height: 4rem;
+  --field-padding-x: var(--s-3a);
   --input-border-color: var(--c-brand-rule);
   --input-border-color-hover: var(--c-brand-rule);
   --input-border-color-focus: var(--c-brand-rule);

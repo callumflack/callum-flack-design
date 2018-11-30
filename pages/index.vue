@@ -4,7 +4,7 @@ div
     .Header--animate
       .Container
         .w-sm-11x12
-          h1.Supertitle.c-lin.b-pt3.b-pb1.fw-300
+          h1.Supertitle.c-lin.b-ptTitle.b-pb1
             //- | Make the complex simple#[br]
             //- | and the simple unique.
             | Callum Flack is a graphic designer turned

@@ -86,7 +86,7 @@ p em {
 .Subheading,
 .Heading {
   font-family: var(--ff-text), var(--ff-stack-serif);
-  font-size: var(--rfs-heading);
+  font-size: var(--rfs-text-md);
   font-style: italic;
   font-variant-numeric: tabular-nums;
   letter-spacing: var(--fls-text);

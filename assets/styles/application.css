@@ -9,7 +9,7 @@
 /* Theme */
 @import "./theme/animations.css";
 @import "./theme/button.css";
-@import "./theme/form.css";
+/* @import "./theme/form.css"; */
 @import "./theme/grid-extractors2.css";
 @import "./theme/hover-reveal.css";
 @import "./theme/link.css";
@@ -17,5 +17,6 @@
 @import "./theme/project-item.css";
 @import "./theme/project-hero.css";
 @import "./theme/page.css";
+@import "./theme/page-index.css";
 @import "./theme/page-transitions.css";
 @import "./theme/type.css";
