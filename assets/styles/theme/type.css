@@ -2,6 +2,7 @@
   -------------------------------------------------
 
   Text
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
 
   -------------------------------------------------
  */
@@ -15,7 +16,7 @@ blockquote p em {
   font-weight: 400;
   letter-spacing: var(--fls-text);
   line-height: var(--flh-regular);
-  font-variant-numeric: oldstyle-nums; /* this? */
+  font-variant-numeric: oldstyle-nums; /* 1 */
 }
 
 p em {
@@ -69,13 +70,8 @@ p em {
 .Scope-post h3,
 .nl-content h3 {
   font-family: var(--ff-text), var(--ff-stack-serif);
-  /* resetting ems before applying font sizing: */
-  /* font-size: calc((16 / (var(--rfs-text-unit) * 16)) * var(--rfs-text)) !important; */
   font-size: var(--rfs-subheading);
   font-weight: 600;
-  /* letter-spacing: 0.05em;
-  line-height: var(--flh-regular);
-  text-transform: uppercase; */
 }
 
 /* 
@@ -92,7 +88,7 @@ p em {
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--rfs-heading);
   font-style: italic;
-  font-variant-numeric: oldstyle-nums;
+  font-variant-numeric: tabular-nums;
   letter-spacing: var(--fls-text);
   line-height: var(--flh-regular);
 }
@@ -163,7 +159,7 @@ blockquote p {
 blockquote p em {
   display: table;
   font-style: normal;
-  font-size: calc(var(--rfs-text-sm) + 0.1em);
+  font-size: calc(var(--rfs-text-sm) + 0.15em);
   letter-spacing: 0.075em;
   margin-top: 0.25em;
   text-transform: uppercase;

@@ -19,9 +19,9 @@ div
             //-   span {{ tag }}
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
-  main.Container.b-pb2(role="main")
+  main.Container.b-pt075(role="main")
     PostExcerpt(
-      v-if="post.published"
+      v-if="post.published && post.category != 'project'"
       v-for="post in posts"
       :body="post.body"
       :category="post.category"

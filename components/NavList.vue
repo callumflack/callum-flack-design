@@ -52,7 +52,7 @@ export default {
           link: "/blog"
         },
         {
-          label: "Clients",
+          label: "Projects",
           link: "/projects"
         },
         /* {

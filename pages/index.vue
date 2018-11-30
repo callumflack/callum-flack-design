@@ -32,13 +32,18 @@ div
                       | Watch the showreel
                       span.Arrow.Arrow--right.m-l2
 
-  article.b-pb2
+  article
     .Header--animate
       .Container
         .w-sm-11x12
-          h1.Supertitle.c-lin.b-py2.fw-300
-            | Make the complex simple#[br]
-            | and the simple unique.
+          h1.Supertitle.c-lin.b-pt3.b-pb1.fw-300
+            //- | Make the complex simple#[br]
+            //- | and the simple unique.
+            | Callum Flack is a graphic designer turned
+            | frontend developer. 
+            span.u-block.m-t4 Why does this matter?
+            //- | ux engineer
+
           .Scope-post.Scope-post-dropcap
             div
               p.fs-text-lg

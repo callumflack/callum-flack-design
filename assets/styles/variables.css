@@ -159,7 +159,7 @@
   --figcaption-margin-top: 0.5rem;
   --figcaption-font-weight: 400;
   --figcaption-text-color: var(--c-text-light);
-  --horizontal-rule-color: var(--c-text);
+  --horizontal-rule-color: var(--c-text-underline);
   --horizontal-rule-height: 1px;
   --horizontal-rule-space: 0;
   --html-c: var(--c-text);
