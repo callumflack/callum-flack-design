@@ -55,13 +55,13 @@ export default {
           label: "Projects",
           link: "/projects"
         },
-        /* {
-          label: "Newsletter",
-          link: "/the-littoral-line"
-        }, */
         {
           label: "About",
           link: "/about"
+        },
+        {
+          label: "LL",
+          link: "/the-littoral-line"
         }
         /* {
           label: "Essays",

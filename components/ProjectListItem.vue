@@ -4,8 +4,8 @@
     target="_blank"
   )
     span.m-r5 {{ title }}
-    span.Meta.AlignMeta.m-r3 {{ medium }}
-    span.Meta.AlignMeta {{ tags }}
+    span.Meta.Project-item-span {{ medium }}
+    span.Meta.Project-item-span {{ tags }}
     span.Text.Project-item-target.icon-targetBlank.m-lA &nbsp;
 
   //- todo: req's learning slots
@@ -23,24 +23,35 @@ export default {
       type: String,
       default: "Website"
     },
-    tags: String,
+    tags: {
+      type: String,
+      default: "Design, Frontend"
+    },
     link: String
   }
 };
 </script>
 
 <style lang="postcss" scoped>
-.AlignMeta {
+.Project-item-span {
   color: var(--c-text-light);
   display: inline-flex;
   align-self: flex-end;
   transform: translateY(-5px);
-  transform: translateY(-0.357142857em);
+  transform: translateY(-0.36em);
+  transition: all 500ms ease;
+}
+
+.Project-item-span + .Project-item-span {
+  border-left: 1px solid var(--c-text-underline);
+  margin-left: var(--s-2);
+  padding-left: var(--s-2);
 }
 
 .Project-item-target {
   opacity: 0;
   transform: translateX(-5px);
+  transform: translateX(-0.72em);
   transition: all 150ms ease;
 
   &:after {

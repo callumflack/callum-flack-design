@@ -2,7 +2,7 @@
   div(:class="currentPageClass")
     Nav
 
-    nuxt.b-clearFixedNav.b-pb2
+    nuxt.b-clearFixedNav.b-pb15
 
     footer.b-pb4
       //- .Container

@@ -27,7 +27,7 @@ article
   header.b-pb1(role="banner")
     .Container
       .b-ptTitle.w-sm-10x12
-        h1.Supertitle.fw-300.m-b0
+        h1.Supertitle.m-b0
           | Callum Flack Design is fluid across visual design, user experience and code.
         h2.Text.fw-400.m-t3
           span.fs-italic The quality of the connections is the key to quality.

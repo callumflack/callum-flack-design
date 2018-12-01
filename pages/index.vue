@@ -4,12 +4,15 @@ div
     .Header--animate
       .Container
         .w-sm-11x12
-          h1.Supertitle.c-lin.b-ptTitle.b-pb1
+          h1.Supertitle.b-ptTitle.m-b0.b-pb1
             //- | Make the complex simple#[br]
             //- | and the simple unique.
-            | Callum Flack is a graphic designer turned
-            | frontend developer. 
-            span.u-block.m-t4 Why does this matter?
+            //- | Callum Flack is a graphic designer turned
+            //- | frontend developer.
+            | Design for a deeper attention.
+            | Build with a finer intuition for people. 
+            //- | Build to anticipate people. 
+            //- span.u-block.m-t4 Why does this matter?
             //- | ux engineer
 
           .Scope-post.Scope-post-dropcap
@@ -20,12 +23,13 @@ div
                 em your branding is tactile. 
                 //- | The technology envelopes the brand. 
                 //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
-                | People only pay attention after they trust the interface. It's not enough to make it look pretty, it has to 
+                | People only pay attention after they trust the interface. It's not enough to make it look nice, it has to 
                 nuxt-link.Reveal-link(to="/blog")
-                  em behave beautifully. 
-                | You'll know the difference in a heartbeat. And so will your audience. This is where I can help. 
+                  em behave beautifully.
+                | &nbsp;You'll know the difference in a heartbeat. And so will your audience. This is where I can help. 
                 nuxt-link(to="/about") 
                   em.fs-italic I'm a designer who codes.
+                | &nbsp;I turn your vision into a perfect web experience.
               //- p.fs-text-lg.u-textCenter.b-my1
                 nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
                   | About Callum
