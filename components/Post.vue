@@ -1,17 +1,18 @@
 <template lang="pug">
-  article(:style="postExcerptBlockColor")
-    header(role="banner")
-      .bg-black
-        .Container
-          .m-a0(v-if="heroImage", :class="heroExtractClasses")
-            .AspectRatio(:style="heroAspectStyle")
-              //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
-              .AspectRatio-object(:class="heroObjectBgClasses")
-                ImageCld(:src="heroImage")
-
-    main(role="main", v-if="body")
+  //- article(:style="postExcerptBlockColor")
+  article
+    header(role="banner", v-if="heroImage", :style="heroBlockColor")
       .Container
-        .b-pt1.b-pb05.m-t2
+        .m-a0(:class="heroExtractClasses")
+          .AspectRatio(:style="heroAspectStyle")
+            //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
+            //- .AspectRatio-object(:class="heroObjectBgClasses")
+            .AspectRatio-object(:style="heroBlockColor")
+              ImageCld(:src="heroImage")
+
+    main(role="main", v-if="body", :class="spaceWithoutHeroClass")
+      .Container
+        .b-pb05.m-t2
           h1.Title.m-b2 {{ title }}
           .Meta.c-text-light.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
@@ -44,7 +45,10 @@ export default {
   },
   props: {
     body: Object,
-    blockColor: String,
+    blockColor: {
+      type: String,
+      default: "transparent"
+    },
     category: {
       type: String,
       required: true
@@ -77,22 +81,23 @@ export default {
     updated: Boolean
   },
   computed: {
-    postExcerptBlockColor() {
-      return this.blockColor && `background-color: ${this.blockColor}`;
-    },
     postExcerptLede() {
       return this.$route.name === "blog-page" && this.mostRecentPost;
     },
-    /* headerClasses() {
-      if (this.$route.name === "blog-page") {
-        return "b-pb2";
-      }
-    }, */
+    heroBlockColor() {
+      return this.blockColor && `background-color: ${this.blockColor}`;
+    },
     heroExtractClasses() {
       if (this.category === "projects") {
         return "Extract-super";
       }
       return "Extract-hero";
+    },
+    spaceWithoutHeroClass() {
+      if (this.heroImage) {
+        return "b-pt1";
+      }
+      return "b-ptTitle";
     },
     heroAspectClasses() {
       return this.heroRatio && `AspectRatio--${this.heroRatio}`;

@@ -41,20 +41,16 @@ article
       .Projects
         ProjectListItem(
           v-for="item in twentyfifteen"
+          v-bind="item"
           :key="item.title"
-          :href="item.link"
-          :title="item.title"
-          :tags="item.tags"
         )
 
       h2.Subtitle.m-b2.b-pt075 2013
       .Projects
         ProjectListItem(
           v-for="item in twentythirteen"
+          v-bind="item"
           :key="item.title"
-          :href="item.link"
-          :title="item.title"
-          :tags="item.tags"
         )
 
 </template>

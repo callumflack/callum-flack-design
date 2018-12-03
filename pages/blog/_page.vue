@@ -1,6 +1,7 @@
 <template lang="pug">
-.b-py2
+div(:class="projectPageClass")
   Post(
+    :blockColor="page.blockColor"
     :body="page.body"
     :category="page.category"
     :date="page.date"
@@ -30,6 +31,11 @@ export default {
     return {
       page: {}
     };
+  },
+  computed: {
+    projectPageClass() {
+      /* return (this.page.category = "project" && "bg-neutral"); */
+    }
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/posts").get(route.path);
