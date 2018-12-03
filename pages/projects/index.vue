@@ -6,9 +6,6 @@ article
       .b-ptTitle.w-sm-10x12
         h1.Supertitle.fw-300.m-b0
           | A selected archive of graphic design since 1999, and web development since 2010.
-        //- h2.Text.fw-400.m-t3
-          span.fs-italic The quality of the connections is the key to quality.
-          span.Blockquote-author — Charles Eames
 
   main(role="main")
     .Container
@@ -18,7 +15,7 @@ article
         ProjectListItem(
           v-for="item in twentyeighteen"
           v-bind="item"
-          :key="item.title"
+          v-bind:key="item.title"
         )
 
       h2.Subtitle.m-b2.b-pt075 2017
@@ -26,7 +23,7 @@ article
         ProjectListItem(
           v-for="item in twentyseventeen"
           v-bind="item"
-          :key="item.title"
+          v-bind:key="item.title"
         )
 
       h2.Subtitle.m-b2.b-pt075 2016
@@ -34,7 +31,7 @@ article
         ProjectListItem(
           v-for="item in twentysixteen"
           v-bind="item"
-          :key="item.title"
+          v-bind:key="item.title"
         )
 
       h2.Subtitle.m-b2.b-pt075 2015
@@ -42,7 +39,7 @@ article
         ProjectListItem(
           v-for="item in twentyfifteen"
           v-bind="item"
-          :key="item.title"
+          v-bind:key="item.title"
         )
 
       h2.Subtitle.m-b2.b-pt075 2013
@@ -50,7 +47,7 @@ article
         ProjectListItem(
           v-for="item in twentythirteen"
           v-bind="item"
-          :key="item.title"
+          v-bind:key="item.title"
         )
 
 </template>

@@ -23,19 +23,10 @@ div
     PostExcerpt(
       v-if="post.published && post.category != 'project'"
       v-for="post in posts"
-      :body="post.body"
-      :category="post.category"
-      :date="post.date"
-      :heroImage="post.heroImage"
-      :heroImageNoShadow="post.heroImageNoShadow"
-      :key="post.permalink"
-      :lede="post.lede"
-      :permalink="post.permalink"
-      :readingTime="post.readingTime"
-      :thumbImage="post.thumbImage"
-      :tags="post.tags"
-      :title="post.title"
+      v-bind="post"
+      v-bind:key="post.title"
     )
+
 </template>
 
 <script>
