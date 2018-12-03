@@ -16,7 +16,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "Callum Flack digital design & development – Cairns, Australia"
+        content: "Callum Flack Design & Development—Cairns, Australia"
       },
       { hid: "twitter:card", name: "twitter:card", content: "summary" },
       { hid: "twitter:site", name: "twitter:site", content: "@callumflack" },
@@ -37,7 +37,7 @@ module.exports = {
     https://github.com/nuxt-community/style-resources-module
   */
   styleResources: {
-    css: "./assets/styles/variables.css"
+    css: ["./assets/styles/variables.css", "./assets/styles/variables-dynamic.css"]
   },
 
   router: {
@@ -81,10 +81,10 @@ module.exports = {
   build: {
     /* vendor: ["intersection-observer"], */
     /* https://www.evernote.com/l/ACw94CODEoJCEbgqo-RVrNisxAfsQdTW9Ck */
-    postcss: {
-      plugins: {}
-      /* preset: { stage: 0 } */
-    },
+    /* postcss: {
+      plugins: {},
+      preset: { stage: 0 }
+    }, */
     /* 
       Get postcss syntax in single page component styles
       Requires <style lang="postcss"
