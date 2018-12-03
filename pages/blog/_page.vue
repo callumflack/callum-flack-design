@@ -1,31 +1,27 @@
 <template lang="pug">
 div(:class="projectPageClass")
-  Post(
-    :blockColor="page.blockColor"
-    :body="page.body"
-    :category="page.category"
-    :date="page.date"
-    :heroImage="page.heroImage"
-    :heroImageNoShadow="page.heroImageNoShadow"
-    :heroRatio="page.heroRatio"
-    :link="page.permalink"
-    :mostRecentPost = "page.mostRecentPost"
-    :readingTime="page.readingTime"
-    :tags="page.tags"
-    :title="page.title"
-    :updated="page.updated"
-  )
-  //- .Container.p-b7
-    .figure.figure--post
+  Nav
+
+  .b-clearFixedNav.b-pb15
+    Post(v-bind="page")
+
+  footer.b-pb4
+    .Container
       NewsletterSignupBlock
+
 </template>
 
 <script>
+import Nav from "~/components/Nav.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock2.vue";
 import Post from "~/components/Post.vue";
 
 export default {
+  layout: "blank",
   components: {
-    Post
+    Nav,
+    Post,
+    NewsletterSignupBlock
   },
   data() {
     return {
@@ -34,7 +30,7 @@ export default {
   },
   computed: {
     projectPageClass() {
-      /* return (this.page.category = "project" && "bg-neutral"); */
+      return this.page.category === "project" && "bg-neutral";
     }
   },
   async asyncData({ app, route }) {

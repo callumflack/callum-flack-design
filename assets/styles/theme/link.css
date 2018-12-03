@@ -63,6 +63,14 @@ blockquote p em a {
   background-position: 0% 100%, 100% 100%, 0% 100% !important;
 }
 
+.bg-neutral p a:not(.Button),
+.bg-neutral .Link,
+.bg-neutral .Link-block a,
+.bg-neutral .nuxt-link-active span {
+  --underline-bgimg: var(--c-neutral);
+  --underline-textshadow: var(--c-neutral);
+}
+
 /* a:not(.Button) {
   &:hover {
     background-image: linear-gradient(var(--c-bg), var(--c-bg)),

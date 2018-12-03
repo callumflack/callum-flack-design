@@ -40,16 +40,6 @@ export default {
         return `page-${this.$store.state.currentPage}`;
       } */
     },
-    contentNavSpace() {
-      /* if (this.$route.name === "about") {
-        return "b-clearFixedNav";
-      } else {
-        return "b-clearFixedNav";
-      } */
-      /* if (this.$route.name !== "the-littoral-line") {
-        return "b-pb3";
-      } */
-    },
     showSignup() {
       if (this.$route.name !== "the-littoral-line") {
         return true;
