@@ -58,11 +58,11 @@ export default {
         {
           label: "About",
           link: "/about"
-        },
-        {
+        }
+        /* {
           label: "LL",
           link: "/the-littoral-line"
-        }
+        } */
         /* {
           label: "Essays",
           link: "/essays"

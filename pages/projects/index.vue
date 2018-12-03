@@ -13,38 +13,28 @@ article
   main(role="main")
     .Container
 
-      //- h2.Heading.m-b2 Twenty Eighteen
       h2.Subtitle.m-b2 2018
       .Projects
         ProjectListItem(
           v-for="item in twentyeighteen"
+          v-bind="item"
           :key="item.title"
-          :href="item.link"
-          :title="item.title"
-          :tags="item.tags"
-          target="_blank"
         )
 
       h2.Subtitle.m-b2.b-pt075 2017
       .Projects
         ProjectListItem(
           v-for="item in twentyseventeen"
+          v-bind="item"
           :key="item.title"
-          :href="item.link"
-          :title="item.title"
-          :tags="item.tags"
-          target="_blank"
         )
 
       h2.Subtitle.m-b2.b-pt075 2016
       .Projects
         ProjectListItem(
           v-for="item in twentysixteen"
+          v-bind="item"
           :key="item.title"
-          :href="item.link"
-          :title="item.title"
-          :tags="item.tags"
-          target="_blank"
         )
 
       h2.Subtitle.m-b2.b-pt075 2015
@@ -55,7 +45,6 @@ article
           :href="item.link"
           :title="item.title"
           :tags="item.tags"
-          target="_blank"
         )
 
       h2.Subtitle.m-b2.b-pt075 2013
@@ -66,7 +55,6 @@ article
           :href="item.link"
           :title="item.title"
           :tags="item.tags"
-          target="_blank"
         )
 
 </template>
@@ -81,55 +69,54 @@ const twentyeighteen = [
   {
     title: "The Ki Line",
     client: "Ki",
-    link: "https://thekiline.com/"
+    link: "https://thekiline.com/",
+    disabled: true
   },
   {
     title: "BrandHook",
-    client: "BrandHook",
-    medium: "Print YO",
     link: "https://brandhook.com.au/"
   },
   {
     title: "Edge Hill Butchery",
-    client: "Edge Hill Butchery",
     link: "https://edgehillbutchery.com.au/"
   },
   {
     title: "Evernote Random Note",
     client: "Forte Labs",
     link: "https://evernote-random.glitch.me/"
+  },
+  {
+    title: "Xeljanz Australia",
+    client: "Sudler & Hennessey",
+    tags: "Design",
+    link: ""
   }
 ];
 
 const twentyseventeen = [
   {
     title: "VJ Ray Strata Management",
-    client: "",
     link: "https://www.vjray.com.au/"
   },
   {
     title: "AUM.ai",
-    client: "",
     link: ""
   },
   {
     title: "RAATSICC",
-    client: "",
-    link: "https://raatsicc.org.au/"
+    link: "/blog/raatsicc-community-outreach-website",
+    external: false
   },
   {
     title: "Oceanblue Boats",
-    client: "",
     link: "https://oceanblueboats.com.au/"
   },
   {
     title: "Album Registry",
-    client: "",
     link: "https://albumregistry.com/"
   },
   {
     title: "Lendfirst Financial",
-    client: "",
     link: "https://lendfirst.com.au/"
   }
 ];
@@ -137,37 +124,35 @@ const twentyseventeen = [
 const twentysixteen = [
   {
     title: "Gravitas Energy",
-    client: "",
-    tags: "Design, Frontend"
+    tags: "Design, Frontend",
+    disabled: true
   },
   {
     title: "Wild Aviation",
-    client: "",
     link: "https://wildaviationservices.com.au/"
   },
   {
     title: "Billy's Coffee",
-    client: "",
     link: "https://billyscoffeecairns.com.au/"
   },
   {
     title: "Papa Chango",
-    medium: "Print YO",
-    client: "",
-    tags: "Design"
+    medium: "Packaging",
+    tags: "Design",
+    link: "/blog/raatsicc-community-outreach-website",
+    external: false
   },
   {
     title: "Primary Healthcare Network NQ",
-    client: ""
+    link: "/blog/primary-healthcare-network-patient-survey-app",
+    external: false
   },
   {
     title: "The Substation",
-    client: "",
     link: "http://www.thesubstation.org.au/"
   },
   {
     title: "Oceanblue Living",
-    client: "",
     link: "https://oceanblueliving.com.au/"
   }
 ];
@@ -175,12 +160,10 @@ const twentysixteen = [
 const twentyfifteen = [
   {
     title: "Ward6",
-    client: "",
     link: "http://www.ward6.asia/"
   },
   {
     title: "X",
-    client: "",
     link: "http://www.ward6.asia/"
   }
 ];
@@ -188,7 +171,6 @@ const twentyfifteen = [
 const twentythirteen = [
   {
     title: "Ellis Jones Communications",
-    client: "",
     link: "https://ellisjones.com.au/"
   }
 ];
@@ -198,7 +180,26 @@ export default {
     ImageCld,
     ProjectListItem
   },
-  props: {},
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    external: {
+      type: Boolean,
+      default: true
+    },
+    link: String,
+    medium: {
+      type: String,
+      default: "Website"
+    },
+    tags: {
+      type: String,
+      default: "Design, Frontend"
+    },
+    title: String
+  },
   data() {
     return {
       twentyeighteen,
@@ -248,7 +249,7 @@ export default {
   }
 }
 
-.Project-item + .Project-item {
+/* .Project-item + .Project-item {
   margin-top: 0;
-}
+} */
 </style>
