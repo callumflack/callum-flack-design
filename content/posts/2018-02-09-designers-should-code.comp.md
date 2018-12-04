@@ -18,11 +18,13 @@ In “A City Is Not A Tree”, Christopher Alexander describes a living, natural
 
 As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally complex [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. **The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time.** Put it this way: if you tried to recreate Melbourne's laneways from scratch, all “Melbourne-ness” would be lost.
 
-By contrast, let’s imagine Canberra. If you tried to recreate Australia’s capital city, you’d do a better job. Canberra is [high-modernist urban architecture](http://www.naa.gov.au/collection/fact-sheets/fs95.aspx) devoid of rich surprise because “no piece of any unit is ever connected to other units, except through the medium of the unit as a whole”.
+By contrast, let’s imagine Canberra. If you tried to recreate Australia’s capital city, you’d do a better job. Canberra is [high-modernist urban architecture](http://www.naa.gov.au/collection/fact-sheets/fs95.aspx) devoid of rich surprise because, as Christopher Alexander says:
+
+> …no piece of any unit is ever connected to other units, except through the medium of the unit as a whole.
 
 ## Natural semilattices and User Interface design
 
-**The “natural semi-lattice” metaphor is a good way to understand how complex processes can’t be reduced to simple templates.** Delineating the skillsets involved into distinct, separate domains cuts their interconnections and creates artificial order. The result lacks character.
+The “natural semi-lattice” metaphor is a good way to understand how complex processes can’t be reduced to simple templates. Delineating the skillsets involved into distinct, separate domains cuts their interconnections and creates artificial order. The result lacks character.
 
 The same holds true for the complexities of User Interface design. Why, for example, do most websites look the same these days? It probably has something to do with the rise of "magic bullet" UI frameworks such as Bootstrap. Reduction of complexity accidently eliminates richness.
 
@@ -35,7 +37,7 @@ Hi! I’m a designer who really enjoys coding. I’m self-taught, and I started 
 
 How, might you ask? Working self-sufficiently as a web creator, I can execute what I’ve designed without asking or paying another person.
 
-**Not asking someone is more important than not paying.** As soon as more than one person is involved in a project, I have to communicate to them a tangible vision of what my design is. This can be difficult. In this way, asking is more expensive than paying. Nor does paying prevent asking. (This doesn’t apply if you’re in a shit-hot “pizza team” who finishes each-other’s sentences. But most of us aren’t.)
+**Not asking someone is more important than not paying.** As soon as more than one person is involved in a project, I have to communicate to them a tangible vision of what my design is. This can be difficult. In this way, asking is more expensive than paying. Nor does paying prevent asking. (This doesn’t apply if you’re in a shit-hot [“pizza team”](https://whatis.techtarget.com/definition/two-pizza-rule) who finishes each-other’s sentences. But most of us aren’t.)
 
 **If I can code the design myself, I don’t have to communicate the nuance of aesthetic or interaction choices.** Nor do I have to roll out every instance of those choices as approximate “design” mockups to use to communicate with. It saves time and energy not having to communicate with another person.
 
@@ -45,7 +47,7 @@ A cook sips the broth. A pilot turning feels G-forces pulling below. A painter p
 
 > Creators need an immediate connection to what they’re creating.
 
-Code is far more immediate than “design” tools. **If you’re a designer who codes, your design is the code.**
+Not only is designing with code far more immediate than using design tools, _if you’re a designer who codes, your design is the code._
 
 (I’ve got opinions on tools and frameworks within both design and development domains which I’ll leave for another time, but let me note that [Storybook](https://storybook.js.org/) is the perfect UI design system tool.)
 

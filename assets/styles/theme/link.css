@@ -10,6 +10,7 @@ a:not(.LinkSignal),*/
 
 .nuxt-link-active span,
 p a:not(.Button),
+li a:not(.Button),
 .Text a:not(.Button),
 .Scope-post p a:not(.Button) {
   --underline-bgimg: var(--c-bg);
@@ -37,6 +38,7 @@ p a:not(.Button),
 
 .nuxt-link-active,
 p a:not(.Button),
+li a:not(.Button),
 .Text a:not(.Button),
 .Scope-post p a:not(.Button) {
   &:hover {
@@ -47,6 +49,7 @@ p a:not(.Button),
 }
 
 p a:not(.Button),
+li a:not(.Button),
 .Text a:not(.Button),
 .Scope-post p a:not(.Button) {
   &:hover {
@@ -64,11 +67,18 @@ blockquote p em a {
 }
 
 .bg-neutral p a:not(.Button),
+.bg-neutral ul a,
 .bg-neutral .Link,
 .bg-neutral .Link-block a,
 .bg-neutral .nuxt-link-active span {
   --underline-bgimg: var(--c-neutral);
   --underline-textshadow: var(--c-neutral);
+}
+
+.no-link-block a,
+.bg-contact-block a {
+  --underline-textshadow: transparent !important;
+  background-image: none !important;
 }
 
 /* a:not(.Button) {

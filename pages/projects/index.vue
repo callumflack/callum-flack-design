@@ -1,10 +1,10 @@
 
 <template lang="pug">
 article
-  header.b-pb1(role="banner")
+  header.b-ptTitle.b-pb1(role="banner")
     .Container
-      .b-ptTitle.w-sm-10x12
-        h1.Supertitle.fw-300.m-b0
+      .w-sm-10x12
+        h1.Supertitle.m-b0
           | A selected archive of graphic design since 1999, and web development since 2010.
 
   main(role="main")
@@ -82,19 +82,11 @@ const twentyeighteen = [
     title: "Xeljanz Australia",
     client: "Sudler & Hennessey",
     tags: "Design",
-    link: ""
+    disabled: true
   }
 ];
 
 const twentyseventeen = [
-  {
-    title: "VJ Ray Strata Management",
-    link: "https://www.vjray.com.au/"
-  },
-  {
-    title: "AUM.ai",
-    link: ""
-  },
   {
     title: "RAATSICC",
     link: "/blog/raatsicc-community-outreach-website",
@@ -111,6 +103,15 @@ const twentyseventeen = [
   {
     title: "Lendfirst Financial",
     link: "https://lendfirst.com.au/"
+  },
+  {
+    title: "VJ Ray Strata Management",
+    link: "https://www.vjray.com.au/"
+  },
+  {
+    title: "AUM.ai",
+    medium: "Platform",
+    disabled: true
   }
 ];
 
@@ -217,32 +218,3 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-.Projects {
-  /* border-top: 1px solid var(--c-text); */
-  padding-left: var(--text-indent);
-}
-
-.Project-item {
-  border-bottom: 1px solid var(--c-border);
-  padding: var(--s-3) 0;
-  transition: all 150ms ease;
-
-  &:hover {
-    border-color: var(--c-text);
-    transition: all 150ms ease;
-  }
-
-  &:first-of-type {
-    /* border-top: 0; */
-    /* margin-top: -1px; */
-  }
-  &:last-of-type {
-    /* border-bottom: 1px solid var(--c-border); */
-  }
-}
-
-/* .Project-item + .Project-item {
-  margin-top: 0;
-} */
-</style>

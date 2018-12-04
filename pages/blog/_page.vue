@@ -13,7 +13,7 @@ div(:class="projectPageClass")
 
 <script>
 import Nav from "~/components/Nav.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock2.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 import Post from "~/components/Post.vue";
 
 export default {

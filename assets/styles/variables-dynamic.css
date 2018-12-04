@@ -60,12 +60,13 @@
 
 :root {
   --rfs-text-xs: 10px;
-  --rfs-text-sm: 13px;
+  --rfs-text-sm: 12px;
+  --rfs-text-meta: 13px;
   --rfs-text: 14px;
   --rfs-text-md: 14px;
   --rfs-text-lg: 16px;
   --rfs-heading: 16px;
-  --rfs-subtitle: 20px;
+  --rfs-subtitle: 17px;
   --rfs-title: 22px;
   --rfs-supertitle: 25px;
 }
@@ -73,6 +74,7 @@
   :root {
     --rfs-text-xs: 12px;
     --rfs-text-sm: 14px;
+    --rfs-text-meta: 15px;
     --rfs-text: 16px;
     --rfs-text-md: 16px;
     --rfs-text-lg: 19px;
@@ -91,6 +93,7 @@
   :root {
     --rfs-text-xs: 14px;
     --rfs-text-sm: 15px;
+    --rfs-text-meta: 17px;
     --rfs-text: 21px;
     --rfs-text-md: 24px;
     --rfs-text-lg: 27px;

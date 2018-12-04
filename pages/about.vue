@@ -35,8 +35,20 @@ article
 
   main(role="main")
     .Container
-      .Scope-post.Scope-post-dropcap
-        nuxtent-body(:body="page.body")
+      .FlexGrid.FlexGrid--noGutter.f-row
+        .w-1x3.w-lg-3x12
+          img(src="/images/cf-dwts-01-face2.jpg" alt="Callum Flack")
+        .w-2x3.w-lg-9x12
+          .bg-contact-block.h-100
+            .p-a5
+              p.Subtitle.fs-text-meta.m-b2 Get in touch
+              ul.Meta.flh-regular.fs-text-meta.u-listUnstyled
+                li #[a(target="_blank" href="mailto:callum@callumflack.design") callum@callumflack.design]
+                li #[a(target="_blank" href="tel:610-408-767-540") +61(0) 408 767 540]
+                li #[a(target="_blank" href="https://twitter.com/callumflack") @callumflack]
+
+      .Scope-post.p-t5
+        nuxtent-body(v-bind:body="page.body")
 
 </template>
 
@@ -49,11 +61,11 @@ export default {
   components: {
     ImageCld
   },
-  props: {
+  /* props: {
     title: String,
     lede: String,
     heroImage: String
-  },
+  }, */
   head() {
     return {
       title: `${this.page.title}—Callum Flack Design`,
@@ -66,7 +78,6 @@ export default {
       ]
     };
   },
-  scrollToTop: false,
   async asyncData({ app, route }) {
     return {
       page: await app.$content("/pages").get(route.path)
@@ -76,67 +87,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-@import "../assets/styles/variables.css";
-
-.Blend {
-  background-blend-mode: multiply;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.9) 40%,
-    rgba(0, 0, 0, 0.05) 80%
-  );
-}
-
-.w-su-5x12 {
-  @media (--su) {
-    width: calc(6 / 12 * 100%) !important;
-  }
-}
-
-.Hero {
-  padding-bottom: 62.5%;
-
-  @media (--md) {
-    padding-bottom: 80%;
-  }
-  @media (--xl) {
-    padding-bottom: 90%;
-  }
-}
-.Hero2 {
-  padding-bottom: 75%;
-
-  @media (--md) {
-    /* padding-bottom: 80%; */
-  }
-  @media (--xl) {
-    padding-bottom: 75%;
-  }
-}
-
-.FlexGrid--hero {
-  flex-direction: column;
-
-  @media (--mdl) {
-    flex-direction: row;
-  }
-
-  /* manually manage .Hero within the grid when the cells are stacked */
-  & > *:first-child {
-    /* padding-bottom: 62.5%; */
-
-    /* @media (max-width: 768px) {
-      padding-bottom: 62.5%;
-    }
-    @media (max-width: 1024px) {
-      padding-bottom: 80%;
-    } */
-  }
-}
-
-.w-mdl-1x2 {
-  @media (--mdl) {
-    width: 50%;
-  }
+.fs-text-meta {
+  font-size: var(--rfs-text-meta);
 }
 </style>

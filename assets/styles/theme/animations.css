@@ -23,7 +23,7 @@
 @keyframes headerIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -31,14 +31,15 @@
   }
 }
 
-.Header--animate {
-  animation: headerIn 500ms cubic-bezier(0.19, 1, 0.22, 1) 400ms 1 normal both;
+.Header--animate,
+.Animate {
+  animation: headerIn 4500ms cubic-bezier(0.19, 1, 0.22, 1) 400ms 1 normal both;
 }
 
 @keyframes contentIn {
   from {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;

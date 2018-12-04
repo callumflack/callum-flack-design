@@ -95,6 +95,10 @@ export default {
 }
 
 .open {
+  /* themeable */
+  --open-c-border: var(--c-text);
+  --open-c-bg: var(--c-bg);
+
   animation: open 0.5s ease-in-out forwards;
   /* box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25), 0 19px 70px 0 rgba(0, 0, 0, 0.1); */
   /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15); */
@@ -107,15 +111,15 @@ export default {
 
 @keyframes collapse {
   from {
-    opacity: 1;
     /* background-color: var(--c-white); */
     /* border-bottom: 1px solid transparent; */
+    opacity: 1;
     top: 0;
   }
   to {
-    opacity: 0;
     /* background-color: transparent; */
     /* border-bottom: 1px solid transparent; */
+    opacity: 0;
     top: -100%;
   }
 }
@@ -129,8 +133,8 @@ export default {
   }
   to {
     opacity: 1;
-    background-color: var(--c-bg);
-    border-bottom: 1px solid var(--c-text);
+    background-color: var(--open-c-bg);
+    border-bottom: 1px solid var(--open-c-border);
     top: 0;
   }
 }

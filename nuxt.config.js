@@ -37,7 +37,7 @@ module.exports = {
     https://github.com/nuxt-community/style-resources-module
   */
   styleResources: {
-    css: ["./assets/styles/variables.css", "./assets/styles/variables-dynamic.css"]
+    css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
   },
 
   router: {

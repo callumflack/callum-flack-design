@@ -1,7 +1,13 @@
 <template lang="pug">
-  nuxt
+  nuxt(:class="currentPageClass")
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    currentPageClass() {
+      return `page-${this.$store.state.currentPage}`;
+    }
+  }
+};
 </script>

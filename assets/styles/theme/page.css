@@ -27,6 +27,26 @@
 
 /* 
 
+  Newsletter block 
+
+ */
+
+/* .Block {
+  --c-block: var(--c-text);
+  --bg-block: var(--c-bg);
+
+  background-color: var(--bg-block);
+  border: 1px solid var(--c-block);
+  border-left: 0;
+  color: var(--c-block);
+}
+
+.Block-cell {
+  border-left: 1px solid var(--c-block);
+} */
+
+/* 
+
   Separators & misc things 
 
  */
@@ -69,8 +89,22 @@
 
  */
 
+.Text--liningNums {
+  font-variant-numeric: lining-nums;
+}
+
 .bg-neutral-dark {
   background-color: var(--c-neutral-dark);
+}
+
+.bg-contact-block {
+  /* background-color: #2242dc;
+  background-color: rgb(223, 226, 239);
+  background-color: rgb(225, 230, 249);
+  background-color: rgb(211, 220, 255);
+  background-color: var(--c-contact-block); */
+  border: 1px solid var(--c-text);
+  border-left: 0;
 }
 
 .Extract-md {
@@ -113,24 +147,5 @@
 
   .lg-AspectRatio--10x4 {
     padding-bottom: 40%;
-  }
-}
-
-/* 
-
-  Littoral icon
-
- */
-
-.LittoralIcon {
-  margin-right: 0.25em;
-  transform: translateY(3px);
-
-  @media (min-width: 768px) {
-    margin-right: 0.2em;
-    transform: translateY(2px);
-  }
-  @media (min-width: 1280px) {
-    transform: translateY(4px);
   }
 }

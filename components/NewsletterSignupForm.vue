@@ -1,30 +1,29 @@
 <template lang="pug">
-  form.form.Text(
+  form.Form.Text(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
     target='_blank', 
     novalidate
   )
-    .form-group
+    input(
+      placeholder="Add your email", 
+      type="email", 
+      name="EMAIL", 
+      value=""
+    )
+    div(style="position: absolute; left: -5000px;", aria-hidden="true")
       input(
-        placeholder="Add your email", 
-        type="email", 
-        name="EMAIL", 
+        type="text", 
+        name="b_b6d465003f797d00bb8c2a7a0_3eb35e7129", 
+        tabindex="-1", 
         value=""
       )
-      div(style="position: absolute; left: -5000px;", aria-hidden="true")
-        input(
-          type="text", 
-          name="b_b6d465003f797d00bb8c2a7a0_3eb35e7129", 
-          tabindex="-1", 
-          value=""
-        )
-      button.Button.Button--transparent.Text(
-        type="submit", 
-        name="subscribe", 
-      ) {{ buttonText }} 
-      // #[span.LinkSignal-target →]
+    button.Button.Button--transparent.Text(
+      type="submit", 
+      name="subscribe", 
+    ) {{ buttonText }} 
+    // #[span.LinkSignal-target →]
 </template>
 
 <script>
@@ -43,12 +42,11 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 @import "../assets/styles/variables.css";
-@import "../assets/styles/variables-dynamic.css";
+/* @import "../assets/styles/variables-dynamic.css"; */
 
-.form-group {
-  background-color: var(--c-white);
+.Form {
   border-top: 1px solid var(--c-text);
   display: flex;
   flex-direction: column;
@@ -69,8 +67,7 @@ export default {
   }
 }
 
-.form input {
-  /* border-bottom: 1px solid var(--c-text); */
+.Form input {
   box-shadow: none;
   color: var(--c-text);
 

@@ -7,9 +7,11 @@
     :class="disabledClass"
   )
     span.m-r5 {{ title }}
-    span.Meta.Project-item-span {{ medium }}
+    span.Meta.Project-item-span(v-if="medium") {{ medium }}
+    span.Meta.Project-item-span(v-if="tags") {{ tags }}
     span.Meta.Project-item-span(v-if="client") {{ client }}
-    span.Meta.Project-item-span {{ tags }}
+    span.Meta.Project-item-span(v-if="number") {{ number }}
+    span.Meta.Project-item-span(v-if="date") {{ date }}
     span.Text.Project-item-target.icon-targetBlank.m-lA &nbsp;
 
   nuxt-link.Project-item.Text.f(
@@ -18,9 +20,11 @@
     :to="link"
   )
     span.m-r5 {{ title }}
-    span.Meta.Project-item-span {{ medium }}
+    span.Meta.Project-item-span(v-if="medium") {{ medium }}
+    span.Meta.Project-item-span(v-if="tags") {{ tags }}
     span.Meta.Project-item-span(v-if="client") {{ client }}
-    span.Meta.Project-item-span {{ tags }}
+    span.Meta.Project-item-span(v-if="number") {{ number }}
+    span.Meta.Project-item-span(v-if="date") {{ date }}
     span.Meta.Project-item-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Case study
 
   //- todo: req's learning slots
@@ -35,6 +39,10 @@ export default {
   components: {},
   props: {
     client: String,
+    date: String,
+    link: String,
+    number: String,
+    title: String,
     disabled: {
       type: Boolean,
       default: false
@@ -43,7 +51,6 @@ export default {
       type: Boolean,
       default: true
     },
-    link: String,
     medium: {
       type: String,
       default: "Website"
@@ -51,8 +58,7 @@ export default {
     tags: {
       type: String,
       default: "Design, Frontend"
-    },
-    title: String
+    }
   },
   computed: {
     disabledClass() {
