@@ -137,10 +137,6 @@ const twentysixteen = [
     external: false
   },
   {
-    title: "Melbourne Soul Weekender 10 Years",
-    link: "https://soul-melbourne.now.sh/"
-  },
-  {
     title: "Primary Healthcare Network NQ",
     link: "/blog/primary-healthcare-network-patient-survey-app",
     external: false
@@ -161,27 +157,14 @@ const twentyfifteen = [
     link: "http://www.ward6.asia/"
   },
   {
-    title: "Pharma iPad apps",
-    client: "Ward6",
-    link: "/blog/ward6-pharmaceutical-ipad-apps",
-    external: false
-  },
-  {
-    title: "Bellflower",
-    link: "http://bellflowerchinesemedicine.com.au/",
-    disabled: true,
-    published: false
+    title: "X",
+    link: "http://www.ward6.asia/"
   }
 ];
 
 const twentythirteen = [
   {
-    title: "Village Melbourne",
-    disabled: true
-  },
-  {
     title: "Ellis Jones Communications",
-    tags: "Design",
     link: "https://ellisjones.com.au/"
   }
 ];
@@ -191,10 +174,25 @@ export default {
     ImageCld,
     ProjectListItem
   },
-  computed: {
-    /* filterPublishedProjects() {
-      return this.item.filter(item => item.published !== false);
-    } */
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    external: {
+      type: Boolean,
+      default: true
+    },
+    link: String,
+    medium: {
+      type: String,
+      default: "Website"
+    },
+    tags: {
+      type: String,
+      default: "Design, Frontend"
+    },
+    title: String
   },
   data() {
     return {
