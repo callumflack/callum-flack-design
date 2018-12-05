@@ -10,200 +10,53 @@ article
   main(role="main")
     .Container
 
-      h2.Subtitle.m-b2 2018
-      .Projects
-        ProjectListItem(
-          v-for="item in twentyeighteen"
-          v-bind="item"
-          v-bind:key="item.title"
-        )
-
-      h2.Subtitle.m-b2.b-pt075 2017
-      .Projects
-        ProjectListItem(
-          v-for="item in twentyseventeen"
-          v-bind="item"
-          v-bind:key="item.title"
-        )
-
-      h2.Subtitle.m-b2.b-pt075 2016
-      .Projects
-        ProjectListItem(
-          v-for="item in twentysixteen"
-          v-bind="item"
-          v-bind:key="item.title"
-        )
-
-      h2.Subtitle.m-b2.b-pt075 2015
-      .Projects
-        ProjectListItem(
-          v-for="item in twentyfifteen"
-          v-bind="item"
-          v-bind:key="item.title"
-        )
-
-      h2.Subtitle.m-b2.b-pt075 2013
-      .Projects
-        ProjectListItem(
-          v-for="item in twentythirteen"
-          v-bind="item"
-          v-bind:key="item.title"
-        )
+      template(
+        v-for="(year, index) in reverseProjects"
+        v-bind="year"
+      )
+        h2.Subtitle.Projects-year {{ 2018 - index }}
+        .Projects
+          ProjectListItem(
+            v-for="project in year"
+            v-if="project.published !== false"
+            v-bind="project"
+            v-bind:key="project.title"
+            v-bind:link="project.link"
+            v-bind:title="project.title"
+            v-bind:medium="project.medium"
+            v-bind:tags="project.tags"
+            v-bind:client="project.client"
+          )
 
 </template>
 
 <script>
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
 import ProjectListItem from "~/components/ProjectListItem.vue";
-
-/* src-placeholder="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_50,e_blur:300/https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg" */
-
-const twentyeighteen = [
-  {
-    title: "The Ki Line",
-    client: "Ki",
-    link: "https://thekiline.com/",
-    disabled: true
-  },
-  {
-    title: "BrandHook",
-    link: "https://brandhook.com.au/"
-  },
-  {
-    title: "Edge Hill Butchery",
-    link: "https://edgehillbutchery.com.au/"
-  },
-  {
-    title: "Evernote Random Note",
-    client: "Forte Labs",
-    link: "https://evernote-random.glitch.me/"
-  },
-  {
-    title: "Xeljanz Australia",
-    client: "Sudler & Hennessey",
-    tags: "Design",
-    disabled: true
-  }
-];
-
-const twentyseventeen = [
-  {
-    title: "RAATSICC",
-    link: "/blog/raatsicc-community-outreach-website",
-    external: false
-  },
-  {
-    title: "Oceanblue Boats",
-    link: "https://oceanblueboats.com.au/"
-  },
-  {
-    title: "Album Registry",
-    link: "https://albumregistry.com/"
-  },
-  {
-    title: "Lendfirst Financial",
-    link: "https://lendfirst.com.au/"
-  },
-  {
-    title: "VJ Ray Strata Management",
-    link: "https://www.vjray.com.au/"
-  },
-  {
-    title: "AUM.ai",
-    medium: "Platform",
-    disabled: true
-  }
-];
-
-const twentysixteen = [
-  {
-    title: "Gravitas Energy",
-    tags: "Design, Frontend",
-    disabled: true
-  },
-  {
-    title: "Wild Aviation",
-    link: "https://wildaviationservices.com.au/"
-  },
-  {
-    title: "Billy's Coffee",
-    link: "https://billyscoffeecairns.com.au/"
-  },
-  {
-    title: "Papa Chango",
-    medium: "Packaging",
-    tags: "Design",
-    link: "/blog/raatsicc-community-outreach-website",
-    external: false
-  },
-  {
-    title: "Melbourne Soul Weekender 10 Years",
-    link: "https://soul-melbourne.now.sh/"
-  },
-  {
-    title: "Primary Healthcare Network NQ",
-    link: "/blog/primary-healthcare-network-patient-survey-app",
-    external: false
-  },
-  {
-    title: "The Substation",
-    link: "http://www.thesubstation.org.au/"
-  },
-  {
-    title: "Oceanblue Living",
-    link: "https://oceanblueliving.com.au/"
-  }
-];
-
-const twentyfifteen = [
-  {
-    title: "Ward6",
-    link: "http://www.ward6.asia/"
-  },
-  {
-    title: "Pharma iPad apps",
-    client: "Ward6",
-    link: "/blog/ward6-pharmaceutical-ipad-apps",
-    external: false
-  },
-  {
-    title: "Bellflower",
-    link: "http://bellflowerchinesemedicine.com.au/",
-    disabled: true,
-    published: false
-  }
-];
-
-const twentythirteen = [
-  {
-    title: "Village Melbourne",
-    disabled: true
-  },
-  {
-    title: "Ellis Jones Communications",
-    tags: "Design",
-    link: "https://ellisjones.com.au/"
-  }
-];
+import projects from "./projects.js";
 
 export default {
   components: {
-    ImageCld,
     ProjectListItem
-  },
-  computed: {
-    /* filterPublishedProjects() {
-      return this.item.filter(item => item.published !== false);
-    } */
   },
   data() {
     return {
-      twentyeighteen,
-      twentyseventeen,
-      twentysixteen,
-      twentyfifteen,
-      twentythirteen
+      projects
     };
+  },
+  computed: {
+    /* 
+      1. turn the object into an array with Object.values() b/c can't order Objects
+      2. reverse it
+    */
+    reverseProjects() {
+      return Object.values(this.projects).reverse();
+    }
+    /* projectsYear() {
+      return this.reverseProjects.map(i => 2018 - index);
+    } */
+    /* filterPublishedProjects() {
+      return this.projects.filter(project => project.published !== false);
+    } */
   },
   head() {
     return {

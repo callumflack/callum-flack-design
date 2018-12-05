@@ -27,16 +27,11 @@
     span.Meta.Project-item-span(v-if="date") {{ date }}
     span.Meta.Project-item-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Case study
 
-  //- todo: req's learning slots
-  //- disabled link
-  //- internal case link
-
 </template>
 
 <script scoped>
 export default {
   name: "ProjectListItem",
-  components: {},
   props: {
     client: String,
     date: String,
@@ -54,6 +49,10 @@ export default {
     medium: {
       type: String,
       default: "Website"
+    },
+    published: {
+      type: Boolean,
+      default: true
     },
     tags: {
       type: String,
@@ -123,11 +122,25 @@ export default {
 
 /* disabled */
 .Project-item.is-disabled {
-  cursor: not-allowed;
+  cursor: initial;
   border-bottom: 1px solid var(--c-border) !important;
 
   & span {
-    opacity: 0.5 !important;
+    /* opacity: 0.333 !important; */
+  }
+
+  & span:first-child {
+    /* text-decoration: line-through; */
+    position: relative;
+
+    &:after {
+      border-bottom: 1px solid var(--c-text);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 53%;
+      width: 100%;
+    }
   }
 
   & span:after {
