@@ -19,50 +19,53 @@ div
             //-   span {{ tag }}
               //- span(v-if="index !== tags.length - 1") ,&nbsp;
               //- span(v-else) .
+
   main.Container.b-pt075(role="main")
     PostExcerpt(
-      v-if="post.published && post.category != 'project'"
+      v-if="post.published && post.category !== 'project'"
       v-for="post in posts"
       v-bind="post"
       v-bind:key="post.title"
+      v-bind:title="post.title"
+      v-bind:date="post.date"
+      v-bind:category="post.category"
+      v-bind:readingTime="post.readingTime"
+      v-bind:lede="post.lede"
+      v-bind:permalink="post.permalink"
     )
 
 </template>
 
 <script>
 import PostExcerpt from "~/components/PostExcerpt3.vue";
-import PostExcerptMostRecent from "~/components/PostExcerptMostRecent.vue";
-import Post from "~/components/Post.vue";
 
-const trimTags = tags => tags.map(tag => tag.trim());
+/* const trimTags = tags => tags.map(tag => tag.trim());
 
 function projectTagStringToList(projectTags) {
   const trimmedProjectTags = projectTags.endsWith(",")
     ? projectTags.substring(0, projectTags.length - 1)
     : projectTags;
   return trimTags(trimmedProjectTags.split(","));
-}
+} */
 
 export default {
   name: "blog",
   components: {
-    PostExcerpt,
-    PostExcerptMostRecent,
-    Post
+    PostExcerpt
   },
   data() {
     return {
       posts: []
     };
   },
-  computed: {
+  /* computed: {
     mostRecentPost() {
       return this.posts.filter(post => post.mostRecentPost === true);
     },
     everyOtherPost() {
       return this.posts.filter(post => post.mostRecentPost !== true);
     }
-  },
+  }, */
   async asyncData({ app }) {
     const posts = await app.$content("/posts").getAll();
 

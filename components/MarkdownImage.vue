@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/variables.css";
+/* @import "../assets/styles/variables.css"; */
 
 .figure img {
   margin: 0 auto;

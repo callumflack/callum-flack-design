@@ -76,7 +76,7 @@
 
   --c-gray: #aaa;
   --c-border: #e5e5e5;
-  --c-rule: rgba(0, 0, 0, 0);
+  --c-rule: rgba(0, 0, 0, 0.1);
   --c-device: #e7e7e7;
 
   --c-neutral: #eee;

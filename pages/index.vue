@@ -112,7 +112,6 @@ export default {
     if (!from) return "slide-left";
     return "slide-right";
   }, */
-  /* scrollToTop: false, */
   async asyncData({ app }) {
     let posts = await app.$content("/posts").getAll();
     /* show loading component */
@@ -126,8 +125,8 @@ export default {
 
 <style lang="postcss">
 .page-index {
-  --html-bg: var(--c-black);
-  --html-c: var(--c-bg);
+  /* --html-bg: var(--c-black);
+  --html-c: var(--c-bg); */
   --c-indexbg: var(--c-orange);
   --c-indexbg: #2242dc;
   --c-text-underline: var(--c-bg);

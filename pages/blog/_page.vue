@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     projectPageClass() {
-      return this.page.category === "project" && "bg-neutral";
+      return this.page.category === "project" && "page-project";
     }
   },
   async asyncData({ app, route }) {
@@ -54,3 +54,33 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+/* .page-blog-page >>> .figure {
+  border: 1px solid var(--c-rule);
+} */
+
+.page-project {
+  --c-projectbg: var(--c-neutral);
+  background-color: var(--c-projectbg);
+}
+
+.page-project {
+  & >>> .nuxt-link-active span,
+  & >>> p a:not(.Button),
+  & >>> .Text a:not(.Button),
+  & >>> .Scope-post p a:not(.Button) {
+    --underline-bgimg: var(--c-projectbg);
+    --underline-hover: currentColor;
+    text-shadow: initial;
+  }
+}
+
+.page-project .open {
+  --open-c-bg: var(--c-neutral);
+}
+
+.page-project .Block {
+  --bg-block: transparent;
+}
+</style>

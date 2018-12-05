@@ -3,6 +3,15 @@
   padding-left: var(--text-indent);
 }
 
+.Projects-year {
+  margin-bottom: 0;
+  padding-top: calc(0.75 * var(--rs-block-space));
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
 .Project-item {
   border-bottom: 1px solid var(--c-border);
   padding: var(--s-3) 0;
