@@ -109,15 +109,9 @@
   
    */
 
-  /* --ff-text: "Text"; */
   --ff-title: "Title";
   --ff-text: "Text";
   --ff-meta: "Meta";
-
-  --ff-text-meta: var(--ff-title);
-  --ff-text-subheading: var(--ff-title);
-  --ff-text-subheading: var(--ff-text-bold);
-  --ff-button: var(--ff-text-meta);
 
   --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
   --ff-stack-sans: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;

@@ -56,7 +56,7 @@ p em {
  */
 
 .Meta {
-  font-family: var(--ff-meta), var(--ff-stack-sans);
+  /* font-family: var(--ff-meta), var(--ff-stack-sans); */
   font-family: var(--ff-stack-sans);
   font-size: var(--rfs-text-xs);
   font-weight: 400;

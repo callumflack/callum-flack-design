@@ -4342,9 +4342,9 @@ levn@^0.3.0, levn@~0.3.0:
     type-check "~0.3.2"
 
 linkify-it@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.0.3.tgz#d94a4648f9b1c179d64fa97291268bdb6ce9434f"
-  integrity sha1-2UpGSPmxwXnWT6lykSaL22zpQ08=
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.1.0.tgz#c4caf38a6cd7ac2212ef3c7d2bde30a91561f9db"
+  integrity sha512-4REs8/062kV2DSHxNfq5183zrqXMl7WP0WzABH9IeJI+NLm429FgE1PDecltYfnOoFDFlZGh2T8PfZn0r+GTRg==
   dependencies:
     uc.micro "^1.0.1"
 
@@ -4993,7 +4993,7 @@ nuxt@^2.3.4:
     "@nuxt/webpack" "2.3.4"
     "@nuxtjs/opencollective" "^0.2.0"
 
-nuxtent@1.4.1:
+nuxtent@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/nuxtent/-/nuxtent-1.4.1.tgz#d3756d9eeecb1cda6f874117b08a20b2c049be87"
   integrity sha512-khdzkyuU0myJ2z/NE3QCi2f64hTtw5j1iLmlKzDbyGDxSPVGxpcJS0Lof+sA3bgRJIgWxyslCnJN6EIHqz79cA==
@@ -5299,9 +5299,9 @@ path-to-regexp@0.1.7:
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
 path-to-regexp@^2.0.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
-  integrity sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
+  integrity sha512-G6zHoVqC6GGTQkZwF4lkuEyMbVOjoBKAEybQUypI1WTkqinCOrq2x6U2+phkJ1XsEMTy4LjtwPI7HW+NVrRR2w==
 
 path-type@^3.0.0:
   version "3.0.0"

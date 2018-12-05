@@ -89,6 +89,10 @@
 
  */
 
+.image-multiply {
+  mix-blend-mode: multiply;
+}
+
 .Text--liningNums {
   font-variant-numeric: lining-nums;
 }

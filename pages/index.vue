@@ -1,22 +1,27 @@
 <template lang="pug">
-div
+.u-relative
+  .AspectRatio-object
+    //- img.image-multiply(v-bind:src="selectedImage")
+    img.image-multiply(src="/images/_sagatiba-bw-181201B.jpg")
+    //- img.image-multiply(src="/images/_millennius-detail.jpg")
+
   Nav.Animate
 
   .b-clearFixedNav.b-pb15
     article
       .Animate
         .Container
-          .w-sm-11x12
-            h1.Supertitle.b-ptTitle.m-b0.b-pb1
-              //- | Make the complex simple#[br]
-              //- | and the simple unique.
-              //- | Callum Flack is a graphic designer turned
-              //- | frontend developer.
-              | Designed for deeper attention.
-              | Built with a finer intuition. 
-              //- | Build to anticipate people. 
-              //- span.u-block.m-t4 Why does this matter?
-              //- | ux engineer
+            .w-sm-10x12
+              h1.Supertitle.b-ptTitle.m-b0.b-pb1
+                //- | Make the complex simple#[br]
+                //- | and the simple unique.
+                //- | Callum Flack is a graphic designer turned
+                //- | frontend developer.
+                | Design for deeper attention.
+                | Build with a finer intuition. 
+                //- | Build to anticipate people. 
+                //- span.u-block.m-t4 Why does this matter?
+                //- | ux engineer
 
             .Scope-post.Scope-post-dropcap
               div
@@ -87,16 +92,26 @@ export default {
     NewsletterSignupBlock,
     Nav
   },
+  data() {
+    return {
+      images: [
+        "/images/_index-1.jpg",
+        "/images/_overcast-night.jpg",
+        "/images/_sagatiba-bw-181201B.jpg"
+      ],
+      selectedImage: ""
+    };
+  },
+  created() {
+    /* https://stackoverflow.com/questions/45752960/how-to-get-random-element-in-vue-js */
+    const idx = Math.floor(Math.random() * this.images.length);
+    this.selectedImage = this.images[idx];
+  }
   /* computed: {
     homePagePost() {
       return this.posts.filter(post => post.showOnHomePage === true);
     }
   }, */
-  data() {
-    return {
-      posts: []
-    };
-  },
   /* methods: {
     handleModalToggle() {
       this.$store.commit(
@@ -112,14 +127,6 @@ export default {
     if (!from) return "slide-left";
     return "slide-right";
   }, */
-  async asyncData({ app }) {
-    let posts = await app.$content("/posts").getAll();
-    /* show loading component */
-    /* await timeout(500); */
-    return {
-      posts
-    };
-  }
 };
 </script>
 
@@ -135,15 +142,16 @@ export default {
   /* animation: page 2150ms cubic-bezier(0.19, 1, 0.22, 1),
     bgimg 3000ms cubic-bezier(0.19, 1, 0.22, 1); */
   /* animation: bgcolor 500ms ease, bgblur 2000ms cubic-bezier(0.19, 1, 0.22, 1); */
-  animation: bgcolor 3000ms cubic-bezier(0.19, 1, 0.22, 1),
+  /* animation: bgcolor 3000ms cubic-bezier(0.19, 1, 0.22, 1),
     bgblur 2500ms cubic-bezier(0.19, 1, 0.22, 1),
-    bgimg 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    bgimg 500ms cubic-bezier(0.19, 1, 0.22, 1); */
+  animation: bgcolor 2000ms cubic-bezier(0.19, 1, 0.22, 1);
   background-color: rgba(0, 0, 0, 0.8);
   background-color: var(--c-indexbg);
   background-blend-mode: multiply;
-  background-image: url("/images/_index-1.jpg");
+  /* background-image: url("/images/_index-1.jpg");
   background-image: url("/images/_overcast-night.jpg");
-  background-image: url("/images/_sagatiba-bw-181201B.jpg");
+  background-image: url("/images/_sagatiba-bw-181201B.jpg"); */
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,13 +164,14 @@ export default {
 
 @keyframes bgcolor {
   from {
-    background-color: var(--html-bg);
+    background-color: var(--c-bg);
   }
   to {
     background-color: var(--c-indexbg);
   }
 }
 
+/* only if bgimg on parent div */
 @keyframes bgimg {
   from {
     background-image: initial;

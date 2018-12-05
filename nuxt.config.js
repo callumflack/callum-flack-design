@@ -59,9 +59,9 @@ module.exports = {
 
   modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
 
-  axios: {
+  /* axios: {
     credentials: false
-  },
+  }, */
 
   generate: {
     routes: [
