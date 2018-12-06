@@ -37,7 +37,9 @@ article
     .Container
       .FlexGrid.FlexGrid--noGutter.f-row
         .w-1x3.w-lg-3x12
-          img(src="/images/cf-dwts-01-face2.jpg" alt="Callum Flack")
+          .AspectRatio(style="padding-bottom:125%")
+            .AspectRatio-object
+              ImageCld.bg-text.m-a0(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg" alt="Callum Flack")
         .w-2x3.w-lg-9x12
           .Contact.h-100
             .p-a5
