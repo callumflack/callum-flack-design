@@ -18,13 +18,13 @@ export default {
   components: {},
   computed: {
     isVisible: function() {
-      return this.$store.state.isMobileNavVisible;
+      return this.$store.state.isModalVisible;
     }
   },
 
   methods: {
     handleNavToggle() {
-      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isModalVisible);
     },
 
     hideNav() {
@@ -81,8 +81,7 @@ export default {
     transition: box-shadow 1s ease;
 
     &:hover {
-      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15),
-        0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15), 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
       transition: box-shadow 1s ease;
     }
   }

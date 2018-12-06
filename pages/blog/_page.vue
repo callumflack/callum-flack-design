@@ -1,41 +1,48 @@
 <template lang="pug">
-.b-pb3
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 1.
-      span Blog
-    //- .Extract-large
-      hr
-  Post(
-    :body="page.body"
-    :category="page.category"
-    :date="page.date"
-    :heroImage="page.heroImage"
-    :heroImageNoShadow="page.heroImageNoShadow"
-    :heroRatio="page.heroRatio"
-    :link="page.permalink"
-    :mostRecentPost = "page.mostRecentPost"
-    :readingTime="page.readingTime"
-    :tags="page.tags"
-    :title="page.title"
-    :updated="page.updated"
-  )
-  //- .Container.p-b7
-    .figure.figure--post
+div(:class="projectPageClass")
+  Nav
+
+  .b-clearFixedNav.b-pb15
+    Post(
+      v-bind="page"
+      v-bind:heroImage="page.heroImage"
+      v-bind:heroRatio="page.heroRatio"
+      v-bind:title="page.title"
+      v-bind:date="page.date"
+      v-bind:category="page.category"
+      v-bind:readingTime="page.readingTime"
+      v-bind:blockColor="page.blockColor"
+      v-bind:body="page.body"
+      v-bind:updated="page.updated"
+    )
+
+  footer.b-pb4
+    .Container
       NewsletterSignupBlock
+
 </template>
 
 <script>
+import Nav from "~/components/Nav.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
 import Post from "~/components/Post.vue";
 
 export default {
+  layout: "blank",
   components: {
-    Post
+    Nav,
+    Post,
+    NewsletterSignupBlock
   },
   data() {
     return {
       page: {}
     };
+  },
+  computed: {
+    projectPageClass() {
+      return this.page.category === "project" && "page-project";
+    }
   },
   async asyncData({ app, route }) {
     const page = await app.$content("/posts").get(route.path);
@@ -58,3 +65,33 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+/* .page-blog-page >>> .figure {
+  border: 1px solid var(--c-rule);
+} */
+
+.page-project {
+  --c-projectbg: var(--c-neutral);
+  background-color: var(--c-projectbg);
+}
+
+.page-project {
+  & >>> .nuxt-link-active span,
+  & >>> p a:not(.Button),
+  & >>> .Text a:not(.Button),
+  & >>> .Scope-post p a:not(.Button) {
+    --underline-bgimg: var(--c-projectbg);
+    --underline-hover: currentColor;
+    text-shadow: initial;
+  }
+}
+
+.page-project .open {
+  --open-c-bg: var(--c-neutral);
+}
+
+.page-project .Block {
+  --bg-block: transparent;
+}
+</style>

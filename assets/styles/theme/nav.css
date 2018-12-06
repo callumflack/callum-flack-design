@@ -1,0 +1,74 @@
+.Nav {
+  backface-visibility: hidden;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* .Nav .Nav-list {
+  opacity: 0;
+  transition: opacity 150ms var(--thisalso);
+}
+
+.Nav:hover .Nav-list {
+  opacity: 1;
+  transition: opacity 150ms var(--thisalso);
+} */
+
+.Nav-logo {
+  transform: translateY(0.125em);
+}
+
+.Nav-divider {
+  transform: translateY(-0.1875em);
+}
+
+/* 
+
+  NAV LINK
+
+*/
+
+.Nav-link {
+  align-items: center;
+  display: inline-flex;
+  height: var(--nav-height);
+}
+
+.Nav-link + .Nav-link {
+  /* margin-left: calc(1.25 * var(--rs-space)); */
+}
+
+.Nav-link,
+.Nav-link:hover {
+  text-decoration: none;
+  color: var(--c-text);
+
+  &:not(.nuxt-link-active) {
+    background-image: initial;
+  }
+}
+
+/* .nuxt-link-active span {
+  position: relative;
+
+  &:after {
+    background-color: currentColor;
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -0.25em;
+  }
+} */
+
+/* .nuxt-link-exact-active {
+  cursor: initial;
+
+  &:hover,
+  &:active {
+    color: var(--c-text);
+  }
+} */

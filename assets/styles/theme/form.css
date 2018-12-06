@@ -1,0 +1,76 @@
+/*
+
+  Forms
+
+ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  /* & * + * {
+    margin: 0;
+    margin-top: -1px;
+  } */
+
+  @media (--sm) {
+    flex-direction: row;
+
+    & * + * {
+      margin-left: -1px;
+      /* margin-left: var(--s-2); */
+      margin-top: 0;
+    }
+  }
+}
+
+/* input:not([type-file]),
+textarea,
+button {
+  border: 0;
+}
+
+input:not([type-file]),
+textarea {
+  font-family: inherit;
+  font-size: inherit; 
+  background-color: white;
+}
+
+input:not([type-file]),
+select,
+textarea {
+  letter-spacing: inherit;
+  text-transform: inherit;
+  width: 100%;
+} */
+
+/* REBASS THEME */
+
+/* input {
+  appearance: none;
+  border: 0;
+  border-bottom: 1px solid var(--c-text);
+  box-shadow: inset 0 0 0 2px var(--c-text);
+  display: inline-block;
+  font-family: inherit;
+  height: var(--field-height);
+  line-height: inherit;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px var(--c-text);
+  }
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: inherit;
+  color: inherit;
+  background-color: var(--c-bg);
+  padding: var(--field-space);
+} */

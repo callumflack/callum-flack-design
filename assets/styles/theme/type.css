@@ -2,6 +2,7 @@
   -------------------------------------------------
 
   Text
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-numeric
 
   -------------------------------------------------
  */
@@ -11,14 +12,14 @@ ul,
 .Text,
 .Text--sm,
 blockquote p em {
-  font-size: var(--fs-text);
+  font-size: var(--rfs-text);
   font-weight: 400;
   letter-spacing: var(--fls-text);
   line-height: var(--flh-regular);
+  font-variant-numeric: oldstyle-nums; /* 1 */
 }
 
-p em,
-.Text--italic {
+p em {
   font-style: italic;
 }
 
@@ -30,43 +31,13 @@ p em,
   -------------------------------------------------
  */
 
-/* .Text--meta {
-  font-family: var(--ff-text-title-light), var(--ff-stack-sans);
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-size: var(--fs-meta);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1;
-  text-transform: uppercase;
-} */
-
 .Meta {
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-size: calc(1.15 * var(--fs-meta));
+  /* font-family: var(--ff-meta), var(--ff-stack-sans); */
+  font-family: var(--ff-stack-sans);
+  font-size: var(--rfs-text-xs);
   font-weight: 400;
-  letter-spacing: var(--fls-loose);
-  letter-spacing: 0.05em;
-  letter-spacing: 0.025em !important;
+  letter-spacing: 0.0125em;
   line-height: 1;
-  /* text-transform: uppercase; */
-
-  @media (--sm) {
-    font-size: var(--fs-meta);
-  }
-}
-
-.Logo {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  font-size: 12px;
-  font-size: var(--fs-meta);
-  line-height: 1;
-  letter-spacing: 0.666em;
-
-  & a:hover {
-    color: var(--c-link);
-  }
 }
 
 /* 
@@ -83,144 +54,112 @@ p em,
 .Scope-post h3,
 .nl-content h3 {
   font-family: var(--ff-text), var(--ff-stack-serif);
-  /* resetting ems before applying font sizing: */
-  /* font-size: calc((16 / (var(--fs-text-unit) * 16)) * var(--fs-text)) !important; */
-  font-size: var(--fs-subheading);
+  font-size: var(--rfs-subheading);
   font-weight: 600;
-  /* letter-spacing: 0.05em;
-  line-height: var(--flh-regular);
-  text-transform: uppercase; */
 }
 
 /* 
   -------------------------------------------------
 
-  Ginto
+  Titles
 
   -------------------------------------------------
 */
 
 .Scope-post h2,
 .Subheading,
-.Heading,
+.Heading {
+  font-family: var(--ff-text), var(--ff-stack-serif);
+  font-size: var(--rfs-text-lg);
+  font-style: italic;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--fls-text);
+  line-height: var(--flh-regular);
+}
+
 .Subtitle,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 500;
-  line-height: 1.05;
-  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1.1;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 
   & a:hover {
     color: var(--c-link);
   }
 }
 
-.Scope-post h2,
-.Subheading {
-  font-size: var(--fs-subheading);
-}
-
-.Scope-post h2 {
-  line-height: var(--flh-regular);
-}
-
-.Heading {
-  font-size: var(--fs-heading);
-  /* line-height: 1.25; */
-}
-
-.Subtitle,
-.Title,
-.Supertitle {
-  letter-spacing: -0.02em;
-}
-
 .Subtitle {
-  font-size: calc(0.75 * var(--fs-subtitle));
-
-  @media (--sm) {
-    font-size: calc(0.85 * var(--fs-subtitle));
-  }
-  @media (--md) {
-    font-size: calc(0.95 * var(--fs-subtitle));
-  }
-  @media (--lg) {
-    font-size: var(--fs-subtitle);
-  }
+  font-size: var(--rfs-subtitle);
 }
 
 .Title {
-  font-size: calc(0.7 * var(--fs-title));
-
-  @media (--sm) {
-    font-size: calc(0.775 * var(--fs-title));
-  }
-  @media (--md) {
-    font-size: calc(0.85 * var(--fs-title));
-  }
-  @media (--lg) {
-    font-size: calc(0.925 * var(--fs-title));
-  }
-  @media (--xl) {
-    font-size: var(--fs-title);
-  }
+  font-size: var(--rfs-title);
 }
 
 .Supertitle {
-  font-size: calc(0.7 * var(--fs-supertitle));
-
-  @media (--sm) {
-    font-size: calc(0.775 * var(--fs-supertitle));
-  }
-  @media (--md) {
-    font-size: calc(0.85 * var(--fs-supertitle));
-  }
-  @media (--lg) {
-    font-size: calc(0.925 * var(--fs-supertitle));
-  }
-  @media (--xl) {
-    font-size: var(--fs-supertitle);
-  }
-}
-
-.Subtitle--light,
-.Title--light {
-  /* font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 200;
-  letter-spacing: 0.075em; */
-}
-
-/* Tiempos Headline */
-.Subtitle--lede,
-.Title--lede {
-  font-family: var(--ff-lede), var(--ff-stack-serif);
-  /* font-size: var(--fs-subtitle); */
-  font-weight: 300;
-  letter-spacing: var(--fls-touch-positive);
-  line-height: var(--flh-regular);
+  font-size: var(--rfs-supertitle);
+  line-height: 1.05;
 }
 
 /*
   -------------------------------------------------
 
-  blockquote (not incl. spacing)
+  Post: markdown styling
 
   -------------------------------------------------
  */
 
+.Scope-post {
+  & p,
+  & ul {
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  & p + p {
+    text-indent: var(--text-indent);
+  }
+
+  & ul {
+    margin: var(--s-blockquote) 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /* PS highlight */
+  & em {
+    background-color: var(--c-highlight);
+  }
+  & em a:not(.Button) {
+    /* --underline-bgimg: var(--c-highlight);
+    --underline: var(--c-gray);
+    --underline-hover: currentColor;
+    --underline-textshadow: var(--underline-bgimg); */
+    background-color: initial !important;
+    text-shadow: initial !important;
+  }
+}
+
+/*
+
+  blockquote (not incl. spacing)
+
+ */
+
 blockquote p {
-  border-left: 1px solid var(--c-textLight);
+  /* border-left: 1px solid var(--c-rule); */
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
-  padding-left: var(--s-3a);
-
-  @media (--mo) {
-  }
-
-  @media (--sm) {
-    padding-left: var(--s-3b);
-  }
+  padding-left: var(--text-indent);
 
   /* &:before {
     content: "“";
@@ -236,27 +175,95 @@ blockquote p {
 }
 
 .Blockquote-author,
-blockquote p em {
-  /* resetting ems before applying font sizing: */
-  /* font-size: calc((18 / (var(--fs-text-unit) * 16 * 1)) * var(--fs-text-xs)) !important; */
-  /* font-size: var(--fs-text-xs); */
-  font-size: calc(14 / 19 / 16 * 16 * 1em) !important;
+blockquote p b,
+blockquote p strong {
+  display: table;
   font-style: normal;
-  font-weight: 500;
+  font-size: calc(var(--rfs-text-sm) + 0.1em);
   letter-spacing: 0.075em;
+  margin-top: 0.25em;
   text-transform: uppercase;
 }
 
-blockquote p em {
-  display: table;
-  margin-top: 5px;
-  margin-top: 0.125em;
-}
+/* reset PS highlight at .Scope-post em */
+/* .Blockquote-author,
+blockquote p em,
+blockquote p em a:not(.Button) {
+  background-color: initial !important;
+  text-shadow: initial !important;
+} */
 
-/* blockquote em {
-  margin-top: 3px;
+/* .Scope-post-dropcap div:first-child > p:first-of-type:first-letter {
+  float: left;
+  font-family: var(--ff-meta), var(--ff-stack-serif);
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 400;
+  font-size: 2em;
+  font-size: calc(2 * var(--rfs-text));
+  line-height: 1;
+  padding-top: 0;
+  padding-top: 3px;
+  padding-right: 0.7em;
+  padding-bottom: 0.25em;
 
+  @media (--md) {
+    font-size: 2.75em;
+  }
   @media (--lg) {
-    margin-top: 6px;
+    font-size: 3em;
+    padding-right: 0.55em;
+    padding-bottom: 0.25em;
   }
 } */
+
+/* .Scope-post-dropcap div > p span:first-of-type {
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+} */
+
+.Footnote-marker {
+  display: inline-block;
+  font-size: 60%;
+  text-indent: 0;
+  transform: translateY(-0.666em);
+}
+
+/* Reqs: `.b-mb0.b-mt2` */
+.Post-endRule {
+  background-color: var(--c-text);
+  margin-left: 0;
+  transform: translateY(-0.25em);
+  width: 5%;
+}
+
+.Post-intro-quote p {
+  color: var(--c-text-light);
+  padding-left: 0;
+}
+
+.Post-intro-rule {
+  background-color: var(--c-text-underline);
+  margin-left: 0;
+  width: 10%;
+}
+
+/*
+  -------------------------------------------------
+
+  Iremono font-spacing overrides
+
+  -------------------------------------------------
+ */
+
+.Scope-post figure + h2,
+.Scope-post figure + h3 {
+  margin-top: 0 !important;
+  padding-top: calc(0.125 * var(--s-headline));
+}
+
+figure {
+  padding: 0;
+  margin: var(--figure-space-align-within-text) 0;
+}

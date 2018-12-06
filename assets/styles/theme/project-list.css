@@ -1,0 +1,32 @@
+.Projects {
+  /* border-top: 1px solid var(--c-text); */
+  padding-left: var(--text-indent);
+}
+
+.Projects-year {
+  margin-bottom: 0;
+  padding-top: calc(0.75 * var(--rs-block-space));
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
+
+.Project-item {
+  border-bottom: 1px solid var(--c-border);
+  padding: var(--s-3) 0;
+  transition: all 150ms ease;
+
+  &:hover {
+    border-color: var(--c-text);
+    transition: all 150ms ease;
+  }
+
+  &:first-of-type {
+    /* border-top: 0; */
+    /* margin-top: -1px; */
+  }
+  &:last-of-type {
+    /* border-bottom: 1px solid var(--c-border); */
+  }
+}

@@ -1,36 +1,33 @@
 <template lang="pug">
-  form.form.Text.p-t2(
+  form.Form.Text(
     action="https://design.us18.list-manage.com/subscribe/post?u=b6d465003f797d00bb8c2a7a0&id=3eb35e7129",
     method="post", 
     name="mc-embedded-subscribe-form", 
     target='_blank', 
-    novalidate=''
+    novalidate
   )
-    .form-group
-      input.Meta(
-        placeholder="Add your email", 
-        type="email", 
-        name="EMAIL", 
-        value="", 
-        required
+    input(
+      placeholder="Add your email", 
+      type="email", 
+      name="EMAIL", 
+      value=""
+    )
+    div(style="position: absolute; left: -5000px;", aria-hidden="true")
+      input(
+        type="text", 
+        name="b_b6d465003f797d00bb8c2a7a0_3eb35e7129", 
+        tabindex="-1", 
+        value=""
       )
-      div(style="position: absolute; left: -5000px;", aria-hidden="true")
-        input(
-          type="text", 
-          name="b_b6d465003f797d00bb8c2a7a0_3eb35e7129", 
-          tabindex="-1", 
-          value=""
-        )
-      button.Button.Meta(
-        type="submit", 
-        name="subscribe", 
-      ) {{buttonText}} 
-      // #[span.LinkSignal-target →]
+    button.Button.Button--transparent.Text(
+      type="submit", 
+      name="subscribe", 
+    ) {{ buttonText }} 
+    // #[span.LinkSignal-target →]
 </template>
 
 <script>
 export default {
-  name: "FormNews",
   computed: {
     buttonText() {
       // if (this.loading) {
@@ -45,22 +42,41 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss">
+/* import vars for media queries access */
 @import "../assets/styles/variables.css";
 
-.form {
+.Form {
+  /* increase field & button heights */
+  --field-height: 4rem;
+  --button-height: var(--field-height);
+
+  border-top: 1px solid var(--c-text);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  & * + * {
+    margin: 0;
+    margin-top: -1px;
+  }
+
+  @media (--sm) {
+    flex-direction: row;
+
+    & * + * {
+      margin-left: -1px;
+      margin-top: 0;
+    }
+  }
 }
 
-.form input {
-  border: 1px solid var(--c-text);
+.Form input {
   box-shadow: none;
   color: var(--c-text);
 
   &:focus {
-    border-color: var(--c-text);
+    /* border-color: var(--c-text); */
   }
-}
-
-.form input + button {
 }
 </style>

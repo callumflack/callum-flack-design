@@ -1,11 +1,10 @@
 <template lang="pug">
 .Toggle
-  //- .Container(:class="{ 'Container--noRule': isVisible }")
   .Container
     .Extract-large.Toggle-align.b-pt2
       .u-fixed.z-top
         //- a.Toggle-button.Button.Button--transparent.Meta.fw-600(
-        a.Toggle-button.Button.Button--sm.Meta.fw-600(
+        a.Toggle-button.Button.Button--transparent.Meta.fw-600(
           href="#"
           @click.prevent="handleNavToggle"
           style="letter-spacing: 0.125em !important;"
@@ -24,7 +23,7 @@ export default {
   components: {},
   computed: {
     isVisible() {
-      return this.$store.state.isMobileNavVisible;
+      return this.$store.state.isModalVisible;
     },
     currentPageName() {
       if (this.$store.state.currentPage !== "index") {
@@ -34,7 +33,7 @@ export default {
   },
   methods: {
     handleNavToggle() {
-      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isMobileNavVisible);
+      this.$store.commit("SET_MODAL_VISIBILITY", !this.$store.state.isModalVisible);
     },
     hideNav() {
       this.$store.commit("SET_MODAL_VISIBILITY", false);

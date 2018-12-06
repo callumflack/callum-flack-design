@@ -1,7 +1,7 @@
 export function state() {
   return {
     currentPage: "/",
-    isMobileNavVisible: false
+    isModalVisible: false
   };
 }
 
@@ -11,6 +11,6 @@ export const mutations = {
   },
 
   SET_MODAL_VISIBILITY(state, visibility) {
-    state.isMobileNavVisible = visibility;
+    state.isModalVisible = visibility;
   }
 };

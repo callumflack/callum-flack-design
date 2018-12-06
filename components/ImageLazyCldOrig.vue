@@ -3,10 +3,12 @@
     img(
       :class="['low-rez', {'is-loaded': largeUrl}]"
       :src="smallUrl"
+      :alt="alt"
     )
     img(
       :class="['high-rez', {'is-loaded': largeUrl}]"
       :src="largeUrl"
+      :alt="alt"
     )
 </template>
 
@@ -21,6 +23,7 @@ function calcImageDimension(length, pixelRatio) {
 export default {
   name: "lazy-image",
   props: {
+    alt: String,
     src: {
       type: String,
       required: true

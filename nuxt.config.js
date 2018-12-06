@@ -16,7 +16,7 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: "Callum Flack digital design & development – Cairns, Australia"
+        content: "Callum Flack Design & Development—Cairns, Australia"
       },
       { hid: "twitter:card", name: "twitter:card", content: "summary" },
       { hid: "twitter:site", name: "twitter:site", content: "@callumflack" },
@@ -32,61 +32,18 @@ module.exports = {
 
   css: ["~/assets/styles/application.css"],
 
-  plugins: [
-    "~/plugins/vue-moment"
-    /*{ src: "~/plugins/vue-slick", ssr: false },
-    "~/plugins/vue-fixed-header"*/
-    /* {
-      src: "~/plugins/v-lazy-image",
-      ssr: false
-    },
-    {
-      src: "~/plugins/intersection-observer",
-      ssr: false
-    } */
-  ],
-
-  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
-
-  axios: {
-    credentials: false
-  },
-
-  generate: {
-    routes: [
-      // You shouldn't need to include any content routes inside generate.routes
-      // as nuxtent handles this for you:
-      // https://github.com/nuxt-community/nuxtent-module/issues/104
-      "/",
-      "/about",
-      "/blog",
-      "/essays",
-      "/projects",
-      "/the-littoral-line"
-    ]
+  /* 
+    You cannot use path aliases here (~ and @), you need to use relative or absolute paths. So it must be a dot!
+    https://github.com/nuxt-community/style-resources-module
+  */
+  styleResources: {
+    css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
   },
 
   router: {
     middleware: "currentPage",
-    // FYI: async scrolling docs look diff now:
-    // https://router.vuejs.org/en/advanced/scroll-behavior.html
-    // async scrollBehavior(to, from, savedPosition) {
-    //   setTimeout(() => {
-    //     if (to.matched[0] && to.matched[0].name === "page") {
-    //       return window.scrollTo(0, 0);
-    //     }
-    //     const scrollTo = Object.assign(
-    //       {
-    //         x: 0,
-    //         y: 0
-    //       },
-    //       savedPosition
-    //     );
-    //     window.scrollTo(scrollTo.x, scrollTo.y);
-    //   }, 20);
-    // },
-    // https://github.com/nuxt/nuxt.js/issues/2738#issuecomment-372007743
-    async scrollBehavior(to, from, savedPosition) {
+    /* https://github.com/nuxt/nuxt.js/issues/2738#issuecomment-372007743 */
+    scrollBehavior(to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition;
       } else {
@@ -104,44 +61,63 @@ module.exports = {
     }
   },
 
+  plugins: [
+    "~/plugins/vue-moment"
+    /*{ src: "~/plugins/vue-slick", ssr: false },*/
+    /* {
+      src: "~/plugins/v-lazy-image",
+      ssr: false
+    },
+    {
+      src: "~/plugins/intersection-observer",
+      ssr: false
+    } */
+  ],
+
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
+
+  /* axios: {
+    credentials: false
+  }, */
+
+  generate: {
+    routes: [
+      // You shouldn't need to include any content routes inside generate.routes
+      // as nuxtent handles this for you:
+      // https://github.com/nuxt-community/nuxtent-module/issues/104
+      "/",
+      "/about",
+      "/blog",
+      "/essays",
+      "/projects",
+      "/the-littoral-line",
+      "/404"
+    ]
+  },
+
   build: {
-    /*
-      cssnext is available by default in Nuxt,
-      but there's TWO different methods shown in the docs:
-      https://nuxtjs.org/api/configuration-build#postcss
-      https://nuxtjs.org/faq/postcss-plugins
-      …and both FAIL to load, for e.g., postcss-mixins:
-    
-      postcss: [require("postcss-mixins")()]
-    */
-    /* postcss: {
-      plugins: {
-        "postcss-cssnext": {
-          features: {
-            customProperties: false
-          }
-        }
-      }
-    }, */
-    /* styleResources FAILS: doesn't render custom props wrapped in custom media queries */
-    /* styleResources: {
-      scss: "./assets/styles/variables.css",
-      options: {
-        // See https://github.com/yenshih/style-resources-loader#options
-        // Except `patterns` property
-      }
-    }, */
     /* vendor: ["intersection-observer"], */
+    /* https://www.evernote.com/l/ACw94CODEoJCEbgqo-RVrNisxAfsQdTW9Ck */
+    /* postcss: {
+      plugins: {},
+      preset: { stage: 0 }
+    }, */
+    /* 
+      Get postcss syntax in single page component styles
+      Requires <style lang="postcss"
+      https://github.com/nuxt/nuxt.js/issues/3231
+    */
     extend(config, ctx) {
-      /* Run ESLINT on save */
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
+      config.module.rules.push({
+        test: /\.postcss$/,
+        use: [
+          "vue-style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader"
+          }
+        ]
+      });
     }
   }
 };

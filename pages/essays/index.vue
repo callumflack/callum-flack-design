@@ -1,6 +1,5 @@
 <template lang="pug">
-.b-pt4.b-pb3
-  main.Container(role="main")
+  main.Container.b-py2(role="main")
     PostExcerptEssay(
       v-if="post.published && post.category === 'essay'"
       v-for="post in posts"

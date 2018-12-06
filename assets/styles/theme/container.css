@@ -21,14 +21,14 @@
   border-right: 1px solid var(--c-rule); */
 
   height: 100vh;
-  padding-top: calc(1.5 * var(--responsive-space));
+  padding-top: calc(1.5 * var(--rs-block-space));
   position: relative;
 
   @media (--sm) {
-    padding-top: calc(1 * var(--responsive-space));
+    padding-top: calc(1 * var(--rs-block-space));
   }
 
-  @media (--md-landscape) {
+  @media (--mdl) {
     &:before {
       background-color: var(--c-rule);
       background-color: var(--c-text);
