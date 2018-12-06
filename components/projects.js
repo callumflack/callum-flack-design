@@ -30,7 +30,7 @@ export default {
     {
       title: "RAATSICC",
       link: "/blog/raatsicc-community-outreach-website",
-      external: false
+      internal: true
     },
     {
       title: "Oceanblue Boats",
@@ -46,7 +46,8 @@ export default {
     },
     {
       title: "Album Registry",
-      link: "https://albumregistry.com/"
+      link: "/blog/album-registry-ecommerce-app",
+      internal: true
     },
     {
       title: "AUM.ai",
@@ -73,7 +74,7 @@ export default {
       medium: "Packaging",
       tags: "Design",
       link: "/blog/raatsicc-community-outreach-website",
-      external: false,
+      internal: true,
       published: false
     },
     {
@@ -83,7 +84,7 @@ export default {
     {
       title: "Primary Healthcare Network NQ",
       link: "/blog/primary-healthcare-network-patient-survey-app",
-      external: false
+      internal: true
     },
     {
       title: "The Substation",
@@ -91,19 +92,21 @@ export default {
     },
     {
       title: "Oceanblue Living",
-      link: "https://oceanblueliving.com.au/"
+      link: "/blog/oceanblue-living-website",
+      internal: true
     }
   ],
   "2015": [
     {
       title: "Ward6",
-      link: "http://www.ward6.asia/"
+      link: "/blog/ward6-healthcare-agency-website",
+      internal: true
     },
     {
       title: "Pharma iPad apps",
       client: "Ward6",
       link: "/blog/ward6-pharmaceutical-ipad-apps",
-      external: false
+      internal: true
     }
   ],
   "2014": [
@@ -128,11 +131,12 @@ export default {
       tags: "Design",
       link: "https://ellisjones.com.au/"
     }
-  ],
-  "2011": [
+  ]
+  /* "2011": [
     {
       title: "Box+Dice",
-      disabled: true
+      disabled: true,
+      published: false
     }
-  ]
+  ] */
 };

@@ -1,13 +1,17 @@
 <template lang="pug">
 .u-relative
   .AspectRatio-object
-    //- img.image-multiply(v-bind:src="selectedImage")
-    img.image-multiply(src="/images/_sagatiba-bw-181201B.jpg")
+    ImageCld.image-multiply(v-bind:src="selectedImage")
+    //- img.image-multiply(src="/images/_sagatiba-bw-181201B.jpg")
     //- img.image-multiply(src="/images/_millennius-detail.jpg")
+    //- img.image-multiply(src="/images/_sky.jpg")
+    //- img.image-multiply(src="/images/_decadence-13-reversed.jpg")
+    //- img.image-multiply(src="/images/_hi-reversed.jpg")
+    //- img.image-multiply(src="/images/_MSW.jpg")
 
   Nav.Animate
 
-  .b-clearFixedNav.b-pb15
+  .b-clearFixedNav.b-pb05
     article
       .Animate
         .Container
@@ -18,44 +22,46 @@
                 //- | Callum Flack is a graphic designer turned
                 //- | frontend developer.
                 | Design for deeper attention.
-                | Build with a finer intuition. 
+                | Build with finer intuition. 
                 //- | Build to anticipate people. 
                 //- span.u-block.m-t4 Why does this matter?
                 //- | ux engineer
 
-            .Scope-post.Scope-post-dropcap
-              div
-                p.fs-text-lg
-                  | In the internet era, 
+            .Scope-post
+              p.fs-text-lg
+                | In the internet era, 
+                nuxt-link.Reveal-link(to="/blog")
                   em your branding is tactile. 
-                  //- | The technology envelopes the brand. 
-                  //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
-                  | People only pay attention after they trust the interface. It's not enough to make it look nice, it has to 
-                  nuxt-link.Reveal-link(to="/blog")
-                    em behave beautifully.
-                  | &nbsp;You'll know the difference in a heartbeat. And so will your audience. 
-                  //- This is where I can help. 
-                  
-                //- p.fs-text-lg.u-textCenter.b-my1
-                  nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
-                    | About Callum
-                    span.Arrow.Arrow--right.m-l2
-                  nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
-                    | Peruse the blog
-                    span.Arrow.Arrow--right.m-l2
+                //- | The technology envelopes the brand. 
+                //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
+                | People only pay attention after they trust the interface. It's not enough to make it look nice, it has to 
+                nuxt-link.Reveal-link(to="/projects")
+                  em behave beautifully.
+                | &nbsp;You'll know the difference in a heartbeat. And so will your audience. 
+                //- This is where I can help. 
+                
+              //- p.fs-text-lg.u-textCenter.b-my1
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
+                  | About Callum
+                  span.Arrow.Arrow--right.m-l2
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
+                  | Peruse the blog
+                  span.Arrow.Arrow--right.m-l2
 
-                //- hr.Post-intro-rule.b-my05
+              //- hr.Post-intro-rule.b-my05
 
-                p.fs-text-lg 
-                  | Hi, I'm Callum Flack. 
-                  nuxt-link(to="/about") 
-                    em.fs-italic I'm a designer who codes.
-                  | &nbsp;I create attention by bridging the gap between design and development.
+              p.fs-text-lg 
+                | Hi, I'm Callum Flack. 
+                nuxt-link(to="/about") 
+                  em.fs-italic I'm a designer who codes.
+                | &nbsp;I bridge the gap between poetic imagination and pragmatic execution to shape digital brands and communications that reach and resonate with people.
+                //- | &nbsp;I work fluidly across visual design, user experience and code to shape digital brands and communications that resonate with people long after they've left the website.
+                //- experience create attention by bridging the gap between design and development.
 
 
-                //- p.fs-text-lg 
-                  | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
-                  nuxt-link(to="/blog") the blog.
+              //- p.fs-text-lg 
+                | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
+                nuxt-link(to="/blog") the blog.
 
   footer.b-pb4.Animate
     .Container
@@ -95,9 +101,11 @@ export default {
   data() {
     return {
       images: [
-        "/images/_index-1.jpg",
-        "/images/_overcast-night.jpg",
-        "/images/_sagatiba-bw-181201B.jpg"
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066079/_sagatiba-bw-181201B_jkxlim.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066081/_sky_rqkmve.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066079/_millennius-detail_jqnvd6.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066090/_hi-reversed_rkq0hc.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066090/_decadence-13-reversed_pvm8wo.jpg"
       ],
       selectedImage: ""
     };
@@ -145,16 +153,15 @@ export default {
   /* animation: bgcolor 3000ms cubic-bezier(0.19, 1, 0.22, 1),
     bgblur 2500ms cubic-bezier(0.19, 1, 0.22, 1),
     bgimg 500ms cubic-bezier(0.19, 1, 0.22, 1); */
-  animation: bgcolor 2000ms cubic-bezier(0.19, 1, 0.22, 1);
-  background-color: rgba(0, 0, 0, 0.8);
+  /* animation: bgcolor 2000ms cubic-bezier(0.19, 1, 0.22, 1), bgblur 1000ms cubic-bezier(0.19, 1, 0.22, 1); */
   background-color: var(--c-indexbg);
   background-blend-mode: multiply;
   /* background-image: url("/images/_index-1.jpg");
   background-image: url("/images/_overcast-night.jpg");
   background-image: url("/images/_sagatiba-bw-181201B.jpg"); */
-  background-position: 50%;
+  /* background-position: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   color: var(--c-bg);
   margin-left: auto;
   margin-right: auto;
@@ -187,14 +194,32 @@ export default {
     filter: url("#blur");
   }
   to {
-    /* filter: initial; */
-    background-image: url("/images/_sagatiba-bw-181201B.jpg");
+    /* background-image: url("/images/_sagatiba-bw-181201B.jpg"); */
+    filter: initial;
   }
 }
 
 .page-index .open {
-  --open-c-border: transparent;
-  --open-c-bg: rgba(0, 0, 0, 0.9);
+  /* nuxt 2 inherits variables for nested components */
+  --open-c-border: transparent !important;
+  --open-c-bg: rgba(0, 0, 0, 0.9) !important;
+  /* …but nuxt 1 does not */
+  animation: openIndex 0.5s ease-in-out forwards;
+}
+
+@keyframes openIndex {
+  from {
+    opacity: 0;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    background-color: var(--open-c-bg);
+    border-bottom: 1px solid var(--open-c-border);
+    top: 0;
+  }
 }
 
 .page-index .Nav-link {
@@ -207,17 +232,26 @@ export default {
   & .Text a:not(.Button),
   & .Scope-post p a:not(.Button) {
     --underline-bgimg: var(--c-indexbg);
-    --underline: rgba(255, 255, 255, 0.3);
+    --underline: rgba(255, 255, 255, 0.5);
     --underline-hover: currentColor;
     --underline-textshadow: var(--underline-bgimg);
 
     text-shadow: initial;
+  }
+
+  & p em {
+    background-color: initial !important;
+    text-shadow: initial !important;
   }
 }
 
 .page-index .Block {
   --c-block: var(--c-bg);
   --bg-block: transparent;
+}
+
+.page-index .Form {
+  border-color: var(--c-bg);
 }
 
 /* page transition, named via the transition object */

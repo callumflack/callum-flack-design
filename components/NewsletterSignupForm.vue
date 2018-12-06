@@ -43,13 +43,17 @@ export default {
 </script>
 
 <style lang="postcss">
+/* import vars for media queries access */
 @import "../assets/styles/variables.css";
-/* @import "../assets/styles/variables-dynamic.css"; */
 
 .Form {
+  /* increase field & button heights */
+  --field-height: 4rem;
+  --button-height: var(--field-height);
+
   border-top: 1px solid var(--c-text);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
 
   & * + * {

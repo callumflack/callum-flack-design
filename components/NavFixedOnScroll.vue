@@ -111,14 +111,10 @@ export default {
 
 @keyframes collapse {
   from {
-    /* background-color: var(--c-white); */
-    /* border-bottom: 1px solid transparent; */
     opacity: 1;
     top: 0;
   }
   to {
-    /* background-color: transparent; */
-    /* border-bottom: 1px solid transparent; */
     opacity: 0;
     top: -100%;
   }

@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style lang="postcss">
+@import "../assets/styles/variables";
+
 .Block {
   /* themeable */
   --c-block: var(--c-text);
@@ -55,8 +57,19 @@ export default {
   border-left: 1px solid var(--c-block);
 }
 
-.LittoralIcon svg {
-  border-color: var(--c-block);
+.LittoralIcon {
+  margin-top: 0.25em;
+
+  & svg {
+    @media (--mo) {
+      height: 24px;
+      width: 24px;
+    }
+
+    border-radius: 999px;
+    border: 1px solid var(--c-block);
+    padding: 4px;
+  }
 }
 
 .Form {

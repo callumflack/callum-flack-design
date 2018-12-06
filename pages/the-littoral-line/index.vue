@@ -113,7 +113,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.LittoralIcon >>> svg {
+/* .LittoralIcon >>> svg {
   height: 30px;
   width: 30px;
 
@@ -125,5 +125,5 @@ export default {
     height: 54px;
     width: 54px;
   }
-}
+} */
 </style>

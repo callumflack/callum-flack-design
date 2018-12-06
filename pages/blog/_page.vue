@@ -3,7 +3,18 @@ div(:class="projectPageClass")
   Nav
 
   .b-clearFixedNav.b-pb15
-    Post(v-bind="page")
+    Post(
+      v-bind="page"
+      v-bind:heroImage="page.heroImage"
+      v-bind:heroRatio="page.heroRatio"
+      v-bind:title="page.title"
+      v-bind:date="page.date"
+      v-bind:category="page.category"
+      v-bind:readingTime="page.readingTime"
+      v-bind:blockColor="page.blockColor"
+      v-bind:body="page.body"
+      v-bind:updated="page.updated"
+    )
 
   footer.b-pb4
     .Container

@@ -1,7 +1,20 @@
 <template lang="pug">
+  nuxt-link.Project-item.Text.f(
+    v-if="internal"
+    :key="link"
+    :to="link"
+  )
+    span.m-r5 {{ title }}
+    span.Meta.Project-item-span(v-if="medium") {{ medium }}
+    span.Meta.Project-item-span(v-if="tags") {{ tags }}
+    span.Meta.Project-item-span(v-if="client") {{ client }}
+    span.Meta.Project-item-span(v-if="number") {{ number }}
+    span.Meta.Project-item-span(v-if="date") {{ date }}
+    span.Meta.Project-item-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Case study
+
   a.Project-item.Text.f(
-    v-if="external"
-    key="external-link"
+    v-else
+    :key="link"
     :href="link"
     target="_blank"
     :class="disabledClass"
@@ -13,19 +26,6 @@
     span.Meta.Project-item-span(v-if="number") {{ number }}
     span.Meta.Project-item-span(v-if="date") {{ date }}
     span.Text.Project-item-target.icon-targetBlank.m-lA &nbsp;
-
-  nuxt-link.Project-item.Text.f(
-    v-else
-    key="internal-link"
-    :to="link"
-  )
-    span.m-r5 {{ title }}
-    span.Meta.Project-item-span(v-if="medium") {{ medium }}
-    span.Meta.Project-item-span(v-if="tags") {{ tags }}
-    span.Meta.Project-item-span(v-if="client") {{ client }}
-    span.Meta.Project-item-span(v-if="number") {{ number }}
-    span.Meta.Project-item-span(v-if="date") {{ date }}
-    span.Meta.Project-item-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Case study
 
 </template>
 
@@ -42,9 +42,9 @@ export default {
       type: Boolean,
       default: false
     },
-    external: {
+    internal: {
       type: Boolean,
-      default: true
+      default: false
     },
     medium: {
       type: String,

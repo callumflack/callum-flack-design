@@ -1,13 +1,11 @@
 <template lang="pug">
-.Content
-  section.b-pt1.b-pb3
+div  
+  section.b-ptTitle
     .Container.Header--animate
-      .c-block-bg
-        .w-sm-10x12.m-xA
-          h1.Title.fw-regular.u-textCenter(v-if="error.statusCode === 404") Page not found
-          h1.Title.fw-regular.u-textCenter(v-else) An error occurred
-          p.ff-title.u-textCenter 
-            nuxt-link(to="/") Start again at the home page →
+      h1.Supertitle(v-if="error.statusCode === 404") Unfortunately, I've probably removed that page or stuffed around with it's location. Sorry.
+      h1.Supertitle(v-else) An error occurred
+      p 
+        nuxt-link(to="/") Start again at the home page →
 </template>
 
 <script>

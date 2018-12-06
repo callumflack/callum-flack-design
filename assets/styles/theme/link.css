@@ -76,9 +76,10 @@ blockquote p em a {
 }
 
 .no-link-block a,
-.bg-contact-block a {
-  --underline-textshadow: transparent !important;
+.Contact a {
+  /* --underline-textshadow: transparent !important; */
   background-image: none !important;
+  text-shadow: none !important;
 }
 
 /* a:not(.Button) {

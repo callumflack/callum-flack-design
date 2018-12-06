@@ -12,7 +12,7 @@
 
     main(role="main", v-if="body", :class="spaceWithoutHeroClass")
       .Container
-        .b-pb05.m-t2
+        .b-pb05
           h1.Title.m-b2 {{ title }}
           .Meta.c-text-light.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
@@ -27,9 +27,8 @@
             //- span.MetaSeparator •
             //- span {{ tags }}
 
-        .Scope-post(:class="scopeClasses")
-          //- no-ssr
-          nuxtent-body(:body="body")
+        //- no-ssr
+        nuxtent-body.Scope-post(:body="body", :class="scopeClasses")
 
 </template>
 
@@ -95,7 +94,7 @@ export default {
     },
     spaceWithoutHeroClass() {
       if (this.heroImage) {
-        return "b-pt1";
+        return "b-pt075";
       }
       return "b-ptTitle";
     },

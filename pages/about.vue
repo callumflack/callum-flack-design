@@ -39,10 +39,10 @@ article
         .w-1x3.w-lg-3x12
           img(src="/images/cf-dwts-01-face2.jpg" alt="Callum Flack")
         .w-2x3.w-lg-9x12
-          .bg-contact-block.h-100
+          .Contact.h-100
             .p-a5
-              p.Subtitle.fs-text-meta.m-b2 Get in touch
-              ul.Meta.flh-regular.fs-text-meta.u-listUnstyled
+              p.Subtitle.fs-text-meta.c-bg.m-b2 Get in touch
+              ul.Meta.flh-regular.fs-text-meta.u-listUnstyled.c-bg
                 li #[a(target="_blank" href="mailto:callum@callumflack.design") callum@callumflack.design]
                 li #[a(target="_blank" href="tel:610-408-767-540") +61(0) 408 767 540]
                 li #[a(target="_blank" href="https://twitter.com/callumflack") @callumflack]

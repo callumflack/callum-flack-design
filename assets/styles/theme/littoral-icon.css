@@ -6,17 +6,13 @@
 
 .LittoralIcon {
   margin-top: 0.25em;
-  /* transform: translateY(3px);
-
-  @media (min-width: 768px) {
-    margin-right: 0.2em;
-    transform: translateY(2px);
-  }
-  @media (min-width: 1280px) {
-    transform: translateY(4px);
-  } */
 
   & svg {
+    @media (--mo) {
+      height: 24px;
+      width: 24px;
+    }
+
     border-radius: 999px;
     border: 1px solid var(--c-block);
     padding: 4px;

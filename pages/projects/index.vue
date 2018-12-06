@@ -3,9 +3,10 @@
 article
   header.b-ptTitle.b-pb1(role="banner")
     .Container
-      .w-sm-10x12
+      .w-sm-9x12.w-lg-7x12
         h1.Supertitle.m-b0
-          | A selected archive of graphic design since 1999, and web development since 2010.
+          //- | A selected archive of graphic design since 1999, and web development since 2010.
+          | A selected archive of projects since 2013.
 
   main(role="main")
     .Container
@@ -20,7 +21,8 @@ article
             v-for="project in year"
             v-if="project.published !== false"
             v-bind="project"
-            v-bind:key="project.title"
+            v-bind:key="project.link"
+            v-bind:internal="project.internal"
             v-bind:link="project.link"
             v-bind:title="project.title"
             v-bind:medium="project.medium"

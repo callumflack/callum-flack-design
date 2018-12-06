@@ -91,7 +91,7 @@ Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and B
 
 <!-- , so I know how to create products for a niche community. -->
 
-> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. _<a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, Founder, VetPronto (YCW15)_
+> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **<a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, Founder, VetPronto (YCW15)**
 
 <!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall</a>, JavaScript engineer_ -->
 

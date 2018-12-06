@@ -59,13 +59,18 @@
   --c-brand: #00ffff;
   --c-brandHover: #00ffff;
   --c-brandLight: #00ffff;
-  --c-highlight: #47caf5;
+
   --c-link: #ff5600;
   --c-link: #0085ff; /* blue */
   --c-orange: #fe3600; /* pantone 021C plus */
   --c-link: #fe3600;
-  --c-highlight: var(--c-link);
-  --c-highlight-alt: #ffea97;
+  --c-highlight: rgba(150, 247, 171, 0.7);
+  --c-highlight: rgba(238, 227, 72, 0.7);
+  --c-highlight: rgba(255, 247, 136, 0.4);
+  --c-contact-block: rgb(198, 234, 251);
+  --c-contact-block: rgb(150, 247, 171);
+  --c-contact-block: rgb(238, 227, 72);
+  --c-contact-block: rgb(255, 247, 136);
 
   --c-black: black;
   --c-dark: #171515;
@@ -89,10 +94,6 @@
 
   --c-neutral: #f2f2f2;
   --c-neutral-dark: #e2e2e2;
-
-  --c-contact-block: rgb(211, 220, 255);
-  --c-contact-block: rgb(198, 234, 251);
-  --c-contact-block: rgb(150, 247, 171);
 
   --c-bg: #f3f2f1;
   --c-bg: #fafafa;
@@ -187,7 +188,7 @@
   --button-disabled-opacity: 0.6;
   --button-height: calc(1 * var(--field-height));
   --button-inline-spacing: var(--s-2);
-  --button-padding-x: 1.25em;
+  --button-padding-x: 1.5rem;
 
   /* typography */
   --button-font-case: inherit;
@@ -202,7 +203,7 @@
 
    */
 
-  --field-height: 4rem;
+  --field-height: 3em;
   --field-padding-x: var(--s-3a);
   --input-border-color: var(--c-brand-rule);
   --input-border-color-hover: var(--c-brand-rule);

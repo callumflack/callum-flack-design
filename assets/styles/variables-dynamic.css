@@ -29,19 +29,19 @@
  */
 
 :root {
-  --rs-space: 0.75rem;
-  --rs-block-space: 1.5rem;
+  --rs-space: 0.666rem;
+  --rs-block-space: 2rem;
 }
 @media (--sm) {
   :root {
-    --rs-space: 0.666rem;
-    --rs-block-space: 2rem;
+    --rs-space: 0.75rem;
+    --rs-block-space: 2.5rem;
   }
 }
 @media (--md) {
   :root {
     --rs-space: 0.875rem;
-    --rs-block-space: 3.25rem;
+    --rs-block-space: 3.5rem;
   }
 }
 @media (--lg) {
@@ -60,25 +60,25 @@
 
 :root {
   --rfs-text-xs: 10px;
-  --rfs-text-sm: 12px;
+  --rfs-text-sm: 11px;
   --rfs-text-meta: 13px;
-  --rfs-text: 14px;
-  --rfs-text-md: 14px;
-  --rfs-text-lg: 16px;
-  --rfs-heading: 16px;
+  --rfs-text: 16px;
+  --rfs-text-md: 17px;
+  --rfs-text-lg: 20px;
+  --rfs-heading: 20px;
   --rfs-subtitle: 17px;
   --rfs-title: 22px;
-  --rfs-supertitle: 25px;
+  --rfs-supertitle: 27px;
 }
 @media (--sm) {
   :root {
     --rfs-text-xs: 12px;
-    --rfs-text-sm: 14px;
+    --rfs-text-sm: 13px;
     --rfs-text-meta: 15px;
-    --rfs-text: 16px;
-    --rfs-text-md: 16px;
-    --rfs-text-lg: 19px;
-    --rfs-heading: 19px;
+    --rfs-text: 18px;
+    --rfs-text-md: 21px;
+    --rfs-text-lg: 24px;
+    --rfs-heading: 24px;
     --rfs-subtitle: 21px;
     --rfs-title: 27px;
     --rfs-supertitle: 36px;

@@ -101,14 +101,16 @@
   background-color: var(--c-neutral-dark);
 }
 
-.bg-contact-block {
+.Contact {
   /* background-color: #2242dc;
   background-color: rgb(223, 226, 239);
   background-color: rgb(225, 230, 249);
-  background-color: rgb(211, 220, 255);
-  background-color: var(--c-contact-block); */
-  border: 1px solid var(--c-text);
-  border-left: 0;
+  background-color: rgb(211, 220, 255);*/
+  /* background-color: var(--c-contact-block); */
+  background-color: var(--c-text);
+  /* border: 1px solid var(--c-text);
+  border-left: 0; */
+  border-left: 1px solid var(--c-bg);
 }
 
 .Extract-md {

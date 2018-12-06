@@ -6,6 +6,7 @@ lede: Building an online reputation for a renowned Australasian Healthcare commu
 h: A content-managed website for a leading Australasian healthcare communications agency.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953103/okok/thumb-ward6.jpg
 thumbInCloudinary: true
+heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroInCloudinary: true
 heroRatio: 69.2361111
 tags: UI, code
@@ -25,7 +26,7 @@ Poorly maintained content-managed websites cost significant time and effort to r
 
 @[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/ward6-mobile-screens-dark.png")
 
-> Callum's broad understanding of web systems allowed us to understand and choose better long-term decisions during our redevelopment. His diligence meant the final product really does represent what we had imagined. _Jason Armstrong, Digital Director_
+> Callum's broad understanding of web systems allowed us to choose better long-term decisions during our re-development. His diligence meant the final product really does represent what we had imagined. **Jason Armstrong, Digital Director**
 
 The new Ward6 website allowed us to focus on repeatably presenting and distributing first-class campaign showcases, rather than wrestling with website technologies.
 
