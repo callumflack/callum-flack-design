@@ -120,7 +120,7 @@ export default {
 /* @import "../assets/styles/variables.css"; */
 
 /* 
-  The following proves that:
+  This proves that:
   1. mixins work
   2. styleResource loads the variables w/o @importing
   3. custom props re-evaluation works on a button selector
@@ -144,19 +144,15 @@ export default {
   background-color: var(--c-highlight-alt);
   border-radius: 1em;
   padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--responsive-space))
-    calc(0.45 * var(--responsive-space));
+  padding: calc(0.375 * var(--responsive-space)) calc(0.45 * var(--responsive-space));
 
   & a {
-    background-image: linear-gradient(var(--c-bg), var(--c-bg)),
-      linear-gradient(var(--c-bg), var(--c-bg)),
+    background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),
       linear-gradient(currentColor, currentColor) !important;
-    text-shadow: 0.03em 0 var(--c-highlight-alt),
-      -0.03em 0 var(--c-highlight-alt), 0 0.03em var(--c-highlight-alt),
-      0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
-      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt),
-      -0.09em 0 var(--c-highlight-alt), 0.12em 0 var(--c-highlight-alt),
-      -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
+    text-shadow: 0.03em 0 var(--c-highlight-alt), -0.03em 0 var(--c-highlight-alt),
+      0 0.03em var(--c-highlight-alt), 0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
+      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt), -0.09em 0 var(--c-highlight-alt),
+      0.12em 0 var(--c-highlight-alt), -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
       -0.15em 0 var(--c-highlight-alt) !important;
   }
 }
