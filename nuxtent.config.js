@@ -30,6 +30,6 @@ module.exports = {
   ],
 
   api: function(isStatic) {
-    return { browserBaseURL: isStatic ? "https://callumflack.now.sh" : "" };
+    return { browserBaseURL: isStatic ? "https://callumflack.design" : "" };
   }
 };
