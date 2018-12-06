@@ -8,7 +8,7 @@
 const baseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
 
 function calcImageDimension(length, pixelRatio) {
-  return 100 * Math.round(length * pixelRatio / 100);
+  return 100 * Math.round((length * pixelRatio) / 100);
 }
 
 export default {
@@ -39,7 +39,7 @@ export default {
       return [
         "figure",
         {
-          "b-my2": this.project,
+          "b-my1": this.project,
           "Extract-large": this.extractLarge
           /* "figure--post": this.post,
           "figure--portrait": this.portrait,
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/variables.css";
+/* @import "../assets/styles/variables.css"; */
 
 .figure img {
   margin: 0 auto;

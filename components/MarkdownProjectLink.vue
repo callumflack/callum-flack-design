@@ -1,5 +1,5 @@
 <template lang="pug">
-  .u-inlineBlock.m-t1.fs-scale-reset
+  .b-mt05
     a.Button.Meta.icon-targetBlank.icon-targetBlank--withinButton(:href="link", target="_blank") {{ label }}
 </template>
 

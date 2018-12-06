@@ -89,7 +89,7 @@ export default {
     },
     figureClasses() {
       return [
-        "b-my2",
+        "b-my1",
         "device",
         {
           /*"device--home": this.home,
@@ -218,6 +218,7 @@ export default {
 
   & .device-position,
   & iframe {
+    margin: auto;
     width: 87.45%;
   }
 

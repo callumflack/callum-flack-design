@@ -1,142 +1,77 @@
-<template lang="pug">
-div.b-pt4
-  //- nav.Container.b-nav
-    h3.Nav-locator.Meta.fw-700
-      span.m-r2 3.
-      span Projects
-    //- .Extract-large
-      hr
-  //- .Container
-    header.b-pb3(role="header")
-      h1.Supertitle.u-textCenter Selected projects since 2014
-      //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
-      //- .Project-filter
-        .u-flex.u-flexJustifyBetween
-          .Meta.m-a0 Filter by: 
-          .Meta.c-textLight.m-a0
-            a.u-linkClean(
-              v-for="(tag, index) in tags"
-              @click.prevent="filterProjectsByTag(tag)"
-              href="#"
-              :class="[{ 'c-highlight': tag === activeTag }]"
-            )
-              span {{ tag }}
-              //- span(v-if="index !== tags.length - 1") ,&nbsp;
-              //- span(v-else) .
-  .Container.Container-inset
-    main.rp-t2(role="main")
-      .Extract-super
-        //- .FlexGridWrapper.m-xl-x0
-        .FlexGridWrapper
-          .FlexGrid.FlexGrid--noGrow
-            ProjectExcerpt(
-              v-if="project.published && project.category === 'project'"
-              v-for="project in visibleProjects"
-              :cloudinary="project.thumbInCloudinary"
-              :image="project.thumbImage"
-              :lede="project.lede"
-              :link="project.permalink"
-              :key="project.permalink"
-              :tags="project.tags"
-              :title="project.title"
-              :year="project.year"
-            )
 
-    <svg class='u-hiddenVisually'>
-      <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
-        <feGaussianBlur stdDeviation="33" />
-        //- Clip edge artifacts:
-        //- https://stackoverflow.com/questions/24416564/svg-blur-filter-edge-artifacts
-        <feComponentTransfer>
-          <feFuncA type="discrete" tableValues="1 1"/>
-        </feComponentTransfer>
-      </filter>
-    </svg>
+<template lang="pug">
+article
+  header.b-ptTitle.b-pb1(role="banner")
+    .Container
+      .w-sm-9x12.w-lg-7x12
+        h1.Supertitle.m-b0
+          //- | A selected archive of graphic design since 1999, and web development since 2010.
+          | A selected archive of projects since 2013.
+
+  main(role="main")
+    .Container
+
+      template(
+        v-for="(year, index) in reverseProjects"
+        v-bind="year"
+      )
+        h2.Subtitle.Projects-year {{ 2018 - index }}
+        .Projects
+          ProjectListItem(
+            v-for="project in year"
+            v-if="project.published !== false"
+            v-bind="project"
+            v-bind:key="project.link"
+            v-bind:internal="project.internal"
+            v-bind:link="project.link"
+            v-bind:title="project.title"
+            v-bind:medium="project.medium"
+            v-bind:tags="project.tags"
+            v-bind:client="project.client"
+          )
+
 </template>
 
 <script>
-import ProjectExcerpt from "~/components/ProjectExcerpt.vue";
-
-const allTagName = "All";
-
-// Functions are defined outside component since asyncData does not have access
-// to the component because it's called before initializing the component
-
-const trimTags = tags => tags.map(tag => tag.trim());
-
-function projectTagStringToList(projectTags) {
-  const trimmedProjectTags = projectTags.endsWith(",")
-    ? projectTags.substring(0, projectTags.length - 1)
-    : projectTags;
-  return trimTags(trimmedProjectTags.split(","));
-}
+import ProjectListItem from "~/components/ProjectListItem.vue";
+import projects from "~/components/projects.js";
 
 export default {
-  name: "projects",
   components: {
-    ProjectExcerpt
+    ProjectListItem
+  },
+  data() {
+    return {
+      projects
+    };
+  },
+  computed: {
+    /* 
+      1. turn the object into an array with Object.values() b/c can't order Objects
+      2. reverse it
+    */
+    reverseProjects() {
+      return Object.values(this.projects).reverse();
+    }
+    /* projectsYear() {
+      return this.reverseProjects.map(i => 2018 - index);
+    } */
+    /* filterPublishedProjects() {
+      return this.projects.filter(project => project.published !== false);
+    } */
   },
   head() {
     return {
-      title: "Projects—Callum Flack Design",
+      title: `Projects—Callum Flack Design`,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Selected design & development projects by Callum Flack since 2014"
+          content: `Projects—`
         }
       ]
-    };
-  },
-  data() {
-    return {
-      projects: [],
-      visibleProjects: [],
-      tags: [],
-      activeTag: allTagName
-    };
-  },
-  methods: {
-    filterProjectsByTag(tag) {
-      this.activeTag = tag;
-
-      if (tag === allTagName) {
-        this.visibleProjects = this.projects;
-        return;
-      }
-
-      this.visibleProjects = this.projects.filter(project => {
-        if (!project.tags) return false;
-        const projectTags = trimTags(project.tags.split(","));
-        return projectTags.includes(tag);
-      });
-    }
-  },
-  async asyncData({ app }) {
-    /* const projects = await app.$content("/projects").getAll(); */
-    const projects = await app.$content("/posts").getAll();
-
-    const uniqueTags = projects.filter(project => project.tags).reduce(
-      (tags, project) => {
-        const projectTags = projectTagStringToList(project.tags);
-        const uniqueProjectTags = projectTags.filter(tag => !tags.includes(tag));
-
-        return [...tags, ...uniqueProjectTags];
-      },
-      [allTagName]
-    );
-
-    uniqueTags.sort();
-
-    return {
-      projects,
-      visibleProjects: projects,
-      tags: uniqueTags
     };
   }
 };
 </script>
 
-<style scope lang="css">
-@import "../../assets/styles/variables.css";
-</style>

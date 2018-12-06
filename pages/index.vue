@@ -1,83 +1,88 @@
 <template lang="pug">
+.u-relative
+  .AspectRatio-object
+    ImageCld.image-multiply(v-bind:src="selectedImage")
+    //- img.image-multiply(src="/images/_sagatiba-bw-181201B.jpg")
+    //- img.image-multiply(src="/images/_millennius-detail.jpg")
+    //- img.image-multiply(src="/images/_sky.jpg")
+    //- img.image-multiply(src="/images/_decadence-13-reversed.jpg")
+    //- img.image-multiply(src="/images/_hi-reversed.jpg")
+    //- img.image-multiply(src="/images/_MSW.jpg")
 
-//- div
-  header.CoverImage(role="banner")
-    .AspectRatio.AspectRatio--16x9.md-AspectRatio--2x1
-      .AspectRatio-object.bg-text
-        ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522321387/okok/_overcast-night.jpg")
-      .AspectRatio-object.Blend
+  Nav.Animate
+
+  .b-clearFixedNav.b-pb05
+    article
+      .Animate
         .Container
-          .f.f-alignItemsCenter.h-100
-            .w-8x12.w-md-9x12.w-lg-8x12
-              h1.Title.fw-900.c-bg.m-b0
+            .w-sm-10x12
+              h1.Supertitle.b-ptTitle.m-b0.b-pb1
+                //- | Make the complex simple#[br]
+                //- | and the simple unique.
+                //- | Callum Flack is a graphic designer turned
+                //- | frontend developer.
+                | Design for deeper attention.
+                | Build with finer intuition. 
+                //- | Build to anticipate people. 
+                //- span.u-block.m-t4 Why does this matter?
+                //- | ux engineer
 
-.b-pt4.b-pb3
-  article.Container.rp-t2
-    .b-pb1
-      h1.Title
-        span.c-highlight Callum Flack designs &amp; develops website systems 
-        | for businesses &amp; individuals who wish to make the complex simple &amp; the simple unique.
-    .Scope-post.Scope-post-dropca
-      .fs-block-lg.rs-m3
-        p.m-b0
-          span In the digital age, you can't differentiate with just design. 
-          em Your branding is tactile—
-          | the technology is inseparable from the brand. People only pay attention when they trust that your interface will work. It's not enough to design it. You have to be able to build it. To see quickly if the details match your ideas. The difference is easily 
-          em felt. 
-          | You'll know in a heartbeat when it's right. And so will your audience. This is where I can help. 
-          nuxt-link(to="/about") 
-            em.Text--italic I'm a designer who codes.
-          | &nbsp;
+            .Scope-post
+              p.fs-text-lg
+                | In the internet era, 
+                nuxt-link.Reveal-link(to="/blog")
+                  em your branding is tactile. 
+                //- | The technology envelopes the brand. 
+                //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
+                | People only pay attention after they trust the interface. It's not enough to make it look nice, it has to 
+                nuxt-link.Reveal-link(to="/projects")
+                  em behave beautifully.
+                | &nbsp;You'll know the difference in a heartbeat. And so will your audience. 
+                //- This is where I can help. 
+                
+              //- p.fs-text-lg.u-textCenter.b-my1
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
+                  | About Callum
+                  span.Arrow.Arrow--right.m-l2
+                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
+                  | Peruse the blog
+                  span.Arrow.Arrow--right.m-l2
 
-    NewsletterSignupBlock
+              //- hr.Post-intro-rule.b-my05
 
-    //- hr.Post-endRule.b-mb0.b-mt2
-    //- .rm-t3.fs-block-sm
-      p Ps. I write a bi-monthly email letter about visual design, user experience and website development through the lens of people and attention. You should sign up:
-      NewsletterSignupForm
-      //- p.fs-text-sm.rm-t4 And when you sign up, I'll send you my "craft list" free. People say it's been helpful.
+              p.fs-text-lg 
+                | Hi, I'm Callum Flack. 
+                nuxt-link(to="/about") 
+                  em.fs-italic I'm a designer who codes.
+                | &nbsp;I bridge the gap between poetic imagination and pragmatic execution to shape digital brands and communications that reach and resonate with people.
+                //- | &nbsp;I work fluidly across visual design, user experience and code to shape digital brands and communications that resonate with people long after they've left the website.
+                //- experience create attention by bridging the gap between design and development.
 
-  //- .bg-highlight
-  //- .NewsletterHero.CoverImage
-    .Container.u-relative.b-py2
-      h1.Supertitle.u-textCenter.p-t1.b-mb1 Interesting
-      NewsletterSignupLede.rm-b3
-      NewsletterSignupForm
 
-  //- hr.b-my4
-  //- article.Container
-    .p-b4
-      .Meta.fw-700.u-textCenter
-        icon-base.Icon(icon-name="icon-pin" height="14" width="14")
-          icon-pin
-        span Pinned post
-        //- span.fw-500 Pinned post
-        //- span.MetaSeparator • 
-        //- nuxt-link(to="/blog") see all →
-    post-excerpt.m-t0(
-      v-for="post in homePagePost"
-      :category="post.category"
-      :date="post.date"
-      :heroImage="post.heroImage"
-      :heroImageNoShadow="post.heroImageNoShadow"
-      :heroRatio="post.heroRatio"
-      :key="post.permalink"
-      :lede="post.lede"
-      :permalink="post.permalink"
-      :readingTime="post.readingTime"
-      :showOnHomePage="post.showOnHomePage"
-      :thumbImage="post.thumbImage"
-      :tags="post.tags"
-      :title="post.title"
-    )
+              //- p.fs-text-lg 
+                | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
+                nuxt-link(to="/blog") the blog.
+
+  footer.b-pb4.Animate
+    .Container
+      NewsletterSignupBlock
+
+  <svg class='u-hiddenVisually'>
+    <filter id='blur' color-interpolation-filters='sRGB' x='0' y='0' height='100%' width='100%'>
+      <feGaussianBlur stdDeviation="33" />
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="1 1"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
 </template>
 
 <script>
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import PostExcerpt from "~/components/PostExcerpt.vue";
+import Nav from "~/components/Nav.vue";
 import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
-import IconBase from "~/components/IconBase.vue";
-import IconPin from "~/components/icons/IconPin.vue";
+import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import PostExcerpt from "~/components/PostExcerptEssay.vue";
+/* import { TweenMax } from "greensock"; */
 
 // timeout for loading component
 // https://stackoverflow.com/questions/33289726/combination-of-async-function-await-settimeout
@@ -85,80 +90,240 @@ import IconPin from "~/components/icons/IconPin.vue";
 // const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export default {
-  layout: "default",
+  layout: "blank",
+  /* transition: "slide", */
   components: {
     ImageCld,
     PostExcerpt,
     NewsletterSignupBlock,
-    IconBase,
-    IconPin
-  },
-  computed: {
-    homePagePost() {
-      return this.posts.filter(post => post.showOnHomePage === true);
-    }
+    Nav
   },
   data() {
     return {
-      posts: []
+      images: [
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sagatiba-bw-2000.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sky-1500.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_millennius-detail-2000.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_hi-reversed-1500.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_decadence-13-reversed-1500.jpg"
+      ],
+      selectedImage: ""
     };
   },
-  /* scrollToTop: false, */
-  async asyncData({ app }) {
-    let posts = await app.$content("/posts").getAll();
-    /* show loading component */
-    /* await timeout(500); */
-
-    return {
-      posts
-    };
+  created() {
+    /* https://stackoverflow.com/questions/45752960/how-to-get-random-element-in-vue-js */
+    const idx = Math.floor(Math.random() * this.images.length);
+    this.selectedImage = this.images[idx];
   }
+  /* computed: {
+    homePagePost() {
+      return this.posts.filter(post => post.showOnHomePage === true);
+    }
+  }, */
+  /* methods: {
+    handleModalToggle() {
+      this.$store.commit(
+        "SET_MODAL_VISIBILITY",
+        !this.$store.state.isModalVisible
+      );
+    },
+    hideNav() {
+      this.$store.commit("SET_MODAL_VISIBILITY", false);
+    }
+  }, */
+  /* transition(to, from) {
+    if (!from) return "slide-left";
+    return "slide-right";
+  }, */
 };
 </script>
 
-<style lang="postcss" scoped>
-/* @import "../assets/styles/variables.css"; */
+<style lang="postcss">
+.page-index {
+  /* --html-bg: var(--c-black);
+  --html-c: var(--c-bg); */
+  --c-indexbg: var(--c-orange);
+  --c-indexbg: #2242dc;
+  --c-text-underline: var(--c-bg);
 
-/* 
-  This proves that:
-  1. mixins work
-  2. styleResource loads the variables w/o @importing
-  3. custom props re-evaluation works on a button selector
- */
-@define-mixin bullshit {
-  color: var(--c-warning);
+  /* animation: page 750ms cubic-bezier(0.19, 1, 0.22, 1) 400ms 1 normal both; */
+  /* animation: page 2150ms cubic-bezier(0.19, 1, 0.22, 1),
+    bgimg 3000ms cubic-bezier(0.19, 1, 0.22, 1); */
+  /* animation: bgcolor 500ms ease, bgblur 2000ms cubic-bezier(0.19, 1, 0.22, 1); */
+  /* animation: bgcolor 3000ms cubic-bezier(0.19, 1, 0.22, 1),
+    bgblur 2500ms cubic-bezier(0.19, 1, 0.22, 1),
+    bgimg 500ms cubic-bezier(0.19, 1, 0.22, 1); */
+  /* animation: bgcolor 2000ms cubic-bezier(0.19, 1, 0.22, 1), bgblur 1000ms cubic-bezier(0.19, 1, 0.22, 1); */
+  background-color: var(--c-indexbg);
+  background-blend-mode: multiply;
+  /* background-image: url("/images/_index-1.jpg");
+  background-image: url("/images/_overcast-night.jpg");
+  background-image: url("/images/_sagatiba-bw-181201B.jpg"); */
+  /* background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: var(--c-bg);
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  width: 100vw;
 }
 
-.Test {
-  @mixin bullshit;
-  background-color: var(--c-brand);
-
-  /* @media (--lg) { */
-  @media (min-width: 1024px) {
-    background-color: var(--c-text);
+@keyframes bgcolor {
+  from {
+    background-color: var(--c-bg);
+  }
+  to {
+    background-color: var(--c-indexbg);
   }
 }
 
-.Adjacent {
-  /* border: 2px solid var(--c-text); */
-  background-color: var(--c-highlight-alt);
-  border-radius: 1em;
-  padding: 1.5rem 1.75rem;
-  padding: calc(0.375 * var(--responsive-space)) calc(0.45 * var(--responsive-space));
-
-  & a {
-    background-image: linear-gradient(var(--c-bg), var(--c-bg)), linear-gradient(var(--c-bg), var(--c-bg)),
-      linear-gradient(currentColor, currentColor) !important;
-    text-shadow: 0.03em 0 var(--c-highlight-alt), -0.03em 0 var(--c-highlight-alt),
-      0 0.03em var(--c-highlight-alt), 0 -0.03em var(--c-highlight-alt), 0.06em 0 var(--c-highlight-alt),
-      -0.06em 0 var(--c-highlight-alt), 0.09em 0 var(--c-highlight-alt), -0.09em 0 var(--c-highlight-alt),
-      0.12em 0 var(--c-highlight-alt), -0.12em 0 var(--c-highlight-alt), 0.15em 0 var(--c-highlight-alt),
-      -0.15em 0 var(--c-highlight-alt) !important;
+/* only if bgimg on parent div */
+@keyframes bgimg {
+  from {
+    background-image: initial;
+  }
+  to {
+    background-image: url("/images/_sagatiba-bw-181201B.jpg");
   }
 }
 
-.Icon {
-  margin-right: var(--s-2);
-  transform: translateY(2px);
+@keyframes bgblur {
+  from {
+    /* background-image: initial; */
+    filter: url("#blur");
+  }
+  to {
+    /* background-image: url("/images/_sagatiba-bw-181201B.jpg"); */
+    filter: initial;
+  }
 }
+
+.page-index .open {
+  /* nuxt 2 inherits variables for nested components */
+  --open-c-border: transparent !important;
+  --open-c-bg: rgba(0, 0, 0, 0.9) !important;
+  /* …but nuxt 1 does not */
+  animation: openIndex 0.5s ease-in-out forwards;
+}
+
+@keyframes openIndex {
+  from {
+    opacity: 0;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    background-color: var(--open-c-bg);
+    border-bottom: 1px solid var(--open-c-border);
+    top: 0;
+  }
+}
+
+.page-index .Nav-link {
+  color: var(--c-bg);
+}
+
+.page-index {
+  & .nuxt-link-active span,
+  & p a:not(.Button),
+  & .Text a:not(.Button),
+  & .Scope-post p a:not(.Button) {
+    --underline-bgimg: var(--c-indexbg);
+    --underline: rgba(255, 255, 255, 0.5);
+    --underline-hover: currentColor;
+    --underline-textshadow: var(--underline-bgimg);
+
+    text-shadow: initial;
+  }
+
+  & p em {
+    background-color: initial !important;
+    text-shadow: initial !important;
+  }
+}
+
+.page-index .Block {
+  --c-block: var(--c-bg);
+  --bg-block: transparent;
+}
+
+.page-index .Form {
+  border-color: var(--c-bg);
+}
+
+/* page transition, named via the transition object */
+.slide-enter-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+  transition: all 20.15s ease;
+}
+.slide-enter,
+.slide-leave-active {
+  opacity: 0;
+  transform: translate(-30px, 0);
+  transition: all 20.15s ease;
+}
+
+/* .slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(20px, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-20px, 0);
+} */
+
+/* @keyframes slideIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+} */
+
+/* .slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
+} */
+
+/* .slide-enter-active,
+.slide-leave-active {
+  transition: all 0.15s ease;
+  background-color: var(--c-bg);
+  z-index: 999;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  opacity: 1;
+}
+
+.slide-leave-active {
+  transition: all 0.4s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+} */
 </style>

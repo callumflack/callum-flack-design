@@ -1,107 +1,11 @@
 /* 
 
-  Page themes
+  Clear fixed nav
 
  */
 
-.page-index .Nav-list {
-  background-color: initial !important;
-}
-
-.page-index .promote {
-  position: relative;
-  z-index: 1;
-
-  & a {
-    text-shadow: initial;
-  }
-}
-
-.page-interesting .Toggle-button {
-  background-color: transparent;
-}
-
-/* turn off footer rule until there's an archive list */
-.page-interesting,
-.page-index {
-  & .footer hr {
-    background-color: transparent !important;
-  }
-}
-
-/* 
-
-  Top of the page nav specials
-
- */
-
-.b-nav {
-  padding-top: var(--responsive-space);
-  padding-bottom: calc(1.25 * var(--responsive-space));
-}
-
-.Nav-locator {
-  margin-top: 13px;
-  margin-top: 1.083333333em;
-  margin-bottom: calc(1.1 * var(--responsive-typography-space));
-
-  @media (--mo) {
-    text-align: right;
-  }
-}
-
-/* 
-
-  Post: essay drop caps, etc
-
- */
-.Scope-post-dropcap div:first-child > p:first-of-type:first-letter {
-  float: left;
-  font-family: var(--ff-lede), var(--ff-stack-serif);
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 300;
-  font-size: 3em;
-  line-height: 1;
-  padding-top: 3px;
-  padding-top: 0;
-  padding-right: 0.7em;
-  padding-bottom: 0.25em;
-
-  @media (--md) {
-    /* font-size: 2.75em; */
-  }
-  @media (--lg) {
-    font-size: 3.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0;
-  }
-}
-
-/* .Scope-post-dropcap div > p span:first-of-type {
-  font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-} */
-
-.Footnote-marker {
-  display: inline-block;
-  font-size: 60%;
-  transform: translateY(-0.666em);
-}
-
-/* 
-
-  Post endRule
-  Reqs: `.b-mb0.b-mt2`
-
- */
-
-.Post-endRule {
-  background-color: var(--c-text);
-  margin-left: 0;
-  transform: translateY(-0.25em);
-  width: 5%;
+.b-clearFixedNav {
+  padding-top: var(--nav-height);
 }
 
 /* 
@@ -116,17 +20,50 @@
   }
 }
 
+.Button {
+  padding-bottom: calc(3 / var(--rfs-text));
+  padding-bottom: 0.142857143em;
+}
+
 /* 
 
-  Separators & things 
+  Newsletter block 
 
  */
+
+/* .Block {
+  --c-block: var(--c-text);
+  --bg-block: var(--c-bg);
+
+  background-color: var(--bg-block);
+  border: 1px solid var(--c-block);
+  border-left: 0;
+  color: var(--c-block);
+}
+
+.Block-cell {
+  border-left: 1px solid var(--c-block);
+} */
+
+/* 
+
+  Separators & misc things 
+
+ */
+
+.b-ptTitle {
+  padding-top: 17.5vh;
+}
+
+.TextIndent {
+  padding-left: var(--text-indent);
+}
 
 .MetaSeparator {
   display: inline-block;
   /* letter-spacing: -0.5em; */
-  margin-left: calc(0.5 * var(--responsive-typography-space));
-  margin-right: calc(0.5 * var(--responsive-typography-space));
+  margin-left: calc(0.5 * var(--rs-space));
+  margin-right: calc(0.5 * var(--rs-space));
 }
 
 .LinkSeparator {
@@ -141,11 +78,59 @@
   }
 }
 
+.ParagraphImage {
+  float: left;
+  transform: translateY(0.5em);
+}
+
 /* 
 
-  Utils, etc
+  Iremono overrides & new utils
 
  */
+
+.image-multiply {
+  mix-blend-mode: multiply;
+}
+
+.bg-neutral-dark {
+  background-color: var(--c-neutral-dark);
+}
+
+.Contact {
+  /* background-color: #2242dc;
+  background-color: rgb(223, 226, 239);
+  background-color: rgb(225, 230, 249);
+  background-color: rgb(211, 220, 255);*/
+  /* background-color: var(--c-contact-block); */
+  background-color: var(--c-text);
+  /* border: 1px solid var(--c-text);
+  border-left: 0; */
+  border-left: 1px solid var(--c-bg);
+}
+
+.Extract-md {
+  position: relative;
+
+  @media (--lg) {
+    left: calc((var(--container-md) - var(--container-rg) + (2 * var(--grid-gutter))) * -0.5);
+    width: var(--container-md);
+  }
+}
+
+.GutterInsetX {
+  padding-left: calc(1 * var(--grid-gutter));
+  padding-right: calc(1 * var(--grid-gutter));
+
+  /* @media (--lg) {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+  @media (--xl) {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  } */
+}
 
 @media (--md) {
   .md-AspectRatio--2x1 {
@@ -164,66 +149,5 @@
 
   .lg-AspectRatio--10x4 {
     padding-bottom: 40%;
-  }
-}
-
-/* 
-
-  Interesting hero, etc
-
- */
-
-.NewsletterHero:before {
-  /* background-color: rgba(0, 0, 0, 0.55);
-  background-color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(212, 203, 184, 0.85);
-  background-color: rgba(228, 226, 220, 0.9); */
-  /* background-color: rgba(239, 236, 229, 0.92); */
-  background-color: rgba(254, 224, 2, 1);
-  /* content: ""; */
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-
-.NewsletterHero {
-  background-color: var(--c-text);
-  background-color: rgba(239, 236, 229, 0.92);
-  background-color: rgba(255, 203, 5, 0.92);
-  background-color: rgba(254, 224, 2, 1);
-  /* background-image: url(/images/_slump.jpg);
-  background-image: url(/images/_overcast-night.jpg);
-  background-image: url(/images/_spys.jpg);
-  background-image: url(/images/_kiss.jpg);*/
-  /* background-image: url("https://res.cloudinary.com/pw-img-cdn/image/upload/v1531451032/okok/_kiss.jpg"); */
-  /* background-position-y: 80%; */
-  background-position-y: 0;
-  position: relative;
-}
-
-.NewsletterHero p,
-.NewsletterHero {
-  /* color: var(--c-bg); */
-}
-
-/* 
-
-  Littoral icon
-
- */
-
-.LittoralIcon {
-  margin-right: 0.25em;
-  transform: translateY(3px);
-
-  @media (min-width: 768px) {
-    margin-right: 0.2em;
-    transform: translateY(2px);
-  }
-  @media (min-width: 1280px) {
-    transform: translateY(4px);
   }
 }

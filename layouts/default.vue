@@ -1,57 +1,49 @@
 <template lang="pug">
   div(:class="currentPageClass")
-    NavToggle
-    nuxt.Page(:class="contentNavSpace")
-    footer
-      NavList
-    NavToggled
+    Nav
+
+    nuxt.b-clearFixedNav.b-pb15
+
+    footer.b-pb4
+      .Container
+        NewsletterSignupBlock(v-if="showSignup")
+
+        //- .Nav-list
+          nuxt-link.Nav-link(to="/about")
+            span.Meta.fs-text-xs ©2018 Callum Flack Design
+          .Nav-link.Nav-divide •
+          nuxt-link.Nav-link(to="/about")
+            span.Meta.fs-text-xs Contact
+
+    //- Showreel
+
 </template>
 
 <script>
-import NavToggle from "~/components/NavToggle.vue";
-import NavToggled from "~/components/NavToggled.vue";
-import NavList from "~/components/NavList.vue";
+import Nav from "~/components/Nav.vue";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
+/* import Showreel from "~/components/Showreel.vue"; */
 
 export default {
   components: {
-    NavToggle,
-    NavToggled,
-    NavList
+    Nav,
+    NewsletterSignupBlock
   },
   computed: {
     currentPageClass() {
-      return `fs-scale-reset page-${this.$store.state.currentPage}`;
-    },
-    contentNavSpace() {
-      if (this.$route.name === "projects") {
-        return "p-b0";
-      }
-      /* if (this.$route.name !== "the-littoral-line") {
-        return "b-pb3";
+      return `page-${this.$store.state.currentPage}`;
+
+      /* if (this.$route.name === "blog-page") {
+        return "bg-neutral";
+      } else {
+        return `page-${this.$store.state.currentPage}`;
       } */
+    },
+    showSignup() {
+      if (this.$route.name !== "the-littoral-line") {
+        return true;
+      }
     }
   }
 };
 </script>
-
-<style lang="postcss">
-@import "../assets/styles/variables.css";
-
-/* .Page {
-  background-color: var(--c-bg);
-  min-height: 100vh;
-  padding-top: var(--fixed-menu-height);
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: 3;
-} */
-
-/* .footer-spacer {
-  display: none;
-  height: 100vh;
-
-  @media (--md) {
-    display: block;
-  }
-} */
-</style>

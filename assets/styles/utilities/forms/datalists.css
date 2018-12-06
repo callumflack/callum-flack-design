@@ -1,9 +1,0 @@
-/* datalists from hi-q */
-
-input[list] {
-  @mixin input;
-  display: block;
-  width: 100%;
-  height: calc(2.5 * var(--space));
-  padding: 0 0.75rem;
-}
