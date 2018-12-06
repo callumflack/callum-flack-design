@@ -2,9 +2,11 @@
 
 Value prop, folio and blog: https://callumflack.design/
 
-![Project screen-shot](screen-shot.jpg?raw=true "Project screen-shot")
+Made with Nuxt.js + Nuxtent markdown, images served by Cloudinary, and deployed with Zeit Now.
 
-## Build Setup
+![Project screen-shot](screen-shot-v6.jpg?raw=true "Project screen-shot")
+
+## Nuxt build setup
 
 ```bash
 # install dependencies
