@@ -90,8 +90,7 @@ module.exports = {
       "/blog",
       "/essays",
       "/projects",
-      "/the-littoral-line",
-      "/404"
+      "/the-littoral-line"
     ]
   },
 
