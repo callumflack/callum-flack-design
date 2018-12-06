@@ -93,10 +93,6 @@
   mix-blend-mode: multiply;
 }
 
-.Text--liningNums {
-  font-variant-numeric: lining-nums;
-}
-
 .bg-neutral-dark {
   background-color: var(--c-neutral-dark);
 }

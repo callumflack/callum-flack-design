@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/Guyot-Text-Regular.otf") format("woff");
+  src: url("~static/fonts/guyot-text-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/Guyot-Text-Italic.otf") format("woff");
+  src: url("~static/fonts/guyot-text-italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
@@ -37,7 +37,7 @@
 @font-face {
   font-family: var(--ff-title);
   /* src: url("~static/fonts/TradeGothic-BoldCondTwenty.otf") format("woff"); */
-  src: url("~static/fonts/DrukText-Medium.otf") format("woff");
+  src: url("~static/fonts/druk-text-medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
