@@ -101,11 +101,11 @@ export default {
   data() {
     return {
       images: [
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066079/_sagatiba-bw-181201B_jkxlim.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066081/_sky_rqkmve.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066079/_millennius-detail_jqnvd6.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066090/_hi-reversed_rkq0hc.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544066090/_decadence-13-reversed_pvm8wo.jpg"
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sagatiba-bw-2000.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sky-1500.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_millennius-detail-2000.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_hi-reversed-1500.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_decadence-13-reversed-1500.jpg"
       ],
       selectedImage: ""
     };
