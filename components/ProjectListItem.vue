@@ -1,31 +1,35 @@
 <template lang="pug">
-  nuxt-link.Project-item.Text.f(
+  nuxt-link.Project.Text(
     v-if="internal"
     :key="link"
     :to="link"
   )
-    span.m-r5 {{ title }}
-    span.Meta.Project-item-span(v-if="medium") {{ medium }}
-    span.Meta.Project-item-span(v-if="tags") {{ tags }}
-    span.Meta.Project-item-span(v-if="client") {{ client }}
-    span.Meta.Project-item-span(v-if="number") {{ number }}
-    span.Meta.Project-item-span(v-if="date") {{ date }}
-    span.Meta.Project-item-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Case study
+    span.Project-title.m-sm-r5 
+      span {{ title }}
+    span.Project-details.m-mo-t1
+      span.Meta.Project-meta(v-if="medium") {{ medium }}
+      span.Meta.Project-meta(v-if="tags") {{ tags }}
+      span.Meta.Project-meta(v-if="client") {{ client }}
+      span.Meta.Project-meta(v-if="number") {{ number }}
+      span.Meta.Project-meta(v-if="date") {{ date }}
+      span.Meta.Project-case.icon-targetBlank.icon-targetCase.p-r4.m-lA Read
 
-  a.Project-item.Text.f(
+  a.Project.Text.f(
     v-else
     :key="link"
     :href="link"
     target="_blank"
     :class="disabledClass"
   )
-    span.m-r5 {{ title }}
-    span.Meta.Project-item-span(v-if="medium") {{ medium }}
-    span.Meta.Project-item-span(v-if="tags") {{ tags }}
-    span.Meta.Project-item-span(v-if="client") {{ client }}
-    span.Meta.Project-item-span(v-if="number") {{ number }}
-    span.Meta.Project-item-span(v-if="date") {{ date }}
-    span.Text.Project-item-target.icon-targetBlank.m-lA &nbsp;
+    span.Project-title.m-sm-r5 
+      span {{ title }}
+    span.Project-details.m-mo-t1
+      span.Meta.Project-meta(v-if="medium") {{ medium }}
+      span.Meta.Project-meta(v-if="tags") {{ tags }}
+      span.Meta.Project-meta(v-if="client") {{ client }}
+      span.Meta.Project-meta(v-if="number") {{ number }}
+      span.Meta.Project-meta(v-if="date") {{ date }}
+      span.Text.Project-target.icon-targetBlank.m-lA &nbsp;
 
 </template>
 
@@ -68,24 +72,61 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Project-item-span {
+@import "../assets/styles/variables.css";
+
+.Project {
+  border-bottom: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--s-3) 0;
+  transition: all 150ms ease;
+
+  &:hover {
+    border-color: var(--c-text);
+    transition: all 150ms ease;
+  }
+
+  @media (--sm) {
+    flex-direction: row;
+  }
+}
+
+.Project-title,
+.Project-details {
+  @media (--mo) {
+    min-height: calc(22 / 16 * 1em);
+  }
+}
+
+.Project-details {
+  display: flex;
+  flex-grow: 1;
+}
+
+.Project-meta {
   align-self: flex-end;
   color: var(--c-text-light);
   display: inline-flex;
-  transform: translateY(-5px);
   transform: translateY(-0.36em);
   transition: all 500ms ease;
 }
 
-.Project-item-span + .Project-item-span {
+.Project-meta + .Project-meta {
   border-left: 1px solid var(--c-text-underline);
   margin-left: var(--s-2);
   padding-left: var(--s-2);
 }
 
-.Project-item-target {
+/* 
+
+  target indicators
+
+*/
+
+.Project-target {
   opacity: 0;
-  transform: translateX(-0.72em);
+  /* transform: translateX(-0.72em); */
+  transform: translate(-0.72em, -0.18em);
   transition: all 150ms ease;
 
   &:after {
@@ -94,13 +135,13 @@ export default {
   }
 }
 
-.Project-item:hover .Project-item-target {
+.Project:hover .Project-target {
   opacity: 1;
-  transform: translateX(0);
+  transform: translate(0, -0.18em);
   transition: all 150ms ease;
 }
 
-.Project-item-case {
+.Project-case {
   align-self: flex-end;
   display: inline-flex;
   opacity: 0;
@@ -114,22 +155,23 @@ export default {
   }
 }
 
-.Project-item:hover .Project-item-case {
+.Project:hover .Project-case {
   opacity: 1;
   transform: translate(0, -0.36em);
   transition: all 150ms ease;
 }
 
-/* disabled */
-.Project-item.is-disabled {
+/* 
+
+  disabled
+
+*/
+
+.Project.is-disabled {
   cursor: initial;
   border-bottom: 1px solid var(--c-border) !important;
 
-  & span {
-    /* opacity: 0.333 !important; */
-  }
-
-  & span:first-child {
+  & .Project-title span:first-child {
     /* text-decoration: line-through; */
     position: relative;
 
@@ -143,7 +185,8 @@ export default {
     }
   }
 
-  & span:after {
+  & .Project-target:after,
+  & .Project-case:after {
     content: initial;
   }
 }
