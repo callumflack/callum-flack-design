@@ -124,7 +124,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/variables.css";
+/* @import "../assets/styles/variables.css"; */
 
 .image {
   position: relative;
