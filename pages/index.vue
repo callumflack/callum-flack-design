@@ -1,13 +1,23 @@
 <template lang="pug">
 .u-relative
   .AspectRatio-object
-    ImageCld.image-multiply(v-bind:src="selectedImage")
+    //- ImageCld.image-multiply(v-bind:src="selectedImage")
+    ImageCld(v-bind:src="selectedImage")
     //- img.image-multiply(src="/images/_sagatiba-bw-181201B.jpg")
     //- img.image-multiply(src="/images/_millennius-detail.jpg")
     //- img.image-multiply(src="/images/_sky.jpg")
     //- img.image-multiply(src="/images/_decadence-13-reversed.jpg")
+    //- img.image-multipl(src="/images/_decadence-13-reversed2.jpg")
+    //- img.image-multipl(src="/images/_decadence-13.png")
     //- img.image-multiply(src="/images/_hi-reversed.jpg")
     //- img.image-multiply(src="/images/_MSW.jpg")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544178755/okok/_decadence-13-blue.png")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544178999/okok/_sky-1500-invert.jpg")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180211/okok/_decadence-13-black.jpg")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180308/okok/_millennius-detail-2000-invert.jpg")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180386/okok/_sagatiba-bw-2000-invert.jpg")
+    //- ImageCld(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180513/okok/_hi-invert.jpg")
+  .AspectRatio-object(style="background-color: rgba(0,0,0,0.5)")
 
   Nav.Animate
 
@@ -21,47 +31,31 @@
                 //- | and the simple unique.
                 //- | Callum Flack is a graphic designer turned
                 //- | frontend developer.
-                | Design for deeper attention.
-                | Build with finer intuition. 
+                //- | Design for deeper attention.
+                //- | Build with finer intuition. 
                 //- | Build to anticipate people. 
                 //- span.u-block.m-t4 Why does this matter?
                 //- | ux engineer
+                | People decide if you're worth their time in a heartbeat.
 
             .Scope-post
               p.fs-text-lg
-                | In the internet era, 
-                nuxt-link.Reveal-link(to="/blog")
-                  em your branding is tactile. 
-                //- | The technology envelopes the brand. 
-                //- | People only pay attention when they trust that your interface will work. It's not enough to make it look pretty, it has to 
-                | People only pay attention after they trust the interface. It's not enough to make it look nice, it has to 
-                nuxt-link.Reveal-link(to="/projects")
-                  em behave beautifully.
-                | &nbsp;You'll know the difference in a heartbeat. And so will your audience. 
-                //- This is where I can help. 
-                
-              //- p.fs-text-lg.u-textCenter.b-my1
-                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400(to="/about")
-                  | About Callum
-                  span.Arrow.Arrow--right.m-l2
-                nuxt-link.Button.Button--round.Meta.fs-text-sm.fw-400.m-l3(to="/blog")
-                  | Peruse the blog
-                  span.Arrow.Arrow--right.m-l2
+                | I'm 
+                nuxt-link.Reveal-link(to="/about") Callum Flack,
+                | &nbsp;graphic designer and web developer. I use design and code to help organisations build websites that make sense, make it easy and resonate immediately. 
 
-              //- hr.Post-intro-rule.b-my05
+              hr.Post-intro-rule.m-y6
 
               p.fs-text-lg 
-                | Hi, I'm Callum Flack. 
-                nuxt-link(to="/about") 
-                  em.fs-italic I'm a designer who codes.
-                | &nbsp;I bridge the gap between poetic imagination and pragmatic execution to shape digital brands and communications that reach and resonate with people.
-                //- | &nbsp;I work fluidly across visual design, user experience and code to shape digital brands and communications that resonate with people long after they've left the website.
-                //- experience create attention by bridging the gap between design and development.
-
-
-              //- p.fs-text-lg 
-                | Because website involve alot of choices, I write as a means to better understand how the web and people's attention works, and to think through possibilities. Here's the latest post. Or check out 
-                nuxt-link(to="/blog") the blog.
+                | Understanding the 
+                nuxt-link(to="/blog") 
+                  | quality of the connections
+                | &nbsp;that bridge design and code is the key to creating attention. 
+                | I can help you design a visual brand, its user experience, 
+                | and I can 
+                nuxt-link(to="/projects") 
+                  em.fs-italic build it too.
+                | &nbsp;The difference isn't obvious until it is.
 
   footer.b-pb4.Animate
     .Container
@@ -80,8 +74,7 @@
 <script>
 import Nav from "~/components/Nav.vue";
 import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
-import PostExcerpt from "~/components/PostExcerptEssay.vue";
+import ImageCld from "~/components/ImageLazyIndex.vue";
 /* import { TweenMax } from "greensock"; */
 
 // timeout for loading component
@@ -94,18 +87,23 @@ export default {
   /* transition: "slide", */
   components: {
     ImageCld,
-    PostExcerpt,
     NewsletterSignupBlock,
     Nav
   },
   data() {
     return {
       images: [
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sagatiba-bw-2000.jpg",
+        /* "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sagatiba-bw-2000.jpg",
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_sky-1500.jpg",
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_millennius-detail-2000.jpg",
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_hi-reversed-1500.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_decadence-13-reversed-1500.jpg"
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_decadence-13-reversed-1500.jpg", */
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544178999/okok/_sky-1500-invert.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180211/okok/_decadence-13-black.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180308/okok/_millennius-detail-2000-invert.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180386/okok/_sagatiba-bw-2000.jpg",
+        // "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180386/okok/_sagatiba-bw-2000-invert.jpg",
+        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180513/okok/_hi-invert.jpg"
       ],
       selectedImage: ""
     };
@@ -144,6 +142,7 @@ export default {
   --html-c: var(--c-bg); */
   --c-indexbg: var(--c-orange);
   --c-indexbg: #2242dc;
+  --c-indexbg: black;
   --c-text-underline: var(--c-bg);
 
   /* animation: page 750ms cubic-bezier(0.19, 1, 0.22, 1) 400ms 1 normal both; */
@@ -168,6 +167,30 @@ export default {
   min-height: 100vh;
   width: 100vw;
 }
+
+/* .bg-blue {
+  --c-indexbg: #2242dc;
+  background-color: var(--c-indexbg);
+  background-blend-mode: multiply;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.Blue {
+  background-color: black;
+  animation: bgblue 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes bgblue {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #2242dc;
+  }
+} */
 
 @keyframes bgcolor {
   from {
