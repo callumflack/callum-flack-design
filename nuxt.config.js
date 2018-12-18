@@ -35,10 +35,11 @@ module.exports = {
   /* 
     You cannot use path aliases here (~ and @), you need to use relative or absolute paths. So it must be a dot!
     https://github.com/nuxt-community/style-resources-module
+    UPDATE: unsure this works at all with CSS…
   */
-  styleResources: {
+  /* styleResources: {
     css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
-  },
+  }, */
 
   router: {
     middleware: "currentPage",
@@ -74,7 +75,8 @@ module.exports = {
     } */
   ],
 
-  modules: ["nuxtent", "@nuxtjs/style-resources", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]],
+  /* modules: ["nuxtent", "@nuxtjs/style-resources", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]], */
+  modules: ["nuxtent", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]],
 
   /* axios: {
     credentials: false
