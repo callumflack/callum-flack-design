@@ -76,7 +76,7 @@ module.exports = {
   ],
 
   /* modules: ["nuxtent", "@nuxtjs/style-resources", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]], */
-  modules: ["nuxtent", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]],
+  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
 
   /* axios: {
     credentials: false
