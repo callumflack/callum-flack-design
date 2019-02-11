@@ -80,6 +80,22 @@ export default {
           link: "https://the-littoral-line.callumflack.design/LL04.html",
           tags: "",
           medium: ""
+        },
+        {
+          title: "Perspective",
+          number: "LL05",
+          date: "2018.12.20",
+          link: "https://thelittoralline.callumflack.design/LL05.html",
+          tags: "",
+          medium: ""
+        },
+        {
+          title: "Pouring",
+          number: "LL06",
+          date: "2019.02.08",
+          link: "https://thelittoralline.callumflack.design/LL06.html",
+          tags: "",
+          medium: ""
         }
       ]
     };
