@@ -106,7 +106,7 @@
   background-color: var(--c-text);
   /* border: 1px solid var(--c-text);
   border-left: 0; */
-  border-left: 1px solid var(--c-bg);
+  /* border-left: 1px solid var(--c-bg); */
 }
 
 .Extract-md {
