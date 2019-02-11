@@ -18,15 +18,6 @@ module.exports = {
         generate: ["get", "getAll"]
       }
     ]
-    /* [
-      "newsletter",
-      {
-        page: "/newsletter/_slug",
-        permalink: "/the-littoral-line/:slug",
-        isPost: false, // if true, `Error: Post in "/" does not have a date!`
-        generate: ["get", "getAll"]
-      }
-    ] */
   ],
 
   api: function(isStatic) {
