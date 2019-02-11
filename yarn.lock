@@ -3650,9 +3650,9 @@ ipaddr.js@1.8.0:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.8.0.tgz#eaa33d6ddd7ace8f7f6fe0c9ca0440e706738b1e"
   integrity sha1-6qM9bd16zo9/b+DJygRA5wZzix4=
 
-iremono@callumflack/iremono#experiments:
+iremono@callumflack/iremono:
   version "0.0.1"
-  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/eda58f4097d81591e9decbf0afa0bcf7c3161930"
+  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/09067be19c94e38850352deb7ba3e31faf839aaa"
   dependencies:
     autoprefixer "^9.3.1"
     normalize.css "^8.0.0"
