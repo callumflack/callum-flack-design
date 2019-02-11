@@ -15,7 +15,7 @@ article
         v-for="(year, index) in reverseProjects"
         v-bind="year"
       )
-        h2.Subtitle.Projects-year {{ 2018 - index }}
+        h2.Subtitle.Projects-year {{ 2019 - index }}
         .Projects
           ProjectListItem(
             v-for="project in year"

@@ -168,21 +168,23 @@ export default {
 */
 
 .Project.is-disabled {
-  cursor: initial;
+  color: var(--c-text-light);
+  /* cursor: not-allowed; */
+  cursor: default;
   border-bottom: 1px solid var(--c-border) !important;
 
   & .Project-title span:first-child {
     /* text-decoration: line-through; */
     position: relative;
 
-    &:after {
+    /* &:after {
       border-bottom: 1px solid var(--c-text);
       content: "";
       position: absolute;
       left: 0;
       top: 53%;
       width: 100%;
-    }
+    } */
   }
 
   & .Project-target:after,
