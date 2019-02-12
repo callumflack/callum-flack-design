@@ -7,8 +7,12 @@ export default {
       link: "https://www.portt.com/"
     },
     {
+      title: "Wynnum Dentists",
+      tags: "Frontend",
+      link: "https://www.wynnumdentists.com.au/"
+    },
+    {
       title: "The Ki Line",
-      client: "Ki Woyke",
       link: "https://kiwoyke.coach/"
     }
   ],
