@@ -141,6 +141,10 @@ export default {
   transition: all 150ms ease;
 }
 
+.Project:hover:not(.is-disabled) .Project-meta {
+  color: var(--c-text);
+}
+
 .Project-case {
   align-self: flex-end;
   display: inline-flex;
@@ -174,8 +178,8 @@ export default {
   border-bottom: 1px solid var(--c-border) !important;
 
   & .Project-title span:first-child {
-    /* text-decoration: line-through; */
     position: relative;
+    /* text-decoration: line-through; */
 
     /* &:after {
       border-bottom: 1px solid var(--c-text);
