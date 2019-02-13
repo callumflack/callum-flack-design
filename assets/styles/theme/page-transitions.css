@@ -19,13 +19,6 @@
   z-index: 999;
 }
 
-.layout-enter-active,
-.layout-leave-active,
-.page-enter-active,
-.page-leave-active {
-  /* opacity: 1; */
-}
-
 .layout-leave-active,
 .page-leave-active {
   transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
