@@ -63,11 +63,6 @@ export default {
   components: {
     ImageCld
   },
-  /* props: {
-    title: String,
-    lede: String,
-    heroImage: String
-  }, */
   head() {
     return {
       title: `${this.page.title}—Callum Flack Design`,
