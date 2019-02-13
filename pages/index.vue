@@ -1,5 +1,5 @@
 <template lang="pug">
-.u-relative
+.u-relative.page-index-internal
   .AspectRatio-object
     //- ImageCld.image-multiply(v-bind:src="selectedImage")
     ImageCld(v-bind:src="selectedImage")
@@ -137,7 +137,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.page-index {
+.page-index-internal {
   /* --html-bg: var(--c-black);
   --html-c: var(--c-bg); */
   --c-indexbg: var(--c-orange);
@@ -222,7 +222,7 @@ export default {
   }
 }
 
-.page-index .open {
+.page-index-internal .open {
   /* nuxt 2 inherits variables for nested components */
   --open-c-border: transparent !important;
   --open-c-bg: rgba(0, 0, 0, 0.9) !important;
@@ -245,11 +245,11 @@ export default {
   }
 }
 
-.page-index .Nav-link {
+.page-index-internal .Nav-link {
   color: var(--c-bg);
 }
 
-.page-index {
+.page-index-internal {
   & .nuxt-link-active span,
   & p a:not(.Button),
   & .Text a:not(.Button),
@@ -268,12 +268,12 @@ export default {
   }
 }
 
-.page-index .Block {
+.page-index-internal .Block {
   --c-block: var(--c-bg);
   --bg-block: transparent;
 }
 
-.page-index .Form {
+.page-index-internal .Form {
   border-color: var(--c-bg);
 }
 
