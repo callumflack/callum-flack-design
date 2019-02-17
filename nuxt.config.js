@@ -10,7 +10,7 @@ module.exports = {
       },
       {
         /* failing pinterest bullshit */
-        name: "p: domain_verify",
+        name: "p:domain_verify",
         content: "8280c00ce54aef1d74f05dc38cd9fb91"
       },
       {
@@ -32,7 +32,7 @@ module.exports = {
 
   css: ["~/assets/styles/application.css"],
 
-  /* 
+  /*
     You cannot use path aliases here (~ and @), you need to use relative or absolute paths. So it must be a dot!
     https://github.com/nuxt-community/style-resources-module
     UPDATE: unsure this works at all with CSS…
@@ -103,7 +103,7 @@ module.exports = {
       plugins: {},
       preset: { stage: 0 }
     }, */
-    /* 
+    /*
       Get postcss syntax in single page component styles
       Requires <style lang="postcss"
       https://github.com/nuxt/nuxt.js/issues/3231
