@@ -1,18 +1,19 @@
 <template lang="pug">
-  NavFixedOnScroll.Nav.Nav--animate.z-1.u-relative
+  headroom(:speed="500")
     .Container
       NavList
 
 </template>
 
 <script>
+import { headroom } from "vue-headroom";
 import NavList from "~/components/NavList";
-import NavFixedOnScroll from "~/components/NavFixedOnScroll.vue";
 
+/*  */
 export default {
   components: {
-    NavList,
-    NavFixedOnScroll
+    headroom,
+    NavList
   },
   computed: {
     isModalVisible: function() {
@@ -32,3 +33,15 @@ export default {
   }
 };
 </script>
+
+<style>
+.headroom {
+  background-color: rgba(255, 255, 255, 0.96);
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.96) 90%,
+    transparent
+  ); */
+}
+</style>
+

@@ -23,6 +23,7 @@
     "nuxt": "1.4.2",
     "nuxtent": "^1.4.1",
     "v-lazy-image": "^1.2.2",
+    "vue-headroom": "^0.9.0",
     "vue-moment": "^4.0.0"
   },
   "devDependencies": {

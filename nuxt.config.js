@@ -3,13 +3,16 @@ module.exports = {
     title: "Callum Flack digital design & development",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
       {
         name: "google-site-verification",
         content: "HN9v-wB-PoQjHk1CGpr5YVG9VUNrcOaOjHACfG3SSSI"
       },
       {
-        /* failing pinterest bullshit */
+        /* pinterest */
         name: "p:domain_verify",
         content: "8280c00ce54aef1d74f05dc38cd9fb91"
       },
@@ -18,11 +21,25 @@ module.exports = {
         name: "description",
         content: "Callum Flack Design & Development—Cairns, Australia"
       },
-      { hid: "twitter:card", name: "twitter:card", content: "summary" },
-      { hid: "twitter:site", name: "twitter:site", content: "@callumflack" },
-      { hid: "twitter:creator", name: "twitter:creator", content: "@callumflack" }
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary"
+      },
+      {
+        hid: "twitter:site",
+        name: "twitter:site",
+        content: "@callumflack"
+      },
+      {
+        hid: "twitter:creator",
+        name: "twitter:creator",
+        content: "@callumflack"
+      }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+    ]
     /* script: [{ src: "./javascript/intersection-observer.js" }] */
   },
 
@@ -41,28 +58,8 @@ module.exports = {
     css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
   }, */
 
-  router: {
-    middleware: "currentPage",
-    /* https://github.com/nuxt/nuxt.js/issues/2738#issuecomment-372007743 */
-    scrollBehavior(to, from, savedPosition) {
-      if (savedPosition) {
-        return savedPosition;
-      } else {
-        let position = {};
-        if (to.matched.length < 2) {
-          position = { x: 0, y: 0 };
-        } else if (to.matched.some(r => r.components.default.options.scrollToTop)) {
-          position = { x: 0, y: 0 };
-        }
-        if (to.hash) {
-          position = { selector: to.hash };
-        }
-        return position;
-      }
-    }
-  },
-
   plugins: [
+    "~/plugins/vue-headroom",
     "~/plugins/vue-moment"
     /*{ src: "~/plugins/vue-slick", ssr: false },*/
     /* {
@@ -76,7 +73,10 @@ module.exports = {
   ],
 
   /* modules: ["nuxtent", "@nuxtjs/style-resources", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]], */
-  modules: ["nuxtent", ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]],
+  modules: [
+    "nuxtent",
+    ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]
+  ],
 
   /* axios: {
     credentials: false
@@ -94,6 +94,31 @@ module.exports = {
       "/projects",
       "/the-littoral-line"
     ]
+  },
+
+  router: {
+    middleware: "currentPage",
+    /* https://github.com/nuxt/nuxt.js/issues/2738#issuecomment-372007743 */
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition;
+      } else {
+        let position = {};
+        if (to.matched.length < 2) {
+          position = { x: 0, y: 0 };
+        } else if (
+          to.matched.some(
+            r => r.components.default.options.scrollToTop
+          )
+        ) {
+          position = { x: 0, y: 0 };
+        }
+        if (to.hash) {
+          position = { selector: to.hash };
+        }
+        return position;
+      }
+    }
   },
 
   build: {
