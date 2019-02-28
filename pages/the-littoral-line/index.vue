@@ -8,14 +8,14 @@ div
           //- IconBase.LittoralIcon(icon-name="icon-sun")
             IconSun
           | The Littoral Line
-        //- p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things", those that live in the littoral zone, so to speak, where . I hope to share curious and generative links, stories and insights with you. Even if you think your digital interfaces are resonating with your audience, I hope you'll get something generative out of reading 
+        //- p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things", those that live in the littoral zone, so to speak, where . I hope to share curious and generative links, stories and insights with you. Even if you think your digital interfaces are resonating with your audience, I hope you'll get something generative out of reading
           em.fs-italic Interesting:
         //- p I write an email letter once or twice a month about visual design, user experience and website development systems through the lens of people and attention. I'm always looking for the "inbetween things" that wash up in the littoral zone, so to speak.
         //- I'll share curious and generative links, stories and insights that I hope resonate with you as much they did me:
         //- NewsletterSignupForm
         //- p.fs-text-sm.rm-t4
-          | Ps. If you sign up, I'll send you a 
-          em Wardley Map for branded websites. 
+          | Ps. If you sign up, I'll send you a
+          em Wardley Map for branded websites.
           | People say it's helped them clarify what to focus on when attempting differentiate with their website.
 
         NewsletterSignupBlock.b-mt05
@@ -94,6 +94,14 @@ export default {
           number: "LL06",
           date: "2019.02.08",
           link: "https://thelittoralline.callumflack.design/LL06.html",
+          tags: "",
+          medium: ""
+        },
+        {
+          title: "You don’t miss good tools until…",
+          number: "LL07",
+          date: "2019.02.22",
+          link: "https://thelittoralline.callumflack.design/LL07.html",
           tags: "",
           medium: ""
         }
