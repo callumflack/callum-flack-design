@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* prettier-ignore */
 
-/* 
+/*
 
   Static custom properties only
   Starting with media queries (don't nest within :root)
@@ -50,10 +50,10 @@
   --s-headline: calc(2.5 * var(--rs-space));
   --s-blockquote: calc(1 * var(--rs-space));
 
-  /* 
-    
+  /*
+
     Colors
-  
+
    */
 
   --c-brand: #00ffff;
@@ -66,7 +66,7 @@
   --c-link: #fe3600;
   --c-highlight: rgba(150, 247, 171, 0.7);
   --c-highlight: rgba(238, 227, 72, 0.7);
-  --c-highlight: rgba(255, 247, 136, 0.4);
+  --c-highlight: rgba(255, 247, 136, 0.25);
   --c-contact-block: rgb(198, 234, 251);
   --c-contact-block: rgb(150, 247, 171);
   --c-contact-block: rgb(238, 227, 72);
@@ -104,10 +104,10 @@
   --c-warning: #ff3700;
   --c-danger: #ff3700;
 
-  /* 
-  
+  /*
+
     Typefaces
-  
+
    */
 
   --ff-title: "Title";
@@ -120,10 +120,10 @@
   --ff-stack-text: var(--ff-stack-serif);
   --ff-stack-heading: var(--ff-stack-sans);
 
-  /* 
-  
+  /*
+
     Font leading (line-height), tracking (letter-spacing) & weights
-   
+
    */
 
   --fls-text: -0.00125em;
@@ -146,7 +146,7 @@
   --flh-regular: 1.4;
   --flh-loose: 1.55;
 
-  /* 
+  /*
 
     Utility variables
 
@@ -170,7 +170,7 @@
   --text-link-decoration: none;
   --text-indent: var(--s-4);
 
-  /* 
+  /*
 
     Button
 
@@ -197,7 +197,7 @@
   --button-font-weight: inherit;
   --button-letter-spacing: inherit;
 
-  /* 
+  /*
 
     Forms
 
@@ -220,7 +220,7 @@
   --input-text-color-hover: var(--c-brand);
   --input-text-color-focus: var(--c-brand);
 
-  /* 
+  /*
 
     Transitions
 
@@ -232,7 +232,7 @@
   --cubic-state: cubic-bezier(0, 1.1, 1, 1.1);
   --thisalso: cubic-bezier(0.19, 1, 0.22, 1);
 
-  /* 
+  /*
 
     Theme
 

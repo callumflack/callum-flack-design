@@ -4,18 +4,18 @@ article(:style="postBlockColor")
   header.b-pb2(role="banner")
     .Container.b-pt4.b-pb2
       .b-pb2.w-lg-5x6.m-xA
-        h1.Title.u-textCenter.rm-b2 
+        h1.Title.u-textCenter.rm-b2
           nuxt-link(:to="permalink") {{ title }}
 
         .Meta.u-textCenter.p-t1(v-if="category !== 'projects'", :class="postMetaColor")
           time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-          span.MetaSeparator • 
+          span.MetaSeparator •
           span.u-textCapitalise {{ category }}
-          span.MetaSeparator(v-if="readingTime" ) • 
+          span.MetaSeparator(v-if="readingTime" ) •
           span(v-if="readingTime" ) {{ readingTime }} minutes
         .Meta.u-textCenter.p-t1(v-else, :class="postMetaColor")
           time(:date-time="date") {{ date | moment("YYYY") }}
-          span.MetaSeparator • 
+          span.MetaSeparator •
           span.u-textCapitalise {{ category }}
 
       nuxt-link.u-block.m-a0(v-if="heroImage", :class="heroExtractClasses", :to="permalink")
@@ -25,13 +25,13 @@ article(:style="postBlockColor")
 
       .b-pt2
         .Scope-post.p-t3
-          p {{ lede }} 
+          p {{ lede }}
             nuxt-link.fs-italic(:to="permalink", :class="postLedeLink", :style="postLedeLinkColor") Continue reading
 </template>
 
 <script>
 import moment from "vue-moment";
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import ImageCld from "~/components/ImageLazy.vue";
 
 export default {
   components: {

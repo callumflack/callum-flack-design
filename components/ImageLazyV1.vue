@@ -21,7 +21,7 @@ function calcImageDimension(length, pixelRatio) {
 }
 
 export default {
-  name: "lazy-image",
+  name: "LazyImage",
   props: {
     alt: String,
     src: {
@@ -39,6 +39,14 @@ export default {
     post: Boolean,
     figure: Boolean,
     wrappedInLink: Boolean
+  },
+  data() {
+    return {
+      // Set to undefined as defaulting to an empty string shows
+      // the invalid image icon until a correct src is set
+      smallUrl: undefined,
+      largeUrl: undefined
+    };
   },
   computed: {
     figureClasses() {
@@ -73,16 +81,6 @@ export default {
       return this.ratio ? `height: calc(66vw * ${this.ratio})` : "";
     }
   },
-
-  data() {
-    return {
-      // Set to undefined as defaulting to an empty string shows
-      // the invalid image icon until a correct src is set
-      smallUrl: undefined,
-      largeUrl: undefined
-    };
-  },
-
   mounted() {
     // Load small image
     const smallUrl = `${blurUrl}/${this.src}`;
@@ -137,8 +135,8 @@ export default {
   width: 100%;
 }
 
-/* 
-  1. enable Safari to keep sharp edges 
+/*
+  1. enable Safari to keep sharp edges
   …but only works if pos-abs within an aspect-ratio div.
 */
 .low-rez {

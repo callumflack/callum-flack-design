@@ -15,7 +15,7 @@
 
 
 <script>
-import ImageLazy from "~/components/ImageLazyCldOrig.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 
 export default {

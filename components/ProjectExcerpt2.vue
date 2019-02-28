@@ -23,17 +23,17 @@
     .Project-detail.b-py05.p-x5.bg-white
       .Project-tags.Meta.c-text-light
         time(:date-time="date") {{ date | moment("YYYY") }}
-        span.MetaSeparator(v-if="tags" ) • 
+        span.MetaSeparator(v-if="tags" ) •
         span(v-if="tags" ) {{ tags }}
       h2.Subtitle.Project-headline.m-t3.m-b3.w-xl-5x6
         nuxt-link(:to="link") {{ title }}
-      p.fs-text-sm.w-lg-5x6(v-html="lede") 
+      p.fs-text-sm.w-lg-5x6(v-html="lede")
         //- nuxt-link.fs-italic(:to="link") Continue reading
 </template>
 
 
 <script>
-import ImageLazy from "~/components/ImageLazyCldOrig.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 import moment from "vue-moment";
 

@@ -3,12 +3,12 @@
     //- hr.b-my1
     //- .Meta.c-textLight.rm-b2
       time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-      span.MetaSeparator • 
+      span.MetaSeparator •
       span.u-textCapitalise(v-if="category") {{ category }}
-      //- span.MetaSeparator(v-if="readingTime" ) • 
+      //- span.MetaSeparator(v-if="readingTime" ) •
       //- span(v-if="readingTime" ) {{ readingTime }} minutes
     h2.Subtitle.fw-500.p-t1.m-b0
-      nuxt-link.u-block(:to="permalink") 
+      nuxt-link.u-block(:to="permalink")
         | {{ title }}
         span.fs-scale-reset
           span.Meta.c-textLight.Excerpt-category(v-if="category") {{ category }}
@@ -18,7 +18,7 @@
       .Scope-post
         nuxtent-body(v-if="showFullArticle", :body="body")
         p(v-else)
-          | {{ lede }} 
+          | {{ lede }}
           nuxt-link.fs-italic(:to="permalink") Continue reading
 
   //- .Extract-hero.m-a0
@@ -29,20 +29,20 @@
         )
     .Excerpt
       header.b-my2.w-lg-5x6.m-xA(role="banner")
-        h1.Title.u-textCenter.p-t3 
+        h1.Title.u-textCenter.p-t3
           nuxt-link(to="/blog") The brief, the scope and the dance
         .Meta.u-textCenter.u-block
           time July 2nd, 2018
-          span.MetaSeparator • 
+          span.MetaSeparator •
             span 8 minutes
       p.Text
-        | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold. 
+        | Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold.
         nuxt-link.fs-italic(to="/blog") Continue reading
 </template>
 
 
 <script>
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import ImageCld from "~/components/ImageLazy.vue";
 import moment from "vue-moment";
 
 export default {
@@ -50,10 +50,10 @@ export default {
     ImageCld,
     moment
   },
-  /* 
-    Can refactor to accept a single post prop: 
+  /*
+    Can refactor to accept a single post prop:
     https://vuejs.org/v2/guide/components.html
-    
+
     props: ["post"]
 
     …but it fails here. Prob due Nuxtent?

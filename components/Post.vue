@@ -8,7 +8,10 @@
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             //- .AspectRatio-object(:class="heroObjectBgClasses")
             .AspectRatio-object(:style="heroBlockColor")
-              ImageCld(:src="heroImage")
+              ImageLazy(
+                :src="heroImage"
+                :alt="title"
+              )
 
     main(role="main", v-if="body", :class="spaceWithoutHeroClass")
       .Container
@@ -16,13 +19,13 @@
           h1.Title.m-b2 {{ title }}
           .Meta.c-text-light.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-            span.MetaSeparator • 
+            span.MetaSeparator •
             span.u-textCapitalise {{ category }}
-            span.MetaSeparator(v-if="readingTime" ) • 
+            span.MetaSeparator(v-if="readingTime" ) •
             span(v-if="readingTime" ) {{ readingTime }} minutes
           .Meta.c-text-light.p-t1(v-else)
             time(:date-time="date") {{ date | moment("YYYY") }}
-            span.MetaSeparator • 
+            span.MetaSeparator •
             span.u-textCapitalise {{ category }}
             //- span.MetaSeparator •
             //- span {{ tags }}
@@ -34,13 +37,13 @@
 
 <script>
 import moment from "vue-moment";
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import ImageLazy from "~/components/ImageLazy.vue";
 
 export default {
-  name: "post",
+  name: "Post",
   components: {
     moment,
-    ImageCld
+    ImageLazy
   },
   props: {
     body: Object,

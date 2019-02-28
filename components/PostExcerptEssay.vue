@@ -15,23 +15,23 @@
         .Meta.c-text-light
           //- time(:date-time="date") {{ date | moment("MMMM Do, YYYY") }}
           time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
-          span.MetaSeparator • 
+          span.MetaSeparator •
           span.u-textCapitalise(v-if="category") {{ category }}
-          span.MetaSeparator(v-if="readingTime" ) • 
+          span.MetaSeparator(v-if="readingTime" ) •
           span(v-if="readingTime" ) {{ readingTime }} minutes
 
     main(role="main")
       //- .Scope-post(v-if="showFullArticle")
         nuxtent-body(:body="body")
       p.Text
-        | {{ lede }} 
+        | {{ lede }}
         nuxt-link.fs-italic(:to="permalink") Continue reading
 
 </template>
 
 
 <script>
-import ImageCld from "~/components/ImageLazyCldOrig.vue";
+import ImageCld from "~/components/ImageLazy.vue";
 import moment from "vue-moment";
 
 export default {
@@ -39,10 +39,10 @@ export default {
     ImageCld,
     moment
   },
-  /* 
-    Can refactor to accept a single post prop: 
+  /*
+    Can refactor to accept a single post prop:
     https://vuejs.org/v2/guide/components.html
-    
+
     props: ["post"]
 
     …but it fails here. Prob due Nuxtent?
