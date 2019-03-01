@@ -51,17 +51,19 @@ lede: Callum Flack is a digital designer who works fluidly across both brand and
 
 <!-- Callum Flack is a graphic designer turned web developer. He is driven by large beauty, small wonder and the curiosity of _why?_. -->
 
-Callum Flack is a graphic designer turned web developer. Driven by wonder, beauty and curiosity, he bridges the gap between design and code.
+<!-- Callum Flack is a graphic designer turned web developer. Driven by wonder, beauty and curiosity, he bridges the gap between design and code. -->
+
+Callum Flack is a graphic designer turned web developer. Driven by curiosity, the need to understand how it works and the fine touch of craftsmanship, he bridges the gap between design and code.
 
 <!-- He is driven by wonder, beauty and curiosity. -->
 
 <!-- Callum bridges the gap between design and code.  -->
 
-After a successful decade as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010, he started coding.
+After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding.
 
 <!-- Unexpected consequences and unforseen scope revisions are common when design tries to become code. The communication bottleneck increases as quality assurance attempts to play catchup to the discovery of new customer intentions, feature requests, issue tracking, production management and website maintenance—I ran into all these troubles myself. So in 2010, after a decade as a graphic designer, I took matters into my own hands and decided to learn to code. -->
 
-With a keen sense for what constitutes beautiful, actionable design, he is also able to judge the cost of design with the knowhow of a developer. This implicit understanding allows better decision making within project complexities, which creates the time and confidence to focus on what matters: executing for business goals and customer intentions.
+With a keen sense for what constitutes beautiful, actionable design, he is also able to judge the cost of design with the knowhow of a developer. With this explicit "coalface" understanding, Callum can help his clients understand the different and often hidden costs involved within different project options. By clarifying decisions and reducing project complexities, he helps clients create the time and confidence to focus on what matters: executing for business goals and customer intentions.
 
 <!-- Callum collects typefaces, records, names as tokens of small wonder. -->
 
@@ -78,10 +80,10 @@ When Callum builds websites, he advocates for these tools:
 
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
-- PostCSS or Sass
-- Vue.js and Nuxt.js
-- React.js and Next.js
-- <a target="_blank" href="https://jamstack.org/">JAMstack</a> things like Jekyll, etc.
+- Building interfaces with Vue or React (using associated frameworks like Nuxt, VuePress, Gridsome, Next or Gatsby)
+- Integrating content <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> (using <a target="_blank" href="https://www.storyblok.com/">Storyblok</a> or Wordpress)
+- When it's not a web app, using a <a target="_blank" href="https://jamstack.org/">jamstack</a> architecture for speed, security, scalability and productivity
+- PostCSS
 
 <!-- Through his blog, Callum places importance on the skill of writing. Not only are people more likely to pay attention to clear, concise writing, personal insight is often only gained with brutal editing. -->
 
@@ -116,7 +118,7 @@ Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and B
 
 You can also find Callum on these websites:
 
-- <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a>
+<!-- - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a> -->
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
 - <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
 - <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>

@@ -1,4 +1,6 @@
 module.exports = {
+  mode: "universal",
+
   head: {
     title: "Callum Flack digital design & development",
     meta: [
@@ -60,23 +62,23 @@ module.exports = {
 
   plugins: [
     "~/plugins/vue-headroom",
-    "~/plugins/vue-moment"
+    "~/plugins/vue-moment",
+    "@/plugins/v-lazy-image"
+    /* { src: "@/plugins/v-lazy-image", ssr: true }, */
     /*{ src: "~/plugins/vue-slick", ssr: false },*/
-    /* {
-      src: "~/plugins/v-lazy-image",
-      ssr: false
-    },
-    {
-      src: "~/plugins/intersection-observer",
-      ssr: false
-    } */
+    /* { src: "~/plugins/intersection-observer", ssr: false} */
   ],
 
-  /* modules: ["nuxtent", "@nuxtjs/style-resources", [("@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" })]], */
+  /* "@nuxtjs/style-resources" */
+  /* "nuxt-purgecss", */
   modules: [
     "nuxtent",
     ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]
   ],
+
+  /* purgeCSS: {
+    mode: "postcss"
+  }, */
 
   /* axios: {
     credentials: false

@@ -1,7 +1,7 @@
 /* eslint-disable */
 /* prettier-ignore */
 
-/* 
+/*
 
 
   Responsive custom properties
@@ -11,13 +11,13 @@
   * https://www.madebymike.com.au/writing/using-css-variables/
 
   …altho postcss-custom-properties limits vars to the `:root`:
-  "[it's] a limited subset (to :root selector) of the features provided by native CSS custom properties. 
+  "[it's] a limited subset (to :root selector) of the features provided by native CSS custom properties.
   Since we do not know the DOM in the context of this plugin, we cannot produce safe output."
   See:
   * https://github.com/postcss/postcss-custom-properties
   * https://css-tricks.com/issue-preprocessing-css-custom-properties/
 
-  So you must ensure custom properties are tied to a selector, like :root. 
+  So you must ensure custom properties are tied to a selector, like :root.
   Note that Hi-Q does this well.
 
   :root { --s-title: 20px; }
@@ -52,7 +52,7 @@
   }
 }
 
-/* 
+/*
 
   Font-sizes
 
@@ -77,16 +77,11 @@
     --rfs-text-meta: 15px;
     --rfs-text: 18px;
     --rfs-text-md: 21px;
-    --rfs-text-lg: 24px;
-    --rfs-heading: 24px;
+    --rfs-text-lg: 22px;
+    --rfs-heading: 22px;
     --rfs-subtitle: 21px;
     --rfs-title: 27px;
     --rfs-supertitle: 36px;
-  }
-}
-@media (--mdl) {
-  :root {
-    /* --rfs-title: 38px; */
   }
 }
 @media (--lg) {
@@ -96,8 +91,8 @@
     --rfs-text-meta: 17px;
     --rfs-text: 21px;
     --rfs-text-md: 24px;
-    --rfs-text-lg: 27px;
-    --rfs-heading: 27px;
+    --rfs-text-lg: 25px;
+    --rfs-heading: 25px;
     --rfs-subtitle: 24px;
     --rfs-title: 32px;
     --rfs-supertitle: 44px;

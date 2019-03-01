@@ -75,8 +75,7 @@ blockquote p em a {
   --underline-textshadow: var(--c-neutral);
 }
 
-.no-link-block a,
-.Contact a {
+.no-link-block a {
   /* --underline-textshadow: transparent !important; */
   background-image: none !important;
   text-shadow: none !important;
@@ -102,9 +101,9 @@ h1 a:active,
   }
 }
 
-/* 
+/*
 
-  Arrow signal 
+  Arrow signal
 
  */
 

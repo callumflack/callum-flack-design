@@ -1,4 +1,4 @@
-/* 
+/*
 
   Clear fixed nav
 
@@ -8,26 +8,27 @@
   padding-top: var(--nav-height);
 }
 
-/* 
+/*
 
   Button theme
 
  */
 
-.Button--sm {
+/* .Button--sm {
   @media (--lg) {
     --field-height: 2.75rem;
   }
-}
+} */
 
+input,
 .Button {
   padding-bottom: calc(3 / var(--rfs-text));
-  padding-bottom: 0.142857143em;
+  padding-bottom: 0.142857143em !important;
 }
 
-/* 
+/*
 
-  Newsletter block 
+  Newsletter block
 
  */
 
@@ -45,9 +46,9 @@
   border-left: 1px solid var(--c-block);
 } */
 
-/* 
+/*
 
-  Separators & misc things 
+  Separators & misc things
 
  */
 
@@ -83,7 +84,7 @@
   transform: translateY(0.5em);
 }
 
-/* 
+/*
 
   Iremono overrides & new utils
 
@@ -95,18 +96,6 @@
 
 .bg-neutral-dark {
   background-color: var(--c-neutral-dark);
-}
-
-.Contact {
-  /* background-color: #2242dc;
-  background-color: rgb(223, 226, 239);
-  background-color: rgb(225, 230, 249);
-  background-color: rgb(211, 220, 255);*/
-  /* background-color: var(--c-contact-block); */
-  background-color: var(--c-text);
-  /* border: 1px solid var(--c-text);
-  border-left: 0; */
-  /* border-left: 1px solid var(--c-bg); */
 }
 
 .Extract-md {

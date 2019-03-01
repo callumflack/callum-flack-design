@@ -30,7 +30,6 @@
             //- span.MetaSeparator •
             //- span {{ tags }}
 
-        //- no-ssr
         nuxtent-body.Scope-post(:body="body", :class="scopeClasses")
 
 </template>

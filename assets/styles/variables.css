@@ -186,7 +186,7 @@
   --button-box-shadow-stroke-inset: 1px;
   --button-color: var(--c-bg);
   --button-disabled-opacity: 0.6;
-  --button-height: calc(1 * var(--field-height));
+  --button-height: var(--field-height);
   --button-inline-spacing: var(--s-2);
   --button-padding-x: 1.5rem;
 
@@ -203,7 +203,7 @@
 
    */
 
-  --field-height: 3em;
+  --field-height: 2.75em;
   --field-padding-x: var(--s-3a);
   --input-border-color: var(--c-brand-rule);
   --input-border-color-hover: var(--c-brand-rule);

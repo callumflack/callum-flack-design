@@ -1,19 +1,19 @@
 <template lang="pug">
 div(:class="projectPageClass")
+
   Nav
 
   .b-clearFixedNav.b-pb15
     Post(
-      v-bind="page"
-      v-bind:heroImage="page.heroImage"
-      v-bind:heroRatio="page.heroRatio"
-      v-bind:title="page.title"
-      v-bind:date="page.date"
-      v-bind:category="page.category"
-      v-bind:readingTime="page.readingTime"
-      v-bind:blockColor="page.blockColor"
-      v-bind:body="page.body"
-      v-bind:updated="page.updated"
+      :heroImage="page.heroImage"
+      :heroRatio="page.heroRatio"
+      :title="page.title"
+      :date="page.date"
+      :category="page.category"
+      :readingTime="page.readingTime"
+      :blockColor="page.blockColor"
+      :body="page.body"
+      :updated="page.updated"
     )
 
   footer.b-pb4
@@ -53,7 +53,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.title}—Callum Flack Design`,
+      title: `${this.page.title}—Callum Flack Design Blog`,
       meta: [
         {
           hid: "description",
@@ -84,6 +84,10 @@ export default {
     --underline-bgimg: var(--c-projectbg);
     --underline-hover: currentColor;
     text-shadow: initial;
+  }
+
+  & >>> .headroom {
+    background-color: var(--c-projectbg);
   }
 }
 
