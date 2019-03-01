@@ -3,7 +3,7 @@
   .AspectRatio-object
     //- ImageLazy.image-multiply(:src="selectedImage")
     ImageLazy(:src="selectedImage")
-    .AspectRatio-object(style="background-color: rgba(0,0,0,0.7)")
+    .AspectRatio-object(style="background-color: rgba(0,0,0,0.6)")
 
   Nav.Animate
 
@@ -11,7 +11,7 @@
     article
       .Animate
         .Container
-            .w-sm-10x12
+            .w-sm-11x12
               h1.Supertitle.b-ptTitle.m-b0.b-pb1
                 //- | Make the complex simple#[br]
                 //- | and the simple unique.
@@ -23,7 +23,9 @@
                 //- span.u-block.m-t4 Why does this matter?
                 //- | ux engineer
                 //- | People decide if you're worth their time in a heartbeat.
-                | Brand designer<br>+ web engineer. Because ideas are nothing without execution.
+                //- | Brand designer<br>+ web engineer. Because ideas are nothing without execution.
+                | Creativity + Capability
+                //- | Ideas are nothing without execution
 
             .Scope-post
               p.fs-text-lg

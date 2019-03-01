@@ -12,6 +12,7 @@ ul,
 ol,
 .Text,
 .Text--sm,
+.Scope-post h3,
 blockquote p em {
   font-size: var(--rfs-text);
   font-weight: 400;
@@ -44,28 +45,12 @@ p em {
 /*
   -------------------------------------------------
 
-  Headings
+  Headings & titles
 
   Tufte CSS uses h1 for the document title, p with class subtitle for the document subtitle, h2 for section headings, and h3 for low-level headings. More specific headings are not supported. If you feel the urge to reach for a heading of level 4 or greater, consider redesigning your document.
 
   -------------------------------------------------
  */
-
-.Minorheading,
-.Scope-post h3,
-.nl-content h3 {
-  font-family: var(--ff-text), var(--ff-stack-serif);
-  font-size: var(--rfs-subheading);
-  font-weight: 600;
-}
-
-/*
-  -------------------------------------------------
-
-  Titles
-
-  -------------------------------------------------
-*/
 
 /* guyot-italics */
 .Scope-post h2,
@@ -100,7 +85,7 @@ p em {
 }
 
 .Title {
-  font-size: var(--rfs-text-lg);
+  font-size: calc(var(--rfs-text-lg) - 2px);
 }
 
 .Supertitle {
@@ -122,11 +107,24 @@ p em {
   & p,
   & ol,
   & ul {
-    /* margin-bottom: 0; */
-
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  & h3 {
+    font-size: var(--rfs-text);
+    text-transform: uppercase;
+
+  }
+
+  & strong {
+    font-size: calc(var(--rfs-text) - 2px);
+    font-size: calc(var(--rfs-text-sm) + 0.075em);
+    font-weight: 700;
+    /* font-style: italic; */
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
   }
 
   & ol {
@@ -193,11 +191,11 @@ blockquote p {
 }
 
 .Blockquote-author,
-blockquote p b,
-blockquote p strong {
+.Scope-post blockquote p strong {
   display: table;
   font-style: normal;
   font-size: calc(var(--rfs-text-sm) + 0.075em);
+  font-weight: 400;
   letter-spacing: 0.075em;
   margin-top: 0.25em;
   text-transform: uppercase;

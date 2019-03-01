@@ -16,18 +16,18 @@
   font-weight: 400;
   font-style: italic;
 }
-/* @font-face {
+@font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/Guyot-Text-Bold.otf") format("woff");
+  src: url("~static/fonts/guyot-text-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-text);
-  src: url("~static/fonts/Guyot-Text-Bold-Italic.otf") format("woff");
+  src: url("~static/fonts/guyot-text-bold-italic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
-} */
+}
 
 /*
 

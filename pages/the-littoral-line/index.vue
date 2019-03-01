@@ -22,7 +22,7 @@ div
 
   main(role="main")
     .Container
-      h2.Subtitle The archives:
+      h2.Heading The archives:
       .Projects
         ProjectListItem(
           v-for="item in issues"
