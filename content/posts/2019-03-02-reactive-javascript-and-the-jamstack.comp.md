@@ -1,8 +1,8 @@
 ---
-published: true
+published: false
 mostRecentPost: true
 category: web systems
-title: Build better websites with Reactive Javascript and the Jamstack
+title: Modern web development
 lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
 readingTime: 4
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1538097848/post-taste-lynch_hutebj.jpg
@@ -10,30 +10,45 @@ heroImageMultiply: true
 blockColor: transparent
 ---
 
-The web is a quarter century young and all the tools we use to make the web are mutating works in progress. We're seeing platform maturity this decade after the Cambrian explosion of an entirely new medium. This maturity is the result of a second generation of tooling methods that have been driven by the platforms themselves, well honed in the battle for your eyeballs. So it won't surprise you if I tell you _there is a paradigm shift happening in modern web development_. 
+<!-- Build better websites with Reactive Javascript and the Jamstack -->
 
-Last weekend, as I chatted to the mechanic who was diagnosing why our car wouldn’t start, he said “I charged my pressurised tyre jack last night but forgot to put it back in the truck. So this morning I’ve already done 2 manual tyre changes. What normally takes me 5 minutes took 25 minutes.” The clincher was what he said next:
+Last weekend, as I chatted to the mechanic who was diagnosing why our car wouldn’t start, he said “I charged my pressurised tyre jack last night but forgot to put it back in the truck. So this morning I’ve already done two manual tyre changes. What normally takes me five minutes took 25 minutes.” The clincher was what he said next:
 
 > _You don’t miss good tools until you have to use the old tools._
 
-The tools are here, they’re just not evenly understood. But when the new tools become proven and normalised within the culture, then reverting back to old tools will become, well, painful. Just like my mechanic explained. Why wait until it’s obviously painful? 
 
-## Proprietary bundled legacy systems are being unbundled
 
-Some of my clients have small to medium sized legacy websites on Wordpress. By legacy, I mean that I've inherited the project and it's my job to maintain and extend it's lifespan. Because they need a website. 
+## The best tools for the job are ever-sharpening themselves
 
-Despite all the social media publishing platforms available, a website is still where a business can retain control over the presentation of their value proposition, and it's probably still the first thing a potential customer will look for. _The problem I've seen lately is that these kinds of websites are slow, graceless experiences and my client's audience are starting to sense it_. So they're asking me to upgrade these experiences but a quick glance under the hood tells me 1) it's no wonder they're slow and graceless, and 2) I know there's a better way to do this.
+The web is a quarter century young and all the tools we use to make the web are mutating works in progress. We're seeing platform maturity this decade after the Cambrian explosion of an entirely new medium. This maturity is the result of a second generation of tooling methods that have been driven by the platforms themselves, well honed in the battle for your eyeballs. So it won't surprise you if I tell you _there is a paradigm shift happening in modern web development_.
 
-And the better way to do this consists of understanding two important concepts, both of which can be summarised as _things have changed and there are now specialised tools that do a better job, but you don't know about them yet_:
+<!-- ## Proprietary bundled legacy systems are being unbundled -->
+## Proprietary web publishing is being unbundled
 
-1. In the past, bundling features into a web publishing tool made sense. It wasn't easy to integrate services with an external API because the technology wasn't available. But now it is. So instead waiting for your publishing platform to become a swiss army knife, you can choose a service who lives and dies by doing that one service better they ever will.
-2. In the past, your website publishing platform was probably what we know now as a CMS. Like Wordpress. This platform would handle not only the CMS but also the building of your user interfaces. Today the UI build doesn't need to be tied to the publishing platform, and there are better tools for that job that can't be integrated back into the legacy publishing systems.
+Let me give you an example. Some of my clients have small to medium sized legacy websites on Wordpress. By legacy, I mean that I've inherited the project and it's my job to maintain and extend it's lifespan. Because they need a website. _Despite all the social media publishing platforms available, a website is still where a business can retain most control over the presentation of their value proposition,_ and it's probably still the first thing a potential customer will click through to from a search.
 
-I think we’re seeing _a generational shift in web development between the proprietary bundled legacy systems of the dominant web publishing platforms from 5-10 years ago as they struggle to modernise and compete against the fundamentally different approaches of modern web development, where a multiplicity of unbundled open-source and freemium services can be integrated together in a technology stack customised to business requirements._
+The problem I've seen lately is that _these kinds of legacy websites are slow, graceless experiences and my client's audience are starting to sense it_. So they're asking me to upgrade these experiences but a quick glance at the codebase tells me 1) it's no wonder they're slow and graceless, and 2) I know there's a better way to do this.
 
-It's OK, take a breathe. Instead of letting [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity) take hold, think of it as a big opportunity. _The tools are here, they’re just not evenly understood._ Better tools make better websites, and a better website should equate to a better customer service. It's just, like most paradigm shifts, we won't know this until time and experience grant us hindsight. Or until we have to go back and use the old tools.
+And this better way starts by understanding two important facts:
 
-With that in mind, let me introduce some new tools that will help you sidestep your legacy website and leverage this paradigm shift.
+- **APIs change everything.** In the past, bundling features into a web publishing tool made sense. It wasn't easy to integrate services with an external API because the technology wasn't available. But now it is. So instead waiting for your publishing platform to become a swiss army knife, you can choose to integrate an API-based service who lives and dies by doing that one service better they ever will.
+
+- **Microservices can afford to do a better job.** In the past, your website publishing platform was probably what we now know as a CMS. Like Wordpress. This platform would handle not only the CMS but also the building of your user interfaces. Today the UI build doesn't need to be tied to the publishing platform, and there are better tools for that job that will never be integrated back into the older publishing systems bundled with features, because they have to be backward compatible with what originally made their system a success: they literally have too much legacy to overcome.
+
+## So what exactly are these tools then?
+
+> And please, speak as you might to a young child, or a golden retriever. <br>**Jeremy Irons in [Margin Call](https://youtu.be/366DExfdQWM?t=53)**
+
+With the knowledge that proprietary web publishing systems can't offer that in mind, let me introduce some new tools that will help you sidestep your legacy website and leverage this paradigm shift.
+
+<!-- ## This shift is an opportunity -->
+## Don't let hindsight become painful
+
+I think we’re seeing _a generational shift in web development between the proprietary bundled legacy systems of the dominant web publishing platforms from 5-10 years ago as they struggle to modernise and compete against the fundamentally different approaches of modern web development,_ where a multiplicity of unbundled open-source and freemium services can be integrated together in a technology stack customised to business requirements.
+
+Instead of letting [VUCA](https://en.wikipedia.org/wiki/Volatility,_uncertainty,_complexity_and_ambiguity) take hold, and put off thinking about the terrible nightmare of upgrading yourwebsite again, think of it as a really big opportunity. _The tools are here, they’re just not evenly understood._ Better tools make better websites, and a better website should equate to a better customer service. It's just, like most paradigm shifts, we won't know this until time and experience grant us hindsight. Or until we have to go back and use the old tools.
+
+Better modern web development tools are here. They’re just not evenly understood. But when the new tools become proven and normalised within the culture, then reverting back to old tools will become, well, painful. Just like my mechanic explained. Why wait until it’s obviously painful? 
 
 ## The new tools—Reactive Javascript and the JAMstack
 
