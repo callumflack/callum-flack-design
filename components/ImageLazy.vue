@@ -1,5 +1,9 @@
 <template>
-  <figure ref="placeholder">
+  <figure
+    ref="placeholder"
+    :mask="mask"
+    :class="homePageClass"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
@@ -47,6 +51,10 @@ export default {
       type: String,
       default: ""
     },
+    mask: {
+      type: Boolean,
+      default: false
+    },
     blurLevel: {
       type: Number,
       default: 30
@@ -68,7 +76,15 @@ export default {
     },
     cloudinaryPlaceholderSrc() {
       return this.src && `${cldBlurUrl}/${this.src}`;
-    }
+    },
+    homePageClass() {
+      if (this.$route.name === "index") {
+        return "Blue";
+      }
+      if (this.mask) {
+        return "Mask";
+      }
+    },
   },
   mounted() {
     /* Fetch a responsive image from cloudinary */
@@ -107,5 +123,35 @@ export default {
 .v-lazy-image {
   width: 100%;
   filter: url("#blur");
+}
+
+.Mask {
+  overflow: hidden;
+}
+
+.Blue {
+  background-color: #2242dc;
+  position: relative;
+  transition: background-color 750ms cubic-bezier(0.15, 0.71, 0.45, 1.06);
+  transition: background-color 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  /* animation: bgblue 3000ms cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+@keyframes bgblue {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #2242dc;
+  }
+}
+
+.Blue img {
+  filter: invert(1);
+  mix-blend-mode: multiply;
+  min-height: 100%;
+  min-width: 100%;
+  transition: opacity 1s linear;
+  width: 100%;
 }
 </style>
