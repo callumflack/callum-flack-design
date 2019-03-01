@@ -37,8 +37,8 @@
 @font-face {
   font-family: var(--ff-title);
   /* src: url("~static/fonts/TradeGothic-BoldCondTwenty.otf") format("woff"); */
-  src: url("~static/fonts/druk-text-medium.woff2") format("woff2");
-  src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff");
+  /* src: url("~static/fonts/druk-text-medium.woff2") format("woff2"); */
+  /* src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff"); */
   src: url("~static/fonts/GintoNordBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
