@@ -92,7 +92,6 @@ module.exports = {
       "/",
       "/about",
       "/blog",
-      "/essays",
       "/projects",
       "/the-littoral-line"
     ]
