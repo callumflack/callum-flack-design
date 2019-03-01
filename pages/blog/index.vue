@@ -6,7 +6,7 @@ div
       //- p.Subheading.fw-400 We ask our clients to identify key performance goals and collaborate directly with us in a process of iterative design, rapid prototyping, ongoing testing, and optimization.
       .Project-filter
         .f
-          .Meta.m-a0 Filter by: 
+          .Meta.m-a0 Filter by:
           .Meta.c-text-light.m-l2 Note
           .Meta.c-text-light.m-l2 Essay
           .Meta.c-text-light.m-l2 Project
@@ -24,20 +24,19 @@ div
     PostExcerpt(
       v-if="post.published && post.category !== 'project'"
       v-for="post in posts"
-      v-bind="post"
-      v-bind:key="post.title"
-      v-bind:title="post.title"
-      v-bind:date="post.date"
-      v-bind:category="post.category"
-      v-bind:readingTime="post.readingTime"
-      v-bind:lede="post.lede"
-      v-bind:permalink="post.permalink"
+      :key="post.title"
+      :title="post.title"
+      :date="post.date"
+      :category="post.category"
+      :readingTime="post.readingTime"
+      :lede="post.lede"
+      :permalink="post.permalink"
     )
 
 </template>
 
 <script>
-import PostExcerpt from "~/components/PostExcerpt3.vue";
+import PostExcerpt from "~/components/PostExcerpt.vue";
 
 /* const trimTags = tags => tags.map(tag => tag.trim());
 
@@ -49,7 +48,7 @@ function projectTagStringToList(projectTags) {
 } */
 
 export default {
-  name: "blog",
+  name: "Blog",
   components: {
     PostExcerpt
   },
