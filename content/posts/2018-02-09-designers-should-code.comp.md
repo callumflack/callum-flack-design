@@ -29,7 +29,7 @@ Put it this way: if you tried to recreate Melbourne's laneways from scratch, all
 
 The “natural semi-lattice” metaphor is a good way to understand how complex processes can’t be reduced to simple templates. Delineating the skillsets involved into distinct, separate domains cuts their interconnections and creates artificial order. The result lacks character.
 
-The same holds true for the complexities of User Interface design. Why, for example, do most websites look the same these days? It probably has something to do with the rise of "magic bullet" UI frameworks such as Bootstrap. _Reduction of complexity accidently eliminates richness._
+The same holds true for the complexities of User Interface design. Why, for example, do most websites look the same these days? It probably has something to do with the rise of "magic bullet" UI frameworks such as Bootstrap. _Reduction of complexity accidentally eliminates richness._
 
 @[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059496/DOtYW_LUEAA6ELV_oxz8jo.jpg")
 

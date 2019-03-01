@@ -28,7 +28,7 @@ article
     .Container
       .b-ptTitle.w-sm-10x12
         h1.Supertitle.m-b0
-          | Fluid across visual design, user experience and code.
+          | Fluid across<br>visual design, user experience and code.
         h2.Text.fw-400.m-t3
           span.fs-italic The quality of the connections is the key to quality.
           span.Blockquote-author — Charles Eames
@@ -47,8 +47,9 @@ article
         .w-2x3.w-lg-9x12
           .Contact.no-link-block.h-100
             .p-a5
-              p.Subtitle.fw-600.fs-text-meta.m-b2 Get in touch
-              ul.Meta.flh-regular.fs-text-meta.u-listUnstyled
+              //- p.Subtitle.fw-600.fs-text-meta.m-b2 Get in touch
+              p.Subtitle.fw-500.m-b2.c-bg Get in touch:
+              ul.Meta.flh-regular.fs-text-meta.u-listUnstyled.c-bg
                 li #[a(target="_blank" href="mailto:callum@callumflack.design") callum@callumflack.design]
                 li #[a(target="_blank" href="tel:610-408-767-540") +61(0) 408 767 540]
                 li #[a(target="_blank" href="https://twitter.com/callumflack") @callumflack]
@@ -92,7 +93,13 @@ export default {
 
 .Contact {
   background-color: var(--c-contact-block);
-  border: 1px solid var(--c-text);
-  border-left: 0;
+  background-color: var(--c-highlight);
+  background-color: var(--c-blue);
+  background-color: rgb(9,18,58);
+  background-color: var(--c-text);
+  /* border: 1px solid var(--c-text); */
+  /* border-left: 0; */
+  border-left: 1px solid var(--c-bg);
+  border-color: rgba(255,255,255,0.5);
 }
 </style>

@@ -6,7 +6,7 @@
           .AspectRatio-object.bg-text
             ImageCld(:src="thumbImage || heroImage")
     .m-b5.w-lg-5x6
-      h2.Subtitle.m-b2
+      h2.Title.m-b2
         nuxt-link(:to="permalink") {{ title }}
 
       .Meta.c-text-light
@@ -19,7 +19,7 @@
     //- .Scope-post(v-if="showFullArticle")
       nuxtent-body(:body="body")
     p.Text
-      | {{ lede }}
+      | {{ lede }}&nbsp;
       nuxt-link.fs-italic(:to="permalink") Continue reading
 
 

@@ -62,19 +62,15 @@
 
   --c-link: #ff5600;
   --c-link: #0085ff; /* blue */
-  --c-orange: #fe3600; /* pantone 021C plus */
   --c-link: #fe3600;
-  --c-highlight: rgba(150, 247, 171, 0.7);
-  --c-highlight: rgba(238, 227, 72, 0.7);
-  --c-highlight: rgba(255, 247, 136, 0.25);
-  --c-contact-block: rgb(198, 234, 251);
-  --c-contact-block: rgb(150, 247, 171);
-  --c-contact-block: rgb(238, 227, 72);
+  --c-highlight: rgba(255, 247, 136, 0.333);
   --c-contact-block: rgb(255, 247, 136);
+  --c-blue: #2242dc;
 
   --c-black: black;
   --c-dark: #171515;
   --c-ash: #24292e;
+  --c-text: #0a1029; /* deep blue */
   --c-text: #151515;
   --c-text-light: #aaa;
   --c-text-underline: rgba(0, 0, 0, 0.25);
@@ -184,7 +180,7 @@
   --button-box-shadow-stroke-hover: 2px;
   --button-box-shadow-stroke-active: 3px;
   --button-box-shadow-stroke-inset: 1px;
-  --button-color: var(--c-bg);
+  --button-color: var(--c-text);
   --button-disabled-opacity: 0.6;
   --button-height: var(--field-height);
   --button-inline-spacing: var(--s-2);

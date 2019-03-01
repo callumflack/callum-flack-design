@@ -2,7 +2,7 @@
   <figure
     ref="placeholder"
     :mask="mask"
-    :class="homePageClass"
+    :class="figureClass"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ export default {
     cloudinaryPlaceholderSrc() {
       return this.src && `${cldBlurUrl}/${this.src}`;
     },
-    homePageClass() {
+    figureClass() {
       if (this.$route.name === "index") {
         return "Blue";
       }
@@ -130,7 +130,7 @@ export default {
 }
 
 .Blue {
-  background-color: #2242dc;
+  background-color: var(--c-blue);
   position: relative;
   transition: background-color 750ms cubic-bezier(0.15, 0.71, 0.45, 1.06);
   transition: background-color 900ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -142,7 +142,7 @@ export default {
     background-color: black;
   }
   to {
-    background-color: #2242dc;
+    background-color: var(--c-blue);
   }
 }
 

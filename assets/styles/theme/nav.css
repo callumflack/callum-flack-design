@@ -17,14 +17,15 @@
 } */
 
 .Nav-logo {
-  transform: translateY(0.125em);
+  font-size: calc(var(--rfs-text-meta) + 0.1em) !important;
+  transform: translateY(0.175em);
 }
 
 .Nav-divider {
   transform: translateY(-0.1875em);
 }
 
-/* 
+/*
 
   NAV LINK
 

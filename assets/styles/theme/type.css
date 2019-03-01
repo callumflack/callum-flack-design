@@ -67,8 +67,8 @@ p em {
   -------------------------------------------------
 */
 
+/* guyot-italics */
 .Scope-post h2,
-.Subheading,
 .Heading {
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--rfs-text-lg);
@@ -78,14 +78,15 @@ p em {
   line-height: var(--flh-regular);
 }
 
+/* ginto */
 .Subtitle,
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
   line-height: 1.25;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 
   & a:hover {
@@ -94,15 +95,18 @@ p em {
 }
 
 .Subtitle {
-  font-size: var(--rfs-subtitle);
+  font-size: var(--rfs-meta);
+  letter-spacing: 0.025em;
 }
 
 .Title {
-  font-size: var(--rfs-title);
+  font-size: var(--rfs-text-lg);
 }
 
 .Supertitle {
   font-size: var(--rfs-supertitle);
+  font-weight: 900;
+  letter-spacing: -0.025em;
   line-height: 1.05;
 }
 
@@ -193,8 +197,7 @@ blockquote p b,
 blockquote p strong {
   display: table;
   font-style: normal;
-  font-size: calc(var(--rfs-text-sm) + 0.1em);
-  font-size: var(--rfs-text-sm);
+  font-size: calc(var(--rfs-text-sm) + 0.075em);
   letter-spacing: 0.075em;
   margin-top: 0.25em;
   text-transform: uppercase;

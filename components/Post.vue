@@ -16,7 +16,7 @@
     main(role="main", v-if="body", :class="spaceWithoutHeroClass")
       .Container
         .b-pb05
-          h1.Title.m-b2 {{ title }}
+          h1.Supertitle.m-b2.w-sm-10x12 {{ title }}
           .Meta.c-text-light.p-t1(v-if="category !== 'projects'")
             time(:date-time="date") {{ date | moment("YYYY.MM.DD") }}
             span.MetaSeparator •

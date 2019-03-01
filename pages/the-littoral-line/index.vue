@@ -22,8 +22,7 @@ div
 
   main(role="main")
     .Container
-      p Here are the archives:
-      //- h2.Subtitle.m-b2.b-pt075 2018
+      h2.Subtitle The archives:
       .Projects
         ProjectListItem(
           v-for="item in issues"

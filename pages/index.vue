@@ -3,7 +3,7 @@
   .AspectRatio-object
     //- ImageLazy.image-multiply(:src="selectedImage")
     ImageLazy(:src="selectedImage")
-    .AspectRatio-object(style="background-color: rgba(0,0,0,0.666)")
+    .AspectRatio-object(style="background-color: rgba(0,0,0,0.7)")
 
   Nav.Animate
 
@@ -23,7 +23,7 @@
                 //- span.u-block.m-t4 Why does this matter?
                 //- | ux engineer
                 //- | People decide if you're worth their time in a heartbeat.
-                | Brand designer + web engineer. Because ideas are nothing without execution.
+                | Brand designer<br>+ web engineer. Because ideas are nothing without execution.
 
             .Scope-post
               p.fs-text-lg
@@ -37,7 +37,7 @@
                 | Understanding the&nbsp;
                 nuxt-link(to="/blog")
                   | quality of the connections
-                | &nbsp;that bridge design and code is the key to creating seamless digital experiences.
+                | &nbsp;that bridge design and code is the key to creating seamless web interfaces.
                 | I can help you design a visual brand, its user experience,
                 | and I can&nbsp;
                 nuxt-link(to="/projects")

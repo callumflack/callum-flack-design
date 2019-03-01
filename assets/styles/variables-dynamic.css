@@ -63,38 +63,29 @@
   --rfs-text-sm: 11px;
   --rfs-text-meta: 13px;
   --rfs-text: 16px;
-  --rfs-text-md: 17px;
   --rfs-text-lg: 20px;
-  --rfs-heading: 20px;
-  --rfs-subtitle: 17px;
-  --rfs-title: 22px;
+  --rfs-title: 24px;
   --rfs-supertitle: 27px;
 }
 @media (--sm) {
   :root {
     --rfs-text-xs: 12px;
     --rfs-text-sm: 13px;
-    --rfs-text-meta: 15px;
+    --rfs-text-meta: 14.5px;
     --rfs-text: 18px;
-    --rfs-text-md: 21px;
-    --rfs-text-lg: 22px;
-    --rfs-heading: 22px;
-    --rfs-subtitle: 21px;
+    --rfs-text-lg: 23px;
     --rfs-title: 27px;
-    --rfs-supertitle: 36px;
+    --rfs-supertitle: 32px;
   }
 }
 @media (--lg) {
   :root {
     --rfs-text-xs: 14px;
     --rfs-text-sm: 15px;
-    --rfs-text-meta: 17px;
+    --rfs-text-meta: 16px;
     --rfs-text: 21px;
-    --rfs-text-md: 24px;
-    --rfs-text-lg: 25px;
-    --rfs-heading: 25px;
-    --rfs-subtitle: 24px;
-    --rfs-title: 32px;
-    --rfs-supertitle: 44px;
+    --rfs-text-lg: 26px;
+    --rfs-title: 30px;
+    --rfs-supertitle: 36px;
   }
 }

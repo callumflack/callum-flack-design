@@ -2,7 +2,7 @@
 nav.f
 
   div
-    nuxt-link.Nav-link.Nav-logo.Title.fs-text.u-textCapitalise.p-r2(to="/" exact)
+    nuxt-link.Nav-link.Nav-logo.Subtitle.u-textCapitalise.p-r2(to="/" exact)
       span CFd
 
   //- .Nav-link.Text.m-x4 /
@@ -26,19 +26,6 @@ export default {
     NavLink
   },
   props: {},
-  computed: {
-    hideHorizontalRule() {
-      if (this.$store.state.isMobileNavVisible) {
-        return "u-hiddenVisually";
-      }
-      if (this.$route.name === "the-littoral-line") {
-        return "u-hiddenVisually";
-      }
-      // if (this.$route.name === "index") {
-      //   return "u-hiddenVisually";
-      // }
-    }
-  },
   data() {
     return {
       navItems: [
@@ -72,25 +59,20 @@ export default {
           link: "/about/should-we-team-up"
         } */
       ],
-      navContacts: [
-        {
-          label: "callum@callumflack.design",
-          link: "mailto:callum@callumflack.design"
-        },
-        /* {
-          label: "+61(0) 408 767 540",
-          link: "tel:610-408-767-540"
-        }, */
-        {
-          label: "@callumflack",
-          link: "https://twitter.com/callumflack"
-        },
-        {
-          label: "Cairns, Australia",
-          link: "https://www.instagram.com/p/BXbsNdrAt-v"
-        }
-      ]
     };
-  }
+  },
+  computed: {
+    hideHorizontalRule() {
+      if (this.$store.state.isMobileNavVisible) {
+        return "u-hiddenVisually";
+      }
+      if (this.$route.name === "the-littoral-line") {
+        return "u-hiddenVisually";
+      }
+      // if (this.$route.name === "index") {
+      //   return "u-hiddenVisually";
+      // }
+    }
+  },
 };
 </script>

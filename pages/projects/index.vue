@@ -3,10 +3,8 @@
 article
   header.b-ptTitle.b-pb1(role="banner")
     .Container
-      .w-sm-9x12.w-lg-7x12
-        h1.Supertitle.m-b0
-          //- | A selected archive of graphic design since 1999, and web development since 2010.
-          | A selected archive of projects since 2013.
+      h1.Supertitle.m-b0.w-sm-10x12
+        | A selected archive since 2013.
 
   main(role="main")
     .Container
@@ -46,7 +44,7 @@ export default {
     };
   },
   computed: {
-    /* 
+    /*
       1. turn the object into an array with Object.values() b/c can't order Objects
       2. reverse it
     */
