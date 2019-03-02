@@ -4,7 +4,7 @@
     :key="link"
     :to="link"
   )
-    span.Project-title.m-sm-r5 
+    span.Project-title.m-sm-r5
       span {{ title }}
     span.Project-details.m-mo-t1
       span.Meta.Project-meta(v-if="medium") {{ medium }}
@@ -21,9 +21,9 @@
     target="_blank"
     :class="disabledClass"
   )
-    span.Project-title.m-sm-r5 
+    span.Project-title.m-sm-r5
       span {{ title }}
-    span.Project-details.m-mo-t1
+    span.Project-details
       span.Meta.Project-meta(v-if="medium") {{ medium }}
       span.Meta.Project-meta(v-if="tags") {{ tags }}
       span.Meta.Project-meta(v-if="client") {{ client }}
@@ -117,14 +117,13 @@ export default {
   padding-left: var(--s-2);
 }
 
-/* 
+/*
 
   target indicators
 
 */
 
 .Project-target {
-  opacity: 0;
   /* transform: translateX(-0.72em); */
   transform: translate(-0.72em, -0.18em);
   transition: all 150ms ease;
@@ -133,12 +132,19 @@ export default {
     font-size: 100%;
     right: 0;
   }
+
+  @media (--mdl) {
+    opacity: 0;
+  }
 }
 
 .Project:hover .Project-target {
-  opacity: 1;
   transform: translate(0, -0.18em);
   transition: all 150ms ease;
+
+  @media (--mdl) {
+    opacity: 1;
+  }
 }
 
 .Project:hover:not(.is-disabled) .Project-meta {
@@ -148,7 +154,6 @@ export default {
 .Project-case {
   align-self: flex-end;
   display: inline-flex;
-  opacity: 0;
   transform: translate(-0.72em, -0.36em);
   transition: all 150ms ease;
 
@@ -157,15 +162,22 @@ export default {
     right: 0;
     transform: translateY(-0.25em) rotate(0);
   }
+
+  @media (--mdl) {
+    opacity: 0;
+  }
 }
 
 .Project:hover .Project-case {
-  opacity: 1;
   transform: translate(0, -0.36em);
   transition: all 150ms ease;
+
+  @media (--mdl) {
+    opacity: 1;
+  }
 }
 
-/* 
+/*
 
   disabled
 
