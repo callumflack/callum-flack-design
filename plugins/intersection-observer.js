@@ -1,4 +1,4 @@
 import Vue from "vue";
-import IntersectionObserver from "intersection-observer";
+import intersectionObserver from "intersection-observer";
 
-Vue.component(IntersectionObserver);
+Vue.component(intersectionObserver);

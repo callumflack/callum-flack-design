@@ -63,10 +63,10 @@ module.exports = {
   plugins: [
     "~/plugins/vue-headroom",
     "~/plugins/vue-moment",
-    "@/plugins/v-lazy-image"
+    "@/plugins/v-lazy-image",
+    { src: "~/plugins/intersection-observer", ssr: false}
     /* { src: "@/plugins/v-lazy-image", ssr: true }, */
     /*{ src: "~/plugins/vue-slick", ssr: false },*/
-    /* { src: "~/plugins/intersection-observer", ssr: false} */
   ],
 
   /* "@nuxtjs/style-resources" */
