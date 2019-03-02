@@ -36,7 +36,7 @@ article
   main(role="main")
     .Container
       .FlexGrid.FlexGrid--noGutter.f-row
-        .w-1x3.w-lg-3x12
+        .w-4x12.w-sm-3x12
           .AspectRatio(style="padding-bottom:125%")
             .AspectRatio-object
               ImageLazy.bg-text.m-a0(
@@ -44,7 +44,7 @@ article
                 src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg"
                 alt="Callum Flack"
               )
-        .w-2x3.w-lg-9x12
+        .w-8x12.w-sm-9x12
           .Contact.no-link-block.h-100
             .p-a5
               //- p.Subtitle.fw-600.fs-text-meta.m-b2 Get in touch

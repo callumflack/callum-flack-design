@@ -17,10 +17,14 @@
 } */
 
 .Nav-logo {
-  /* font-size: var(--rfs-text-meta) !important; */
-  font-size: calc(var(--rfs-text-meta) + 0.1em) !important;
+  font-size: var(--rfs-text-meta) !important;
   font-weight: 600 !important;
-  transform: translateY(0.175em);
+  transform: translateY(0.15em);
+
+  @media (--mdl) {
+    font-size: calc(var(--rfs-text-meta) + 0.1em) !important;
+    transform: translateY(0.175em);
+  }
 }
 
 .Nav-divider {

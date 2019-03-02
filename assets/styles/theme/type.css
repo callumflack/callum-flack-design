@@ -54,6 +54,7 @@ p em {
 
 /* guyot-italics */
 .Scope-post h2,
+.Scope-post h3,
 .Heading {
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-size: var(--rfs-text-lg);
@@ -61,6 +62,10 @@ p em {
   font-variant-numeric: tabular-nums;
   letter-spacing: var(--fls-text);
   line-height: var(--flh-regular);
+}
+
+.Scope-post h3 {
+  font-size: calc(var(--rfs-text) + 1px);
 }
 
 /* ginto */
@@ -80,7 +85,7 @@ p em {
 }
 
 .Subtitle {
-  font-size: var(--rfs-meta);
+  font-size: var(--rfs-text-meta);
   letter-spacing: 0.025em;
 }
 
@@ -110,12 +115,6 @@ p em {
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  & h3 {
-    font-size: var(--rfs-text);
-    text-transform: uppercase;
-
   }
 
   & strong {
