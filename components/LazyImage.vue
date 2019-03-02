@@ -129,6 +129,7 @@ export default {
   filter: none !important;
 }
 
+figure,
 .Mask {
   overflow: hidden;
 }
