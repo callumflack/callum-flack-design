@@ -1,7 +1,6 @@
 <template>
   <figure
     ref="placeholder"
-    :mask="mask"
     :class="figureClass"
   >
     <svg
@@ -51,10 +50,6 @@ export default {
       type: String,
       default: ""
     },
-    mask: {
-      type: Boolean,
-      default: false
-    },
     blurLevel: {
       type: Number,
       default: 30
@@ -80,9 +75,6 @@ export default {
     figureClass() {
       if (this.$route.name === "index") {
         return "Blue";
-      }
-      if (this.mask) {
-        return "Mask";
       }
     },
   },
@@ -129,8 +121,7 @@ export default {
   filter: none !important;
 }
 
-figure,
-.Mask {
+figure {
   overflow: hidden;
 }
 

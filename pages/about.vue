@@ -40,7 +40,6 @@ article
           .AspectRatio(style="padding-bottom:125%")
             .AspectRatio-object
               LazyImage.bg-text.m-a0(
-                mask
                 src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg"
                 alt="Callum Flack"
               )
