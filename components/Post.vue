@@ -8,7 +8,7 @@
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             //- .AspectRatio-object(:class="heroObjectBgClasses")
             .AspectRatio-object(:style="heroBlockColor")
-              ImageLazy(
+              LazyImage(
                 :src="heroImage"
                 :alt="title"
               )
@@ -36,13 +36,13 @@
 
 <script>
 import moment from "vue-moment";
-import ImageLazy from "~/components/ImageLazy.vue";
+import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   name: "Post",
   components: {
     moment,
-    ImageLazy
+    LazyImage
   },
   props: {
     body: Object,

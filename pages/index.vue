@@ -1,8 +1,8 @@
 <template lang="pug">
 .u-relative.page-index-internal
   .AspectRatio-object
-    //- ImageLazy.image-multiply(:src="selectedImage")
-    ImageLazy(:src="selectedImage")
+    //- LazyImage.image-multiply(:src="selectedImage")
+    LazyImage(:src="selectedImage")
     .AspectRatio-object(style="background-color: rgba(0,0,0,0.6)")
 
   Nav.Animate
@@ -55,14 +55,14 @@
 <script>
 import Nav from "~/components/Nav.vue";
 import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
-import ImageLazy from "~/components/ImageLazy.vue";
+import LazyImage from "~/components/LazyImage.vue";
 /* import { TweenMax } from "greensock"; */
 
 export default {
   layout: "blank",
   /* transition: "slide", */
   components: {
-    ImageLazy,
+    LazyImage,
     NewsletterSignupBlock,
     Nav
   },

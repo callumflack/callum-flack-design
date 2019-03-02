@@ -3,7 +3,7 @@
   nuxt-link.Project(:to="link")
     .AspectRatio.AspectRatio--4x3.bg-text
       .AspectRatio-object
-        ImageLazy(:src="image")
+        LazyImage(:src="image")
     .m-t3
       .Meta.Project-tags.c-textLight(v-if="tags")
         // span(v-if="year") {{ year }}
@@ -15,13 +15,13 @@
 
 
 <script>
-import ImageLazy from "~/components/ImageLazy.vue";
+import LazyImage from "~/components/LazyImage.vue";
 import ImageSVGFilter from "~/components/ImageSVGFilter.vue";
 
 export default {
   name: "post",
   components: {
-    ImageLazy,
+    LazyImage,
     ImageSVGFilter
   },
   props: {

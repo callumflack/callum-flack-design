@@ -7,7 +7,7 @@ article
         .w-mdl-1x2
           .AspectRatio.Hero2
             .AspectRatio-object
-              //- ImageLazy(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
+              //- LazyImage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
               img(src="/images/cf-dwts-01-recut.jpg")
             .AspectRatio-object.Blend
         .w-mdl-1x2.bg-neutral-dar
@@ -39,7 +39,7 @@ article
         .w-4x12.w-sm-3x12
           .AspectRatio(style="padding-bottom:125%")
             .AspectRatio-object
-              ImageLazy.bg-text.m-a0(
+              LazyImage.bg-text.m-a0(
                 mask
                 src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg"
                 alt="Callum Flack"
@@ -60,11 +60,11 @@ article
 </template>
 
 <script>
-import ImageLazy from "~/components/ImageLazy.vue";
+import LazyImage from "~/components/LazyImage.vue";
 
 export default {
   components: {
-    ImageLazy
+    LazyImage
   },
   head() {
     return {

@@ -27,7 +27,7 @@
 
 
 <script>
-import ImageCld from "~/components/ImageLazy.vue";
+import ImageCld from "~/components/LazyImage.vue";
 import moment from "vue-moment";
 
 export default {
