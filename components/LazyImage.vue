@@ -125,6 +125,10 @@ export default {
   filter: url("#blur");
 }
 
+.v-lazy-image-loaded {
+  filter: none !important;
+}
+
 .Mask {
   overflow: hidden;
 }
