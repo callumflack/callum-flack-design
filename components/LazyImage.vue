@@ -50,6 +50,10 @@ export default {
       type: String,
       default: ""
     },
+    nomask: {
+      type: Boolean,
+      default: false
+    },
     blurLevel: {
       type: Number,
       default: 30
@@ -75,6 +79,9 @@ export default {
     figureClass() {
       if (this.$route.name === "index") {
         return "Blue";
+      }
+      if (this.nomask) {
+        return "no-mask";
       }
     },
   },
@@ -117,12 +124,16 @@ export default {
   filter: url("#blur");
 }
 
-.v-lazy-image-loaded {
+/* .v-lazy-image-loaded {
   filter: none !important;
-}
+} */
 
 figure {
   overflow: hidden;
+}
+
+.no-mask {
+  overflow: initial;
 }
 
 .Blue {
