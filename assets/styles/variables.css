@@ -47,8 +47,8 @@
   --s-7: calc(16 * var(--rs-space));
 
   --s-paragraph: calc(1 * var(--rs-space));
-  --s-headline: calc(2.5 * var(--rs-space));
-  --s-blockquote: calc(1 * var(--rs-space));
+  --s-headline: calc(3 * var(--rs-space));
+  --s-blockquote: calc(1.125 * var(--rs-space));
 
   /*
 

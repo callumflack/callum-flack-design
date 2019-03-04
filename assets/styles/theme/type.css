@@ -68,6 +68,10 @@ p em {
   font-size: calc(var(--rfs-text) + 1px);
 }
 
+.Scope-post h3:not(:first-child) {
+  margin-top: calc(1.5 * var(--rs-space));
+}
+
 /* ginto */
 .Subtitle,
 .Title,
@@ -267,7 +271,7 @@ blockquote p em a:not(.Button) {
 /*
   -------------------------------------------------
 
-  Iremono font-spacing overrides
+  Iremono figure font-spacing overrides
 
   -------------------------------------------------
  */
