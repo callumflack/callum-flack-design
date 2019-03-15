@@ -81,9 +81,9 @@ When Callum builds websites, he advocates for these tools:
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
 - Building interfaces with Vue or React (using associated frameworks like Nuxt, VuePress, Gridsome, Next or Gatsby)
-- Integrating content <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> (using <a target="_blank" href="https://www.storyblok.com/">Storyblok</a> or Wordpress)
-- When it's not a web app, using a <a target="_blank" href="https://jamstack.org/">jamstack</a> architecture for speed, security, scalability and productivity
-- PostCSS
+- Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a>
+- Using a <a target="_blank" href="https://jamstack.org/">jamstack</a> architecture (when it's not a web application)
+- PostCSS or Sass
 
 <!-- Through his blog, Callum places importance on the skill of writing. Not only are people more likely to pay attention to clear, concise writing, personal insight is often only gained with brutal editing. -->
 
@@ -119,6 +119,7 @@ Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and B
 You can also find Callum on these websites:
 
 <!-- - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a> -->
+
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
 - <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
 - <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>
