@@ -63,9 +63,10 @@
   --rfs-text-sm: 11px;
   --rfs-text-meta: 13px;
   --rfs-text: 16px;
-  --rfs-text-lg: 20px;
+  --rfs-text-md: 18px;
+  --rfs-text-lg: 19px;
   --rfs-title: 24px;
-  --rfs-supertitle: 27px;
+  --rfs-supertitle: 25px;
 }
 @media (--sm) {
   :root {
@@ -73,9 +74,10 @@
     --rfs-text-sm: 13px;
     --rfs-text-meta: 14.5px;
     --rfs-text: 18px;
-    --rfs-text-lg: 23px;
+    --rfs-text-md: 20px;
+    --rfs-text-lg: 22px;
     --rfs-title: 27px;
-    --rfs-supertitle: 32px;
+    --rfs-supertitle: 30px;
   }
 }
 @media (--lg) {
@@ -83,9 +85,10 @@
     --rfs-text-xs: 14px;
     --rfs-text-sm: 15px;
     --rfs-text-meta: 16px;
-    --rfs-text: 21px;
-    --rfs-text-lg: 27px;
+    --rfs-text: 20px;
+    --rfs-text-md: 22px;
+    --rfs-text-lg: 24px;
     --rfs-title: 30px;
-    --rfs-supertitle: 36px;
+    --rfs-supertitle: 33px;
   }
 }

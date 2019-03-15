@@ -94,7 +94,7 @@ p em {
 }
 
 .Title {
-  font-size: calc(var(--rfs-text-lg) - 2px);
+  font-size: var(--rfs-text-md);
 }
 
 .Supertitle {
@@ -170,7 +170,7 @@ p em {
  */
 
 blockquote p {
-  /* border-left: 1px solid var(--c-rule); */
+  border-left: 1px solid var(--c-rule);
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--text-indent);
@@ -258,6 +258,7 @@ blockquote p em a:not(.Button) {
 }
 
 .Post-intro-quote p {
+  border: none;
   color: var(--c-text-light);
   padding-left: 0;
 }
