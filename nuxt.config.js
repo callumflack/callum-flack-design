@@ -131,7 +131,7 @@ module.exports = {
     }, */
     /*
       Get postcss syntax in single page component styles
-      Requires <style lang="postcss"
+      Requires <style lang="postcss">
       https://github.com/nuxt/nuxt.js/issues/3231
     */
     extend(config, ctx) {

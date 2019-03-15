@@ -37,7 +37,7 @@ export default {
   },
   /*
     Can refactor to accept a single post prop:
-    https://vuejs.org/v2/guide/components.html
+    https://vuejs.org/v2/guide/components.html#A-Single-Root-Element
 
     props: ["post"]
 
