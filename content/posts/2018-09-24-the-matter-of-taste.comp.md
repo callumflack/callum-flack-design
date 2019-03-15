@@ -90,9 +90,7 @@ Sure, there's work to be done. But unless the work is orchestrated as a combined
 
 > Economic development is not the ability to buy but the ability to make. **César Hidalgo, Why Information Grows**
 
-Just as you cannot not communicate, you cannot not have taste. Rather than being a throwaway complement, taste describes a person or a team's intuited ability to comprehend and create within a problem space. Taste is cultivated by a natural curiousity for this space, which allows one to refine and speed up their attention processes, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it. _Good taste is the embodied ability to work a vague idea and emotion over into terms of the medium. It is the invisible dark matter that makes one product a superior user experience over another._ Indeed, you will know you're successful people call your product "beautiful". 
-
-Good taste makes good things.
+Just as you cannot not communicate, you cannot not have taste. Rather than being a throwaway complement, taste describes a person or a team's intuited ability to comprehend and create within a problem space. Taste is cultivated by a natural curiousity for this space, which allows one to refine and speed up their attention processes, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it. _Good taste is the embodied ability to work a vague idea and emotion over into terms of the medium. It is the invisible dark matter that makes one product a superior user experience over another._ Indeed, you will know you're successful people call your product "beautiful". Good taste makes good things.
 
 <!-- when the intuitive feelings use to create are receieved with feeling by the people who use the product. -->
 
