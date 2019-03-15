@@ -1,19 +1,9 @@
 <template>
-  <figure
-    ref="placeholder"
-    :class="figureClass"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      class="u-hidden"
-    >
+  <figure ref="placeholder" :class="figureClass">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="u-hidden">
       <defs>
         <filter id="blur">
-          <feGaussianBlur
-            :stdDeviation="deviation"
-            in="SourceGraphic"
-          />
+          <feGaussianBlur :stdDeviation="deviation" in="SourceGraphic"/>
         </filter>
       </defs>
     </svg>
@@ -33,7 +23,8 @@ import VLazyImage from "v-lazy-image";
 
 /* cloudinary utils */
 const cldBaseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
-const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:300`;
+// const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:300`;
+const cldBlurUrl = `${cldBaseUrl}/w_50`;
 
 function calcImageDimension(length, pixelRatio) {
   return 100 * Math.round((length * pixelRatio) / 100);
@@ -83,7 +74,7 @@ export default {
       if (this.nomask) {
         return "no-mask";
       }
-    },
+    }
   },
   mounted() {
     /* Fetch a responsive image from cloudinary */
@@ -140,7 +131,7 @@ figure {
   background-color: var(--c-blue);
   position: relative;
   transition: background-color 750ms cubic-bezier(0.15, 0.71, 0.45, 1.06);
-  transition: background-color 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 750ms cubic-bezier(0.19, 1, 0.22, 1);
   /* animation: bgblue 3000ms cubic-bezier(0.19, 1, 0.22, 1); */
 }
 
@@ -158,7 +149,7 @@ figure {
   mix-blend-mode: multiply;
   min-height: 100%;
   min-width: 100%;
-  transition: opacity 1s linear;
+  transition: opacity 750ms linear;
   width: 100%;
 }
 </style>
