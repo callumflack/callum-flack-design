@@ -23,8 +23,7 @@ import VLazyImage from "v-lazy-image";
 
 /* cloudinary utils */
 const cldBaseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
-// const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:300`;
-const cldBlurUrl = `${cldBaseUrl}/w_50`;
+const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:300`;
 
 function calcImageDimension(length, pixelRatio) {
   return 100 * Math.round((length * pixelRatio) / 100);
