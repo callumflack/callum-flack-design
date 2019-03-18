@@ -25,7 +25,7 @@ div
       h2.Heading The archives:
       .Projects
         ProjectListItem(
-          v-for="item in issues"
+          v-for="item in newsletters.issues"
           v-bind="item"
           v-bind:key="item.title"
         )
@@ -33,78 +33,23 @@ div
 </template>
 
 <script>
-import IconBase from "~/components/IconBase.vue";
-import IconSun from "~/components/icons/IconSun.vue";
-import NewsletterSignupBlock from "~/components/NewsletterSignupBlock.vue";
-import ProjectListItem from "~/components/ProjectListItem.vue";
+import IconBase from "~/components/IconBase";
+import IconSun from "~/components/icons/IconSun";
+import NewsletterSignupBlock from "~/components/NewsletterSignupBlock";
+import ProjectListItem from "~/components/ProjectListItem";
+import newsletters from "~/data/newsletters";
 
 export default {
   components: {
     IconBase,
     IconSun,
     NewsletterSignupBlock,
-    ProjectListItem
+    ProjectListItem,
+    newsletters
   },
   data() {
     return {
-      issues: [
-        {
-          title: "The thingness of words",
-          number: "LL01",
-          date: "2018.10.05",
-          link: "https://the-littoral-line.callumflack.design/LL01.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "Irritating ideas and economic growth",
-          number: "LL02",
-          date: "2018.10.19",
-          link: "https://the-littoral-line.callumflack.design/LL02.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "System 1 perceives and System 2 creates",
-          number: "LL03",
-          date: "2018.11.02",
-          link: "https://the-littoral-line.callumflack.design/LL03.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "Aesthetic arrest",
-          number: "LL04",
-          date: "2018.11.18",
-          link: "https://the-littoral-line.callumflack.design/LL04.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "Perspective",
-          number: "LL05",
-          date: "2018.12.20",
-          link: "https://thelittoralline.callumflack.design/LL05.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "Pouring",
-          number: "LL06",
-          date: "2019.02.08",
-          link: "https://thelittoralline.callumflack.design/LL06.html",
-          tags: "",
-          medium: ""
-        },
-        {
-          title: "You don’t miss good tools until…",
-          number: "LL07",
-          date: "2019.02.22",
-          link: "https://thelittoralline.callumflack.design/LL07.html",
-          tags: "",
-          medium: ""
-        }
-      ]
+      newsletters
     };
   },
   head() {

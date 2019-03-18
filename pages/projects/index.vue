@@ -32,7 +32,7 @@ article
 
 <script>
 import ProjectListItem from "~/components/ProjectListItem.vue";
-import projects from "~/components/projects.js";
+import projects from "~/data/projects.js";
 
 export default {
   components: {
