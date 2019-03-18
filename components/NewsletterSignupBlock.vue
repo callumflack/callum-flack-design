@@ -7,11 +7,11 @@
 
   .Block-cell.w-sm-10x12
     p.Text.p-t3.p-b7.p-x4.m-b0(v-if="introTextToggle")
-      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's 
+      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's
       nuxt-link(to="/the-littoral-line") the archives.
       | &nbsp;You should sign up:
     p.Text.p-t3.p-b7.p-x4.m-b0(v-else)
-      | I write an email letter once or twice a month about visual design, user experience and website development through the lens of people and attention. I find and align the "inbetween things" that wash up in this particular tidal zone, so to speak. It's called the Littoral Line.
+      | I write an email letter once or twice a month about visual design, user experience and website development through the lens of people and attention. I find and align the interesting "inbetween things" that wash up in this particular tidal zone, so to speak. It's called the Littoral Line.
 
     NewsletterSignupForm
 
