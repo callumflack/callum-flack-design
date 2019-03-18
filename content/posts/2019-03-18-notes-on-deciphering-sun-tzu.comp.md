@@ -2,8 +2,8 @@
 published: true
 mostRecentPost: true
 category: Notes
-title: Notes from "Deciphering Sun Tzu"
-lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
+title: Notes on "Deciphering Sun Tzu"
+lede: Notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy we’ve been raised on.
 readingTime: 7
 heroImageMultiply: true
 blockColor: transparent
