@@ -7,7 +7,7 @@
 
   .Block-cell.w-sm-10x12
     p.Text.p-t3.p-b7.p-x4.m-b0(v-if="introTextToggle")
-      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's
+      | Ps. I write a bi-monthly email letter about design, UX and the web through the lens of people and attention. Here's&nbsp;
       nuxt-link(to="/the-littoral-line") the archives.
       | &nbsp;You should sign up:
     p.Text.p-t3.p-b7.p-x4.m-b0(v-else)

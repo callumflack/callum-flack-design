@@ -64,7 +64,7 @@
   --rfs-text-meta: 13px;
   --rfs-text: 16px;
   --rfs-text-md: 18px;
-  --rfs-text-lg: 19px;
+  --rfs-text-lg: 21px;
   --rfs-title: 24px;
   --rfs-supertitle: 25px;
 }
@@ -75,7 +75,7 @@
     --rfs-text-meta: 14.5px;
     --rfs-text: 18px;
     --rfs-text-md: 20px;
-    --rfs-text-lg: 22px;
+    --rfs-text-lg: 24px;
     --rfs-title: 27px;
     --rfs-supertitle: 30px;
   }
@@ -87,7 +87,7 @@
     --rfs-text-meta: 16px;
     --rfs-text: 20px;
     --rfs-text-md: 22px;
-    --rfs-text-lg: 24px;
+    --rfs-text-lg: 27px;
     --rfs-title: 30px;
     --rfs-supertitle: 33px;
   }

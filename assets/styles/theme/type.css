@@ -25,6 +25,10 @@ p em {
   font-style: italic;
 }
 
+.fs-text-lg {
+  font-size: calc(var(--rfs-text-lg) - 2px) !important;
+}
+
 /*
   -------------------------------------------------
 
