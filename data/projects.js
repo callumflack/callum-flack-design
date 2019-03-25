@@ -23,7 +23,7 @@ export default {
     },
     {
       title: "BrandHook",
-      link: "https://brandhook.com/"
+      link: "http://brandhook.com/"
     },
     {
       title: "Evernote Random Note",
