@@ -1,6 +1,6 @@
 # Callum Flack Design
 
-Value prop, folio and blog: https://callumflack.design/
+Value prop, folio and blog site: https://callumflack.design/
 
 Made with Nuxt.js + Nuxtent markdown, images served by Cloudinary, and deployed with Zeit Now.
 
