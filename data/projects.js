@@ -1,6 +1,12 @@
 export default {
   "2019": [
     {
+      title: "Avari Capital",
+      client: "Paper Stone Scissors",
+      tags: "Frontend",
+      link: "https://avaricapitalpartners.com.au/"
+    },
+    {
       title: "Portt",
       client: "Studio For",
       tags: "Frontend",
