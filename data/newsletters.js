@@ -49,7 +49,7 @@ export default {
       medium: ""
     },
     {
-      title: "You don’t miss good tools until you have to use the old tools",
+      title: "You don’t miss good tools until…",
       number: "LL07",
       date: "2019.02.22",
       link: "https://thelittoralline.callumflack.design/LL07",
@@ -73,7 +73,7 @@ export default {
       medium: ""
     },
     {
-      title: "These extensions of our senses begin to interact with our senses",
+      title: "These extensions of our senses…",
       number: "LL10",
       date: "2019.04.29",
       link: "https://thelittoralline.callumflack.design/LL10",
