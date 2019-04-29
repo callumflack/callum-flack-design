@@ -20,7 +20,7 @@ export default {
       title: "System 1 perceives and System 2 creates",
       number: "LL03",
       date: "2018.11.02",
-      link: "https://the-littoral-line.callumflack.design/LL03.html",
+      link: "https://thelittoralline.callumflack.design/LL03",
       tags: "",
       medium: ""
     },
