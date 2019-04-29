@@ -28,7 +28,7 @@ article
     .Container
       .b-ptTitle.w-sm-10x12
         h1.Supertitle.m-b0
-          | An interface maker.<br>Fluid across visual design, user experience and code.
+          | CFd makes interfaces.<br>Fluid across visual design, user experience and code.
         h2.Text.fw-400.m-t3
           span.fs-italic The quality of the connections is the key to quality.
           span.Blockquote-author — Charles Eames
