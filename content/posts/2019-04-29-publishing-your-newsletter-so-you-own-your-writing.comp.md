@@ -2,13 +2,13 @@
 published: true
 category: Web development, web publishing
 title: How to publish a newsletter so you own your writing
-lede: You don’t miss good tools until you have to use the old tools. When it comes to web development tools and publishing systems, there's a paradigm shift in effect. It'll not only make your website a better user experience, it'll be easier to maintain. It's just that you may have to wait until your current website system is painful enough before you believe me.
-readingTime: 2
+lede: How I write my newsletter so that I retain an ownership and history of my writing, while reducing the friction of publishing. Some helpful tips on using a chain of web tools to streamline publishing and create a focus on writing without resorting to a product platform lock-in.
+readingTime: 5
 ---
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->
 
-I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. There is otherwise no real strategy. I am frankly not interested in growth hacking my way to solopreneurdom, I'm purely interested in ideas and their execution, on the internet.
+I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. There is otherwise no real strategy. I am frankly not interested in growth hacking my human connections, I'm purely interested in ideas and their execution, on the internet.
 
 I took the road less travelled when I set up my newsletter. Partly to play with the available systems. Mostly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform. _I wanted it to be just a folder of files on my computer so that I could simply create a new blank docuemtn and start writing with the least friction possible._ But I also wanted those files to work as a publishing system with the least amount of friction in the process as possible.
 
@@ -66,13 +66,13 @@ If you want to preview the post as it would appear in the email, run a Jekyll de
 
 ## Publishing a Jekyll site with Zeit Now
 
-Once I'm happy with a newsletter edition, I simply redeploy the website using Zeit's [Now deployments](https://zeit.co/now) to my `littoralline` subdomain.
+Once I'm happy with a newsletter edition, I simply redeploy the website using Zeit's [Now deployments](https://zeit.co/now) to my `littoralline` subdomain. To do that, all I do is commit to Github.
 
-But _to redeploy I don't do anything other than commit to Github._
+I'll say that again so I can highlight it: _to publish, I don't do anything other than commit to Github._
 
-To trigger a website redeployment, a `now` webhook is set for the Github repository. The [Now Github app](https://zeit.co/github) simply reads my `now.json` config and automatically creates a new deployment whenever I push a commit to Github. Because it's a Jekyll site, I also have a `build.sh` file in the project root (taken from the [Now examples](https://github.com/zeit/now-examples/blob/master/jekyll/build.sh)). Now uses this script to run the Jekyll build on the Now servers.
+That's because I have a `now` webhook set for the Github repository. The [Now Github app](https://zeit.co/github) simply reads my `now.json` config and automatically does it's thing whenever I push a commit. Because it's a Jekyll site, I also have a `build.sh` file in the project root (taken from the [Now examples](https://github.com/zeit/now-examples/blob/master/jekyll/build.sh)). Now uses this script to run the Jekyll build on the Now servers.
 
-This tiny piece of magic removes the forgetfully manual process of running `now && now alias` from the project root in my terminal and strips another layer of friction from publishing. And it's what allows me to write directly in Github.
+This tiny piece of magic removes the forgetfully manual process of running `now && now alias` from the project root in my terminal and strips another layer of friction from publishing. And it's what _allows me to write directly in Github_.
 
 <!-- (and runs any aliases) I can also run `now` in my terminal from the project root.  -->
 
@@ -81,6 +81,8 @@ This tiny piece of magic removes the forgetfully manual process of running `now 
 <!-- As a redundancy, I can deployment manually without the `now` command by running `JEKYLL_ENV=production jekyll build --future` on my terminal then dragging the resulting `_site` folder to the Now desktop app. But there's no need to waste the time. It's just good to know if some script breaks down, I can still publish it now and fix the build system later. -->
 
 ## And that's a wrap
+
+So that's how I publish a newsletter while always retaining ownership of my writing. It's a both a showcase of web tools and chance to play with them in context to see when they work, and when they don't. And while this may sound counter-intuitive, it's also helped me think deeply about what my intent is when writing. As I progressed with the project, I came to realise that _any reduction in the publishing process went directly into more time writing._
 
 I'll probably add in an RSS feed shortly, so I can have Mailchimp automatically create a new email campaign. I'm unsure exactly how this works just yet, and although I'm sure it's quite simple, I'll leave it until the next hack session.
 
