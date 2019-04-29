@@ -10,7 +10,7 @@ readingTime: 5
 
 I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. There is otherwise no real strategy. I am frankly not interested in growth hacking my human connections, I'm purely interested in ideas and their execution, on the internet.
 
-I took the road less travelled when I set up my newsletter. Partly to play with the available systems. Mostly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform. _I wanted it to be just a folder of files on my computer so that I could simply create a new blank docuemtn and start writing with the least friction possible._ But I also wanted those files to work as a publishing system with the least amount of friction in the process as possible.
+I took the road less travelled when I set up my newsletter. Partly to play with the available systems. Mostly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform. _I wanted it to be just a folder of files on my computer so that I could simply create a new blank document and start writing with the least friction possible._ But I also wanted those files to work as a publishing system with the least amount of friction in the process as possible.
 
 What follows is a short explanation of how I do this.
 
