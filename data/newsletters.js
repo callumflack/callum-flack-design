@@ -12,7 +12,7 @@ export default {
       title: "Irritating ideas and economic growth",
       number: "LL02",
       date: "2018.10.19",
-      link: "https://the-littoral-line.callumflack.design/LL02.html",
+      link: "https://thelittoralline.callumflack.design/LL02",
       tags: "",
       medium: ""
     },
