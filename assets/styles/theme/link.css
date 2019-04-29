@@ -59,9 +59,9 @@ li a:not(.Button),
 
 .nuxt-link-active span {
   --underline: var(--c-text);
-  background-position: 0% 92.5%, 100% 92.5%, 0% 92.5%;
 }
 
+.nuxt-link-active span,
 blockquote p em a {
   background-position: 0% 100%, 100% 100%, 0% 100% !important;
 }

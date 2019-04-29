@@ -84,7 +84,7 @@ export default {
       if (this.$route.name === "index") {
         return "Container";
       }
-      return "Excerpt b-pt15";
+      return "Excerpt b-pt1";
     },
     heroExtractClasses() {
       if (this.showOnHomePage === true) {

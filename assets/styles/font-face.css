@@ -36,22 +36,29 @@
 */
 @font-face {
   font-family: var(--ff-title);
-  /* src: url("~static/fonts/TradeGothic-BoldCondTwenty.otf") format("woff"); */
-  /* src: url("~static/fonts/druk-text-medium.woff2") format("woff2"); */
-  /* src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff"); */
-  src: url("~static/fonts/GintoNordBold.woff") format("woff");
-  font-weight: 700;
+  src: url("~static/fonts/Geometria-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
-  src: url("~static/fonts/GintoNordMedium.woff") format("woff");
+  src: url("~static/fonts/Geometria-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: var(--ff-title);
-  src: url("~static/fonts/GintoNordBlack.woff") format("woff");
-  font-weight: 900;
+  /* src: url("~static/fonts/TradeGothic-BoldCondTwenty.otf") format("woff"); */
+  /* src: url("~static/fonts/druk-text-medium.woff2") format("woff2"); */
+  /* src: url("~static/fonts/AttenNew-ExtraBold.woff") format("woff"); */
+  /* src: url("~static/fonts/GintoNordBold.woff") format("woff"); */
+  src: url("~static/fonts/Geometria-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/Geometria-ExtraBold.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }

@@ -39,11 +39,16 @@ p em {
 
 .Meta {
   /* font-family: var(--ff-meta), var(--ff-stack-sans); */
-  font-family: var(--ff-stack-sans);
+  /* font-family: var(--ff-stack-sans); */
+  font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: var(--rfs-text-xs);
   font-weight: 400;
   letter-spacing: 0.0125em;
   line-height: 1;
+}
+
+.Button.Meta {
+  font-weight: 700;
 }
 
 /*
@@ -81,11 +86,10 @@ p em {
 .Title,
 .Supertitle {
   font-family: var(--ff-title), var(--ff-stack-sans);
-  font-weight: 700;
   line-height: 1.1;
   line-height: 1.25;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
+  letter-spacing: -0.0125em;
+  /* text-transform: uppercase; */
 
   & a:hover {
     color: var(--c-link);
@@ -94,16 +98,18 @@ p em {
 
 .Subtitle {
   font-size: var(--rfs-text-meta);
+  font-weight: 800;
   letter-spacing: 0.025em;
 }
 
 .Title {
-  font-size: var(--rfs-text-md);
+  font-size: var(--rfs-text-lg);
+  font-weight: 800;
 }
 
 .Supertitle {
   font-size: var(--rfs-supertitle);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.05;
 }
@@ -201,7 +207,7 @@ blockquote p {
 .Scope-post blockquote p strong {
   display: table;
   font-style: normal;
-  font-size: calc(var(--rfs-text-sm) + 0.075em);
+  font-size: calc(var(--rfs-text-sm) + 0.15em);
   font-weight: 400;
   letter-spacing: 0.075em;
   margin-top: 0.25em;
@@ -290,4 +296,37 @@ blockquote p em a:not(.Button) {
 figure {
   padding: 0;
   margin: var(--figure-space-align-within-text) 0;
+}
+
+/*
+  -------------------------------------------------
+
+  Code blocks
+
+  -------------------------------------------------
+ */
+
+pre {
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  /* font-size: .88888em; */
+  margin: 0 0 12px;
+  overflow-x: auto;
+  padding: 1.25em;
+  white-space: pre;
+}
+
+code {
+  color: #EB5757;
+  color: #111;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 80%;
+  font-weight: 500;
+}
+
+p code {
+  background: rgba(135,131,120,0.15);
+  line-height: normal;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
 }

@@ -2,13 +2,13 @@
 nav.f
 
   div
-    nuxt-link.Nav-link.Nav-logo.Subtitle.u-textCapitalise.p-r2(to="/" exact)
+    nuxt-link.Nav-link(to="/" exact)
       span CFd
 
-  //- .Nav-link.Text.m-x4 /
+  .Nav-link.m-l4 •
 
   .Nav-list
-    nuxt-link.Nav-link.Text.m-l4(
+    nuxt-link.Nav-link.m-l4(
       v-for="item in navItems"
       :key="item.link"
       :to="item.link"

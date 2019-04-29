@@ -80,10 +80,12 @@ When Callum builds websites, he advocates for these tools:
 
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
-- Building interfaces with Vue or React (using associated frameworks like Nuxt, VuePress, Gridsome, Next or Gatsby)
+- Building interfaces with Vue.js (or React.js)
+- Using a <a target="_blank" href="https://jamstack.org/">JAMstack</a> architecture with git-based deployments (mostly)
 - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a>
-- Using a <a target="_blank" href="https://jamstack.org/">jamstack</a> architecture (when it's not a web application)
-- PostCSS or Sass
+
+<!-- (when it's not a web application) -->
+<!-- - PostCSS or Sass -->
 
 <!-- Through his blog, Callum places importance on the skill of writing. Not only are people more likely to pay attention to clear, concise writing, personal insight is often only gained with brutal editing. -->
 

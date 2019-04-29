@@ -22,8 +22,8 @@
 
 input,
 .Button {
-  padding-bottom: calc(3 / var(--rfs-text));
-  padding-bottom: 0.142857143em !important;
+  /* padding-bottom: calc(3 / var(--rfs-text));
+  padding-bottom: 0.142857143em !important; */
 }
 
 /*

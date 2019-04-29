@@ -41,6 +41,12 @@
   align-items: center;
   display: inline-flex;
   height: var(--nav-height);
+
+  font-family: var(--ff-title), var(--ff-stack-sans);
+  font-size: calc(var(--rfs-text-meta) + 2px);
+  font-size: var(--rfs-text-meta);
+  font-weight: 700 !important;
+  letter-spacing: 0;
 }
 
 .Nav-link + .Nav-link {

@@ -19,7 +19,7 @@
         tabindex="-1",
         value=""
       )
-    button.Button.Button--transparent.Text(
+    button.Button.Button--transparent.Text.ff-title.fw-700(
       type="submit",
       name="subscribe",
     )
