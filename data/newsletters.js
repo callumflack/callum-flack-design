@@ -4,7 +4,7 @@ export default {
       title: "The thingness of words",
       number: "LL01",
       date: "2018.10.05",
-      link: "https://thelittoralline.callumflack.design/LL01.html",
+      link: "https://thelittoralline.callumflack.design/LL01",
       tags: "",
       medium: ""
     },
@@ -36,7 +36,7 @@ export default {
       title: "Perspective",
       number: "LL05",
       date: "2018.12.20",
-      link: "https://thelittoralline.callumflack.design/LL05.html",
+      link: "https://thelittoralline.callumflack.design/LL05",
       tags: "",
       medium: ""
     },
@@ -44,15 +44,15 @@ export default {
       title: "Pouring",
       number: "LL06",
       date: "2019.02.08",
-      link: "https://thelittoralline.callumflack.design/LL06.html",
+      link: "https://thelittoralline.callumflack.design/LL06",
       tags: "",
       medium: ""
     },
     {
-      title: "You don’t miss good tools until…",
+      title: "You don’t miss good tools until you have to use the old tools",
       number: "LL07",
       date: "2019.02.22",
-      link: "https://thelittoralline.callumflack.design/LL07.html",
+      link: "https://thelittoralline.callumflack.design/LL07",
       tags: "",
       medium: ""
     },
@@ -60,7 +60,23 @@ export default {
       title: "Conditions and consequences",
       number: "LL08",
       date: "2019.03.18",
-      link: "https://thelittoralline.callumflack.design/LL08.html",
+      link: "https://thelittoralline.callumflack.design/LL08",
+      tags: "",
+      medium: ""
+    },
+    {
+      title: "Wealth and expectancy",
+      number: "LL09",
+      date: "2019.04.05",
+      link: "https://thelittoralline.callumflack.design/LL09",
+      tags: "",
+      medium: ""
+    },
+    {
+      title: "These extensions of our senses begin to interact with our senses",
+      number: "LL10",
+      date: "2019.04.29",
+      link: "https://thelittoralline.callumflack.design/LL10",
       tags: "",
       medium: ""
     }
