@@ -2,8 +2,8 @@
 published: true
 mostRecentPost: true
 category: Notes
-title: Notes on "Deciphering Sun Tzu"
-lede: Notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy we’ve been raised on.
+title: Notes on Deciphering Sun Tzu
+lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy I’ve been raised on.
 readingTime: 7
 heroImageMultiply: true
 blockColor: transparent
