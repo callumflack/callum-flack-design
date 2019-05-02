@@ -77,12 +77,8 @@ export default {
           content: `${this.page.title}—${this.page.lede}`
         },
         // Twitter Card
-        { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:site', content: '@callumflack' },
         { name: 'twitter:title', content: `Callum Flack Design • ${this.page.title}` },
         { name: 'twitter:description', content: this.page.lede },
-        { name: 'twitter:image', content: 'https://avatars2.githubusercontent.com/u/749885?s=460&v=4' },
-        { name: 'twitter:image:alt', content: 'Callum Flack' }
       ]
     };
   },

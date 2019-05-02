@@ -26,8 +26,6 @@ module.exports = {
       // Twitter Card
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@callumflack" },
-      { name: "twitter:title", content: "Callum Flack Design • Digital design & development" },
-      { name: "twitter:description", content: "CFd makes websites. He works fluidly across visual design, user experience and code." },
       { name: "twitter:image", content: "https://avatars2.githubusercontent.com/u/749885?s=460&v=4" },
       { name: "twitter:image:alt", content: "Callum Flack" }
     ],

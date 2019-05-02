@@ -71,12 +71,8 @@ export default {
           content: `A selected archive of projects by Callum Flacak Design since 2013. Design, frontend &amp; heaps of friendly advice along the way`
         },
         // Twitter Card
-        { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:site', content: '@callumflack' },
         { name: 'twitter:title', content: `Callum Flack Design • Projects` },
         { name: 'twitter:description', content: "A selected archive since 2013. Design, frontend &amp; heaps of friendly advice along the way." },
-        { name: 'twitter:image', content: 'https://avatars2.githubusercontent.com/u/749885?s=460&v=4' },
-        { name: 'twitter:image:alt', content: 'Callum Flack' }
       ]
     };
   }

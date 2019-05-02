@@ -83,12 +83,8 @@ export default {
             "Articles by Callum Flack Design about design, user experience, code and the 'things inbetween' that inform their success"
         },
         // Twitter Card
-        { name: 'twitter:card', content: 'summary' },
-        { name: 'twitter:site', content: '@callumflack' },
         { name: 'twitter:title', content: `Callum Flack Design • Blog` },
         { name: 'twitter:description', content: "Articles by Callum Flack Design about design, user experience and code in the context of human attention and utility." },
-        { name: 'twitter:image', content: 'https://avatars2.githubusercontent.com/u/749885?s=460&v=4' },
-        { name: 'twitter:image:alt', content: 'Callum Flack' }
       ]
     };
   }
