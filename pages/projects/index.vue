@@ -3,8 +3,10 @@
 article
   header.b-ptTitle.b-pb1(role="banner")
     .Container
-      h1.Supertitle.m-b0.w-sm-10x12
+      h1.Supertitle.m-b0
         | A selected archive since 2013.
+        br
+        span.c-text-light Design, frontend &amp; heaps of friendly advice along the way.
 
   main(role="main")
     .Container
@@ -13,7 +15,8 @@ article
         v-for="(year, index) in reverseProjects"
         v-bind="year"
       )
-        h2.Subtitle.Projects-year {{ 2019 - index }}
+        h2.Subtitle.Projects-year.m-b1
+          | {{ 2019 - index }}
         .Projects
           ProjectListItem(
             v-for="project in year"
@@ -60,7 +63,7 @@ export default {
   },
   head() {
     return {
-      title: `Projects—Callum Flack Design`,
+      title: `Callum Flack Design • Projects`,
       meta: [
         {
           hid: "description",

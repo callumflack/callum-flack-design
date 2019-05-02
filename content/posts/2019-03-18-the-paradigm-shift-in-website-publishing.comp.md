@@ -106,6 +106,6 @@ Now is the right time to jump on the bandwagon, where you'll get the optimism an
 
 <!-- Or until we have to go back and use the old tools. -->
 
-<div class="HeadingSpace" id="f-1"><hr class="ParagraphSpace"><p class="fs-text-sm c-text-light"><span>1. Despite all the social media publishing platforms available, a website is still where a business can retain most control over the presentation of their core value proposition, and it's probably still the first thing a potential customer will click to from a search. Oh and forget native apps for business value props, web search well and truly beat them.</span></p></div>
+<div class="HeadingSpace" id="f-1"><hr class="ParagraphSpace"><p class="fs-text-sm c-text-light"><span>1. Despite all the social media publishing platforms available, a website is still where a business can retain most control over the presentation of their core value proposition, and it's probably still the first thing a potential customer will click to from a search. Oh and forget native apps for business brand & value proposition sites, web search well and truly beat them.</span></p></div>
 
 <div class="" id="f-2"><hr class="ParagraphSpace bg-transparent"><p class="fs-text-sm c-text-light"><span>2. I’m not a born developer and I don’t have the baggage of having transferred out of a decade of PHP in the early 2010s. Instead, I was a graphic designer for well over a decade before I started learning to program. There was a lot I haven’t had to unlearn because I never learned it in the first place.</span></p></div>

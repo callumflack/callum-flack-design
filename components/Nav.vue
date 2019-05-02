@@ -37,6 +37,7 @@ export default {
 <style>
 .headroom {
   background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(251, 250, 248, 0.96);
   /* background-image: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0.96) 90%,

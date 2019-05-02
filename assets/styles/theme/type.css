@@ -39,7 +39,7 @@ p em {
 
 .Meta {
   /* font-family: var(--ff-meta), var(--ff-stack-sans); */
-  /* font-family: var(--ff-stack-sans); */
+  font-family: var(--ff-stack-sans);
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: var(--rfs-text-xs);
   font-weight: 400;
@@ -85,11 +85,13 @@ p em {
 .Subtitle,
 .Title,
 .Supertitle {
+  font-family: var(--ff-stack-sans);
   font-family: var(--ff-title), var(--ff-stack-sans);
+  font-weight: 700;
   line-height: 1.1;
   line-height: 1.25;
-  letter-spacing: -0.0125em;
-  /* text-transform: uppercase; */
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
 
   & a:hover {
     color: var(--c-link);
@@ -98,19 +100,16 @@ p em {
 
 .Subtitle {
   font-size: var(--rfs-text-meta);
-  font-weight: 800;
   letter-spacing: 0.025em;
 }
 
 .Title {
   font-size: var(--rfs-text-lg);
-  font-weight: 800;
 }
 
 .Supertitle {
   font-size: var(--rfs-supertitle);
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   line-height: 1.05;
 }
 
@@ -157,10 +156,19 @@ p em {
       margin-bottom: 0;
     }
   }
+}
 
-  /* PS highlight */
+/*
+  -------------------------------------------------
+
+  Post: markdown highlighting
+
+  -------------------------------------------------
+ */
+
+.Scope-post {
   & em {
-    background-color: var(--c-highlight);
+    /* background-color: var(--c-highlight); */
     font-style: normal;
   }
   & em a:not(.Button) {
@@ -168,19 +176,21 @@ p em {
     --underline: var(--c-gray);
     --underline-hover: currentColor;
     --underline-textshadow: var(--underline-bgimg); */
-    background-color: initial !important;
-    text-shadow: initial !important;
+    /* background-color: initial !important;
+    text-shadow: initial !important; */
   }
 }
 
 /*
+  -------------------------------------------------
 
-  blockquote (not incl. spacing)
+  Blockquote (not incl. spacing)
 
+  -------------------------------------------------
  */
 
 blockquote p {
-  border-left: 1px solid var(--c-rule);
+  /* border-left: 1px solid var(--c-rule); */
   font-family: var(--ff-text), var(--ff-stack-serif);
   font-style: italic;
   padding-left: var(--text-indent);
@@ -290,7 +300,7 @@ blockquote p em a:not(.Button) {
 .Scope-post figure + h2,
 .Scope-post figure + h3 {
   margin-top: 0 !important;
-  padding-top: calc(0.125 * var(--s-headline));
+  padding-top: calc(0.125 * var(--s-heading));
 }
 
 figure {
@@ -320,7 +330,7 @@ code {
   color: #EB5757;
   color: #111;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 80%;
+  font-size: 75%;
   font-weight: 500;
 }
 

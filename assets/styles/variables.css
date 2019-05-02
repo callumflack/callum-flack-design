@@ -47,7 +47,7 @@
   --s-7: calc(16 * var(--rs-space));
 
   --s-paragraph: calc(1 * var(--rs-space));
-  --s-headline: calc(3 * var(--rs-space));
+  --s-heading: calc(3 * var(--rs-space));
   --s-blockquote: calc(1.125 * var(--rs-space));
 
   /*
@@ -72,8 +72,8 @@
   --c-ash: #24292e;
   --c-text: #0a1029; /* deep blue */
   --c-text: #151515;
-  --c-text-light: #aaa;
-  --c-text-underline: rgba(0, 0, 0, 0.25);
+  --c-text-light: #959595;
+  --c-text-underline: rgba(0, 0, 0, 0.2);
 
   --c-gray: #aaa;
   --c-border: #e5e5e5;
@@ -90,10 +90,11 @@
 
   --c-neutral: #f2f2f2;
   --c-neutral-dark: #e2e2e2;
+  --c-neutral-yellow: #fbfaf8;
 
   --c-bg: #f3f2f1;
   --c-bg: #fafafa;
-  --c-bg: #fefefe;
+  --c-bg: #fbfaf8;
   --c-white: white;
 
   --c-success: #ff3700;

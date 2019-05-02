@@ -160,7 +160,7 @@ export default {
 }
 
 .page-index-internal {
-  & .nuxt-link-active span,
+  /* & .nuxt-link-active span, */
   & p a:not(.Button),
   & .Text a:not(.Button),
   & .Scope-post p a:not(.Button) {

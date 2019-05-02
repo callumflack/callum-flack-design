@@ -53,13 +53,20 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.title}—Callum Flack Design Blog`,
+      title: `Callum Flack Design • ${this.page.title}`,
       meta: [
         {
           hid: "description",
           name: "description",
           content: `${this.page.title}—${this.page.lede}`
-        }
+        },
+        // Twitter Card
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@callumflack' },
+        { name: 'twitter:title', content: `Callum Flack Design • ${this.page.title}` },
+        { name: 'twitter:description', content: this.page.lede },
+        { name: 'twitter:image', content: 'https://res.cloudinary.com/pw-img-cdn/image/fetch/w_300,c_fill,g_center,f_auto,q_auto/https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg' },
+        { name: 'twitter:image:alt', content: 'Callum Flack' }
       ]
     };
   }
@@ -72,7 +79,7 @@ export default {
 } */
 
 .page-project {
-  --c-projectbg: var(--c-neutral);
+  --c-projectbg: var(--c-neutral-yellow);
   background-color: var(--c-projectbg);
 }
 

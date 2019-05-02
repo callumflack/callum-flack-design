@@ -28,10 +28,12 @@ article
     .Container
       .b-ptTitle.w-sm-10x12
         h1.Supertitle.m-b0
-          | CFd makes interfaces.<br>Fluid across visual design, user experience and code.
-        h2.Text.fw-400.m-t3
+          | CF<span style="text-transform:lowercase;">d</span> makes interfaces.
+          br
+          span.c-text-light He works fluidly across visual design, user experience and code.
+        //- h2.Text.c-text-light.fw-400.m-t3
           span.fs-italic The quality of the connections is the key to quality.
-          span.Blockquote-author — Charles Eames
+          span.Blockquote-author Charles Eames
 
   main(role="main")
     .Container
@@ -47,7 +49,7 @@ article
           .Contact.no-link-block.h-100
             .p-a5
               //- p.Subtitle.fw-600.fs-text-meta.m-b2 Get in touch
-              p.Subtitle.fw-500.m-b2.c-bg Get in touch:
+              p.Meta.flh-regular.fs-text-meta.fw-700.m-b2.c-bg Get in touch:
               ul.Meta.flh-regular.fs-text-meta.u-listUnstyled.c-bg
                 li #[a(target="_blank" href="mailto:callum@callumflack.design") callum@callumflack.design]
                 li #[a(target="_blank" href="tel:610-408-767-540") +61(0) 408 767 540]
@@ -67,7 +69,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.page.title}—Callum Flack Design`,
+      title: `Callum Flack Design • ${this.page.title}`,
       meta: [
         {
           hid: "description",

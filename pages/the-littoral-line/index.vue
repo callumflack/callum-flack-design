@@ -22,7 +22,8 @@ div
 
   main(role="main")
     .Container
-      h2.Heading The archives:
+      //- h2.Heading The archives:
+      h2.Subtitle.Projects-year.m-b1 The archives:
       .Projects
         ProjectListItem(
           v-for="item in newsletters.issues"
