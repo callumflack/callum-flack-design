@@ -63,8 +63,16 @@ After a successful decade working in Brisbane, London and Melbourne as a graphic
 
 <!-- Unexpected consequences and unforseen scope revisions are common when design tries to become code. The communication bottleneck increases as quality assurance attempts to play catchup to the discovery of new customer intentions, feature requests, issue tracking, production management and website maintenance—I ran into all these troubles myself. So in 2010, after a decade as a graphic designer, I took matters into my own hands and decided to learn to code. -->
 
-With a keen sense for what constitutes beautiful, actionable design, he is also able to judge the cost of design with the knowhow of a developer. With this explicit "coalface" understanding, Callum can help his clients understand the different and often hidden costs involved within different project options. By clarifying decisions and reducing project complexities, he helps clients create the time and confidence to focus on what matters: executing for business goals and customer intentions.
+With a keen sense of what constitutes beautiful, actionable design, and a constant dislike of obstacles within interaction flows, Callum is also able to judge the cost of design due to his explicit experience as a developer. 
 
+Callum helps clients understand the hidden costs in project decisions and website publishing options, finding better processes which reduce complexities and increase website lifespans.
+
+<!-- With this explicit experience as a "doer", -->
+<!-- which creates the time and confidence to focus building the interface..  -->
+<!-- coalface -->
+<!-- > The quality of the connections is the key to quality.**Charles Eames** -->
+<!-- With his experience as a "doer", he helps clients clarify decisions and reduce project complexities which creates the time and confidence to focus building the interface. -->
+<!-- on what matters: executing for business goals and customer intentions -->
 <!-- Callum collects typefaces, records, names as tokens of small wonder. -->
 
 ## Skillsets
@@ -91,7 +99,7 @@ When Callum builds websites, he advocates for these tools:
 
 ## Experienced
 
-Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum, his wife and their young family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>.
+Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum, his wife and their young family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>.
 
 <!-- , so I know how to create products for a niche community. -->
 

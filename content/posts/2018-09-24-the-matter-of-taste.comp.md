@@ -14,7 +14,9 @@ blockColor: transparent
 
 <hr class="Post-intro-rule b-my05">
 
-Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._ Much more than just a style of doing, good taste is the intuitive understanding of a problem space.
+Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._ 
+
+Much more than just a style of doing, good taste is a measure of a person's intuitive understanding of a problem space.
 
 ## Taste matters because it creates differentiation
 
@@ -90,7 +92,11 @@ Sure, there's work to be done. But unless the work is orchestrated as a combined
 
 > Economic development is not the ability to buy but the ability to make. **César Hidalgo, Why Information Grows**
 
-Just as you cannot not communicate, you cannot not have taste. Rather than being a throwaway complement, taste describes a person or a team's intuited ability to comprehend and create within a problem space. Taste is cultivated by a natural curiousity for this space, which allows one to refine and speed up their attention processes, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it. _Good taste is the embodied ability to work a vague idea and emotion over into terms of the medium. It is the invisible dark matter that makes one product a superior user experience over another._ Indeed, you will know you're successful people call your product "beautiful". Good taste makes good things.
+Just as you cannot not communicate, you cannot not have taste. Rather than being a throwaway complement, taste describes a person or a team's intuited ability to comprehend and create within a problem space. 
+
+Taste is cultivated by a natural curiousity for this space, which allows one to refine and speed up their attention processes, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it. 
+
+_Good taste is the embodied ability to work a vague idea and emotion over into terms of the medium. It is the invisible dark matter that makes one product a superior user experience over another._ Indeed, you will know you're successful people call your product "beautiful". Good taste makes good things.
 
 <!-- when the intuitive feelings use to create are receieved with feeling by the people who use the product. -->
 

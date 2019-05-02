@@ -8,7 +8,7 @@ a:not(.LinkSignal),*/
 /* a:not(.Button),
 .LinkSignal:hover .LinkSignal-title */
 
-.nuxt-link-active span,
+/* .nuxt-link-active span, */
 p a:not(.Button),
 li a:not(.Button),
 .Text a:not(.Button),
@@ -36,7 +36,7 @@ li a:not(.Button),
   } */
 }
 
-.nuxt-link-active,
+/* .nuxt-link-active, */
 p a:not(.Button),
 li a:not(.Button),
 .Text a:not(.Button),
@@ -57,11 +57,11 @@ li a:not(.Button),
   }
 }
 
-.nuxt-link-active span {
+/* .nuxt-link-active span {
   --underline: var(--c-text);
-}
+} */
 
-.nuxt-link-active span,
+/* .nuxt-link-active span, */
 blockquote p em a {
   background-position: 0% 100%, 100% 100%, 0% 100% !important;
 }

@@ -74,7 +74,7 @@ export default {
   },
   head() {
     return {
-      title: "Blog—Callum Flack Design",
+      title: "Callum Flack Design • Blog",
       meta: [
         {
           hid: "description",

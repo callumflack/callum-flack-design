@@ -42,11 +42,25 @@
   display: inline-flex;
   height: var(--nav-height);
 
+  /* font-family: var(--ff-stack-sans); */
   font-family: var(--ff-title), var(--ff-stack-sans);
   font-size: calc(var(--rfs-text-meta) + 2px);
   font-size: var(--rfs-text-meta);
-  font-weight: 700 !important;
+  font-weight: 600;
   letter-spacing: 0;
+}
+
+.Nav-link a {
+  background-image: none !important;
+  text-shadow: none !important;
+}
+
+.Nav-link span {
+  padding-bottom: 3px;
+}
+
+.nuxt-link-active span {
+  border-bottom: 1px solid currentColor;
 }
 
 .Nav-link + .Nav-link {

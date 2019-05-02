@@ -5,7 +5,7 @@
 
 .Projects-year {
   margin-bottom: 0;
-  padding-top: calc(0.75 * var(--rs-block-space));
+  padding-top: var(--s-heading);
 
   &:first-of-type {
     padding-top: 0;

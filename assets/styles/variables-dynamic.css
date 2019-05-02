@@ -62,7 +62,7 @@
   --rfs-text-xs: 10px;
   --rfs-text-sm: 11px;
   --rfs-text-meta: 13px;
-  --rfs-text: 18px;
+  --rfs-text: 17px;
   --rfs-text-lg: 21px;
   --rfs-title: 25px;
   --rfs-supertitle: 27px;
@@ -72,7 +72,7 @@
     --rfs-text-xs: 12px;
     --rfs-text-sm: 13px;
     --rfs-text-meta: 14.5px;
-    --rfs-text: 20px;
+    --rfs-text: 19px;
     --rfs-text-lg: 24px;
     --rfs-title: 28px;
     --rfs-supertitle: 32px;
@@ -83,7 +83,7 @@
     --rfs-text-xs: 14px;
     --rfs-text-sm: 15px;
     --rfs-text-meta: 16px;
-    --rfs-text: 22px;
+    --rfs-text: 21px;
     --rfs-text-lg: 27px;
     --rfs-title: 32px;
     --rfs-supertitle: 40px;

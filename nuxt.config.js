@@ -2,7 +2,7 @@ module.exports = {
   mode: "universal",
 
   head: {
-    title: "Callum Flack digital design & development",
+    title: "Callum Flack Design • Digital design & development",
     meta: [
       { charset: "utf-8" },
       {

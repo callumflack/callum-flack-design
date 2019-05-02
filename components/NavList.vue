@@ -5,7 +5,8 @@ nav.f
     nuxt-link.Nav-link(to="/" exact)
       span CFd
 
-  .Nav-link.m-l4 •
+  .Nav-link.m-l4
+    | •
 
   .Nav-list
     nuxt-link.Nav-link.m-l4(
