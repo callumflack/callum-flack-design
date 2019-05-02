@@ -14,29 +14,34 @@ module.exports = {
         content: "HN9v-wB-PoQjHk1CGpr5YVG9VUNrcOaOjHACfG3SSSI"
       },
       {
-        /* pinterest */
+        // pinterest
         name: "p:domain_verify",
         content: "8280c00ce54aef1d74f05dc38cd9fb91"
       },
       {
         hid: "description",
         name: "description",
-        content: "CFd makes websites. He works fluidly across visual design, user experience and code. • Cairns, Australia"
+        content:
+          "CFd makes websites. He works fluidly across visual design, user experience and code. • Cairns, Australia"
       },
       // Twitter Card
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@callumflack" },
-      { name: "twitter:image", content: "https://avatars2.githubusercontent.com/u/749885?s=460&v=4" },
+      {
+        name: "twitter:image",
+        content: "https://avatars2.githubusercontent.com/u/749885?s=460&v=4"
+      },
       { name: "twitter:image:alt", content: "Callum Flack" }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    // adding a polyfill: https://github.com/nuxt/nuxt.js/issues/2701
+    script: [
+      { src: "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" }
     ]
-    /* script: [{ src: "./javascript/intersection-observer.js" }] */
   },
 
-  /* loading: { color: "#151515" }, */
-  /* loading: "~/components/loading.vue", */
+  // loading: { color: "#151515" },
+  // loading: "~/components/loading.vue",
   loading: false,
 
   css: ["~/assets/styles/application.css"],
@@ -44,35 +49,36 @@ module.exports = {
   /*
     You cannot use path aliases here (~ and @), you need to use relative or absolute paths. So it must be a dot!
     https://github.com/nuxt-community/style-resources-module
-    UPDATE: unsure this works at all with CSS…
+    UPDATE: unsure this works at all with pcss…
   */
-  /* styleResources: {
-    css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
-  }, */
+
+  // styleResources: {
+  //   css: ["./assets/styles/variables-dynamic.css", "./assets/styles/variables.css"]
+  // },
 
   plugins: [
     "~/plugins/vue-headroom",
     "~/plugins/vue-moment",
-    "@/plugins/v-lazy-image",
-    { src: "~/plugins/intersection-observer", ssr: false}
-    /* { src: "@/plugins/v-lazy-image", ssr: true }, */
-    /*{ src: "~/plugins/vue-slick", ssr: false },*/
+    "@/plugins/v-lazy-image"
+    // { src: "~/plugins/intersection-observer", ssr: false }
+    // { src: "@/plugins/v-lazy-image", ssr: true },
+    // { src: "~/plugins/vue-slick", ssr: false },
   ],
 
-  /* "@nuxtjs/style-resources" */
-  /* "nuxt-purgecss", */
   modules: [
+    // "@nuxtjs/style-resources"
+    // "nuxt-purgecss",
     "nuxtent",
     ["@nuxtjs/google-tag-manager", { id: "GTM-KT9HZJ8" }]
   ],
 
-  /* purgeCSS: {
-    mode: "postcss"
-  }, */
+  // purgeCSS: {
+  //   mode: "postcss"
+  // },
 
-  /* axios: {
-    credentials: false
-  }, */
+  // axios: {
+  //   credentials: false
+  // },
 
   generate: {
     routes: [
@@ -97,11 +103,7 @@ module.exports = {
         let position = {};
         if (to.matched.length < 2) {
           position = { x: 0, y: 0 };
-        } else if (
-          to.matched.some(
-            r => r.components.default.options.scrollToTop
-          )
-        ) {
+        } else if (to.matched.some(r => r.components.default.options.scrollToTop)) {
           position = { x: 0, y: 0 };
         }
         if (to.hash) {
