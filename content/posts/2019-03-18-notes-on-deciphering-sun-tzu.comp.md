@@ -71,7 +71,7 @@ We can now understand the paradoxes at play in ancient Chinese philosophy are in
 
 ## How to think
 
-> For learning, you gain daily; for the Way (Tao), you lose daily.
+> For learning, you gain daily; for the Way, you lose daily.
 
 Within ancient Chinese strategy, learning concretises mental models, which are always simplified models of reality “thereby preventing reality from being grasped as it actually is.”
 
