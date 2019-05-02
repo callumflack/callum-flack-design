@@ -130,15 +130,6 @@ p em {
     }
   }
 
-  & strong {
-    font-size: calc(var(--rfs-text) - 2px);
-    font-size: calc(var(--rfs-text-sm) + 0.075em);
-    font-weight: 700;
-    /* font-style: italic; */
-    letter-spacing: 0.075em;
-    text-transform: uppercase;
-  }
-
   & ol {
     list-style-type: decimal;
     /* padding-left: calc(3 * var(--rs-space)); */
@@ -217,9 +208,10 @@ blockquote p {
 .Scope-post blockquote p strong {
   display: table;
   font-style: normal;
+  /* font-size: calc(var(--rfs-text) - 2px); */
   font-size: calc(var(--rfs-text-sm) + 0.15em);
   font-weight: 400;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.05em;
   margin-top: 0.25em;
   text-transform: uppercase;
 }
@@ -327,15 +319,15 @@ pre {
 }
 
 code {
-  color: #EB5757;
+  color: #eb5757;
   color: #111;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 75%;
   font-weight: 500;
 }
 
 p code {
-  background: rgba(135,131,120,0.15);
+  background: rgba(135, 131, 120, 0.15);
   line-height: normal;
   border-radius: 3px;
   padding: 0.2em 0.4em;
