@@ -88,7 +88,7 @@ export default {
     /* https://stackoverflow.com/questions/45752960/how-to-get-random-element-in-vue-js */
     const idx = Math.floor(Math.random() * this.images.length);
     this.selectedImage = this.images[idx];
-  }
+  },
   /* computed: {
     homePagePost() {
       return this.posts.filter(post => post.showOnHomePage === true);

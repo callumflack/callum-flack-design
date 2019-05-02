@@ -55,14 +55,17 @@ export default {
   },
   head() {
     return {
-      title: "The Littoral Line—a mailing list by Callum Flack Design",
+      title: "The Littoral Line • Callum Flack Design",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
             "Design, UX & the web thru the lens of people + attention. Discover adjacent possibles by exploring the atypical in-betweens that wash-up in the littoral zone."
-        }
+        },
+        // Twitter Card
+        { name: 'twitter:title', content: `The Littoral Line • Callum Flack Design` },
+        { name: 'twitter:description', content: "A newsletter about design, UX & the web thru the lens of people + attention. Discover adjacent possibles by exploring the atypical in-betweens that wash-up in the littoral zone." },
       ]
     };
   }
