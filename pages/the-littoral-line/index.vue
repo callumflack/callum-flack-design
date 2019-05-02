@@ -22,11 +22,11 @@ div
 
   main(role="main")
     .Container
-      //- h2.Heading The archives:
-      h2.Subtitle.Projects-year.m-b1 The archives:
+      h2.Subtitle.Projects-year.m-b1
+        | The archives:
       .Projects
         ProjectListItem(
-          v-for="item in newsletters.issues"
+          v-for="item in reverseNewsletters"
           v-bind="item"
           v-bind:key="item.title"
         )
@@ -52,6 +52,15 @@ export default {
     return {
       newsletters
     };
+  },
+  computed: {
+    /*
+      1. turn the object into an array with Object.values() b/c can't order Objects
+      2. reverse it
+    */
+    reverseNewsletters() {
+      return Object.values(this.newsletters.issues).reverse();
+    }
   },
   head() {
     return {
