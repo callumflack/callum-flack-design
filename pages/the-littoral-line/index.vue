@@ -73,8 +73,15 @@ export default {
             "A newsletter about design, UX, code & the web thru the lens of people and attention. Discover adjacent possibles by exploring the in-betweens that wash-up in the littoral zone."
         },
         // Twitter Card
-        { name: 'twitter:title', content: `The Littoral Line • Callum Flack Design` },
-        { name: 'twitter:description', content: "A newsletter about design, UX, code & the web thru the lens of people and attention. Discover adjacent possibles by exploring the in-betweens that wash-up in the littoral zone." },
+        {
+          name: "twitter:title",
+          content: `The Littoral Line • Callum Flack Design`
+        },
+        {
+          name: "twitter:description",
+          content:
+            "A newsletter about design, UX, code & the web thru the lens of people and attention. Discover adjacent possibles by exploring the in-betweens that wash-up in the littoral zone."
+        }
       ]
     };
   }

@@ -61,8 +61,11 @@ export default {
           content: `${this.page.title}—${this.page.lede}`
         },
         // Twitter Card
-        { name: 'twitter:title', content: `Callum Flack Design • ${this.page.title}` },
-        { name: 'twitter:description', content: this.page.lede },
+        {
+          name: "twitter:title",
+          content: `Callum Flack Design • ${this.page.title}`
+        },
+        { name: "twitter:description", content: this.page.lede }
       ]
     };
   }

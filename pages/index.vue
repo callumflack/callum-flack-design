@@ -98,10 +98,17 @@ export default {
     return {
       meta: [
         // Twitter card
-        { name: "twitter:title", content: "Callum Flack Design • Digital design & development" },
-        { name: "twitter:description", content: "CFd makes websites. He works fluidly across visual design, user experience and code." },
+        {
+          name: "twitter:title",
+          content: "Callum Flack Design • Digital design & development"
+        },
+        {
+          name: "twitter:description",
+          content:
+            "CFd makes websites. He works fluidly across visual design, user experience and code."
+        }
       ]
-    }
+    };
   }
 };
 </script>

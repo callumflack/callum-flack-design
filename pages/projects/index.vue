@@ -71,8 +71,12 @@ export default {
           content: `A selected archive of projects by Callum Flacak Design since 2013. Design, frontend &amp; heaps of friendly advice along the way`
         },
         // Twitter Card
-        { name: 'twitter:title', content: `Callum Flack Design • Projects` },
-        { name: 'twitter:description', content: "A selected archive since 2013. Design, frontend &amp; heaps of friendly advice along the way." },
+        { name: "twitter:title", content: `Callum Flack Design • Projects` },
+        {
+          name: "twitter:description",
+          content:
+            "A selected archive since 2013. Design, frontend &amp; heaps of friendly advice along the way."
+        }
       ]
     };
   }
