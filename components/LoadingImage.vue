@@ -1,9 +1,18 @@
 <template lang="pug">
-  figure(:class="figureClasses" ref="placeholder")
+  figure.image(
+    ref="placeholder"
+    :unmask="unmask"
+    :class="figureClass"
+  )
+    svg.u-hidden(xmlns="http://www.w3.org/2000/svg" version="1.1")
+      defs
+        filter(id="blur" color-interpolation-filters="sRGB" )
+          feGaussianBlur(stdDeviation="0" in="SourceGraphic")
+    //- the low-res image has no alt tag to avoid
+    //- the shitty broken image icon when loading
     img(
       :class="['low-rez', {'is-loaded': largeUrl}]"
       :src="smallUrl"
-      :alt="alt"
     )
     img(
       :class="['high-rez', {'is-loaded': largeUrl}]"
@@ -13,32 +22,29 @@
 </template>
 
 <script>
-const baseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
-const blurUrl = `${baseUrl}/w_50,e_blur:300`;
+/* cloudinary utils */
+const cldBaseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
+const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:150`;
 
 function calcImageDimension(length, pixelRatio) {
   return 100 * Math.round((length * pixelRatio) / 100);
 }
 
 export default {
-  name: "LazyImage",
+  name: "LoadingImage",
   props: {
-    alt: String,
     src: {
       type: String,
       required: true
     },
-    square: Boolean,
-    face: Boolean,
-    aspect: Boolean,
-    ratio: Number,
-    frame: Boolean,
-    large: Boolean,
-    project: Boolean,
-    portrait: Boolean,
-    post: Boolean,
-    figure: Boolean,
-    wrappedInLink: Boolean
+    alt: {
+      type: String,
+      default: "this is an image"
+    },
+    unmask: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
@@ -49,42 +55,16 @@ export default {
     };
   },
   computed: {
-    figureClasses() {
-      return [
-        "image",
-        {
-          figure: this.figure,
-          "figure--frame": this.frame,
-          "figure--large": this.large,
-          "figure--project": this.project,
-          "figure--portrait": this.portrait,
-          "figure--post": this.post,
-          "p-a0": this.wrappedInLink
-        }
-      ];
-    },
-    // attempt at retaining image aspect ratio space
-    // unfortunately, cloudinary size computations are just out
-    // if we use Math.round to save data space…
-    // DO NOT USE
-    ratioClasses() {
-      return [
-        "image-aspectRatio",
-        {
-          "figure--frame": this.frame,
-          "image-aspectRatio--4by3": this.aspect
-        }
-      ];
-    },
-    ratioStyle() {
-      // (v-if="page.projectColor", :style = 'projectColor')
-      return this.ratio ? `height: calc(66vw * ${this.ratio})` : "";
+    figureClass() {
+      return this.unmask && "no-mask";
     }
   },
   mounted() {
-    // Load small image
-    const smallUrl = `${blurUrl}/${this.src}`;
+    /* Get the image reference */
+    const image = this.$refs.placeholder;
 
+    /* Load a small image from cloudinary */
+    const smallUrl = `${cldBlurUrl}/${this.src}`;
     var smallImage = new Image();
     smallImage.src = smallUrl;
 
@@ -92,26 +72,13 @@ export default {
       this.smallUrl = smallUrl;
     };
 
-    // Load large image
-    const image = this.$refs.placeholder;
-
+    /* Load a large image from cloudinary */
     const { clientWidth } = image;
-    const pixelRatio = window.devicePixelRatio || 1.0;
-    // eslint-disable-next-line
-    const isSquare = this.square;
-
+    // const pixelRatio = window.devicePixelRatio || 1.0;
+    const pixelRatio = 1.333;
     const imageWidth = calcImageDimension(clientWidth, pixelRatio);
-    // const imageHeight = isSquare
-    //   ? imageWidth
-    //   : calcImageDimension(clientHeight, pixelRatio);
-
-    const gPosition = this.face ? "g_face" : "g_center";
-    const imageParams = `w_${imageWidth},c_fill,${gPosition},f_auto`;
-
-    const largeUrl = `${baseUrl}/${imageParams}/${this.src}`;
-
-    // The Image() constructor creates a new HTMLImageElement instance:
-    // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+    const imageParams = `w_${imageWidth},c_fill,g_center,f_auto,q_auto`;
+    const largeUrl = `${cldBaseUrl}/${imageParams}/${this.src}`;
     const largeImage = new Image();
     largeImage.src = largeUrl;
 
@@ -123,30 +90,40 @@ export default {
 </script>
 
 <style scoped>
-/* @import "../assets/styles/variables.css"; */
+@import "../assets/styles/variables.css";
 
 .image {
-  position: relative;
-  /* hide the alt text */
-  text-indent: 100%;
-  white-space: nowrap;
+  background-color: var(--c-white);
+  margin-top: 0;
   overflow: hidden;
+  position: relative;
+}
+
+.no-mask {
+  overflow: initial;
 }
 
 .image img {
   min-height: 100%;
   min-width: 100%;
-  transition: opacity 1s linear;
+  transition: opacity 750ms ease;
   width: 100%;
+
+  /* hide the alt text */
+  /* https://stackoverflow.com/questions/36305805/how-to-hide-alt-text-using-css-when-the-image-is-not-present */
+  /* text-indent: -9999px; */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*
   1. enable Safari to keep sharp edges
-  …but only works if pos-abs within an aspect-ratio div.
+     …but only works if pos-abs within an aspect-ratio div.
 */
 .low-rez {
-  filter: blur(50px);
-  opacity: 1;
+  /* filter: blur(50px); */
+  filter: url("#blur");
   transform: scale(1); /*1*/
 }
 
@@ -155,9 +132,13 @@ export default {
   opacity: 0;
   position: absolute;
   top: 0;
+  left: 0;
+  bottom: 0;
 }
 
-/* on full-res image load */
+/*
+  on full-res image load
+*/
 
 .low-rez.is-loaded {
   opacity: 0;
@@ -165,25 +146,5 @@ export default {
 
 .high-rez.is-loaded {
   opacity: 1;
-}
-
-/* attempts at retaining aspect-ratio on load */
-
-.image-aspectRatio {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.image-aspectRatio--4by3 {
-  padding-bottom: 75%;
-}
-
-/* use the SVG filter that's secreted on work/index */
-
-.project:hover img {
-  filter: url("#blur");
 }
 </style>
