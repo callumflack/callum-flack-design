@@ -7,7 +7,7 @@ article
         .w-mdl-1x2
           .AspectRatio.Hero2
             .AspectRatio-object
-              //- LazyImage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
+              //- LoadingImage(src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1533123284/okok/cf-dwts-01-16x9.jpg")
               img(src="/images/cf-dwts-01-recut.jpg")
             .AspectRatio-object.Blend
         .w-mdl-1x2.bg-neutral-dar
@@ -41,7 +41,7 @@ article
         .w-4x12.w-sm-3x12
           .AspectRatio(style="padding-bottom:125%")
             .AspectRatio-object
-              LazyImage.bg-text.m-a0(
+              LoadingImage.bg-text.m-a0(
                 src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg"
                 alt="Callum Flack"
               )
@@ -61,11 +61,11 @@ article
 </template>
 
 <script>
-import LazyImage from "~/components/LazyImage.vue";
+import LoadingImage from "~/components/LoadingImage.vue";
 
 export default {
   components: {
-    LazyImage
+    LoadingImage
   },
   head() {
     return {
@@ -77,8 +77,11 @@ export default {
           content: `${this.page.title}—${this.page.lede}`
         },
         // Twitter Card
-        { name: 'twitter:title', content: `Callum Flack Design • ${this.page.title}` },
-        { name: 'twitter:description', content: this.page.lede },
+        {
+          name: "twitter:title",
+          content: `Callum Flack Design • ${this.page.title}`
+        },
+        { name: "twitter:description", content: this.page.lede }
       ]
     };
   },
@@ -99,11 +102,11 @@ export default {
   background-color: var(--c-contact-block);
   background-color: var(--c-highlight);
   background-color: var(--c-blue);
-  background-color: rgb(9,18,58);
+  background-color: rgb(9, 18, 58);
   background-color: var(--c-text);
   /* border: 1px solid var(--c-text); */
   /* border-left: 0; */
   border-left: 1px solid var(--c-bg);
-  border-color: rgba(255,255,255,0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 </style>

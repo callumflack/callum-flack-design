@@ -8,7 +8,7 @@
             //- .AspectRatio-object(:class="{ 'bg-text': !heroImageNoShadow }")
             //- .AspectRatio-object(:class="heroObjectBgClasses")
             .AspectRatio-object(:style="heroBlockColor")
-              LazyImage(
+              LoadingImage(
                 :src="heroImage"
                 :alt="title"
               )
@@ -37,13 +37,13 @@
 
 <script>
 import moment from "vue-moment";
-import LazyImage from "~/components/LazyImage.vue";
+import LoadingImage from "~/components/LoadingImage.vue";
 
 export default {
   name: "Post",
   components: {
     moment,
-    LazyImage
+    LoadingImage
   },
   props: {
     body: Object,
