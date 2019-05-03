@@ -48,9 +48,9 @@ export default {
   },
   data() {
     return {
-      // Set to undefined as defaulting to an empty string shows
-      // the invalid image icon until a correct src is set
-      smallUrl: undefined,
+      // Set the smallUrl as an empty string to avoid
+      // the image outline that show if there is no src attr
+      smallUrl: "",
       largeUrl: undefined
     };
   },
@@ -92,8 +92,17 @@ export default {
 <style scoped>
 @import "../assets/styles/variables.css";
 
+/* THEME */
+
 .image {
   /* background-color: var(--c-white); */
+  /* border: 1px solid var(--c-text); */
+  /* box-shadow: var(--c-text) 0 0 0 1px; */
+}
+
+/* COMPONENT */
+
+.image {
   margin-top: 0;
   overflow: hidden;
   position: relative;
