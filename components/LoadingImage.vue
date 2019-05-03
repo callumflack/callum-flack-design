@@ -24,7 +24,7 @@
 <script>
 /* cloudinary utils */
 const cldBaseUrl = "https://res.cloudinary.com/pw-img-cdn/image/fetch";
-const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:150`;
+const cldBlurUrl = `${cldBaseUrl}/w_50,e_blur:500`;
 
 function calcImageDimension(length, pixelRatio) {
   return 100 * Math.round((length * pixelRatio) / 100);
@@ -93,7 +93,7 @@ export default {
 @import "../assets/styles/variables.css";
 
 .image {
-  background-color: var(--c-white);
+  /* background-color: var(--c-white); */
   margin-top: 0;
   overflow: hidden;
   position: relative;
