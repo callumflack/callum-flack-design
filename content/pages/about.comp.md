@@ -9,9 +9,9 @@ lede: Callum Flack is a digital designer who works fluidly across both brand and
 
 <!-- > The quality of the connections is the key to quality _— Charles Eames_ -->
 
-<!-- @[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
+<!-- @[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
 
-<!-- @[MarkdownImage](post local src="/images/cf-2.jpg") -->
+<!-- @[LazyImage](post local src="/images/cf-2.jpg") -->
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
 
@@ -63,7 +63,7 @@ After a successful decade working in Brisbane, London and Melbourne as a graphic
 
 <!-- Unexpected consequences and unforseen scope revisions are common when design tries to become code. The communication bottleneck increases as quality assurance attempts to play catchup to the discovery of new customer intentions, feature requests, issue tracking, production management and website maintenance—I ran into all these troubles myself. So in 2010, after a decade as a graphic designer, I took matters into my own hands and decided to learn to code. -->
 
-With a keen sense of what constitutes beautiful, actionable design, and a constant dislike of obstacles within interaction flows, Callum is also able to judge the cost of design due to his explicit experience as a developer. 
+With a keen sense of what constitutes beautiful, actionable design, and a constant dislike of obstacles within interaction flows, Callum is also able to judge the cost of design due to his explicit experience as a developer.
 
 Callum helps clients understand the hidden costs in project decisions and website publishing options, finding better processes which reduce complexities and increase website lifespans.
 

@@ -11,15 +11,13 @@ heroRatio: 99.16
 tags: Branding, UI, code
 ---
 
-Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could
-be, and rebuild the platform for a community of photographers around the world.
+Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could be, and rebuild the platform for a community of photographers around the world.
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost of great photography. **Jannah Dryden, Founder**
 
-@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
+@[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg")
 
-Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce
-experience.
+Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce experience.
 
 @[MarkdownMovie](src="287000708" videoRatio="100")
 
@@ -31,15 +29,15 @@ The codebase uses the Node.js ecosystem, allowing us to take advantage of the ra
 
 We're able to design and adjust new features in the browser using the brand design system we designed and built.
 
-<!-- @[MarkdownImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
+<!-- @[LazyImage](large src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png") -->
 
-@[MarkdownImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320484/okok/albumregistry-mobile-screens-lg-dark.png")
+@[LazyImage](large project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320484/okok/albumregistry-mobile-screens-lg-dark.png")
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
 > I begin every wedding I do with an event page, which I can setup in a minute. My clients are impressed when they get such a great web page done so fast, not to mention the huge burden the gift-giving model lifts from their shoulders! **Benn, Bluesky Photography**
 
-<!-- @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg") -->
+<!-- @[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557236/okok/albumregistry-moment.jpg") -->
 
 Album Registry grows slowly but surely, and since joining as co-founder in mid 2017, I'm excited to focus on building tools that help photographers grow their business, and help people give the gift of memories.
 

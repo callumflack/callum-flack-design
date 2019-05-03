@@ -23,7 +23,7 @@ Primary Healthcare Network North Queensland wanted to digitise the World Health 
 
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
-@[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
+@[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
 
 <!-- All data collected is anonymous. At survey completion, users are presented with a score that rates their quality of life. Users can share their score by email or SMS. -->
 
@@ -31,7 +31,7 @@ A well-defined series of workflows with clear interface design means the app can
 
 <!-- > Client quote here” _CEO dude_ -->
 
-<!-- @[MarkdownImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278720/okok/phn-guide.png") -->
+<!-- @[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278720/okok/phn-guide.png") -->
 
 <!-- And the app is easily adaptable as we discover further use cases over time.  -->
 

@@ -15,11 +15,11 @@ updated: false
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack richness because they design away suppossedly unneccessary interconnections, reducing them to tree structures. The diagram above shows this relationship.
 
-<!-- @[MarkdownImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post) -->
+<!-- @[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post) -->
 
 As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally rich [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. _The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time._
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059392/post-melbourne-laneway_sh8h4w.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059392/post-melbourne-laneway_sh8h4w.jpg")
 
 Put it this way: if you tried to recreate Melbourne's laneways from scratch, all “Melbourne-ness” would be lost. By contrast, if you tried to recreate Canberra, Australia’s capital city, you’d do a better job. Canberra is [high-modernist urban architecture](http://www.naa.gov.au/collection/fact-sheets/fs95.aspx) devoid of rich experience because, as [Christopher Alexander says:](http://en.bp.ntu.edu.tw/wp-content/uploads/2011/12/06-Alexander-A-city-is-not-a-tree.pdf)
 
@@ -31,7 +31,7 @@ The “natural semi-lattice” metaphor is a good way to understand how complex 
 
 The same holds true for the complexities of User Interface design. Why, for example, do most websites look the same these days? It probably has something to do with the rise of "magic bullet" UI frameworks such as Bootstrap. _Reduction of complexity accidentally eliminates richness._
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059496/DOtYW_LUEAA6ELV_oxz8jo.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059496/DOtYW_LUEAA6ELV_oxz8jo.jpg")
 
 ## Self-sufficient UI creators
 

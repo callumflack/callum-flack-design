@@ -18,7 +18,7 @@ These processes happen quickly. At a glance, we notice and assess the multitude 
 
 And when a pattern draws us in, we feel it's beauty, and our curiosity. Like a shadow felt but not consciously seen, we're hardly aware that the language of aesthetics is our first mode of understanding the world.
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg")
 
 ## Danger and beauty
 
@@ -30,7 +30,7 @@ When we find symmetry in a scene to be pleasing, then we are calm, ready to begi
 
 Danger and beauty are the two extremes on the spectrum of the language of aesthetics. When we sense danger, we do not think. Instead we react to avoid the situation. Beauty, however, invites us to pause, pay attention, and then think. _To find something beautiful is to find information we can use in our favour._
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg")
 
 <!-- caption="A Blue-ringed Octopus displays blue iridescent rings across their yellow-colored body when disturbed, hunting or mating. When calm, it displays an overall yellowish-beige colouration without any visible blue rings." -->
 
@@ -44,7 +44,7 @@ As an adrenalised response is the defense for a target animal, a beautiful invit
 
 While predation is a zero-sum game, other games are not. When a flower uses beauty to attract partners in its gene dispersion scheme, every participant wins. _Beauty invites participation and attention._
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg")
 
 ## Beauty is opportunity
 
@@ -62,7 +62,7 @@ Creativity is often misunderstood. We think it requires some form of talent or g
 
 In this way, a spreadsheet can absolutely contain beauty. _Humans naturally seek beauty in order to make use of it._
 
-@[MarkdownImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
+@[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg")
 
 ## Irrational beauty matters more than we dare admit
 
