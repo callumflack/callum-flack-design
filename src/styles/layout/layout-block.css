@@ -1,0 +1,54 @@
+/*
+
+  SECTION BLOCKS
+  Used to create white space on the y-axis between content sections.
+  All ratios are in `theme/theme-ratios`.
+
+*/
+
+/* LG */
+
+.Block {
+  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.24) * var(--block-size-ratio));
+}
+.Block-b {
+  padding-bottom: calc(theme(spacing.24) * var(--block-size-ratio));
+}
+.Block-t {
+  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
+}
+.Block--hgroup {
+  /* padding-top: calc(theme(spacing.12) - theme(spacing.3)); */
+  padding-top: calc((theme(spacing.24) - theme(spacing.8)) * var(--block-size-ratio));
+}
+.Block--footer {
+  /* padding-top: calc(theme(spacing.12) - theme(spacing.3)); */
+  padding-top: calc((theme(spacing.24) - theme(spacing.12)) * var(--block-size-ratio));
+}
+
+/* MD */
+
+.Block-md {
+  padding-top: calc(theme(spacing.16) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.16) * var(--block-size-ratio));
+}
+.Block-md-b {
+  padding-bottom: calc(theme(spacing.16) * var(--block-size-ratio));
+}
+.Block-md-t {
+  padding-top: calc(theme(spacing.16) * var(--block-size-ratio));
+}
+
+/* SM */
+
+.Block-sm {
+  padding-top: calc(theme(spacing.10) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
+}
+.Block-sm-b {
+  padding-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
+}
+.Block-sm-t {
+  padding-top: calc(theme(spacing.10) * var(--block-size-ratio));
+}

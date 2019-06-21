@@ -1,0 +1,52 @@
+/*
+
+  We use vue-svgicon to easily add SVG icons as Vue components.
+  See: https://github.com/MMF-FE/vue-svgicon
+
+  To set initial attributes and have global imports for all icons,
+  check thea Nuxt component plugin example is provided.
+
+  Because icons shoudl align with fonts, and every font is made differently,
+  it's required to customise the icon alignment per project, like so:
+    transform: translateY(-1px);
+  But rather than hardcode it here, apply it in a theme or Vue component file.
+
+*/
+
+.icon,
+.svg-icon {
+  display: inline-block;
+  color: inherit;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  /* theme */
+  transform: translateY(-0.1em);
+}
+
+.svg-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.svg-up {
+  /* default */
+  transform: rotate(0deg);
+}
+
+.svg-right {
+  transform: rotate(90deg);
+}
+
+.svg-down {
+  transform: rotate(180deg);
+}
+
+.svg-left {
+  transform: rotate(-90deg);
+}

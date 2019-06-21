@@ -1,0 +1,28 @@
+/*
+
+  Super container.
+  Rather than define a width, define how
+  much it insets from the browser window.
+
+*/
+
+.container--text {
+  /* max-width: theme(screens.) !important; */
+  max-width: calc(680px + 64px) !important;
+}
+
+/* .container--su {
+  max-width: none !important;
+}
+@screen su {
+  .container--su {
+    padding-left: 7vw !important;
+    padding-right: 7vw !important;
+  }
+}
+@media (min-width: 1800px) {
+  .container--su {
+    padding-left: 14vw !important;
+    padding-right: 14vw !important;
+  }
+} */

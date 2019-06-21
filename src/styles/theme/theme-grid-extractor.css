@@ -1,0 +1,19 @@
+.Grid-extract--edge {
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+}
+
+/* .Grid-extract--article {
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+} */
+
+@screen md {
+  .Grid-extract--article {
+    left: calc((-0.5 * 744px) + 50%);
+    position: relative;
+    width: 744px !important;
+  }
+}

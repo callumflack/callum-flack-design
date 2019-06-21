@@ -1,0 +1,19 @@
+/*
+
+  Media object
+  https://philipwalton.github.io/solved-by-flexbox/demos/media-object/
+
+ */
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Media-figure {
+  margin-right: 0.75em; /* tie to tailwind? */
+}
+
+.Media-body {
+  flex: 1;
+}

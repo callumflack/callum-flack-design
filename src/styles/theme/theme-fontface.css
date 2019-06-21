@@ -1,0 +1,48 @@
+/*
+
+  Title example
+
+ */
+
+@font-face {
+  font-family:"Title";
+  src:
+    url("/../../fonts/Lyyra-Extended-Bold.otf") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*
+
+  Text example
+
+ */
+
+@font-face {
+  font-family:"Text";
+  src:
+    url("/../../fonts/GuyotText-Regular.otf") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family:"Text";
+  src:
+    url("/../../fonts/GuyotText-RegularItalic.otf") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family:"Text";
+  src:
+    url("/../../fonts/GuyotText-SemiBold.otf") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family:"Text";
+  src:
+    url("/../../fonts/GuyotText-SemiBoldItalic.otf") format("woff");
+  font-style: italic;
+  font-weight: 600;
+}

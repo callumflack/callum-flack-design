@@ -1,0 +1,39 @@
+/*
+
+  Markdown tables using Github .md CSS
+  https://gist.github.com/andyferra/2554919
+
+ */
+.Markdown table {
+  @apply w-full mb-3 p-0;
+}
+.Markdown table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.Markdown table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.Markdown table tr th {
+  font-weight: 600;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+.Markdown table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+.Markdown table tr th :first-child,
+.Markdown table tr td :first-child {
+  margin-top: 0;
+}
+.Markdown table tr th :last-child,
+.Markdown table tr td :last-child {
+  margin-bottom: 0;
+}

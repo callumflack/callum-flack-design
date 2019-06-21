@@ -1,0 +1,29 @@
+/*
+
+  LINK
+  Todo: think this thru…
+
+*/
+
+.Link--underline {
+  @apply inline-block border-b border-gray-500;
+  text-decoration: none !important;
+}
+
+/* LINK BLOCKS */
+
+.Link-block a:not(.Button) {
+  transition: color 250ms ease;
+}
+.Link-block a:not(.Button):hover {
+  @apply text-black;
+}
+
+.Link-underline-block a:not(.Button) {
+  @apply inline-block border-b border-gray-400;
+  text-decoration: none !important;
+  transition: all 250ms ease;
+}
+.Link-underline-block a:not(.Button):hover {
+  @apply text-black border-text;
+}

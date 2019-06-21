@@ -2,36 +2,41 @@
   "name": "callum-flack-design",
   "version": "1.0.0",
   "description": "Callum Flack Design website",
-  "author": "Callum Flack <callumflack@gmail.com>",
-  "private": true,
+  "author": "Callum Flack <callum@callumflack.design>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "now-build": "yarn generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev": "saber example",
+    "generate:example": "saber generate example",
+    "now-build": "yarn generate:example"
   },
-  "dependencies": {
-    "@nuxtjs/axios": "4.3.1",
-    "@nuxtjs/google-tag-manager": "1.1.0",
-    "@nuxtjs/style-resources": "^0.1.1",
-    "intersection-observer": "^0.6.0",
-    "iremono": "callumflack/iremono",
-    "nuxt": "1.4.2",
-    "nuxt-purgecss": "^0.2.1",
-    "nuxtent": "^1.4.1",
-    "v-lazy-image": "^1.3.2",
-    "vue-headroom": "^0.9.0",
-    "vue-moment": "^4.0.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saberland/saber-theme-minima.git"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.7.1",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0"
+    "saber": "^0.6.0",
+    "saber-plugin-feed": "^0.3.0",
+    "saber-plugin-query-posts": "^0.3.0",
+    "sass": "^1.17.3",
+    "sass-loader": "^7.1.0",
+    "vue-compile": "^0.5.1"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.6.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.0.4",
+    "tinydate": "^1.0.1"
+  },
+  "peerDependencies": {
+    "saber": "^0.6.0",
+    "saber-plugin-critical": "^1.0.2",
+    "saber-plugin-feed": "^0.3.0",
+    "saber-plugin-query-posts": "^0.3.0"
   }
 }

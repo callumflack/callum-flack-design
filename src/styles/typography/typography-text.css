@@ -1,0 +1,66 @@
+/*
+
+  Text: customisable starter pack
+
+  Uses the responsiveScale settings from `typography-scale`
+
+*/
+
+body {
+  @apply antialiased text-text leading-normal;
+}
+
+.Text--sm {
+  font-size: calc(theme(fontSize.xs) * var(--text-ratio));
+}
+
+.Meta,
+.Button,
+.Input,
+.Text--base {
+  font-size: calc(theme(fontSize.base) * var(--text-ratio));
+}
+
+p,
+ul,
+ol,
+.Markdown > *,
+.Text {
+  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+}
+
+.Text--lg {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+
+/*
+
+  Markdown theme
+
+*/
+
+.Markdown ul,
+.Markdown ol {
+  padding-left: theme(spacing.6);
+}
+
+.Markdown ul {
+  list-style: disc;
+}
+
+.Markdown ol {
+  list-style: decimal;
+}
+
+.Markdown ul + ul {
+  list-style: disc;
+}
+
+.Markdown strong {
+  @apply text-black font-medium;
+}
+
+.Markdown a:not(.Button) {
+  text-decoration: underline;
+  text-decoration-line: underline;
+}

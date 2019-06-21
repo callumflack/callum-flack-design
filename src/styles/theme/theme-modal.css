@@ -1,0 +1,22 @@
+/*
+
+  Modal theme example.
+
+  Most styling for the Vue Modal component is self-contained there.
+  All styles there should be essential, so they shouldn't need to change from project to project. To customise styles, use this theme file.
+
+ */
+
+.theme-Modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.theme-Modal .Modal {
+  /* @apply container; */
+}
+
+.theme-Modal .Modal-close {
+  @apply text-white;
+  top: 1rem;
+  right: 1rem;
+}

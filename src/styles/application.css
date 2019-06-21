@@ -1,0 +1,41 @@
+/*
+ * https://next.tailwindcss.com/docs/installation
+ *
+ * @tailwind directives cannot come before @import so they exist in seperate
+ * files under `tailwind/`
+ */
+
+/* Tailwind base & components */
+@import "./tailwind/base.css";
+
+/* CFd themeable components */
+@import "./theme/theme-fontface";
+@import "./theme/theme-modal";
+@import "./theme/theme-modal-transitions";
+@import "./theme/theme-page-transitions";
+@import "./theme/theme-ratios";
+@import "./theme/theme-typography";
+@import "./theme/theme-grid-extractor.css";
+
+/* CFd standard components */
+@import "./layout/layout-grid";
+@import "./layout/layout-block";
+@import "./layout/layout-container";
+@import "./layout/layout-column";
+@import "./layout/layout-media";
+@import "./typography/typography-link";
+@import "./typography/typography-text";
+@import "./typography/typography-headings";
+@import "./typography/typography-spacing";
+@import "./element/element-button";
+@import "./element/element-form";
+@import "./element/element-icon";
+
+/* custom components */
+/* …anything written from scratch for the project goes here… */
+
+/* Tailwind utils */
+@import "./tailwind/utilities.css";
+
+/* CFd standard utils */
+@import "./element/element-aria";
