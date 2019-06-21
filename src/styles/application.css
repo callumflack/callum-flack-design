@@ -15,6 +15,7 @@
 @import "./theme/theme-page-transitions";
 @import "./theme/theme-ratios";
 @import "./theme/theme-typography";
+@import "./theme/theme-typography-code";
 @import "./theme/theme-grid-extractor.css";
 
 /* CFd standard components */

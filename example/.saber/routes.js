@@ -217,6 +217,18 @@
               }
             },
 {
+              path: "/about.html",
+              meta: {
+                __relative: 'about.md',
+                __pageId: '4a0208c8'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--about-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/about.md?saberPage=4a0208c8")
+                
+              }
+            },
+{
               path: "/",
               meta: {
                 __relative: 'index.md',

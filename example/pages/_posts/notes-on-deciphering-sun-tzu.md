@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 mostRecentPost: true
 category: Notes
@@ -7,6 +8,7 @@ lede: My notes on the book “Deciphering Sun Tzu” which helped me understand 
 readingTime: 7
 heroImageMultiply: true
 heroBlockColor: transparent
+ratio: 1/2.5
 ---
 
 ‪I've always enjoyed the poetics of ancient Chinese philosophy and by extension Zen Buddhism.‬ ‪Whereas friends just didn't get The Art of War or Tao Te Ching, I found them obvious and favourable within the first page. Yet even though I've read these books repeatedly over two decades, I've never lived within these cultures, let alone even visited their countries. So my appreciation has been mostly for their poetics.
@@ -55,7 +57,7 @@ The Tao is the uninterrupted interplay of yin and yang. Unifying their duality m
 
 > assisting the natural tendency is always preferable to opposing it as everything carries within itself its own seeds of destruction when it over extends.
 
-The fundamental principle Of Tao is _Returning_: “return is the movement of Tao”. And the fundamental function of Tao is _Yielding_: “yielding is the practical application that effects the manifestation of return.”
+The fundamental principle of Tao is _Returning_: “return is the movement of Tao”. And the fundamental function of Tao is _Yielding_: “yielding is the practical application that effects the manifestation of return.”
 
 Now we can understand the paradoxical poetry of Chinese strategic thought as _a system that tries to keep inside the tempo of unfolding mysterious reality, and as a method of playing with the polarity of situations in order to deceive an opponent._
 

@@ -8,7 +8,14 @@
 
 .container--text {
   /* max-width: theme(screens.) !important; */
-  max-width: calc(680px + 64px) !important;
+  /* max-width: calc(680px + 64px) !important; */
+  max-width: 680px !important;
+}
+
+@screen sm {
+  .container {
+    padding: 0 !important;
+  }
 }
 
 /* .container--su {

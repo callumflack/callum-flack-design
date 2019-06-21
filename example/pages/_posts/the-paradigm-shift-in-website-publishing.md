@@ -8,7 +8,6 @@ lede: You don’t miss good tools until you have to use the old tools. When it c
 readingTime: 8
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1552908874/okok/matt-artz-353295-unsplash-.jpg
-heroBlockColor: rgb(0,0,0)
 ---
 
 <!-- Build better websites with Reactive Javascript and the JAMstack -->
@@ -45,7 +44,7 @@ And this better way starts with understanding three important facts:
 
 ## The new web publishing tools
 
-> We’re underinvested in developer tooling. Industry-wide, there are enormous efficiency gains still to be unlocked—_tools today remain quite primitive._<br>**[Patrick Collison](https://twitter.com/patrickc/status/1100075444962033664?s=12), Stripe CEO**
+> We’re underinvested in developer tooling. Industry-wide, there are enormous efficiency gains still to be unlocked—tools today remain quite primitive.<br>**[Patrick Collison](https://twitter.com/patrickc/status/1100075444962033664?s=12), Stripe CEO**
 
 <!-- And I don't think it's just a matter of  -->
 
@@ -55,11 +54,11 @@ If someone were to publish a new website today, so that it becomes a valuable as
 
 [JAMstack is an acronym (Javascript, APIs and Markup)](https://jamstack.org/) that symbolises an approach to building websites where each part of your website publishing system—interface building, content and services management, and hosting—is treated as a separate concern. These concerns are then integrated together within a web development workflow so that you can create your own customised ["technology stack"](https://mixpanel.com/topics/what-is-a-technology-stack/). Because each concern is isolated, it allows free choice of the best tool available for that concern within the context of your business requirements.
 
-_In contrast to allowing a web publishing platform to determine the quality of your web publishing workflow based on their priorities and subsequent slow-moving feature set, the JAMstack method gives you the freedom to create a flexible, customised technology stack that exactly suits your needs_.
+In contrast to allowing a web publishing platform to determine the quality of your web publishing workflow based on their priorities and subsequent slow-moving feature set, the JAMstack method gives you the freedom to create a flexible, customised technology stack that exactly suits your needs.
 
 ### Building the front-end with Javascript
 
-Beginning in 2013 with Facebook's [React.js](https://reactjs.org/) and [Vue.js](https://vuejs.org/) 9 months later, _Reactive Javascript libraries have proven to be a faster, more performant and highly flexible method for building your user interface (UI)._ More than just handling templating, they efficiently manage interface "state"—how the UI reacts to interactions—to make code more predictable and easier to debug. They are now regarded as the go-to method for building performant interfaces, and you can easily hire programmers for them because of their [dominance within the programming language market.](https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools)
+Beginning in 2013 with Facebook's [React.js](https://reactjs.org/) and [Vue.js](https://vuejs.org/) 9 months later, Reactive Javascript libraries have proven to be a faster, more performant and highly flexible method for building your user interface (UI). More than just handling templating, they efficiently manage interface "state"—how the UI reacts to interactions—to make code more predictable and easier to debug. They are now regarded as the go-to method for building performant interfaces, and you can easily hire programmers for them because of their [dominance within the programming language market.](https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools)
 
 <!-- approachable, versatile, performant, maintainable, testable -->
 
@@ -71,13 +70,13 @@ Beginning in 2013 with Facebook's [React.js](https://reactjs.org/) and [Vue.js](
 
 The most significant gains in website loading speed have been made by prebuilding entirely flat web pages (that is, a "[statically generated site](https://www.staticgen.com/)") and serving them through a cached [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN). By prebuilding the markup—that is, the scripts, styles and information within each web page—it does away with dynamically building pages on-the-fly with calls between a database and a remote server during delivery (otherwise known as "server-side" rendering), such as what happens with Wordpress.
 
-This simpler delivery method is not insignificant. Serving prebuilt markup _is not just easier to create fast page loads, it's also far more secure, with a far lower cost of scaling, and it completely removes the need for a backend._ Yep, that's right: no backend operating systems, web servers, databases or different programming languages. Serverless cloud hosting is now a [utility](https://evolve.hiredthought.com/#landscape).
+This simpler delivery method is not insignificant. Serving prebuilt markup is not just easier to create fast page loads, it's also far more secure, with a far lower cost of scaling, and it completely removes the need for a backend. Yep, that's right: no backend operating systems, web servers, databases or different programming languages. Serverless cloud hosting is now a [utility](https://evolve.hiredthought.com/#landscape).
 
 ### Publishing with automated webhooks
 
 An ecosystem of deployment tools has also attached itself to your code repository, allowing easy, limitless publishing via Continuous Deployment (CD) methods. New builds—that is, a newly published website version—can be automatically triggered by [webhooks](https://developer.github.com/webhooks/) based on scripts that are run when committing code to your website's code repository.
 
-By hooking these deployment systems into with "headless" or "decoupled" Content Management Systems (where your content is integrated into yoru website front-end via an API), _a robust, error-free deployment pipeline can triggered by anyone,_ developer or not, with a click. No more accidently overwriting the wrong file on your FTP and scrambling for the backup you didn't make.
+By hooking these deployment systems into with "headless" or "decoupled" Content Management Systems (where your content is integrated into yoru website front-end via an API), a robust, error-free deployment pipeline can triggered by anyone, developer or not, with a click. No more accidently overwriting the wrong file on your FTP and scrambling for the backup you didn't make.
 
 <!-- ### Opensource -->
 
@@ -92,17 +91,17 @@ By hooking these deployment systems into with "headless" or "decoupled" Content 
 
 ## Updating the shared beliefs of website publishing
 
-_When a paradigm shift occurs it’s rarely because the old methods don't work or aren't popular anymore. It just that the old guard can't change their identity quickly enough to keep up with the opportunities the shift provides._ They'll want to keep playing to their prowess and strengths, but instead they accidently display their generational bias (a variation of the [Shirky principle](https://en.wikipedia.org/wiki/Clay_Shirky#Shirky_principle) but for first-gen web developers, if you will).
+When a paradigm shift occurs it’s rarely because the old methods don't work or aren't popular anymore. It just that the old guard can't change their identity quickly enough to keep up with the opportunities the shift provides. They'll want to keep playing to their prowess and strengths, but instead they accidently display their generational bias (a variation of the [Shirky principle](https://en.wikipedia.org/wiki/Clay_Shirky#Shirky_principle) but for first-gen web developers, if you will).
 
 Meanwhile, the new breed of crafted web experiences are being built with new tools made by a different generation of web developers who haven't had to unlearn the previous generation's best practises.<a href="#f-2" class="Footnote-marker u-linkClean">2</a>
 
-As Patrick Collison noted above, the current paradigm of development tools will come to be seen as primitive in the near future. Which means _the paradigm shift happening in web publishing tools will continue unabated, widening the gap between legacy web experiences and the new wave of crafted experiences._
+As Patrick Collison noted above, the current paradigm of development tools will come to be seen as primitive in the near future. Which means the paradigm shift happening in web publishing tools will continue unabated, widening the gap between legacy web experiences and the new wave of crafted experiences.
 
 <!-- These new tools are simpler in many respects, removing significant and complex sections from the old tech stack paradigm. When there is less to remember, less to manage and reduced legacy tools to maintain, you make more space to focus on the value-adding parts of your business. -->
 
 > Paradigms are the sources of systems. From them, from shared social agreements about the nature of reality, come system goals and information flows, feedbacks, stocks, flows and everything else about systems.<br>**Donella Meadows, [Places to Intervene in a System](http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)**
 
-Now is the right time to jump on the bandwagon, where you'll get the optimism and efficiency of a new generation of tools which will help you create superior website interfaces that also easier and faster to manage, iterate on and scale. _The new tools are better and they're already here. They’re just not evenly understood yet._
+Now is the right time to jump on the bandwagon, where you'll get the optimism and efficiency of a new generation of tools which will help you create superior website interfaces that also easier and faster to manage, iterate on and scale. The new tools are better and they're already here. They’re just not evenly understood yet.
 
 <!-- Like most paradigm shifts, however, we won't know this until we either see everyone else doing it, or it hurts. -->
 

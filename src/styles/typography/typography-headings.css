@@ -11,13 +11,13 @@
 .Markdown h2,
 .Markdown h3,
 .Metaheading {
-  @apply font-sans text-black;
+  @apply font-serif text-black;
 }
 
 .Markdown h3,
 .Metaheading {
-  @apply font-bold leading-normal;
-  font-size: calc(theme(fontSize.base) * var(--text-ratio));
+  @apply font-normal leading-normal italic;
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 .Markdown h2 {
@@ -47,15 +47,15 @@
 
 .Display,
 .Title {
-  @apply font-title text-black tracking-wide;
+  @apply font-title text-black tracking-wide uppercase;
 }
 
 .Display {
-  @apply font-normal leading-title; /* 1 */
+  @apply font-normal leading-tight; /* 1 */
   font-size: calc(theme(fontSize.7xl) * var(--title-ratio));
 }
 
 .Title {
-  @apply font-bold leading-title; /* 1 */
+  @apply font-bold leading-tight; /* 1 */
   font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }

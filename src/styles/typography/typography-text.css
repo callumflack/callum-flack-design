@@ -39,6 +39,17 @@ ol,
 
 */
 
+.Markdown p + h2,
+.Markdown ul + h2,
+.Markdown blockquote + h2 {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Markdown p + h3,
+.Markdown ul + h3,
+.Markdown blockquote + h3 {
+  margin-top: calc(theme(spacing.6) * var(--space-ratio));
+}
+
 .Markdown ul,
 .Markdown ol {
   padding-left: theme(spacing.6);
@@ -63,4 +74,31 @@ ol,
 .Markdown a:not(.Button) {
   text-decoration: underline;
   text-decoration-line: underline;
+}
+
+.Markdown blockquote p {
+  @apply italic pl-4;
+  /* border-left: 1px solid var(--c-rule); */
+}
+
+/* .Markdown blockquote p:before {
+  content: "“";
+  display: block;
+  position: absolute;
+  transform: translate3d(-100%, 0, 0);
+} */
+
+.Markdown blockquote p em {
+  background-color: none !important;
+  font-style: italic !important;
+}
+
+.Markdown blockquote p p {
+  border: initial;
+  padding: initial;
+}
+
+.Markdown blockquote p strong {
+  @apply table font-normal not-italic uppercase mt-2 tracking-wider;
+  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
