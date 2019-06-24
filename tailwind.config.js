@@ -16,6 +16,7 @@ module.exports = {
         highlight: "#FDCF31",
         neutral: "#FAF8F5",
         bg: "#f5f5f5",
+        bg: "#fbfaf8",
       },
       gray: {
         // 100: "#f7fafc",
@@ -148,7 +149,7 @@ module.exports = {
     lineHeight: {
       title: "0.85",
       none: "1",
-      tight: "1.25",
+      tight: "1.2",
       snug: "1.375",
       reduced: "1.47059",
       normal: "1.47059",

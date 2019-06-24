@@ -41,7 +41,7 @@
               <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink"></Card>
             </SliderSlide>
             <SliderSlide v-if="recentPosts && recentPosts.length > 0">
-              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink"></Card>
+              <Card v-for="post in recentPosts" :post="post" :key="post.attributes.permalink"></Card>
             </SliderSlide>
           </SliderSlides>
         </div>
@@ -107,7 +107,7 @@ export default {
 
   computed: {
     recentPosts() {
-      return this.page.posts.splice(0, 3);
+      return this.page.posts.splice(0, 6);
     },
     featuredPosts() {
       return this.page.posts

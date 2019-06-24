@@ -9,12 +9,12 @@ var layouts = {}
       layouts["page"] = layout_1
       
 
-      import layout_2 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/post.vue"
-      layouts["post"] = layout_2
+      import layout_2 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/projects.vue"
+      layouts["projects"] = layout_2
       
 
-      import layout_3 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/projects.vue"
-      layouts["projects"] = layout_3
+      import layout_3 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/post.vue"
+      layouts["post"] = layout_3
       
 
       import layout_4 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/writing.vue"

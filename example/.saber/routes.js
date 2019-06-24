@@ -13,6 +13,18 @@
               }
             },
 {
+              path: "/posts/avari-capital-website.html",
+              meta: {
+                __relative: '_posts/avari-capital-website.md',
+                __pageId: '730040a0'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-avari-capital-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/avari-capital-website.md?saberPage=730040a0")
+                
+              }
+            },
+{
               path: "/posts/designers-should-code.html",
               meta: {
                 __relative: '_posts/designers-should-code.md',
@@ -21,6 +33,30 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-designers-should-code-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/designers-should-code.md?saberPage=74ff22fa")
+                
+              }
+            },
+{
+              path: "/posts/edge-hill-butchery-website.html",
+              meta: {
+                __relative: '_posts/edge-hill-butchery-website.md',
+                __pageId: '6d6f1b7e'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-edge-hill-butchery-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/edge-hill-butchery-website.md?saberPage=6d6f1b7e")
+                
+              }
+            },
+{
+              path: "/posts/evernote-random-note-app.html",
+              meta: {
+                __relative: '_posts/evernote-random-note-app.md',
+                __pageId: '57d1c5db'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-evernote-random-note-app-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/evernote-random-note-app.md?saberPage=57d1c5db")
                 
               }
             },
@@ -69,6 +105,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-oceanblue-living-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/oceanblue-living-website.md?saberPage=2c125b82")
+                
+              }
+            },
+{
+              path: "/posts/portt-website.html",
+              meta: {
+                __relative: '_posts/portt-website.md',
+                __pageId: '14d63b1b'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-portt-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/portt-website.md?saberPage=14d63b1b")
                 
               }
             },
@@ -129,6 +177,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-the-instantaneous-language-of-beauty-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/the-instantaneous-language-of-beauty.md?saberPage=5eebf29e")
+                
+              }
+            },
+{
+              path: "/posts/the-ki-line-website.html",
+              meta: {
+                __relative: '_posts/the-ki-line-website.md',
+                __pageId: '1a180072'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-the-ki-line-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/the-ki-line-website.md?saberPage=1a180072")
                 
               }
             },
@@ -201,6 +261,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--_posts-ward6-pharmaceutical-ipad-apps-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/ward6-pharmaceutical-ipad-apps.md?saberPage=a3b7d9e0")
+                
+              }
+            },
+{
+              path: "/posts/wynnum-dentists-website.html",
+              meta: {
+                __relative: '_posts/wynnum-dentists-website.md',
+                __pageId: '01552aea'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--_posts-wynnum-dentists-website-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/wynnum-dentists-website.md?saberPage=01552aea")
                 
               }
             },
@@ -289,6 +361,30 @@
               }
             },
 {
+              path: "/tags/frontend",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__frontend'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__frontend" */ "#cache/pages/internal_blog__tag__frontend.saberpage?saberPage=internal_blog__tag__frontend")
+                
+              }
+            },
+{
+              path: "/tags/featured",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__featured'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__featured" */ "#cache/pages/internal_blog__tag__featured.saberpage?saberPage=internal_blog__tag__featured")
+                
+              }
+            },
+{
               path: "/tags/essay",
               meta: {
                 __relative: 'undefined',
@@ -297,6 +393,18 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--internal_blog__tag__essay" */ "#cache/pages/internal_blog__tag__essay.saberpage?saberPage=internal_blog__tag__essay")
+                
+              }
+            },
+{
+              path: "/tags/design",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__design'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__design" */ "#cache/pages/internal_blog__tag__design.saberpage?saberPage=internal_blog__tag__design")
                 
               }
             },
@@ -321,18 +429,6 @@
               component: function() {
                 
                 return import(/* webpackChunkName: "page--internal_blog__tag__notes" */ "#cache/pages/internal_blog__tag__notes.saberpage?saberPage=internal_blog__tag__notes")
-                
-              }
-            },
-{
-              path: "/tags/featured",
-              meta: {
-                __relative: 'undefined',
-                __pageId: 'internal_blog__tag__featured'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--internal_blog__tag__featured" */ "#cache/pages/internal_blog__tag__featured.saberpage?saberPage=internal_blog__tag__featured")
                 
               }
             },

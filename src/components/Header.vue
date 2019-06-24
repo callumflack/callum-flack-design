@@ -2,11 +2,11 @@
   <header class="Nav">
     <nav class="container container--text flex">
       <saber-link class="Nav-link Text--sm" rel="author" to="/" exact>
-        <span>
+        <span style="text-transform:initial">
           {{ siteTitle }}
         </span>
       </saber-link>
-      <span class="Nav-link Nav-divide">•</span>
+      <span class="Nav-link"><span>&centerdot;</span></span>
       <saber-link
         :key="index"
         class="Nav-link Text--sm"
@@ -48,7 +48,7 @@ export default {
 
 .Nav-link,
 .Nav-link:hover {
-  @apply text-black no-underline;
+  @apply no-underline;
 }
 
 .Nav-link + .Nav-link {
@@ -59,11 +59,9 @@ export default {
   @apply border-b border-transparent pb-2px;
 }
 
+.Nav-link:hover span,
 .router-link-active span {
   @apply border-black;
 }
 
-.Nav-divide {
-  @apply pb-1;
-}
 </style>
