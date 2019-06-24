@@ -13,8 +13,9 @@ module.exports = {
       brand: {
         primary: "#a57643",
         blue: "#1b495a",
-        blueneutral: "#f1f2f3",
+        highlight: "#FDCF31",
         neutral: "#FAF8F5",
+        bg: "#f5f5f5",
       },
       gray: {
         // 100: "#f7fafc",
@@ -84,7 +85,7 @@ module.exports = {
         "Roboto",
       ],
       serif: [
-        '"Text"',
+        '"Title"',
         "Georgia",
         "Cambria",
         '"Times New Roman"',
@@ -149,8 +150,8 @@ module.exports = {
       none: "1",
       tight: "1.25",
       snug: "1.375",
-      reduced: "1.4",
-      normal: "1.4",
+      reduced: "1.47059",
+      normal: "1.47059",
       relaxed: "1.625",
       loose: "2",
       nav: "4.5",

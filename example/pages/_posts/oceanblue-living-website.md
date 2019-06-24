@@ -1,14 +1,18 @@
 ---
 category: project
-published: true
+layout: post
 title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
+assets: 
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroInCloudinary: true
 heroRatio: 62.5130163
-tags: Branding, UI, code
+tags: 
+  - Branding
+  - UI
+  - code
 ---
 
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.

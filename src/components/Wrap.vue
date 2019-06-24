@@ -6,14 +6,14 @@
         <slot></slot>
       </div>
     </main>
-    <Footer :siteTitle="siteTitle"/>
+    <!-- <Footer :siteTitle="siteTitle"/> -->
   </div>
 </template>
 
 <script>
-import variables from 'saber/variables'
-import Header from './Header.vue'
-import Footer from './Footer.vue'
+import variables from "saber/variables";
+import Header from "./Header.vue";
+import Footer from "./Footer.vue";
 
 export default {
   components: {
@@ -21,48 +21,54 @@ export default {
     Footer
   },
 
-  props: ['page'],
+  props: ["page"],
 
   head() {
-    const { excerpt } = this.page
-    const { title, layout } = this.page.attributes
-    let { description } = this.$siteConfig
-    if (layout === 'page' || layout === 'post') {
+    const { excerpt } = this.page;
+    const { title, layout } = this.page.attributes;
+    let { description } = this.$siteConfig;
+    if (layout === "page" || layout === "post") {
       if (excerpt) {
-        description = excerpt.replace(/<(?:.|\n)*?>/gm, '')
+        description = excerpt.replace(/<(?:.|\n)*?>/gm, "");
       }
     }
     return {
       title: title ? `${title} - ${this.siteTitle}` : this.siteTitle,
       meta: [
         description && {
-          name: 'description',
+          name: "description",
           content: description
         }
       ].filter(Boolean),
       link: this.$feed
         ? [
             {
-              rel: 'alternate',
+              rel: "alternate",
               title: `${this.siteTitle} - Feed`,
               type: `application/${
-                this.$feed.type === 'atom'
-                  ? 'atom+xml'
-                  : this.$feed.type === 'rss'
-                  ? 'rss+xml'
-                  : 'json'
+                this.$feed.type === "atom"
+                  ? "atom+xml"
+                  : this.$feed.type === "rss"
+                  ? "rss+xml"
+                  : "json"
               }`,
               href: this.$feed.permalink
             }
           ].filter(Boolean)
         : []
-    }
+    };
   },
 
   computed: {
     siteTitle() {
-      return this.$siteConfig.title || 'Your Awesome Title'
+      return this.$siteConfig.title || "Your Awesome Title";
     }
   }
-}
+};
 </script>
+
+<style lang="postcss" scoped>
+.page-content {
+  margin-top: 100px;
+}
+</style>

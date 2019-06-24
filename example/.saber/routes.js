@@ -205,18 +205,6 @@
               }
             },
 {
-              path: "/posts/why-the-developer-experience-matters.html",
-              meta: {
-                __relative: '_posts/why-the-developer-experience-matters.md',
-                __pageId: '23a9c99b'
-              },
-              component: function() {
-                
-                return import(/* webpackChunkName: "page--_posts-why-the-developer-experience-matters-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/_posts/why-the-developer-experience-matters.md?saberPage=23a9c99b")
-                
-              }
-            },
-{
               path: "/about.html",
               meta: {
                 __relative: 'about.md',
@@ -241,26 +229,110 @@
               }
             },
 {
-              path: "/tags/branding-ui-code",
+              path: "/projects.html",
               meta: {
-                __relative: 'undefined',
-                __pageId: 'internal_blog__tag__branding-ui-code'
+                __relative: 'projects.md',
+                __pageId: 'd15f85f2'
               },
               component: function() {
                 
-                return import(/* webpackChunkName: "page--internal_blog__tag__branding-ui-code" */ "#cache/pages/internal_blog__tag__branding-ui-code.saberpage?saberPage=internal_blog__tag__branding-ui-code")
+                return import(/* webpackChunkName: "page--projects-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/projects.md?saberPage=d15f85f2")
                 
               }
             },
 {
-              path: "/tags/ui-code",
+              path: "/writing.html",
               meta: {
-                __relative: 'undefined',
-                __pageId: 'internal_blog__tag__ui-code'
+                __relative: 'writing.md',
+                __pageId: 'b3560226'
               },
               component: function() {
                 
-                return import(/* webpackChunkName: "page--internal_blog__tag__ui-code" */ "#cache/pages/internal_blog__tag__ui-code.saberpage?saberPage=internal_blog__tag__ui-code")
+                return import(/* webpackChunkName: "page--writing-md" */ "/Users/sticktoitiveness/REPOS/callum-flack-design/example/pages/writing.md?saberPage=b3560226")
+                
+              }
+            },
+{
+              path: "/tags/branding",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__branding'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__branding" */ "#cache/pages/internal_blog__tag__branding.saberpage?saberPage=internal_blog__tag__branding")
+                
+              }
+            },
+{
+              path: "/tags/ui",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__ui'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__ui" */ "#cache/pages/internal_blog__tag__ui.saberpage?saberPage=internal_blog__tag__ui")
+                
+              }
+            },
+{
+              path: "/tags/code",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__code'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__code" */ "#cache/pages/internal_blog__tag__code.saberpage?saberPage=internal_blog__tag__code")
+                
+              }
+            },
+{
+              path: "/tags/essay",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__essay'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__essay" */ "#cache/pages/internal_blog__tag__essay.saberpage?saberPage=internal_blog__tag__essay")
+                
+              }
+            },
+{
+              path: "/tags/web-development",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__web-development'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__web-development" */ "#cache/pages/internal_blog__tag__web-development.saberpage?saberPage=internal_blog__tag__web-development")
+                
+              }
+            },
+{
+              path: "/tags/notes",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__notes'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__notes" */ "#cache/pages/internal_blog__tag__notes.saberpage?saberPage=internal_blog__tag__notes")
+                
+              }
+            },
+{
+              path: "/tags/featured",
+              meta: {
+                __relative: 'undefined',
+                __pageId: 'internal_blog__tag__featured'
+              },
+              component: function() {
+                
+                return import(/* webpackChunkName: "page--internal_blog__tag__featured" */ "#cache/pages/internal_blog__tag__featured.saberpage?saberPage=internal_blog__tag__featured")
                 
               }
             },

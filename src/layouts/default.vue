@@ -5,14 +5,51 @@
 
       <slot name="default"></slot>
 
-      <h2
+      <!-- <h2
         class="post-list-heading"
         v-if="page.posts && page.posts.length > 0"
-      >{{ page.attributes.listTitle || 'Posts' }}</h2>
+      >{{ page.attributes.listTitle || 'Posts' }}</h2>-->
 
-      <ul class="post-list" v-if="page.posts && page.posts.length > 0">
+      <header class="Block-sm">
+        <h1
+          class
+        >CFd makes interfaces. He works fluidly across graphic design, information design and frontend code. <saber-link to="/about">Learn more</saber-link>
+        </h1>
+      </header>
+
+      <SliderFrame>
+        <div slot-scope="{ activeIndex, goToIndex }">
+          <ul class="Tab-controls s-2xh">
+            <li>
+              <button
+                @click="goToIndex(0)"
+                :class="{ 'is-active': activeIndex === 0 }"
+                class="Tab-controls--button Meta"
+              >Notable</button>
+            </li>
+            <li>
+              <button
+                @click="goToIndex(1)"
+                :class="{ 'is-active': activeIndex === 1 }"
+                class="Tab-controls--button Meta"
+              >Recent</button>
+            </li>
+          </ul>
+
+          <SliderSlides class="Grid-extract--posts">
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
+              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink"></Card>
+            </SliderSlide>
+            <SliderSlide v-if="recentPosts && recentPosts.length > 0">
+              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink"></Card>
+            </SliderSlide>
+          </SliderSlides>
+        </div>
+      </SliderFrame>
+
+      <!-- <ul class="post-list" v-if="page.posts && page.posts.length > 0">
         <li v-for="post in page.posts" :key="post.attributes.permalink">
-          <span class="post-meta">{{ formatDate(post.attributes.createdAt) }} </span>
+          <span class="post-meta">{{ formatDate(post.attributes.createdAt) }}</span>
           <h3>
             <saber-link
               class="post-link"
@@ -20,9 +57,9 @@
             >{{ post.attributes.title }}</saber-link>
           </h3>
         </li>
-      </ul>
+      </ul>-->
 
-      <div
+      <!-- <div
         class="pagination"
         v-if="page.pagination && (page.pagination.hasNext || page.pagination.hasPrev)"
       >
@@ -36,39 +73,53 @@
           :to="page.pagination.nextLink"
           v-if="page.pagination.hasNext"
         >Next →</router-link>
-      </div>
+      </div>-->
 
-      <p class="feed-subscribe" v-if="$feed">
+      <!-- <p class="feed-subscribe" v-if="$feed">
         <svg class="svg-icon orange">
           <use :xlink:href="getSvg('rss')"></use>
         </svg>
         <a :href="$feed.permalink">Subscribe</a>
-      </p>
+      </p>-->
     </div>
   </Wrap>
 </template>
 
 <script>
-import formatDate from '../utils/formatDate'
-import Wrap from '../components/Wrap.vue'
-import getSvg from '../utils/getSvg'
+import formatDate from "../utils/formatDate";
+import getSvg from "../utils/getSvg";
+import Card from "../components/Card.vue";
+import SliderFrame from "../components/SliderFrame.vue";
+import SliderSlides from "../components/SliderSlides.vue";
+import SliderSlide from "../components/SliderSlide.vue";
+import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {
+    Card,
+    SliderFrame,
+    SliderSlides,
+    SliderSlide,
     Wrap
   },
 
-  props: ['page'],
+  props: ["page"],
+
+  computed: {
+    recentPosts() {
+      return this.page.posts.splice(0, 3);
+    },
+    featuredPosts() {
+      return this.page.posts
+        .filter(x => x.attributes.category === "writing")
+        // .filter(x => x.attributes.tags.includes("featured"))
+
+    }
+  },
 
   methods: {
     formatDate,
     getSvg
   }
-}
+};
 </script>
-
-<style lang="postcss" scoped>
-.post-list li + li {
-  margin-top: 36px;
-}
-</style>

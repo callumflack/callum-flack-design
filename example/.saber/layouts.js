@@ -13,4 +13,12 @@ var layouts = {}
       layouts["post"] = layout_2
       
 
+      import layout_3 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/projects.vue"
+      layouts["projects"] = layout_3
+      
+
+      import layout_4 from "/Users/sticktoitiveness/REPOS/callum-flack-design/src/layouts/writing.vue"
+      layouts["writing"] = layout_4
+      
+
     export default layouts

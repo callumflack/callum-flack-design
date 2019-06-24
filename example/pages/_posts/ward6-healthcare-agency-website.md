@@ -1,15 +1,18 @@
 ---
 category: project
-published: true
+layout: post
 title: Ward6 website
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.
 h: A content-managed website for a leading Australasian healthcare communications agency.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953103/okok/thumb-ward6.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
+assets: 
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroInCloudinary: true
 heroRatio: 69.2361111
-tags: UI, code
+tags: 
+  - UI
+  - code
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 featured: true

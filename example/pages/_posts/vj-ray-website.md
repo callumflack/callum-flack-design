@@ -1,16 +1,18 @@
 ---
-published: false
 category: project
 title: VJ Ray marketing websites
 lede: A series of websites to help one of Sydney's oldest Real Estate agencies show how they put people first.
 note: Completed in collaboration with Barry Phillip Hall.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-vjray.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952892/okok/vjray-hero.jpg
+assets: 
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952892/okok/vjray-hero.jpg
 heroInCloudinary: true
 heroFrame: false
 heroRatio: 68.6458333
-tags: UI, code
+tags: 
+  - UI
+  - code
 ---
 
 VJ Ray Real Estate are one of Sydney's original Strata Management agencies. They asked me to consider their customer value proposition and use it to rebuild their digital presence.

@@ -2,19 +2,22 @@ theme: ../src
 
 siteConfig:
   url: https://minima.saberjs.org
-  author: Author of This Site
-  email: author@your-domain.com
+  author: Callum Flack
+  email: callum@callumflack.design
+  title: CFd
   description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
 
 themeConfig:
   nav:
-    - text: Home
-      link: /
+    - text: Projects
+      link: /projects.html
+    - text: Writing
+      link: /writing.html
     - text: About
       link: /about.html
   social:
-    twitter: _saberjs
-    github: egoist
+    twitter: callumflack
+    github: callumflack
     rss: true
 
 plugins:

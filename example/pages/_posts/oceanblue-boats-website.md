@@ -1,14 +1,18 @@
 ---
 category: project
-published: true
+layout: post
 title: Oceanblue Boats website
 lede: A website that tells a story about building boats and getaway adventures.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-oceanblueboats.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
+assets: 
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg
 heroInCloudinary: true
 heroRatio: 69.2592593
-tags: Branding, UI, code
+tags: 
+  - Branding
+  - UI
+  - code
 featured: true
 ---
 

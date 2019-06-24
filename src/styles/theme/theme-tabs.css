@@ -1,0 +1,17 @@
+.Tab-controls {
+  @apply flex border-b;
+}
+.Tab-controls li + li {
+  @apply ml-4;
+}
+
+.Tab-controls--button {
+  @apply border-b border-transparent;
+  height: calc(theme(spacing.12) * var(--space-ratio));
+  transform: translateY(1px);
+}
+.Tab-controls--button:hover,
+.Tab-controls--button:active,
+.Tab-controls--button.is-active {
+  @apply border-black outline-none;
+}

@@ -1,16 +1,19 @@
 ---
 category: project
-published: true
+layout: post
 title: RAATSICC website
 lede: A content-managed website to help spread positive community outreach news.
 note: Completed in collaboration with Barry Phillip Hall.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953098/okok/thumb-raatsicc.jpg
 thumbInCloudinary: true
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
+assets: 
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
 heroInCloudinary: true
 heroFrame: false
 heroRatio: 65
-tags: UI, code
+tags: 
+  - UI
+  - code
 ---
 
 RAATSICC is a grassroots organisation that provides social services for Aboriginal and Torres Strait Island children and families in remote far north Queensland. I helped them rethink what their website could be, and created a performant online resource for all their audiences.

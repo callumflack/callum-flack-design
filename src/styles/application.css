@@ -12,11 +12,12 @@
 @import "./theme/theme-fontface";
 @import "./theme/theme-modal";
 @import "./theme/theme-modal-transitions";
-@import "./theme/theme-page-transitions";
-@import "./theme/theme-ratios";
+/* @import "./theme/theme-page-transitions"; */
+@import "./theme/theme-scale";
 @import "./theme/theme-typography";
 @import "./theme/theme-typography-code";
 @import "./theme/theme-grid-extractor.css";
+@import "./theme/theme-tabs.css";
 
 /* CFd standard components */
 @import "./layout/layout-grid";

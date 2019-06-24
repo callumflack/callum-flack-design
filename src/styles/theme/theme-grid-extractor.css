@@ -17,3 +17,12 @@
     width: 744px !important;
   }
 }
+
+@screen xl {
+  .Grid-extract--posts {
+    --width: 712px;
+    left: calc((-0.5 * var(--width)) + 50%);
+    position: relative;
+    width: var(--width) !important;
+  }
+}

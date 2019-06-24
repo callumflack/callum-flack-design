@@ -10,11 +10,14 @@ body {
   @apply antialiased text-text leading-normal;
 }
 
+.Meta {
+  font-size: calc(theme(fontSize.xxs) * var(--text-ratio));
+}
+
 .Text--sm {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
 
-.Meta,
 .Button,
 .Input,
 .Text--base {

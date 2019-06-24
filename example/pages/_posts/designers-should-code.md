@@ -1,11 +1,14 @@
 ---
-published: true
-category: essay
+layout: post
+category: writing
+tags:
+  - essay
 title: Designers should code
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 readingTime: 5
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
-heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1544053816/semilattice-181206_iu32ub.jpg
+assets:
+  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1544053816/semilattice-181206_iu32ub.jpg
 heroRatio: 56.25
 heroBlockColor: rgb(242,242,242)
 updated: false

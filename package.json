@@ -29,9 +29,13 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "intersection-observer": "^0.7.0",
     "postcss-import": "^12.0.1",
+    "saber-plugin-critical": "^1.0.2",
     "tailwindcss": "^1.0.4",
-    "tinydate": "^1.0.1"
+    "tinydate": "^1.0.1",
+    "vue-headroom": "^0.10.1"
   },
   "peerDependencies": {
     "saber": "^0.6.0",
