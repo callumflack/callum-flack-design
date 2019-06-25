@@ -10,9 +10,9 @@
   "scripts": {
     "build": "vue-compile src -o dist",
     "prepublishOnly": "yarn build",
-    "dev": "saber example",
-    "generate:example": "saber generate example",
-    "now-build": "yarn generate:example"
+    "dev": "saber content",
+    "generate:content": "saber generate content",
+    "now-build": "yarn generate:content"
   },
   "repository": {
     "type": "git",
@@ -22,14 +22,12 @@
     "saber": "^0.6.0",
     "saber-plugin-feed": "^0.3.0",
     "saber-plugin-query-posts": "^0.3.0",
-    "sass": "^1.17.3",
-    "sass-loader": "^7.1.0",
-    "vue-compile": "^0.5.1"
+    "vue-compile": "^0.5.1",
+    "eslint-plugin-vue": "^5.2.2"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
-    "eslint-plugin-vue": "^5.2.2",
     "intersection-observer": "^0.7.0",
     "postcss-import": "^12.0.1",
     "saber-plugin-critical": "^1.0.2",

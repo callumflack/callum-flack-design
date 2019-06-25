@@ -1,25 +1,30 @@
 <template>
   <Wrap :page="page">
-    <article class="post">
-      <header class="post-header">
-        <h1 class="post-title">{{ page.attributes.title }}</h1>
-      </header>
 
-      <div class="post-content">
-        <slot name="default"></slot>
+      <div class="Block-md-t Markdown" itemprop="articleBody">
+        <slot name="default"/>
       </div>
+
+      <!-- <a class="u-url" :href="page.attributes.permalink" hidden></a> -->
     </article>
   </Wrap>
 </template>
 
 <script>
+import formatDate from '../utils/formatDate'
+import Aspect from '../components/Aspect.vue'
 import Wrap from '../components/Wrap.vue'
 
 export default {
   components: {
-    Wrap
+    Aspect,
+    Wrap,
   },
 
-  props: ['page']
+  props: ['page'],
+
+  methods: {
+    formatDate
+  }
 }
 </script>

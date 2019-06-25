@@ -12,15 +12,19 @@
 
 @screen md {
   .Grid-extract--article {
-    left: calc((-0.5 * 744px) + 50%);
+    --width: calc(theme(screens.sm) + 2rem);
+    /* left: calc((-0.5 * 744px) + 50%);
     position: relative;
-    width: 744px !important;
+    width: 744px !important; */
+    left: calc((-0.5 * var(--width)) + 50%);
+    position: relative;
+    width: var(--width) !important;
   }
 }
 
 @screen xl {
   .Grid-extract--posts {
-    --width: 712px;
+    --width: calc(theme(screens.sm) + 2rem);
     left: calc((-0.5 * var(--width)) + 50%);
     position: relative;
     width: var(--width) !important;

@@ -7,14 +7,20 @@
 @font-face {
   font-family:"Title";
   src:
-    url("/../../fonts/Lyyra-Extended-Light.otf") format("woff");
+    /* url("/../../fonts/Lyyra-Extended-Light.otf") format("woff"); */
+    url("/../../fonts/Portrait-Light-Reduced.otf") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family:"Title";
   src:
-    url("/../../fonts/Lyyra-Extended.otf") format("woff");
+    /* url("/../../fonts/Portrait-Regular2-Reduced.otf") format("woff"); */
+    /* url("/../../fonts/Nocturno Display Pro Medium.otf") format("woff"); */
+    /* url("/../../fonts/GuyotHeadline-SemiBold.otf") format("woff"); */
+    /* url("/../../fonts/Rosart-Semibold.ttf") format("truetype"); */
+    /* url("/../../fonts/TiemposHeadline-Bold.otf") format("woff"); */
+    url("/../../fonts/Lyyra-Standard-Bold.otf") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -28,7 +34,12 @@
 @font-face {
   font-family:"Title";
   src:
-    url("/../../fonts/Lyyra-Extended-Bold.otf") format("woff");
+    /* url("/../../fonts/Portrait-Bold-Web.otf") format("woff"); */
+    /* url("/../../fonts/Nocturno Display Pro Bold.otf") format("woff"); */
+    /* url("/../../fonts/GuyotHeadline-Bold.otf") format("woff"); */
+    /* url("/../../fonts/Rosart-Bold.ttf") format("truetype"); */
+    /* url("/../../fonts/TiemposFine-Black.otf") format("woff"); */
+    url("/../../fonts/Lyyra-Extended-Black.otf") format("woff");
   font-style: normal;
   font-weight: 700;
 }

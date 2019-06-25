@@ -11,6 +11,7 @@
               {{ formatDate(post.attributes.createdAt) }}
             </span>
             <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+            <span class="Text--sm">{{ post.attributes.category }}: </span>
             <span class="Text--sm" v-for="(tag, index) in post.attributes.tags">
               <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
             </span>
@@ -59,9 +60,8 @@ export default {
 .Card {
   /* @apply rounded overflow-hidden; */
   @apply cursor-pointer relative;
-  @apply border border-transparent;
-  /* @apply border-gray-400; */
-  /* @apply bg-white; */
+  @apply border-b;
+  @apply border-gray-200;
   margin: -10px -8px;
   padding: 10px 8px;
   transition: all 500ms ease;
@@ -92,17 +92,18 @@ export default {
 .Card:hover:before {
   animation: hoverAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
 }
-/* .Card:hover {
-  @apply border-black;
+
+.Card:hover {
+  @apply border-transparent;
   @apply bg-white;
-} */
+}
 
 .Card:not(:last-of-type) {
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.6) * var(--space-ratio));
 }
 
 .Card-body {
-  @apply p-3 pl-4;
+  @apply py-6 pr-3 pl-4;
   /* @apply flex-grow; */
 }
 

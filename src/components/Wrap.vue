@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Header :siteTitle="siteTitle"/>
+    <Header
+      :siteTitle="siteTitle"
+      :title="page.attributes.title"
+      :lede="page.attributes.lede"
+    />
+
     <main class="page-content" aria-label="Content">
       <div class="container container--text">
         <slot></slot>
@@ -12,13 +17,13 @@
 
 <script>
 import variables from "saber/variables";
-import Header from "./Header.vue";
 import Footer from "./Footer.vue";
+import Header from "./Header.vue";
 
 export default {
   components: {
+    Footer,
     Header,
-    Footer
   },
 
   props: ["page"],
@@ -68,7 +73,5 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.page-content {
-  margin-top: 100px;
-}
+
 </style>

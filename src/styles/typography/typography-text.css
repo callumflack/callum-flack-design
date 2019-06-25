@@ -28,35 +28,43 @@ ol {
   @apply tracking-text;
 }
 
-.Meta {
-  @apply font-sans font-semibold uppercase tracking-normal;
-}
-
-.Meta {
+.Meta,
+.Markdown blockquote p strong {
+  @apply font-sans font-bold uppercase tracking-normal;
   font-size: calc(theme(fontSize.xxs) * var(--text-ratio));
 }
 
-.Text--sm {
+.Text--xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
-
+.Text--sm {
+  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+}
 .Button,
-.Input,
-.Text--base {
-  font-size: calc(theme(fontSize.base) * var(--text-ratio));
+.Input {
+  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+}
+.Text--lg {
+  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+}
+.Text--xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 p,
 ul,
 ol,
 .Markdown > *,
-.Text {
-  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+.Text,
+.Text--base {
+  font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
 
-.Text--lg {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+.Markdown > * {
+  /* @apply text-gray-600; */
 }
+
+
 
 /*
 
@@ -102,6 +110,11 @@ ol,
   list-style: disc;
 }
 
+/* WTF------------------------------------------------------------------------------- */
+.Markdown em {
+  @apply not-italic !important;
+}
+
 .Markdown strong {
   @apply text-black font-medium;
 }
@@ -134,6 +147,5 @@ ol,
 }
 
 .Markdown blockquote p strong {
-  @apply table font-normal not-italic uppercase mt-2 tracking-wider;
-  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+  @apply table not-italic mt-2;
 }

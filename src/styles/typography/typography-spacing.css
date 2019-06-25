@@ -31,6 +31,8 @@
 .Markdown h2:not(:last-child),
 .Markdown h3:not(:last-child),
 .Markdown p:not(:last-child),
+.Markdown ul:not(:last-child),
+.Markdown ol:not(:last-child),
 .s-block-p:not(:last-child),
 .s-p {
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));

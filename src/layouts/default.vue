@@ -1,40 +1,33 @@
 <template>
   <Wrap :page="page">
     <div class="home">
-      <h1 class="page-heading" v-if="page.attributes.title">{{ page.title }}</h1>
 
-      <slot name="default"></slot>
-
-      <!-- <h2
-        class="post-list-heading"
-        v-if="page.posts && page.posts.length > 0"
-      >{{ page.attributes.listTitle || 'Posts' }}</h2>-->
-
-      <header class="Block-sm">
-        <h1
-          class
-        >CFd makes interfaces. He works fluidly across graphic design, information design and frontend code. <saber-link to="/about">Learn more</saber-link>
-        </h1>
-      </header>
+      <!-- <IndexTitle :title="page.attributes.title"/> -->
+      <!-- <saber-link to="/about.html">Learn more</saber-link> -->
+      <!-- <slot name="default"></slot> -->
 
       <SliderFrame>
         <div slot-scope="{ activeIndex, goToIndex }">
-          <ul class="Tab-controls s-2xh">
-            <li>
-              <button
-                @click="goToIndex(0)"
-                :class="{ 'is-active': activeIndex === 0 }"
-                class="Tab-controls--button Meta"
-              >Notable</button>
-            </li>
-            <li>
-              <button
-                @click="goToIndex(1)"
-                :class="{ 'is-active': activeIndex === 1 }"
-                class="Tab-controls--button Meta"
-              >Recent</button>
-            </li>
-          </ul>
+          <div class="Grid-extract--edge bg-brand-header">
+            <div class="container container--text">
+              <ul class="Tab-controls s-2xh">
+                <li>
+                  <button
+                    @click="goToIndex(0)"
+                    :class="{ 'is-active': activeIndex === 0 }"
+                    class="Tab-controls--button Meta"
+                  >Notable</button>
+                </li>
+                <li>
+                  <button
+                    @click="goToIndex(1)"
+                    :class="{ 'is-active': activeIndex === 1 }"
+                    class="Tab-controls--button Meta"
+                  >Recent</button>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <SliderSlides class="Grid-extract--posts">
             <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
