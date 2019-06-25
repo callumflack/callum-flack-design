@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2018-07-02
 category: writing
 tags:
   - essay

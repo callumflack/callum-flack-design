@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CFd makes interfaces.
-lede: Callum Flack is a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps.
+title: CFd makes web interfaces
+lede: Callum Flack is a graphic designer turned web developer. He works fluidly across graphic design, information design and frontend code.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -56,7 +56,9 @@ lede: Callum Flack is a digital designer who works fluidly across both brand and
 
 <!-- Callum Flack is a graphic designer turned web developer. Driven by curiosity, the need to understand how it works and the fine touch of craftsmanship, he bridges the gap between design and code. -->
 
-Callum Flack is a graphic designer turned web developer. He works fluidly across graphic design, information design and frontend code.
+<!-- Callum Flack is a digital designer and frontend developer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->
+
+<!-- Callum Flack is a graphic designer turned web developer. He works fluidly across graphic design, information design and frontend code. -->
 
 
 <!-- He is driven by wonder, beauty and curiosity. -->
@@ -94,7 +96,7 @@ When Callum builds websites, he advocates for these tools:
 
 - Building interfaces with Vue.js (or React.js)
 - Using a <a target="_blank" href="https://jamstack.org/">JAMstack</a> architecture with git-based deployments (mostly)
-- Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a>
+<!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> -->
 
 <!-- (when it's not a web application) -->
 <!-- - PostCSS or Sass -->

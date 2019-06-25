@@ -4,15 +4,9 @@
   width: 100vw;
 }
 
-/* .Grid-extract--article {
-  left: calc(-50vw + 50%);
-  position: relative;
-  width: 100vw;
-} */
-
 @screen md {
-  .Grid-extract--article {
-    --width: calc(theme(screens.sm) + 2rem);
+  .Grid-extract--post {
+    --width: calc(theme(screens.sm) + 4rem);
     /* left: calc((-0.5 * 744px) + 50%);
     position: relative;
     width: 744px !important; */
@@ -24,8 +18,10 @@
 
 @screen xl {
   .Grid-extract--posts {
+    /* --width: calc(theme(screens.sm) + 16px);
+    left: calc((-0.5 * var(--width)) + 50% - 8px); */
     --width: calc(theme(screens.sm) + 2rem);
-    left: calc((-0.5 * var(--width)) + 50%);
+    left: calc((-0.5 * var(--width)) + 50% );
     position: relative;
     width: var(--width) !important;
   }

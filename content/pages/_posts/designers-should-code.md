@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2018-02-09
 category: writing
 tags:
   - essay
@@ -9,9 +10,8 @@ readingTime: 5
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/fetch/w_1500,c_fill,g_center,f_auto,q_auto/https://res.cloudinary.com/pw-img-cdn/image/upload/v1544053816/semilattice-181206_iu32ub.jpg
-heroRatio: 56.25
+heroRatio: 1/2
 heroBlockColor: transparent
-updated: false
 ---
 
 <!-- <p class="intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in the product design process, the better the product (and more valuable you'll become). That's reason enough to learn to code.</p> -->
@@ -51,7 +51,7 @@ If I can code the design myself, I don’t have to communicate the nuance of aes
 
 ## Designing with code is the most immediate connection
 
-A cook sips the broth. A pilot turning feels G-forces pulling below. A painter paints, and sees mistakes become new ideas. As [Bret Victor says](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/):
+A cook sips the broth. A pilot feels G-forces. A painter paints, and sees mistakes become new ideas. As [Bret Victor says](https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/):
 
 > Creators need an immediate connection to what they’re creating.
 

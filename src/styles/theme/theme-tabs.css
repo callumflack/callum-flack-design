@@ -1,5 +1,6 @@
 .Tab-controls {
-  @apply flex border-b;
+  @apply flex border-b-2;
+  @apply border-brand-header;
   /* @apply text-gray-500; */
 }
 
@@ -8,9 +9,9 @@
 }
 
 .Tab-controls--button {
-  @apply border-b border-transparent;
+  @apply border-b-2 border-transparent;
   height: calc(theme(spacing.12) * var(--space-ratio));
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 .Tab-controls--button:not(.is-active) {

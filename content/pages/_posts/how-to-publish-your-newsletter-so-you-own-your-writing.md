@@ -1,12 +1,12 @@
 ---
 layout: post
+date: 2019-04-29
 category: writing
 tags: 
 - Web development
 title: How to publish a newsletter so you own your writing
 lede: Some hopefully helpful thoughts and tips on using a chain of web tools to streamline newsletter publishing, write in markdown, retain ownership and create a focus on writing. All without resorting to any product platform lock-in.
 readingTime: 5
-ratio: 1/2
 ---
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->
@@ -23,15 +23,13 @@ What follows is a short explanation of how I do this.
 
 ## The newsletter system
 
-So I own my writing, I create a website of newsletter posts which I published to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via URL to create a new email campaign. 
+So I own my writing, I create a website of newsletter posts which I published to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via it's URL to create a new email campaign.
 
 _This means I never write within the email delivery platform. And all my letters are just markdown files_, just as they are on this website's blog.
 
-Yes, I still use Mailchimp to send out the actual emails. I always try to defer to the best available tools for the job, and because I have no wish to learn about email delivery I definitely want to defer this difficult technical job to one of the many excellent freemium products available. 
+Yes, I still use Mailchimp to send out the actual emails. I always try to defer to the best available tools for the job, and because I have no wish to learn about email delivery I definitely want to defer this difficult technical job to one of the many excellent freemium products available. (For interest's sake, some other options I tested included [button.email](https://buttondown.email/), [Substack](https://substack.com/) and [Revue](https://www.getrevue.co/).)
 
 <!-- At the moment, I use Mailchimp. The fact that they basically built the entire email newsletter industry and without ever taking outside funding is a sign they believe in what they do and they geniunely wish to provide a service. Oh and the founder, Ben Chestnut, wrote this great post [about inverting marketing funnels](https://tinyletter.com/ben/letters/why-i-hate-funnels) a while back. -->
-
-For interest's sake, some other options I pondered included [button.email](https://buttondown.email/), [Substack](https://substack.com/) and [Revue](https://www.getrevue.co/).
 
 Because the best writing tool for the web is markdown, I use Jekyll to build the newsletter site. There are other web publishing tools emerging—which I've actually [written about in my newsletter](https://thelittoralline.callumflack.design/LL10/)—but none allow me to keep the simplicity of an old school CSS file (the styles in emails need to be inline and the markup table-based for email clients to handle them). I also have some old projects on Jekyll, so I need to keep my hand in it.
 
@@ -41,7 +39,7 @@ Because the best writing tool for the web is markdown, I use Jekyll to build the
 
 ## Publishing a newsletter in two steps
 
-_There's only two steps step I take to publish a newsletter edition: write it, then queue it._
+_There's only two steps step I take to publish a newsletter: write it, then queue it._
 
 ### Write it directly on Github
 
@@ -55,7 +53,7 @@ Using the newly published website blog post URL, I queue up a new email campaign
 
 When I have some more time I'll add an RSS feed to the website and point Mailchimp to watch this feed. This should cut out the Mailchimp queuing. But haven't tried this yet, so I can't say "from here on it's trivial…" just yet.
 
-## Prerequisites
+### Prerequisites
 
 _There is some prior setup and configuration necessary._ If you were to [fork my repository](https://github.com/callumflack/the-littoral-line) and replicate my system, you'd need to:
 
@@ -71,7 +69,7 @@ If you don't like the Github writing experience, you can create a new markdown f
 
 If you want to preview the post as it would appear in the email, run a Jekyll development server with `bundle exec jekyll serve --watch`. I have this set as a bash alias under simply `js` so I don't need to remember the command. 
 
-I also have `future: true` set in the Jekyll `config.yml` so that if the draft post has a future date, I'll see it when I run the Jekyll development server.
+<!-- I also have `future: true` set in the Jekyll `config.yml` so that if the draft post has a future date, I'll see it when I run the Jekyll development server. -->
 
 <!-- When you're happy, commit to your repository master branch so your awesome build system triggers an updated website deployment. -->
 
@@ -81,7 +79,7 @@ I also have `future: true` set in the Jekyll `config.yml` so that if the draft p
 
 ## Publishing a Jekyll site with Zeit Now
 
-Once I'm happy with a newsletter edition, I simply redeploy the website using Zeit's [Now deployments](https://zeit.co/now) to my `littoralline` subdomain. To do that, all I do is commit to Github.
+Once I'm happy with a newsletter edition, I simply redeploy the website using Zeit's [Now deployments](https://zeit.co/now) to my `littoralline` subdomain. To do that, all I do is commit to Github. Let me repeat: _to publish, I just commit to Github._ That's because I have a `now` webhook set for the Github repository. The [Now Github app](https://zeit.co/github) simply reads my `now.json` config and automatically does it's thing whenever I push a commit.
 
 <!-- I'll say that again: so I can highlight it -->
 
@@ -89,9 +87,9 @@ Once I'm happy with a newsletter edition, I simply redeploy the website using Ze
 
 <!-- Modern website publishing is now a matter of simply committing to a   -->
 
-Let me repeat: _to publish, I don't do anything other than commit to Github._
 
-That's because I have a `now` webhook set for the Github repository. The [Now Github app](https://zeit.co/github) simply reads my `now.json` config and automatically does it's thing whenever I push a commit. Because it's a Jekyll site, I also have a `build.sh` file in the project root (taken from the [Now examples](https://github.com/zeit/now-examples/blob/master/jekyll/build.sh)). Now uses this script to run the Jekyll build on the Now servers.
+
+<!-- Because it's a Jekyll site, I also have a `build.sh` file in the project root (taken from the [Now examples](https://github.com/zeit/now-examples/blob/master/jekyll/build.sh)). Now uses this script to run the Jekyll build on the Now servers. -->
 
 This tiny piece of magic removes the forgetfully manual process of running `now && now alias` from the project root in my terminal and strips another layer of friction from publishing. And this is what _allows me to write directly in Github_.
 

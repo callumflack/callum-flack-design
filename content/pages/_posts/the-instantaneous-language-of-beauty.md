@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2018-06-01
 category: writing
 tags: 
   - essay
@@ -8,6 +9,7 @@ title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry, which we find beautiful. We are naturally attuned to beauty because we know it represents a higher chance of holding worthwhile information.
 readingTime: 5
 heroBlockColor: rgb(0,0,0)
+heroRatio: 8 / 16
 heroTitleInvert: true
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
@@ -85,7 +87,7 @@ Faced with a decision between two objects, we'll choose the one we developed an 
 
 <!--This is why design matters. Given Design, at it's best, uses the language of aesthetics to preempt verbal language and communicate much faster than any reason can.-->
 
-## Beauty and commerce
+## Beauty and Peak Attention
 
 Every one of us post-rationalises our decisions as it suits us. The reasons for our choices are deeper than we think. While they won't tell you, people will sense incongruence and walk away. Or they will notice seamless and cohesive symmetry in a fraction of a second, and begin inspecting. As we move toward "peak attention", it pays not to underestimate how powerful, calming and attentive the feeling of beauty can be.
 

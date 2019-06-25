@@ -19,7 +19,7 @@ body {
 }
 
 ::selection {
-  background-color: theme(colors.brand.highlight);
+  @apply bg-brand-highlight;
 }
 
 p,
@@ -64,8 +64,6 @@ ol,
   /* @apply text-gray-600; */
 }
 
-
-
 /*
 
   Utils
@@ -81,17 +79,6 @@ ol,
   Markdown theme
 
 */
-
-.Markdown p + h2,
-.Markdown ul + h2,
-.Markdown blockquote + h2 {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-}
-.Markdown p + h3,
-.Markdown ul + h3,
-.Markdown blockquote + h3 {
-  margin-top: calc(theme(spacing.6) * var(--space-ratio));
-}
 
 .Markdown ul,
 .Markdown ol {
@@ -110,9 +97,9 @@ ol,
   list-style: disc;
 }
 
-/* WTF------------------------------------------------------------------------------- */
+/* doesn't work when purge is active? */
 .Markdown em {
-  @apply not-italic !important;
+  @apply not-italic;
 }
 
 .Markdown strong {
@@ -125,20 +112,14 @@ ol,
 }
 
 .Markdown blockquote p {
-  @apply italic pl-4;
-  /* border-left: 1px solid var(--c-rule); */
+  @apply pl-4 border-l-2 border-gray-400;
+  @apply text-gray-700;
+  /* @apply italic; */
 }
 
-/* .Markdown blockquote p:before {
-  content: "“";
-  display: block;
-  position: absolute;
-  transform: translate3d(-100%, 0, 0);
-} */
-
 .Markdown blockquote p em {
-  background-color: none !important;
-  font-style: italic !important;
+  /* @apply bg-transparent; */
+  /* font-style: italic !important; */
 }
 
 .Markdown blockquote p p {
@@ -147,5 +128,6 @@ ol,
 }
 
 .Markdown blockquote p strong {
-  @apply table not-italic mt-2;
+  @apply table font-medium not-italic mt-2;
+  @apply text-gray-700;
 }

@@ -5,6 +5,19 @@
 
 */
 
+a {
+  transition: background-color 500ms ease;
+}
+
+p a:hover,
+ul a:hover,
+ol a:hover,
+.Markdown a:hover {
+  @apply bg-brand-highlight;
+}
+
+/* VARS */
+
 .Link--underline {
   @apply inline-block border-b border-gray-500;
   text-decoration: none !important;

@@ -27,12 +27,13 @@
       <div class="container container--text">
         <h1
           v-if="title"
-          class="Display Display--page text-center s-h"
+          class="Display Display--post text-center s-h"
         >{{ title }}</h1>
         <p
           v-if="lede"
+          v-html="lede"
           class="text-center w-2/3 mx-auto s-h"
-        >{{ lede }}</p>
+        ></p>
       </div>
     </div>
 

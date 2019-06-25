@@ -1,5 +1,5 @@
 <template>
-  <Aspect :ratio="ratio" class="Grid-extract--article bg-black">
+  <Aspect :ratio="ratio" class="Grid-extract--post bg-black">
     <figure>
       <img
         :src="image"

@@ -1,6 +1,6 @@
 ---
 layout: post
-mostRecentPost: true
+date: 2018-09-24
 category: writing
 tags:
   - essay
@@ -10,7 +10,6 @@ lede: Rather than understanding taste as the particular way a person does a thin
 readingTime: 8
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1538097848/post-taste-lynch_hutebj.jpg
-heroImageMultiply: true
 heroImageBlend: true
 heroBlockColor: transparent
 heroTitleInvert: true
@@ -20,9 +19,7 @@ heroTitleInvert: true
 
 <hr class="Post-intro-rule b-my05">
 
-Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._
-
-Much more than just a style of doing, good taste is a measure of a person's intuitive understanding of a problem space.
+Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._ Much more than just a style of doing, good taste is a measure of a person's intuitive understanding of a problem space.
 
 ## Taste matters because it creates differentiation
 
