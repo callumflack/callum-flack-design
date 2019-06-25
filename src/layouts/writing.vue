@@ -12,30 +12,30 @@
                   @click="goToIndex(0)"
                   :class="{ 'is-active': activeIndex === 0 }"
                   class="Tab-controls--button Meta"
-                >Featured</button>
+                >Archive</button>
               </li>
               <li>
                 <button
                   @click="goToIndex(1)"
                   :class="{ 'is-active': activeIndex === 1 }"
                   class="Tab-controls--button Meta"
-                >Archive</button>
+                >Featured</button>
               </li>
             </ul>
           </div>
         </div>
 
         <SliderSlides class="Grid-extract--posts">
-          <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
+          <SliderSlide v-if="allWriting && allWriting.length > 0">
             <Card
-              v-for="post in featuredWriting"
+              v-for="post in allWriting"
               :post="post"
               :key="post.attributes.permalink"
             ></Card>
           </SliderSlide>
-          <SliderSlide v-if="allWriting && allWriting.length > 0">
+          <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
             <Card
-              v-for="post in allWriting"
+              v-for="post in featuredWriting"
               :post="post"
               :key="post.attributes.permalink"
             ></Card>
@@ -72,6 +72,10 @@ export default {
       return this.page.posts
         .filter(x => x.attributes.category === "writing")
     },
+    // allWritingByYear() {
+    //   // helper function to get the year value from an item
+    //   const year = item => tinydate(item.attributes.date, {YYYY});
+    // },
     featuredWriting() {
       return this.allWriting
         .filter(x => x.attributes.tags.includes("featured"))

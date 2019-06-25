@@ -95,7 +95,7 @@ export default {
 
 .Card:hover {
   @apply border-transparent;
-  @apply bg-white;
+  /* @apply bg-white; */
 }
 
 .Card:not(:last-of-type) {
