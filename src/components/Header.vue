@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-brand-header">
+  <header class="bg-brand-header" :class="aboutPageClass">
     <nav class="Nav">
       <div class="container container--text flex justify-between">
         <!-- <span class="Nav-link"><span>&centerdot;</span></span> -->
@@ -37,11 +37,22 @@
       </div>
     </div>
 
+    <div v-if="$route.path === '/about.html'" class="ContactCard">
+      <div class="container container--text">
+        <ContactCard v-if="$route.path === '/about.html'" />
+      </div>
+    </div>
+
   </header>
 </template>
 
 <script>
+import ContactCard from "../components/ContactCard";
+
 export default {
+  components: {
+    ContactCard
+  },
   props: {
     siteTitle: {
       type: String,
@@ -55,6 +66,11 @@ export default {
     lede: {
       type: String,
       required: false
+    }
+  },
+  computed: {
+    aboutPageClass() {
+      return this.$route.path === '/about.html' && "with-ContactCard";
     }
   }
 }
@@ -94,5 +110,19 @@ export default {
 .Block--header {
   padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
   padding-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
+}
+
+.with-ContactCard {
+  @apply relative;
+  margin-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
+}
+
+.with-ContactCard .Block--header {
+  padding-bottom: calc(theme(spacing.32) * var(--block-size-ratio));
+}
+
+.ContactCard {
+  @apply absolute w-full;
+  transform: translateY(-50%);
 }
 </style>
