@@ -37,11 +37,9 @@ ol {
 .Text--xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
-.Text--sm {
-  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
-}
 .Button,
-.Input {
+.Input,
+.Text--sm {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 .Text--lg {

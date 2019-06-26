@@ -15,7 +15,6 @@
 /* @import "./theme/theme-page-transitions"; */
 @import "./theme/theme-scale";
 /* @import "./theme/theme-typography"; */
-@import "./theme/theme-typography-code";
 @import "./theme/theme-grid-extractor.css";
 @import "./theme/theme-tabs.css";
 
@@ -29,6 +28,7 @@
 @import "./typography/typography-text";
 @import "./typography/typography-headings";
 @import "./typography/typography-spacing";
+@import "./typography/typography-code";
 @import "./element/element-button";
 @import "./element/element-form";
 @import "./element/element-icon";
