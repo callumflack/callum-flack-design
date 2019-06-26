@@ -67,7 +67,7 @@ _Once you have this, you won't actually need to setup a local development enviro
 
 If you don't like the Github writing experience, you can create a new markdown file in your local file system. That way you can write using your favourite code editor or indeed your favourite markdown editor. So long as your markdown file sits within your project's `_posts` directory, you're good to go.
 
-If you want to preview the post as it would appear in the email, run a Jekyll development server with `bundle exec jekyll serve --watch`. I have this set as a bash alias under simply `js` so I don't need to remember the command. 
+If you want to preview the post as it would appear in the email, run a Jekyll development server with `bundle exec jekyll serve --watch` (I have this set as a simple bash alias `js` so I don't need to remember the command). 
 
 <!-- I also have `future: true` set in the Jekyll `config.yml` so that if the draft post has a future date, I'll see it when I run the Jekyll development server. -->
 
