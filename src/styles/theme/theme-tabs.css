@@ -14,13 +14,12 @@
   transform: translateY(2px);
 }
 
-.Tab-controls--button:not(.is-active) {
-  @apply font-normal;
+.Tab-controls--button.is-active {
+  @apply font-bold;
 }
 
 .Tab-controls--button:hover,
 .Tab-controls--button:active,
 .Tab-controls--button.is-active {
-  @apply text-text border-black outline-none;
-  /* @apply font-bold; */
+  @apply border-black outline-none;
 }

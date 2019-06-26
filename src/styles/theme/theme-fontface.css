@@ -4,42 +4,60 @@
 
  */
 
-@font-face {
+/* @font-face {
   font-family:"Title";
-  src:
-    /* url("/../../fonts/Lyyra-Extended-Light.otf") format("woff"); */
-    url("/../../fonts/Portrait-Light-Reduced.otf") format("woff");
+  src: url("/../../fonts/Lyyra-Extended-Light.otf") format("woff");
+  src: url("/../../fonts/Portrait-Light-Reduced.otf") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family:"Title";
-  src:
-    /* url("/../../fonts/Portrait-Regular2-Reduced.otf") format("woff"); */
-    /* url("/../../fonts/Nocturno Display Pro Medium.otf") format("woff"); */
-    /* url("/../../fonts/GuyotHeadline-SemiBold.otf") format("woff"); */
-    /* url("/../../fonts/Rosart-Semibold.ttf") format("truetype"); */
-    /* url("/../../fonts/TiemposHeadline-Bold.otf") format("woff"); */
-    url("/../../fonts/Lyyra-Standard-Bold.otf") format("woff");
+  src: url("/../../fonts/Portrait-Regular2-Reduced.otf") format("woff");
+  src: url("/../../fonts/Nocturno Display Pro Medium.otf") format("woff");
+  src: url("/../../fonts/GuyotHeadline-SemiBold.otf") format("woff");
+  src: url("/../../fonts/Rosart-Semibold.ttf") format("truetype");
+  src: url("/../../fonts/TiemposHeadline-Bold.otf") format("woff");
+  src: url("/../../fonts/Lyyra-Standard-Bold.otf") format("woff");
   font-style: normal;
   font-weight: 400;
-}
+} */
 @font-face {
   font-family:"Title";
-  src:
-    url("/../../fonts/Lyyra-Extended-Medium.otf") format("woff");
+  src: url("/../../fonts/Bureau Grot Condensed Medium.otf") format("woff");
+  src: url("/../../fonts/ProtoGrotesk-Regular.otf") format("woff");
+  src: url("/../../fonts/SchwartzGrotesk-ExtendedBeta.otf") format("woff");
+  src: url("/../../fonts/Graphik Wide Bold.otf") format("woff");
+  src: url("/../../fonts/Lyyra-Extended-Medium.otf") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family:"Title";
-  src:
-    /* url("/../../fonts/Portrait-Bold-Web.otf") format("woff"); */
-    /* url("/../../fonts/Nocturno Display Pro Bold.otf") format("woff"); */
-    /* url("/../../fonts/GuyotHeadline-Bold.otf") format("woff"); */
-    /* url("/../../fonts/Rosart-Bold.ttf") format("truetype"); */
-    /* url("/../../fonts/TiemposFine-Black.otf") format("woff"); */
-    url("/../../fonts/Lyyra-Extended-Black.otf") format("woff");
+  src: url("/../../fonts/Pilat Wide Bold.otf") format("woff");
+  src: url("/../../fonts/Lyyra-Extended-Bold.otf") format("woff");
+  src: url("/../../fonts/RecifeText-Bold.ttf") format("truetype");
+  src: url("/../../fonts/TiemposHeadline-Bold.otf") format("woff");
+  src: url("/../../fonts/DrukTextWide-Bold.otf") format("woff");
+  src: url("/../../fonts/GTSuperText-Bold.otf") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family:"Title";
+  src: url("/../../fonts/ProtoGrotesk-Bold.otf") format("woff");
+  src: url("/../../fonts/Portrait-Bold-Web.otf") format("woff");
+  src: url("/../../fonts/GuyotHeadline-Bold.otf") format("woff");
+  src: url("/../../fonts/Bureau Grot Compressed Bold.otf") format("woff");
+  src: url("/../../fonts/SchwartzGrotesk-ExtendedBeta.otf") format("woff");
+  src: url("/../../fonts/Pilat Wide Heavy.otf") format("woff");
+  src: url("/../../fonts/Lyyra-Extended-Black.otf") format("woff");
+  src: url("/../../fonts/RecifeDisplay-Black.ttf") format("truetype");
+  src: url("/../../fonts/TiemposFine-Black.otf") format("woff");
+  src: url("/../../fonts/DrukTextWide-Bold.otf") format("woff");
+  src: url("/../../fonts/Franklin-Gothic-Extra-Condensed-BT_18501.ttf") format("truetype");
+  src: url("/../../fonts/Francis Gradient Std Outside.otf") format("woff");
+  src: url("/../../fonts/GTSuperDisplay-Super.otf") format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -52,33 +70,33 @@
 
 @font-face {
   font-family:"Text";
-  src:
-    /* url("/../../fonts/GuyotText-Regular.otf") format("woff"); */
-    url("/../../fonts/Scto Grotesk A Regular.otf") format("woff");
+  src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
+  src: url("/../../fonts/Graphik-Regular.otf") format("woff");
+  src: url("/../../fonts/Scto Grotesk A Regular.otf") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family:"Text";
-  src:
-    /* url("/../../fonts/GuyotText-RegularItalic.otf") format("woff"); */
-    url("/../../fonts/Scto Grotesk A Regular Italic.otf") format("woff");
+  src: url("/../../fonts/GuyotText-RegularItalic.otf") format("woff");
+  src: url("/../../fonts/Graphik-Regular.otf") format("woff");
+  src: url("/../../fonts/Scto Grotesk A Regular Italic.otf") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family:"Text";
-  src:
-    /* url("/../../fonts/GuyotText-SemiBold.otf") format("woff"); */
-    url("/../../fonts/Scto Grotesk A Medium.otf") format("woff");
+  src: url("/../../fonts/GuyotText-SemiBold.otf") format("woff");
+  src: url("/../../fonts/Graphik-Medium.otf") format("woff");
+  src: url("/../../fonts/Scto Grotesk A Medium.otf") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family:"Text";
-  src:
-    /* url("/../../fonts/GuyotText-SemiBold.otf") format("woff"); */
-    url("/../../fonts/Scto Grotesk A Bold.otf") format("woff");
+  src: url("/../../fonts/GuyotText-SemiBold.otf") format("woff");
+  src: url("/../../fonts/Graphik-Semibold.otf") format("woff");
+  src: url("/../../fonts/Scto Grotesk A Bold.otf") format("woff");
   font-style: normal;
   font-weight: 700;
 }

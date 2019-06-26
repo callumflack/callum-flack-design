@@ -52,7 +52,7 @@
 
 .Markdown h2:not(:last-child),
 .Markdown h3:not(:last-child) {
-  margin-bottom: calc(theme(spacing.1) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
 }
 
 .Markdown p + h2,

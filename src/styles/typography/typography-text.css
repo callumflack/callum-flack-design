@@ -30,7 +30,7 @@ ol {
 
 .Meta,
 .Markdown blockquote p strong {
-  @apply font-sans font-bold uppercase tracking-normal;
+  @apply font-sans font-medium uppercase tracking-normal;
   font-size: calc(theme(fontSize.xxs) * var(--text-ratio));
 }
 
@@ -126,6 +126,6 @@ ol,
 }
 
 .Markdown blockquote p strong {
-  @apply table font-medium not-italic mt-2;
+  @apply table font-medium not-italic mt-1;
   @apply text-gray-700;
 }

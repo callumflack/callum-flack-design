@@ -17,14 +17,17 @@
 .Markdown h3,
 .Metaheading {
   /* @apply font-normal leading-normal italic; */
-  @apply font-sans font-medium leading-normal tracking-text;
-  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+  @apply font-sans leading-normal tracking-normal;
+  @apply font-bold;
+  @apply uppercase;
+  font-size: calc((theme(fontSize.base) - 2px) * var(--text-ratio));
+  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
 .Markdown h2 {
   /* @apply font-title font-bold leading-normal tracking-wide uppercase; */
   @apply font-sans font-medium leading-normal tracking-text;
-  font-size: calc(theme(fontSize.2xl) * var(--text-ratio));
+  font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
 }
 
 .Subheading {
@@ -49,35 +52,27 @@
 
 .Display,
 .Title {
-  @apply text-text;
+  @apply text-text font-title;
   /* @apply font-bold; */
   /* @apply uppercase; */
 }
 
 .Title {
-  @apply font-sans font-medium tracking-text leading-tight;
-  font-size: calc(theme(fontSize.3xl) * var(--title-ratio));
+  @apply font-semibold tracking-text leading-tight;
+  /* @apply font-sans; */
+  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
 }
 
 .Display {
   /* @apply tracking-wide leading-title; */
   /* @apply uppercase; */
-  @apply font-sans;
-  @apply font-bold;
+  /* @apply font-sans; */
+  @apply font-bold tracking-text leading-title;
   font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }
 
 .Display--post {
-  @apply tracking-wide leading-title;
-  @apply uppercase;
+  /* @apply tracking-text leading-title; */
+  /* @apply uppercase; */
   /* @apply font-medium; */
-  font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }
-
-.Display--page {
-  @apply font-bold tracking-text leading-tight;
-  /* @apply normal-case; */
-  /* @apply font-normal; */
-  font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
-}
-

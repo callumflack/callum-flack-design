@@ -2,7 +2,6 @@
   <Wrap :page="page">
     <div class="home">
 
-      <!-- <IndexTitle :title="page.attributes.title"/> -->
       <!-- <saber-link to="/about.html">Learn more</saber-link> -->
       <!-- <slot name="default"></slot> -->
 
@@ -16,14 +15,14 @@
                     @click="goToIndex(0)"
                     :class="{ 'is-active': activeIndex === 0 }"
                     class="Tab-controls--button Meta"
-                  >Notable</button>
+                  >Start here</button>
                 </li>
                 <li>
                   <button
                     @click="goToIndex(1)"
                     :class="{ 'is-active': activeIndex === 1 }"
                     class="Tab-controls--button Meta"
-                  >Recent</button>
+                  >Recently</button>
                 </li>
               </ul>
             </div>

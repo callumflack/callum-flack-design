@@ -11,9 +11,13 @@
         >{{ title }}</h1>
         <p
           v-if="lede"
-          v-html="lede"
-          class="font-medium text-center w-2/3 mx-auto s-h"
-        ></p>
+          class="Text--xl text-center w-full md:w-5/6 mx-auto s-h"
+        >
+          {{ lede }}
+          <saber-link v-if="$route.path === '/'" to="/about.html" class="">
+            Learn more &rightarrow;
+          </saber-link>
+        </p>
       </div>
     </div>
 
@@ -61,7 +65,21 @@ export default {
 }
 </script>
 
+<style lang="postcss">
+
+</style>
+
+
 <style lang="postcss" scoped>
+.Header {
+  @apply bg-brand-header;
+  /* @apply bg-text; */
+}
+
+/* .Header * {
+  @apply text-white;
+} */
+
 .Block {
   padding-top: calc(theme(spacing.20) * var(--block-size-ratio));
 }
@@ -72,7 +90,7 @@ export default {
 }
 
 .with-ContactCard .Block {
-  padding-bottom: calc(theme(spacing.32) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
 }
 
 .ContactCard {

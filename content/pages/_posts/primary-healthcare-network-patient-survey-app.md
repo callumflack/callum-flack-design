@@ -10,7 +10,6 @@ thumbInCloudinary: true
 heroInCloudinary: true
 heroImageNoShadow: true
 heroFrame: false
-heroRatio: 45
 tags: 
   - UI
   - code
@@ -26,7 +25,7 @@ Primary Healthcare Network North Queensland wanted to digitise the World Health 
 
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
-@[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png")
+<Media ratio="2304/3072" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png" />
 
 <!-- All data collected is anonymous. At survey completion, users are presented with a score that rates their quality of life. Users can share their score by email or SMS. -->
 
@@ -41,3 +40,11 @@ A well-defined series of workflows with clear interface design means the app can
 The resulting survey app immediately created value for PHN. It's an experience that patients and staff find fast, simple and easy. This helps PHN to collect quality data they can use to improve their services.
 
 @[MarkdownNote](note="This app is not publicly available. Please get in touch for a demo.")
+
+<script>
+import Media from "../../../src/components/Media";
+
+export default {
+  components: { Media }
+}
+</script>

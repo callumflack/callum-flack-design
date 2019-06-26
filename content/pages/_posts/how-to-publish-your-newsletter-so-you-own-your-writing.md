@@ -47,11 +47,9 @@ I write directly on Github by creating a new markdown file in the `_posts` direc
 
 Just remember to name the file correctly and to set Jekyll front-matter with the appropriate edition title and date. This isn't an extra step: you'd still need to configure a newsletter's title and metadata within a platform editor anyway.
 
-### Queue it (via RSS)
+### Schedule it (via RSS)
 
-Using the newly published website blog post URL, I queue up a new email campaign in Mailchimp using their "[import HTML from URL](https://mailchimp.com/help/import-html-from-url-to-create-a-campaign/)" option. Then I click "schedule" for the delivery.
-
-When I have some more time I'll add an RSS feed to the website and point Mailchimp to watch this feed. This should cut out the Mailchimp queuing. But haven't tried this yet, so I can't say "from here on it's trivial…" just yet.
+Using the newly published website blog post URL, I schedule up a new email campaign in Mailchimp using their "[import HTML from URL](https://mailchimp.com/help/import-html-from-url-to-create-a-campaign/)" option. When I have some more time I'll add an RSS feed to the website and point Mailchimp to watch this feed. This should cut out the Mailchimp queuing. But haven't tried this yet, so I can't say "from here on it's trivial…" just yet.
 
 ### Prerequisites
 

@@ -52,7 +52,7 @@ export default {
 
 .Nav-link {
   @apply inline-flex items-center;
-  height: calc(theme(spacing.24) * var(--space-ratio));
+  height: calc(theme(spacing.16) * var(--space-ratio));
   background-image: none !important;
   text-shadow: none !important;
 }
@@ -67,12 +67,13 @@ export default {
 }
 
 .Nav-link span {
-  @apply border-b border-transparent pb-2px;
+  /* @apply border-b border-transparent pb-4; */
 }
 
-.Nav-link:hover span,
+/* .Nav-link:hover span, */
 .router-link-active span {
-  @apply border-black;
+  @apply font-bold;
+  /* @apply border-black; */
 }
 </style>
 

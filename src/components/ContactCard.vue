@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row">
+  <div class="Card">
     <div class="w-4/12 sm:w-3/12">
       <Aspect ratio="5/4">
         <img src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg" alt="Callum Flack">
@@ -8,10 +8,10 @@
     <div class="w-8/12 sm:w-9/12">
       <div class="Contact no-link-block h-full">
         <div class="p-4 lg:p-6">
-          <p class="Meta text-white s-m">
+          <p class="Meta font-bold s-m">
             Get in touch:
           </p>
-          <ul class="text-white">
+          <ul class="">
             <li>
               <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">{{ this.$siteConfig.email }}</a>
             </li>
@@ -40,9 +40,16 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.Card {
+  @apply flex flex-row rounded-lg overflow-hidden;
+  @apply border-2 border-white;
+  /* border-color: rgba(255, 255, 255, 0.5); */
+}
+
 .Contact {
-  @apply bg-text border-l;
-  border-color: rgba(255, 255, 255, 0.5);
+  @apply bg-brand-header;
+  @apply border-l-2 border-white;
+  /* border-color: rgba(255, 255, 255, 0.5); */
 }
 
 .Contact ::selection {

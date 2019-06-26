@@ -19,9 +19,9 @@
             class="container relative h-full flex items-center justify-center"
             :class="heroImageBlend"
           >
-            <div>
+            <div class="w-full">
               <h1
-                class="Display Display--post text-center s-m mx-auto w-full lg:w-9/12"
+                class="Display Display--post text-center s-m mx-auto w-full lg:w-10/12"
                 :class="heroTitleInvertClass"
                 itemprop="name headline"
               >

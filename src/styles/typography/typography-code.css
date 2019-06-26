@@ -17,15 +17,14 @@ pre {
 }
 
 code {
-  color: #eb5757;
-  color: #111;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 75%;
+  font-size: 80%;
   font-weight: 500;
 }
 
 p code {
   background: rgba(135, 131, 120, 0.15);
+  background: #94772726;
   line-height: normal;
   border-radius: 3px;
   padding: 0.2em 0.4em;

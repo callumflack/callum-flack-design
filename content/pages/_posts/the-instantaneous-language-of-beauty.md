@@ -8,7 +8,6 @@ tags:
 title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry, which we find beautiful. We are naturally attuned to beauty because we know it represents a higher chance of holding worthwhile information.
 readingTime: 5
-heroBlockColor: rgb(0,0,0)
 heroRatio: 8 / 16
 heroTitleInvert: true
 assets:
@@ -25,7 +24,7 @@ And when a pattern draws us in, we feel it's beauty, and our curiosity. Like a s
 
 <Media ratio="844/1500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg"/>
 
-## Danger and beauty
+### Danger and beauty
 
 When we use language, we have to think. We have to choose words, connect ideas, assemble metaphors, and then speak them. Thinking is expensive. We use aesthetic-based pattern-matching to give us answers before we consciously start thinking. We rely on aesthetics to make very fast decisions based on a library of intuitons built over a lifetime. The language of aesthetics is pre-verbal by necessity.
 

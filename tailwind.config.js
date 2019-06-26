@@ -17,6 +17,7 @@ module.exports = {
         neutral: "#FAF8F5",
         // header: "#fbe0a4",
         header: "#E8E8DE",
+        header: "#d9d7ce",
         bg: "#f5f5f5",
         bg: "#fbfaf8",
       },
@@ -67,7 +68,6 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "'Text'",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
@@ -109,14 +109,14 @@ module.exports = {
     fontSize: {
       xxs: "0.75rem",
       xs: "0.8125rem",
-      sm: "0.875rem",
+      sm: "0.875rem", // 14
       base: "1.0625rem", // 17
       lg: "1.1875rem", // 19
       xl: "1.3125rem", // 21
       "2xl": "1.5rem", // 24
-      "3xl": "1.6875rem",
-      "4xl": "1.8125rem",
-      "5xl": "2.75rem",
+      "3xl": "1.6875rem", // 27
+      "4xl": "1.8125rem", // 29
+      "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
     },
@@ -150,7 +150,7 @@ module.exports = {
       black: "900",
     },
     lineHeight: {
-      title: "1.1",
+      title: "1.05",
       none: "1",
       tight: "1.2",
       snug: "1.375",
@@ -165,7 +165,7 @@ module.exports = {
       tight: "-0.0125em",
       text: "-0.0125em",
       normal: "0",
-      wide: "0.025em",
+      wide: "0.0125em",
       wider: "0.05em",
       widest: "0.1em",
     },

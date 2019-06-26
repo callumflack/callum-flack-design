@@ -49,7 +49,6 @@
 
 <script>
 import Card from "../components/Card.vue";
-import IndexTitle from "../components/IndexTitle.vue";
 import SliderFrame from "../components/SliderFrame.vue";
 import SliderSlides from "../components/SliderSlides.vue";
 import SliderSlide from "../components/SliderSlide.vue";
@@ -58,7 +57,6 @@ import Wrap from "../components/Wrap.vue";
 export default {
   components: {
     Card,
-    IndexTitle,
     SliderFrame,
     SliderSlides,
     SliderSlide,
