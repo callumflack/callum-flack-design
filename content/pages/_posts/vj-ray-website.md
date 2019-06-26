@@ -1,6 +1,7 @@
 ---
 category: project
 title: VJ Ray marketing websites
+date: 2017-11-21
 lede: A series of websites to help one of Sydney's oldest Real Estate agencies show how they put people first.
 note: Completed in collaboration with Barry Phillip Hall.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-vjray.jpg

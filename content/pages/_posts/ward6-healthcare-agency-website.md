@@ -2,6 +2,7 @@
 category: project
 layout: post
 title: Ward6 website
+date: 2015-01-10
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.
 h: A content-managed website for a leading Australasian healthcare communications agency.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953103/okok/thumb-ward6.jpg

@@ -2,6 +2,7 @@
 layout: post
 category: project
 title: PHN NQ web app
+date: 2016-08-12
 titleColor: rgb(112, 190, 68)
 lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg

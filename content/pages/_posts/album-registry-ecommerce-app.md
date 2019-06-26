@@ -2,6 +2,7 @@
 layout: post
 category: project
 title: Album Registry ecommerce web app
+date: 2017-08-12
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 thumbInCloudinary: true

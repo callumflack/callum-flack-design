@@ -4,6 +4,7 @@ category: project
 tags: 
 - design
 title: Evernote Random Note
+date: 2018-07-01
 client: Forte Labs
 link: https://evernote-random.glitch.me/
 assets:

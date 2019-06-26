@@ -2,6 +2,7 @@
 category: project
 layout: post
 title: RAATSICC website
+date: 2017-10-15
 lede: A content-managed website to help spread positive community outreach news.
 note: Completed in collaboration with Barry Phillip Hall.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953098/okok/thumb-raatsicc.jpg

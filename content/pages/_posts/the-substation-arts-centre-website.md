@@ -2,6 +2,7 @@
 layout: post
 category: project
 title: The Substation website
+date: 2016-12-10
 titleColor: rgb(165, 97, 17)
 lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/thumb-thesubstation.jpg

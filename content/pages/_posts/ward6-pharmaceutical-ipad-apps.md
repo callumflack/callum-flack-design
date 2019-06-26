@@ -2,6 +2,7 @@
 category: project
 layout: post
 title: Pharma eDetailer apps
+date: 2015-02-02
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 thumbInCloudinary: true

@@ -1,6 +1,7 @@
 ---
 layout: post
 category: project
+date: 2019-01-14
 tags: 
 - frontend
 title: The Ki Line
