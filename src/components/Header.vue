@@ -3,7 +3,7 @@
 
     <HeaderNav :siteTitle="siteTitle" />
 
-    <div v-if="!$route.path.includes('posts')" class="Block--header">
+    <div v-if="!$route.path.includes('posts')" class="Block">
       <div class="container container--text">
         <h1
           v-if="title"
@@ -12,7 +12,7 @@
         <p
           v-if="lede"
           v-html="lede"
-          class="text-center w-2/3 mx-auto s-h"
+          class="font-medium text-center w-2/3 mx-auto s-h"
         ></p>
       </div>
     </div>
@@ -62,9 +62,8 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Block--header {
-  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
+.Block {
+  padding-top: calc(theme(spacing.20) * var(--block-size-ratio));
 }
 
 .with-ContactCard {
@@ -72,7 +71,7 @@ export default {
   margin-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
 }
 
-.with-ContactCard .Block--header {
+.with-ContactCard .Block {
   padding-bottom: calc(theme(spacing.32) * var(--block-size-ratio));
 }
 

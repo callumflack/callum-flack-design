@@ -99,7 +99,7 @@ export default {
 }
 
 .Card:not(:last-of-type) {
-  margin-bottom: calc(theme(spacing.6) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.5) * var(--space-ratio));
 }
 
 .Card-body {
