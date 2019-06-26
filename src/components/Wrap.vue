@@ -6,7 +6,7 @@
       :lede="page.attributes.lede"
     />
 
-    <main class="page-content" aria-label="Content">
+    <main aria-label="Content">
       <div class="container container--text">
         <slot></slot>
       </div>
@@ -71,7 +71,3 @@ export default {
   }
 };
 </script>
-
-<style lang="postcss" scoped>
-
-</style>

@@ -1,7 +1,7 @@
 <template>
   <Wrap :page="page">
 
-      <div class="Block-md-t Markdown" itemprop="articleBody">
+      <div class="Block-sm-t Markdown" itemprop="articleBody">
         <slot name="default"/>
       </div>
 

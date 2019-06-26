@@ -1,27 +1,7 @@
 <template>
-  <header class="bg-brand-header" :class="aboutPageClass">
-    <nav class="Nav">
-      <div class="container container--text flex justify-between">
-        <!-- <span class="Nav-link"><span>&centerdot;</span></span> -->
-        <div>
-          <saber-link
-            :key="index"
-            class="Nav-link Meta"
-            v-for="(navItem, index) in $themeConfig.nav"
-            :to="navItem.link"
-          >
-            <span>
-              {{ navItem.text }}
-            </span>
-          </saber-link>
-        </div>
-        <saber-link class="Nav-link Meta" rel="author" to="/" exact>
-          <span style="text-transform:initial">
-            {{ siteTitle }}
-          </span>
-        </saber-link>
-      </div>
-    </nav>
+  <header :class="headerClasses">
+
+    <HeaderNav :siteTitle="siteTitle" />
 
     <div v-if="!$route.path.includes('posts')" class="Block--header">
       <div class="container container--text">
@@ -48,10 +28,12 @@
 
 <script>
 import ContactCard from "../components/ContactCard";
+import HeaderNav from "../components/HeaderNav";
 
 export default {
   components: {
-    ContactCard
+    ContactCard,
+    HeaderNav
   },
   props: {
     siteTitle: {
@@ -69,46 +51,19 @@ export default {
     }
   },
   computed: {
-    aboutPageClass() {
-      return this.$route.path === '/about.html' && "with-ContactCard";
+    headerClasses() {
+      return [{
+        "with-ContactCard": this.$route.path === '/about.html',
+        "bg-brand-header": !this.$route.path.includes('posts')
+      }]
     }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
-.Nav {
-  @apply fixed top-0 left-0 w-full;
-  backface-visibility: hidden;
-}
-
-.Nav-link {
-  @apply inline-flex items-center;
-  height: calc(theme(spacing.24) * var(--space-ratio));
-  background-image: none !important;
-  text-shadow: none !important;
-}
-
-.Nav-link,
-.Nav-link:hover {
-  @apply no-underline;
-}
-
-.Nav-link + .Nav-link {
-  margin-left: calc(theme(spacing.4) * var(--space-ratio));
-}
-
-.Nav-link span {
-  @apply border-b border-transparent pb-2px;
-}
-
-.Nav-link:hover span,
-.router-link-active span {
-  @apply border-black;
-}
-
 .Block--header {
-  padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
+  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
   padding-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
 }
 

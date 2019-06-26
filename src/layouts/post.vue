@@ -1,6 +1,6 @@
 <template>
   <Wrap :page="page">
-    <article class="Block--nav" itemscope itemtype="http://schema.org/BlogPosting">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
       <header
         class="Grid-extract--edge"
         :style="heroBlockColor"
