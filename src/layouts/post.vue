@@ -27,10 +27,17 @@
               >
                 {{ page.attributes.title }}
               </h1>
-              <div class="text-center text-gray-600" :class="heroTitleInvertClass">
-                <span class="Text--sm">
+              <div
+                class="text-center"
+                :class="heroMetaClass"
+              >
+                <time
+                  class="Text--sm"
+                  :datetime="page.attributes.createdAt"
+                  itemprop="datePublished"
+                >
                   {{ formatDate(page.attributes.createdAt) }}
-                </span>
+                </time>
                 <span class="Text--sm inline-block mx-2px">&centerdot;</span>
                 <span class="Text--sm" v-for="(tag, index) in page.attributes.tags">
                   <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
@@ -43,13 +50,6 @@
             </div>
           </div>
         </div>
-        <!-- <p class="post-meta">
-          <time
-            class="dt-published"
-            :datetime="page.attributes.createdAt"
-            itemprop="datePublished"
-          >{{ formatDate(page.attributes.createdAt) }}</time>
-        </p> -->
       </header>
 
       <div class="Block-sm-t Markdown" itemprop="articleBody">
@@ -85,6 +85,9 @@ export default {
       return [{
         "text-white": this.page.attributes.heroTitleInvert
       }]
+    },
+    heroMetaClass() {
+      return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
     },
   },
 
