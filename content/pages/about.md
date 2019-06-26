@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CFd makes web interfaces
+title: CFd is a designer who codes
 lede: Callum Flack is a graphic designer turned web developer. He works fluidly across graphic design, information design and frontend code to create people-first user experiences.
 ---
 
@@ -64,6 +64,8 @@ lede: Callum Flack is a graphic designer turned web developer. He works fluidly 
 <!-- He is driven by wonder, beauty and curiosity. -->
 
 <!-- Callum bridges the gap between design and code.  -->
+
+#### Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. I can help you design a visual brand, its user experience, and I can build it too. The difference isn't obvious until it is.
 
 After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding.
 

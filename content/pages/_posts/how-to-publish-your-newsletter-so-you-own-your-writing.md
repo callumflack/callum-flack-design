@@ -11,23 +11,25 @@ readingTime: 5
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->
 
-I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. There is otherwise no real strategy. 
+I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. 
+
+<!-- There is otherwise no real strategy.  -->
 
 <!-- I am frankly not interested in growth hacking my human connections, I'm purely interested in ideas and their execution, on the internet. -->
 
-I took the road less travelled when I set up my newsletter. Partly to play with the available systems. Mostly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform. 
+I took the road less travelled when I set up my newsletter. Mostly to play with the available systems to find a way to publish in markdown, with the least friction possible. Partly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform, ready to be forgotten and lost forever when the platform gets acquihired. 
 
-_I wanted it to be just a folder of files on my computer so that I could simply create a new blank document and start writing with the least friction possible._ But I also wanted those files to work as a publishing system with the least amount of friction in the process as possible.
-
-What follows is a short explanation of how I do this.
+_I wanted it to be just a folder of files on my computer so that I could simply create a new blank document and start writing._ But I also wanted those files to work as a publishing system. What follows is a short explanation of how I do this.
 
 ## The newsletter system
 
-So I own my writing, I create a website of newsletter posts which I published to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via it's URL to create a new email campaign.
+So I own my writing, I create a website of newsletter posts which I publish to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via its URL to create a new email campaign.
 
 _This means I never write within the email delivery platform. And all my letters are just markdown files_, just as they are on this website's blog.
 
-Yes, I still use Mailchimp to send out the actual emails. I always try to defer to the best available tools for the job, and because I have no wish to learn about email delivery I definitely want to defer this difficult technical job to one of the many excellent freemium products available. (For interest's sake, some other options I tested included [button.email](https://buttondown.email/), [Substack](https://substack.com/) and [Revue](https://www.getrevue.co/).)
+Yes, I still use Mailchimp to send out the actual emails. I always try to defer to the best available tools for the job, and because I have no wish to learn about email delivery I definitely want to defer this difficult technical job to one of the many excellent freemium products available. 
+
+<!-- (For interest's sake, some other options I tested included [button.email](https://buttondown.email/), [Substack](https://substack.com/) and [Revue](https://www.getrevue.co/).) -->
 
 <!-- At the moment, I use Mailchimp. The fact that they basically built the entire email newsletter industry and without ever taking outside funding is a sign they believe in what they do and they geniunely wish to provide a service. Oh and the founder, Ben Chestnut, wrote this great post [about inverting marketing funnels](https://tinyletter.com/ben/letters/why-i-hate-funnels) a while back. -->
 
