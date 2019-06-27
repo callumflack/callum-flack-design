@@ -30,26 +30,14 @@
 
           <SliderSlides class="Grid-extract--posts">
             <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
-              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink"></Card>
+              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink" />
             </SliderSlide>
             <SliderSlide v-if="recentPosts && recentPosts.length > 0">
-              <Card v-for="post in recentPosts" :post="post" :key="post.attributes.permalink"></Card>
+              <Card v-for="post in recentPosts" :post="post" :key="post.attributes.permalink" />
             </SliderSlide>
           </SliderSlides>
         </div>
       </SliderFrame>
-
-      <!-- <ul class="post-list" v-if="page.posts && page.posts.length > 0">
-        <li v-for="post in page.posts" :key="post.attributes.permalink">
-          <span class="post-meta">{{ formatDate(post.attributes.createdAt) }}</span>
-          <h3>
-            <saber-link
-              class="post-link"
-              :to="post.attributes.permalink"
-            >{{ post.attributes.title }}</saber-link>
-          </h3>
-        </li>
-      </ul>-->
 
       <!-- <div
         class="pagination"
@@ -103,8 +91,8 @@ export default {
     },
     featuredPosts() {
       return this.page.posts
-        .filter(x => x.attributes.category === "writing")
-        // .filter(x => x.attributes.tags.includes("featured"))
+        // .filter(x => x.attributes.category === "writing")
+        .filter(x => x.attributes.tags.includes("featured"))
 
     }
   },
@@ -115,3 +103,12 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.bg-brand-headerX {
+  background-image: linear-gradient(
+    theme(colors.brand.bg),
+    theme(colors.gray.200)
+  );
+}
+</style>

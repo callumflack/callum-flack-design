@@ -6,7 +6,7 @@
       :lede="page.attributes.lede"
     />
 
-    <main aria-label="Content">
+    <main aria-label="Content" class="Block-lg-b">
       <div class="container container--text">
         <slot></slot>
       </div>

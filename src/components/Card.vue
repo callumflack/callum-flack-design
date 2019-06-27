@@ -3,7 +3,7 @@
     <saber-link class="block" :to="post.attributes.permalink">
       <div class="flex">
         <div class="Card-body w-2/3 lg:w-3/4">
-          <h3 class="Title mb-2">
+          <h3 class="Title mb-1">
             {{ post.attributes.title }}
           </h3>
           <div class="Card-body-meta">
@@ -103,7 +103,7 @@ export default {
 }
 
 .Card-body {
-  @apply py-6 pr-12;
+  @apply py-2 pr-8;
   @apply pl-4;
   /* @apply flex-grow; */
 }
@@ -127,7 +127,7 @@ export default {
 
 @screen lg {
   .Card-body {
-    @apply pr-24;
+    @apply py-4 pr-10;
   }
   .Card-body > .Title {
     @apply pr-4;

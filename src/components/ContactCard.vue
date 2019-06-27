@@ -42,13 +42,13 @@ export default {
 <style lang="postcss" scoped>
 .Card {
   @apply flex flex-row rounded-lg overflow-hidden;
-  @apply border-2 border-white;
+  @apply border-4 border-white;
   /* border-color: rgba(255, 255, 255, 0.5); */
 }
 
 .Contact {
   @apply bg-brand-header;
-  @apply border-l-2 border-white;
+  @apply border-l-4 border-white;
   /* border-color: rgba(255, 255, 255, 0.5); */
 }
 

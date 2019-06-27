@@ -1,9 +1,10 @@
 ---
 layout: post
-category: project
 date: 2019-01-21
+category: project
 tags: 
 - frontend
+- featured
 title: Portt
 client: Studio For
 link: https://www.portt.com/

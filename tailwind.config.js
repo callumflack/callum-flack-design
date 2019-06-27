@@ -8,7 +8,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       black: "black",
-      text: "#151515",
+      text: "#111",
       white: "white",
       brand: {
         primary: "#a57643",
@@ -18,15 +18,21 @@ module.exports = {
         // header: "#fbe0a4",
         header: "#d9d7ce",
         header: "#E8E8DE",
-        bg: "#f5f5f5",
+        header: "#efefe8",
+        header: "#efefe9",
+        header: "#fafafa",
+        header: "#fe5000",
+        header: "#f0f0f0",
         bg: "#fbfaf8",
+        bg: "#f9f9f9",
+        bg: "#fefefe",
       },
       gray: {
         // 100: "#f7fafc",
         200: "#eaeaea",
         300: "#eee",
         400: "#dedede",
-        500: "#aaa",
+        500: "#888",
         600: "#888",
         700: "#777",
         // 800: "#231F20",
@@ -68,7 +74,9 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "'Text'",
         "-apple-system",
+        "system-ui",
         "BlinkMacSystemFont",
         '"Segoe UI"',
         "Roboto",
@@ -82,7 +90,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       title: [
-        '"Title"',
+        '"Text"',
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
@@ -110,12 +118,12 @@ module.exports = {
       xxs: "0.75rem",
       xs: "0.8125rem",
       sm: "0.875rem", // 14
-      base: "1.0625rem", // 17
+      base: "1.1875rem", // 17
       lg: "1.1875rem", // 19
       xl: "1.3125rem", // 21
       "2xl": "1.5rem", // 24
-      "3xl": "1.6875rem", // 27
-      "4xl": "1.8125rem", // 29
+      "3xl": "1.75rem", // 27
+      "4xl": "2rem", // 32
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
@@ -155,7 +163,7 @@ module.exports = {
       tight: "1.2",
       snug: "1.375",
       reduced: "1.47059",
-      normal: "1.47059",
+      normal: "1.3",
       relaxed: "1.625",
       loose: "2",
       nav: "4.5",

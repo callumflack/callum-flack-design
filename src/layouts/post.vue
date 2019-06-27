@@ -19,10 +19,10 @@
             class="container relative h-full flex items-center justify-center"
             :class="heroImageBlend"
           >
-            <div class="w-full">
+            <div class="w-full" :class="heroTitleColor">
               <h1
-                class="Display Display--post text-center s-m mx-auto w-full lg:w-10/12"
-                :class="heroTitleInvertClass"
+                class="Display text-center s-m mx-auto w-full "
+                :class="heroTitleWidth"
                 itemprop="name headline"
               >
                 {{ page.attributes.title }}
@@ -72,7 +72,9 @@ export default {
     Wrap,
   },
 
-  props: ['page'],
+  props: [
+    'page'
+  ],
 
   computed: {
     heroBlockColor() {
@@ -81,13 +83,22 @@ export default {
     heroImageBlend() {
       return this.page.attributes.heroImageBlend && "BlendImage";
     },
-    heroTitleInvertClass() {
-      return [{
-        "text-white": this.page.attributes.heroTitleInvert
-      }]
+    heroTitleWidth() {
+      return this.page.attributes.heroTitleWidth
+        ? `${this.page.attributes.heroTitleWidth}`
+        : "lg:w-9/12";
+    },
+    heroTitleColor() {
+      return this.page.attributes.heroTitleInvert && "text-white";
+      // return
+      //   this.page.attributes.heroTitleWidth && `${this.page.attributes.heroTitleWidth}`,
+      // return [{
+      //   "text-white": this.page.attributes.heroTitleInvert,
+      //   "`${this.page.attributes.heroTitleWidth}`": this.page.attributes.heroTitleWidth
+      // }]
     },
     heroMetaClass() {
-      return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
+      // return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
     },
   },
 

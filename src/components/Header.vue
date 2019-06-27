@@ -11,7 +11,7 @@
         >{{ title }}</h1>
         <p
           v-if="lede"
-          class="Text--xl text-center w-full md:w-5/6 mx-auto s-h"
+          class="text-center w-full md:w-5/6 mx-auto"
         >
           {{ lede }}
           <saber-link v-if="$route.path === '/'" to="/about.html" class="">

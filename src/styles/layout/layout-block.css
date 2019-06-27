@@ -27,6 +27,19 @@
   padding-top: calc((theme(spacing.24) - theme(spacing.12)) * var(--block-size-ratio));
 }
 
+/* LG */
+
+.Block-lg {
+  padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
+}
+.Block-lg-b {
+  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
+}
+.Block-lg-t {
+  padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
+}
+
 /* MD */
 
 .Block-md {

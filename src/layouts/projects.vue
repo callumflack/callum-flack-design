@@ -19,36 +19,32 @@
                   @click="goToIndex(1)"
                   :class="{ 'is-active': activeIndex === 1 }"
                   class="Tab-controls--button Meta"
-                >Featured</button>
+                >Archive</button>
               </li>
             </ul>
           </div>
         </div>
 
-        <SliderSlides class="Grid-extract--posts">
-          <SliderSlide v-if="featuredPosts && Object.keys(featuredPosts).length > 0">
-            <div
-              v-for="year in Object.keys(featuredPosts).reverse()"
-              :key="year"
-            >
-              <h3 class="Title block mt-12 mb-4">{{ year }}</h3>
-              <Card
-                v-for="post in featuredPosts[year]"
-                :post="post"
-                :key="post.attributes.permalink"
-              ></Card>
-            </div>
+        <SliderSlides >
+          <SliderSlide v-if="featuredPosts">
+            <Card
+              v-for="post in featuredPosts"
+              :post="post"
+              :key="post.attributes.permalink"
+              class="Grid-extract--posts"
+            ></Card>
           </SliderSlide>
           <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
             <div
               v-for="year in Object.keys(allPosts).reverse()"
               :key="year"
             >
-              <h3 class="Title block mt-12 mb-4">{{ year }}</h3>
+              <h3 class="Text Year">{{ year }}</h3>
               <Card
                 v-for="post in allPosts[year]"
                 :post="post"
                 :key="post.attributes.permalink"
+                class="Grid-extract--posts"
               ></Card>
             </div>
           </SliderSlide>
@@ -125,9 +121,11 @@ export default {
       return this.groupByYear(this.allPostsUngrouped);
     },
     featuredPosts() {
-      const posts = this.allPostsUngrouped
+      return this.allPostsUngrouped
         .filter(x => x.attributes.tags.includes("featured"))
-      return this.groupByYear(posts);
+      // const posts = this.allPostsUngrouped
+      //   .filter(x => x.attributes.tags.includes("featured"))
+      // return this.groupByYear(posts);
     },
     designPosts() {
       const posts = this.allPostsUngrouped
@@ -142,3 +140,16 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+.Year {
+  @apply border-b-2 border-text;
+  margin-top: calc(theme(spacing.12) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.6) * var(--space-ratio));
+  padding-bottom: calc(theme(spacing.2) * var(--space-ratio));
+}
+
+.Year:not(:first-of-type) {
+  /* margin-top: calc(theme(spacing.16) * var(--space-ratio)); */
+}
+</style>

@@ -9,8 +9,9 @@ lede: Frustrating, ugly websites that don't live up to their promise are the res
 readingTime: 8
 heroImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1533008018/okok/post-process-2a.jpg
 heroBlockColor: rgb(21,21,21)
-heroTitleInvert: true
 heroRatio: 1/2
+heroTitleInvert: true
+heroTitleWidth: lg:w-5/12
 ---
 
 Recently I started work on a new website with a new client. To kick-off the project, I met them in person and spent a day facilitating a series of branding and website design exercises with them. In a concentrated day of focus, we were able to dive deep into their problems, understand what they hoped to achieve and also uncover a surprising amount of new insights. These exercises helped both parties to clarify the problem, set boundaries for executing the solution, and to get to know each other.

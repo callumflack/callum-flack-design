@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CFd is a designer who codes
-lede: Callum Flack is a graphic designer turned web developer. He works fluidly across graphic design, information design and frontend code to create people-first user experiences.
+title: A designer who codes
+lede: Callum Flack is a graphic designer and web developer. He is fluid across graphic design, information design and frontend code.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -65,7 +65,7 @@ lede: Callum Flack is a graphic designer turned web developer. He works fluidly 
 
 <!-- Callum bridges the gap between design and code.  -->
 
-#### Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. I can help you design a visual brand, its user experience, and I can build it too. The difference isn't obvious until it is.
+Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience, and he can build it too. The difference isn't obvious until it is.
 
 After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding.
 
@@ -97,7 +97,7 @@ When Callum builds websites, he advocates for these tools:
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
 - Building interfaces with Vue.js (or React.js)
-- Defaulting to a <a target="_blank" href="https://jamstack.org/">JAMstack</a> architecture with git-based deployments (where possible)
+- A <a target="_blank" href="https://jamstack.org/">JAMstack</a> architecture with git-based deployments (where possible)
 <!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> -->
 
 <!-- (when it's not a web application) -->

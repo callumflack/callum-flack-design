@@ -1,6 +1,6 @@
 .Tab-controls {
-  @apply flex border-b-2;
-  @apply border-brand-header;
+  @apply flex border-b;
+  /* @apply border-brand-header; */
   /* @apply text-gray-500; */
 }
 

@@ -10,12 +10,14 @@ html {
   @apply bg-brand-bg;
 }
 
-/* 1. Apple kerning, from http://design.byform.co/ */
+/* font-feature-settings from http://design.byform.co/ */
 body {
   @apply antialiased text-text leading-normal;
   @apply font-sans;
   @apply bg-brand-bg;
-  font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; /* 1 */
+  /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
+  font-kerning: normal;
+  /* hyphens: auto; */
 }
 
 ::selection {
@@ -30,7 +32,7 @@ ol {
 
 .Meta,
 .Markdown blockquote p strong {
-  @apply font-sans font-medium uppercase tracking-normal;
+  @apply font-sans font-medium uppercase tracking-wide;
   font-size: calc(theme(fontSize.xxs) * var(--text-ratio));
 }
 
@@ -85,6 +87,7 @@ ol,
 
 .Markdown ul {
   list-style: disc;
+  list-style: none;
 }
 
 .Markdown ol {
@@ -110,8 +113,8 @@ ol,
 }
 
 .Markdown blockquote p {
-  @apply pl-4 border-l-2 border-gray-400;
-  @apply text-gray-700;
+  @apply pl-4 border-l border-gray-400;
+  @apply text-gray-500;
   /* @apply italic; */
 }
 
@@ -127,5 +130,5 @@ ol,
 
 .Markdown blockquote p strong {
   @apply table font-medium not-italic mt-1;
-  @apply text-gray-700;
+  @apply text-gray-500;
 }

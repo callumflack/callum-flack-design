@@ -10,6 +10,7 @@ lede: My notes on the book “Deciphering Sun Tzu” which helped me understand 
 readingTime: 7
 heroImageBlend: false
 heroBlockColor: transparent
+heroTitleWidth: lg:w-7/12
 ---
 
 ‪I've always enjoyed the poetics of ancient Chinese philosophy and by extension Zen Buddhism.‬ ‪Whereas friends just didn't get The Art of War or Tao Te Ching, I found them obvious and favourable within the first page. Yet even though I've read these books repeatedly over two decades, I've never lived within these cultures, let alone even visited their countries. So my appreciation has been mostly for their poetics.
