@@ -1,17 +1,16 @@
 ---
-category: project
 layout: post
+category: projects
+date: 2019-06-15
 title: RAATSICC website
-date: 2017-10-15
-lede: A content-managed website to help spread positive community outreach news.
-note: Completed in collaboration with Barry Phillip Hall.
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953098/okok/thumb-raatsicc.jpg
-thumbInCloudinary: true
+lede: A content-managed website to help spread community outreach news and education.
+link: https://www.raatsicc.org.au/
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
 tags: 
   - UI
   - code
+  - featured
 ---
 
 <!-- heroRatio: 1872/2880 -->
@@ -22,11 +21,11 @@ RAATSICC is a grassroots organisation that provides social services for Aborigin
 
 <Media ratio="1289/2880" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/raatsicc-mobile-screens-dark.png" />
 
-With the majority of their audience in remote locations with reduced internet coverage, the site performance had to be best-in-class. For example, I used an image service to resize images on the fly to match a user's screen size. The resulting Google Web Performance tests [speak for themselves](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.raatsicc.org.au).
+With the majority of their audience in remote locations on reduced internet coverage, the site performance had to be best-in-class. For example, I used an image service to resize images on the fly to match a user's screen size, cutting down page load sizes. The resulting Google Web Performance results [speak for themselves](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.raatsicc.org.au).
 
 <MediaVideo ratio="540/779" frame src="287001742" />
 
-We've been working together since rebuilding the RAATSICC website in 2016. Our relationship is fluent, so we're able to talk about their changing needs and update their platform quickly and easily. This helps RAATSICC use their website to help educate and service many remote communities.
+RAATSICC and I have been working together since rebuilding their website in 2016. Our relationship is fluent, so we're able to talk about their changing needs and update their platform quickly and easily. This helps RAATSICC contually improve their website to better educate and service their remote communities.
 
 <PostButton link="https://raatsicc.org.au" label="Visit RAATSICC" />
 

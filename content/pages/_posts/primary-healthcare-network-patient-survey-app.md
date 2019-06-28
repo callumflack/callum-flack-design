@@ -1,11 +1,9 @@
 ---
 layout: post
-category: project
+category: projects
 title: PHN NQ web app
 date: 2016-08-12
-titleColor: rgb(112, 190, 68)
 lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953097/okok/thumb-phn.jpg
 tags: 
   - UI
   - code
@@ -14,8 +12,6 @@ tags:
 Primary Healthcare Network North Queensland wanted to digitise the World Health Organisation's Quality of Life survey to rapidly and economically build a map of patient well-being in their service areas. We built a maintainable, easy to use responsive website that worked on any screen size, and which securely stored patient responses.
 
 All data collected was anonymous. At survey completion, users were presented with a quality of life score, which they could share by email or SMS.
-
-<!-- @[MarkdownMovie](laptop src="/images/phn-video.mp4") -->
 
 <MediaVideo iphone src="286998126" />
 

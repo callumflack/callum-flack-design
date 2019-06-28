@@ -116,7 +116,7 @@ export default {
   computed: {
     allPostsUngrouped() {
       return this.page.posts
-        .filter(x => x.attributes.category === "project")
+        .filter(x => x.attributes.category === "projects")
     },
     allPosts() {
       return this.groupByYear(this.allPostsUngrouped);

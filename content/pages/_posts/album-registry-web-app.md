@@ -1,9 +1,10 @@
 ---
 layout: post
-category: project
-title: Album Registry web app
+category: projects
 date: 2017-08-12
+title: Album Registry web app
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
+link: https://albumregistry.com/
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg

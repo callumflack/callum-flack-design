@@ -1,5 +1,5 @@
 ---
-category: project
+category: projects
 layout: post
 title: Ward6 website
 date: 2015-01-10

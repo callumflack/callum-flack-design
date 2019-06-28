@@ -13,14 +13,17 @@ siteConfig:
 
 themeConfig:
   nav:
-    - text: Projects
+    - text: projects
       link: /projects.html
-    - text: Writing
+    - text: writing
       link: /writing.html
-    - text: About
+    - text: about
       link: /about.html
   social:
     rss: true
+
+permalinks:
+  post: /blog/:slug.html
 
 plugins:
   - resolve: saber-plugin-query-posts

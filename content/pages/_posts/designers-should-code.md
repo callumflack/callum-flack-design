@@ -1,17 +1,17 @@
 ---
 layout: post
-date: 2018-02-09
 category: writing
-tags:
-  - essay
+date: 2018-02-09
 title: Designers should code
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 readingTime: 5
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/fetch/w_1500,c_fill,g_center,f_auto,q_auto/https://res.cloudinary.com/pw-img-cdn/image/upload/v1544053816/semilattice-181206_iu32ub.jpg
 heroRatio: 1/2
+heroShowCover: true
 heroBlockColor: transparent
+tags:
+  - essay
 ---
 
 <!-- <p class="intro">"Should designers code?" is a well-debated question in the digital product industry because it's difficult to apply fine design sensibility to software products. As a visual designer, the more agency you have in the product design process, the better the product (and more valuable you'll become). That's reason enough to learn to code.</p> -->

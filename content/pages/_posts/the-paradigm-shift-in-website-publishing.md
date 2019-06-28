@@ -2,15 +2,16 @@
 layout: post
 date: 2019-03-18
 category: writing
-tags: 
-- Essay
 title: The paradigm shift in website publishing
 lede: You don’t miss good tools until you have to use the old tools. When it comes to web development tools and publishing systems, there's a paradigm shift in effect. It'll not only make your website a better user experience, it'll be easier to maintain. It's just that you may have to wait until your current website system is painful enough before you believe me.
 readingTime: 8
-heroTitleInvert: true
-heroRatio: 9/16
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1552908874/okok/matt-artz-353295-unsplash-.jpg
+heroShowCover: true
+heroTitleInvert: true
+heroRatio: 9/16
+tags: 
+- Essay
 ---
 
 <!-- Build better websites with Reactive Javascript and the JAMstack -->

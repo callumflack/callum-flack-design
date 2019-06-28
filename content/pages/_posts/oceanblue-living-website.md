@@ -1,5 +1,5 @@
 ---
-category: project
+category: projects
 layout: post
 date: 2017-01-12
 title: Oceanblue Living website

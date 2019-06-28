@@ -1,10 +1,9 @@
 ---
-category: project
 layout: post
-title: Pharma eDetailer apps
+category: projects
 date: 2015-02-02
+title: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953095/okok/thumb-actifuse.jpg
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 tags: 

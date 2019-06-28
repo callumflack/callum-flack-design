@@ -2,7 +2,7 @@
   <component 
     :is="type" 
     :to="post.attributes.permalink"
-    :href="post.attributes.cardlink"
+    :href="post.attributes.link"
     :target="target"
     rel="noopener noreferrer"
     class="Card"
@@ -11,6 +11,7 @@
       <div class="Card-body w-2/3 lg:w-3/4">
         <h3 class="Title mb-2px">
           {{ post.attributes.title }}
+          <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
@@ -32,26 +33,25 @@
             <span class="Text--sm inline-block mx-2px">&centerdot;</span>
             <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
           </template>
-
         </div>
       </div>
       <div class="w-1/3 lg:w-1/4">
         <div class="Card-figure" :class="figureShade">
           <img
-            v-show="post.attributes.assets.cover"
+            v-if="post.attributes.assets.cover"
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
           >
-          <a
-            v-if="post.attributes.cardlink"
-            :href="post.attributes.cardlink"
+          <!-- <a
+            v-if="post.attributes.linkFromCard"
+            :href="post.attributes.linkFromCard"
             target="_blank"
             rel="noopener noreferrer"
             class="Card-figure-blanklink"
           >
             <span class="Blank">&#8599;</span>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -69,13 +69,13 @@ export default {
   props: ["post"],
   computed: {
     type() {
-      if (!this.post.attributes.cardlink) {
+      if (!this.post.attributes.linkFromCard) {
         return "saber-link";
       }
       return "a";
     },
     target() {
-      return this.post.attributes.cardlink ? "_blank" : "";
+      return this.post.attributes.linkFromCard ? "_blank" : "";
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags
@@ -137,12 +137,16 @@ export default {
   width: calc(100% - 10px);
 }
 
+.Card:last-of-type:after {
+  @apply border-transparent;
+}
+
 .Card:hover:after {
   @apply border-transparent;
 }
 
 .Card-body {
-  @apply py-2 pr-8;
+  @apply py-1 pr-8;
   @apply pl-2;
   /* @apply flex-grow; */
 }
@@ -171,7 +175,7 @@ export default {
 
 @screen lg {
   .Card-body {
-    @apply py-3 pr-10;
+    @apply py-2 pr-10;
   }
   .Card-body > .Title {
     @apply pr-4;

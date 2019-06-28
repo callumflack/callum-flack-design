@@ -1,12 +1,14 @@
 ---
 layout: post
-category: project
-tags: 
-- design
+category: projects
 title: Evernote Random Note
 date: 2018-07-01
 client: Forte Labs
 link: https://evernote-random.glitch.me/
+linkFromCard: true
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
+tags: 
+- design
+- frontend
 ---

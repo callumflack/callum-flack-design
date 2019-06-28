@@ -1,10 +1,7 @@
 ---
 layout: post
-date: 2018-09-24
 category: writing
-tags:
-  - essay
-  - featured
+date: 2018-09-24
 title: The matter of taste
 lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
 readingTime: 8
@@ -14,6 +11,9 @@ heroShowCover: true
 heroImageBlend: true
 heroBlockColor: transparent
 heroTitleInvert: true
+tags:
+  - essay
+  - featured
 ---
 
 <blockquote class="Post-intro-quote"><p>What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<strong>John Dewey, Art as Experience</strong></p></blockquote>
