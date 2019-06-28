@@ -37,9 +37,9 @@ The goal of the website is to become a place people can dream of their perfect h
 <PostButton link="https://oceanblueliving.com.au" label="Visit Oceanblue Living" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

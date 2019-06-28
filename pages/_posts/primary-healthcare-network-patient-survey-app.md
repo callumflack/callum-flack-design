@@ -35,8 +35,8 @@ The resulting survey app immediately created value for PHN. It's an experience t
 This app is not publicly available. Please get in touch for a demo. {.Note}
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
 export default {
   components: { 
     Media,

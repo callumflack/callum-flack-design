@@ -110,7 +110,7 @@ When you find another frustrating, ugly website that doesn't live up to it's pro
 <!-- but it means the outcome stands a far greater chance of creating happy, paying customers from your website. -->
 
 <script>
-import Media from "../../../src/components/Media";
+import Media from "../../src/components/Media";
 
 export default {
   components: { Media }

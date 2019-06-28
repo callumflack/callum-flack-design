@@ -93,7 +93,7 @@ Faced with a decision between two objects, we'll choose the one we developed an 
 Every one of us post-rationalises our decisions as it suits us. The reasons for our choices are deeper than we think. While they won't tell you, people will sense incongruence and walk away. Or they will notice seamless and cohesive symmetry in a fraction of a second, and begin inspecting. As we move toward "peak attention", it pays not to underestimate how powerful, calming and attentive the feeling of beauty can be.
 
 <script>
-import Media from "../../../src/components/Media";
+import Media from "../../src/components/Media";
 
 export default {
   components: { Media }

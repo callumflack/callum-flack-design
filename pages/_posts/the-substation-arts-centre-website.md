@@ -39,9 +39,9 @@ Together, we've stemmed the constant maintenance costs that drained The Substati
 <PostButton link="http://www.thesubstation.org.au/" label="Visit The Substation" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

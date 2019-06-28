@@ -82,7 +82,7 @@ The hallmark of craftsmanship is to understand "[both the limits and the possibi
 <!-- @[MarkdownNote](note="Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Price while working for Ward6.") -->
 
 <script>
-import Media from "../../../src/components/Media";
+import Media from "../../src/components/Media";
 
 export default {
   components: { Media }

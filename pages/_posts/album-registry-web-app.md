@@ -48,9 +48,9 @@ Frontend development done in collaboration with [Barry Phillip Hall](https://git
 <PostButton link="https://albumregistry.com" label="Visit Album Registry" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

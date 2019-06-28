@@ -30,9 +30,9 @@ RAATSICC and I have been working together since rebuilding their website in 2016
 <PostButton link="https://raatsicc.org.au" label="Visit RAATSICC" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

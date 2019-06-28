@@ -43,9 +43,9 @@ The website never shouts, never wastes a person's time. Instead, it starts by ai
 <PostButton link="https://vjraystrata.com.au" label="Visit VJ Ray Strata" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

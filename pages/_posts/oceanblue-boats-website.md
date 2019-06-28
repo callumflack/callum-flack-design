@@ -40,9 +40,9 @@ Over time, we'll continue to document their boat-making and improve the website 
 <PostButton link="https://oceanblueboats.com.au" label="Visit Oceanblue Boats" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

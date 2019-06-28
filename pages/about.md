@@ -48,7 +48,7 @@ lede: Callum Flack is a graphic designer and web developer. He is fluid across g
 
 <!-- higher rates of design iteration. -->
 
-<!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog</a> about these kinds of "things inbetween". -->
+<!-- In my spare time, I collect vinyl records of every kind. Finding the uncommon on forgotten records is a constant lesson in noticing details. I also write a <a target="_blank" href="https://callumflack.blog">blog about these kinds of "things inbetween". -->
 
 <!-- Callum Flack is a graphic designer turned web developer. He is driven by large beauty, small wonder and the curiosity of _why?_. -->
 
@@ -100,7 +100,7 @@ When Callum builds websites, he advocates for these tools:
 
 - Building interfaces with Vue.js (or React.js)
 - A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
-<!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> -->
+<!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs -->
 
 <!-- (when it's not a web application) -->
 <!-- - PostCSS or Sass -->
@@ -109,13 +109,11 @@ When Callum builds websites, he advocates for these tools:
 
 <!-- ### Experienced -->
 
-Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>.
+Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
 
-<!-- , so I know how to create products for a niche community. -->
+> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **[Brian Hur, Founder, VetPronto (YCW15)](https://www.linkedin.com/in/brianhur/)**
 
-> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **<a class="icon-targetblan" target="_blank" href="https://www.linkedin.com/in/brianhur/">Brian Hur</a>, Founder, VetPronto (YCW15)**
-
-<!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall</a>, JavaScript engineer_ -->
+<!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall, JavaScript engineer_ -->
 
 <!-- https://github.com/barryph -->
 
@@ -128,22 +126,19 @@ Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and B
 
 ## Contact
 
-<a class="icon-targetblan" target="_blank" href="https://www.instagram.com/p/BXbsNdrAt-v">Based in tropical Cairns, Australia</a>, Callum works with local, interstate and international clients. He plugs into product teams, agencies or work one-to-one with business owners. He enjoys travelling to meet in person.
+Based in [tropical Cairns, Australia](https://www.instagram.com/p/BXbsNdrAt-v), Callum works with local, interstate and international clients. He plugs into product teams, agencies or work one-to-one with business owners. He enjoys travelling to meet in person.
 
-- Email: <a class="icon-targetBlank" target="_blank" href="mailto:callum@callumflack.design">callum@callumflack.design</a>
+- Email: [callum@callumflack.design](mailto:callum@callumflack.design)
 - Phone: [+61(0) 408 767 540](tel:610-408-767-540)
-- Twitter: <a class="icon-targetBlank" target="_blank" href="https://twitter.com/callumflack">@callumflack</a>
+- Twitter: [@callumflack](https://twitter.com/callumflack)
 
-<!-- Schedule: <a class="icon-targetBlank" target="_blank" href="https://calendly.com/callumflack">callumflack</a> -->
 
 You can also find Callum on these websites:
 
-<!-- - <a class="icon-targetBlank" target="_blank" href="https://www.instagram.com/callumflack/">Instagram</a> -->
-
-- <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
-- <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
-- <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>
-- <a class="icon-targetBlank" target="_blank" href="https://reading.supply/@callum">Reading Supply</a>
+- [Github](https://github.com/callumflack)
+- [Linkedin](https://linkedin.com/in/callumflack)
+- [AngelList](https://angel.co/callumflack-gmail-com)
+- [Reading Supply](https://reading.supply/@callum)
 
 <!-- The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and attention:
 

@@ -35,9 +35,9 @@ Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Pr
 <PostButton link="http://www.ward6.asia" label="Visit Ward6" />
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,

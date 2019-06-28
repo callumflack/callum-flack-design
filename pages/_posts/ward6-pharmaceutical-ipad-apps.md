@@ -28,9 +28,9 @@ The Actifuse Bone Graft Substitute app held a large information set, so it's suc
 These projects are not publicly available. Completed while working for Ward6. {.Note}
 
 <script>
-import Media from "../../../src/components/Media";
-import MediaVideo from "../../../src/components/MediaVideo";
-import PostButton from "../../../src/components/PostButton";
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
 export default {
   components: {
     Media,
