@@ -16,7 +16,7 @@
 .Input,
 .Button {
   --button-color: theme(colors.white);
-  --button-invert-color: theme(colors.brand.primary);
+  --button-invert-color: theme(colors.text);
 
   --button-bg-color: var(--button-invert-color);
   --button-bg-color-hover: var(--button-invert-color);
@@ -29,8 +29,8 @@
   --button-box-shadow-stroke-inset: 1px;
   --button-disabled-opacity: 0.6;
   --button-font-case: initial;
-  --button-font-weight: 500;
-  --button-height: 36px;
+  --button-font-weight: 400;
+  --button-height: 44px;
   --button-inline-spacing: 0;
   --button-padding-x: 1em;
 
@@ -56,7 +56,10 @@
   text-decoration: none;
   text-transform: var(--button-font-case);
   user-select: none;
-  padding-bottom: calc((2 / 15) * 1em); /* 2 */
+  /* 2 */
+  /* padding-bottom: calc((2 / 15) * 1em);  */
+  padding-bottom: 0;
+  padding-top: 1px;
 }
 
 /*
@@ -194,9 +197,9 @@ textarea.Input {
 
 .ButtonComplex .Button--outline,
 .Button--outline {
-  --button-color: theme(colors.brand.primary);
+  --button-color: theme(colors.text);
   --button-bg-color: transparent;
-  --button-bg-color-hover: var(--bg-color-hover);
+  --button-bg-color-hover: transparent;
 }
 
 .Button--whiteOutline {

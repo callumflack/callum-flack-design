@@ -58,12 +58,12 @@
 }
 
 .Title {
-  @apply font-semibold tracking-text leading-tight;
+  @apply font-normal tracking-text leading-tight;
   font-size: calc(theme(fontSize.3xl) * var(--title-ratio));
 }
 
 .Display {
   /* @apply uppercase; */
-  @apply font-bold tracking-tight leading-title;
+  @apply tracking-tight leading-title;
   font-size: calc(theme(fontSize.6xl) * var(--title-ratio));
 }

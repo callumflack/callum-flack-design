@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <SliderSlides class="Grid-extract--posts">
+        <SliderSlides class="Grid-extract--card">
           <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
             <Card
               v-for="post in featuredWriting"

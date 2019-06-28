@@ -19,20 +19,20 @@ module.exports = {
         header: "#d9d7ce",
         header: "#E8E8DE",
         header: "#efefe8",
-        header: "#efefe9",
         header: "#fafafa",
         header: "#fe5000",
         header: "#f0f0f0",
+        header: "#efefe9",
         bg: "#fbfaf8",
         bg: "#f9f9f9",
         bg: "#fefefe",
       },
       gray: {
-        // 100: "#f7fafc",
+        100: "#f7fafc",
         200: "#eaeaea",
         300: "#eee",
         400: "#dedede",
-        500: "#888",
+        500: "#aaa",
         600: "#888",
         700: "#777",
         // 800: "#231F20",
@@ -122,7 +122,7 @@ module.exports = {
       lg: "1.1875rem", // 19
       xl: "1.3125rem", // 21
       "2xl": "1.5rem", // 24
-      "3xl": "1.75rem", // 27
+      "3xl": "1.6875rem", // 27
       "4xl": "2rem", // 32
       "5xl": "3rem",
       "6xl": "4rem",
@@ -174,7 +174,7 @@ module.exports = {
       text: "-0.005em",
       normal: "0",
       wide: "0.0125em",
-      wider: "0.05em",
+      wider: "0.025em",
       widest: "0.1em",
     },
     textColors: theme => ({

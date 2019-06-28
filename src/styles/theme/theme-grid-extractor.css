@@ -17,7 +17,7 @@
 }
 
 @screen xl {
-  .Grid-extract--posts {
+  .Grid-extract--card {
     /* --width: calc(theme(screens.sm) + 16px);
     left: calc((-0.5 * var(--width)) + 50% - 8px); */
     --width: calc(theme(screens.sm) + 2rem);

@@ -9,10 +9,10 @@ a {
   transition: background-color 500ms ease;
 }
 
-p a:hover,
-ul a:hover,
-ol a:hover,
-.Markdown a:hover {
+p a:hover:not(.Button),
+ul a:hover:not(.Button),
+ol a:hover:not(.Button),
+.Markdown a:hover:not(.Button) {
   @apply bg-brand-highlight;
 }
 
