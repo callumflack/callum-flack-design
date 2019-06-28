@@ -9,21 +9,20 @@ thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953101/okok/
 thumbInCloudinary: true
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/okok/thesubstation-hero-THIS_baprpq.jpg
-heroInCloudinary: true
-heroRatio: 65
-heroFrame: false
+heroShowCover: false
 tags: 
   - Branding
   - UI
   - code
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
-featured: true
 ---
 
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for efficiency, flexibility and performance. As we progressed, I came to understand their vision and evolved their digital branding to match.
 
-@[LazyImage](extractLarge project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png")
+> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 2 years, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. **Brad Spolding, Managing Director**
+
+<Media ratio="3548/5742" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516954565/okok/thesubstation-artists.png" />
 
 The visual redesign gave centre stage to each event's brilliant, eclectic photography, framing it with whitespace and clean typography.
 
@@ -31,16 +30,26 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 
 <!-- @[MarkdownMovie](laptop frame src="/images/thesubstation-video-desktop-events.mp4") -->
 
-@[MarkdownMovie](iphone src="286999966")
+<MediaVideo iphone src="286999966" />
 
-<!-- We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made. -->
+We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
-<!-- @[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg") -->
+<Media frame ratio="3667/2400" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513228134/okok/thesubstation-emma-collard.jpg" />
 
-> Callum has helped us understand and fix the many issues that we had with our previous site. After working with him over 12 months, we’re now able to put the artists we work with front and centre of our brand and digital marketing and confidently grow our profile. **Brad Spolding, Managing Director**
 
-Together, we've stemmed the constant maintenance costs that drained The Substation's digital marketing effectiveness. With a performant and adaptable codebase, The Substation can focus on their customers.
+Together, we've stemmed the constant maintenance costs that drained The Substation's digital marketing effectiveness. With a consistent digital design system integrated into a performant and adaptable codebase, The Substation can focus on talking to their customers.
 
-<p>
-@[MarkdownProjectLink](link="http://www.thesubstation.org.au/" label="Visit The Substation")
-</p>
+<PostButton link="http://www.thesubstation.org.au/" label="Visit The Substation" />
+
+<script>
+import Media from "../../../src/components/Media";
+import MediaVideo from "../../../src/components/MediaVideo";
+import PostButton from "../../../src/components/PostButton";
+export default {
+  components: {
+    Media,
+    MediaVideo,
+    PostButton
+  }
+}
+</script>

@@ -1,15 +1,13 @@
 ---
 layout: post
 category: project
-title: Album Registry ecommerce web app
+title: Album Registry web app
 date: 2017-08-12
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953099/okok/thumb-albumregistry.jpg
-thumbInCloudinary: true
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
-heroInCloudinary: true
-heroRatio: 99.16
+heroShowCover: false
 tags: 
   - Branding
   - UI
@@ -20,11 +18,11 @@ Album Registry is a crowd-funding website for photographers. After technical set
 
 > Our gift-giving model is innovative, and allows people to focus on the joy of giving and remembering by sharing the cost of great photography. **Jannah Dryden, Founder**
 
-<Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg"/>
+<Media frame ratio="1/1" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557231/okok/albumregistry-new-registry-detail-2500w.jpg"/>
 
 Album Registry bridges the gap between people celebrating the big moments of their lives, and artisanal photographers who do justice to those moments. We needed a way to showcase what great photographers do while giving gifters a first-class e-commerce experience.
 
-<Media video="287000708" videoRatio="100")
+<MediaVideo frame src="287000708" ratio="1/1"/>
 
 ## Built for future iteration
 
@@ -34,9 +32,7 @@ The codebase uses the Node.js ecosystem, allowing us to take advantage of the ra
 
 We're able to design and adjust new features in the browser using the brand design system we designed and built.
 
-<!-- <Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513558122/okok/albumregistry-mobile-O.png" /> -->
-
-<Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320484/okok/albumregistry-mobile-screens-lg-dark.png" />
+<Media ratio="1288/2880" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320484/okok/albumregistry-mobile-screens-lg-dark.png" />
 
 We aim to offer the Album Registry photographers three ways to do what they love: an ecommerce platform, a website marketing toolkit, and a community to share with.
 
@@ -46,18 +42,19 @@ We aim to offer the Album Registry photographers three ways to do what they love
 
 Album Registry grows slowly but surely, and since joining as co-founder in mid 2017, I'm excited to focus on building tools that help photographers grow their business, and help people give the gift of memories.
 
-<!-- @[MarkdownNote](note="Frontend development done in collaboration with <a href='https://github.com/BarryPH'> Barry Phillip Hall.</a>") -->
+Frontend development done in collaboration with [Barry Phillip Hall](https://github.com/BarryPH). Please note that as of June 2018, I'm no longer part of Album Registry. {.Note}
 
-<!-- @[MarkdownButton](link="https://albumregistry.com" label="Visit Album Registry") -->
-
-@[MarkdownProjectLink](link="https://albumregistry.com" label="Visit Album Registry")
-
-@[MarkdownNote](note="Please note that as of June 2018, I'm no longer part of Album Registry.")
+<PostButton link="https://albumregistry.com" label="Visit Album Registry" />
 
 <script>
 import Media from "../../../src/components/Media";
-
+import MediaVideo from "../../../src/components/MediaVideo";
+import PostButton from "../../../src/components/PostButton";
 export default {
-  components: { Media }
+  components: {
+    Media,
+    MediaVideo,
+    PostButton
+  }
 }
 </script>

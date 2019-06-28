@@ -2,14 +2,12 @@
 layout: post
 category: project
 date: 2019-04-01
+title: Avari Capital
+client: Paper Stone Scissors
+cardlink: https://avaricapitalpartners.com.au/
 tags: 
 - frontend
 - featured
-title: Avari Capital
-client: Paper Stone Scissors
-link: https://avaricapitalpartners.com.au/
-assets:
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 ---
 
-Frontend development for Avari Capital Partners
+Frontend development for the Avari Capital Partners website, working with Paper Stone Scissors.

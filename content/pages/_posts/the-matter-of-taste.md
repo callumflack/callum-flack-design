@@ -10,6 +10,7 @@ lede: Rather than understanding taste as the particular way a person does a thin
 readingTime: 8
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1538097848/post-taste-lynch_hutebj.jpg
+heroShowCover: true
 heroImageBlend: true
 heroBlockColor: transparent
 heroTitleInvert: true

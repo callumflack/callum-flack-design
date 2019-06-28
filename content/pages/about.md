@@ -67,13 +67,15 @@ lede: Callum Flack is a graphic designer and web developer. He is fluid across g
 
 Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience, and he can build it too. The difference isn't obvious until it is.
 
-After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding.
+<!-- After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding. -->
 
 <!-- Unexpected consequences and unforseen scope revisions are common when design tries to become code. The communication bottleneck increases as quality assurance attempts to play catchup to the discovery of new customer intentions, feature requests, issue tracking, production management and website maintenance—I ran into all these troubles myself. So in 2010, after a decade as a graphic designer, I took matters into my own hands and decided to learn to code. -->
 
-With a keen sense of what constitutes beautiful, actionable design, and a constant dislike of obstacles within interaction flows, Callum is also able to judge the cost of design due to his explicit experience as a developer.
+<!-- With a keen sense of what constitutes beautiful, actionable design, and a constant dislike of obstacles within interaction flows, Callum is also able to judge the cost of design due to his explicit experience as a developer.
 
-Callum helps clients understand the hidden costs in project decisions and website publishing options, finding better processes which reduce complexities and increase website lifespans.
+Callum helps clients understand the hidden costs in project decisions and website publishing options, finding better processes which reduce complexities and increase website lifespans. -->
+
+With a keen sense of what constitutes beautiful, actionable design, a keen sense of obstacles within interaction flows, and explicit experience as a developer, Callum is able to judge the costs and benefits of interface design execution, finding robust solutions that never compromise a human-first experience.
 
 <!-- With this explicit experience as a "doer", -->
 <!-- which creates the time and confidence to focus building the interface..  -->
@@ -97,7 +99,7 @@ When Callum builds websites, he advocates for these tools:
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
 - Building interfaces with Vue.js (or React.js)
-- A <a target="_blank" href="https://jamstack.org/">JAMstack</a> architecture with git-based deployments (where possible)
+- A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
 <!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs</a> -->
 
 <!-- (when it's not a web application) -->
@@ -107,7 +109,7 @@ When Callum builds websites, he advocates for these tools:
 
 <!-- ### Experienced -->
 
-Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum, his wife and their young family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>.
+Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run <a target="_blank" href="https://www.discogs.com/artist/2452856-Callum-Flack">a few vinyl record labels in past years</a>.
 
 <!-- , so I know how to create products for a niche community. -->
 
@@ -141,6 +143,7 @@ You can also find Callum on these websites:
 - <a class="icon-targetBlank" target="_blank" href="https://github.com/callumflack">Github</a>
 - <a class="icon-targetBlank" target="_blank" href="https://linkedin.com/in/callumflack">Linkedin</a>
 - <a class="icon-targetBlank" target="_blank" href="https://angel.co/callumflack-gmail-com">AngelList</a>
+- <a class="icon-targetBlank" target="_blank" href="https://reading.supply/@callum">Reading Supply</a>
 
 <!-- The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and attention:
 
