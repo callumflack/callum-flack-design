@@ -1,7 +1,7 @@
 <template>
   <div class="Card">
     <div class="w-4/12 sm:w-3/12">
-      <Aspect ratio="5/4">
+      <Aspect ratio="5/4" class="bg-text">
         <img src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg" alt="Callum Flack">
       </Aspect>
     </div>
@@ -49,14 +49,5 @@ export default {
 .Contact {
   @apply bg-brand-header;
   /* @apply border-l-4 border-white; */
-  /* border-color: rgba(255, 255, 255, 0.5); */
-}
-
-.Contact ::selection {
-  @apply bg-white;
-}
-
-.Contact a:hover {
-  @apply text-text;
 }
 </style>
