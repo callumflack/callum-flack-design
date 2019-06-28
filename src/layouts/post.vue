@@ -5,21 +5,24 @@
         class="Grid-extract--edge"
         :style="heroBlockColor"
       >
+        <!-- post image aspect -->
         <div class="container">
-          <Aspect :ratio="page.attributes.heroRatio || '1/3'">
+          <Aspect :ratio="page.attributes.heroRatio || '1/3.5'">
             <img
-              v-if="page.attributes.assets.cover"
+              v-if="page.attributes.heroShowCover"
               :src="page.attributes.assets.cover"
               :alt="page.attributes.title"
             >
           </Aspect>
         </div>
+        <!-- post title aspect -->
         <div class="absolute inset-0">
           <div
             class="container relative h-full flex items-center justify-center"
             :class="heroImageBlend"
           >
             <div class="w-full" :class="heroTitleColor">
+              <!-- post title -->
               <h1
                 class="Display text-center s-m mx-auto w-full "
                 :class="heroTitleWidth"
@@ -27,10 +30,12 @@
               >
                 {{ page.attributes.title }}
               </h1>
+              <!-- post meta -->
               <div
                 class="text-center"
                 :class="heroMetaClass"
               >
+                <!-- date -->
                 <time
                   class="Text--sm"
                   :datetime="page.attributes.createdAt"
@@ -38,10 +43,12 @@
                 >
                   {{ formatDate(page.attributes.createdAt) }}
                 </time>
+                <!-- tags -->
                 <span class="Text--sm inline-block mx-2px">&centerdot;</span>
-                <span class="Text--sm" v-for="(tag, index) in page.attributes.tags">
+                <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
                   <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
                 </span>
+                <!-- reading time -->
                 <template v-if="page.attributes.category === 'writing'">
                   <span class="Text--sm inline-block mx-2px">&centerdot;</span>
                   <span class="Text--sm">{{ page.attributes.readingTime }} mins</span>
@@ -98,8 +105,12 @@ export default {
       // }]
     },
     heroMetaClass() {
-      // return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
+      return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
     },
+    tagsWithFeaturedRemoved() {
+      return this.page.attributes.tags
+        .filter(x => x !== "featured")
+    }
   },
 
   methods: {
@@ -117,12 +128,10 @@ export default {
   background-color: rgba(0,0,0,0.2);
 }
 
-/* figure within text column */
-.Markdown >>> .Aspect {
+/* Media within text column */
+.Markdown >>> .AspectMedia {
   margin-top: calc(theme(spacing.10) * var(--block-size-ratio));
   margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
 }
-
-
 </style>
 
