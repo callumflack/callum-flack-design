@@ -23,6 +23,14 @@ ol a:hover:not(.Button),
   text-decoration: none !important;
 }
 
+/* denotes target="_blank" using &#8599; */
+.Link--blank {
+  @apply inline-block;
+  font-size: 80%;
+  margin-left: 0.5em;
+  transform: translateY(-1px);
+}
+
 /* LINK BLOCKS */
 
 .Link-block a:not(.Button) {

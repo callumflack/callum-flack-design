@@ -6,7 +6,7 @@
     class="Button Button--outline st-2xh"
   >
     {{ label }}
-    <span class="Blank">&#8599;</span>
+    <span class="Link--blank">&#8599;</span>
   </a>
 </template>
 
@@ -20,13 +20,6 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Blank {
-  @apply inline-block;
-  font-size: 80%;
-  margin-left: 0.5em;
-  transform: translateY(-1px);
-}
-
 a + a {
   @apply ml-2;
 }

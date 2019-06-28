@@ -67,3 +67,9 @@
   @apply tracking-tight leading-title;
   font-size: calc(theme(fontSize.6xl) * var(--title-ratio));
 }
+
+.Title .Link--blank {
+  font-size: 50%;
+  margin-left: 0;
+  transform: translateY(-1em);
+}
