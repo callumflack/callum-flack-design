@@ -3,13 +3,14 @@
     <nav class="container container--text flex justify-between">
       <div>
         <saber-link
-          v-for="(navItem, index) in $themeConfig.nav"
+          v-for="(item, index) in $themeConfig.nav"
           :key="index"
-          :to="navItem.link"
+          :to="item.link"
+          :class="{ 'is-active': item.text === category }"
           class="Nav-link Meta"
         >
           <span>
-            {{ navItem.text }}
+            {{ item.text }}
           </span>
         </saber-link>
       </div>
@@ -34,7 +35,10 @@ export default {
       type: String,
       required: true
     },
-  }
+    category: {
+      type: String,
+    },
+  },
 }
 </script>
 
@@ -57,23 +61,22 @@ export default {
   text-shadow: none !important;
 }
 
-.Nav-link,
-.Nav-link:hover {
-  @apply no-underline;
-}
-
 .Nav-link + .Nav-link {
   margin-left: calc(theme(spacing.4) * var(--space-ratio));
 }
 
 .Nav-link span {
-  /* @apply border-b border-transparent pb-4; */
+  @apply relative;
+}
+.Nav-link span:after {
+  @apply absolute w-full h-px bg-transparent;
+  content: "";
+  transform: translateY(1.5em);
 }
 
-/* .Nav-link:hover span, */
-.router-link-active span {
-  @apply font-bold;
-  /* @apply border-black; */
+.is-active span:after,
+.router-link-exact-active span:after {
+  @apply bg-text;
 }
 </style>
 

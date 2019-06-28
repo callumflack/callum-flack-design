@@ -4,8 +4,8 @@
       :siteTitle="siteTitle"
       :title="page.attributes.title"
       :lede="page.attributes.lede"
+      :category="page.attributes.category"
     />
-
     <main aria-label="Content" class="Block-lg-b">
       <div class="container container--text">
         <slot></slot>
@@ -67,7 +67,7 @@ export default {
   computed: {
     siteTitle() {
       return this.$siteConfig.title || "Your Awesome Title";
-    }
+    },
   }
 };
 </script>

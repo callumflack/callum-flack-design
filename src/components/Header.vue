@@ -1,9 +1,9 @@
 <template>
   <header :class="headerClasses">
 
-    <HeaderNav :siteTitle="siteTitle" />
+    <HeaderNav :siteTitle="siteTitle" :category="category" />
 
-    <div v-if="!$route.path.includes('posts')" class="Block">
+    <div v-if="!$route.path.includes('blog')" class="Block">
       <div class="container container--text">
         <h1
           v-if="title"
@@ -52,13 +52,17 @@ export default {
     lede: {
       type: String,
       required: false
-    }
+    },
+    category: {
+      type: String,
+      required: false
+    },
   },
   computed: {
     headerClasses() {
       return [{
-        "with-ContactCard": this.$route.path === '/about.html',
-        "bg-brand-header": !this.$route.path.includes('posts')
+        "with-contactCard": this.$route.path === '/about.html',
+        "bg-brand-header": !this.$route.path.includes('blog')
       }]
     }
   }
@@ -73,7 +77,6 @@ export default {
 <style lang="postcss" scoped>
 .Header {
   @apply bg-brand-header;
-  /* @apply bg-text; */
 }
 
 /* .Header * {
@@ -84,12 +87,12 @@ export default {
   padding-top: calc(theme(spacing.20) * var(--block-size-ratio));
 }
 
-.with-ContactCard {
+.with-contactCard {
   @apply relative;
   margin-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
 }
 
-.with-ContactCard .Block {
+.with-contactCard .Block {
   padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
 }
 
