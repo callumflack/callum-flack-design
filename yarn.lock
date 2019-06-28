@@ -4477,6 +4477,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+markdown-it-attrs@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/markdown-it-attrs/-/markdown-it-attrs-2.4.1.tgz#4868d067b0615568afc027bb99dfa2badb7ca1bc"
+  integrity sha512-BASnIYS+JLpjlhDf7jLV8VOuccxjfDDnQcz5dLfgPsYw8OsgbASexADdIkF7tIdGn+jaQSA4qOZXM3v3W3JBCg==
+
 matchit@^1.0.0:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/matchit/-/matchit-1.0.8.tgz#9a129e38f79b2053dd75339215b19e1f6bb88efb"

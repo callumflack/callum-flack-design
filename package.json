@@ -29,6 +29,7 @@
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
     "intersection-observer": "^0.7.0",
+    "markdown-it-attrs": "^2.4.1",
     "postcss-import": "^12.0.1",
     "saber-plugin-critical": "^1.0.2",
     "tailwindcss": "^1.0.4",

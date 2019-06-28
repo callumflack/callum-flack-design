@@ -28,3 +28,7 @@ plugins:
     options:
       atomFeed: true
   - resolve: saber-plugin-critical
+
+markdown:
+  plugins:
+    - resolve: markdown-it-attrs
