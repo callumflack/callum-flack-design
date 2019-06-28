@@ -1,19 +1,33 @@
-// https://github.com/vuejs/eslint-plugin-vue
 module.exports = {
   root: true,
-  parserOptions: {
-    parser: "babel-eslint"
-  },
   env: {
     browser: true,
     node: true
   },
-  extends: ["eslint:recommended", "plugin:vue/recommended"],
+  globals: {
+    $nuxt: true
+  },
+  parserOptions: {
+    parser: "babel-eslint"
+    // parser: "vue-eslint-parser"
+  },
+  extends: [
+    "plugin:vue/recommended",
+    "eslint:recommended",
+  ],
+  // required to lint *.vue files
+  plugins: ["vue"],
+  // add your custom rules here
   rules: {
     "vue/no-unused-vars": ["warn"],
     "vue/require-prop-types": 0,
+    "vue/require-default-prop": 0,
+    "vue/no-v-html": 0,
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
+    // conflicts with prettier
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/html-self-closing": "off",
     // https://github.com/prettier/eslint-plugin-prettier/issues/94
     "vue/max-attributes-per-line": [
       2,
