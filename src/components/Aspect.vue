@@ -42,8 +42,13 @@ export default {
 <style lang="postcss" scoped>
 .Aspect {
   @apply relative overflow-hidden h-0;
-  @apply m-0; /* if figure, no margin */
   padding-bottom: calc(100% * (var(--aspect-ratio)));
+}
+
+/* if any figure, no margin */
+figure
+.Aspect >>> figure {
+  @apply m-0;
 }
 
 /*
@@ -51,52 +56,17 @@ export default {
   1. Absolutely occupy the .Aspect area
   2. Cover the .Aspect area
 */
+.Aspect >>> img,
+.Aspect >>> iframe {
+  @apply absolute inset-0 h-full w-full; /* 1 */
+}
 .Aspect >>> img {
-  @apply absolute inset-0; /* 1 */
-  @apply object-cover h-full w-full; /* 2 */
+  @apply object-cover ; /* 2 */
 }
 
-/* IRE */
-
-.RsAspectRatio--16x9 {
+/* Alt? */
+/* .RsAspectRatio--16x9 {
   height: calc(100vw * 9 / 16);
   width: 100vw;
-}
-
-.AspectRatio {
-  height: 0;
-  padding-bottom: 100%;
-  position: relative;
-}
-
-.AspectRatio-object {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* z-index: 100; */
-}
-
-.AspectRatio-object {
-  & figure,
-  & img,
-  & iframe {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-  }
-
-  & img {
-    object-fit: cover;
-  }
-}
+} */
 </style>

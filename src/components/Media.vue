@@ -1,15 +1,20 @@
 <template>
-  <Aspect :ratio="ratio" class="Grid-extract--post bg-black">
-    <figure>
-      <img
-        :src="image"
-        :alt="title"
-      >
-    </figure>
-    <figcaption v-if="caption">
-      {{ caption }}
-    </figcaption>
-  </Aspect>
+  <div class="AspectMedia Grid-extract--post">
+    <Aspect
+      :ratio="ratio"
+      :class="{ 'Frame' : this.frame }"
+    >
+      <figure>
+        <img
+          :src="image"
+          :alt="title"
+        >
+      </figure>
+      <figcaption v-if="caption">
+        {{ caption }}
+      </figcaption>
+    </Aspect>
+  </div>
 </template>
 
 <script>
@@ -21,6 +26,7 @@ export default {
     title: String,
     caption: String,
     ratio: String,
+    frame: Boolean
   },
   components: {
     Aspect
@@ -29,7 +35,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-figure {
-  margin: 0;
+/* Frame without stuffing up the aspect ratio */
+.Frame:after {
+  @apply absolute inset-0 border border-gray-400;
+  content: "";
 }
 </style>
