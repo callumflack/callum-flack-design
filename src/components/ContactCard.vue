@@ -8,7 +8,7 @@
     <div class="w-8/12 sm:w-9/12">
       <div class="Contact no-link-block h-full">
         <div class="p-4 lg:p-6">
-          <p class="Meta font-bold s-m">
+          <p class="Meta s-m">
             Get in touch:
           </p>
           <ul class="">
@@ -48,7 +48,7 @@ export default {
 
 .Contact {
   @apply bg-brand-header;
-  @apply border-l-4 border-white;
+  /* @apply border-l-4 border-white; */
   /* border-color: rgba(255, 255, 255, 0.5); */
 }
 
