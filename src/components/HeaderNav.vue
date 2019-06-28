@@ -71,7 +71,7 @@ export default {
 .Nav-link span:after {
   @apply absolute w-full h-px bg-transparent;
   content: "";
-  transform: translateY(1.5em);
+  transform: translateY(0.5em);
 }
 
 .is-active span:after,
