@@ -31,20 +31,21 @@
               v-for="post in featuredPosts"
               :post="post"
               :key="post.attributes.permalink"
-              class="Grid-extract--posts"
+              class=""
             ></Card>
           </SliderSlide>
           <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
             <div
               v-for="year in Object.keys(allPosts).reverse()"
               :key="year"
+              class="Year"
             >
-              <h3 class="Text Year">{{ year }}</h3>
+              <h3 class="Meta Meta--year">{{ year }}</h3>
               <Card
                 v-for="post in allPosts[year]"
                 :post="post"
                 :key="post.attributes.permalink"
-                class="Grid-extract--posts"
+                class=""
               ></Card>
             </div>
           </SliderSlide>
@@ -140,16 +141,3 @@ export default {
   },
 };
 </script>
-
-<style lang="postcss" scoped>
-.Year {
-  @apply border-b-2 border-text;
-  margin-top: calc(theme(spacing.12) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.6) * var(--space-ratio));
-  padding-bottom: calc(theme(spacing.2) * var(--space-ratio));
-}
-
-.Year:not(:first-of-type) {
-  /* margin-top: calc(theme(spacing.16) * var(--space-ratio)); */
-}
-</style>
