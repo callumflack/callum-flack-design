@@ -15,9 +15,7 @@ tags:
   - code
 ---
 
-VJ Ray Real Estate are one of Sydney's original Strata Management agencies. They asked me to consider their customer value proposition and use it to rebuild their digital presence.
-
-During research and discussions, our strategy was clarified by a throw-away comment from an employee: "We manage people, not just property."
+VJ Ray Real Estate are one of Sydney's original Strata Management agencies. They asked me to consider their customer value proposition and use it to rebuild their digital presence. During research and discussions, our strategy was clarified by a throw-away comment from an employee: "We manage people, not just property."
 
 <!-- @[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952901/okok/vjray-research.png") -->
 

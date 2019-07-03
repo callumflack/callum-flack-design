@@ -7,14 +7,14 @@
       <div class="container container--text">
         <h1
           v-if="title"
-          class="Display Display--post text-center s-h"
+          class="Title s-m md:w-2/3"
         >{{ title }}</h1>
         <p
           v-if="lede"
-          class="text-center w-full md:w-5/6 mx-auto"
+          class="Text--sm text-gray md:w-2/3"
         >
           {{ lede }}
-          <saber-link v-if="$route.path === '/'" to="/about.html" class="">
+          <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
             Learn more &rightarrow;
           </saber-link>
         </p>
@@ -22,7 +22,7 @@
     </div>
 
     <div v-if="$route.path === '/about.html'" class="ContactCard">
-      <div class="container container--text">
+      <div class="container container--list">
         <ContactCard v-if="$route.path === '/about.html'" />
       </div>
     </div>
@@ -61,8 +61,8 @@ export default {
   computed: {
     headerClasses() {
       return [{
-        "with-contactCard": this.$route.path === '/about.html',
-        "bg-brand-header": !this.$route.path.includes('blog')
+        "with-contactCard": this.$route.path === '/about.html'
+        // "bg-brand-header": !this.$route.path.includes('blog')
       }]
     }
   }

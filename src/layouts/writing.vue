@@ -4,9 +4,9 @@
 
     <SliderFrame>
       <div slot-scope="{ activeIndex, goToIndex }">
-        <div class="Grid-extract--edge bg-brand-header">
+        <div class="Grid-extract--edge border-b">
           <div class="container container--text">
-            <ul class="Tab-controls s-2xh">
+            <ul class="Tab-controls">
               <li>
                 <button
                   @click="goToIndex(0)"
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <SliderSlides class="Grid-extract--card">
+        <SliderSlides class="Grid-extract--card st-2xh">
           <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
             <Card
               v-for="post in featuredWriting"

@@ -1,6 +1,6 @@
 <template>
-  <component 
-    :is="type" 
+  <component
+    :is="type"
     :to="post.attributes.permalink"
     :href="post.attributes.link"
     :target="target"
@@ -9,7 +9,7 @@
   >
     <div class="flex">
       <div class="Card-body w-2/3 lg:w-3/4">
-        <h3 class="Title mb-2px">
+        <h3 class="Title Title--sm mb-2px">
           {{ post.attributes.title }}
           <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
         </h3>

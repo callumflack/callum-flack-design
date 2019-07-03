@@ -1,5 +1,5 @@
 <template>
-  <Wrap :page="page">
+  <Wrap :page="page" kind="post">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header
         class="Grid-extract--edge"
@@ -21,10 +21,10 @@
             class="container relative h-full flex items-center justify-center"
             :class="heroImageBlend"
           >
-            <div class="w-full" :class="heroTitleColor">
+            <div class="container container--text" :class="heroTitleColor">
               <!-- post title -->
               <h1
-                class="Display text-center s-m mx-auto w-full "
+                class="Title s-m"
                 :class="heroTitleWidth"
                 itemprop="name headline"
               >
@@ -32,21 +32,31 @@
               </h1>
               <!-- post meta -->
               <div
-                class="text-center"
+                class="Text--sm"
                 :class="heroMetaClass"
               >
                 <!-- date -->
                 <time
-                  class="Text--sm"
+                  v-if="page.attributes.category === 'writing'"
                   :datetime="page.attributes.createdAt"
                   itemprop="datePublished"
                 >
                   {{ formatDate(page.attributes.createdAt) }}
                 </time>
-                <!-- tags -->
+                <time
+                  v-else
+                  :datetime="page.attributes.date"
+                  itemprop="datePublished"
+                >
+                  {{ formatListDate(page.attributes.date) }}
+                </time>
+                <!-- category & tags -->
                 <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+                <span class="Text--sm inline-block capitalize">
+                  {{ page.attributes.category }}:&nbsp;
+                </span>
                 <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
-                  <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
+                  <span v-if="index != 0">, </span><span class="">{{ tag }}</span>
                 </span>
                 <!-- reading time -->
                 <template v-if="page.attributes.category === 'writing'">
@@ -70,6 +80,7 @@
 
 <script>
 import formatDate from '../utils/formatDate'
+import formatListDate from '../utils/formatListDate'
 import Aspect from '../components/Aspect.vue'
 import Wrap from '../components/Wrap.vue'
 
@@ -93,7 +104,7 @@ export default {
     heroTitleWidth() {
       return this.page.attributes.heroTitleWidth
         ? `${this.page.attributes.heroTitleWidth}`
-        : "lg:w-9/12";
+        : "lg:w-full";
     },
     heroTitleColor() {
       return this.page.attributes.heroTitleInvert && "text-white";
@@ -114,7 +125,8 @@ export default {
   },
 
   methods: {
-    formatDate
+    formatDate,
+    formatListDate
   }
 }
 </script>

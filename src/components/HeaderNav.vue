@@ -1,7 +1,8 @@
 <template>
   <headroom :speed="500">
-    <nav class="container container--text flex justify-between">
-      <div>
+    <!-- <nav class="container container--text flex justify-end"> -->
+    <nav class="container container--list flex">
+      <!-- <div>
         <saber-link
           v-for="(item, index) in $themeConfig.nav"
           :key="index"
@@ -13,12 +14,16 @@
             {{ item.text }}
           </span>
         </saber-link>
-      </div>
+      </div> -->
       <saber-link class="Nav-link Meta" rel="author" to="/" exact>
-        <span style="text-transform:initial">
-          {{ siteTitle }}
-        </span>
+        <template v-if="$route.path !== '/'">
+          <span class="inline-block mr-1 mb-px">&#8592;</span>
+        </template>
+        <span style="text-transform:initial">{{ siteTitle }}</span>
       </saber-link>
+      <!-- <saber-link class="Nav-link Meta" to="/about.html" exact>
+        <span>Hey</span>
+      </saber-link> -->
     </nav>
   </headroom>
 </template>
@@ -57,8 +62,6 @@ export default {
 .Nav-link {
   @apply inline-flex items-center;
   height: calc(theme(spacing.16) * var(--space-ratio));
-  background-image: none !important;
-  text-shadow: none !important;
 }
 
 .Nav-link + .Nav-link {
@@ -68,15 +71,26 @@ export default {
 .Nav-link span {
   @apply relative;
 }
-.Nav-link span:after {
-  @apply absolute w-full h-px bg-transparent;
+/* .Nav-link span:after {
+  @apply absolute w-full h-px bg-transparent left-0;
   content: "";
-  transform: translateY(0.5em);
+  transform: translateY(1.9em);
+} */
+
+.Nav-logo {
+  @apply px-2;
+}
+/* .Nav-logo:hover,
+.router-link-exact-active {
+  @apply bg-text text-white;
+} */
+.Nav-logo + .Nav-logo {
+  @apply ml-px;
 }
 
-.is-active span:after,
+/* .is-active span:after,
 .router-link-exact-active span:after {
   @apply bg-text;
-}
+} */
 </style>
 

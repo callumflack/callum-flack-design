@@ -69,7 +69,8 @@ ol,
 }
 
 .Meta--year {
-  @apply font-bold border-b border-text;
+  @apply font-bold border-b;
+  /* @apply border-text; */
   margin-bottom: 20px;
   padding-bottom: calc(theme(spacing.2) * var(--space-ratio));
 }
@@ -163,5 +164,17 @@ ol,
 /* post specials */
 .Note {
   @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
+}
+.Note,
+.Note p {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+}
+.Note:first-of-type {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Note:before {
+  content: none !important;
+}
+.Note + .Note {
+  @apply border-transparent;
 }

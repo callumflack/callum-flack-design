@@ -7,7 +7,10 @@
       :category="page.attributes.category"
     />
     <main aria-label="Content" class="Block-lg-b">
-      <div class="container container--text">
+      <div
+        class="container"
+        :class="containerKind"
+      >
         <slot></slot>
       </div>
     </main>
@@ -26,7 +29,10 @@ export default {
     Header,
   },
 
-  props: ["page"],
+  props: {
+    page: Object,
+    kind: String
+  },
 
   head() {
     const { excerpt } = this.page;
@@ -68,6 +74,9 @@ export default {
     siteTitle() {
       return this.$siteConfig.title || "Your Awesome Title";
     },
+    containerKind() {
+      return this.kind === 'post' ? 'container--text' : 'container--list';
+    }
   }
 };
 </script>

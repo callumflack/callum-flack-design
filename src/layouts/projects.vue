@@ -4,9 +4,9 @@
 
     <SliderFrame>
       <div slot-scope="{ activeIndex, goToIndex }">
-        <div class="Grid-extract--edge bg-brand-header">
+        <div class="Grid-extract--edge border-b">
           <div class="container container--text">
-            <ul class="Tab-controls s-2xh">
+            <ul class="Tab-controls">
               <li>
                 <button
                   @click="goToIndex(0)"
@@ -25,14 +25,14 @@
           </div>
         </div>
 
-        <SliderSlides >
+        <SliderSlides class="st-2xh" >
           <SliderSlide v-if="featuredPosts">
-            <Card
+            <CardRow
               v-for="post in featuredPosts"
               :post="post"
               :key="post.attributes.permalink"
               class=""
-            ></Card>
+            ></CardRow>
           </SliderSlide>
           <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
             <div
@@ -41,12 +41,12 @@
               class="Year"
             >
               <h3 class="Meta Meta--year">{{ year }}</h3>
-              <Card
+              <CardRow
                 v-for="post in allPosts[year]"
                 :post="post"
                 :key="post.attributes.permalink"
                 class=""
-              ></Card>
+              ></CardRow>
             </div>
           </SliderSlide>
           <!-- <SliderSlide v-if="devPosts && devPosts.length > 0">
@@ -65,6 +65,7 @@
 
 <script>
 import Card from "../components/Card.vue";
+import CardRow from "../components/CardRow.vue";
 import SliderFrame from "../components/SliderFrame.vue";
 import SliderSlides from "../components/SliderSlides.vue";
 import SliderSlide from "../components/SliderSlide.vue";
@@ -73,6 +74,7 @@ import Wrap from "../components/Wrap.vue";
 export default {
   components: {
     Card,
+    CardRow,
     SliderFrame,
     SliderSlides,
     SliderSlide,

@@ -7,9 +7,9 @@
 
       <SliderFrame>
         <div slot-scope="{ activeIndex, goToIndex }">
-          <div class="Grid-extract--edge bg-brand-header">
-            <div class="container container--text">
-              <ul class="Tab-controls s-2xh">
+          <div class="Grid-extract--edge border-b">
+            <div class="container container--list">
+              <ul class="Tab-controls">
                 <li>
                   <button
                     @click="goToIndex(0)"
@@ -22,18 +22,41 @@
                     @click="goToIndex(1)"
                     :class="{ 'is-active': activeIndex === 1 }"
                     class="Tab-controls--button Meta"
-                  >Recently</button>
+                  >Projects</button>
+                </li>
+                <li>
+                  <button
+                    @click="goToIndex(2)"
+                    :class="{ 'is-active': activeIndex === 2 }"
+                    class="Tab-controls--button Meta"
+                  >Writing</button>
                 </li>
               </ul>
             </div>
           </div>
 
-          <SliderSlides class="Grid-extract--card">
+          <SliderSlides class="st-2xh">
             <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
-              <Card v-for="post in featuredPosts" :post="post" :key="post.attributes.permalink" />
+              <Card
+                v-for="post in featuredPosts"
+                :post="post"
+                :key="post.attributes.permalink"
+                class="Grid-extract--car "
+              />
             </SliderSlide>
-            <SliderSlide v-if="recentPosts && recentPosts.length > 0">
-              <Card v-for="post in recentPosts" :post="post" :key="post.attributes.permalink" />
+            <SliderSlide v-if="projectsPosts && projectsPosts.length > 0">
+              <CardRow
+                v-for="post in projectsPosts"
+                :post="post"
+                :key="post.attributes.permalink"
+              />
+            </SliderSlide>
+            <SliderSlide v-if="writingPosts && writingPosts.length > 0">
+              <CardRow
+                v-for="post in writingPosts"
+                :post="post"
+                :key="post.attributes.permalink"
+              />
             </SliderSlide>
           </SliderSlides>
         </div>
@@ -66,9 +89,10 @@
 </template>
 
 <script>
-import formatDate from "../utils/formatDate";
-import getSvg from "../utils/getSvg";
+// import formatDate from "../utils/formatDate";
+// import getSvg from "../utils/getSvg";
 import Card from "../components/Card.vue";
+import CardRow from "../components/CardRow.vue";
 import SliderFrame from "../components/SliderFrame.vue";
 import SliderSlides from "../components/SliderSlides.vue";
 import SliderSlide from "../components/SliderSlide.vue";
@@ -77,6 +101,7 @@ import Wrap from "../components/Wrap.vue";
 export default {
   components: {
     Card,
+    CardRow,
     SliderFrame,
     SliderSlides,
     SliderSlide,
@@ -91,16 +116,23 @@ export default {
     },
     featuredPosts() {
       return this.page.posts
-        // .filter(x => x.attributes.category === "writing")
-        .filter(x => x.attributes.tags.includes("featured"))
-
-    }
+        .filter(x => x.attributes.category === "writing")
+        // .filter(x => x.attributes.tags.includes("featured"))
+    },
+    projectsPosts() {
+      return this.page.posts
+        .filter(x => x.attributes.category === "projects")
+    },
+    writingPosts() {
+      return this.page.posts
+        .filter(x => x.attributes.category === "writing")
+    },
   },
 
-  methods: {
-    formatDate,
-    getSvg
-  }
+  // methods: {
+  //   formatDate,
+  //   getSvg
+  // }
 };
 </script>
 

@@ -118,12 +118,12 @@ module.exports = {
       xxs: "0.75rem",
       xs: "0.8125rem",
       sm: "0.875rem", // 14
-      base: "1.1875rem", // 17
-      lg: "1.1875rem", // 19
-      xl: "1.3125rem", // 21
+      base: "1.125rem", // 19
+      lg: "1.25rem", // 20
+      xl: "1.375rem", // 22
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
-      "4xl": "2rem", // 32
+      "4xl": "2.25rem", // 32 or 36
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
@@ -160,7 +160,7 @@ module.exports = {
     lineHeight: {
       title: "1.05",
       none: "1",
-      tight: "1.2",
+      tight: "1.075",
       snug: "1.375",
       reduced: "1.47059",
       normal: "1.3",

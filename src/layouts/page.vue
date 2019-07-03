@@ -1,5 +1,5 @@
 <template>
-  <Wrap :page="page">
+  <Wrap :page="page" kind="post">
 
       <div class="Block-sm-t Markdown" itemprop="articleBody">
         <slot name="default"/>
