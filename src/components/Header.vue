@@ -7,11 +7,11 @@
       <div class="container container--text">
         <h1
           v-if="title"
-          class="Title s-m md:w-2/3"
+          class="Display s-m md:w-2/3"
         >{{ title }}</h1>
         <p
           v-if="lede"
-          class="Text--sm text-gray md:w-2/3"
+          class="Link Text--sm text-gray md:w-2/3"
         >
           {{ lede }}
           <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">

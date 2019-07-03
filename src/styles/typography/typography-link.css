@@ -5,15 +5,20 @@
 
 */
 
-a {
-  transition: background-color 500ms ease;
+.Link a:not(.Button),
+.Markdown a:not(.Button) {
+  transition: all 150ms cubic-bezier(.7, 0, .3, 1);
+  box-shadow: inset 0 -2px 0 theme(colors.brand.highlight);
+  /* text-decoration: underline; */
 }
 
-p a:hover:not(.Button),
+/* p a:hover:not(.Button),
 ul a:hover:not(.Button),
-ol a:hover:not(.Button),
+ol a:hover:not(.Button), */
+.Link a:hover:not(.Button),
 .Markdown a:hover:not(.Button) {
-  @apply bg-brand-highlight;
+  /* @apply bg-brand-highlight; */
+  box-shadow: inset 0 -25px 0 theme(colors.brand.highlight);
 }
 
 /* VARS */

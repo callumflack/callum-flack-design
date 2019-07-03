@@ -5,20 +5,11 @@
     :href="post.attributes.link"
     :target="target"
     rel="noopener noreferrer"
-    :class="cardWidth"
+    class="Card"
   >
-    <div class="Card">
-      <div class="Card-figure" :class="figureShade" v-if="post.attributes.assets.cover">
-        <Aspect>
-          <img
-            :src="post.attributes.assets.cover"
-            :alt="post.attributes.title"
-            class="Card-figure-image"
-          >
-        </Aspect>
-      </div>
-      <div class="Card-body">
-        <h3 class="Title mb-1">
+    <div class="flex">
+      <div class="Card-body w-2/3 lg:w-3/4">
+        <h3 class="Title mb-2px">
           {{ post.attributes.title }}
           <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
         </h3>
@@ -28,8 +19,12 @@
             {{ formatDate(post.attributes.createdAt) }}
           </span>
           <span class="Text--sm inline-block mx-2px">&centerdot;</span>
-          <!-- category & tags -->
-          <span class="Text--sm">{{ post.attributes.category }}:</span>
+          <!-- only show category on home -->
+          <template v-if="$route.path === '/'">
+            <span class="Text--sm">{{ post.attributes.category }}</span>
+            <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+          </template>
+          <!-- tags -->
           <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
@@ -38,6 +33,25 @@
             <span class="Text--sm inline-block mx-2px">&centerdot;</span>
             <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
           </template>
+        </div>
+      </div>
+      <div class="w-1/3 lg:w-1/4">
+        <div class="Card-figure" :class="figureShade">
+          <img
+            v-if="post.attributes.assets.cover"
+            :src="post.attributes.assets.cover"
+            :alt="post.attributes.title"
+            class="Card-figure-image"
+          >
+          <!-- <a
+            v-if="post.attributes.linkFromCard"
+            :href="post.attributes.linkFromCard"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="Card-figure-blanklink"
+          >
+            <span class="Blank">&#8599;</span>
+          </a> -->
         </div>
       </div>
     </div>
@@ -63,9 +77,6 @@ export default {
     target() {
       return this.post.attributes.linkFromCard ? "_blank" : "";
     },
-    cardWidth() {
-      return this.post.attributes.fullFeaturedCard ? "w-full" : "w-full sm:w-1/2";
-    },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags
         .filter(x => x !== "featured")
@@ -86,14 +97,14 @@ export default {
 <style lang="postcss" scoped>
 .Card {
   @apply block relative cursor-pointer;
-  margin: -8px;
-  padding: 8px;
+  margin: -10px -8px;
+  padding: 10px 8px;
   transition: all 500ms ease;
 }
 
-/* .Card:not(:last-of-type) {
+.Card:not(:last-of-type) {
   margin-bottom: calc(theme(spacing.5) * var(--space-ratio));
-} */
+}
 
 .Card:before {
   @apply absolute h-full w-full left-0 top-0 z-10;
@@ -126,16 +137,18 @@ export default {
   width: calc(100% - 10px);
 }
 
-/* .Card:last-of-type:after {
+.Card:last-of-type:after {
   @apply border-transparent;
-} */
+}
 
 .Card:hover:after {
   @apply border-transparent;
 }
 
 .Card-body {
-  @apply pt-2;
+  @apply py-1 pr-8;
+  @apply pl-2;
+  /* @apply flex-grow; */
 }
 
 .Card-body-meta {
@@ -146,13 +159,13 @@ export default {
   @apply capitalize;
 }
 
-/* .Card-figure {
+.Card-figure {
   @apply h-full relative;
-} */
+}
 
 .Card-figure-image {
-  /* @apply absolute inset-0 object-cover w-full h-full;
-  max-width: none; */
+  @apply absolute inset-0 object-cover w-full h-full;
+  max-width: none;
   mix-blend-mode: multiply;
 }
 
@@ -162,10 +175,10 @@ export default {
 
 @screen lg {
   .Card-body {
-    @apply py-3;
+    @apply py-2 pr-10;
   }
   .Card-body > .Title {
-    @apply w-3/4;
+    @apply pr-4;
   }
 }
 </style>

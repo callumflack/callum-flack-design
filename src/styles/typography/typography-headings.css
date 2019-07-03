@@ -52,26 +52,20 @@
 
 .Display,
 .Title {
-  @apply font-title;
-  /* @apply font-bold; */
-  /* @apply uppercase; */
+  @apply font-title font-normal tracking-text;
 }
 
 .Title {
-  @apply font-normal tracking-text leading-tight;
-  font-size: calc(theme(fontSize.4xl) * var(--title-ratio));
-}
-.Title--sm {
+  @apply leading-tight;
   font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
 }
 .Title .Link--blank {
-  font-size: 50%;
+  font-size: 55%;
   margin-left: 0;
-  transform: translateY(-1em);
+  transform: translateY(-0.75em);
 }
 
 .Display {
-  /* @apply uppercase; */
-  @apply tracking-tight leading-title;
-  font-size: calc(theme(fontSize.6xl) * var(--title-ratio));
+  @apply tracking-tight leading-none;
+  font-size: calc(theme(fontSize.4xl) * var(--title-ratio));
 }

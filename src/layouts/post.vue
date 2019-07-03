@@ -24,7 +24,7 @@
             <div class="container container--text" :class="heroTitleColor">
               <!-- post title -->
               <h1
-                class="Title s-m"
+                class="Display s-m"
                 :class="heroTitleWidth"
                 itemprop="name headline"
               >
@@ -53,7 +53,7 @@
                 <!-- category & tags -->
                 <span class="Text--sm inline-block mx-2px">&centerdot;</span>
                 <span class="Text--sm inline-block capitalize">
-                  {{ page.attributes.category }}:&nbsp;
+                  {{ page.attributes.category }}:
                 </span>
                 <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
                   <span v-if="index != 0">, </span><span class="">{{ tag }}</span>

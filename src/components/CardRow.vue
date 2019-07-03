@@ -75,7 +75,7 @@ export default {
 
 <style lang="postcss" scoped>
 .Card {
-  @apply block py-2 relative overflow-hidden cursor-pointer;
+  @apply block py-2 relative cursor-pointer;
   @apply border-b;
   transition: all 500ms ease;
   transform: translateZ(0);
@@ -94,9 +94,10 @@ export default {
 } */
 
 .Card:before {
-  @apply absolute left-0 bottom-0 bg-text h-px;
+  @apply absolute left-0 bg-text h-px;
   content: "";
   right: 100%;
+  bottom: -1px;
   transition: right 150ms ease-out;
   z-index: -1;
 }

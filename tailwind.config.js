@@ -158,9 +158,8 @@ module.exports = {
       black: "900",
     },
     lineHeight: {
-      title: "1.05",
-      none: "1",
-      tight: "1.075",
+      none: "1.05",
+      tight: "1.2",
       snug: "1.375",
       reduced: "1.47059",
       normal: "1.3",

@@ -6,16 +6,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "saber",
-    "build": "saber build"
+    "build": "saber build",
+    "lint": "xo"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/callumflack/callum-flack-design"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
     "intersection-observer": "^0.7.0",
     "markdown-it-attrs": "^2.4.1",
+    "prettier": "^1.18.2",
     "saber": "^0.6.10",
     "saber-plugin-critical": "^1.0.2",
     "saber-plugin-feed": "^0.3.0",
@@ -27,9 +28,29 @@
     "vue-headroom": "^0.10.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.6.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "postcss-import": "^12.0.1"
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "postcss-import": "^12.0.1",
+    "xo": "^0.24.0"
   },
-  "peerDependencies": {}
+  "xo": {
+    "extensions": [
+      "vue"
+    ],
+    "extends": [
+      "rem",
+      "plugin:vue/recommended",
+      "prettier/vue",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "import/no-unassigned-import": "off",
+      "unicorn/filename-case": "off"
+    }
+  }
 }

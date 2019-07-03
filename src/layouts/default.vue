@@ -36,12 +36,12 @@
           </div>
 
           <SliderSlides class="st-2xh">
-            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="Grid">
               <Card
                 v-for="post in featuredPosts"
                 :post="post"
                 :key="post.attributes.permalink"
-                class="Grid-extract--car "
+                class="Grid-item Grid-extract--car "
               />
             </SliderSlide>
             <SliderSlide v-if="projectsPosts && projectsPosts.length > 0">
@@ -116,8 +116,8 @@ export default {
     },
     featuredPosts() {
       return this.page.posts
-        .filter(x => x.attributes.category === "writing")
-        // .filter(x => x.attributes.tags.includes("featured"))
+        // .filter(x => x.attributes.category === "writing")
+        .filter(x => x.attributes.tags.includes("featured"))
     },
     projectsPosts() {
       return this.page.posts
@@ -135,12 +135,3 @@ export default {
   // }
 };
 </script>
-
-<style lang="postcss" scoped>
-.bg-brand-headerX {
-  background-image: linear-gradient(
-    theme(colors.brand.bg),
-    theme(colors.gray.200)
-  );
-}
-</style>

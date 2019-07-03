@@ -122,7 +122,7 @@ ol,
   @apply absolute inline-block bg-text h-px;
   content: "";
   width: 1em;
-  top: 0.5em;
+  top: 0.6em;
   left: -1.25em;
 }
 
@@ -133,11 +133,6 @@ ol,
 
 .Markdown strong {
   @apply text-black font-medium;
-}
-
-.Markdown a:not(.Button) {
-  text-decoration: underline;
-  text-decoration-line: underline;
 }
 
 .Markdown blockquote p {
