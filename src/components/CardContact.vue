@@ -1,19 +1,20 @@
 <template>
   <div class="Card">
-    <div class="w-4/12 sm:w-3/12">
+
+    <div class="w-4/12 sm:w-2/12">
       <Aspect ratio="5/4" class="">
         <img src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg" alt="Callum Flack">
       </Aspect>
     </div>
-    <div class="w-8/12 sm:w-9/12">
-      <div class="h-full p-4 lg:p-6">
-        <h1 v-if="title" class="Display s-m">
+    <div class="w-8/12 sm:w-10/12">
+      <div class="h-full pl-4 lg:pl-6">
+        <h1 v-if="title" class="Display s-m lg:w-5/6">
           {{ title }}
         </h1>
-        <p v-if="lede" class="s-m">
+        <p v-if="lede" class="Text--base text-gray s-m lg:w-4/6">
           {{ lede }}
         </p>
-        <ul class="Text--base">
+        <ul class="Text--base text-gray">
           <li>
             <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
               <icon name="email" class="mr-1"></icon>
@@ -65,15 +66,17 @@ export default {
 
 <style lang="postcss" scoped>
 .Card {
-  @apply flex flex-row rounded-lg overflow-hidden;
-  @apply border border-text;
-  @apply bg-brand-highlight;
-  /* border-color: rgba(255, 255, 255, 0.5); */
-  border-radius: 1rem;
+  @apply flex flex-row;
+  @apply border-t border-b border-text py-3;
+  /* @apply rounded-lg overflow-hidden; */
+  /* box-shadow: 4px 4px 16px #cdcdcd; */
+  /* @apply border border-text; */
+  /* @apply bg-brand-highlight; */
+  /* border-radius: 1rem; */
 }
 
 .Card img {
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   /* mix-blend-mode: multiply; */
 }
 

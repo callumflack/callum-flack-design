@@ -51,16 +51,16 @@
                   {{ formatListDate(page.attributes.date) }}
                 </time>
                 <!-- category & tags -->
-                <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+                <span class="Text--sm inline-block mx-2px">&mdash;</span>
                 <span class="Text--sm inline-block capitalize">
                   {{ page.attributes.category }}:
                 </span>
                 <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
-                  <span v-if="index != 0">, </span><span class="">{{ tag }}</span>
+                  <span v-if="index != 0">, </span><span class="lowercase">{{ tag }}</span>
                 </span>
                 <!-- reading time -->
                 <template v-if="page.attributes.category === 'writing'">
-                  <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+                  <span class="Text--sm inline-block mx-2px">&mdash;</span>
                   <span class="Text--sm">{{ page.attributes.readingTime }} mins</span>
                 </template>
               </div>
@@ -74,10 +74,19 @@
         <slot name="default"/>
       </div>
 
+      <!-- article ender -->
+      <!-- <div class="Block-t relative flex justify-center items-center">
+        <saber-link to="/">
+          <icon
+            name="sun"
+            height="2em"
+            width="2em"
+          />
+        </saber-link>
+      </div> -->
+
       <a class="u-url" :href="page.attributes.permalink" hidden></a>
     </article>
-
-    <CardFooter />
   </Wrap>
 </template>
 
@@ -85,13 +94,12 @@
 import formatDate from '../utils/formatDate'
 import formatListDate from '../utils/formatListDate'
 import Aspect from '../components/Aspect.vue'
-import CardFooter from '../components/CardFooter.vue'
 import Wrap from '../components/Wrap.vue'
+// import '../components/icons/sun';
 
 export default {
   components: {
     Aspect,
-    CardFooter,
     Wrap,
   },
 
@@ -140,5 +148,9 @@ export default {
   margin-top: calc(theme(spacing.10) * var(--block-size-ratio));
   margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
 }
+
+/* .Sun svg {
+  @apply border border-text rounded-full p-2;
+} */
 </style>
 

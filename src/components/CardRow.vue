@@ -99,7 +99,7 @@ export default {
 } */
 
 .Card:before {
-  @apply absolute left-0 bg-text h-2px;
+  @apply absolute left-0 bg-text h-px;
   content: "";
   right: 100%;
   bottom: -1px;

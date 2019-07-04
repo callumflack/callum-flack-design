@@ -11,13 +11,12 @@ module.exports = {
       text: "#111",
       white: "white",
       brand: {
-        primary: "#a57643",
-        blue: "#1b495a",
+        red: "#ff3f00", // red-orange
         highlight: "#e34234", // vermillion
         highlight: "#FDCF31",
         highlight: "#ffe428",
         neutral: "#FAF8F5",
-        neutral: "#f2f2f2",
+        neutral: "#f3f3f3",
         // header: "#fbe0a4",
         header: "#d9d7ce",
         header: "#E8E8DE",
@@ -28,6 +27,7 @@ module.exports = {
         header: "#efefe9",
         bg: "#fbfaf8",
         bg: "#f9f9f9",
+        bg: "#fffffc",
         bg: "#fefefe",
       },
       gray: {
@@ -36,7 +36,7 @@ module.exports = {
         300: "#ddd",
         400: "#dedede",
         500: "#aaa",
-        600: "#888",
+        600: "#777",
         700: "#777",
         // 800: "#231F20",
         // 900: "#1a202c",
@@ -118,11 +118,11 @@ module.exports = {
       ],
     },
     fontSize: {
-      xxs: "0.75rem", // 12
+      xxs: "0.78125rem", // 12
       xs: "0.875rem", // 13
       sm: "0.875rem", // 14
       base: "0.9375rem", // 16
-      lg: "1.125rem", // 19
+      lg: "1.1875rem", // 19
       xl: "1.375rem", // 22
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27

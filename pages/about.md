@@ -1,7 +1,7 @@
 ---
 layout: page
-title: A designer who codes
-lede: Callum Flack is a graphic designer and web developer. He is fluid across graphic design, information design and frontend code.
+title:  A designer who codes
+lede: Callum Flack Design is fluid across graphic design, information design and frontend code.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -65,7 +65,7 @@ lede: Callum Flack is a graphic designer and web developer. He is fluid across g
 
 <!-- Callum bridges the gap between design and code.  -->
 
-Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience, and he can build it too. The difference isn't obvious until it is.
+Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience and information structure, and he can build it too. The difference isn't obvious until it is. You can break down the work Callum does into three parts:
 
 <!-- After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding. -->
 
@@ -75,7 +75,7 @@ Understanding the quality of the connections that bridge design and code is the 
 
 Callum helps clients understand the hidden costs in project decisions and website publishing options, finding better processes which reduce complexities and increase website lifespans. -->
 
-With a keen sense of what constitutes beautiful, actionable design, a keen sense of obstacles within interaction flows, and explicit experience as a developer, Callum is able to judge the costs and benefits of interface design execution, finding robust solutions that never compromise a human-first experience.
+<!-- With a keen sense of what constitutes beautiful, actionable design, a keen sense of obstacles within interaction flows, and explicit experience as a developer, Callum is able to judge the costs and benefits of interface design execution, finding robust solutions that never compromise a human-first experience. -->
 
 <!-- With this explicit experience as a "doer", -->
 <!-- which creates the time and confidence to focus building the interface..  -->
@@ -85,9 +85,9 @@ With a keen sense of what constitutes beautiful, actionable design, a keen sense
 <!-- on what matters: executing for business goals and customer intentions -->
 <!-- Callum collects typefaces, records, names as tokens of small wonder. -->
 
-## Skills & experience
+<!-- ## Skills & experience -->
 
-You can break down the work Callum does into three parts:
+<!-- You can break down the work Callum does into three parts: -->
 
 - Brand identity and graphic design
 - User interface and information design
@@ -109,9 +109,9 @@ When Callum builds websites, he advocates for these tools:
 
 <!-- ### Experienced -->
 
-Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
+Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
 
-> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **[Brian Hur, Founder, VetPronto (YCW15)](https://www.linkedin.com/in/brianhur/)**
+> Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **[Brian Hur](https://www.linkedin.com/in/brianhur/), Founder, VetPronto (YCW15)**
 
 <!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall, JavaScript engineer_ -->
 

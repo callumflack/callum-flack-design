@@ -59,20 +59,20 @@ export default {
 .SliderSlide--transition-left-enter,
 .SliderSlide--transition-right-leave-active {
   opacity: 0;
-  transform: translate(2em, 0);
+  transform: translate(10em, 0);
 
   @media (--mo) {
-    transform: translate(1em, 0);
+    transform: translate(5em, 0);
   }
 }
 
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter {
   opacity: 0;
-  transform: translate(-2em, 0);
+  transform: translate(-10em, 0);
 
   @media (--mo) {
-    transform: translate(-1em, 0);
+    transform: translate(-5em, 0);
   }
 }
 </style>

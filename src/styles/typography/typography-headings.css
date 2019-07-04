@@ -18,7 +18,7 @@
 .Metaheading {
   /* @apply font-normal leading-normal italic; */
   @apply font-sans leading-normal tracking-wider;
-  /* @apply font-bold; */
+  @apply font-medium;
   @apply uppercase;
   font-size: calc((theme(fontSize.base) - 2px) * var(--text-ratio));
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
@@ -26,7 +26,7 @@
 
 .Markdown h2 {
   /* @apply font-title font-bold leading-normal tracking-wide uppercase; */
-  @apply font-sans font-normal leading-normal tracking-text;
+  @apply font-sans font-medium leading-normal tracking-text;
   font-size: calc(theme(fontSize.2xl) * var(--text-ratio));
 }
 
@@ -52,12 +52,12 @@
 
 .Display,
 .Title {
-  @apply font-title font-normal tracking-text;
+  @apply font-title font-medium tracking-text;
 }
 
 .Title {
   @apply leading-tight;
-  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
 .Title .Link--blank {
   font-size: 55%;
@@ -66,6 +66,6 @@
 }
 
 .Display {
-  @apply tracking-tight leading-none;
+  @apply font-medium tracking-tight leading-none;
   font-size: calc(theme(fontSize.4xl) * var(--title-ratio));
 }

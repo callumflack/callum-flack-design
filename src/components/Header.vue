@@ -17,8 +17,8 @@
     </div>
 
     <!-- about card -->
-    <div v-if="$route.path === '/about.html'" class="Block pb-0">
-      <div class="container container--list">
+    <div v-if="$route.path === '/about.html'" class="Block">
+      <div class="container container--text">
         <CardContact :title="title" :lede="lede" />
       </div>
     </div>

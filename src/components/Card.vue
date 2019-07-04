@@ -99,7 +99,7 @@ export default {
 .Card:before {
   @apply absolute h-full w-full left-0 top-0 z-10;
   @apply opacity-0;
-  @apply border-2 border-black rounded-lg;
+  @apply border border-black rounded-lg;
   content: "";
   pointer-events: none;
 }
@@ -140,7 +140,7 @@ export default {
 } */
 
 .Card-body {
-  @apply bg-white px-2 pt-2 pb-6;
+  @apply bg-brand-bg px-2 pt-2 pb-6;
 }
 
 .Card-body-meta {

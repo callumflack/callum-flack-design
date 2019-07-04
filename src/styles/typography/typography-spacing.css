@@ -33,14 +33,14 @@
 .Markdown ol:not(:last-child),
 .s-block-p:not(:last-child),
 .s-p {
-  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
 .st-p {
-  margin-top: calc(theme(spacing.3) * var(--space-ratio));
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
 }
 .sy-p {
-  margin-top: calc(theme(spacing.3) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
 
 /*
@@ -51,7 +51,7 @@
 
 .Markdown h2:not(:last-child),
 .Markdown h3:not(:last-child) {
-  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
 }
 
 .Markdown p + h2,

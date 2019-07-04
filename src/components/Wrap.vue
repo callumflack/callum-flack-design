@@ -6,7 +6,7 @@
       :lede="page.attributes.lede"
       :category="page.attributes.category"
     />
-    <main aria-label="Content" class="Block-lg-b" :class="mainBgColor">
+    <main aria-label="Content" class="Block-b" :class="mainHomeClass">
       <div
         class="container"
         :class="containerKind"
@@ -14,7 +14,7 @@
         <slot></slot>
       </div>
     </main>
-    <!-- <Footer :siteTitle="siteTitle"/> -->
+    <Footer v-if="$route.path !== '/'" />
   </div>
 </template>
 
@@ -39,8 +39,8 @@ export default {
     containerKind() {
       return this.kind === 'post' ? 'container--text' : 'container--list';
     },
-    mainBgColor() {
-      return this.$route.path === "/" && "bg-brand-neutral";
+    mainHomeClass() {
+      return this.$route.path === "/" && "bg-brand-neutral min-h-screen";
     }
   },
 
@@ -82,9 +82,3 @@ export default {
 
 };
 </script>
-
-<style lang="postcss" scoped>
-main {
-  @apply min-h-screen;
-}
-</style>

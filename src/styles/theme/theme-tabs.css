@@ -14,9 +14,9 @@
   transform: translateY(0);
 }
 
-.Tab-controls--button.is-active {
+/* .Tab-controls--button.is-active {
   @apply font-bold;
-}
+} */
 
 .Tab-controls--button:hover,
 .Tab-controls--button:active,

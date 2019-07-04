@@ -92,5 +92,10 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-
+.Input {
+  @apply border border-text rounded-l border-r-0;
+}
+.Button {
+  @apply rounded-r;
+}
 </style>
