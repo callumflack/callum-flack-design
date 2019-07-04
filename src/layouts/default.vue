@@ -7,7 +7,7 @@
 
       <SliderFrame>
         <div slot-scope="{ activeIndex, goToIndex }">
-          <div class="Grid-extract--edge border-b">
+          <div class="Grid-extract--edge bg-brand-bg ">
             <div class="container container--list">
               <ul class="Tab-controls">
                 <li>
@@ -36,13 +36,17 @@
           </div>
 
           <SliderSlides class="st-2xh">
-            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="Grid">
-              <Card
-                v-for="post in featuredPosts"
-                :post="post"
-                :key="post.attributes.permalink"
-                class="Grid-item Grid-extract--car "
-              />
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
+              <div class="Grid-extract--cards">
+                <div class="Grid Grid--sm">
+                  <Card
+                    v-for="post in featuredPosts"
+                    :post="post"
+                    :key="post.attributes.permalink"
+                    class="Grid-item"
+                  />
+                </div>
+              </div>
             </SliderSlide>
             <SliderSlide v-if="projectsPosts && projectsPosts.length > 0">
               <CardRow

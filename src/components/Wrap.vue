@@ -6,7 +6,7 @@
       :lede="page.attributes.lede"
       :category="page.attributes.category"
     />
-    <main aria-label="Content" class="Block-lg-b">
+    <main aria-label="Content" class="Block-lg-b" :class="mainBgColor">
       <div
         class="container"
         :class="containerKind"
@@ -28,10 +28,20 @@ export default {
     Footer,
     Header,
   },
-
   props: {
     page: Object,
     kind: String
+  },
+  computed: {
+    siteTitle() {
+      return this.$siteConfig.title || "Your Awesome Title";
+    },
+    containerKind() {
+      return this.kind === 'post' ? 'container--text' : 'container--list';
+    },
+    mainBgColor() {
+      return this.$route.path === "/" && "bg-brand-neutral";
+    }
   },
 
   head() {
@@ -70,13 +80,11 @@ export default {
     };
   },
 
-  computed: {
-    siteTitle() {
-      return this.$siteConfig.title || "Your Awesome Title";
-    },
-    containerKind() {
-      return this.kind === 'post' ? 'container--text' : 'container--list';
-    }
-  }
 };
 </script>
+
+<style lang="postcss" scoped>
+main {
+  @apply min-h-screen;
+}
+</style>

@@ -7,13 +7,13 @@
     rel="noopener noreferrer"
     class="Card"
   >
-    <div class="Card-body flex">
+    <div class="Card-body flex justify-between">
       <!-- title -->
-      <h3 class="Text w-7/12">
+      <h3 class="Text w-7/12 lg:w-8/12">
         {{ post.attributes.title }}
         <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
       </h3>
-      <div class="flex justify-between w-5/12">
+      <div class="w-5/12 lg:w-4/12 flex justify-between">
         <!-- only show category on home -->
         <!-- <template v-if="$route.path === '/'">
           <div class="Text">{{ post.attributes.category }}</div>
@@ -23,13 +23,14 @@
           <span class="Text text-gray" v-for="(tag, index) in tagsWithFeaturedRemoved">
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
+          <!-- if writing, show reading time -->
+          <template v-if="post.attributes.category === 'writing'">
+            <span class="Text text-gray inline-block mx-2px">&centerdot;</span>
+            <span class="Text text-gray">{{ post.attributes.readingTime }} mins</span>
+          </template>
         </div>
-        <!-- if writing, show reading time -->
-        <template v-if="post.attributes.category === 'writing'">
-          <span class="Text text-gray">{{ post.attributes.readingTime }} mins</span>
-        </template>
         <!-- date -->
-        <span class="Text text-gray">
+        <span class="Text text-gray ml-4 lg:ml-8">
           {{ formatListDate(post.attributes.createdAt) }}
         </span>
       </div>
@@ -82,6 +83,10 @@ export default {
   backface-visibility: hidden;
 }
 
+/* .Card:hover {
+  @apply bg-white;
+} */
+
 /* .Card:after {
   @apply border-b border-gray-200;
   @apply absolute bottom-0 left-0 w-full;
@@ -94,7 +99,7 @@ export default {
 } */
 
 .Card:before {
-  @apply absolute left-0 bg-text h-px;
+  @apply absolute left-0 bg-text h-2px;
   content: "";
   right: 100%;
   bottom: -1px;

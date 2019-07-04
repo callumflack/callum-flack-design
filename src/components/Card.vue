@@ -86,8 +86,9 @@ export default {
 <style lang="postcss" scoped>
 .Card {
   @apply block relative cursor-pointer;
-  margin: -8px;
-  padding: 8px;
+  /* @apply h-full; */
+  margin: -7px;
+  padding: 7px;
   transition: all 500ms ease;
 }
 
@@ -98,7 +99,7 @@ export default {
 .Card:before {
   @apply absolute h-full w-full left-0 top-0 z-10;
   @apply opacity-0;
-  @apply border border-black rounded-lg;
+  @apply border-2 border-black rounded-lg;
   content: "";
   pointer-events: none;
 }
@@ -118,24 +119,28 @@ export default {
   animation: hoverAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
 }
 
-.Card:after {
+/* .Card:after {
   @apply border-b border-gray-200;
   @apply absolute bottom-0;
   content: "";
   margin-left: 0;
-  width: calc(100% - 10px);
-}
+  width: calc(100% - 20px);
+} */
 
 /* .Card:last-of-type:after {
   @apply border-transparent;
 } */
 
-.Card:hover:after {
+/* .Card:hover:after {
   @apply border-transparent;
-}
+} */
+
+/* .Card-figure {
+  @apply mb-2;
+} */
 
 .Card-body {
-  @apply pt-2;
+  @apply bg-white px-2 pt-2 pb-6;
 }
 
 .Card-body-meta {
@@ -161,8 +166,11 @@ export default {
 }
 
 @screen lg {
+  /* .Card-figure {
+    @apply mb-3;
+  } */
   .Card-body {
-    @apply py-3;
+    @apply px-3 pt-3 pb-12;
   }
   .Card-body > .Title {
     @apply w-3/4;

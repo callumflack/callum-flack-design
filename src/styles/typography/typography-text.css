@@ -38,8 +38,8 @@ ol {
   @apply tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
-.Text--lg {
-  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+.Text--base {
+  font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
 .Text--xl {
   font-size: calc(theme(fontSize.xl) * var(--text-ratio));
@@ -52,8 +52,8 @@ ol,
 .Input,
 .Markdown > *,
 .Text,
-.Text--base {
-  font-size: calc(theme(fontSize.base) * var(--text-ratio));
+.Text--lg {
+  font-size: calc(theme(fontSize.lg) * var(--text-ratio));
 }
 
 /*
@@ -98,7 +98,7 @@ ol,
 
 .Markdown ul,
 .Markdown ol {
-  padding-left: theme(spacing.6);
+  @apply pl-6;
 }
 
 .Markdown ul {
@@ -136,7 +136,7 @@ ol,
 }
 
 .Markdown blockquote p {
-  @apply pl-4 border-l border-gray-400;
+  @apply pl-6 border-l border-gray-500;
   @apply text-gray-600;
   /* @apply italic; */
 }
@@ -152,7 +152,8 @@ ol,
 }
 
 .Markdown blockquote p strong {
-  @apply table font-medium not-italic mt-1;
+  @apply table not-italic mt-1 tracking-wider;
+  /* @apply font-normal; */
   @apply text-gray-600;
 }
 

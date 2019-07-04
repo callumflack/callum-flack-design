@@ -30,14 +30,14 @@
 /* LG */
 
 .Block-lg {
-  padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
+  padding-top: calc(theme(spacing.64) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.64) * var(--block-size-ratio));
 }
 .Block-lg-b {
-  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
+  padding-bottom: calc(theme(spacing.64) * var(--block-size-ratio));
 }
 .Block-lg-t {
-  padding-top: calc(theme(spacing.40) * var(--block-size-ratio));
+  padding-top: calc(theme(spacing.64) * var(--block-size-ratio));
 }
 
 /* MD */

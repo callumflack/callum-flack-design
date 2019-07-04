@@ -13,8 +13,11 @@ module.exports = {
       brand: {
         primary: "#a57643",
         blue: "#1b495a",
+        highlight: "#e34234", // vermillion
         highlight: "#FDCF31",
+        highlight: "#ffe428",
         neutral: "#FAF8F5",
+        neutral: "#f2f2f2",
         // header: "#fbe0a4",
         header: "#d9d7ce",
         header: "#E8E8DE",
@@ -30,7 +33,7 @@ module.exports = {
       gray: {
         100: "#f7fafc",
         200: "#eaeaea",
-        300: "#eee",
+        300: "#ddd",
         400: "#dedede",
         500: "#aaa",
         600: "#888",
@@ -117,9 +120,9 @@ module.exports = {
     fontSize: {
       xxs: "0.75rem", // 12
       xs: "0.875rem", // 13
-      sm: "0.9375rem", // 15
-      base: "1.125rem", // 19
-      lg: "1.25rem", // 20
+      sm: "0.875rem", // 14
+      base: "0.9375rem", // 16
+      lg: "1.125rem", // 19
       xl: "1.375rem", // 22
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
@@ -207,7 +210,7 @@ module.exports = {
     },
     borderColor: theme => ({
       ...theme("colors"),
-      default: theme("colors.gray.200", "currentColor"),
+      default: theme("colors.gray.300", "currentColor"),
     }),
     borderRadius: {
       none: "0",
@@ -387,7 +390,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
     },
   },
   variants: {

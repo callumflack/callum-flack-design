@@ -7,7 +7,7 @@
     <div v-if="$route.path === '/'" class="Block">
       <div class="container container--text">
         <h1 v-if="title" class="Display s-m md:w-3/4" >{{ title }}</h1>
-        <p v-if="lede" class="Link Text--sm text-gray md:w-3/4">
+        <p v-if="lede" class="Link Text--base text-gray md:w-3/4">
           {{ lede }}
           <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
             Learn more &rightarrow;
@@ -19,7 +19,7 @@
     <!-- about card -->
     <div v-if="$route.path === '/about.html'" class="Block pb-0">
       <div class="container container--list">
-        <ContactCard :title="title" :lede="lede" />
+        <CardContact :title="title" :lede="lede" />
       </div>
     </div>
 
@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import ContactCard from "../components/ContactCard";
+import CardContact from "../components/CardContact";
 import HeaderNav from "../components/HeaderNav";
 
 export default {
   components: {
-    ContactCard,
+    CardContact,
     HeaderNav
   },
   props: {

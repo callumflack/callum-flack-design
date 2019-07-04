@@ -13,22 +13,19 @@
         <p v-if="lede" class="s-m">
           {{ lede }}
         </p>
-        <!-- <p class="Meta s-m">
-          Get in touch:
-        </p> -->
-        <ul class="Text--sm">
+        <ul class="Text--base">
           <li>
             <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
               <icon name="email" class="mr-1"></icon>
               {{ this.$siteConfig.email }}
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a :href="`tel:${this.$siteConfig.phone.replace(' ', '-')}`" target="_blank" rel="noopener noreferrer">
               <icon name="phone" class="mr-1"></icon>
               {{ this.$siteConfig.phone }}
             </a>
-          </li>
+          </li> -->
           <li>
             <a :href="`https://twitter.com/${this.$siteConfig.social.twitter}`" target="_blank" rel="noopener noreferrer">
               <icon name="twitter" class="mr-1"></icon>

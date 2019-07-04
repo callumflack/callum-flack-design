@@ -1,6 +1,6 @@
 .Tab-controls {
   @apply flex;
-  @apply border-b border-transparent;
+  /* @apply border-b border-transparent; */
   /* @apply text-gray-500; */
 }
 
@@ -9,9 +9,9 @@
 }
 
 .Tab-controls--button {
-  @apply border-b border-transparent;
+  @apply border-b-2 border-transparent;
   height: calc(theme(spacing.12) * var(--space-ratio));
-  transform: translateY(2px);
+  transform: translateY(0);
 }
 
 .Tab-controls--button.is-active {
@@ -21,5 +21,5 @@
 .Tab-controls--button:hover,
 .Tab-controls--button:active,
 .Tab-controls--button.is-active {
-  @apply border-black outline-none;
+  @apply border-text outline-none;
 }

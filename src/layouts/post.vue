@@ -76,6 +76,8 @@
 
       <a class="u-url" :href="page.attributes.permalink" hidden></a>
     </article>
+
+    <CardFooter />
   </Wrap>
 </template>
 
@@ -83,11 +85,13 @@
 import formatDate from '../utils/formatDate'
 import formatListDate from '../utils/formatListDate'
 import Aspect from '../components/Aspect.vue'
+import CardFooter from '../components/CardFooter.vue'
 import Wrap from '../components/Wrap.vue'
 
 export default {
   components: {
     Aspect,
+    CardFooter,
     Wrap,
   },
 

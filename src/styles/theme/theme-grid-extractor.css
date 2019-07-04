@@ -17,12 +17,18 @@
 }
 
 @screen xl {
-  .Grid-extract--card {
+  .Grid-extract--cards {
     /* --width: calc(theme(screens.sm) + 16px);
     left: calc((-0.5 * var(--width)) + 50% - 8px); */
-    --width: calc(theme(screens.sm) + 2rem);
+    /* --width: calc(theme(screens.sm) + 2rem);*/
+    --width: theme(screens.xl);
     left: calc((-0.5 * var(--width)) + 50% );
     position: relative;
     width: var(--width) !important;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .Grid-extract--cards {
+    --width: 1440px;
   }
 }
