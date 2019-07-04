@@ -79,9 +79,6 @@
       </div>-->
 
       <!-- <p class="feed-subscribe" v-if="$feed">
-        <svg class="svg-icon orange">
-          <use :xlink:href="getSvg('rss')"></use>
-        </svg>
         <a :href="$feed.permalink">Subscribe</a>
       </p>-->
     </div>
@@ -89,8 +86,6 @@
 </template>
 
 <script>
-// import formatDate from "../utils/formatDate";
-// import getSvg from "../utils/getSvg";
 import Card from "../components/Card.vue";
 import CardRow from "../components/CardRow.vue";
 import SliderFrame from "../components/SliderFrame.vue";
@@ -128,10 +123,5 @@ export default {
         .filter(x => x.attributes.category === "writing")
     },
   },
-
-  // methods: {
-  //   formatDate,
-  //   getSvg
-  // }
 };
 </script>

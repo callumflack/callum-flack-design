@@ -19,7 +19,7 @@
         <template v-if="$route.path !== '/'">
           <span class="inline-block mr-1 mb-px">&#8592;</span>
         </template>
-        <span style="text-transform:initial">{{ siteTitle }}</span>
+        <span style="text-transform:initial">CFd</span>
       </saber-link>
       <!-- <saber-link class="Nav-link Meta" to="/about.html" exact>
         <span>Hey</span>

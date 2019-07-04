@@ -17,7 +17,7 @@
         </div>
 
         <div class="social-links">
-          <Social />
+          <!-- <Social /> -->
         </div>
       </div>
     </div>
@@ -25,11 +25,9 @@
 </template>
 
 <script>
-import Social from './Social.vue'
 
 export default {
   components: {
-    Social
   },
 
   props: {

@@ -44,7 +44,7 @@ export default {
       }
     }
     return {
-      title: title ? `${title} - ${this.siteTitle}` : this.siteTitle,
+      title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
       meta: [
         description && {
           name: "description",

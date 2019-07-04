@@ -1,12 +1,9 @@
 <template>
   <Wrap :page="page" kind="post">
-
-      <div class="Block-sm-t Markdown" itemprop="articleBody">
-        <slot name="default"/>
-      </div>
-
-      <!-- <a class="u-url" :href="page.attributes.permalink" hidden></a> -->
+    <article class="Block-sm-t Markdown" itemprop="articleBody">
+      <slot name="default"/>
     </article>
+    <!-- <a class="u-url" :href="page.attributes.permalink" hidden></a> -->
   </Wrap>
 </template>
 

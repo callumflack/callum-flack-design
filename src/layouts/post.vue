@@ -69,6 +69,7 @@
         </div>
       </header>
 
+      <!-- article -->
       <div class="Block-sm-t Markdown" itemprop="articleBody">
         <slot name="default"/>
       </div>
@@ -108,12 +109,6 @@ export default {
     },
     heroTitleColor() {
       return this.page.attributes.heroTitleInvert && "text-white";
-      // return
-      //   this.page.attributes.heroTitleWidth && `${this.page.attributes.heroTitleWidth}`,
-      // return [{
-      //   "text-white": this.page.attributes.heroTitleInvert,
-      //   "`${this.page.attributes.heroTitleWidth}`": this.page.attributes.heroTitleWidth
-      // }]
     },
     heroMetaClass() {
       return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
@@ -132,10 +127,6 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Block--nav {
-  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
-}
-
 .BlendImage {
   background-color: rgba(0,0,0,0.2);
 }

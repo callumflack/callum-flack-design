@@ -1,18 +1,13 @@
 <template>
-  <header :class="headerClasses">
+  <header>
 
     <HeaderNav :siteTitle="siteTitle" :category="category" />
 
-    <div v-if="!$route.path.includes('blog')" class="Block">
+    <!-- <div v-if="!$route.path.includes('blog')" class="Block"> -->
+    <div v-if="$route.path === '/'" class="Block">
       <div class="container container--text">
-        <h1
-          v-if="title"
-          class="Display s-m md:w-2/3"
-        >{{ title }}</h1>
-        <p
-          v-if="lede"
-          class="Link Text--sm text-gray md:w-2/3"
-        >
+        <h1 v-if="title" class="Display s-m md:w-3/4" >{{ title }}</h1>
+        <p v-if="lede" class="Link Text--sm text-gray md:w-3/4">
           {{ lede }}
           <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
             Learn more &rightarrow;
@@ -21,9 +16,10 @@
       </div>
     </div>
 
-    <div v-if="$route.path === '/about.html'" class="ContactCard">
+    <!-- about card -->
+    <div v-if="$route.path === '/about.html'" class="Block pb-0">
       <div class="container container--list">
-        <ContactCard v-if="$route.path === '/about.html'" />
+        <ContactCard :title="title" :lede="lede" />
       </div>
     </div>
 
@@ -69,35 +65,8 @@ export default {
 }
 </script>
 
-<style lang="postcss">
-
-</style>
-
-
 <style lang="postcss" scoped>
-.Header {
-  @apply bg-brand-header;
-}
-
-/* .Header * {
-  @apply text-white;
-} */
-
 .Block {
   padding-top: calc(theme(spacing.20) * var(--block-size-ratio));
-}
-
-.with-contactCard {
-  @apply relative;
-  margin-bottom: calc(theme(spacing.20) * var(--block-size-ratio));
-}
-
-.with-contactCard .Block {
-  padding-bottom: calc(theme(spacing.40) * var(--block-size-ratio));
-}
-
-.ContactCard {
-  @apply absolute w-full;
-  transform: translateY(-50%);
 }
 </style>

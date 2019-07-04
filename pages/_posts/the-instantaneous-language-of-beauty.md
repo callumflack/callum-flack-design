@@ -13,6 +13,7 @@ heroShowCover: true
 heroRatio: 9 / 16
 heroTitleInvert: true
 heroBlockColor: rgb(0,0,0)
+heroImageBlend: true
 heroTitleWidth: lg:w-6/12
 assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg

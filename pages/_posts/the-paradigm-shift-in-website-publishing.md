@@ -9,6 +9,7 @@ assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1552908874/okok/matt-artz-353295-unsplash-.jpg
 heroShowCover: true
 heroTitleInvert: true
+heroImageBlend: true
 heroRatio: 9/16
 tags: 
 - Essay
