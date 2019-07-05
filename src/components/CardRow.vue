@@ -20,7 +20,11 @@
         </template> -->
         <!-- tags -->
         <div>
-          <span class="Text text-gray" v-for="(tag, index) in tagsWithFeaturedRemoved">
+          <span
+            v-for="(tag, index) in tagsWithFeaturedRemoved"
+            :key="index"
+            class="Text text-gray"
+          >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
           <!-- if writing, show reading time -->
@@ -115,7 +119,9 @@ export default {
 
 .Card:not(:last-of-type) {
   /* margin-bottom: calc(theme(spacing.5) * var(--space-ratio)); */
-  @apply mb-2px;
+  /* @apply mb-1; */
+  /* margin-bottom: calc(3/16 * 1em); */
+  margin-bottom: 0.1875em;
 }
 
 /* .Card:before {
