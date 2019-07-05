@@ -5,8 +5,9 @@ Value proposition, portfolio and blog site: https://callumflack.design/
 Tools:
 
 * Saber.js (thanks @egoist)
-* Netlify
+* Tailwindcss
 * Imgix
+* Netlify
 * Mailchimp
 
 ![Project screen-shot](screen-shot-v6.jpg?raw=true "Project screen-shot")
