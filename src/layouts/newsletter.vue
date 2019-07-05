@@ -31,9 +31,6 @@ export default {
     CardRowIssue,
     Wrap
   },
-
   props: ["page"],
-
-
 };
 </script>

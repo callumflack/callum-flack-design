@@ -69,14 +69,6 @@ export default {
       required: false
     },
   },
-  computed: {
-    headerClasses() {
-      return [{
-        "with-contactCard": this.$route.path === '/about.html'
-        // "bg-brand-header": !this.$route.path.includes('blog')
-      }]
-    }
-  }
 }
 </script>
 
