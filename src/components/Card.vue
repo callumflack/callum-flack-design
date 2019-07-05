@@ -17,6 +17,7 @@
             class="Card-figure-image"
           >
           <ImageDynamic
+            v-else
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
