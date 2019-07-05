@@ -1,18 +1,29 @@
 <template>
-  <header>
-
-    <HeaderNav :siteTitle="siteTitle" :category="category" />
+  <header id="top">
+    <HeaderNav :site-title="siteTitle" :category="category" />
 
     <!-- <div v-if="!$route.path.includes('blog')" class="Block"> -->
+    <!-- home intro -->
     <div v-if="$route.path === '/'" class="Block">
       <div class="container container--text">
-        <h1 v-if="title" class="Display s-m md:w-3/4" >{{ title }}</h1>
-        <p v-if="lede" class="Link Text--base text-gray md:w-3/4">
-          {{ lede }}
-          <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
-            Learn more &rightarrow;
-          </saber-link>
-        </p>
+        <div class="lg:w-3/4">
+          <h1 v-if="title" class="Display s-m">{{ title }}</h1>
+          <p v-if="lede" class="Link Text--base text-gray s-h">
+            {{ lede }}
+            <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
+              Learn more &rightarrow;
+            </saber-link>
+          </p>
+          <p v-if="newsletter" class="Link Text--base text-gray s-h">
+            {{ newsletter }}
+            <saber-link to="/about.html">
+              Here's the archive.
+            </saber-link>
+          </p>
+          <div class="w-full">
+            <FormNewsletter />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -22,17 +33,18 @@
         <CardContact :title="title" :lede="lede" />
       </div>
     </div>
-
   </header>
 </template>
 
 <script>
 import CardContact from "../components/CardContact";
+import FormNewsletter from "../components/FormNewsletter";
 import HeaderNav from "../components/HeaderNav";
 
 export default {
   components: {
     CardContact,
+    FormNewsletter,
     HeaderNav
   },
   props: {
@@ -46,6 +58,10 @@ export default {
       default: "Page title"
     },
     lede: {
+      type: String,
+      required: false
+    },
+    newsletter: {
       type: String,
       required: false
     },

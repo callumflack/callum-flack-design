@@ -1,23 +1,15 @@
 <template>
   <div class="w-full">
     <form class="Form" @submit.prevent="handleSubmit">
-      <!-- <input
-        v-model="formData.name"
-        class="Input flex-1"
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-      /> -->
       <input
         v-model="formData.email"
         class="Input flex-1"
         type="email"
         name="email"
-        placeholder="Your email"
+        placeholder="Add your email to The Littoral Line"
         required
       />
-      <button class="Button Button--outline rounded-none">
+      <button class="Button Button--outline ml-2">
         {{ successMsg }}
       </button>
     </form>
@@ -42,7 +34,7 @@ export default {
     return {
       subscribed: false,
       errorMsg: null,
-      successMsg: "Sign up",
+      successMsg: "Yes please",
       formData: {
         name: "",
         email: "",
@@ -92,10 +84,15 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Input {
+/* .Input {
   @apply border border-text rounded-l border-r-0;
 }
 .Button {
   @apply rounded-r;
+} */
+
+.Input {
+  --button-padding-x: 0;
+  @apply border-b border-t border-gray-400;
 }
 </style>

@@ -1,43 +1,47 @@
 <template>
-  <saber-link class="block Block-lg-b text-center Nav-link Meta" to="/">
-    <!-- <div class="container container--text">
-      <hr class="border-t border-text pt-4">
-      <div class="">
-        <p class="s-2xh Link">
-          Ps.
-          <template v-if="$route.path !== '/about.html'">
-            You're on <saber-link to="/about.html">Callum Flack's website.</saber-link> He
-          </template>
-          <template v-else>
-            Callum
-          </template>
-          also writes a bi-monthly email letter about design, UX and the web through the lens of people and attention.
-          <saber-link to="/about.html">Here's the archives.</saber-link>
-          Since you made it this far, you should probably sign up:
-        </p>
-        <FormNewsletter />
-      </div>
-    </div> -->
-    <span class="inline-block mr-1 mb-px">&#8592;</span>
-    <!-- <span style="text-transform:initial">CALLUM FLACK dESIGN</span> -->
-    <span style="text-transform:initial">CFd</span>
-  </saber-link>
+  <footer class="Block-lg flex relative" :class="blockColorClass">
+    <saber-link
+      :to="link"
+      exact
+      class="Meta block h-full"
+      :class="homeLinkClass"
+    >
+      <template v-if="$route.path === '/'">
+        <span class="Logo-arrow mr-1">&#8593;</span>
+        <span>up</span>
+      </template>
+      <template v-else>
+        <span class="Logo-arrow mr-1">&#8592;</span>
+        <span style="text-transform:initial">CFd</span>
+      </template>
+    </saber-link>
+    <a
+      v-if="$route.path.includes('blog')"
+      :href="`https://twitter.com/${this.$siteConfig.social.twitter}`"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="Meta block h-full w-1/2 pl-2"
+    >
+      <span style="text-transform:initial">Tw</span>
+      <span class="Logo-arrow ml-1">&#8594;</span>
+    </a>
+  </footer>
 </template>
 
 <script>
-import FormNewsletter from "./FormNewsletter";
-
 export default {
-  components: {
-    FormNewsletter
-  },
+  computed: {
+    blockColorClass() {
+      return this.$route.path === '/' && "bg-brand-neutral"
+    },
+    homeLinkClass() {
+      return this.$route.path.includes('blog')
+        ? "text-right w-1/2 pr-2"
+        : "text-center w-full"
+    },
+    link() {
+      return this.$route.path === '/' ? "#top" : "/";
+    }
+  }
 }
 </script>
-
-<style lang="postcss" scoped>
-/* .Card {
-  @apply overflow-hidden;
-  @apply border border-text rounded-lg;
-} */
-</style>
-
