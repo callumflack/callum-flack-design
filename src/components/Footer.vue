@@ -30,9 +30,12 @@
 
 <script>
 export default {
+  props: {
+    kind: String
+  },
   computed: {
     blockColorClass() {
-      return this.$route.path === '/' && "bg-brand-neutral"
+      return this.kind === "index" && "bg-brand-neutral";
     },
     homeLinkClass() {
       return this.$route.path.includes('blog')

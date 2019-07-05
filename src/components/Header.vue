@@ -2,9 +2,8 @@
   <header id="top">
     <HeaderNav :site-title="siteTitle" :category="category" />
 
-    <!-- <div v-if="!$route.path.includes('blog')" class="Block"> -->
-    <!-- home intro -->
-    <div v-if="$route.path === '/'" class="Block">
+    <!-- home or newsletter intro -->
+    <div v-if="$route.path === '/' || $route.path.includes('littoral')" class="Block">
       <div class="container container--text">
         <div class="lg:w-3/4">
           <h1 v-if="title" class="Display s-m">{{ title }}</h1>
@@ -16,7 +15,7 @@
           </p>
           <p v-if="newsletter" class="Link Text--base text-gray s-h">
             {{ newsletter }}
-            <saber-link to="/about.html">
+            <saber-link to="/the-littoral-line.html">
               Here's the archive.
             </saber-link>
           </p>
@@ -27,7 +26,7 @@
       </div>
     </div>
 
-    <!-- about card -->
+    <!-- about intro card -->
     <div v-if="$route.path === '/about.html'" class="Block">
       <div class="container container--text">
         <CardContact :title="title" :lede="lede" />

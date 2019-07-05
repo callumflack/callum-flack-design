@@ -15,7 +15,7 @@
         <slot></slot>
       </div>
     </main>
-    <Footer />
+    <Footer :kind="kind" />
   </div>
 </template>
 
@@ -40,7 +40,8 @@ export default {
       return this.kind === 'post' ? 'container--text' : 'container--list';
     },
     mainHomeClass() {
-      return this.$route.path === "/" && "bg-brand-neutral";
+      // return this.$route.path === "/" && "bg-brand-neutral";
+      return this.kind === 'index' && "bg-brand-neutral";
     }
   },
 

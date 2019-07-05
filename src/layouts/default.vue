@@ -1,9 +1,7 @@
 <template>
-  <Wrap :page="page">
-    <div class="home">
-      <!-- <saber-link to="/about.html">Learn more</saber-link> -->
-      <!-- <slot name="default"></slot> -->
-
+  <Wrap :page="page" kind="index">
+    <!-- home -->
+    <div v-if="$route.path === '/'">
       <SliderFrame>
         <div slot-scope="{ activeIndex, goToIndex }">
           <div class="Grid-extract--edge bg-brand-bg ">
@@ -115,12 +113,11 @@ export default {
   props: ["page"],
 
   computed: {
-    recentPosts() {
+    /* recentPosts() {
       return this.page.posts.splice(0, 6);
-    },
+    }, */
     featuredPosts() {
       return this.page.posts
-        // .filter(x => x.attributes.category === "writing")
         .filter(x => x.attributes.tags.includes("featured"))
     },
     projectsPosts() {
