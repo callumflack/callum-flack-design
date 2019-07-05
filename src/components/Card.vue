@@ -11,10 +11,16 @@
       <div v-if="post.attributes.assets.cover" class="Card-figure">
         <Aspect>
           <img
+            v-if="!post.attributes.assetsInImgix"
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
           >
+          <ImageDynamic
+            :src="post.attributes.assets.cover"
+            :alt="post.attributes.title"
+            class="Card-figure-image"
+          />
         </Aspect>
       </div>
       <div class="Card-body">
