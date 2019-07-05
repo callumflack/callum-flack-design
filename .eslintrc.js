@@ -4,9 +4,6 @@ module.exports = {
     browser: true,
     node: true
   },
-  globals: {
-    $nuxt: true
-  },
   parserOptions: {
     parser: "babel-eslint"
     // parser: "vue-eslint-parser"
@@ -14,6 +11,8 @@ module.exports = {
   extends: [
     "plugin:vue/recommended",
     "eslint:recommended",
+    // "prettier/vue",
+    // "plugin:prettier/recommended"
   ],
   // required to lint *.vue files
   plugins: ["vue"],
@@ -23,6 +22,7 @@ module.exports = {
     "vue/require-prop-types": 0,
     "vue/require-default-prop": 0,
     "vue/no-v-html": 0,
+    "vue/no-unused-components": ["warn"], // for vue-moment!
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
     // conflicts with prettier
