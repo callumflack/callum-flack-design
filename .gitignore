@@ -1,7 +1,8 @@
 ### Node
 
-# Saber
+# Builds
 .saber
+.netlify
 public
 
 # Logs
