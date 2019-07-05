@@ -71,7 +71,7 @@ exports.handler = function(event, context, callback) {
     .then(() => {
       return callback(null, {
         statusCode: 200,
-        body: JSON.stringify({ msg: "Thanks!" })
+        body: JSON.stringify({ msg: "Olé!" })
       });
     })
     .catch(({ response }) => {
