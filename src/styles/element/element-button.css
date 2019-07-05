@@ -133,7 +133,7 @@ button:disabled {
 .Input,
 .Form .Button {
   --button-border-radius: 0;
-  --button-height: 44px;
+  /* --button-height: 44px; */
 }
 /* …but not for textareas */
 textarea.Input {
@@ -196,10 +196,15 @@ textarea.Input {
 }
 
 .ButtonComplex .Button--outline,
-.Button--outline {
+.ButtonComplex .Button--invisible,
+.Button--outline,
+.Button--invisible {
   --button-color: theme(colors.text);
   --button-bg-color: transparent;
   --button-bg-color-hover: transparent;
+}
+.Button--invisible {
+  --button-border-color: transparent;
 }
 
 .Button--whiteOutline {
@@ -214,4 +219,5 @@ textarea.Input {
   /* --button-box-shadow-color: white; */
   background-color: rgba(0,0,0,0.5);
 }
+
 

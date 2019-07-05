@@ -9,28 +9,32 @@
             <ul class="Tab-controls">
               <li>
                 <button
-                  @click="goToIndex(0)"
                   :class="{ 'is-active': activeIndex === 0 }"
                   class="Tab-controls--button Meta"
-                >Featured</button>
+                  @click="goToIndex(0)"
+                >
+                  Featured
+                </button>
               </li>
               <li>
                 <button
-                  @click="goToIndex(1)"
                   :class="{ 'is-active': activeIndex === 1 }"
                   class="Tab-controls--button Meta"
-                >Archive</button>
+                  @click="goToIndex(1)"
+                >
+                  Archive
+                </button>
               </li>
             </ul>
           </div>
         </div>
 
-        <SliderSlides class="st-2xh" >
+        <SliderSlides class="st-2xh">
           <SliderSlide v-if="featuredPosts">
             <CardRow
               v-for="post in featuredPosts"
-              :post="post"
               :key="post.attributes.permalink"
+              :post="post"
               class=""
             ></CardRow>
           </SliderSlide>
@@ -43,8 +47,8 @@
               <h3 class="Meta Meta--year">{{ year }}</h3>
               <CardRow
                 v-for="post in allPosts[year]"
-                :post="post"
                 :key="post.attributes.permalink"
+                :post="post"
                 class=""
               ></CardRow>
             </div>
@@ -59,12 +63,10 @@
         </SliderSlides>
       </div>
     </SliderFrame>
-
   </Wrap>
 </template>
 
 <script>
-import Card from "../components/Card.vue";
 import CardRow from "../components/CardRow.vue";
 import SliderFrame from "../components/SliderFrame.vue";
 import SliderSlides from "../components/SliderSlides.vue";
@@ -73,7 +75,6 @@ import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {
-    Card,
     CardRow,
     SliderFrame,
     SliderSlides,
@@ -82,6 +83,33 @@ export default {
   },
 
   props: ["page"],
+
+  computed: {
+    allPostsUngrouped() {
+      return this.page.posts
+        .filter(x => x.attributes.category === "projects")
+    },
+    allPosts() {
+      return this.groupByYear(this.allPostsUngrouped);
+    },
+    featuredPosts() {
+      return this.allPostsUngrouped
+        .filter(x => x.attributes.tags.includes("featured"))
+      // const posts = this.allPostsUngrouped
+      //   .filter(x => x.attributes.tags.includes("featured"))
+      // return this.groupByYear(posts);
+    },
+    designPosts() {
+      const posts = this.allPostsUngrouped
+        .filter(x => x.attributes.tags.includes("UI"))
+      return this.groupByYear(posts);
+    },
+    devPosts() {
+      const posts = this.allPostsUngrouped
+        .filter(x => x.attributes.tags.includes("code"))
+      return this.groupByYear(posts);
+    },
+  },
 
   methods: {
     sortByDate(a, b) {
@@ -112,33 +140,6 @@ export default {
         // If it is already you can remove this
         .sort(this.sortByDate)
         .reduce(this.groupByYearMethod, {});
-    },
-  },
-
-  computed: {
-    allPostsUngrouped() {
-      return this.page.posts
-        .filter(x => x.attributes.category === "projects")
-    },
-    allPosts() {
-      return this.groupByYear(this.allPostsUngrouped);
-    },
-    featuredPosts() {
-      return this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("featured"))
-      // const posts = this.allPostsUngrouped
-      //   .filter(x => x.attributes.tags.includes("featured"))
-      // return this.groupByYear(posts);
-    },
-    designPosts() {
-      const posts = this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("UI"))
-      return this.groupByYear(posts);
-    },
-    devPosts() {
-      const posts = this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("code"))
-      return this.groupByYear(posts);
     },
   },
 };

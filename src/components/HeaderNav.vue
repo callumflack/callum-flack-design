@@ -14,22 +14,22 @@
             {{ item.text }}
           </span>
         </saber-link>
-      </div> -->
+      </div>-->
       <saber-link class="Nav-link Meta" rel="author" to="/" exact>
         <template v-if="$route.path !== '/'">
-          <span class="inline-block mr-1 mb-px">&#8592;</span>
+          <span class="Logo-arrow mr-1">&#8592;</span>
         </template>
         <span style="text-transform:initial">CFd</span>
       </saber-link>
       <!-- <saber-link class="Nav-link Meta" to="/about.html" exact>
         <span>Hey</span>
-      </saber-link> -->
+      </saber-link>-->
     </nav>
   </headroom>
 </template>
 
 <script>
-import { headroom } from 'vue-headroom'
+import { headroom } from "vue-headroom";
 
 export default {
   components: {
@@ -41,10 +41,10 @@ export default {
       required: true
     },
     category: {
-      type: String,
-    },
-  },
-}
+      type: String
+    }
+  }
+};
 </script>
 
 <style lang="postcss">
@@ -93,4 +93,3 @@ export default {
   @apply bg-text;
 } */
 </style>
-

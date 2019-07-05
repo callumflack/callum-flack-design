@@ -1,10 +1,7 @@
 <template>
   <Wrap :page="page" kind="post">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <header
-        class="Grid-extract--edge"
-        :style="heroBlockColor"
-      >
+      <header class="Grid-extract--edge" :style="heroBlockColor">
         <!-- post image aspect -->
         <div class="container">
           <Aspect :ratio="page.attributes.heroRatio || '1/3.5'">
@@ -12,7 +9,7 @@
               v-if="page.attributes.heroShowCover"
               :src="page.attributes.assets.cover"
               :alt="page.attributes.title"
-            >
+            />
           </Aspect>
         </div>
         <!-- post title aspect -->
@@ -31,37 +28,37 @@
                 {{ page.attributes.title }}
               </h1>
               <!-- post meta -->
-              <div
-                class="Text--sm"
-                :class="heroMetaClass"
-              >
+              <div class="Text--sm" :class="heroMetaClass">
                 <!-- date -->
                 <time
                   v-if="page.attributes.category === 'writing'"
                   :datetime="page.attributes.createdAt"
                   itemprop="datePublished"
-                >
-                  {{ formatDate(page.attributes.createdAt) }}
-                </time>
+                >{{ formatDate(page.attributes.createdAt) }}</time>
                 <time
                   v-else
                   :datetime="page.attributes.date"
                   itemprop="datePublished"
-                >
-                  {{ formatListDate(page.attributes.date) }}
-                </time>
+                >{{ formatListDate(page.attributes.date) }}</time>
                 <!-- category & tags -->
                 <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                <span class="Text--sm inline-block capitalize">
-                  {{ page.attributes.category }}:
-                </span>
-                <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
-                  <span v-if="index != 0">, </span><span class="lowercase">{{ tag }}</span>
+                <span
+                  class="Text--sm inline-block capitalize"
+                >{{ page.attributes.category }}:</span>
+                <span
+                  v-for="(tag, index) in tagsWithFeaturedRemoved"
+                  :key="index"
+                  class="Text--sm"
+                >
+                  <span v-if="index != 0">,</span>
+                  <span class="lowercase">{{ tag }}</span>
                 </span>
                 <!-- reading time -->
                 <template v-if="page.attributes.category === 'writing'">
                   <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                  <span class="Text--sm">{{ page.attributes.readingTime }} mins</span>
+                  <span
+                    class="Text--sm"
+                  >{{ page.attributes.readingTime }} mins</span>
                 </template>
               </div>
             </div>
@@ -71,7 +68,7 @@
 
       <!-- article -->
       <div class="Block-sm-t Markdown" itemprop="articleBody">
-        <slot name="default"/>
+        <slot name="default" />
       </div>
 
       <!-- article ender -->
@@ -83,7 +80,7 @@
             width="2em"
           />
         </saber-link>
-      </div> -->
+      </div>-->
 
       <a class="u-url" :href="page.attributes.permalink" hidden></a>
     </article>
@@ -91,25 +88,28 @@
 </template>
 
 <script>
-import formatDate from '../utils/formatDate'
-import formatListDate from '../utils/formatListDate'
-import Aspect from '../components/Aspect.vue'
-import Wrap from '../components/Wrap.vue'
+import formatDate from "../utils/formatDate";
+import formatListDate from "../utils/formatListDate";
+import Aspect from "../components/Aspect.vue";
+import ImageDynamic from "../components/ImageDynamic";
+import Wrap from "../components/Wrap.vue";
 // import '../components/icons/sun';
 
 export default {
   components: {
     Aspect,
-    Wrap,
+    ImageDynamic,
+    Wrap
   },
 
-  props: [
-    'page'
-  ],
+  props: ["page"],
 
   computed: {
     heroBlockColor() {
-      return this.page.attributes.heroBlockColor && `background-color: ${this.page.attributes.heroBlockColor}`;
+      return (
+        this.page.attributes.heroBlockColor &&
+        `background-color: ${this.page.attributes.heroBlockColor}`
+      );
     },
     heroImageBlend() {
       return this.page.attributes.heroImageBlend && "BlendImage";
@@ -123,11 +123,12 @@ export default {
       return this.page.attributes.heroTitleInvert && "text-white";
     },
     heroMetaClass() {
-      return this.page.attributes.heroTitleInvert ? "text-white" : "text-gray-600";
+      return this.page.attributes.heroTitleInvert
+        ? "text-white"
+        : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.page.attributes.tags
-        .filter(x => x !== "featured")
+      return this.page.attributes.tags.filter(x => x !== "featured");
     }
   },
 
@@ -135,12 +136,12 @@ export default {
     formatDate,
     formatListDate
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>
 .BlendImage {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Media within text column */
@@ -153,4 +154,3 @@ export default {
   @apply border border-text rounded-full p-2;
 } */
 </style>
-

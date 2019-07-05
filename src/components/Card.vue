@@ -8,7 +8,7 @@
     :class="cardWidth"
   >
     <div class="Card">
-      <div class="Card-figure" :class="figureShade" v-if="post.attributes.assets.cover">
+      <div v-if="post.attributes.assets.cover" class="Card-figure">
         <Aspect>
           <img
             :src="post.attributes.assets.cover"
@@ -27,15 +27,19 @@
           <span class="Text--sm">
             {{ formatDate(post.attributes.createdAt) }}
           </span>
-          <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+          <span class="Text--sm inline-block mx-2px">&mdash;</span>
           <!-- category & tags -->
           <span class="Text--sm">{{ post.attributes.category }}:</span>
-          <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
+          <span
+            v-for="(tag, index) in tagsWithFeaturedRemoved"
+            :key="index"
+            class="Text--sm"
+          >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
           <!-- if writing, show reading time -->
           <template v-if="post.attributes.category === 'writing'">
-            <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+            <span class="Text--sm inline-block mx-2px">&mdash;</span>
             <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
           </template>
         </div>
@@ -47,18 +51,20 @@
 <script>
 import formatDate from "../utils/formatDate";
 import Aspect from "../components/Aspect";
+import ImageDynamic from "../components/ImageDynamic";
 
 export default {
   components: {
-    Aspect
+    Aspect,
+    ImageDynamic
   },
   props: ["post"],
   computed: {
     type() {
-      if (!this.post.attributes.linkFromCard) {
-        return "saber-link";
+      if (this.post.attributes.linkFromCard) {
+        return "a";
       }
-      return "a";
+      return "saber-link";
     },
     target() {
       return this.post.attributes.linkFromCard ? "_blank" : "";

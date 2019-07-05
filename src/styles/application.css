@@ -17,6 +17,7 @@
 /* @import "./theme/theme-typography"; */
 @import "./theme/theme-grid-extractor.css";
 @import "./theme/theme-tabs.css";
+@import "./theme/theme-logo.css";
 
 /* CFd standard components */
 @import "./layout/layout-grid";

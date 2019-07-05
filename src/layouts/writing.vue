@@ -9,17 +9,21 @@
             <ul class="Tab-controls">
               <li>
                 <button
-                  @click="goToIndex(0)"
                   :class="{ 'is-active': activeIndex === 0 }"
                   class="Tab-controls--button Meta"
-                >Featured</button>
+                  @click="goToIndex(0)"
+                >
+                  Featured
+                </button>
               </li>
               <li>
                 <button
-                  @click="goToIndex(1)"
                   :class="{ 'is-active': activeIndex === 1 }"
                   class="Tab-controls--button Meta"
-                >Archive</button>
+                  @click="goToIndex(1)"
+                >
+                  Archive
+                </button>
               </li>
             </ul>
           </div>
@@ -29,21 +33,20 @@
           <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
             <Card
               v-for="post in featuredWriting"
-              :post="post"
               :key="post.attributes.permalink"
+              :post="post"
             ></Card>
           </SliderSlide>
           <SliderSlide v-if="allWriting && allWriting.length > 0">
             <Card
               v-for="post in allWriting"
-              :post="post"
               :key="post.attributes.permalink"
+              :post="post"
             ></Card>
           </SliderSlide>
         </SliderSlides>
       </div>
     </SliderFrame>
-
   </Wrap>
 </template>
 

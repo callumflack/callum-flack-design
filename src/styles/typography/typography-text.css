@@ -34,6 +34,8 @@ ol {
 .Text--xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
+.Button,
+.Input,
 .Text--sm {
   @apply tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
@@ -44,12 +46,9 @@ ol {
 .Text--xl {
   font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
-
 p,
 ul,
 ol,
-.Button,
-.Input,
 .Markdown > *,
 .Text,
 .Text--lg {

@@ -1,0 +1,4 @@
+.Logo-arrow {
+  @apply inline-block;
+  transform: translateY(-0.08em);
+}

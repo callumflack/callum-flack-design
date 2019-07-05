@@ -1,7 +1,7 @@
 ---
 layout: page
-title:  A designer who codes
-lede: Callum Flack Design is fluid across graphic design, information design and frontend code.
+title:  CFd is a designer who codes
+lede: Callum Flack Design is fluid across graphic design, information design and frontend development.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -89,17 +89,18 @@ Callum helps clients understand the hidden costs in project decisions and websit
 
 <!-- You can break down the work Callum does into three parts: -->
 
-- Brand identity and graphic design
-- User interface and information design
-  <!-- - Digital editorial design -->
-- Frontend web development
+- brand identity and graphic design
+- user interface and information design
+  <!-- - digital editorial design -->
+- frontend web development
 
-When Callum builds websites, he advocates for these tools:
+When Callum builds websites, he advocates for these future-facing tools:
 
 <!-- When I develop websites, I'm familiar with and advocate for these tools: -->
 
-- Building interfaces with Vue.js (or React.js)
-- A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
+- building interfaces with Vue.js (or React.js)
+- a [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
+<!-- - micro-frontends with functional elements separated by concern -->
 <!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs -->
 
 <!-- (when it's not a web application) -->
@@ -108,6 +109,8 @@ When Callum builds websites, he advocates for these tools:
 <!-- Through his blog, Callum places importance on the skill of writing. Not only are people more likely to pay attention to clear, concise writing, personal insight is often only gained with brutal editing. -->
 
 <!-- ### Experienced -->
+
+## Bio
 
 Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
 

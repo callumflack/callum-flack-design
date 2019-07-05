@@ -1,7 +1,7 @@
 <template>
   <Wrap :page="page" kind="post">
     <article class="Block-sm-t Markdown" itemprop="articleBody">
-      <slot name="default"/>
+      <slot name="default" />
     </article>
     <a class="u-url" :href="page.attributes.permalink" hidden></a>
   </Wrap>

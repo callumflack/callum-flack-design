@@ -1,12 +1,13 @@
 <template>
   <div>
     <Header
-      :siteTitle="siteTitle"
+      :site-title="siteTitle"
       :title="page.attributes.title"
       :lede="page.attributes.lede"
+      :newsletter="page.attributes.newsletter"
       :category="page.attributes.category"
     />
-    <main aria-label="Content" class="Block-b" :class="mainHomeClass">
+    <main aria-label="Content" :class="mainHomeClass">
       <div
         class="container"
         :class="containerKind"
@@ -14,12 +15,11 @@
         <slot></slot>
       </div>
     </main>
-    <Footer v-if="$route.path !== '/'" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import variables from "saber/variables";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 
@@ -40,7 +40,7 @@ export default {
       return this.kind === 'post' ? 'container--text' : 'container--list';
     },
     mainHomeClass() {
-      return this.$route.path === "/" && "bg-brand-neutral min-h-screen";
+      return this.$route.path === "/" && "bg-brand-neutral";
     }
   },
 
