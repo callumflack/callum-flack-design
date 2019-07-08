@@ -6,14 +6,14 @@ title: The instantaneous language of beauty
 lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry, which we find beautiful. We are naturally attuned to beauty because we know it represents a higher chance of holding worthwhile information.
 readingTime: 5
 fullFeaturedCard: true
+assets:
+  cover: /images/aesthetics-nembrotha-aurea.jpg
 heroShowCover: true
 heroRatio: 9 / 16
 heroTitleInvert: true
 heroBlockColor: rgb(0,0,0)
 heroImageBlend: true
 heroTitleWidth: lg:w-6/12
-assets:
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
 tags: 
   - essay
   - featured
@@ -27,7 +27,7 @@ These processes happen quickly. At a glance, we notice and assess the multitude 
 
 And when a pattern draws us in, we feel it's beauty, and our curiosity. Like a shadow felt but not consciously seen, we're hardly aware that the language of aesthetics is our first mode of understanding the world.
 
-<Media ratio="844/1500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842533/okok/aesthetics-snake.jpg"/>
+<Media ratio="844/1500" image="/images/aesthetics-snake.jpg"/>
 
 ## Danger and beauty
 
@@ -39,7 +39,7 @@ When we find symmetry in a scene to be pleasing, then we are calm, ready to begi
 
 Danger and beauty are the two extremes on the spectrum of the language of aesthetics. When we sense danger, we do not think. Instead we react to avoid the situation. Beauty, however, invites us to pause, pay attention, and then think. To find something beautiful is to find information we can use in our favour.
 
-<Media ratio="1725/1500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842535/okok/aesthetics-siphonophore-apolemia.jpg"/>
+<Media ratio="1725/1500" image="/images/aesthetics-siphonophore-apolemia.jpg"/>
 
 <!-- caption="A Blue-ringed Octopus displays blue iridescent rings across their yellow-colored body when disturbed, hunting or mating. When calm, it displays an overall yellowish-beige colouration without any visible blue rings." -->
 
@@ -53,7 +53,7 @@ As an adrenalised response is the defense for a target animal, a beautiful invit
 
 While predation is a zero-sum game, other games are not. When a flower uses beauty to attract partners in its gene dispersion scheme, every participant wins. Beauty invites participation and attention.
 
-<Media ratio="675/1200" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842534/okok/aesthetics-blackberries.jpg"/>
+<Media ratio="675/1200" image="/images/aesthetics-blackberries.jpg"/>
 
 ## Beauty is opportunity
 
@@ -71,7 +71,7 @@ Creativity is often misunderstood. We think it requires some form of talent or g
 
 In this way, a spreadsheet can absolutely contain beauty. Humans naturally seek beauty in order to make use of it.
 
-<Media ratio="9/16" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842539/okok/aesthetics-instapumps.jpg"/>
+<Media ratio="9/16" image="/images/aesthetics-instapumps.jpg"/>
 
 ## Irrational beauty matters more than we dare admit
 

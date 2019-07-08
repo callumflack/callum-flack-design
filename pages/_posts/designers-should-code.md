@@ -6,7 +6,7 @@ title: Designers should code
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 readingTime: 5
 assets:
-  cover: https://res.cloudinary.com/pw-img-cdn/image/fetch/w_1500,c_fill,g_center,f_auto,q_auto/https://res.cloudinary.com/pw-img-cdn/image/upload/v1544053816/semilattice-181206_iu32ub.jpg
+  cover: /images/semilattice-190708.jpg
 heroRatio: 1/2
 heroShowCover: true
 heroBlockColor: transparent
