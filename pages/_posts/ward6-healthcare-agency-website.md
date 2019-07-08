@@ -8,12 +8,12 @@ thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953103/okok/
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953959/okok/ward6-hero.jpg
 heroShowCover: false
-tags: 
-  - UI
-  - code
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 featured: true
+tags: 
+  - design
+  - frontend
 ---
 
 With offices in Sydney and Singapore, Ward6 is recognised as Asia Pacific's leading independent health communications agency. I helped transfer this reputation online with a mobile-first website using a JAMstack architecture that was easy to use, very fast and easy to update and maintain.

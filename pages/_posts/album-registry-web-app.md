@@ -10,9 +10,8 @@ assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513557239/okok/albumregistry-new-profile-2500w.jpg
 heroShowCover: false
 tags: 
-  - Branding
-  - UI
-  - code
+  - design
+  - frontend
 ---
 
 Album Registry is a crowd-funding website for photographers. After technical setbacks and investor problems, I was asked to help rethink what Album Registry could be, and rebuild the platform for a community of photographers around the world.

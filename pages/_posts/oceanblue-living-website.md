@@ -9,9 +9,8 @@ assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
 heroShowCover: false
 tags: 
-  - Branding
-  - UI
-  - code
+  - design
+  - frontend
 ---
 
 OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.

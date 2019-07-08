@@ -2,13 +2,17 @@
 layout: post
 date: 2019-03-01
 category: writing
-tags: 
-  - notes
-  - featured
 title: Notes on Deciphering Sun Tzu
 lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy I’ve been raised on.
 readingTime: 7
 heroImageBlend: false
+nextPost:
+  title: The instantaneous language of beauty
+  link: /blog/the-instantaneous-language-of-beauty.html
+  hero: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
+tags: 
+  - notes
+  - featured
 ---
 
 ‪I've always enjoyed the poetics of ancient Chinese philosophy and by extension Zen Buddhism.‬ ‪Whereas friends just didn't get The Art of War or Tao Te Ching, I found them obvious and favourable within the first page. Yet even though I've read these books repeatedly over two decades, I've never lived within these cultures, let alone even visited their countries. So my appreciation has been mostly for their poetics.
@@ -23,7 +27,7 @@ The Western tradition of strategy is a _means–end rational_ framework: it impl
 
 In contrast to Western strategic thought, the aphorisms of Chinese strategic thought may appear contradictory, even paradoxical. Our initial readings of Sun Tzu, et al. are more akin to reading poetry, which naturally lends itself to pondering metaphors, not checklists of action.
 
-Indeed, pondering metaphor is the intent. Aphorisms of dual meaning are meant to help one understand the unforseeable nature of reality. By starting with "not knowing", _Chinese strategic thought begins at “the inherent potential of the situation (Shih) and to be carried along by it as it evolves.”_
+Indeed, pondering metaphor is the intent. Aphorisms of dual meaning are meant to help one understand the unforseeable nature of reality. By starting with "not knowing", _Chinese strategic thought begins at “the inherent potential of the situation (Shih)” and is “carried along by it as it evolves.”_
 
 In Chinese thought, the end is impossible to predetermine (which is, strangley, the ultimate rational means-end insight). This means no plan can be worked out in advance. Instead, one can only understand _consequences arising from conditions._
 

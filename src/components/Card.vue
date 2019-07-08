@@ -36,13 +36,13 @@
           </span>
           <span class="Text--sm inline-block mx-2px">&mdash;</span>
           <!-- category & tags -->
-          <span class="Text--sm">{{ post.attributes.category }}:</span>
+          <span class="Text--sm capitalize">{{ post.attributes.category }}:</span>
           <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
             class="Text--sm"
           >
-            <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
+            <span v-if="index != 0">, </span><span>{{ tag }}</span>
           </span>
           <!-- if writing, show reading time -->
           <template v-if="post.attributes.category === 'writing'">
@@ -160,9 +160,9 @@ export default {
   @apply text-gray-600;
 }
 
-.Card-body-meta > * {
+/* .Card-body-meta > * {
   @apply capitalize;
-}
+} */
 
 /* .Card-figure {
   @apply h-full relative;

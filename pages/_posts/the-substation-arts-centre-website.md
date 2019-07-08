@@ -7,12 +7,11 @@ lede: A website and digital branding revision for The Substation, a not-for-prof
 link: https://thesubstation.org.au/
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/okok/thesubstation-hero-THIS_baprpq.jpg
-tags: 
-  - Branding
-  - UI
-  - code
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
+tags: 
+  - design
+  - frontend
 ---
 
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for efficiency, flexibility and performance. As we progressed, I came to understand their vision and evolved their digital branding to match.

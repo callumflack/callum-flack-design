@@ -9,7 +9,6 @@ linkFromCard: true
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
 tags: 
-  - UI
-  - branding
-  - code
+  - design
+  - frontend
 ---

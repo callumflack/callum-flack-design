@@ -10,12 +10,16 @@
     <main aria-label="Content" :class="mainHomeClass">
       <div
         class="container"
-        :class="containerKind"
+        :class="containerType"
       >
         <slot></slot>
       </div>
     </main>
-    <Footer :kind="kind" />
+    <Footer
+      :kind="kind"
+      :posts="page.posts"
+      :nextpost="page.attributes.nextPost"
+    />
   </div>
 </template>
 
@@ -36,15 +40,15 @@ export default {
     siteTitle() {
       return this.$siteConfig.title || "Your Awesome Title";
     },
-    containerKind() {
-      return this.kind === 'post' ? 'container--text' : 'container--list';
+    containerType() {
+      return this.kind === "post" ? "container--text" : "container--list";
     },
     mainHomeClass() {
       // return this.$route.path === "/" && "bg-brand-neutral";
-      return this.kind === 'index' && "bg-brand-neutral";
+      // return this.page.attributes.type === "page" && "bg-brand-neutral";
+      return this.kind === "index" && "bg-brand-neutral";
     }
   },
-
   head() {
     const { excerpt } = this.page;
     const { title, layout } = this.page.attributes;
@@ -80,6 +84,5 @@ export default {
         : []
     };
   },
-
 };
 </script>

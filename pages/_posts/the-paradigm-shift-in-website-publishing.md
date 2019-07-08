@@ -12,7 +12,7 @@ heroTitleInvert: true
 heroImageBlend: true
 heroRatio: 9/16
 tags: 
-- Essay
+- essay
 ---
 
 <!-- Build better websites with Reactive Javascript and the JAMstack -->

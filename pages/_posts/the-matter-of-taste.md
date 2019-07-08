@@ -12,6 +12,10 @@ heroImageBlend: true
 heroBlockColor: transparent
 heroTitleInvert: true
 heroRatio: 1/2
+nextPost:
+  title: The instantaneous language of beauty
+  link: /blog/the-instantaneous-language-of-beauty.html
+  hero: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
 tags:
   - essay
   - featured

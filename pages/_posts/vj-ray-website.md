@@ -11,8 +11,8 @@ assets:
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952892/okok/vjray-hero.jpg
 heroShowCover: false
 tags: 
-  - UI
-  - code
+  - design
+  - frontend
 ---
 
 VJ Ray Real Estate are one of Sydney's original Strata Management agencies. They asked me to consider their customer value proposition and use it to rebuild their digital presence. During research and discussions, our strategy was clarified by a throw-away comment from an employee: "We manage people, not just property."

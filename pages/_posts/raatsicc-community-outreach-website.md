@@ -8,8 +8,8 @@ link: https://www.raatsicc.org.au/
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
 tags: 
-  - UI
-  - code
+  - design
+  - frontend
   - featured
 ---
 

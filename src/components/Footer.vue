@@ -1,50 +1,109 @@
 <template>
-  <footer class="Block-lg flex relative" :class="blockColorClass">
+  <footer class="flex relative" :class="[blockColorClass, spacerClasses]">
     <saber-link
       :to="link"
-      exact
-      class="Meta block h-full"
-      :class="homeLinkClass"
+      :class="linkTypography"
+      class="block h-full w-full"
     >
-      <template v-if="$route.path === '/'">
+      <!-- next post -->
+      <template v-if="$route.path.includes('blog') && nextpost">
+        <div class="container container--text">
+          <hr class="border-b s-m">
+          <p class="Text--base s-2xh">Next post:</p>
+          <div class="Grid-extract--post">
+            <div class="relative">
+              <Aspect ratio="1/2">
+                <img
+                  v-if="nextpost && nextpost.hero"
+                  :src="nextpost.hero"
+                  :alt="nextpost.title"
+                />
+              </Aspect>
+              <div class="absolute inset-0">
+                <div class="container relative h-full flex items-center justify-center BlendImage">
+                  <div class="container container--text" :class="heroTitleColor">
+                    <!-- post title -->
+                    <h2
+                      class="Display"
+                      itemprop="name headline"
+                    >
+                      {{ nextpost.title }}
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <!-- up -->
+      <template v-else-if="$route.path === '/'">
         <span class="Logo-arrow mr-1">&#8593;</span>
         <span>up</span>
       </template>
+      <!-- CFd -->
       <template v-else>
         <span class="Logo-arrow mr-1">&#8592;</span>
         <span style="text-transform:initial">CFd</span>
       </template>
     </saber-link>
-    <a
-      v-if="$route.path.includes('blog')"
-      :href="`https://twitter.com/${this.$siteConfig.social.twitter}`"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="Meta block h-full w-1/2 pl-2"
-    >
-      <span style="text-transform:initial">Tw</span>
-      <span class="Logo-arrow ml-1">&#8594;</span>
-    </a>
   </footer>
 </template>
 
 <script>
+import Aspect from "./Aspect";
+
 export default {
+  components: {
+    Aspect
+  },
   props: {
-    kind: String
+    kind: String,
+    /* posts: {
+      type: Array,
+      default: undefined
+    }, */
+    nextpost: {
+      type: Object,
+      default: undefined
+    }
   },
   computed: {
+    spacerClasses() {
+      return this.nextpost ? "Block-t" : "Block-lg";
+    },
     blockColorClass() {
       return this.kind === "index" && "bg-brand-neutral";
     },
-    homeLinkClass() {
-      return this.$route.path.includes('blog')
-        ? "text-right w-1/2 pr-2"
-        : "text-center w-full"
+    linkTypography() {
+      return !this.$route.path.includes("blog") && "Meta text-center";
     },
     link() {
-      return this.$route.path === '/' ? "#top" : "/";
+      if (this.$route.path === "/") {
+        return  "#top";
+      }
+      else if (this.$route.path.includes("blog")) {
+        return this.nextpost.link;
+      }
+      return "/";
+    },
+    heroTitleColor() {
+      return this.nextpost.hero && "text-white";
+    },
+    currentPost() {
+      return this.posts
+        .find(x => x.attributes.permalink === this.$route.path)
+      // if (this.$route.path.includes('blog')) {
+
+      // }
+      // return null;
     }
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+.BlendImage {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+</style>

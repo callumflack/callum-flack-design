@@ -7,7 +7,7 @@
       <div class="container container--text">
         <div class="lg:w-3/4">
           <h1 v-if="title" class="Display s-m">{{ title }}</h1>
-          <p v-if="lede" class="Link Text--base text-gray s-h">
+          <p v-if="lede" class="Link Text--base s-h">
             {{ lede }}
             <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
               Learn more &rightarrow;

@@ -2,12 +2,12 @@
 layout: post
 date: 2019-04-29
 category: writing
-tags: 
-- Notes
 title: How to publish a newsletter so you own your writing
 lede: Some hopefully helpful thoughts and tips on using a chain of web tools to streamline newsletter publishing, write in markdown, retain ownership and create a focus on writing. All without resorting to any product platform lock-in.
 readingTime: 5
 heroTitleWidth: lg:w-7/12
+tags: 
+- notes
 ---
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->

@@ -7,8 +7,8 @@ lede: Explaining complex Pharma products with simple and engaging iPad-based sto
 assets: 
   cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
 tags: 
-  - UI
-  - code
+  - design
+  - frontend
 ---
 
 <!-- <Media ratio="1500/2500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png" /> -->
