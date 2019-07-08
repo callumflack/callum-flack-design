@@ -1,50 +1,50 @@
 <template>
   <div class="Card">
-    <div class="Card-figure w-4/12">
-      <Aspect ratio="5/4" class="">
-        <img src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078339/okok/_DB30312-recut.jpg" alt="Callum Flack">
-      </Aspect>
+    <div class="Card-figure w-4/12 sm:w-3/12">
+      <ImageDynamic
+        cover
+        src="/images/cf-dwts-DB30312-recut.jpg"
+        alt="Callum Flack"
+      />
     </div>
-    <div class="w-8/12 sm:w-10/12">
-      <div class="h-full pl-2 lg:pl-4 flex flex-col justify-between">
-        <div>
-          <h1 v-if="title" class="Display s-m">
-            {{ title }}
-          </h1>
-          <p v-if="lede" class="Text--base text-gray mb-2px lg:w-4/6">
-            {{ lede }}
-          </p>
-          <ul class="Text--base text-gray">
-            <li>
-              <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
-                <icon name="email" class="mr-1"></icon>
-                {{ this.$siteConfig.email }}
-              </a>
-            </li>
-            <!-- <li>
-            <a :href="`tel:${this.$siteConfig.phone.replace(' ', '-')}`" target="_blank" rel="noopener noreferrer">
-              <icon name="phone" class="mr-1"></icon>
-              {{ this.$siteConfig.phone }}
+    <div class="Card-body sm:w-8/12">
+      <div class="s-h">
+        <h1 v-if="title" class="Display s-m">
+          {{ title }}
+        </h1>
+        <p v-if="lede" class="Text--base text-gray mb-2px lg:w-5/6">
+          {{ lede }}
+        </p>
+        <ul class="Text--base text-gray">
+          <li>
+            <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
+              <icon name="email" class="mr-1"></icon>
+              {{ this.$siteConfig.email }}
             </a>
-          </li> -->
-            <li>
-              <a :href="`https://twitter.com/${this.$siteConfig.social.twitter}`" target="_blank" rel="noopener noreferrer">
-                <icon name="twitter" class="mr-1"></icon>
-                @{{ this.$siteConfig.social.twitter }}
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="w-full lg:w-11/12">
-          <FormNewsletter />
-        </div>
+          </li>
+          <!-- <li>
+          <a :href="`tel:${this.$siteConfig.phone.replace(' ', '-')}`" target="_blank" rel="noopener noreferrer">
+            <icon name="phone" class="mr-1"></icon>
+            {{ this.$siteConfig.phone }}
+          </a>
+        </li> -->
+          <li>
+            <a :href="`https://twitter.com/${this.$siteConfig.social.twitter}`" target="_blank" rel="noopener noreferrer">
+              <icon name="twitter" class="mr-1"></icon>
+              @{{ this.$siteConfig.social.twitter }}
+            </a>
+          </li>
+        </ul>
       </div>
+
+      <FormNewsletter class="lg:w-11/12" />
     </div>
   </div>
 </template>
 
 <script>
 import Aspect from "../components/Aspect";
+import ImageDynamic from "../components/ImageDynamic";
 import FormNewsletter from "../components/FormNewsletter";
 import Vue from "vue";
 import SvgIcon from 'vue-svgicon';
@@ -60,6 +60,7 @@ Vue.use(SvgIcon, {
 export default {
   components: {
     Aspect,
+    ImageDynamic,
     FormNewsletter
   },
   props: {
@@ -71,13 +72,37 @@ export default {
 
 <style lang="postcss" scoped>
 .Card {
-  @apply flex flex-row;
-  @apply border-t border-b border-text py-2;
-  /* @apply rounded-lg overflow-hidden; */
-  /* box-shadow: 4px 4px 16px #cdcdcd; */
-  /* @apply border border-text; */
-  /* @apply bg-brand-highlight; */
-  /* border-radius: 1rem; */
+  @apply border-t border-b border-text py-3;
+  /* @apply pl-6 pr-6; */
+}
+
+.Card-figure {
+  @apply relative float-left;
+  height: 120px;
+}
+.Card-figure >>> figure {
+  @apply pr-3;
+}
+
+.Card-body {
+  /* @apply flex flex-1; */
+}
+
+@screen sm {
+  .Card {
+    @apply flex flex-row;
+    /* @apply p-0; */
+  }
+  .Card-figure {
+    @apply float-none h-auto;
+  }
+  .Card-figure >>> figure {
+    @apply pr-0;
+  }
+  .Card-body {
+    /* @apply h-full flex flex-col justify-between; */
+    @apply pl-3;
+  }
 }
 
 @screen lg {
@@ -86,6 +111,9 @@ export default {
   }
   .Card-figure {
     width: calc(100% * 6 / 24);
+  }
+  .Card-body {
+    width: calc(100% * 18 / 24);
   }
 }
 
