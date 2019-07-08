@@ -4,9 +4,9 @@
       <header class="Grid-extract--edge" :style="heroBlockColor">
         <!-- post image aspect -->
         <div class="container">
-          <Aspect :ratio="page.attributes.heroRatio || '1/3.5'">
-            <img
-              v-if="page.attributes.heroShowCover"
+          <Aspect :ratio="page.attributes.hero && page.attributes.hero.ratio || '1/3.5'" :class="heroImageBlend">
+            <ImageDynamic
+              v-if="page.attributes.hero && page.attributes.hero.showCover"
               :src="page.attributes.assets.cover"
               :alt="page.attributes.title"
             />
@@ -14,10 +14,7 @@
         </div>
         <!-- post title aspect -->
         <div class="absolute inset-0">
-          <div
-            class="container relative h-full flex items-center justify-center"
-            :class="heroImageBlend"
-          >
+          <div class="container relative h-full flex items-center justify-center">
             <div class="container container--text" :class="heroTitleColor">
               <!-- post title -->
               <h1
@@ -107,23 +104,25 @@ export default {
   computed: {
     heroBlockColor() {
       return (
-        this.page.attributes.heroBlockColor &&
-        `background-color: ${this.page.attributes.heroBlockColor}`
+        this.page.attributes.hero && this.page.attributes.hero.blockColor
+        && `background-color: ${this.page.attributes.hero.blockColor}`
       );
     },
     heroImageBlend() {
-      return this.page.attributes.heroImageBlend && "BlendImage";
+      return this.page.attributes.hero && this.page.attributes.hero.imageBlend
+      && "BlendImage"
+      // : `background-color: #ffe428` // theme.brand.highlight
     },
     heroTitleWidth() {
-      return this.page.attributes.heroTitleWidth
-        ? `${this.page.attributes.heroTitleWidth}`
+      return this.page.attributes.hero && this.page.attributes.hero.titleWidth
+        ? `${this.page.attributes.hero.titleWidth}`
         : "lg:w-full";
     },
     heroTitleColor() {
-      return this.page.attributes.heroTitleInvert && "text-white";
+      return this.page.attributes.hero && this.page.attributes.hero.titleInvert && "text-white";
     },
     heroMetaClass() {
-      return this.page.attributes.heroTitleInvert
+      return this.page.attributes.hero && this.page.attributes.hero.titleInvert
         ? "text-white"
         : "text-gray-600";
     },
@@ -141,7 +140,11 @@ export default {
 
 <style lang="postcss" scoped>
 .BlendImage {
-  background-color: rgba(0, 0, 0, 0.2);
+  @apply bg-text
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+.BlendImage >>> img {
+  opacity: 0.8;
 }
 
 /* Media within text column */
