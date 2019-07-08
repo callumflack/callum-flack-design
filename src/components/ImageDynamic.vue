@@ -62,7 +62,7 @@ export default {
     const width = Math.min(scaledWidth, this.maxWidth);
     this.url = `${url}&w=${width}`;
 
-    console.log(scaledWidth);
+    // console.log(scaledWidth);
   },
 };
 </script>

@@ -10,7 +10,14 @@
     <div class="Card">
       <div v-if="post.attributes.assets && post.attributes.assets.cover" class="Card-figure">
         <Aspect>
+          <img
+            v-if="post.attributes.assets.cover.local"
+            :src="post.attributes.assets.cover"
+            :alt="post.attributes.title"
+            class="Card-figure-image"
+          />
           <ImageDynamic
+            v-else
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"

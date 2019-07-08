@@ -37,37 +37,39 @@
               </ul>
             </div>
           </div>
-
-          <SliderSlides class="Grid-extract--cards st-2xh">
-            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
-              <div class="Grid Grid--sm">
-                <Card
-                  v-for="post in featuredPosts"
-                  :key="post.attributes.permalink"
-                  :post="post"
-                  class="Grid-item"
-                />
-              </div>
-            </SliderSlide>
-            <SliderSlide v-if="projectsPosts && projectsPosts.length > 0">
-              <div class="container container--list">
-                <CardRow
-                  v-for="post in projectsPosts"
-                  :key="post.attributes.permalink"
-                  :post="post"
-                />
-              </div>
-            </SliderSlide>
-            <SliderSlide v-if="writingPosts && writingPosts.length > 0">
-              <div class="container container--list">
-                <CardRow
-                  v-for="post in writingPosts"
-                  :key="post.attributes.permalink"
-                  :post="post"
-                />
-              </div>
-            </SliderSlide>
-          </SliderSlides>
+          
+          <div class="st-2xh">
+            <SliderSlides class="Grid-extract--cards ">
+              <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
+                <div class="Grid Grid--sm">
+                  <Card
+                    v-for="post in featuredPosts"
+                    :key="post.attributes.permalink"
+                    :post="post"
+                    class="Grid-item"
+                  />
+                </div>
+              </SliderSlide>
+              <SliderSlide v-if="projectsPosts && projectsPosts.length > 0">
+                <div class="container container--list">
+                  <CardRow
+                    v-for="post in projectsPosts"
+                    :key="post.attributes.permalink"
+                    :post="post"
+                  />
+                </div>
+              </SliderSlide>
+              <SliderSlide v-if="writingPosts && writingPosts.length > 0">
+                <div class="container container--list">
+                  <CardRow
+                    v-for="post in writingPosts"
+                    :key="post.attributes.permalink"
+                    :post="post"
+                  />
+                </div>
+              </SliderSlide>
+            </SliderSlides>
+          </div>
         </div>
       </SliderFrame>
 
@@ -133,3 +135,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+.Space {
+  padding-top: calc(theme(spacing.8) * var(--space-ratio));
+}
+</style>
