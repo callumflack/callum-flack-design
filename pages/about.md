@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  CFd is a designer who codes
+title:  A designer who codes
 lede: Callum Flack Design is fluid across graphic design, information design and frontend development.
 ---
 

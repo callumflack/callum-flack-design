@@ -14,7 +14,7 @@
           <div class="Grid-extract--post">
             <div class="relative">
               <Aspect ratio="1/2" :class="heroImageBlend">
-                <img
+                <ImageDynamic
                   v-if="nextpost && nextpost.hero"
                   :src="nextpost.hero"
                   :alt="nextpost.title"
@@ -22,7 +22,7 @@
               </Aspect>
               <div class="absolute inset-0">
                 <div class="container relative h-full flex items-center justify-center">
-                  <div class="container container--text" :class="heroTitleColor">
+                  <div class="w-full container--text" :class="heroTitleColor">
                     <!-- post title -->
                     <h2 class="Display" itemprop="name headline">
                       {{ nextpost.title }}
@@ -50,10 +50,12 @@
 
 <script>
 import Aspect from "./Aspect";
+import ImageDynamic from "./ImageDynamic";
 
 export default {
   components: {
-    Aspect
+    Aspect,
+    ImageDynamic
   },
   props: {
     kind: String,

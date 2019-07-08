@@ -3,8 +3,11 @@
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header class="Grid-extract--edge" :style="heroBlockColor">
         <!-- post image aspect -->
-        <div class="container">
-          <Aspect :ratio="page.attributes.hero && page.attributes.hero.ratio || '1/3.5'" :class="heroImageBlend">
+        <div class="container container--hero">
+          <Aspect
+            :ratio="page.attributes.hero && page.attributes.hero.ratio || '1/3.5'"
+            :class="heroImageBlend"
+          >
             <ImageDynamic
               v-if="page.attributes.hero && page.attributes.hero.showCover"
               :src="page.attributes.assets.cover"
@@ -39,23 +42,17 @@
                 >{{ formatListDate(page.attributes.date) }}</time>
                 <!-- category & tags -->
                 <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                <span
-                  class="Text--sm inline-block capitalize"
-                >{{ page.attributes.category }}:</span>
-                <span
-                  v-for="(tag, index) in tagsWithFeaturedRemoved"
-                  :key="index"
-                  class="Text--sm"
-                >
+                <span class="Text--sm inline-block capitalize">
+                  {{ page.attributes.category }}:
+                </span>
+                <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="Text--sm">
                   <span v-if="index != 0">,</span>
                   <span class="lowercase">{{ tag }}</span>
                 </span>
                 <!-- reading time -->
                 <template v-if="page.attributes.category === 'writing'">
                   <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                  <span
-                    class="Text--sm"
-                  >{{ page.attributes.readingTime }} mins</span>
+                  <span class="Text--sm">{{ page.attributes.readingTime }} mins</span>
                 </template>
               </div>
             </div>
@@ -104,22 +101,31 @@ export default {
   computed: {
     heroBlockColor() {
       return (
-        this.page.attributes.hero && this.page.attributes.hero.blockColor
-        && `background-color: ${this.page.attributes.hero.blockColor}`
+        this.page.attributes.hero &&
+        this.page.attributes.hero.blockColor &&
+        `background-color: ${this.page.attributes.hero.blockColor}`
       );
     },
     heroImageBlend() {
-      return this.page.attributes.hero && this.page.attributes.hero.imageBlend
-      && "BlendImage"
-      // : `background-color: #ffe428` // theme.brand.highlight
+      return (
+        this.page.attributes.hero &&
+        this.page.attributes.hero.imageBlend &&
+        "BlendImage"
+      );
     },
     heroTitleWidth() {
-      return this.page.attributes.hero && this.page.attributes.hero.titleWidth
-        ? `${this.page.attributes.hero.titleWidth}`
-        : "lg:w-full";
+      return (
+        this.page.attributes.hero &&
+        this.page.attributes.hero.titleWidth &&
+        `${this.page.attributes.hero.titleWidth}`
+      );
     },
     heroTitleColor() {
-      return this.page.attributes.hero && this.page.attributes.hero.titleInvert && "text-white";
+      return (
+        this.page.attributes.hero &&
+        this.page.attributes.hero.titleInvert &&
+        "text-white"
+      );
     },
     heroMetaClass() {
       return this.page.attributes.hero && this.page.attributes.hero.titleInvert
@@ -141,7 +147,7 @@ export default {
 <style lang="postcss" scoped>
 .BlendImage {
   @apply bg-text
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  /* background-color: rgba(0, 0, 0, 0.2); */;
 }
 .BlendImage >>> img {
   opacity: 0.8;

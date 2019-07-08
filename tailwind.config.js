@@ -133,20 +133,20 @@ module.exports = {
     },
     /* Corresponding to breakpoints */
     responsiveScale: {
-      textXs: "0.8",
-      textSm: "0.9",
+      textXs: "0.842105263",
+      textSm: "0.933333333",
       textMd: "1",
-      titleXs: "0.666",
+      titleXs: "0.666666667",
       titleSm: "0.9",
       titleMd: "1",
       blockXs: "0.5",
       blockSm: "0.7",
       blockMd: "1",
-      spaceXs: "1",
-      spaceSm: "1",
+      spaceXs: "0.842105263",
+      spaceSm: "0.933333333",
       spaceMd: "1",
-      gridXs: "0.5",
-      gridSm: "0.9",
+      gridXs: "1",
+      gridSm: "1",
       gridMd: "1",
     },
     fontWeight: {
@@ -390,7 +390,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: "1.5rem",
     },
   },
   variants: {
@@ -460,7 +460,7 @@ module.exports = {
     zIndex: ["responsive"],
   },
   corePlugins: {
-    float: false,
+    // float: false,
   },
   plugins: [],
 };

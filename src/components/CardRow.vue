@@ -9,11 +9,11 @@
   >
     <div class="Card-body flex justify-between">
       <!-- title -->
-      <h3 class="Text w-7/12 lg:w-8/12">
+      <h3 class="Text w-15x24 lg:w-8/12 pr-3">
         {{ post.attributes.title }}
         <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
       </h3>
-      <div class="w-5/12 lg:w-4/12 flex justify-between">
+      <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- only show category on home -->
         <!-- <template v-if="$route.path === '/'">
           <div class="Text">{{ post.attributes.category }}</div>
@@ -27,10 +27,10 @@
           >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
-          <!-- if writing, show reading time -->
+          <!-- if writing, show reading time (but not on mobile) -->
           <template v-if="post.attributes.category === 'writing'">
-            <span class="Text text-gray inline-block mx-2px">&centerdot;</span>
-            <span class="Text text-gray">{{ post.attributes.readingTime }} mins</span>
+            <span class="Text text-gray inline-block mx-2px hidden sm:inline-block">&centerdot;</span>
+            <span class="Text text-gray hidden sm:inline-block">{{ post.attributes.readingTime }} mins</span>
           </template>
         </div>
         <!-- date -->
@@ -84,6 +84,14 @@ export default {
   transition: all 500ms ease;
   transform: translateZ(0);
   backface-visibility: hidden;
+}
+
+/* special mobile widths */
+.w-15x24 {
+  width: calc(100% * 15 / 24);
+}
+.w-9x24 {
+  width: calc(100% * 9 / 24);
 }
 
 /* .Card:hover {

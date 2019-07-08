@@ -24,7 +24,7 @@
 @import "./layout/layout-block";
 @import "./layout/layout-container";
 @import "./layout/layout-column";
-@import "./layout/layout-media";
+/* @import "./layout/layout-media"; */
 @import "./typography/typography-link";
 @import "./typography/typography-text";
 @import "./typography/typography-headings";

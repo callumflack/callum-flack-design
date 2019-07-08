@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2019-06-21
-title: Sea Change Cairns website
+title: Sea Change website
 link: https://www.seachangecairns.com/
 assets:
   # static images only in front matter

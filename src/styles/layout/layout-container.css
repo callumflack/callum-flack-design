@@ -15,6 +15,10 @@
   max-width: calc(theme(screens.md) - 2rem) !important;
 }
 
+.container--hero {
+  padding: 0 !important;
+}
+
 @screen sm {
   .container {
     padding: 0 !important;

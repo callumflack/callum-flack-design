@@ -86,7 +86,7 @@ export default {
   Flash of layout before any images render.
  */
 figure {
-  @apply bg-gray-200;
+  /* @apply bg-gray-200; */
 }
 
 /*

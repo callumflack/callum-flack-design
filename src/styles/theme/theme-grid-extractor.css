@@ -1,7 +1,15 @@
+.mo-Grid-extract--edge,
 .Grid-extract--edge {
   left: calc(-50vw + 50%);
   position: relative;
   width: 100vw;
+}
+
+@screen sm {
+  .mo-Grid-extract--edge {
+    left: auto;
+    width: 100%;
+  }
 }
 
 @screen md {

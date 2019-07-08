@@ -13,7 +13,7 @@ hero:
   blockColor: rgb(0,0,0)
   imageBlend: true
   titleInvert: true
-  titleWidth: lg:w-6/12
+  titleWidth: w-9/12 lg:w-6/12
 nextPost:
   title: The instantaneous language of beauty
   link: /blog/the-instantaneous-language-of-beauty.html

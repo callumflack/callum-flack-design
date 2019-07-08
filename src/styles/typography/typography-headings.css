@@ -20,14 +20,13 @@
   @apply font-sans leading-normal tracking-wider;
   @apply font-medium;
   @apply uppercase;
-  font-size: calc((theme(fontSize.base) - 2px) * var(--text-ratio));
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
 .Markdown h2 {
   /* @apply font-title font-bold leading-normal tracking-wide uppercase; */
   @apply font-sans font-medium leading-normal tracking-text;
-  font-size: calc(theme(fontSize.2xl) * var(--text-ratio));
+  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
 }
 
 .Subheading {

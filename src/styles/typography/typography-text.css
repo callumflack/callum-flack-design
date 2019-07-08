@@ -135,8 +135,9 @@ ol,
 }
 
 .Markdown blockquote p {
-  @apply pl-6 border-l border-gray-500;
+  @apply border-l border-gray-500;
   @apply text-gray-600;
+  padding-left: calc(theme(spacing.6) * var(--grid-ratio));
   /* @apply italic; */
 }
 
