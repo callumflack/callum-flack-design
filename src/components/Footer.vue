@@ -6,13 +6,14 @@
       class="block h-full w-full"
     >
       <!-- next post -->
-      <template v-if="$route.path.includes('blog') && nextpost">
+      <!-- <template v-if="$route.path.includes('blog') && nextpost"> -->
+      <template v-if="nextpost && nextpost.link">
         <div class="container container--text">
           <hr class="border-b s-m">
           <p class="Text--base s-2xh">Next post:</p>
           <div class="Grid-extract--post">
             <div class="relative">
-              <Aspect ratio="1/2">
+              <Aspect ratio="1/2" :class="heroImageBlend">
                 <img
                   v-if="nextpost && nextpost.hero"
                   :src="nextpost.hero"
@@ -20,13 +21,10 @@
                 />
               </Aspect>
               <div class="absolute inset-0">
-                <div class="container relative h-full flex items-center justify-center BlendImage">
+                <div class="container relative h-full flex items-center justify-center">
                   <div class="container container--text" :class="heroTitleColor">
                     <!-- post title -->
-                    <h2
-                      class="Display"
-                      itemprop="name headline"
-                    >
+                    <h2 class="Display" itemprop="name headline">
                       {{ nextpost.title }}
                     </h2>
                   </div>
@@ -76,34 +74,42 @@ export default {
       return this.kind === "index" && "bg-brand-neutral";
     },
     linkTypography() {
-      return !this.$route.path.includes("blog") && "Meta text-center";
+      return !this.nextpost && "Meta text-center";
     },
     link() {
       if (this.$route.path === "/") {
         return  "#top";
       }
-      else if (this.$route.path.includes("blog")) {
+      else if (this.nextpost && this.nextpost.link) {
         return this.nextpost.link;
       }
       return "/";
     },
-    heroTitleColor() {
-      return this.nextpost.hero && "text-white";
+    heroImageBlend() {
+      return this.nextpost && this.nextpost.hero && this.nextpost.hero.imageBlend
+      && "BlendImage"
     },
-    currentPost() {
-      return this.posts
-        .find(x => x.attributes.permalink === this.$route.path)
-      // if (this.$route.path.includes('blog')) {
+    heroTitleColor() {
+      return this.nextpost && this.nextpost.hero && "text-white";
+    },
+    // currentPost() {
+    //   return this.posts
+    //     .find(x => x.attributes.permalink === this.$route.path)
+    //   // if (this.$route.path.includes('blog')) {
 
-      // }
-      // return null;
-    }
+    //   // }
+    //   // return null;
+    // }
   }
 }
 </script>
 
 <style lang="postcss" scoped>
 .BlendImage {
-  background-color: rgba(0, 0, 0, 0.2);
+  @apply bg-text
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+.BlendImage >>> img {
+  opacity: 0.8;
 }
 </style>

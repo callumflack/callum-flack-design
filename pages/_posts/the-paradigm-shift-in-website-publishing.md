@@ -6,11 +6,15 @@ title: The paradigm shift in website publishing
 lede: You don’t miss good tools until you have to use the old tools. When it comes to web development tools and publishing systems, there's a paradigm shift in effect. It'll not only make your website a better user experience, it'll be easier to maintain. It's just that you may have to wait until your current website system is painful enough before you believe me.
 readingTime: 8
 assets:
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1552908874/okok/matt-artz-353295-unsplash-.jpg
-heroShowCover: true
-heroTitleInvert: true
-heroImageBlend: true
-heroRatio: 9/16
+  cover: /images/post-publishing-tools.jpg
+hero:
+  showCover: true
+  titleInvert: true
+  imageBlend: true
+  ratio: 9/16
+nextPost:
+  title: Notes on Deciphering Sun Tzu
+  link: /blog/notes-on-deciphering-sun-tzu.html
 tags: 
 - essay
 ---

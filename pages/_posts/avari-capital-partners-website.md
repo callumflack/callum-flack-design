@@ -5,7 +5,8 @@ date: 2019-04-01
 title: Avari Capital Partners website
 client: Paper Stone Scissors
 link: https://avaricapitalpartners.com.au/
-linkFromCard: true
+card:
+  externalLink: true
 tags: 
 - frontend
 - featured

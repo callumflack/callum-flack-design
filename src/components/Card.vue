@@ -8,16 +8,9 @@
     :class="cardWidth"
   >
     <div class="Card">
-      <div v-if="post.attributes.assets.cover" class="Card-figure">
+      <div v-if="post.attributes.assets && post.attributes.assets.cover" class="Card-figure">
         <Aspect>
-          <img
-            v-if="!post.attributes.assetsInImgix"
-            :src="post.attributes.assets.cover"
-            :alt="post.attributes.title"
-            class="Card-figure-image"
-          >
           <ImageDynamic
-            v-else
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
@@ -27,7 +20,7 @@
       <div class="Card-body">
         <h3 class="Title mb-1">
           {{ post.attributes.title }}
-          <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
+          <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
@@ -68,16 +61,16 @@ export default {
   props: ["post"],
   computed: {
     type() {
-      if (this.post.attributes.linkFromCard) {
-        return "a";
-      }
-      return "saber-link";
+      return this.post.attributes.card && this.post.attributes.card.externalLink
+      ? "a" : "saber-link";
     },
     target() {
-      return this.post.attributes.linkFromCard ? "_blank" : "";
+      return this.post.attributes.card && this.post.attributes.card.externalLink
+      ? "_blank" : ""
     },
     cardWidth() {
-      return this.post.attributes.fullFeaturedCard ? "w-full" : "w-full sm:w-1/2";
+      return this.post.attributes.card && this.post.attributes.card.full
+      ? "w-full" : "w-full sm:w-1/2"
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags

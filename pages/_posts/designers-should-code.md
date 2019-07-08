@@ -6,10 +6,11 @@ title: Designers should code
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 readingTime: 5
 assets:
-  cover: /images/semilattice-190708.jpg
-heroRatio: 1/2
-heroShowCover: true
-heroBlockColor: transparent
+  cover: /images/post-semilattice-190708.jpg
+nextPost:
+  title: The instantaneous language of beauty
+  link: /blog/the-instantaneous-language-of-beauty.html
+  hero: /images/post-aesthetics-nembrotha-aurea.jpg
 tags:
   - essay
 ---
@@ -20,9 +21,9 @@ In “A City Is Not A Tree”, Christopher Alexander describes a living, natural
 
 <!-- @[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post) -->
 
-As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally rich [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. _The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time._
+<Media ratio="388/1100" image="/images/post-semilattice-190708a.png" />
 
-<Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059392/post-melbourne-laneway_sh8h4w.jpg" />
+As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally rich [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. _The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time._
 
 Put it this way: if you tried to recreate Melbourne's laneways from scratch, all “Melbourne-ness” would be lost. By contrast, if you tried to recreate Canberra, Australia’s capital city, you’d do a better job. Canberra is [high-modernist urban architecture](http://www.naa.gov.au/collection/fact-sheets/fs95.aspx) devoid of rich experience because, as [Christopher Alexander says:](http://en.bp.ntu.edu.tw/wp-content/uploads/2011/12/06-Alexander-A-city-is-not-a-tree.pdf)
 
@@ -34,7 +35,7 @@ The “natural semi-lattice” metaphor is a good way to understand how complex 
 
 The same holds true for the complexities of User Interface design. Why, for example, do most websites look the same these days? It probably has something to do with the rise of "magic bullet" UI frameworks such as Bootstrap. _Reduction of complexity accidentally eliminates richness._
 
-<Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1544059496/DOtYW_LUEAA6ELV_oxz8jo.jpg" />
+<Media image="/images/post-website-design-homogenity.jpg" title="alt img" caption="When website design is reduced to a simple template, richness is eliminated. <a href='https://twitter.com/chopse/status/930935055274225664' target='_blank'>Source.</a>" />
 
 ## Self-sufficient UI creators
 
@@ -77,9 +78,7 @@ _If you're a designer who codes within in a team, you’ll have higher-resolutio
 
 The hallmark of craftsmanship is to understand "[both the limits and the possibilities of your medium](https://medium.com/@irondavy/designers-will-code-6c423fc5ccef)". Within the craftsmanship of web experiences, learning to code helps designers to see and understand the necessary overlaps that create characteristically rich web experiences.
 
-<!-- @[MarkdownNote](note="Many thanks to Michael Fogleman for his input. This article is also cross-posted on <a href="https://medium.com/@callumflack/should-designers-code-74fd43a0fc80">Medium</a>.") -->
-
-<!-- @[MarkdownNote](note="Completed in collaboration with Jason Armstrong, Andres Hernandez and Richard Price while working for Ward6.") -->
+<!-- Many thanks to Michael Fogleman for his input. This article is also cross-posted on [Medium](https://medium.com/@callumflack/should-designers-code-74fd43a0fc80). {.Note} -->
 
 <script>
 import Media from "../../src/components/Media";

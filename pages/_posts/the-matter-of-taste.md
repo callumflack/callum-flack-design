@@ -7,15 +7,16 @@ lede: Rather than understanding taste as the particular way a person does a thin
 readingTime: 8
 assets:
   cover: /images/post-lynch-bw.jpg
-heroShowCover: true
-heroImageBlend: true
-heroBlockColor: transparent
-heroTitleInvert: true
-heroRatio: 1/2
+hero:
+  showCover: true
+  ratio: 8 / 16
+  imageBlend: true
+  titleInvert: true
+  titleWidth: lg:w-6/12
 nextPost:
-  title: The instantaneous language of beauty
-  link: /blog/the-instantaneous-language-of-beauty.html
-  hero: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
+  title: The brief, the scope and the dance
+  link: /blog/the-brief-the-scope-and-the-dance.html
+  hero: /images/post-process-2a.jpg
 tags:
   - essay
   - featured

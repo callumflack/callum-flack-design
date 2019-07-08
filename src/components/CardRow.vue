@@ -11,7 +11,7 @@
       <!-- title -->
       <h3 class="Text w-7/12 lg:w-8/12">
         {{ post.attributes.title }}
-        <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
+        <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
       </h3>
       <div class="w-5/12 lg:w-4/12 flex justify-between">
         <!-- only show category on home -->
@@ -53,13 +53,12 @@ export default {
   props: ["post"],
   computed: {
     type() {
-      if (!this.post.attributes.linkFromCard) {
-        return "saber-link";
-      }
-      return "a";
+      return this.post.attributes.card && this.post.attributes.card.externalLink
+      ? "a" : "saber-link";
     },
     target() {
-      return this.post.attributes.linkFromCard ? "_blank" : "";
+      return this.post.attributes.card && this.post.attributes.card.externalLink
+      ? "_blank" : ""
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags

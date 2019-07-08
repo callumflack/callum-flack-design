@@ -17,7 +17,6 @@
     </main>
     <Footer
       :kind="kind"
-      :posts="page.posts"
       :nextpost="page.attributes.nextPost"
     />
   </div>

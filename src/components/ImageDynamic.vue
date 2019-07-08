@@ -32,7 +32,10 @@ export default {
     VLazyImage
   },
   props: {
-    src: String,
+    src: {
+      type: String,
+      default: ""
+    },
     alt: String,
     cover: {
       type: Boolean,
@@ -58,6 +61,8 @@ export default {
     const scaledWidth = this.$refs.image.clientWidth * 2;
     const width = Math.min(scaledWidth, this.maxWidth);
     this.url = `${url}&w=${width}`;
+
+    console.log(scaledWidth);
   },
 };
 </script>

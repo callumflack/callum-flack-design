@@ -2,34 +2,33 @@
   <div class="AspectMedia Grid-extract--post">
     <Aspect
       :ratio="ratio"
-      :class="{ 'Frame' : this.frame }"
+      :class="{ 'Frame' : frame || caption }"
     >
-      <figure>
-        <img
-          :src="image"
-          :alt="title"
-        >
-      </figure>
-      <figcaption v-if="caption">
-        {{ caption }}
-      </figcaption>
+      <ImageDynamic
+        :src="image"
+        :alt="title"
+      />
     </Aspect>
+    <figcaption v-if="caption" class="Text--base text-gray st-h" v-html="caption">
+    </figcaption>
   </div>
 </template>
 
 <script>
 import Aspect from "./Aspect";
+import ImageDynamic from "./ImageDynamic";
 
 export default {
+  components: {
+    Aspect,
+    ImageDynamic
+  },
   props: {
     image: String,
     title: String,
     caption: String,
     ratio: String,
     frame: Boolean
-  },
-  components: {
-    Aspect
   }
 }
 </script>

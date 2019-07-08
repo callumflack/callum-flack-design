@@ -11,7 +11,7 @@
       <div class="Card-body w-2/3 lg:w-3/4">
         <h3 class="Title mb-2px">
           {{ post.attributes.title }}
-          <span v-if="post.attributes.linkFromCard" class="Link--blank">&#8599;</span>
+          <span v-if="post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
@@ -44,8 +44,8 @@
             class="Card-figure-image"
           >
           <!-- <a
-            v-if="post.attributes.linkFromCard"
-            :href="post.attributes.linkFromCard"
+            v-if="post.attributes.card.externalLink"
+            :href="post.attributes.card.externalLink"
             target="_blank"
             rel="noopener noreferrer"
             class="Card-figure-blanklink"
@@ -69,13 +69,13 @@ export default {
   props: ["post"],
   computed: {
     type() {
-      if (!this.post.attributes.linkFromCard) {
+      if (!this.post.attributes.card.externalLink) {
         return "saber-link";
       }
       return "a";
     },
     target() {
-      return this.post.attributes.linkFromCard ? "_blank" : "";
+      return this.post.attributes.card.externalLink ? "_blank" : "";
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags

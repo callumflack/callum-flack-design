@@ -7,15 +7,17 @@ lede: Frustrating, ugly websites that don't live up to their promise are the res
 readingTime: 8
 assets: 
   cover: /images/post-process-2a.jpg
-heroShowCover: true
-heroBlockColor: rgb(21,21,21)
-heroRatio: 1/2
-heroTitleInvert: true
-heroTitleWidth: lg:w-6/12
+hero:
+  showCover: true
+  ratio: 8 / 16
+  blockColor: rgb(0,0,0)
+  imageBlend: true
+  titleInvert: true
+  titleWidth: lg:w-6/12
 nextPost:
   title: The instantaneous language of beauty
   link: /blog/the-instantaneous-language-of-beauty.html
-  hero: https://res.cloudinary.com/pw-img-cdn/image/upload/v1527842531/okok/aesthetics-nembrotha-aurea.jpg
+  hero: /images/post-aesthetics-nembrotha-aurea.jpg
 tags:
   - essay
 ---
