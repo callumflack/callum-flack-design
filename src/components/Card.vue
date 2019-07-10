@@ -31,9 +31,9 @@
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
-          <span class="Text--sm">
+          <time :date-time="post.attributes.createdAt" class="Text--sm">
             {{ formatDate(post.attributes.createdAt) }}
-          </span>
+          </time>
           <span class="Text--sm inline-block mx-2px">&mdash;</span>
           <!-- category & tags -->
           <span class="Text--sm capitalize">{{ post.attributes.category }}:</span>

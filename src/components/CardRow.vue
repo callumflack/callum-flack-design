@@ -34,9 +34,9 @@
           </template>
         </div>
         <!-- date -->
-        <span class="Text text-gray ml-4 lg:ml-8">
+        <time :date-time="post.attributes.createdAt" class="Text text-gray ml-4 lg:ml-8">
           {{ formatListDate(post.attributes.createdAt) }}
-        </span>
+        </time>
       </div>
     </div>
   </component>
