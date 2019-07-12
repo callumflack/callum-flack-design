@@ -8,6 +8,7 @@
     :class="cardWidth"
   >
     <div class="Card">
+      <!-- image -->
       <div v-if="post.attributes.assets && post.attributes.assets.cover" class="Card-figure">
         <Aspect>
           <img
@@ -24,6 +25,15 @@
           />
         </Aspect>
       </div>
+      <!-- quote -->
+      <div v-else-if="post.attributes.card && post.attributes.card.quote" class="Card-figure" :style="`background-color:${post.attributes.card.bgColor}`">
+        <Aspect>
+        </Aspect>
+        <div class="absolute inset-0 flex items-center">
+          <p class="Title ml-4 lg:w-3/4">{{ post.attributes.card.quote }}</p>
+        </div>
+      </div>
+      <!-- body -->
       <div class="Card-body">
         <h3 class="Title mb-1">
           {{ post.attributes.title }}
@@ -32,23 +42,23 @@
         <div class="Card-body-meta">
           <!-- date -->
           <time :date-time="post.attributes.createdAt" class="Text--sm">
-            {{ formatDate(post.attributes.createdAt) }}
+            {{ formatListDate(post.attributes.createdAt) }}
           </time>
           <span class="Text--sm inline-block mx-2px">&mdash;</span>
           <!-- category & tags -->
-          <span class="Text--sm capitalize">{{ post.attributes.category }}:</span>
-          <span
+          <span class="Text--sm capitalize">{{ post.attributes.category }}</span>
+          <!-- <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
             class="Text--sm"
           >
             <span v-if="index != 0">, </span><span>{{ tag }}</span>
-          </span>
+          </span> -->
           <!-- if writing, show reading time -->
-          <template v-if="post.attributes.category === 'writing'">
+          <!-- <template v-if="post.attributes.category === 'writing'">
             <span class="Text--sm inline-block mx-2px">&mdash;</span>
             <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
-          </template>
+          </template> -->
         </div>
       </div>
     </div>
@@ -56,7 +66,7 @@
 </template>
 
 <script>
-import formatDate from "../utils/formatDate";
+import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
 import ImageDynamic from "../components/ImageDynamic";
 
@@ -77,7 +87,7 @@ export default {
     },
     cardWidth() {
       return this.post.attributes.card && this.post.attributes.card.full
-      ? "w-full" : "w-full sm:w-1/2"
+      ? "w-full" : "w-full sm:w-1/2 lg:w-1/3"
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags
@@ -91,7 +101,7 @@ export default {
     }
   },
   methods: {
-    formatDate
+    formatListDate
   }
 };
 </script>
@@ -137,16 +147,16 @@ export default {
   @apply absolute bottom-0;
   content: "";
   margin-left: 0;
-  width: calc(100% - 20px);
+  width: calc(100% - 14px);
 } */
 
-/* .Card:last-of-type:after {
-  @apply border-transparent;
-} */
+.Card:last-of-type:after {
+  /* @apply border-transparent; */
+}
 
-/* .Card:hover:after {
+.Card:hover:after {
   @apply border-transparent;
-} */
+}
 
 /* .Card-figure {
   @apply mb-2;
@@ -164,9 +174,9 @@ export default {
   @apply capitalize;
 } */
 
-/* .Card-figure {
-  @apply h-full relative;
-} */
+.Card-figure {
+  @apply relative;
+}
 
 .Card-figure-image {
   /* @apply absolute inset-0 object-cover w-full h-full;

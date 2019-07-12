@@ -13,6 +13,8 @@
 }
 .container--list {
   max-width: calc(theme(screens.md) - 2rem) !important;
+  max-width: theme(screens.lg) !important;
+  max-width: 840px !important;
 }
 
 .container--hero {

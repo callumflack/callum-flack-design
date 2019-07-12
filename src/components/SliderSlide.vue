@@ -1,7 +1,7 @@
 <template>
   <Transition :name="transition">
     <div v-if="dirty" v-show="active" class="SliderSlide">
-      <slot/>
+      <slot />
     </div>
   </Transition>
 </template>
@@ -44,7 +44,7 @@ export default {
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter-active,
 .SliderSlide--transition-right-leave-active {
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
   transition-property: height, opacity, transform;
   transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
   overflow: hidden;
@@ -59,20 +59,12 @@ export default {
 .SliderSlide--transition-left-enter,
 .SliderSlide--transition-right-leave-active {
   opacity: 0;
-  transform: translate(10em, 0);
-
-  @media (--mo) {
-    transform: translate(5em, 0);
-  }
+  transform: translate(20em, 0);
 }
 
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter {
   opacity: 0;
-  transform: translate(-10em, 0);
-
-  @media (--mo) {
-    transform: translate(-5em, 0);
-  }
+  transform: translate(-20em, 0);
 }
 </style>

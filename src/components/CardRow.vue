@@ -9,7 +9,7 @@
   >
     <div class="Card-body flex justify-between">
       <!-- title -->
-      <h3 class="Text w-15x24 lg:w-8/12 pr-3">
+      <h3 class="Title w-15x24 lg:w-8/12 pr-3">
         {{ post.attributes.title }}
         <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
       </h3>
@@ -23,18 +23,22 @@
           <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
-            class="Text text-gray"
+            class="Title text-gray"
           >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
           <!-- if writing, show reading time (but not on mobile) -->
-          <template v-if="post.attributes.category === 'writing'">
-            <span class="Text text-gray inline-block mx-2px hidden sm:inline-block">&centerdot;</span>
-            <span class="Text text-gray hidden sm:inline-block">{{ post.attributes.readingTime }} mins</span>
-          </template>
+          <!-- <template v-if="post.attributes.category === 'writing'">
+            <span class="Text text-gray inline-block mx-2px hidden sm:inline-block">
+              &centerdot;
+            </span>
+            <span class="Text text-gray hidden sm:inline-block">
+              {{ post.attributes.readingTime }} mins
+            </span>
+          </template> -->
         </div>
         <!-- date -->
-        <time :date-time="post.attributes.createdAt" class="Text text-gray ml-4 lg:ml-8">
+        <time :date-time="post.attributes.createdAt" class="Title text-gray ml-4 lg:ml-8">
           {{ formatListDate(post.attributes.createdAt) }}
         </time>
       </div>
@@ -128,7 +132,7 @@ export default {
   /* margin-bottom: calc(theme(spacing.5) * var(--space-ratio)); */
   /* @apply mb-1; */
   /* margin-bottom: calc(3/16 * 1em); */
-  margin-bottom: 0.1875em;
+  /* margin-bottom: 0.1875em; */
 }
 
 /* .Card:before {
@@ -164,8 +168,7 @@ export default {
 
 .Card-body {
   @apply py-1;
-  /* @apply pl-2; */
-  /* @apply flex-grow; */
+  transform: translateY(1px);
 }
 
 .Card-body-meta {

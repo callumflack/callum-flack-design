@@ -10,7 +10,6 @@ assets:
 hero:
   showCover: true
   ratio: 8 / 16
-  blockColor: rgb(0,0,0)
   imageBlend: true
   titleInvert: true
   titleWidth: w-9/12 lg:w-6/12

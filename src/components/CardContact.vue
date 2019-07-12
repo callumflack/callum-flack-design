@@ -8,11 +8,11 @@
       />
     </div>
     <div class="Card-body sm:w-8/12">
-      <div class="s-h">
+      <div class="s-h sm:-mt-1">
         <h1 v-if="title" class="Display s-m">
           {{ title }}
         </h1>
-        <p v-if="lede" class="Text--base text-gray mb-2px lg:w-5/6">
+        <p v-if="lede" class="Text--base text-gray s-m lg:w-11/12">
           {{ lede }}
         </p>
         <ul class="Text--base text-gray">
@@ -72,7 +72,7 @@ export default {
 
 <style lang="postcss" scoped>
 .Card {
-  @apply border-t border-b border-text py-3;
+  /* @apply border-t border-b border-text py-3; */
   /* @apply pl-6 pr-6; */
 }
 

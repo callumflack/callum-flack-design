@@ -12,6 +12,7 @@ hero:
   titleInvert: true
   imageBlend: true
   ratio: 9/16
+  titleWidth: lg:w-6/12
 nextPost:
   title: Notes on Deciphering Sun Tzu
   link: /blog/notes-on-deciphering-sun-tzu.html

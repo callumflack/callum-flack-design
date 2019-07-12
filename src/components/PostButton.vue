@@ -31,7 +31,7 @@ a + a {
 
 .Link--blank {
   @apply absolute m-0;
-  right: -0.9em;
+  right: -1.1em;
   top: 0.5em;
 }
 </style>

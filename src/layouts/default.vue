@@ -33,14 +33,25 @@
                   Writing
                 </button>
               </li>
+              <li>
+                <saber-link
+                  to="/the-littoral-line.html"
+                  class="Tab-controls--button Meta flex self-center"
+                >
+                  Newsletter
+                  <!-- <span class="Link--blank">&#8599;</span> -->
+                  <span class="Logo-arrow ml-1">&rightarrow;</span>
+                </saber-link>
+              </li>
             </ul>
           </div>
+          <hr class="border-b border-text m-0">
         </div>
 
-        <div class="st-2xh">
-          <SliderSlides class="Grid-extract--cards ">
-            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0">
-              <div class="Grid Grid--sm">
+        <div class="st-m">
+          <SliderSlides class="Grid-extract--cards">
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="st-2xh">
+              <div class="Grid">
                 <Card
                   v-for="post in featuredPosts"
                   :key="post.attributes.permalink"

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  A designer who codes
-lede: Callum Flack Design is fluid across graphic design, information design and frontend development.
+lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections unlocks to the quality of the whole.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -100,6 +100,9 @@ When Callum builds websites, he advocates for these future-facing tools:
 
 - building interfaces with Vue.js (or React.js)
 - a [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
+- a relationship based on collaboration and dialogue so we can better understand project goals
+
+<!-- our intentions and end -->
 <!-- - micro-frontends with functional elements separated by concern -->
 <!-- - Integrating Content Management Systems <a target="_blank" href="https://en.wikipedia.org/wiki/Headless_content_management_system">headlessly via APIs -->
 

@@ -1,6 +1,6 @@
 .Tab-controls {
   @apply flex;
-  /* @apply border-b border-transparent; */
+  /* @apply border-b border-text; */
   /* @apply text-gray-500; */
 }
 
@@ -8,10 +8,16 @@
   @apply ml-4;
 }
 
+/* newsletter */
+/* .Tab-controls li:last-of-type {
+  @apply ml-auto;
+} */
+
 .Tab-controls--button {
-  @apply border-b-2 border-transparent;
+  @apply border-b-4 border-transparent;
+  @apply inline-flex items-center;
   height: calc(theme(spacing.12) * var(--space-ratio));
-  transform: translateY(0);
+  transform: translateY(1px);
 }
 
 /* .Tab-controls--button.is-active {

@@ -14,19 +14,17 @@
   @apply font-sans text-text;
 }
 
+.Metaheading,
 .Markdown h3,
-.Metaheading {
-  /* @apply font-normal leading-normal italic; */
-  @apply font-sans leading-normal tracking-wider;
-  @apply font-medium;
-  @apply uppercase;
-  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+.Markdown h2 {
+  @apply font-sans leading-normal tracking-text;
 }
 
 .Markdown h2 {
-  /* @apply font-title font-bold leading-normal tracking-wide uppercase; */
-  @apply font-sans font-medium leading-normal tracking-text;
-  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.3xl) * var(--title-ratio));
+}
+.Markdown h3 {
+  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
 
 .Subheading {
@@ -51,20 +49,15 @@
 
 .Display,
 .Title {
-  @apply font-title font-medium tracking-text;
+  @apply font-title font-normal tracking-text;
 }
 
 .Title {
   @apply leading-tight;
   font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
-.Title .Link--blank {
-  font-size: 55%;
-  margin-left: 0;
-  transform: translateY(-0.75em);
-}
 
 .Display {
-  @apply font-medium tracking-tight leading-none;
+  @apply tracking-tight leading-none font-medium;
   font-size: calc(theme(fontSize.4xl) * var(--title-ratio));
 }

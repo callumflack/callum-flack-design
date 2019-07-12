@@ -10,7 +10,6 @@ assets:
 hero:
   showCover: true
   ratio: 9 / 16
-  blockColor: rgb(0,0,0)
   imageBlend: true
   titleInvert: true
   titleWidth: lg:w-6/12
@@ -21,7 +20,6 @@ tags:
   - essay
   - featured
 card:
-  full: true
 ---
 
 A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead feel.

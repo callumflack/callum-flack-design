@@ -4,16 +4,16 @@ layout: post
 date: 2017-01-12
 title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-oceanblueliving.jpg
 assets:
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372236/okok/oceanblueliving-hero.jpg
+  cover: /images/oceanblueliving-hero.jpg
 heroShowCover: false
 tags: 
   - design
   - frontend
+  - featured
 ---
 
-OceanBlue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
+Oceanblue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
 
 <Media ratio="4740/2160" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597614/okok/oceanblueliving-desktop-layouts.png" />
 
@@ -31,7 +31,7 @@ The visual design system uses highly structured fonts, with hand-drawn icons tha
 
 <!-- We continue to document new works. The image library we've built over the last 18 months allows OceanBlue Living to create high-impact social media at will. -->
 
-The goal of the website is to become a place people can dream of their perfect home and office space, and create a community around OceanBlue's works.
+The goal of the website is to become a place people can dream of their perfect home and office space, and create a community around Oceanblue's works.
 
 <PostButton link="https://oceanblueliving.com.au" label="Visit Oceanblue Living" />
 

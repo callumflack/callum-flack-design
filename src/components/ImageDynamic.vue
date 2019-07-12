@@ -72,14 +72,17 @@ export default {
   1. enable Safari to keep sharp edges (if parent is pos-abs)
 */
 .v-lazy-image {
+  filter: blur(10px);
+  opacity: 0;
   min-height: 100%;
   min-width: 100%;
-  filter: blur(10px);
-  transition: filter 0.5s ease-in;
-  transform: scale(1); /*1 */
+  transition: all 0.5s ease-in;
+  transform: scale(1.025); /*1 */
 }
 .v-lazy-image-loaded {
+  opacity: 1;
   filter: blur(0);
+  transform: scale(1); /*1 */
 }
 
 /*

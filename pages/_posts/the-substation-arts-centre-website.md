@@ -6,12 +6,13 @@ title: The Substation website
 lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
 link: https://thesubstation.org.au/
 assets: 
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1513222499/okok/thesubstation-hero-THIS_baprpq.jpg
+  cover: /images/thesubstation-hero.jpg
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
 tags: 
   - design
   - frontend
+  - featured
 ---
 
 The Substation wanted scale their digital marketing but were stuck with a Wordpress site that was hard to customise. I rebuilt their platform for efficiency, flexibility and performance. As we progressed, I came to understand their vision and evolved their digital branding to match.

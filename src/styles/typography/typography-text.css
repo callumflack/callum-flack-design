@@ -18,11 +18,11 @@ body {
   /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
   font-kerning: normal;
   /* hyphens: auto; */
-  -webkit-tap-highlight-color: theme(colors.brand.highlight);
+  -webkit-tap-highlight-color: theme(colors.text);
 }
 
 ::selection {
-  @apply bg-brand-highlight;
+  @apply bg-text text-white;
 }
 
 p,
@@ -34,6 +34,7 @@ ol {
 .Text--xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
+.Nav-link,
 .Text--sm {
   @apply tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
@@ -78,6 +79,16 @@ ol,
   margin-top: calc(theme(spacing.12) * var(--space-ratio));
 }
 
+/*
+
+  Nav
+
+*/
+
+.Nav-link {
+  @apply font-medium inline-flex items-center;
+  height: calc(theme(spacing.16) * var(--space-ratio));
+}
 
 /*
 
@@ -131,19 +142,13 @@ ol,
 }
 
 .Markdown strong {
-  @apply text-black font-medium;
+  @apply font-medium;
 }
 
 .Markdown blockquote p {
   @apply border-l border-gray-500;
   @apply text-gray-600;
-  padding-left: calc(theme(spacing.6) * var(--grid-ratio));
-  /* @apply italic; */
-}
-
-.Markdown blockquote p em {
-  /* @apply bg-transparent; */
-  /* font-style: italic !important; */
+  padding-left: calc(theme(spacing.5) * var(--grid-ratio));
 }
 
 .Markdown blockquote p p {
@@ -151,13 +156,18 @@ ol,
   padding: initial;
 }
 
+/* same as Meta font style */
 .Markdown blockquote p strong {
-  @apply table not-italic mt-1 tracking-wider;
-  /* @apply font-normal; */
+  @apply table mt-1 tracking-wider;
   @apply text-gray-600;
 }
 
-/* post specials */
+/*
+
+  Post specials
+
+*/
+
 .Note {
   @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
 }

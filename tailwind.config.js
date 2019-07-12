@@ -33,10 +33,10 @@ module.exports = {
       gray: {
         100: "#f7fafc",
         200: "#eaeaea",
-        300: "#ddd",
+        300: "#e5e5e5",
         400: "#dedede",
         500: "#aaa",
-        600: "#777",
+        600: "#888",
         700: "#777",
         // 800: "#231F20",
         // 900: "#1a202c",
@@ -118,15 +118,15 @@ module.exports = {
       ],
     },
     fontSize: {
-      xxs: "0.78125rem", // 12
-      xs: "0.875rem", // 13
-      sm: "0.875rem", // 14
+      xxs: "0.6875rem", // 11 or 12
+      xs: "0.8125rem", // 13
+      sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.1875rem", // 19
-      xl: "1.375rem", // 22
+      lg: "1.1875rem", // 18, 19 or 20
+      xl: "1.3125rem", // 21 or 22
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
-      "4xl": "2.25rem", // 32 or 36
+      "4xl": "2.25rem", // 32 or 36 or 40
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
@@ -161,22 +161,22 @@ module.exports = {
       black: "900",
     },
     lineHeight: {
-      none: "1.05",
+      none: "1.15",
       tight: "1.2",
       snug: "1.375",
       reduced: "1.47059",
-      normal: "1.3",
+      normal: "1.333333333",
       relaxed: "1.625",
       loose: "2",
       nav: "4.5",
     },
     letterSpacing: {
       tighter: "-0.05em",
-      tight: "-0.02em",
-      text: "-0.005em",
+      tight: "-0.01em",
+      text: "-0.001em",
       normal: "0",
       wide: "0.0125em",
-      wider: "0.025em",
+      wider: "0.07em",
       widest: "0.1em",
     },
     textColors: theme => ({

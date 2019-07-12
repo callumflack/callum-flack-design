@@ -12,7 +12,6 @@ hero:
   ratio: 8 / 16
   imageBlend: true
   titleInvert: true
-  titleWidth: lg:w-6/12
 nextPost:
   title: The brief, the scope and the dance
   link: /blog/the-brief-the-scope-and-the-dance.html

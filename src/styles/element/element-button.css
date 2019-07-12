@@ -34,7 +34,7 @@
   --button-inline-spacing: 0;
   --button-padding-x: 1em;
 
-  --input-placeholder-color: theme(colors.text);
+  --input-placeholder-color: theme(colors.gray.600);
 
   align-items: center;
   background-color: var(--button-bg-color);
@@ -125,8 +125,9 @@ button:disabled {
   @apply w-full;
 }
 
-.Input::placholder {
-  color: var(--input-placeholder-color); /* still dims it */
+.Input::placeholder {
+  @apply opacity-100; /* override Tailwind */
+  color: var(--input-placeholder-color);
 }
 
 /* in forms, make height & radius consistent for both inputs & buttons */

@@ -13,7 +13,7 @@ tags:
   - frontend
 ---
 
-OceanBlue Boats had just moved into a new warehouse space that was four times larger. I was asked to redesign their Branding and build a website around their love for all things boat-making and general fabrication.
+Oceanblue Boats had just moved into a new warehouse space that was four times larger. I was asked to redesign their Branding and build a website around their love for all things boat-making and general fabrication.
 
 <Media ratio="1039/1500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597864/okok/oceanblueboats-video-poster.jpg" />
 

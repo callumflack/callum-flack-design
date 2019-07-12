@@ -7,7 +7,7 @@
       :newsletter="page.attributes.newsletter"
       :category="page.attributes.category"
     />
-    <main aria-label="Content" :class="mainHomeClass">
+    <main aria-label="Content">
       <div
         class="container"
         :class="containerType"

@@ -10,9 +10,10 @@
           </li>
         </ul>
       </div>
+      <hr class="border-b border-text m-0">
     </div>
 
-    <div class="st-2xh">
+    <div class="st-m">
       <CardRowIssue
         v-for="(issue, index) in page.attributes.issues"
         :key="index"

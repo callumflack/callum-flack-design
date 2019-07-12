@@ -29,14 +29,21 @@
     /* --width: calc(theme(screens.sm) + 16px);
     left: calc((-0.5 * var(--width)) + 50% - 8px); */
     /* --width: calc(theme(screens.sm) + 2rem);*/
-    --width: theme(screens.xl);
+    /* --width: theme(screens.xl); */
+    /* --width: 70vw;
     left: calc((-0.5 * var(--width)) + 50% );
     position: relative;
-    width: var(--width) !important;
+    width: var(--width) !important; */
+
+    left: calc(-50vw + 50%);
+    position: relative;
+    width: 100vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 }
 @media only screen and (max-width: 1440px) {
   .Grid-extract--cards {
-    --width: 1440px;
+    /* --width: 1440px; */
   }
 }

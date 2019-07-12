@@ -1,16 +1,16 @@
 <template>
-  <footer class="flex relative" :class="[blockColorClass, spacerClasses]">
+  <footer class="flex relative">
     <saber-link
       :to="link"
-      :class="linkTypography"
-      class="block h-full w-full"
+      :class="[linkTypography, spacerClasses]"
+      class="h-full w-full"
     >
       <!-- next post -->
       <!-- <template v-if="$route.path.includes('blog') && nextpost"> -->
       <template v-if="nextpost && nextpost.link">
         <div class="container container--text">
-          <hr class="border-b s-m">
-          <p class="Text--base s-2xh">Next post:</p>
+          <hr v-if="nextpost && !nextpost.hero" class="border-b m-0">
+          <!-- <p class="Text--base s-2xh">Next post:</p> -->
           <div class="Grid-extract--post">
             <div class="relative">
               <Aspect ratio="1/2" :class="heroImageBlend">
@@ -24,6 +24,7 @@
                 <div class="container relative h-full flex items-center justify-center">
                   <div class="w-full container--text" :class="heroTitleColor">
                     <!-- post title -->
+                    <p class="Text--base s-m">Next post:</p>
                     <h2 class="Display" itemprop="name headline">
                       {{ nextpost.title }}
                     </h2>
@@ -37,7 +38,7 @@
       <!-- up -->
       <template v-else-if="$route.path === '/'">
         <span class="Logo-arrow mr-1">&#8593;</span>
-        <span>up</span>
+        <span>Up</span>
       </template>
       <!-- CFd -->
       <template v-else>
@@ -76,7 +77,7 @@ export default {
       return this.kind === "index" && "bg-brand-neutral";
     },
     linkTypography() {
-      return !this.nextpost && "Meta text-center";
+      return !this.nextpost && "Nav-link justify-center";
     },
     link() {
       if (this.$route.path === "/") {
