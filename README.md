@@ -1,6 +1,6 @@
 # Callum Flack Design
 
-Value proposition, portfolio and blog site: https://callumflack.design/
+Value proposition, portfolio and writing website: https://callumflack.design/
 
 Tools:
 
