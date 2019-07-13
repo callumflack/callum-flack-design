@@ -2,7 +2,7 @@
   <headroom :speed="500">
     <nav class="container container--list">
       <saber-link class="Nav-link w-full" rel="author" to="/" exact>
-        <span class="Logo-arrow mr-1">&#8592;</span>
+        <span v-if="$route.path !== '/'" class="Logo-arrow mr-1">&#8592;</span>
         <span style="text-transform:initial">CFd</span>
       </saber-link>
     </nav>

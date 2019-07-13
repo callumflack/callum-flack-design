@@ -90,14 +90,6 @@ export default {
   backface-visibility: hidden;
 }
 
-/* special mobile widths */
-.w-15x24 {
-  width: calc(100% * 15 / 24);
-}
-.w-9x24 {
-  width: calc(100% * 9 / 24);
-}
-
 /* .Card:hover {
   @apply bg-white;
 } */

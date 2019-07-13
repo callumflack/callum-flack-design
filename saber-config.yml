@@ -40,3 +40,4 @@ plugins:
 markdown:
   plugins:
     - resolve: markdown-it-attrs
+    - resolve: markdown-it-sup

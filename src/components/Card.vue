@@ -25,12 +25,12 @@
           />
         </Aspect>
       </div>
-      <!-- quote -->
+      <!-- if no image, quote -->
       <div v-else-if="post.attributes.card && post.attributes.card.quote" class="Card-figure" :style="`background-color:${post.attributes.card.bgColor}`">
         <Aspect>
         </Aspect>
         <div class="absolute inset-0 flex items-center">
-          <p class="Title ml-4 lg:w-3/4">{{ post.attributes.card.quote }}</p>
+          <p class="Title mx-4 lg:w-3/4">{{ post.attributes.card.quote }}</p>
         </div>
       </div>
       <!-- body -->
@@ -163,7 +163,8 @@ export default {
 } */
 
 .Card-body {
-  @apply bg-brand-bg px-2 pt-2 pb-6;
+  @apply bg-brand-bg pt-3 pb-6;
+  /* @apply px-2; */
 }
 
 .Card-body-meta {
@@ -193,7 +194,8 @@ export default {
     @apply mb-3;
   } */
   .Card-body {
-    @apply px-3 pt-3 pb-12;
+    @apply pt-3 pb-12;
+    /* @apply px-3; */
   }
   .Card-body > .Title {
     @apply w-3/4;

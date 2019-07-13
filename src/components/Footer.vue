@@ -1,13 +1,24 @@
 <template>
   <footer class="flex relative">
-    <saber-link
-      :to="link"
-      :class="[linkTypography, spacerClasses]"
-      class="h-full w-full"
-    >
-      <!-- next post -->
-      <!-- <template v-if="$route.path.includes('blog') && nextpost"> -->
-      <template v-if="nextpost && nextpost.link">
+    <!-- up -->
+    <template v-if="$route.path === '/'">
+      <a
+        v-smooth-scroll="{ duration: 1000 }"
+        href="#top"
+        :class="[linkTypography, spacerClasses]"
+        class="h-full w-full"
+      >
+        <span class="Logo-arrow mr-1">&#8593;</span>
+        <span>Up</span>
+      </a>
+    </template>
+    <!-- next post -->
+    <template v-else-if="$route.path.includes('blog') && nextpost && nextpost.link">
+      <saber-link
+        :to="link"
+        :class="[linkTypography, spacerClasses]"
+        class="h-full w-full"
+      >
         <div class="container container--text">
           <hr v-if="nextpost && !nextpost.hero" class="border-b m-0">
           <!-- <p class="Text--base s-2xh">Next post:</p> -->
@@ -34,24 +45,28 @@
             </div>
           </div>
         </div>
-      </template>
-      <!-- up -->
-      <template v-else-if="$route.path === '/'">
-        <span class="Logo-arrow mr-1">&#8593;</span>
-        <span>Up</span>
-      </template>
-      <!-- CFd -->
-      <template v-else>
+      </saber-link>
+    </template>
+    <!-- CFd -->
+    <template v-else>
+      <saber-link
+        to="/"
+        :class="[linkTypography, spacerClasses]"
+        class="h-full w-full"
+      >
         <span class="Logo-arrow mr-1">&#8592;</span>
         <span style="text-transform:initial">CFd</span>
-      </template>
-    </saber-link>
+      </saber-link>
+    </template>
   </footer>
 </template>
 
 <script>
 import Aspect from "./Aspect";
 import ImageDynamic from "./ImageDynamic";
+import Vue from "vue";
+import vueSmoothScroll from "vue-smooth-scroll";
+Vue.use(vueSmoothScroll);
 
 export default {
   components: {
@@ -80,13 +95,14 @@ export default {
       return !this.nextpost && "Nav-link justify-center";
     },
     link() {
-      if (this.$route.path === "/") {
+      /* if (this.$route.path === "/") {
         return  "#top";
       }
       else if (this.nextpost && this.nextpost.link) {
         return this.nextpost.link;
       }
-      return "/";
+      return "/"; */
+      return this.nextpost && this.nextpost.link;
     },
     heroImageBlend() {
       return this.nextpost && this.nextpost.hero && this.nextpost.hero.imageBlend

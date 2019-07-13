@@ -18,7 +18,7 @@ body {
   /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
   font-kerning: normal;
   /* hyphens: auto; */
-  -webkit-tap-highlight-color: theme(colors.text);
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
@@ -160,6 +160,11 @@ ol,
 .Markdown blockquote p strong {
   @apply table mt-1 tracking-wider;
   @apply text-gray-600;
+}
+
+.Markdown sup {
+  font-size: 66%;
+  left: 0.05em;
 }
 
 /*

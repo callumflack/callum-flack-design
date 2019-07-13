@@ -10,14 +10,14 @@
 
 .s-block-m:not(:last-child),
 .s-m {
-  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
 }
 .st-m {
-  margin-top: calc(theme(spacing.2) * var(--space-ratio));
+  margin-top: calc(theme(spacing.3) * var(--space-ratio));
 }
 .sy-m {
-  margin-top: calc(theme(spacing.2) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
+  margin-top: calc(theme(spacing.3) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
 }
 
 /*

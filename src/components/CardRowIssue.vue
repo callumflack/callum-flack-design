@@ -7,11 +7,11 @@
   >
     <div class="Card-body flex justify-between">
       <!-- title -->
-      <h3 class="Title w-7/12 lg:w-8/12">
+      <h3 class="Title w-15x24 lg:w-8/12">
         {{ issue.title }}
         <span class="Link--blank">&#8599;</span>
       </h3>
-      <div class="w-5/12 lg:w-4/12 flex justify-between">
+      <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- number -->
         <div>
           <span class="Title text-gray">{{ issue.number }}</span>

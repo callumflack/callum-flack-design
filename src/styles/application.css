@@ -16,8 +16,8 @@
 @import "./theme/theme-scale";
 /* @import "./theme/theme-typography"; */
 @import "./theme/theme-grid-extractor.css";
-@import "./theme/theme-tabs.css";
 @import "./theme/theme-logo.css";
+@import "./custom/custom-tabs.css";
 
 /* CFd standard components */
 @import "./layout/layout-grid";
@@ -42,3 +42,4 @@
 
 /* CFd standard utils */
 @import "./element/element-aria";
+@import "./custom/custom-utils";

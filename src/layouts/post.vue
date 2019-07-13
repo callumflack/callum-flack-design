@@ -87,7 +87,14 @@ import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect.vue";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap.vue";
-// import '../components/icons/sun';
+
+/*
+
+  Post layout component
+  …uses different headline method to the header component
+  in order to also have a hero image.
+
+*/
 
 export default {
   components: {

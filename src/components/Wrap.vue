@@ -1,5 +1,6 @@
 <template>
   <div>
+    <HeaderNav />
     <Header
       :site-title="siteTitle"
       :title="page.attributes.title"
@@ -25,11 +26,13 @@
 <script>
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
+import HeaderNav from "../components/HeaderNav";
 
 export default {
   components: {
     Footer,
     Header,
+    HeaderNav
   },
   props: {
     page: Object,
@@ -37,16 +40,16 @@ export default {
   },
   computed: {
     siteTitle() {
-      return this.$siteConfig.title || "Your Awesome Title";
+      return this.$siteConfig.title || "Callum Flack Design";
     },
     containerType() {
       return this.kind === "post" ? "container--text" : "container--list";
     },
-    mainHomeClass() {
+    /* mainHomeClass() {
       // return this.$route.path === "/" && "bg-brand-neutral";
       // return this.page.attributes.type === "page" && "bg-brand-neutral";
       return this.kind === "index" && "bg-brand-neutral";
-    }
+    } */
   },
   head() {
     const { excerpt } = this.page;

@@ -63,7 +63,7 @@ module.exports = {
       "16": "4rem",
       "20": "5rem",
       "24": "6rem",
-      "32": "8rem",
+      "32": "7rem",
       "40": "10rem",
       "48": "12rem",
       "56": "14rem",
@@ -161,7 +161,7 @@ module.exports = {
       black: "900",
     },
     lineHeight: {
-      none: "1.15",
+      none: "1.075",
       tight: "1.2",
       snug: "1.375",
       reduced: "1.47059",

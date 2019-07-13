@@ -36,7 +36,7 @@ The arrival of new tools is making the old tools painful. Web developers already
 
 I think we’re seeing _a generational shift in web development between the proprietary bundled systems of the dominant web publishing platforms that emerged a decade or more ago as they struggle to modernise and compete against the fundamentally different approaches of modern web development,_ where a multiplicity of unbundled API services can be integrated together in a technology stack customised to publishing requirements. And the divide will grow because the proprietary systems must use their legacy tech stack for the backward compatibility of all their mid- to long-term subscribers.
 
-Let me give you an example of how this is happening. Some of my clients have small- to medium-sized legacy websites on Wordpress. By legacy, I mean these websites have been alive for a number of years, I've inherited the project and it's my job to maintain and extend it's lifespan. Because they need a website.<a href="#f-1" class="Footnote-marker u-linkClean">1</a>
+Let me give you an example of how this is happening. Some of my clients have small- to medium-sized legacy websites on Wordpress. By legacy, I mean these websites have been alive for a number of years, I've inherited the project and it's my job to maintain and extend it's lifespan. Because they need a website.^1^
 
 The problem I've seen lately is that _these kinds of legacy websites are slow, graceless experiences and my clients and their audiences are starting to sense it_. So they're asking me to upgrade these experiences but a quick glance at the codebase tells me 1) it's no wonder they're slow and graceless, and 2) I know there's a better way to do this.
 
@@ -103,7 +103,7 @@ By hooking these deployment systems into with "headless" or "decoupled" Content 
 
 When a paradigm shift occurs it’s rarely because the old methods don't work or aren't popular anymore. It just that the old guard can't change their identity quickly enough to keep up with the opportunities the shift provides. They'll want to keep playing to their prowess and strengths, but instead they accidently display their generational bias (a variation of the [Shirky principle](https://en.wikipedia.org/wiki/Clay_Shirky#Shirky_principle) but for first-gen web developers, if you will).
 
-Meanwhile, the new breed of crafted web experiences are being built with new tools made by a different generation of web developers who haven't had to unlearn the previous generation's best practises.<a href="#f-2" class="Footnote-marker u-linkClean">2</a>
+Meanwhile, the new breed of crafted web experiences are being built with new tools made by a different generation of web developers who haven't had to unlearn the previous generation's best practises.^2^
 
 As Patrick Collison noted above, the current paradigm of development tools will come to be seen as primitive in the near future. Which means the paradigm shift happening in web publishing tools will continue unabated, widening the gap between legacy web experiences and the new wave of crafted experiences.
 
