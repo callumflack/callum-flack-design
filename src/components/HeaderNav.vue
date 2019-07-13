@@ -24,11 +24,3 @@ export default {
   @apply bg-brand-bg border-b;
 }
 </style>
-
-<style lang="postcss" scoped>
-/* .Nav {
-  @apply fixed top-0 left-0 w-full;
-  backface-visibility: hidden;
-} */
-
-</style>

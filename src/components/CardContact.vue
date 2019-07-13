@@ -107,7 +107,7 @@ export default {
 
 @screen lg {
   .Card {
-    @apply py-3;
+    /* @apply py-3; */
   }
   .Card-figure {
     width: calc(100% * 6 / 24);
