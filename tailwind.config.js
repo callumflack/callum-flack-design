@@ -122,9 +122,9 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.1875rem", // 18, 19 or 20
-      xl: "1.3125rem", // 21 or 22
-      "2xl": "1.5rem", // 24
+      lg: "1.125rem", // 18
+      xl: "1.1875rem", // 19
+      "2xl": "1.5625rem", // 25
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
       "5xl": "3rem",
@@ -136,8 +136,8 @@ module.exports = {
       textXs: "0.842105263",
       textSm: "0.933333333",
       textMd: "1",
-      titleXs: "0.666666667",
-      titleSm: "0.9",
+      titleXs: "0.842105263",
+      titleSm: "0.933333333",
       titleMd: "1",
       blockXs: "0.5",
       blockSm: "0.7",

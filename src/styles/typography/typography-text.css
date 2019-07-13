@@ -148,7 +148,7 @@ ol,
 .Markdown blockquote p {
   @apply border-l border-gray-500;
   @apply text-gray-600;
-  padding-left: calc(theme(spacing.5) * var(--grid-ratio));
+  padding-left: calc(theme(spacing.4) * var(--grid-ratio));
 }
 
 .Markdown blockquote p p {

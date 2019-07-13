@@ -17,7 +17,7 @@
 .Metaheading,
 .Markdown h3,
 .Markdown h2 {
-  @apply font-sans leading-normal tracking-text;
+  @apply font-sans font-medium leading-tight tracking-text;
 }
 
 .Markdown h2 {
@@ -54,7 +54,7 @@
 
 .Title {
   @apply leading-tight;
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio)); /* text ratio, not title! */
+  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
 
 .Display {
