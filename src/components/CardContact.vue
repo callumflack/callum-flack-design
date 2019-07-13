@@ -1,6 +1,6 @@
 <template>
   <div class="Card">
-    <div class="Card-figure w-4/12 sm:w-3/12">
+    <div class="Card-figure w-4/12 sm:w-3/12 s-h sm:mb-0">
       <ImageDynamic
         cover
         src="/images/cf-dwts-DB30312-recut.jpg"
@@ -77,8 +77,8 @@ export default {
 }
 
 .Card-figure {
-  @apply relative float-left;
-  height: 120px;
+  @apply relative;
+  height: 100px;
 }
 .Card-figure >>> figure {
   @apply pr-3;
@@ -94,7 +94,7 @@ export default {
     /* @apply p-0; */
   }
   .Card-figure {
-    @apply float-none h-auto;
+    @apply h-auto;
   }
   .Card-figure >>> figure {
     @apply pr-0;
