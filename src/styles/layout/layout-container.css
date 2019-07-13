@@ -23,7 +23,7 @@
   padding: 0 !important;
 }
 
-@screen sm {
+@screen lg {
   .container {
     padding: 0 !important;
   }
