@@ -7,13 +7,15 @@
 */
 
 .container--text {
+  @apply mx-auto;
   max-width: theme(screens.sm) !important;
   /* max-width: calc(680px + 64px) !important; */
   /* max-width: 680px !important; */
 }
 .container--list {
-  max-width: calc(theme(screens.md) - 2rem) !important;
-  max-width: theme(screens.lg) !important;
+  @apply mx-auto;
+  /* max-width: calc(theme(screens.md) - 2rem) !important;
+  max-width: theme(screens.lg) !important; */
   max-width: 840px !important;
 }
 

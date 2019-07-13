@@ -1,22 +1,18 @@
 <template>
   <header id="top">
     <!-- home or newsletter intro -->
-    <div v-if="$route.path === '/' || $route.path.includes('littoral')" class="Block">
-      <div class="container container--list">
-        <div class="lg:w-8/12">
-          <h1 v-if="title" class="Display s-h">{{ title }}</h1>
-          <p v-if="lede" class="Link Text--sm text-gray">
-            {{ lede }}
-            <saber-link v-if="$route.path === '/'" to="/about.html">
-              Learn more &rightarrow;
-            </saber-link>
-          </p>
-          <div v-if="$route.path.includes('littoral')" class="st-h w-full">
-            <FormNewsletter />
-          </div>
-        </div>
+    <HeaderTitleWrap v-if="$route.path === '/' || $route.path.includes('littoral')">
+      <h1 v-if="title" class="Display s-h">{{ title }}</h1>
+      <p v-if="lede" class="Link Text--sm text-gray">
+        {{ lede }}
+        <saber-link v-if="$route.path === '/'" to="/about.html">
+          Learn more &rightarrow;
+        </saber-link>
+      </p>
+      <div v-if="$route.path.includes('littoral')" class="st-h w-full">
+        <FormNewsletter />
       </div>
-    </div>
+    </HeaderTitleWrap>
 
     <!-- about intro card -->
     <div v-if="$route.path === '/about.html'" class="Block Block--withNav">
@@ -43,13 +39,13 @@
 */
 import CardContact from "../components/CardContact";
 import FormNewsletter from "../components/FormNewsletter";
-import HeaderNav from "../components/HeaderNav";
+import HeaderTitleWrap from "../components/HeaderTitleWrap";
 
 export default {
   components: {
     CardContact,
     FormNewsletter,
-    HeaderNav
+    HeaderTitleWrap
   },
   props: {
     siteTitle: {

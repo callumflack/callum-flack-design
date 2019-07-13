@@ -2,8 +2,12 @@
   <Wrap :page="page" kind="post">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header class="Grid-extract--edge" :style="heroBlockColor">
-        <!-- post image aspect -->
-        <div class="container container--hero">
+        <!-- post hero with image -->
+        <div
+          v-if="page.attributes.hero && page.attributes.hero.showCover"
+          class="container container--hero"
+        >
+          <!-- post image aspect -->
           <Aspect
             :ratio="page.attributes.hero && page.attributes.hero.ratio || '1/3.5'"
             :class="heroImageBlend"
@@ -14,67 +18,26 @@
               :alt="page.attributes.title"
             />
           </Aspect>
-        </div>
-        <!-- post title aspect -->
-        <div class="absolute inset-0">
-          <div class="container relative h-full flex items-center justify-center">
-            <div class="container container--text" :class="heroTitleColor">
-              <!-- post title -->
-              <h1
-                class="Display s-m"
-                :class="heroTitleWidth"
-                itemprop="name headline"
-              >
-                {{ page.attributes.title }}
-              </h1>
-              <!-- post meta -->
-              <div class="Text--sm" :class="heroMetaClass">
-                <!-- date -->
-                <time
-                  v-if="page.attributes.category === 'writing'"
-                  :datetime="page.attributes.createdAt"
-                  itemprop="datePublished"
-                >{{ formatDate(page.attributes.createdAt) }}</time>
-                <time
-                  v-else
-                  :datetime="page.attributes.date"
-                  itemprop="datePublished"
-                >{{ formatListDate(page.attributes.date) }}</time>
-                <!-- category & tags -->
-                <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                <span class="Text--sm inline-block capitalize">
-                  {{ page.attributes.category }}:
-                </span>
-                <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="Text--sm">
-                  <span v-if="index != 0">,</span>
-                  <span class="lowercase">{{ tag }}</span>
-                </span>
-                <!-- reading time -->
-                <template v-if="page.attributes.category === 'writing'">
-                  <span class="Text--sm inline-block mx-2px">&mdash;</span>
-                  <span class="Text--sm">{{ page.attributes.readingTime }} mins</span>
-                </template>
+          <!-- post title aspect -->
+          <div class="absolute inset-0">
+            <div class="relative h-full flex items-center justify-center">
+              <div class="container container--text" :class="heroTitleColor">
+                <PostHeaderTitle :attributes="page.attributes"></PostHeaderTitle>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- post hero no image -->
+        <HeaderTitleWrap v-else kind="post">
+          <PostHeaderTitle :attributes="page.attributes"></PostHeaderTitle>
+        </HeaderTitleWrap>
       </header>
 
       <!-- article -->
       <div class="Block-sm-t Markdown" itemprop="articleBody">
         <slot name="default" />
       </div>
-
-      <!-- article ender -->
-      <!-- <div class="Block-t relative flex justify-center items-center">
-        <saber-link to="/">
-          <icon
-            name="sun"
-            height="2em"
-            width="2em"
-          />
-        </saber-link>
-      </div>-->
 
       <a class="u-url" :href="page.attributes.permalink" hidden></a>
     </article>
@@ -85,6 +48,8 @@
 import formatDate from "../utils/formatDate";
 import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect.vue";
+import PostHeaderTitle from "../components/PostHeaderTitle";
+import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap.vue";
 
@@ -92,14 +57,16 @@ import Wrap from "../components/Wrap.vue";
 
   Post layout component
   …uses different headline method to the header component
-  in order to also have a hero image.
+  when a hero image is shown.
 
 */
 
 export default {
   components: {
     Aspect,
+    HeaderTitleWrap,
     ImageDynamic,
+    PostHeaderTitle,
     Wrap
   },
 
