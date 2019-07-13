@@ -1,15 +1,10 @@
 ---
 layout: default
 # title: Trusted interfaces in the blink of an eye
-# title: Digital trust in the blink of an eye
 # title: Digital information systems by Callum Flack.
 # title: Digital brands, products + thoughts
 title: Remarkability lies in seamless edges
-# lede: Callum Flack works fluidly across graphic design, information design and frontend code.
-# lede: Callum Flack Design creates websites that make sense, make it easy and resonate immediately. A rare breed of creativity + capability.
-# lede: Callum Flack design and develops interfaces that make sense, make it easy and resonate immediately. A rare breed of creativity + capability.
-lede: Callum Flack designs and develops interfaces that make the complex simple and the simple unique. They work in a glance, creating the most valued currency—attention. Then they work to provide service with trust and speed. CFd builds remarkability through a rare breed of comprehension, creativity + capability.
-# lede:  what does the  … CFd starts with optimism, Callum We’re here to explore the future on behalf of our clients and ask, “What could the brand of tomorrow look like?”
+lede: Callum Flack designs and develops interfaces that make the complex simple and the simple unique. They work in a glance, creating the most valued currency—attention. Then they work to provide service with trust and speed. CFd builds remarkability through a rare combination of comprehension, creativity + capability.
 # Inject post list as `page.posts` (by saber-plugin-query-posts)
 injectAllPosts: true
 ---

@@ -101,7 +101,7 @@ When Callum builds websites, he advocates for these future-facing tools:
 - Building interfaces with Vue.js (or React.js)
 - A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
 
-No tools, skills or experience matter without a collaborative relationship based on dialogue and optimism. I'll listen and ask questions to help us define bigger possibilities and better constraints to work with.
+No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. To ensure this kind of comprehension, Callum will ask questions and listen. This has a knock-on effect: it helps define bigger possibilities and better constraints to work with. 
 
 <!-- our intentions and end -->
 <!-- - micro-frontends with functional elements separated by concern -->
