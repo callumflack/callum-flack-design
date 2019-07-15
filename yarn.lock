@@ -7084,12 +7084,10 @@ saber-plugin-feed@^0.3.0:
   dependencies:
     feed "^3.0.0"
 
-saber-plugin-netlify-redirect@^0.0.6:
+saber-plugin-google-analytics@^0.0.6:
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/saber-plugin-netlify-redirect/-/saber-plugin-netlify-redirect-0.0.6.tgz#3d6e8079f11176666562c9c6c9f748e6c50c3ffe"
-  integrity sha512-OH2GYsXd6+ggDP5Rv4YidZR/oSa11wLeTCEvRaOjUGxrOi+RR7KaOPsye8g36prt2UBhF9ek4I01J5DpBa7x3w==
-  dependencies:
-    url-join "^4.0.0"
+  resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.0.6.tgz#86e8cd8ab7227c74196f17bac487e36d48c4f0a3"
+  integrity sha512-ccTsMBp7oSKv5t9BE1vt5WlLs+DWtC9P4BOPosDLMjp0VKO/AroOrJ3clnib3rwJ+Fw/icOllNKDK0m4zDPJOg==
 
 saber-plugin-query-posts@^0.3.0:
   version "0.3.2"

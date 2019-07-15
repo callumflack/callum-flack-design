@@ -27,7 +27,7 @@
     "saber": "^0.6.10",
     "saber-plugin-critical": "^1.0.2",
     "saber-plugin-feed": "^0.3.0",
-    "saber-plugin-netlify-redirect": "^0.0.6",
+    "saber-plugin-google-analytics": "^0.0.6",
     "saber-plugin-query-posts": "^0.3.0",
     "tailwindcss": "^1.0.4",
     "tinydate": "^1.0.1",
