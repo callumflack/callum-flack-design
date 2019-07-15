@@ -2880,6 +2880,11 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
+ejs@^2.6.1:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.6.2.tgz#3a32c63d1cd16d11266cd4703b14fec4e74ab4f6"
+  integrity sha512-PcW2a0tyTuPHz3tWyYqtK6r1fZ3gp+3Sop8Ph+ZYN81Ob5rwmbHEzaqs10N3BEsaGTkh/ooniXK+WwszGlc2+Q==
+
 electron-to-chromium@^1.3.164:
   version "1.3.166"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.166.tgz#99d267514f4b92339788172400bc527545deb75b"
@@ -7096,6 +7101,13 @@ saber-plugin-query-posts@^0.3.0:
   dependencies:
     slugo "^0.2.3"
     url-join "^4.0.0"
+
+saber-plugin-sitemap@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/saber-plugin-sitemap/-/saber-plugin-sitemap-0.2.0.tgz#65f2d257d1689577bd8e83f4f0f89444a9587f38"
+  integrity sha512-SNl1XS71Hi15s87l9OYcQLWyS1xYWujnOi9baxoBi3cIVct4s6tlImfU3x4v823erPgkoO2uhKqIC6sX0jXolQ==
+  dependencies:
+    ejs "^2.6.1"
 
 saber-utils@^0.1.5:
   version "0.1.5"

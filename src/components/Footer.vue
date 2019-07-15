@@ -88,9 +88,9 @@ export default {
     spacerClasses() {
       return this.nextpost ? "Block-t" : "Block-lg";
     },
-    blockColorClass() {
+    /* blockColorClass() {
       return this.kind === "index" && "bg-brand-neutral";
-    },
+    }, */
     linkTypography() {
       return !this.nextpost && "Nav-link justify-center";
     },

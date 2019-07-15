@@ -2,11 +2,9 @@
   <div>
     <HeaderNav />
     <Header
-      :site-title="siteTitle"
       :title="page.attributes.title"
       :lede="page.attributes.lede"
       :newsletter="page.attributes.newsletter"
-      :category="page.attributes.category"
     />
     <main aria-label="Content">
       <div

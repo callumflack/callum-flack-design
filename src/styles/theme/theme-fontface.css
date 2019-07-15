@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: 400;
 } */
-@font-face {
+/* @font-face {
   font-family:"Title";
   src: url("/../../fonts/Bureau Grot Condensed Medium.otf") format("woff");
   src: url("/../../fonts/ProtoGrotesk-Regular.otf") format("woff");
@@ -61,7 +61,7 @@
   src: url("/../../fonts/GTSuperDisplay-Super.otf") format("woff");
   font-style: normal;
   font-weight: 700;
-}
+} */
 
 /*
 
@@ -71,42 +71,34 @@
 
 @font-face {
   font-family:"Text";
-  src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
+  /* src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
   src: url("/../../fonts/Graphik-Regular.otf") format("woff");
   src: url("/../../fonts/Scto Grotesk A Regular.otf") format("woff");
-  src: url("/../../fonts/GT-America-Regular.OTF") format("woff");
+  src: url("/../../fonts/GT-America-Regular.OTF") format("woff"); */
   src: url("/../../fonts/Suisse BP Int'l Regular.otf") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family:"Text";
-  src: url("/../../fonts/Scto Grotesk A Regular.otf") format("woff");
-  src: url("/../../fonts/GT-America-Regular.OTF") format("woff");
   src: url("/../../fonts/Suisse BP Int'l Regular.otf") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family:"Text";
-  src: url("/../../fonts/Scto Grotesk A Medium.otf") format("woff");
-  src: url("/../../fonts/GT-America-Medium.OTF") format("woff");
   src: url("/../../fonts/Suisse BP Int'l Medium.otf") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family:"Text";
-  src: url("/../../fonts/Scto Grotesk A Medium.otf") format("woff");
-  src: url("/../../fonts/GT-America-Medium.OTF") format("woff");
   src: url("/../../fonts/Suisse BP Int'l Antique.otf") format("woff");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family:"Text";
-  src: url("/../../fonts/Scto Grotesk A Bold.otf") format("woff");
-  src: url("/../../fonts/GT-America-Medium.OTF") format("woff");
   src: url("/../../fonts/Suisse BP Int'l Bold.otf") format("woff");
   font-style: normal;
   font-weight: 700;

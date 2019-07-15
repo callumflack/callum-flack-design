@@ -45,13 +45,13 @@ export default {
   components: {
     CardContact,
     FormNewsletter,
-    HeaderTitleWrap
+    HeaderTitleWrap,
   },
   props: {
-    siteTitle: {
+   /*  siteTitle: {
       type: String,
       required: true
-    },
+    }, */
     title: {
       type: String,
       required: true,
@@ -65,10 +65,10 @@ export default {
       type: String,
       required: false
     },
-    category: {
+    /* category: {
       type: String,
       required: false
-    },
+    }, */
   },
   /* computed: {
     blockClass() {

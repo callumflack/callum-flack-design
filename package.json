@@ -29,6 +29,7 @@
     "saber-plugin-feed": "^0.3.0",
     "saber-plugin-google-analytics": "^0.0.6",
     "saber-plugin-query-posts": "^0.3.0",
+    "saber-plugin-sitemap": "^0.2.0",
     "tailwindcss": "^1.0.4",
     "tinydate": "^1.0.1",
     "v-lazy-image": "^1.3.2",

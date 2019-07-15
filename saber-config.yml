@@ -1,12 +1,13 @@
 theme: ./src
 
 siteConfig:
+  title: Callum Flack Design
   url: https://callumflack.design
   author: Callum Flack
   email: callum@callumflack.design
   phone: +61(0) 408 767 540
-  title: Callum Flack Design
-  description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
+  description: Callum Flack is a designer who codes.
+  keywords: Blog,Web,JavaScript,Code,Computer Science,Geek
   social:
     twitter: callumflack
     github: callumflack
@@ -31,11 +32,11 @@ plugins:
   - resolve: saber-plugin-feed
     options:
       atomFeed: true
-      jsonFeed: true
   - resolve: saber-plugin-critical
   - resolve: saber-plugin-google-analytics
     options:
       trackId: "UA-116668558-1"
+  - resolve: saber-plugin-sitemap
 
 markdown:
   plugins:
