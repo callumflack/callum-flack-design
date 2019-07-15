@@ -38,7 +38,7 @@ export default {
   },
   computed: {
     siteTitle() {
-      return this.$siteConfig.title || "Callum Flack Design";
+      return this.$siteConfig.title;
     },
     containerType() {
       return this.kind === "post" ? "container--text" : "container--list";
@@ -51,7 +51,7 @@ export default {
   },
   head() {
     const { excerpt } = this.page;
-    const { title, layout } = this.page.attributes;
+    const { title, pageTitle, layout } = this.page.attributes;
     let { description } = this.$siteConfig;
     if (layout === "page" || layout === "post") {
       if (excerpt) {
@@ -59,12 +59,26 @@ export default {
       }
     }
     return {
-      title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
+      // title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
+      title: pageTitle ?
+        `${this.siteTitle} • ${pageTitle}`
+        : `${title} • ${this.siteTitle}`,
       meta: [
+        title ? {
+          name: "twitter:title",
+          content: `${title} • ${this.siteTitle}`
+        } : {
+          name: "twitter:title",
+          content: this.siteTitle
+        },
         description && {
           name: "description",
           content: description
-        }
+        },
+        description && {
+          name: "twitter:description",
+          content: description
+        },
       ].filter(Boolean),
       link: this.$feed
         ? [

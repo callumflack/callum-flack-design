@@ -25,6 +25,10 @@
  */
 import VLazyImage from "v-lazy-image";
 
+// const imgixDomain = "https://www.callumflack.design/images/";
+/* no end slash */
+const imgixDomain = process.env.NODE_ENV === 'production'
+  ? "https://cfd.imgix.net" : "";
 const optimizeParams = "auto=format&q=33";
 
 export default {
@@ -53,8 +57,9 @@ export default {
     };
   },
   mounted() {
+    const url = `${imgixDomain}${this.src}?${optimizeParams}`;
+
     // Placeholder
-    const url = `${this.src}?${optimizeParams}`;
     this.urlPlaceholder = `${url}&blur=20&w=50`;
 
     // Full size

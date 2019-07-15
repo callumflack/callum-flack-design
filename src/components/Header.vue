@@ -20,6 +20,14 @@
         <CardContact :title="title" :lede="lede" />
       </div>
     </div>
+
+    <!-- projects or writing archives -->
+    <HeaderTitleWrap v-if="$route.path.includes('projects') || $route.path.includes('writing')">
+      <h1 v-if="title" class="Display s-h">{{ title }}</h1>
+      <p v-if="lede" class="Link Text--sm text-gray">
+        {{ lede }}
+      </p>
+    </HeaderTitleWrap>
   </header>
 </template>
 

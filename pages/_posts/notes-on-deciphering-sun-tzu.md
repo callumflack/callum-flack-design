@@ -4,7 +4,7 @@ date: 2019-03-01
 category: writing
 title: Notes on Deciphering Sun Tzu
 lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy I’ve been raised on.
-readingTime: 7
+readingTime: 6
 nextPost:
   title: The matter of taste
   link: /blog/the-matter-of-taste.html

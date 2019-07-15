@@ -5,7 +5,7 @@
     <SliderFrame>
       <div slot-scope="{ activeIndex, goToIndex }">
         <div class="Grid-extract--edge border-b">
-          <div class="container container--text">
+          <div class="container container--list">
             <ul class="Tab-controls">
               <li>
                 <button
@@ -31,26 +31,30 @@
 
         <SliderSlides class="st-2xh">
           <SliderSlide v-if="featuredPosts">
-            <CardRow
-              v-for="post in featuredPosts"
-              :key="post.attributes.permalink"
-              :post="post"
-              class=""
-            ></CardRow>
-          </SliderSlide>
-          <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
-            <div
-              v-for="year in Object.keys(allPosts).reverse()"
-              :key="year"
-              class="Year"
-            >
-              <h3 class="Meta Meta--year">{{ year }}</h3>
+            <div class="container container--list">
               <CardRow
-                v-for="post in allPosts[year]"
+                v-for="post in featuredPosts"
                 :key="post.attributes.permalink"
                 :post="post"
                 class=""
               ></CardRow>
+            </div>
+          </SliderSlide>
+          <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
+            <div class="container container--list">
+              <div
+                v-for="year in Object.keys(allPosts).reverse()"
+                :key="year"
+                class="Year"
+              >
+                <h3 class="Meta Meta--year">{{ year }}</h3>
+                <CardRow
+                  v-for="post in allPosts[year]"
+                  :key="post.attributes.permalink"
+                  :post="post"
+                  class=""
+                ></CardRow>
+              </div>
             </div>
           </SliderSlide>
           <!-- <SliderSlide v-if="devPosts && devPosts.length > 0">

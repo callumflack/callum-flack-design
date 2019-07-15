@@ -5,7 +5,7 @@
     <SliderFrame>
       <div slot-scope="{ activeIndex, goToIndex }">
         <div class="Grid-extract--edge border-b">
-          <div class="container container--text">
+          <div class="container container--list">
             <ul class="Tab-controls">
               <li>
                 <button
@@ -31,18 +31,25 @@
 
         <SliderSlides class="Grid-extract--card st-2xh">
           <SliderSlide v-if="featuredWriting && featuredWriting.length > 0">
-            <Card
-              v-for="post in featuredWriting"
-              :key="post.attributes.permalink"
-              :post="post"
-            ></Card>
+            <div class="container container--list">
+              <div class="Grid">
+                <Card
+                  v-for="post in featuredWriting"
+                  :key="post.attributes.permalink"
+                  :post="post"
+                  class="Grid-item"
+                ></Card>
+              </div>
+            </div>
           </SliderSlide>
           <SliderSlide v-if="allWriting && allWriting.length > 0">
-            <Card
-              v-for="post in allWriting"
-              :key="post.attributes.permalink"
-              :post="post"
-            ></Card>
+            <div class="container container--list">
+              <CardRow
+                v-for="post in allWriting"
+                :key="post.attributes.permalink"
+                :post="post"
+              ></CardRow>
+            </div>
           </SliderSlide>
         </SliderSlides>
       </div>
@@ -51,15 +58,17 @@
 </template>
 
 <script>
-import Card from "../components/Card.vue";
-import SliderFrame from "../components/SliderFrame.vue";
-import SliderSlides from "../components/SliderSlides.vue";
-import SliderSlide from "../components/SliderSlide.vue";
-import Wrap from "../components/Wrap.vue";
+import Card from "../components/Card";
+import CardRow from "../components/CardRow";
+import SliderFrame from "../components/SliderFrame";
+import SliderSlides from "../components/SliderSlides";
+import SliderSlide from "../components/SliderSlide";
+import Wrap from "../components/Wrap";
 
 export default {
   components: {
     Card,
+    CardRow,
     SliderFrame,
     SliderSlides,
     SliderSlide,

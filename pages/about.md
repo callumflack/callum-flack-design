@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  A designer who codes
+pageTitle: About
 lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
 ---
 
