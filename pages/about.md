@@ -147,8 +147,4 @@ You can also find Callum on these websites:
 - [AngelList](https://angel.co/callumflack-gmail-com)
 - [Reading Supply](https://reading.supply/@callum)
 
-<!-- The best way to keep in touch is to signup for my bi-monthly newsletter about visual design, user experience and website development through the lens of people and attention:
-
-<div class="fs-scale-reset">
-  @[NewsletterSignupForm]
-</div> -->
+And if you use RSS, [here's a feed for you](https://callumflack.design/atom.xml). Do keep in touch!
