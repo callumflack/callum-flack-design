@@ -6,7 +6,7 @@ title: The Substation website
 lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
 link: https://thesubstation.org.au/
 assets: 
-  cover: /images/thesubstation-hero.jpg
+  cover: /images/thesubstation-hero-bunker-1440.jpg
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
 tags: 

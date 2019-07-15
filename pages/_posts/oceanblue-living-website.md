@@ -5,7 +5,7 @@ date: 2017-01-12
 title: Oceanblue Living website
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
 assets:
-  cover: /images/oceanblueliving-hero.jpg
+  cover: /images/oceanblueliving-hero-silver-1440.jpg
 heroShowCover: false
 tags: 
   - design

@@ -6,7 +6,7 @@ title: RAATSICC website
 lede: A content-managed website to help spread community outreach news and education.
 link: https://www.raatsicc.org.au/
 assets: 
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
+  cover: /images/raatsicc-hero-job-1440.jpg
 tags: 
   - design
   - frontend
