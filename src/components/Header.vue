@@ -1,6 +1,6 @@
 <template>
   <header id="top">
-    <!-- home or newsletter intro -->
+    <!-- home or newsletter -->
     <HeaderTitleWrap v-if="$route.path === '/' || $route.path.includes('littoral')">
       <h1 v-if="title" class="Display s-h">{{ title }}</h1>
       <p v-if="lede" class="Link Text--sm text-gray">
@@ -14,7 +14,7 @@
       </div>
     </HeaderTitleWrap>
 
-    <!-- about intro card -->
+    <!-- about card -->
     <div v-if="$route.path === '/about.html'" class="Block Block--withNav">
       <div class="container container--text">
         <CardContact :title="title" :lede="lede" />
