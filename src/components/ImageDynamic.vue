@@ -28,7 +28,7 @@ import VLazyImage from "v-lazy-image";
 // const imgixDomain = "https://www.callumflack.design/images/";
 /* no end slash */
 const imgixDomain = process.env.NODE_ENV === 'production'
-  ? "https://cfd.imgix.net" : "";
+  ? "https://cfd-saber.imgix.net" : "";
 const optimizeParams = "auto=format&q=33";
 
 export default {
