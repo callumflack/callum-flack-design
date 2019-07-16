@@ -17,7 +17,6 @@
 /* @import "./theme/theme-typography"; */
 @import "./theme/theme-grid-extractor.css";
 @import "./theme/theme-logo.css";
-@import "./custom/custom-tabs.css";
 
 /* CFd standard components */
 @import "./layout/layout-grid";
@@ -36,6 +35,8 @@
 
 /* custom components */
 /* …anything written from scratch for the project goes here… */
+@import "./custom/custom-tabs.css";
+@import "./custom/custom-card-external-link.css";
 
 /* Tailwind utils */
 @import "./tailwind/utilities.css";

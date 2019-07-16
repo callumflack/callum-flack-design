@@ -1,0 +1,10 @@
+/* CARD EXTERNAL LINK */
+
+.Card:hover .ExternalLink {
+  @apply bg-text text-white !important; /* override vue [data] styles */
+  transform: translate(3px, -0.15em);
+}
+.Card:hover .ExternalLink .Link--blank {
+  @apply text-white !important;
+  transform: translate(0, -0.1em);
+}

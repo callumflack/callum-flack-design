@@ -37,7 +37,7 @@
       <div class="Card-body">
         <h3 class="Title mb-1">
           {{ post.attributes.title }}
-          <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
+          <CardExternalLink v-if="post.attributes.card && post.attributes.card.externalLink" />
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
@@ -68,11 +68,13 @@
 <script>
 import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
+import CardExternalLink from "../components/CardExternalLink";
 import ImageDynamic from "../components/ImageDynamic";
 
 export default {
   components: {
     Aspect,
+    CardExternalLink,
     ImageDynamic
   },
   props: ["post"],

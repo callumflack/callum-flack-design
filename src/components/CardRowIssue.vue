@@ -9,7 +9,7 @@
       <!-- title -->
       <h3 class="Title w-15x24 lg:w-8/12">
         {{ issue.title }}
-        <span class="Link--blank">&#8599;</span>
+        <CardExternalLink kind="newsletter" />
       </h3>
       <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- number -->
@@ -29,8 +29,12 @@
 
 <script>
 import formatListDate from "../utils/formatListDate";
+import CardExternalLink from "../components/CardExternalLink";
 
 export default {
+  components: {
+    CardExternalLink
+  },
   props: ["issue"],
   methods: {
     formatListDate
@@ -67,13 +71,19 @@ export default {
   margin-bottom: 0.1875em;
 }
 
-/* CARD TYPE */
-
 .Card:active *,
 .Card:focus *,
 .Card:hover * {
   @apply text-text !important;
 }
+
+/* CARD EXTERNAL LINK */
+/* can't where it's off so this is a hack… */
+.Card >>> .ExternalLink .Link--blank {
+  transform: translate(-55px, -0.5em);
+}
+
+/* CARD BODY */
 
 .Card-body {
   @apply py-1;

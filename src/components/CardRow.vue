@@ -11,7 +11,7 @@
       <!-- title -->
       <h3 class="Title w-15x24 lg:w-8/12 pr-3">
         {{ post.attributes.title }}
-        <span v-if="post.attributes.card && post.attributes.card.externalLink" class="Link--blank">&#8599;</span>
+        <CardExternalLink v-if="post.attributes.card && post.attributes.card.externalLink" />
       </h3>
       <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- only show category on home -->
@@ -49,10 +49,12 @@
 <script>
 import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
+import CardExternalLink from "../components/CardExternalLink";
 
 export default {
   components: {
-    Aspect
+    Aspect,
+    CardExternalLink
   },
   props: ["post"],
   computed: {
@@ -90,21 +92,6 @@ export default {
   backface-visibility: hidden;
 }
 
-/* .Card:hover {
-  @apply bg-white;
-} */
-
-/* .Card:after {
-  @apply border-b border-gray-200;
-  @apply absolute bottom-0 left-0 w-full;
-  content: "";
-  margin-left: 0;
-}
-
-.Card:last-of-type:after {
-  @apply border-transparent;
-} */
-
 .Card:before {
   @apply absolute left-0 bg-text h-px;
   content: "";
@@ -120,43 +107,14 @@ export default {
   right: 0;
 }
 
-.Card:not(:last-of-type) {
-  /* margin-bottom: calc(theme(spacing.5) * var(--space-ratio)); */
-  /* @apply mb-1; */
-  /* margin-bottom: calc(3/16 * 1em); */
-  /* margin-bottom: 0.1875em; */
-}
-
-/* .Card:before {
-  @apply absolute h-full w-full left-0 top-0 z-10;
-  @apply opacity-0;
-  @apply border border-black rounded-lg;
-  content: "";
-  pointer-events: none;
-}
-
-@keyframes hoverAnimation {
-  0% {
-    opacity: 1;
-    transform: scale(0.96);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.Card:hover:before {
-  animation: hoverAnimation 0.25s cubic-bezier(0.31, 1, 0.34, 1) forwards;
-} */
-
-/* CARD TYPE */
 
 .Card:active *,
 .Card:focus *,
 .Card:hover * {
   @apply text-text !important;
 }
+
+/* CARD BODY */
 
 .Card-body {
   @apply py-1;
