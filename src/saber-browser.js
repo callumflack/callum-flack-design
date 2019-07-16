@@ -21,9 +21,11 @@ export default ({ setHead }) => {
         content: "https://avatars2.githubusercontent.com/u/749885?s=460&v=4"
       },
       { name: "twitter:image:alt", content: "Callum Flack" }
+
     ],
-    // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    // adding a polyfill: https://github.com/nuxt/nuxt.js/issues/2701
+    // favicon
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    // polyfill
     script: [
       { src: "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" }
     ]
