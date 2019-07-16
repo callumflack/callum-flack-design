@@ -5035,6 +5035,11 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
+medium-zoom@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.4.tgz#b1063093f81151a19989489589edf28e6090630c"
+  integrity sha512-BjE+00gQku3XQfgHDcqyYwQaBtFddzh6Lnj1RZOliqJ9HS0mh/P2IaqVJ25/j9EbnjAUf27mLeLZBRxnd00bfA==
+
 mem@^4.0.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/mem/-/mem-4.3.0.tgz#461af497bc4ae09608cdb2e60eefb69bff744178"
@@ -7093,6 +7098,13 @@ saber-plugin-google-analytics@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.0.6.tgz#86e8cd8ab7227c74196f17bac487e36d48c4f0a3"
   integrity sha512-ccTsMBp7oSKv5t9BE1vt5WlLs+DWtC9P4BOPosDLMjp0VKO/AroOrJ3clnib3rwJ+Fw/icOllNKDK0m4zDPJOg==
+
+saber-plugin-medium-zoom@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/saber-plugin-medium-zoom/-/saber-plugin-medium-zoom-0.1.3.tgz#9001896fc77f4434584284e731c73371bee9b85c"
+  integrity sha512-Yquiz4jyvRjz7a/s1rR8XjUVE8fZsu6PbfjYlVyYOAIarh5T49oFSqHZrVE0fUTYl+IeP0ZIB/fdWmVoDLfWUg==
+  dependencies:
+    medium-zoom "1.0.4"
 
 saber-plugin-query-posts@^0.3.0:
   version "0.3.2"
