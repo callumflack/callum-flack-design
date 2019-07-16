@@ -20,14 +20,14 @@ All data collected was anonymous. At survey completion, users were presented wit
 
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
-<Media frame ratio="2304/3072" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278713/okok/phn-survey-score.png" />
+<Media frame ratio="2304/3072" image="/images/phn-survey-score.png" />
 
 
 A well-defined series of workflows with clear interface design means the app can be used with no more than general smartphone knowledge. However, I also provided guides and screencasts for staff and their patients to encourage their use.
 
 <!-- > Client quote here” _CEO dude_ -->
 
-<!-- @[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517278720/okok/phn-guide.png") -->
+<Media ratio="1500/1376" image="/images/phn-guide.png" />
 
 <!-- And the app is easily adaptable as we discover further use cases over time.  -->
 

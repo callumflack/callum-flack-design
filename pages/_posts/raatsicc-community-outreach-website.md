@@ -19,7 +19,7 @@ RAATSICC is a grassroots organisation that provides social services for Aborigin
 
 > Callum has responded to our needs by listening and helping us through the process so that we've got a website that helps us talk to our communities. We have trust and control in our relationship. **Emma Schuh, Secretary**
 
-<Media ratio="1289/2880" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320481/okok/raatsicc-mobile-screens-dark.png" />
+<Media ratio="1289/2880" image="/images/raatsicc-mobile-screens-dark.png" />
 
 With the majority of their audience in remote locations on reduced internet coverage, the site performance had to be best-in-class. For example, I used an image service to resize images on the fly to match a user's screen size, cutting down page load sizes. The resulting Google Web Performance results [speak for themselves](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://www.raatsicc.org.au).
 

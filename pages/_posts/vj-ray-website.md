@@ -1,14 +1,11 @@
 ---
 layout: post
 category: projects
-title: VJ Ray websites
 date: 2017-11-21
+title: VJ Ray websites
 lede: A series of websites to help one of Sydney's oldest Real Estate agencies show how they put people first.
-note: Completed in collaboration with Barry Phillip Hall.
-thumbImage: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516953100/okok/thumb-vjray.jpg
-thumbInCloudinary: true
 assets: 
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952892/okok/vjray-hero.jpg
+  cover: /images/vjray-hero.jpg
 heroShowCover: false
 tags: 
   - design
@@ -17,9 +14,9 @@ tags:
 
 VJ Ray Real Estate are one of Sydney's original Strata Management agencies. They asked me to consider their customer value proposition and use it to rebuild their digital presence. During research and discussions, our strategy was clarified by a throw-away comment from an employee: "We manage people, not just property."
 
-<!-- @[LazyImage](project src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952901/okok/vjray-research.png") -->
+<!-- @[LazyImage](project src="/images/vjray-research.png") -->
 
-<Media ratio="1740/1681" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1516952897/okok/vjray-service-portraits.png" />
+<Media ratio="1740/1681" image="/images/vjray-service-portraits.png" />
 
 My response was to focus on putting customers first by using portraits of real staff members, a clear, fast interface design and accessible information flows with forthright messaging.
 
@@ -31,7 +28,7 @@ VJ Ray's business is winning people's trust through their service. The new websi
 
 <!-- > Our new sites are helping us to redefine how our customers think of us. All of our competitors look the same. Callum has helped us to avoid their pitfalls and create messages that set us apart in look, and in service approach.” _Michael Pollard, Owner_ -->
 
-<Media ratio="2175/1600" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1535094624/okok/vjray-mobile-screens-2.png" />
+<Media ratio="2175/1600" image="/images/vjray-mobile-screens-2.png" />
 
 The website never shouts, never wastes a person's time. Instead, it starts by aiming to be helpful. In this way, the message is clear: VJ Ray are listening and ready to help.
 

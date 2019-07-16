@@ -6,7 +6,7 @@ title: Brandhook website
 lede: Add…
 link: http://www.brandhook.com/
 assets: 
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517273310/okok/raatsicc-desktop-hero.jpg
+  cover: /images/brandhook-hero-what-1440.jpg
 card:
   externalLink: true
 tags: 

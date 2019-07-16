@@ -19,8 +19,6 @@ tags:
 
 In “A City Is Not A Tree”, Christopher Alexander describes a living, natural city as a semilattice of interconnected, overlapping elements. In opposition, he proposes that artificial cities lack richness because they design away suppossedly unneccessary interconnections, reducing them to tree structures. The diagram above shows this relationship.
 
-<!-- @[LazyImage](src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1528203936/okok/Artboard_1_copy_2.png" post) -->
-
 <Media ratio="388/1100" image="/images/post-semilattice-190708a.png" />
 
 As an example, let's imagine Melbourne's laneways. Over a long period of time they have become naturally rich [nooks and crannies](https://youtu.be/zQXlW0GzlD4) such that when you walk them you discover hidden surprises at almost every corner. _The essential character of Melbourne’s laneways is the accumulation of many overlapping details that each feedback and influence each-other over time._

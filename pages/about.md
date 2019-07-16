@@ -11,8 +11,6 @@ lede: Callum Flack is fluid across graphic design, information design and fronte
 
 <!-- > The quality of the connections is the key to quality _— Charles Eames_ -->
 
-<!-- @[LazyImage](post src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522317177/okok/callum-beach-bw.jpg") -->
-
 <!-- @[LazyImage](post local src="/images/cf-2.jpg") -->
 
 <!-- Hi, Callum Flack. I'm a digital designer who works fluidly across both brand and product to make pragmatic, poetic websites and apps. -->

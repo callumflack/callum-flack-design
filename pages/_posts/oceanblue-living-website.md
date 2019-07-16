@@ -15,11 +15,11 @@ tags:
 
 Oceanblue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
 
-<Media ratio="4740/2160" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1513597614/okok/oceanblueliving-desktop-layouts.png" />
+<Media ratio="4740/2160" image="/images/oceanblueliving-desktop-layouts.png" />
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 
-<Media ratio="3917/2880" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1522320503/okok/oceanblueliving-responsive-layouts-dark.png" />
+<Media ratio="3917/2880" image="/images/oceanblueliving-responsive-layouts-dark.png" />
 
 The visual design system uses highly structured fonts, with hand-drawn icons that match the 'craftsmanship' archetype central to their brand repositioning.
 
@@ -27,7 +27,7 @@ The visual design system uses highly structured fonts, with hand-drawn icons tha
 
 <MediaVideo src="286998027" ratio="540/778" />
 
-<!-- <Media image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517372170/okok/oceanblueliving-visual-system.png" /> -->
+<!-- <Media image="/images/oceanblueliving-visual-system.png" /> -->
 
 <!-- We continue to document new works. The image library we've built over the last 18 months allows OceanBlue Living to create high-impact social media at will. -->
 

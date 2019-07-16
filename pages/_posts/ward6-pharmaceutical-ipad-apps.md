@@ -5,13 +5,13 @@ date: 2015-02-02
 title: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
 assets: 
-  cover: https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png
+  cover: /images/pharmaceutical-edetailers-hero-1.png
 tags: 
   - design
   - frontend
 ---
 
-<!-- <Media ratio="1500/2500" image="https://res.cloudinary.com/pw-img-cdn/image/upload/v1517279800/okok/pharmaceutical-edetailers-hero-1.png" /> -->
+<!-- <Media ratio="1500/2500" image="/images/pharmaceutical-edetailers-hero-1.png" /> -->
 
 Ward 6 Digital specialised in creating sophisticated, interactive iPad-based sales tools for Pharma and Health clients. I worked with the team to modernise development processes and bring design sensibility to data-driven showcases.
 
