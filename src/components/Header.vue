@@ -6,7 +6,7 @@
       <p v-if="lede" class="Link Text--sm text-gray">
         {{ lede }}
         <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
-          Learn more &rightarrow;
+          Learn more &#8594;
         </saber-link>
       </p>
       <div v-if="$route.path.includes('littoral')" class="st-h w-full">
@@ -22,7 +22,9 @@
     </div>
 
     <!-- projects or writing archives -->
-    <HeaderTitleWrap v-if="$route.path.includes('projects') || $route.path.includes('writing')">
+    <HeaderTitleWrap
+      v-if="$route.path.includes('projects') || $route.path.includes('writing')"
+    >
       <h1 v-if="title" class="Display s-h">{{ title }}</h1>
       <p v-if="lede" class="Link Text--sm text-gray">
         {{ lede }}
@@ -56,22 +58,22 @@ export default {
     HeaderTitleWrap,
   },
   props: {
-   /*  siteTitle: {
+    /*  siteTitle: {
       type: String,
       required: true
     }, */
     title: {
       type: String,
       required: true,
-      default: "Page title"
+      default: "Page title",
     },
     lede: {
       type: String,
-      required: false
+      required: false,
     },
     newsletter: {
       type: String,
-      required: false
+      required: false,
     },
     /* category: {
       type: String,
@@ -83,7 +85,7 @@ export default {
       return this.$route.path === "/" ? "Block Block--home" : "Block Block--withNav"
     }
   } */
-}
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -100,7 +102,7 @@ export default {
 
 @screen lg {
   .Hgroup {
-    width: calc(100% * 15/24);
+    width: calc(100% * 15 / 24);
   }
 }
 </style>

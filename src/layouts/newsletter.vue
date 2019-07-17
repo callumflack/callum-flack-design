@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <hr class="border-b border-text m-0">
+      <hr class="border-b border-text m-0" />
     </div>
 
     <div class="st-m">
@@ -30,7 +30,7 @@ import Wrap from "../components/Wrap.vue";
 export default {
   components: {
     CardRowIssue,
-    Wrap
+    Wrap,
   },
   props: ["page"],
 };

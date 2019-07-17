@@ -1,10 +1,5 @@
 <template>
-  <a
-    :href="issue.link"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="Card"
-  >
+  <a :href="issue.link" target="_blank" rel="noopener noreferrer" class="Card">
     <div class="Card-body flex justify-between">
       <!-- title -->
       <h3 class="Title w-15x24 lg:w-8/12">
@@ -33,12 +28,12 @@ import CardExternalLink from "../components/CardExternalLink";
 
 export default {
   components: {
-    CardExternalLink
+    CardExternalLink,
   },
   props: ["issue"],
   methods: {
-    formatListDate
-  }
+    formatListDate,
+  },
 };
 </script>
 
@@ -78,7 +73,7 @@ export default {
 }
 
 /* CARD EXTERNAL LINK */
-/* can't where it's off so this is a hack… */
+/* can't find where it's off so this is a hack… */
 .Card >>> .ExternalLink .Link--blank {
   transform: translate(-55px, -0.5em);
 }
@@ -120,4 +115,3 @@ export default {
   }
 }
 </style>
-

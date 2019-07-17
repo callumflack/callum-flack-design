@@ -40,7 +40,7 @@
                 >
                   Newsletter
                   <!-- <span class="Link--blank">&#8599;</span> -->
-                  <span class="Logo-arrow ml-1">&rightarrow;</span>
+                  <span class="Logo-arrow ml-1">&#8594;</span>
                 </saber-link>
               </li>
             </ul>

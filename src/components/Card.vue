@@ -4,12 +4,15 @@
     :to="post.attributes.permalink"
     :href="post.attributes.link"
     :target="target"
-    rel="noopener noreferrer"
+    :rel="rel"
     :class="cardWidth"
   >
     <div class="Card">
       <!-- image -->
-      <div v-if="post.attributes.assets && post.attributes.assets.cover" class="Card-figure">
+      <div
+        v-if="post.attributes.assets && post.attributes.assets.cover"
+        class="Card-figure"
+      >
         <Aspect>
           <img
             v-if="post.attributes.assets.cover.local"
@@ -26,9 +29,12 @@
         </Aspect>
       </div>
       <!-- if no image, quote -->
-      <div v-else-if="post.attributes.card && post.attributes.card.quote" class="Card-figure" :style="`background-color:${post.attributes.card.bgColor}`">
-        <Aspect>
-        </Aspect>
+      <div
+        v-else-if="post.attributes.card && post.attributes.card.quote"
+        class="Card-figure"
+        :style="`background-color:${post.attributes.card.bgColor}`"
+      >
+        <Aspect> </Aspect>
         <div class="absolute inset-0 flex items-center">
           <p class="Title mx-4 lg:w-3/4">{{ post.attributes.card.quote }}</p>
         </div>
@@ -37,7 +43,9 @@
       <div class="Card-body">
         <h3 class="Title mb-1">
           {{ post.attributes.title }}
-          <CardExternalLink v-if="post.attributes.card && post.attributes.card.externalLink" />
+          <CardExternalLink
+            v-if="post.attributes.card && post.attributes.card.externalLink"
+          />
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
@@ -75,36 +83,45 @@ export default {
   components: {
     Aspect,
     CardExternalLink,
-    ImageDynamic
+    ImageDynamic,
   },
   props: ["post"],
   computed: {
     type() {
       return this.post.attributes.card && this.post.attributes.card.externalLink
-      ? "a" : "saber-link";
+        ? "a"
+        : "saber-link";
     },
     target() {
       return this.post.attributes.card && this.post.attributes.card.externalLink
-      ? "_blank" : ""
+        ? "_blank"
+        : "";
+    },
+    rel() {
+      return (
+        this.post.attributes.card &&
+        this.post.attributes.card.externalLink &&
+        "noopener noreferrer"
+      );
     },
     cardWidth() {
       return this.post.attributes.card && this.post.attributes.card.full
-      ? "w-full" : "w-full sm:w-1/2 lg:w-1/3"
+        ? "w-full"
+        : "w-full sm:w-1/2 lg:w-1/3";
     },
     tagsWithFeaturedRemoved() {
-      return this.post.attributes.tags
-        .filter(x => x !== "featured")
+      return this.post.attributes.tags.filter(x => x !== "featured");
     },
     /* formatTags() {
       return this.slice(0, -1).join(', ')
     }, */
     figureShade() {
-      return this.post.attributes.assets.cover && "bg-gray-100"
-    }
+      return this.post.attributes.assets.cover && "bg-gray-100";
+    },
   },
   methods: {
-    formatListDate
-  }
+    formatListDate,
+  },
 };
 </script>
 
@@ -204,4 +221,3 @@ export default {
   }
 }
 </style>
-

@@ -1,14 +1,7 @@
 <template>
-  <figure
-    ref="image"
-    :class="{ 'cover': cover }"
-  >
+  <figure ref="image" :class="{ cover: cover }">
     <client-only>
-      <v-lazy-image
-        :src="url"
-        :src-placeholder="urlPlaceholder"
-        :alt="alt"
-      />
+      <v-lazy-image :src="url" :src-placeholder="urlPlaceholder" :alt="alt" />
     </client-only>
   </figure>
 </template>
@@ -29,23 +22,23 @@ import VLazyImage from "v-lazy-image";
 
 // const imgixDomain = "https://www.callumflack.design/images/";
 /* no end slash */
-const imgixDomain = process.env.NODE_ENV === 'production'
-  ? "https://cfd-saber.imgix.net" : "";
+const imgixDomain =
+  process.env.NODE_ENV === "production" ? "https://cfd-saber.imgix.net" : "";
 const optimizeParams = "auto=format&q=33";
 
 export default {
   components: {
-    VLazyImage
+    VLazyImage,
   },
   props: {
     src: {
       type: String,
-      default: ""
+      default: "",
     },
     alt: String,
     cover: {
       type: Boolean,
-      default: false
+      default: false,
     },
     maxWidth: {
       type: Number,

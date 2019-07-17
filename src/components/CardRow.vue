@@ -4,14 +4,16 @@
     :to="post.attributes.permalink"
     :href="post.attributes.link"
     :target="target"
-    rel="noopener noreferrer"
+    :rel="rel"
     class="Card"
   >
     <div class="Card-body flex justify-between">
       <!-- title -->
       <h3 class="Title w-15x24 lg:w-8/12 pr-3">
         {{ post.attributes.title }}
-        <CardExternalLink v-if="post.attributes.card && post.attributes.card.externalLink" />
+        <CardExternalLink
+          v-if="post.attributes.card && post.attributes.card.externalLink"
+        />
       </h3>
       <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- only show category on home -->
@@ -38,7 +40,10 @@
           </template> -->
         </div>
         <!-- date -->
-        <time :date-time="post.attributes.createdAt" class="Title text-gray ml-4 lg:ml-8">
+        <time
+          :date-time="post.attributes.createdAt"
+          class="Title text-gray ml-4 lg:ml-8"
+        >
           {{ formatListDate(post.attributes.createdAt) }}
         </time>
       </div>
@@ -54,32 +59,40 @@ import CardExternalLink from "../components/CardExternalLink";
 export default {
   components: {
     Aspect,
-    CardExternalLink
+    CardExternalLink,
   },
   props: ["post"],
   computed: {
     type() {
       return this.post.attributes.card && this.post.attributes.card.externalLink
-      ? "a" : "saber-link";
+        ? "a"
+        : "saber-link";
     },
     target() {
       return this.post.attributes.card && this.post.attributes.card.externalLink
-      ? "_blank" : ""
+        ? "_blank"
+        : "";
+    },
+    rel() {
+      return (
+        this.post.attributes.card &&
+        this.post.attributes.card.externalLink &&
+        "noopener noreferrer"
+      );
     },
     tagsWithFeaturedRemoved() {
-      return this.post.attributes.tags
-        .filter(x => x !== "featured")
+      return this.post.attributes.tags.filter(x => x !== "featured");
     },
     /* formatTags() {
       return this.slice(0, -1).join(', ')
     }, */
     figureShade() {
-      return this.post.attributes.assets.cover && "bg-gray-100"
-    }
+      return this.post.attributes.assets.cover && "bg-gray-100";
+    },
   },
   methods: {
-    formatListDate
-  }
+    formatListDate,
+  },
 };
 </script>
 
@@ -106,7 +119,6 @@ export default {
 .Card:hover:before {
   right: 0;
 }
-
 
 .Card:active *,
 .Card:focus *,
@@ -152,4 +164,3 @@ export default {
   }
 }
 </style>
-
