@@ -1,23 +1,13 @@
 <template>
   <div>
     <HeaderNav />
-    <Header
-      :title="page.attributes.title"
-      :lede="page.attributes.lede"
-      :newsletter="page.attributes.newsletter"
-    />
+    <Header :title="page.attributes.title" :lede="page.attributes.lede" />
     <main aria-label="Content">
-      <div
-        class="container"
-        :class="containerType"
-      >
+      <div class="container" :class="containerType">
         <slot></slot>
       </div>
     </main>
-    <Footer
-      :kind="kind"
-      :nextpost="page.attributes.nextPost"
-    />
+    <Footer :kind="kind" :nextpost="page.attributes.nextPost" />
   </div>
 </template>
 
@@ -30,11 +20,11 @@ export default {
   components: {
     Footer,
     Header,
-    HeaderNav
+    HeaderNav,
   },
   props: {
     page: Object,
-    kind: String
+    kind: String,
   },
   computed: {
     siteTitle() {
@@ -60,24 +50,26 @@ export default {
     }
     return {
       // title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
-      title: pageTitle ?
-        `${this.siteTitle} • ${pageTitle}`
+      title: pageTitle
+        ? `${this.siteTitle} • ${pageTitle}`
         : `${title} • ${this.siteTitle}`,
       meta: [
-        title ? {
-          name: "twitter:title",
-          content: `${title} • ${this.siteTitle}`
-        } : {
-          name: "twitter:title",
-          content: this.siteTitle
-        },
+        title
+          ? {
+              name: "twitter:title",
+              content: `${title} • ${this.siteTitle}`,
+            }
+          : {
+              name: "twitter:title",
+              content: this.siteTitle,
+            },
         description && {
           name: "description",
-          content: description
+          content: description,
         },
         description && {
           name: "twitter:description",
-          content: description
+          content: description,
         },
       ].filter(Boolean),
       link: this.$feed
@@ -92,10 +84,10 @@ export default {
                   ? "rss+xml"
                   : "json"
               }`,
-              href: this.$feed.permalink
-            }
+              href: this.$feed.permalink,
+            },
           ].filter(Boolean)
-        : []
+        : [],
     };
   },
 };

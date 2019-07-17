@@ -1,11 +1,6 @@
 <template>
   <footer class="Block-lg flex relative" :class="blockColorClass">
-    <saber-link
-      :to="link"
-      exact
-      class="Meta block h-full"
-      :class="homeLinkClass"
-    >
+    <saber-link :to="link" exact class="Meta block h-full" :class="homeLinkClass">
       <template v-if="$route.path === '/'">
         <span class="Logo-arrow mr-1">&#8593;</span>
         <span>up</span>
@@ -31,20 +26,20 @@
 <script>
 export default {
   props: {
-    kind: String
+    kind: String,
   },
   computed: {
     blockColorClass() {
       return this.kind === "index" && "bg-brand-neutral";
     },
     homeLinkClass() {
-      return this.$route.path.includes('blog')
+      return this.$route.path.includes("blog")
         ? "text-right w-1/2 pr-2"
-        : "text-center w-full"
+        : "text-center w-full";
     },
     link() {
-      return this.$route.path === '/' ? "#top" : "/";
-    }
-  }
-}
+      return this.$route.path === "/" ? "#top" : "/";
+    },
+  },
+};
 </script>

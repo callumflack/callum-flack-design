@@ -45,12 +45,15 @@
               </li>
             </ul>
           </div>
-          <hr class="border-b border-text m-0">
+          <hr class="border-b border-text m-0" />
         </div>
 
         <div class="st-m">
           <SliderSlides class="Grid-extract--cards">
-            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="st-2xh">
+            <SliderSlide
+              v-if="featuredPosts && featuredPosts.length > 0"
+              class="st-2xh"
+            >
               <div class="Grid">
                 <Card
                   v-for="post in featuredPosts"
@@ -120,7 +123,7 @@ export default {
     SliderFrame,
     SliderSlides,
     SliderSlide,
-    Wrap
+    Wrap,
   },
 
   props: ["page"],
@@ -130,16 +133,13 @@ export default {
       return this.page.posts.splice(0, 6);
     }, */
     featuredPosts() {
-      return this.page.posts
-        .filter(x => x.attributes.tags.includes("featured"))
+      return this.page.posts.filter(x => x.attributes.tags.includes("featured"));
     },
     projectsPosts() {
-      return this.page.posts
-        .filter(x => x.attributes.category === "projects")
+      return this.page.posts.filter(x => x.attributes.category === "projects");
     },
     writingPosts() {
-      return this.page.posts
-        .filter(x => x.attributes.category === "writing")
+      return this.page.posts.filter(x => x.attributes.category === "writing");
     },
   },
 };
@@ -153,5 +153,4 @@ export default {
 .SliderSlide .container {
   padding: 0 !important;
 }
-
 </style>
