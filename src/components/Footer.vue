@@ -20,7 +20,7 @@
         class="h-full w-full"
       >
         <div class="container container--text">
-          <hr v-if="nextpost && !nextpost.hero" class="border-b m-0">
+          <hr v-if="nextpost && !nextpost.hero" class="border-b m-0" />
           <!-- <p class="Text--base s-2xh">Next post:</p> -->
           <div class="Grid-extract--post">
             <div class="relative">
@@ -49,13 +49,9 @@
     </template>
     <!-- CFd -->
     <template v-else>
-      <saber-link
-        to="/"
-        :class="[linkTypography, spacerClasses]"
-        class="h-full w-full"
-      >
+      <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
         <span class="Logo-arrow mr-1">&#8592;</span>
-        <span style="text-transform:initial">CFd</span>
+        <span style="text-transform:initial">Back to the gestalt view</span>
       </saber-link>
     </template>
   </footer>
@@ -71,7 +67,7 @@ Vue.use(vueSmoothScroll);
 export default {
   components: {
     Aspect,
-    ImageDynamic
+    ImageDynamic,
   },
   props: {
     kind: String,
@@ -81,8 +77,8 @@ export default {
     }, */
     nextpost: {
       type: Object,
-      default: undefined
-    }
+      default: undefined,
+    },
   },
   computed: {
     spacerClasses() {
@@ -105,8 +101,12 @@ export default {
       return this.nextpost && this.nextpost.link;
     },
     heroImageBlend() {
-      return this.nextpost && this.nextpost.hero && this.nextpost.hero.imageBlend
-      && "BlendImage"
+      return (
+        this.nextpost &&
+        this.nextpost.hero &&
+        this.nextpost.hero.imageBlend &&
+        "BlendImage"
+      );
     },
     heroTitleColor() {
       return this.nextpost && this.nextpost.hero && "text-white";
@@ -119,14 +119,14 @@ export default {
     //   // }
     //   // return null;
     // }
-  }
-}
+  },
+};
 </script>
 
 <style lang="postcss" scoped>
 .BlendImage {
   @apply bg-text
-  /* background-color: rgba(0, 0, 0, 0.2); */
+  /* background-color: rgba(0, 0, 0, 0.2); */;
 }
 .BlendImage >>> img {
   opacity: 0.8;
