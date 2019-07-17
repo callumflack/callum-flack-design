@@ -11,8 +11,8 @@ module.exports = {
   extends: [
     "plugin:vue/recommended",
     "eslint:recommended",
-    // "prettier/vue",
-    // "plugin:prettier/recommended"
+    "prettier/vue",
+    "plugin:prettier/recommended"
   ],
   // required to lint *.vue files
   plugins: ["vue"],
