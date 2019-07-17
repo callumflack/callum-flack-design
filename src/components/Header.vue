@@ -23,7 +23,7 @@
 
     <!-- projects or writing archives -->
     <HeaderTitleWrap
-      v-if="$route.path.includes('projects') || $route.path.includes('writing')"
+      v-if="$route.path === '/projects.html' || $route.path === '/writing.html'"
     >
       <h1 v-if="title" class="Display s-h">{{ title }}</h1>
       <p v-if="lede" class="Link Text--sm text-gray">
@@ -71,10 +71,10 @@ export default {
       type: String,
       required: false,
     },
-    newsletter: {
-      type: String,
+    /* newsletter: {
+      type: Boolean,
       required: false,
-    },
+    }, */
     /* category: {
       type: String,
       required: false
