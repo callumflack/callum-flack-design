@@ -36,7 +36,6 @@
 /* custom components */
 /* …anything written from scratch for the project goes here… */
 @import "./custom/custom-tabs.css";
-@import "./custom/custom-card-external-link.css";
 
 /* Tailwind utils */
 @import "./tailwind/utilities.css";

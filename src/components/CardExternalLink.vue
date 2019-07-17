@@ -1,7 +1,5 @@
 <template>
-  <span
-    class="ExternalLink Text--xs"
-  >
+  <span class="ExternalLink Text--xs">
     {{ label }}
     <span class="Link--blank">&#8599;</span>
   </span>
@@ -12,14 +10,13 @@ export default {
   props: ["kind"],
   computed: {
     label() {
-      return this.kind === "newsletter" ? "Visit issue" : "Visit site"
-    }
-  }
-}
+      return this.kind === "newsletter" ? "Visit issue" : "Visit site";
+    },
+  },
+};
 </script>
 
 <style lang="postcss" scoped>
-
 /* Styled by parent hover in `custom-card-external-link.css`  */
 
 .ExternalLink {
@@ -40,5 +37,13 @@ export default {
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate(-45px, -0.5em);
 }
-</style>
 
+.Card:hover .ExternalLink {
+  @apply bg-text text-white !important; /* override vue [data] styles */
+  transform: translate(3px, -0.15em);
+}
+.Card:hover .ExternalLink .Link--blank {
+  @apply text-white !important;
+  transform: translate(0, -0.1em);
+}
+</style>
