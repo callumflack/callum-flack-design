@@ -74,6 +74,12 @@ ol,
   padding-bottom: calc(theme(spacing.2) * var(--space-ratio));
 }
 
+/* used on projects by year archive page */
+.Year + .Year {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+
+}
+
 /*
 
   Nav
