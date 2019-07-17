@@ -69,15 +69,9 @@ ol,
 }
 
 .Meta--year {
-  @apply font-bold border-b;
-  /* @apply border-text; */
-  margin-bottom: 20px;
+  @apply font-medium border-b;
   margin-bottom: calc(theme(spacing.1) * var(--space-ratio));
   padding-bottom: calc(theme(spacing.2) * var(--space-ratio));
-}
-
-.Year + .Year {
-  margin-top: calc(theme(spacing.12) * var(--space-ratio));
 }
 
 /*

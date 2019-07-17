@@ -29,7 +29,7 @@
 }
 
 /* .Subheading {
-  @apply font-bold leading-snug;
+  @apply font-medium leading-snug;
   font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
