@@ -9,7 +9,7 @@
         >
           <!-- post image aspect -->
           <Aspect
-            :ratio="page.attributes.hero && page.attributes.hero.ratio || '1/3.5'"
+            :ratio="(page.attributes.hero && page.attributes.hero.ratio) || '1/3.5'"
             :class="heroImageBlend"
           >
             <ImageDynamic
@@ -52,6 +52,7 @@ import PostHeaderTitle from "../components/PostHeaderTitle";
 import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap.vue";
+// import mediumZoom from 'medium-zoom'
 
 /*
 
@@ -67,11 +68,9 @@ export default {
     HeaderTitleWrap,
     ImageDynamic,
     PostHeaderTitle,
-    Wrap
+    Wrap,
   },
-
   props: ["page"],
-
   computed: {
     heroBlockColor() {
       return (
@@ -108,13 +107,16 @@ export default {
     },
     tagsWithFeaturedRemoved() {
       return this.page.attributes.tags.filter(x => x !== "featured");
-    }
+    },
   },
-
+  /* mounted() {
+    // https://codesandbox.io/s/github/francoischalifour/medium-zoom/tree/master/examples/vue
+    mediumZoom(".Markdown img")
+  }, */
   methods: {
     formatDate,
-    formatListDate
-  }
+    formatListDate,
+  },
 };
 </script>
 
