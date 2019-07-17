@@ -4,6 +4,8 @@ Value prop, folio and blog site: https://callumflack.design/
 
 Made with Nuxt.js + Nuxtent markdown, images served by Cloudinary, and deployed with Zeit Now.
 
+Deploy by running `now --target production` in the root.
+
 ![Project screen-shot](screen-shot-v6.jpg?raw=true "Project screen-shot")
 
 ## Nuxt build setup
