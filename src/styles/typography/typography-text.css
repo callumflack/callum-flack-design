@@ -141,8 +141,11 @@ ol,
 }
 
 .Markdown blockquote p {
-  @apply border-l border-gray-500;
+  /* @apply border-l border-gray-500; */
+  @apply border-l-2 border-brand-highlight;
   @apply text-gray-600;
+  @apply text-text;
+  @apply text-brand-highlight;
   padding-left: calc(theme(spacing.4) * var(--grid-ratio));
 }
 
@@ -154,7 +157,8 @@ ol,
 /* same as Meta font style */
 .Markdown blockquote p strong {
   @apply table mt-1 tracking-wider;
-  @apply text-gray-600;
+  /* @apply text-gray-600; */
+  @apply text-brand-highlight;
 }
 
 .Markdown sup {
