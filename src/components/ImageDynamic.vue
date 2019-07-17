@@ -3,11 +3,13 @@
     ref="image"
     :class="{ 'cover': cover }"
   >
-    <v-lazy-image
-      :src="url"
-      :src-placeholder="urlPlaceholder"
-      :alt="alt"
-    />
+    <client-only>
+      <v-lazy-image
+        :src="url"
+        :src-placeholder="urlPlaceholder"
+        :alt="alt"
+      />
+    </client-only>
   </figure>
 </template>
 
