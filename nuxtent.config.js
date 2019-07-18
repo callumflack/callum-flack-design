@@ -21,6 +21,6 @@ module.exports = {
   ],
 
   api: function(isStatic) {
-    return { browserBaseURL: isStatic ? "https://v6.callumflack.design" : "" };
+    return { browserBaseURL: isStatic ? "https://callumflackdesignv6.now.sh" : "" };
   }
 };
