@@ -3678,7 +3678,7 @@ ipaddr.js@1.8.0:
 
 iremono@callumflack/iremono:
   version "0.0.1"
-  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/4c3dcf39c2cbe7dcabd30da33069db328538ce7a"
+  resolved "https://codeload.github.com/callumflack/iremono/tar.gz/5fb98016ea05ebbafe4d44ba0c8f5004e8797fa6"
   dependencies:
     autoprefixer "^9.3.1"
     normalize.css "^8.0.0"
