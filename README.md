@@ -1,4 +1,4 @@
-# patternworks 2018
+# patternworks 2018 — v2-1803-graphik-insignia-cf
 
 Static site business portfolio and blog.
 
