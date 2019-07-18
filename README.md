@@ -1,4 +1,4 @@
-# patternworks2017
+# patternworks2017 — v2-1711-graphik
 
 > Nuxt.js project
 
