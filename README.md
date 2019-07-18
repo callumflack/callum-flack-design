@@ -1,4 +1,4 @@
-# patternworks2017
+# patternworks2017 — v1-1707-druk-poster
 
 > Nuxt.js project
 
