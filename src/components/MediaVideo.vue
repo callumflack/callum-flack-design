@@ -2,28 +2,24 @@
   <div class="AspectMedia Grid-extract--post">
     <Aspect figure :ratio="ratio" :style="aspectStyle" :class="aspectClasses">
       <!-- iphone shape -->
-      <div class="AspectRatio-object text-text" v-show="iphone">
+      <div v-show="iphone" class="AspectRatio-object text-text">
         <svg
           fill="currentColor"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 670 1381"
         >
-          <path d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09Z"/>
+          <path
+            d="M670,102C670,45.8,624.35,0,568.15,0H101.67C45.47,0,0,45.8,0,102V1279.91C0,1336.11,45.47,1381,101.67,1381H568.15c56.2,0,101.85-44.89,101.85-101.09Z"
+          />
         </svg>
       </div>
       <!-- loading message -->
-      <div
-        class="absolute inset-0 flex justify-center items-center"
-        :class="{ 'bg-text' : !this.iphone }"
-      >
-        <div class="Meta text-white">Video loading…</div>
+      <!-- :class="{ 'bg-text': !iphone }" -->
+      <div class="absolute inset-0 flex justify-center items-center">
+        <div class="Meta">Video loading…</div>
       </div>
       <!-- if vimeo -->
-      <div
-        v-if="vimeo"
-        class="absolute inset-0"
-        :class="{ 'Frame' : this.frame }"
-      >
+      <div v-if="vimeo" class="absolute inset-0" :class="{ Frame: frame }">
         <iframe
           :src="vimeoSrc"
           width="100%"
@@ -36,12 +32,9 @@
         ></iframe>
       </div>
       <!-- else local video -->
-      <div
-        v-else
-        class="absolute inset-0"
-        :class="{ 'Frame' : this.frame }"
-      >
+      <div v-else class="absolute inset-0" :class="{ Frame: frame }">
         <video
+          ref="videoRef"
           src=""
           class="device-position"
           playsinline
@@ -49,9 +42,8 @@
           muted
           loop
           :poster="poster"
-          ref="videoRef"
         >
-          <source :src="src" type="video/mp4">
+          <source :src="src" type="video/mp4" />
           Your browser does not support the video tag. Please upgrade your browser.
         </video>
       </div>
@@ -82,18 +74,18 @@ import Aspect from "./Aspect";
 
 export default {
   components: {
-    Aspect
+    Aspect,
   },
   props: {
     ratio: String,
     frame: Boolean,
     vimeo: {
       type: Boolean,
-      default: true
+      default: true,
     },
     iphone: {
       type: Boolean,
-      default: false
+      default: false,
     },
     ipadLandscape: Boolean,
     ipad: Boolean,
@@ -106,7 +98,7 @@ export default {
   },
   data() {
     return {
-      isActive: false
+      isActive: false,
     };
   },
   computed: {
@@ -118,7 +110,7 @@ export default {
         "device",
         {
           "device--iphone6": this.iphone,
-        }
+        },
       ];
     },
     /* override `Aspect` ratio if iphone */
@@ -127,7 +119,7 @@ export default {
         /* return "padding-bottom: 205.81395%"; */ /* if not within .Aspect… */
         return "padding-bottom: 100%";
       }
-    }
+    },
     /* wrapButtonClasses() {
       return [
         {
@@ -144,7 +136,7 @@ export default {
         }
       ];
     } */
-  }
+  },
   /* methods: {
     play: function() {
       this.$refs.videoRef.play();

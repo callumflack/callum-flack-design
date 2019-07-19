@@ -72,7 +72,7 @@ module.exports = {
       "64": "16rem",
     },
     screens: {
-      sm: "640px",
+      sm: "656px",
       md: "768px",
       lg: "960px",
       xl: "1040px",
@@ -124,12 +124,12 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.125rem", // 18
-      xl: "1.25rem", // 20
-      "2xl": "1.5625rem", // 25
+      lg: "1.1875rem", // 18
+      xl: "1.3125rem", // 21
+      "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
-      "5xl": "3rem",
+      "5xl": "2.75rem", // 44
       /* "6xl": "4rem",
       "7xl": "5rem", */
     },
@@ -173,8 +173,8 @@ module.exports = {
       nav: "4.5",
     },
     letterSpacing: {
-      tighter: "-0.05em",
-      tight: "-0.01em",
+      tighter: "-0.075em",
+      tight: "-0.005em",
       text: "-0.001em",
       normal: "0",
       wide: "0.0125em",

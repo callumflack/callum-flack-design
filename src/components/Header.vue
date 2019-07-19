@@ -97,9 +97,6 @@ export default {
   padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
 }
 
-.Hgroup {
-}
-
 @screen lg {
   .Hgroup {
     width: calc(100% * 15 / 24);

@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <hr class="border-b border-text m-0" />
+      <hr class="border-b m-0" />
     </div>
 
     <div class="st-m">

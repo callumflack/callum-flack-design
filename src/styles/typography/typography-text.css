@@ -34,7 +34,6 @@ ol {
 .Text--xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
-.Nav-link,
 .Text--sm {
   @apply tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
@@ -44,9 +43,6 @@ ol {
 .Text--base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
-.Text--xl {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
-}
 p,
 ul,
 ol,
@@ -54,6 +50,9 @@ ol,
 .Text,
 .Text--lg {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
+}
+.Text--xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 /*
@@ -87,7 +86,7 @@ ol,
 */
 
 .Nav-link {
-  @apply font-medium inline-flex items-center;
+  @apply font-normal inline-flex items-center;
   height: calc(theme(spacing.16) * var(--space-ratio));
 }
 
@@ -106,6 +105,10 @@ ol,
   Markdown theme
 
 */
+
+.Markdown p + p {
+  text-indent: calc(theme(spacing.10) * var(--grid-ratio));
+}
 
 .Markdown ul,
 .Markdown ol {
@@ -147,12 +150,17 @@ ol,
 }
 
 .Markdown blockquote p {
-  /* @apply border-l border-gray-500; */
-  @apply border-l-2 border-brand-highlight;
+  @apply border-l-2 border-text;
+  /* @apply border-l-2 border-brand-highlight; */
+  /* @apply bg-gray-200; */
+  background-color: rgba(135, 131, 120, 0.15);
+  background-color: rgba(189, 183, 165, 0.15);
+  background-color: rgba(135, 131, 120, 0.1);
+  @apply py-4 pr-4;
   @apply text-gray-600;
   @apply text-text;
-  @apply text-brand-highlight;
-  padding-left: calc(theme(spacing.4) * var(--grid-ratio));
+  /* @apply text-brand-highlight; */
+  padding-left: calc(theme(spacing.6) * var(--grid-ratio));
 }
 
 .Markdown blockquote p p {
@@ -162,9 +170,9 @@ ol,
 
 /* same as Meta font style */
 .Markdown blockquote p strong {
-  @apply table mt-1 tracking-wider;
+  @apply table mt-2 mb-1 tracking-wider;
   /* @apply text-gray-600; */
-  @apply text-brand-highlight;
+  /* @apply text-brand-highlight; */
 }
 
 .Markdown sup {

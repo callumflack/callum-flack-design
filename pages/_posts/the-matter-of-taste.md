@@ -103,7 +103,7 @@ Sure, there's work to be done. But unless the work is orchestrated as a combined
 
 Just as you cannot not communicate, you cannot not have taste. Rather than being a throwaway complement, taste describes a person or a team's intuited ability to comprehend and create within a problem space.
 
-Taste is cultivated by a natural curiousity for this space, which allows one to refine and speed up their attention processes, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it.
+Taste is cultivated by a natural curiousity for a problem space. Because one find it fun, it becomes easy to spend deep focus honing one's attention and skills within the space, squishing knowhow into smaller and smaller bundles in order to discover more and more interesting things within it.
 
 _Good taste is the embodied ability to work a vague idea and emotion over into terms of the medium. It is the invisible dark matter that makes one product a superior user experience over another._ Indeed, you will know you're successful people call your product "beautiful". Good taste makes good things.
 

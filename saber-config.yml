@@ -14,10 +14,14 @@ siteConfig:
 
 themeConfig:
   nav:
+    - text: CFd
+      link: /
     - text: projects
       link: /projects.html
     - text: writing
       link: /writing.html
+    - text: littoral line
+      link: /the-littoral-line.html
     - text: about
       link: /about.html
   social:

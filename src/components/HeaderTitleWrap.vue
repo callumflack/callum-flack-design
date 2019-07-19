@@ -18,6 +18,6 @@ export default {
     widthType() {
       return this.kind !== "post" && "lg:w-8/12";
     },
-  }
-}
+  },
+};
 </script>

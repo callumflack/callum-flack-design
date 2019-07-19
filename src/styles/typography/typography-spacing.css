@@ -26,18 +26,18 @@
 
 */
 
-.Markdown figure,
-.Markdown blockquote,
+/* .Markdown figure,
 .Markdown p:not(:last-child),
-.Markdown ul:not(:last-child),
-.Markdown ol:not(:last-child),
-.s-block-p:not(:last-child),
+.s-block-p:not(:last-child), */
 .s-p {
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
 .st-p {
   margin-top: calc(theme(spacing.4) * var(--space-ratio));
 }
+.Markdown ul:not(:last-child),
+.Markdown ol:not(:last-child),
+.Markdown blockquote,
 .sy-p {
   margin-top: calc(theme(spacing.4) * var(--space-ratio));
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
@@ -57,12 +57,12 @@
 .Markdown p + h2,
 .Markdown ul + h2,
 .Markdown blockquote + h2 {
-  margin-top: calc(theme(spacing.10) * var(--space-ratio));
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
 }
 .Markdown p + h3,
 .Markdown ul + h3,
 .Markdown blockquote + h3 {
-  margin-top: calc(theme(spacing.6) * var(--space-ratio));
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
 }
 
 .s-block-h:not(:last-child),

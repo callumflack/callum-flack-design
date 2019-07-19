@@ -52,7 +52,9 @@
           <time :date-time="post.attributes.createdAt" class="Text--sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px">&mdash;</span>
+          <span class="Text--sm inline-block mx-2px tracking-tighter">
+            &mdash;&mdash;
+          </span>
           <!-- category & tags -->
           <span class="Text--sm capitalize">{{ post.attributes.category }}</span>
           <!-- <span
@@ -107,7 +109,8 @@ export default {
     cardWidth() {
       return this.post.attributes.card && this.post.attributes.card.full
         ? "w-full"
-        : "w-full sm:w-1/2 lg:w-1/3";
+        : "w-full";
+      // : "w-full sm:w-1/2 lg:w-1/3";
     },
     tagsWithFeaturedRemoved() {
       return this.post.attributes.tags.filter(x => x !== "featured");

@@ -6,7 +6,7 @@ title: How to publish a newsletter so you own your writing
 lede: Some hopefully helpful thoughts and tips on using a chain of web tools to streamline newsletter publishing, write in markdown, retain ownership and create a focus on writing. All without resorting to any product platform lock-in.
 readingTime: 5
 hero:
-  titleWidth: lg:w-8/12
+  titleWidth: lg:w-10/12
 nextPost:
   title: The paradigm shift in website publishing
   link: /blog/the-paradigm-shift-in-website-publishing.html
@@ -17,21 +17,13 @@ tags:
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->
 
-I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. 
-
-<!-- There is otherwise no real strategy.  -->
-
-<!-- I am frankly not interested in growth hacking my human connections, I'm purely interested in ideas and their execution, on the internet. -->
-
-I took the road less travelled when I set up my newsletter. Mostly to play with the available systems to find a way to publish in markdown, with the least friction possible. Partly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform, ready to be forgotten and lost forever when the platform gets acquihired. 
+I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. I took the road less travelled when I set up my newsletter. Mostly to play with the available systems to find a way to publish in markdown, with the least friction possible. Partly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform, ready to be forgotten and lost forever when the platform gets acquihired. 
 
 _I wanted it to be just a folder of files on my computer so that I could simply create a new blank document and start writing._ But I also wanted those files to work as a publishing system. What follows is a short explanation of how I do this.
 
 ## The newsletter system
 
-So I own my writing, I create a website of newsletter posts which I publish to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via its URL to create a new email campaign.
-
-_This means I never write within the email delivery platform. And all my letters are just markdown files_, just as they are on this website's blog.
+So I own my writing, I create a website of newsletter posts which I publish to a subdomain of this site:  [thelittoralline.callumflack.design](https://thelittoralline.callumflack.design). Then I import each post into Mailchimp via its URL to create a new email campaign. _This means I never write within the email delivery platform. And all my letters are just markdown files_, just as they are on this website's blog.
 
 Yes, I still use Mailchimp to send out the actual emails. I always try to defer to the best available tools for the job, and because I have no wish to learn about email delivery I definitely want to defer this difficult technical job to one of the many excellent freemium products available. 
 
@@ -109,8 +101,7 @@ This tiny piece of magic removes the forgetfully manual process of running `now 
 
 So that's how I publish a newsletter while always retaining ownership of my writing. It's a both a showcase of web tools and chance to play with them in context to see when they work, and when they don't. 
 
-While this may sound counter-intuitive, it's also helped me think deeply about what my intent is when writing. As I progressed with this project, I came to an important realisation: _any reduction in the publishing process went directly into more time writing._
+While this may sound counter-intuitive, it's also helped me think deeply about what my intent is when writing. As I progressed with this project, I came to an important realisation: _any reduction in the publishing process went directly into more time writing._ With this self-contained markdown-based publishing system, I can now happily keep my excuses for not writing to plain old procrastination.
 
 <!-- I'll probably add in an RSS feed shortly, so I can have Mailchimp automatically create a new email campaign. I'm unsure exactly how this works just yet, and although I'm sure it's quite simple, I'll leave it until the next hack session. -->
 
-With this self-contained markdown-based publishing system, I can now happily keep my excuses for not writing to plain old procrastination.

@@ -9,10 +9,11 @@ assets:
   cover: /images/post-aesthetics-nembrotha-aurea.jpg
 hero:
   showCover: true
+  blockColor: rgb(0,0,0)
   ratio: 9 / 16
   imageBlend: true
   titleInvert: true
-  titleWidth: lg:w-6/12
+  titleWidth: lg:w-9/12
 nextPost:
   title: Designers should code
   link: /blog/designers-should-code.html

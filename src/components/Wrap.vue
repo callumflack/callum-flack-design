@@ -2,7 +2,7 @@
   <div>
     <HeaderNav />
     <Header :title="page.attributes.title" :lede="page.attributes.lede" />
-    <main aria-label="Content">
+    <main aria-label="Content" class="">
       <div class="container" :class="containerType">
         <slot></slot>
       </div>
@@ -92,3 +92,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+.design-hack {
+  transform: translateY(-64px);
+}
+</style>

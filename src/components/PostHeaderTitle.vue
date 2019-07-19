@@ -1,11 +1,7 @@
 <template>
   <div class="Header-title">
     <!-- post title -->
-    <h1
-      class="Display s-m"
-      :class="heroTitleWidth"
-      itemprop="name headline"
-    >
+    <h1 class="Display s-m" :class="heroTitleWidth" itemprop="name headline">
       {{ attributes.title }}
     </h1>
     <!-- post meta -->
@@ -15,24 +11,27 @@
         v-if="attributes.category === 'writing'"
         :datetime="attributes.createdAt"
         itemprop="datePublished"
-      >{{ formatDate(attributes.createdAt) }}</time>
-      <time
-        v-else
-        :datetime="attributes.date"
-        itemprop="datePublished"
-      >{{ formatListDate(attributes.date) }}</time>
+        >{{ formatDate(attributes.createdAt) }}</time
+      >
+      <time v-else :datetime="attributes.date" itemprop="datePublished">{{
+        formatListDate(attributes.date)
+      }}</time>
       <!-- category & tags -->
-      <span class="Text--sm inline-block mx-2px">&mdash;</span>
-      <span class="Text--sm inline-block capitalize">
-        {{ attributes.category }}:
-      </span>
-      <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="Text--sm">
+      <span class="Text--sm inline-block tracking-tighter mx-2px">&mdash;&mdash;</span>
+      <span class="Text--sm inline-block capitalize"> {{ attributes.category }}: </span>
+      <span
+        v-for="(tag, index) in tagsWithFeaturedRemoved"
+        :key="index"
+        class="Text--sm"
+      >
         <span v-if="index != 0">,</span>
         <span class="lowercase">{{ tag }}</span>
       </span>
       <!-- reading time -->
       <template v-if="attributes.category === 'writing'">
-        <span class="Text--sm inline-block mx-2px">&mdash;</span>
+        <span class="Text--sm inline-block tracking-tighter mx-2px">
+          &mdash;&mdash;
+        </span>
         <span class="Text--sm">{{ attributes.readingTime }} mins</span>
       </template>
     </div>
@@ -62,18 +61,10 @@ export default {
       );
     },
     heroImageBlend() {
-      return (
-        this.attributes.hero &&
-        this.attributes.hero.imageBlend &&
-        "BlendImage"
-      );
+      return this.attributes.hero && this.attributes.hero.imageBlend && "BlendImage";
     },
     heroTitleColor() {
-      return (
-        this.attributes.hero &&
-        this.attributes.hero.titleInvert &&
-        "text-white"
-      );
+      return this.attributes.hero && this.attributes.hero.titleInvert && "text-white";
     },
     heroMetaClass() {
       return this.attributes.hero && this.attributes.hero.titleInvert
@@ -82,16 +73,14 @@ export default {
     },
     tagsWithFeaturedRemoved() {
       return this.attributes.tags.filter(x => x !== "featured");
-    }
+    },
   },
 
   methods: {
     formatDate,
-    formatListDate
-  }
-}
+    formatListDate,
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

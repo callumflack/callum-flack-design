@@ -2,7 +2,7 @@
 layout: page
 title:  A designer who codes
 pageTitle: About
-lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
+# lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -100,7 +100,9 @@ When Callum builds websites, he advocates for these future-facing tools:
 - Building interfaces with Vue.js (or React.js)
 - A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
 
-No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. To ensure this kind of comprehension, Callum will ask questions and listen. This has a knock-on effect: it helps define bigger possibilities and better constraints to work with. 
+<!-- No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. To ensure this kind of comprehension, Callum will ask questions and listen. This has a knock-on effect: it helps define bigger possibilities and better constraints to work with.  -->
+
+No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. This also helps define bigger possibilities and better constraints to work with, and anticipates problems ahead of time during the project. 
 
 <!-- our intentions and end -->
 <!-- - micro-frontends with functional elements separated by concern -->
@@ -113,7 +115,7 @@ No tools, skills or experience matter without good project definition and mutual
 
 <!-- ### Experienced -->
 
-## Bio
+## Experience
 
 Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
 

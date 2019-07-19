@@ -45,11 +45,11 @@
               </li>
             </ul>
           </div>
-          <hr class="border-b border-text m-0" />
+          <hr class="border-b border-tex m-0" />
         </div>
 
         <div class="st-m">
-          <SliderSlides class="Grid-extract--cards">
+          <SliderSlides class="">
             <SliderSlide
               v-if="featuredPosts && featuredPosts.length > 0"
               class="st-2xh"

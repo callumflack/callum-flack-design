@@ -17,14 +17,14 @@
 .Metaheading,
 .Markdown h3,
 .Markdown h2 {
-  @apply font-sans font-medium leading-tight tracking-text;
+  @apply font-sans leading-tight tracking-text;
+  /* @apply font-medium */
 }
 
 .Markdown h2 {
   font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
 }
 .Markdown h3 {
-  @apply mb-2 !important;
   font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
 
@@ -59,6 +59,7 @@
 }
 
 .Display {
-  @apply tracking-tight leading-none font-medium;
-  font-size: calc(theme(fontSize.4xl) * var(--title-ratio));
+  @apply tracking-tight leading-none;
+  /* @apply font-medium; */
+  font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }

@@ -1,16 +1,13 @@
 <template>
   <div class="AspectMedia Grid-extract--post">
-    <Aspect
-      :ratio="ratio"
-      :class="{ 'Frame' : frame || caption }"
-    >
-      <ImageDynamic
-        :src="image"
-        :alt="title"
-      />
+    <Aspect :ratio="ratio" :class="{ Frame: frame || caption }">
+      <ImageDynamic :src="image" :alt="title" />
     </Aspect>
-    <figcaption v-if="caption" class="Text--base text-gray st-h" v-html="caption">
-    </figcaption>
+    <figcaption
+      v-if="caption"
+      class="Text--base text-gray st-h"
+      v-html="caption"
+    ></figcaption>
   </div>
 </template>
 
@@ -21,16 +18,16 @@ import ImageDynamic from "./ImageDynamic";
 export default {
   components: {
     Aspect,
-    ImageDynamic
+    ImageDynamic,
   },
   props: {
     image: String,
     title: String,
     caption: String,
     ratio: String,
-    frame: Boolean
-  }
-}
+    frame: Boolean,
+  },
+};
 </script>
 
 <style lang="postcss" scoped>

@@ -1,7 +1,7 @@
 <template>
   <Wrap :page="page" kind="post">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="Grid-extract--edge" :style="heroBlockColor">
+      <header class="Grid-extract--edge Block-sm-t" :style="heroBlockColor">
         <!-- post hero with image -->
         <div
           v-if="page.attributes.hero && page.attributes.hero.showCover"
@@ -134,8 +134,4 @@ export default {
   margin-top: calc(theme(spacing.10) * var(--block-size-ratio));
   margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
 }
-
-/* .Sun svg {
-  @apply border border-text rounded-full p-2;
-} */
 </style>

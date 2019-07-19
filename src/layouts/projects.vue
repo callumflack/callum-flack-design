@@ -13,7 +13,7 @@
                   class="Tab-controls--button Meta"
                   @click="goToIndex(0)"
                 >
-                  Featured
+                  Archive
                 </button>
               </li>
               <li>
@@ -22,7 +22,7 @@
                   class="Tab-controls--button Meta"
                   @click="goToIndex(1)"
                 >
-                  Archive
+                  Featured
                 </button>
               </li>
             </ul>
@@ -30,16 +30,6 @@
         </div>
 
         <SliderSlides class="st-2xh">
-          <SliderSlide v-if="featuredPosts">
-            <div class="container container--list">
-              <CardRow
-                v-for="post in featuredPosts"
-                :key="post.attributes.permalink"
-                :post="post"
-                class=""
-              ></CardRow>
-            </div>
-          </SliderSlide>
           <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
             <div class="container container--list">
               <div
@@ -57,6 +47,16 @@
               </div>
             </div>
           </SliderSlide>
+          <SliderSlide v-if="featuredPosts">
+            <div class="container container--list">
+              <Card
+                v-for="post in featuredPosts"
+                :key="post.attributes.permalink"
+                :post="post"
+                class=""
+              ></Card>
+            </div>
+          </SliderSlide>
           <!-- <SliderSlide v-if="devPosts && devPosts.length > 0">
             <Card
               v-for="post in devPosts"
@@ -71,6 +71,7 @@
 </template>
 
 <script>
+import Card from "../components/Card.vue";
 import CardRow from "../components/CardRow.vue";
 import SliderFrame from "../components/SliderFrame.vue";
 import SliderSlides from "../components/SliderSlides.vue";
@@ -79,38 +80,39 @@ import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {
+    Card,
     CardRow,
     SliderFrame,
     SliderSlides,
     SliderSlide,
-    Wrap
+    Wrap,
   },
 
   props: ["page"],
 
   computed: {
     allPostsUngrouped() {
-      return this.page.posts
-        .filter(x => x.attributes.category === "projects")
+      return this.page.posts.filter(x => x.attributes.category === "projects");
     },
     allPosts() {
       return this.groupByYear(this.allPostsUngrouped);
     },
     featuredPosts() {
-      return this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("featured"))
+      return this.allPostsUngrouped.filter(x => x.attributes.tags.includes("featured"));
       // const posts = this.allPostsUngrouped
       //   .filter(x => x.attributes.tags.includes("featured"))
       // return this.groupByYear(posts);
     },
     designPosts() {
-      const posts = this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("UI"))
+      const posts = this.allPostsUngrouped.filter(x =>
+        x.attributes.tags.includes("UI")
+      );
       return this.groupByYear(posts);
     },
     devPosts() {
-      const posts = this.allPostsUngrouped
-        .filter(x => x.attributes.tags.includes("code"))
+      const posts = this.allPostsUngrouped.filter(x =>
+        x.attributes.tags.includes("code")
+      );
       return this.groupByYear(posts);
     },
   },
@@ -139,11 +141,13 @@ export default {
      * @return {object}
      */
     groupByYear(posts) {
-      return posts
-        // Unsure if saber is ordering by date
-        // If it is already you can remove this
-        .sort(this.sortByDate)
-        .reduce(this.groupByYearMethod, {});
+      return (
+        posts
+          // Unsure if saber is ordering by date
+          // If it is already you can remove this
+          .sort(this.sortByDate)
+          .reduce(this.groupByYearMethod, {})
+      );
     },
   },
 };

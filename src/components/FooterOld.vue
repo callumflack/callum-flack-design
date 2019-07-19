@@ -8,25 +8,8 @@
         :class="[linkTypography, spacerClasses]"
         class="h-full w-full"
       >
-        <div class="container container--text">
-          <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
-          <div class="Grid-extract--post">
-            <div class="relative">
-              <div class="absolute inset-0">
-                <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--text">
-                    <!-- post title -->
-                    <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
-                    <p class="Display s-2xh">
-                      <span class="Logo-arrow mr-1">&#8593;</span>
-                      <span>Up</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <span class="Logo-arrow mr-1">&#8593;</span>
+        <span>Up</span>
       </a>
     </template>
     <!-- next post -->
@@ -67,25 +50,8 @@
     <!-- CFd -->
     <template v-else>
       <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
-        <div class="container container--text">
-          <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
-          <div class="Grid-extract--post">
-            <div class="relative">
-              <div class="absolute inset-0">
-                <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--text">
-                    <!-- post title -->
-                    <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
-                    <p class="Display s-2xh">
-                      <span class="Logo-arrow mr-1">&#8592;</span>
-                      <span style="text-transform:initial">Home</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <span class="Logo-arrow mr-1">&#8592;</span>
+        <span style="text-transform:initial">Home</span>
       </saber-link>
     </template>
   </footer>

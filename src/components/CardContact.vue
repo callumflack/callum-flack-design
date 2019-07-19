@@ -1,13 +1,10 @@
 <template>
   <div class="Card">
-    <div class="Card-figure w-4/12 sm:w-3/12 s-h sm:mb-0">
-      <ImageDynamic
-        cover
-        src="/images/cf-dwts-DB30312-recut.jpg"
-        alt="Callum Flack"
-      />
+    <!-- <div class="Card-figure w-4/12 sm:w-3/12 s-h sm:mb-0">
+      <ImageDynamic cover src="/images/cf-dwts-DB30312-recut.jpg" alt="Callum Flack" />
     </div>
-    <div class="Card-body sm:w-8/12">
+    <div class="Card-body sm:w-8/12"> -->
+    <div class="Card-body">
       <div class="s-h sm:-mt-1">
         <h1 v-if="title" class="Display s-m">
           {{ title }}
@@ -17,7 +14,11 @@
         </p>
         <ul class="Text--base text-gray">
           <li>
-            <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
+            <a
+              :href="`mailto:${this.$siteConfig.email}`"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <icon name="email" class="mr-1"></icon>
               {{ this.$siteConfig.email }}
             </a>
@@ -29,7 +30,11 @@
           </a>
         </li> -->
           <li>
-            <a :href="`https://twitter.com/${this.$siteConfig.social.twitter}`" target="_blank" rel="noopener noreferrer">
+            <a
+              :href="`https://twitter.com/${this.$siteConfig.social.twitter}`"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <icon name="twitter" class="mr-1"></icon>
               @{{ this.$siteConfig.social.twitter }}
             </a>
@@ -37,7 +42,7 @@
         </ul>
       </div>
 
-      <FormNewsletter class="lg:w-11/12" />
+      <!-- <FormNewsletter class="lg:w-11/12" /> -->
     </div>
   </div>
 </template>
@@ -47,8 +52,8 @@ import Aspect from "../components/Aspect";
 import ImageDynamic from "../components/ImageDynamic";
 import FormNewsletter from "../components/FormNewsletter";
 import Vue from "vue";
-import SvgIcon from 'vue-svgicon';
-import '../components/icons';
+import SvgIcon from "vue-svgicon";
+import "../components/icons";
 
 Vue.use(SvgIcon, {
   tagName: "icon",
@@ -61,13 +66,13 @@ export default {
   components: {
     Aspect,
     ImageDynamic,
-    FormNewsletter
+    FormNewsletter,
   },
   props: {
     title: String,
     lede: String,
-  }
-}
+  },
+};
 </script>
 
 <style lang="postcss" scoped>

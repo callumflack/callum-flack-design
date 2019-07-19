@@ -38,9 +38,7 @@ I think we’re seeing _a generational shift in web development between the prop
 
 Let me give you an example of how this is happening. Some of my clients have small- to medium-sized legacy websites on Wordpress. By legacy, I mean these websites have been alive for a number of years, I've inherited the project and it's my job to maintain and extend it's lifespan. Because they need a website.^1^
 
-The problem I've seen lately is that _these kinds of legacy websites are slow, graceless experiences and my clients and their audiences are starting to sense it_. So they're asking me to upgrade these experiences but a quick glance at the codebase tells me 1) it's no wonder they're slow and graceless, and 2) I know there's a better way to do this.
-
-And this better way starts with understanding three important facts:
+The problem I've seen lately is that _these kinds of legacy websites are slow, graceless experiences and my clients and their audiences are starting to sense it_. So they're asking me to upgrade these experiences but a quick glance at the codebase tells me 1) it's no wonder they're slow and graceless, and 2) I know there's a better way to do this. And this better way starts with understanding three important facts:
 
 - _**APIs change everything.**_ In the past, bundling features into a web publishing tool made sense. It wasn't easy to integrate services with an external API because the technology wasn't available. But now it is. So instead waiting for your publishing platform to become a swiss army knife, you can choose to integrate an API-based service who lives and dies by doing that one service better they ever will.
 
