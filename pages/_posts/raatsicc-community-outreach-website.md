@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2019-06-15
-title: RAATSICC website
+title: RAATSICC
 lede: A content-managed website to help spread community outreach news and education.
 link: https://www.raatsicc.org.au/
 assets: 

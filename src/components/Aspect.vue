@@ -1,10 +1,5 @@
 <template>
-  <component
-    :is="isType"
-    :ratio="ratio"
-    :style="aspectRatio"
-    class="Aspect"
-  >
+  <component :is="isType" :ratio="ratio" :style="aspectRatio" class="Aspect">
     <slot />
   </component>
 </template>
@@ -26,7 +21,7 @@ export default {
       type: String,
       default: "9/16",
     },
-    figure: Boolean
+    figure: Boolean,
   },
   computed: {
     isType() {
@@ -46,8 +41,7 @@ export default {
 }
 
 /* if any figure, no margin */
-figure
-.Aspect >>> figure {
+figure .Aspect >>> figure {
   @apply m-0;
 }
 
@@ -61,7 +55,7 @@ figure
   @apply absolute inset-0 h-full w-full; /* 1 */
 }
 .Aspect >>> img {
-  @apply object-cover ; /* 2 */
+  @apply object-cover; /* 2 */
 }
 
 /* Alt? */

@@ -71,6 +71,12 @@
 
 @font-face {
   font-family:"Text";
+  src: url("/../../fonts/Suisse-BP-Intl-Thin.otf") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family:"Text";
   /* src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
   src: url("/../../fonts/Graphik-Regular.otf") format("woff");
   src: url("/../../fonts/Scto Grotesk A Regular.otf") format("woff");

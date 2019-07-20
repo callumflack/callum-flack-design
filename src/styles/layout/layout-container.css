@@ -17,15 +17,19 @@
   /* max-width: calc(theme(screens.md) - 2rem) !important;
   max-width: theme(screens.lg) !important; */
   max-width: 840px !important;
+  max-width: 740px !important;
 }
 
 .container--hero {
-  padding: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 @screen lg {
   .container {
-    padding: 0 !important;
+    /* @apply border; */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

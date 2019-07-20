@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2019-04-01
-title: Avari Capital Partners website
+title: Avari Capital Partners
 client: Paper Stone Scissors
 link: https://avaricapitalpartners.com.au/
 assets:

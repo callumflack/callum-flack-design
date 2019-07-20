@@ -14,19 +14,20 @@ siteConfig:
 
 themeConfig:
   nav:
-    - text: CFd
-      link: /
     - text: projects
       link: /projects.html
     - text: writing
       link: /writing.html
-    - text: littoral line
+    - text: newsletter
       link: /the-littoral-line.html
     - text: about
       link: /about.html
   social:
     rss: true
   lang: en
+
+build:
+  # extractCSS: true
 
 permalinks:
   post: /blog/:slug.html
@@ -43,15 +44,6 @@ plugins:
       trackId: "UA-116668558-1"
   - resolve: saber-plugin-sitemap
   - resolve: saber-plugin-medium-zoom
-    options:
-      # See https://github.com/francoischalifour/medium-zoom/#api
-      selector: '[data-zoomable]'
-      # option:
-        # margin: 24
-        # background: '#BADA55'
-        # scrollOffset: 0
-        # container: '#zoom-container'
-        # template: '#zoom-template'
 
 markdown:
   plugins:

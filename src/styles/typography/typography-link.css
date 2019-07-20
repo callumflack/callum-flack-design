@@ -28,6 +28,12 @@ ol a:hover:not(.Button), */
   text-decoration: none !important;
 }
 
+/*
+
+  Target blank arrow
+
+ */
+
 /* denotes target="_blank" using &#8599; */
 .Link--blank {
   @apply inline-block;
@@ -40,6 +46,17 @@ ol a:hover:not(.Button), */
   font-size: 55%;
   margin-left: -0.1em;
   transform: translateY(-0.5em);
+}
+.Display .Link--blank {
+  @apply opacity-0;
+  font-size: 100%;
+  margin-left: -0.1em;
+  transform: translate(-0.25em, 0);
+  transition: transform 250ms ease;
+}
+.Display:hover .Link--blank {
+  @apply opacity-100;
+  transform: translate(0, 0);
 }
 
 /* LINK BLOCKS */

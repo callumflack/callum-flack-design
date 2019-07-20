@@ -1,11 +1,10 @@
 <template>
   <div class="Card">
-    <!-- <div class="Card-figure w-4/12 sm:w-3/12 s-h sm:mb-0">
+    <div class="Card-figure w-4/12 sm:w-3/12 s-h sm:mb-0">
       <ImageDynamic cover src="/images/cf-dwts-DB30312-recut.jpg" alt="Callum Flack" />
     </div>
-    <div class="Card-body sm:w-8/12"> -->
-    <div class="Card-body">
-      <div class="s-h sm:-mt-1">
+    <div class="Card-body sm:w-8/12">
+      <div class="sm:-mt-1">
         <h1 v-if="title" class="Display s-m">
           {{ title }}
         </h1>
@@ -23,12 +22,16 @@
               {{ this.$siteConfig.email }}
             </a>
           </li>
-          <!-- <li>
-          <a :href="`tel:${this.$siteConfig.phone.replace(' ', '-')}`" target="_blank" rel="noopener noreferrer">
-            <icon name="phone" class="mr-1"></icon>
-            {{ this.$siteConfig.phone }}
-          </a>
-        </li> -->
+          <li>
+            <a
+              :href="`tel:${this.$siteConfig.phone.replace(' ', '-')}`"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <icon name="phone" class="mr-1"></icon>
+              {{ this.$siteConfig.phone }}
+            </a>
+          </li>
           <li>
             <a
               :href="`https://twitter.com/${this.$siteConfig.social.twitter}`"
@@ -48,23 +51,12 @@
 </template>
 
 <script>
-import Aspect from "../components/Aspect";
 import ImageDynamic from "../components/ImageDynamic";
 import FormNewsletter from "../components/FormNewsletter";
-import Vue from "vue";
-import SvgIcon from "vue-svgicon";
 import "../components/icons";
-
-Vue.use(SvgIcon, {
-  tagName: "icon",
-  isOriginalDefault: true,
-  defaultWidth: "0.9em",
-  defaultHeight: "0.9em",
-});
 
 export default {
   components: {
-    Aspect,
     ImageDynamic,
     FormNewsletter,
   },
@@ -106,7 +98,7 @@ export default {
   }
   .Card-body {
     /* @apply h-full flex flex-col justify-between; */
-    @apply pl-3;
+    @apply pl-4;
   }
 }
 
@@ -115,10 +107,10 @@ export default {
     /* @apply py-3; */
   }
   .Card-figure {
-    width: calc(100% * 6 / 24);
+    width: calc(100% * 5 / 24);
   }
   .Card-body {
-    width: calc(100% * 18 / 24);
+    width: calc(100% * 19 / 24);
   }
 }
 

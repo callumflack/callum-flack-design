@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2017-08-12
-title: Album Registry web app
+title: Album Registry
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 link: https://albumregistry.com/
 assets:

@@ -72,12 +72,6 @@ export default {
   @apply text-text !important;
 }
 
-/* CARD EXTERNAL LINK */
-/* can't find where it's off so this is a hack… */
-.Card >>> .ExternalLink .Link--blank {
-  transform: translate(-55px, -0.5em);
-}
-
 /* CARD BODY */
 
 .Card-body {

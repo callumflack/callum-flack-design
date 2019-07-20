@@ -1,34 +1,27 @@
 <template>
   <header id="top">
-    <!-- home or newsletter -->
-    <HeaderTitleWrap v-if="$route.path === '/' || $route.path.includes('littoral')">
-      <h1 v-if="title" class="Display s-h">{{ title }}</h1>
-      <p v-if="lede" class="Link Text--sm text-gray">
-        {{ lede }}
-        <saber-link v-if="$route.path === '/'" to="/about.html" class="text-text">
-          Learn more &#8594;
-        </saber-link>
-      </p>
-      <div v-if="$route.path.includes('littoral')" class="st-h w-full">
-        <FormNewsletter />
-      </div>
-    </HeaderTitleWrap>
-
     <!-- about card -->
-    <div v-if="$route.path === '/about.html'" class="Block Block--withNav">
+    <div v-if="$route.path === '/about.html'" class="Block">
       <div class="container container--text">
         <CardContact :title="title" :lede="lede" />
       </div>
     </div>
 
-    <!-- projects or writing archives -->
+    <!-- projects or writing or newsletter -->
     <HeaderTitleWrap
-      v-if="$route.path === '/projects.html' || $route.path === '/writing.html'"
+      v-else-if="
+        $route.path === '/projects.html' ||
+          $route.path === '/writing.html' ||
+          $route.path.includes('littoral')
+      "
     >
-      <h1 v-if="title" class="Display s-h">{{ title }}</h1>
-      <p v-if="lede" class="Link Text--sm text-gray">
-        {{ lede }}
-      </p>
+      <div class="lg:w-9/12">
+        <h1 v-if="title" class="Display s-h">{{ title }}</h1>
+        <p v-if="lede" class="Link Text--sm text-gray">
+          {{ lede }}
+        </p>
+        <FormNewsletter v-if="$route.path.includes('littoral')" class="st-h w-full" />
+      </div>
     </HeaderTitleWrap>
   </header>
 </template>
@@ -39,12 +32,8 @@
   Header component
   …uses Block classes to align layout.
 
-  Used on:
-  * Home
-  * Newsletter
-  * About
-  * Writing (not in nav)
-  * Projects (not in nav)
+  * imported into `Wrap` component
+  * Used on everything *but* `Post` layout
 
 */
 import CardContact from "../components/CardContact";

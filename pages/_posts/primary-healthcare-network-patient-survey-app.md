@@ -1,7 +1,7 @@
 ---
 layout: post
 category: projects
-title: PHN NQ web app
+title: Primary Healthcare Network NQ
 date: 2016-08-12
 lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
 tags: 

@@ -14,7 +14,8 @@
 
 @screen md {
   .Grid-extract--post {
-    --width: calc(theme(screens.sm) + 4rem);
+    /* --width: calc(theme(screens.sm) + 4rem); */
+    --width: 740px;
     /* left: calc((-0.5 * 744px) + 50%);
     position: relative;
     width: 744px !important; */

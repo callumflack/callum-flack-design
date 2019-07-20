@@ -1,18 +1,6 @@
 <template>
   <Wrap :page="page" kind="index">
-    <div class="Grid-extract--edge bg-brand-bg">
-      <div class="container container--list">
-        <ul class="Tab-controls">
-          <li>
-            <button class="Tab-controls--button is-active Meta">
-              Archive
-            </button>
-          </li>
-        </ul>
-      </div>
-      <hr class="border-b m-0" />
-    </div>
-
+    <IndexStaticSubnav></IndexStaticSubnav>
     <div class="st-m">
       <CardRowIssue
         v-for="(issue, index) in page.attributes.issues"
@@ -25,11 +13,13 @@
 
 <script>
 import CardRowIssue from "../components/CardRowIssue.vue";
+import IndexStaticSubnav from "../components/IndexStaticSubnav.vue";
 import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {
     CardRowIssue,
+    IndexStaticSubnav,
     Wrap,
   },
   props: ["page"],

@@ -11,7 +11,7 @@ assets:
   # cover: https://cfd-saber.imgix.net/images/seachange-desktop-home-sunset-16-9.jpg
   cover: /images/seachange-desktop-home-sunset-1440.jpg
 card:
-  externalLink: true
+  # externalLink: true
 tags: 
 - design
 - frontend

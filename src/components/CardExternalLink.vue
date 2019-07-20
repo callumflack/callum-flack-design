@@ -1,6 +1,6 @@
 <template>
   <span class="ExternalLink Text--xs">
-    {{ label }}
+    Visit
     <span class="Link--blank">&#8599;</span>
   </span>
 </template>
@@ -32,10 +32,10 @@ export default {
 .ExternalLink .Link--blank {
   @apply inline-block;
   @apply text-text !important;
-  font-size: 96%;
+  font-size: 125%;
   margin-left: 0;
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translate(-45px, -0.5em);
+  transform: translate(-23px, 0em);
 }
 
 .Card:hover .ExternalLink {
@@ -44,6 +44,7 @@ export default {
 }
 .Card:hover .ExternalLink .Link--blank {
   @apply text-white !important;
+  font-size: 96%;
   transform: translate(0, -0.1em);
 }
 </style>

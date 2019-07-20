@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2016-12-10
-title: The Substation website
+title: The Substation
 lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
 link: https://thesubstation.org.au/
 assets: 

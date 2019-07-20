@@ -2,7 +2,7 @@
 layout: page
 title:  A designer who codes
 pageTitle: About
-# lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
+lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
 ---
 
 <!-- <div class="ParagraphImage w-1x3 w-lg-3x12 m-r6 p-b3">
@@ -64,7 +64,7 @@ pageTitle: About
 
 <!-- Callum bridges the gap between design and code.  -->
 
-Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience and information structure, and he can build it too. The difference isn't obvious until it is. You can break down the work Callum does into three parts:
+Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience and information structure, and he can build it too. The difference isn't obvious until it is. You can break down the work Callum does into:
 
 <!-- After a successful decade working in Brisbane, London and Melbourne as a graphic designer, he was increasingly frustrated with the development bottlenecks of implementing interface design, so in 2010 he started coding. -->
 

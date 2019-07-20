@@ -1,7 +1,7 @@
 ---
 category: projects
 layout: post
-title: Ward6 website
+title: Ward6
 date: 2015-01-10
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.
 assets: 

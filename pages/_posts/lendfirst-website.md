@@ -2,7 +2,7 @@
 category: projects
 layout: post
 date: 2017-01-15
-title: LendFirst website
+title: LendFirst
 lede: A content-managed website to help spread positive community outreach news.
 link: https://lendfirst.com.au/
 assets: 

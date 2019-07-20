@@ -2,7 +2,7 @@
 category: projects
 layout: post
 date: 2017-01-12
-title: Oceanblue Living website
+title: Oceanblue Living
 lede: A website and brand revision to help create a community around transformative architectural metalworks.
 assets:
   cover: /images/oceanblueliving-hero-silver-1440.jpg
@@ -16,6 +16,7 @@ tags:
 Oceanblue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.
 
 <Media ratio="4740/2160" image="/images/oceanblueliving-desktop-layouts.png" />
+<!-- <img src="/images/oceanblueliving-desktop-layouts.png" /> -->
 
 Their metalworks are rugged and beautiful. To capture this, we collaborated with home and landscape specialist [J-Create Photography](http://j-create.com.au/). The website design makes full use of the results, immersing the viewer in the variety of works.
 

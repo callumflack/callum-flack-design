@@ -2,7 +2,7 @@
 layout: post
 category: projects
 date: 2017-11-21
-title: VJ Ray websites
+title: VJ Ray
 lede: A series of websites to help one of Sydney's oldest Real Estate agencies show how they put people first.
 assets: 
   cover: /images/vjray-hero.jpg

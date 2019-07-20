@@ -14,12 +14,11 @@
             <div class="relative">
               <div class="absolute inset-0">
                 <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--text">
+                  <div class="container container--list">
                     <!-- post title -->
                     <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
                     <p class="Display s-2xh">
-                      <span class="Logo-arrow mr-1">&#8593;</span>
-                      <span>Up</span>
+                      &#8593; Up
                     </p>
                   </div>
                 </div>
@@ -39,8 +38,8 @@
         <div class="container container--text">
           <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
           <!-- <p class="Text--base s-2xh">Next post:</p> -->
-          <div class="Grid-extract--post">
-            <div class="relative">
+          <div class="Grid-extract--edge">
+            <div class="container container--hero relative">
               <Aspect ratio="1/2" :class="heroImageBlend">
                 <ImageDynamic
                   v-if="nextpost && nextpost.hero"
@@ -65,7 +64,7 @@
       </saber-link>
     </template>
     <!-- CFd -->
-    <template v-else>
+    <!-- <template v-else>
       <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
         <div class="container container--text">
           <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
@@ -73,12 +72,10 @@
             <div class="relative">
               <div class="absolute inset-0">
                 <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--text">
-                    <!-- post title -->
-                    <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
+                  <div class="container container--list">
                     <p class="Display s-2xh">
                       <span class="Logo-arrow mr-1">&#8592;</span>
-                      <span style="text-transform:initial">Home</span>
+                      <span style="text-transform:initial">CFd</span>
                     </p>
                   </div>
                 </div>
@@ -87,6 +84,9 @@
           </div>
         </div>
       </saber-link>
+    </template> -->
+    <template v-else>
+      <div :class="spacerClasses" class="h-full w-full"></div>
     </template>
   </footer>
 </template>

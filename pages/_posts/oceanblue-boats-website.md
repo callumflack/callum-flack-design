@@ -2,7 +2,7 @@
 category: projects
 layout: post
 date: 2017-09-12
-title: Oceanblue Boats website
+title: Oceanblue Boats
 lede: A website that tells a story about building boats and getaway adventures.
 assets: 
   cover: /images/oceanblueboats-video-poster.jpg

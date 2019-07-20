@@ -74,8 +74,8 @@ export default {
 .v-lazy-image {
   filter: blur(10px);
   opacity: 0;
-  min-height: 100%;
-  min-width: 100%;
+  /* min-height: 100%;
+  min-width: 100%; */
   transition: all 0.5s ease-in;
   transform: scale(1.025); /*1 */
 }

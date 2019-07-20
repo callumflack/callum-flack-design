@@ -12,7 +12,7 @@ hero:
   ratio: 8 / 16
   imageBlend: true
   titleInvert: true
-  titleWidth: sm:w-6/12
+  titleWidth: sm:w-8/12
 nextPost:
   title: The instantaneous language of beauty
   link: /blog/the-instantaneous-language-of-beauty.html

@@ -16,7 +16,8 @@
 .Tab-controls--button {
   @apply border-b-4 border-transparent;
   @apply inline-flex items-center;
-  height: calc(theme(spacing.12) * var(--space-ratio));
+  border-bottom-width: 3px;
+  height: calc(theme(spacing.16) * var(--space-ratio));
   transform: translateY(1px);
 }
 

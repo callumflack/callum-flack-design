@@ -1,7 +1,7 @@
 ---
 layout: newsletter
 title: The Littoral Line
-lede: The Littoral Line is an irregular email letter on creativity, design, development systems and complexity through the lens of people and attention. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the momentary alignment of connected thoughts. Because you got this far, you should definitely sign up.
+lede: The Littoral Line is an irregular email letter on creativity, design and systems complexity through the lens of people and attention. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the momentary alignment of connected thoughts. Because you got this far, you should definitely sign up.
 newsletter: true
 issues:
   - title: These extensions of our senses…

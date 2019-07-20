@@ -1,9 +1,13 @@
 <template>
   <div>
-    <HeaderNav />
-    <Header :title="page.attributes.title" :lede="page.attributes.lede" />
-    <main aria-label="Content" class="">
-      <div class="container" :class="containerType">
+    <Nav :category="page.attributes.category" />
+    <Header
+      v-if="!$route.path.includes('blog')"
+      :title="page.attributes.title"
+      :lede="page.attributes.lede"
+    />
+    <main aria-label="Content">
+      <div class="" :class="containerType">
         <slot></slot>
       </div>
     </main>
@@ -14,13 +18,13 @@
 <script>
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
-import HeaderNav from "../components/HeaderNav";
+import Nav from "../components/Nav";
 
 export default {
   components: {
     Footer,
     Header,
-    HeaderNav,
+    Nav,
   },
   props: {
     page: Object,
@@ -31,13 +35,13 @@ export default {
       return this.$siteConfig.title;
     },
     containerType() {
-      return this.kind === "post" ? "container--text" : "container--list";
+      if (this.$route.path === "/") {
+        return;
+      } else if (this.kind === "post") {
+        return "container container--text";
+      }
+      return "container container--list";
     },
-    /* mainHomeClass() {
-      // return this.$route.path === "/" && "bg-brand-neutral";
-      // return this.page.attributes.type === "page" && "bg-brand-neutral";
-      return this.kind === "index" && "bg-brand-neutral";
-    } */
   },
   head() {
     const { excerpt } = this.page;

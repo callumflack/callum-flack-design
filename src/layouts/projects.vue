@@ -1,95 +1,42 @@
 <template>
   <Wrap :page="page">
-    <!-- <slot name="default"></slot> -->
+    <IndexStaticSubnav></IndexStaticSubnav>
+    <div class="st-m">
+      <CardRow
+        v-for="post in allPostsUngrouped"
+        :key="post.attributes.permalink"
+        :post="post"
+      ></CardRow>
+    </div>
 
-    <SliderFrame>
-      <div slot-scope="{ activeIndex, goToIndex }">
-        <div class="Grid-extract--edge border-b">
-          <div class="container container--list">
-            <ul class="Tab-controls">
-              <li>
-                <button
-                  :class="{ 'is-active': activeIndex === 0 }"
-                  class="Tab-controls--button Meta"
-                  @click="goToIndex(0)"
-                >
-                  Archive
-                </button>
-              </li>
-              <li>
-                <button
-                  :class="{ 'is-active': activeIndex === 1 }"
-                  class="Tab-controls--button Meta"
-                  @click="goToIndex(1)"
-                >
-                  Featured
-                </button>
-              </li>
-            </ul>
-          </div>
+    <!-- <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
+      <div class="container container--list">
+        <div v-for="year in Object.keys(allPosts).reverse()" :key="year" class="Year">
+          <h3 class="Meta Meta--year">{{ year }}</h3>
+          <CardRow
+            v-for="post in allPosts[year]"
+            :key="post.attributes.permalink"
+            :post="post"
+            class=""
+          ></CardRow>
         </div>
-
-        <SliderSlides class="st-2xh">
-          <SliderSlide v-if="allPosts && Object.keys(allPosts).length > 0">
-            <div class="container container--list">
-              <div
-                v-for="year in Object.keys(allPosts).reverse()"
-                :key="year"
-                class="Year"
-              >
-                <h3 class="Meta Meta--year">{{ year }}</h3>
-                <CardRow
-                  v-for="post in allPosts[year]"
-                  :key="post.attributes.permalink"
-                  :post="post"
-                  class=""
-                ></CardRow>
-              </div>
-            </div>
-          </SliderSlide>
-          <SliderSlide v-if="featuredPosts">
-            <div class="container container--list">
-              <Card
-                v-for="post in featuredPosts"
-                :key="post.attributes.permalink"
-                :post="post"
-                class=""
-              ></Card>
-            </div>
-          </SliderSlide>
-          <!-- <SliderSlide v-if="devPosts && devPosts.length > 0">
-            <Card
-              v-for="post in devPosts"
-              :post="post"
-              :key="post.attributes.permalink"
-            ></Card>
-          </SliderSlide> -->
-        </SliderSlides>
       </div>
-    </SliderFrame>
+    </SliderSlide> -->
   </Wrap>
 </template>
 
 <script>
-import Card from "../components/Card.vue";
 import CardRow from "../components/CardRow.vue";
-import SliderFrame from "../components/SliderFrame.vue";
-import SliderSlides from "../components/SliderSlides.vue";
-import SliderSlide from "../components/SliderSlide.vue";
+import IndexStaticSubnav from "../components/IndexStaticSubnav.vue";
 import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {
-    Card,
     CardRow,
-    SliderFrame,
-    SliderSlides,
-    SliderSlide,
+    IndexStaticSubnav,
     Wrap,
   },
-
   props: ["page"],
-
   computed: {
     allPostsUngrouped() {
       return this.page.posts.filter(x => x.attributes.category === "projects");
@@ -116,7 +63,7 @@ export default {
       return this.groupByYear(posts);
     },
   },
-
+  /* …unused methods to group by year */
   methods: {
     sortByDate(a, b) {
       new Date(b.attributes.date) - new Date(a.attributes.date);

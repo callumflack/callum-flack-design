@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderNav />
+    <Nav />
     <header>
       <HeaderTitleWrap>
         <h1 class="Display s-h">404 page not found</h1>
@@ -28,13 +28,13 @@
 </template>
 
 <script>
-import HeaderNav from "../components/HeaderNav";
+import Nav from "../components/Nav";
 import HeaderTitleWrap from "../components/HeaderTitleWrap";
 // import Footer from '../components/Footer'
 
 export default {
   components: {
-    HeaderNav,
+    Nav,
     HeaderTitleWrap,
     // Footer
   },

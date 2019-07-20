@@ -18,14 +18,14 @@
       }}</time>
       <!-- category & tags -->
       <span class="Text--sm inline-block tracking-tighter mx-2px">&mdash;&mdash;</span>
-      <span class="Text--sm inline-block capitalize"> {{ attributes.category }}: </span>
+      <!-- <span class="Text--sm inline-block capitalize"> {{ attributes.category }}: </span> -->
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
         :key="index"
         class="Text--sm"
       >
         <span v-if="index != 0">,</span>
-        <span class="lowercase">{{ tag }}</span>
+        <span class="capitalize">{{ tag }}</span>
       </span>
       <!-- reading time -->
       <template v-if="attributes.category === 'writing'">
@@ -68,7 +68,7 @@ export default {
     },
     heroMetaClass() {
       return this.attributes.hero && this.attributes.hero.titleInvert
-        ? "text-white"
+        ? "text-white opacity-75"
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
