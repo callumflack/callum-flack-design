@@ -56,7 +56,7 @@ import PostHeaderTitle from "../components/PostHeaderTitle";
 import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap.vue";
-import mediumZoom from "medium-zoom";
+// import mediumZoom from "medium-zoom";
 
 /*
 
@@ -113,13 +113,13 @@ export default {
       return this.page.attributes.tags.filter(x => x !== "featured");
     },
   },
-  mounted() {
+  /* mounted() {
     // https://codesandbox.io/s/github/francoischalifour/medium-zoom/tree/master/examples/vue
     mediumZoom(".Markdown img", {
       background: "#151515",
       margin: 100,
     });
-  },
+  }, */
   methods: {
     formatDate,
     formatListDate,

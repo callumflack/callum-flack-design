@@ -26,7 +26,7 @@
       </vue-glide>
     </IndexHomeBlock>
     <IndexHomeBlock :block="page.attributes.newsletter">
-      <FormNewsletter class="lg:w-9/12"></FormNewsletter>
+      <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
     </IndexHomeBlock>
   </Wrap>
 </template>

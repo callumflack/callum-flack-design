@@ -31,7 +31,7 @@
         </p>
       </header>
       <!-- posts slider -->
-      <div v-if="block.name === 'projects' || 'writing'" class="st-2xh">
+      <div v-if="block.name === 'projects' || 'writing'">
         <slot></slot>
       </div>
     </HeaderTitleWrap>
