@@ -1,17 +1,19 @@
 <template>
-  <div>
+  <div :class="reverseClass">
     <Nav :category="page.attributes.category" />
-    <Header
-      v-if="!$route.path.includes('blog')"
-      :title="page.attributes.title"
-      :lede="page.attributes.lede"
-    />
-    <main aria-label="Content">
-      <div class="" :class="containerType">
-        <slot></slot>
-      </div>
-    </main>
-    <Footer :kind="kind" :nextpost="page.attributes.nextPost" />
+    <div class="transition-body">
+      <Header
+        v-if="!$route.path.includes('blog')"
+        :title="page.attributes.title"
+        :lede="page.attributes.lede"
+      />
+      <main aria-label="Content">
+        <div class="" :class="containerType">
+          <slot></slot>
+        </div>
+      </main>
+      <Footer :kind="kind" :nextpost="page.attributes.nextPost" />
+    </div>
   </div>
 </template>
 
@@ -31,8 +33,8 @@ export default {
     kind: String,
   },
   computed: {
-    siteTitle() {
-      return this.$siteConfig.title;
+    reverseClass() {
+      return this.$route.path === "/" && "reverse";
     },
     containerType() {
       if (this.$route.path === "/") {
@@ -41,6 +43,9 @@ export default {
         return "container container--text";
       }
       return "container container--list";
+    },
+    siteTitle() {
+      return this.$siteConfig.title;
     },
   },
   head() {
@@ -98,7 +103,73 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.design-hack {
-  transform: translateY(-64px);
+/* TRANSITION */
+.page-enter-active .transition-body,
+.page-leave-active .transition-body {
+  transition: all 10333ms cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.page-leave-to .transition-body {
+  transform: translateX(5px);
+  opacity: 0;
+}
+
+/* REVERSE THEME */
+.reverse {
+  @apply bg-text;
+}
+.reverse >>> .Nav {
+  @apply bg-text;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.reverse >>> .Nav-logo {
+  border-right-color: rgba(255, 255, 255, 0.1);
+}
+.reverse >>> .Nav-link,
+.reverse >>> .Signal,
+.reverse >>> .Display,
+.reverse >>> h1,
+.reverse >>> h2,
+.reverse >>> h3,
+.reverse >>> .text-text {
+  @apply text-white;
+}
+.reverse >>> .Nav-link.is-active span:after,
+.reverse >>> .router-link-exact-active span:after {
+  @apply bg-white;
+}
+/* .reverse >>> .Card-body-meta {
+  @apply text-white;
+} */
+.reverse >>> .IndexBlock {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.reverse >>> .Card {
+  border-color: rgba(255, 255, 255, 0.1);
+  min-height: 210px;
+}
+.reverse >>> .Input {
+  --button-invert-color: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.reverse >>> .Button--outline {
+  --button-invert-color: theme(colors.white);
+  --button-color: theme(colors.white);
+}
+.reverse >>> .Link a:not(.Button),
+.reverse >>> .Markdown a:not(.Button) {
+  @apply text-gray-600;
+  box-shadow: inset 0 -1px 0 #555;
+}
+.reverse >>> .Link a:hover:not(.Button),
+.reverse >>> .Markdown a:hover:not(.Button) {
+  @apply text-text;
+  box-shadow: inset 0 -25px 0 theme(colors.white);
+}
+.reverse >>> .glide__slide {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.reverse >>> .glide button {
+  @apply text-gray-600;
 }
 </style>

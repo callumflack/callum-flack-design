@@ -5,6 +5,8 @@ category: writing
 title: Notes on Deciphering Sun Tzu
 lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy I’ve been raised on.
 readingTime: 6
+assets:
+  cover: /images/post-notes-on-sun-tzu-cover.jpg
 nextPost:
   title: The matter of taste
   link: /blog/the-matter-of-taste.html
@@ -13,7 +15,6 @@ tags:
   - notes
   - featured
 card:
-  quote: Plans are easily disrupted. And increased certainty exacerbates this effect.
   bgColor: rgb(205, 228, 205)
 ---
 

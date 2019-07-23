@@ -26,7 +26,7 @@ export default {
   /* @apply opacity-0; */
   padding: 3px 6px 1px 6px;
   transform: translate(-8px, -0.15em);
-  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .ExternalLink .Link--blank {
@@ -34,7 +34,7 @@ export default {
   @apply text-text !important;
   font-size: 125%;
   margin-left: 0;
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate(-23px, 0em);
 }
 

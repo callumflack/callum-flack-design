@@ -6,7 +6,7 @@
         v-smooth-scroll="{ duration: 1000 }"
         href="#top"
         :class="[linkTypography, spacerClasses]"
-        class="h-full w-full"
+        class="block h-full w-full"
       >
         <div class="container container--text">
           <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
@@ -64,27 +64,17 @@
       </saber-link>
     </template>
     <!-- CFd -->
-    <!-- <template v-else>
+    <template v-else-if="$route.path.includes('about')">
       <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
         <div class="container container--text">
-          <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
-          <div class="Grid-extract--post">
-            <div class="relative">
-              <div class="absolute inset-0">
-                <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--list">
-                    <p class="Display s-2xh">
-                      <span class="Logo-arrow mr-1">&#8592;</span>
-                      <span style="text-transform:initial">CFd</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="Display s-2xh">
+            <span class="Logo-arrow mr-1">&#8592;</span>
+            <span style="text-transform:initial">Home</span>
+          </p>
         </div>
       </saber-link>
-    </template> -->
+    </template>
+    <!-- if nothing, keep the footer white-space -->
     <template v-else>
       <div :class="spacerClasses" class="h-full w-full"></div>
     </template>
@@ -94,9 +84,6 @@
 <script>
 import Aspect from "./Aspect";
 import ImageDynamic from "./ImageDynamic";
-import Vue from "vue";
-import vueSmoothScroll from "vue-smooth-scroll";
-Vue.use(vueSmoothScroll);
 
 export default {
   components: {

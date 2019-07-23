@@ -7,30 +7,21 @@
         class="Card-figure"
       >
         <Aspect>
+          <!-- v-if="post.attributes.assets.cover.local" -->
           <img
-            v-if="post.attributes.assets.cover.local"
-            :src="post.attributes.assets.cover"
+            :src="
+              `${post.attributes.assets.cover}?w=500fit=crop&crop=entropy&auto=format&q=50`
+            "
             :alt="post.attributes.title"
             class="Card-figure-image"
           />
-          <ImageDynamic
+          <!-- <ImageDynamic
             v-else
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
-          />
+          /> -->
         </Aspect>
-      </div>
-      <!-- if no image, quote -->
-      <div
-        v-else-if="post.attributes.card && post.attributes.card.quote"
-        class="Card-figure"
-        :style="`background-color:${post.attributes.card.bgColor}`"
-      >
-        <Aspect> </Aspect>
-        <div class="absolute inset-0 flex items-center">
-          <p class="Title mx-4 lg:w-3/4">{{ post.attributes.card.quote }}</p>
-        </div>
       </div>
       <!-- body -->
       <div class="Card-body">
@@ -101,7 +92,8 @@ export default {
 }
 
 .Card-body {
-  @apply bg-brand-bg pt-3;
+  /* @apply bg-brand-bg; */
+  @apply pt-3;
   /* @apply px-2; */
 }
 

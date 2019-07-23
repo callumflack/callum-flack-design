@@ -5,6 +5,8 @@ category: writing
 title: How to publish a newsletter so you own your writing
 lede: Some hopefully helpful thoughts and tips on using a chain of web tools to streamline newsletter publishing, write in markdown, retain ownership and create a focus on writing. All without resorting to any product platform lock-in.
 readingTime: 5
+assets:
+  cover: /images/post-how-to-publish-your-newsletter-cover.jpg
 hero:
   titleWidth: lg:w-10/12
 nextPost:

@@ -1,6 +1,5 @@
 <template>
   <div class="IndexBlock">
-    <!-- <hr v-if="block.name !== 'about'" class="border-t m-0" /> -->
     <HeaderTitleWrap>
       <!-- signal letter -->
       <template v-slot:signal>
@@ -11,29 +10,23 @@
       <!-- info col -->
       <header class="lg:w-9/12">
         <h1 v-if="block.title" class="Display s-m">
-          <saber-link :to="`/${block.name}.html`">
+          <saber-link :to="`/${block.link}.html`">
             {{ block.title }}
             <span class="Link--blank">&#8594;</span>
           </saber-link>
         </h1>
         <p v-if="block.lede" class="Link Text--sm text-gray">
           {{ block.lede }}
-          <saber-link v-if="!block.name" to="/about.html" class="text-text">
-            Learn more &#8594;
-          </saber-link>
           <saber-link
-            v-if="block.name === 'newsletter'"
-            to="/the-littoral-line.html"
+            :to="`/${block.link}.html`"
             class="text-text"
+            v-html="renderLabel"
           >
-            See the archives &#8594;
           </saber-link>
         </p>
       </header>
-      <!-- posts slider -->
-      <div v-if="block.name === 'projects' || 'writing'">
-        <slot></slot>
-      </div>
+      <!-- slot (posts slider) -->
+      <slot></slot>
     </HeaderTitleWrap>
   </div>
 </template>
@@ -48,11 +41,19 @@ export default {
   props: ["block"],
   computed: {
     signalLetter() {
-      if (!this.block.name) return "1";
-      if (this.block.name === "projects") return "2";
-      if (this.block.name === "writing") return "3";
-      if (this.block.name === "newsletter") return "4";
+      if (this.block.link === "about") return "1";
+      if (this.block.link === "projects") return "2";
+      if (this.block.link === "writing") return "3";
+      if (this.block.link === "the-littoral-line") return "4";
       return null;
+    },
+    renderLabel() {
+      if (this.block.link === "about") {
+        return "About &#8594;";
+      } else if (this.block.link === "newsletter") {
+        return "See the archives &#8594;";
+      }
+      return "View all &#8594";
     },
   },
 };
