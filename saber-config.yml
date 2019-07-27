@@ -1,0 +1,50 @@
+theme: ./src
+
+siteConfig:
+  title: Callum Flack Design
+  url: https://callumflack.design
+  author: Callum Flack
+  email: callum@callumflack.design
+  phone: +61(0) 408 767 540
+  description: Callum Flack is a designer who codes. Fluid across visual design, user experience and code, he also writes about creativity and attention • Cairns, Australia
+  keywords: Portfolio,Blog,Web,Design,Graphic Design,User Exerience Design,Interaction Design,CSS,JavaScript,Frontend Web Development
+  social:
+    twitter: callumflack
+    github: callumflack
+
+themeConfig:
+  nav:
+    - text: projects
+      link: /projects.html
+    - text: writing
+      link: /writing.html
+    - text: newsletter
+      link: /the-littoral-line.html
+    - text: about
+      link: /about.html
+  social:
+    rss: true
+  lang: en
+
+build:
+  # extractCSS: true
+
+permalinks:
+  post: /blog/:slug.html
+  page: /:slug.html
+
+plugins:
+  - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-feed
+    options:
+      atomFeed: true
+  - resolve: saber-plugin-critical
+  - resolve: saber-plugin-google-analytics
+    options:
+      trackId: "UA-116668558-1"
+  - resolve: saber-plugin-sitemap
+
+markdown:
+  plugins:
+    - resolve: markdown-it-attrs
+    - resolve: markdown-it-sup

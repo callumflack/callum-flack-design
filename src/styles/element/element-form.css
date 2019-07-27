@@ -1,0 +1,81 @@
+/*
+
+  FORM
+
+  INPUT, TEXTAREA, SELECT & BUTTON = SAME STYLE
+  Because inputs use almost the same styles as buttons,
+  `.Input` lives in the `.Button` component, using it's presets.
+  Semantically, this is difficult to accept *until* we think
+  only in terms of styling, not function.
+
+  The rest of what's here is resets, validation & some (future) utils
+  which can be fleshed out over time…
+
+*/
+
+/*
+  1. All this does is set the flex flow of child elements.
+     Add `flex-row` or `flex-col` as you need.
+ */
+.Form {
+  @apply flex w-full relative; /* 1 */
+}
+
+/*
+  RESETS
+*/
+
+input,
+textarea,
+select {
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+textarea,
+select {
+  box-shadow: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+/*
+  VALIDATION
+  1. Requires adding 2px key:value in tailwind.config spacing
+  2. Requires adding good & bad colors key:values in tailwind.config colors
+*/
+
+.Form-validation {
+  @apply font-medium justify-start w-full;
+  @apply text-white mt-2px; /* 1 */
+  @apply cursor-default;
+}
+.is-good {
+  @apply bg-form-good; /* 2 */
+}
+.is-bad {
+  @apply bg-form-bad; /* 2 */
+}
+
+/*
+  UTILS
+  …taken from Hi-Q b/c it's been thoroughly researched:
+  https://jonathanharrell.github.io/hiq/guide/forms-inputs.html#text-inputs
+*/
+
+.is-unselectable {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+/* TODO: not-writables… */
+/* &:disabled,
+&[aria-disabled],
+&[readonly] {
+
+} */

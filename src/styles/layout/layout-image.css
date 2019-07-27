@@ -1,0 +1,28 @@
+/*
+
+  Full width image extracted from a container/grid
+
+ */
+
+/* .full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+} */
+
+.Extract {
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+}
+
+@screen sm {
+  .Extract {
+    @apply w-full;
+    left: auto;
+  }
+}

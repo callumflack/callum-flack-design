@@ -1,0 +1,224 @@
+/*
+
+  Input or Button
+
+  There is no typography associated with these elements.
+  Instead, both classes are added default to the main text class in `typography-text.css`.
+  You can vary the typography by simply adding typography classes.
+
+  Note: no inline button + button spacing is set. This is easier to handle at the theme or component level.
+
+  1. No margin reset needed, it's in Tailwind base. It's  also easier to override in theme or components w/ setting it here.
+  2. Responsive alignment of button text b/c every font has different leading settings. And sometimes it's padding-top not padding-bottom, so this is not a var.
+
+ */
+
+.Input,
+.Button {
+  --button-color: theme(colors.white);
+  --button-invert-color: theme(colors.text);
+
+  --button-bg-color: var(--button-invert-color);
+  --button-bg-color-hover: var(--button-invert-color);
+  --button-border-color: var(--button-invert-color);
+  --button-border-width: 1px;
+  --button-border-radius: 2px;
+  --button-box-shadow-color: var(--button-invert-color);
+  --button-box-shadow-stroke-hover: 1px;
+  --button-box-shadow-stroke-active: 2px;
+  --button-box-shadow-stroke-inset: 1px;
+  --button-disabled-opacity: 0.6;
+  --button-font-case: initial;
+  --button-font-weight: 400;
+  --button-height: 44px;
+  --button-inline-spacing: 0;
+  --button-padding-x: 1em;
+
+  --input-placeholder-color: theme(colors.gray.600);
+
+  align-items: center;
+  background-color: var(--button-bg-color);
+  border-color: var(--button-border-color);
+  border-radius: var(--button-border-radius);
+  border-style: solid;
+  border-width: var(--button-border-width);
+  box-sizing: border-box;
+  color: var(--button-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: var(--button-font-weight);
+  height: var(--button-height);
+  line-height: 1;
+  justify-content: center;
+  /* margin: 0; */ /* 1 */
+  padding: 0 var(--button-padding-x);
+  position: relative;
+  text-decoration: none;
+  text-transform: var(--button-font-case);
+  user-select: none;
+  /* 2 */
+  /* padding-bottom: calc((2 / 15) * 1em);  */
+  padding-bottom: 0;
+  padding-top: 1px;
+}
+
+/*
+  UI states
+ */
+
+.ButtonComplex:hover .Button,
+.ButtonComplex:focus .Button,
+.ButtonComplex:active .Button,
+.Button:hover,
+.Button:focus,
+.Button:active {
+  --button-bg-color: var(--button-bg-color-hover);
+  outline: 0;
+  text-decoration: none;
+}
+
+.ButtonComplex:hover .Button,
+.Button:hover {
+  box-shadow:
+    var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-hover);
+}
+
+.ButtonComplex:focus .Button,
+.ButtonComplex:active .Button,
+.Button:active,
+.Button:focus {
+  box-shadow:
+    var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-active);
+}
+
+button[disabled],
+button:disabled {
+  opacity: var(--button-disabled-opacity);
+  cursor: not-allowed;
+}
+
+/* :required validation state is coming soon… */
+/* .Input:required:invalid:not(:focus),
+.Button:required:invalid:not(:focus) {
+  border-color: var(--input-invalid-border-color);
+}
+
+.Input:required:valid:not(:focus),
+.Button:required:valid:not(:focus) {
+  border-color: var(--input-valid-border-color);
+} */
+
+/*
+
+  Input
+  Same styles as .Button with minor differences
+
+ */
+
+.Input {
+  --button-color: theme(colors.text);
+  --button-invert-color: white;
+  --button-border-width: 0;
+  --button-box-shadow-color: theme(colors.brand.blue);
+  --button-font-weight: 400;
+  /* unlike buttons, inputs are full width */
+  @apply w-full;
+}
+
+.Input::placeholder {
+  @apply opacity-100; /* override Tailwind */
+  color: var(--input-placeholder-color);
+}
+
+/* in forms, make height & radius consistent for both inputs & buttons */
+.Input,
+.Form .Button {
+  --button-border-radius: 0;
+  /* --button-height: 44px; */
+}
+/* …but not for textareas */
+textarea.Input {
+  height: auto;
+}
+
+/*
+  with icons
+ */
+
+.Button > svg {
+  transform: translateY(0.0625em) !important;
+}
+
+.Button--withIcon {
+  padding: 0 calc(var(--button-padding-x) - 0.5em) 0 var(--button-padding-x);
+}
+
+/*
+  sizes
+ */
+
+.Button--sm {
+  --button-height: 28px;
+  --button-padding-x: 0.75em;
+  padding-bottom: calc((1.5 / 15) * 1em);
+}
+
+.Button--lg {
+  --button-height: 60px;
+  --button-padding-x: 1.5em;
+  /* padding-bottom: calc((2.5 / 15) * 1em); */
+}
+
+.Button--wide {
+  --button-padding-x: 2.5em;
+}
+
+.Button--full {
+  @apply w-full;
+}
+
+@screen md {
+  .Button--wide {
+    @apply w-auto;
+  }
+}
+
+/*
+  variations
+ */
+
+.Button--blue {
+  --button-invert-color: theme(colors.brand.blue);
+}
+
+.Button--white {
+  --button-color: theme(colors.black);
+  --button-invert-color: theme(colors.white);
+}
+
+.ButtonComplex .Button--outline,
+.ButtonComplex .Button--invisible,
+.Button--outline,
+.Button--invisible {
+  --button-color: theme(colors.text);
+  --button-bg-color: transparent;
+  --button-bg-color-hover: transparent;
+}
+.Button--invisible {
+  --button-border-color: transparent;
+}
+
+.Button--whiteOutline {
+  --button-color: white;
+  --button-invert-color: white;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.Button--whiteOutline:hover,
+.Button--whiteOutline:focus,
+.Button--whiteOutline:active {
+  /* --button-box-shadow-color: white; */
+  background-color: rgba(0,0,0,0.5);
+}
+
+

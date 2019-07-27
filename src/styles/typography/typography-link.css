@@ -1,0 +1,78 @@
+/*
+
+  LINK
+  Todo: think this thru…
+
+*/
+
+.Link a:not(.Button),
+.Markdown a:not(.Button) {
+  transition: all 150ms cubic-bezier(.7, 0, .3, 1);
+  box-shadow: inset 0 -1px 0 #c5c5c5;
+  /* text-decoration: underline; */
+}
+
+/* p a:hover:not(.Button),
+ul a:hover:not(.Button),
+ol a:hover:not(.Button), */
+.Link a:hover:not(.Button),
+.Markdown a:hover:not(.Button) {
+  @apply text-white;
+  box-shadow: inset 0 -25px 0 theme(colors.text);
+}
+
+/* VARS */
+
+.Link--underline {
+  @apply inline-block border-b border-gray-500;
+  text-decoration: none !important;
+}
+
+/*
+
+  Target blank arrow
+
+ */
+
+/* denotes target="_blank" using &#8599; */
+.Link--blank {
+  @apply inline-block;
+  /* font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", '"Segoe UI"', "Roboto", '"Helvetica Neue"', "Arial", '"Noto Sans"',"sans-serif"; */
+  font-size: 60%;
+  margin-left: 0.125em;
+  transform: translateY(-0.75em);
+}
+.Title .Link--blank {
+  font-size: 55%;
+  margin-left: -0.1em;
+  transform: translateY(-0.5em);
+}
+.Display .Link--blank {
+  @apply opacity-0;
+  font-size: 100%;
+  margin-left: -0.1em;
+  transform: translate(-0.25em, 0);
+  transition: transform 250ms ease;
+}
+.Display:hover .Link--blank {
+  @apply opacity-100;
+  transform: translate(0, 0);
+}
+
+/* LINK BLOCKS */
+
+.Link-block a:not(.Button) {
+  transition: color 250ms ease;
+}
+.Link-block a:not(.Button):hover {
+  @apply text-black;
+}
+
+.Link-underline-block a:not(.Button) {
+  @apply inline-block border-b border-gray-400;
+  text-decoration: none !important;
+  transition: all 250ms ease;
+}
+.Link-underline-block a:not(.Button):hover {
+  @apply text-black border-text;
+}

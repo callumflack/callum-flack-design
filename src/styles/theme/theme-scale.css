@@ -1,0 +1,33 @@
+/*
+
+  Typography scale
+
+  Themed from tailwind.config.js
+
+*/
+
+:root {
+  --text-ratio: theme(responsiveScale.textXs);
+  --title-ratio: theme(responsiveScale.titleXs);
+  --space-ratio: theme(responsiveScale.spaceXs);
+  --block-size-ratio: theme(responsiveScale.blockXs);
+  --grid-ratio: theme(responsiveScale.gridXs);
+}
+@screen sm {
+  :root {
+    --text-ratio: theme(responsiveScale.textSm);
+    --title-ratio: theme(responsiveScale.titleSm);
+    --space-ratio: theme(responsiveScale.spaceSm);
+    --block-size-ratio: theme(responsiveScale.blockSm);
+    --grid-ratio: theme(responsiveScale.gridSm);
+  }
+}
+@screen lg {
+  :root {
+    --text-ratio: theme(responsiveScale.textMd);
+    --title-ratio: theme(responsiveScale.titleMd);
+    --space-ratio: theme(responsiveScale.spaceMd);
+    --block-size-ratio: theme(responsiveScale.blockMd);
+    --grid-ratio: theme(responsiveScale.gridMd);
+  }
+}

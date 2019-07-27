@@ -1,0 +1,40 @@
+/*
+
+  Content columns.
+  A way to manage grid columns for content rather than remembering
+  the markup required to maintain a consistent grid.
+
+  Below is an example only, you can write any styles within.
+  But if we keep the same naming, it's easier from project to project.
+
+ */
+
+.Column-inset,
+.Column-text {
+  @apply mx-auto w-full;
+}
+
+.Column-right {
+  /* @apply ml-auto w-full; */
+}
+
+@screen lg {
+  .Column-inset {
+    @apply w-3/4;
+  }
+  .Column-right {
+    @apply w-3/4 pl-12;
+  }
+  .Column-left {
+    @apply pr-12;
+  }
+  .Column-text {
+    @apply w-1/2;
+  }
+}
+
+@screen md {
+  .Column-text {
+    @apply w-7/12;
+  }
+}

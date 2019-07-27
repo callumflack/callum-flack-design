@@ -1,0 +1,18 @@
+/*
+
+  BASE
+
+  Per project customisation as required…
+
+*/
+
+html {
+}
+
+body {
+  @apply min-h-screen;
+}
+
+main {
+  @apply min-h-full;
+}

@@ -1,0 +1,31 @@
+/*
+  -------------------------------------------------
+
+  Code blocks
+
+  -------------------------------------------------
+ */
+
+pre {
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  /* font-size: .88888em; */
+  margin: 0 0 12px;
+  overflow-x: auto;
+  padding: 1.25em;
+  white-space: pre;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 75%;
+  font-weight: 500;
+}
+
+p code {
+  background: rgba(135, 131, 120, 0.15);
+  background: #9477271f;
+  line-height: normal;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+}

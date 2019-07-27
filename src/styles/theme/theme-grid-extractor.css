@@ -1,0 +1,52 @@
+.mo-Grid-extract--edge,
+.Grid-extract--edge {
+  left: calc(-50vw + 50%);
+  position: relative;
+  width: 100vw;
+}
+
+@screen sm {
+  .mo-Grid-extract--edge {
+    left: auto;
+    width: 100%;
+  }
+}
+
+@screen md {
+  .Grid-extract--post {
+    /* --width: calc(theme(screens.sm) + 4rem); */
+    --width: 740px;
+    /* left: calc((-0.5 * 744px) + 50%);
+    position: relative;
+    width: 744px !important; */
+    left: calc((-0.5 * var(--width)) + 50%);
+    position: relative;
+    width: var(--width) !important;
+  }
+}
+
+/* @media only screen and (max-width: 1040px) { */
+@screen xl {
+  .Grid-extract--cards {
+    /* --width: calc(theme(screens.sm) + 16px);
+    left: calc((-0.5 * var(--width)) + 50% - 8px); */
+    /* --width: calc(theme(screens.sm) + 2rem);*/
+    /* --width: theme(screens.xl); */
+    /* --width: 70vw;
+    left: calc((-0.5 * var(--width)) + 50% );
+    position: relative;
+    width: var(--width) !important; */
+
+    left: calc(-50vw + 50%);
+    position: relative;
+    width: 100vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .Grid-extract--cards {
+    /* --width: 1440px; */
+  }
+}

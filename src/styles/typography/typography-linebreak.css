@@ -1,0 +1,26 @@
+/*
+
+  Utility: Responsive line break
+  https://css-tricks.com/injecting-line-break/
+
+  Add `mx-auto` to emulates `text-align: center`
+
+  <span class='Linebreak'>Discover</span>your Sea Change
+
+ */
+
+.Linebreak {
+  display: table !important;
+}
+
+@screen sm {
+  .sm-Linebreak {
+    display: table !important;
+  }
+}
+
+@screen lg {
+  .lg-Linebreak {
+    display: table !important;
+  }
+}

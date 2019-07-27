@@ -1,0 +1,46 @@
+/*
+
+  Grid
+
+  All ratios are in `theme/theme-ratios`.
+
+  Note:
+  * To occupy remaining space, add `.flex-grow`
+
+*/
+
+.Grid {
+  @apply flex flex-wrap flex-col;
+  margin: calc(-1 * theme(spacing.4) * var(--grid-ratio));
+}
+
+.Grid-item {
+  @apply block;
+  padding: calc(theme(spacing.4) * var(--grid-ratio));
+}
+
+/* VARS */
+
+.Grid--x {
+  @apply my-0;
+  margin: calc(-1 * theme(spacing.2) * var(--grid-ratio));
+}
+
+.Grid--x > .Grid-item {
+  @apply py-0;
+  padding: calc(theme(spacing.2) * var(--grid-ratio));
+}
+
+.Grid--sm {
+  margin: calc(-1 * theme(spacing.2) * var(--grid-ratio));
+}
+
+.Grid--sm > .Grid-item {
+  padding: calc(theme(spacing.2) * var(--grid-ratio));
+}
+
+@screen sm {
+  .Grid {
+    @apply flex-row;
+  }
+}
