@@ -43,7 +43,6 @@ plugins:
     options:
       trackId: "UA-116668558-1"
   - resolve: saber-plugin-sitemap
-  - resolve: saber-plugin-medium-zoom
 
 markdown:
   plugins:
