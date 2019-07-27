@@ -56,19 +56,15 @@ export default {
     return {
       options: {
         type: "carousel",
-        autoplay: 6000,
+        autoplay: 60000,
         hoverpause: false,
         gap: 0,
-        // perView: 3,
-        300: {
-          perView: 1,
-        },
-        600: {
-          perView: 2,
-        },
-        1024: {
-          perView: 3,
-        },
+        perView: 2,
+        // this does NOT work…
+        // https://antonreshetov.github.io/vue-glide/props/#breakpoints
+        // 768: {
+        //   perView: 1,
+        // },
       },
     };
   },
@@ -112,7 +108,7 @@ export default {
   @apply text-gray-600 tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
   right: 5em;
-  top: calc(-3.25rem * var(--space-ratio));
+  bottom: -1.5rem;
 }
 [data-glide-el="controls"] button:focus {
   @apply outline-none;
@@ -122,5 +118,12 @@ export default {
 }
 [data-glide-el="controls"] button:last-of-type {
   right: 1.5em;
+}
+@screen lg {
+  [data-glide-el="controls"] button {
+    right: 5em;
+    bottom: auto;
+    top: calc(-3.25rem * var(--space-ratio));
+  }
 }
 </style>

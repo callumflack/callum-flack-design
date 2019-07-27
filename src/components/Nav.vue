@@ -99,6 +99,14 @@ export default {
   @apply pr-5 mr-1;
   padding-right: calc(theme(spacing.5) * var(--space-ratio) - 1px);
   @apply border-r;
-  margin-left: -40px;
+}
+@media (min-width: 657px) {
+  .Nav-logo {
+    margin-left: -40px;
+  }
+}
+@screen md {
+  .Nav-logo {
+  }
 }
 </style>
