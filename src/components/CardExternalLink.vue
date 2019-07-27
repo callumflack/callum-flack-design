@@ -38,22 +38,38 @@ export default {
   @apply inline-block;
   @apply text-text !important;
   font-size: 125%;
-  transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translate(-23px, 0em);
+  transform: translate(-18px, 0em);
 }
-.Card:hover .ExternalLink .Link--blank {
-  @apply text-white !important;
-  font-size: 96%;
-  transform: translate(0.1em, -0.1em);
+
+/* KISS: only adapt the Link--blank here */
+@screen lg {
+  .ExternalLink .Link--blank {
+    @apply inline-block;
+    @apply text-text !important;
+    font-size: 125%;
+    transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate(-23px, 0em);
+  }
+  .Card:hover .ExternalLink .Link--blank {
+    @apply text-white !important;
+    font-size: 96%;
+    transform: translate(0.1em, -0.1em);
+  }
 }
 
 /*
 
   REVERSE THEME
+  Issues to fix: see 1. below
 
  */
-.reverse .ExternalLink {
-  /* @apply opacity-50; */
+
+/* 1. externalLink changes height on hover. To see this, turn on the outline below */
+/* .reverse .Card .ExternalLink {
+  @apply border border-white;
+} */
+.reverse .Card:hover .ExternalLink {
+  @apply border border-white;
 }
 .reverse .ExternalLink .Link--blank {
   /* font-size: 125%;
