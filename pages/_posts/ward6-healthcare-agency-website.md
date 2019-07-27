@@ -8,7 +8,6 @@ assets:
   cover: /images/ward6-hero.jpg
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
-featured: true
 tags: 
   - design
   - frontend
