@@ -4,7 +4,7 @@
     <IndexHomeBlock :block="page.attributes.projects">
       <div class="Grid-extract--slide st-2xh">
         <vue-glide :options="options">
-          <vue-glide-slide v-for="(post, index) in projectsPosts" :key="index">
+          <vue-glide-slide v-for="(post, index) in projectPosts" :key="index">
             <CardWithinSlide :key="post.attributes.permalink" :post="post">
             </CardWithinSlide>
           </vue-glide-slide>
@@ -56,7 +56,7 @@ export default {
     return {
       options: {
         type: "carousel",
-        autoplay: 5000,
+        autoplay: 6000,
         hoverpause: false,
         gap: 0,
         // perView: 3,
@@ -73,16 +73,14 @@ export default {
     };
   },
   computed: {
-    /* recentPosts() {
-      return this.page.posts.splice(0, 6);
-    }, */
-    featuredPosts() {
-      return this.page.posts.filter(x => x.attributes.tags.includes("featured"));
-    },
-    projectsPosts() {
+    projectPosts() {
       return this.page.posts
-        .filter(x => x.attributes.category === "projects")
-        .splice(0, 6);
+        .filter(
+          x =>
+            x.attributes.category === "projects" &&
+            x.attributes.tags.includes("featured")
+        )
+        .splice(0, 9);
     },
     writingPosts() {
       return this.page.posts
@@ -93,18 +91,12 @@ export default {
   head() {
     return {
       htmlAttrs: {
-        class: "yo",
+        class: "bg-text",
       },
     };
   },
 };
 </script>
-
-<style lang="postcss">
-.yo {
-  @apply bg-text;
-}
-</style>
 
 <style lang="postcss" scoped>
 .Grid-extract--slide {
@@ -112,10 +104,9 @@ export default {
 }
 @media only screen and (min-width: 1400px) {
   .Grid-extract--slide {
-    width: 1040px;
+    width: 1038px;
   }
 }
-
 [data-glide-el="controls"] button {
   @apply absolute;
   @apply text-gray-600 tracking-wide;

@@ -20,31 +20,50 @@ export default {
 /* Styled by parent hover in `custom-card-external-link.css`  */
 
 .ExternalLink {
-  @apply rounded inline-block;
-  /* padding: 0.25rem 0.333rem 0.005rem 0.333rem; */
-  @apply bg-transparent text-transparent;
-  /* @apply opacity-0; */
+  @apply inline-block;
+  @apply rounded;
+  @apply bg-transparent;
+  @apply text-transparent;
   padding: 3px 6px 1px 6px;
   transform: translate(-8px, -0.15em);
   transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.Card:hover .ExternalLink {
+  @apply bg-text;
+  @apply text-white !important; /* override vue [data] style */
+  transform: translate(3px, -0.15em);
 }
 
 .ExternalLink .Link--blank {
   @apply inline-block;
   @apply text-text !important;
   font-size: 125%;
-  margin-left: 0;
   transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
   transform: translate(-23px, 0em);
-}
-
-.Card:hover .ExternalLink {
-  @apply bg-text text-white !important; /* override vue [data] styles */
-  transform: translate(3px, -0.15em);
 }
 .Card:hover .ExternalLink .Link--blank {
   @apply text-white !important;
   font-size: 96%;
-  transform: translate(0, -0.1em);
+  transform: translate(0.1em, -0.1em);
 }
+
+/*
+
+  REVERSE THEME
+
+ */
+.reverse .ExternalLink {
+  /* @apply opacity-50; */
+}
+.reverse .ExternalLink .Link--blank {
+  /* font-size: 125%;
+  transform: translate(0, 0) !important; */
+  @apply text-white !important;
+}
+/* .reverse .Card:hover .ExternalLink {
+  @apply bg-white text-text !important;
+}
+.reverse .Card:hover .ExternalLink .Link--blank {
+  @apply text-text !important;
+} */
 </style>

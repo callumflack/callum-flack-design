@@ -13,11 +13,15 @@
   @apply ml-auto;
 } */
 
+/* 1. remove height above the button for better alignment
+      of header typography when using padding */
 .Tab-controls--button {
   @apply border-b-4 border-transparent;
-  @apply inline-flex items-center;
+  @apply inline-flex;
+  /* @apply items-center; */
   border-bottom-width: 3px;
-  height: calc(theme(spacing.16) * var(--space-ratio));
+  /* height: calc(theme(spacing.16) * var(--space-ratio)); */
+  padding-bottom: calc(theme(spacing.5) * var(--space-ratio)); /* 1 */
   transform: translateY(1px);
 }
 

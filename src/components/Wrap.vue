@@ -33,6 +33,7 @@ export default {
     kind: String,
   },
   computed: {
+    /* reverse = white on black theme */
     reverseClass() {
       return this.$route.path === "/" && "reverse";
     },
@@ -114,7 +115,11 @@ export default {
   opacity: 0;
 }
 
-/* REVERSE THEME */
+/*
+
+  REVERSE THEME
+
+*/
 .reverse {
   @apply bg-text;
 }
@@ -150,11 +155,16 @@ export default {
 }
 .reverse >>> .Input {
   --button-invert-color: transparent;
+  --button-color: theme(colors.white);
   border-color: rgba(255, 255, 255, 0.1);
 }
 .reverse >>> .Button--outline {
-  --button-invert-color: theme(colors.white);
+  --button-invert-color: theme(colors.gray.600);
+  --button-color: theme(colors.gray.600);
+}
+.reverse >>> .Button--outline:hover {
   --button-color: theme(colors.white);
+  --button-box-shadow-color: theme(colors.white);
 }
 .reverse >>> .Link a:not(.Button),
 .reverse >>> .Markdown a:not(.Button) {

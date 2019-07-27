@@ -1,5 +1,12 @@
 <template>
-  <saber-link :to="post.attributes.permalink" class="w-full">
+  <ElementLink
+    :href="post.attributes.link"
+    :to="post.attributes.permalink"
+    :external-link="
+      post.attributes && post.attributes.card && post.attributes.card.externalLink
+    "
+    class="w-full"
+  >
     <div class="Card">
       <!-- image -->
       <div
@@ -27,6 +34,9 @@
       <div class="Card-body">
         <h3 class="Text">
           {{ post.attributes.title }}
+          <CardExternalLink
+            v-if="post.attributes.card && post.attributes.card.externalLink"
+          />
         </h3>
         <div class="Card-body-meta">
           <time :date-time="post.attributes.createdAt" class="Text--sm">
@@ -50,18 +60,22 @@
         </div>
       </div>
     </div>
-  </saber-link>
+  </ElementLink>
 </template>
 
 <script>
 import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
-import ImageDynamic from "../components/ImageDynamic";
+import CardExternalLink from "../components/CardExternalLink";
+import ElementLink from "../components/ElementLink";
+// import ImageDynamic from "../components/ImageDynamic";
 
 export default {
   components: {
     Aspect,
-    ImageDynamic,
+    CardExternalLink,
+    ElementLink,
+    // ImageDynamic,
   },
   props: ["post"],
   computed: {
@@ -92,26 +106,18 @@ export default {
 }
 
 .Card-body {
-  /* @apply bg-brand-bg; */
   @apply pt-3;
-  /* @apply px-2; */
 }
 
 .Card-body-meta {
   @apply text-gray-600;
 }
 
-/* .Card-body-meta > * {
-  @apply capitalize;
-} */
-
 .Card-figure {
-  @apply relative;
+  /* @apply relative; */
 }
 
 .Card-figure-image {
-  /* @apply absolute inset-0 object-cover w-full h-full;
-  max-width: none; */
   mix-blend-mode: multiply;
 }
 
