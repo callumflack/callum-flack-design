@@ -26,9 +26,6 @@ themeConfig:
     rss: true
   lang: en
 
-build:
-  # extractCSS: true
-
 permalinks:
   post: /blog/:slug.html
   page: /:slug.html
