@@ -10,12 +10,11 @@ require("dotenv").config({
   path: path.resolve(process.cwd(), ".env.mailchimp"),
 });
 
-
 const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
 const MAILCHIMP_DATA_CENTER = process.env.MAILCHIMP_DATA_CENTER;
 // Username can be any string
 const MAILCHIMP_USERNAME = "The Littoral Line";
-// "Sea Change Beachfront Apartments" mailchimp audience list id
+// the mailchimp audience list id
 const MAILCHIMP_LIST_ID = "3eb35e7129";
 
 /*
@@ -48,11 +47,13 @@ exports.handler = function(event, context, callback) {
   if (!re.test(email)) {
     return callback(null, {
       statusCode: 400,
-      body: JSON.stringify({ msg: "Invalid Email" })
+      body: JSON.stringify({ msg: "Invalid Email" }),
     });
   }
 
-  console.log(`https://${MAILCHIMP_DATA_CENTER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members/`)
+  console.log(
+    `https://${MAILCHIMP_DATA_CENTER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members/`
+  );
   axios({
     method: "post",
     url: `https://${MAILCHIMP_DATA_CENTER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_LIST_ID}/members/`,
@@ -61,29 +62,28 @@ exports.handler = function(event, context, callback) {
       merge_fields: {
         name: parsedBody.name,
       },
-      status: "subscribed"
+      status: "subscribed",
     },
     auth: {
       username: MAILCHIMP_USERNAME,
       password: MAILCHIMP_API_KEY,
-    }
+    },
   })
     .then(() => {
       return callback(null, {
         statusCode: 200,
-        body: JSON.stringify({ msg: "Olé!" })
+        body: JSON.stringify({ msg: "Olé!" }),
       });
     })
     .catch(({ response }) => {
-      const title =
-        (response && response.data && response.data.title) || "";
+      const title = (response && response.data && response.data.title) || "";
 
       if (title === "Member Exists") {
         callback(null, {
           statusCode: 200,
           body: JSON.stringify({
             msg: "You're already subscribed!",
-          })
+          }),
         });
         return;
       }
@@ -95,7 +95,7 @@ exports.handler = function(event, context, callback) {
         body: JSON.stringify({
           msg: `Failed to subscribe.`,
           errorTitle: title,
-        })
+        }),
       });
     });
 };
