@@ -56,7 +56,7 @@ export default {
     return {
       options: {
         type: "carousel",
-        autoplay: 60000,
+        autoplay: 6000,
         hoverpause: false,
         gap: 0,
         perView: 2,
