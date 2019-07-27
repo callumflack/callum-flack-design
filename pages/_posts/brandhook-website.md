@@ -1,7 +1,7 @@
 ---
 category: projects
 layout: post
-date: 2017-11-15
+date: 2018-11-15
 title: Brandhook 
 lede: Add…
 link: http://www.brandhook.com/
