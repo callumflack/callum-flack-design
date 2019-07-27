@@ -32,7 +32,7 @@
       </div>
       <!-- body -->
       <div class="Card-body">
-        <h3 class="Text">
+        <h3 class="Text leading-none mb-1">
           {{ post.attributes.title }}
           <CardExternalLink
             v-if="post.attributes.card && post.attributes.card.externalLink"
@@ -110,7 +110,7 @@ export default {
 }
 
 .Card-body-meta {
-  @apply text-gray-600;
+  @apply text-gray-600 leading-none;
 }
 
 .Card-figure {
