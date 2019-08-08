@@ -13,7 +13,6 @@ card:
   externalLink: true
 tags: 
   - frontend
-  - featured
 ---
 
 <Media src="/images/network-architectural-contact-hero.jpg" />
