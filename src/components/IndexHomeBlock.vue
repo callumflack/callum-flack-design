@@ -68,14 +68,20 @@ export default {
 }
 .Signal {
   @apply absolute top-0;
-  @apply font-light text-right;
-  @apply pr-20;
-  left: -150px;
-  line-height: 0.875;
-  font-size: 10vh;
-  width: 150px;
+  @apply font-light;
+  @apply text-right;
+  /* @apply pr-20; */
+  left: -200px;
+  @apply border border-white rounded-full;
+  @apply p-4;
+  height: 125px;
+  width: 125px;
 }
 .Signal span {
   @apply block;
+  @apply text-center;
+  line-height: 0.875;
+  font-size: 7vh;
+  transform: translateY(9px);
 }
 </style>
