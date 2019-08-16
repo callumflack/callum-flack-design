@@ -63,7 +63,22 @@
         </div>
       </saber-link>
     </template>
-    <!-- CFd -->
+    <!-- project back (until all projects are local, then use nextpost) -->
+    <template v-else-if="$route.path.includes('blog') && !nextpost">
+      <saber-link
+        to="/projects.html"
+        :class="[linkTypography, spacerClasses]"
+        class="h-full w-full"
+      >
+        <div class="container container--text">
+          <p class="Display s-2xh">
+            <span class="Logo-arrow mr-1">&#8592;</span>
+            <span style="text-transform:initial">Projects</span>
+          </p>
+        </div>
+      </saber-link>
+    </template>
+    <!-- about -->
     <template v-else-if="$route.path.includes('about')">
       <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
         <div class="container container--text">
@@ -146,8 +161,8 @@ export default {
 
 <style lang="postcss" scoped>
 .BlendImage {
-  @apply bg-text
-  /* background-color: rgba(0, 0, 0, 0.2); */;
+  @apply bg-text;
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 .BlendImage >>> img {
   opacity: 0.8;
