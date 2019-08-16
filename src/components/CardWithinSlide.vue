@@ -96,13 +96,14 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+/* 1. turn off when single slide shown */
 .Card {
   @apply block relative cursor-pointer;
-  @apply mr-3 pr-3 border-r;
+  /* @apply mr-3 pr-3 border-r; */ /* 1 */
 }
 
 .glide__slide:nth-of-type(1) .Card {
-  @apply ml-0 pl-0 border-0;
+  /* @apply ml-0 pl-0 border-0; */ /* 1 */
 }
 
 .Card-body {

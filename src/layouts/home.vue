@@ -59,7 +59,7 @@ export default {
         autoplay: 6000,
         hoverpause: false,
         gap: 0,
-        perView: 2,
+        perView: 1,
         // this does NOT work…
         // https://antonreshetov.github.io/vue-glide/props/#breakpoints
         // 768: {
@@ -100,14 +100,14 @@ export default {
 }
 @media only screen and (min-width: 1400px) {
   .Grid-extract--slide {
-    width: 1038px;
+    width: 840px;
   }
 }
 [data-glide-el="controls"] button {
   @apply absolute;
   @apply text-gray-600 tracking-wide;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
-  right: 5em;
+  right: 3.5em;
   bottom: -1.5rem;
 }
 [data-glide-el="controls"] button:focus {
@@ -117,11 +117,11 @@ export default {
   /* @apply ml-2; */
 }
 [data-glide-el="controls"] button:last-of-type {
-  right: 1.5em;
+  right: 0;
 }
 @screen lg {
   [data-glide-el="controls"] button {
-    right: 5em;
+    right: 3.5em;
     bottom: auto;
     top: calc(-3.25rem * var(--space-ratio));
   }

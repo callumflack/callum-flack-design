@@ -2,9 +2,9 @@
 
 module.exports = {
   plugins: [
-    require('postcss-import'),
+    require("postcss-import"),
     require("tailwindcss")("./tailwind.config.js"),
-    require('autoprefixer')(),
+    require("autoprefixer")(),
     // require('@fullhuman/postcss-purgecss')({
     //   content: [
     //     join(__dirname, './src/**/*.vue'),
@@ -27,5 +27,5 @@ module.exports = {
     //     /^router-link(|-exact)-active$/
     //   ]
     // })
-  ]
-}
+  ],
+};
