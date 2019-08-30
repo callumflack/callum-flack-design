@@ -49,7 +49,7 @@ By chasing the same old Fashion Aesthetics game without fully realising that our
 
 ## Start with problems
 
-As the Quantum physicist David Deutsch [said](https://www.edge.org/response-detail/10949), all problems are soluble according to how interesting they are. The solution to CDs finding a part to play in the creation of emotion in their client's audience is first of all understanding that the ground has shifted: the problem they're solving for is now a different problem. And form there, begin reframing that problem, as you are doing, Jim. Or find more interesting ones. I like this quote from [Brian Collins](https://www.forbes.com/sites/brucerogers/2019/03/04/design-as-change-agent-interview-with-brian-collins/#91043c24e27b): 
+As the Quantum physicist David Deutsch [said](https://www.edge.org/response-detail/10949), all problems are soluble according to how interesting they are. The solution to CDs finding a part to play in the creation of emotion in their client's audience is first of all understanding that the ground has shifted: the problem they're solving for is now a different problem. And from there, begin reframing that problem, as you are doing, Jim. Or find more interesting ones. I like this quote from [Brian Collins](https://www.forbes.com/sites/brucerogers/2019/03/04/design-as-change-agent-interview-with-brian-collins/#91043c24e27b): 
 
 > We see design as a problem-seeking process. Seeking, asking increasingly bigger questions, allows you to reframe a problem.
 
