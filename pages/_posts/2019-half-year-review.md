@@ -15,7 +15,7 @@ hero:
 nextPost:
   title: Is the Creative Director Dead?
   link: /blog/is-the-creative-director-dead.html
-  hero: /images/post-190830-2.jpg
+  hero: /images/post-creative-director-dead.jpg
 tags:
   - notes
   - featured
