@@ -113,7 +113,7 @@ ol,
   --text-indent: calc(theme(spacing.8) * var(--grid-ratio));
 }
 
-.Markdown p + p {
+.Markdown p:not(.Alert) + p {
   text-indent: calc(theme(spacing.10) * var(--grid-ratio));
   text-indent: var(--text-indent);
 }
@@ -171,7 +171,7 @@ ol,
   /* background-color: rgba(135, 131, 120, 0.15);
   background-color: rgba(135, 131, 120, 0.1);
   background-color: rgba(189, 183, 165, 0.15); */
-  @apply py-4 pr-4;
+  @apply py-2 pr-4;
   @apply text-gray-600;
   @apply text-text;
   /* @apply text-brand-highlight; */
@@ -203,6 +203,12 @@ ol,
 
 */
 
+.Alert {
+  @apply bg-brand-neutral tracking-wide;
+  @apply px-4 py-3;
+  font-size: calc(theme(fontSize.sm) * var(--text-ratio));
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+}
 .Note {
   @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
 }
