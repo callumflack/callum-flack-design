@@ -11,6 +11,7 @@
 .Markdown h2,
 .Markdown h3,
 .Metaheading {
+  /* @apply font-medium; */
   @apply font-sans text-text;
 }
 
@@ -22,9 +23,11 @@
 }
 
 .Markdown h2 {
+  @apply font-medium;
   font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
 }
 .Markdown h3 {
+  @apply font-medium;
   font-size: calc(theme(fontSize.xl) * var(--title-ratio));
 }
 
@@ -51,6 +54,7 @@
 .Display,
 .Title {
   @apply font-sans font-normal tracking-text;
+  @apply font-medium;
 }
 
 .Title {

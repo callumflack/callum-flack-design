@@ -19,6 +19,8 @@ tags:
 
  <!-- (that's the crystallised line that clearly defines an idea, found in the littoral zone of one's mind) -->
 
+Heads up! This workflow dependended upon Mailchimp allowing free access to their ["import by URL"](https://mailchimp.com/help/import-html-from-url-to-create-a-campaign/) function, which is no longer the case as of September 2019. That's how the web works these days. ¯\_(ツ)_/¯ I now use [Substack](https://thelittoralline.substack.com) instead. {.Alert}
+
 I write a newsletter called [The Littoral Line](https://callumflack.design/the-littoral-line). It's mostly an outlet for me to summarise and clarify my thoughts about what I've found interesting, and to share them with other people. I took the road less travelled when I set up my newsletter. Mostly to play with the available systems to find a way to publish in markdown, with the least friction possible. Partly because _I was concerned about owning my writing._ That's not to say I thought it valuable, but that I just don't like the aesthetics of having it locked away on some platform, ready to be forgotten and lost forever when the platform gets acquihired. 
 
 _I wanted it to be just a folder of files on my computer so that I could simply create a new blank document and start writing._ But I also wanted those files to work as a publishing system. What follows is a short explanation of how I do this.

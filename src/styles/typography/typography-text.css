@@ -25,10 +25,14 @@ body {
   @apply bg-text text-white;
 }
 
-p,
-ul,
-ol {
-  @apply tracking-text;
+/*
+
+  Utils
+
+*/
+
+.text-gray {
+  color: theme(colors.gray.600);
 }
 
 .Text--xs {
@@ -46,6 +50,16 @@ ol {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
 
+.Text--xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+
+p,
+ul,
+ol {
+  @apply tracking-text;
+}
+
 p,
 ul,
 ol,
@@ -54,8 +68,23 @@ ol,
 .Text--lg {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
 }
-.Text--xl {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+
+.Markdown > *,
+.Text,
+.Text--lg {
+  @apply font-serif;
+  @apply leading-reduced !important;
+}
+
+/*
+
+  Nav
+
+*/
+
+.Nav-link {
+  @apply font-medium inline-flex items-center;
+  height: calc(theme(spacing.16) * var(--space-ratio));
 }
 
 /*
@@ -84,33 +113,12 @@ ol,
 
 /*
 
-  Nav
-
-*/
-
-.Nav-link {
-  @apply font-normal inline-flex items-center;
-  height: calc(theme(spacing.16) * var(--space-ratio));
-}
-
-/*
-
-  Utils
-
-*/
-
-.text-gray {
-  color: theme(colors.gray.600);
-}
-
-/*
-
   Markdown theme
 
 */
 
 :root {
-  --text-indent: calc(theme(spacing.8) * var(--grid-ratio));
+  --text-indent: calc(theme(spacing.6) * var(--grid-ratio));
 }
 
 .Markdown p:not(.Alert) + p {
@@ -164,7 +172,8 @@ ol,
 .Markdown blockquote p {
   /* @apply border border-l-2;
   border-left-color: theme(colors.text); */
-  @apply border-l-2 border-text;
+  @apply border-l-2;
+  @apply border-gray-400;
   /* @apply border-l-2 border-text; */
   /* @apply border-l-2 border-brand-highlight; */
   /* @apply bg-gray-200; */

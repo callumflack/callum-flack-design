@@ -8,10 +8,10 @@
             <CardWithinSlide :key="post.attributes.permalink" :post="post">
             </CardWithinSlide>
           </vue-glide-slide>
-          <!-- <template slot="control">
+          <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
             <button data-glide-dir=">">next &#8594;</button>
-          </template> -->
+          </template>
         </vue-glide>
       </div>
     </IndexHomeBlock>
@@ -22,10 +22,10 @@
             <CardWithinSlide :key="post.attributes.permalink" :post="post">
             </CardWithinSlide>
           </vue-glide-slide>
-          <!-- <template slot="control">
+          <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
             <button data-glide-dir=">">next &#8594;</button>
-          </template> -->
+          </template>
         </vue-glide>
       </div>
     </IndexHomeBlock>
@@ -125,31 +125,5 @@ export default {
     bottom: auto;
     top: calc(-3.25rem * var(--space-ratio));
   }
-}
-
-/*
-
-  Fade hack for now…
-  https://github.com/glidejs/glide/issues/279#issuecomment-468204570
-
- */
->>> .glide__slides {
-  transform: none !important;
-  width: auto !important;
-  display: block;
-}
->>> .glide__slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 1s;
-}
->>> .glide__slide:first-child {
-  position: relative;
-}
->>> .glide__slide--active {
-  z-index: 1;
-  opacity: 1;
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <Wrap :page="page" kind="post">
-    <article class="Block-sm-t Markdown" itemprop="articleBody">
+    <article
+      class="Markdown"
+      :class="{ 'Block-sm-t': this.$route.path !== '/about.html' }"
+      itemprop="articleBody"
+    >
       <slot name="default" />
     </article>
     <a class="u-url" :href="page.attributes.permalink" hidden></a>
@@ -14,7 +18,6 @@ export default {
   components: {
     Wrap,
   },
-
   props: ["page"],
 };
 </script>

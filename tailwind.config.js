@@ -94,22 +94,8 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      /* title: [
-        '"Text"',
-        "-apple-system",
-        "BlinkMacSystemFont",
-        '"Segoe UI"',
-        "Roboto",
-      ],
-      serif: [
-        '"Title"',
-        "Georgia",
-        "Cambria",
-        '"Times New Roman"',
-        "Times",
-        "serif",
-      ],
-      mono: [
+      serif: ['"Serif"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      /* mono: [
         "SFMono-Regular",
         "Consolas",
         "Liberation Mono",
@@ -124,8 +110,8 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.125rem", // 18
-      xl: "1.3125rem", // 21
+      lg: "1.125rem", // 18 or 19
+      xl: "1.25rem", // 21
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
@@ -135,7 +121,7 @@ module.exports = {
     },
     /* Corresponding to breakpoints */
     responsiveScale: {
-      textXs: "0.842105263",
+      textXs: "0.842105263", // 16 or 17
       textSm: "0.933333333",
       textMd: "1",
       titleXs: "0.727272727",

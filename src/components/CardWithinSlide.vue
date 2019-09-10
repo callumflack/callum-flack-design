@@ -32,7 +32,7 @@
       </div>
       <!-- body -->
       <div class="Card-body">
-        <h3 class="Text leading-none mb-1">
+        <h3 class="Title leading-none mb-1">
           {{ post.attributes.title }}
           <CardExternalLink
             v-if="post.attributes.card && post.attributes.card.externalLink"

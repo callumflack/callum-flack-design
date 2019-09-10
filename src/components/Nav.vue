@@ -2,7 +2,7 @@
   <headroom :speed="500">
     <nav class="Nav">
       <div class="container container--text relative">
-        <saber-link to="/" exact class="Nav-logo Nav-link Meta font-medium">
+        <saber-link to="/" exact class="Nav-logo Nav-link Meta">
           <span style="text-transform:initial">
             CFd
           </span>
@@ -11,7 +11,7 @@
           v-for="(item, index) in $themeConfig.nav"
           :key="index"
           :to="item.link"
-          class="Nav-link Meta font-medium"
+          class="Nav-link Meta"
           :class="{ 'is-active': item.text === category }"
         >
           <span>

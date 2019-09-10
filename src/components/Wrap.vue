@@ -35,7 +35,11 @@ export default {
   computed: {
     /* reverse = white on black theme */
     reverseClass() {
-      return this.$route.path === "/" && "reverse";
+      // return this.$route.path === "/" && "reverse";
+      if (this.$route.path === "/about.html") {
+        return "neutral";
+      }
+      return null;
     },
     containerType() {
       if (this.$route.path === "/") {
@@ -117,9 +121,14 @@ export default {
 
 /*
 
-  REVERSE THEME
+  REVERSE THEMES
 
 */
+.neutral {
+  background-color: #b3ad9f;
+  background-color: rgba(183, 172, 148, 0.7);
+  background-color: rgba(214, 173, 121, 0.4);
+}
 .reverse {
   @apply bg-text;
 }
