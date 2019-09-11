@@ -40,7 +40,7 @@ export default ({ setHead }) => {
     ],
     // favicon
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    // polyfill
+    // polyfill intersection-bserver
     script: [
       { src: "https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver" },
     ],
