@@ -13,11 +13,11 @@ link: about
 projects:
   link: projects
   title: Selected projects
-  lede: While I've been working in the design industry since 2001, I've run my own shop since 2015. This is the good stuff since then.
+  lede: While I've been working in the design industry since 2001, I've run my own shop since 2015. These are the best projects since then.
 writing:
   link: writing
   title: Selected writing
-  lede: Audited opinions on design, creativity, attention and the web. Writing is a provocation to explain the work to myself. As Warren Ellis said, "I need to get my thinking out in front of me now so I can see it, and how I should develop it going forward".
+  lede: Audited opinions on design, creativity, attention and the web. Writing is a provocation to explain the work to myself. As Warren Ellis said, "I need to get my thinking out in front of me so I can see what kind of thing it is".
 newsletter:
   link: the-littoral-line
   title: The Littoral Line
