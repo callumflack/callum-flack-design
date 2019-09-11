@@ -203,7 +203,7 @@ main {
 }
 .red,
 .red .Nav {
-  background-color: var(--bg);
+  background-color: var(--bg) !important;
 }
 .red body {
   @apply bg-transparent;
@@ -211,26 +211,26 @@ main {
 .red .Nav,
 .red .Nav-logo,
 .red .IndexBlock {
-  border-color: var(--red);
+  border-color: var(--red) !important;
 }
 .red .text-gray,
 .red .Nav-link,
 .red .Card-body-meta {
-  color: var(--red);
+  color: var(--red) !important;
 }
 .red .Display,
 .red .Title {
-  color: var(--red);
+  color: var(--red) !important;
 }
 .red .Nav-link.is-active span:after,
 .red .router-link-exact-active span:after {
-  background-color: var(--red);
+  background-color: var(--red) !important;
 }
 .red .Input {
   --button-invert-color: transparent;
   --button-color: var(--red);
   --input-placeholder-color: var(--red);
-  border-color: var(--red);
+  border-color: var(--red) !important;
 }
 .red .Button--outline {
   --button-invert-color: var(--red);
