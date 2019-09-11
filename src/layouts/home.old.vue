@@ -1,35 +1,35 @@
 <template>
   <Wrap :page="page" kind="index">
-    <IndexHomeBlock :block="page.attributes" class="bg-one"></IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.projects" class="bg-two">
+    <IndexHomeBlock :block="page.attributes"></IndexHomeBlock>
+    <IndexHomeBlock :block="page.attributes.projects">
       <div class="Grid-extract--slide st-2xh">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in projectPosts" :key="index">
             <CardWithinSlide :key="post.attributes.permalink" :post="post">
             </CardWithinSlide>
           </vue-glide-slide>
-          <!-- <template slot="control">
+          <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
             <button data-glide-dir=">">next &#8594;</button>
-          </template> -->
+          </template>
         </vue-glide>
       </div>
     </IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.writing" class="bg-three">
+    <IndexHomeBlock :block="page.attributes.writing">
       <div class="Grid-extract--slide st-2xh">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in writingPosts" :key="index">
             <CardWithinSlide :key="post.attributes.permalink" :post="post">
             </CardWithinSlide>
           </vue-glide-slide>
-          <!-- <template slot="control">
+          <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
             <button data-glide-dir=">">next &#8594;</button>
-          </template> -->
+          </template>
         </vue-glide>
       </div>
     </IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.newsletter" class="bg-four">
+    <IndexHomeBlock :block="page.attributes.newsletter">
       <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
     </IndexHomeBlock>
   </Wrap>
@@ -84,13 +84,13 @@ export default {
         .splice(0, 6);
     },
   },
-  /* head() {
+  head() {
     return {
       htmlAttrs: {
         class: "bg-text",
       },
     };
-  }, */
+  },
 };
 </script>
 
@@ -125,59 +125,5 @@ export default {
     bottom: auto;
     top: calc(-3.25rem * var(--space-ratio));
   }
-}
-/*
-
-  Block bgs
-
- */
-/* .bg-one {
-  background-color: rgba(152, 140, 118, 0.6);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.bg-two {
-  background-color: rgba(152, 140, 118, 0.5);
-  background-color: transparent;
-}
-.bg-three {
-  background-color: rgba(152, 140, 118, 0.4);
-  background-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 150, 136, 0.2);
-}
-.bg-four {
-  background-color: rgba(152, 140, 118, 0.3);
-  background-color: rgba(0, 0, 0, 0.05);
-} */
-/* .bg-one,
-.bg-two,
-.bg-three,
-.bg-four {
-  background: linear-gradient(0, transparent, rgba(0, 0, 0, 0.025));
-  background: linear-gradient(22.5deg, rgba(0, 0, 0, 0.05), transparent);
-} */
-/*
-
-  Fade hack
-  https://github.com/glidejs/glide/issues/279#issuecomment-468204570
-
- */
->>> .glide__slides {
-  transform: none !important;
-  width: auto !important;
-  display: block;
-}
->>> .glide__slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: opacity 1s;
-}
->>> .glide__slide:first-child {
-  position: relative;
-}
->>> .glide__slide--active {
-  z-index: 1;
-  opacity: 1;
 }
 </style>

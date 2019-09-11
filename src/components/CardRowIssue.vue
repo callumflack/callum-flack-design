@@ -9,12 +9,12 @@
       <div class="w-9x24 lg:w-4/12 flex justify-between">
         <!-- number -->
         <div>
-          <span class="Title text-gray">{{ issue.number }}</span>
+          <span class="Title font-normal text-gray">{{ issue.number }}</span>
           <!-- <span class="Text text-gray inline-block mx-2px">&centerdot;</span> -->
           <!-- <span class="Text text-gray">{{ issue.readingTime }} mins</span> -->
         </div>
         <!-- date -->
-        <span class="Title text-gray ml-4 lg:ml-8">
+        <span class="Title font-normal text-gray ml-4 lg:ml-8">
           {{ formatListDate(issue.date) }}
         </span>
       </div>

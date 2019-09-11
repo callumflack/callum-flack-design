@@ -52,7 +52,7 @@
           <time :date-time="post.attributes.createdAt" class="Text--sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px tracking-tighter">
+          <span class="Text--sm inline-block mx-2px tracking-hyphen">
             &mdash;&mdash;
           </span>
           <!-- category & tags -->
@@ -132,8 +132,8 @@ export default {
 .Card {
   @apply block relative cursor-pointer;
   /* @apply h-full; */
-  margin: -7px;
-  padding: 7px;
+  /* margin: -7px;
+  padding: 7px; */
   transition: all 500ms ease;
 }
 
@@ -142,16 +142,18 @@ export default {
 } */
 
 .Card:before {
-  @apply absolute h-full w-full left-0 top-0 z-10;
+  @apply absolute h-full w-full left-0 top-0;
   @apply opacity-0;
-  @apply border border-black rounded-lg;
+  /* @apply border border-black */
+  /* @apply rounded-lg; */
+  /* @apply bg-gray-200; */
   content: "";
   pointer-events: none;
 }
 
 @keyframes hoverAnimation {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: scale(0.96);
   }
   100% {
@@ -172,21 +174,29 @@ export default {
   width: calc(100% - 14px);
 } */
 
-.Card:last-of-type:after {
-  /* @apply border-transparent; */
+/* .Card:last-of-type:after {
+  @apply border-transparent;
 }
 
 .Card:hover:after {
   @apply border-transparent;
-}
+} */
 
 /* .Card-figure {
   @apply mb-2;
 } */
 
 .Card-body {
-  @apply bg-brand-bg pt-3 pb-6;
+  @apply relative;
+  /* @apply bg-brand-bg; */
+  @apply pt-3 pb-6;
   /* @apply px-2; */
+  transform: translateX(0);
+  transition: transform 500ms ease;
+}
+
+.Card:hover .Card-body {
+  transform: translateX(1em);
 }
 
 .Card-body-meta {
@@ -199,6 +209,7 @@ export default {
 
 .Card-figure {
   @apply relative;
+  @apply z-10 border-b-2 border-white;
 }
 
 .Card-figure-image {
@@ -216,7 +227,7 @@ export default {
     @apply mb-3;
   } */
   .Card-body {
-    @apply pt-3 pb-12;
+    @apply pt-4 pb-12;
     /* @apply px-3; */
   }
   .Card-body > .Title {

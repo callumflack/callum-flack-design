@@ -99,10 +99,7 @@ When Callum builds websites, he advocates for these future-facing tools:
 
 - Building interfaces with Vue.js (or React.js)
 - A [JAMstack](https://jamstack.org/) architecture with git-based deployments (where possible)
-
-<!-- No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. To ensure this kind of comprehension, Callum will ask questions and listen. This has a knock-on effect: it helps define bigger possibilities and better constraints to work with.  -->
-
-No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. This also helps define bigger possibilities and better constraints to work with, and anticipates problems ahead of time during the project. 
+- A ["headless"](https://www.notion.so/callum/Headless-CMS-definition-public-47ef40175f974e18b960de8f06fc7625) Content Management System (if applicable)
 
 <!-- our intentions and end -->
 <!-- - micro-frontends with functional elements separated by concern -->
@@ -120,6 +117,12 @@ No tools, skills or experience matter without good project definition and mutual
 Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also owned and run [a few vinyl record labels in past years](https://www.discogs.com/artist/2452856-Callum-Flack).
 
 > Callum has great eye for detail, yet he also understand the "why" of things. His visual design work is top notch and he never forgets that design serves people. He's always taking the work over the advantage line, so to speak, so he's very easy to collaborate with. **[Brian Hur](https://www.linkedin.com/in/brianhur/), Founder, VetPronto (YCW15)**
+
+## Win-win collaborations
+
+<!-- No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. To ensure this kind of comprehension, Callum will ask questions and listen. This has a knock-on effect: it helps define bigger possibilities and better constraints to work with.  -->
+
+No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. This also helps define bigger possibilities and better constraints to work with, and anticipates problems ahead of time during the project. 
 
 <!-- > Development isn't simple. It’s easy working with Callum because he understands this. We work well together to understand problems, define options, improve systems and decide on the course of action." _— <a class="icon-targetblan" target="_blank" href="https://github.com/barryph">Barry Phillip Hall, JavaScript engineer_ -->
 
@@ -141,11 +144,25 @@ Based in [tropical Cairns, Australia](https://www.instagram.com/p/BXbsNdrAt-v), 
 - Twitter: [@callumflack](https://twitter.com/callumflack)
 
 
-You can also find Callum on these websites:
+You can also find Callum on these websites and feeds:
 
 - [Github](https://github.com/callumflack)
 - [Linkedin](https://linkedin.com/in/callumflack)
 - [AngelList](https://angel.co/callumflack-gmail-com)
-- [Reading Supply](https://reading.supply/@callum)
+- [RSS feed](https://callumflack.design/atom.xml)
+<!-- - [Reading Supply](https://reading.supply/@callum) -->
 
-And if you use RSS, [here's a feed for you](https://callumflack.design/atom.xml). Do keep in touch!
+<!-- And if you use RSS, [here's a feed](https://callumflack.design/atom.xml). -->
+
+The best way to keep in touch is to sign-up for The Littoral Line, a weekly email letter about creativity, design and complexity through the lens of people and attention:
+
+<FormNewsletter class="Block-sm-t" />
+
+<script>
+import FormNewsletter from "../src/components/FormNewsletter";
+export default {
+  components: {
+    FormNewsletter,
+  }
+}
+</script>

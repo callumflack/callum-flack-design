@@ -17,7 +17,7 @@
         formatListDate(attributes.date)
       }}</time>
       <!-- category & tags -->
-      <span class="Text--sm inline-block tracking-tighter mx-2px">&mdash;&mdash;</span>
+      <span class="Text--sm inline-block tracking-hyphen mx-2px">&mdash;&mdash;</span>
       <!-- <span class="Text--sm inline-block capitalize"> {{ attributes.category }}: </span> -->
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
@@ -29,7 +29,7 @@
       </span>
       <!-- reading time -->
       <template v-if="attributes.category === 'writing'">
-        <span class="Text--sm inline-block tracking-tighter mx-2px">
+        <span class="Text--sm inline-block tracking-hyphen mx-2px">
           &mdash;&mdash;
         </span>
         <span class="Text--sm">{{ attributes.readingTime }} mins</span>

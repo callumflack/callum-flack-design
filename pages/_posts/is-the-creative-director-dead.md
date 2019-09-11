@@ -55,9 +55,9 @@ As the Quantum physicist David Deutsch [said](https://www.edge.org/response-deta
 
 By asking "what if", we start by defining the problem first, well before we have fun figuring out what it looks like. That starts by being interested about how the world works right now and making some guesses about why it works like this. That is, to start seeing again. To anticipate, to seek, to conjecture. 
 
-This cannot be done by reference solely to what a thing should look like. Instead, we should first attempt to explain what is we're attempting to do, even if it's to ourselves. At this point, we're able to get to the guts of [what the word "design" actually means](https://www.websters1913.com/words/Design): *to plan, to mark out, to propose, to intend.*
-
 > It is the purpose that makes strong the vow. **Shakespeare**
+
+This cannot be done by reference solely to what a thing should look like. Instead, we should first attempt to explain what is we're attempting to do, even if it's to ourselves. At this point, we're able to get to the guts of [what the word "design" actually means](https://www.websters1913.com/words/Design): *to plan, to mark out, to propose, to intend.*
 
 <!-- Observation is theory-laden, it never proves anything. -->
 

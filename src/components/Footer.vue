@@ -15,10 +15,9 @@
               <div class="absolute inset-0">
                 <div class="relative h-full flex items-center justify-center">
                   <div class="container container--list">
-                    <!-- post title -->
-                    <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
                     <p class="Display s-2xh">
-                      &#8593; Up
+                      <!-- &#8593; You made it, go back up -->
+                      &#8593; Now you can choose
                     </p>
                   </div>
                 </div>
@@ -91,7 +90,32 @@
     </template>
     <!-- if nothing, keep the footer white-space -->
     <template v-else>
-      <div :class="spacerClasses" class="h-full w-full"></div>
+      <!-- <div :class="spacerClasses" class="h-full w-full"></div> -->
+      <a
+        v-smooth-scroll="{ duration: 1000 }"
+        href="#top"
+        :class="[linkTypography, spacerClasses]"
+        class="block h-full w-full"
+      >
+        <div class="container container--text">
+          <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
+          <div class="Grid-extract--post">
+            <div class="relative">
+              <div class="absolute inset-0">
+                <div class="relative h-full flex items-center justify-center">
+                  <div class="container container--list">
+                    <!-- post title -->
+                    <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
+                    <p class="Display s-2xh">
+                      &#8593; Up
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </template>
   </footer>
 </template>

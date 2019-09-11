@@ -123,6 +123,7 @@ button:disabled {
   --button-font-weight: 400;
   /* unlike buttons, inputs are full width */
   @apply w-full;
+  @apply bg-transparent;
 }
 
 .Input::placeholder {

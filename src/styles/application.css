@@ -19,6 +19,7 @@
 @import "./theme/theme-logo.css";
 
 /* CFd standard components */
+@import "./layout/layout";
 @import "./layout/layout-grid";
 @import "./layout/layout-block";
 @import "./layout/layout-container";

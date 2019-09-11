@@ -2,11 +2,11 @@
   <div class="IndexBlock">
     <HeaderTitleWrap>
       <!-- signal letter -->
-      <!-- <template v-slot:signal>
+      <template v-slot:signal>
         <div class="Signal hidden lg:block">
           <span>{{ signalLetter }}</span>
         </div>
-      </template> -->
+      </template>
       <!-- info col -->
       <header class="lg:w-9/12">
         <h1 v-if="block.title" class="Display s-m">
@@ -61,9 +61,7 @@ export default {
 
 <style lang="postcss" scoped>
 .IndexBlock {
-  @apply relative;
-  @apply border-b;
-  /* @apply border-gray-200; */
+  @apply relative border-b;
 }
 .IndexBlock:first-of-type {
   /* @apply border-t */
@@ -74,8 +72,7 @@ export default {
   @apply text-right;
   /* @apply pr-20; */
   left: -200px;
-  @apply border rounded-full;
-  @apply border-text;
+  @apply border border-white rounded-full;
   @apply p-4;
   height: 125px;
   width: 125px;

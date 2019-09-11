@@ -25,10 +25,14 @@ body {
   @apply bg-text text-white;
 }
 
-p,
-ul,
-ol {
-  @apply tracking-text;
+/*
+
+  Utils
+
+*/
+
+.text-gray {
+  color: theme(colors.gray.600);
 }
 
 .Text--xs {
@@ -36,7 +40,7 @@ ol {
 }
 
 .Text--sm {
-  @apply tracking-wide;
+  /* @apply tracking-wide; */
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
@@ -44,6 +48,16 @@ ol {
 .Input,
 .Text--base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
+}
+
+.Text--xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+
+p,
+ul,
+ol {
+  @apply tracking-text;
 }
 
 p,
@@ -54,8 +68,23 @@ ol,
 .Text--lg {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
 }
-.Text--xl {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+
+.Markdown > *,
+.Text,
+.Text--lg {
+  @apply font-serif;
+  @apply leading-copy tracking-normal !important;
+}
+
+/*
+
+  Nav
+
+*/
+
+.Nav-link {
+  @apply font-medium inline-flex items-center;
+  height: calc(theme(spacing.16) * var(--space-ratio));
 }
 
 /*
@@ -84,33 +113,12 @@ ol,
 
 /*
 
-  Nav
-
-*/
-
-.Nav-link {
-  @apply font-normal inline-flex items-center;
-  height: calc(theme(spacing.16) * var(--space-ratio));
-}
-
-/*
-
-  Utils
-
-*/
-
-.text-gray {
-  color: theme(colors.gray.600);
-}
-
-/*
-
   Markdown theme
 
 */
 
 :root {
-  --text-indent: calc(theme(spacing.8) * var(--grid-ratio));
+  --text-indent: calc(theme(spacing.6) * var(--grid-ratio));
 }
 
 .Markdown p:not(.Alert) + p {
@@ -143,9 +151,10 @@ ol,
 .Markdown li:before {
   @apply absolute inline-block bg-text h-px;
   content: "";
-  width: 1.5em;
-  top: 0.55em;
-  left: -1.75em;
+  width: 1.1em;
+  /* top: 0.55em; */ /* suisse */
+  top: 0.66em; /* tiempos */
+  left: -1.333em;
 }
 
 /* doesn't work when purge is active? */
@@ -164,7 +173,8 @@ ol,
 .Markdown blockquote p {
   /* @apply border border-l-2;
   border-left-color: theme(colors.text); */
-  @apply border-l-2 border-text;
+  @apply border-l;
+  /* @apply border-gray-400; */
   /* @apply border-l-2 border-text; */
   /* @apply border-l-2 border-brand-highlight; */
   /* @apply bg-gray-200; */
@@ -172,10 +182,11 @@ ol,
   background-color: rgba(135, 131, 120, 0.1);
   background-color: rgba(189, 183, 165, 0.15); */
   @apply py-2 pr-4;
-  @apply text-gray-600;
   @apply text-text;
+  @apply italic;
   /* @apply text-brand-highlight; */
   /* padding-left: calc(theme(spacing.6) * var(--grid-ratio)); */
+  border-color: rgba(0,0,0,0.2);
   padding-left: var(--text-indent);
 }
 
@@ -187,6 +198,7 @@ ol,
 /* same as Meta font style */
 .Markdown blockquote p strong {
   @apply table mt-2 tracking-wider;
+  @apply not-italic;
   /* @apply mb-1; */
   /* @apply text-gray-600; */
   /* @apply text-brand-highlight; */

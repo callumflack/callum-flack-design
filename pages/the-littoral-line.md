@@ -1,9 +1,14 @@
 ---
 layout: newsletter
 title: The Littoral Line
-lede: The Littoral Line is an irregular email letter on creativity, design and systems complexity through the lens of people and attention. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the momentary alignment of connected thoughts. Because you got this far, you should definitely sign up.
+lede: The Littoral Line is an email letter on creativity, design and systems complexity through the lens of people and attention delivered every Tuesday morning AEST. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the momentary alignment of connected thoughts. 
+# lede: Because you got this far, you should definitely sign up.
 newsletter: true
 issues:
+  - title: Language has a life all it's own
+    number: LL12
+    date: 2019.09.10
+    link: https://thelittoralline.substack.com/p/language-has-a-life-all-its-own
   - title: Our Now Endless Ways of Telling…
     number: LL11
     date: 2019.08.30
