@@ -25,7 +25,7 @@
           <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
-            class="Title text-gray"
+            class="Title font-normal text-gray"
           >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
@@ -42,7 +42,7 @@
         <!-- date -->
         <time
           :date-time="post.attributes.createdAt"
-          class="Title text-gray ml-4 lg:ml-8"
+          class="Title font-normal text-gray ml-4 lg:ml-8"
         >
           {{ formatListDate(post.attributes.createdAt) }}
         </time>

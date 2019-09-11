@@ -53,7 +53,7 @@
 
 .Display,
 .Title {
-  @apply font-sans font-normal tracking-text;
+  @apply font-sans tracking-tight;
   @apply font-medium;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .Display {
-  @apply tracking-tight leading-none;
+  @apply tracking-tighter leading-none;
   /* @apply font-medium; */
   font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }

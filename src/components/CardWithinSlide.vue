@@ -42,7 +42,7 @@
           <time :date-time="post.attributes.createdAt" class="Text--sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px tracking-tighter">
+          <span class="Text--sm inline-block mx-2px tracking-hyphen">
             &mdash;&mdash;
           </span>
           <!-- <span class="Text--sm capitalize">{{ post.attributes.category }}</span> -->
@@ -128,7 +128,7 @@ export default {
 
 @screen lg {
   .Card-body {
-    @apply pt-3;
+    @apply pt-4;
   }
   .Card-body > .Title {
     @apply w-3/4;

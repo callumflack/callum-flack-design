@@ -40,7 +40,7 @@ body {
 }
 
 .Text--sm {
-  @apply tracking-wide;
+  /* @apply tracking-wide; */
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
@@ -73,7 +73,7 @@ ol,
 .Text,
 .Text--lg {
   @apply font-serif;
-  @apply leading-reduced !important;
+  @apply leading-copy tracking-normal !important;
 }
 
 /*
@@ -151,9 +151,10 @@ ol,
 .Markdown li:before {
   @apply absolute inline-block bg-text h-px;
   content: "";
-  width: 1.5em;
-  top: 0.55em;
-  left: -1.75em;
+  width: 1.1em;
+  /* top: 0.55em; */ /* suisse */
+  top: 0.66em; /* tiempos */
+  left: -1.333em;
 }
 
 /* doesn't work when purge is active? */
@@ -172,8 +173,8 @@ ol,
 .Markdown blockquote p {
   /* @apply border border-l-2;
   border-left-color: theme(colors.text); */
-  @apply border-l-2;
-  @apply border-gray-400;
+  @apply border-l;
+  /* @apply border-gray-400; */
   /* @apply border-l-2 border-text; */
   /* @apply border-l-2 border-brand-highlight; */
   /* @apply bg-gray-200; */
@@ -181,10 +182,11 @@ ol,
   background-color: rgba(135, 131, 120, 0.1);
   background-color: rgba(189, 183, 165, 0.15); */
   @apply py-2 pr-4;
-  @apply text-gray-600;
   @apply text-text;
+  @apply italic;
   /* @apply text-brand-highlight; */
   /* padding-left: calc(theme(spacing.6) * var(--grid-ratio)); */
+  border-color: rgba(0,0,0,0.2);
   padding-left: var(--text-indent);
 }
 
@@ -196,6 +198,7 @@ ol,
 /* same as Meta font style */
 .Markdown blockquote p strong {
   @apply table mt-2 tracking-wider;
+  @apply not-italic;
   /* @apply mb-1; */
   /* @apply text-gray-600; */
   /* @apply text-brand-highlight; */

@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <form class="Form" @submit.prevent="handleSubmit">
+    <form class="Form font-sans" @submit.prevent="handleSubmit">
       <input
         v-model="formData.email"
         class="Input flex-1"
@@ -22,6 +22,15 @@
       <icon name="info" class="mr-1" />
       <span>{{ errorMsg }}</span>
     </div>
+
+    <!-- test substack -->
+    <!-- <iframe
+      width="100%"
+      height="320"
+      src="https://thelittoralline.substack.com/embed"
+      frameborder="0"
+      scrolling="no"
+    ></iframe> -->
   </div>
 </template>
 
@@ -45,7 +54,7 @@ export default {
     async subscribeToNewsletter(body) {
       const response = await fetch("/.netlify/functions/subscribe", {
         method: "post",
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
       });
       const json = await response.json();
 
@@ -80,7 +89,7 @@ export default {
       }
     },
   },
-}
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -93,6 +102,6 @@ export default {
 
 .Input {
   --button-padding-x: 0;
-  @apply border-b border-t border-gray-400;
+  @apply border-b border-t border-gray-300;
 }
 </style>

@@ -14,7 +14,7 @@ export default {
     return {
       active: false,
       dirty: false,
-      transition: ""
+      transition: "",
     };
   },
   methods: {
@@ -30,8 +30,8 @@ export default {
       this.transition = `SliderSlide--transition-${direction}`;
       this.active = true;
       this.dirty = true;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -59,12 +59,12 @@ export default {
 .SliderSlide--transition-left-enter,
 .SliderSlide--transition-right-leave-active {
   opacity: 0;
-  transform: translate(20em, 0);
+  transform: translate(2em, 0);
 }
 
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter {
   opacity: 0;
-  transform: translate(-20em, 0);
+  transform: translate(-2em, 0);
 }
 </style>

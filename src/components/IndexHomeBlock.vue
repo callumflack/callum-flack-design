@@ -61,7 +61,9 @@ export default {
 
 <style lang="postcss" scoped>
 .IndexBlock {
-  @apply relative border-b;
+  @apply relative;
+  @apply border-b;
+  /* @apply border-gray-200; */
 }
 .IndexBlock:first-of-type {
   /* @apply border-t */

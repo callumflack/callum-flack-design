@@ -72,6 +72,7 @@
 @font-face {
   font-family:"Text";
   src: url("/../../fonts/Suisse-BP-Intl-Thin.otf") format("woff");
+  src: url("/../../fonts/Graphik-Light.otf") format("woff");
   font-style: normal;
   font-weight: 300;
 }
@@ -84,6 +85,7 @@
   src: url("/../../fonts/Suisse-BP-Intl-Regular.woff2") format("woff2"),
     url("/../../fonts/Suisse-BP-Intl-Regular.woff") format("woff");
   /* src: url("/../../fonts/Unica-Regular.woff") format("woff"); */
+  src: url("/../../fonts/Graphik-Regular.otf") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -91,12 +93,14 @@
   font-family:"Text";
   src: url("/../../fonts/Suisse-BP-Intl-Medium.woff2") format("woff2"),
     url("/../../fonts/Suisse-BP-Intl-Medium.woff") format("woff");
+  src: url("/../../fonts/Graphik-Medium.otf") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family:"Text";
   src: url("/../../fonts/Suisse-BP-Intl-Bold.otf") format("woff");
+  src: url("/../../fonts/Graphik-Bold.otf") format("woff");
   font-style: normal;
   font-weight: 700;
 }

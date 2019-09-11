@@ -52,7 +52,7 @@
           <time :date-time="post.attributes.createdAt" class="Text--sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px tracking-tighter">
+          <span class="Text--sm inline-block mx-2px tracking-hyphen">
             &mdash;&mdash;
           </span>
           <!-- category & tags -->
@@ -146,7 +146,7 @@ export default {
   @apply opacity-0;
   /* @apply border border-black */
   /* @apply rounded-lg; */
-  @apply bg-gray-200;
+  /* @apply bg-gray-200; */
   content: "";
   pointer-events: none;
 }
@@ -227,7 +227,7 @@ export default {
     @apply mb-3;
   } */
   .Card-body {
-    @apply pt-3 pb-12;
+    @apply pt-4 pb-12;
     /* @apply px-3; */
   }
   .Card-body > .Title {

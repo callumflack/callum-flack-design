@@ -1,5 +1,6 @@
 <template>
-  <div :class="reverseClass">
+  <!-- <div :class="reverseClass"> -->
+  <div>
     <Nav :category="page.attributes.category" />
     <div class="transition-body">
       <Header
@@ -34,13 +35,13 @@ export default {
   },
   computed: {
     /* reverse = white on black theme */
-    reverseClass() {
-      // return this.$route.path === "/" && "reverse";
-      if (this.$route.path === "/about.html") {
-        return "neutral";
-      }
-      return null;
-    },
+    /* reverseClass() {
+      return this.$route.path === "/" && "reverse";
+    }, */
+    /* neutral theme is instead defined using page attrs */
+    /* neutralClass() {
+      return this.$route.path === "/about.html" && "neutral";
+    }, */
     containerType() {
       if (this.$route.path === "/") {
         return;
@@ -55,7 +56,7 @@ export default {
   },
   head() {
     const { excerpt } = this.page;
-    const { title, pageTitle, layout } = this.page.attributes;
+    const { title, pageTitle, pageClass, layout } = this.page.attributes;
     let { description } = this.$siteConfig;
     if (layout === "page" || layout === "post") {
       if (excerpt) {
@@ -63,6 +64,10 @@ export default {
       }
     }
     return {
+      htmlAttrs: {
+        // add an HTML class usinf `pageClass` page attrs
+        class: pageClass,
+      },
       // title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
       title: pageTitle
         ? `${this.siteTitle} • ${pageTitle}`
@@ -118,17 +123,12 @@ export default {
   transform: translateX(5px);
   opacity: 0;
 }
-
 /*
 
-  REVERSE THEMES
+  REVERSE THEME
+  where .reverse is applied to the bounding div in this component
 
 */
-.neutral {
-  background-color: #b3ad9f;
-  background-color: rgba(183, 172, 148, 0.7);
-  background-color: rgba(214, 173, 121, 0.4);
-}
 .reverse {
   @apply bg-text;
 }

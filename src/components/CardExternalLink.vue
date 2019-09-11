@@ -25,7 +25,7 @@ export default {
   @apply bg-transparent;
   @apply text-transparent;
   padding: 3px 6px 1px 6px;
-  transform: translate(-8px, -0.15em);
+  transform: translate(-12px, -0.15em);
   transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .Card:hover .ExternalLink {

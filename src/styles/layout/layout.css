@@ -16,3 +16,243 @@ body {
 main {
   @apply min-h-full;
 }
+
+/*
+
+  NEUTRAL THEME
+
+*/
+.neutral {
+  /* background-color: #b3ad9f;
+  background-color: rgba(183, 172, 148, 0.7);
+  background-color: rgba(214, 173, 121, 0.4);
+  background-color: rgba(158, 138, 101, 0.4);
+  background-color: rgba(193, 134, 92, 0.4);
+  background-color: rgba(152, 140, 118, 0.2); */
+  /* background-color: #D5D1C8; */
+  /* background-color: rgba(213, 209, 200, 1); */
+  /* background-color: rgba(152, 140, 118, 0.25); */
+  /* background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(21deg, #eea849, #f46b45);
+  background: linear-gradient(-33deg, #D5D1C8, #eea849);
+  background: linear-gradient(33deg, #acc7cc, #D5D1C8);
+  background: linear-gradient(0deg, #D5D1C8, #acc7cc);
+  background: linear-gradient(18deg, rgba(152, 140, 118, 0.2), rgba(152, 140, 118, 0.6) 40%); */
+  /* background: linear-gradient(12deg, rgba(52, 152, 219, 0.4), rgba(44, 62, 80, 0.5) 70%); */
+  background-color: rgba(50, 162, 227, 1);
+  background-color: rgba(118, 172, 204, 1);
+  background-color: rgb(213, 209, 200);
+  background-color: rgb(255, 241, 210);
+  background-color: rgb(247, 236, 212);
+  @apply bg-transparent;
+}
+
+/* .neutral,
+.neutral body,
+.neutral .Nav {
+  background-color: #D5D1C8;
+} */
+.neutral body {
+  @apply bg-transparent;
+}
+.neutral .text-gray {
+  color: rgba(0,0,0,0.6);
+}
+.neutral nav,
+.neutral .bg-one {
+  background-color: rgba(152, 140, 118, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #D5D1C8;
+  background-color: rgb(193, 186, 172);
+  @apply bg-transparent;
+  @apply bg-white;
+  background-color: rgb(219, 95, 35) !important;
+}
+.neutral .bg-two {
+  background-color: rgba(50, 67, 96, 0.99);
+}
+.neutral .bg-three {
+  background-color: rgba(167, 211, 65, 0.99);
+  background-color: rgba(228, 163, 23, 0.99);
+}
+.neutral .bg-four {
+  background-color: rgba(152, 140, 118, 0.3);
+  background-color: rgba(115, 116, 117, 0.99);
+  background-color: rgba(130, 130, 130, 0.99);
+}
+.neutral footer {
+  background-color: rgba(152, 140, 118, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #D5D1C8;
+  background-color: rgb(193, 186, 172);
+  @apply bg-transparent;
+  background-color: #f3f3f3;
+  background-color: rgba(167, 211, 65, 0.99);
+  background-color: rgba(171, 204, 96, 0.99);
+}
+/*
+
+  YELLOW THEME
+
+*/
+.yellow {
+  --color: rgb(248, 240, 180);
+  --color: rgb(50, 67, 95);
+  --color: rgb(230, 170, 30);
+  --color: rgb(222, 95, 36); /* red orange */
+  --color: rgb(193, 180, 138);
+  --color: rgb(195, 183, 161);
+  --color: rgb(185, 180, 164); /* grey-ish */
+  --color: rgb(237, 230, 136); /* yellows */
+  --color: rgb(236, 232, 175);
+  --color: rgb(255, 204, 0); /* canary */
+}
+.yellow,
+.yellow .Nav {
+  background-color: rgba(63, 191, 85, 0.99);
+  background-color: var(--color);
+}
+.yellow {
+  /* background: linear-gradient(18deg, rgba(230, 170, 30, 0.3), rgb(230, 170, 30) 40%); */
+}
+.yellow .text-gray,
+.yellow .Card-body-meta {
+  color: rgba(0,0,0,0.6);
+}
+.yellow body {
+  @apply bg-transparent;
+}
+.yellow .Nav,
+.yellow .Nav-logo,
+.yellow .IndexBlock,
+.yellow .Input {
+  @apply border-text;
+  border-color: rgba(0,0,0,0.4);
+}
+.yellow .Display,
+.yellow .Title {
+  /* @apply text-white; */
+}
+.yellow img {
+  filter: grayscale(0.8);
+}
+/*
+
+  REVERSE THEME
+
+*/
+.reverse {
+  --color: rgb(27, 32, 47);
+}
+.reverse,
+.reverse .Nav {
+  background-color: var(--color);
+}
+.reverse body {
+  @apply bg-transparent;
+}
+.reverse .Nav,
+.reverse .Nav-logo,
+.reverse .IndexBlock {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.reverse .text-gray,
+.reverse .Card-body-meta {
+  color: rgba(255,255,255,0.6);
+}
+.reverse .Display,
+.reverse .Title {
+  @apply text-white;
+}
+.reverse .Nav-link.is-active span:after,
+.reverse .router-link-exact-active span:after {
+  @apply bg-white;
+}
+.reverse .Input {
+  --button-invert-color: transparent;
+  --button-color: theme(colors.white);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.reverse .Button--outline {
+  --button-invert-color: theme(colors.gray.600);
+  --button-color: theme(colors.gray.600);
+}
+.reverse .Button--outline:hover {
+  --button-color: theme(colors.white);
+  --button-box-shadow-color: theme(colors.white);
+}
+.reverse .Link a:not(.Button),
+.reverse .Markdown a:not(.Button) {
+  @apply text-gray-600;
+  box-shadow: inset 0 -1px 0 #555;
+}
+.reverse .Link a:hover:not(.Button),
+.reverse .Markdown a:hover:not(.Button) {
+  @apply text-text;
+  box-shadow: inset 0 -25px 0 theme(colors.white);
+}
+
+/*
+
+  RED THEME
+
+*/
+.red {
+  --red: rgb(255, 48, 42);
+  --bg: rgb(255, 207, 207);
+}
+.red,
+.red .Nav {
+  background-color: var(--bg);
+}
+.red body {
+  @apply bg-transparent;
+}
+.red .Nav,
+.red .Nav-logo,
+.red .IndexBlock {
+  border-color: var(--red);
+}
+.red .text-gray,
+.red .Nav-link,
+.red .Card-body-meta {
+  color: var(--red);
+}
+.red .Display,
+.red .Title {
+  color: var(--red);
+}
+.red .Nav-link.is-active span:after,
+.red .router-link-exact-active span:after {
+  background-color: var(--red);
+}
+.red .Input {
+  --button-invert-color: transparent;
+  --button-color: var(--red);
+  --input-placeholder-color: var(--red);
+  border-color: var(--red);
+}
+.red .Button--outline {
+  --button-invert-color: var(--red);
+  --button-color: var(--red);
+}
+.red .Button--outline:hover {
+  --button-color: var(--red);
+  --button-box-shadow-color: var(--red);
+}
+.red .Link a:not(.Button),
+.red .Markdown a:not(.Button) {
+  color: var(--red);
+  box-shadow: inset 0 -1px 0 var(--red);
+}
+.red .Link a:hover:not(.Button),
+.red .Markdown a:hover:not(.Button) {
+  @apply text-white;
+  box-shadow: inset 0 -25px 0 var(--red);
+}
+.red .Card:hover .ExternalLink {
+  background-color: var(--red) !important;
+}
+.red .ExternalLink .Link--blank {
+  color: var(--red) !important;
+}

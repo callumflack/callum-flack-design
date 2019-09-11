@@ -34,11 +34,11 @@ module.exports = {
       },
       gray: {
         100: "#f7fafc",
-        200: "#eaeaea",
-        300: "#e5e5e5",
+        200: "rgba(0, 0, 0, 0.05)",
+        300: "rgba(0, 0, 0, 0.1)",
         400: "#dedede",
         500: "#aaa",
-        600: "#888",
+        600: "rgba(0, 0, 0, 0.45)",
         700: "#777",
         // 800: "#231F20",
         // 900: "#1a202c",
@@ -110,8 +110,8 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.125rem", // 18 or 19
-      xl: "1.25rem", // 21
+      lg: "1.0625rem", // 17 or 18
+      xl: "1.25rem", // 20
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
@@ -152,14 +152,15 @@ module.exports = {
       none: "1.075",
       tight: "1.25",
       snug: "1.375",
-      reduced: "1.47059",
+      copy: "1.5",
       normal: "1.333333333",
       relaxed: "1.625",
       loose: "2",
       nav: "4.5",
     },
     letterSpacing: {
-      tighter: "-0.075em",
+      hyphen: "-0.075em",
+      tighter: "-0.025em",
       tight: "-0.005em",
       text: "-0.001em",
       normal: "0",
