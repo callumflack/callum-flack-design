@@ -36,7 +36,7 @@ export default {
 
 .ExternalLink .Link--blank {
   @apply inline-block;
-  @apply text-text !important;
+  @apply text-text;
   font-size: 125%;
   transform: translate(-18px, 0em);
 }
@@ -44,9 +44,6 @@ export default {
 /* KISS: only adapt the Link--blank here */
 @screen lg {
   .ExternalLink .Link--blank {
-    @apply inline-block;
-    @apply text-text !important;
-    font-size: 125%;
     transition: all 250ms cubic-bezier(0.19, 1, 0.22, 1);
     transform: translate(-23px, 0em);
   }
