@@ -17,7 +17,7 @@
                   <div class="container container--list">
                     <p class="Display s-2xh">
                       <!-- &#8593; You made it, go back up -->
-                      &#8593; Now you can choose your path
+                      &#8593; Now you can choose
                     </p>
                   </div>
                 </div>
