@@ -14,10 +14,10 @@
             <div class="relative">
               <div class="absolute inset-0">
                 <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--list">
+                  <div class="container container--list container--removeListInset">
                     <p class="Display s-2xh">
                       <!-- &#8593; You made it, go back up -->
-                      &#8593; Now you can choose
+                      &#8593; Choose again
                     </p>
                   </div>
                 </div>
@@ -71,8 +71,7 @@
       >
         <div class="container container--text">
           <p class="Display s-2xh">
-            <span class="Logo-arrow mr-1">&#8592;</span>
-            <span style="text-transform:initial">Projects</span>
+            &#8592; Projects
           </p>
         </div>
       </saber-link>
@@ -82,8 +81,7 @@
       <saber-link to="/" :class="[linkTypography, spacerClasses]" class="h-full w-full">
         <div class="container container--text">
           <p class="Display s-2xh">
-            <span class="Logo-arrow mr-1">&#8592;</span>
-            <span style="text-transform:initial">Home</span>
+            &#8592; Home
           </p>
         </div>
       </saber-link>
@@ -103,7 +101,7 @@
             <div class="relative">
               <div class="absolute inset-0">
                 <div class="relative h-full flex items-center justify-center">
-                  <div class="container container--list">
+                  <div class="container container--list container--removeListInset">
                     <!-- post title -->
                     <!-- <p class="Text--base font-medium s-m">Next post:</p> -->
                     <p class="Display s-2xh">

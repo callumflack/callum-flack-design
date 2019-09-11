@@ -67,7 +67,7 @@
               </div>
             </SliderSlide>
             <SliderSlide v-if="allPostsUngrouped && allPostsUngrouped.length > 0">
-              <div class="container container--list">
+              <div class="container container--list container--removeListInset">
                 <CardRow
                   v-for="post in allPostsUngrouped"
                   :key="post.attributes.permalink"

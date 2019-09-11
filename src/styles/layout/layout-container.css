@@ -1,23 +1,24 @@
 /*
 
-  Super container.
-  Rather than define a width, define how
-  much it insets from the browser window.
+  Container variations
 
 */
 
 .container--text {
   @apply mx-auto;
   max-width: theme(screens.sm) !important;
-  /* max-width: calc(680px + 64px) !important; */
-  /* max-width: 680px !important; */
 }
+
 .container--list {
   @apply mx-auto;
-  /* max-width: calc(theme(screens.md) - 2rem) !important;
-  max-width: theme(screens.lg) !important; */
-  max-width: 840px !important;
   max-width: 740px !important;
+}
+
+@media (max-width: 740px) {
+  .container--removeListInset {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 .container--hero {
@@ -27,11 +28,18 @@
 
 @screen lg {
   .container {
-    /* @apply border; */
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
+
+/*
+
+  Super container.
+  Rather than define a width, define how
+  much it insets from the browser window.
+
+*/
 
 /* .container--su {
   max-width: none !important;

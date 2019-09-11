@@ -52,7 +52,7 @@
               </div>
             </SliderSlide>
             <SliderSlide v-if="allWriting && allWriting.length > 0">
-              <div class="container container--list">
+              <div class="container container--list container--removeListInset">
                 <CardRow
                   v-for="post in allWriting"
                   :key="post.attributes.permalink"
