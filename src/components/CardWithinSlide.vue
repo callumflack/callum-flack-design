@@ -15,19 +15,18 @@
       >
         <Aspect>
           <!-- v-if="post.attributes.assets.cover.local" -->
-          <img
+          <!-- <img
             :src="
               `${post.attributes.assets.cover}?w=500fit=crop&crop=entropy&auto=format&q=50`
             "
             :alt="post.attributes.title"
             class="Card-figure-image"
-          />
-          <!-- <ImageDynamic
-            v-else
+          /> -->
+          <ImageDynamic
             :src="post.attributes.assets.cover"
             :alt="post.attributes.title"
             class="Card-figure-image"
-          /> -->
+          />
         </Aspect>
       </div>
       <!-- body -->
@@ -68,14 +67,14 @@ import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
 import CardExternalLink from "../components/CardExternalLink";
 import ElementLink from "../components/ElementLink";
-// import ImageDynamic from "../components/ImageDynamic";
+import ImageDynamic from "../components/ImageDynamic";
 
 export default {
   components: {
     Aspect,
     CardExternalLink,
     ElementLink,
-    // ImageDynamic,
+    ImageDynamic,
   },
   props: ["post"],
   computed: {
