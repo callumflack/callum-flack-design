@@ -10,13 +10,13 @@
         required
       />
       <button class="Button Button--outline ml-2">
-        {{ successMsg }}
+        {{ buttonMsg }}
       </button>
     </form>
-    <!-- <div v-if="successMsg" class="Form-validation is-good Input">
+    <!-- <div v-if="buttonMsg" class="Form-validation is-good Input">
       <icon name="check-circle" class="mr-1" />
       <span>Thanks! You're all signed up.</span>
-      <span>{{ successMsg }}</span>
+      <span>{{ buttonMsg }}</span>
     </div> -->
     <div v-if="errorMsg" class="Form-validation is-bad Input">
       <icon name="info" class="mr-1" />
@@ -43,7 +43,7 @@ export default {
     return {
       subscribed: false,
       errorMsg: null,
-      successMsg: "Yes please",
+      buttonMsg: "Yes please",
       formData: {
         name: "",
         email: "",
@@ -67,7 +67,7 @@ export default {
     },
     async handleSubmit() {
       this.errorMsg = "";
-      this.successMsg = "";
+      this.buttonMsg = "Sending…";
 
       try {
         const response = await this.subscribeToNewsletter({
@@ -83,8 +83,9 @@ export default {
         this.email = "";
         this.name = "";
         this.subscribed = true;
-        this.successMsg = response.msg;
+        this.buttonMsg = response.msg;
       } catch (error) {
+        this.buttonMsg = "Oh no";
         this.errorMsg = "Something went wrong… Please email us about this!";
       }
     },
