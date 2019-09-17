@@ -5,6 +5,10 @@ lede: The Littoral Line is an email letter on creativity, design and systems com
 # lede: Because you got this far, you should definitely sign up.
 newsletter: true
 issues:
+  - title: Creating context
+    number: LL13
+    date: 2019-09-17
+    link: https://thelittoralline.substack.com/p/-creating-context
   - title: Language has a life all it's own
     number: LL12
     date: 2019-09-10
