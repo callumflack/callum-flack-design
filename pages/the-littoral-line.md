@@ -1,7 +1,7 @@
 ---
 layout: newsletter
 title: The Littoral Line
-lede: The Littoral Line is an email letter on creativity, design and systems complexity through the lens of people and attention, sent every Tuesday morning AEST. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the alignment of connected thoughts. 
+lede: The Littoral Line is an email letter on creativity, design and systems complexity through the lens of people and attention, sent every Tuesday morning AEST. Littoral as in the edge of things, like tidal zones. Line as in symmetry, like the alignment of metaphor. 
 # lede: Because you got this far, you should definitely sign up.
 newsletter: true
 issues:
@@ -44,7 +44,7 @@ issues:
   - title: Aesthetic arrest
     number: LL04
     date: 2018-11-18
-    link: https://the-littoral-line.callumflack.design/LL04.html
+    link: https://thelittoralline.callumflack.design/LL04
   - title: System 1 perceives and System 2 creates
     number: LL03
     date: 2018-11-02
