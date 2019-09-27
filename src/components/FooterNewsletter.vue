@@ -5,14 +5,14 @@
       <div class="">
         <p class="s-2xh Link">
           Ps.
-          <template v-if="$route.path !== '/about.html'">
-            You're on <saber-link to="/about.html">Callum Flack's website.</saber-link> He
+          <template v-if="$route.path !== '/about'">
+            You're on <saber-link to="/about">Callum Flack's website.</saber-link> He
           </template>
           <template v-else>
             Callum
           </template>
           also writes a bi-monthly email letter about design, UX and the web through the lens of people and attention.
-          <saber-link to="/about.html">Here's the archives.</saber-link>
+          <saber-link to="/about">Here's the archives.</saber-link>
           Since you made it this far, you should probably sign up:
         </p>
         <FormNewsletter />
@@ -29,9 +29,9 @@ import FormNewsletter from "./FormNewsletter";
 
 export default {
   components: {
-    FormNewsletter
+    FormNewsletter,
   },
-}
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -40,4 +40,3 @@ export default {
   @apply border border-text rounded-lg;
 } */
 </style>
-

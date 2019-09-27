@@ -9,7 +9,7 @@ assets:
   cover: /images/post-semilattice-190708.jpg
 nextPost:
   title: The instantaneous language of beauty
-  link: /blog/the-instantaneous-language-of-beauty.html
+  link: /blog/the-instantaneous-language-of-beauty
   hero: /images/post-aesthetics-nembrotha-aurea.jpg
 tags:
   - essay

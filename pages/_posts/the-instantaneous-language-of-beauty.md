@@ -16,7 +16,7 @@ hero:
   titleWidth: lg:w-9/12
 nextPost:
   title: Designers should code
-  link: /blog/designers-should-code.html
+  link: /blog/designers-should-code
 tags: 
   - essay
   - featured

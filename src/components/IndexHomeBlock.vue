@@ -10,7 +10,7 @@
       <!-- info col -->
       <header class="lg:w-9/12">
         <h1 v-if="block.title" class="Display s-m">
-          <saber-link :to="`/${block.link}.html`">
+          <saber-link :to="`/${block.link}`">
             {{ block.title }}
             <span class="Link--blank">&#8594;</span>
           </saber-link>
@@ -18,7 +18,7 @@
         <p v-if="block.lede" class="Link Text--sm text-gray">
           {{ block.lede }}
           <saber-link
-            :to="`/${block.link}.html`"
+            :to="`/${block.link}`"
             class="text-text"
             v-html="renderLabel"
           >

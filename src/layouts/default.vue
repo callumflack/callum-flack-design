@@ -35,7 +35,7 @@
               </li>
               <li>
                 <saber-link
-                  to="/the-littoral-line.html"
+                  to="/the-littoral-line"
                   class="Tab-controls--button Meta flex self-center"
                 >
                   Newsletter

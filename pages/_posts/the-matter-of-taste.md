@@ -14,7 +14,7 @@ hero:
   titleInvert: true
 nextPost:
   title: The brief, the scope and the dance
-  link: /blog/the-brief-the-scope-and-the-dance.html
+  link: /blog/the-brief-the-scope-and-the-dance
   hero: /images/post-process-2a.jpg
 tags:
   - essay

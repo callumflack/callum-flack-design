@@ -65,7 +65,7 @@
     <!-- project back (until all projects are local, then use nextpost) -->
     <template v-else-if="$route.path.includes('blog') && !nextpost">
       <saber-link
-        to="/projects.html"
+        to="/projects"
         :class="[linkTypography, spacerClasses]"
         class="h-full w-full"
       >

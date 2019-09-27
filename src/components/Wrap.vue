@@ -40,7 +40,7 @@ export default {
     }, */
     /* neutral theme is instead defined using page attrs */
     /* neutralClass() {
-      return this.$route.path === "/about.html" && "neutral";
+      return this.$route.path === "/about" && "neutral";
     }, */
     containerType() {
       if (this.$route.path === "/") {

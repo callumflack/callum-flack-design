@@ -6,9 +6,9 @@
           <!-- <h3 class="Display s-h">Ps.</h3> -->
           <p class="s-2xh Link">
             Ps. You're on
-            <saber-link to="/about.html">Callum Flack's website.</saber-link>
+            <saber-link to="/about">Callum Flack's website.</saber-link>
             He also writes a bi-monthly email letter about design, UX and the web through the lens of people and attention.
-            <saber-link to="/about.html">Here's the archives.</saber-link>
+            <saber-link to="/about">Here's the archives.</saber-link>
             Since you made it this far, you should probably sign up:
           </p>
         </div>

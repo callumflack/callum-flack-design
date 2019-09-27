@@ -15,20 +15,20 @@ siteConfig:
 themeConfig:
   nav:
     - text: projects
-      link: /projects.html
+      link: /projects
     - text: writing
-      link: /writing.html
+      link: /writing
     - text: newsletter
-      link: /the-littoral-line.html
+      link: /the-littoral-line
     - text: about
-      link: /about.html
+      link: /about
   social:
     rss: true
   lang: en
 
 permalinks:
-  post: /blog/:slug.html
-  page: /:slug.html
+  post: /blog/:slug
+  page: /:slug
 
 plugins:
   - resolve: saber-plugin-query-posts

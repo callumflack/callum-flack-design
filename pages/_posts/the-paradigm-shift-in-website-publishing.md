@@ -15,7 +15,7 @@ hero:
   titleWidth: lg:w-9/12
 nextPost:
   title: Notes on Deciphering Sun Tzu
-  link: /blog/notes-on-deciphering-sun-tzu.html
+  link: /blog/notes-on-deciphering-sun-tzu
 tags: 
 - essay
 ---

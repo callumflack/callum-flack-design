@@ -6,7 +6,7 @@ title: Sea Change
 link: https://www.seachangecairns.com/
 assets:
   # static images only in front matter
-  # https://saber.land/docs/images-fonts-and-files.html#using-the-assets-page-attribute
+  # https://saber.land/docs/images-fonts-and-files#using-the-assets-page-attribute
   # cover: /images/seachange-desktop-home-sunset-16-9.jpg
   # cover: https://cfd-saber.imgix.net/images/seachange-desktop-home-sunset-16-9.jpg
   cover: /images/seachange-desktop-home-sunset-1440.jpg

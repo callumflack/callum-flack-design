@@ -15,7 +15,7 @@ hero:
   titleWidth: sm:w-10/12
 nextPost:
   title: How to publish a newsletter so you own your writing
-  link: /blog/how-to-publish-your-newsletter-so-you-own-your-writing.html
+  link: /blog/how-to-publish-your-newsletter-so-you-own-your-writing
 tags:
   - essay
   - featured
@@ -31,7 +31,7 @@ That is, I have been a "pyramid builder" not a "Pharaoh", to match your terms. M
 
 A business' status is always important. But within a domain that is difficult to assess, such as design, it is *more* important. A graphic designer's value is in creating emotion to communicate with an audience. But often the people who pay for their work don't care what it looks like because they *buy the outcome.* And that outcome—emotional resonance—is a difficult thing to measure. So buyers typically have no real way of knowing that what they buy works, apart from their own intuitions of it. So they defer, among other things, to a studio's status.
 
-In this way, graphic design is akin to the fashion industry. We have the same type of Pharaohs: original geniuses whose [taste](/blog/the-matter-of-taste.html) is ascendant and ahead of the What's Happening Now curve. If you're winning that game, you're brilliant. But from the outside, it's pretty easy to be a little cynical and describe this process as selling microtrends to suckers.
+In this way, graphic design is akin to the fashion industry. We have the same type of Pharaohs: original geniuses whose [taste](/blog/the-matter-of-taste) is ascendant and ahead of the What's Happening Now curve. If you're winning that game, you're brilliant. But from the outside, it's pretty easy to be a little cynical and describe this process as selling microtrends to suckers.
 
 ## Information Theory and the new Market for Lemons
 

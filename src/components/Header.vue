@@ -1,7 +1,7 @@
 <template>
   <header id="top">
     <!-- about card -->
-    <div v-if="$route.path === '/about.html'" class="Block">
+    <div v-if="$route.path === '/about'" class="Block">
       <div class="container container--text">
         <CardContact :title="title" :lede="lede" />
       </div>
@@ -10,8 +10,8 @@
     <!-- projects or writing or newsletter -->
     <HeaderTitleWrap
       v-else-if="
-        $route.path === '/projects.html' ||
-          $route.path === '/writing.html' ||
+        $route.path === '/projects' ||
+          $route.path === '/writing' ||
           $route.path.includes('littoral')
       "
     >

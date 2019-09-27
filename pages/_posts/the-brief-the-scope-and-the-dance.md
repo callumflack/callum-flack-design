@@ -15,7 +15,7 @@ hero:
   titleWidth: sm:w-8/12
 nextPost:
   title: The instantaneous language of beauty
-  link: /blog/the-instantaneous-language-of-beauty.html
+  link: /blog/the-instantaneous-language-of-beauty
   hero: /images/post-aesthetics-nembrotha-aurea.jpg
 tags:
   - essay

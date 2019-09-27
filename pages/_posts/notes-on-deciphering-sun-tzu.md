@@ -9,7 +9,7 @@ assets:
   cover: /images/post-notes-on-sun-tzu-cover.jpg
 nextPost:
   title: The matter of taste
-  link: /blog/the-matter-of-taste.html
+  link: /blog/the-matter-of-taste
   hero: /images/post-lynch-bw.jpg
 tags: 
   - notes

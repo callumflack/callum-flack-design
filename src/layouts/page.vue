@@ -2,7 +2,7 @@
   <Wrap :page="page" kind="post">
     <article
       class="Markdown"
-      :class="{ 'Block-sm-t': this.$route.path !== '/about.html' }"
+      :class="{ 'Block-sm-t': this.$route.path !== '/about' }"
       itemprop="articleBody"
     >
       <slot name="default" />

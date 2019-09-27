@@ -14,7 +14,7 @@ hero:
   titleInvert: true
 nextPost:
   title: Is the Creative Director Dead?
-  link: /blog/is-the-creative-director-dead.html
+  link: /blog/is-the-creative-director-dead
   hero: /images/post-creative-director-dead.jpg
 tags:
   - notes
@@ -68,7 +68,7 @@ The solution to project bottlenecks like this is to take the time to workshop re
 
 > A problem well stated is a problem half solved **John Dewey**
 
-Starting with workshopping your requirements is also a very good chance to get to know each other: with a good relationship in place, [you’ll find the freedom to adapt to the inevitable changes that arise](/blog/the-brief-the-scope-and-the-dance.html) during the course of the project execution.
+Starting with workshopping your requirements is also a very good chance to get to know each other: with a good relationship in place, [you’ll find the freedom to adapt to the inevitable changes that arise](/blog/the-brief-the-scope-and-the-dance) during the course of the project execution.
 
 ### Make systems not websites
 

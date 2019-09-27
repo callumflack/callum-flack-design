@@ -11,7 +11,7 @@ hero:
   titleWidth: lg:w-10/12
 nextPost:
   title: The paradigm shift in website publishing
-  link: /blog/the-paradigm-shift-in-website-publishing.html
+  link: /blog/the-paradigm-shift-in-website-publishing
   hero: /images/post-publishing-tools.jpg
 tags: 
 - notes
