@@ -24,6 +24,7 @@
       >
         <span v-if="index != 0">,</span>
         <span class="capitalize">{{ tag.name }}</span>
+        <!-- <saber-link :to="tag.permalink" class="capitalize">{{ tag.name }}</saber-link> -->
       </span>
       <!-- reading time -->
       <template v-if="attributes.category === 'writing'">
@@ -70,7 +71,7 @@ export default {
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.attributes.tags.filter(x => x.name !== "featured");
+      return this.attributes.tagsInfo.filter(x => x.name !== "featured");
     },
   },
 
