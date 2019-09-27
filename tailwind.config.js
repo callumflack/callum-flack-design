@@ -165,7 +165,7 @@ module.exports = {
       text: "-0.004em",
       normal: "0",
       wide: "0.0125em",
-      wider: "0.07em",
+      wider: "0.06em",
       widest: "0.1em",
     },
     textColors: theme => ({

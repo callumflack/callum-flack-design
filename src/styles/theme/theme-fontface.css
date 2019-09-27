@@ -120,3 +120,15 @@
   font-style: italic;
   font-weight: 400;
 }
+@font-face {
+  font-family:"Serif";
+  src: url("/../../fonts/TiemposText-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family:"Serif";
+  src: url("/../../fonts/TiemposText-Semibold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
