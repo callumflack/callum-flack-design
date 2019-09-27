@@ -2,11 +2,7 @@
   <Wrap :page="page" kind="index">
     <IndexStaticSubnav></IndexStaticSubnav>
     <div class="st-m">
-      <CardRowIssue
-        v-for="(issue, index) in page.attributes.issues"
-        :key="index"
-        :issue="issue"
-      />
+      <CardRowIssue v-for="(issue, index) in page.issues" :key="index" :issue="issue" />
     </div>
   </Wrap>
 </template>

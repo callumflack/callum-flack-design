@@ -89,7 +89,7 @@ export default {
     this.selectedQuote = this.quotes[idx];
   },
   head() {
-    const pageTitle = this.page && this.page.attributes.title;
+    const pageTitle = this.page && this.page.title;
     const siteTitle = this.$siteConfig.title;
 
     return {

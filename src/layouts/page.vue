@@ -7,7 +7,7 @@
     >
       <slot name="default" />
     </article>
-    <a class="u-url" :href="page.attributes.permalink" hidden></a>
+    <a class="u-url" :href="page.permalink" hidden></a>
   </Wrap>
 </template>
 

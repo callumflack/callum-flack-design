@@ -2,28 +2,25 @@
   <Wrap :page="page" kind="post">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <!-- post hero with image -->
-      <header
-        v-if="page.attributes.hero && page.attributes.hero.showCover"
-        class="Block-sm"
-      >
+      <header v-if="page.hero && page.hero.showCover" class="Block-sm">
         <div class="Grid-extract--edge" :style="heroBlockColor">
           <div class="container container--hero ">
             <!-- post image aspect -->
             <Aspect
-              :ratio="(page.attributes.hero && page.attributes.hero.ratio) || '1/3.5'"
+              :ratio="(page.hero && page.hero.ratio) || '1/3.5'"
               :class="heroImageBlend"
             >
               <ImageDynamic
-                v-if="page.attributes.hero && page.attributes.hero.showCover"
-                :src="page.attributes.assets.cover"
-                :alt="page.attributes.title"
+                v-if="page.hero && page.hero.showCover"
+                :src="page.assets.cover"
+                :alt="page.title"
               />
             </Aspect>
             <!-- post title aspect -->
             <div class="absolute inset-0">
               <div class="relative h-full flex items-center justify-center">
                 <div class="container container--text" :class="heroTitleColor">
-                  <PostHeaderTitle :attributes="page.attributes"></PostHeaderTitle>
+                  <PostHeaderTitle :attributes="page"></PostHeaderTitle>
                 </div>
               </div>
             </div>
@@ -34,7 +31,7 @@
       <!-- post hero no image, no `Block-sm` -->
       <header v-else class="Grid-extract--edge" :style="heroBlockColor">
         <HeaderTitleWrap kind="post">
-          <PostHeaderTitle :attributes="page.attributes"></PostHeaderTitle>
+          <PostHeaderTitle :attributes="page"></PostHeaderTitle>
         </HeaderTitleWrap>
       </header>
 
@@ -43,7 +40,7 @@
         <slot name="default" />
       </div>
 
-      <a class="u-url" :href="page.attributes.permalink" hidden></a>
+      <a class="u-url" :href="page.permalink" hidden></a>
     </article>
   </Wrap>
 </template>
@@ -57,7 +54,6 @@ import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap.vue";
 // import mediumZoom from "medium-zoom";
-
 /*
 
   Post layout component
@@ -65,7 +61,6 @@ import Wrap from "../components/Wrap.vue";
   when a hero image is shown.
 
 */
-
 export default {
   components: {
     Aspect,
@@ -78,39 +73,29 @@ export default {
   computed: {
     heroBlockColor() {
       return (
-        this.page.attributes.hero &&
-        this.page.attributes.hero.blockColor &&
-        `background-color: ${this.page.attributes.hero.blockColor}`
+        this.page.hero &&
+        this.page.hero.blockColor &&
+        `background-color: ${this.page.hero.blockColor}`
       );
     },
     heroImageBlend() {
-      return (
-        this.page.attributes.hero &&
-        this.page.attributes.hero.imageBlend &&
-        "BlendImage"
-      );
+      return this.page.hero && this.page.hero.imageBlend && "BlendImage";
     },
     heroTitleWidth() {
       return (
-        this.page.attributes.hero &&
-        this.page.attributes.hero.titleWidth &&
-        `${this.page.attributes.hero.titleWidth}`
+        this.page.hero && this.page.hero.titleWidth && `${this.page.hero.titleWidth}`
       );
     },
     heroTitleColor() {
-      return (
-        this.page.attributes.hero &&
-        this.page.attributes.hero.titleInvert &&
-        "text-white"
-      );
+      return this.page.hero && this.page.hero.titleInvert && "text-white";
     },
     heroMetaClass() {
-      return this.page.attributes.hero && this.page.attributes.hero.titleInvert
+      return this.page.hero && this.page.hero.titleInvert
         ? "text-white"
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.page.attributes.tags.filter(x => x !== "featured");
+      return this.page.tags.filter(x => x !== "featured");
     },
   },
   /* mounted() {
@@ -128,7 +113,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.medium-zoom-overlay,
+/* .medium-zoom-overlay,
 .medium-zoom-image--opened {
   z-index: 99999;
 }
@@ -136,8 +121,8 @@ export default {
   @apply bg-brand-bg !important;
 }
 .medium-zoom-image--opened {
-  /* margin: 0 3vw !important; */
-}
+  margin: 0 3vw !important;
+} */
 </style>
 
 <style lang="postcss" scoped>

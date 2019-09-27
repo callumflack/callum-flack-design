@@ -57,7 +57,7 @@
               <div class="Grid">
                 <Card
                   v-for="post in featuredPosts"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                   class="Grid-item"
                 />
@@ -67,7 +67,7 @@
               <div class="container container--list">
                 <CardRow
                   v-for="post in projectsPosts"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                 />
               </div>
@@ -76,7 +76,7 @@
               <div class="container container--list">
                 <CardRow
                   v-for="post in writingPosts"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                 />
               </div>
@@ -133,13 +133,13 @@ export default {
       return this.page.posts.splice(0, 6);
     }, */
     featuredPosts() {
-      return this.page.posts.filter(x => x.attributes.tags.includes("featured"));
+      return this.page.posts.filter(x => x.tags.includes("featured"));
     },
     projectsPosts() {
-      return this.page.posts.filter(x => x.attributes.category === "projects");
+      return this.page.posts.filter(x => x.category === "projects");
     },
     writingPosts() {
-      return this.page.posts.filter(x => x.attributes.category === "writing");
+      return this.page.posts.filter(x => x.category === "writing");
     },
   },
 };

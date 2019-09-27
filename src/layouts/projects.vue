@@ -4,7 +4,7 @@
     <div class="st-m">
       <CardRow
         v-for="post in allPostsUngrouped"
-        :key="post.attributes.permalink"
+        :key="post.permalink"
         :post="post"
       ></CardRow>
     </div> -->
@@ -15,7 +15,7 @@
           <h3 class="Meta Meta--year">{{ year }}</h3>
           <CardRow
             v-for="post in allPosts[year]"
-            :key="post.attributes.permalink"
+            :key="post.permalink"
             :post="post"
             class=""
           ></CardRow>
@@ -60,7 +60,7 @@
               <div class="Grid">
                 <Card
                   v-for="post in featuredPosts"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                   class="Grid-item"
                 />
@@ -70,7 +70,7 @@
               <div class="container container--list container--removeListInset">
                 <CardRow
                   v-for="post in allPostsUngrouped"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                 />
               </div>
@@ -104,37 +104,33 @@ export default {
   props: ["page"],
   computed: {
     allPostsUngrouped() {
-      return this.page.posts.filter(x => x.attributes.category === "projects");
+      return this.page.posts.filter(x => x.category === "projects");
     },
     allPosts() {
       return this.groupByYear(this.allPostsUngrouped);
     },
     featuredPosts() {
-      return this.allPostsUngrouped.filter(x => x.attributes.tags.includes("featured"));
+      return this.allPostsUngrouped.filter(x => x.tags.includes("featured"));
       // const posts = this.allPostsUngrouped
-      //   .filter(x => x.attributes.tags.includes("featured"))
+      //   .filter(x => x.tags.includes("featured"))
       // return this.groupByYear(posts);
     },
     designPosts() {
-      const posts = this.allPostsUngrouped.filter(x =>
-        x.attributes.tags.includes("UI")
-      );
+      const posts = this.allPostsUngrouped.filter(x => x.tags.includes("UI"));
       return this.groupByYear(posts);
     },
     devPosts() {
-      const posts = this.allPostsUngrouped.filter(x =>
-        x.attributes.tags.includes("code")
-      );
+      const posts = this.allPostsUngrouped.filter(x => x.tags.includes("code"));
       return this.groupByYear(posts);
     },
   },
   /* …unused methods to group by year */
   methods: {
     sortByDate(a, b) {
-      new Date(b.attributes.date) - new Date(a.attributes.date);
+      new Date(b.date) - new Date(a.date);
     },
     groupByYearMethod(byYear, post) {
-      const year = parseInt(new Date(post.attributes.date).getFullYear(), 10);
+      const year = parseInt(new Date(post.date).getFullYear(), 10);
 
       // Set up list for year if it doesn't already exist
       if (!byYear[year]) {

@@ -1,10 +1,8 @@
 <template>
   <div class="Header-title">
-    <!-- post title -->
     <h1 class="Display s-m" :class="heroTitleWidth" itemprop="name headline">
       {{ attributes.title }}
     </h1>
-    <!-- post meta -->
     <div class="Text--sm" :class="heroMetaClass">
       <!-- date -->
       <time
@@ -25,7 +23,7 @@
         class="Text--sm"
       >
         <span v-if="index != 0">,</span>
-        <span class="capitalize">{{ tag }}</span>
+        <span class="capitalize">{{ tag.name }}</span>
       </span>
       <!-- reading time -->
       <template v-if="attributes.category === 'writing'">
@@ -72,7 +70,7 @@ export default {
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.attributes.tags.filter(x => x !== "featured");
+      return this.attributes.tags.filter(x => x.name !== "featured");
     },
   },
 

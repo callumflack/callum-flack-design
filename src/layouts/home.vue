@@ -1,12 +1,11 @@
 <template>
   <Wrap :page="page" kind="index">
-    <IndexHomeBlock :block="page.attributes" class="bg-one"></IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.projects" class="bg-two">
+    <IndexHomeBlock :block="page" class="bg-one"></IndexHomeBlock>
+    <IndexHomeBlock :block="page.projects" class="bg-two">
       <div class="Grid-extract--slide st-2xh">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in projectPosts" :key="index">
-            <CardWithinSlide :key="post.attributes.permalink" :post="post">
-            </CardWithinSlide>
+            <CardWithinSlide :key="post.permalink" :post="post"></CardWithinSlide>
           </vue-glide-slide>
           <!-- <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
@@ -15,12 +14,11 @@
         </vue-glide>
       </div>
     </IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.writing" class="bg-three">
+    <IndexHomeBlock :block="page.writing" class="bg-three">
       <div class="Grid-extract--slide st-2xh">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in writingPosts" :key="index">
-            <CardWithinSlide :key="post.attributes.permalink" :post="post">
-            </CardWithinSlide>
+            <CardWithinSlide :key="post.permalink" :post="post"></CardWithinSlide>
           </vue-glide-slide>
           <!-- <template slot="control">
             <button data-glide-dir="<">&#8592; prev</button>
@@ -29,7 +27,7 @@
         </vue-glide>
       </div>
     </IndexHomeBlock>
-    <IndexHomeBlock :block="page.attributes.newsletter" class="bg-four">
+    <IndexHomeBlock :block="page.newsletter" class="bg-four">
       <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
     </IndexHomeBlock>
   </Wrap>
@@ -71,17 +69,11 @@ export default {
   computed: {
     projectPosts() {
       return this.page.posts
-        .filter(
-          x =>
-            x.attributes.category === "projects" &&
-            x.attributes.tags.includes("featured")
-        )
+        .filter(x => x.category === "projects" && x.tags.includes("featured"))
         .splice(0, 9);
     },
     writingPosts() {
-      return this.page.posts
-        .filter(x => x.attributes.category === "writing")
-        .splice(0, 6);
+      return this.page.posts.filter(x => x.category === "writing").splice(0, 6);
     },
   },
   /* head() {

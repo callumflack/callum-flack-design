@@ -4,7 +4,7 @@
     <div class="st-m">
       <CardRow
         v-for="post in allWriting"
-        :key="post.attributes.permalink"
+        :key="post.permalink"
         :post="post"
       ></CardRow>
     </div> -->
@@ -45,7 +45,7 @@
               <div class="Grid">
                 <Card
                   v-for="post in featuredWriting"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                   class="Grid-item"
                 />
@@ -55,7 +55,7 @@
               <div class="container container--list container--removeListInset">
                 <CardRow
                   v-for="post in allWriting"
-                  :key="post.attributes.permalink"
+                  :key="post.permalink"
                   :post="post"
                 />
               </div>
@@ -89,14 +89,14 @@ export default {
   props: ["page"],
   computed: {
     allWriting() {
-      return this.page.posts.filter(x => x.attributes.category === "writing");
+      return this.page.posts.filter(x => x.category === "writing");
     },
     // allWritingByYear() {
     //   // helper function to get the year value from an item
-    //   const year = item => tinydate(item.attributes.date, {YYYY});
+    //   const year = item => tinydate(item.date, {YYYY});
     // },
     featuredWriting() {
-      return this.allWriting.filter(x => x.attributes.tags.includes("featured"));
+      return this.allWriting.filter(x => x.tags.includes("featured"));
     },
   },
 };

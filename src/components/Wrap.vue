@@ -1,19 +1,19 @@
 <template>
   <!-- <div :class="reverseClass"> -->
   <div>
-    <Nav :category="page.attributes.category" />
+    <Nav :category="page.category" />
     <div class="transition-body">
       <Header
         v-if="!$route.path.includes('blog')"
-        :title="page.attributes.title"
-        :lede="page.attributes.lede"
+        :title="page.title"
+        :lede="page.lede"
       />
       <main aria-label="Content">
         <div class="" :class="containerType">
           <slot></slot>
         </div>
       </main>
-      <Footer :kind="kind" :nextpost="page.attributes.nextPost" />
+      <Footer :kind="kind" :nextpost="page.nextPost" />
     </div>
   </div>
 </template>
@@ -56,7 +56,7 @@ export default {
   },
   head() {
     const { excerpt } = this.page;
-    const { title, pageTitle, pageClass, layout } = this.page.attributes;
+    const { title, pageTitle, pageClass, layout } = this.page;
     let { description } = this.$siteConfig;
     if (layout === "page" || layout === "post") {
       if (excerpt) {
