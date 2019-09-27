@@ -7675,13 +7675,6 @@ saber-plugin-medium-zoom@^0.1.3:
   dependencies:
     medium-zoom "1.0.4"
 
-saber-plugin-netlify-redirect@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/saber-plugin-netlify-redirect/-/saber-plugin-netlify-redirect-0.1.1.tgz#978662bdfbcbf62082c5570354bb5d58a3cc8792"
-  integrity sha512-XRPvCMnbMhBFi2SV6EbZDVviohYbTMAAEwv4ADkOE0OzyjXGCM/jwLiflGTdxdXt1BUBZdiJlapD4l18nVKRhA==
-  dependencies:
-    url-join "^4.0.0"
-
 saber-plugin-query-posts@^0.3.0:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.2.tgz#750e17a7ecf9574dee80a4464075717cb56e3d56"
