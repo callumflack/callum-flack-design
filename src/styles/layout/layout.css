@@ -199,7 +199,8 @@ main {
 */
 .red {
   --red: rgb(255, 48, 42);
-  --bg: rgb(255, 207, 207);
+  --bg: rgb(255, 207, 207); /* pink */
+  --bg: rgb(37, 33, 33); /* chocolate */
 }
 .red,
 .red .Nav {
