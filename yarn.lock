@@ -1007,7 +1007,7 @@
     postcss "^7.0.14"
     purgecss "^1.3.0"
 
-"@glidejs/glide@^3.2.4", "@glidejs/glide@^3.3.0":
+"@glidejs/glide@^3.2.4":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.3.0.tgz#5d0a0cddad863a66272a15826919c64c60351094"
   integrity sha512-8rs4yGHRlCOvubBM7RyB4sijzl0q5ST7Yvv9frSb8xIRWdztoY7lP/uMMc9GBEM0up5MvxIYWOXig1b5gT/j2A==
@@ -3699,10 +3699,10 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-feed@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/feed/-/feed-3.0.0.tgz#be9cada49c692197e7e14083711597562d14a486"
-  integrity sha512-2/6RGigcsZkz04LMs8oncuoN08hCOndz7eseLtbSitvIkjDZPkNZY6Y9C2xgTzy1L8u4+TZvCJ/v5zxlmGy2kA==
+feed@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/feed/-/feed-4.0.0.tgz#d3c2bfb9aba3c0efacab1ed15be06b67f5c02539"
+  integrity sha512-VWtvINgG7cA91BtrGychMvxHj84nc8xS9W/PuAHlY62I8owZtcoxNaKFN+zkGl8tBsaYbxrrp4yB9DhqKNQSPw==
   dependencies:
     xml-js "^1.6.11"
 
@@ -4665,11 +4665,6 @@ inquirer@^6.2.2:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-intersection-observer@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
-  integrity sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==
-
 into-stream@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-3.1.0.tgz#96fb0a936c12babd6ff1752a17d05616abd094c6"
@@ -5513,11 +5508,6 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
-
-medium-zoom@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.4.tgz#b1063093f81151a19989489589edf28e6090630c"
-  integrity sha512-BjE+00gQku3XQfgHDcqyYwQaBtFddzh6Lnj1RZOliqJ9HS0mh/P2IaqVJ25/j9EbnjAUf27mLeLZBRxnd00bfA==
 
 mem@^4.0.0:
   version "4.3.0"
@@ -7649,44 +7639,37 @@ saber-markdown@^0.1.3:
   resolved "https://registry.yarnpkg.com/saber-markdown/-/saber-markdown-0.1.3.tgz#ae5ae1b74c2ed8d2838fb6795345eb3563ea05d0"
   integrity sha512-MevxkvdMs5Uk+gqwRU0ULuZR38kgJX+vL1rc6G6cZi1/T6tuypOqoIbaOzRXhMG4OYghL/dIZ0Anz1imJCSxVQ==
 
-saber-plugin-critical@^1.0.2:
+saber-plugin-critical@latest:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/saber-plugin-critical/-/saber-plugin-critical-1.0.2.tgz#9195d5aefa3704a7038d396e2e0608d7c2730e50"
   integrity sha512-PCqp8beFv5bPcdfUt/hfxpO2N28AjpXOs6/g1idcYI1dlORnlN3mzBVxfye8ZBNzm1LXkpa7u1sO2CL1aXw00w==
   dependencies:
     critical "^1.3.4"
 
-saber-plugin-feed@^0.3.0:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/saber-plugin-feed/-/saber-plugin-feed-0.3.4.tgz#bdef19db1ae98b6d7109047f35526479d708530e"
-  integrity sha512-+4bppwbZ7oQXb+3kQwpUf8jMsG8uaUPwL8OxB+S4MfY7hq3WMV4DCcoYo4Qv4JRx3UE/K7Ax6lTFn5e+fXnCLA==
+saber-plugin-feed@latest:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/saber-plugin-feed/-/saber-plugin-feed-0.4.2.tgz#e4d7044e13b0a8b9ad5d61e77d3ebf43ad05d07c"
+  integrity sha512-mKa8cse6mEtHcbpkVPGLt0c4ma+3Nd9e3ye9NyVo4NmFcFiWFQPbuL6PHOIJuoy1CgLyLTROjF8V7Kvgl7HJsw==
   dependencies:
-    feed "^3.0.0"
+    feed "^4.0.0"
 
-saber-plugin-google-analytics@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.0.6.tgz#86e8cd8ab7227c74196f17bac487e36d48c4f0a3"
-  integrity sha512-ccTsMBp7oSKv5t9BE1vt5WlLs+DWtC9P4BOPosDLMjp0VKO/AroOrJ3clnib3rwJ+Fw/icOllNKDK0m4zDPJOg==
+saber-plugin-google-analytics@latest:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.2.1.tgz#58d312cf8e56a383ef25b08bd971cd361dd9b8ad"
+  integrity sha512-r6efJutsxbF4aJDtz9kGdt1tPcezkHd5GvOhy5ihXHIJR8G0oEfkSbGMG2590ZpQrgwmVx+IohhwGVDdcrOYHg==
 
-saber-plugin-medium-zoom@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/saber-plugin-medium-zoom/-/saber-plugin-medium-zoom-0.1.3.tgz#9001896fc77f4434584284e731c73371bee9b85c"
-  integrity sha512-Yquiz4jyvRjz7a/s1rR8XjUVE8fZsu6PbfjYlVyYOAIarh5T49oFSqHZrVE0fUTYl+IeP0ZIB/fdWmVoDLfWUg==
-  dependencies:
-    medium-zoom "1.0.4"
-
-saber-plugin-query-posts@^0.3.0:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.3.2.tgz#750e17a7ecf9574dee80a4464075717cb56e3d56"
-  integrity sha512-uHWJ0nDRkZ91acSraF8ovq3ZO4hgXfQzqWSVPWzrR9JocW2VQ2JOAbt5vJUBtO5PT8myfkysJwk1rhS7mOfjFQ==
+saber-plugin-query-posts@latest:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/saber-plugin-query-posts/-/saber-plugin-query-posts-0.4.2.tgz#462aef81707ecf65063331460b7013279944651c"
+  integrity sha512-yn+YfRLcLELqH36CtclhFyCBET5OV/MHPvZHUexEq1SVEUazhx5gi52gcCan59Okn6W0k6Y1xkF3NCfCUKezTQ==
   dependencies:
     slugo "^0.2.3"
     url-join "^4.0.0"
 
-saber-plugin-sitemap@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/saber-plugin-sitemap/-/saber-plugin-sitemap-0.2.0.tgz#65f2d257d1689577bd8e83f4f0f89444a9587f38"
-  integrity sha512-SNl1XS71Hi15s87l9OYcQLWyS1xYWujnOi9baxoBi3cIVct4s6tlImfU3x4v823erPgkoO2uhKqIC6sX0jXolQ==
+saber-plugin-sitemap@latest:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/saber-plugin-sitemap/-/saber-plugin-sitemap-0.3.0.tgz#b378f61d31cfda11064128b6f3f54282a5ef2fe5"
+  integrity sha512-Les6H0w3kMwhFsTuRedmDEBCdVVQt/jckr5OgNjzfwp2yqhk50cz9L+nkNYI4bQ8qegsiFWq594qPkbw9Quo4A==
   dependencies:
     ejs "^2.6.1"
 
@@ -8842,9 +8825,9 @@ urix@^0.1.0:
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
 url-join@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
-  integrity sha1-TTNA6AfTdzvamZH4MFrNzCpmXSo=
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.1.tgz#b642e21a2646808ffa178c4c5fda39844e12cde7"
+  integrity sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==
 
 url-loader@^2.0.1:
   version "2.1.0"
