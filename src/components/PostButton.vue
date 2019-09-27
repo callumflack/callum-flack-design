@@ -4,7 +4,7 @@
     :href="link"
     target="_blank"
     rel="noopener noreferrer"
-    class="st-h relative"
+    class="Text--sm st-h relative"
   >
     {{ label }}
     <span class="Link--blank">&#8599;</span>
@@ -16,13 +16,13 @@ export default {
   props: {
     link: String,
     label: String,
-  }
-}
+  },
+};
 </script>
 
 <style lang="postcss" scoped>
 a {
-  @apply inline-block;
+  @apply inline-block font-sans font-medium;
 }
 
 a + a {
@@ -32,6 +32,6 @@ a + a {
 .Link--blank {
   @apply absolute m-0;
   right: -1.1em;
-  top: 0.5em;
+  top: 0.75em;
 }
 </style>

@@ -223,17 +223,23 @@ ol,
 }
 .Note {
   @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  text-indent: initial !important;
 }
 .Note,
 .Note p {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
-.Note:first-of-type {
+/*
+Doesn't work, see: https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
+Using a class selector (or a type selector) with that pseudo-class means to select an element if it has the given class (or is of the given type) and is the first of its type among its siblings.
+ */
+/* .Note:first-of-type {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
-}
+} */
 .Note:before {
   content: none !important;
 }
 .Note + .Note {
-  @apply border-transparent;
+  @apply border-transparent mt-0;
 }
