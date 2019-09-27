@@ -65,7 +65,7 @@ export default {
     }
     return {
       htmlAttrs: {
-        // add an HTML class usinf `pageClass` page attrs
+        // add an HTML class using `pageClass` page attrs
         class: pageClass,
       },
       // title: title ? `${title} • ${this.siteTitle}` : this.siteTitle,
