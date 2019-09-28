@@ -1,6 +1,7 @@
 <template>
   <div class="absolute inset-0 Image">
-    <ImageDynamic :src="testImage" cover></ImageDynamic>
+    <ImageDynamic :src="selectedImage" cover></ImageDynamic>
+    <div class="absolute inset-0 Image-blend"></div>
     <div class="absolute inset-0 Image-shade"></div>
   </div>
 </template>
@@ -21,17 +22,13 @@ export default {
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_hi-reversed-1500.jpg",
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180386/okok/_sagatiba-bw-2000-invert.jpg",
         "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544078960/okok/_decadence-13-reversed-1500.jpg", */
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544178999/okok/_sky-1500-invert.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180211/okok/_decadence-13-black.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180308/okok/_millennius-detail-2000-invert.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180386/okok/_sagatiba-bw-2000.jpg",
-        "https://res.cloudinary.com/pw-img-cdn/image/upload/v1544180513/okok/_hi-invert.jpg",
+        "/images/_sky-1500.jpg",
+        "/images/_decadence-13-reversed.jpg",
+        "/images/_millennius-detail-2000.jpg",
+        "/images/_sagatiba-bw-2000.jpg",
+        "/images/_hi-reversed.jpg",
       ],
-      // testImage: "/images/_decadence-13-reversed.jpg",
-      // testImage: "/images/_millennius-detail-2000.jpg",
-      testImage: "/images/_hi-reversed.jpg",
-      // testImage: "/images/_sky-1500.jpg",
-      // testImage: "/images/_sagatiba-bw-2000.jpg",
+      testImage: "/images/_sagatiba-bw-2000.jpg",
       selectedImage: "",
     };
   },
@@ -50,21 +47,16 @@ export default {
  */
 .Image {
   /* animation: bgcolor 2000ms cubic-bezier(0.19, 1, 0.22, 1), bgblur 1000ms cubic-bezier(0.19, 1, 0.22, 1); */
-  /* background-image: url("/images/_sagatiba-bw-181201B.jpg");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover; */
   @apply min-h-screen w-screen;
 }
 
-.Image img {
+.Image-blend {
+  background-color: var(--red); /* 1 */
+  mix-blend-mode: multiply;
 }
-
 .Image-shade {
   /* background-color: rgba(37, 33, 33, 0.5); */
-  background-color: var(--red); /* 1 */
-  background-blend-mode: multiply;
-  mix-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 @keyframes bgcolor {

@@ -1,7 +1,7 @@
 <template>
   <!-- <div :class="reverseClass"> -->
   <div class="relative">
-    <FullScreenImage v-if="$route.path === '/test'"></FullScreenImage>
+    <FullScreenImage v-if="$route.path === '/'"></FullScreenImage>
     <Nav :category="page.category" />
     <div class="transition-body">
       <Header

@@ -17,11 +17,7 @@
         </h1>
         <p v-if="block.lede" class="Link Text--sm text-gray">
           {{ block.lede }}
-          <saber-link
-            :to="`/${block.link}`"
-            class="text-text"
-            v-html="renderLabel"
-          >
+          <saber-link :to="`/${block.link}`" class="text-text" v-html="renderLabel">
           </saber-link>
         </p>
       </header>
