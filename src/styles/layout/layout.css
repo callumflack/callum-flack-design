@@ -205,6 +205,7 @@ main {
 .red,
 .red .Nav {
   background-color: var(--bg) !important;
+  @apply bg-transparent !important;
 }
 .red body {
   @apply bg-transparent;
