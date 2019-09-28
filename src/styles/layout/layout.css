@@ -212,7 +212,7 @@ main {
 }
 .red .Nav,
 .red body {
-  @apply bg-transparent;
+  @apply bg-transparent !important;
 }
 .red .Nav,
 .red .Nav-logo,
