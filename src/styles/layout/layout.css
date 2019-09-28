@@ -202,10 +202,15 @@ main {
   --bg: rgb(255, 207, 207); /* pink */
   --bg: rgb(37, 33, 33); /* chocolate */
 }
-.red,
+/* .red,
 .red .Nav {
   background-color: var(--bg) !important;
+  @apply bg-transparent !important;
+} */
+.red {
+  @apply bg-black;
 }
+.red .Nav,
 .red body {
   @apply bg-transparent;
 }

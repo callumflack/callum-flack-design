@@ -4,11 +4,14 @@ layout: home
 # title: Digital information systems by Callum Flack.
 # title: Digital brands, products + thoughts
 # title: Remarkability lies in the seamless edges
-title: CFd designs & builds seamless interfaces
+# title: Seamless interfaces, designed and built
+title: CFd designs and builds seamless interfaces.
 pageTitle: Web design & development
 pageClass: red
 # lede: Callum Flack designs and develops interfaces that make the complex simple and the simple unique. They work in a glance, creating the most valued currency—attention. Then they work to provide service with trust and speed. CFd builds "remark"-ability through a rare combination of comprehension, creativity + capability.
-lede: Callum Flack designs and develops brand interfaces. They work in a glance, creating the most valued currency—attention. Then they work to provide service with trust and speed. CFd builds "remark"-ability through a rare combination of comprehension, creativity + capability.
+# lede: Callum Flack designs and develops brand interfaces. They work in a glance, creating the most valued currency—attention. Then they work to provide service with trust and speed. CFd builds "remark"-ability through a rare combination of comprehension, creativity + capability.
+lede: Callum Flack Design creates seamless websites and web applications. They work in the blink of an eye, creating the most valued currency—trust. CFd closes the gap between design and development cycles by doing both, allowing tiny collaborations to create big things.
+next: This website is an index of projects (since 2001), writing (to explain the work to myself and my collaborators) and an email letter sent every Tuesday AEST, the easiest way to continue the conversation. 
 link: about
 projects:
   link: projects

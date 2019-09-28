@@ -1,8 +1,9 @@
 <template>
   <footer class="flex relative">
+    <!-- &#8593; You made it, go back up -->
     <!-- up -->
     <template v-if="$route.path === '/'">
-      <a
+      <!-- <a
         v-smooth-scroll="{ duration: 1000 }"
         href="#top"
         :class="[linkTypography, spacerClasses]"
@@ -16,7 +17,6 @@
                 <div class="relative h-full flex items-center justify-center">
                   <div class="container container--list container--removeListInset">
                     <p class="Display s-2xh">
-                      <!-- &#8593; You made it, go back up -->
                       &#8593; Choose again
                     </p>
                   </div>
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-      </a>
+      </a> -->
     </template>
     <!-- next post -->
     <template v-else-if="$route.path.includes('blog') && nextpost && nextpost.link">

@@ -1,6 +1,7 @@
 <template>
   <!-- <div :class="reverseClass"> -->
-  <div>
+  <div class="relative">
+    <FullScreenImage v-if="$route.path === '/'"></FullScreenImage>
     <Nav :category="page.category" />
     <div class="transition-body">
       <Header
@@ -9,7 +10,7 @@
         :lede="page.lede"
       />
       <main aria-label="Content">
-        <div class="" :class="containerType">
+        <div :class="containerType">
           <slot></slot>
         </div>
       </main>
@@ -20,12 +21,14 @@
 
 <script>
 import Footer from "./Footer.vue";
+import FullScreenImage from "../components/FullScreenImage";
 import Header from "./Header.vue";
 import Nav from "../components/Nav";
 
 export default {
   components: {
     Footer,
+    FullScreenImage,
     Header,
     Nav,
   },
