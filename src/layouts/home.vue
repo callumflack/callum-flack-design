@@ -12,7 +12,7 @@
           {{ page.lede }}
         </p>
         <p class="Link Text--sm text-gray s-m">
-          {{ page.next }}
+          {{ page.ledeTwo }}
         </p>
       </header>
       <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
