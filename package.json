@@ -23,7 +23,7 @@
     "markdown-it-attrs": "^2.4.1",
     "markdown-it-sup": "^1.0.0",
     "netlify-lambda": "^1.4.13",
-    "saber": "^0.9.1",
+    "saber": "latest",
     "saber-plugin-critical": "latest",
     "saber-plugin-feed": "latest",
     "saber-plugin-google-analytics": "latest",
