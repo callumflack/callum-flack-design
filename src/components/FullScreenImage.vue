@@ -27,8 +27,9 @@ export default {
         "/images/_millennius-detail-2000.jpg",
         "/images/_sagatiba-bw-2000.jpg",
         "/images/_hi-reversed.jpg",
+        "/images/_folder2.jpg",
       ],
-      testImage: "/images/_sagatiba-bw-2000.jpg",
+      testImage: "/images/_folder2.jpg",
       selectedImage: "",
     };
   },
