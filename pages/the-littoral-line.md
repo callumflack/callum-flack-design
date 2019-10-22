@@ -5,10 +5,14 @@ lede: The Littoral Line is an email letter on creativity, design and systems com
 # lede: Because you got this far, you should definitely sign up.
 newsletter: true
 issues:
-  - title: Imagining other people
-    number: LL14
-    date: 2019-09-24
-    link: https://thelittoralline.substack.com/p/ll14-empathy-creates-context
+  - title: Three short film reviews
+    number: LL16
+    date: 2019-10-22
+    link: https://thelittoralline.substack.com/p/ll16
+  - title: Sliced to bits, squeezed to pixels
+    number: LL15
+    date: 2019-10-01
+    link: https://thelittoralline.substack.com/p/ll15
   - title: Creating context
     number: LL13
     date: 2019-09-17
