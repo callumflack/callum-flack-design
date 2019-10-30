@@ -73,7 +73,7 @@ ol,
 .Text,
 .Text--lg {
   @apply font-serif;
-  @apply leading-copy tracking-normal !important;
+  @apply leading-copy tracking-text !important;
 }
 
 /*
@@ -121,10 +121,10 @@ ol,
   --text-indent: calc(theme(spacing.6) * var(--grid-ratio));
 }
 
-.Markdown p:not(.Alert) + p {
+/* .Markdown p:not(.Alert) + p {
   text-indent: calc(theme(spacing.10) * var(--grid-ratio));
   text-indent: var(--text-indent);
-}
+} */
 
 .Markdown ul,
 .Markdown ol {

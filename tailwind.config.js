@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      black: "black",
+      black: "#111",
       text: "#111",
       white: "white",
       brand: {
@@ -110,8 +110,8 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.0625rem", // 17 or 18
-      xl: "1.1875rem", // 19 or 20
+      lg: "1.1875rem", // 17 or 18
+      xl: "1.3125rem", // 19 or 20
       "2xl": "1.5rem", // 24
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
@@ -162,7 +162,7 @@ module.exports = {
       hyphen: "-0.075em",
       tighter: "-0.025em",
       tight: "-0.005em",
-      text: "-0.004em",
+      text: "-0.015em",
       normal: "0",
       wide: "0.0125em",
       wider: "0.06em",

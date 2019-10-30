@@ -26,9 +26,9 @@
 
 */
 
-/* .Markdown figure,
+/* .Markdown figure,*/
 .Markdown p:not(:last-child),
-.s-block-p:not(:last-child), */
+.s-block-p:not(:last-child),
 .s-p {
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
