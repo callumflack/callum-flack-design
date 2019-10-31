@@ -4,13 +4,13 @@ layout: post
 date: 2019-10-15
 title: The First Principle
 link: https://www.thefirstprinciple.com.au/
-assets: 
+assets:
   cover: /images/billys-coffee-hero.jpg
 hero:
   showCover: false
 card:
   externalLink: true
-tags: 
+tags:
   - frontend
 ---
 
