@@ -34,7 +34,7 @@
                   class="Tab-controls--button Meta"
                   @click="goToIndex(0)"
                 >
-                  Featured
+                  Archive
                 </button>
               </li>
               <li>
@@ -43,7 +43,7 @@
                   class="Tab-controls--button Meta"
                   @click="goToIndex(1)"
                 >
-                  Archive
+                  Featured
                 </button>
               </li>
             </ul>
@@ -53,25 +53,22 @@
 
         <div class="st-m">
           <SliderSlides class="">
-            <SliderSlide
-              v-if="featuredPosts && featuredPosts.length > 0"
-              class="st-2xh"
-            >
-              <div class="Grid">
-                <Card
-                  v-for="post in featuredPosts"
-                  :key="post.permalink"
-                  :post="post"
-                  class="Grid-item"
-                />
-              </div>
-            </SliderSlide>
             <SliderSlide v-if="allPostsUngrouped && allPostsUngrouped.length > 0">
               <div class="container container--list container--removeListInset">
                 <CardRow
                   v-for="post in allPostsUngrouped"
                   :key="post.permalink"
                   :post="post"
+                />
+              </div>
+            </SliderSlide>
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="st-2h">
+              <div class="Grid">
+                <Card
+                  v-for="post in featuredPosts"
+                  :key="post.permalink"
+                  :post="post"
+                  class="Grid-item"
                 />
               </div>
             </SliderSlide>

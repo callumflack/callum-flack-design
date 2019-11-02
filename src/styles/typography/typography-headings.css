@@ -18,7 +18,7 @@
 .Metaheading,
 .Markdown h3,
 .Markdown h2 {
-  @apply font-sans leading-tight tracking-text;
+  @apply font-sans leading-tight tracking-tight;
   /* @apply font-medium */
 }
 

@@ -50,10 +50,7 @@
 
         <div class="st-m">
           <SliderSlides class="">
-            <SliderSlide
-              v-if="featuredPosts && featuredPosts.length > 0"
-              class="st-2xh"
-            >
+            <SliderSlide v-if="featuredPosts && featuredPosts.length > 0" class="st-2h">
               <div class="Grid">
                 <Card
                   v-for="post in featuredPosts"

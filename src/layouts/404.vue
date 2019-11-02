@@ -4,7 +4,7 @@
     <header>
       <HeaderTitleWrap>
         <h1 class="Display s-h">404 page not found</h1>
-        <p class="Link Text--sm text-gray s-2xh">
+        <p class="Link Text--sm text-gray s-2h">
           Sorry, I couldn't find the page you were after. Instead, here's a randomly
           generated insight about good interface design:
         </p>

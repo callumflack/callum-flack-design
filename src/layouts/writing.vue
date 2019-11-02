@@ -40,7 +40,7 @@
           <SliderSlides class="">
             <SliderSlide
               v-if="featuredWriting && featuredWriting.length > 0"
-              class="st-2xh"
+              class="st-2h"
             >
               <div class="Grid">
                 <Card

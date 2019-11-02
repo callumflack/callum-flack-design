@@ -2,7 +2,7 @@
   <Wrap :page="page" kind="index">
     <IndexHomeBlock :block="page" class="bg-one"></IndexHomeBlock>
     <IndexHomeBlock :block="page.projects" class="bg-two">
-      <div class="Grid-extract--slide st-2xh">
+      <div class="Grid-extract--slide st-2h">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in projectPosts" :key="index">
             <CardWithinSlide :key="post.permalink" :post="post"></CardWithinSlide>
@@ -15,7 +15,7 @@
       </div>
     </IndexHomeBlock>
     <IndexHomeBlock :block="page.writing" class="bg-three">
-      <div class="Grid-extract--slide st-2xh">
+      <div class="Grid-extract--slide st-2h">
         <vue-glide :options="options">
           <vue-glide-slide v-for="(post, index) in writingPosts" :key="index">
             <CardWithinSlide :key="post.permalink" :post="post"></CardWithinSlide>
@@ -28,7 +28,7 @@
       </div>
     </IndexHomeBlock>
     <IndexHomeBlock :block="page.newsletter" class="bg-four">
-      <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
+      <FormNewsletter class="st-2h lg:w-9/12"></FormNewsletter>
     </IndexHomeBlock>
   </Wrap>
 </template>

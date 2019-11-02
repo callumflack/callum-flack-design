@@ -40,7 +40,7 @@ body {
 }
 
 .Text--sm {
-  /* @apply tracking-wide; */
+  @apply tracking-normal;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
@@ -73,7 +73,7 @@ ol,
 .Text,
 .Text--lg {
   @apply font-serif;
-  @apply leading-copy tracking-text !important;
+  @apply leading-copy tracking-text;
 }
 
 /*

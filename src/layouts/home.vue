@@ -2,7 +2,7 @@
   <Wrap :page="page" kind="index">
     <HeaderTitleWrap class="One">
       <header class="lg:w-9/12">
-        <h1 class="Display s-m">
+        <h1 class="Display s-h">
           <saber-link :to="`/${page.link}`">
             {{ page.title }}
             <span class="Link--blank">&#8594;</span>
@@ -14,8 +14,8 @@
         <p class="Link Text--sm text-gray s-m">
           {{ page.ledeTwo }}
         </p>
+        <FormNewsletter class="st-h"></FormNewsletter>
       </header>
-      <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
     </HeaderTitleWrap>
   </Wrap>
 </template>

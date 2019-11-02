@@ -77,13 +77,13 @@
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
 
-.s-2xh {
+.s-2h {
   margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
-.st-2xh {
+.st-2h {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
 }
-.sy-2xh {
+.sy-2h {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
   margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
