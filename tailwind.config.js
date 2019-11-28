@@ -110,8 +110,9 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      lg: "1.25rem", // 20
-      xl: "1.3125rem", // 19 or 20
+      //lg: "1.3125rem", // 20
+      lg: "1.3125rem", // 20
+      xl: "1.4375rem", // 19 or 20
       "2xl": "1.4375rem", // 24
       "3xl": "1.6875rem", // 27
       "4xl": "2.25rem", // 32 or 36 or 40
@@ -162,7 +163,8 @@ module.exports = {
       hyphen: "-0.075em",
       tighter: "-0.015em",
       tight: "-0.003em",
-      text: "-0.02em",
+      // text: "-0.02em",
+      text: "-0.005",
       normal: "0",
       wide: "0.0125em",
       wider: "0.06em",

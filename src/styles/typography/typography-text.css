@@ -72,6 +72,7 @@ ol,
 .Markdown > *,
 .Text,
 .Text--lg {
+  @apply font-sans;
   @apply font-serif;
   @apply leading-copy tracking-text;
 }

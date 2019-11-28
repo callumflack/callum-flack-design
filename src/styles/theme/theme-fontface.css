@@ -84,6 +84,8 @@
   src: url("/../../fonts/GT-America-Regular.OTF") format("woff"); */
   /* src: url("/../../fonts/Unica-Regular.woff") format("woff"); */
   src: url("/../../fonts/Graphik-Regular.woff") format("woff");
+  src: url("/../../fonts/Roobert-Regular.otf") format("woff");
+  src: url("/../../fonts/MessinaSans-Regular.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
@@ -91,6 +93,8 @@
 @font-face {
   font-family:"Text";
   src: url("/../../fonts/Graphik-Medium.woff") format("woff");
+  src: url("/../../fonts/Roobert-Semibold.otf") format("woff");
+  src: url("/../../fonts/MessinaSans-Bold.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Medium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
@@ -98,6 +102,8 @@
 @font-face {
   font-family:"Text";
   src: url("/../../fonts/Graphik-Bold.woff") format("woff");
+  src: url("/../../fonts/Roobert-Bold.otf") format("woff");
+  src: url("/../../fonts/MessinaSans-Black.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Bold.otf") format("woff");
   font-style: normal;
   font-weight: 700;
@@ -110,21 +116,30 @@
  */
 @font-face {
   font-family:"Serif";
-  src: url("/../../fonts/TiemposText-Regular.woff") format("woff");
-  src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
   src: url("/../../fonts/IndependentText-Regular.otf") format("woff");
   src: url("/../../fonts/RecifeText-Regular.ttf") format("truetype");
   src: url("/../../fonts/WilliamTextPro-Reg.otf") format("woff");
+  src: url("/../../fonts/Suisse-BP-Intl-Regular.woff") format("woff");
+  src: url("/../../fonts/GuyotText-Regular.otf") format("woff");
+  src: url("/../../fonts/VisueltPro-Regular.ttf") format("truetype");
+  src: url("/../../fonts/MessinaSans-Regular.otf") format("woff");
+  src: url("/../../fonts/RawlinsonTwo.otf") format("woff");
+  src: url("/../../fonts/TiemposText-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family:"Serif";
-  src: url("/../../fonts/TiemposText-RegularItalic.woff") format("woff");
-  src: url("/../../fonts/GuyotText-RegularItalic.otf") format("woff");
   src: url("/../../fonts/IndependentText-Italic.otf") format("woff");
   src: url("/../../fonts/RecifeText-Italic.ttf") format("truetype");
   src: url("/../../fonts/WilliamTextPro-RegIta.otf") format("woff");
+  src: url("/../../fonts/MessinaModern-RegularItalic.otf") format("woff");
+  src: url("/../../fonts/Suisse-BP-Intl-Regular.woff") format("woff");
+  src: url("/../../fonts/GuyotText-RegularItalic.otf") format("woff");
+  src: url("/../../fonts/VisueltPro-Regular.ttf") format("truetype");
+  src: url("/../../fonts/MessinaSans-Regular.otf") format("woff");
+  src: url("/../../fonts/RawlinsonTwo-Italic.otf") format("woff");
+  src: url("/../../fonts/TiemposText-RegularItalic.woff") format("woff");
   font-style: italic;
   font-weight: 400;
 }
