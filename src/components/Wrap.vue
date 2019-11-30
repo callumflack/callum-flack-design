@@ -2,7 +2,7 @@
   <!-- <div :class="reverseClass"> -->
   <div class="relative">
     <!-- home page only -->
-    <FullScreenImage v-if="$route.path === '/'"></FullScreenImage>
+    <!-- <FullScreenImage v-if="$route.path === '/'"></FullScreenImage> -->
     <!-- website default layout -->
     <Nav :category="page.category" />
     <div class="transition-body">

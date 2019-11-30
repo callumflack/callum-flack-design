@@ -1,37 +1,36 @@
 <template>
   <div class="Header-title">
     <h1 class="Display s-m" :class="heroTitleWidth" itemprop="name headline">
-      {{ attributes.title }}
+      {{ page.title }}
     </h1>
-    <div class="Text--sm" :class="heroMetaClass">
+    <div class="Text-sm" :class="heroMetaClass">
       <!-- date -->
       <time
-        v-if="attributes.category === 'writing'"
-        :datetime="attributes.createdAt"
+        v-if="page.category === 'writing'"
+        :datetime="page.createdAt"
         itemprop="datePublished"
-        >{{ formatDate(attributes.createdAt) }}</time
+        >{{ formatDate(page.createdAt) }}</time
       >
-      <time v-else :datetime="attributes.date" itemprop="datePublished">{{
-        formatListDate(attributes.date)
+      <time v-else :datetime="page.date" itemprop="datePublished">{{
+        formatListDate(page.date)
       }}</time>
       <!-- category & tags -->
-      <span class="Text--sm inline-block tracking-hyphen mx-2px">&mdash;&mdash;</span>
-      <!-- <span class="Text--sm inline-block capitalize"> {{ attributes.category }}: </span> -->
+      <span class="Text-sm inline-block tracking-hyphen mx-2px">&mdash;&mdash;</span>
+      <!-- <span class="Text-sm inline-block capitalize"> {{ page.category }}: </span> -->
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
         :key="index"
-        class="Text--sm"
+        class="Text-sm"
       >
         <span v-if="index != 0">,</span>
-        <span class="capitalize">{{ tag.name }}</span>
+        <span class="capitalize">{{ tag }}</span>
+        <!-- <span class="capitalize">{{ tag.name }}</span> -->
         <!-- <saber-link :to="tag.permalink" class="capitalize">{{ tag.name }}</saber-link> -->
       </span>
       <!-- reading time -->
-      <template v-if="attributes.category === 'writing'">
-        <span class="Text--sm inline-block tracking-hyphen mx-2px">
-          &mdash;&mdash;
-        </span>
-        <span class="Text--sm">{{ attributes.readingTime }} mins</span>
+      <template v-if="page.category === 'writing'">
+        <span class="Text-sm inline-block tracking-hyphen mx-2px">&mdash;&mdash;</span>
+        <span class="Text-sm">{{ page.readingTime }} mins</span>
       </template>
     </div>
   </div>
@@ -42,36 +41,36 @@ import formatDate from "../utils/formatDate";
 import formatListDate from "../utils/formatListDate";
 
 export default {
-  props: ["attributes"],
+  props: ["page"],
 
   computed: {
     heroTitleWidth() {
       return (
-        this.attributes.hero &&
-        this.attributes.hero.titleWidth &&
-        `${this.attributes.hero.titleWidth}`
+        this.page.hero && this.page.hero.titleWidth && `${this.page.hero.titleWidth}`
       );
     },
     heroBlockColor() {
       return (
-        this.attributes.hero &&
-        this.attributes.hero.blockColor &&
-        `background-color: ${this.attributes.hero.blockColor}`
+        this.page.hero &&
+        this.page.hero.blockColor &&
+        `background-color: ${this.page.hero.blockColor}`
       );
     },
     heroImageBlend() {
-      return this.attributes.hero && this.attributes.hero.imageBlend && "BlendImage";
+      return this.page.hero && this.page.hero.imageBlend && "BlendImage";
     },
     heroTitleColor() {
-      return this.attributes.hero && this.attributes.hero.titleInvert && "text-white";
+      return this.page.hero && this.page.hero.titleInvert && "text-white";
     },
     heroMetaClass() {
-      return this.attributes.hero && this.attributes.hero.titleInvert
+      return this.page.hero && this.page.hero.titleInvert
         ? "text-white opacity-75"
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.attributes.tagsInfo.filter(x => x.name !== "featured");
+      // return this.page.tagsInfo.filter(x => x.name !== "featured");
+      return this.page.tags.filter(x => x.name !== "featured");
+      // return undefined;
     },
   },
 

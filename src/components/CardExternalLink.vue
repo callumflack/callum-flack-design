@@ -1,5 +1,5 @@
 <template>
-  <span class="ExternalLink Text--xs">
+  <span class="ExternalLink Text-xs">
     Visit
     <span class="Link--blank">&#8599;</span>
   </span>

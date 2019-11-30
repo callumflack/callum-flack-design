@@ -1,0 +1,73 @@
+/*
+
+
+  SECTION BLOCKS
+  Klim responsive version
+
+
+ */
+
+:root {
+  --viewportBasis: 1680;
+  --spacing1: calc(8 / var(--viewportBasis) * 100vw);
+  --spacing2: calc(16 / var(--viewportBasis) * 100vw);
+  --spacing3: calc(24 / var(--viewportBasis) * 100vw);
+  --spacing4: calc(32 / var(--viewportBasis) * 100vw);
+  --spacing5: calc(40 / var(--viewportBasis) * 100vw);
+  --spacing6: calc(60 / var(--viewportBasis) * 100vw);
+  --spacing7: calc(80 / var(--viewportBasis) * 100vw);
+  --spacing8: calc(160 / var(--viewportBasis) * 100vw);
+  --spacing9: calc(240 / var(--viewportBasis) * 100vw);
+  --spacing10: calc(320 / var(--viewportBasis) * 100vw);
+  --spacing11: calc(580 / var(--viewportBasis) * 100vw);
+}
+@media (max-width: 768px) {
+  :root {
+    --viewportBasis: 768;
+  }
+}
+@media (max-width: 414px) {
+  :root {
+    --viewportBasis: 414;
+  }
+}
+
+/*
+  Block regular
+ */
+.Block2 {
+  padding-top: var(--spacing9);
+  padding-bottom: var(--spacing9);
+}
+.Block2-b {
+  padding-bottom: var(--spacing9);
+}
+.Block2-t {
+  padding-top: var(--spacing9);
+}
+/*
+  Block medium
+ */
+.Block2-md {
+  padding-top: var(--spacing7);
+  padding-bottom: var(--spacing7);
+}
+.Block2-md-b {
+  padding-bottom: var(--spacing7);
+}
+.Block2-md-t {
+  padding-top: var(--spacing7);
+}
+/*
+  Block small
+ */
+.Block2-sm {
+  padding-top: var(--spacing5);
+  padding-bottom: var(--spacing5);
+}
+.Block2-sm-b {
+  padding-bottom: var(--spacing5);
+}
+.Block2-sm-t {
+  padding-top: var(--spacing5);
+}

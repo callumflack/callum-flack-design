@@ -5,19 +5,11 @@
     </div>
     <div class="Card-body sm:w-8/12">
       <div class="sm:-mt-1">
-        <h1 v-if="title" class="Display s-m">
-          {{ title }}
-        </h1>
-        <p v-if="lede" class="Text--base text-gray s-m lg:w-11/12">
-          {{ lede }}
-        </p>
-        <ul class="Text--base text-gray">
+        <h1 v-if="title" class="Display s-m">{{ title }}</h1>
+        <p v-if="lede" class="Text-base text-gray s-m lg:w-11/12">{{ lede }}</p>
+        <ul class="Text-base text-gray">
           <li>
-            <a
-              :href="`mailto:${this.$siteConfig.email}`"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a :href="`mailto:${this.$siteConfig.email}`" target="_blank" rel="noopener noreferrer">
               <icon name="email" class="mr-1"></icon>
               {{ this.$siteConfig.email }}
             </a>

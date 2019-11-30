@@ -3,21 +3,19 @@
     <form class="Form font-sans" @submit.prevent="handleSubmit">
       <input
         v-model="formData.email"
-        class="Input flex-1"
+        class="Input Text-lg flex-1"
         type="email"
         name="email"
-        placeholder="Add your email to The Littoral Line"
+        placeholder="Subscribe to project updates"
         required
       />
-      <button class="Button Button--outline ml-2">
-        {{ buttonMsg }}
-      </button>
+      <button class="Button Button--invisible Text-lg">{{ buttonMsg }}</button>
     </form>
     <!-- <div v-if="buttonMsg" class="Form-validation is-good Input">
       <icon name="check-circle" class="mr-1" />
       <span>Thanks! You're all signed up.</span>
       <span>{{ buttonMsg }}</span>
-    </div> -->
+    </div>-->
     <div v-if="errorMsg" class="Form-validation is-bad Input">
       <icon name="info" class="mr-1" />
       <span>{{ errorMsg }}</span>
@@ -30,7 +28,7 @@
       src="https://thelittoralline.substack.com/embed"
       frameborder="0"
       scrolling="no"
-    ></iframe> -->
+    ></iframe>-->
   </div>
 </template>
 
@@ -43,7 +41,8 @@ export default {
     return {
       subscribed: false,
       errorMsg: null,
-      buttonMsg: "Yes please",
+      // buttonMsg: "Yes please",
+      buttonMsg: "→",
       formData: {
         name: "",
         email: "",
@@ -94,15 +93,13 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-/* .Input {
-  @apply border border-text rounded-l border-r-0;
-}
+.Input,
 .Button {
-  @apply rounded-r;
-} */
-
+  /* --button-height: 104px; */
+  border-bottom-color: theme(colors.black);
+}
 .Input {
+  @apply border-b;
   --button-padding-x: 0;
-  @apply border-b border-t border-gray-300;
 }
 </style>

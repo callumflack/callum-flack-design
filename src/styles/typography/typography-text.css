@@ -35,22 +35,26 @@ body {
   color: theme(colors.gray.600);
 }
 
-.Text--xs {
+.Text-button {
+  transform: translate(-0.025em, -0.04em) !important;
+}
+
+.Text-xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
 
-.Text--sm {
+.Text-sm {
   @apply tracking-normal;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
 .Button,
 .Input,
-.Text--base {
+.Text-base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
 
-.Text--xl {
+.Text-xl {
   font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
@@ -65,15 +69,13 @@ ul,
 ol,
 .Markdown > *,
 .Text,
-.Text--lg {
+.Text-lg {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
 }
 
 .Markdown > *,
 .Text,
-.Text--lg {
-  @apply font-sans;
-  @apply font-serif;
+.Text-lg {
   @apply leading-copy tracking-text;
 }
 
@@ -109,7 +111,6 @@ ol,
 /* used on projects by year archive page */
 .Year + .Year {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
-
 }
 
 /*
@@ -187,7 +188,7 @@ ol,
   @apply italic;
   /* @apply text-brand-highlight; */
   /* padding-left: calc(theme(spacing.6) * var(--grid-ratio)); */
-  border-color: rgba(0,0,0,0.2);
+  border-color: rgba(0, 0, 0, 0.2);
   padding-left: var(--text-indent);
 }
 

@@ -1,0 +1,91 @@
+/*
+
+  Spacing between typographic elements.
+
+  Small spacing
+  Need smaller spacing? Use mb-px or mb-1.
+  It's ok that they're unresponsive b/c they're small enough.
+
+*/
+.Space-sm-block > *:not(:last-child),
+.Space-sm {
+  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
+}
+.Space-sm-t {
+  margin-top: calc(theme(spacing.2) * var(--space-ratio));
+}
+.Space-sm-y {
+  margin-top: calc(theme(spacing.2) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
+}
+/*
+
+  Regular (paragraph) spacing
+
+*/
+.Markdown figure,
+.Markdown blockquote,
+.Markdown h2:not(:last-child),
+.Markdown h3:not(:last-child),
+.Markdown p:not(:last-child),
+.Markdown ul:not(:last-child),
+.Space-block > *:not(:last-child),
+.Space {
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-t {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-y {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+/*
+
+  Large (heading) spacing
+
+*/
+.Space-lg-block > *:not(:last-child),
+.Space-lg {
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-lg-t {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-lg-y {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+/*
+
+  Xlarge spacing
+
+*/
+.Space-xl-block > *:not(:last-child),
+.Space-xl {
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Markdown h2:not(:last-child),
+.Markdown h3:not(:last-child),
+.Markdown h4:not(:last-child),
+.Markdown h5:not(:last-child),
+.Space-xl-t {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Space-xl-y {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+}
+/*
+
+  Input & hr spacing
+
+ */
+.Space-hr {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+
+.Space-input {
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}

@@ -1,44 +1,36 @@
 <template>
-  <Wrap :page="page" kind="index">
-    <HeaderTitleWrap class="One">
-      <header class="lg:w-9/12">
-        <h1 class="Display s-h">
-          <saber-link :to="`/${page.link}`">
-            {{ page.title }}
-            <span class="Link--blank">&#8594;</span>
-          </saber-link>
-        </h1>
-        <p class="Link Text--sm text-gray s-m">
-          {{ page.lede }}
-        </p>
-        <p class="Link Text--sm text-gray s-m">
-          {{ page.ledeTwo }}
-        </p>
-        <FormNewsletter class="st-h"></FormNewsletter>
-      </header>
-    </HeaderTitleWrap>
+  <Wrap :page="page">
+    <header class="frame frame--lede Block2">
+      <h1 class="Text-sm frame-area-a">{{ page.title }}</h1>
+      <p class="Block2-sm-t frame-area-b">
+        {{ page.lede }}
+        <saber-link to="/about" class="text-gray">
+          Learn more
+          <icon name="add-circle-outline" class="Text-button"></icon>
+        </saber-link>
+      </p>
+    </header>
   </Wrap>
 </template>
 
 <script>
-import FormNewsletter from "../components/FormNewsletter";
-import HeaderTitleWrap from "../components/HeaderTitleWrap";
-import Wrap from "../components/Wrap.vue";
+import Wrap from "../components/Wrap2.vue";
 
 export default {
   components: {
-    FormNewsletter,
-    HeaderTitleWrap,
     Wrap,
   },
   props: ["page"],
+  // transition: "intro"
+  /* transition(to, from) {
+    // return a string or object
+    if (!from) {
+      return "slide-left";
+    }
+    if (to === "/about") {
+      return "slide-right";
+    }
+    // return +to.query.page < +from.query.page ? "slide-right" : "slide-left";
+  }, */
 };
 </script>
-
-<style lang="postcss" scoped>
-.One {
-  @apply border-0;
-  padding-top: calc(theme(spacing.48) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.48) * var(--block-size-ratio));
-}
-</style>

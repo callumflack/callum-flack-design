@@ -17,7 +17,7 @@
     >
       <div class="lg:w-9/12">
         <h1 v-if="title" class="Display s-h">{{ title }}</h1>
-        <p v-if="lede" class="Link Text--sm text-gray">
+        <p v-if="lede" class="Link Text-sm text-gray">
           {{ lede }}
         </p>
         <FormNewsletter v-if="$route.path.includes('littoral')" class="st-h w-full" />

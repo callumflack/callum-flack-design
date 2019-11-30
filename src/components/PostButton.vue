@@ -1,11 +1,6 @@
 <template>
   <!-- Button Button--outline -->
-  <a
-    :href="link"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="Text--sm st-h relative"
-  >
+  <a :href="link" target="_blank" rel="noopener noreferrer" class="Text-sm st-h relative">
     {{ label }}
     <span class="Link--blank">&#8599;</span>
   </a>

@@ -7,8 +7,7 @@
  */
 
 .Heading,
-.Subheading
-.Markdown h2,
+.Subheading .Markdown h2,
 .Markdown h3,
 .Metaheading {
   /* @apply font-medium; */
@@ -24,11 +23,11 @@
 
 .Markdown h2 {
   @apply font-medium;
-  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.2xl) * var(--heading-ratio));
 }
 .Markdown h3 {
   @apply font-medium;
-  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.xl) * var(--heading-ratio));
 }
 
 /* .Subheading {
@@ -59,11 +58,11 @@
 
 .Title {
   @apply leading-tight;
-  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.xl) * var(--heading-ratio));
 }
 
 .Display {
   @apply tracking-tighter leading-none;
   /* @apply font-medium; */
-  font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
+  font-size: calc(theme(fontSize.5xl) * var(--heading-ratio));
 }

@@ -5,7 +5,7 @@
     </Aspect>
     <figcaption
       v-if="caption"
-      class="Text--base text-gray st-h"
+      class="Text-base text-gray st-h"
       v-html="caption"
     ></figcaption>
   </div>

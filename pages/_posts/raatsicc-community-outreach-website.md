@@ -5,12 +5,11 @@ date: 2019-06-15
 title: RAATSICC
 lede: A content-managed website to help spread community outreach news and education.
 link: https://www.raatsicc.org.au/
-assets: 
+assets:
   cover: /images/raatsicc-hero-job-1440.jpg
-tags: 
+tags:
   - design
   - frontend
-  - featured
 ---
 
 <!-- heroRatio: 1872/2880 -->

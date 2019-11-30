@@ -21,13 +21,15 @@
 /* CFd standard components */
 @import "./layout/layout";
 @import "./layout/layout-grid";
+@import "./layout/layout-grid2";
 @import "./layout/layout-block";
+@import "./layout/layout-block2";
 @import "./layout/layout-container";
 @import "./layout/layout-column";
 /* @import "./layout/layout-media"; */
 @import "./typography/typography-link";
 @import "./typography/typography-text";
-@import "./typography/typography-headings";
+@import "./typography/typography-headings2";
 @import "./typography/typography-spacing";
 @import "./typography/typography-code";
 @import "./element/element-button";

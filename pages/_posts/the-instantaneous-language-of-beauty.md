@@ -1,5 +1,6 @@
 ---
 layout: post
+injectAllPosts: true
 date: 2018-06-01
 category: writing
 title: The instantaneous language of beauty
@@ -17,10 +18,9 @@ hero:
 nextPost:
   title: Designers should code
   link: /blog/designers-should-code
-tags: 
+tags:
   - essay
   - featured
-card:
 ---
 
 A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead feel.
