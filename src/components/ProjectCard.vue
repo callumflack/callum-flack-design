@@ -5,24 +5,41 @@
     :href="post.link"
     :target="target"
     :rel="rel"
-    class="Card col-span-12 xl:col-start-2 xl:col-end-12"
+    class="Card"
   >
-    <div class="Card-body flex justify-between">
-      <h3 class="Heading Heading-4xl font-mediu w-7/12 xl:w-9/12">
-        {{ post ? post.title : "View all" }}
+    <!-- image -->
+    <Aspect v-if="post.assets && post.assets.cover" ratio="1/1.5">
+      <img
+        v-if="post.assets.cover.local"
+        :src="post.assets.cover"
+        :alt="post.title"
+        class="Card-figure-image"
+      />
+      <ImageDynamic
+        v-else
+        :src="post.assets.cover"
+        :alt="post.title"
+        cover
+        class="Card-figure-image"
+      />
+    </Aspect>
+    <!-- body -->
+    <div class="Card-body">
+      <h3 class="Text-lg font-medium">
+        {{ post.title }}
       </h3>
-      <div v-if="post" class="w-5/12 xl:w-3/12 flex justify-between">
+      <div class="flex justify-between">
         <div>
           <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
-            class="Text-sm font-normal text-gray text-right"
+            class="Text-sm text-gray text-right"
           >
             <span v-if="index != 0">,</span>
             <span class="capitalize">{{ tag }}</span>
           </span>
         </div>
-        <div class="Heading Heading-4xl">
+        <div class="Text-sm font-light">
           {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
         </div>
       </div>
@@ -31,6 +48,8 @@
 </template>
 
 <script>
+import Aspect from "../components/Aspect";
+import ImageDynamic from "../components/ImageDynamic";
 import formatListDate from "../utils/formatListDate";
 /*
 
@@ -38,7 +57,10 @@ import formatListDate from "../utils/formatListDate";
 
 */
 export default {
-  components: {},
+  components: {
+    Aspect,
+    ImageDynamic,
+  },
   props: ["post"],
   computed: {
     type() {
@@ -85,14 +107,14 @@ export default {
 
 <style lang="postcss" scoped>
 .Card {
-  @apply block py-2 relative cursor-pointer;
-  @apply border-b;
-  transition: all 500ms ease;
+  @apply block relative cursor-pointer;
+  @apply border border-black;
+  /* transition: all 500ms ease;
   transform: translateZ(0);
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 
-.Card:before {
+/* .Card:before {
   @apply absolute left-0 bg-text h-px;
   content: "";
   right: 100%;
@@ -111,13 +133,17 @@ export default {
 .Card:focus *,
 .Card:hover * {
   @apply text-text !important;
-}
+} */
 
 /* CARD BODY */
 
 .Card-body {
-  @apply py-1;
-  transform: translateY(1px);
+  /* @apply px-2 pt-2 pb-8; */
+  padding-top: var(--spacing1);
+  padding-bottom: var(--spacing7);
+  padding-left: calc(1.5 * var(--spacing1));
+  padding-right: calc(1.5 * var(--spacing1));
+  /* transform: translateY(1px); */
 }
 
 .Card-body-meta {
@@ -128,12 +154,20 @@ export default {
   @apply capitalize;
 }
 
-.Card-figure {
-  @apply h-full relative;
+/* .Card-figure {
+  @apply relative;
 }
 
 .Card-figure-image {
   @apply absolute inset-0 object-cover w-full h-full;
+  max-width: none;
+  mix-blend-mode: multiply;
+} */
+
+.Card-figure-image:after {
+  @apply absolute inset-0;
+  background-color: rgba(0, 0, 0, 0.025);
+  content: "";
   max-width: none;
   mix-blend-mode: multiply;
 }
@@ -142,12 +176,12 @@ export default {
   @apply absolute inset-0 flex justify-center items-center;
 }
 
-@screen lg {
+/* @screen lg {
   .Card-body {
     @apply py-2;
   }
   .Card-body > .Title {
     @apply pr-4;
   }
-}
+} */
 </style>

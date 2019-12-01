@@ -41,6 +41,7 @@
 :root {
   --gridColumnCount: 12;
   --gridColumnGap: calc(12 / 1680 * 100vw);
+  --gridColumnGap: calc(24 / 1680 * 100vw);
   --gridMarginGapRelative: calc(56 / 1680);
   --gridMarginGap: calc(var(--gridMarginGapRelative) * 100vw);
   /* grid-template-columns: 2fr 2fr 1fr 2fr; */
@@ -48,7 +49,7 @@
 }
 @screen xl {
   :root {
-    --gridMarginGapRelative: calc(224 / 1680);
+    /* --gridMarginGapRelative: calc(224 / 1680); */
   }
 }
 
@@ -76,25 +77,12 @@
   display: grid;
   grid-template-columns: var(--gridTemplateColumnsDefault);
   grid-column-gap: var(--gridColumnGap);
+  /* grid-row-gap: var(--spacing3); */
   grid-row-gap: var(--spacing3);
   height: auto;
   margin: 0 var(--gridMarginGap);
   /* padding: var(--subnavPaddingTopBottom) var(--gridMarginGap)
     var(--subnavPaddingBottomExpanded); */
-}
-
-.frame--article {
-  grid-template-areas: "a a a a a a a a a a a a";
-}
-@screen md {
-  .frame--article {
-    grid-template-areas: ". a a a a a a a a . . .";
-  }
-}
-@screen hu {
-  .frame--article {
-    grid-template-areas: ". a a a a a a . . . . .";
-  }
 }
 
 .frame--lede {
@@ -105,14 +93,48 @@
 @screen md {
   .frame--lede {
     grid-template-areas:
-      "a a a a a a a a . . . ."
-      "b b b b b b b b . . . .";
+      ". a a a a a a a . . . ."
+      ". b b b b b b b . . . .";
   }
 }
 @screen hu {
   .frame--lede {
     grid-template-areas:
-      "a a a a a a . . . . . ."
-      "b b b b b b . . . . . .";
+      ". a a a a a . . . . . ."
+      ". b b b b b . . . . . .";
+  }
+}
+
+.frame--article {
+  grid-template-areas: "a a a a a a a a a a a a";
+}
+@screen md {
+  .frame--article {
+    grid-template-areas: ". . a a a a a a a . . .";
+  }
+}
+@screen hu {
+  .frame--article {
+    grid-template-areas: ". . a a a a . . . . . .";
+  }
+}
+
+.frame--projectCards {
+  --gridColumnCount: 1;
+  grid-template-columns: repeat(var(--gridColumnCount), minmax(0, 1fr));
+}
+@screen sm {
+  .frame--projectCards {
+    --gridColumnCount: 3;
+  }
+}
+@screen md {
+  .frame--projectCards {
+    --gridColumnCount: 3;
+  }
+}
+@screen hu {
+  .frame--projectCards {
+    --gridColumnCount: 5;
   }
 }

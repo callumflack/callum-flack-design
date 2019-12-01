@@ -2,22 +2,24 @@
   <!-- <div :class="reverseClass"> -->
   <div class="relative transition-body">
     <slot></slot>
-    <component :is="projectBlockElement" class="frame">
-      <ProjectRow
-        v-for="(item, index) in featuredPosts"
-        :key="index"
-        :post="item"
-      ></ProjectRow>
-      <!-- view all -->
-      <!-- <ProjectRow></ProjectRow> -->
-    </component>
-    <Footer :kind="kind" :nextpost="page.nextPost" />
+
+    <div class="relative Block2">
+      <!-- <component :is="projectBlockElement" v-if="showProjects" class="frame">
+        <ProjectRow
+          v-for="(item, index) in featuredPosts"
+          :key="index"
+          :post="item"
+        ></ProjectRow>
+      </component> -->
+      <Footer :kind="kind" :nextpost="page.nextPost" />
+    </div>
   </div>
 </template>
 
 <script>
 import Footer from "../components/Footer.vue";
-import ProjectRow from "../components/ProjectRow";
+import ProjectRow from "../components/ProjectRowFromData";
+import featuredPosts from "../data/featuredPosts";
 /*
 
 
@@ -34,6 +36,9 @@ export default {
     page: Object,
     kind: String,
   },
+  data: () => ({
+    featuredPosts: featuredPosts.items,
+  }),
   computed: {
     siteTitle() {
       return this.$siteConfig.title;
@@ -44,9 +49,19 @@ export default {
       }
       return "section";
     },
-    featuredPosts() {
-      return this.page.posts.filter(x => x.tags.includes("featured"));
+    showProjects() {
+      // show the projects list everywhere except:
+      // return this.$route.path != "/projects" || "/blog";
+      if (this.$route.path === "/projects") {
+        return false;
+      }
+      return true;
     },
+    /* can't recursively `injectAllPosts` into a component that is used on that post */
+    /* I'm using static `featuredPosts` data instead */
+    /* featuredPosts() {
+      return this.page.posts.filter(x => x.tags.includes("featured"));
+    }, */
   },
   head() {
     const { excerpt } = this.page;

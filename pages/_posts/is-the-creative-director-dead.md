@@ -2,7 +2,9 @@
 layout: post
 category: writing
 date: 2019-08-29
-title: My thoughts on "Is the Creative Director Dead?"
+draft: true
+# title: My thoughts on "Is the Creative Director Dead?"
+title: Is the Creative Director Dead?
 lede: If you want to know how to make software that connects with and works for real people, there's no substitute for shaking hands with the invisible demons programmers wrestle with.
 readingTime: 5
 assets:

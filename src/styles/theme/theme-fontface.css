@@ -72,10 +72,11 @@
 @font-face {
   font-family: "Text";
   src: url("/../../fonts/Graphik-Light.otf") format("woff");
+  src: url("/../../fonts/Mier-B-Light.otf") format("woff");
+  src: url("/../../fonts/Scto-Grotesk-A-Light.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Thin.otf") format("woff");
   src: url("/../../fonts/TheinhardtLight_alt.otf") format("woff");
-  src: url("/../../fonts/Scto-Grotesk-A-Light.otf") format("woff");
-  src: url("/../../fonts/Mier-B-Light.otf") format("woff");
+  src: url("/../../fonts/neue-haas-unica-pro-light.otf") format("woff");
   font-style: normal;
   font-weight: 300;
 }
@@ -89,10 +90,11 @@
   src: url("/../../fonts/Graphik-Regular.woff") format("woff");
   src: url("/../../fonts/Roobert-Regular.otf") format("woff");
   src: url("/../../fonts/MessinaSans-Regular.otf") format("woff");
+  src: url("/../../fonts/Mier-B-Regular.otf") format("woff");
+  src: url("/../../fonts/Scto-Grotesk-A-Regular.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Regular.woff") format("woff");
   src: url("/../../fonts/TheinhardtReg.otf") format("woff");
-  src: url("/../../fonts/Scto-Grotesk-A-Regular.otf") format("woff");
-  src: url("/../../fonts/Mier-B-Regular.otf") format("woff");
+  src: url("/../../fonts/neue-haas-unica-pro-regular.otf") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -101,10 +103,11 @@
   src: url("/../../fonts/Graphik-Medium.woff") format("woff");
   src: url("/../../fonts/Roobert-Semibold.otf") format("woff");
   src: url("/../../fonts/MessinaSans-Bold.otf") format("woff");
+  src: url("/../../fonts/Mier-B-Medium.otf") format("woff");
+  src: url("/../../fonts/Scto-Grotesk-A-Medium.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Medium.woff") format("woff");
   src: url("/../../fonts/TheinhardtMed.otf") format("woff");
-  src: url("/../../fonts/Scto-Grotesk-A-Medium.otf") format("woff");
-  src: url("/../../fonts/Mier-B-Medium.otf") format("woff");
+  src: url("/../../fonts/neue-haas-unica-pro-medium.otf") format("woff");
   font-style: normal;
   font-weight: 500;
 }
@@ -113,10 +116,11 @@
   src: url("/../../fonts/Graphik-Bold.woff") format("woff");
   src: url("/../../fonts/Roobert-Bold.otf") format("woff");
   src: url("/../../fonts/MessinaSans-Black.otf") format("woff");
+  src: url("/../../fonts/Mier-B-Bold.otf") format("woff");
+  src: url("/../../fonts/Scto-Grotesk-A-Bold.otf") format("woff");
   src: url("/../../fonts/Suisse-BP-Intl-Bold.otf") format("woff");
   src: url("/../../fonts/TheinhardtBold.otf") format("woff");
-  src: url("/../../fonts/Scto-Grotesk-A-Bold.otf") format("woff");
-  src: url("/../../fonts/Mier-B-Bold.otf") format("woff");
+  src: url("/../../fonts/neue-haas-unica-pro-bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }

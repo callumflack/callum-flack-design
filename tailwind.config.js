@@ -13,7 +13,7 @@ module.exports = {
       brand: {
         red: "#ff3f00", // red-orange
         highlight: "#d81b1b",
-        neutral: "#f3f3f3",
+        neutral: "#f2f2f2",
         header: "#efefe9",
         bg: "#fefefe",
       },
@@ -96,15 +96,14 @@ module.exports = {
       xs: "0.8125rem", // 13
       sm: "0.9375rem", // 14 or 15
       base: "0.9375rem", // 16
-      //lg: "1.3125rem", // 20
-      lg: "1.3125rem", // 20
-      xl: "1.4375rem", // 19 or 20
+      lg: "1.125rem", // 18
+      xl: "1.25rem", // 20
       "2xl": "1.4375rem", // 24
       "3xl": "1.6875rem", // 27
-      "4xl": "2.25rem", // 32 or 36 or 40
-      "5xl": "2.75rem", // 44
-      "6xl": "4rem",
-      "7xl": "80px",
+      "4xl": "32px", // 32 or 36 or 40
+      "5xl": "48px", // 44
+      "6xl": "60px",
+      "7xl": "72px",
     },
     /* Corresponding to breakpoints */
     responsiveScale: {
@@ -113,7 +112,8 @@ module.exports = {
       textMd: "1",
       headingXs: "0.727272727",
       headingSm: "0.818181818",
-      headingMd: "1",
+      headingMd: ".925",
+      headingHu: "1",
       blockXs: "0.5",
       blockSm: "0.7",
       blockMd: "1",

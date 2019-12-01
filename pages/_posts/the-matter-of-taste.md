@@ -1,6 +1,5 @@
 ---
 layout: post
-injectAllPosts: true
 category: writing
 date: 2018-09-24
 title: The matter of taste

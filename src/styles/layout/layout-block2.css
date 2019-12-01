@@ -49,25 +49,38 @@
   Block medium
  */
 .Block2-md {
-  padding-top: var(--spacing7);
-  padding-bottom: var(--spacing7);
+  padding-top: var(--spacing8);
+  padding-bottom: var(--spacing8);
 }
 .Block2-md-b {
-  padding-bottom: var(--spacing7);
+  padding-bottom: var(--spacing8);
 }
 .Block2-md-t {
-  padding-top: var(--spacing7);
+  padding-top: var(--spacing8);
 }
 /*
   Block small
  */
 .Block2-sm {
-  padding-top: var(--spacing5);
-  padding-bottom: var(--spacing5);
+  padding-top: var(--spacing4);
+  padding-bottom: var(--spacing4);
 }
 .Block2-sm-b {
-  padding-bottom: var(--spacing5);
+  padding-bottom: var(--spacing4);
 }
 .Block2-sm-t {
-  padding-top: var(--spacing5);
+  padding-top: var(--spacing4);
+}
+/*
+  Block xs
+ */
+.Block2-xs {
+  padding-top: var(--spacing2);
+  padding-bottom: var(--spacing2);
+}
+.Block2-xs-b {
+  padding-bottom: var(--spacing2);
+}
+.Block2-xs-t {
+  padding-top: var(--spacing2);
 }

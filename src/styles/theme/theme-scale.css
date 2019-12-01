@@ -31,3 +31,12 @@
     --grid-ratio: theme(responsiveScale.gridMd);
   }
 }
+@screen hu {
+  :root {
+    --text-ratio: theme(responsiveScale.textMd);
+    --heading-ratio: theme(responsiveScale.headingHu);
+    --space-ratio: theme(responsiveScale.spaceMd);
+    --block-size-ratio: theme(responsiveScale.blockMd);
+    --grid-ratio: theme(responsiveScale.gridMd);
+  }
+}

@@ -13,7 +13,8 @@
  */
 
 .Heading {
-  @apply font-sans font-medium;
+  @apply font-sans;
+  /* @apply font-medium; */
   @apply leading-tight;
   font-size: calc(theme(fontSize.4xl) * var(--heading-ratio));
 }
@@ -34,13 +35,22 @@
 
  */
 
-.Heading-lg,
+.Heading-xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+.Heading-2xl {
+  font-size: calc(theme(fontSize.2xl) * var(--text-ratio));
+}
+.Heading-3xl {
+  font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
+}
+/* .Heading-lg,
 .Heading-xl,
 .Heading-2xl,
 .Heading-3xl {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
-}
-@screen lg {
+} */
+/* @screen lg {
   .Heading-xl {
     font-size: calc(theme(fontSize.xl) * var(--text-ratio));
   }
@@ -50,7 +60,7 @@
   .Heading-3xl {
     font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
   }
-}
+} */
 
 /*
 
