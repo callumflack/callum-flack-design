@@ -40,9 +40,10 @@
 
 :root {
   --gridColumnCount: 12;
-  --gridColumnGap: calc(12 / 1680 * 100vw);
-  --gridColumnGap: calc(24 / 1680 * 100vw);
-  --gridMarginGapRelative: calc(56 / 1680);
+  /* --gridColumnGap: calc(12 / 1680 * 100vw); */
+  --gridColumnGap: calc(42 / 1680 * 100vw);
+  /* --gridMarginGapRelative: calc(56 / 1680); */
+  --gridMarginGapRelative: calc(84 / 1680);
   --gridMarginGap: calc(var(--gridMarginGapRelative) * 100vw);
   /* grid-template-columns: 2fr 2fr 1fr 2fr; */
   --gridTemplateColumnsDefault: repeat(var(--gridColumnCount), minmax(0, 1fr));
@@ -78,7 +79,7 @@
   grid-template-columns: var(--gridTemplateColumnsDefault);
   grid-column-gap: var(--gridColumnGap);
   /* grid-row-gap: var(--spacing3); */
-  grid-row-gap: var(--spacing3);
+  grid-row-gap: var(--spacing5);
   height: auto;
   margin: 0 var(--gridMarginGap);
   /* padding: var(--subnavPaddingTopBottom) var(--gridMarginGap)
@@ -100,8 +101,8 @@
 @screen hu {
   .frame--lede {
     grid-template-areas:
-      ". a a a a a . . . . . ."
-      ". b b b b b . . . . . .";
+      ". a a a a . . . . . . ."
+      ". b b b b . . . . . . .";
   }
 }
 
@@ -115,7 +116,7 @@
 }
 @screen hu {
   .frame--article {
-    grid-template-areas: ". . a a a a . . . . . .";
+    grid-template-areas: ". . a a a a a . . . . .";
   }
 }
 
@@ -128,13 +129,18 @@
     --gridColumnCount: 3;
   }
 }
-@screen md {
+@screen xl {
   .frame--projectCards {
-    --gridColumnCount: 3;
+    --gridColumnCount: 4;
   }
 }
 @screen hu {
   .frame--projectCards {
-    --gridColumnCount: 5;
+    --gridColumnCount: 4;
+  }
+}
+@screen su {
+  .frame--projectCards {
+    /* --gridColumnCount: 5; */
   }
 }

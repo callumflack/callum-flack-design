@@ -1,21 +1,21 @@
 <template>
-  <Wrap :page="page" kind="post">
-    <article
-      class="Markdown"
-      :class="{ 'Block-sm-t': this.$route.path !== '/about' }"
-      itemprop="articleBody"
-    >
-      <slot name="default" />
-    </article>
-    <a class="u-url" :href="page.permalink" hidden></a>
+  <Wrap :page="page">
+    <PageTitle :page="page"></PageTitle>
+    <main class="frame frame--article Block2-b">
+      <article class="Markdown frame-area-a" itemprop="articleBody">
+        <slot name="default" />
+      </article>
+    </main>
   </Wrap>
 </template>
 
 <script>
-import Wrap from "../components/Wrap.vue";
+import PageTitle from "../components/PageTitle.vue";
+import Wrap from "../components/Wrap2";
 
 export default {
   components: {
+    PageTitle,
     Wrap,
   },
   props: ["page"],

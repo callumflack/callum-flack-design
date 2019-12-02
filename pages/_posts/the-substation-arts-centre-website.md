@@ -3,7 +3,7 @@ layout: post
 category: projects
 date: 2016-12-10
 title: The Substation
-lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
+lede: Website redesign for a contemporary, community-based in Melbourne, Australia.
 link: https://thesubstation.org.au/
 assets: 
   cover: /images/thesubstation-hero-bunker-1440.jpg

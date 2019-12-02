@@ -1,6 +1,17 @@
 <template>
   <!-- <div :class="reverseClass"> -->
   <div class="relative transition-body">
+    <nav
+      v-if="$route.path !== '/'"
+      class="Nav Text-lg w-full flex justify-between z-50"
+      :class="{ 'text-white opacity-75': invert }"
+    >
+      <saber-link to="/">Callum Flack Design</saber-link>
+      <saber-link to="/">
+        <icon name="close" height="0.75em" width="0.75em" class="mr-1"></icon>
+        Close
+      </saber-link>
+    </nav>
     <slot></slot>
 
     <div class="relative Block2">
@@ -18,7 +29,7 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-import ProjectRow from "../components/ProjectRowFromData";
+// import ProjectRow from "../components/ProjectRowFromData";
 import featuredPosts from "../data/featuredPosts";
 /*
 
@@ -30,10 +41,11 @@ import featuredPosts from "../data/featuredPosts";
 export default {
   components: {
     Footer,
-    ProjectRow,
+    // ProjectRow,
   },
   props: {
     page: Object,
+    invert: Boolean,
     kind: String,
   },
   data: () => ({
@@ -133,4 +145,10 @@ export default {
   transform: translateX(5px);
   opacity: 0;
 } */
+.Nav {
+  @apply fixed;
+  margin-top: var(--spacing5);
+  padding-left: var(--gridMarginGap);
+  padding-right: var(--gridMarginGap);
+}
 </style>

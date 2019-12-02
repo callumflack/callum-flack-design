@@ -1,5 +1,6 @@
 ---
 layout: post
+draft: true
 injectAllPosts: true
 date: 2019-03-01
 category: writing

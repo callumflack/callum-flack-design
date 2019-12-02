@@ -3,6 +3,7 @@ category: projects
 layout: post
 date: 2019-10-30
 title: Clay Health & Organics
+agency: Hours After
 link: https://clayhealth.com.au/
 assets: 
   cover: /images/billys-coffee-hero.jpg

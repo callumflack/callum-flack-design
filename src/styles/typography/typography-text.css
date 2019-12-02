@@ -14,7 +14,6 @@ html {
 body {
   @apply antialiased text-text leading-normal;
   @apply font-sans;
-  @apply bg-brand-bg;
   /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
   font-kerning: normal;
   /* hyphens: auto; */
@@ -173,21 +172,9 @@ ol,
 }
 
 .Markdown blockquote p {
-  /* @apply border border-l-2;
-  border-left-color: theme(colors.text); */
   @apply border-l;
-  /* @apply border-gray-400; */
-  /* @apply border-l-2 border-text; */
-  /* @apply border-l-2 border-brand-highlight; */
-  /* @apply bg-gray-200; */
-  /* background-color: rgba(135, 131, 120, 0.15);
-  background-color: rgba(135, 131, 120, 0.1);
-  background-color: rgba(189, 183, 165, 0.15); */
   @apply py-2 pr-4;
-  @apply text-text;
-  @apply italic;
-  /* @apply text-brand-highlight; */
-  /* padding-left: calc(theme(spacing.6) * var(--grid-ratio)); */
+  @apply text-gray-600;
   border-color: rgba(0, 0, 0, 0.2);
   padding-left: var(--text-indent);
 }

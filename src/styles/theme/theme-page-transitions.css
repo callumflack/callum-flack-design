@@ -29,7 +29,7 @@
 
 /* .page-enter, */
 .page-leave-to {
-  transform: translateX(2%);
+  /* transform: translateX(2%); */
   opacity: 0;
 }
 

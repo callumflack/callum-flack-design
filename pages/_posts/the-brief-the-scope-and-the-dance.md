@@ -1,5 +1,6 @@
 ---
 layout: post
+draft: true
 category: writing
 date: 2018-07-02
 title: The brief, the scope and the dance

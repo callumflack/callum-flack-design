@@ -3,7 +3,8 @@ layout: post
 category: writing
 date: 2018-09-24
 title: The matter of taste
-lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
+# lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
+lede: When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
 readingTime: 8
 assets:
   cover: /images/post-lynch-bw.jpg

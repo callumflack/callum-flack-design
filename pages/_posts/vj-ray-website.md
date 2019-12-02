@@ -3,7 +3,7 @@ layout: post
 category: projects
 date: 2017-11-21
 title: VJ Ray
-lede: A series of websites to help one of Sydney's oldest Real Estate agencies show how they put people first.
+lede: Dual website brands for one of Sydney's oldest Real Estate agencies.
 assets: 
   cover: /images/vjray-hero.jpg
 heroShowCover: false

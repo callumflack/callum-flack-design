@@ -8,7 +8,7 @@
     class="Card"
   >
     <!-- image -->
-    <Aspect v-if="post.assets && post.assets.cover" ratio="1/1.5">
+    <Aspect v-if="post.assets && post.assets.cover" ratio="1/1.5" class="Card-figure">
       <img
         v-if="post.assets.cover.local"
         :src="post.assets.cover"
@@ -25,23 +25,27 @@
     </Aspect>
     <!-- body -->
     <div class="Card-body">
-      <h3 class="Text-lg font-medium">
-        {{ post.title }}
-      </h3>
-      <div class="flex justify-between">
-        <div>
-          <span
-            v-for="(tag, index) in tagsWithFeaturedRemoved"
-            :key="index"
-            class="Text-sm text-gray text-right"
-          >
-            <span v-if="index != 0">,</span>
-            <span class="capitalize">{{ tag }}</span>
+      <div class="Card-title flex justify-between Space-sm">
+        <h3 class="Text-lg font-medium w-3/4 hu:7/12">
+          {{ post.title }}
+        </h3>
+        <div class="Text-lg font-light">
+          <span class="Card-title-action font-medium">
+            {{ type === "saber-link" ? "Read " : "Open " }}
           </span>
-        </div>
-        <div class="Text-sm font-light">
           {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
         </div>
+      </div>
+      <p class="Card-detail Text-sm">{{ post.lede }}</p>
+      <div class="Card-tags Text-xs text-gray mt-auto">
+        <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="">
+          <span v-if="index != 0">,</span>
+          <span class="capitalize">{{ tag }}</span>
+        </span>
+        <template v-if="post.agency">
+          <span class="Card-tags-divider">|</span>
+          <span>Design: {{ post.agency }}</span>
+        </template>
       </div>
     </div>
   </component>
@@ -106,63 +110,59 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+/* CARD + TRANSITIONS */
+.Card-figure,
+.Card-body,
+.Card-title,
+.Card-title-action {
+  transition: all 500ms theme(bezier.thisalso);
+}
+
 .Card {
-  @apply block relative cursor-pointer;
-  @apply border border-black;
-  /* transition: all 500ms ease;
-  transform: translateZ(0);
-  backface-visibility: hidden; */
+  @apply flex flex-col relative cursor-pointer;
+  @apply bg-white;
+  @apply border-2 border-transparent;
+  transition: all 150ms theme(bezier.thisalso);
 }
 
-/* .Card:before {
-  @apply absolute left-0 bg-text h-px;
-  content: "";
-  right: 100%;
-  bottom: -1px;
-  transition: right 150ms ease-out;
-  z-index: -1;
+.Card:hover {
+  @apply bg-transparent border-brand-red;
+}
+.Card:hover .Card-figure,
+.Card:hover .Card-detail {
+  @apply opacity-0;
+}
+.Card:hover .Card-title,
+.Card:hover .Card-tags,
+.Card:hover .Card-tags-divider {
+  @apply text-brand-red;
+}
+.Card:hover .Card-title-action {
+  @apply opacity-100;
+  transform: translateX(0);
 }
 
-.Card:active:before,
-.Card:focus:before,
-.Card:hover:before {
-  right: 0;
+/* CARD FIGURE & BODY */
+.Card-figure {
+  margin: -2px; /* negate the Card border */
+  @apply mb-0;
 }
-
-.Card:active *,
-.Card:focus *,
-.Card:hover * {
-  @apply text-text !important;
-} */
-
-/* CARD BODY */
 
 .Card-body {
-  /* @apply px-2 pt-2 pb-8; */
-  padding-top: var(--spacing1);
-  padding-bottom: var(--spacing7);
-  padding-left: calc(1.5 * var(--spacing1));
-  padding-right: calc(1.5 * var(--spacing1));
+  @apply flex flex-col h-full;
+  min-height: 15vh;
+  /* padding-top: var(--spacing1);
+  padding-bottom: calc(1.75 * var(--spacing1));
+  padding-left: calc(1.75 * var(--spacing1));
+  padding-right: calc(1.75 * var(--spacing1)); */
   /* transform: translateY(1px); */
+  @apply p-4 pt-3;
 }
 
-.Card-body-meta {
-  @apply text-gray-600;
+.Card-title-action {
+  @apply inline-block opacity-0 text-brand-red;
+  transform: translateX(-5%);
 }
-
-.Card-body-meta > * {
-  @apply capitalize;
-}
-
-/* .Card-figure {
-  @apply relative;
-}
-
-.Card-figure-image {
-  @apply absolute inset-0 object-cover w-full h-full;
-  max-width: none;
-  mix-blend-mode: multiply;
-} */
 
 .Card-figure-image:after {
   @apply absolute inset-0;
@@ -172,16 +172,8 @@ export default {
   mix-blend-mode: multiply;
 }
 
-.Card-figure-blanklink {
-  @apply absolute inset-0 flex justify-center items-center;
+.Card-tags-divider {
+  @apply mx-1 font-light text-gray-500 inline-block;
+  transform: translateY(-0.1em);
 }
-
-/* @screen lg {
-  .Card-body {
-    @apply py-2;
-  }
-  .Card-body > .Title {
-    @apply pr-4;
-  }
-} */
 </style>

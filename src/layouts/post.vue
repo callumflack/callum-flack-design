@@ -1,5 +1,5 @@
 <template>
-  <Wrap :page="page">
+  <Wrap :page="page" :invert="page.hero.titleInvert">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <!-- post hero with image -->
       <header
@@ -21,22 +21,27 @@
         <!-- post title aspect -->
         <div class="absolute inset-0">
           <div class="relative h-full flex items-center justify-center">
-            <div class="container container--text" :class="heroTitleColor">
-              <PostHeaderTitle :page="page"></PostHeaderTitle>
-            </div>
+            <PageTitle :page="page" :invert="page.hero.titleInvert" show-meta="true">
+            </PageTitle>
           </div>
         </div>
       </header>
 
-      <!-- post hero no image, no `Block-sm` -->
-      <header v-else class="Grid-extract--edge" :style="heroBlockColor">
-        <HeaderTitleWrap kind="post">
-          <PostHeaderTitle :page="page"></PostHeaderTitle>
-        </HeaderTitleWrap>
-      </header>
+      <!-- post hero title w/ no image -->
+      <PageTitle
+        v-else
+        :page="page"
+        :invert="page.hero.titleInvert"
+        show-meta="true"
+        :style="heroBlockColor"
+      >
+      </PageTitle>
 
       <!-- article -->
-      <main class="frame frame--article Block2-sm-t Block2-b">
+      <main
+        class="frame frame--article Block2-b"
+        :class="{ 'Block2-sm-t': page.hero && page.hero.showCover }"
+      >
         <div
           class="Markdown frame-area-a"
           :class="{ 'Block-sm-t': this.$route.path !== '/about' }"
@@ -50,13 +55,14 @@
 </template>
 
 <script>
-import formatDate from "../utils/formatDate";
-import formatListDate from "../utils/formatListDate";
 import Aspect from "../components/Aspect";
+import PageTitle from "../components/PageTitle.vue";
 import PostHeaderTitle from "../components/PostHeaderTitle";
 import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap2";
+import formatDate from "../utils/formatDate";
+import formatListDate from "../utils/formatListDate";
 /*
 
   Post layout component
@@ -69,6 +75,7 @@ export default {
     Aspect,
     HeaderTitleWrap,
     ImageDynamic,
+    PageTitle,
     PostHeaderTitle,
     Wrap,
   },

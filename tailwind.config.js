@@ -62,6 +62,7 @@ module.exports = {
       lg: "1024px",
       xl: "1366px",
       hu: "1680px",
+      su: "1900px",
     },
     fontFamily: {
       sans: [
