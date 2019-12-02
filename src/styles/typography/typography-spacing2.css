@@ -47,14 +47,18 @@
 */
 .Space-lg-block > *:not(:last-child),
 .Space-lg {
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
+.Markdown h2:not(:last-child),
+.Markdown h3:not(:last-child),
+.Markdown h4:not(:last-child),
+.Markdown h5:not(:last-child),
 .Space-lg-t {
-  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
 }
 .Space-lg-y {
-  margin-top: calc(theme(spacing.4) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
 /*
 
@@ -63,18 +67,14 @@
 */
 .Space-xl-block > *:not(:last-child),
 .Space-xl {
-  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.12) * var(--space-ratio));
 }
-.Markdown h2:not(:last-child),
-.Markdown h3:not(:last-child),
-.Markdown h4:not(:last-child),
-.Markdown h5:not(:last-child),
 .Space-xl-t {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  margin-top: calc(theme(spacing.12) * var(--space-ratio));
 }
 .Space-xl-y {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+  margin-top: calc(theme(spacing.12) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.12) * var(--space-ratio));
 }
 /*
 

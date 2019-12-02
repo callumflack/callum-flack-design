@@ -1,5 +1,5 @@
 <template>
-  <div class="AspectMedia Grid-extract--post">
+  <div class="AspectMedia Grid-extract--pos">
     <Aspect figure :ratio="ratio" :style="aspectStyle" :class="aspectClasses">
       <!-- iphone shape -->
       <div v-show="iphone" class="AspectRatio-object text-text">

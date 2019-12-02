@@ -38,6 +38,17 @@ body {
   transform: translate(-0.025em, -0.04em) !important;
 }
 
+.Text-divider {
+  @apply mx-1 font-light text-gray-500 inline-block;
+  transform: translateY(-0.1em);
+}
+
+/*
+
+  Text sizes
+
+*/
+
 .Text-xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
@@ -47,8 +58,8 @@ body {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
-.Button,
-.Input,
+/* .Button,
+.Input, */
 .Text-base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
 }
@@ -66,6 +77,8 @@ ol {
 p,
 ul,
 ol,
+.Button,
+.Input,
 .Markdown > *,
 .Text,
 .Text-lg {
@@ -76,6 +89,10 @@ ol,
 .Text,
 .Text-lg {
   @apply leading-copy tracking-text;
+}
+
+.Text-lg {
+  @apply leading-snug tracking-text;
 }
 
 /*

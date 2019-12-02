@@ -54,20 +54,6 @@
   }
 }
 
-/* DEFAULT AREAS */
-.frame-area-a {
-  grid-area: a;
-}
-.frame-area-b {
-  grid-area: b;
-}
-.frame-area-c {
-  grid-area: c;
-}
-.frame-area-d {
-  grid-area: d;
-}
-
 /*
 
   grid applied, taken from Klim…
@@ -111,13 +97,22 @@
 }
 @screen md {
   .frame--article {
-    grid-template-areas: ". . a a a a a a a . . .";
+    grid-template-areas: ". a a a a a a a . . . .";
   }
 }
 @screen hu {
   .frame--article {
     grid-template-areas: ". . a a a a a . . . . .";
   }
+}
+@screen su {
+  .frame--article {
+    grid-template-areas: ". . a a a a a . . . . .";
+  }
+}
+
+.frame--projectRows {
+  grid-row-gap: 0;
 }
 
 .frame--projectCards {
@@ -126,21 +121,40 @@
 }
 @screen sm {
   .frame--projectCards {
+    --gridColumnCount: 2;
+  }
+}
+@screen md {
+  .frame--projectCards {
     --gridColumnCount: 3;
   }
 }
-@screen xl {
+/* @screen hu {
   .frame--projectCards {
     --gridColumnCount: 4;
   }
-}
-@screen hu {
-  .frame--projectCards {
-    --gridColumnCount: 4;
-  }
-}
+} */
 @screen su {
   .frame--projectCards {
-    /* --gridColumnCount: 5; */
+    --gridColumnCount: 4;
   }
+}
+
+/*
+
+  UTILS
+
+ */
+
+.frame-area-a {
+  grid-area: a;
+}
+.frame-area-b {
+  grid-area: b;
+}
+.frame-area-c {
+  grid-area: c;
+}
+.frame-area-d {
+  grid-area: d;
 }

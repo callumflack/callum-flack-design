@@ -1,5 +1,5 @@
 <template>
-  <Wrap :page="page" :invert="page.hero.titleInvert">
+  <Wrap :page="page" :invert="page.hero && page.hero.titleInvert">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <!-- post hero with image -->
       <header
@@ -21,7 +21,11 @@
         <!-- post title aspect -->
         <div class="absolute inset-0">
           <div class="relative h-full flex items-center justify-center">
-            <PageTitle :page="page" :invert="page.hero.titleInvert" show-meta="true">
+            <PageTitle
+              :page="page"
+              :invert="page.hero && page.hero.titleInvert"
+              show-meta
+            >
             </PageTitle>
           </div>
         </div>
@@ -31,9 +35,10 @@
       <PageTitle
         v-else
         :page="page"
-        :invert="page.hero.titleInvert"
-        show-meta="true"
+        :invert="page.hero && page.hero.titleInvert"
+        show-meta
         :style="heroBlockColor"
+        class="Block2"
       >
       </PageTitle>
 
@@ -133,7 +138,9 @@ export default {
 
 /* Media within text column */
 .Markdown >>> .AspectMedia {
-  margin-top: calc(theme(spacing.10) * var(--block-size-ratio));
-  margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
+  /* margin-top: calc(theme(spacing.10) * var(--block-size-ratio));
+  margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio)); */
+  margin-top: var(--spacing7);
+  margin-bottom: var(--spacing7);
 }
 </style>

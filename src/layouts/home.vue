@@ -40,7 +40,10 @@
                 :post="item"
               ></ProjectCard>
             </SliderSlide>
-            <SliderSlide v-if="page.posts && page.posts.length > 0" class="frame">
+            <SliderSlide
+              v-if="page.posts && page.posts.length > 0"
+              class="frame frame--projectRows"
+            >
               <ProjectRow
                 v-for="(item, index) in page.posts"
                 :key="index"

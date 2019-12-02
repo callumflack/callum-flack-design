@@ -6,7 +6,7 @@ title: Clay Health & Organics
 agency: Hours After
 link: https://clayhealth.com.au/
 assets: 
-  cover: /images/billys-coffee-hero.jpg
+  cover: /images/clay-health-1440.jpg
 hero:
   showCover: false
 card:

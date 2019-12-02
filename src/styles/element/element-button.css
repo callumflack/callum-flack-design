@@ -30,9 +30,9 @@
   --button-disabled-opacity: 0.6;
   --button-font-case: initial;
   --button-font-weight: 400;
-  --button-height: 44px;
+  --button-height: 54px;
   --button-inline-spacing: 0;
-  --button-padding-x: 1em;
+  --button-padding-x: 2em;
 
   --input-placeholder-color: theme(colors.gray.600);
 
@@ -57,9 +57,7 @@
   text-transform: var(--button-font-case);
   user-select: none;
   /* 2 */
-  /* padding-bottom: calc((2 / 15) * 1em);  */
-  padding-bottom: 0;
-  padding-top: 1px;
+  padding-bottom: calc((2 / 18) * 1em);
 }
 
 /*

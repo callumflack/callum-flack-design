@@ -36,14 +36,14 @@
           {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
         </div>
       </div>
-      <p class="Card-detail Text-sm">{{ post.lede }}</p>
+      <p class="Card-detail Text-sm w-3/4 hu:7/12">{{ post.lede }}</p>
       <div class="Card-tags Text-xs text-gray mt-auto">
         <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="">
           <span v-if="index != 0">,</span>
           <span class="capitalize">{{ tag }}</span>
         </span>
         <template v-if="post.agency">
-          <span class="Card-tags-divider">|</span>
+          <span class="Text-divider">|</span>
           <span>Design: {{ post.agency }}</span>
         </template>
       </div>
@@ -71,16 +71,6 @@ export default {
       return this.post && this.post.card && this.post.card.externalLink
         ? "a"
         : "saber-link";
-      /* if (this.post.card && this.post.card.externalLink) {
-        return "a";
-      }
-      if (this.post.card && !this.post.card.externalLink) {
-        return "saber-link";
-      }
-      if (!this.post) {
-        return "div";
-      }
-      return "div"; */
     },
     target() {
       return this.post && this.post.card && this.post.card.externalLink ? "_blank" : "";
@@ -121,7 +111,7 @@ export default {
 .Card {
   @apply flex flex-col relative cursor-pointer;
   @apply bg-white;
-  @apply border-2 border-transparent;
+  @apply border border-transparent;
   transition: all 150ms theme(bezier.thisalso);
 }
 
@@ -134,7 +124,7 @@ export default {
 }
 .Card:hover .Card-title,
 .Card:hover .Card-tags,
-.Card:hover .Card-tags-divider {
+.Card:hover .Text-divider {
   @apply text-brand-red;
 }
 .Card:hover .Card-title-action {
@@ -170,10 +160,5 @@ export default {
   content: "";
   max-width: none;
   mix-blend-mode: multiply;
-}
-
-.Card-tags-divider {
-  @apply mx-1 font-light text-gray-500 inline-block;
-  transform: translateY(-0.1em);
 }
 </style>

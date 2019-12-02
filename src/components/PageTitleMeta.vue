@@ -33,7 +33,15 @@ import formatDate from "../utils/formatDate";
 import formatListDate from "../utils/formatListDate";
 
 export default {
-  props: ["page", "invert"],
+  props: ["page", "invert", "showMeta"],
+  // props: {
+  //   page: Object,
+  //   invert: {
+  //     type: Boolean,
+  //     default: false,
+  //   },
+  //   showMeta: Boolean,
+  // },
   computed: {
     tagsWithFeaturedRemoved() {
       // return this.page.tagsInfo.filter(x => x.name !== "featured");

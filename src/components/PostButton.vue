@@ -1,9 +1,16 @@
 <template>
   <!-- Button Button--outline -->
-  <a :href="link" target="_blank" rel="noopener noreferrer" class="Text-sm st-h relative">
-    {{ label }}
-    <span class="Link--blank">&#8599;</span>
-  </a>
+  <div class="Space-lg-t">
+    <a
+      :href="link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="Button Button--outline relative"
+    >
+      {{ label }} &#8599;
+      <!-- <span class="Link--blank">&#8599;</span> -->
+    </a>
+  </div>
 </template>
 
 <script>
@@ -16,9 +23,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-a {
+/* a {
   @apply inline-block font-sans font-medium;
-}
+} */
 
 a + a {
   @apply ml-4;

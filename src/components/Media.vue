@@ -1,5 +1,5 @@
 <template>
-  <div class="AspectMedia Grid-extract--post">
+  <div class="AspectMedia Grid-extract--pos">
     <Aspect :ratio="ratio" :class="{ Frame: frame || caption }">
       <ImageDynamic :src="image" :alt="title" />
     </Aspect>

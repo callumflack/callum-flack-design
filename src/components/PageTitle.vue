@@ -11,15 +11,15 @@
         :class="textColorStyle"
         class="Space-t"
       ></PageTitleMeta>
+      <p class="Block2-xs-t" :class="textColorStyle">
+        {{ page.lede }}
+        <template v-if="$route.path === '/'">
+          <saber-link to="/about" class="Link text-brand-red">
+            Learn more &#8594;
+          </saber-link>
+        </template>
+      </p>
     </div>
-    <p class="frame-area-b" :class="textColorStyle">
-      {{ page.lede }}
-      <template v-if="$route.path === '/'">
-        <saber-link to="/about" class="Link text-brand-red">
-          Learn more &#8594;
-        </saber-link>
-      </template>
-    </p>
   </header>
 </template>
 
@@ -30,7 +30,18 @@ export default {
   components: {
     PageTitleMeta,
   },
-  props: ["page", "invert", "showMeta"],
+  // props: ["page", "invert", "showMeta"],
+  props: {
+    page: Object,
+    invert: {
+      type: Boolean,
+      default: false,
+    },
+    showMeta: {
+      type: Boolean,
+      default: false,
+    },
+  },
   computed: {
     blockStyle() {
       // return this.$route.path === "/" ? "Block2" : "Block2-t Block2-md-b";

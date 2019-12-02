@@ -5,27 +5,32 @@
     :href="post.link"
     :target="target"
     :rel="rel"
-    class="Card col-span-12 xl:col-start-2 xl:col-end-12"
+    class="Row col-span-12 xl:col-start-2 xl:col-end-12"
   >
-    <div class="Card-body flex justify-between">
-      <h3 class="Heading Heading-4xl font-mediu w-7/12 xl:w-9/12">
-        {{ post ? post.title : "View all" }}
-      </h3>
-      <div v-if="post" class="w-5/12 xl:w-3/12 flex justify-between">
-        <div>
-          <span
-            v-for="(tag, index) in tagsWithFeaturedRemoved"
-            :key="index"
-            class="Text-sm font-normal text-gray text-right"
-          >
-            <span v-if="index != 0">,</span>
-            <span class="capitalize">{{ tag }}</span>
-          </span>
-        </div>
-        <div class="Heading Heading-4xl">
-          {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
-        </div>
-      </div>
+    <h3 class="Heading Heading-4xl col-span-5">
+      {{ post.title }}
+    </h3>
+    <div class="Text-sm text-gray col-span-4 Text--align">
+      <span
+        v-for="(tag, index) in tagsWithFeaturedRemoved"
+        :key="index"
+        class="text-right"
+      >
+        <span v-if="index != 0">,</span>
+        <span class="capitalize">{{ tag }}</span>
+      </span>
+      <template v-if="post.agency">
+        <span class="Text-divider">|</span>
+        <span>Design: {{ post.agency }}</span>
+      </template>
+    </div>
+    <div class="Text-sm col-span-1 Text--align">
+      <span class="Row-action">
+        {{ type === "saber-link" ? "Read " : "Open " }}
+      </span>
+      <span class="Row-arrow inline-block ml-2">
+        {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
+      </span>
     </div>
   </component>
 </template>
@@ -34,7 +39,7 @@
 import formatListDate from "../utils/formatListDate";
 /*
 
-  ProjectRow is updateed from CardRow, which has amny commented out elements
+  ProjectRow is updateed from RowRow, which has amny commented out elements
 
 */
 export default {
@@ -84,15 +89,20 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.Card {
-  @apply block py-2 relative cursor-pointer;
+.Row {
+  @apply grid py-8 relative cursor-pointer;
   @apply border-b;
-  transition: all 500ms ease;
+  transition: all 1000ms ease;
   transform: translateZ(0);
   backface-visibility: hidden;
+  /* gird */
+  /* --gridColumnCount: 10; */
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-column-gap: var(--gridColumnGap);
+  grid-row-gap: 0;
 }
-
-.Card:before {
+.Row:before {
   @apply absolute left-0 bg-text h-px;
   content: "";
   right: 100%;
@@ -100,54 +110,53 @@ export default {
   transition: right 150ms ease-out;
   z-index: -1;
 }
-
-.Card:active:before,
-.Card:focus:before,
-.Card:hover:before {
+.Row:active:before,
+.Row:focus:before,
+.Row:hover:before {
   right: 0;
 }
-
-.Card:active *,
-.Card:focus *,
-.Card:hover * {
+.Row:active .text-gray,
+.Row:focus .text-gray,
+.Row:hover .text-gray {
   @apply text-text !important;
 }
 
-/* CARD BODY */
+/* TRANSITIONS */
 
-.Card-body {
-  @apply py-1;
-  transform: translateY(1px);
+.Row:hover .Row-action {
+  @apply opacity-100;
+  transform: translateX(0);
+}
+.Row:hover .Row-arrow {
+  @apply text-brand-red;
+  transform: translateX(0);
 }
 
-.Card-body-meta {
-  @apply text-gray-600;
+/* ROW BODY */
+
+.Row-action {
+  @apply inline-block opacity-0 text-brand-red;
+  transform: translateX(-1em);
+}
+.Row-action,
+.Row-arrow {
+  transition: all 500ms theme(bezier.thisalso);
 }
 
-.Card-body-meta > * {
-  @apply capitalize;
+/* TEXT UTILS */
+
+.Text--align {
+  @apply flex justify-end;
+}
+.Text--align > span {
+  /* align-items: baseline;
+  align-content: flex-end; */
+  align-self: flex-end;
 }
 
-.Card-figure {
-  @apply h-full relative;
-}
-
-.Card-figure-image {
-  @apply absolute inset-0 object-cover w-full h-full;
-  max-width: none;
-  mix-blend-mode: multiply;
-}
-
-.Card-figure-blanklink {
-  @apply absolute inset-0 flex justify-center items-center;
-}
-
-@screen lg {
-  .Card-body {
-    @apply py-2;
-  }
-  .Card-body > .Title {
-    @apply pr-4;
-  }
+.Text-divider {
+  @apply mx-2;
+  margin-left: 0.5rem;
+  margin-right: 0.45rem;
 }
 </style>
