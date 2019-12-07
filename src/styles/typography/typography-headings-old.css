@@ -1,0 +1,68 @@
+/*
+
+  Headings: customisable starter pack
+
+  Uses the responsiveScale settings from `typography-scale`
+
+ */
+
+.Heading,
+.Subheading .Markdown h2,
+.Markdown h3,
+.Metaheading {
+  /* @apply font-medium; */
+  @apply font-sans text-text;
+}
+
+.Metaheading,
+.Markdown h3,
+.Markdown h2 {
+  @apply font-sans leading-tight tracking-tight;
+  /* @apply font-medium */
+}
+
+.Markdown h2 {
+  @apply font-medium;
+  font-size: calc(theme(fontSize.2xl) * var(--heading-ratio));
+}
+.Markdown h3 {
+  @apply font-medium;
+  font-size: calc(theme(fontSize.xl) * var(--heading-ratio));
+}
+
+/* .Subheading {
+  @apply font-medium leading-snug;
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+
+.Heading {
+  @apply leading-snug uppercase;
+  font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
+} */
+
+/* Markdown theme example */
+/* .Markdown h2 {} */
+
+/*
+
+  Titles
+  Requires adding a font.title key:value in tailwind.config
+
+ */
+
+.Display,
+.Title {
+  @apply font-sans tracking-tight;
+  @apply font-medium;
+}
+
+.Title {
+  @apply leading-tight;
+  font-size: calc(theme(fontSize.xl) * var(--heading-ratio));
+}
+
+.Display {
+  @apply tracking-tighter leading-none;
+  /* @apply font-medium; */
+  font-size: calc(theme(fontSize.5xl) * var(--heading-ratio));
+}

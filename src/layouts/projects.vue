@@ -1,8 +1,8 @@
 <template>
   <Wrap :page="page">
-    <header class="frame frame--lede Block2">
+    <header class="frame frame--lede Block">
       <h1 class="Text-sm frame-area-a">{{ page.title }}</h1>
-      <p class="Block2-sm-t frame-area-b">
+      <p class="Block-sm-t frame-area-b">
         {{ page.lede }}
       </p>
     </header>
@@ -18,7 +18,7 @@
 
 <script>
 import ProjectRow from "../components/ProjectRow";
-import Wrap from "../components/Wrap2";
+import Wrap from "../components/Wrap";
 
 export default {
   components: {

@@ -1,6 +1,5 @@
 ---
 layout: post
-injectAllPosts: true
 date: 2018-06-01
 category: writing
 title: The instantaneous language of beauty

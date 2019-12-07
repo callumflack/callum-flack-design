@@ -26,19 +26,19 @@
     <!-- body -->
     <div class="Card-body">
       <div class="Card-title flex justify-between Space-sm">
-        <h3 class="Text-lg font-medium w-3/4 hu:7/12">
-          {{ post.title }}
-        </h3>
+        <h3 class="Text-lg font-medium w-3/4 hu:7/12">{{ post.title }}</h3>
         <div class="Text-lg font-light">
           <span class="Card-title-action font-medium">
             {{ type === "saber-link" ? "Read " : "Open " }}
           </span>
-          {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
+          <span class="Card-title-arrow">
+            {{ type === "saber-link" ? "&#8594;" : "&#8599;" }}
+          </span>
         </div>
       </div>
       <p class="Card-detail Text-sm w-3/4 hu:7/12">{{ post.lede }}</p>
       <div class="Card-tags Text-xs text-gray mt-auto">
-        <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index" class="">
+        <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index">
           <span v-if="index != 0">,</span>
           <span class="capitalize">{{ tag }}</span>
         </span>
@@ -111,20 +111,27 @@ export default {
 .Card {
   @apply flex flex-col relative cursor-pointer;
   @apply bg-white;
-  @apply border border-transparent;
+  /* @apply border border-transparent; */
   transition: all 150ms theme(bezier.thisalso);
 }
 
 .Card:hover {
-  @apply bg-transparent border-brand-red;
+  /* @apply bg-transparent border-brand-red; */
+  @apply bg-white;
 }
-.Card:hover .Card-figure,
-.Card:hover .Card-detail {
-  @apply opacity-0;
+.Card:hover .Card-figure {
+  @apply opacity-25;
+  opacity: 0.15;
+}
+.Card:hover .Card-figure >>> img {
+  filter: grayscale(1);
 }
 .Card:hover .Card-title,
 .Card:hover .Card-tags,
 .Card:hover .Text-divider {
+  /* @apply text-white; */
+}
+.Card:hover .Card-title-arrow {
   @apply text-brand-red;
 }
 .Card:hover .Card-title-action {
@@ -134,7 +141,7 @@ export default {
 
 /* CARD FIGURE & BODY */
 .Card-figure {
-  margin: -2px; /* negate the Card border */
+  /* margin: -2px; */ /* negate the Card border */
   @apply mb-0;
 }
 

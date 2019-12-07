@@ -18,7 +18,8 @@
      Add `flex-row` or `flex-col` as you need.
  */
 .Form {
-  @apply flex w-full relative; /* 1 */
+  @apply flex relative; /* 1 */
+  /* @apply w-full; */
 }
 
 /*

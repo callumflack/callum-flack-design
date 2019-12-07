@@ -1,0 +1,45 @@
+/*
+
+  HTML & body: root styles
+  …uses the responsiveScale settings from `typography-scale`
+
+  1. font-feature-settings from http://design.byform.co/
+
+*/
+html {
+  @apply bg-brand-bg text-black;
+}
+body {
+  @apply antialiased;
+  @apply leading-normal;
+  @apply font-sans;
+  /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */ /* 1 */
+  font-kerning: normal;
+  /* hyphens: auto; */
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  @apply bg-text text-white;
+}
+/*
+
+  Reverse theme
+
+ */
+.page-reverse {
+  --markdown-quote-color: rgba(255, 255, 255, 0.5);
+  --markdown-quote-border-color: rgba(255, 255, 255, 0.2);
+  @apply bg-black text-white;
+}
+.page-reverse ::selection {
+  @apply bg-white text-black;
+}
+.page-reverse .Nav {
+  /* @apply opacity-75; */
+}
+.page-reverse .text-gray {
+  @apply text-white opacity-50;
+}
+.page-reverse .text-gray-dark {
+  @apply text-white opacity-50;
+}

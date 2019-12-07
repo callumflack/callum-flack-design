@@ -1,36 +1,16 @@
 /*
 
   Text: customisable starter pack
-
-  Uses the responsiveScale settings from `typography-scale`
-
-*/
-
-html {
-  @apply bg-brand-bg;
-}
-
-/* font-feature-settings from http://design.byform.co/ */
-body {
-  @apply antialiased text-text leading-normal;
-  @apply font-sans;
-  /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
-  font-kerning: normal;
-  /* hyphens: auto; */
-  -webkit-tap-highlight-color: transparent;
-}
-
-::selection {
-  @apply bg-text text-white;
-}
-
-/*
+  …uses the responsiveScale settings from `typography-scale`
 
   Utils
 
 */
 
 .text-gray {
+  color: theme(colors.gray.500);
+}
+.text-gray-dark {
   color: theme(colors.gray.600);
 }
 
@@ -58,14 +38,8 @@ body {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
-/* .Button,
-.Input, */
 .Text-base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
-}
-
-.Text-xl {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 p,
@@ -87,12 +61,13 @@ ol,
 
 .Markdown > *,
 .Text,
-.Text-lg {
-  @apply leading-copy tracking-text;
+.Text-lg,
+.Text-xl {
+  @apply leading-snug tracking-text;
 }
 
-.Text-lg {
-  @apply leading-snug tracking-text;
+.Text-xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 /*
@@ -135,18 +110,21 @@ ol,
 
 */
 
-:root {
-  --text-indent: calc(theme(spacing.6) * var(--grid-ratio));
+/* not :root, for use with html page classes */
+html {
+  --markdown-text-indent: calc(theme(spacing.8) * var(--grid-ratio));
+  --markdown-quote-color: theme(colors.gray.600);
+  --markdown-quote-border-color: rgba(0, 0, 0, 0.2);
 }
 
 /* .Markdown p:not(.Alert) + p {
   text-indent: calc(theme(spacing.10) * var(--grid-ratio));
-  text-indent: var(--text-indent);
+  text-indent: var(--markdown-text-indent);
 } */
 
 .Markdown ul,
 .Markdown ol {
-  padding-left: var(--text-indent);
+  padding-left: var(--markdown-text-indent);
 }
 
 .Markdown ul {
@@ -167,12 +145,12 @@ ol,
 }
 
 .Markdown li:before {
-  @apply absolute inline-block bg-text h-px;
+  @apply absolute inline-block h-px;
+  background-color: currentColor;
   content: "";
   width: 1.1em;
-  /* top: 0.55em; */ /* suisse */
-  top: 0.66em; /* tiempos */
-  left: -1.333em;
+  top: 0.75em;
+  left: -1.75em;
 }
 
 /* doesn't work when purge is active? */
@@ -191,9 +169,9 @@ ol,
 .Markdown blockquote p {
   @apply border-l;
   @apply py-2 pr-4;
-  @apply text-gray-600;
-  border-color: rgba(0, 0, 0, 0.2);
-  padding-left: var(--text-indent);
+  color: var(--markdown-quote-color);
+  border-color: var(--markdown-quote-border-color);
+  padding-left: var(--markdown-text-indent);
 }
 
 .Markdown blockquote p p {
@@ -205,9 +183,6 @@ ol,
 .Markdown blockquote p strong {
   @apply table mt-2 tracking-wider;
   @apply not-italic;
-  /* @apply mb-1; */
-  /* @apply text-gray-600; */
-  /* @apply text-brand-highlight; */
 }
 
 .Markdown sup {
@@ -228,7 +203,9 @@ ol,
   margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
 .Note {
-  @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
+  @apply tracking-wide pt-2 border-t;
+  color: var(--markdown-quote-color);
+  border-color: var(--markdown-quote-border-color);
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
   text-indent: initial !important;
 }
@@ -237,8 +214,8 @@ ol,
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 /*
-Doesn't work, see: https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
-Using a class selector (or a type selector) with that pseudo-class means to select an element if it has the given class (or is of the given type) and is the first of its type among its siblings.
+  Doesn't work, see: https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
+  Using a class selector (or a type selector) with that pseudo-class means to select an element if it has the given class (or is of the given type) and is the first of its type among its siblings.
  */
 /* .Note:first-of-type {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));

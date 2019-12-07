@@ -3,7 +3,8 @@ layout: page
 title: A designer who codes
 pageTitle: About
 lede: Callum Flack is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
-injectAllPosts: true
+# injectAllPosts: true
+pageClass: page-reverse
 ---
 
 Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. Callum Flack Design can help you design a visual brand, its user experience and information structure, and he can build it too. The difference isn't obvious until it is. You can break down the work Callum does into:
@@ -28,6 +29,6 @@ Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and B
 
 No tools, skills or experience matter without good project definition and mutual understanding. A collaborative relationship based on dialogue and optimism is the cheapest and most effective method of obtaining this. This also helps define bigger possibilities and better constraints to work with, and anticipates problems ahead of time during the project.
 
-## Contact
+## Location
 
-Based in [tropical Cairns, Australia](https://www.instagram.com/p/BXbsNdrAt-v), Callum works with local, interstate and international clients. He plugs into product teams, agencies or work one-to-one with business owners. He enjoys travelling to meet in person.
+Based in [tropical Cairns, Australia](https://www.instagram.com/p/BXbsNdrAt-v), Callum works with local, interstate and international clients. He plugs into product teams, agencies or work one-to-one with business owners. He enjoys travelling to meet in person and is always available for a video call.

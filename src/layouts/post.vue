@@ -18,7 +18,7 @@
             :alt="page.title"
           />
         </Aspect>
-        <!-- post title aspect -->
+        <!-- post title centered within image aspect -->
         <div class="absolute inset-0">
           <div class="relative h-full flex items-center justify-center">
             <PageTitle
@@ -38,14 +38,14 @@
         :invert="page.hero && page.hero.titleInvert"
         show-meta
         :style="heroBlockColor"
-        class="Block2"
+        class="Block"
       >
       </PageTitle>
 
       <!-- article -->
       <main
-        class="frame frame--article Block2-b"
-        :class="{ 'Block2-sm-t': page.hero && page.hero.showCover }"
+        class="frame frame--article"
+        :class="{ 'Block-sm-t': page.hero && page.hero.showCover }"
       >
         <div
           class="Markdown frame-area-a"
@@ -62,26 +62,21 @@
 <script>
 import Aspect from "../components/Aspect";
 import PageTitle from "../components/PageTitle.vue";
-import PostHeaderTitle from "../components/PostHeaderTitle";
-import HeaderTitleWrap from "../components/HeaderTitleWrap";
 import ImageDynamic from "../components/ImageDynamic";
-import Wrap from "../components/Wrap2";
+import Wrap from "../components/Wrap";
 import formatDate from "../utils/formatDate";
 import formatListDate from "../utils/formatListDate";
 /*
 
   Post layout component
-  …uses different headline method to the header component
-  when a hero image is shown.
+  …when a hero image is shown, we use a different headline method to the header component
 
 */
 export default {
   components: {
     Aspect,
-    HeaderTitleWrap,
     ImageDynamic,
     PageTitle,
-    PostHeaderTitle,
     Wrap,
   },
   props: ["page"],
@@ -113,13 +108,6 @@ export default {
       return this.page.tags.filter(x => x !== "featured");
     },
   },
-  /* mounted() {
-    // https://codesandbox.io/s/github/francoischalifour/medium-zoom/tree/master/examples/vue
-    mediumZoom(".Markdown img", {
-      background: "#151515",
-      margin: 100,
-    });
-  }, */
   methods: {
     formatDate,
     formatListDate,
@@ -129,11 +117,11 @@ export default {
 
 <style lang="postcss" scoped>
 .BlendImage {
-  @apply bg-text
-  /* background-color: rgba(0, 0, 0, 0.2); */;
+  @apply bg-text;
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 .BlendImage >>> img {
-  opacity: 0.8;
+  opacity: 0.333;
 }
 
 /* Media within text column */

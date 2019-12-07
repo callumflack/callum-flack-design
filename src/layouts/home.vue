@@ -28,7 +28,7 @@
           </ul>
         </div>
 
-        <div class="Block2-sm-t">
+        <div class="Block-sm-t">
           <SliderSlides class="">
             <SliderSlide
               v-if="page.posts && page.posts.length > 0"
@@ -64,7 +64,7 @@ import ProjectRow from "../components/ProjectRow";
 import SliderFrame from "../components/SliderFrame";
 import SliderSlides from "../components/SliderSlides";
 import SliderSlide from "../components/SliderSlide";
-import Wrap from "../components/Wrap2.vue";
+import Wrap from "../components/Wrap.vue";
 
 export default {
   components: {

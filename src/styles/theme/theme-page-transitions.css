@@ -13,25 +13,34 @@
 
  */
 
+/* background-color: var(--c-bg); */
+/* height: 100vh; */
+/* opacity: 1; */
+/* width: 100vw; */
+/* z-index: 999; */
+
 .page-enter-active,
 .page-leave-active {
-  transition: all 333ms cubic-bezier(1, 0.5, 0.8, 1);
-  /* background-color: var(--c-bg); */
-  /* height: 100vh; */
-  /* opacity: 1; */
-  /* width: 100vw; */
-  /* z-index: 999; */
+  transition: all 750ms cubic-bezier(1, 0.5, 0.8, 1) 250ms;
 }
 
 /* .page-leave-active {
   transition: all 5.3s cubic-bezier(1, 0.5, 0.8, 1);
 } */
 
-/* .page-enter, */
+.page-enter,
 .page-leave-to {
-  /* transform: translateX(2%); */
   opacity: 0;
 }
+.page-leave-to {
+  /* transform: translateY(2%); */
+}
+/* .page-leave-to .page-body {
+  transition-delay: 1s;
+} */
+/* .page-leave-to >>> .transition-body {
+  transform: translateY(2%);
+} */
 
 .page-leave {
   /* transform: translateX(0); */

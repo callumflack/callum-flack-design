@@ -1,7 +1,7 @@
 <template>
   <Wrap :page="page">
     <PageTitle :page="page"></PageTitle>
-    <main class="frame frame--article Block2-b">
+    <main class="frame frame--article">
       <article class="Markdown frame-area-a" itemprop="articleBody">
         <slot name="default" />
       </article>
@@ -11,7 +11,7 @@
 
 <script>
 import PageTitle from "../components/PageTitle.vue";
-import Wrap from "../components/Wrap2";
+import Wrap from "../components/Wrap";
 
 export default {
   components: {

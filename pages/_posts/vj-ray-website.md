@@ -3,11 +3,11 @@ layout: post
 category: projects
 date: 2017-11-21
 title: VJ Ray
-lede: Dual website brands for one of Sydney's oldest Real Estate agencies.
-assets: 
-  cover: /images/vjray-hero.jpg
+# lede: Dual website brands for one of Sydney's oldest Real Estate agencies.
+assets:
+  cover: /images/vjray-card.jpg
 heroShowCover: false
-tags: 
+tags:
   - design
   - frontend
 ---

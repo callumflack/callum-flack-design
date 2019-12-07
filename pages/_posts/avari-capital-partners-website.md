@@ -6,7 +6,7 @@ title: Avari Capital Partners
 agency: Paper Stone Scissors
 link: https://avaricapitalpartners.com.au/
 assets:
-  cover: /images/avari-capital-home-1440.jpg
+  cover: /images/avari-capital-partners-card.jpg
 card:
   externalLink: true
 tags:

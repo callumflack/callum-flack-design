@@ -22,9 +22,11 @@ tags:
   - featured
 ---
 
-<blockquote class="Post-intro-quote"><p>What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<strong>John Dewey, Art as Experience</strong></p></blockquote>
+<!-- <blockquote class="Post-intro-quote"><p>What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<strong>John Dewey, Art as Experience</strong></p></blockquote> -->
 
-<hr class="Post-intro-rule b-my05">
+> What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium. **John Dewey, Art as Experience**
+
+<!-- <hr class="Post-intro-rule b-my05"> -->
 
 Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._ Much more than just a style of doing, good taste is a measure of a person's intuitive understanding of a problem space.
 

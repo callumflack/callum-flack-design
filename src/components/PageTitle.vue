@@ -1,5 +1,5 @@
 <template>
-  <header class="frame frame--lede" :class="blockStyle">
+  <header :class="headerLayoutStyle">
     <div class="frame-area-a">
       <h1 class="Heading Heading-4xl font-medium" :class="headingColorStyle">
         {{ page.title }}
@@ -9,9 +9,9 @@
         :page="page"
         :invert="invert"
         :class="textColorStyle"
-        class="Space-t"
+        class="Space-sm-t"
       ></PageTitleMeta>
-      <p class="Block2-xs-t" :class="textColorStyle">
+      <p class="Text-xl Block-xs-t lg:w-5/6" :class="textColorStyle">
         {{ page.lede }}
         <template v-if="$route.path === '/'">
           <saber-link to="/about" class="Link text-brand-red">
@@ -19,6 +19,8 @@
           </saber-link>
         </template>
       </p>
+      <!-- slot -->
+      <slot></slot>
     </div>
   </header>
 </template>
@@ -43,21 +45,21 @@ export default {
     },
   },
   computed: {
-    blockStyle() {
-      // return this.$route.path === "/" ? "Block2" : "Block2-t Block2-md-b";
+    headerLayoutStyle() {
+      // return this.$route.path === "/" ? "Block" : "Block-t Block-md-b";
       if (this.$route.path === "/") {
-        return "Block2";
+        return "frame frame--intro Block";
       }
       if (this.$route.path === "/about") {
-        return "Block2-t Block2-md-b";
+        return "frame frame--lede Block-t Block-md-b";
       }
-      return "";
+      return "frame frame--article";
     },
     headingColorStyle() {
       return this.invert && "text-white";
     },
     textColorStyle() {
-      return this.invert ? "text-white opacity-75" : "text-gray-600";
+      return this.invert ? "text-white opacity-75" : "text-gray-dark";
     },
   },
 };

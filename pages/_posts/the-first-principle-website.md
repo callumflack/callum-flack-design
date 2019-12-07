@@ -2,11 +2,11 @@
 category: projects
 layout: post
 date: 2019-10-30
-title: Clay Health & Organics
-agency: Hours After
-link: https://clayhealth.com.au/
+title: The First Principle
+agency: Caro Gilroy
+link: https://www.thefirstprinciple.com.au/
 assets:
-  cover: /images/clay-health-card.jpg
+  cover: /images/the-first-principle-card.jpg
 hero:
   showCover: false
 card:

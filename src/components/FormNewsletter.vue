@@ -1,15 +1,16 @@
 <template>
-  <div class="w-full">
-    <form class="Form font-sans" @submit.prevent="handleSubmit">
+  <div class="md:w-5/6">
+    <form class="Form" @submit.prevent="handleSubmit">
+      <!-- flex-1 -->
       <input
         v-model="formData.email"
-        class="Input Text-lg flex-1"
+        class="Input Text"
         type="email"
         name="email"
         placeholder="Subscribe to project updates"
         required
       />
-      <button class="Button Button--invisible Text-lg">{{ buttonMsg }}</button>
+      <button class="Button Button--invisible Text">{{ buttonMsg }}</button>
     </form>
     <!-- <div v-if="buttonMsg" class="Form-validation is-good Input">
       <icon name="check-circle" class="mr-1" />
@@ -93,13 +94,32 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+/* with duplicated .Link styles */
 .Input,
 .Button {
-  /* --button-height: 104px; */
-  border-bottom-color: theme(colors.black);
+  --button-height: 36px !important;
+  --button-padding-x: 0;
+  --button-color: theme(colors.gray.600);
+  border-bottom-color: currentColor;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
 }
 .Input {
   @apply border-b;
-  --button-padding-x: 0;
+  @apply w-auto;
+}
+.Form:hover .Input,
+.Form:hover .Button {
+  border-bottom-color: theme(colors.black);
+}
+.Input:hover,
+.Input:focus {
+  --button-color: theme(colors.black);
+  border-bottom-color: theme(colors.black);
+}
+.Button:hover,
+.Button:focus {
+  --button-color: theme(colors.black);
 }
 </style>

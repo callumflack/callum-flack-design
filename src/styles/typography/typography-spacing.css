@@ -2,103 +2,90 @@
 
   Spacing between typographic elements.
 
-  Meta spacing
+  Small spacing
   Need smaller spacing? Use mb-px or mb-1.
   It's ok that they're unresponsive b/c they're small enough.
 
 */
-
-.s-block-m:not(:last-child),
-.s-m {
-  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
+.Space-sm-block > *:not(:last-child),
+.Space-sm {
+  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
 }
-.st-m {
-  margin-top: calc(theme(spacing.3) * var(--space-ratio));
+.Space-sm-t {
+  margin-top: calc(theme(spacing.2) * var(--space-ratio));
 }
-.sy-m {
-  margin-top: calc(theme(spacing.3) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.3) * var(--space-ratio));
+.Space-sm-y {
+  margin-top: calc(theme(spacing.2) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.2) * var(--space-ratio));
 }
-
 /*
 
-  Paragraph spacing
+  Regular (paragraph) spacing
 
 */
-
-/* .Markdown figure,*/
-.Markdown p:not(:last-child),
-.s-block-p:not(:last-child),
-.s-p {
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
-}
-.st-p {
-  margin-top: calc(theme(spacing.4) * var(--space-ratio));
-}
-.Markdown ul:not(:last-child),
-.Markdown ol:not(:last-child),
+.Markdown figure,
 .Markdown blockquote,
-.sy-p {
+.Markdown h2:not(:last-child),
+.Markdown h3:not(:last-child),
+.Markdown p:not(:last-child),
+.Markdown ul:not(:last-child),
+.Space-block > *:not(:last-child),
+.Space {
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-t {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+}
+.Space-y {
   margin-top: calc(theme(spacing.4) * var(--space-ratio));
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
-
 /*
 
-  Heading spacing
+  Large (heading) spacing
 
 */
+.Space-lg-block > *:not(:last-child),
+.Space-lg {
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Markdown h3:not(:last-child),
+.Markdown h4:not(:last-child),
+.Markdown h5:not(:last-child),
+.Space-lg-t {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+}
+.Space-lg-y {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
+}
+/*
 
+  Xlarge spacing
+
+*/
+.Space-xl-block > *:not(:last-child),
+.Space-xl {
+  margin-bottom: calc(theme(spacing.12) * var(--space-ratio));
+}
 .Markdown h2:not(:last-child),
-.Markdown h3:not(:last-child) {
-  margin-bottom: calc(theme(spacing.1) * var(--space-ratio));
+.Space-xl-t {
+  margin-top: calc(theme(spacing.12) * var(--space-ratio));
 }
-
-.Markdown p + h2,
-.Markdown ul + h2,
-.Markdown blockquote + h2 {
-  margin-top: calc(theme(spacing.10) * var(--space-ratio));
+.Space-xl-y {
+  margin-top: calc(theme(spacing.12) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.12) * var(--space-ratio));
 }
-.Markdown p + h3,
-.Markdown ul + h3,
-.Markdown blockquote + h3 {
-  margin-top: calc(theme(spacing.6) * var(--space-ratio));
-}
-
-.s-block-h:not(:last-child),
-.s-h {
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
-}
-.st-h {
-  margin-top: calc(theme(spacing.4) * var(--space-ratio));
-}
-.sy-h {
-  margin-top: calc(theme(spacing.4) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
-}
-
-.s-2h {
-  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
-}
-.st-2h {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-}
-.sy-2h {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
-}
-
 /*
 
   Input & hr spacing
 
  */
-
-.sy-hr {
-  margin-top: calc(theme(spacing.5) * var(--space-ratio));
-  margin-bottom: calc(theme(spacing.5) * var(--space-ratio));
+.Space-hr {
+  margin-top: calc(theme(spacing.4) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
 
-.s-input {
-  margin-bottom: calc(theme(spacing.5) * var(--space-ratio));
+.Space-input {
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
