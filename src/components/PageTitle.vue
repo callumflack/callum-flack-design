@@ -1,7 +1,18 @@
 <template>
   <header :class="headerLayoutStyle">
-    <div class="frame-area-a">
-      <h1 class="Heading Heading-4xl font-medium" :class="headingColorStyle">
+    <nav
+      class="frame-area-a Heading Heading-4xl font-medium fixed z-50"
+      :class="headingInvertStyle"
+    >
+      <saber-link to="/">
+        <template v-if="$route.path !== '/'">
+          &#8592;
+        </template>
+        CFd
+      </saber-link>
+    </nav>
+    <div class="frame-area-b">
+      <h1 class="Heading Heading-4xl font-medium" :class="headingInvertStyle">
         {{ page.title }}
       </h1>
       <PageTitleMeta
@@ -32,7 +43,6 @@ export default {
   components: {
     PageTitleMeta,
   },
-  // props: ["page", "invert", "showMeta"],
   props: {
     page: Object,
     invert: {
@@ -47,15 +57,15 @@ export default {
   computed: {
     headerLayoutStyle() {
       // return this.$route.path === "/" ? "Block" : "Block-t Block-md-b";
-      if (this.$route.path === "/") {
+      /* if (this.$route.path === "/") {
         return "frame frame--intro Block";
-      }
-      if (this.$route.path === "/about") {
+      } */
+      /* if (this.$route.path === "/about") {
         return "frame frame--lede Block-t Block-md-b";
-      }
-      return "frame frame--article";
+      } */
+      return "frame frame--lede Block";
     },
-    headingColorStyle() {
+    headingInvertStyle() {
       return this.invert && "text-white";
     },
     textColorStyle() {

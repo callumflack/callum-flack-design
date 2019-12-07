@@ -21,7 +21,7 @@
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 750ms cubic-bezier(1, 0.5, 0.8, 1) 250ms;
+  transition: all 500ms cubic-bezier(1, 0.5, 0.8, 1) 500ms;
 }
 
 /* .page-leave-active {

@@ -7,7 +7,7 @@
         class="Input Text"
         type="email"
         name="email"
-        placeholder="Subscribe to project updates"
+        placeholder="Your email"
         required
       />
       <button class="Button Button--invisible Text">{{ buttonMsg }}</button>

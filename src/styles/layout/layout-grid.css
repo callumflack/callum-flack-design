@@ -85,30 +85,34 @@
  */
 
 .frame--intro {
-  grid-template-areas: "a a a a a a a a a a . .";
+  grid-template-areas:
+    "b b b b b b b b b b b b"
+    "a a a a a a a a a a a a";
 }
 @screen md {
   .frame--intro {
-    grid-template-areas: ". a a a a a a a . . . .";
+    grid-template-areas: "a b b b b b b b . . . .";
   }
 }
 @screen hu {
   .frame--intro {
-    grid-template-areas: ". a a a a . . . . . . .";
+    grid-template-areas: "a b b b b . . . . . . .";
   }
 }
 
 .frame--lede {
-  grid-template-areas: "a a a a a a a a a a . .";
+  grid-template-areas:
+    "b b b b b b b b b b b b"
+    "a a a a a a a a a a a a";
 }
 @screen md {
   .frame--lede {
-    grid-template-areas: ". . a a a a a a a . . .";
+    grid-template-areas: "a a b b b b b b b . . .";
   }
 }
 @screen hu {
   .frame--lede {
-    grid-template-areas: ". . . a a a a . . . . .";
+    grid-template-areas: "a a . b b b b . . . . .";
   }
 }
 

@@ -2,27 +2,26 @@
   <!-- <div :class="reverseClass"> -->
   <div>
     <div class="page-body">
-      <nav
+      <!-- <nav
         v-if="$route.path !== '/'"
         class="Nav Text-lg w-full flex justify-between z-50"
         :class="{ 'text-white opacity-75': invert }"
       >
         <saber-link to="/">&#8592; CFd</saber-link>
         <saber-link to="/">
-          <!-- <icon name="close" height="0.75em" width="0.75em" class="mr-1"></icon> -->
-          <!-- Menu -->
+          <icon name="close" height="0.75em" width="0.75em" class="mr-1"></icon>
+          Menu
         </saber-link>
-      </nav>
+      </nav> -->
       <slot></slot>
 
-      <footer
-        class="Block-t Block-xl-b"
-        :class="{
+      <!-- :class="{
           'frame frame--intro': $route.path === '/',
           'frame frame--article': $route.path !== '/',
-        }"
-      >
-        <PageContact class="text-gray-dark"></PageContact>
+        }" -->
+      <footer class="frame frame--lede Block-t Block-xl-b">
+        <!-- class="text-gray-dark" -->
+        <PageContact class="frame-area-b"></PageContact>
       </footer>
     </div>
   </div>
