@@ -1,45 +1,26 @@
 <template>
   <Wrap :page="page" :invert="page.hero && page.hero.titleInvert">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <!-- post hero with image -->
-      <header
-        v-if="page.hero && page.hero.showCover"
-        :style="heroBlockColor"
-        class="relative"
-      >
-        <!-- post image aspect -->
-        <Aspect
-          :ratio="(page.hero && page.hero.ratio) || '1/3.5'"
-          :class="heroImageBlend"
-        >
-          <ImageDynamic
-            v-if="page.hero && page.hero.showCover"
-            :src="page.assets.cover"
-            :alt="page.title"
-          />
-        </Aspect>
-        <!-- post title centered within image aspect -->
-        <div class="absolute inset-0">
-          <div class="relative h-full flex items-center justify-center">
-            <PageTitle
-              :page="page"
-              :invert="page.hero && page.hero.titleInvert"
-              show-meta
-            >
-            </PageTitle>
-          </div>
-        </div>
-      </header>
-
-      <!-- post hero title w/ no image -->
+      <!-- post title w/ hero image slot -->
       <PageTitle
-        v-else
         :page="page"
         :invert="page.hero && page.hero.titleInvert"
-        show-meta
         :style="heroBlockColor"
-        class="Block"
+        show-meta
+        class="Block-md-b"
       >
+        <!-- if post hero image -->
+        <template v-if="page.hero && page.hero.showCover" v-slot:image>
+          <!-- <Aspect
+              :ratio="(page.hero && page.hero.ratio) || '1/3.5'"
+              :class="heroImageBlend"
+              cover
+            >
+              <ImageDynamic :src="page.assets.cover" :alt="page.title" cover />
+            </Aspect> -->
+          <ImageDynamic :src="page.assets.cover" :alt="page.title" cover />
+          <div class="absolute inset-0" :style="heroImageBlend"></div>
+        </template>
       </PageTitle>
 
       <!-- article -->
@@ -69,7 +50,8 @@ import formatListDate from "../utils/formatListDate";
 /*
 
   Post layout component
-  …when a hero image is shown, we use a different headline method to the header component
+  …with hero image slot
+  …and article body
 
 */
 export default {
@@ -89,11 +71,10 @@ export default {
       );
     },
     heroImageBlend() {
-      return this.page.hero && this.page.hero.imageBlend && "BlendImage";
-    },
-    heroTitleWidth() {
       return (
-        this.page.hero && this.page.hero.titleWidth && `${this.page.hero.titleWidth}`
+        this.page.hero &&
+        this.page.hero.imageBlend &&
+        `background-color: rgba(0,0,0,${this.page.hero.imageBlend})`
       );
     },
     heroTitleColor() {
@@ -116,14 +97,6 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.BlendImage {
-  @apply bg-text;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-}
-.BlendImage >>> img {
-  opacity: 0.333;
-}
-
 /* Media within text column */
 .Markdown >>> .AspectMedia {
   /* margin-top: calc(theme(spacing.10) * var(--block-size-ratio));

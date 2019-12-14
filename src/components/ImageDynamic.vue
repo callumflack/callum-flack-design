@@ -1,5 +1,10 @@
 <template>
-  <figure ref="image" :class="{ cover: cover }">
+  <figure
+    ref="image"
+    :ratio="ratio"
+    :style="aspectRatio"
+    :class="[useAspectRatio, containBlurIn]"
+  >
     <client-only>
       <v-lazy-image :src="url" :src-placeholder="urlPlaceholder" :alt="alt" />
     </client-only>
@@ -40,6 +45,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    ratio: {
+      type: [String, Number],
+      default: "9/16",
+    },
     maxWidth: {
       type: Number,
       default: 2000,
@@ -50,6 +59,17 @@ export default {
       url: null,
       urlPlaceholder: null,
     };
+  },
+  computed: {
+    useAspectRatio() {
+      return this.cover ? "cover" : "aspect";
+    },
+    aspectRatio() {
+      return this.ratio && `--aspect-ratio: ${this.ratio}`;
+    },
+    containBlurIn() {
+      return !this.caption && "overflow-hidden";
+    },
   },
   mounted() {
     const url = `${imgixDomain}${this.src}?${optimizeParams}`;
@@ -69,36 +89,48 @@ export default {
 
 <style lang="postcss" scoped>
 /*
-  1. enable Safari to keep sharp edges (if parent is pos-abs)
+  Figure parent that wraps a lazy-loaded image
+  1. contain the blur-in
+  2. if figure, no margin
+  3. flash of layout before any images render.
+      * this project to be like: https://www.additionelle.com/en
 */
-.v-lazy-image {
-  filter: blur(10px);
-  opacity: 0;
-  /* min-height: 100%;
-  min-width: 100%; */
-  transition: all 0.5s ease-in;
-  transform: scale(1.025); /*1 */
-}
-.v-lazy-image-loaded {
-  opacity: 1;
-  filter: blur(0);
-  transform: scale(1); /*1 */
-}
-
-/*
-  Flash of layout before any images render.
- */
 figure {
-  /* @apply bg-gray-200; */
+  @apply relative;
+  /* @apply overflow-hidden; */ /* 1 */
+  @apply m-0 !important; /* 2 */
+  @apply bg-black; /* 3 */
 }
 
 /*
-  Figure parent containing a dynamic image that provides
-  an exact area to cover when the image doesn't use an aspect ratio.
-  The parent must be relative.
+  Figure parent provides an aspect-ratio exact area for the image to cover.
+  - The parent must be relative
+  - Uses Boolean prop "!cover"
+ */
+figure.aspect {
+  @apply h-0;
+  /* @apply overflow-hidden; */
+  padding-bottom: calc(100% * (var(--aspect-ratio)));
+}
+
+/*
+  Figure parent provides an exact area for the image to cover.
+  - An alternate for to the figure parent using an aspect ratio for providing an area
+  - The parent must be relative
+  - Uses Boolean prop "cover"
  */
 figure.cover {
   @apply absolute inset-0;
+}
+
+/*
+  Image within an aspect ratio.
+  1. Absolutely occupy the .Aspect area
+  2. Make the image cover the .Aspect area
+*/
+img {
+  @apply absolute inset-0; /* 1 */
+  @apply object-cover h-full w-full; /* 2 */
 }
 
 /*
@@ -106,7 +138,33 @@ figure.cover {
   …for flexible use, no absolute positoning is applied.
   1. cover the figure parent area
 */
-img {
-  @apply object-cover h-full w-full; /* 1 */
+/* img {
+  @apply object-cover h-full w-full;
+} */
+
+/*
+  Image lazy-loading style
+  1. enable Safari to keep sharp edges (if parent is pos-abs)
+*/
+.v-lazy-image {
+  min-height: 100%;
+  min-width: 100%;
+  /* filter: blur(50px); */
+  /* transition: filter 500ms ease-in; */
+  @apply opacity-0;
+  transition: opacity 500ms ease-in;
+  transform: scale(1); /* 1 */
+}
+.v-lazy-image-loaded {
+  /* filter: blur(0); */
+  @apply opacity-100;
+}
+
+/*
+  Figure caption
+ */
+figcaption {
+  @apply absolute left-0 pt-2;
+  top: 100%;
 }
 </style>
