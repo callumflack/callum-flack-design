@@ -1,6 +1,6 @@
 <template>
-  <!-- <div :class="reverseClass"> -->
   <div>
+    <!-- inside `.page-body` for page transitions -->
     <div class="page-body">
       <!-- <nav
         v-if="$route.path !== '/'"
@@ -15,13 +15,10 @@
       </nav> -->
       <slot></slot>
 
-      <!-- :class="{
-          'frame frame--intro': $route.path === '/',
-          'frame frame--article': $route.path !== '/',
-        }" -->
-      <footer class="frame frame--lede Block-t Block-xl-b">
-        <!-- class="text-gray-dark" -->
-        <PageContact class="frame-area-b"></PageContact>
+      <footer class="h-screen">
+        <div class="frame frame--lede Block-t">
+          <PageContact class="frame-area-b"></PageContact>
+        </div>
       </footer>
     </div>
   </div>

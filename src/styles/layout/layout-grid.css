@@ -75,16 +75,7 @@
   margin: 0 var(--gridMarginGap);
 }
 
-/*
-
-  You can use template areas with rows as well:
-  grid-template-areas:
-    "a a a a a a a a a a . ."
-    "b b b b b b b b b b . .";
-
- */
-
-.frame--intro {
+/* .frame--intro {
   grid-template-areas:
     "b b b b b b b b b b b b"
     "a a a a a a a a a a a a";
@@ -98,7 +89,9 @@
   .frame--intro {
     grid-template-areas: "a b b b b . . . . . . .";
   }
-}
+} */
+
+/* lede (PageTitle) */
 
 .frame--lede {
   grid-template-areas:
@@ -111,6 +104,11 @@
   }
 }
 @screen hu {
+  .frame--lede {
+    grid-template-areas: "a a . b b b b b . . . .";
+  }
+}
+@screen su {
   .frame--lede {
     grid-template-areas: "a a . b b b b . . . . .";
   }
@@ -131,11 +129,33 @@
     grid-template-areas: ". . . a a a a a . . . .";
   }
 }
+@screen su {
+  .frame--article {
+    grid-template-areas: ". . . a a a a . . . . .";
+  }
+}
 /* @screen su {
   .frame--article {
     grid-template-areas: ". . a a a a a . . . . .";
   }
 } */
+
+/* dual columns within article */
+
+.frame--columns {
+  --gridColumnCount: 1;
+  grid-template-columns: repeat(var(--gridColumnCount), 1fr);
+  grid-template-areas:
+    "a"
+    "b";
+  margin: 0;
+}
+@screen lg {
+  .frame--columns {
+    --gridColumnCount: 2;
+    grid-template-areas: "a b";
+  }
+}
 
 /* home page projects */
 

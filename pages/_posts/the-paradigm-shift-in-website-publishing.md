@@ -12,7 +12,7 @@ assets:
 hero:
   showCover: true
   titleInvert: true
-  imageBlend: 0.1
+  imageBlend: 0.3
   ratio: 9/16
 nextPost:
   title: Notes on Deciphering Sun Tzu

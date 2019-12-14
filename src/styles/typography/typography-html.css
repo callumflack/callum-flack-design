@@ -23,7 +23,7 @@ body {
 }
 /*
 
-  Reverse theme
+  html.page-reverse theme
 
  */
 .page-reverse {
@@ -38,8 +38,23 @@ body {
   /* @apply opacity-75; */
 }
 .page-reverse .text-gray {
-  @apply text-white opacity-50;
+  /* @apply text-white opacity-50; */
+  color: var(--markdown-quote-color);
 }
 .page-reverse .text-gray-dark {
-  @apply text-white opacity-50;
+  /* @apply text-white opacity-50; */
+  color: var(--markdown-quote-color);
+}
+.page-reverse hr {
+  border-color: var(--markdown-quote-border-color);
+}
+.page-reverse .Link a:not(.Button),
+.page-reverse .Markdown a:not(.Button) {
+  box-shadow: inset 0 -1px 0 var(--markdown-quote-border-color);
+}
+
+.page-reverse .Link a:hover:not(.Button),
+.page-reverse .Markdown a:hover:not(.Button) {
+  @apply text-black;
+  box-shadow: inset 0 -25px 0 theme(colors.white);
 }

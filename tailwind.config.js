@@ -21,7 +21,8 @@ module.exports = {
         100: "#f7fafc",
         200: "rgba(0, 0, 0, 0.05)",
         300: "rgba(0, 0, 0, 0.1)",
-        400: "#dedede",
+        // 400: "#dedede",
+        400: "rgba(0, 0, 0, 0.2)",
         // 500: "#aaa",
         500: "rgba(0, 0, 0, 0.4)",
         600: "rgba(0, 0, 0, 0.5)",
@@ -141,7 +142,7 @@ module.exports = {
       title: "0.925",
       none: "1.075",
       tight: "1.25",
-      snug: "1.375",
+      snug: "1.4",
       copy: "1.5",
       normal: "1.375",
       relaxed: "1.625",
@@ -326,7 +327,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-grid")({
-      grids: [2, 3, 5, 6, 8, 10, 12],
+      grids: [2, 3, 4, 5, 6, 8, 10, 12],
       gaps: {
         0: "0",
         4: "1rem",

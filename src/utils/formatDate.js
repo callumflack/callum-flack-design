@@ -1,6 +1,7 @@
 import tinydate from "tinydate";
 
-const format = tinydate("{YYYY}.{MM}.{DD}");
+// {YYYY}.{MM}.{DD} | moment("MMMM Do, YYYY")
+const format = tinydate("{MMMM} {Do} {YYYY}");
 
 export default date => {
   return date instanceof Date ? format(date) : format(new Date(date));

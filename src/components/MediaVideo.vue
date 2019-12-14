@@ -119,6 +119,7 @@ export default {
         /* return "padding-bottom: 205.81395%"; */ /* if not within .Aspect… */
         return "padding-bottom: 100%";
       }
+      return null;
     },
     /* wrapButtonClasses() {
       return [

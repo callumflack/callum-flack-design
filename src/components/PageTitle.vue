@@ -5,7 +5,7 @@
     <!-- title block -->
     <div class="relative" :class="headerLayoutStyle">
       <nav
-        class="frame-area-a Heading Heading-4xl font-medium fixed z-50"
+        class="frame-area-a Heading Heading-4xl font-medium fixed z-50 Logo"
         :class="[headingInvertStyle, scrollInvertStyle]"
       >
         <a v-if="$route.path === '/'" v-smooth-scroll="{ duration: 1000 }" href="#top">
@@ -83,6 +83,7 @@ export default {
     },
     scrollInvertStyle() {
       return !this.visible && "text-black-important";
+      // return null;
     },
     textInvertStyle() {
       // return this.invert ? "text-white opacity-75" : "text-gray-dark";
@@ -99,25 +100,27 @@ export default {
     },
   },
   mounted() {
-    // use i-o to toggle CFd logo in <PageTitle> when it leaves the viewport
-    // https://www.notion.so/callum/Intersection-observer-use-in-Vue-ff50d8e8e79647b7bccfbe861b2eaf5b
-    const io = new IntersectionObserver(entries => {
-      // Log available data when an intersection happens
-      // console.log(entries);
-      // Element enters the viewport
-      if (entries[0].intersectionRatio !== 0) {
-        this.visible = true;
-        // Element leaves the viewport
-      } else {
-        this.visible = false;
-      }
-    });
+    if (this.$route.path !== "/" || this.$route.path !== "/about") {
+      // use i-o to toggle CFd logo in <PageTitle> when it leaves the viewport
+      // https://www.notion.so/callum/Intersection-observer-use-in-Vue-ff50d8e8e79647b7bccfbe861b2eaf5b
+      const io = new IntersectionObserver(entries => {
+        // Log available data when an intersection happens
+        // console.log(entries);
+        // Element enters the viewport
+        if (entries[0].intersectionRatio !== 0) {
+          this.visible = true;
+          // Element leaves the viewport
+        } else {
+          this.visible = false;
+        }
+      });
 
-    // Elements to be observed
-    const box = this.$refs.observe;
+      // Elements to be observed
+      const box = this.$refs.observe;
 
-    // Start observing box
-    io.observe(box);
+      // Start observing box
+      io.observe(box);
+    }
   },
 };
 </script>
@@ -127,11 +130,17 @@ export default {
 .io-target {
   @apply absolute;
   bottom: 9vh;
-  height: 2px;
+  /* height: 2px;
   width: 2px;
-  background-color: salmon;
+  background-color: salmon; */
 }
 .text-black-important {
-  @apply text-black !important;
+  /* @apply text-black !important; */
+  filter: invert(1);
 }
+/* .Logo {
+  background-clip: text;
+  color: transparent;
+  filter: invert(1) grayscale(1) contrast(9);
+} */
 </style>

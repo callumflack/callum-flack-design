@@ -25,6 +25,7 @@
 */
 .Markdown figure,
 .Markdown blockquote,
+.Markdown h1:not(:last-child),
 .Markdown h2:not(:last-child),
 .Markdown h3:not(:last-child),
 .Markdown p:not(:last-child),
@@ -68,6 +69,7 @@
 .Space-xl {
   margin-bottom: calc(theme(spacing.12) * var(--space-ratio));
 }
+/* .Markdown h1:not(:last-child), */
 .Markdown h2:not(:last-child),
 .Space-xl-t {
   margin-top: calc(theme(spacing.12) * var(--space-ratio));
