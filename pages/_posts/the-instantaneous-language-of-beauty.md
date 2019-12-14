@@ -11,9 +11,8 @@ hero:
   showCover: true
   # blockColor: rgb(0,0,0)
   ratio: 9 / 16
-  imageBlend: true
+  imageBlend: 0.3
   titleInvert: true
-  titleWidth: lg:w-9/12
 nextPost:
   title: Designers should code
   link: /blog/designers-should-code

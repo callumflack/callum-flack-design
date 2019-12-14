@@ -12,13 +12,13 @@ assets:
 hero:
   showCover: true
   titleInvert: true
-  imageBlend: true
+  imageBlend: 0.1
   ratio: 9/16
 nextPost:
   title: Notes on Deciphering Sun Tzu
   link: /blog/notes-on-deciphering-sun-tzu
-tags: 
-- essay
+tags:
+  - essay
 ---
 
 <!-- Build better websites with Reactive Javascript and the JAMstack -->

@@ -12,9 +12,8 @@ assets:
 hero:
   showCover: true
   ratio: 8 / 16
-  imageBlend: true
+  imageBlend: 0.1
   titleInvert: true
-  titleWidth: sm:w-10/12
 nextPost:
   title: How to publish a newsletter so you own your writing
   link: /blog/how-to-publish-your-newsletter-so-you-own-your-writing

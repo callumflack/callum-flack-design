@@ -11,7 +11,7 @@ assets:
 hero:
   showCover: true
   ratio: 8 / 16
-  imageBlend: true
+  imageBlend: 0.1
   titleInvert: true
 nextPost:
   title: The brief, the scope and the dance
