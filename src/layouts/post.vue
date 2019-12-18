@@ -1,7 +1,6 @@
 <template>
   <Wrap :page="page" :invert="page.hero && page.hero.titleInvert">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <!-- post title w/ hero image slot -->
       <PageTitle
         :page="page"
         :invert="page.hero && page.hero.titleInvert"
@@ -11,13 +10,6 @@
       >
         <!-- if post hero image -->
         <template v-if="page.hero && page.hero.showCover" v-slot:image>
-          <!-- <Aspect
-              :ratio="(page.hero && page.hero.ratio) || '1/3.5'"
-              :class="heroImageBlend"
-              cover
-            >
-              <ImageDynamic :src="page.assets.cover" :alt="page.title" cover />
-            </Aspect> -->
           <ImageDynamic :src="page.assets.cover" :alt="page.title" cover />
           <div class="absolute inset-0" :style="heroImageBlend"></div>
         </template>
