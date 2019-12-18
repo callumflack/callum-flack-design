@@ -4,11 +4,13 @@ layout: post
 title: Ward6
 date: 2015-01-10
 lede: Building an online reputation for a renowned Australasian Healthcare communications agency.
-assets: 
+agency: Ward6
+link: https://www.ward6.asia/
+assets:
   cover: /images/ward6-hero.jpg
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
-tags: 
+tags:
   - design
   - frontend
 ---

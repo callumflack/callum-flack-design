@@ -4,9 +4,9 @@ category: projects
 date: 2015-02-02
 title: Pharma eDetailer apps
 lede: Explaining complex Pharma products with simple and engaging iPad-based stories.
-assets: 
+assets:
   cover: /images/pharmaceutical-edetailers-hero-1.png
-tags: 
+tags:
   - design
   - frontend
 ---

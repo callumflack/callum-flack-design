@@ -118,6 +118,8 @@ _Good taste is the embodied ability to work a vague idea and emotion over into t
 
 <!-- > Remarkability lies in seamless edges. -->
 
+---
+
 1. For more on this idea, see the article <a href="https://arxiv.org/abs/0812.4360">Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes</a> by J'urgen Schmidhuber. {.Note}
 
 2. Taste is knowhow, not knowledge. Knowhow encompasses knowledge and puts it to use. As César Hidalgo says: Knowledge involves relationships or linkages between entities. These relationships are often used to predict the outcomes of events without having to act them out. Knowhow is different from knowledge because it involves the capacity to perform actions, which is tacit. {.Note}
