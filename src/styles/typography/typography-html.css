@@ -29,20 +29,19 @@ body {
 .page-reverse {
   --markdown-quote-color: rgba(255, 255, 255, 0.5);
   --markdown-quote-border-color: rgba(255, 255, 255, 0.2);
+  --form-button-color: theme(colors.white);
+  --form-placeholder-color: rgba(255, 255, 255, 0.5);
+  --form-border-color: rgba(255, 255, 255, 0.5);
+  --form-active-color: theme(colors.white);
   @apply bg-black text-white;
 }
 .page-reverse ::selection {
   @apply bg-white text-black;
 }
-.page-reverse .Nav {
-  /* @apply opacity-75; */
-}
 .page-reverse .text-gray {
-  /* @apply text-white opacity-50; */
   color: var(--markdown-quote-color);
 }
 .page-reverse .text-gray-dark {
-  /* @apply text-white opacity-50; */
   color: var(--markdown-quote-color);
 }
 .page-reverse hr {

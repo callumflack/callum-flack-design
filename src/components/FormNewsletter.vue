@@ -44,7 +44,6 @@ export default {
     return {
       subscribed: false,
       errorMsg: null,
-      // buttonMsg: "Yes please",
       buttonMsg: "→",
       focused: false,
       formData: {
@@ -54,17 +53,6 @@ export default {
     };
   },
   methods: {
-    /* updateValue(e) {
-      this.$emit("input", e.target.value);
-    },
-    // can also do @blur="isActive = false" on <input>
-    onFocus() {
-      this.$emit("focus", (this.isActive = true));
-      // this.$refs.input.$el.addClass()
-    },
-    onBlur() {
-      this.$emit("blur", (this.isActive = false));
-    }, */
     async subscribeToNewsletter(body) {
       const response = await fetch("/.netlify/functions/subscribe", {
         method: "post",
@@ -107,41 +95,59 @@ export default {
 };
 </script>
 
+<style lang="postcss">
+/*
+  REVERSE THEME SETUP
+  must be <html> to target with class
+  requires new vars to avoid button.css clashes
+*/
+html {
+  --form-button-color: theme(colors.gray.600);
+  --form-placeholder-color: theme(colors.gray.600);
+  --form-border-color: theme(colors.gray.400);
+  --form-active-color: theme(colors.black);
+}
+</style>
+
 <style lang="postcss" scoped>
 .Form {
   transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
 }
 /* with duplicated .Link styles */
-.Input,
-.Button {
+.Form .Input,
+.Form .Button {
   @apply border-0;
   @apply border-b;
   --button-height: 36px !important;
   --button-padding-x: 0;
-  --button-color: theme(colors.gray.600);
-  border-bottom-color: theme(colors.gray.400);
+  --button-color: var(--form-button-color);
+  --button-border-color: var(--form-border-color);
   transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
 }
-.Input {
+.Form .Input {
   flex-basis: 4.75em;
   transition: flex 200ms ease;
   will-change: flex;
-  /* @apply w-auto; */
 }
-.Button {
+.Form .Input::placeholder {
+  /* color: var(--input-placeholder-color); */
+  --input-placeholder-color: var(--form-placeholder-color);
+}
+.Form .Button {
   padding-left: 0.25em;
 }
 
 .Form:hover > *,
 .Form.is-active > * {
-  border-bottom-color: theme(colors.black);
+  /* border-bottom-color: theme(colors.black); */
+  --button-border-color: var(--form-active-color);
 }
 .Form.is-active .Input {
-  --button-color: theme(colors.black);
+  --button-color: var(--form-active-color);
   flex-basis: 19em;
 }
 .Form:hover .Button,
 .Form.is-active .Button {
-  --button-color: theme(colors.black);
+  --button-color: var(--form-active-color);
 }
 </style>
