@@ -3,7 +3,7 @@
     <!-- hero image slot -->
     <slot name="image"></slot>
     <!-- title block -->
-    <div class="relative" :class="headerLayoutStyle">
+    <div class="frame frame--lede relative" :class="headerLayoutStyle">
       <nav
         class="frame-area-a Heading Heading-4xl font-medium fixed z-50 Logo"
         :class="[headingInvertStyle, scrollInvertStyle]"
@@ -24,14 +24,10 @@
           v-if="showMeta"
           :page="page"
           :invert="invert"
-          :class="textInvertStyle"
+          :class="[textInvertStyle, { 'opacity-75': invert }]"
           class="Space-sm-t"
         ></PageTitleMeta>
-        <p
-          v-if="page.lede"
-          class="Text-xl Block-xs-t"
-          :class="[textInvertStyle, ledeStyle]"
-        >
+        <p v-if="page.lede" class="Text-xl Block-xs-t" :class="textInvertStyle">
           {{ page.lede }}
           <template v-if="$route.path === '/'">
             <saber-link to="/about" class="Link text-brand-red">
@@ -42,6 +38,7 @@
         <!-- default slot -->
         <slot></slot>
       </div>
+      <!-- intersection-observer target -->
       <div ref="observe" class="io-target"></div>
     </div>
   </header>
@@ -74,29 +71,24 @@ export default {
   computed: {
     headerLayoutStyle() {
       if (this.$route.path === "/about") {
-        return "frame frame--lede Block-t Block-sm-b";
+        return "Block-t Block-sm-b";
       }
-      return "frame frame--lede Block";
+      return "Block";
     },
     headingInvertStyle() {
       return this.invert && "text-white";
     },
     scrollInvertStyle() {
-      return !this.visible && "text-black-important";
-      // return null;
+      return this.$route.path !== "/about" && !this.visible && "text-black-important";
     },
     textInvertStyle() {
-      // return this.invert ? "text-white opacity-75" : "text-gray-dark";
-      if (this.$route.path === "/about") {
+      return this.invert ? "text-white" : "text-gray-dark";
+      /* if (this.$route.path === "/about") {
         return "text-white";
       } else if (this.invert) {
-        return "text-white opacity-75";
+        return "text-white opacity-100";
       }
-      return "text-gray-dark";
-    },
-    ledeStyle() {
-      // return this.$route.path === "/" && "lg:w-5/6";
-      return null;
+      return "text-gray-dark"; */
     },
   },
   mounted() {
@@ -135,8 +127,8 @@ export default {
   background-color: salmon; */
 }
 .text-black-important {
-  /* @apply text-black !important; */
-  filter: invert(1);
+  @apply text-black !important;
+  /* filter: invert(1); */
 }
 /* .Logo {
   background-clip: text;
