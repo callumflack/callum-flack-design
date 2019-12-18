@@ -1,6 +1,6 @@
 <template>
-  <div class="md:w-5/6">
-    <form class="Form" @submit.prevent="handleSubmit">
+  <div>
+    <form class="Form" :class="{ 'is-active': focused }" @submit.prevent="handleSubmit">
       <!-- flex-1 -->
       <input
         v-model="formData.email"
@@ -9,6 +9,8 @@
         name="email"
         placeholder="Your email"
         required
+        @focus="focused = true"
+        @blur="focused = false"
       />
       <button class="Button Button--invisible Text">{{ buttonMsg }}</button>
     </form>
@@ -44,6 +46,7 @@ export default {
       errorMsg: null,
       // buttonMsg: "Yes please",
       buttonMsg: "→",
+      focused: false,
       formData: {
         name: "",
         email: "",
@@ -51,6 +54,17 @@ export default {
     };
   },
   methods: {
+    /* updateValue(e) {
+      this.$emit("input", e.target.value);
+    },
+    // can also do @blur="isActive = false" on <input>
+    onFocus() {
+      this.$emit("focus", (this.isActive = true));
+      // this.$refs.input.$el.addClass()
+    },
+    onBlur() {
+      this.$emit("blur", (this.isActive = false));
+    }, */
     async subscribeToNewsletter(body) {
       const response = await fetch("/.netlify/functions/subscribe", {
         method: "post",
@@ -94,32 +108,40 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.Form {
+  transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
+}
 /* with duplicated .Link styles */
 .Input,
 .Button {
+  @apply border-0;
+  @apply border-b;
   --button-height: 36px !important;
   --button-padding-x: 0;
   --button-color: theme(colors.gray.600);
-  border-bottom-color: currentColor;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
-  border-bottom-color: rgba(0, 0, 0, 0);
+  border-bottom-color: theme(colors.gray.400);
   transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
 }
 .Input {
-  @apply border-b;
-  @apply w-auto;
+  flex-basis: 4.75em;
+  transition: flex 200ms ease;
+  will-change: flex;
+  /* @apply w-auto; */
 }
-.Form:hover .Input,
-.Form:hover .Button {
+.Button {
+  padding-left: 0.25em;
+}
+
+.Form:hover > *,
+.Form.is-active > * {
   border-bottom-color: theme(colors.black);
 }
-.Input:hover,
-.Input:focus {
+.Form.is-active .Input {
   --button-color: theme(colors.black);
-  border-bottom-color: theme(colors.black);
+  flex-basis: 19em;
 }
-.Button:hover,
-.Button:focus {
+.Form:hover .Button,
+.Form.is-active .Button {
   --button-color: theme(colors.black);
 }
 </style>
