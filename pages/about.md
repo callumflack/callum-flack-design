@@ -15,7 +15,7 @@ pageClass: page-reverse
 
 # A team you can talk to
 
-We believe that the quality of the connections between digital design and code is the key to creating seamless web interfaces. We can help you design a digital brand, its user experience and information structure. And we can build it too. {.Text-xl .text-gray-dark .mb-0 .hu:w-5/6 .su:w-full}
+We believe the quality of the connections between design and code is the key to creating seamless interfaces. We can help you design a digital brand, its user experience and information structure. And we can build it too. {.Text-xl .text-gray-dark .mb-0 .hu:w-5/6 .su:w-full}
 
 <!-- The difference isn't obvious until it is. -->
 
