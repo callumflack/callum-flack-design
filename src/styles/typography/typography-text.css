@@ -149,7 +149,7 @@ html {
   background-color: currentColor;
   content: "";
   width: 1.1em;
-  top: 0.666em;
+  top: 0.75em;
   left: -1.75em;
 }
 
@@ -196,33 +196,37 @@ html {
 
 */
 
+.Markdown .mb-0 {
+  @apply mb-0 !important;
+}
+
 .Alert {
   @apply bg-brand-neutral tracking-wide;
   @apply px-4 py-3;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
   margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
-.Note {
-  @apply tracking-wide pt-2 border-t;
-  color: var(--markdown-quote-color);
+
+.Markdown hr {
   border-color: var(--markdown-quote-border-color);
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  margin-top: calc(theme(spacing.16) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+
+.Note {
+  @apply tracking-wide;
+  color: var(--markdown-quote-color);
   text-indent: initial !important;
 }
 .Note,
 .Note p {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
-/*
-  Doesn't work, see: https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
-  Using a class selector (or a type selector) with that pseudo-class means to select an element if it has the given class (or is of the given type) and is the first of its type among its siblings.
- */
-/* .Note:first-of-type {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-} */
 .Note:before {
+  /* turn off bullet dashes */
   content: none !important;
 }
 .Note + .Note {
-  @apply border-transparent mt-0;
+  @apply mt-2;
+  /* margin-top: calc(theme(spacing.2) * var(--space-ratio)); */
 }

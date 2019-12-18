@@ -126,7 +126,7 @@
 }
 @screen hu {
   .frame--article {
-    grid-template-areas: ". . . a a a a a . . . .";
+    grid-template-areas: ". . . a a a a a a . . .";
   }
 }
 @screen su {
@@ -134,11 +134,6 @@
     grid-template-areas: ". . . a a a a . . . . .";
   }
 }
-/* @screen su {
-  .frame--article {
-    grid-template-areas: ". . a a a a a . . . . .";
-  }
-} */
 
 /* dual columns within article */
 
