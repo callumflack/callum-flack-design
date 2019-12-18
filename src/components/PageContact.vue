@@ -1,24 +1,26 @@
 <template>
   <div>
     <h2 class="Heading Heading-4xl font-medium">Callum Flack Design</h2>
-    <p class="Space-t">{{ about }}</p>
-    <p class="Text Link">
+    <p class="Space-t Space-sm">{{ about }}</p>
+    <p class="Text Link mb-2px">
       <a :href="`mailto:${contact.email}`">
-        <span>Type: </span>
+        <span class="Text-contact-type">E: </span>
         <span>{{ contact.email }}</span>
       </a>
     </p>
     <p class="Text Link">
-      <a :href="`tel:0${contact.phone.replace(' ', '-')}`">
-        <span>Talk: </span>
+      <a :href="`tel:0${contact.phone.replace(/ /g, '-')}`">
+        <span class="Text-contact-type">T: </span>
         <span>+61(0) {{ contact.phone }}</span>
       </a>
     </p>
-    <div class="Space-y">
-      <p>Keep in touch. Subscribe to project updates:</p>
-      <FormNewsletter class=""></FormNewsletter>
+    <div class="Space-t Space-lg">
+      <p class="Text mb-2">{{ signup }}</p>
+      <FormNewsletter></FormNewsletter>
     </div>
-    <p class="Text-xs">© Callum Flack Design 2015–{{ new Date().getFullYear() }}</p>
+    <p class="Text-xs text-gray-dark">
+      © Callum Flack Design 2015–{{ new Date().getFullYear() }}
+    </p>
   </div>
 </template>
 
@@ -32,8 +34,7 @@ export default {
   props: {},
   data: () => ({
     about: "To discuss new projects, contact Callum:",
-    lede:
-      "CF/BPH is a co-op between Callum Flack and Barry Phillip Hall. We work remotely from Cairns, Australia and Christchurch, New Zealand respectively. Good work starts with knowing you and your imagined tomorrow <span class='tracking-hyphen'>——</span> contact Callum to discuss new projects:",
+    signup: "Keep in touch. Subscribe to new work updates:",
     contact: {
       email: "callum@callumflack.design",
       phone: "408 767 540",
@@ -41,3 +42,11 @@ export default {
   }),
 };
 </script>
+
+<style lang="postcss" scoped>
+.Text-contact-type {
+  @apply inline-block;
+  font-size: 85%;
+  width: 1.2em;
+}
+</style>
