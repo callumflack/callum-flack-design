@@ -23,7 +23,8 @@ export default {
     design: {
       title: "Design",
       lede:
-        "Most importantly, we make things that work. Our team is extremely well versed in product and interface design for screens of all kinds.",
+        "We design with the grain of the web. We're well versed in the constraints, and the opportunities. We make the complex simple, and the simple unique.",
+      /* Designed to work, without losing the sense of ease that good craft delivers. */
       items: [
         "User experience",
         "Interface design",
@@ -34,7 +35,7 @@ export default {
     dev: {
       title: "Development",
       lede:
-        "Our focus is the web. We use modern frontend tools to build performant, secure faster, more efficient and without error. We integrate development with design to prototype how products feel.",
+        "Our focus is the web. We use modern tools to build performant, secure sites that are easy to iterate. We design in code to prototype how products feel.",
       items: [
         "Frontend web development",
         "API creation and integration",

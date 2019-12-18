@@ -1,10 +1,10 @@
 ---
 layout: page
 # title: A designer who codes
-title: A tiny, fast digital design partner
+title: A tiny, fast design + technology partner
 pageTitle: About
 # lede: Callum Flack Design is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
-lede: We're a tiny product interface team fluid across graphic design, user interface design, frontend development and backend management. Everything you need to build beautifully designed hypertext products, but without the overhead.
+lede: We're a tiny product interface team fluid across graphic design, user interface design, frontend development and backend management. Everything you need to create beautifully designed hypertext products, but without the overhead.
 # injectAllPosts: true
 pageClass: page-reverse
 ---
@@ -16,7 +16,9 @@ pageClass: page-reverse
 
 # A team you can talk to
 
-Understanding the quality of the connections that bridge design and code is the key to creating seamless web interfaces. We can help you design a digital brand, its user experience and information structure. And we can build it too. The difference isn't obvious until it is. {.Text-xl}
+We believe that the quality of the connections between digital design and code is the key to creating seamless web interfaces. We can help you design a digital brand, its user experience and information structure. And we can build it too. {.Text-xl .text-gray-dark .mb-0}
+
+<!-- The difference isn't obvious until it is. -->
 
 <PageAboutTeam></PageAboutTeam>
 
