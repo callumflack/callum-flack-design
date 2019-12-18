@@ -82,7 +82,7 @@ export default {
       title: "Design, Frontend, Project Management",
       portrait: "/images/cf-dwts-DB30312-recut.jpg",
       lede:
-        "Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in Cairns, Australia. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also run <a href='https://www.discogs.com/artist/2452856-Callum-Flack' target='_blank' rel='noopener noreferrer'>a few vinyl record labels in past years.</a>",
+        "Since starting out in 2000, Callum has worked in London, Melbourne, Sydney and Brisbane, for design studios, advertising agencies and tech startups. Since 2015, Callum and his family have lived in <a href='https://www.instagram.com/p/B6NQntepU-c' target='_blank' rel='noopener noreferrer'>Cairns, Australia</a>. Before teaching himself to code websites starting in 2010, his career highlight was working as a brand designer at Saatchi & Saatchi Design, London in 2006. Callum has also run <a href='https://www.discogs.com/artist/2452856-Callum-Flack' target='_blank' rel='noopener noreferrer'>a few vinyl record labels in past years.</a>",
       contacts: {
         email: "callum@callumflack.design",
         phone: "408 767 540",
