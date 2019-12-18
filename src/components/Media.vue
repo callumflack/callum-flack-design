@@ -1,6 +1,6 @@
 <template>
   <div class="AspectMedia Grid-extract--post">
-    <span :class="[relative, { Frame: frame || caption }]">
+    <span :class="['relative', { Frame: frame || caption }]">
       <ImageDynamic :src="image" :alt="title" :ratio="ratio" />
     </span>
     <figcaption
