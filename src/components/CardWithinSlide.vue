@@ -38,23 +38,23 @@
           />
         </h3>
         <div class="Card-body-meta">
-          <time :date-time="post.attributes.createdAt" class="Text--sm">
+          <time :date-time="post.attributes.createdAt" class="Text-sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px tracking-hyphen">
+          <span class="Text-sm inline-block mx-2px tracking-hyphen">
             &mdash;&mdash;
           </span>
-          <!-- <span class="Text--sm capitalize">{{ post.attributes.category }}</span> -->
+          <!-- <span class="Text-sm capitalize">{{ post.attributes.category }}</span> -->
           <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
-            class="Text--sm"
+            class="Text-sm"
           >
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
           <!-- <template v-if="post.attributes.category === 'writing'">
-            <span class="Text--sm inline-block mx-2px">&mdash;</span>
-            <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
+            <span class="Text-sm inline-block mx-2px">&mdash;</span>
+            <span class="Text-sm">{{ post.attributes.readingTime }} mins</span>
           </template> -->
         </div>
       </div>

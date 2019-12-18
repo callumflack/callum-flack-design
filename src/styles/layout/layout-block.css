@@ -1,67 +1,99 @@
 /*
 
+
   SECTION BLOCKS
-  Used to create white space on the y-axis between content sections.
-  All ratios are in `theme/theme-ratios`.
+  Klim responsive version
 
-*/
 
-/* LG */
+ */
 
+:root {
+  --viewportBasis: 1680;
+  --spacing1: calc(8 / var(--viewportBasis) * 100vw);
+  --spacing2: calc(16 / var(--viewportBasis) * 100vw);
+  --spacing3: calc(24 / var(--viewportBasis) * 100vw);
+  --spacing4: calc(32 / var(--viewportBasis) * 100vw);
+  --spacing5: calc(40 / var(--viewportBasis) * 100vw);
+  --spacing6: calc(60 / var(--viewportBasis) * 100vw);
+  --spacing7: calc(80 / var(--viewportBasis) * 100vw);
+  --spacing8: calc(160 / var(--viewportBasis) * 100vw);
+  --spacing9: calc(240 / var(--viewportBasis) * 100vw);
+  --spacing10: calc(320 / var(--viewportBasis) * 100vw);
+  --spacing11: calc(580 / var(--viewportBasis) * 100vw);
+}
+@media (max-width: 768px) {
+  :root {
+    --viewportBasis: 768;
+  }
+}
+@media (max-width: 414px) {
+  :root {
+    --viewportBasis: 414;
+  }
+}
+
+/*
+  Block xl
+ */
+.Block-xl {
+  padding-top: var(--spacing11);
+  padding-bottom: var(--spacing11);
+}
+.Block-xl-b {
+  padding-bottom: var(--spacing11);
+}
+.Block-xl-t {
+  padding-top: var(--spacing11);
+}
+/*
+  Block regular
+ */
 .Block {
-  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.24) * var(--block-size-ratio));
+  padding-top: var(--spacing9);
+  padding-bottom: var(--spacing9);
 }
 .Block-b {
-  padding-bottom: calc(theme(spacing.24) * var(--block-size-ratio));
+  padding-bottom: var(--spacing9);
 }
 .Block-t {
-  padding-top: calc(theme(spacing.24) * var(--block-size-ratio));
+  padding-top: var(--spacing9);
 }
-.Block--hgroup {
-  /* padding-top: calc(theme(spacing.12) - theme(spacing.3)); */
-  padding-top: calc((theme(spacing.24) - theme(spacing.8)) * var(--block-size-ratio));
-}
-.Block--footer {
-  /* padding-top: calc(theme(spacing.12) - theme(spacing.3)); */
-  padding-top: calc((theme(spacing.24) - theme(spacing.12)) * var(--block-size-ratio));
-}
-
-/* LG */
-
-.Block-lg {
-  padding-top: calc(theme(spacing.64) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.64) * var(--block-size-ratio));
-}
-.Block-lg-b {
-  padding-bottom: calc(theme(spacing.64) * var(--block-size-ratio));
-}
-.Block-lg-t {
-  padding-top: calc(theme(spacing.64) * var(--block-size-ratio));
-}
-
-/* MD */
-
+/*
+  Block medium
+ */
 .Block-md {
-  padding-top: calc(theme(spacing.16) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.16) * var(--block-size-ratio));
+  padding-top: var(--spacing8);
+  padding-bottom: var(--spacing8);
 }
 .Block-md-b {
-  padding-bottom: calc(theme(spacing.16) * var(--block-size-ratio));
+  padding-bottom: var(--spacing8);
 }
 .Block-md-t {
-  padding-top: calc(theme(spacing.16) * var(--block-size-ratio));
+  padding-top: var(--spacing8);
 }
-
-/* SM */
-
+/*
+  Block small
+ */
 .Block-sm {
-  padding-top: calc(theme(spacing.10) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
+  padding-top: var(--spacing6);
+  padding-bottom: var(--spacing6);
 }
 .Block-sm-b {
-  padding-bottom: calc(theme(spacing.10) * var(--block-size-ratio));
+  padding-bottom: var(--spacing6);
 }
 .Block-sm-t {
-  padding-top: calc(theme(spacing.10) * var(--block-size-ratio));
+  padding-top: var(--spacing6);
+}
+/*
+  Block xs
+ */
+.Block-xs {
+  padding-top: var(--spacing3);
+  padding-bottom: var(--spacing3);
+}
+.Block-xs-b {
+  padding-bottom: var(--spacing3);
+}
+.Block-xs-t {
+  padding-top: var(--spacing3);
 }

@@ -3,13 +3,13 @@ layout: post
 category: projects
 date: 2016-12-10
 title: The Substation
-lede: A website and digital branding revision for The Substation, a not-for-profit arts centre in Melbourne, Australia.
+# lede: Website redesign for a contemporary, community-based in Melbourne, Australia.
 link: https://thesubstation.org.au/
-assets: 
+assets:
   cover: /images/thesubstation-hero-bunker-1440.jpg
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
-tags: 
+tags:
   - design
   - frontend
   - featured
@@ -32,7 +32,6 @@ Redesigning the user experience, we prioritised events. Event details and the 'b
 We targeted usability and mobile performance in the upgrade to fulfil the needs of real people. For example, a person travelling home from work on public transport should be able to buy tickets from the site while in transit. To guarantee these opportunities, website performance and user flows were audited and a stack of improvements made.
 
 <Media frame ratio="3667/2400" image="/images/thesubstation-emma-collard.jpg" />
-
 
 Together, we've stemmed the constant maintenance costs that drained The Substation's digital marketing effectiveness. With a consistent digital design system integrated into a performant and adaptable codebase, The Substation can focus on talking to their customers.
 

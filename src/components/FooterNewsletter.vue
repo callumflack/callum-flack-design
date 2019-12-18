@@ -3,7 +3,7 @@
     <!-- <div class="container container--text">
       <hr class="border-t border-text pt-4">
       <div class="">
-        <p class="s-2xh Link">
+        <p class="s-2h Link">
           Ps.
           <template v-if="$route.path !== '/about'">
             You're on <saber-link to="/about">Callum Flack's website.</saber-link> He

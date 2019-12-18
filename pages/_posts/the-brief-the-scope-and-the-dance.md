@@ -1,18 +1,18 @@
 ---
 layout: post
+draft: true
 category: writing
 date: 2018-07-02
 title: The brief, the scope and the dance
 lede: Frustrating, ugly websites that don't live up to their promise are the result of a misunderstood brief and a lack of real scope. How can makers and clients work together to ensure better solutions? By reframing brief and scope as communication tools for collaboratively dealing with project realities as they unfold.
 readingTime: 8
-assets: 
+assets:
   cover: /images/post-process-2a.jpg
 hero:
   showCover: true
   ratio: 8 / 16
-  imageBlend: true
+  imageBlend: 0.2
   titleInvert: true
-  titleWidth: sm:w-8/12
 nextPost:
   title: The instantaneous language of beauty
   link: /blog/the-instantaneous-language-of-beauty

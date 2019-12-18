@@ -1,19 +1,20 @@
 import "./styles/application.css";
 
 import Vue from "vue";
-import VueGlide from "vue-glide-js";
-import "vue-glide-js/dist/vue-glide.css";
+// import VueGlide from "vue-glide-js";
+// import "vue-glide-js/dist/vue-glide.css";
+// import vueSmoothScroll from "vue-smooth-scroll";
 import SvgIcon from "vue-svgicon";
-import vueSmoothScroll from "vue-smooth-scroll";
+import "./components/icons";
 
+// Vue.use(vueSmoothScroll);
+// Vue.use(VueGlide);
 Vue.use(SvgIcon, {
   tagName: "icon",
-  isOriginalDefault: true,
+  // isOriginalDefault: true,
   defaultWidth: "0.9em",
   defaultHeight: "0.9em",
 });
-Vue.use(vueSmoothScroll);
-Vue.use(VueGlide);
 
 /* https://saber.land/docs/manipulating-head.html#set-default-values */
 export default ({ setHead }) => {

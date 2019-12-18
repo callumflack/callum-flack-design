@@ -37,16 +37,18 @@ export default {
 
 <style lang="postcss">
 .SliderSlide {
-  @apply w-full;
+  /* @apply w-full; */
 }
 
 .SliderSlide--transition-left-enter-active,
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter-active,
 .SliderSlide--transition-right-leave-active {
-  transition-duration: 0.25s;
-  transition-property: height, opacity, transform;
-  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  transition-duration: 0.75s;
+  /* transition-property: height, opacity, transform; */
+  transition-property: height, opacity;
+  /* transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1); */
+  transition-timing-function: theme(bezier.thisalso);
   overflow: hidden;
 }
 
@@ -59,12 +61,12 @@ export default {
 .SliderSlide--transition-left-enter,
 .SliderSlide--transition-right-leave-active {
   opacity: 0;
-  transform: translate(2em, 0);
+  /* transform: translate(2em, 0); */
 }
 
 .SliderSlide--transition-left-leave-active,
 .SliderSlide--transition-right-enter {
   opacity: 0;
-  transform: translate(-2em, 0);
+  /* transform: translate(-2em, 0); */
 }
 </style>

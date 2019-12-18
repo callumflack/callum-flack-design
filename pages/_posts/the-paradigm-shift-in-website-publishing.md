@@ -3,21 +3,22 @@ layout: post
 date: 2019-03-18
 category: writing
 title: The paradigm shift in website publishing
-lede: You don’t miss good tools until you have to use the old tools. When it comes to web development tools and publishing systems, there's a paradigm shift in effect. It'll not only make your website a better user experience, it'll be easier to maintain. It's just that you may have to wait until your current website system is painful enough before you believe me.
+# lede: You don’t miss good tools until you have to use the old tools. When it comes to web development tools and publishing systems, there's a paradigm shift in effect. It'll not only make your website a better user experience, it'll be easier to maintain. It's just that you may have to wait until your current website system is painful enough before you believe me.
+# lede: You don’t miss good tools until you have to use the old tools. When it comes to web development and publishing systems, new tools are making old websites painful to use.
+lede: Web development and web publishing systems are evolving quickly. The new tools are making old tools painful to use. And they're showing up the performance of old websites too.
 readingTime: 8
 assets:
   cover: /images/post-publishing-tools.jpg
 hero:
   showCover: true
   titleInvert: true
-  imageBlend: true
+  imageBlend: 0.6
   ratio: 9/16
-  titleWidth: lg:w-9/12
 nextPost:
   title: Notes on Deciphering Sun Tzu
   link: /blog/notes-on-deciphering-sun-tzu
-tags: 
-- essay
+tags:
+  - essay
 ---
 
 <!-- Build better websites with Reactive Javascript and the JAMstack -->
@@ -114,6 +115,8 @@ Now is the right time to jump on the bandwagon, where you'll get the optimism an
 <!-- Like most paradigm shifts, however, we won't know this until we either see everyone else doing it, or it hurts. -->
 
 <!-- Or until we have to go back and use the old tools. -->
+
+---
 
 1. Despite all the social media publishing platforms available, a website is still where a business can retain most control over the presentation of their core value proposition, and it's probably still the first thing a potential customer will click to from a search. Oh and forget native apps for business brand & value proposition sites, web search won. {.Note}
 

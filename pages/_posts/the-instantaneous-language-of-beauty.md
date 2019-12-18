@@ -3,7 +3,7 @@ layout: post
 date: 2018-06-01
 category: writing
 title: The instantaneous language of beauty
-lede: We use the pre-verbal language of asethetics to sense our environment before we can think. As much as we repel from danger, we're drawn to seamless, cohesive symmetry, which we find beautiful. We are naturally attuned to beauty because we know it represents a higher chance of holding worthwhile information.
+lede: We rely on the pre-verbal language of aesthetics to sense our environment before we can think. We are naturally attuned to beauty because we innately know it represents a higher possibility of worthwhile information.
 readingTime: 5
 assets:
   cover: /images/post-aesthetics-nembrotha-aurea.jpg
@@ -11,16 +11,14 @@ hero:
   showCover: true
   # blockColor: rgb(0,0,0)
   ratio: 9 / 16
-  imageBlend: true
+  imageBlend: 0.3
   titleInvert: true
-  titleWidth: lg:w-9/12
 nextPost:
   title: Designers should code
   link: /blog/designers-should-code
-tags: 
+tags:
   - essay
   - featured
-card:
 ---
 
 A shadow passes just outside our field of vision. But somehow we know it happened because we feel tense. Some sense has triggered our awareness, a sense that isn't logical, a sense that we instead feel.
@@ -97,7 +95,9 @@ Faced with a decision between two objects, we'll choose the one we developed an 
 
 ## Beauty and Peak Attention
 
-Every one of us post-rationalises our decisions as it suits us. The reasons for our choices are deeper than we think. While they won't tell you, people will sense incongruence and walk away. Or they will notice seamless and cohesive symmetry in a fraction of a second, and begin inspecting. As we move toward "peak attention", it pays not to underestimate how powerful, calming and attentive the feeling of beauty can be.
+Every one of us post-rationalises our decisions as it suits us. The reasons for our choices are deeper than we think. While they won't tell you, people will sense incongruence and walk away. Or they will notice seamless and cohesive symmetry in a fraction of a second, and begin inspecting.
+
+As we move toward "peak attention", it pays not to underestimate how powerful, calming and attentive the feeling of beauty can be.
 
 <script>
 import Media from "../../src/components/Media";

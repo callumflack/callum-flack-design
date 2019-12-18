@@ -1,5 +1,5 @@
 <template>
-  <div class="AspectMedia Grid-extract--post">
+  <div class="AspectMedia Grid-extract--pos">
     <Aspect figure :ratio="ratio" :style="aspectStyle" :class="aspectClasses">
       <!-- iphone shape -->
       <div v-show="iphone" class="AspectRatio-object text-text">
@@ -119,6 +119,7 @@ export default {
         /* return "padding-bottom: 205.81395%"; */ /* if not within .Aspect… */
         return "padding-bottom: 100%";
       }
+      return null;
     },
     /* wrapButtonClasses() {
       return [

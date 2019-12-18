@@ -1,57 +1,45 @@
 /*
 
   Text: customisable starter pack
-
-  Uses the responsiveScale settings from `typography-scale`
-
-*/
-
-html {
-  @apply bg-brand-bg;
-}
-
-/* font-feature-settings from http://design.byform.co/ */
-body {
-  @apply antialiased text-text leading-normal;
-  @apply font-sans;
-  @apply bg-brand-bg;
-  /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */
-  font-kerning: normal;
-  /* hyphens: auto; */
-  -webkit-tap-highlight-color: transparent;
-}
-
-::selection {
-  @apply bg-text text-white;
-}
-
-/*
+  …uses the responsiveScale settings from `typography-scale`
 
   Utils
 
 */
 
 .text-gray {
+  color: theme(colors.gray.500);
+}
+.text-gray-dark {
   color: theme(colors.gray.600);
 }
 
-.Text--xs {
+.Text-button {
+  transform: translate(-0.025em, -0.04em) !important;
+}
+
+.Text-divider {
+  @apply mx-1 font-light text-gray-500 inline-block;
+  transform: translateY(-0.1em);
+}
+
+/*
+
+  Text sizes
+
+*/
+
+.Text-xs {
   font-size: calc(theme(fontSize.xs) * var(--text-ratio));
 }
 
-.Text--sm {
-  /* @apply tracking-wide; */
+.Text-sm {
+  @apply tracking-normal;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
 
-.Button,
-.Input,
-.Text--base {
+.Text-base {
   font-size: calc(theme(fontSize.base) * var(--text-ratio));
-}
-
-.Text--xl {
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 p,
@@ -63,17 +51,23 @@ ol {
 p,
 ul,
 ol,
+.Button,
+.Input,
 .Markdown > *,
 .Text,
-.Text--lg {
+.Text-lg {
   font-size: calc(theme(fontSize.lg) * var(--text-ratio));
 }
 
 .Markdown > *,
 .Text,
-.Text--lg {
-  @apply font-serif;
-  @apply leading-copy tracking-normal !important;
+.Text-lg,
+.Text-xl {
+  @apply leading-snug tracking-text;
+}
+
+.Text-xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
 
 /*
@@ -108,7 +102,6 @@ ol,
 /* used on projects by year archive page */
 .Year + .Year {
   margin-top: calc(theme(spacing.8) * var(--space-ratio));
-
 }
 
 /*
@@ -117,18 +110,21 @@ ol,
 
 */
 
-:root {
-  --text-indent: calc(theme(spacing.6) * var(--grid-ratio));
+/* not :root, for use with html page classes */
+html {
+  --markdown-text-indent: calc(theme(spacing.8) * var(--grid-ratio));
+  --markdown-quote-color: theme(colors.gray.600);
+  --markdown-quote-border-color: rgba(0, 0, 0, 0.2);
 }
 
-.Markdown p:not(.Alert) + p {
+/* .Markdown p:not(.Alert) + p {
   text-indent: calc(theme(spacing.10) * var(--grid-ratio));
-  text-indent: var(--text-indent);
-}
+  text-indent: var(--markdown-text-indent);
+} */
 
 .Markdown ul,
 .Markdown ol {
-  padding-left: var(--text-indent);
+  padding-left: var(--markdown-text-indent);
 }
 
 .Markdown ul {
@@ -149,12 +145,12 @@ ol,
 }
 
 .Markdown li:before {
-  @apply absolute inline-block bg-text h-px;
+  @apply absolute inline-block h-px;
+  background-color: currentColor;
   content: "";
   width: 1.1em;
-  /* top: 0.55em; */ /* suisse */
-  top: 0.66em; /* tiempos */
-  left: -1.333em;
+  top: 0.75em;
+  left: -1.75em;
 }
 
 /* doesn't work when purge is active? */
@@ -171,23 +167,11 @@ ol,
 }
 
 .Markdown blockquote p {
-  /* @apply border border-l-2;
-  border-left-color: theme(colors.text); */
   @apply border-l;
-  /* @apply border-gray-400; */
-  /* @apply border-l-2 border-text; */
-  /* @apply border-l-2 border-brand-highlight; */
-  /* @apply bg-gray-200; */
-  /* background-color: rgba(135, 131, 120, 0.15);
-  background-color: rgba(135, 131, 120, 0.1);
-  background-color: rgba(189, 183, 165, 0.15); */
   @apply py-2 pr-4;
-  @apply text-text;
-  @apply italic;
-  /* @apply text-brand-highlight; */
-  /* padding-left: calc(theme(spacing.6) * var(--grid-ratio)); */
-  border-color: rgba(0,0,0,0.2);
-  padding-left: var(--text-indent);
+  color: var(--markdown-quote-color);
+  border-color: var(--markdown-quote-border-color);
+  padding-left: var(--markdown-text-indent);
 }
 
 .Markdown blockquote p p {
@@ -199,9 +183,6 @@ ol,
 .Markdown blockquote p strong {
   @apply table mt-2 tracking-wider;
   @apply not-italic;
-  /* @apply mb-1; */
-  /* @apply text-gray-600; */
-  /* @apply text-brand-highlight; */
 }
 
 .Markdown sup {
@@ -215,31 +196,37 @@ ol,
 
 */
 
+.Markdown .mb-0 {
+  @apply mb-0 !important;
+}
+
 .Alert {
   @apply bg-brand-neutral tracking-wide;
   @apply px-4 py-3;
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
   margin-bottom: calc(theme(spacing.8) * var(--space-ratio));
 }
+
+.Markdown hr {
+  border-color: var(--markdown-quote-border-color);
+  margin-top: calc(theme(spacing.16) * var(--space-ratio));
+  margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+
 .Note {
-  @apply text-gray-600 tracking-wide pt-2 border-t border-gray-400;
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
+  @apply tracking-wide;
+  color: var(--markdown-quote-color);
   text-indent: initial !important;
 }
 .Note,
 .Note p {
   font-size: calc(theme(fontSize.sm) * var(--text-ratio));
 }
-/*
-Doesn't work, see: https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
-Using a class selector (or a type selector) with that pseudo-class means to select an element if it has the given class (or is of the given type) and is the first of its type among its siblings.
- */
-/* .Note:first-of-type {
-  margin-top: calc(theme(spacing.8) * var(--space-ratio));
-} */
 .Note:before {
+  /* turn off bullet dashes */
   content: none !important;
 }
 .Note + .Note {
-  @apply border-transparent mt-0;
+  @apply mt-2;
+  /* margin-top: calc(theme(spacing.2) * var(--space-ratio)); */
 }

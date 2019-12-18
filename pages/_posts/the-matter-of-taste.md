@@ -3,14 +3,15 @@ layout: post
 category: writing
 date: 2018-09-24
 title: The matter of taste
-lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
+# lede: Rather than understanding taste as the particular way a person does a thing, I will argue that it is a measurement of how well a person is able to see and act within a problem space. When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
+lede: When business hinges on the user experience and how products make people feel, success or failure is often a matter of taste.
 readingTime: 8
 assets:
   cover: /images/post-lynch-bw.jpg
 hero:
   showCover: true
   ratio: 8 / 16
-  imageBlend: true
+  imageBlend: 0.1
   titleInvert: true
 nextPost:
   title: The brief, the scope and the dance
@@ -21,9 +22,11 @@ tags:
   - featured
 ---
 
-<blockquote class="Post-intro-quote"><p>What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<strong>John Dewey, Art as Experience</strong></p></blockquote>
+<!-- <blockquote class="Post-intro-quote"><p>What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium.<strong>John Dewey, Art as Experience</strong></p></blockquote> -->
 
-<hr class="Post-intro-rule b-my05">
+> What most of us lack in order to be artists, is not the inceptive emotion, nor yet merely technical skill in execution. It is capacity to work a vague idea and emotion over into terms of some definite medium. **John Dewey, Art as Experience**
+
+<!-- <hr class="Post-intro-rule b-my05"> -->
 
 Rather than understanding taste as the particular way a person does a thing, I will argue that _taste is a measurement of how well a person is able to see and act within a problem space._ That it is the ability to skip ahead over previously assimilated decisions to get to the heart of a matter. And that the process of doing this over and over within a domain turns the many small insights made into _a muscle memory of shortcuts that are stored as aesthetic feelings, away from the cognitive expense of language and reason._ Much more than just a style of doing, good taste is a measure of a person's intuitive understanding of a problem space.
 
@@ -115,8 +118,10 @@ _Good taste is the embodied ability to work a vague idea and emotion over into t
 
 <!-- > Remarkability lies in seamless edges. -->
 
+---
+
 1. For more on this idea, see the article <a href="https://arxiv.org/abs/0812.4360">Driven by Compression Progress: A Simple Principle Explains Essential Aspects of Subjective Beauty, Novelty, Surprise, Interestingness, Attention, Curiosity, Creativity, Art, Science, Music, Jokes</a> by J'urgen Schmidhuber. {.Note}
 
-2. Taste is knowhow, not knowledge. Knowhow encompasses knowledge and puts it to use. As César Hidalgo says: Knowledge and knowhow are not the same thing. Knowledge involves relationships or linkages between entities. These relationships are often used to predict the outcomes of events without having to act them out. Knowhow is different from knowledge because it involves the capacity to perform actions, which is tacit. {.Note}
+2. Taste is knowhow, not knowledge. Knowhow encompasses knowledge and puts it to use. As César Hidalgo says: Knowledge involves relationships or linkages between entities. These relationships are often used to predict the outcomes of events without having to act them out. Knowhow is different from knowledge because it involves the capacity to perform actions, which is tacit. {.Note}
 
 3. The Latin root meaning of "genius" has fallen from modern usage but still lives on within some domains. For example, in landscape gardening, genius loci refers to a location's distinctive atmosphere, or spirit of place. {.Note}

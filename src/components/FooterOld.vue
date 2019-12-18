@@ -21,7 +21,7 @@
       >
         <div class="container container--text">
           <hr v-if="nextpost && !nextpost.hero" class="border-b border-text m-0" />
-          <!-- <p class="Text--base s-2xh">Next post:</p> -->
+          <!-- <p class="Text-base s-2h">Next post:</p> -->
           <div class="Grid-extract--post">
             <div class="relative">
               <Aspect ratio="1/2" :class="heroImageBlend">
@@ -35,8 +35,8 @@
                 <div class="relative h-full flex items-center justify-center">
                   <div class="container container--text" :class="heroTitleColor">
                     <!-- post title -->
-                    <p class="Text--base font-medium s-m">Next post:</p>
-                    <h2 class="Display s-2xh" itemprop="name headline">
+                    <p class="Text-base font-medium s-m">Next post:</p>
+                    <h2 class="Display s-2h" itemprop="name headline">
                       {{ nextpost.title }}
                     </h2>
                   </div>

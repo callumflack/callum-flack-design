@@ -8,6 +8,8 @@ link: https://albumregistry.com/
 assets:
   cover: /images/albumregistry-new-profile-2500.jpg
 heroShowCover: false
+card:
+  externalLink: false
 tags: 
   - design
   - frontend

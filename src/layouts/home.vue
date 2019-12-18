@@ -1,44 +1,95 @@
 <template>
-  <Wrap :page="page" kind="index">
-    <HeaderTitleWrap class="One">
-      <header class="lg:w-9/12">
-        <h1 class="Display s-m">
-          <saber-link :to="`/${page.link}`">
-            {{ page.title }}
-            <span class="Link--blank">&#8594;</span>
-          </saber-link>
-        </h1>
-        <p class="Link Text--sm text-gray s-m">
-          {{ page.lede }}
-        </p>
-        <p class="Link Text--sm text-gray s-m">
-          {{ page.ledeTwo }}
-        </p>
-      </header>
-      <FormNewsletter class="st-2xh lg:w-9/12"></FormNewsletter>
-    </HeaderTitleWrap>
+  <Wrap :page="page">
+    <PageTitle :page="page"></PageTitle>
+    <SliderFrame class="">
+      <main slot-scope="{ activeIndex, goToIndex }">
+        <div class="frame">
+          <ul class="Tab-controls col-start-1 lg:col-start-4">
+            <li>
+              <button
+                :class="{ 'is-active': activeIndex === 0 }"
+                class="Heading-4xl"
+                @click="goToIndex(0)"
+              >
+                <!-- Grid -->
+                <icon name="grid"></icon>
+              </button>
+            </li>
+            <li>
+              <button
+                :class="{ 'is-active': activeIndex === 1 }"
+                class="Heading-4xl"
+                @click="goToIndex(1)"
+              >
+                <!-- List -->
+                <icon name="sort"></icon>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Block-sm-t">
+          <SliderSlides class="">
+            <SliderSlide
+              v-if="page.posts && page.posts.length > 0"
+              class="frame frame--projectCards"
+            >
+              <ProjectCard
+                v-for="(item, index) in page.posts"
+                :key="index"
+                :post="item"
+              ></ProjectCard>
+            </SliderSlide>
+            <SliderSlide
+              v-if="page.posts && page.posts.length > 0"
+              class="frame frame--projectRows"
+            >
+              <div class="frame-area-a">
+                <ProjectRow
+                  v-for="(item, index) in page.posts"
+                  :key="index"
+                  :post="item"
+                ></ProjectRow>
+              </div>
+            </SliderSlide>
+          </SliderSlides>
+        </div>
+      </main>
+    </SliderFrame>
   </Wrap>
 </template>
 
 <script>
-import FormNewsletter from "../components/FormNewsletter";
-import HeaderTitleWrap from "../components/HeaderTitleWrap";
+import PageTitle from "../components/PageTitle.vue";
+import ProjectCard from "../components/ProjectCard";
+import ProjectRow from "../components/ProjectRow";
+import SliderFrame from "../components/SliderFrame";
+import SliderSlides from "../components/SliderSlides";
+import SliderSlide from "../components/SliderSlide";
 import Wrap from "../components/Wrap.vue";
+// import "icons";
 
 export default {
   components: {
-    FormNewsletter,
-    HeaderTitleWrap,
+    PageTitle,
+    ProjectRow,
+    ProjectCard,
+    SliderFrame,
+    SliderSlides,
+    SliderSlide,
     Wrap,
   },
   props: ["page"],
+  // transition: "intro"
+  /* transition(to, from) {
+    // return a string or object
+    if (!from) {
+      return "slide-left";
+    }
+    if (to === "/about") {
+      return "slide-right";
+    }
+    // return +to.query.page < +from.query.page ? "slide-right" : "slide-left";
+  }, */
 };
 </script>
-
-<style lang="postcss" scoped>
-.One {
-  @apply border-0;
-  padding-top: calc(theme(spacing.48) * var(--block-size-ratio));
-  padding-bottom: calc(theme(spacing.48) * var(--block-size-ratio));
-}
-</style>

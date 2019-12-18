@@ -7,10 +7,9 @@ lede: A website and brand revision to help create a community around transformat
 assets:
   cover: /images/oceanblueliving-hero-silver-1440.jpg
 heroShowCover: false
-tags: 
+tags:
   - design
   - frontend
-  - featured
 ---
 
 Oceanblue Living were stuck with a website they couldn't update, and they badly needed to talk to their audience. After workshopping their needs and audience requirements, I designed and built a website that told a simple, powerful story of how their metalworks can transform living spaces.

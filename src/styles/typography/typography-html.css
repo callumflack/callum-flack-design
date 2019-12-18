@@ -1,0 +1,59 @@
+/*
+
+  HTML & body: root styles
+  …uses the responsiveScale settings from `typography-scale`
+
+  1. font-feature-settings from http://design.byform.co/
+
+*/
+html {
+  @apply bg-brand-bg text-black;
+}
+body {
+  @apply antialiased;
+  @apply leading-normal;
+  @apply font-sans;
+  /* font-feature-settings: "kern" 1,'ss01' 1,'ss02' 1,'ss03' 1,'ss04' 1; */ /* 1 */
+  font-kerning: normal;
+  /* hyphens: auto; */
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  @apply bg-text text-white;
+}
+/*
+
+  html.page-reverse theme
+
+ */
+.page-reverse {
+  --markdown-quote-color: rgba(255, 255, 255, 0.5);
+  --markdown-quote-border-color: rgba(255, 255, 255, 0.2);
+  --form-button-color: theme(colors.white);
+  --form-placeholder-color: rgba(255, 255, 255, 0.5);
+  --form-border-color: rgba(255, 255, 255, 0.5);
+  --form-active-color: theme(colors.white);
+  @apply bg-black text-white;
+}
+.page-reverse ::selection {
+  @apply bg-white text-black;
+}
+.page-reverse .text-gray {
+  color: var(--markdown-quote-color);
+}
+.page-reverse .text-gray-dark {
+  color: var(--markdown-quote-color);
+}
+.page-reverse hr {
+  border-color: var(--markdown-quote-border-color);
+}
+.page-reverse .Link a:not(.Button),
+.page-reverse .Markdown a:not(.Button) {
+  box-shadow: inset 0 -1px 0 var(--markdown-quote-border-color);
+}
+
+.page-reverse .Link a:hover:not(.Button),
+.page-reverse .Markdown a:hover:not(.Button) {
+  @apply text-black;
+  box-shadow: inset 0 -25px 0 theme(colors.white);
+}

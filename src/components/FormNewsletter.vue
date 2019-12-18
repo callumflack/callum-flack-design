@@ -1,23 +1,24 @@
 <template>
-  <div class="w-full">
-    <form class="Form font-sans" @submit.prevent="handleSubmit">
+  <div>
+    <form class="Form" :class="{ 'is-active': focused }" @submit.prevent="handleSubmit">
+      <!-- flex-1 -->
       <input
         v-model="formData.email"
-        class="Input flex-1"
+        class="Input Text"
         type="email"
         name="email"
-        placeholder="Add your email to The Littoral Line"
+        placeholder="Your email"
         required
+        @focus="focused = true"
+        @blur="focused = false"
       />
-      <button class="Button Button--outline ml-2">
-        {{ buttonMsg }}
-      </button>
+      <button class="Button Button--invisible Text">{{ buttonMsg }}</button>
     </form>
     <!-- <div v-if="buttonMsg" class="Form-validation is-good Input">
       <icon name="check-circle" class="mr-1" />
       <span>Thanks! You're all signed up.</span>
       <span>{{ buttonMsg }}</span>
-    </div> -->
+    </div>-->
     <div v-if="errorMsg" class="Form-validation is-bad Input">
       <icon name="info" class="mr-1" />
       <span>{{ errorMsg }}</span>
@@ -30,7 +31,7 @@
       src="https://thelittoralline.substack.com/embed"
       frameborder="0"
       scrolling="no"
-    ></iframe> -->
+    ></iframe>-->
   </div>
 </template>
 
@@ -43,7 +44,8 @@ export default {
     return {
       subscribed: false,
       errorMsg: null,
-      buttonMsg: "Yes please",
+      buttonMsg: "→",
+      focused: false,
       formData: {
         name: "",
         email: "",
@@ -93,16 +95,59 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-/* .Input {
-  @apply border border-text rounded-l border-r-0;
+<style lang="postcss">
+/*
+  REVERSE THEME SETUP
+  must be <html> to target with class
+  requires new vars to avoid button.css clashes
+*/
+html {
+  --form-button-color: theme(colors.gray.600);
+  --form-placeholder-color: theme(colors.gray.600);
+  --form-border-color: theme(colors.gray.400);
+  --form-active-color: theme(colors.black);
 }
-.Button {
-  @apply rounded-r;
-} */
+</style>
 
-.Input {
+<style lang="postcss" scoped>
+.Form {
+  transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+/* with duplicated .Link styles */
+.Form .Input,
+.Form .Button {
+  @apply border-0;
+  @apply border-b;
+  --button-height: 36px !important;
   --button-padding-x: 0;
-  @apply border-b border-t border-gray-300;
+  --button-color: var(--form-button-color);
+  --button-border-color: var(--form-border-color);
+  transition: all 150ms cubic-bezier(0.7, 0, 0.3, 1);
+}
+.Form .Input {
+  flex-basis: 4.75em;
+  transition: flex 200ms ease;
+  will-change: flex;
+}
+.Form .Input::placeholder {
+  /* color: var(--input-placeholder-color); */
+  --input-placeholder-color: var(--form-placeholder-color);
+}
+.Form .Button {
+  padding-left: 0.25em;
+}
+
+.Form:hover > *,
+.Form.is-active > * {
+  /* border-bottom-color: theme(colors.black); */
+  --button-border-color: var(--form-active-color);
+}
+.Form.is-active .Input {
+  --button-color: var(--form-active-color);
+  flex-basis: 19em;
+}
+.Form:hover .Button,
+.Form.is-active .Button {
+  --button-color: var(--form-active-color);
 }
 </style>

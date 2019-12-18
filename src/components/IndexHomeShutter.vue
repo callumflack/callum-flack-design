@@ -15,7 +15,7 @@
             <span class="Link--blank">&#8594;</span>
           </saber-link>
         </h1>
-        <p v-if="block.lede" class="Link Text--sm text-gray">
+        <p v-if="block.lede" class="Link Text-sm text-gray">
           {{ block.lede }}
           <saber-link
             :to="`/${block.link}`"

@@ -30,9 +30,9 @@
   --button-disabled-opacity: 0.6;
   --button-font-case: initial;
   --button-font-weight: 400;
-  --button-height: 44px;
+  --button-height: 54px;
   --button-inline-spacing: 0;
-  --button-padding-x: 1em;
+  --button-padding-x: 2em;
 
   --input-placeholder-color: theme(colors.gray.600);
 
@@ -57,9 +57,7 @@
   text-transform: var(--button-font-case);
   user-select: none;
   /* 2 */
-  /* padding-bottom: calc((2 / 15) * 1em);  */
-  padding-bottom: 0;
-  padding-top: 1px;
+  padding-bottom: calc((2 / 18) * 1em);
 }
 
 /*
@@ -79,16 +77,15 @@
 
 .ButtonComplex:hover .Button,
 .Button:hover {
-  box-shadow:
-    var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-hover);
+  box-shadow: var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-hover);
 }
 
 .ButtonComplex:focus .Button,
 .ButtonComplex:active .Button,
 .Button:active,
 .Button:focus {
-  box-shadow:
-    var(--button-box-shadow-color) 0 0 0 var(--button-box-shadow-stroke-active);
+  box-shadow: var(--button-box-shadow-color) 0 0 0
+    var(--button-box-shadow-stroke-active);
 }
 
 button[disabled],
@@ -133,13 +130,22 @@ button:disabled {
 
 /* in forms, make height & radius consistent for both inputs & buttons */
 .Input,
+.h-Input,
+.Input--pseudo,
 .Form .Button {
   --button-border-radius: 0;
-  /* --button-height: 44px; */
+  --button-height: 104px;
 }
 /* …but not for textareas */
 textarea.Input {
   height: auto;
+}
+
+/* using form elements as text */
+.Input--pseudo {
+  height: var(--button-height);
+  line-height: var(--button-height);
+  @apply border-b border-black;
 }
 
 /*
@@ -197,29 +203,41 @@ textarea.Input {
   --button-invert-color: theme(colors.white);
 }
 
+/* inverse, invisible & outlines… */
+
+.Button--inverse {
+  --button-color: theme(colors.brand.highlight);
+  --button-invert-color: theme(colors.black);
+}
+
 .ButtonComplex .Button--outline,
 .ButtonComplex .Button--invisible,
 .Button--outline,
 .Button--invisible {
+  --button-invert-color: theme(colors.text);
   --button-color: theme(colors.text);
   --button-bg-color: transparent;
   --button-bg-color-hover: transparent;
 }
+
 .Button--invisible {
   --button-border-color: transparent;
+  --button-invert-color: transparent;
 }
 
-.Button--whiteOutline {
+[class*="Button--outline-"] {
+  --button-bg-color: transparent;
+  --button-bg-color-hover: transparent;
+}
+.Button--outline-white {
   --button-color: white;
   --button-invert-color: white;
-  background-color: rgba(0,0,0,0.2);
 }
-
-.Button--whiteOutline:hover,
-.Button--whiteOutline:focus,
-.Button--whiteOutline:active {
-  /* --button-box-shadow-color: white; */
-  background-color: rgba(0,0,0,0.5);
+.Button--outline-red {
+  --button-color: theme(colors.brand.red);
+  --button-invert-color: theme(colors.brand.red);
 }
-
-
+.Button--outline-blue {
+  --button-color: theme(colors.brand.blue);
+  --button-invert-color: theme(colors.brand.blue);
+}

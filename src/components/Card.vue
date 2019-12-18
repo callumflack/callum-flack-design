@@ -13,7 +13,7 @@
         v-if="post.attributes.assets && post.attributes.assets.cover"
         class="Card-figure"
       >
-        <Aspect>
+        <Aspect ratio="1/2.5">
           <img
             v-if="post.attributes.assets.cover.local"
             :src="post.attributes.assets.cover"
@@ -49,25 +49,25 @@
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
-          <time :date-time="post.attributes.createdAt" class="Text--sm">
+          <time :date-time="post.attributes.createdAt" class="Text-sm">
             {{ formatListDate(post.attributes.createdAt) }}
           </time>
-          <span class="Text--sm inline-block mx-2px tracking-hyphen">
+          <span class="Text-sm inline-block mx-2px tracking-hyphen">
             &mdash;&mdash;
           </span>
           <!-- category & tags -->
-          <span class="Text--sm capitalize">{{ post.attributes.category }}</span>
+          <span class="Text-sm capitalize">{{ post.attributes.category }}</span>
           <!-- <span
             v-for="(tag, index) in tagsWithFeaturedRemoved"
             :key="index"
-            class="Text--sm"
+            class="Text-sm"
           >
             <span v-if="index != 0">, </span><span>{{ tag }}</span>
           </span> -->
           <!-- if writing, show reading time -->
           <!-- <template v-if="post.attributes.category === 'writing'">
-            <span class="Text--sm inline-block mx-2px">&mdash;</span>
-            <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
+            <span class="Text-sm inline-block mx-2px">&mdash;</span>
+            <span class="Text-sm">{{ post.attributes.readingTime }} mins</span>
           </template> -->
         </div>
       </div>
@@ -189,7 +189,7 @@ export default {
 .Card-body {
   @apply relative;
   /* @apply bg-brand-bg; */
-  @apply pt-3 pb-6;
+  @apply pt-3 pb-3;
   /* @apply px-2; */
   transform: translateX(0);
   transition: transform 500ms ease;
@@ -209,7 +209,8 @@ export default {
 
 .Card-figure {
   @apply relative;
-  @apply z-10 border-b-2 border-white;
+  @apply z-10;
+  /* @apply border-b-2 border-white; */
 }
 
 .Card-figure-image {
@@ -227,7 +228,7 @@ export default {
     @apply mb-3;
   } */
   .Card-body {
-    @apply pt-4 pb-12;
+    @apply pt-4 pb-4;
     /* @apply px-3; */
   }
   .Card-body > .Title {

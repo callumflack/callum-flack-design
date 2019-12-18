@@ -8,7 +8,7 @@
 
 :root {
   --text-ratio: theme(responsiveScale.textXs);
-  --title-ratio: theme(responsiveScale.titleXs);
+  --heading-ratio: theme(responsiveScale.headingXs);
   --space-ratio: theme(responsiveScale.spaceXs);
   --block-size-ratio: theme(responsiveScale.blockXs);
   --grid-ratio: theme(responsiveScale.gridXs);
@@ -16,7 +16,7 @@
 @screen sm {
   :root {
     --text-ratio: theme(responsiveScale.textSm);
-    --title-ratio: theme(responsiveScale.titleSm);
+    --heading-ratio: theme(responsiveScale.headingSm);
     --space-ratio: theme(responsiveScale.spaceSm);
     --block-size-ratio: theme(responsiveScale.blockSm);
     --grid-ratio: theme(responsiveScale.gridSm);
@@ -25,7 +25,16 @@
 @screen lg {
   :root {
     --text-ratio: theme(responsiveScale.textMd);
-    --title-ratio: theme(responsiveScale.titleMd);
+    --heading-ratio: theme(responsiveScale.headingMd);
+    --space-ratio: theme(responsiveScale.spaceMd);
+    --block-size-ratio: theme(responsiveScale.blockMd);
+    --grid-ratio: theme(responsiveScale.gridMd);
+  }
+}
+@screen hu {
+  :root {
+    --text-ratio: theme(responsiveScale.textMd);
+    --heading-ratio: theme(responsiveScale.headingHu);
     --space-ratio: theme(responsiveScale.spaceMd);
     --block-size-ratio: theme(responsiveScale.blockMd);
     --grid-ratio: theme(responsiveScale.gridMd);

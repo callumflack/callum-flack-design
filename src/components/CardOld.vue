@@ -15,23 +15,23 @@
         </h3>
         <div class="Card-body-meta">
           <!-- date -->
-          <span class="Text--sm">
+          <span class="Text-sm">
             {{ formatDate(post.attributes.createdAt) }}
           </span>
-          <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+          <span class="Text-sm inline-block mx-2px">&centerdot;</span>
           <!-- only show category on home -->
           <template v-if="$route.path === '/'">
-            <span class="Text--sm">{{ post.attributes.category }}</span>
-            <span class="Text--sm inline-block mx-2px">&centerdot;</span>
+            <span class="Text-sm">{{ post.attributes.category }}</span>
+            <span class="Text-sm inline-block mx-2px">&centerdot;</span>
           </template>
           <!-- tags -->
-          <span class="Text--sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
+          <span class="Text-sm" v-for="(tag, index) in tagsWithFeaturedRemoved">
             <span v-if="index != 0">, </span><span class="capitalize">{{ tag }}</span>
           </span>
           <!-- if writing, show reading time -->
           <template v-if="post.attributes.category === 'writing'">
-            <span class="Text--sm inline-block mx-2px">&centerdot;</span>
-            <span class="Text--sm">{{ post.attributes.readingTime }} mins</span>
+            <span class="Text-sm inline-block mx-2px">&centerdot;</span>
+            <span class="Text-sm">{{ post.attributes.readingTime }} mins</span>
           </template>
         </div>
       </div>

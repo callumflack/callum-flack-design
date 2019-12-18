@@ -1,5 +1,7 @@
 ---
 layout: post
+draft: true
+injectAllPosts: true
 date: 2019-03-01
 category: writing
 title: Notes on Deciphering Sun Tzu
@@ -11,9 +13,8 @@ nextPost:
   title: The matter of taste
   link: /blog/the-matter-of-taste
   hero: /images/post-lynch-bw.jpg
-tags: 
+tags:
   - notes
-  - featured
 card:
   bgColor: rgb(205, 228, 205)
 ---

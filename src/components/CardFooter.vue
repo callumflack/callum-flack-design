@@ -4,10 +4,11 @@
       <div class="Card">
         <div class="p-4 lg:p-6 border-b border-text">
           <!-- <h3 class="Display s-h">Ps.</h3> -->
-          <p class="s-2xh Link">
+          <p class="s-2h Link">
             Ps. You're on
             <saber-link to="/about">Callum Flack's website.</saber-link>
-            He also writes a bi-monthly email letter about design, UX and the web through the lens of people and attention.
+            He also writes a bi-monthly email letter about design, UX and the web
+            through the lens of people and attention.
             <saber-link to="/about">Here's the archives.</saber-link>
             Since you made it this far, you should probably sign up:
           </p>
@@ -23,9 +24,9 @@ import FormNewsletter from "./FormNewsletter";
 
 export default {
   components: {
-    FormNewsletter
+    FormNewsletter,
   },
-}
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -35,4 +36,3 @@ export default {
   /* @apply bg-brand-highlight; */
 }
 </style>
-

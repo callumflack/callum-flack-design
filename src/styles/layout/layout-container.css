@@ -7,11 +7,13 @@
 .container--text {
   @apply mx-auto;
   max-width: theme(screens.sm) !important;
+  max-width: 800px !important;
 }
 
 .container--list {
   @apply mx-auto;
   max-width: 740px !important;
+  max-width: 960px !important;
 }
 
 @media (max-width: 740px) {

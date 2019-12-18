@@ -1,69 +1,86 @@
 /*
 
   Headings: customisable starter pack
+  …uses the responsiveScale settings from `typography-scale`
 
-  Uses the responsiveScale settings from `typography-scale`
+  Default heading
 
  */
-
-.Heading,
-.Subheading
+.Markdown h1,
 .Markdown h2,
 .Markdown h3,
-.Metaheading {
-  /* @apply font-medium; */
-  @apply font-sans text-text;
-}
-
-.Metaheading,
-.Markdown h3,
-.Markdown h2 {
-  @apply font-sans leading-tight tracking-text;
-  /* @apply font-medium */
-}
-
-.Markdown h2 {
-  @apply font-medium;
-  font-size: calc(theme(fontSize.2xl) * var(--title-ratio));
-}
-.Markdown h3 {
-  @apply font-medium;
-  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
-}
-
-/* .Subheading {
-  @apply font-medium leading-snug;
-  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
-}
-
 .Heading {
-  @apply leading-snug uppercase;
-  font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
-} */
-
-/* Markdown theme example */
-/* .Markdown h2 {} */
-
+  @apply font-sans;
+  @apply font-normal;
+  @apply leading-tight;
+  font-size: calc(theme(fontSize.4xl) * var(--heading-ratio));
+}
 /*
 
-  Titles
-  Requires adding a font.title key:value in tailwind.config
+  Serif
+
+*/
+/* .Heading-serif {
+  @apply font-serif italic leading-snug tracking-wide;
+} */
+/*
+
+  Sizes using --text-ratio
 
  */
+.Markdown h3,
+.Heading-xl {
+  font-size: calc(theme(fontSize.xl) * var(--text-ratio));
+}
+.Markdown h2,
+.Heading-2xl {
+  font-size: calc(theme(fontSize.2xl) * var(--text-ratio));
+}
+.Heading-3xl {
+  font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
+}
 
-.Display,
-.Title {
-  @apply font-sans tracking-tight;
+.Markdown h1,
+.Heading-4xl {
+  font-size: calc(theme(fontSize.4xl) * var(--text-ratio));
+}
+.Heading-5xl {
+  font-size: calc(theme(fontSize.5xl) * var(--text-ratio));
+}
+.Heading-6xl {
+  font-size: calc(theme(fontSize.6xl) * var(--text-ratio));
+}
+.Heading-7xl {
+  font-size: calc(theme(fontSize.7xl) * var(--text-ratio));
+}
+/* .Heading-8xl {
+  font-size: calc(theme(fontSize.8xl) * var(--heading-ratio));
+} */
+/*
+
+  Tracking + leading at sizes
+
+ */
+.Heading-xl,
+.Heading-2xl,
+.Heading-3xl {
+  @apply leading-snug;
+  @apply tracking-tight;
+}
+.Heading-5xl,
+.Heading-6xl,
+.Heading-7xl,
+.Heading-8xl {
+  @apply leading-title;
+  @apply tracking-tight;
+}
+/*
+
+  Markdown theme: weights
+
+ */
+.Markdown h1,
+.Markdown h2,
+.Markdown h3 {
   @apply font-medium;
-}
-
-.Title {
-  @apply leading-tight;
-  font-size: calc(theme(fontSize.xl) * var(--title-ratio));
-}
-
-.Display {
-  @apply tracking-tighter leading-none;
-  /* @apply font-medium; */
-  font-size: calc(theme(fontSize.5xl) * var(--title-ratio));
 }

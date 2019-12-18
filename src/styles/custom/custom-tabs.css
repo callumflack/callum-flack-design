@@ -25,8 +25,15 @@
   transform: translateY(1px);
 }
 
-.Tab-controls--button:hover,
-.Tab-controls--button:active,
-.Tab-controls--button.is-active {
-  @apply border-text outline-none;
+.Tab-controls button {
+  @apply text-gray-500;
+  /* @apply border border-transparent;
+  @apply inline-flex;
+  transform: translateY(1px); */
+}
+
+.Tab-controls button:hover,
+.Tab-controls button:active,
+.Tab-controls button.is-active {
+  @apply text-black outline-none;
 }

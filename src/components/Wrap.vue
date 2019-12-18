@@ -1,63 +1,71 @@
 <template>
-  <!-- <div :class="reverseClass"> -->
-  <div class="relative">
-    <!-- home page only -->
-    <FullScreenImage v-if="$route.path === '/'"></FullScreenImage>
-    <!-- website default layout -->
-    <Nav :category="page.category" />
-    <div class="transition-body">
-      <Header
-        v-if="!$route.path.includes('blog')"
-        :title="page.title"
-        :lede="page.lede"
-      />
-      <main aria-label="Content">
-        <div :class="containerType">
-          <slot></slot>
+  <div>
+    <!-- inside `.page-body` for page transitions -->
+    <div class="page-body">
+      <!-- <nav
+        v-if="$route.path !== '/'"
+        class="Nav Text-lg w-full flex justify-between z-50"
+        :class="{ 'text-white opacity-75': invert }"
+      >
+        <saber-link to="/">&#8592; CFd</saber-link>
+        <saber-link to="/">
+          <icon name="close" height="0.75em" width="0.75em" class="mr-1"></icon>
+          Menu
+        </saber-link>
+      </nav> -->
+      <slot></slot>
+
+      <footer class="h-screen">
+        <div class="frame frame--header Block-t">
+          <PageContact class="frame-area-b"></PageContact>
         </div>
-      </main>
-      <Footer :kind="kind" :nextpost="page.nextPost" />
+      </footer>
     </div>
   </div>
 </template>
 
 <script>
-import Footer from "./Footer.vue";
-import FullScreenImage from "../components/FullScreenImage";
-import Header from "./Header.vue";
-import Nav from "../components/Nav";
+import PageContact from "../components/PageContact";
+/*
 
+  The Wrap component is like a default layout in Nuxt
+
+  Note: pageClass in a .md file adds a class to <html>.
+
+*/
 export default {
   components: {
-    Footer,
-    FullScreenImage,
-    Header,
-    Nav,
+    PageContact,
+    // ProjectRow,
   },
   props: {
     page: Object,
+    invert: Boolean,
     kind: String,
   },
   computed: {
-    /* reverse = white on black theme */
-    /* reverseClass() {
-      return this.$route.path === "/" && "reverse";
-    }, */
-    /* neutral theme is instead defined using page attrs */
-    /* neutralClass() {
-      return this.$route.path === "/about" && "neutral";
-    }, */
-    containerType() {
-      if (this.$route.path === "/") {
-        return;
-      } else if (this.kind === "post") {
-        return "container container--text";
-      }
-      return "container container--list";
-    },
     siteTitle() {
       return this.$siteConfig.title;
     },
+    projectBlockElement() {
+      if (this.$route.path === "/") {
+        return "main";
+      }
+      return "section";
+    },
+    /* showProjects() {
+      // show the projects list everywhere except:
+      // return this.$route.path != "/projects" || "/blog";
+      if (this.$route.path === "/projects") {
+        return false;
+      }
+      return true;
+    }, */
+    /* can't recursively `injectAllPosts` into a post */
+    /* use static `featuredPosts` data instead */
+    /* featuredPosts() {
+      return this.page.posts.filter(x => x.tags.includes("featured"));
+    }, */
   },
   head() {
     const { excerpt } = this.page;
@@ -119,81 +127,29 @@ export default {
 
 <style lang="postcss" scoped>
 /* TRANSITION */
-.page-enter-active .transition-body,
+/* .page-enter-active .transition-body,
 .page-leave-active .transition-body {
+  background-color: salmon;
   transition: all 10333ms cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .page-leave-to .transition-body {
   transform: translateX(5px);
   opacity: 0;
-}
-/*
-
-  REVERSE THEME
-  where .reverse is applied to the bounding div in this component
-
-*/
-.reverse {
-  @apply bg-text;
-}
-.reverse >>> .Nav {
-  @apply bg-text;
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-.reverse >>> .Nav-logo {
-  border-right-color: rgba(255, 255, 255, 0.1);
-}
-.reverse >>> .Nav-link,
-.reverse >>> .Signal,
-.reverse >>> .Display,
-.reverse >>> h1,
-.reverse >>> h2,
-.reverse >>> h3,
-.reverse >>> .text-text {
-  @apply text-white;
-}
-.reverse >>> .Nav-link.is-active span:after,
-.reverse >>> .router-link-exact-active span:after {
-  @apply bg-white;
-}
-/* .reverse >>> .Card-body-meta {
-  @apply text-white;
 } */
-.reverse >>> .IndexBlock {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
+.Nav {
+  @apply fixed;
+  margin-top: var(--spacing5);
+  padding-left: var(--gridMarginGap);
+  padding-right: var(--gridMarginGap);
 }
-.reverse >>> .Card {
-  border-color: rgba(255, 255, 255, 0.1);
-  min-height: 210px;
+/* .Footer >>> .frame-area-a {
+  @apply relative;
 }
-.reverse >>> .Input {
-  --button-invert-color: transparent;
-  --button-color: theme(colors.white);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.reverse >>> .Button--outline {
-  --button-invert-color: theme(colors.gray.600);
-  --button-color: theme(colors.gray.600);
-}
-.reverse >>> .Button--outline:hover {
-  --button-color: theme(colors.white);
-  --button-box-shadow-color: theme(colors.white);
-}
-.reverse >>> .Link a:not(.Button),
-.reverse >>> .Markdown a:not(.Button) {
-  @apply text-gray-600;
-  box-shadow: inset 0 -1px 0 #555;
-}
-.reverse >>> .Link a:hover:not(.Button),
-.reverse >>> .Markdown a:hover:not(.Button) {
-  @apply text-text;
-  box-shadow: inset 0 -25px 0 theme(colors.white);
-}
-.reverse >>> .glide__slide {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-.reverse >>> .glide button {
-  @apply text-gray-600;
-}
+.Footer >>> .frame-area-a:after {
+  @apply absolute left-0 h-px bg-black;
+  content: "";
+  top: -1.5em;
+  width: 150%;
+} */
 </style>
