@@ -95,16 +95,16 @@ module.exports = {
       ], */
     },
     fontSize: {
-      xxs: "0.6875rem", // 11 or 12
-      xs: "0.8125rem", // 13
-      sm: "0.9375rem", // 14 or 15
-      base: "0.9375rem", // 16
-      lg: "1.125rem", // 18
-      xl: "1.25rem", // 20
-      "2xl": "1.4375rem", // 24
-      "3xl": "1.6875rem", // 27
-      "4xl": "32px", // 32 or 36 or 40
-      "5xl": "48px", // 44
+      xxs: "11px",
+      xs: "13px",
+      sm: "15px",
+      base: "15px",
+      lg: "18px",
+      xl: "21px",
+      "2xl": "23px",
+      "3xl": "27px",
+      "4xl": "32px",
+      "5xl": "48px",
       "6xl": "60px",
       "7xl": "72px",
     },
