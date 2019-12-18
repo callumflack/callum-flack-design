@@ -36,7 +36,9 @@
           </span>
         </div>
       </div>
-      <p class="Card-detail Text-sm w-3/4 hu:7/12">{{ post.lede }}</p>
+      <p v-if="post.category === 'writing'" class="Card-detail Text-sm w-3/4 hu:7/12">
+        {{ post.lede }}
+      </p>
       <div class="Card-tags Text-xs text-gray mt-auto">
         <span v-for="(tag, index) in tagsWithFeaturedRemoved" :key="index">
           <span v-if="index != 0">,</span>
