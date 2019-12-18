@@ -1,11 +1,4 @@
 /* eslint-disable */
-require('./add-circle-outline')
-require('./add')
-require('./arrow_forward_ios')
 require('./close')
-require('./email')
 require('./grid')
-require('./phone')
 require('./sort')
-require('./sun')
-require('./twitter')

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="Heading Heading-4xl font-medium">Callum Flack Design</h2>
-    <p class="Space-t Space-sm">{{ about }}</p>
+    <p class="Space-t mb-2px">{{ about }}</p>
     <p class="Text Link mb-2px">
       <a :href="`mailto:${contact.email}`">
         <span class="Text-contact-type">E: </span>
@@ -14,8 +14,8 @@
         <span>+61(0) {{ contact.phone }}</span>
       </a>
     </p>
-    <div class="Space-t Space-lg">
-      <p class="Text mb-2">{{ signup }}</p>
+    <div class="Space-y">
+      <p class="Text mb-2px">{{ signup }}</p>
       <FormNewsletter></FormNewsletter>
     </div>
     <p class="Text-xs text-gray-dark">

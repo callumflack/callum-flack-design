@@ -5,12 +5,12 @@
     :href="post.link"
     :target="target"
     :rel="rel"
-    class="Row col-span-12 xl:col-start-2 xl:col-end-12"
+    class="Row"
   >
-    <h3 class="Heading Heading-4xl col-span-5">
+    <h3 class="Heading Heading-4xl font-medium col-span-6">
       {{ post.title }}
     </h3>
-    <div class="Text-sm text-gray col-span-4 Text--align">
+    <div class="Text-sm text-gray col-span-3 Text--align">
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
         :key="index"

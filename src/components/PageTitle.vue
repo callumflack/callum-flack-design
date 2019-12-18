@@ -8,7 +8,8 @@
         class="frame-area-a Heading Heading-4xl font-medium fixed z-50 Logo"
         :class="[headingInvertStyle, scrollInvertStyle]"
       >
-        <a v-if="$route.path === '/'" v-smooth-scroll="{ duration: 1000 }" href="#top">
+        <!-- v-smooth-scroll="{ duration: 1000 }" -->
+        <a v-if="$route.path === '/'" href="#top">
           CFd
         </a>
         <saber-link v-else to="/">
@@ -45,10 +46,10 @@
 </template>
 
 <script>
-import Vue from "vue";
+// import Vue from "vue";
 import PageTitleMeta from "../components/PageTitleMeta";
-import vueSmoothScroll from "vue-smooth-scroll";
-Vue.use(vueSmoothScroll);
+// import vueSmoothScroll from "vue-smooth-scroll";
+// Vue.use(vueSmoothScroll);
 
 export default {
   components: {
@@ -118,7 +119,13 @@ export default {
 </script>
 
 <style lang="postcss">
-/* IO thinga */
+@screen mobile {
+  .Logo {
+    @apply relative;
+    margin-top: calc(-1.333 * var(--spacing8));
+  }
+}
+/* IO thing */
 .io-target {
   @apply absolute;
   bottom: 9vh;
