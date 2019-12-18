@@ -4,7 +4,7 @@
     <SliderFrame class="">
       <main slot-scope="{ activeIndex, goToIndex }">
         <div class="frame">
-          <ul class="Tab-controls col-start-2">
+          <ul class="Tab-controls col-start-1 lg:col-start-4">
             <li>
               <button
                 :class="{ 'is-active': activeIndex === 0 }"
@@ -44,11 +44,13 @@
               v-if="page.posts && page.posts.length > 0"
               class="frame frame--projectRows"
             >
-              <ProjectRow
-                v-for="(item, index) in page.posts"
-                :key="index"
-                :post="item"
-              ></ProjectRow>
+              <div class="frame-area-a">
+                <ProjectRow
+                  v-for="(item, index) in page.posts"
+                  :key="index"
+                  :post="item"
+                ></ProjectRow>
+              </div>
             </SliderSlide>
           </SliderSlides>
         </div>
@@ -65,6 +67,7 @@ import SliderFrame from "../components/SliderFrame";
 import SliderSlides from "../components/SliderSlides";
 import SliderSlide from "../components/SliderSlide";
 import Wrap from "../components/Wrap.vue";
+// import "icons";
 
 export default {
   components: {

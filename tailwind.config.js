@@ -59,6 +59,8 @@ module.exports = {
       "64": "16rem",
     },
     screens: {
+      /* https://tailwindcss.com/docs/breakpoints/ */
+      mobile: { max: "414px" },
       sm: "414px",
       md: "768px",
       lg: "1024px",
@@ -83,7 +85,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['"Serif"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      /* serif: ['"Serif"', "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"], */
       /* mono: [
         "SFMono-Regular",
         "Consolas",

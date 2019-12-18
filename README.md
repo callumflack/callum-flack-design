@@ -14,6 +14,6 @@ You'll also see the entire design history carefully noted in the branches.
 - Tailwindcss
 - Imgix
 - [![Netlify Status](https://api.netlify.com/api/v1/badges/0db19891-49a0-488a-8adf-e738e49637d7/deploy-status)](https://app.netlify.com/sites/cfd/deploys)
-- Substack
+- Mailchimp
 
 ![Project screen-shot](v7-1907-suisse-swiss.jpg?raw=true "Project screen-shot")

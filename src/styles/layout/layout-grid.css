@@ -75,30 +75,19 @@
   margin: 0 var(--gridMarginGap);
 }
 
-/* .frame--intro {
-  grid-template-areas:
-    "b b b b b b b b b b b b"
-    "a a a a a a a a a a a a";
-}
-@screen md {
-  .frame--intro {
-    grid-template-areas: "a b b b b b b b . . . .";
-  }
-}
-@screen hu {
-  .frame--intro {
-    grid-template-areas: "a b b b b . . . . . . .";
-  }
-} */
-
 /* header (PageTitle) */
 
 .frame--header {
   grid-template-areas:
-    "b b b b b b b b b b b b"
-    "a a a a a a a a a a a a";
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b";
 }
-@screen md {
+@screen sm {
+  .frame--header {
+    grid-template-areas: "a a a b b b b b b b b .";
+  }
+}
+@screen lg {
   .frame--header {
     grid-template-areas: "a a b b b b b b b . . .";
   }
@@ -156,6 +145,17 @@
 
 .frame--projectRows {
   grid-row-gap: 0;
+  grid-template-areas: "a a a a a a a a a a a a";
+}
+@screen sm {
+  .frame--projectRows {
+    grid-template-areas: ". . . a a a a . . . . .";
+  }
+}
+@screen xl {
+  .frame--projectRows {
+    grid-template-areas: ". . . a a a a a a a a .";
+  }
 }
 
 .frame--projectCards {
@@ -167,16 +167,11 @@
     --gridColumnCount: 2;
   }
 }
-@screen md {
+@screen lg {
   .frame--projectCards {
     --gridColumnCount: 3;
   }
 }
-/* @screen hu {
-  .frame--projectCards {
-    --gridColumnCount: 4;
-  }
-} */
 @screen su {
   .frame--projectCards {
     --gridColumnCount: 4;

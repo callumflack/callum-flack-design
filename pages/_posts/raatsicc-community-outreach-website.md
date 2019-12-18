@@ -8,6 +8,8 @@ link: https://www.raatsicc.org.au/
 assets:
   # cover: /images/raatsicc-hero-job-1440.jpg
   cover: /images/raatsicc-card.jpg
+card:
+  externalLink: true
 tags:
   - design
   - frontend

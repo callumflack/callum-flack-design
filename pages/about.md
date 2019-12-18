@@ -11,7 +11,7 @@ pageClass: page-reverse
 
 <PageAboutServices></PageAboutServices>
 
-<div class="Block-t">&nbsp;</div>
+<div class="Block-t"></div>
 
 # A team you can talk to
 

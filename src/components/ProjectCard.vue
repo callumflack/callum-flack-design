@@ -170,4 +170,9 @@ export default {
   max-width: none;
   mix-blend-mode: multiply;
 }
+
+/* CARD DETAIL (lede) */
+.Card-detail {
+  @apply mb-3;
+}
 </style>

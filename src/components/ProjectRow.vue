@@ -5,12 +5,12 @@
     :href="post.link"
     :target="target"
     :rel="rel"
-    class="Row"
+    class="Row frame frame--projectRow"
   >
-    <h3 class="Heading Heading-4xl font-medium col-span-6">
+    <h3 class="Heading Heading-4xl font-medium frame-area-a">
       {{ post.title }}
     </h3>
-    <div class="Text-sm text-gray col-span-3 Text--align">
+    <div class="Text-sm text-gray Text--alignNotMobile Text--align frame-area-b">
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
         :key="index"
@@ -24,7 +24,7 @@
         <span>Design: {{ post.agency }}</span>
       </template>
     </div>
-    <div class="Text-sm col-span-1 Text--align">
+    <div class="Text-sm Text--align frame-area-c">
       <span class="Row-action">
         {{ type === "saber-link" ? "Read " : "Open " }}
       </span>
@@ -89,18 +89,35 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+/* ROW GRID */
+.frame--projectRow {
+  @apply m-0;
+  /* grid-template-columns: repeat(10, minmax(0, 1fr)); */
+  /* grid-column-gap: var(--gridColumnGap); */
+  grid-row-gap: var(--spacing2);
+  grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b c c c";
+}
+@screen md {
+  .frame--projectRow {
+    grid-template-areas: "a a a a a b b b b b c c";
+  }
+}
+@screen hu {
+  .frame--projectRow {
+    grid-template-areas: "a a a a a a b b b b c c";
+  }
+}
+
+/* ROW */
+
 .Row {
-  @apply grid py-8 relative cursor-pointer;
+  @apply py-8 relative cursor-pointer;
   @apply border-b;
   transition: all 1000ms ease;
   transform: translateZ(0);
   backface-visibility: hidden;
-  /* gird */
-  /* --gridColumnCount: 10; */
-  display: grid;
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-  grid-column-gap: var(--gridColumnGap);
-  grid-row-gap: 0;
 }
 .Row:before {
   @apply absolute left-0 bg-text h-px;
@@ -119,6 +136,11 @@ export default {
 .Row:focus .text-gray,
 .Row:hover .text-gray {
   @apply text-text !important;
+}
+@screen lg {
+  .Row {
+    @apply py-8;
+  }
 }
 
 /* TRANSITIONS */
@@ -149,14 +171,23 @@ export default {
   @apply flex justify-end;
 }
 .Text--align > span {
-  /* align-items: baseline;
-  align-content: flex-end; */
   align-self: flex-end;
+}
+@screen mobile {
+  .Text--alignNotMobile {
+    @apply block;
+  }
 }
 
 .Text-divider {
-  @apply mx-2;
-  margin-left: 0.5rem;
-  margin-right: 0.45rem;
+  /* @apply mx-2; */
+  margin-left: 0.333rem;
+  margin-right: 0.25rem;
+}
+@screen lg {
+  .Text-divider {
+    margin-left: 0.5rem;
+    margin-right: 0.45rem;
+  }
 }
 </style>
