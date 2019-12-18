@@ -1,6 +1,6 @@
 <template>
   <Wrap :page="page">
-    <header class="frame frame--lede Block">
+    <header class="frame frame--header Block">
       <h1 class="Text-sm frame-area-a">{{ page.title }}</h1>
       <p class="Block-sm-t frame-area-b">
         {{ page.lede }}

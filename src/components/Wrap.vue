@@ -16,7 +16,7 @@
       <slot></slot>
 
       <footer class="h-screen">
-        <div class="frame frame--lede Block-t">
+        <div class="frame frame--header Block-t">
           <PageContact class="frame-area-b"></PageContact>
         </div>
       </footer>

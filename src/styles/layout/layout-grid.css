@@ -91,25 +91,25 @@
   }
 } */
 
-/* lede (PageTitle) */
+/* header (PageTitle) */
 
-.frame--lede {
+.frame--header {
   grid-template-areas:
     "b b b b b b b b b b b b"
     "a a a a a a a a a a a a";
 }
 @screen md {
-  .frame--lede {
+  .frame--header {
     grid-template-areas: "a a b b b b b b b . . .";
   }
 }
 @screen hu {
-  .frame--lede {
+  .frame--header {
     grid-template-areas: "a a . b b b b b . . . .";
   }
 }
 @screen su {
-  .frame--lede {
+  .frame--header {
     grid-template-areas: "a a . b b b b . . . . .";
   }
 }

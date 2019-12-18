@@ -1,5 +1,5 @@
 <template>
-  <footer class="frame frame--lede Block-md-t Block-b">
+  <footer class="frame frame--header Block-md-t Block-b">
     <PageContact></PageContact>
   </footer>
 </template>

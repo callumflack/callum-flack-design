@@ -3,7 +3,7 @@
     <!-- hero image slot -->
     <slot name="image"></slot>
     <!-- title block -->
-    <div class="frame frame--lede relative" :class="headerLayoutStyle">
+    <div class="frame frame--header relative" :class="headerLayoutStyle">
       <nav
         class="frame-area-a Heading Heading-4xl font-medium fixed z-50 Logo"
         :class="[headingInvertStyle, scrollInvertStyle]"
