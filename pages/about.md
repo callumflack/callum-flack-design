@@ -4,7 +4,7 @@ layout: page
 title: A tiny, fast design + technology partner
 pageTitle: About
 # lede: Callum Flack Design is fluid across graphic design, information design and frontend development. Because the quality of the connections crystalises the quality of the whole.
-lede: We're a tiny product interface team fluid across graphic design, user interface design, frontend development and backend management. Everything you need to create beautifully designed hypertext products, but without the overhead.
+lede: We're a tiny, fast team fluid across graphic design, user interface design, frontend development and backend management. Everything you need to create beautifully designed hypertext products, but without the overhead.
 # injectAllPosts: true
 pageClass: page-reverse
 ---
