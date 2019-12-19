@@ -6,11 +6,11 @@ title: Album Registry
 lede: Design and development of a crowd-funding platform to help pro photographers grow their business.
 link: https://albumregistry.com/
 assets:
-  cover: /images/albumregistry-new-profile-2500.jpg
+  cover: /images/album-registry-card.jpg
 heroShowCover: false
 card:
   externalLink: false
-tags: 
+tags:
   - design
   - frontend
 ---

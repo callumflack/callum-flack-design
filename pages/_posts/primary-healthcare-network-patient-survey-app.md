@@ -4,7 +4,9 @@ category: projects
 title: Primary Healthcare Network NQ
 date: 2016-08-12
 lede: A mobile-first responsive web app to survey patient well-being in North Queensland.
-tags: 
+assets:
+  cover: /images/phn-card.jpg
+tags:
   - design
   - frontend
 ---
@@ -20,7 +22,6 @@ All data collected was anonymous. At survey completion, users were presented wit
 Close collaboration was essential: I had to understand the use cases for the survey for PHN staff, service providers and patients. The better the experience, the more people will complete the survey, and the greater benefit for PHN.
 
 <Media frame ratio="2304/3072" image="/images/phn-survey-score.png" />
-
 
 A well-defined series of workflows with clear interface design means the app can be used with no more than general smartphone knowledge. However, I also provided guides and screencasts for staff and their patients to encourage their use.
 

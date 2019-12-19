@@ -5,13 +5,13 @@ date: 2017-01-15
 title: LendFirst
 lede: A content-managed website to help spread positive community outreach news.
 link: https://lendfirst.com.au/
-assets: 
-  cover: /images/lendfirst-options-1440.jpg
+assets:
+  cover: /images/lendfirst-card.jpg
 hero:
   showCover: false
 card:
   externalLink: true
-tags: 
+tags:
   - design
   - frontend
 ---

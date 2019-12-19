@@ -5,10 +5,10 @@ title: Forte Labs RandomNote for Evernote
 date: 2018-07-01
 link: https://evernote-random.glitch.me/
 assets:
-  cover: /images/fortelabs-randomnote-note-1024.jpg
+  cover: /images/randomnote-card.jpg
 card:
   externalLink: true
-tags: 
-- design
-- frontend
+tags:
+  - design
+  - frontend
 ---

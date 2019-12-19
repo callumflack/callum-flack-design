@@ -7,7 +7,7 @@ lede: Building an online reputation for a renowned Australasian Healthcare commu
 agency: Ward6
 link: https://www.ward6.asia/
 assets:
-  cover: /images/ward6-hero.jpg
+  cover: /images/ward6-card.jpg
 nextProject: /work/ward6-edetailers
 nextProjectTitle: Pharma eDetailer apps
 tags:

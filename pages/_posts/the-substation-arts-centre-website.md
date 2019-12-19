@@ -6,7 +6,7 @@ title: The Substation
 # lede: Website redesign for a contemporary, community-based in Melbourne, Australia.
 link: https://thesubstation.org.au/
 assets:
-  cover: /images/thesubstation-hero-bunker-1440.jpg
+  cover: /images/the-substation-card.jpg
 nextProject: /work/primary-healthcare-network
 nextProjectTitle: Primary Healthcare Network
 tags:

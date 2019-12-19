@@ -4,13 +4,13 @@ layout: post
 date: 2017-11-15
 title: Wild Aviation
 link: https://www.wildaviationservices.com.au/
-assets: 
-  cover: /images/wild-aviation-hero.jpg
+assets:
+  cover: /images/wild-aviation-card.jpg
 hero:
   showCover: false
 card:
   externalLink: true
-tags: 
+tags:
   - design
   - frontend
 ---
