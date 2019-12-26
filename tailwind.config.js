@@ -60,8 +60,8 @@ module.exports = {
     },
     screens: {
       /* https://tailwindcss.com/docs/breakpoints/ */
-      mobile: { max: "414px" },
-      sm: "414px",
+      mobile: { max: "513px" },
+      sm: "513px",
       md: "768px",
       lg: "1024px",
       xl: "1366px",
