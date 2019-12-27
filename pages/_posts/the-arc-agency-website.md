@@ -13,7 +13,6 @@ assets:
 card:
   externalLink: true
 tags:
-  - design
   - frontend
 ---
 
