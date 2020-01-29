@@ -77,9 +77,9 @@ In this way, a spreadsheet can absolutely contain beauty. Humans naturally seek 
 
 ## Irrational beauty matters more than we dare admit
 
-Our irrational response to beauty is the reason why advertising sells not to our intellect but to our emotional feelings: "you’ll feel better when you have this". It's why people will say "I'll know it when I see it" even though they can't explain what they're looking for. It's why a picture is worth a thousand words. It's what Buckminster Fuller meant when he said "if the solution is not beautiful, I know it is wrong."
+Our arational response to beauty is the reason why advertising sells not to our intellect but to our emotional feelings: "you’ll feel better when you have this". It's why people will say "I'll know it when I see it" even though they can't explain what they're looking for. It's why a picture is worth a thousand words. It's what Buckminster Fuller meant when he said "if the solution is not beautiful, I know it is wrong."
 
-Irrational beauty initiates thinking. I can tell you to think of the brilliantly patterned sea slug that introduced this post, and then describe the above picture of Reebok Instapumps as "venomous", and I know you'll understand me.
+Arrational^1^ beauty initiates thinking. I can tell you to think of the brilliantly patterned sea slug that introduced this post, and then describe the above picture of Reebok Instapumps as "venomous", and I know you'll understand me.
 
 <!-- and know you'll understand me somewhat more easily than you would have at the start of this article. That's because I know you've seen the brilliantly patterned sea slug that introduced the article—which despite being beautiful we'd be hesitant to touch—and I'm drawing out that residual feeling of it's beauty in your recent memory to make my word-play.-->
 
@@ -98,6 +98,10 @@ Faced with a decision between two objects, we'll choose the one we developed an 
 Every one of us post-rationalises our decisions as it suits us. The reasons for our choices are deeper than we think. While they won't tell you, people will sense incongruence and walk away. Or they will notice seamless and cohesive symmetry in a fraction of a second, and begin inspecting.
 
 As we move toward "peak attention", it pays not to underestimate how powerful, calming and attentive the feeling of beauty can be.
+
+---
+
+1. Thanks to [Stephen Pimentel](https://twitter.com/StephenPiment/status/1222397767743504385?s=20) for pointing out the difference between irrational (contrary to reason) and arational (not grasped by reason). "Beauty is a Schelling point", indeed. {.Note}
 
 <script>
 import Media from "../../src/components/Media";
