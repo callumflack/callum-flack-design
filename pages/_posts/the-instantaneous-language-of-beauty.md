@@ -75,7 +75,7 @@ In this way, a spreadsheet can absolutely contain beauty. Humans naturally seek 
 
 <Media ratio="9/16" image="/images/post-aesthetics-instapumps.jpg"/>
 
-## Irrational beauty matters more than we dare admit
+## Arrational beauty matters more than we dare admit
 
 Our arational response to beauty is the reason why advertising sells not to our intellect but to our emotional feelings: "you’ll feel better when you have this". It's why people will say "I'll know it when I see it" even though they can't explain what they're looking for. It's why a picture is worth a thousand words. It's what Buckminster Fuller meant when he said "if the solution is not beautiful, I know it is wrong."
 
