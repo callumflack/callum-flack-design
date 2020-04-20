@@ -1,7 +1,12 @@
 <template>
   <div class="AspectMedia Grid-extract--post">
     <span :class="['relative', { Frame: frame || caption }]">
-      <ImageDynamic :src="image" :alt="title" :ratio="ratio" />
+      <ImageDynamic
+        :src="image"
+        :alt="title"
+        :ratio="ratio"
+        :transparent="transparent"
+      />
     </span>
     <figcaption
       v-if="caption"
@@ -12,12 +17,12 @@
 </template>
 
 <script>
-import Aspect from "./Aspect";
+// import Aspect from "./Aspect";
 import ImageDynamic from "./ImageDynamic";
 
 export default {
   components: {
-    Aspect,
+    // Aspect,
     ImageDynamic,
   },
   props: {
@@ -26,14 +31,18 @@ export default {
     caption: String,
     ratio: String,
     frame: Boolean,
+    transparent: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
 </script>
 
 <style lang="postcss" scoped>
 /* Frame without stuffing up the aspect ratio */
-.Frame:after {
-  @apply absolute inset-0 border border-gray-400;
+.Frame >>> figure:after {
+  @apply absolute inset-0 border border-gray-300;
   content: "";
 }
 </style>

@@ -3,7 +3,7 @@
     ref="image"
     :ratio="ratio"
     :style="aspectRatio"
-    :class="[useAspectRatio, containBlurIn]"
+    :class="[useAspectRatio, containBlurIn, backgroundColor]"
   >
     <client-only>
       <v-lazy-image :src="url" :src-placeholder="urlPlaceholder" :alt="alt" />
@@ -41,6 +41,7 @@ export default {
       default: "",
     },
     alt: String,
+    transparent: Boolean,
     cover: {
       type: Boolean,
       default: false,
@@ -69,6 +70,9 @@ export default {
     },
     containBlurIn() {
       return !this.caption && "overflow-hidden";
+    },
+    backgroundColor() {
+      return this.transparent ? "bg-transparent" : "bg-black";
     },
   },
   mounted() {
@@ -99,7 +103,7 @@ figure {
   @apply relative;
   /* @apply overflow-hidden; */ /* 1 */
   @apply m-0 !important; /* 2 */
-  @apply bg-black; /* 3 */
+  /* @apply bg-black; */ /* 3 */
 }
 
 /*
