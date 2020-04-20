@@ -97,7 +97,7 @@ export default {
       lede:
         "Curious from the outset, continually learning to keep apace with the ongoing web tech revolutions, Barry is proficient with Vue.js, React.js and Node.js. He recently singlehandedly engineered a custom portal for handling large scale product distribution at Rachio Inc, proving his capacity for diligent problem-solving. As expected, he's a dab hand with other technologies like PHP, Wordpress, SQL and Python. Barry is also a drummer.",
       contacts: {
-        email: "barry@callumflack.design",
+        email: "barryph@protonmail.com",
         github: "barryph",
       },
     },
