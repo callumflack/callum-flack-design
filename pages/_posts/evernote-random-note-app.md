@@ -1,7 +1,7 @@
 ---
 layout: post
 category: projects
-title: Forte Labs RandomNote for Evernote
+title: Forte Labs RandomNote
 date: 2018-07-01
 link: https://evernote-random.glitch.me/
 assets:
