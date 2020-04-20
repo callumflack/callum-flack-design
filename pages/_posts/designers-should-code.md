@@ -1,6 +1,5 @@
 ---
 layout: post
-draft: true
 category: writing
 date: 2018-02-09
 title: Designers should code
