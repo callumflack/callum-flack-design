@@ -120,4 +120,4 @@ Now is the right time to jump on the bandwagon, where you'll get the optimism an
 
 1. Despite all the social media publishing platforms available, a website is still where a business can retain most control over the presentation of their core value proposition, and it's probably still the first thing a potential customer will click to from a search. Oh and forget native apps for business brand & value proposition sites, web search won. {.Note}
 
-2. I’m not a born developer and I don’t have the baggage of having transferred out of a decade of PHP in the early 2010s. Instead, I was a graphic designer for well over a decade before I started learning to program. There was a lot I haven’t had to unlearn because I never learned it in the first place. {.Note}
+2. I never had to transfer out of a decade of PHP in the early 2010s. Instead, I was a graphic designer for well over a decade before I started learning to program. this made it easier for me to embrace new web technologies. There was a lot I haven’t had to unlearn because I never learned it in the first place. {.Note}
