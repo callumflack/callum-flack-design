@@ -72,7 +72,7 @@ export default {
       return !this.caption && "overflow-hidden";
     },
     backgroundColor() {
-      return this.transparent ? "bg-transparent" : "bg-black";
+      return this.transparent ? "bg-transparent" : "bg-cleared-peach";
     },
   },
   mounted() {
