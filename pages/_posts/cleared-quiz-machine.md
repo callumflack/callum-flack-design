@@ -1,42 +1,45 @@
 ---
 layout: post
-injectAllPosts: true
 category: projects
 date: 2022-03-16
-title: The Cleared Quiz Machine
-lede: Yada yada yada…
+title: Building the Cleared Quiz Machine
+lede: A case study in scoping, designing and building a scalable Allergy Diagnosis Quiz system for Cleared, a digital healthcare platform I've been working with.
 readingTime: 6
 assets:
-  # cover: /images/post-2019-half-year-review.jpg
+  cover: /images/cleared-card.jpg
 hero:
-  showCover: true
+  showCover: false
   ratio: 8 / 16
-  imageBlend: 0.1
-  titleInvert: true
+  # imageBlend: 0.1
+  titleInvert: false
+heroKlass: "bg-cleared-peach"
 nextPost:
   title: Is the Creative Director Dead?
   link: /blog/is-the-creative-director-dead
   hero: /images/post-creative-director-dead.jpg
 tags:
-  - notes
-  - featured
+  - engineering
+  - frontend
+  - product design
 ---
 
-Written by Barry P. Hood, [Zach Hay](https://www.linkedin.com/in/zahay/), and Callum Flack
-
-[insert picture here] — Callum
+<!-- [insert picture here] — Callum -->
 
 Cleared is a digital health startup, [recently acquired by LifeMD](https://www.globenewswire.com/news-release/2022/01/12/2365613/6480/en/LifeMD-Expands-Patient-Offerings-by-Acquiring-Leading-Allergy-Telehealth-Platform.html), that delivers allergy medications directly to your door. Our users visit the Cleared website, complete an allergy quiz, get custom recommendations, and then order treatments for delivery directly to their home address.
 
-The Cleared Dev Team stared Q3 2021 with a big scalability problem: each Cleared Quiz was a standalone piece of code, so it took forever to create a new one even though our product team wanted to spin up new quizzes quickly. Enter the quiz machine: a scalable, on-demand quiz system that allows the Cleared product team to quickly create quizzes with minimal developer involvement. 
+The Cleared Dev Team started Q3 2021 with a big scalability problem: each Cleared Quiz was a standalone piece of code, so it took forever to create a new one even though our product team wanted to spin up new quizzes quickly. Enter the quiz machine: a scalable, on-demand quiz system that allows the Cleared product team to quickly create quizzes with minimal developer involvement.
 
-This blog post gives an overview of the pieces of the Quiz Machine and the biggest obstacles we faced that Zach, Barry and myself wrote together as a development team.
+This post gives an overview of the pieces of the Quiz Machine and the biggest obstacles we faced that [Zach](https://www.linkedin.com/in/zahay/), [Barry](https://github.com/BarryPH) and myself wrote together as a development team.
 
-To see an example of the Quiz Machine in action, checkout our [Environmental Allergy Quiz](https://portal.getcleared.com/start/environmental-allergy-quiz).
+To see an example of the Quiz Machine in action, checkout our [Environmental Allergy Quiz](https://portal.getcleared.com/start/environmental-allergy-quiz) or watch the 6 minute demo below.
+
+<MediaVideo showControls src="693001127" ratio="720/1044">
+  <p class="Note">Quiz Machine demo, February 2020</p>
+</MediaVideo>
 
 ## Our Stack
 
-There are three parts to our stack: the frontend, the backend, and Services. We use a NextJS application with Chakra and Formik on the fronted end. On the backend, we use ExpressJS with [the Bulletproof Architecture](https://softwareontheroad.com/ideal-nodejs-project-structure/) and Postgres. We host both the NextJS and ExpressJS apps on [Render](https://render.com/). 
+There are three parts to our stack: the frontend, the backend, and Services. We use a NextJS application with Chakra and Formik on the fronted end. On the backend, we use ExpressJS with the [Bulletproof Architecture](https://softwareontheroad.com/ideal-nodejs-project-structure/) and Postgres. We host both the NextJS and ExpressJS apps on [Render](https://render.com/). 
 
 There are a large number of 3rd-party services needed to make a digital health company like Cleared work properly. Here are some of the most important ones:
 
@@ -69,9 +72,11 @@ Finally, the checkout is the cornerstone of the Cleared ecommerce system: having
 
 The checkout interface is multi-faceted: it has to group and clarify each product and clearly associate it with the listed totals to make it easy for a user to understand what they’re buying. 
 
-[insert picture of checkout here]
-
 And because we require a Doctor’s prescription (via the MDIntegrations EHR), we don’t charge these payments immediately. Instead we accept the payment details (via Stripe) and await the Doctor’s prescription before triggering a Stripe charge.
+
+<MediaVideo frame src="693371475" ratio="8/10">
+  <p class="Note">Custom checkout with multiple user options</p>
+</MediaVideo>
 
 ### Capable Health: The Quiz CMS
 
@@ -85,7 +90,7 @@ Extending Capable Health, we were able to implement condition flows that allow q
 
 ### MDIntegrations: The EHR
 
-In the world of digital health, physicians need an Electronic Health Record (EHR) to manage sensitive patient data, handle patient cases and prescribe medications in a HIPAA compliant manner. We chose MDIntegrations as our new EHR replacing a legacy system.
+In the world of digital health, physicians need an Electronic Health Record (EHR) to manage sensitive patient data, handle patient cases and prescribe medications in a HIPAA compliant manner. We chose [MDIntegrations](https://mdintegrations.com/) as our new EHR replacing a legacy system.
 
 One of the key benefits of MDIntegrations is webhooks. With webhooks, we no longer have to maintain our own system of cron jobs to periodically query the API. This is very useful for keeping synchronization between our server and our EHR system, saving the time of our doctors. When events reach our server in real time we can process cases without delay, meaning our doctors can approve medications, wait for payment and transmit the prescriptions all in one sitting. We also built a queue system to make the webhooks even more reliable. This adds the extra reliability of an [events endpoint](https://blog.sequin.io/events-not-webhooks) over webhooks.
 
@@ -95,7 +100,7 @@ MDIntegrations is an API based EHR. Being able to tightly integrate lets us refl
 
 Our ExpressJS server coordinates between the frontend and all our services like MDIntegrations, Capable Health, and Stripe. Users interact directly with the Cleared frontend, while doctors can work within the tools they’re familiar with and handle cases entirely through MDIntegrations and the product team can create and modify quizzes in Capable Health.
 
-## Biggest obstacles
+## The biggest obstacles
 
 Picking and then integrating with the right services for the quiz machine (ie. MDintegrations, Capable Health, and Stripe) was a large obstacle. In hindsight, we know exactly what is required to get the Quiz Machine working but making the right decisions among many different service options was a big challenge. One of the most important things we did during this period was developing close working relationships with the dev teams of MDIntegrations and Capable Health. Inevitably, things broke. And then we worked together to fix them. In using their product, we helped them scale their offering, and we got something that better suited our needs.
 
@@ -106,7 +111,7 @@ Here are some additional obstacles:
 - [HIPAA compliance](https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html) across our services to ensure the security of our patient health information;
 - allowing quizzes to be created and managed at scale by a non-technical product team;
 
-possible picture of github commit history
+<Media ratio="440/1680" image="/images/cleared-quiz-machine-commits.jpg" caption="Code tempo visualisation with the final downhill slope representing release convergence" />
 
 ## Future Directions
 
@@ -115,4 +120,21 @@ The Quiz Machine has been a great improvement to the Cleared Stack but it isn’
 - Checkpointing + To-Dos. We want to make it easy for a user to pick back up where they left off on a quiz. If they only got halfway through a quiz, we want to send them an email reminder to finish. If they completed the quiz, we want to show them a to-do in their home screen to finish checkout on the quiz.
 - Landing Pages. Each quiz needs a beautiful landing page that is easy to spin up. Right now, we can create landing pages but it takes a lot of time for both our designers and dev team. We need a more scalable solution.
 
-While invention is fun, it only continues to exist if it’s maintainable. We did a good job of planning ahead for feature additions and maintenance in future and by choosing to build base-level primitives (such as standardized query parameters). Whatever design decisions we made, we made with the intention of writing code that was as easy to understand (and extend) as possible.
+While invention is fun, it only continues to exist if it’s maintainable. We did a good job of planning ahead for feature additions and maintenance in future by choosing to build base-level primitives (such as standardized query parameters). Whatever design decisions we made, we made with the intention of writing code that was as easy to understand—and extend or delete—as possible.
+
+<PostButton link="https://www.getcleared.com" label="Visit Cleared" />
+
+Written by [Barry Hood](https://github.com/BarryPH), [Zach Hay](https://www.linkedin.com/in/zahay/), and Callum Flack, March 2022 {.Note}
+
+<script>
+import Media from "../../src/components/Media";
+import MediaVideo from "../../src/components/MediaVideo";
+import PostButton from "../../src/components/PostButton";
+export default {
+  components: {
+    Media,
+    MediaVideo,
+    PostButton
+  }
+}
+</script>
