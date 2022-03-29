@@ -1,6 +1,7 @@
 ---
 layout: post
-injectAllPosts: true
+# injectAllPosts: true
+draft: true
 category: writing
 date: 2019-08-30
 title: 2019 half-year review

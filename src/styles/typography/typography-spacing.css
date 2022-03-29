@@ -31,6 +31,7 @@
 .Markdown p:not(:last-child),
 .Markdown ul:not(:last-child),
 .Space-block > *:not(:last-child),
+.Space-b,
 .Space {
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
 }
@@ -90,4 +91,12 @@
 
 .Space-input {
   margin-bottom: calc(theme(spacing.4) * var(--space-ratio));
+}
+
+/* Markdown specials */
+.Markdown h2 + h3 {
+  @apply mt-0 !important;
+}
+.Space-lg-t + .Note {
+  margin-top: calc(theme(spacing.8) * var(--space-ratio));
 }

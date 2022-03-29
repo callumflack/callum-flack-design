@@ -1,11 +1,11 @@
 ---
 layout: post
-draft: true
-injectAllPosts: true
+# draft: true
+# injectAllPosts: true
 date: 2019-03-01
 category: writing
 title: Notes on Deciphering Sun Tzu
-lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, as opposed to the Western rational means-end strategy I’ve been raised on.
+lede: My notes on the book “Deciphering Sun Tzu” which helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy of condition-consequence, adjacent to the Western rational means-end strategy of my cultural heritage.
 readingTime: 6
 assets:
   cover: /images/post-notes-on-sun-tzu-cover.jpg
@@ -15,11 +15,12 @@ nextPost:
   hero: /images/post-lynch-bw.jpg
 tags:
   - notes
+# used for a card's bgColor
 card:
   bgColor: rgb(205, 228, 205)
 ---
 
-‪I've always enjoyed the poetics of ancient Chinese philosophy and by extension Zen Buddhism.‬ ‪Whereas friends just didn't get The Art of War or Tao Te Ching, I found them obvious and favourable within the first page. Yet even though I've read these books repeatedly over two decades, I've never lived within these cultures, let alone even visited their countries. So my appreciation has been mostly for their poetics.
+I've always enjoyed the poetics of ancient Chinese philosophy and by extension Zen Buddhism. Whereas friends just didn't get The Art of War or Tao Te Ching, I found them obvious and favourable within the first page. Yet even though I've read these books repeatedly over two decades, I've never lived within these cultures, let alone even visited their countries. So my appreciation has been mostly for their poetics.
 
 I’ve been doing a reading club on strategy for the past few months. We read books and pool notes on them. One book that has particularly stood out for me was ["Deciphering Sun Tzu: How To Read 'The Art Of War'" by Derek M. C. Yuen](https://www.amazon.com/Deciphering-Sun-Tzu-How-Read/dp/0199373515), which [Ben Mosior](https://twitter.com/BenMosior) gladly shared. "Deciphering Sun Tzu" helped me understand the poetic paradoxes of ancient Chinese Philosophy as an alternative and coherent strategy to how we’ve been raised to think in Western society. Here's a mutated summary of Ben's notes, mostly for my own understanding.
 

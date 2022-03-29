@@ -1,6 +1,7 @@
 ---
 category: projects
 layout: post
+draft: true
 date: 2019-10-30
 title: Clay Health & Organics
 agency: Hours After
@@ -15,7 +16,7 @@ tags:
   - frontend
 ---
 
-<Media src="/images/billys-coffee-hero.jpg" />
+<Media image="/images/billys-coffee-hero.jpg" />
 
 <PostButton link="https://billyscoffeecairns.com.au/" label="Visit Billy's Coffee" />
 

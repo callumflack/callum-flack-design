@@ -4,20 +4,25 @@
       <PageTitle
         :page="page"
         :invert="page.hero && page.hero.titleInvert"
-        :style="heroBlockColor"
         show-meta
         class="Block-md-b"
+        :class="{ 'Hero--cleared': this.$route.path.includes('cleared') }"
       >
         <!-- if post hero image -->
         <template v-if="page.hero && page.hero.showCover" v-slot:image>
-          <ImageDynamic :src="page.assets.cover" :alt="page.title" cover />
+          <ImageDynamic
+            :alt="page.title"
+            cover
+            :class="page.heroKlass"
+            :src="page.assets.cover"
+          />
           <div class="absolute inset-0" :style="heroImageBlend"></div>
         </template>
       </PageTitle>
 
       <!-- article -->
       <main
-        class="frame frame--article"
+        class="frame frame--article Block-sm-t"
         :class="{ 'Block-sm-t': page.hero && page.hero.showCover }"
       >
         <div
@@ -33,7 +38,7 @@
 </template>
 
 <script>
-import Aspect from "../components/Aspect";
+// import Aspect from "../components/Aspect";
 import PageTitle from "../components/PageTitle.vue";
 import ImageDynamic from "../components/ImageDynamic";
 import Wrap from "../components/Wrap";
@@ -48,7 +53,7 @@ import formatListDate from "../utils/formatListDate";
 */
 export default {
   components: {
-    Aspect,
+    // Aspect,
     ImageDynamic,
     PageTitle,
     Wrap,
@@ -78,7 +83,7 @@ export default {
         : "text-gray-600";
     },
     tagsWithFeaturedRemoved() {
-      return this.page.tags.filter(x => x !== "featured");
+      return this.page.tags.filter((x) => x !== "featured");
     },
   },
   methods: {
@@ -95,5 +100,8 @@ export default {
   margin-bottom: calc(theme(spacing.10) * var(--block-size-ratio)); */
   margin-top: var(--spacing7);
   margin-bottom: var(--spacing7);
+}
+.Hero--cleared {
+  background: linear-gradient(0deg, rgb(252, 216, 205) 0%, rgb(232, 229, 221) 100%);
 }
 </style>

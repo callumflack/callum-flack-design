@@ -16,7 +16,7 @@ tags:
   - frontend
 ---
 
-<Media src="/images/network-architectural-contact-hero.jpg" />
+<Media image="/images/network-architectural-contact-hero.jpg" />
 
 <PostButton link="https://www.networkarchitectural.com.au/" label="Visit Network Architectural" />
 

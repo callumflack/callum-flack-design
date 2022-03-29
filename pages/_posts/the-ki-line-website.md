@@ -13,7 +13,7 @@ tags:
   - frontend
 ---
 
-<Media src="/images/thekiline-home-1440.jpg" />
+<Media image="/images/thekiline-home-1440.jpg" />
 
 <PostButton link="https://kiwoyke.coach/" label="Visit The Ki Line" />
 

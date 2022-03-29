@@ -17,6 +17,9 @@ module.exports = {
         header: "#efefe9",
         bg: "#fefefe",
       },
+      cleared: {
+        peach: "#f9a991",
+      },
       gray: {
         100: "#f7fafc",
         200: "rgba(0, 0, 0, 0.05)",
@@ -162,11 +165,11 @@ module.exports = {
       wider: "0.06em",
       widest: "0.1em",
     },
-    textColors: theme => ({
+    textColors: (theme) => ({
       ...theme("colors"),
       base: theme("colors.gray.600"),
     }),
-    backgroundColor: theme => theme("colors"),
+    backgroundColor: (theme) => theme("colors"),
     backgroundPosition: {
       bottom: "bottom",
       center: "center",
@@ -191,7 +194,7 @@ module.exports = {
       "4": "4px",
       "8": "8px",
     },
-    borderColor: theme => ({
+    borderColor: (theme) => ({
       ...theme("colors"),
       default: theme("colors.gray.300", "currentColor"),
     }),
@@ -211,7 +214,7 @@ module.exports = {
       move: "move",
       "not-allowed": "not-allowed",
     },
-    width: theme => ({
+    width: (theme) => ({
       auto: "auto",
       ...theme("spacing"),
       "1/2": "50%",
@@ -243,13 +246,13 @@ module.exports = {
       full: "100%",
       screen: "100vw",
     }),
-    height: theme => ({
+    height: (theme) => ({
       auto: "auto",
       ...theme("spacing"),
       full: "100%",
       screen: "100vh",
     }),
-    padding: theme => theme("spacing"),
+    padding: (theme) => theme("spacing"),
     margin: (theme, { negative }) => ({
       auto: "auto",
       ...theme("spacing"),

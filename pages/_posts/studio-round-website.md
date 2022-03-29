@@ -16,7 +16,7 @@ tags:
   - frontend
 ---
 
-<!-- <Media src="/images/billys-coffee-hero.jpg" />
+<!-- <Media image="/images/billys-coffee-hero.jpg" />
 
 <PostButton link="https://billyscoffeecairns.com.au/" label="Visit Billy's Coffee" /> -->
 

@@ -1,16 +1,17 @@
 <template>
   <div class="AspectMedia Grid-extract--post">
-    <span :class="['relative', { Frame: frame || caption }]">
+    <span :class="['relative', { Frame: frame }]">
       <ImageDynamic
-        :src="image"
         :alt="title"
+        :class="klass"
+        :src="image"
         :ratio="ratio"
         :transparent="transparent"
       />
     </span>
     <figcaption
       v-if="caption"
-      class="Text-base text-gray st-h"
+      class="Text-base text-gray Space-t"
       v-html="caption"
     ></figcaption>
   </div>
@@ -29,6 +30,10 @@ export default {
     image: String,
     title: String,
     caption: String,
+    klass: {
+      type: String,
+      default: "",
+    },
     ratio: String,
     frame: Boolean,
     transparent: {
@@ -44,5 +49,6 @@ export default {
 .Frame >>> figure:after {
   @apply absolute inset-0 border border-gray-300;
   content: "";
+  z-index: 11;
 }
 </style>
