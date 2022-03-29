@@ -15,7 +15,7 @@ tags:
   - frontend
 ---
 
-<!-- <Media src="/images/billys-coffee-hero.jpg" /> -->
+<!-- <Media image="/images/billys-coffee-hero.jpg" /> -->
 
 More info coming soon…
 

@@ -16,7 +16,7 @@ tags:
   - frontend
 ---
 
-<Media src="/images/lendfirst-options-1440.jpg" />
+<Media image="/images/lendfirst-options-1440.jpg" />
 
 <PostButton link="https://lendfirst.com.au/" label="Visit Lendfirst" />
 

@@ -15,7 +15,7 @@ tags:
   - frontend
 ---
 
-<Media src="/images/wild-aviation-hero.jpg" />
+<Media image="/images/wild-aviation-hero.jpg" />
 
 <PostButton link="https://www.wildaviationservices.com.au/" label="Visit Wild Aviation" />
 
