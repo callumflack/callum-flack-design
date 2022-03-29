@@ -10,7 +10,9 @@
     <h3 class="Heading Heading-4xl font-medium frame-area-a">
       {{ post.title }}
     </h3>
-    <div class="Text-sm text-gray Text--alignNotMobile Text--align frame-area-b">
+    <div
+      class="Text-sm text-gray Text--alignNotMobile Text--align flex lg:justify-end frame-area-b"
+    >
       <span
         v-for="(tag, index) in tagsWithFeaturedRemoved"
         :key="index"
@@ -24,7 +26,7 @@
         <span>Design: {{ post.agency }}</span>
       </template>
     </div>
-    <div class="Text-sm Text--align frame-area-c">
+    <div class="Text-sm Text--align flex justify-end frame-area-c">
       <span class="Row-action">
         {{ type === "saber-link" ? "Read " : "Open " }}
       </span>
@@ -73,7 +75,7 @@ export default {
       );
     },
     tagsWithFeaturedRemoved() {
-      return this.post.tags && this.post.tags.filter(x => x !== "featured");
+      return this.post.tags && this.post.tags.filter((x) => x !== "featured");
     },
     /* formatTags() {
       return this.slice(0, -1).join(', ')
@@ -94,19 +96,21 @@ export default {
   @apply m-0;
   /* grid-template-columns: repeat(10, minmax(0, 1fr)); */
   /* grid-column-gap: var(--gridColumnGap); */
-  grid-row-gap: var(--spacing2);
+  /* --gridColumnGap: calc(21 / 1680 * 100vw); */
+  row-gap: var(--spacing4);
   grid-template-areas:
     "a a a a a a a a a a a a"
     "b b b b b b b b b c c c";
 }
-@screen md {
+@screen lg {
   .frame--projectRow {
-    grid-template-areas: "a a a a a b b b b b c c";
+    grid-template-areas: "a a a a a a b b b b b c";
+    /* grid-template-areas: "a a a a a a b b b b c c"; */
   }
 }
 @screen hu {
   .frame--projectRow {
-    grid-template-areas: "a a a a a a b b b b c c";
+    grid-template-areas: "a a a a a a a a b b b c";
   }
 }
 
@@ -167,9 +171,6 @@ export default {
 
 /* TEXT UTILS */
 
-.Text--align {
-  @apply flex justify-end;
-}
 .Text--align > span {
   align-self: flex-end;
 }

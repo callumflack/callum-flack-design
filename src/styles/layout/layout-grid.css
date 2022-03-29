@@ -84,7 +84,7 @@
 }
 @screen sm {
   .frame--header {
-    grid-template-areas: "a a a b b b b b b b b .";
+    grid-template-areas: "a a b b b b b b b b b .";
   }
 }
 @screen lg {
@@ -149,10 +149,10 @@
 }
 @screen sm {
   .frame--projectRows {
-    grid-template-areas: ". . . a a a a . . . . .";
+    grid-template-areas: ". . a a a a a a a a a .";
   }
 }
-@screen xl {
+@screen hu {
   .frame--projectRows {
     grid-template-areas: ". . . a a a a a a a a .";
   }

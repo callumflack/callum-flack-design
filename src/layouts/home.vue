@@ -4,7 +4,7 @@
     <SliderFrame class="">
       <main slot-scope="{ activeIndex, goToIndex }">
         <div class="frame">
-          <ul class="Tab-controls col-start-1 lg:col-start-3 hu:col-start-4">
+          <ul class="Tab-controls col-start-1 sm:col-start-3 hu:col-start-4">
             <li>
               <button
                 :class="{ 'is-active': activeIndex === 0 }"
