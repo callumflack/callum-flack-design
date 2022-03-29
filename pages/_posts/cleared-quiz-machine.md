@@ -18,7 +18,6 @@ nextPost:
   hero: /images/post-creative-director-dead.jpg
 tags:
   - engineering
-  - frontend
   - product design
 ---
 
