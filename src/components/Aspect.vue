@@ -52,7 +52,7 @@ figure .Aspect >>> figure {
 */
 .Aspect >>> img,
 .Aspect >>> iframe {
-  @apply absolute inset-0 h-full w-full; /* 1 */
+  @apply absolute inset-0 h-full w-full z-10; /* 1 */
 }
 .Aspect >>> img {
   @apply object-cover; /* 2 */

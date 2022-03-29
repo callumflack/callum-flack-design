@@ -12,7 +12,6 @@ hero:
   ratio: 8 / 16
   # imageBlend: 0.1
   titleInvert: false
-heroKlass: "bg-cleared-peach"
 nextPost:
   title: Is the Creative Director Dead?
   link: /blog/is-the-creative-director-dead

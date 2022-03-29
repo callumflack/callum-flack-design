@@ -16,18 +16,19 @@
       <!-- loading message -->
       <!-- :class="{ 'bg-text': !iphone }" -->
       <div class="absolute inset-0 flex justify-center items-center">
-        <div class="Meta">Video loading…</div>
+        <div class="Meta flex">
+          Video loading…
+          <!-- <Loader /> -->
+        </div>
       </div>
       <!-- if vimeo -->
-      <div v-if="vimeo" class="absolute inset-0" :class="{ Frame: frame }">
+      <div v-if="vimeo" class="absolute inset-0 Vimeo" :class="{ Frame: frame }">
         <iframe
           :src="vimeoSrc"
           width="100%"
           height="100%"
           frameborder="0"
-          allowTransparency="true"
-          webkitallowfullscreen
-          mozallowfullscreen
+          allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>
@@ -55,6 +56,9 @@
         </button>
       </div> -->
     </Aspect>
+
+    <!-- caption slot -->
+    <slot></slot>
   </div>
 </template>
 
@@ -66,35 +70,35 @@
 
   Embedding background vimeos:
   https://help.vimeo.com/hc/en-us/articles/115011183028-Embedding-background-videos
+
   If you have more than one video autoplaying on a particular page, you will also need to include autopause=0
   https://help.vimeo.com/hc/en-us/articles/115004485728-Autoplaying-and-looping-embedded-videos
 
 */
 import Aspect from "./Aspect";
+// import Loader from "./Loader";
 
 export default {
   components: {
     Aspect,
   },
   props: {
-    ratio: String,
+    showControls: Boolean,
+    desktop: Boolean,
     frame: Boolean,
+    ipad: Boolean,
+    ipadLandscape: Boolean,
+    iphone: Boolean,
+    laptop: Boolean,
+    poster: String,
+    ratio: String,
+    reverseOverlay: Boolean,
+    reverseButton: Boolean,
+    src: String,
     vimeo: {
       type: Boolean,
       default: true,
     },
-    iphone: {
-      type: Boolean,
-      default: false,
-    },
-    ipadLandscape: Boolean,
-    ipad: Boolean,
-    laptop: Boolean,
-    desktop: Boolean,
-    poster: String,
-    src: String,
-    reverseOverlay: Boolean,
-    reverseButton: Boolean,
   },
   data() {
     return {
@@ -103,7 +107,9 @@ export default {
   },
   computed: {
     vimeoSrc() {
-      return `https://player.vimeo.com/video/${this.src}?background=1`;
+      return `https://player.vimeo.com/video/${this.src}${
+        this.showControls ? "" : "?background=1"
+      }`;
     },
     aspectClasses() {
       return [
@@ -182,6 +188,7 @@ export default {
 .Frame:after {
   @apply absolute inset-0 border border-gray-400;
   content: "";
+  z-index: 11;
 }
 
 /*

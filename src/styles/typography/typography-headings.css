@@ -1,34 +1,37 @@
-/*
-
-  Headings: customisable starter pack
-  …uses the responsiveScale settings from `typography-scale`
-
-  Default heading
-
- */
-.Markdown h1,
-.Markdown h2,
-.Markdown h3,
-.Heading {
-  @apply font-sans;
-  @apply font-normal;
+/* Default */
+.Heading,
+.Heading-4xl,
+.Markdown h1 {
+  @apply font-medium;
   @apply leading-tight;
-  font-size: calc(theme(fontSize.4xl) * var(--heading-ratio));
+  @apply tracking-tight;
 }
-/*
 
-  Serif
+/* Tracking + leading at sizes */
+.Heading-lg,
+.Heading-xl,
+.Heading-2xl,
+.Heading-3xl,
+.Markdown h2,
+.Markdown h3 {
+  @apply font-medium;
+  @apply leading-snug;
+  @apply tracking-tight;
+}
+.Heading-5xl,
+.Heading-6xl,
+.Heading-7xl,
+.Heading-8xl {
+  @apply font-medium;
+  @apply leading-title;
+  @apply tracking-tight;
+}
 
-*/
-/* .Heading-serif {
-  @apply font-serif italic leading-snug tracking-wide;
-} */
-/*
-
-  Sizes using --text-ratio
-
- */
+/* Sizes using --text-ratio */
 .Markdown h3,
+.Heading-lg {
+  font-size: calc(theme(fontSize.lg) + 1px * var(--text-ratio));
+}
 .Heading-xl {
   font-size: calc(theme(fontSize.xl) * var(--text-ratio));
 }
@@ -39,7 +42,7 @@
 .Heading-3xl {
   font-size: calc(theme(fontSize.3xl) * var(--text-ratio));
 }
-
+.heading,
 .Markdown h1,
 .Heading-4xl {
   font-size: calc(theme(fontSize.4xl) * var(--text-ratio));
@@ -52,35 +55,4 @@
 }
 .Heading-7xl {
   font-size: calc(theme(fontSize.7xl) * var(--text-ratio));
-}
-/* .Heading-8xl {
-  font-size: calc(theme(fontSize.8xl) * var(--heading-ratio));
-} */
-/*
-
-  Tracking + leading at sizes
-
- */
-.Heading-xl,
-.Heading-2xl,
-.Heading-3xl {
-  @apply leading-snug;
-  @apply tracking-tight;
-}
-.Heading-5xl,
-.Heading-6xl,
-.Heading-7xl,
-.Heading-8xl {
-  @apply leading-title;
-  @apply tracking-tight;
-}
-/*
-
-  Markdown theme: weights
-
- */
-.Markdown h1,
-.Markdown h2,
-.Markdown h3 {
-  @apply font-medium;
 }

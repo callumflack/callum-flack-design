@@ -1,7 +1,8 @@
 <template>
-  <header class="relative">
+  <header class="relative Hero">
     <!-- hero image slot -->
     <slot name="image"></slot>
+
     <!-- title block -->
     <div class="frame frame--header relative" :class="headerLayoutStyle">
       <nav
@@ -36,9 +37,11 @@
             </saber-link>
           </template>
         </p>
+
         <!-- default slot -->
         <slot></slot>
       </div>
+
       <!-- intersection-observer target -->
       <div ref="observe" class="io-target"></div>
     </div>
@@ -96,7 +99,7 @@ export default {
     if (this.$route.path !== "/" || this.$route.path !== "/about") {
       // use i-o to toggle CFd logo in <PageTitle> when it leaves the viewport
       // https://www.notion.so/callum/Intersection-observer-use-in-Vue-ff50d8e8e79647b7bccfbe861b2eaf5b
-      const io = new IntersectionObserver(entries => {
+      const io = new IntersectionObserver((entries) => {
         // Log available data when an intersection happens
         // console.log(entries);
         // Element enters the viewport
@@ -142,4 +145,14 @@ export default {
   color: transparent;
   filter: invert(1) grayscale(1) contrast(9);
 } */
+@media (min-height: 740px) {
+  .Hero {
+    max-height: 66vh;
+  }
+}
+@media (min-height: 940px) {
+  .Hero {
+    max-height: 60vh;
+  }
+}
 </style>
