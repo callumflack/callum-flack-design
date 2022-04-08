@@ -47,11 +47,13 @@ body {
 .page-reverse hr {
   border-color: var(--markdown-quote-border-color);
 }
+.page-reverse .Logo {
+  @apply text-white;
+}
 .page-reverse .Link a:not(.Button),
 .page-reverse .Markdown a:not(.Button) {
   box-shadow: inset 0 -1px 0 var(--markdown-quote-border-color);
 }
-
 .page-reverse .Link a:hover:not(.Button),
 .page-reverse .Markdown a:hover:not(.Button) {
   @apply text-black;
