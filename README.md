@@ -1,6 +1,6 @@
-# Callum Flack Design
+# Callum Flack Design 
 
-Value proposition, portfolio and writing website: https://callumflack.design/
+As of October 2022, this repo is no longer the source for [my website](https://callumflack.design/). But you can still check this old website at [v9.callumflack.design](https://v9.callumflack.design/)
 
 ### Heads up!
 
