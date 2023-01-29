@@ -41,3 +41,6 @@ node_modules/
 .env
 .env.*
 .env.mailchimp
+
+# stuff
+.DS_Store
