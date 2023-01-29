@@ -91,12 +91,12 @@ export default {
 
 <style lang="postcss" scoped>
 /*
-    Figure parent that wraps a lazy-loaded image
-    1. contain the blur-in
-    2. if figure, no margin
-    3. flash of layout before any images render.
-        * this project to be like: https://www.additionelle.com/en
-  */
+  Figure parent that wraps a lazy-loaded image
+  1. contain the blur-in
+  2. if figure, no margin
+  3. flash of layout before any images render.
+      * this project to be like: https://www.additionelle.com/en
+*/
 figure {
   @apply relative;
   /* @apply overflow-hidden; */ /* 1 */
@@ -105,10 +105,10 @@ figure {
 }
 
 /*
-    Figure parent provides an aspect-ratio exact area for the image to cover.
-    - The parent must be relative
-    - Uses Boolean prop "!cover"
-   */
+  Figure parent provides an aspect-ratio exact area for the image to cover.
+  - The parent must be relative
+  - Uses Boolean prop "!cover"
+  */
 figure.aspect {
   @apply h-0;
   /* @apply overflow-hidden; */
@@ -116,38 +116,38 @@ figure.aspect {
 }
 
 /*
-    Figure parent provides an exact area for the image to cover.
-    - An alternate for to the figure parent using an aspect ratio for providing an area
-    - The parent must be relative
-    - Uses Boolean prop "cover"
-   */
+  Figure parent provides an exact area for the image to cover.
+  - An alternate for to the figure parent using an aspect ratio for providing an area
+  - The parent must be relative
+  - Uses Boolean prop "cover"
+  */
 figure.cover {
   @apply absolute inset-0;
 }
 
 /*
-    Image within an aspect ratio.
-    1. Absolutely occupy the .Aspect area
-    2. Make the image cover the .Aspect area
-  */
+  Image within an aspect ratio.
+  1. Absolutely occupy the .Aspect area
+  2. Make the image cover the .Aspect area
+*/
 img {
   @apply absolute inset-0; /* 1 */
   @apply object-cover h-full w-full; /* 2 */
 }
 
 /*
-    Dynamic image within an figure.
-    …for flexible use, no absolute positoning is applied.
-    1. cover the figure parent area
-  */
+  Dynamic image within an figure.
+  …for flexible use, no absolute positoning is applied.
+  1. cover the figure parent area
+*/
 /* img {
-    @apply object-cover h-full w-full;
-  } */
+  @apply object-cover h-full w-full;
+} */
 
 /*
-    Image lazy-loading style
-    1. enable Safari to keep sharp edges (if parent is pos-abs)
-  */
+  Image lazy-loading style
+  1. enable Safari to keep sharp edges (if parent is pos-abs)
+*/
 .v-lazy-image {
   min-height: 100%;
   min-width: 100%;
@@ -163,8 +163,8 @@ img {
 }
 
 /*
-    Figure caption
-   */
+  Figure caption
+  */
 figcaption {
   @apply absolute left-0 pt-2;
   top: 100%;
